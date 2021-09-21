@@ -1,31 +1,16 @@
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Error correction zoo</title>
-	<meta name="description" content="A comprehensive list of error-correcting codes, both classical and quantum." />
-        <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
-	<meta name="author" content="Victor V. Albert" />
-        <link rel="stylesheet" type="text/css" href="newzoo.css" />
-	<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-  
-</head>
-
-<body>
-<div id="wrap">
-	<div id="header">
-        <h1>Error correction zoo</h1>
-  </div>
-	<div id="main">
-<div id="notice">
-<p>This is a comprehensive catalog of error-correcting codes, both classical and quantum. If you notice any errors or 
-omissions, please email me at vva@umd.edu. (Alternatively, you may
-submit a pull request to the <a href="https://github.com/valbert4/errorcorrectionzoo">repository</a> on github.)
-Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>.</p>
-</div>
-</body>
-
-<div id="myQuestions">
+$("#QuestionOptions").change(function(){
+  $("#A,#B").hide();
+  if($(this).val() == "A"){
+    $("#A").show();
+  }else{
+     $("#B").show(); 
+  }
+});
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<html>
+ <head></head>
+ <body>
+    <div id="myQuestions">
         <select id="QuestionOptions">
             <option value disalbe selected>What Day is it?</option>
             <option value="A">Monday</option>
@@ -63,43 +48,5 @@ Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>
             </div>
         </div>
     </div>
-
-<a name="algebraic"></a>
-<h2>Algebraic and Number Theoretic Algorithms</h2>
-
-<b>Algorithm:</b> Factoring<br />
-<b>Speedup:</b> Superpolynomial<br /> 
-<b>Description:</b> Given an <i>n</i>-bit integer, find the prime
-factorization. The quantum algorithm of Peter Shor solves this in
-\( \widetilde{O} (n^3) \) time
-[<a href="#Shor_factoring">82</a>,<a href="#Shor_factoring94">125</a>]. 
-The fastest known classical algorithm for integer factorization is the
-general number field sieve, which is believed to run in time \(
-2^{\widetilde{O}(n^{1/3})} \). The best rigorously proven upper bound
-on the classical complexity of factoring is \( O(2^{n/4+o(1)}) \) via the Pollard-Strassen algorithm 
-[<a href="#Pol">252</a>, <a href="#Stras">362</a>]. Shor's
-factoring algorithm breaks RSA public-key encryption and the
-closely related quantum algorithms for discrete logarithms break the DSA
-and ECDSA digital signature schemes and the Diffie-Hellman
-key-exchange protocol. A quantum algorithm even faster than Shor's for
-the special case of factoring &ldquo;semiprimes&rdquo;, which are
-widely used in cryptography, is given in [<a href="#GLFB15">271</a>]. 
-If small factors exist, Shor's algorithm can be beaten by a quantum 
-algorithm using Grover search to speed up the elliptic curve factorization 
-method [<a href="#PQRSA">366</a>]. Additional optimized versions of Shor's algorithm are given in [<a href="#EH17">384</a>, <a href="#BBM17">386</a>]. There are proposed classical public-key 
-cryptosystems not believed to be broken by quantum algorithms, <i>cf.</i> 
-[<a href="#BBD09">248</a>]. At the core of Shor's factoring algorithm is 
-order finding, which can be reduced to the <a href="#abelian_HSP">Abelian hidden subgroup problem</a>, 
-which is solved using the quantum Fourier transform. A number of other 
-problems are known to reduce  to integer factorization including the 
-membership problem for matrix groups over fields of odd order 
-[<a href="#BBS09">253</a>], and certain diophantine problems relevant to 
-the synthesis of quantum circuits [<a href="#RS12">254</a>].
-<br /><br />
-
-<br />
-</small>
-</div>
-</div>
 </body>
 </html>
