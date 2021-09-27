@@ -12,6 +12,36 @@
 </head>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script>
+var dynamic_options = {
+  'A': [{
+    value: "1",
+    text: "Option 1"
+  }, {
+    value: "2",
+    text: "Option 2"
+  }],
+
+  'B': [{
+    value: "3",
+    text: "Option 3"
+  }, {
+    value: "4",
+    text: "Option 4"
+  }]
+};
+
+$(function() {
+  var answers = $('#myAnswers').find('select');
+  $('#myQuestions').on('change', 'select', function(e) {
+    var options = dynamic_options[this.value] || [];
+    answers.find('option:gt(0)').remove();
+    $.each(options, function(i, option) {
+      answers.append($('<option>').prop(option));
+    });
+  });
+});
+</script>
 <div id="myQuestions">
   <select>
     <option value=''>What Day is it?</option>
