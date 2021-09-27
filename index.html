@@ -16,18 +16,28 @@
 var dynamic_options = {
   'A': [{
     value: "1",
-    text: "Option 1"
-  }, {
+    text: "bits"
+  }],
+  
+  'B': [{
     value: "2",
-    text: "Option 2"
+    text: "dits"
   }],
 
-  'B': [{
+  'C': [{
     value: "3",
-    text: "Option 3"
+    text: "qubits"
   }, {
     value: "4",
-    text: "Option 4"
+    text: "oscillators"
+  }],
+  
+  'D': [{
+    value: "5",
+    text: "qudits"
+  }, {
+    value: "4",
+    text: "oscillators"
   }]
 };
 
@@ -42,21 +52,22 @@ $(function() {
   });
 });
 </script>
+<div>
+  <p>I'd like to encode</p>
+</div>
 <div id="myQuestions">
   <select>
-    <option value=''>What Day is it?</option>
-    <option value="A">Monday</option>
-    <option value="A">Tuesday</option>
-    <option value="B">Wednesday</option>
-    <option value="B">Thursday</option>
-    <option value="B">Friday</option>
-    <option value="A">Saturday</option>
-    <optoin value="A">Sunday</optoin>
+    <option value=''></option>
+    <option value="A">bits</option>
+    <option value="B">dits</option>
+    <option value="C">qubits</option>
+    <option value="D">qudits</option>
+    <optoin value="E">oscillators</optoin>
   </select>
 </div>
 <div id="myAnswers">
   <div>
-    <p>Exapmle of question.</p>
+    <p>into</p>
   </div>
   <div>
     <select>
