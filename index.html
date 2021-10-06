@@ -1,7 +1,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Error correction zoo</title>
-	<meta name="description" content="A comprehensive list of error-correcting codes, both classical and quantum." />
+	<meta name="description" content="Collection of classical and quantum error-correcting codes." />
         <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
 	<meta name="author" content="Victor V. Albert" />
         <link rel="stylesheet" type="text/css" href="newzoo.css" />
@@ -13,6 +13,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
+// encoding __ into __
 var dynamic_options = {
   'A': [{
     value: "1",
@@ -56,6 +57,20 @@ $(function() {
     });
   });
 });
+
+// button
+$(document).ready(function() {
+    $('button').attr('disabled', 'disabled');
+ 
+    $('input[type=text]').on('input', function() {
+        if ($(this).val() !== '') {
+            $('button').removeAttr("disabled");
+        }
+        else {
+            $('button').attr('disabled', 'disabled');
+        }
+    });
+});
 </script>
 <div>
   <p>I'd like to encode</p>
@@ -79,4 +94,6 @@ $(function() {
       <option value=''></option>
     </select>
   </div>
+<input type="text" placeholder="Enter your name...">
+<button>Submit</button>
 </div>
