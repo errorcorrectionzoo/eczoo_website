@@ -58,19 +58,15 @@ $(function() {
   });
 });
 
-// button
-$(document).ready(function() {
-    $('button').attr('disabled', 'disabled');
- 
-    $('input[type=text]').on('input', function() {
-        if ($(this).val() !== '') {
-            $('button').removeAttr("disabled");
-        }
-        else {
-            $('button').attr('disabled', 'disabled');
-        }
+// Button
+$(document).ready(function(){
+            var d = 3
+            if (d >= 6) {
+                $(".goButton").wrap('<a href="http://www.google.com"/>');
+            } else {
+                $(".goButton").wrap('<a href="http://www.duckduckgo.com"/>');
+            }
     });
-});
 </script>
 <div>
   <p>I'd like to encode</p>
@@ -94,6 +90,7 @@ $(document).ready(function() {
       <option value=''></option>
     </select>
   </div>
-<input type="text" placeholder="Enter your name...">
-<button>Submit</button>
+</div>
+<div id="goButton">
+  <button>Go</button>
 </div>
