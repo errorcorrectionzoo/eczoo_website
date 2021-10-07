@@ -13,84 +13,67 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 <script>
-// encoding __ into __
-var dynamic_options = {
-  'A': [{
-    value: "1",
-    text: "bits"
-  }],
-  
-  'B': [{
-    value: "2",
-    text: "dits"
-  }],
+var series = [
+{name: 'Company A', product: 'A1'},
+{name: 'Company A', product: 'A2'},
+{name: 'Company A', product: 'A3'},
+{name: 'Company B', product: 'B1'},
+{name: 'Company B', product: 'B2'}
+]
 
-  'C': [{
-    value: "3",
-    text: "qubits"
-  }, {
-    value: "4",
-    text: "oscillators"
-  }],
-  
-  'D': [{
-    value: "5",
-    text: "qudits"
-  }, {
-    value: "4",
-    text: "oscillators"
-  }],
-  
-  'E': [{
-    value: "4",
-    text: "oscillators"
-  }]
-};
-
-$(function() {
-  var answers = $('#myAnswers').find('select');
-  $('#myQuestions').on('change', 'select', function(e) {
-    var options = dynamic_options[this.value] || [];
-    answers.find('option:gt(0)').remove();
-    $.each(options, function(i, option) {
-      answers.append($('<option>').prop(option));
-    });
-  });
-});
+$(".company").change(
+	function(){
+  	// Capture selected company
+		var company = $(this).val();
+    
+    // Default for second selection
+		var options =  '<option value=""><strong>Products</strong></option>';
+		
+    // Generate options corresponding to selected company
+    $(series).each(
+    	function(index, value){
+      	// Select only those options pertaining to company
+				if(value.name == company){
+        	// Add them to an array of option values, expressed as html code
+					options += '<option value="'+value.product+'">'+value.product+'</option>';
+				}
+			}
+    );
+		
+    // Add above options into the second selection box
+		$('.product').html(options);
+	}
+);
 
 // Button
-$(document).ready(function(){
-            var d = 3
-            if (d >= 6) {
-                $(".goButton").wrap('<a href="http://www.google.com"/>');
-            } else {
-                $(".goButton").wrap('<a href="http://www.duckduckgo.com"/>');
-            }
-    });
+$(".product").change(
+	function(){
+  	// Capture selected product
+		var product = $(this).val();
+    
+    // Default link selection
+		var buttonlink =  '<button formaction="http://errorcorrectionzoo.com">Go to EC Zoo!</button>';
+		
+    // Put link into button
+		$('.goButton').html(buttonlink);
+	}
+);
 </script>
-<div>
-  <p>I'd like to encode</p>
-</div>
-<div id="myQuestions">
-  <select>
-    <option value=''></option>
-    <option value="A">bits</option>
-    <option value="B">dits</option>
-    <option value="C">qubits</option>
-    <option value="D">qudits</option>
-    <option value="E">oscillators</option>
-  </select>
-</div>
-<div id="myAnswers">
-  <div>
-    <p>into</p>
-  </div>
-  <div>
-    <select>
-      <option value=''></option>
+
+<div class="col-md-4" >
+    <select class="company">
+          <option value=''><strong>Name</strong></option>
+          <option value="Company A">Company A</option>
+          <option value="Company B">Company B</option>
     </select>
-  </div>
 </div>
-<div id="goButton">
-  <button>Go</button>
+<div class="col-md-4" >
+    <select class="product">
+          <option value=''><strong>Products</strong></option>
+    </select>
+</div>
+<div class="col-md-4" >
+    <form class="goButton">
+          <button formaction="http://stackoverflow.com">Go to Stack Overflow!</button>
+    </form>
 </div>
