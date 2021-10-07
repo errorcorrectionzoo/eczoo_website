@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -28,7 +29,20 @@
 
 </head>
 <body>
-    <div class="col-md-4" >
+    <head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Error correction zoo</title>
+	<meta name="description" content="Collection of classical and quantum error-correcting codes." />
+        <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
+	<meta name="author" content="Victor V. Albert" />
+        <link rel="stylesheet" type="text/css" href="newzoo.css" />
+	<script type="text/javascript" async
+		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	</script>
+  
+</head>
+
+<div class="col-md-4" >
     <select class="company">
           <option value=''><strong>Name</strong></option>
           <option value="Company A">Company A</option>
@@ -42,7 +56,7 @@
 </div>
 <div class="col-md-4" >
     <form class="goButton">
-          <button formaction="http://stackoverflow.com">Go to Stack Overflow!</button>
+          <input type="button" value="Test" onclick="window.location.href='http://www.wherever.com'">
     </form>
 </div>
 
@@ -88,7 +102,7 @@ $(".product").change(
 		var product = $(this).val();
     
     // Default link selection
-		var buttonlink =  '<button formaction="http://errorcorrectionzoo.com">Go to EC Zoo!</button>';
+		var buttonlink =  '<input type="button" value="Test" onclick="window.location.href=`http://www.wherever.com`">';
 		
     // Put link into button
 		$('.goButton').html(buttonlink);
