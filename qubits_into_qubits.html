@@ -1,12 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Error correction zoo</title>
 	<meta name="description" content="Collection of classical and quantum error-correcting codes." />
-        <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
+     <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
 	<meta name="author" content="Victor V. Albert" />
-        <link rel="stylesheet" type="text/css" href="newzoo.css" />
+     <link rel="stylesheet" type="text/css" href="newzoo.css" />
 	<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+	   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
 	</script>
-  
 </head>
+
+<body>
+<div id="wrap">
+    	<div id="header">
+            <h1>Error correction zoo: qubits into qubits</h1>
+      </div>
+
+<div id="main">
+
+      <div id="notice">
+            <p>This is a comprehensive catalog of classical and quantum error correcting codes. If you notice any errors or omissions, please email me at vva@umd.edu. (Alternatively, you may submit a pull request to the <a href="https://github.com/valbert4/errorcorrectionzoo">repository</a> on github.) Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>. The zoo is styled similar in spirit to the <a href="https://quantumalgorithmzoo.org/">algorithm zoo</a>.</p>
+      </div>
+
+<b>Name:</b> Repetition code<br />
+<b>Encoding:</b> \(1\) qubit into \(n\) qubits <br />
+<b>Protection:</b> bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits<br />
+<b>Description:</b> Encodes \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\)<br />
+<b>Features:</b> Logical qubit spanned by GHz states. Extremely sensitive to phase-flip errors \(Z\).<br />
+<b>Example of:</b> CSS code, stabilizer code (with stabilizers of the form \(Z\otimes Z\)).<br />
+<br /><br />
+
+<b>Name:</b> CSS code<br />
+<b>Encoding:</b> \([[n,k,d]]\) encoding <br />
+<b>Protection:</b> detects errors on \(d-1\) qubits, corrects errors on \((d-1)/2\) qubits<br />
+<b>Description:</b> Encodes accoding to two classical linear codes: an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) such that \(C_1^\perp \subseteq C_1\). Then, \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\). <br />
+<b>Features:</b> <br />
+<b>Example of:</b> stabilizer code<br />
+<b>Special cases:</b> repetition code<br />
+<br /><br />
+
+<hr />
+
+<a name="acknowledgments"></a>
+<h2>Acknowledgments</h2>
+I thank the following people for contributing their expertise (in
+chronological order).
+<ul>
+<li><a href="link">Name</a></li>
+</ul>
+<br />
+
+<!-- end of wrap -->
+</div>
+
+<div id="sidebar">
+    <h2>Navigation</h2>
+    <div class="navlist">
+      <a href="https://errorcorrectionzoo.org/">Back to encoding selection</a><br />
+      <a href="#acknowledgments">Acknowledgments</a><br />
+    </div>
+
+    <h2>Other Surveys</h2>
+    Overviews of quantum error correction:<br /><br />
+    <div class="navlist">
+        <a href="http://theory.caltech.edu/~preskill/ph229/">Preskill</a><br />
+        <a href="https://arxiv.org/abs/0904.2557">Gottesman</a><br />
+        <a href="https://www.amazon.com/Classical-Quantum-Computation-Graduate-Mathematics/dp/0821832298">Kitaev, Shen, and Vyalyi</a><br />
+    </div>
+</div>
+
+<!-- end of wrap -->
+</div> 
+</body>
+</html>
