@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -45,6 +46,8 @@
           <option value=''><strong>I'd like to encode...</strong></option>
           <option value="bits">bits</option>
           <option value="dits">dits</option>
+          <option value="qubits">qubits</option>
+          <option value="qudits">qudits</option>
           <option value="oscillators">oscillators</option>
     </select>
 </div>
@@ -103,7 +106,7 @@ $(".product").change(
 		var product = $(this).val();
     
     // Default link selection
-    var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'" target="_parent"><button>Go!</button></a>';
+    var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'.html" target="_parent"><button> Encode '+$(".company").val()+' into '+product+'</button></a>';
 		//var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'" target="_parent"><button>'+$(".company").val()+' into '+product+'</button></a>';
 		
     // Put link into button
@@ -115,3 +118,20 @@ $(".product").change(
 
 
   //]]></script>
+
+  <script>
+    // tell the embed parent frame the height of the content
+    if (window.parent && window.parent.parent){
+      window.parent.parent.postMessage(["resultsFrame", {
+        height: document.body.getBoundingClientRect().height,
+        slug: "4wc6o8hf"
+      }], "*")
+    }
+
+    // always overwrite window.name, in case users try to set it manually
+    window.name = "result"
+  </script>
+
+
+</body>
+</html>
