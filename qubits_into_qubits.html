@@ -28,22 +28,32 @@
             <p>This is a comprehensive catalog of classical and quantum error correcting codes. If you notice any errors or omissions, please email me at vva@umd.edu. (Alternatively, you may submit a pull request to the <a href="https://github.com/valbert4/errorcorrectionzoo">repository</a> on github.) Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>. The zoo is styled similar in spirit to the <a href="https://quantumalgorithmzoo.org/">algorithm zoo</a>.</p>
       </div>
 
+<a name="Repetition_code"></a>
 <b>Name:</b> Repetition code<br />
-<b>Encoding:</b> \(1\) qubit into \(n\) qubits <br />
+<b>Encoding:</b> \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\).<br />
 <b>Protection:</b> bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits<br />
-<b>Description:</b> Encodes \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\)<br />
 <b>Features:</b> Logical qubit spanned by GHz states. Extremely sensitive to phase-flip errors \(Z\).<br />
-<b>Example of:</b> CSS code, stabilizer code (with stabilizers of the form \(Z\otimes Z\)).<br />
-<br /><br />
+<b>Example of:</b> <a href="#CSS_code">CSS code</a>, <a href="#Stabilizer_code">Stabilizer code</a> (with stabilizers of the form \(Z\otimes Z\)).<br />
+<br />
 
+<a name="CSS_code"></a>
 <b>Name:</b> CSS code<br />
-<b>Encoding:</b> \([[n,k,d]]\) encoding <br />
+<b>Encoding:</b> \([[n,k,d]]\) code based on two classical linear codes: an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) such that \(C_1^\perp \subseteq C_1\). Then, \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\).<br />
 <b>Protection:</b> detects errors on \(d-1\) qubits, corrects errors on \((d-1)/2\) qubits<br />
-<b>Description:</b> Encodes accoding to two classical linear codes: an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) such that \(C_1^\perp \subseteq C_1\). Then, \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\). <br />
 <b>Features:</b> <br />
-<b>Example of:</b> stabilizer code<br />
-<b>Special cases:</b> repetition code<br />
-<br /><br />
+<b>Example of:</b> <a href="#Stabilizer_code">Stabilizer code</a><br />
+<b>Special cases:</b> <a href="#Repetition_code">Repetition code</a><br />
+<br />
+
+<a name="Stabilizer_code"></a>
+<b>Name:</b> Stabilizer code<br />
+<b>Encoding:</b> \([[n,k,d]]\) code whose logical subspace is the joint \(+1\) eigenspace of a set of commuting Pauli strings forming the code's stabilizer group.<br />
+<b>Protection:</b> detects errors on \(d-1\) qubits, corrects errors on \((d-1)/2\) qubits<br />
+<b>Features:</b> <br />
+<b>Example of:</b> <br />
+<b>Special cases:</b> <a href="#CSS_code">CSS code</a>, <a href="#Repetition_code">Repetition code</a><br />
+<br />
+
 
 <hr />
 
@@ -52,7 +62,7 @@
 I thank the following people for contributing their expertise (in
 chronological order).
 <ul>
-<li><a href="link">Ryhor Kandratsenia</a></li>
+<li><a href="link">Name</a></li>
 </ul>
 <br />
 
