@@ -7,7 +7,7 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	<title>Error correction zoo</title>
-	<meta name="description" content="Collection of classical and quantum error-correcting codes." />
+	<meta name="description" content="Collection of error-correcting codes." />
      <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
 	<meta name="author" content="Victor V. Albert" />
      <link rel="stylesheet" type="text/css" href="newzoo.css" />
@@ -19,20 +19,20 @@
 <body>
 <div id="wrap">
     	<div id="header">
-            <h1>Error correction zoo: qubits into qubits</h1>
+            <h1>Error correction zoo: bits into qubits</h1>
       </div>
 
 <div id="main">
 
       <div id="notice">
-            <p>This is a comprehensive catalog of classical and quantum error correcting codes. If you notice any errors or omissions, please email me at vva@umd.edu. (Alternatively, you may submit a pull request to the <a href="https://github.com/valbert4/errorcorrectionzoo">repository</a> on github.) Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>. The zoo is styled similar in spirit to the <a href="https://quantumalgorithmzoo.org/">algorithm zoo</a>.</p>
+            <p>This is a comprehensive catalog of error correcting codes. If you notice any errors or omissions, please email me at vva@umd.edu or submit a pull request to the <a href="https://github.com/valbert4/errorcorrectionzoo">repository</a> on github. Your help is appreciated and will be <a href="#acknowledgments">acknowledged</a>. The zoo is styled similar in spirit to the <a href="https://quantumalgorithmzoo.org/">algorithm zoo</a>.</p>
       </div>
 
 <a name="Repetition_code"></a>
 <b>Name:</b> Repetition code<br />
 <b>Encoding:</b> \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\).<br />
 <b>Protection:</b> Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits.<br />
-<b>Features:</b> Logical qubit spanned by GHz states. Extremely sensitive to phase-flip errors \(Z\).<br />
+<b>Features:</b> Cannot detect any phase-flip errors \(Z\). Logical qubit spanned by GHz (a.k.a. cat) states \(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\), which are used in Shor error correction.<br />
 <b>Example of:</b> <a href="#CSS_code">CSS code</a>, <a href="#Stabilizer_code">Stabilizer code</a> (with stabilizers of the form \(Z\otimes Z\)).<br />
 <br />
 
@@ -59,8 +59,7 @@
 
 <a name="acknowledgments"></a>
 <h2>Acknowledgments</h2>
-I thank the following people for contributing their expertise (in
-chronological order).
+I thank the following people for contributing (in chronological order).
 <ul>
 <li>Ryhor Kandratsenia</li>
 <li><a href="link">Name</a></li>
@@ -75,18 +74,45 @@ chronological order).
     <div class="navlist">
       <a href="https://errorcorrectionzoo.org/">Back to encoding selection</a><br />
       <a href="#acknowledgments">Acknowledgments</a><br />
-    </div>
+    </div><br /><br />
 
-    <h2>Other Surveys</h2>
-    Overviews of quantum error correction:<br /><br />
+    <h2>Other surveys</h2>
+    Error correction:<br />
+    <div class="navlist">
+        <a href="https://cse.buffalo.edu/faculty/atri/courses/coding-theory/book/">Guruswami, Rudra, Sudan</a><br />
+        <a href="https://www.elsevier.com/books/the-theory-of-error-correcting-codes/macwilliams/978-0-444-85193-2">MacWilliams, Sloane</a><br />
+        <a href="https://link.springer.com/book/10.1007/3-540-30731-1">Nebe, Rains, Sloane</a><br />
+        <a href="https://doi.org/10.1017/CBO9780511808968">Roth</a><br />
+        <a href="https://www.amazon.com/Course-Error-Correcting-Codes-Textbooks-Mathematics/dp/3037191791">Justesen, Hoholdt</a>
+    </div><br />
+
+    Quantum error correction:<br />
     <div class="navlist">
         <a href="http://theory.caltech.edu/~preskill/ph229/">Preskill</a><br />
+        <a href="https://arxiv.org/abs/quant-ph/9705052">Gottesman (thesis)</a><br />
         <a href="https://arxiv.org/abs/0904.2557">Gottesman</a><br />
-        <a href="https://www.amazon.com/Classical-Quantum-Computation-Graduate-Mathematics/dp/0821832298">Kitaev, Shen, and Vyalyi</a><br />
-    </div>
+        <a href="https://www.overleaf.com/project/5b8448a8bd9678047d974d6b">Brown, Newman</a><br />
+        <a href="https://www.amazon.com/Classical-Quantum-Computation-Graduate-Mathematics/dp/0821832298">Kitaev, Shen, Vyalyi</a><br />
+    </div><br /><br />
+
+    <!-- Other tables here: http://codetables.markus-grassl.de/ -->
+    <h2>Code tables</h2>
+    Error correction:<br />
+    <div class="navlist">
+        <a href="http://codetables.markus-grassl.de/">Brouwer, Grassl</a><br />
+        <a href="http://www.asamov.com/Z4Codes/CODES/ShowCODESTablePage.aspx">Asamov, Aydin</a><br />
+        <a href="http://www.tec.hkr.se/~chen/research/codes/qc.htm">Chen</a><br />
+    </div><br />
+
+    Quantum error correction:<br />
+    <div class="navlist">
+      <a href="http://codetables.markus-grassl.de/">Grassl</a><br />
+    </div><br />
+
 </div>
 
+</div><br />
 <!-- end of wrap -->
-</div> 
+
 </body>
 </html>
