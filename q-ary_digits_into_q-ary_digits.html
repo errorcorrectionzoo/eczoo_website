@@ -18,12 +18,12 @@
 
 <body>
 
-<a name="Repetition_code"></a>
-<b>Name:</b> Repetition code<br />
-<b>Encoding:</b> \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\).<br />
-<b>Protection:</b> Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits.<br />
-<b>Features:</b> Cannot detect any phase-flip errors \(Z\). Logical qubit spanned by GHz (a.k.a. cat) states \(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\), which are used in Shor error correction.<br />
-<b>Example of:</b> <a href="#CSS_code">CSS code</a>, <a href="#Stabilizer_code">Stabilizer code</a> (with stabilizers of the form \(Z\otimes Z\)).<br />
+<a name="Reed-Solomon_code"></a>
+<b>Name:</b> Reed-Solomon code<br />
+<b>Encoding:</b> \([n,k,n-k+1]_q\) code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q>n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\). <br />
+<b>Protection:</b> Corrects \(n-k\) erasure errors.<br />
+<b>Features:</b> Used in numerous applications, including computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.<br />
+<b>Example of:</b> <a href="#Linear_code">Linear code</a> (with generator matrix \(\{\alpha_{j}^{i-1}\}\)), <a href="#Hamming_code">Hamming code</a>.<br />
 <br />
 
 <hr />
