@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html>
+
 <head>
   <meta http-equiv="content-type" content="text/html; charset=UTF-8">
   <title></title>
@@ -10,17 +10,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <script
-    type="text/javascript"
-    src="//code.jquery.com/jquery-3.1.1.js"
-    
-  ></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-3.1.1.js"></script>
 
-    <link rel="stylesheet" type="text/css" href="/css/result-light.css">
+  <link rel="stylesheet" type="text/css" href="/css/result-light.css">
 
 
   <style id="compiled-css" type="text/css">
-      
     /* EOS */
   </style>
 
@@ -28,91 +23,113 @@
 
 
 </head>
+
 <body>
-    <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<title>Error correction zoo</title>
-	<meta name="description" content="Collection of classical and quantum error-correcting codes." />
-        <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
-	<meta name="author" content="Victor V. Albert" />
-        <link rel="stylesheet" type="text/css" href="newzoo.css" />
-	<script type="text/javascript" async
-		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
-	</script>
-</head>
 
-<div class="col-md-4" >
-    <select class="company">
-          <option value=''><strong>I'd like to encode...</strong></option>
-          <option value="bits">bits</option>
-          <option value="q-ary_digits">q-ary digits</option>
-          <option value="qubits">qubits</option>
-          <option value="qudits">qudits</option>
-          <option value="oscillators">oscillators</option>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Error correction zoo</title>
+    <meta name="description" content="Collection of classical and quantum error-correcting codes." />
+    <meta name="keywords" content="quantum classical error correcting correction code encoding zoo list catalog" />
+    <meta name="author" content="Victor V. Albert" />
+    <link rel="stylesheet" type="text/css" href="splash.css" />
+    <script type="text/javascript" async
+      src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+      </script>
+  </head>
+
+  <h1>
+    ERROR CORRECTION ZOO
+  </h1>
+
+  <br>
+
+  <h3>
+    I'd like to encode...
+  </h3>
+
+  <div class="col-md-4">
+    <select class="company" id="company">
+      <option value=''><strong>Make a choice</strong></option>
+      <option value="bits">bits</option>
+      <option value="q-ary_digits">q-ary digits</option>
+      <option value="qubits">qubits</option>
+      <option value="qudits">qudits</option>
+      <option value="oscillators">oscillators</option>
     </select>
-</div>
-<div class="col-md-4" >
-    <select class="product">
-          <option value=''><strong>into...</strong></option>
+  </div>
+
+  <br>
+
+  <h3>
+    into...
+  </h3>
+
+  <div class="col-md-4">
+    <select class="product" id="product">
+      <option value=''><strong>Make a choice</strong></option>
     </select>
-</div>
-<div class="col-md-4" >
+  </div>
+
+  <br>
+
+  <div class="col-md-4">
     <div class="goButton">
-          
+
     </div>
-</div>
+  </div>
 
-    <script type="text/javascript">//<![CDATA[
+  <script type="text/javascript">//<![CDATA[
 
 
-var series = [
-{name: 'bits', product: 'bits'},
-{name: 'q-ary_digits', product: 'q-ary_digits'},
-{name: 'qubits', product: 'qubits'},
-{name: 'qubits', product: 'oscillators'},
-{name: 'qudits', product: 'qudits'},
-{name: 'qudits', product: 'oscillators'},
-{name: 'oscillators', product: 'oscillators'}
-]
+    var series = [
+      { name: 'bits', product: 'bits' },
+      { name: 'q-ary_digits', product: 'q-ary_digits'},
+      { name: 'qubits', product: 'qubits' },
+      { name: 'qubits', product: 'oscillators' },
+      { name: 'qudits', product: 'qudits' },
+      { name: 'qudits', product: 'oscillators' },
+      { name: 'oscillators', product: 'oscillators' }
+    ]
 
-$(".company").change(
-	function(){
-  	// Capture selected company
-		var company = $(this).val();
-    
-    // Default for second selection
-		var options =  '<option value=""><strong>into...</strong></option>';
-		
-    // Generate options corresponding to selected company
-    $(series).each(
-    	function(index, value){
-      	// Select only those options pertaining to company
-				if(value.name == company){
-        	// Add them to an array of option values, expressed as html code
-					options += '<option value="'+value.product+'">'+value.product+'</option>';
-				}
-			}
+    $(".company").change(
+      function () {
+        // Capture selected company
+        var company = $(this).val();
+
+        // Default for second selection
+        var options = '<option value=""><strong>into...</strong></option>';
+
+        // Generate options corresponding to selected company
+        $(series).each(
+          function (index, value) {
+            // Select only those options pertaining to company
+            if (value.name == company) {
+              // Add them to an array of option values, expressed as html code
+              options += '<option value="' + value.product + '">' + value.product + '</option>';
+            }
+          }
+        );
+
+        // Add above options into the second selection box
+        $('.product').html(options);
+      }
     );
-		
-    // Add above options into the second selection box
-		$('.product').html(options);
-	}
-);
 
-// Button
-$(".product").change(
-	function(){
-  	// Capture selected product
-		var product = $(this).val();
-    
-    // Default link selection
-    var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'.html" target="_parent"><button> Encode '+$(".company").val()+' into '+product+'</button></a>';
-		//var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'" target="_parent"><button>'+$(".company").val()+' into '+product+'</button></a>';
-		
-    // Put link into button
-		$('.goButton').html(buttonlink);
-	}
-);
+    // Button
+    $(".product").change(
+      function () {
+        // Capture selected product
+        var product = $(this).val();
+
+        // Default link selection
+        var buttonlink = '<a href="https://errorcorrectionzoo.org/' + $(".company").val() + '_into_' + product + '.html" target="_parent"><button id="button"> Encode ' + $(".company").val() + ' into ' + product + '</button></a>';
+        //var buttonlink =  '<a href="https://errorcorrectionzoo.org/'+$(".company").val()+'_into_'+product+'" target="_parent"><button>'+$(".company").val()+' into '+product+'</button></a>';
+
+        // Put link into button
+        $('.goButton').html(buttonlink);
+      }
+    );
 
 
 
@@ -121,7 +138,7 @@ $(".product").change(
 
   <script>
     // tell the embed parent frame the height of the content
-    if (window.parent && window.parent.parent){
+    if (window.parent && window.parent.parent) {
       window.parent.parent.postMessage(["resultsFrame", {
         height: document.body.getBoundingClientRect().height,
         slug: "4wc6o8hf"
@@ -134,4 +151,5 @@ $(".product").change(
 
 
 </body>
+
 </html>
