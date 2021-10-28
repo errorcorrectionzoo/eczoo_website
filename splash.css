@@ -1,0 +1,145 @@
+body, html {
+    padding:0;
+    color:#000;
+    background: #ECF7FD;
+}
+
+@font-face {
+    font-family: 'Fatface1';
+      src: url('fonts/fatface.eot'); /* IE9 Compat Modes */
+      src: url('fonts/fatface.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/fatface.woff2') format('woff2'), /* Super Modern Browsers */
+          url('fonts/fatface.woff') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/fatface.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/fatface.svg#svgFontName') format('svg'); /* Legacy iOS */
+      font-weight: 2000;
+      font-style: normal;
+}
+
+@font-face {
+    font-family: 'Abhaya';
+      src: url('fonts/abhaya.eot'); /* IE9 Compat Modes */
+      src: url('fonts/abhaya.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+          url('fonts/abhaya.woff2') format('woff2'), /* Super Modern Browsers */
+          url('fonts/abhaya.woff') format('woff'), /* Pretty Modern Browsers */
+          url('fonts/abhaya.ttf')  format('truetype'), /* Safari, Android, iOS */
+          url('fonts/abhaya.svg#svgFontName') format('svg'); /* Legacy iOS */
+      font-weight: 400;
+      font-style: normal;
+}
+
+img {
+    border:0;
+}
+
+#wrap {
+    width:1050px;
+    margin:0 auto;
+    background: white;
+}
+
+#header {
+    background: rgb(32, 115, 192);
+    margin-top: 15px;
+    padding: 10px;
+    color: white;
+}
+
+
+
+h1 {
+    font-family: 'Fatface1';
+    margin-top: 100px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 60px;
+}
+
+h3 {
+    font-family: 'Abhaya';
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+#main {
+    float:left;
+    width:679px;
+    padding:10px;
+    background: white;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-right-color: black;
+    font-size: 15px;
+    line-height: 1.2;
+}
+
+h2 {
+    margin:0 0 1em;
+}
+
+.company{
+    font-family: 'Abhaya';
+    margin-left: 635px;
+    font-size: 20px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: relative;
+}
+
+.product{
+    font-family: 'Abhaya';
+    margin-left: 635px;
+    font-size: 20px;
+    padding: 10px 8px 10px 14px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    position: sticky;
+}
+
+.goButton {
+    font-family: 'Abhaya';
+    margin-left: 635px;
+    margin-right: 635px;
+    margin-top: 20px;
+    size: 20px;
+    font-size: 3px;
+    padding: 15px 10px 15px 10px;
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+}
+
+#sidebar {
+    float:right;
+    width:320px;
+    padding:10px;
+    background: white;
+    font-size: 14px;
+}
+
+#footer {
+    clear:both;
+    padding:5px 10px 10px 10px;
+    background:#EEEEEE;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-top-color: black;
+    margin-bottom: 15px;
+}
+
+#footer p {
+    margin:0;
+}
+
+.navlist {
+  line-height: 1.5;
+}
+
+#notice {
+    background: #FECB65;
+}

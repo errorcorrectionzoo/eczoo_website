@@ -1,0 +1,44 @@
+# UTF-8 unicode encoding
+
+code_id: toric
+
+physical: qubits
+
+logical: qubits
+
+name: 'Toric code'
+
+description: '.......... \([[n,k,d]]\) code whose logical subspace is the
+  joint \(+1\) eigenspace of a set of commuting Pauli strings
+  forming the code''s stabilizer group.'
+
+decoder: 'Minimum-weight \href{https://some.com/page}{perfect} matching \cite{ABCD_YYYY_journalorconf_xyz}'
+
+decoder: 'Here''s an example'
+
+features:
+
+  fault_tolerance: ....
+
+  
+
+relations:
+
+  parents:
+
+    #
+    #
+    # - code_id: 'stabilizer'
+    #   detail: 'fsfdjknasjfkldsn'
+
+    - code_id: 'CSS'
+      detail: 'Plaquette (\(Z\)) and Star (\(X\)) stabilizers'
+
+    - code_id: 'LDPC'
+      detail: 'Plaquette (\(Z\)) and Star (\(X\)) stabilizers'
+
+
+  cousins:
+    
+    - code_id: 'XZZX'
+      detail: 'Hadamard every other qubit (for square lattice) ....'
