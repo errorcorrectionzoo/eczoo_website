@@ -1,0 +1,17 @@
+# UTF-8 unicode encoding
+
+code_id: quantum_LDPC
+
+physical: qubits
+
+logical: qubits
+
+name: 'Quantum low-density parity-check (LDPC) code'
+
+description: ''
+
+protection: 'Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.'
+
+features: ''
+
+decoder: ''

@@ -1,0 +1,27 @@
+# UTF-8 unicode encoding
+
+code_id: XZZX_toric
+
+physical: qubits
+
+logical: qubits
+
+name: 'XZZX code'
+
+description: '\cite{arxiv:2009.07851}'
+
+protection: 'Can protect against biased noise.' 
+
+features: 'Related to topological phase in early paper by Wen.'
+
+decoder: ''
+
+relations:
+  parents:
+    - code_id: 'stabilizer'
+      detail: 'Plaquette and Star stabilizers'
+
+  cousins:
+    - code_id: 'toric'
+      detail: 'Related via a Hadamard on every other qubit.'
+
