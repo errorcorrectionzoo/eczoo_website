@@ -7,6 +7,11 @@
   <title>Encoding bits into bits [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+
   <script type="text/javascript" async
 	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
@@ -26,96 +31,32 @@
   <main id="main">
 
 
-<dl class="ecc-code" id="ecc_bits_into_bits">
 
-<dt>Name</dt>
-<dd class="code-name">Binary error-correcting code
-  <a class="code-self-permalink" href="/code_bits_into_bits.html#ecc_bits_into_bits">&#167;</a></dd>
-
-<dt>Description</dt>
-<dd class="code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
-
-<dt>Encoding</dt>
-<dd class="code-encoding"></dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
+<div class="ecc-code" id="ecc_bits_into_bits">
+  <span class="short-code-name"><a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a></span>
+  <span class="short-code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
+  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a>
+  </span>
+</div>
 
 
-<dt>Parent(s)</dt>
-<dd class="code-parents">
-
-
-<span class="na">(none)</span>
-</dd>
-
-<dt>Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>  </li>
-</ul>
-</dd>
-
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
-
-
-<span class="na">(none)</span>
-</dd>
-
-
-
-</dl>
-
-
-<dl class="ecc-code" id="ecc_binary_linear">
-
-<dt>Name</dt>
-<dd class="code-name">Binary linear code
-  <a class="code-self-permalink" href="/code_binary_linear.html#ecc_binary_linear">&#167;</a></dd>
-
-<dt>Description</dt>
-<dd class="code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</dd>
-
-<dt>Encoding</dt>
-<dd class="code-encoding"></dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</dd>
-
-
-<dt>Parent(s)</dt>
-<dd class="code-parents">
-
-
-<ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a></span>  </li>
-</ul>
-</dd>
-
-
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
-
-
-<span class="na">(none)</span>
-</dd>
-
-<dt>Cousin of</dt>
-<dd class="code-cousin-of">
-
-
-<ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
-  <li><span class="code-cousin-of-1-code"><a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
-</ul>
-</dd>
-
-
-</dl>
-
+<div class="ecc-code" id="ecc_binary_linear">
+  <span class="short-code-name"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>
+  <span class="short-code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</span>
+  <span class="short-code-info">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a>
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>, 
+      <a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a>
+  </span>
+</div>
 
 
 

@@ -11,27 +11,57 @@ pretty_code_graph_setup = function()
         // the graph data --> loaded by separate, auto-generated JS file
         elements: pretty_code_graph_data.elements,
 
+        // layout: {
+        //     // cf. https://js.cytoscape.org/#layouts/cose
+        //     name: 'cose',
+        //     animate: true,
+        //     animationThreshold: 250,
+        //     refresh: 20,
+        //     fit: true,
+        //     padding: 30,
+        //     componentSpacing: 40,
+        
+        //     // Node repulsion (non overlapping) multiplier
+        //     nodeRepulsion: function( node ){ return 8192; },
+        
+        //     // Ideal edge (non nested) length
+        //     idealEdgeLength: function( edge ){ return 300; },
+        
+        //     // Divisor to compute edge forces
+        //     edgeElasticity: function( edge ){ return 100000; },
+        
+        //     nodeOverlap: 4,
+
+        // },
+
         layout: {
-            // cf. https://js.cytoscape.org/#layouts/cose
-            name: 'cose',
+            // cf. https://github.com/iVis-at-Bilkent/cytoscape.js-fcose#api
+            name: 'fcose',
+            quality: "proof",
             animate: true,
-            animationThreshold: 250,
-            refresh: 20,
-            fit: true,
-            padding: 30,
-            componentSpacing: 40,
+            randomize: true,
+            animationDuration: 750,
+            animationEasing: undefined,
+
+            nodeDimensionsIncludeLabels: true,
 
             // Node repulsion (non overlapping) multiplier
-            nodeRepulsion: function( node ){ return 8192; },
-
+            nodeRepulsion: function( node ){ return 4500; },
             // Ideal edge (non nested) length
-            idealEdgeLength: function( edge ){ return 300; },
-
+            idealEdgeLength: function( edge ){ return 80; },
             // Divisor to compute edge forces
-            edgeElasticity: function( edge ){ return 100000; },
+            edgeElasticity: function( edge ){ return .45; },
 
-            nodeOverlap: 4
+            // fixed node constraints -- root codes
+            fixedNodeConstraint: pretty_code_graph_data.fixed_node_constraint,
+            alignmentConstraint: pretty_code_graph_data.alignment_constraint
         },
+
+        // layout: {
+        //     // cf. https://github.com/iVis-at-Bilkent/cytoscape.js-fcose#api
+        //     name: 'cose-bilkent',
+        // },
+
 
         style: [ // the stylesheet for the graph
             {
@@ -40,6 +70,17 @@ pretty_code_graph_setup = function()
                     'background-color': '#7f3000',
                     'label': 'data(label)',
                     'color': '#7f3000',
+                    'font-size': '14px',
+                    'font-family': '"Helvetica Neue", "Arial", sans-serif',
+                    'font-weight': '300'
+                }
+            },
+            {
+                selector: 'node[_generation_level=0]',
+                style: {
+                    'background-color': '#5e3834',
+                    'label': 'data(label)',
+                    'color': '#5e3834',
                     'font-size': '14px',
                     'font-family': '"Helvetica Neue", "Arial", sans-serif',
                     'font-weight': '300'
@@ -154,7 +195,8 @@ pretty_code_graph_setup = function()
             tooltip_contents_element.innerHTML =
                 "<span class=\"code-name\">" + node_data.label + "</span>"
                 + "<span class=\"code-description\">" + node_data._description + "</span>"
-                + "<span class=\"spacer\"> </span><a class=\"code-link\" href=\"" + node_data._code_href + "\">go to code →</a>"
+                + "<span class=\"spacer\"> </span><a class=\"code-link\" href=\""
+                        + node_data._code_href + "\">go to code →</a>"
             ;
 
             //
@@ -176,45 +218,6 @@ pretty_code_graph_setup = function()
         }
     });
 
-    // codegraph.cy.on('tap', "node", function(event) {
-    //     var node = this;
-    //     // console.log('on tap!');
-    //     // console.log(node);
-    //     var base_pos = {
-    //         x: main_element.offsetLeft,
-    //         y: main_element.offsetTop
-    //     };
-    //     var pos = node.renderedPosition();
-    //     virtualElement.getBoundingClientRect =
-    //         generateGetBoundingClientRect(base_pos.x + pos.x, base_pos.y + pos.y);
-    //     codegraph.popper_obj.update();
-    //     tooltip_element.style.display = 'block';
-    // });
-
-    // codegraph.tippy_obj = tippy(
-    //     document.getElementById('main'),
-    //     {
-    //         delay: 150,
-    //         trigger: 'manual',
-    //         interactive: true,
-    //         'content': 'Hi'
-    //     }
-    // );
-    // console.log(codegraph.tippy_obj);
-    // codegraph.cy.on('tap', "node", function(event) {
-    //         codegraph.tippy_obj.show()
-    // });
-    // //     console.log(this);
-    // //     console.log(event);
-    // //     var node = this.data('label'); //event.cyTarget;
-    // //     alert("Tap! " + node);
-    // //
-    // //     // create a basic popper on the first node
-    // //     if (codegraph.popup) {
-    // //         codegraph.popup.close();
-    // //     }
-    // //
-    // // });
 };
 
 

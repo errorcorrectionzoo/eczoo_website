@@ -7,6 +7,11 @@
   <title>Encoding q-ary digits into q-ary digits [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+
   <script type="text/javascript" async
 	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
   </script>
@@ -26,87 +31,27 @@
   <main id="main">
 
 
-<dl class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
 
-<dt>Name</dt>
-<dd class="code-name">q-ary error-correcting code
-  <a class="code-self-permalink" href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">&#167;</a></dd>
-
-<dt>Description</dt>
-<dd class="code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
-
-<dt>Encoding</dt>
-<dd class="code-encoding"></dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
+<div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
+  <span class="short-code-name"><a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a></span>
+  <span class="short-code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
+  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a>
+  </span>
+</div>
 
 
-<dt>Parent(s)</dt>
-<dd class="code-parents">
-
-
-<span class="na">(none)</span>
-</dd>
-
-<dt>Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
-</ul>
-</dd>
-
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
-
-
-<span class="na">(none)</span>
-</dd>
-
-
-
-</dl>
-
-
-<dl class="ecc-code" id="ecc_reed_solomon">
-
-<dt>Name</dt>
-<dd class="code-name">Reed-Solomon code
-  <a class="code-self-permalink" href="/code_reed_solomon.html#ecc_reed_solomon">&#167;</a></dd>
-
-<dt>Description</dt>
-<dd class="code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</dd>
-
-<dt>Encoding</dt>
-<dd class="code-encoding"></dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Corrects erasures on \(n-k\) coordinates.</dd>
-
-
-<dt>Parent(s)</dt>
-<dd class="code-parents">
-
-
-<ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a></span>  </li>
-</ul>
-</dd>
-
-
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
-
-
-<span class="na">(none)</span>
-</dd>
-
-
-
-</dl>
-
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a></span>
+  <span class="short-code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</span>
+  <span class="short-code-info">Corrects erasures on \(n-k\) coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a>
+  </span>
+</div>
 
 
 

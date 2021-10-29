@@ -165,10 +165,14 @@ dd {
   padding: 2px 0px;
 }
 
-dl.ecc-code {
+.ecc-code {
   margin: 0px 0px 20px;
   padding: 3px;
   border: dotted 1px gray;
+}
+
+.ecc-code.ecc-code-page {
+  border: none 0px;
 }
 
 .ecc-code > dt {
@@ -178,6 +182,7 @@ dl.ecc-code {
 .ecc-code > dt,
 .ecc-code > dd {
   padding: 2px 0px;
+  margin-bottom: 10px;
 }
 
 .na {
@@ -217,6 +222,24 @@ dd.code-name {
   vertical-align: super;
 }
 
+.short-code-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.short-code-description {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.short-code-info {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
 #endnotes {
   border: dotted 1px gray;
   padding: 3px;
@@ -233,6 +256,20 @@ dd.code-name {
 
 #endnotes dd {
   margin-left: 5px;
+}
+
+#endnotes dt, #endnotes dd {
+  transition: background-color 0.5s;
+}
+
+.visual-highlight {
+  background-color: yellow;
+  box-shadow: yellow 0px 0px 10px;
+}
+
+.visual-highlight + dd {
+  background-color: yellow;
+  box-shadow: yellow 0px 0px 10px;
 }
 
 #footer {
