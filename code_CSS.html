@@ -40,9 +40,6 @@
 <dt>Description</dt>
 <dd class="code-description">An \((n,2^k,d)\) CSS code is usually denoted as \([[n,k,d]]\). Encoding is based on two binary linear codes, an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) with \(C_1^\perp \subseteq C_2\), such that \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\).</dd>
 
-<dt>Encoding</dt>
-<dd class="code-encoding"></dd>
-
 <dt>Protection</dt>
 <dd class="code-protection">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</dd>
 
@@ -52,7 +49,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
   <li><span class="code-parents-1-code"><a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-\(X\) or only-\(Z\).)</span>  </li>
 </ul>
 </dd>
@@ -93,12 +90,13 @@
       </ul>
       <h1>Codes</h1>
       <ul class="navlinks">
-        <li><a href="/qubits_into_qubits.html">Encoding qubits into qubits</a></li>
-        <li><a href="/qudits_into_qudits.html">Encoding qudits into qudits</a></li>
-        <li><a href="/oscillators_into_oscillators.html">Encoding oscillators into oscillators</a></li>
-        <li><a href="/qudits_into_oscillators.html">Encoding qudits into oscillators</a></li>
-        <li><a href="/q-ary_digits_into_q-ary_digits.html">Encoding q-ary digits into q-ary digits</a></li>
-        <li><a href="/bits_into_bits.html">Encoding bits into bits</a></li>
+        <li><a href="/qudits_into_oscillators.html">Qudit-into-oscillator code</a></li>
+        <li><a href="/oscillators_into_oscillators.html">Oscillator code</a></li>
+        <li><a href="/qubits_into_qubits.html">Qubit code</a></li>
+        <li><a href="/groups_into_groups.html">Group code</a></li>
+        <li><a href="/qudits_into_qudits.html">Qudit code</a></li>
+        <li><a href="/bits_into_bits.html">Binary code</a></li>
+        <li><a href="/q-ary_digits_into_q-ary_digits.html">q-ary code</a></li>
         <li><a href="/all.html">Index of all codes</a></li>
       </ul>
       <h1>Additional resources</h1>

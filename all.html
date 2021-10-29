@@ -32,64 +32,15 @@
 
 
 
-<div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a></span>
-  <span class="short-code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</span>
-  <span class="short-code-info">Corrects erasures on \(n-k\) coordinates.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a>
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
-  <span class="short-code-name"><a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a></span>
-  <span class="short-code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
-  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a>
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_binary_linear">
-  <span class="short-code-name"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>
-  <span class="short-code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</span>
-  <span class="short-code-info">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a>
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>, 
-      <a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a>
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_bits_into_bits">
-  <span class="short-code-name"><a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a></span>
-  <span class="short-code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
-  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a>
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_qudits_into_qudits">
-  <span class="short-code-name"><a href="/code_qudits_into_qudits.html#ecc_qudits_into_qudits">Qudit error-correcting code</a></span>
-  <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space for some \(q\); has distance \(d\). Usually denoted as \(((n,K,d))_q\), or \([[n,k,d]]_q\) when \(K=q^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
-  <span class="short-code-info">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</span>
+<div class="ecc-code" id="ecc_qudits_into_oscillators">
+  <span class="short-code-name"><a href="/code_qudits_into_oscillators.html#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a></span>
+  <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</span>
+  <span class="short-code-info"></span>
 </div>
 
 
 <div class="ecc-code" id="ecc_oscillators_into_oscillators">
-  <span class="short-code-name"><a href="/code_oscillators_into_oscillators.html#ecc_oscillators_into_oscillators">Oscillator error-correcting code</a></span>
+  <span class="short-code-name"><a href="/code_oscillators_into_oscillators.html#ecc_oscillators_into_oscillators">Oscillator code</a></span>
   <span class="short-code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^k\) into that on \(\mathbb{R}^n\). Usually denoted as \(((n,k))_{\mathbb{R}}\).</span>
   <span class="short-code-info"></span>
 </div>
@@ -101,7 +52,7 @@
   <span class="short-code-info">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
   <span class="short-code-parent-of">
@@ -121,7 +72,7 @@
   <span class="short-code-info"></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
@@ -134,7 +85,7 @@
   <span class="short-code-info"></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -151,7 +102,7 @@
   <span class="short-code-info">Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits. Cannot detect any phase-flip errors \(Z\).</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
   <span class="short-code-cousins">
@@ -167,13 +118,13 @@
   <span class="short-code-info">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_qubits_into_qubits">
-  <span class="short-code-name"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a></span>
+  <span class="short-code-name"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a></span>
   <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (\(n\)-qubit) Hilbert space; has distance \(d\). Usually denoted as \(((n,K,d))\), or \([[n,k,d]]\) when \(K=2^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   <span class="short-code-info">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</span>
   <span class="short-code-parent-of">
@@ -187,10 +138,96 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_qudits_into_oscillators">
-  <span class="short-code-name"><a href="/code_qudits_into_oscillators.html#ecc_qudits_into_oscillators">Qudit-into-oscillator error-correcting code</a></span>
-  <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</span>
+<div class="ecc-code" id="ecc_group_gkp">
+  <span class="short-code-name"><a href="/code_group_gkp.html#ecc_group_gkp">Group GKP codes</a></span>
+  <span class="short-code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of \(\ell^2\)-normalizable functions on a group \(G\). Construction is based on nested subgroups \(H\subset K \subset G\), where \(H,K\) are finite. The \(|K|/|H|\)-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \(H\) in \(K\).</span>
+  <span class="short-code-info">Protects against generalized bit-flip errors \(g\in G\) that are inside the fundamental domain of \(G/K\). Protection against phase-flip errors determined by branching rules of irreps of \(G\) into those of \(K\), and further into those of \(H\).</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_groups_into_groups.html#ecc_groups_into_groups">Group code</a>
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_molecular.html#ecc_molecular">Molecular codes</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_groups_into_groups">
+  <span class="short-code-name"><a href="/code_groups_into_groups.html#ecc_groups_into_groups">Group code</a></span>
+  <span class="short-code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on a group \(G_1\) into that on a second-countable unimodular group \(G_2\). For finite \(G_1\) and \(G_2=G^{\times n}\), can be denoted as \(((n,|G_1|))_G\). Furthermore, when \(K=|G|^k\), can be denoted \([[n,k]]_G\). Ideal codewords may not be normalizable, depending on whether \(G_2\) is continuous and/or noncompact, so approximate versions have to be constructed.</span>
   <span class="short-code-info"></span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_group_gkp.html#ecc_group_gkp">Group GKP codes</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_molecular">
+  <span class="short-code-name"><a href="/code_molecular.html#ecc_molecular">Molecular codes</a></span>
+  <span class="short-code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of \(\ell^2\)-normalizable functions on the group \(SO_3\). Construction is based on nested subgroups \(H\subset K \subset SO_3\), where \(H,K\) are finite. The \(|K|/|H|\)-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \(H\) in \(K\).</span>
+  <span class="short-code-info">Protects against generalized bit-flip errors \(g\in SO_3\) that are inside the fundamental domain of \(G/K\). Protection against phase-flip errors determined by branching rules of irreps of \(G\) into those of \(K\), and further into those of \(H\).</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_group_gkp.html#ecc_group_gkp">Group GKP codes</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_qudits_into_qudits">
+  <span class="short-code-name"><a href="/code_qudits_into_qudits.html#ecc_qudits_into_qudits">Qudit code</a></span>
+  <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space for some \(q\); has distance \(d\). Usually denoted as \(((n,K,d))_q\), or \([[n,k,d]]_q\) when \(K=q^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-info">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</span>
+</div>
+
+
+<div class="ecc-code" id="ecc_binary_linear">
+  <span class="short-code-name"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>
+  <span class="short-code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</span>
+  <span class="short-code-info">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary code</a>
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>, 
+      <a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_bits_into_bits">
+  <span class="short-code-name"><a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary code</a></span>
+  <span class="short-code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
+  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a></span>
+  <span class="short-code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</span>
+  <span class="short-code-info">Corrects erasures on \(n-k\) coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
+  <span class="short-code-name"><a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a></span>
+  <span class="short-code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</span>
+  <span class="short-code-info">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a>
+  </span>
 </div>
 
 
@@ -219,12 +256,13 @@
       </ul>
       <h1>Codes</h1>
       <ul class="navlinks">
-        <li><a href="/qubits_into_qubits.html">Encoding qubits into qubits</a></li>
-        <li><a href="/qudits_into_qudits.html">Encoding qudits into qudits</a></li>
-        <li><a href="/oscillators_into_oscillators.html">Encoding oscillators into oscillators</a></li>
-        <li><a href="/qudits_into_oscillators.html">Encoding qudits into oscillators</a></li>
-        <li><a href="/q-ary_digits_into_q-ary_digits.html">Encoding q-ary digits into q-ary digits</a></li>
-        <li><a href="/bits_into_bits.html">Encoding bits into bits</a></li>
+        <li><a href="/qudits_into_oscillators.html">Qudit-into-oscillator code</a></li>
+        <li><a href="/oscillators_into_oscillators.html">Oscillator code</a></li>
+        <li><a href="/qubits_into_qubits.html">Qubit code</a></li>
+        <li><a href="/groups_into_groups.html">Group code</a></li>
+        <li><a href="/qudits_into_qudits.html">Qudit code</a></li>
+        <li><a href="/bits_into_bits.html">Binary code</a></li>
+        <li><a href="/q-ary_digits_into_q-ary_digits.html">q-ary code</a></li>
         <li><a href="/all.html">Index of all codes</a></li>
       </ul>
       <h1>Additional resources</h1>

@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Encoding qubits into qubits [error correction zoo]</title>
+  <title>Qubit code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,7 +25,7 @@
   >
 
   <header id="header">
-    <h1>Encoding qubits into qubits</h1>
+    <h1>Qubit code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -33,7 +33,7 @@
 
 
 <div class="ecc-code" id="ecc_qubits_into_qubits">
-  <span class="short-code-name"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a></span>
+  <span class="short-code-name"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a></span>
   <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (\(n\)-qubit) Hilbert space; has distance \(d\). Usually denoted as \(((n,K,d))\), or \([[n,k,d]]\) when \(K=2^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   <span class="short-code-info">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</span>
   <span class="short-code-parent-of">
@@ -53,7 +53,7 @@
   <span class="short-code-info">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
   <span class="short-code-parent-of">
@@ -73,7 +73,7 @@
   <span class="short-code-info"></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
@@ -86,7 +86,7 @@
   <span class="short-code-info"></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -103,7 +103,7 @@
   <span class="short-code-info">Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits. Cannot detect any phase-flip errors \(Z\).</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>, 
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>, 
       <a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a>
   </span>
   <span class="short-code-cousins">
@@ -119,7 +119,7 @@
   <span class="short-code-info">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a>
+      <a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit code</a>
   </span>
 </div>
 
@@ -149,12 +149,13 @@
       </ul>
       <h1>Codes</h1>
       <ul class="navlinks">
-        <li><a href="/qubits_into_qubits.html">Encoding qubits into qubits</a></li>
-        <li><a href="/qudits_into_qudits.html">Encoding qudits into qudits</a></li>
-        <li><a href="/oscillators_into_oscillators.html">Encoding oscillators into oscillators</a></li>
-        <li><a href="/qudits_into_oscillators.html">Encoding qudits into oscillators</a></li>
-        <li><a href="/q-ary_digits_into_q-ary_digits.html">Encoding q-ary digits into q-ary digits</a></li>
-        <li><a href="/bits_into_bits.html">Encoding bits into bits</a></li>
+        <li><a href="/qudits_into_oscillators.html">Qudit-into-oscillator code</a></li>
+        <li><a href="/oscillators_into_oscillators.html">Oscillator code</a></li>
+        <li><a href="/qubits_into_qubits.html">Qubit code</a></li>
+        <li><a href="/groups_into_groups.html">Group code</a></li>
+        <li><a href="/qudits_into_qudits.html">Qudit code</a></li>
+        <li><a href="/bits_into_bits.html">Binary code</a></li>
+        <li><a href="/q-ary_digits_into_q-ary_digits.html">q-ary code</a></li>
         <li><a href="/all.html">Index of all codes</a></li>
       </ul>
       <h1>Additional resources</h1>
