@@ -1,0 +1,84 @@
+#main {
+  width: auto;
+  height: 100%;
+  overflow: scroll;
+  background-color: rgba(255, 127, 0, 0.15);
+}
+
+#code-graph-tooltip {
+  position: absolute;
+  min-width: 200px;
+  max-width: 500px;
+  background-color: white;
+  padding: 8px;
+  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-size: 14px;
+  box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.3);
+}
+
+#code-graph-tooltip .code-name {
+  display: inline-block;
+  padding: 3px;
+  margin-right: 1em;
+  font-weight: 500;
+}
+
+#code-graph-tooltip .code-description {
+  display: inline;
+  padding-bottom: 3px;
+  font-style: italic;
+  font-size: 0.9em;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+#code-graph-tooltip .spacer {
+  display: inline-block;
+  width: 1em;
+}
+
+#code-graph-tooltip .code-link {
+  display: inline-block;
+  margin-top: 5px;
+  font-style: italic;
+  font-size: 0.95em;
+}
+
+#code-graph-tooltip a.link-button {
+  display: block;
+  margin: 10px 0px 0px;
+  padding: 3px;
+  text-align: center;
+  background-color: #f5f5fc;
+}
+
+#code-graph-tooltip a.link-button:hover {
+  background-color: #ebebfa;
+}
+
+#code-graph-tooltip .tooltip-arrow::before {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+}
+
+#code-graph-tooltip .tooltip-arrow {
+  visibility: hidden;
+}
+
+#code-graph-tooltip .tooltip-arrow::before {
+  visibility: visible;
+  content: '';
+  background-image: url(/static/icons/tooltip-pointer.svg);
+}
+
+#code-graph-tooltip[data-popper-placement^='top'] > .tooltip-arrow {
+  bottom: 0px;
+}
+
+#code-graph-tooltip[data-popper-placement^='top'] > .tooltip-arrow::before {
+  transform: rotate(180deg);
+}
+
+#code-graph-tooltip[data-popper-placement^='bottom'] > .tooltip-arrow {
+  top: -8px;
+}

@@ -1,9 +1,8 @@
-
 <!DOCTYPE html>
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Error Correction Zoo — Home [error correction zoo]</title>
+  <title>Quantum repetition code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
   <script type="text/javascript" async
@@ -19,13 +18,54 @@
   >
 
   <header id="header">
-    <h1>Error Correction Zoo — Home</h1>
+    <h1>Quantum repetition code</h1>
   </header><!-- #header -->
 
   <main id="main">
-<h1>Welcome to the error correction zoo</h1>
 
-<p>Select a page to visit in the navigation bar.</p>
+
+<dl class="ecc-code" id="ecc_quantum_repetition">
+
+<dt>Name</dt>
+<dd class="code-name">Quantum repetition code
+  <a class="code-self-permalink" href="/code_quantum_repetition.html#ecc_quantum_repetition">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\).</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits. Cannot detect any phase-flip errors \(Z\).</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-\(X\) or only-\(Z\).)</span>  </li>
+</ul>
+</dd>
+
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li><span class="code-cousins-1-code"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Construction uses two classical linear codes.)</span>  </li>
+</ul>
+</dd>
+
+
+
+</dl>
+
+
+
 
   </main><!-- #main -->
 

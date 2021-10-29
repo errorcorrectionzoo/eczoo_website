@@ -2,7 +2,7 @@
 <html>
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <title>Encoding qubits into qubits [error correction zoo]</title>
+  <title>Index of all codes [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
   <script type="text/javascript" async
@@ -18,20 +18,193 @@
   >
 
   <header id="header">
-    <h1>Encoding qubits into qubits</h1>
+    <h1>Index of all codes</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code" id="ecc_qubits_into_qubits">
+<dl class="ecc-code" id="ecc_reed_solomon">
 
 <dt>Name</dt>
-<dd class="code-name">Qubit error-correcting code
-  <a class="code-self-permalink" href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">&#167;</a></dd>
+<dd class="code-name">Reed-Solomon code
+  <a class="code-self-permalink" href="/code_reed_solomon.html#ecc_reed_solomon">&#167;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (\(n\)-qubit) Hilbert space; has distance \(d\). Usually denoted as \(((n,K,d))\), or \([[n,k,d]]\) when \(K=2^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">Corrects erasures on \(n-k\) coordinates.</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">q-ary error-correcting code</a></span>  </li>
+</ul>
+</dd>
+
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
+
+<dt>Name</dt>
+<dd class="code-name">q-ary error-correcting code
+  <a class="code-self-permalink" href="/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<span class="na">(none)</span>
+</dd>
+
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/code_reed_solomon.html#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
+</ul>
+</dd>
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_binary_linear">
+
+<dt>Name</dt>
+<dd class="code-name">Binary linear code
+  <a class="code-self-permalink" href="/code_binary_linear.html#ecc_binary_linear">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/code_bits_into_bits.html#ecc_bits_into_bits">Binary error-correcting code</a></span>  </li>
+</ul>
+</dd>
+
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+<dt>Cousin of</dt>
+<dd class="code-cousin-of">
+
+
+<ul class="code-relations-list code-cousin-of-list">
+  <li><span class="code-cousin-of-1-code"><a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
+</ul>
+</dd>
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_bits_into_bits">
+
+<dt>Name</dt>
+<dd class="code-name">Binary error-correcting code
+  <a class="code-self-permalink" href="/code_bits_into_bits.html#ecc_bits_into_bits">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<span class="na">(none)</span>
+</dd>
+
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/code_binary_linear.html#ecc_binary_linear">Binary linear code</a></span>  </li>
+</ul>
+</dd>
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_qudits_into_qudits">
+
+<dt>Name</dt>
+<dd class="code-name">Qudit error-correcting code
+  <a class="code-self-permalink" href="/code_qudits_into_qudits.html#ecc_qudits_into_qudits">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space for some \(q\); has distance \(d\). Usually denoted as \(((n,K,d))_q\), or \([[n,k,d]]_q\) when \(K=q^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
 
 <dt>Encoding</dt>
 <dd class="code-encoding"></dd>
@@ -47,18 +220,42 @@
 <span class="na">(none)</span>
 </dd>
 
-<dt>Parent of</dt>
-<dd class="code-parent-of">
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
 
 
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_toric.html#ecc_toric">Kitaev&#39;s toric code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_quantum_LDPC.html#ecc_quantum_LDPC">Quantum low-density parity-check (LDPC) code</a></span>  </li>
-</ul>
+<span class="na">(none)</span>
 </dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_oscillators_into_oscillators">
+
+<dt>Name</dt>
+<dd class="code-name">Oscillator error-correcting code
+  <a class="code-self-permalink" href="/code_oscillators_into_oscillators.html#ecc_oscillators_into_oscillators">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^k\) into that on \(\mathbb{R}^n\). Usually denoted as \(((n,k))_{\mathbb{R}}\).</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection"></dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<span class="na">(none)</span>
+</dd>
+
 
 <dt>Cousin(s)</dt>
 <dd class="code-cousins">
@@ -280,6 +477,90 @@
 <ul class="code-relations-list code-parents-list">
   <li><span class="code-parents-1-code"><a href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">Qubit error-correcting code</a></span>  </li>
 </ul>
+</dd>
+
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_qubits_into_qubits">
+
+<dt>Name</dt>
+<dd class="code-name">Qubit error-correcting code
+  <a class="code-self-permalink" href="/code_qubits_into_qubits.html#ecc_qubits_into_qubits">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (\(n\)-qubit) Hilbert space; has distance \(d\). Usually denoted as \(((n,K,d))\), or \([[n,k,d]]\) when \(K=2^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<span class="na">(none)</span>
+</dd>
+
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/code_CSS.html#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/code_toric.html#ecc_toric">Kitaev&#39;s toric code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/code_stabilizer.html#ecc_stabilizer">Stabilizer code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/code_quantum_repetition.html#ecc_quantum_repetition">Quantum repetition code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/code_quantum_LDPC.html#ecc_quantum_LDPC">Quantum low-density parity-check (LDPC) code</a></span>  </li>
+</ul>
+</dd>
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<span class="na">(none)</span>
+</dd>
+
+
+
+</dl>
+
+
+<dl class="ecc-code" id="ecc_qudits_into_oscillators">
+
+<dt>Name</dt>
+<dd class="code-name">Qudit-into-oscillator error-correcting code
+  <a class="code-self-permalink" href="/code_qudits_into_oscillators.html#ecc_qudits_into_oscillators">&#167;</a></dd>
+
+<dt>Description</dt>
+<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</dd>
+
+<dt>Encoding</dt>
+<dd class="code-encoding"></dd>
+
+<dt>Protection</dt>
+<dd class="code-protection"></dd>
+
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<span class="na">(none)</span>
 </dd>
 
 
