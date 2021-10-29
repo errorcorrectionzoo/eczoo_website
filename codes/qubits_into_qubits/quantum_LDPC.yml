@@ -2,10 +2,6 @@
 
 code_id: quantum_LDPC
 
-physical: qubits
-
-logical: qubits
-
 name: 'Quantum low-density parity-check (LDPC) code'
 
 description: ''
@@ -14,4 +10,11 @@ protection: 'Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor
 
 features: ''
 
+realizations: ''
+
 decoder: ''
+
+relations:
+  parents:
+    - code_id: 'qubits_into_qubits'
+      detail: ''
