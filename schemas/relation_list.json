@@ -1,0 +1,1 @@
+{"$schema": "http://json-schema.org/draft-06/schema", "$id": "https://errorcorrectionzoo.org/schemas/relation_list", "type": "array", "items": {"type": "object", "required": ["code_id"], "additionalProperties": false, "properties": {"code_id": {"type": "string"}, "detail": {"type": "string"}}}}

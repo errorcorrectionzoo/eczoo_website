@@ -195,7 +195,7 @@ dd {
   padding: 0px;
 }
 
-a.code-self-permalink {
+a.code-info-corner-icon {
   display: inline-block;
   float: right;
   margin: -3px 0px;
@@ -204,8 +204,17 @@ a.code-self-permalink {
   color: gray;
 }
 
-a.code-self-permalink:hover {
+a.code-info-corner-icon:hover {
   opacity: 0.9;
+}
+
+a.code-show-github {
+  width: 8px;
+  height: 8px;
+  margin-top: 2px;
+  vertical-align: middle;
+  background-image: url(/static/icons/github-logo.svg);
+  background-repeat: no-repeat;
 }
 
 dd.code-name {

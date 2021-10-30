@@ -6,7 +6,7 @@ pretty_code_graph_data = {
                     "id": "c_qudits_into_oscillators",
                     "label": "Qudit-into-oscillator code",
                     "_description": "Encodes \\(K\\)-dimensional Hilbert space into Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{R}^n\\).",
-                    "_code_href": "/code_qudits_into_oscillators.html#ecc_qudits_into_oscillators",
+                    "_code_href": "/code_qudits_into_oscillators#ecc_qudits_into_oscillators",
                     "_generation_level": 0
                 }
             },
@@ -15,7 +15,7 @@ pretty_code_graph_data = {
                     "id": "c_oscillators_into_oscillators",
                     "label": "Oscillator code",
                     "_description": "Encodes Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{R}^k\\) into that on \\(\\mathbb{R}^n\\). Usually denoted as \\(((n,k))_{\\mathbb{R}}\\).",
-                    "_code_href": "/code_oscillators_into_oscillators.html#ecc_oscillators_into_oscillators",
+                    "_code_href": "/code_oscillators_into_oscillators#ecc_oscillators_into_oscillators",
                     "_generation_level": 0
                 }
             },
@@ -26,7 +26,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "An \\((n,2^k,d)\\) CSS code is usually denoted as \\([[n,k,d]]\\). Encoding is based on two binary linear codes, an \\([n,k_1,d_1]\\) code \\(C_1\\) and \\([n,k_2,d_2]\\) code \\(C_2\\) with \\(C_1^\\perp \\subse..."
                     ],
-                    "_code_href": "/code_CSS.html#ecc_CSS",
+                    "_code_href": "/code_CSS#ecc_CSS",
                     "_generation_level": 1
                 }
             },
@@ -37,7 +37,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "A family of stabilizer codes whose generators are few-body \\(X\\)-type Pauli strings (stars) and few-body \\(Z\\)-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an ar..."
                     ],
-                    "_code_href": "/code_toric.html#ecc_toric",
+                    "_code_href": "/code_toric#ecc_toric",
                     "_generation_level": 1
                 }
             },
@@ -46,7 +46,7 @@ pretty_code_graph_data = {
                     "id": "c_stabilizer",
                     "label": "Stabilizer code",
                     "_description": "An \\(n,2^k,d\\) stabilizer is usually denoted as \\([[n,k,d]]\\). Logical subspace is the joint \\(+1\\) eigenspace of a set of commuting Pauli operators forming the code's stabilizer group.",
-                    "_code_href": "/code_stabilizer.html#ecc_stabilizer",
+                    "_code_href": "/code_stabilizer#ecc_stabilizer",
                     "_generation_level": 1
                 }
             },
@@ -55,7 +55,7 @@ pretty_code_graph_data = {
                     "id": "c_quantum_repetition",
                     "label": "Quantum repetition code",
                     "_description": "Encodes \\(1\\) qubit into \\(n\\) qubits according to \\(|0\\rangle\\to|0\\rangle^{\\otimes n}\\) and \\(|1\\rangle\\to|1\\rangle^{\\otimes n}\\).",
-                    "_code_href": "/code_quantum_repetition.html#ecc_quantum_repetition",
+                    "_code_href": "/code_quantum_repetition#ecc_quantum_repetition",
                     "_generation_level": 1
                 }
             },
@@ -64,7 +64,7 @@ pretty_code_graph_data = {
                     "id": "c_quantum_LDPC",
                     "label": "Quantum low-density parity-check (LDPC) code",
                     "_description": "",
-                    "_code_href": "/code_quantum_LDPC.html#ecc_quantum_LDPC",
+                    "_code_href": "/code_quantum_LDPC#ecc_quantum_LDPC",
                     "_generation_level": 1
                 }
             },
@@ -75,7 +75,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\)-dimensional Hilbert space into a \\(2^n\\)-dimensional (\\(n\\)-qubit) Hilbert space; has distance \\(d\\). Usually denoted as \\(((n,K,d))\\), or \\([[n,k,d]]\\) when \\(K=2^k\\). The distance i..."
                     ],
-                    "_code_href": "/code_qubits_into_qubits.html#ecc_qubits_into_qubits",
+                    "_code_href": "/code_qubits_into_qubits#ecc_qubits_into_qubits",
                     "_generation_level": 0
                 }
             },
@@ -86,7 +86,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes finite-dimensional Hilbert space into the Hilbert space of \\(\\ell^2\\)-normalizable functions on a group \\(G\\). Construction is based on nested subgroups \\(H\\subset K \\subset G\\), where \\(H,..."
                     ],
-                    "_code_href": "/code_group_gkp.html#ecc_group_gkp",
+                    "_code_href": "/code_group_gkp#ecc_group_gkp",
                     "_generation_level": 1
                 }
             },
@@ -97,7 +97,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes Hilbert space of \\(\\ell^2\\)-normalizable functions on a group \\(G_1\\) into that on a second-countable unimodular group \\(G_2\\). For finite \\(G_1\\) and \\(G_2=G^{\\times n}\\), can be denoted a..."
                     ],
-                    "_code_href": "/code_groups_into_groups.html#ecc_groups_into_groups",
+                    "_code_href": "/code_groups_into_groups#ecc_groups_into_groups",
                     "_generation_level": 0
                 }
             },
@@ -108,7 +108,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes finite-dimensional Hilbert space into the Hilbert space of \\(\\ell^2\\)-normalizable functions on the group \\(SO_3\\). Construction is based on nested subgroups \\(H\\subset K \\subset SO_3\\), wh..."
                     ],
-                    "_code_href": "/code_molecular.html#ecc_molecular",
+                    "_code_href": "/code_molecular#ecc_molecular",
                     "_generation_level": null
                 }
             },
@@ -119,7 +119,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space for some \\(q\\); has distance \\(d\\). Usually denoted as \\(((n,K,d))_q\\), or \\([[n,k,d]]_q\\) when \\(K=q^..."
                     ],
-                    "_code_href": "/code_qudits_into_qudits.html#ecc_qudits_into_qudits",
+                    "_code_href": "/code_qudits_into_qudits#ecc_qudits_into_qudits",
                     "_generation_level": 0
                 }
             },
@@ -130,7 +130,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "An \\((n,2^k,d)\\) linear code is denoted as \\([n,k,d]\\). Its codewords form a linear subspace, i.e., for any codewords \\(x,y\\), \\(x+y\\) is also a codeword. Often defined in terms of a generator matr..."
                     ],
-                    "_code_href": "/code_binary_linear.html#ecc_binary_linear",
+                    "_code_href": "/code_binary_linear#ecc_binary_linear",
                     "_generation_level": 1
                 }
             },
@@ -141,7 +141,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\) bitstrings (codewords) into bitstrings of length \\(n\\) and has distance \\(d\\). Usually denoted as \\((n,K,d)\\), or \\([n,k,d]\\) when \\(K=2^k\\). The distance is the number of nonzero ent..."
                     ],
-                    "_code_href": "/code_bits_into_bits.html#ecc_bits_into_bits",
+                    "_code_href": "/code_bits_into_bits#ecc_bits_into_bits",
                     "_generation_level": 0
                 }
             },
@@ -152,7 +152,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "\\([n,k,n-k+1]_q\\) linear code. Let \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) be \\(n\\) distinct nonzero elements of \\(GF(q)\\) for prime \\(q>n\\). Encodes \\(\\mu=\\{\\mu_0,\\cdots,\\mu_{k-1}\\}\\) into \\(\\{f_\\mu(\\alp..."
                     ],
-                    "_code_href": "/code_reed_solomon.html#ecc_reed_solomon",
+                    "_code_href": "/code_reed_solomon#ecc_reed_solomon",
                     "_generation_level": 1
                 }
             },
@@ -163,7 +163,7 @@ pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\) \\(q\\)-ary strings (codewords) into \\(q\\)-ary strings of length \\(n\\) and has distance \\(d\\). Usually denoted as \\((n,K,d)_q\\), or \\([n,k,d]_q\\) when \\(K=q^k\\). The distance is the num..."
                     ],
-                    "_code_href": "/code_q-ary_digits_into_q-ary_digits.html#ecc_q-ary_digits_into_q-ary_digits",
+                    "_code_href": "/code_q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits",
                     "_generation_level": 0
                 }
             }
