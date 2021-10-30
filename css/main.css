@@ -1,6 +1,4 @@
-/* Basic page layout */
-/* DON'T EDIT THIS FILE UNLESS YOU KNOW WHAT YOU ARE DOING OR ELSE
-   YOU'RE LOOKING FOR TROUBLE ! */
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 html,
 body {
   width: 100%;
@@ -87,7 +85,7 @@ body {
 }
 
 body, html {
-  font-family: "Helvetica Neue", "Arial", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 14px;
 }
 
