@@ -4,6 +4,11 @@ pretty_code_graph_setup = function()
 
     var main_element = document.getElementById('main');
 
+    // https://stackoverflow.com/a/69515082/1694896
+    var font_family = window.getComputedStyle(document.body).getPropertyValue('font-family');
+    // console.log('font_family=');
+    // console.log(font_family);
+
     codegraph.cy = cytoscape({
         // Main HTML DOM container
         container: main_element, //'cy-code-graph'),
@@ -34,6 +39,8 @@ pretty_code_graph_setup = function()
 
         // },
 
+        // layout: { name: 'preset' },
+
         layout: {
             // cf. https://github.com/iVis-at-Bilkent/cytoscape.js-fcose#api
             name: 'fcose',
@@ -62,7 +69,6 @@ pretty_code_graph_setup = function()
         //     name: 'cose-bilkent',
         // },
 
-
         style: [ // the stylesheet for the graph
             {
                 selector: 'node',
@@ -71,19 +77,19 @@ pretty_code_graph_setup = function()
                     'label': 'data(label)',
                     'color': '#7f3000',
                     'font-size': '14px',
-                    'font-family': '"Helvetica Neue", "Arial", sans-serif',
-                    'font-weight': '300'
+                    'font-family': font_family,
+                    'font-weight': '400'
                 }
             },
             {
-                selector: 'node[_generation_level=0]',
+                selector: 'node[_family_generation_level=0]',
                 style: {
                     'background-color': '#5e3834',
                     'label': 'data(label)',
                     'color': '#5e3834',
                     'font-size': '14px',
-                    'font-family': '"Helvetica Neue", "Arial", sans-serif',
-                    'font-weight': '300'
+                    'font-family': font_family,
+                    'font-weight': '400'
                 }
             },
 

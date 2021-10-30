@@ -1,3 +1,4 @@
+/* Automatically generated file. Changes will be overwritten. */
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 html,
 body {
@@ -86,7 +87,8 @@ body {
 
 body, html {
   font-family: "Source Sans Pro", sans-serif;
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.3em;
 }
 
 a, a:link, a:hover, a:active, a:visited {
@@ -102,6 +104,7 @@ a:hover {
 h1 {
   font-size: 30px;
   font-weight: 350;
+  line-height: 1.6em;
 }
 
 dl {
@@ -142,7 +145,7 @@ dd {
 }
 
 #sidebar h1 {
-  font-size: 1.1em;
+  font-size: 1em;
   font-weight: bold;
   margin-bottom: 0.5em;
 }
@@ -191,6 +194,7 @@ dd {
 .code-relations-list {
   list-style: none;
   padding: 0px;
+  margin: 0px;
 }
 
 a.code-info-corner-icon {

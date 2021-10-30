@@ -42,7 +42,7 @@
      href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/q-ary_digits/q-ary_digits_into_q-ary_digits.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
+<dd class="code-description">Encodes \(K\) states (codewords) in \(n\) \(q\)-ary coordinates and has distance \(d\). Usually denoted as \((n,K,d)_q\). The distance is the minimum Hamming distance between a pair of distinct codewords.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
@@ -58,6 +58,7 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/c/linear#ecc_linear">Linear code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
 </ul>
 </dd>
