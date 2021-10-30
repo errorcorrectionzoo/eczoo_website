@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Calderbank-Shor-Steane (CSS) code [error correction zoo]</title>
+  <title>Binary linear code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,29 +25,32 @@
   >
 
   <header id="header">
-    <h1>Calderbank-Shor-Steane (CSS) code</h1>
+    <h1>Binary linear code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_CSS">
+<dl class="ecc-code ecc-code-page" id="ecc_binary_linear">
 
 <dt>Name</dt>
-<dd class="code-name">Calderbank-Shor-Steane (CSS) code
+<dd class="code-name">Binary linear code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_CSS#ecc_CSS">&#167;</a>
+     href="/c/binary_linear#ecc_binary_linear">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/CSS.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/bits/binary_linear.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">An \((n,2^k,d)\) CSS code is usually denoted as \([[n,k,d]]\). Encoding is based on two binary linear codes, an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) with \(C_1^\perp \subseteq C_2\), such that \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\).</dd>
+<dd class="code-description">An \((n,2^k,d)\) linear code is denoted as \([n,k,d]\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(x+y\) is also a codeword. Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword labeled by a binary string \(v\), the corresponding encoded codeword is \(G^T v\).</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</dd>
+<dd class="code-protection">A classical code with distance \(d\) detects errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates. Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Generally, linear codes correct any error set such that no two elements of the set add up to a codeword.</dd>
 
 
+
+<dt>Notes</dt>
+<dd class="code-notes">Admits a parity check matrix \(H\), whose columns make up a maximal linearly independent set of vectors that are in the kernel of \(G\).</dd>
 
 
 
@@ -56,29 +59,21 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/code_qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
-  <li><span class="code-parents-1-code"><a href="/code_stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-\(X\) or only-\(Z\).)</span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>  </li>
 </ul>
 </dd>
 
-<dt>Parent of</dt>
-<dd class="code-parent-of">
 
 
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_toric#ecc_toric">Kitaev&#39;s toric code</a></span>    <span class="code-parent-of-1-detail">(Plaquette (\(Z\)) and star (\(X\)) operators are stabilizer generators.)</span>  </li>
+<dt>Cousin of</dt>
+<dd class="code-cousin-of">
+
+
+<ul class="code-relations-list code-cousin-of-list">
+  <li><span class="code-cousin-of-1-code"><a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a></span>    <span class="code-cousin-of-1-detail">(Construction uses two classical linear codes.)</span>  </li>
 </ul>
 </dd>
-
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
-
-
-<ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/code_binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Construction uses two classical linear codes.)</span>  </li>
-</ul>
-</dd>
-
 
 
 </dl>

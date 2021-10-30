@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Binary code [error correction zoo]</title>
+  <title>q-ary code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,27 +25,28 @@
   >
 
   <header id="header">
-    <h1>Binary code</h1>
+    <h1>q-ary code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_bits_into_bits">
+<dl class="ecc-code ecc-code-page" id="ecc_q-ary_digits_into_q-ary_digits">
 
 <dt>Name</dt>
-<dd class="code-name">Binary code
+<dd class="code-name">q-ary code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_bits_into_bits#ecc_bits_into_bits">&#167;</a>
+     href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/bits/bits_into_bits.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/q-ary_digits/q-ary_digits_into_q-ary_digits.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\) bitstrings (codewords) into bitstrings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)\), or \([n,k,d]\) when \(K=2^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
+<dd class="code-description">Encodes \(K\) \(q\)-ary strings (codewords) into \(q\)-ary strings of length \(n\) and has distance \(d\). Usually denoted as \((n,K,d)_q\), or \([n,k,d]_q\) when \(K=q^k\). The distance is the number of nonzero entries in the (nonzero) codeword with the smallest such number.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</dd>
+
 
 
 
@@ -57,7 +58,7 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_binary_linear#ecc_binary_linear">Binary linear code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
 </ul>
 </dd>
 

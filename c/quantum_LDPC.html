@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Reed-Solomon code [error correction zoo]</title>
+  <title>Quantum low-density parity-check (LDPC) code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,40 +25,39 @@
   >
 
   <header id="header">
-    <h1>Reed-Solomon code</h1>
+    <h1>Quantum low-density parity-check (LDPC) code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_reed_solomon">
+<dl class="ecc-code ecc-code-page" id="ecc_quantum_LDPC">
 
 <dt>Name</dt>
-<dd class="code-name">Reed-Solomon code
+<dd class="code-name">Quantum low-density parity-check (LDPC) code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_reed_solomon#ecc_reed_solomon">&#167;</a>
+     href="/c/quantum_LDPC#ecc_quantum_LDPC">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/q-ary_digits/reed_solomon.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/quantum_LDPC.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">\([n,k,n-k+1]_q\) linear code. Let \(\{\alpha_1,\cdots,\alpha_n\}\) be \(n\) distinct nonzero elements of \(GF(q)\) for prime \(q&gt;n\). Encodes \(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\) into \(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\) with polynomial \(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\).</dd>
+<dd class="code-description"></dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Corrects erasures on \(n-k\) coordinates.</dd>
+<dd class="code-protection">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</dd>
 
 
 
 
-<dt>Realizations</dt>
-<dd class="code-realizations">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</dd>
+
 
 <dt>Parent(s)</dt>
 <dd class="code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/code_q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
 </ul>
 </dd>
 

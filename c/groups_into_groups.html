@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Qubit code [error correction zoo]</title>
+  <title>Group code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,27 +25,28 @@
   >
 
   <header id="header">
-    <h1>Qubit code</h1>
+    <h1>Group code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qubits_into_qubits">
+<dl class="ecc-code ecc-code-page" id="ecc_groups_into_groups">
 
 <dt>Name</dt>
-<dd class="code-name">Qubit code
+<dd class="code-name">Group code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_qubits_into_qubits#ecc_qubits_into_qubits">&#167;</a>
+     href="/c/groups_into_groups#ecc_groups_into_groups">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/qubits_into_qubits.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/groups_into_groups.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(2^n\)-dimensional (\(n\)-qubit) Hilbert space; has distance \(d\). Usually denoted as \(((n,K,d))\), or \([[n,k,d]]\) when \(K=2^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on a group \(G_1\) into that on a second-countable unimodular group \(G_2\). For finite \(G_1\) and \(G_2=G^{\times n}\), can be denoted as \(((n,|G_1|))_G\). Furthermore, when \(K=|G|^k\), can be denoted \([[n,k]]_G\). Ideal codewords may not be normalizable, depending on whether \(G_2\) is continuous and/or noncompact, so approximate versions have to be constructed.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</dd>
+<dd class="code-protection"></dd>
+
 
 
 
@@ -57,11 +58,7 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_toric#ecc_toric">Kitaev&#39;s toric code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_stabilizer#ecc_stabilizer">Stabilizer code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/code_quantum_LDPC#ecc_quantum_LDPC">Quantum low-density parity-check (LDPC) code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a></span>  </li>
 </ul>
 </dd>
 

@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Group code [error correction zoo]</title>
+  <title>Group GKP codes [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,39 +25,48 @@
   >
 
   <header id="header">
-    <h1>Group code</h1>
+    <h1>Group GKP codes</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_groups_into_groups">
+<dl class="ecc-code ecc-code-page" id="ecc_group_gkp">
 
 <dt>Name</dt>
-<dd class="code-name">Group code
+<dd class="code-name">Group GKP codes
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_groups_into_groups#ecc_groups_into_groups">&#167;</a>
+     href="/c/group_gkp#ecc_group_gkp">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/groups_into_groups.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/group_gkp.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on a group \(G_1\) into that on a second-countable unimodular group \(G_2\). For finite \(G_1\) and \(G_2=G^{\times n}\), can be denoted as \(((n,|G_1|))_G\). Furthermore, when \(K=|G|^k\), can be denoted \([[n,k]]_G\). Ideal codewords may not be normalizable, depending on whether \(G_2\) is continuous and/or noncompact, so approximate versions have to be constructed.</dd>
+<dd class="code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of \(\ell^2\)-normalizable functions on a group \(G\). Construction is based on nested subgroups \(H\subset K \subset G\), where \(H,K\) are finite. The \(|K|/|H|\)-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \(H\) in \(K\).</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection"></dd>
+<dd class="code-protection">Protects against generalized bit-flip errors \(g\in G\) that are inside the fundamental domain of \(G/K\). Protection against phase-flip errors determined by branching rules of irreps of \(G\) into those of \(K\), and further into those of \(H\).</dd>
 
 
 
 
 
+
+<dt>Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/c/groups_into_groups#ecc_groups_into_groups">Group code</a></span>  </li>
+</ul>
+</dd>
 
 <dt>Parent of</dt>
 <dd class="code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/code_group_gkp#ecc_group_gkp">Group GKP codes</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/molecular#ecc_molecular">Molecular codes</a></span>  </li>
 </ul>
 </dd>
 

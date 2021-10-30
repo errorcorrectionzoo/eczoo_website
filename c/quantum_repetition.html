@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Qudit-into-oscillator code [error correction zoo]</title>
+  <title>Quantum repetition code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,34 +25,54 @@
   >
 
   <header id="header">
-    <h1>Qudit-into-oscillator code</h1>
+    <h1>Quantum repetition code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_oscillators">
+<dl class="ecc-code ecc-code-page" id="ecc_quantum_repetition">
 
 <dt>Name</dt>
-<dd class="code-name">Qudit-into-oscillator code
+<dd class="code-name">Quantum repetition code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/code_qudits_into_oscillators#ecc_qudits_into_oscillators">&#167;</a>
+     href="/c/quantum_repetition#ecc_quantum_repetition">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/oscillators/qudits_into_oscillators.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/quantum_repetition.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</dd>
+<dd class="code-description">Encodes \(1\) qubit into \(n\) qubits according to \(|0\rangle\to|0\rangle^{\otimes n}\) and \(|1\rangle\to|1\rangle^{\otimes n}\).</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection"></dd>
+<dd class="code-protection">Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits. Cannot detect any phase-flip errors \(Z\).</dd>
 
 
 
+<dt>Notes</dt>
+<dd class="code-notes">Logical qubit spanned by GHz (a.k.a. cat) states \(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\), which are used in Shor error correction.</dd>
 
 
 
+<dt>Parent(s)</dt>
+<dd class="code-parents">
 
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-\(X\) or only-\(Z\).)</span>  </li>
+</ul>
+</dd>
+
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li><span class="code-cousins-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Construction uses two classical linear codes.)</span>  </li>
+</ul>
+</dd>
 
 
 
