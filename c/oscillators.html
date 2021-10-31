@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Qudit code [error correction zoo]</title>
+  <title>Oscillator code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,34 +25,43 @@
   >
 
   <header id="header">
-    <h1>Qudit code</h1>
+    <h1>Oscillator code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_qudits">
+<dl class="ecc-code ecc-code-page" id="ecc_oscillators">
 
 <dt>Name</dt>
-<dd class="code-name">Qudit code
+<dd class="code-name">Oscillator code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
+     href="/c/oscillators#ecc_oscillators">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qudits/qudits_into_qudits.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/oscillators/oscillators.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space for some \(q\); has distance \(d\). Usually denoted as \(((n,K,d))_q\), or \([[n,k,d]]_q\) when \(K=q^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</dd>
+<dd class="code-description">Encodes logical Hilbert space, finite- or infinite-dimensional, into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</dd>
 
 
 
 
+<dt>Notes</dt>
+<dd class="code-notes">.</dd>
 
 
 
+
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a></span>    <span class="code-parent-of-1-detail">(Oscillator code with finite-dimensional logical subspace.)</span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a></span>    <span class="code-parent-of-1-detail">(Oscillator code with infinite-dimensional logical subspace.)</span>  </li>
+</ul>
+</dd>
 
 
 

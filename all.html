@@ -53,7 +53,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>.
+      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>.
   </span>
 </div>
 
@@ -64,11 +64,11 @@
   <span class="short-code-info">Protection: Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>,       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
+      <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>.
+      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -79,11 +79,11 @@
 
 <div class="ecc-code" id="ecc_group_gkp">
   <span class="short-code-name"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a></span>
-  <span class="short-code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of \(\ell^2\)-normalizable functions on a group \(G\). Construction is based on nested subgroups \(H\subset K \subset G\), where \(H,K\) are finite. The \(|K|/|H|\)-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \(H\) in \(K\).</span>
+  <span class="short-code-description">Group code whose construction is based on nested subgroups \(H\subset K \subset G\). Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \(H\) in \(K\), and can be finite- or infinite-dimensional.</span>
   <span class="short-code-info">Protection: Protects against generalized bit-flip errors \(g\in G\) that are inside the fundamental domain of \(G/K\). Protection against phase-flip errors determined by branching rules of irreps of \(G\) into those of \(K\), and further into those of \(H\).</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/groups_into_groups#ecc_groups_into_groups">Group code</a>.
+      <a href="/c/groups#ecc_groups">Group code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -92,10 +92,9 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_groups_into_groups">
-  <span class="short-code-name"><a href="/c/groups_into_groups#ecc_groups_into_groups">Group code</a></span>
-  <span class="short-code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on a group \(G_1\) into that on a second-countable unimodular group \(G_2\). For finite \(G_1\) and \(G_2=G^{\times n}\), can be denoted as \(((n,|G_1|))_G\). Furthermore, when \(K=|G|^k\), can be denoted \([[n,k]]_G\). Ideal codewords may not be normalizable, depending on whether \(G_2\) is continuous and/or noncompact, so approximate versions have to be constructed.</span>
-  <span class="short-code-info">Protection: </span>
+<div class="ecc-code" id="ecc_groups">
+  <span class="short-code-name"><a href="/c/groups#ecc_groups">Group code</a></span>
+  <span class="short-code-description">Encodes a logical Hilbert space, finite- or infinite-dimensional, into the Hilbert space of \(\ell^2\)-normalizable functions on a second-countable unimodular group. For \(K\)-dimensional logical subspace and for groups \(G^{\times n}\), can be denoted as \(((n,K))_G\). When the logical subspace is the Hilbert space of \(\ell^2\)-normalizable functions on \(G^{\times k}\), can be denoted as \([[n,k]]_G\). Ideal codewords may not be normalizable, depending on whether \(G\) is continuous and/or noncompact, so approximate versions have to be constructed.</span>
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a>.
@@ -103,24 +102,26 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_toric">
-  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>
-  <span class="short-code-description">A family of stabilizer codes whose generators are few-body \(X\)-type Pauli strings (stars) and few-body \(Z\)-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an arbitrary orientable 2D surface <a href="#cite-1" class="cite"><span class="citation-label">[1]</span></a>.</span>
-  <span class="short-code-info">Protection: </span>
+<div class="ecc-code" id="ecc_homological">
+  <span class="short-code-name"><a href="/c/homological#ecc_homological">Homological code</a></span>
+  <span class="short-code-description">Often called a topological code.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>,       <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
+      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>.
   </span>
 </div>
 
 
-<div class="ecc-code" id="ecc_linear">
-  <span class="short-code-name"><a href="/c/linear#ecc_linear">Linear code</a></span>
-  <span class="short-code-description">An \((n,2^k,d)_q\) linear code is denoted as \([n,k,d]_q\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(\alpha x+ \beta y\) is also a codeword for any \(q\)-ary digits \(\alpha,\beta\). Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword \(x\), the corresponding encoded codeword is \(G^T x\).</span>
-  <span class="short-code-info">Protection: Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+<div class="ecc-code" id="ecc_toric">
+  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>
+  <span class="short-code-description">A family of stabilizer codes whose generators are few-body \(X\)-type Pauli strings (stars) and few-body \(Z\)-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an arbitrary orientable 2D surface <a href="#cite-1" class="cite"><span class="citation-label">[1]</span></a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>.
   </span>
 </div>
 
@@ -136,10 +137,23 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_oscillators">
+  <span class="short-code-name"><a href="/c/oscillators#ecc_oscillators">Oscillator code</a></span>
+  <span class="short-code-description">Encodes logical Hilbert space, finite- or infinite-dimensional, into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>,       <a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_oscillators_into_oscillators">
-  <span class="short-code-name"><a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator code</a></span>
+  <span class="short-code-name"><a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a></span>
   <span class="short-code-description">Encodes Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^k\) into that on \(\mathbb{R}^n\). Usually denoted as \(((n,k))_{\mathbb{R}}\).</span>
-  <span class="short-code-info">Protection: </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/oscillators#ecc_oscillators">Oscillator code</a>.
+  </span>
 </div>
 
 
@@ -149,7 +163,7 @@
   <span class="short-code-info">Protection: Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>.
+      <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
   </span>
 </div>
 
@@ -160,11 +174,7 @@
   <span class="short-code-info">Protection: Detects bit-flip errors \(X\) on \(\left\lfloor (n-1)/2\right\rfloor\) qubits. Cannot detect any phase-flip errors \(Z\).</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>,       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>.
   </span>
 </div>
 
@@ -175,7 +185,7 @@
   <span class="short-code-info">Protection: Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>,       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>,       <a href="/c/quantum_LDPC#ecc_quantum_LDPC">Quantum low-density parity-check (LDPC) code</a>.
+      <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
   </span>
 </div>
 
@@ -190,7 +200,10 @@
 <div class="ecc-code" id="ecc_qudits_into_oscillators">
   <span class="short-code-name"><a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a></span>
   <span class="short-code-description">Encodes \(K\)-dimensional Hilbert space into Hilbert space of \(\ell^2\)-normalizable functions on \(\mathbb{R}^n\).</span>
-  <span class="short-code-info">Protection: </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/oscillators#ecc_oscillators">Oscillator code</a>.
+  </span>
 </div>
 
 
@@ -200,7 +213,7 @@
   <span class="short-code-info">Protection: Corrects erasures on \(n-k\) coordinates.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+      <a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a>.
   </span>
 </div>
 
@@ -208,14 +221,28 @@
 <div class="ecc-code" id="ecc_stabilizer">
   <span class="short-code-name"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>
   <span class="short-code-description">An \(n,2^k,d\) stabilizer is usually denoted as \([[n,k,d]]\). Logical subspace is the joint \(+1\) eigenspace of a set of commuting Pauli operators forming the code&#39;s stabilizer group.</span>
-  <span class="short-code-info">Protection: </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>.
+      <a href="/c/CSS#ecc_CSS">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/quantum_LDPC#ecc_quantum_LDPC">Quantum low-density parity-check (LDPC) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_linear">
+  <span class="short-code-name"><a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a></span>
+  <span class="short-code-description">An \((n,2^k,d)_q\) linear code is denoted as \([n,k,d]_q\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(\alpha x+ \beta y\) is also a codeword for any \(q\)-ary digits \(\alpha,\beta\). Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword \(x\), the corresponding encoded codeword is \(G^T x\).</span>
+  <span class="short-code-info">Protection: Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
   </span>
 </div>
 
@@ -226,7 +253,7 @@
   <span class="short-code-info">Protection: Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/linear#ecc_linear">Linear code</a>,       <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
+      <a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a>.
   </span>
 </div>
 
@@ -256,10 +283,9 @@
       </ul>
       <h1>Codes</h1>
       <ul class="navlinks">
-        <li><a href="/qudits_into_oscillators">Qudit-into-oscillator code</a></li>
-        <li><a href="/oscillators_into_oscillators">Oscillator code</a></li>
+        <li><a href="/oscillators">Oscillator code</a></li>
         <li><a href="/qubits_into_qubits">Qubit code</a></li>
-        <li><a href="/groups_into_groups">Group code</a></li>
+        <li><a href="/groups">Group code</a></li>
         <li><a href="/qudits_into_qudits">Qudit code</a></li>
         <li><a href="/bits_into_bits">Binary code</a></li>
         <li><a href="/q-ary_digits_into_q-ary_digits">q-ary code</a></li>

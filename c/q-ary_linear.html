@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Qudit code [error correction zoo]</title>
+  <title>\(q\)-ary linear code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,34 +25,52 @@
   >
 
   <header id="header">
-    <h1>Qudit code</h1>
+    <h1>\(q\)-ary linear code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_qudits">
+<dl class="ecc-code ecc-code-page" id="ecc_q-ary_linear">
 
 <dt>Name</dt>
-<dd class="code-name">Qudit code
+<dd class="code-name">\(q\)-ary linear code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
+     href="/c/q-ary_linear#ecc_q-ary_linear">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qudits/qudits_into_qudits.yml">&nbsp;</a></dd>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/q-ary_digits/q-ary_linear.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes \(K\)-dimensional Hilbert space into a \(q^n\)-dimensional (\(n\)-qudit) Hilbert space for some \(q\); has distance \(d\). Usually denoted as \(((n,K,d))_q\), or \([[n,k,d]]_q\) when \(K=q^k\). The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">An \((n,2^k,d)_q\) linear code is denoted as \([n,k,d]_q\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(\alpha x+ \beta y\) is also a codeword for any \(q\)-ary digits \(\alpha,\beta\). Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword \(x\), the corresponding encoded codeword is \(G^T x\).</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to \(d-1\) qubits, and corrects erasure errors on up to \(d-1\) qubits.</dd>
+<dd class="code-protection">Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</dd>
 
 
 
+<dt>Notes</dt>
+<dd class="code-notes">Admits a parity check matrix \(H\), whose columns make up a maximal linearly independent set of vectors that are in the kernel of \(G\).</dd>
 
 
 
+<dt>Parent(s)</dt>
+<dd class="code-parents">
 
+
+<ul class="code-relations-list code-parents-list">
+  <li><span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a></span>  </li>
+</ul>
+</dd>
+
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
+</ul>
+</dd>
 
 
 

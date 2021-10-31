@@ -38,18 +38,22 @@
   <span class="short-code-info">Protection: Detects errors on up to \(d-1\) coordinates, corrects erasure errors on up to \(d-1\) coordinates, and corrects general errors on up to \(\left\lfloor (d-1)/2 \right\rfloor\) coordinates.</span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/linear#ecc_linear">Linear code</a>,       <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
+      <a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a>.
   </span>
 </div>
 
 
-<div class="ecc-code" id="ecc_linear">
-  <span class="short-code-name"><a href="/c/linear#ecc_linear">Linear code</a></span>
+<div class="ecc-code" id="ecc_q-ary_linear">
+  <span class="short-code-name"><a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a></span>
   <span class="short-code-description">An \((n,2^k,d)_q\) linear code is denoted as \([n,k,d]_q\). Its codewords form a linear subspace, i.e., for any codewords \(x,y\), \(\alpha x+ \beta y\) is also a codeword for any \(q\)-ary digits \(\alpha,\beta\). Often defined in terms of a generator matrix \(G\), whose rows form a basis for the subspace. Given a codeword \(x\), the corresponding encoded codeword is \(G^T x\).</span>
   <span class="short-code-info">Protection: Distance \(d\) of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
   </span>
 </div>
 
@@ -60,7 +64,7 @@
   <span class="short-code-info">Protection: Corrects erasures on \(n-k\) coordinates.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+      <a href="/c/q-ary_linear#ecc_q-ary_linear">\(q\)-ary linear code</a>.
   </span>
 </div>
 
@@ -79,10 +83,9 @@
       </ul>
       <h1>Codes</h1>
       <ul class="navlinks">
-        <li><a href="/qudits_into_oscillators">Qudit-into-oscillator code</a></li>
-        <li><a href="/oscillators_into_oscillators">Oscillator code</a></li>
+        <li><a href="/oscillators">Oscillator code</a></li>
         <li><a href="/qubits_into_qubits">Qubit code</a></li>
-        <li><a href="/groups_into_groups">Group code</a></li>
+        <li><a href="/groups">Group code</a></li>
         <li><a href="/qudits_into_qudits">Qudit code</a></li>
         <li><a href="/bits_into_bits">Binary code</a></li>
         <li><a href="/q-ary_digits_into_q-ary_digits">q-ary code</a></li>
