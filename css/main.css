@@ -197,6 +197,11 @@ dd {
   margin: 0px;
 }
 
+.code-introduced {
+  display: inline-block;
+  margin-left: 0.5em;
+}
+
 a.code-info-corner-icon {
   display: inline-block;
   float: right;
@@ -228,12 +233,20 @@ dd.code-name {
   font-weight: bold;
 }
 
-.citation-label {
+.emph, .textit {
+  font-style: italic;
+}
+
+.textbf {
+  font-weight: bold;
+}
+
+.cite {
   font-size: 0.8em;
   vertical-align: top;
 }
 
-.footnote-label {
+.footnote {
   font-size: 0.8em;
   vertical-align: top;
 }

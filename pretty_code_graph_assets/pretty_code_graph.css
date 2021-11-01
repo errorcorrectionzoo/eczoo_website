@@ -17,14 +17,14 @@
   box-shadow: 10px 7px 10px rgba(0, 0, 0, 0.3);
 }
 
-#code-graph-tooltip .code-name {
+#code-graph-tooltip .code-name, #code-graph-tooltip .domain-name, #code-graph-tooltip .kingdom-name {
   display: inline-block;
   padding: 3px;
   margin-right: 1em;
   font-weight: 500;
 }
 
-#code-graph-tooltip .code-description {
+#code-graph-tooltip .code-description, #code-graph-tooltip .domain-description {
   display: inline;
   padding-bottom: 3px;
   font-style: italic;
@@ -37,11 +37,15 @@
   width: 1em;
 }
 
-#code-graph-tooltip .code-link {
+#code-graph-tooltip .code-link, #code-graph-tooltip .domain-link, #code-graph-tooltip .kingdom-link {
   display: inline-block;
   margin-top: 5px;
   font-style: italic;
   font-size: 0.95em;
+}
+
+#code-graph-tooltip .kingdom-info {
+  display: block;
 }
 
 #code-graph-tooltip a.link-button {

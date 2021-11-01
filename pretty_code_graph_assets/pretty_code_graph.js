@@ -61,7 +61,8 @@ pretty_code_graph_setup = function()
 
             // fixed node constraints -- root codes
             fixedNodeConstraint: pretty_code_graph_data.fixed_node_constraint,
-            alignmentConstraint: pretty_code_graph_data.alignment_constraint
+            alignmentConstraint: pretty_code_graph_data.alignment_constraint,
+            relativePlacementConstraint: pretty_code_graph_data.relative_placement_constraint
         },
 
         // layout: {
@@ -70,6 +71,9 @@ pretty_code_graph_setup = function()
         // },
 
         style: [ // the stylesheet for the graph
+
+            // style nodes:
+
             {
                 selector: 'node',
                 style: {
@@ -82,16 +86,23 @@ pretty_code_graph_setup = function()
                 }
             },
             {
-                selector: 'node[_family_generation_level=0]',
+                selector: 'node[_is_domain=1]',
                 style: {
-                    'background-color': '#5e3834',
-                    'label': 'data(label)',
-                    'color': '#5e3834',
-                    'font-size': '14px',
-                    'font-family': font_family,
-                    'font-weight': '400'
+                    'shape': 'round-rectangle',
+                    'background-color': '#00007f',
+                    'color': '#00007f',
                 }
             },
+            {
+                selector: 'node[_is_kingdom=1]',
+                style: {
+                    'shape': 'diamond',
+                    'background-color': '#5e3834',
+                    'color': '#5e3834',
+                }
+            },
+
+            // style edges:
 
             {
                 selector: 'edge',
@@ -146,7 +157,16 @@ pretty_code_graph_setup = function()
     window.pretty_code_graph_close_tooltip = function() {
         tooltip_element.style.display = 'none';
     };
-    window.pretty_code_graph_show_tooltip = function() {
+    window.pretty_code_graph_show_tooltip = function(node_pos) {
+        var base_pos = {
+            x: main_element.offsetLeft,
+            y: main_element.offsetTop
+        };
+        virtualElement.getBoundingClientRect =
+            generateGetBoundingClientRect(base_pos.x + node_pos.x - window.pageXOffset,
+                                          base_pos.y + node_pos.y - window.pageYOffset);
+        codegraph.popper_obj.update();
+
         tooltip_element.style.display = 'block';
     };
 
@@ -187,40 +207,52 @@ pretty_code_graph_setup = function()
         // of the event (core or element)
         var eventTarget = event.target;
 
-        var obj_id = eventTarget.data().id;
-        if ( obj_id && obj_id.startsWith('c_') ) {
-            // tap on a code node
-            //
-            // SURELY there's a better way to detect we've taped on a node object ?!?!
-            var node = eventTarget;
+        if ( ! eventTarget.isNode() ) {
+            // tap on an edge or on the background -- hide pop-up
+            window.pretty_code_graph_close_tooltip();
+            return
+        }
 
-            //
+        var node = eventTarget;
+        var node_data = node.data();
+        if ( node_data && node_data._is_domain ) {
+
             // update tooltip contents
-            //
-            var node_data = node.data();
             tooltip_contents_element.innerHTML =
+                "<span class=\"domain-name\">" + node_data.label + "</span>"
+                + "<span class=\"domain-description\">" + node_data._description + "</span>"
+                + "<span class=\"spacer\"> </span><a class=\"domain-link\" href=\""
+                + node_data._page_href + "\">go to domain →</a>"
+            ;
+
+            // update tooltip position & show it
+            var node_pos = node.renderedPosition();
+            window.pretty_code_graph_show_tooltip(node_pos);
+
+        } else {
+            // clicked on code node
+
+            // update tooltip contents
+            var html =
                 "<span class=\"code-name\">" + node_data.label + "</span>"
                 + "<span class=\"code-description\">" + node_data._description + "</span>"
                 + "<span class=\"spacer\"> </span><a class=\"code-link\" href=\""
-                        + node_data._code_href + "\">go to code →</a>"
+                + node_data._code_href + "\">go to code →</a>"
             ;
+            if (node_data && node_data._is_kingdom) {
+                html += "<span class=\"kingdom-info\">"
+                    + "<span class=\"kingdom-name\">This code defines the "
+                    + node_data._kingdom_name + "</span><span class=\"spacer\"> </span>"
+                    + "<a class=\"kingdom-link\" href=\""
+                    + node_data._kingdom_href + "\">go to kingdom →</a>"
+                    + "</span>"
+                ;
+            }
+            tooltip_contents_element.innerHTML = html;
 
-            //
             // update tooltip position & show it
-            //
-            var base_pos = {
-                x: main_element.offsetLeft,
-                y: main_element.offsetTop
-            };
-            var pos = node.renderedPosition();
-            virtualElement.getBoundingClientRect =
-                generateGetBoundingClientRect(base_pos.x + pos.x - window.pageXOffset,
-                                              base_pos.y + pos.y - window.pageYOffset);
-            codegraph.popper_obj.update();
-            window.pretty_code_graph_show_tooltip();
-        } else {
-            // tap on an edge or on the background -- hide pop-up
-            window.pretty_code_graph_close_tooltip();
+            var node_pos = node.renderedPosition();
+            window.pretty_code_graph_show_tooltip(node_pos);
         }
     });
 

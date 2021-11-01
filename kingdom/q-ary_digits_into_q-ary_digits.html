@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title><span class="inline-math">\(q\)</span>-ary Digits Kingdom [error correction zoo]</title>
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+
+  <script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+</head>
+<body>
+<div
+  id="bodycontents"
+  class=""
+  >
+
+  <header id="header">
+    <h1><span class="inline-math">\(q\)</span>-ary Digits Kingdom</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+<p>Welcome to the <span class="inline-math"><span class="inline-math">\(q\)</span></span>-ary Digits Kingdom.</p>
+
+
+
+
+<div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
+  <span class="short-code-name"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a></span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_linear">
+  <span class="short-code-name"><a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits">q-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a></span>
+  <span class="short-code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
+  <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+</div>
+
+
+
+
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/pretty_code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/groups">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contributors">Acknowledgments</a></li>
+      </ul>
+      <h1>Additional resources</h1>
+      <ul class="navlinks">
+        <li>…</li>
+      </ul>
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+      Imprint, etc.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

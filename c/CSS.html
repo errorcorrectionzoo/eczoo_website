@@ -31,22 +31,21 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_CSS">
+<dl class="ecc-code ecc-code-page" id="ecc_css">
 
 <dt>Name</dt>
 <dd class="code-name">Calderbank-Shor-Steane (CSS) code
   <a class="code-info-corner-icon code-self-permalink"
-     href="/c/CSS#ecc_CSS">&nbsp;</a>
+     href="/c/css#ecc_css">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
      href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/CSS.yml">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">An \((n,2^k,d)\) CSS code is usually denoted as \([[n,k,d]]\). Encoding is based on two binary linear codes, an \([n,k_1,d_1]\) code \(C_1\) and \([n,k_2,d_2]\) code \(C_2\) with \(C_1^\perp \subseteq C_2\), such that \(k=k_1+k_2-n\) and \(d=\min\{d_1,d_2\}\).</dd>
+<dd class="code-description">An <span class="inline-math">\((n,2^k,d)\)</span> CSS code is usually denoted as <span class="inline-math">\([[n,k,d]]\)</span>. Encoding is based on two <a href="/c/binary_linear#ecc_binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_1,d_1]\)</span> code <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\([n,k_2,d_2]\)</span> code <span class="inline-math">\(C_2\)</span> with <span class="inline-math">\(C_1^\perp \subseteq C_2\)</span>, such that <span class="inline-math">\(k=k_1+k_2-n\)</span> and <span class="inline-math">\(d=\min\{d_1,d_2\}\)</span>.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects errors on \(d-1\) qubits, corrects errors on \(\left\lfloor (d-1)/2 \right\rfloor\) qubits.</dd>
-
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
 
 
 
@@ -57,7 +56,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-\(X\) or only-\(Z\).)</span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only-<span class="inline-math">\(X\)</span> or only-<span class="inline-math">\(Z\)</span>.)</span>  </li>
 </ul>
 </dd>
 
@@ -66,7 +65,7 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>    <span class="code-parent-of-1-detail">(Plaquette (\(Z\)) and star (\(X\)) operators are stabilizer generators.)</span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>    <span class="code-parent-of-1-detail">(Plaquette (<span class="inline-math">\(Z\)</span>) and star (<span class="inline-math">\(X\)</span>) operators are stabilizer generators.)</span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/homological#ecc_homological">Homological code</a></span>  </li>
 </ul>
@@ -91,27 +90,32 @@
 
   <nav id="sidebar">
     <div class="sidebarbox">
-      <h1>Pages</h1>
+      <!--<h1>Pages</h1>-->
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/pretty_code_graph">Code graph</a></li>
-        <li><a href="/about">About</a></li>
+        <li><a href="/all">All codes</a></li>
       </ul>
-      <h1>Codes</h1>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
       <ul class="navlinks">
-        <li><a href="/oscillators">Oscillator code</a></li>
-        <li><a href="/qubits_into_qubits">Qubit code</a></li>
-        <li><a href="/groups">Group code</a></li>
-        <li><a href="/qudits_into_qudits">Qudit code</a></li>
-        <li><a href="/bits_into_bits">Binary code</a></li>
-        <li><a href="/q-ary_digits_into_q-ary_digits">q-ary code</a></li>
-        <li><a href="/all">Index of all codes</a></li>
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/groups">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contributors">Acknowledgments</a></li>
       </ul>
       <h1>Additional resources</h1>
-      <h1>Code tables</h1>
-      <h1>Acknowledgments</h1>
       <ul class="navlinks">
-        <li><a href="/contributors">Contributors</a></li>
+        <li>…</li>
       </ul>
     </div>
   </nav><!-- #sidebar -->
