@@ -44,7 +44,7 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
     console.log(code_schema);
 
     var cur_code_info = all_codes_info[code_id];
-    console.log(cur_code_info)
+    console.log(cur_code_info); // is undefined if no code was set
 
     var editor = new JSONEditor(
         install_in_element,

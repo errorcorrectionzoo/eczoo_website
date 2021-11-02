@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Group Kingdom [error correction zoo]</title>
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+
+  <script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+
+</head>
+<body>
+<div
+  id="bodycontents"
+  class=""
+  >
+
+  <header id="header">
+    <h1>Group Kingdom</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+<p>Welcome to the Group Kingdom.</p>
+
+
+
+
+<div class="ecc-code" id="ecc_group_quantum">
+  <span class="short-code-name"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>
+  <span class="short-code-description">Encodes a logical Hilbert space, finite- or infinite-dimensional, into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on a second-countable unimodular group. For <span class="inline-math">\(K\)</span>-dimensional logical subspace and for groups <span class="inline-math">\(G^{\times n}\)</span>, can be denoted as <span class="inline-math">\(((n,K))_G\)</span>. When the logical subspace is the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(G^{\times k}\)</span>, can be denoted as <span class="inline-math">\([[n,k]]_G\)</span>. Ideal codewords may not be normalizable, depending on whether <span class="inline-math">\(G\)</span> is continuous and/or noncompact, so approximate versions have to be constructed.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_group_gkp">
+  <span class="short-code-name"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a><span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span></span>
+  <span class="short-code-description">Group code whose construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset G\)</span>. Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>, and can be finite- or infinite-dimensional.</span>
+  <span class="short-code-info">Protection: Protects against generalized bit-flip errors <span class="inline-math">\(g\in G\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/molecular#ecc_molecular">Molecular codes</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_molecular">
+  <span class="short-code-name"><a href="/c/molecular#ecc_molecular">Molecular codes</a><span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span></span>
+  <span class="short-code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on the group <span class="inline-math">\(SO_3\)</span>. Construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset SO_3\)</span>, where <span class="inline-math">\(H,K\)</span> are finite. The <span class="inline-math">\(|K|/|H|\)</span>-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>.</span>
+  <span class="short-code-info">Protection: Protects against generalized bit-flip errors <span class="inline-math">\(g\in SO_3\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a>.
+  </span>
+</div>
+
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-1">[1]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="arxiv-link">arXiv:1911.00099</a>
+        
+      </dd>
+    
+    </dl>
+   </div>
+
+
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contributors">Acknowledgments</a></li>
+        <li><a href="/edit_code">Add new code</a></li>
+      </ul>
+      <h1>Additional resources</h1>
+      <ul class="navlinks">
+        <li>…</li>
+      </ul>
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+      Imprint, etc.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

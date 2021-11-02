@@ -37,11 +37,36 @@
 
 <div class="ecc-code" id="ecc_qudits_into_qudits">
   <span class="short-code-name"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space for some <span class="inline-math">\(q\)</span>; has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\(((n,K,d))_q\)</span>, or <span class="inline-math">\([[n,k,d]]_q\)</span> when <span class="inline-math">\(K=q^k\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
-  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits.</span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance.</span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a>.
+  </span>
 </div>
 
 
+<div class="ecc-code" id="ecc_qudit_stabilizer">
+  <span class="short-code-name"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a><span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,2^k,d))_q\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(q^{n-k}\)</span> commuting qudit Pauli operators forming the code&#39;s stabilizer group. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a>.
+  </span>
+</div>
+
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-1">[1]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="arxiv-link">arXiv:quant-ph/9705052</a>
+        
+      </dd>
+    
+    </dl>
+   </div>
 
 
 
@@ -66,12 +91,13 @@
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
         <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
         <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
-        <li><a href="/kingdom/groups">Group Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">
         <li><a href="/about">About</a></li>
         <li><a href="/contributors">Acknowledgments</a></li>
+        <li><a href="/edit_code">Add new code</a></li>
       </ul>
       <h1>Additional resources</h1>
       <ul class="navlinks">

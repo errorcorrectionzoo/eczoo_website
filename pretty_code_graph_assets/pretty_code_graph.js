@@ -207,7 +207,7 @@ pretty_code_graph_setup = function()
         // of the event (core or element)
         var eventTarget = event.target;
 
-        if ( ! eventTarget.isNode() ) {
+        if ( ! eventTarget || eventTarget.isNode === undefined || ! eventTarget.isNode() ) {
             // tap on an edge or on the background -- hide pop-up
             window.pretty_code_graph_close_tooltip();
             return

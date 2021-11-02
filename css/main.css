@@ -140,6 +140,13 @@ dd {
   padding-right: 3px;
 }
 
+#header {
+  background-image: url(/static/icons/beta-marker.svg);
+  background-position: 97% 50%;
+  background-size: auto 80%;
+  background-repeat: no-repeat;
+}
+
 #sidebar {
   min-width: 220px;
 }
@@ -256,7 +263,7 @@ dd.code-name {
 }
 
 .features-list > dt {
-  color: rgba(0, 0, 0, 0.5);
+  color: rgba(0, 0, 0, 0.8);
   font-size: 0.95em;
 }
 

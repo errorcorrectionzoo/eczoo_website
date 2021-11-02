@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Molecular codes [error correction zoo]</title>
+  <title>Group quantum code [error correction zoo]</title>
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
@@ -25,72 +25,55 @@
   >
 
   <header id="header">
-    <h1>Molecular codes</h1>
+    <h1>Group quantum code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_molecular">
+<dl class="ecc-code ecc-code-page" id="ecc_group_quantum">
 
 <dt>Name</dt>
-<dd class="code-name">Molecular codes
-<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span>  <a class="code-info-corner-icon code-self-permalink"
+<dd class="code-name">Group quantum code
+  <a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/molecular#ecc_molecular">&nbsp;</a>
+     href="/c/group_quantum#ecc_group_quantum">&nbsp;</a>
   <a class="code-info-corner-icon code-show-github"
      target="_blank"
      title="edit code information directly on github.com"
-     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/molecular.yml">&nbsp;</a>
+     href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/group_quantum.yml">&nbsp;</a>
   <a class="code-info-corner-icon code-self-edit"
      target="_blank"
      title="edit code information on this site without using github"
-     href="/edit_code?code_id=molecular">&nbsp;</a>
+     href="/edit_code?code_id=group_quantum">&nbsp;</a>
 </dd>
 
 <dt>Description</dt>
-<dd class="code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on the group <span class="inline-math">\(SO_3\)</span>. Construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset SO_3\)</span>, where <span class="inline-math">\(H,K\)</span> are finite. The <span class="inline-math">\(|K|/|H|\)</span>-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>.</dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Protects against generalized bit-flip errors <span class="inline-math">\(g\in SO_3\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</dd>
+<dd class="code-description">Encodes a logical Hilbert space, finite- or infinite-dimensional, into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on a second-countable unimodular group. For <span class="inline-math">\(K\)</span>-dimensional logical subspace and for groups <span class="inline-math">\(G^{\times n}\)</span>, can be denoted as <span class="inline-math">\(((n,K))_G\)</span>. When the logical subspace is the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(G^{\times k}\)</span>, can be denoted as <span class="inline-math">\([[n,k]]_G\)</span>. Ideal codewords may not be normalizable, depending on whether <span class="inline-math">\(G\)</span> is continuous and/or noncompact, so approximate versions have to be constructed.</dd>
 
 
 
-<dt>Notes</dt>
-<dd class="code-notes">
-Physical space characterizes orientations of a rigid body in 3D, which correspond to rotational states of an asymmetric molecule.  
-</dd>
 
 
-<dt>Parent(s)</dt>
-<dd class="code-parents">
 
 
-<ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a></span>  </li>
+<dt>Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li><span class="code-parent-of-1-code"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a></span>  </li>
 </ul>
 </dd>
 
 
 
-
 <dt class="display-code-id">Internal code ID</dt>
-<dd class="display-code-id">molecular</dd>
+<dd class="display-code-id">group_quantum</dd>
 
 
 </dl>
 
-   <div id="endnotes">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-1">[1]</dt>
-      <dd>
-          <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="arxiv-link">arXiv:1911.00099</a>
-        
-      </dd>
-    
-    </dl>
-   </div>
 
   </main><!-- #main -->
 

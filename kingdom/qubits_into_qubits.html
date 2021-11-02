@@ -37,8 +37,7 @@
 
 <div class="ecc-code" id="ecc_qubits_into_qubits">
   <span class="short-code-name"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qubit) Hilbert space; has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\(((n,K,d))\)</span>, or <span class="inline-math">\([[n,k,d]]\)</span> when <span class="inline-math">\(K=2^k\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
-  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits.</span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance.</span>
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
@@ -47,8 +46,9 @@
 
 
 <div class="ecc-code" id="ecc_stabilizer">
-  <span class="short-code-name"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\(n,2^k,d\)</span> qubit code is usually denoted as <span class="inline-math">\([[n,k,d]]\)</span>. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#39;s stabilizer group.</span>
+  <span class="short-code-name"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#39;s stabilizer group. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a>.
@@ -61,8 +61,8 @@
 
 
 <div class="ecc-code" id="ecc_css">
-  <span class="short-code-name"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)\)</span> CSS code is usually denoted as <span class="inline-math">\([[n,k,d]]\)</span>. Encoding is based on two <a href="/c/binary_linear#ecc_binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_1,d_1]\)</span> code <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\([n,k_2,d_2]\)</span> code <span class="inline-math">\(C_2\)</span> with <span class="inline-math">\(C_1^\perp \subseteq C_2\)</span>, such that <span class="inline-math">\(k=k_1+k_2-n\)</span> and <span class="inline-math">\(d=\min\{d_1,d_2\}\)</span>.</span>
+  <span class="short-code-name"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[2]</a><a href="#cite-3" class="cite">[3]</a><a href="#cite-4" class="cite">[4]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on two <a href="/c/binary_linear#ecc_binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_1,d_1]\)</span> code <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\([n,k_2,d_2]\)</span> code <span class="inline-math">\(C_2\)</span> with <span class="inline-math">\(C_1^\perp \subseteq C_2\)</span>, such that <span class="inline-math">\(k=k_1+k_2-n\)</span> and <span class="inline-math">\(d=\min\{d_1,d_2\}\)</span>.</span>
   <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:
@@ -70,7 +70,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>.
+      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>,       <a href="/c/quantum_repetition#ecc_quantum_repetition">Quantum repetition code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -82,20 +82,38 @@
 <div class="ecc-code" id="ecc_quantum_ldpc">
   <span class="short-code-name"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (LDPC) code</a></span>
   <span class="short-code-description"></span>
-  <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_toric">
-  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>
-  <span class="short-code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type Pauli strings (stars) and few-body <span class="inline-math">\(Z\)</span>-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an arbitrary orientable 2D surface <a href="#cite-1" class="cite">[1]</a>.</span>
+  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a><span class="code-introduced"><a href="#cite-5" class="cite">[5]</a></span></span>
+  <span class="short-code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric</span> often refers to the specific code construction on the two-dimensional torus, the construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-6" class="cite">[6]</a>, and <span class="textit">surface code</span> is often an alternative name for the general construction.</span>
+  <span class="short-code-info">Protection: When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-7" class="cite">[7]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>.
+      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>,       <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (LDPC) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_homological">
+  <span class="short-code-name"><a href="/c/homological#ecc_homological">Homological code</a></span>
+  <span class="short-code-description">Add topological code entry as well.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>.
   </span>
 </div>
 
@@ -111,26 +129,24 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_homological">
-  <span class="short-code-name"><a href="/c/homological#ecc_homological">Homological code</a></span>
-  <span class="short-code-description">Often called a topological code.</span>
+<div class="ecc-code" id="ecc_toric">
+  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a><span class="code-introduced"><a href="#cite-5" class="cite">[5]</a></span></span>
+  <span class="short-code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric</span> often refers to the specific code construction on the two-dimensional torus, the construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-6" class="cite">[6]</a>, and <span class="textit">surface code</span> is often an alternative name for the general construction.</span>
+  <span class="short-code-info">Protection: When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-7" class="cite">[7]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a>.
+      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>,       <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (LDPC) code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_toric">
-  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a></span>
-  <span class="short-code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type Pauli strings (stars) and few-body <span class="inline-math">\(Z\)</span>-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an arbitrary orientable 2D surface <a href="#cite-1" class="cite">[1]</a>.</span>
+  <span class="short-code-name"><a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a><span class="code-introduced"><a href="#cite-5" class="cite">[5]</a></span></span>
+  <span class="short-code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric</span> often refers to the specific code construction on the two-dimensional torus, the construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-6" class="cite">[6]</a>, and <span class="textit">surface code</span> is often an alternative name for the general construction.</span>
+  <span class="short-code-info">Protection: When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-7" class="cite">[7]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>.
+      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>,       <a href="/c/homological#ecc_homological">Homological code</a>,       <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (LDPC) code</a>.
   </span>
 </div>
 
@@ -140,7 +156,43 @@
       <!-- Citation:  -->
       <dt id="cite-1">[1]</dt>
       <dd>
-          <a href="https://doi.org/10.1070/RM1997v052n06ABEH002155" target="_blank" class="doi-link">doi:10.1070/RM1997v052n06ABEH002155</a>
+          <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="arxiv-link">arXiv:quant-ph/9705052</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[2]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="arxiv-link">arXiv:quant-ph/9512032</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[3]</dt>
+      <dd>
+          <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.77.793</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[4]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="arxiv-link">arXiv:quant-ph/9601029</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[5]</dt>
+      <dd>
+          <a href="https://doi.org/10.1007/978-1-4615-5923-8_19" target="_blank" class="doi-link">doi:10.1007/978-1-4615-5923-8_19</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[6]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="arxiv-link">arXiv:quant-ph/9811052</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[7]</dt>
+      <dd>
+          <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="doi-link">doi:10.1063/1.1499754</a>
         
       </dd>
     
@@ -170,12 +222,13 @@
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
         <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
         <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
-        <li><a href="/kingdom/groups">Group Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">
         <li><a href="/about">About</a></li>
         <li><a href="/contributors">Acknowledgments</a></li>
+        <li><a href="/edit_code">Add new code</a></li>
       </ul>
       <h1>Additional resources</h1>
       <ul class="navlinks">

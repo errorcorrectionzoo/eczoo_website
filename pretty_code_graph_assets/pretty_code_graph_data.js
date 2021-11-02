@@ -62,7 +62,7 @@ pretty_code_graph_data = {
                     "id": "c_css",
                     "label": "Calderbank-Shor-Steane (CSS) code",
                     "_description": [
-                        "An \\((n,2^k,d)\\) CSS code is usually denoted as \\([[n,k,d]]\\). Encoding is based on two \\hyperref[code:binary_linear]{binary linear codes}, an \\([n,k_1,d_1]\\) code \\(C_1\\) and \\([n,k_2,d_2]\\) code ..."
+                        "An \\([[n,k,d]]\\) stabilizer code whose encoding is based on two \\hyperref[code:binary_linear]{binary linear codes}, an \\([n,k_1,d_1]\\) code \\(C_1\\) and \\([n,k_2,d_2]\\) code \\(C_2\\) with \\(C_1^\\perp..."
                     ],
                     "_code_href": "/c/css#ecc_css",
                     "_family_generation_level": 2
@@ -73,7 +73,7 @@ pretty_code_graph_data = {
                     "id": "c_toric",
                     "label": "Kitaev's toric code",
                     "_description": [
-                        "A family of stabilizer codes whose generators are few-body \\(X\\)-type Pauli strings (stars) and few-body \\(Z\\)-type Pauli strings on any surface plaquette operators on an arbitrary lattice on an ar..."
+                        "A family of stabilizer codes whose generators are few-body \\(X\\)-type and \\(Z\\)-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surfa..."
                     ],
                     "_code_href": "/c/toric#ecc_toric",
                     "_family_generation_level": 3
@@ -81,9 +81,20 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_homological",
+                    "label": "Homological code",
+                    "_description": "Add topological code entry as well.",
+                    "_code_href": "/c/homological#ecc_homological",
+                    "_family_generation_level": 3
+                }
+            },
+            {
+                "data": {
                     "id": "c_stabilizer",
                     "label": "Stabilizer code",
-                    "_description": "An \\(n,2^k,d\\) qubit code is usually denoted as \\([[n,k,d]]\\). Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting Pauli operators forming the code's stabilizer group.",
+                    "_description": [
+                        "An \\(((n,2^k,d))\\) stabilizer code is denoted as \\([[n,k]]\\) or \\([[n,k,d]]\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting ..."
+                    ],
                     "_code_href": "/c/stabilizer#ecc_stabilizer",
                     "_family_generation_level": 1
                 }
@@ -108,39 +119,14 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "c_homological",
-                    "label": "Homological code",
-                    "_description": "Often called a topological code.",
-                    "_code_href": "/c/homological#ecc_homological",
-                    "_family_generation_level": 3
-                }
-            },
-            {
-                "data": {
                     "id": "c_qubits_into_qubits",
                     "label": "Qubit code",
-                    "_description": [
-                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(2^n\\)-dimensional (\\(n\\)-qubit) Hilbert space; has distance \\(d\\). Usually denoted as \\(((n,K,d))\\), or \\([[n,k,d]]\\) when \\(K=2^k\\). The distance i..."
-                    ],
+                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(2^n\\)-dimensional (i.e., \\(n\\)-qubit) Hilbert space. Usually denoted as \\(((n,K))\\) or \\(((n,K,d))\\), where \\(d\\) is the code's distance.",
                     "_code_href": "/c/qubits_into_qubits#ecc_qubits_into_qubits",
                     "_family_generation_level": 0,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Qubit Kingdom",
                     "_kingdom_href": "/kingdom/qubits_into_qubits"
-                }
-            },
-            {
-                "data": {
-                    "id": "c_groups",
-                    "label": "Group code",
-                    "_description": [
-                        "Encodes a logical Hilbert space, finite- or infinite-dimensional, into the Hilbert space of \\(\\ell^2\\)-normalizable functions on a second-countable unimodular group. For \\(K\\)-dimensional logical s..."
-                    ],
-                    "_code_href": "/c/groups#ecc_groups",
-                    "_family_generation_level": 0,
-                    "_is_kingdom": 1,
-                    "_kingdom_name": "Group Kingdom",
-                    "_kingdom_href": "/kingdom/groups"
                 }
             },
             {
@@ -156,6 +142,20 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_group_quantum",
+                    "label": "Group quantum code",
+                    "_description": [
+                        "Encodes a logical Hilbert space, finite- or infinite-dimensional, into the Hilbert space of \\(\\ell^2\\)-normalizable functions on a second-countable unimodular group. For \\(K\\)-dimensional logical s..."
+                    ],
+                    "_code_href": "/c/group_quantum#ecc_group_quantum",
+                    "_family_generation_level": 0,
+                    "_is_kingdom": 1,
+                    "_kingdom_name": "Group Kingdom",
+                    "_kingdom_href": "/kingdom/group_quantum"
+                }
+            },
+            {
+                "data": {
                     "id": "c_molecular",
                     "label": "Molecular codes",
                     "_description": [
@@ -167,11 +167,20 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_qudit_stabilizer",
+                    "label": "Qudit stabilizer code",
+                    "_description": [
+                        "An \\(((n,2^k,d))_q\\) stabilizer code is denoted as \\([[n,k]]_q\\) or \\([[n,k,d]]_q\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(q^{n-k}\\) comm..."
+                    ],
+                    "_code_href": "/c/qudit_stabilizer#ecc_qudit_stabilizer",
+                    "_family_generation_level": 1
+                }
+            },
+            {
+                "data": {
                     "id": "c_qudits_into_qudits",
                     "label": "Qudit code",
-                    "_description": [
-                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space for some \\(q\\); has distance \\(d\\). Usually denoted as \\(((n,K,d))_q\\), or \\([[n,k,d]]_q\\) when \\(K=q^..."
-                    ],
+                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space. Usually denoted as \\(((n,K))_q\\) or \\(((n,K,d))_q\\), where \\(d\\) is the code's distance.",
                     "_code_href": "/c/qudits_into_qudits#ecc_qudits_into_qudits",
                     "_family_generation_level": 0,
                     "_is_kingdom": 1,
@@ -216,7 +225,7 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_q-ary_digits_into_q-ary_digits",
-                    "label": "q-ary code",
+                    "label": "\\(q\\)-ary code",
                     "_description": [
                         "Encodes \\(K\\) states (codewords) in \\(n\\) \\(q\\)-ary coordinates and has distance \\(d\\). Usually denoted as \\((n,K,d)_q\\). The distance is the minimum Hamming distance between a pair of distinct cod..."
                     ],
@@ -305,7 +314,25 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_stabilizer_qubits_into_qubits_5",
+                    "id": "parent_toric_quantum_ldpc_5",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_toric",
+                    "target": "c_quantum_ldpc"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_homological_css_6",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_homological",
+                    "target": "c_css"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_stabilizer_qubits_into_qubits_7",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_stabilizer",
@@ -314,7 +341,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_repetition_css_6",
+                    "id": "parent_quantum_repetition_css_8",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_repetition",
@@ -323,20 +350,11 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_ldpc_stabilizer_7",
+                    "id": "parent_quantum_ldpc_stabilizer_9",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_ldpc",
                     "target": "c_stabilizer"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_homological_css_8",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_homological",
-                    "target": "c_css"
                 }
             },
             {
@@ -350,29 +368,38 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "kingdomtodomain_groups_quantum_domain_2",
+                    "id": "parent_group_gkp_group_quantum_10",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_group_gkp",
+                    "target": "c_group_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "kingdomtodomain_group_quantum_quantum_domain_2",
                     "label": "domain",
                     "_rel_type": "domain",
-                    "source": "c_groups",
+                    "source": "c_group_quantum",
                     "target": "domain_quantum_domain"
                 }
             },
             {
                 "data": {
-                    "id": "parent_group_gkp_groups_9",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_group_gkp",
-                    "target": "c_groups"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_molecular_group_gkp_10",
+                    "id": "parent_molecular_group_gkp_11",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_molecular",
                     "target": "c_group_gkp"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_qudit_stabilizer_qudits_into_qudits_12",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_qudit_stabilizer",
+                    "target": "c_qudits_into_qudits"
                 }
             },
             {
@@ -386,7 +413,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_linear_bits_into_bits_11",
+                    "id": "parent_binary_linear_bits_into_bits_13",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_binary_linear",
@@ -404,7 +431,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_reed_solomon_q-ary_linear_12",
+                    "id": "parent_reed_solomon_q-ary_linear_14",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_reed_solomon",
@@ -422,7 +449,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_q-ary_linear_q-ary_digits_into_q-ary_digits_13",
+                    "id": "parent_q-ary_linear_q-ary_digits_into_q-ary_digits_15",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_q-ary_linear",
@@ -476,6 +503,11 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_homological",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_stabilizer",
             "gap": 100
         },
@@ -491,17 +523,7 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_homological",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
             "bottom": "c_qubits_into_qubits",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
-            "bottom": "c_groups",
             "gap": 100
         },
         {
@@ -511,7 +533,17 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_group_quantum",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_molecular",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_qudit_stabilizer",
             "gap": 100
         },
         {
