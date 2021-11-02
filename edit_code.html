@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Error correction zoo — edit code [error correction zoo]</title>
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+
+  <script type="text/javascript" async
+	  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+  <link type="text/css" rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+
+</head>
+<body>
+<div
+  id="bodycontents"
+  class=""
+  >
+
+  <header id="header">
+    <h1>Error correction zoo — edit code</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<div id="edit-code"></div>
+
+<button id="submit" style="display:block">Download data file to email to Victor →</button>
+<p>Attach the downloaded file to <a href="mailto:xxx@gmail.com?subject=code data&body=Please attach the downloaded file and send to XXXX@gmail.com. Thanks for your contribution!">an email to this address</a>.</p>
+
+<a id="a-download-code-json" download="code.json" type="text/json" style="display:none">&nbsp;</a>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+<script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js">
+</script>
+<script type="text/javascript"
+        src="/js/edit_code.js">
+</script>
+<script type="text/javascript">
+window.addEventListener("load", function() {
+    eczoo_edit_code_setup("/", document.getElementById('edit-code'));
+});
+</script>
+
+<style type="text/css">
+.card-body {
+    padding: 0.5rem 5px;
+    border: none 0px;
+}
+label {
+    font-size: 0.8em;
+    font-weight: 500;
+    padding-left: 5px;
+    margin-bottom: 5px;
+}
+/* .card-title { */
+/*     width: 100%; */
+/*     background-color: #ddf !important; */
+/* } */
+/* div[data-schematype='array'] > .card-body.bg-light, */
+/* div[data-schematype='object']:not([data-schemapath='ecc']) > .card-body.bg-light { */
+/*     background-color: #ddf !important; */
+/* } */
+div[data-schemaid="ecc"] > div > div > div > div.row:nth-child(odd) {
+    background-color: #f2f2f2 !important;
+}
+div[data-schemaid="ecc"] > div > div > div > div.row:nth-child(even) {
+    background-color: #dbdbdb !important;
+}
+.bg-light {
+    background-color: #e0eaf4 !important;
+}
+div[data-schemaid="ecc"] > .bg-light {
+    background-color: transparent !important;
+}
+</style>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/groups">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/about">About</a></li>
+        <li><a href="/contributors">Acknowledgments</a></li>
+      </ul>
+      <h1>Additional resources</h1>
+      <ul class="navlinks">
+        <li>…</li>
+      </ul>
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+      Imprint, etc.
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

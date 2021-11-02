@@ -229,6 +229,10 @@ a.code-show-github {
   background-image: url(/static/icons/github-logo.svg);
 }
 
+a.code-self-edit {
+  background-image: url(/static/icons/edit-icon.svg);
+}
+
 dd.code-name {
   font-weight: bold;
 }
@@ -258,6 +262,11 @@ dd.code-name {
 
 .features-list > dd {
   margin-left: .5em;
+}
+
+.display-code-id {
+  font-size: 0.8em;
+  color: #999;
 }
 
 .short-code-name {
