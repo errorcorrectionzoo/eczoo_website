@@ -18,13 +18,15 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
         // proper web app!!
         xmlhttp.open("GET", base_url + path, false);
         xmlhttp.send();
-        console.log("Get "+path+": "+xmlhttp.status);
+        console.log("Get json with path = "+path+": "+xmlhttp.status);
         var text = xmlhttp.responseText;
         console.log(text);
         return JSON.parse(text);
     }
 
-    var code_schema = fetch_load_json('schemas/ecc');
+    var code_schema = fetch_load_json('schemas/ecc.json');
+    var relation_list_schema = fetch_load_json('schemas/relation_list.json');
+    var ecc_features_schema = fetch_load_json('schemas/ecc_features.json');
     var all_codes_info = fetch_load_json('_all_codes_info_dump.json');
 
     code_schema.properties.description.format = 'textarea';
@@ -32,7 +34,7 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
     code_schema.properties.decoder.format = 'textarea';
     code_schema.properties.realizations.format = 'textarea';
     code_schema.properties.notes.items.format = 'textarea';
-    code_schema.properties.features.additionalProperties = {
+    ecc_features_schema.additionalProperties = {
         type: 'string',
         format: 'textarea'
     };
@@ -51,6 +53,12 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
             ajax: true,
             startval: cur_code_info,
             form_name_root: 'ecc',
+
+            ref: {
+                '/schemas/ecc': code_schema,
+                '/schemas/relation_list': relation_list_schema,
+                '/schemas/ecc_features': ecc_features_schema,
+            },
 
             theme: 'bootstrap4',
             remove_button_labels: true,
