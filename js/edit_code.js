@@ -19,7 +19,9 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
         xmlhttp.open("GET", base_url + path, false);
         xmlhttp.send();
         console.log("Get "+path+": "+xmlhttp.status);
-        return JSON.parse(xmlhttp.responseText);
+        var text = xmlhttp.responseText;
+        console.log(text);
+        return JSON.parse(text);
     }
 
     var code_schema = fetch_load_json('schemas/ecc');
