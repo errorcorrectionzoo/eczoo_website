@@ -54,10 +54,10 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
             startval: cur_code_info,
             form_name_root: 'ecc',
 
-            ref: {
-                '/schemas/ecc': code_schema,
-                '/schemas/relation_list': relation_list_schema,
-                '/schemas/ecc_features': ecc_features_schema,
+            refs: {
+                'https://errorcorrectionzoo.org/schemas/ecc': code_schema,
+                'https://errorcorrectionzoo.org/schemas/relation_list': relation_list_schema,
+                'https://errorcorrectionzoo.org/schemas/ecc_features': ecc_features_schema,
             },
 
             theme: 'bootstrap4',
