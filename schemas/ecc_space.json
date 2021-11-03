@@ -1,1 +1,1 @@
-{"$schema": "http://json-schema.org/draft-06/schema", "$id": "https://errorcorrectionzoo.org/schemas/ecc_space", "type": "string", "enum": ["bits", "q-ary_digits", "qubits", "qudits", "groups", "oscillators", "rigid_bodies"]}
+{"$schema": "http://json-schema.org/draft-06/schema", "$id": "https://errorcorrectionzoo.org/schemas/ecc_space", "type": "string", "enum": ["bits", "q-ary_digits", "qubits", "qudits", "fermions", "groups", "oscillators", "rigid_bodies"]}

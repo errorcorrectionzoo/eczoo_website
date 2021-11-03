@@ -47,11 +47,14 @@
 
 <dl class="ecc-code ecc-code-page" id="ecc_surface">
 
+
 <dt>Name</dt>
-<dd class="code-name">Kitaev&#39;s surface code
-<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a></span>  <a class="code-info-corner-icon code-self-permalink"
+<dd class="code-name">
+  Kitaev&#39;s surface code<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/surface#ecc_surface">&nbsp;</a></dd>
+     href="/c/surface#ecc_surface">&nbsp;</a>
+</dd>
+
 
 <dt>Description</dt>
 <dd class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> is often either an alternative name for the general construction or refers to the construction on the two-dimensional torus. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[3]</a>.</dd>
@@ -59,39 +62,50 @@
 <dt>Protection</dt>
 <dd class="code-protection">When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-4" class="cite">[4]</a>.</dd>
 
-<dt>Decoder</dt>
-<dd class="code-decoders"><p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-5" class="cite">[5]</a>, union-find <a href="#cite-6" class="cite">[6]</a>, renormalization group <a href="#cite-7" class="cite">[7]</a><a href="#cite-8" class="cite">[8]</a>, tensor network <a href="#cite-9" class="cite">[9]</a>, Markov chain Monte Carlo <a href="#cite-10" class="cite">[10]</a>, cellular automaton <a href="#cite-11" class="cite">[11]</a>, machine learning <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a>.</p></dd>
 
-<dt class="code-feature code-feature-fault_tolerance">fault_tolerance</dt>
-<dd class="code-feature code-feature-fault_tolerance">
-  <p>Fault-tolerant threshold of <span class="inline-math">\(0.5-1.1\%\)</span> depending on the error model <a href="#cite-15" class="cite">[15]</a>.</p>
-</dd>
-<dt class="code-feature code-feature-general_gates">general_gates</dt>
-<dd class="code-feature code-feature-general_gates">
-  <p>Clifford gates can be implemented via lattice surgery <a href="#cite-16" class="cite">[16]</a><a href="#cite-17" class="cite">[17]</a> or braiding defects <a href="#cite-18" class="cite">[18]</a><a href="#cite-19" class="cite">[19]</a><a href="#cite-20" class="cite">[20]</a><a href="#cite-21" class="cite">[21]</a>. Non-Clifford gates require magic state distillation <a href="#cite-22" class="cite">[22]</a> or just-in-time decoding <a href="#cite-23" class="cite">[23]</a>.</p>
-</dd>
-<dt class="code-feature code-feature-threshold">threshold</dt>
-<dd class="code-feature code-feature-threshold">
-  <p>Depolarizing noise: <span class="inline-math">\(18.9\%\)</span> <a href="#cite-24" class="cite">[24]</a>, independent <span class="inline-math">\(X/Z\)</span> errors: <span class="inline-math">\(10.9\%\)</span> <a href="#cite-25" class="cite">[25]</a>, loss errors: <span class="inline-math">\(50\%\)</span> <a href="#cite-26" class="cite">[26]</a>, phenomenological noise: <span class="inline-math">\(3.3\%\)</span> <a href="#cite-27" class="cite">[27]</a> (all for square tiling).</p>
-</dd>
-<dt class="code-feature code-feature-encoders">encoders</dt>
-<dd class="code-feature code-feature-encoders">
-  <p>Unitary <a href="#cite-28" class="cite">[28]</a><a href="#cite-29" class="cite">[29]</a><a href="#cite-30" class="cite">[30]</a>, dissipative <a href="#cite-31" class="cite">[31]</a>, stabilizer measurement <a href="#cite-32" class="cite">[32]</a>.</p>
-</dd>
-<dt class="code-feature code-feature-decoders">decoders</dt>
-<dd class="code-feature code-feature-decoders">
-  <p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-5" class="cite">[5]</a>, union-find <a href="#cite-6" class="cite">[6]</a>, renormalization group <a href="#cite-7" class="cite">[7]</a><a href="#cite-8" class="cite">[8]</a>, tensor network <a href="#cite-9" class="cite">[9]</a>, Markov chain Monte Carlo <a href="#cite-10" class="cite">[10]</a>, cellular automaton <a href="#cite-11" class="cite">[11]</a>, machine learning <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a>.</p>
+<!-- Display features -->
+
+
+
+
+
+
+
+<dt>Encoder</dt>
+  <dd class="code-feature-encoders"><p>Unitary <a href="#cite-5" class="cite">[5]</a><a href="#cite-6" class="cite">[6]</a><a href="#cite-7" class="cite">[7]</a>, dissipative <a href="#cite-8" class="cite">[8]</a>, stabilizer measurement <a href="#cite-9" class="cite">[9]</a>.</p></dd>
+
+
+
+
+<dt>Gates</dt>
+  <dd class="code-feature-general_gates"><p>Clifford gates can be implemented via lattice surgery <a href="#cite-10" class="cite">[10]</a><a href="#cite-11" class="cite">[11]</a> or braiding defects <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a><a href="#cite-15" class="cite">[15]</a>. Non-Clifford gates require magic state distillation <a href="#cite-16" class="cite">[16]</a> or just-in-time decoding <a href="#cite-17" class="cite">[17]</a>.</p></dd>
+
+
+<dt>Decoder</dt>
+  <dd class="code-feature-decoders"><p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-18" class="cite">[18]</a>, union-find <a href="#cite-19" class="cite">[19]</a>, renormalization group <a href="#cite-20" class="cite">[20]</a><a href="#cite-21" class="cite">[21]</a>, tensor network <a href="#cite-22" class="cite">[22]</a>, Markov chain Monte Carlo <a href="#cite-23" class="cite">[23]</a>, cellular automaton <a href="#cite-24" class="cite">[24]</a>, machine learning <a href="#cite-25" class="cite">[25]</a><a href="#cite-26" class="cite">[26]</a><a href="#cite-27" class="cite">[27]</a>.</p></dd>
+
+
+<dt>Fault Tolerance</dt>
+  <dd class="code-feature-fault_tolerance"><p>Fault-tolerant threshold of <span class="inline-math">\(0.5-1.1\%\)</span> depending on the error model <a href="#cite-28" class="cite">[28]</a>.</p></dd>
+
+
+<dt>Threshold</dt>
+  <dd class="code-feature-threshold"><p>Depolarizing noise: <span class="inline-math">\(18.9\%\)</span> <a href="#cite-29" class="cite">[29]</a>, independent <span class="inline-math">\(X/Z\)</span> errors: <span class="inline-math">\(10.9\%\)</span> <a href="#cite-30" class="cite">[30]</a>, loss errors: <span class="inline-math">\(50\%\)</span> <a href="#cite-31" class="cite">[31]</a>, phenomenological noise: <span class="inline-math">\(3.3\%\)</span> <a href="#cite-32" class="cite">[32]</a> (all for square tiling).</p></dd>
+
+
+
+<dt>Realizations</dt>
+<dd class="code-realizations">
+  <p>Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-33" class="cite">[33]</a>, Erhard et al. <a href="#cite-34" class="cite">[34]</a> and Google Quantum AI <a href="#cite-35" class="cite">[35]</a>.</p>
 </dd>
 
 <dt>Notes</dt>
 <dd class="code-notes">
-  <p>When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-33" class="cite">[33]</a>.</p>
+  <p>When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-36" class="cite">[36]</a>.</p>
 </dd>
 
-<dt>Realizations</dt>
-<dd class="code-realizations">
-  <p>Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-34" class="cite">[34]</a>, Erhard et al. <a href="#cite-35" class="cite">[35]</a> and Google Quantum AI <a href="#cite-36" class="cite">[36]</a>.</p>
-</dd>
+
+<!-- Relationships to other codes -->
 
 <dt>Parent(s)</dt>
 <dd class="code-parents">
@@ -103,6 +117,7 @@
   <li><span class="code-parents-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-parents-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation.)</span>  </li>
 </ul>
 </dd>
+
 
 
 
@@ -158,193 +173,193 @@
       <!-- Citation:  -->
       <dt id="cite-5">[5]</dt>
       <dd>
-          <a href="https://doi.org/10.26421/QIC15.1-2-9" target="_blank" class="doi-link">doi:10.26421/QIC15.1-2-9</a>
+          <a href="https://doi.org/10.1103/PhysRevLett.100.070404" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.100.070404</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[6]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="arxiv-link">arXiv:1709.06218</a>
+          <a href="https://doi.org/10.22331/q-2021-08-05-517" target="_blank" class="doi-link">doi:10.22331/q-2021-08-05-517</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[7]</dt>
       <dd>
-          <a href="https://doi.org/10.26421/QIC14.9-10-1" target="_blank" class="doi-link">doi:10.26421/QIC14.9-10-1</a>
+          <a href="https://arxiv.org/abs/2110.02020" target="_blank" class="arxiv-link">arXiv:2110.02020</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[8]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="doi-link">doi:10.1103/PhysRevA.92.032309</a>
+          <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="doi-link">doi:10.1088/1367-2630/16/1/013023</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[9]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="doi-link">doi:10.1103/PhysRevA.90.032326</a>
+          <a href="https://doi.org/10.1038/srep08975" target="_blank" class="doi-link">doi:10.1038/srep08975</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[10]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="doi-link">doi:10.1103/PhysRevA.89.022326</a>
+          <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="doi-link">doi:10.1088/1367-2630/14/12/123011</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[11]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="doi-link">doi:10.1088/1367-2630/aa7099</a>
+          <a href="https://doi.org/10.22331/q-2018-05-04-62" target="_blank" class="doi-link">doi:10.22331/q-2018-05-04-62</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[12]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.119.030501</a>
+          <a href="https://doi.org/10.1103/PhysRevLett.98.190504" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.98.190504</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[13]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="doi-link">doi:10.1088/2058-9565/aad1f7</a>
+          <a href="https://doi.org/10.1088/1367-2630/9/6/199" target="_blank" class="doi-link">doi:10.1088/1367-2630/9/6/199</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[14]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="doi-link">doi:10.1088/2632-2153/abc609</a>
+          <a href="https://doi.org/10.1103/PhysRevA.86.032324" target="_blank" class="doi-link">doi:10.1103/PhysRevA.86.032324</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[15]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="doi-link">doi:10.1103/PhysRevA.89.022321</a>
+          <a href="https://doi.org/10.1103/PhysRevX.7.021029" target="_blank" class="doi-link">doi:10.1103/PhysRevX.7.021029</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[16]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="doi-link">doi:10.1088/1367-2630/14/12/123011</a>
+          <a href="https://doi.org/10.22331/q-2019-12-02-205" target="_blank" class="doi-link">doi:10.22331/q-2019-12-02-205</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[17]</dt>
       <dd>
-          <a href="https://doi.org/10.22331/q-2018-05-04-62" target="_blank" class="doi-link">doi:10.22331/q-2018-05-04-62</a>
+          <a href="https://doi.org/10.1126/sciadv.aay4929" target="_blank" class="doi-link">doi:10.1126/sciadv.aay4929</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[18]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevLett.98.190504" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.98.190504</a>
+          <a href="https://doi.org/10.26421/QIC15.1-2-9" target="_blank" class="doi-link">doi:10.26421/QIC15.1-2-9</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[19]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/1367-2630/9/6/199" target="_blank" class="doi-link">doi:10.1088/1367-2630/9/6/199</a>
+          <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="arxiv-link">arXiv:1709.06218</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[20]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevA.86.032324" target="_blank" class="doi-link">doi:10.1103/PhysRevA.86.032324</a>
+          <a href="https://doi.org/10.26421/QIC14.9-10-1" target="_blank" class="doi-link">doi:10.26421/QIC14.9-10-1</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[21]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevX.7.021029" target="_blank" class="doi-link">doi:10.1103/PhysRevX.7.021029</a>
+          <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="doi-link">doi:10.1103/PhysRevA.92.032309</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[22]</dt>
       <dd>
-          <a href="https://doi.org/10.22331/q-2019-12-02-205" target="_blank" class="doi-link">doi:10.22331/q-2019-12-02-205</a>
+          <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="doi-link">doi:10.1103/PhysRevA.90.032326</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[23]</dt>
       <dd>
-          <a href="https://doi.org/10.1126/sciadv.aay4929" target="_blank" class="doi-link">doi:10.1126/sciadv.aay4929</a>
+          <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="doi-link">doi:10.1103/PhysRevA.89.022326</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[24]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevX.2.021004" target="_blank" class="doi-link">doi:10.1103/PhysRevX.2.021004</a>
+          <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="doi-link">doi:10.1088/1367-2630/aa7099</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[25]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="doi-link">doi:10.1103/PhysRevE.79.021129</a>
+          <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.119.030501</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[26]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.102.200501</a>
+          <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="doi-link">doi:10.1088/2058-9565/aad1f7</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-27">[27]</dt>
       <dd>
-          <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="doi-link">doi:10.1016/j.nuclphysb.2004.07.003</a>
+          <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="doi-link">doi:10.1088/2632-2153/abc609</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-28">[28]</dt>
       <dd>
-          <a href="https://doi.org/10.1103/PhysRevLett.100.070404" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.100.070404</a>
+          <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="doi-link">doi:10.1103/PhysRevA.89.022321</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[29]</dt>
       <dd>
-          <a href="https://doi.org/10.22331/q-2021-08-05-517" target="_blank" class="doi-link">doi:10.22331/q-2021-08-05-517</a>
+          <a href="https://doi.org/10.1103/PhysRevX.2.021004" target="_blank" class="doi-link">doi:10.1103/PhysRevX.2.021004</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-30">[30]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/2110.02020" target="_blank" class="arxiv-link">arXiv:2110.02020</a>
+          <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="doi-link">doi:10.1103/PhysRevE.79.021129</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-31">[31]</dt>
       <dd>
-          <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="doi-link">doi:10.1088/1367-2630/16/1/013023</a>
+          <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="doi-link">doi:10.1103/PhysRevLett.102.200501</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-32">[32]</dt>
       <dd>
-          <a href="https://doi.org/10.1038/srep08975" target="_blank" class="doi-link">doi:10.1038/srep08975</a>
+          <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="doi-link">doi:10.1016/j.nuclphysb.2004.07.003</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-33">[33]</dt>
       <dd>
-          <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="doi-link">doi:10.1063/1.1665530</a>
+          <a href="https://doi.org/10.1038/s41567-020-0920-y" target="_blank" class="doi-link">doi:10.1038/s41567-020-0920-y</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-34">[34]</dt>
       <dd>
-          <a href="https://doi.org/10.1038/s41567-020-0920-y" target="_blank" class="doi-link">doi:10.1038/s41567-020-0920-y</a>
+          <a href="https://doi.org/10.1038/s41586-020-03079-6" target="_blank" class="doi-link">doi:10.1038/s41586-020-03079-6</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-35">[35]</dt>
       <dd>
-          <a href="https://doi.org/10.1038/s41586-020-03079-6" target="_blank" class="doi-link">doi:10.1038/s41586-020-03079-6</a>
+          <a href="https://doi.org/10.1038/s41586-021-03588-y" target="_blank" class="doi-link">doi:10.1038/s41586-021-03588-y</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-36">[36]</dt>
       <dd>
-          <a href="https://doi.org/10.1038/s41586-021-03588-y" target="_blank" class="doi-link">doi:10.1038/s41586-021-03588-y</a>
+          <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="doi-link">doi:10.1063/1.1665530</a>
         
       </dd>
     

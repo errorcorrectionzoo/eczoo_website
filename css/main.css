@@ -172,6 +172,12 @@ dd {
   box-shadow: none;
 }
 
+@media (max-width: 880px) {
+  #header {
+    background-image: url(/static/icons/eczoo-main-logo-mobile.svg);
+  }
+}
+
 #sidebar {
   min-width: 220px;
 }

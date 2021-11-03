@@ -166,7 +166,7 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_molecular",
-                    "label": "Molecular codes",
+                    "label": "Molecular code",
                     "_description": [
                         "Encodes finite-dimensional Hilbert space into the Hilbert space of \\(\\ell^2\\)-normalizable functions on the group \\(SO_3\\). Construction is based on nested subgroups \\(H\\subset K \\subset SO_3\\), wh..."
                     ],
@@ -265,6 +265,15 @@ pretty_code_graph_data = {
                     ],
                     "_code_href": "/c/q-ary_linear#ecc_q-ary_linear",
                     "_family_generation_level": 1
+                }
+            },
+            {
+                "data": {
+                    "id": "c_fermions",
+                    "label": "Fermion-into-fermion code",
+                    "_description": "stub",
+                    "_code_href": "/c/fermions#ecc_fermions",
+                    "_family_generation_level": 0
                 }
             }
         ],
@@ -640,6 +649,11 @@ pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_q-ary_linear",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_fermions",
             "gap": 100
         }
     ]
