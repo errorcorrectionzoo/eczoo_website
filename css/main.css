@@ -160,7 +160,7 @@ dd {
 }
 
 #header {
-  background-image: url(/static/icons/beta-marker.svg);
+  background-image: url(/static/icons/eczoo-main-logo.svg);
   background-position: 97% 50%;
   background-size: auto 80%;
   background-repeat: no-repeat;
@@ -246,7 +246,7 @@ a.code-info-corner-icon {
   margin: -3px 0px -3px 5px;
   padding: 3px 5px;
   color: #78788c;
-  opacity: 0.3;
+  opacity: 0.2;
   width: 12px;
   height: 12px;
   margin-top: 2px;
