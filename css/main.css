@@ -350,6 +350,11 @@ dt.display-code-id {
   margin-bottom: 20px;
 }
 
+#endnotes dl {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 #endnotes dt {
   font-style: normal;
   min-width: 2.5em;
