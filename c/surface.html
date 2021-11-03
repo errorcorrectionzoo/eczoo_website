@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Kitaev&#39;s toric code
+      Kitaev&#39;s surface code
     [error correction zoo]
   </title>
 
@@ -39,58 +39,58 @@
   >
 
   <header id="header">
-    <h1>Kitaev&#39;s toric code</h1>
+    <h1>Kitaev&#39;s surface code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_toric">
+<dl class="ecc-code ecc-code-page" id="ecc_surface">
 
 <dt>Name</dt>
-<dd class="code-name">Kitaev&#39;s toric code
+<dd class="code-name">Kitaev&#39;s surface code
 <span class="code-introduced"><a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a></span>  <a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/toric#ecc_toric">&nbsp;</a></dd>
+     href="/c/surface#ecc_surface">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric</span> often refers to the specific code construction on the two-dimensional torus, the construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[3]</a>, and <span class="textit">surface code</span> is often an alternative name for the general construction.</dd>
+<dd class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> is often either an alternative name for the general construction or refers to the construction on the two-dimensional torus. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[3]</a>.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-4" class="cite">[4]</a>.</dd>
 
 <dt>Decoder</dt>
-<dd class="code-decoders">&lt;p&gt;Minimum weight perfect-matching &lt;a href=&#34;#cite-4&#34; class=&#34;cite&#34;&gt;[4]&lt;/a&gt;&lt;a href=&#34;#cite-5&#34; class=&#34;cite&#34;&gt;[5]&lt;/a&gt;, union-find &lt;a href=&#34;#cite-6&#34; class=&#34;cite&#34;&gt;[6]&lt;/a&gt;, renormalization group &lt;a href=&#34;#cite-7&#34; class=&#34;cite&#34;&gt;[7]&lt;/a&gt;&lt;a href=&#34;#cite-8&#34; class=&#34;cite&#34;&gt;[8]&lt;/a&gt;, tensor network &lt;a href=&#34;#cite-9&#34; class=&#34;cite&#34;&gt;[9]&lt;/a&gt;, Markov chain Monte Carlo &lt;a href=&#34;#cite-10&#34; class=&#34;cite&#34;&gt;[10]&lt;/a&gt;, cellular automaton &lt;a href=&#34;#cite-11&#34; class=&#34;cite&#34;&gt;[11]&lt;/a&gt;, machine learning &lt;a href=&#34;#cite-12&#34; class=&#34;cite&#34;&gt;[12]&lt;/a&gt;&lt;a href=&#34;#cite-13&#34; class=&#34;cite&#34;&gt;[13]&lt;/a&gt;&lt;a href=&#34;#cite-14&#34; class=&#34;cite&#34;&gt;[14]&lt;/a&gt;.&lt;/p&gt;</dd>
+<dd class="code-decoders"><p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-5" class="cite">[5]</a>, union-find <a href="#cite-6" class="cite">[6]</a>, renormalization group <a href="#cite-7" class="cite">[7]</a><a href="#cite-8" class="cite">[8]</a>, tensor network <a href="#cite-9" class="cite">[9]</a>, Markov chain Monte Carlo <a href="#cite-10" class="cite">[10]</a>, cellular automaton <a href="#cite-11" class="cite">[11]</a>, machine learning <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a>.</p></dd>
 
 <dt class="code-feature code-feature-fault_tolerance">fault_tolerance</dt>
 <dd class="code-feature code-feature-fault_tolerance">
-  &lt;p&gt;Fault-tolerant threshold of &lt;span class=&#34;inline-math&#34;&gt;\(0.5-1.1\%\)&lt;/span&gt; depending on the error model &lt;a href=&#34;#cite-15&#34; class=&#34;cite&#34;&gt;[15]&lt;/a&gt;.&lt;/p&gt;
+  <p>Fault-tolerant threshold of <span class="inline-math">\(0.5-1.1\%\)</span> depending on the error model <a href="#cite-15" class="cite">[15]</a>.</p>
 </dd>
 <dt class="code-feature code-feature-general_gates">general_gates</dt>
 <dd class="code-feature code-feature-general_gates">
-  &lt;p&gt;Clifford gates can be implemented via lattice surgery &lt;a href=&#34;#cite-16&#34; class=&#34;cite&#34;&gt;[16]&lt;/a&gt;&lt;a href=&#34;#cite-17&#34; class=&#34;cite&#34;&gt;[17]&lt;/a&gt; or braiding defects &lt;a href=&#34;#cite-18&#34; class=&#34;cite&#34;&gt;[18]&lt;/a&gt;&lt;a href=&#34;#cite-19&#34; class=&#34;cite&#34;&gt;[19]&lt;/a&gt;&lt;a href=&#34;#cite-20&#34; class=&#34;cite&#34;&gt;[20]&lt;/a&gt;&lt;a href=&#34;#cite-21&#34; class=&#34;cite&#34;&gt;[21]&lt;/a&gt;. Non-Clifford gates require magic state distillation &lt;a href=&#34;#cite-22&#34; class=&#34;cite&#34;&gt;[22]&lt;/a&gt; or just-in-time decoding &lt;a href=&#34;#cite-23&#34; class=&#34;cite&#34;&gt;[23]&lt;/a&gt;.&lt;/p&gt;
+  <p>Clifford gates can be implemented via lattice surgery <a href="#cite-16" class="cite">[16]</a><a href="#cite-17" class="cite">[17]</a> or braiding defects <a href="#cite-18" class="cite">[18]</a><a href="#cite-19" class="cite">[19]</a><a href="#cite-20" class="cite">[20]</a><a href="#cite-21" class="cite">[21]</a>. Non-Clifford gates require magic state distillation <a href="#cite-22" class="cite">[22]</a> or just-in-time decoding <a href="#cite-23" class="cite">[23]</a>.</p>
 </dd>
 <dt class="code-feature code-feature-threshold">threshold</dt>
 <dd class="code-feature code-feature-threshold">
-  &lt;p&gt;Depolarizing noise: &lt;span class=&#34;inline-math&#34;&gt;\(18.9\%\)&lt;/span&gt; &lt;a href=&#34;#cite-24&#34; class=&#34;cite&#34;&gt;[24]&lt;/a&gt;, independent &lt;span class=&#34;inline-math&#34;&gt;\(X/Z\)&lt;/span&gt; errors: &lt;span class=&#34;inline-math&#34;&gt;\(10.9\%\)&lt;/span&gt; &lt;a href=&#34;#cite-25&#34; class=&#34;cite&#34;&gt;[25]&lt;/a&gt;, loss errors: &lt;span class=&#34;inline-math&#34;&gt;\(50\%\)&lt;/span&gt; &lt;a href=&#34;#cite-26&#34; class=&#34;cite&#34;&gt;[26]&lt;/a&gt;, phenomenological noise: &lt;span class=&#34;inline-math&#34;&gt;\(3.3\%\)&lt;/span&gt; &lt;a href=&#34;#cite-27&#34; class=&#34;cite&#34;&gt;[27]&lt;/a&gt; (all for square tiling).&lt;/p&gt;
+  <p>Depolarizing noise: <span class="inline-math">\(18.9\%\)</span> <a href="#cite-24" class="cite">[24]</a>, independent <span class="inline-math">\(X/Z\)</span> errors: <span class="inline-math">\(10.9\%\)</span> <a href="#cite-25" class="cite">[25]</a>, loss errors: <span class="inline-math">\(50\%\)</span> <a href="#cite-26" class="cite">[26]</a>, phenomenological noise: <span class="inline-math">\(3.3\%\)</span> <a href="#cite-27" class="cite">[27]</a> (all for square tiling).</p>
 </dd>
 <dt class="code-feature code-feature-encoders">encoders</dt>
 <dd class="code-feature code-feature-encoders">
-  &lt;p&gt;Unitary &lt;a href=&#34;#cite-28&#34; class=&#34;cite&#34;&gt;[28]&lt;/a&gt;&lt;a href=&#34;#cite-29&#34; class=&#34;cite&#34;&gt;[29]&lt;/a&gt;&lt;a href=&#34;#cite-30&#34; class=&#34;cite&#34;&gt;[30]&lt;/a&gt;, dissipative &lt;a href=&#34;#cite-31&#34; class=&#34;cite&#34;&gt;[31]&lt;/a&gt;, stabilizer measurement &lt;a href=&#34;#cite-32&#34; class=&#34;cite&#34;&gt;[32]&lt;/a&gt;.&lt;/p&gt;
+  <p>Unitary <a href="#cite-28" class="cite">[28]</a><a href="#cite-29" class="cite">[29]</a><a href="#cite-30" class="cite">[30]</a>, dissipative <a href="#cite-31" class="cite">[31]</a>, stabilizer measurement <a href="#cite-32" class="cite">[32]</a>.</p>
 </dd>
 <dt class="code-feature code-feature-decoders">decoders</dt>
 <dd class="code-feature code-feature-decoders">
-  &lt;p&gt;Minimum weight perfect-matching &lt;a href=&#34;#cite-4&#34; class=&#34;cite&#34;&gt;[4]&lt;/a&gt;&lt;a href=&#34;#cite-5&#34; class=&#34;cite&#34;&gt;[5]&lt;/a&gt;, union-find &lt;a href=&#34;#cite-6&#34; class=&#34;cite&#34;&gt;[6]&lt;/a&gt;, renormalization group &lt;a href=&#34;#cite-7&#34; class=&#34;cite&#34;&gt;[7]&lt;/a&gt;&lt;a href=&#34;#cite-8&#34; class=&#34;cite&#34;&gt;[8]&lt;/a&gt;, tensor network &lt;a href=&#34;#cite-9&#34; class=&#34;cite&#34;&gt;[9]&lt;/a&gt;, Markov chain Monte Carlo &lt;a href=&#34;#cite-10&#34; class=&#34;cite&#34;&gt;[10]&lt;/a&gt;, cellular automaton &lt;a href=&#34;#cite-11&#34; class=&#34;cite&#34;&gt;[11]&lt;/a&gt;, machine learning &lt;a href=&#34;#cite-12&#34; class=&#34;cite&#34;&gt;[12]&lt;/a&gt;&lt;a href=&#34;#cite-13&#34; class=&#34;cite&#34;&gt;[13]&lt;/a&gt;&lt;a href=&#34;#cite-14&#34; class=&#34;cite&#34;&gt;[14]&lt;/a&gt;.&lt;/p&gt;
+  <p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-5" class="cite">[5]</a>, union-find <a href="#cite-6" class="cite">[6]</a>, renormalization group <a href="#cite-7" class="cite">[7]</a><a href="#cite-8" class="cite">[8]</a>, tensor network <a href="#cite-9" class="cite">[9]</a>, Markov chain Monte Carlo <a href="#cite-10" class="cite">[10]</a>, cellular automaton <a href="#cite-11" class="cite">[11]</a>, machine learning <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a>.</p>
 </dd>
 
 <dt>Notes</dt>
 <dd class="code-notes">
-  &lt;p&gt;When treated as ground states of the code Hamiltonian, the code states realize &lt;span class=&#34;inline-math&#34;&gt;\(\mathbb{Z}_2\)&lt;/span&gt; topological order, a topological phase of matter that also exists in &lt;span class=&#34;inline-math&#34;&gt;\(\mathbb{Z}_2\)&lt;/span&gt; lattice gauge theory &lt;a href=&#34;#cite-33&#34; class=&#34;cite&#34;&gt;[33]&lt;/a&gt;.&lt;/p&gt;
+  <p>When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-33" class="cite">[33]</a>.</p>
 </dd>
 
 <dt>Realizations</dt>
 <dd class="code-realizations">
-  &lt;p&gt;Distance-two toric codes have been implemented by Andersen et al. &lt;a href=&#34;#cite-34&#34; class=&#34;cite&#34;&gt;[34]&lt;/a&gt;, Erhard et al. &lt;a href=&#34;#cite-35&#34; class=&#34;cite&#34;&gt;[35]&lt;/a&gt; and Google Quantum AI &lt;a href=&#34;#cite-36&#34; class=&#34;cite&#34;&gt;[36]&lt;/a&gt;.&lt;/p&gt;
+  <p>Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-34" class="cite">[34]</a>, Erhard et al. <a href="#cite-35" class="cite">[35]</a> and Google Quantum AI <a href="#cite-36" class="cite">[36]</a>.</p>
 </dd>
 
 <dt>Parent(s)</dt>
@@ -115,15 +115,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    toric
+    surface
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/toric.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/surface.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=toric">edit on this site</a>
+       href="/edit_code?code_id=surface">edit on this site</a>
   </div>
 </dd>
 

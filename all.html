@@ -73,12 +73,17 @@
   <li>
     <span class="code-name">
       <a href="/c/homological#ecc_homological">Homological code</a></span>
-    <span class="code-description">Add topological code entry as well.</span>
+    <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/toric#ecc_toric">Kitaev&#39;s toric code</a><span class="code-introduced"><a href="#cite-5" class="cite">[5]</a></span></span>
-    <span class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric</span> often refers to the specific code construction on the two-dimensional torus, the construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-6" class="cite">[6]</a>, and <span class="textit">surface code</span> is often an alternative name for the general construction.</span>
+      <a href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a></span>
+    <span class="code-description">Encodes a <span class="inline-math">\(K\)</span>-dimensional logical Hilbert space into a combined <span class="inline-math">\(n_1\)</span>-qubit and <span class="inline-math">\(n_2\)</span>-oscillator Hilbert space, i.e., the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{Z}_2^{n_1} \times \mathbb{R}^{n_2}\)</span>.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/surface#ecc_surface">Kitaev&#39;s surface code</a><span class="code-introduced"><a href="#cite-5" class="cite">[5]</a><a href="#cite-6" class="cite">[6]</a></span></span>
+    <span class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> is often either an alternative name for the general construction or refers to the construction on the two-dimensional torus. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-7" class="cite">[7]</a>.</span>
   </li>
   <li>
     <span class="code-name">
@@ -92,12 +97,12 @@
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-7" class="cite">[7]</a><a href="#cite-8" class="cite">[8]</a></span></span>
+      <a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-8" class="cite">[8]</a><a href="#cite-9" class="cite">[9]</a></span></span>
     <span class="code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (LDPC) code</a></span>
+      <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>
     <span class="code-description"></span>
   </li>
   <li>
@@ -117,23 +122,28 @@
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a><span class="code-introduced"><a href="#cite-9" class="cite">[9]</a></span></span>
+      <a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a><span class="code-introduced"><a href="#cite-10" class="cite">[10]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,2^k,d))_q\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(q^{n-k}\)</span> commuting qudit Pauli operators forming the code&#39;s stabilizer group. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a><span class="code-introduced"><a href="#cite-10" class="cite">[10]</a></span></span>
+      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a><span class="code-introduced"><a href="#cite-11" class="cite">[11]</a><a href="#cite-12" class="cite">[12]</a></span></span>
     <span class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-11" class="cite">[11]</a></span></span>
+      <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-13" class="cite">[13]</a></span></span>
     <span class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-9" class="cite">[9]</a></span></span>
+      <a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-10" class="cite">[10]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#39;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#39;s stabilizer group. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/topological#ecc_topological">Topological code</a></span>
+    <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
@@ -183,35 +193,47 @@
       <!-- Citation:  -->
       <dt id="cite-6">[6]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="arxiv-link">arXiv:quant-ph/9811052</a>
+          <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="arxiv-link">arXiv:quant-ph/9707021</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[7]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="arxiv-link">arXiv:quant-ph/9711021</a>
+          <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="arxiv-link">arXiv:quant-ph/9811052</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[8]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="arxiv-link">arXiv:quant-ph/9711049</a>
+          <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="arxiv-link">arXiv:quant-ph/9711021</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[9]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="arxiv-link">arXiv:quant-ph/9705052</a>
+          <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="arxiv-link">arXiv:quant-ph/9711049</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[10]</dt>
       <dd>
-          <a href="https://arxiv.org/abs/quant-ph/9610043" target="_blank" class="arxiv-link">arXiv:quant-ph/9610043</a>
+          <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="arxiv-link">arXiv:quant-ph/9705052</a>
         
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[11]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9505011" target="_blank" class="arxiv-link">arXiv:quant-ph/9505011</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[12]</dt>
+      <dd>
+          <a href="https://arxiv.org/abs/quant-ph/9610043" target="_blank" class="arxiv-link">arXiv:quant-ph/9610043</a>
+        
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[13]</dt>
       <dd>
           <a href="https://doi.org/10.1137/0108018" target="_blank" class="doi-link">doi:10.1137/0108018</a>
         

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      \(q\)-ary linear code
+      Hybrid qudit-oscillator code
     [error correction zoo]
   </title>
 
@@ -39,32 +39,26 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\(q\)</span>-ary linear code</h1>
+    <h1>Hybrid qudit-oscillator code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_q-ary_linear">
+<dl class="ecc-code ecc-code-page" id="ecc_hybrid_qudit_oscillator">
 
 <dt>Name</dt>
-<dd class="code-name"><span class="inline-math">\(q\)</span>-ary linear code
+<dd class="code-name">Hybrid qudit-oscillator code
   <a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/q-ary_linear#ecc_q-ary_linear">&nbsp;</a></dd>
+     href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">&nbsp;</a></dd>
 
 <dt>Description</dt>
-<dd class="code-description">An <span class="inline-math">\((n,2^k,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</dd>
-
-<dt>Protection</dt>
-<dd class="code-protection">Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</dd>
+<dd class="code-description">Encodes a <span class="inline-math">\(K\)</span>-dimensional logical Hilbert space into a combined <span class="inline-math">\(n_1\)</span>-qubit and <span class="inline-math">\(n_2\)</span>-oscillator Hilbert space, i.e., the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{Z}_2^{n_1} \times \mathbb{R}^{n_2}\)</span>.</dd>
 
 
 
-<dt>Notes</dt>
-<dd class="code-notes">
-  <p>Admits a parity check matrix <span class="inline-math">\(H\)</span>, whose columns make up a maximal linearly independent set of vectors that are in the kernel of <span class="inline-math">\(G\)</span>.</p>
-</dd>
+
 
 
 <dt>Parent(s)</dt>
@@ -72,19 +66,20 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>  </li>
 </ul>
 </dd>
 
-<dt>Parent of</dt>
-<dd class="code-parent-of">
+
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
 
 
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a></span>  </li>
+<ul class="code-relations-list code-cousins-list">
+  <li><span class="code-cousins-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>    <span class="code-cousins-1-detail">(Hybrid code with <span class="inline-math">\(n_2=0\)</span>.)</span>  </li>
+  <li><span class="code-cousins-1-code"><a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a></span>    <span class="code-cousins-1-detail">(Hybrid code with <span class="inline-math">\(n_1=0\)</span>.)</span>  </li>
 </ul>
 </dd>
-
 
 
 <!-- zoo-related information and how to edit -->
@@ -95,15 +90,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    q-ary_linear
+    hybrid_qudit_oscillator
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/q-ary_digits/q-ary_linear.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/groups/hybrid_qudit_oscillator.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=q-ary_linear">edit on this site</a>
+       href="/edit_code?code_id=hybrid_qudit_oscillator">edit on this site</a>
   </div>
 </dd>
 

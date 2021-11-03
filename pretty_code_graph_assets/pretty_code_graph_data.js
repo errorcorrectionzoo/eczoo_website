@@ -70,20 +70,9 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "c_toric",
-                    "label": "Kitaev's toric code",
-                    "_description": [
-                        "A family of stabilizer codes whose generators are few-body \\(X\\)-type and \\(Z\\)-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surfa..."
-                    ],
-                    "_code_href": "/c/toric#ecc_toric",
-                    "_family_generation_level": 3
-                }
-            },
-            {
-                "data": {
                     "id": "c_homological",
                     "label": "Homological code",
-                    "_description": "Add topological code entry as well.",
+                    "_description": "Stub.",
                     "_code_href": "/c/homological#ecc_homological",
                     "_family_generation_level": 3
                 }
@@ -111,10 +100,30 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_ldpc",
-                    "label": "Quantum low-density parity-check (LDPC) code",
+                    "label": "Quantum low-density parity-check (QLDPC) code",
                     "_description": "",
                     "_code_href": "/c/quantum_ldpc#ecc_quantum_ldpc",
                     "_family_generation_level": 2
+                }
+            },
+            {
+                "data": {
+                    "id": "c_surface",
+                    "label": "Kitaev's surface code",
+                    "_description": [
+                        "A family of stabilizer codes whose generators are few-body \\(X\\)-type and \\(Z\\)-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surfa..."
+                    ],
+                    "_code_href": "/c/surface#ecc_surface",
+                    "_family_generation_level": 3
+                }
+            },
+            {
+                "data": {
+                    "id": "c_topological",
+                    "label": "Topological code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/topological#ecc_topological",
+                    "_family_generation_level": 3
                 }
             },
             {
@@ -163,6 +172,17 @@ pretty_code_graph_data = {
                     ],
                     "_code_href": "/c/molecular#ecc_molecular",
                     "_family_generation_level": 2
+                }
+            },
+            {
+                "data": {
+                    "id": "c_hybrid_qudit_oscillator",
+                    "label": "Hybrid qudit-oscillator code",
+                    "_description": [
+                        "Encodes a \\(K\\)-dimensional logical Hilbert space into a combined \\(n_1\\)-qubit and \\(n_2\\)-oscillator Hilbert space, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}_2^..."
+                    ],
+                    "_code_href": "/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator",
+                    "_family_generation_level": 1
                 }
             },
             {
@@ -296,34 +316,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_toric_css_3",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_toric",
-                    "target": "c_css"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_toric_homological_4",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_toric",
-                    "target": "c_homological"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_toric_quantum_ldpc_5",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_toric",
-                    "target": "c_quantum_ldpc"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_homological_css_6",
+                    "id": "parent_homological_css_3",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_homological",
@@ -332,7 +325,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_stabilizer_qubits_into_qubits_7",
+                    "id": "parent_stabilizer_qubits_into_qubits_4",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_stabilizer",
@@ -341,7 +334,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_repetition_css_8",
+                    "id": "parent_quantum_repetition_css_5",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_repetition",
@@ -350,11 +343,47 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_ldpc_stabilizer_9",
+                    "id": "parent_quantum_ldpc_stabilizer_6",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_ldpc",
                     "target": "c_stabilizer"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_surface_css_7",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_surface",
+                    "target": "c_css"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_surface_homological_8",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_surface",
+                    "target": "c_homological"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_surface_quantum_ldpc_9",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_surface",
+                    "target": "c_quantum_ldpc"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_topological_css_10",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_topological",
+                    "target": "c_css"
                 }
             },
             {
@@ -368,7 +397,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_group_gkp_group_quantum_10",
+                    "id": "parent_group_gkp_group_quantum_11",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_group_gkp",
@@ -386,7 +415,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_molecular_group_gkp_11",
+                    "id": "parent_molecular_group_gkp_12",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_molecular",
@@ -395,7 +424,34 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qudit_stabilizer_qudits_into_qudits_12",
+                    "id": "parent_hybrid_qudit_oscillator_group_quantum_13",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_hybrid_qudit_oscillator",
+                    "target": "c_group_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_hybrid_qudit_oscillator_qudits_into_qudits__1",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_hybrid_qudit_oscillator",
+                    "target": "c_qudits_into_qudits"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_hybrid_qudit_oscillator_qudits_into_oscillators__2",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_hybrid_qudit_oscillator",
+                    "target": "c_qudits_into_oscillators"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_qudit_stabilizer_qudits_into_qudits_14",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qudit_stabilizer",
@@ -413,7 +469,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_linear_bits_into_bits_13",
+                    "id": "parent_binary_linear_bits_into_bits_15",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_binary_linear",
@@ -431,7 +487,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_reed_solomon_q-ary_linear_14",
+                    "id": "parent_reed_solomon_q-ary_linear_16",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_reed_solomon",
@@ -449,7 +505,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_q-ary_linear_q-ary_digits_into_q-ary_digits_15",
+                    "id": "parent_q-ary_linear_q-ary_digits_into_q-ary_digits_17",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_q-ary_linear",
@@ -498,11 +554,6 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_toric",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
             "bottom": "c_homological",
             "gap": 100
         },
@@ -523,6 +574,16 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_surface",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_topological",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_qubits_into_qubits",
             "gap": 100
         },
@@ -539,6 +600,11 @@ pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_molecular",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_hybrid_qudit_oscillator",
             "gap": 100
         },
         {
