@@ -368,6 +368,7 @@ dt.display-code-id {
 
 #endnotes dd {
   margin-left: 5px;
+  margin-bottom: 0.4em;
 }
 
 #endnotes dt, #endnotes dd {
