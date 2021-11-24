@@ -72,25 +72,25 @@
 
 
 <dt>Encoder</dt>
-  <dd class="code-feature-encoders"><p>Unitary <a href="#cite-5" class="cite">[5]</a><a href="#cite-6" class="cite">[6]</a><a href="#cite-7" class="cite">[7]</a>, dissipative <a href="#cite-8" class="cite">[8]</a>, stabilizer measurement <a href="#cite-9" class="cite">[9]</a>.</p></dd>
+  <dd class="code-feature-encoders"><p>Unitary <a href="#cite-5" class="cite">[5]</a><a href="#cite-6" class="cite">[6]</a><a href="#cite-7" class="cite">[7]</a>.</p><p>Dissipative <a href="#cite-8" class="cite">[8]</a>.</p><p>Stabilizer measurement-based <a href="#cite-9" class="cite">[9]</a>.</p></dd>
 
 
+<dt>Transversal Gates</dt>
+  <dd class="code-feature-transversal_gates">Pauli gates on torus geometry.</dd>
 
 
 <dt>Gates</dt>
-  <dd class="code-feature-general_gates"><p>Clifford gates can be implemented via lattice surgery <a href="#cite-10" class="cite">[10]</a><a href="#cite-11" class="cite">[11]</a> or braiding defects <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a><a href="#cite-15" class="cite">[15]</a>. Non-Clifford gates require magic state distillation <a href="#cite-16" class="cite">[16]</a> or just-in-time decoding <a href="#cite-17" class="cite">[17]</a>.</p></dd>
+  <dd class="code-feature-general_gates"><p>Clifford gates can be implemented via lattice surgery <a href="#cite-10" class="cite">[10]</a><a href="#cite-11" class="cite">[11]</a> or braiding defects <a href="#cite-12" class="cite">[12]</a><a href="#cite-13" class="cite">[13]</a><a href="#cite-14" class="cite">[14]</a><a href="#cite-15" class="cite">[15]</a>.</p><p>Non-Clifford gates require magic state distillation <a href="#cite-16" class="cite">[16]</a> or just-in-time decoding <a href="#cite-17" class="cite">[17]</a>.</p></dd>
 
 
 <dt>Decoder</dt>
   <dd class="code-feature-decoders"><p>Minimum weight perfect-matching <a href="#cite-4" class="cite">[4]</a><a href="#cite-18" class="cite">[18]</a>, union-find <a href="#cite-19" class="cite">[19]</a>, renormalization group <a href="#cite-20" class="cite">[20]</a><a href="#cite-21" class="cite">[21]</a>, tensor network <a href="#cite-22" class="cite">[22]</a>, Markov chain Monte Carlo <a href="#cite-23" class="cite">[23]</a>, cellular automaton <a href="#cite-24" class="cite">[24]</a>, machine learning <a href="#cite-25" class="cite">[25]</a><a href="#cite-26" class="cite">[26]</a><a href="#cite-27" class="cite">[27]</a>.</p></dd>
 
 
-<dt>Fault Tolerance</dt>
-  <dd class="code-feature-fault_tolerance"><p>Fault-tolerant threshold of <span class="inline-math">\(0.5-1.1\%\)</span> depending on the error model <a href="#cite-28" class="cite">[28]</a>.</p></dd>
 
 
 <dt>Threshold</dt>
-  <dd class="code-feature-threshold"><p>Depolarizing noise: <span class="inline-math">\(18.9\%\)</span> <a href="#cite-29" class="cite">[29]</a>, independent <span class="inline-math">\(X/Z\)</span> errors: <span class="inline-math">\(10.9\%\)</span> <a href="#cite-30" class="cite">[30]</a>, loss errors: <span class="inline-math">\(50\%\)</span> <a href="#cite-31" class="cite">[31]</a>, phenomenological noise: <span class="inline-math">\(3.3\%\)</span> <a href="#cite-32" class="cite">[32]</a> (all for square tiling).</p></dd>
+  <dd class="code-feature-threshold"><p><span class="inline-math">\(10.9\%\)</span> with independent <span class="inline-math">\(X/Z\)</span> errors for square tiling <a href="#cite-28" class="cite">[28]</a>.</p><p><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-29" class="cite">[29]</a>.</p><p><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-30" class="cite">[30]</a>.</p><p><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-31" class="cite">[31]</a>.</p><p><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-32" class="cite">[32]</a>.</p></dd>
 
 
 
@@ -101,7 +101,7 @@
 
 <dt>Notes</dt>
 <dd class="code-notes">
-  <p>When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-36" class="cite">[36]</a>.</p>
+  <p>When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-36" class="cite">[36]</a>.</p><p>2D and 3D surface code <a href="http://gui.quantumcodes.io/" target="_blank" class="href">visualization tool</a>.</p>
 </dd>
 
 
@@ -112,14 +112,22 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
   <li><span class="code-parents-1-code"><a href="/c/homological#ecc_homological">Homological code</a></span>  </li>
   <li><span class="code-parents-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-parents-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation.)</span>  </li>
-  <li><span class="code-parents-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product</a></span>    <span class="code-parents-1-detail">(Surface (toric) code obtained from hypergraph product of two (closed-loop) repetition codes.)</span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/topological#ecc_topological">Topological code</a></span>  </li>
 </ul>
 </dd>
 
 
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li><span class="code-cousins-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two (cyclic) repetition codes.)</span>  </li>
+</ul>
+</dd>
 
 
 
@@ -136,7 +144,7 @@
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/qubits/surface.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/surface.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=surface">edit on this site</a>
@@ -285,7 +293,7 @@
       <!-- Citation:  -->
       <dt id="cite-28">[28]</dt>
       <dd>
-        A. M. Stephens, “Fault-tolerant thresholds for quantum error correction with the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="href">DOI</a>
+        M. Ohzeki, “Locations of multicritical points for spin glasses on regular lattices”, Physical Review E <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[29]</dt>
@@ -295,17 +303,17 @@
       <!-- Citation:  -->
       <dt id="cite-30">[30]</dt>
       <dd>
-        M. Ohzeki, “Locations of multicritical points for spin glasses on regular lattices”, Physical Review E <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="href">DOI</a>
+        T. M. Stace, S. D. Barrett, and A. C. Doherty, “Thresholds for Topological Codes in the Presence of Loss”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-31">[31]</dt>
       <dd>
-        T. M. Stace, S. D. Barrett, and A. C. Doherty, “Thresholds for Topological Codes in the Presence of Loss”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="href">DOI</a>
+        T. Ohno et al., “Phase structure of the random-plaquette gauge model: accuracy threshold for a toric quantum memory”, Nuclear Physics B <span class="textbf">697</span>, 462 (2004). <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-32">[32]</dt>
       <dd>
-        T. Ohno et al., “Phase structure of the random-plaquette gauge model: accuracy threshold for a toric quantum memory”, Nuclear Physics B <span class="textbf">697</span>, 462 (2004). <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="href">DOI</a>
+        A. M. Stephens, “Fault-tolerant thresholds for quantum error correction with the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-33">[33]</dt>

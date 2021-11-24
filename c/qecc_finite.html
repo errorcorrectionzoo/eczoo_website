@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Stabilizer code
+      Quantum error-correcting code (QECC) in finite dimensions
     [error correction zoo]
   </title>
 
@@ -39,28 +39,28 @@
   >
 
   <header id="header">
-    <h1>Stabilizer code</h1>
+    <h1>Quantum error-correcting code (QECC) in finite dimensions</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_stabilizer">
+<dl class="ecc-code ecc-code-page" id="ecc_qecc_finite">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Stabilizer code<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
+  Quantum error-correcting code (QECC) in finite dimensions<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/stabilizer#ecc_stabilizer">&nbsp;</a>
+     href="/c/qecc_finite#ecc_qecc_finite">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace <span class="inline-math">\(\mathsf{H_K}\)</span> of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space <span class="inline-math">\(\mathsf{H_N}\)</span> such that it is possible to recover said information from errors. Formally, a finite-dimensional QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits.</dd>
+<dd class="code-protection">Correction capability is determined by the Knill-Laflamme error correction criteria <a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -75,6 +75,8 @@
 
 
 
+<dt>Gates</dt>
+  <dd class="code-feature-general_gates"><p>Universal gate set cannot be transversal due to Eastin-Knill theorem <a href="#cite-3" class="cite">[3]</a>.</p></dd>
 
 
 
@@ -94,7 +96,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/qecc#ecc_qecc">Quantum error-correcting code (QECC)</a></span>  </li>
 </ul>
 </dd>
 
@@ -103,8 +105,9 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type.)</span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/fermions#ecc_fermions">Fermionic code</a></span>  </li>
 </ul>
 </dd>
 
@@ -114,7 +117,7 @@
 
 
 <ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/c/gkp#ecc_gkp">Gotteman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousin-of-1-detail">(Displacement operators can be thought of as analgues of Pauli operators for the oscillator.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(For physical spaces associated with finite groups.)</span>  </li>
 </ul>
 </dd>
 
@@ -127,15 +130,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    stabilizer
+    qecc_finite
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/stabilizer.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qecc_finite.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=stabilizer">edit on this site</a>
+       href="/edit_code?code_id=qecc_finite">edit on this site</a>
   </div>
 </dd>
 
@@ -146,7 +149,17 @@
       <!-- Citation:  -->
       <dt id="cite-1">[1]</dt>
       <dd>
-        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+        E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href">quant-ph/9604034</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[2]</dt>
+      <dd>
+        C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href">quant-ph/9604024</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[3]</dt>
+      <dd>
+        B. Eastin and E. Knill, “Restrictions on Transversal Encoded Quantum Gate Sets”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.110502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.4262" target="_blank" class="href">0811.4262</a>
       </dd>
     
     </dl>

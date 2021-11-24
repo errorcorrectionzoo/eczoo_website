@@ -53,6 +53,10 @@
   <span class="short-code-name"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/ecc#ecc_ecc">Error-correcting code</a>.
+  </span>
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
@@ -70,18 +74,18 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/polar_codes#ecc_polar_codes">Polar code</a>,       <a href="/c/binary_reed_muller#ecc_binary_reed_muller">Binary Reed-Muller code</a>.
+      <a href="/c/polar_codes#ecc_polar_codes">Polar code</a>,       <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) code</a>.
+      <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_polar_codes">
   <span class="short-code-name"><a href="/c/polar_codes#ecc_polar_codes">Polar code</a><span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span></span>
-  <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits and the remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values (i.e., are frozen). The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>. The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</span>
+  <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>. The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</span>
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -89,13 +93,13 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/binary_reed_muller#ecc_binary_reed_muller">Binary Reed-Muller code</a>,       <a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a>.
+      <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a>.
   </span>
 </div>
 
 
-<div class="ecc-code" id="ecc_binary_reed_muller">
-  <span class="short-code-name"><a href="/c/binary_reed_muller#ecc_binary_reed_muller">Binary Reed-Muller code</a><span class="code-introduced"><a href="#cite-2" class="cite">[2]</a><a href="#cite-3" class="cite">[3]</a></span></span>
+<div class="ecc-code" id="ecc_reed_muller">
+  <span class="short-code-name"><a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-2" class="cite">[2]</a><a href="#cite-3" class="cite">[3]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -104,6 +108,16 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/polar_codes#ecc_polar_codes">Polar code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_ldpc">
+  <span class="short-code-name"><a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
   </span>
 </div>
 

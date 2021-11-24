@@ -51,8 +51,12 @@
 
 <div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
   <span class="short-code-name"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum number of coordinates where two strings in the code differ.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/ecc#ecc_ecc">Error-correcting code</a>.
+  </span>
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
@@ -62,7 +66,7 @@
 
 <div class="ecc-code" id="ecc_q-ary_linear">
   <span class="short-code-name"><a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
   <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
   <span class="short-code-parents">
     Parents:
