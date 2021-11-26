@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Binary Reed-Muller code
+      Self-dual linear code
     [error correction zoo]
   </title>
 
@@ -39,26 +39,28 @@
   >
 
   <header id="header">
-    <h1>Binary Reed-Muller code</h1>
+    <h1>Self-dual linear code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_binary_reed_muller">
+<dl class="ecc-code ecc-code-page" id="ecc_self_dual">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Binary Reed-Muller code<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a></span><a class="code-info-corner-icon code-self-permalink"
+  Self-dual linear code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/binary_reed_muller#ecc_binary_reed_muller">&nbsp;</a>
+     href="/c/self_dual#ecc_self_dual">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description">A binary linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_2^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is equal to <span class="inline-math">\(C\)</span>.</dd>
 
+<dt>Protection</dt>
+<dd class="code-protection">The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</dd>
 
 
 <!-- Display features -->
@@ -83,6 +85,10 @@
 
 
 
+<dt>Notes</dt>
+<dd class="code-notes">
+  <p></p>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -92,20 +98,12 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a></span>  </li>
 </ul>
 </dd>
 
 
 
-<dt>Cousin of</dt>
-<dd class="code-cousin-of">
-
-
-<ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/c/polar_codes#ecc_polar_codes">Polar code</a></span>    <span class="code-cousin-of-1-detail">(Reed-Muller code relies on the same generator matrix, but places message bits in different coordinates.)</span>  </li>
-</ul>
-</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -116,35 +114,20 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    binary_reed_muller
+    self_dual
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/bits/binary_reed_muller.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/self_dual.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=binary_reed_muller">edit on this site</a>
+       href="/edit_code?code_id=self_dual">edit on this site</a>
   </div>
 </dd>
 
 </dl>
 
-   <div id="endnotes">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-1">[1]</dt>
-      <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[2]</dt>
-      <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-   </div>
 
   </main><!-- #main -->
 

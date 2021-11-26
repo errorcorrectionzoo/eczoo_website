@@ -74,7 +74,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/polar_codes#ecc_polar_codes">Polar code</a>,       <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a>.
+      <a href="/c/polar_codes#ecc_polar_codes">Polar code</a>,       <a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a>,       <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -94,6 +94,21 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_weakly_self_dual">
+  <span class="short-code-name"><a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a></span>
+  <span class="short-code-description">A binary linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_2^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is contained in <span class="inline-math">\(C\)</span>.</span>
+  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/self_dual#ecc_self_dual">Self-dual linear code</a>.
   </span>
 </div>
 
@@ -118,6 +133,17 @@
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_self_dual">
+  <span class="short-code-name"><a href="/c/self_dual#ecc_self_dual">Self-dual linear code</a></span>
+  <span class="short-code-description">A binary linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_2^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is equal to <span class="inline-math">\(C\)</span>.</span>
+  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a>.
   </span>
 </div>
 
