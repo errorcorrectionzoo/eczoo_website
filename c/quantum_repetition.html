@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Quantum repetition code
+      Qubit repetition code
     [error correction zoo]
   </title>
 
@@ -39,7 +39,7 @@
   >
 
   <header id="header">
-    <h1>Quantum repetition code</h1>
+    <h1>Qubit repetition code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -50,17 +50,17 @@
 
 <dt>Name</dt>
 <dd class="code-name">
-  Quantum repetition code<a class="code-info-corner-icon code-self-permalink"
+  Qubit repetition code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
      href="/c/quantum_repetition#ecc_quantum_repetition">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|1\rangle^{\otimes n}\)</span>.</dd>
+<dd class="code-description">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Detects bit-flip errors <span class="inline-math">\(X\)</span> on <span class="inline-math">\(\left\lfloor (n-1)/2\right\rfloor\)</span> qubits. Cannot detect any phase-flip errors <span class="inline-math">\(Z\)</span>.</dd>
+<dd class="code-protection">Bit-flip code detects bit-flip errors <span class="inline-math">\(X\)</span> on <span class="inline-math">\(\left\lfloor (n-1)/2\right\rfloor\)</span> qubits and does not detect any phase-flip errors <span class="inline-math">\(Z\)</span>. Phase-flip code detects phase-flip errors <span class="inline-math">\(Z\)</span> on <span class="inline-math">\(\left\lfloor (n-1)/2\right\rfloor\)</span> qubits and does not detect any bit-flip errors <span class="inline-math">\(X\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -87,7 +87,7 @@
 
 <dt>Notes</dt>
 <dd class="code-notes">
-  <p>Logical qubit spanned by GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>, which are used in Shor error correction.</p>
+  <p>Logical basis for the bit-flip code is spanned by GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>, which are used in Shor error correction.</p>
 </dd>
 
 
@@ -103,6 +103,14 @@
 </dd>
 
 
+<dt>Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li><span class="code-cousins-1-code"><a href="/c/hamiltonian#ecc_hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
+</ul>
+</dd>
 
 
 

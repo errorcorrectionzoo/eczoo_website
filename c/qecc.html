@@ -60,7 +60,7 @@
 <dd class="code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>. Ideal code states <span class="inline-math">\(|\psi\rangle\)</span> may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Correction capability is determined by the Knill-Laflamme error correction criteria <a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a>.</dd>
+<dd class="code-protection">Correction capability is determined by of the Knill-Laflamme error-correction criteria <a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a>, which may admit infinite terms due to non-normalizability of ideal code states.</dd>
 
 
 <!-- Display features -->
@@ -106,6 +106,7 @@
   <li><span class="code-parent-of-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Quantum error-correcting code (QECC) in finite dimensions</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/oscillators#ecc_oscillators">Bosonic code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/dynamic_gen#ecc_dynamic_gen">Dynamically-generated error-correcting code</a></span>  </li>
 </ul>
 </dd>
 

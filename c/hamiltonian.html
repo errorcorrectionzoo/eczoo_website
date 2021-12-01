@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Group GKP codes
+      Hamiltonian-based code
     [error correction zoo]
   </title>
 
@@ -39,28 +39,28 @@
   >
 
   <header id="header">
-    <h1>Group GKP codes</h1>
+    <h1>Hamiltonian-based code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_group_gkp">
+<dl class="ecc-code ecc-code-page" id="ecc_hamiltonian">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Group GKP codes<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
+  Hamiltonian-based code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/group_gkp#ecc_group_gkp">&nbsp;</a>
+     href="/c/hamiltonian#ecc_hamiltonian">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Group code whose construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset G\)</span>. Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>, and can be finite- or infinite-dimensional. Extension of the <a href="/c/gkp#ecc_gkp" class="ref">GKP code</a> construction.</dd>
+<dd class="code-description">Encoding consists of a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of arbitrarily high energy. When the physical space is a tensor product of subsystems, the Hamiltonian is typically <span class="textit">local</span>, consisting of operators acting on a number of subsystems that is independent of the total number of subsystems (e.g., <a href="/c/quantum_ldpc#ecc_quantum_ldpc" class="ref">quantum LDPC codes</a>). When the physical space is endowed with a geometry, the Hamiltonian is typically <span class="textit">geometrically local</span>, consisting of operators acting on subsystems that occupy a region whose size is independent of the number of subsystems (e.g., <a href="/c/topological#ecc_topological" class="ref">topological codes</a>).</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Protects against generalized bit-flip errors <span class="inline-math">\(g\in G\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</dd>
+<dd class="code-protection">Often determined from the underlying physical properties of the Hamiltonian.</dd>
 
 
 <!-- Display features -->
@@ -94,7 +94,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/oecc#ecc_oecc">Operator quantum error-correcting code</a></span>  </li>
 </ul>
 </dd>
 
@@ -103,21 +103,22 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/molecular#ecc_molecular">Molecular code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/topological#ecc_topological">Topological code</a></span>    <span class="code-parent-of-1-detail">(Codespace is either the ground-state or low-energy subspace of a geometrically local Hamiltonian admitting a topological phase.)</span>  </li>
 </ul>
 </dd>
 
-<dt>Cousin(s)</dt>
-<dd class="code-cousins">
+
+<dt>Cousin of</dt>
+<dd class="code-cousin-of">
 
 
-<ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a></span>    <span class="code-cousins-1-detail">(For logical and physical spaces based on the real line <span class="inline-math">\(\mathbb{R}\)</span>.)</span>  </li>
-  <li><span class="code-cousins-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(For an <span class="inline-math">\(n\)</span>-qubit CSS code, the nested group construction <span class="inline-math">\(C_1^\perp \subseteq C_2 \subset \mathbb{Z}_2^{\times n}\)</span>.)</span>  </li>
-  <li><span class="code-cousins-1-code"><a href="/c/gkp#ecc_gkp">Gotteman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousins-1-detail">(For a single-mode qubit GKP code, the nested group construction is <span class="inline-math">\(2\mathbb{Z}\subset\mathbb{Z}\subset\mathbb{R}\)</span>.)</span>  </li>
+<ul class="code-relations-list code-cousin-of-list">
+  <li><span class="code-cousin-of-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-cousin-of-1-detail">(Codespace is the ground-state space of the <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/quantum_repetition#ecc_quantum_repetition">Qubit repetition code</a></span>    <span class="code-cousin-of-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousin-of-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/surface#ecc_surface">Kitaev&#x27;s surface code</a></span>    <span class="code-cousin-of-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-1" class="cite">[1]</a>.)</span>  </li>
 </ul>
 </dd>
-
 
 
 <!-- zoo-related information and how to edit -->
@@ -128,15 +129,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    group_gkp
+    hamiltonian
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/groups/group_gkp.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=group_gkp">edit on this site</a>
+       href="/edit_code?code_id=hamiltonian">edit on this site</a>
   </div>
 </dd>
 
@@ -147,7 +148,7 @@
       <!-- Citation:  -->
       <dt id="cite-1">[1]</dt>
       <dd>
-        V. V. Albert, J. P. Covey, and J. Preskill, “Robust Encoding of a Qubit in a Molecule”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.031050" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="href">1911.00099</a>
+        F. J. Wegner, “Duality in Generalized Ising Models and Phase Transitions without Local Order Parameters”, Journal of Mathematical Physics <span class="textbf">12</span>, 2259 (1971). <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

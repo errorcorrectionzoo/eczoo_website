@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Group GKP codes
+      Fock-state bosonic code
     [error correction zoo]
   </title>
 
@@ -39,28 +39,28 @@
   >
 
   <header id="header">
-    <h1>Group GKP codes</h1>
+    <h1>Fock-state bosonic code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_group_gkp">
+<dl class="ecc-code ecc-code-page" id="ecc_fock_state">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Group GKP codes<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
+  Fock-state bosonic code<span class="code-introduced"><a href="#cite-1" class="cite">[1]</a><a href="#cite-2" class="cite">[2]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/group_gkp#ecc_group_gkp">&nbsp;</a>
+     href="/c/fock_state#ecc_fock_state">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Group code whose construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset G\)</span>. Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>, and can be finite- or infinite-dimensional. Extension of the <a href="/c/gkp#ecc_gkp" class="ref">GKP code</a> construction.</dd>
+<dd class="code-description">Qudit-into-osillator code whose error correcting properties against oscillator amplitude damping (i.e., photon loss) stem from the use of disjoint sets of Fock states in the code state construction. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock states <span class="inline-math">\(|0\rangle,|4\rangle,|8\rangle,\cdots\)</span> and <span class="inline-math">\(|2\rangle,|6\rangle,|10\rangle,\cdots\)</span>. As a result, the code states typically are most naturally expressed in terms of Fock states.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Protects against generalized bit-flip errors <span class="inline-math">\(g\in G\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</dd>
+<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (in some metric) between any two Fock states of the code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states of the code basis states. Such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</dd>
 
 
 <!-- Display features -->
@@ -94,27 +94,17 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a></span>  </li>
 </ul>
 </dd>
 
-<dt>Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/molecular#ecc_molecular">Molecular code</a></span>  </li>
-</ul>
-</dd>
 
 <dt>Cousin(s)</dt>
 <dd class="code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a></span>    <span class="code-cousins-1-detail">(For logical and physical spaces based on the real line <span class="inline-math">\(\mathbb{R}\)</span>.)</span>  </li>
-  <li><span class="code-cousins-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(For an <span class="inline-math">\(n\)</span>-qubit CSS code, the nested group construction <span class="inline-math">\(C_1^\perp \subseteq C_2 \subset \mathbb{Z}_2^{\times n}\)</span>.)</span>  </li>
-  <li><span class="code-cousins-1-code"><a href="/c/gkp#ecc_gkp">Gotteman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousins-1-detail">(For a single-mode qubit GKP code, the nested group construction is <span class="inline-math">\(2\mathbb{Z}\subset\mathbb{Z}\subset\mathbb{R}\)</span>.)</span>  </li>
+  <li><span class="code-cousins-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between qubit basis states.)</span>  </li>
 </ul>
 </dd>
 
@@ -128,15 +118,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    group_gkp
+    fock_state
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/groups/group_gkp.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=group_gkp">edit on this site</a>
+       href="/edit_code?code_id=fock_state">edit on this site</a>
   </div>
 </dd>
 
@@ -147,7 +137,12 @@
       <!-- Citation:  -->
       <dt id="cite-1">[1]</dt>
       <dd>
-        V. V. Albert, J. P. Covey, and J. Preskill, “Robust Encoding of a Qubit in a Molecule”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.031050" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="href">1911.00099</a>
+        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9505011" target="_blank" class="href">quant-ph/9505011</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[2]</dt>
+      <dd>
+        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610043" target="_blank" class="href">quant-ph/9610043</a>
       </dd>
     
     </dl>
