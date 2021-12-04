@@ -10,7 +10,7 @@ GENERATED_pretty_code_graph_data = {
                     "_page_href": "/domain/classical_domain"
                 },
                 "position": {
-                    "x": 0,
+                    "x": -900.0,
                     "y": -100
                 }
             },
@@ -23,7 +23,7 @@ GENERATED_pretty_code_graph_data = {
                     "_page_href": "/domain/quantum_domain"
                 },
                 "position": {
-                    "x": 900,
+                    "x": 0.0,
                     "y": -100
                 }
             },
@@ -102,7 +102,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 600
                 }
             },
@@ -119,7 +119,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 800
                 }
             },
@@ -137,7 +137,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/bits_into_bits"
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 0
                 }
             },
@@ -152,7 +152,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 800
                 }
             },
@@ -167,7 +167,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 800
                 }
             },
@@ -182,7 +182,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -100.0,
+                    "x": -1000.0,
                     "y": 800
                 }
             },
@@ -199,7 +199,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 800
                 }
             },
@@ -219,7 +219,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/q-ary_digits_into_q-ary_digits"
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 0
                 }
             },
@@ -234,7 +234,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 600
                 }
             },
@@ -249,7 +249,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 800
                 }
             },
@@ -266,7 +266,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 600
                 }
             },
@@ -298,7 +298,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": 0.0,
+                    "x": -900.0,
                     "y": 600
                 }
             },
@@ -362,7 +362,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 1000
                 }
             },
@@ -382,7 +382,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/oscillators"
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 0
                 }
             },
@@ -399,7 +399,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 1000
                 }
             },
@@ -414,7 +414,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 1000
                 }
             },
@@ -429,7 +429,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 800
                 }
             },
@@ -444,7 +444,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 800
                 }
             },
@@ -461,7 +461,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 800.0,
+                    "x": -100.0,
                     "y": 800
                 }
             },
@@ -476,7 +476,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1000
                 }
             },
@@ -493,7 +493,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 800
                 }
             },
@@ -523,7 +523,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 7
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1400
                 }
             },
@@ -538,7 +538,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1000
                 }
             },
@@ -568,7 +568,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 6
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1200
                 }
             },
@@ -583,7 +583,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1000
                 }
             },
@@ -600,7 +600,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 6
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1200
                 }
             },
@@ -617,7 +617,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 6
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1200
                 }
             },
@@ -634,7 +634,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1000
                 }
             },
@@ -649,7 +649,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 7
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1400
                 }
             },
@@ -664,7 +664,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 7
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 1400
                 }
             },
@@ -681,7 +681,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 800
                 }
             },
@@ -714,7 +714,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/qubits_into_qubits"
                 },
                 "position": {
-                    "x": 600.0,
+                    "x": -300.0,
                     "y": 0
                 }
             },
@@ -729,7 +729,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 1100.0,
+                    "x": 200.0,
                     "y": 1000
                 }
             },
@@ -749,7 +749,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/galois_into_galois"
                 },
                 "position": {
-                    "x": 1100.0,
+                    "x": 200.0,
                     "y": 0
                 }
             },
@@ -766,7 +766,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 1000.0,
+                    "x": 100.0,
                     "y": 800
                 }
             },
@@ -786,7 +786,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/group_quantum"
                 },
                 "position": {
-                    "x": 1000.0,
+                    "x": 100.0,
                     "y": 0
                 }
             },
@@ -803,7 +803,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 1000.0,
+                    "x": 100.0,
                     "y": 1000
                 }
             },
@@ -820,7 +820,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 700.0,
+                    "x": -200.0,
                     "y": 1000
                 }
             },
@@ -840,7 +840,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/qudits_into_qudits"
                 },
                 "position": {
-                    "x": 700.0,
+                    "x": -200.0,
                     "y": 0
                 }
             },
@@ -857,7 +857,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 700.0,
+                    "x": -200.0,
                     "y": 1000
                 }
             },
@@ -954,7 +954,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/fermions"
                 },
                 "position": {
-                    "x": 900.0,
+                    "x": 0.0,
                     "y": 0
                 }
             },
@@ -971,7 +971,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": 900.0,
+                    "x": 0.0,
                     "y": 1000
                 }
             }
@@ -1759,14 +1759,14 @@ GENERATED_pretty_code_graph_data = {
         {
             "nodeId": "domain_classical_domain",
             "position": {
-                "x": 0,
+                "x": -900.0,
                 "y": -100
             }
         },
         {
             "nodeId": "domain_quantum_domain",
             "position": {
-                "x": 900,
+                "x": 0.0,
                 "y": -100
             }
         }

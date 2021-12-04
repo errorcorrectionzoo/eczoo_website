@@ -69,7 +69,7 @@ pretty_code_graph_setup = function()
             },
             // Ideal edge (non nested) length
             idealEdgeLength: function( edge ) {
-                if (edge.target.data()._is_abstract_code) {
+                if (edge.target().data()._is_abstract_code) {
                     return 800;
                 }
                 if (edge.data()._rel_type == 'cousin') {
@@ -82,7 +82,7 @@ pretty_code_graph_setup = function()
             },
             // Divisor to compute edge forces
             edgeElasticity: function( edge ) {
-                if (edge.target.data()._is_abstract_code) {
+                if (edge.target().data()._is_abstract_code) {
                     return .001;
                 }
                 if (edge.data()._rel_type == 'cousin') {
