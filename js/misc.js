@@ -18,6 +18,10 @@ window.addEventListener("load", function() {
         return null;
     };
 
+    // It's apparently a good idea to minimize the number of event listeners, so
+    // we can set the listener on the #main content element.  The event can be
+    // caught there, too.
+
     var possible_link_activated_callback = function(event) {
         var a = getAncestor(event.target, "a");
         if (a === null) {
@@ -28,8 +32,11 @@ window.addEventListener("load", function() {
             if (!link_target_href.startsWith("#")) {
                 return;
             }
-            var link_target_id = link_target_href.substring(1);
+            var link_target_id = decodeURIComponent(
+                link_target_href.substring(1)
+            );
             var link_target = document.getElementById(link_target_id);
+            console.log(link_target);
             link_target.classList.add("visual-highlight");
             setTimeout(
                 (function(link_target){
@@ -42,21 +49,7 @@ window.addEventListener("load", function() {
         };
     };
 
-    // It's apparently a good idea to minimize the number of event listeners, so
-    // we can set the listener on the #main content element.  The event can be
-    // caught there, too.
-
     document.getElementById('main')
         .addEventListener("click", possible_link_activated_callback);
-
-    // var class_names = [ "cite", "footnote" ];
-    // for (var j = 0; j < class_names.length; ++j) {
-    //     var class_name = class_names[j];
-    //     var a_list = document.getElementsByClassName(class_name);
-    //     for (var i = 0; i < a_list.length; ++i) {
-    //         var a = a_list[i];
-    //         a.addEventListener("click", link_activated_callback);
-    //     }
-    // }
 
 });

@@ -221,7 +221,7 @@ dd {
 }
 
 .ecc-code > dt {
-  min-width: 120px;
+  min-width: 80px;
 }
 
 .ecc-code > dt,
@@ -292,6 +292,15 @@ dd.code-name {
   font-weight: bold;
 }
 
+dt.display-code-id {
+  max-width: 80px;
+}
+
+.display-code-id {
+  margin-top: 1.5rem;
+  color: #78788c;
+}
+
 .emph, .textit {
   font-style: italic;
 }
@@ -302,48 +311,47 @@ dd.code-name {
 
 .cite {
   font-size: 0.8rem;
-  vertical-align: top;
+  display: inline-block;
+  vertical-align: 0.3em;
+  margin-top: -0.3em;
 }
 
 .footnote {
   font-size: 0.8rem;
-  vertical-align: top;
+  display: inline-block;
+  vertical-align: 0.3em;
+  margin-top: -0.3em;
 }
 
-dt.display-code-id {
-  max-width: 120px;
+.paragraph-in-list {
+  display: block;
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
+  margin-left: 1rem;
 }
 
-.display-code-id {
-  margin-top: 1.5rem;
+.paragraph-in-list:first-child {
+  margin-top: 0px;
+}
+
+.paragraph-in-list:last-child {
+  margin-bottom: 0px;
+}
+
+.paragraph-in-list::before {
+  content: '\25b9';
+  font-size: 0.65rem;
+  float: left;
+  margin-left: -0.8rem;
   color: #78788c;
 }
 
-.short-code-name {
-  font-weight: bold;
-  display: block;
-  margin-bottom: 5px;
+.paragraph-in-list:only-child {
+  margin-left: 0px;
 }
 
-.short-code-description {
-  font-style: italic;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.short-code-info {
-  font-style: italic;
-  display: block;
-  margin-bottom: 10px;
-}
-
-.code-index li {
-  margin-bottom: 0.7rem;
-}
-
-.code-index .code-name {
-  padding-right: 1em;
-  font-weight: bold;
+.paragraph-in-list:only-child::before {
+  display: none;
 }
 
 #endnotes {
@@ -375,6 +383,13 @@ dt.display-code-id {
   transition: background-color 0.5s;
 }
 
+#endnotes #footnotes dt {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: 0.3em;
+  margin-top: -0.3em;
+}
+
 .visual-highlight {
   background-color: yellow;
   box-shadow: yellow 0px 0px 10px;
@@ -383,6 +398,33 @@ dt.display-code-id {
 .visual-highlight + dd {
   background-color: yellow;
   box-shadow: yellow 0px 0px 10px;
+}
+
+.short-code-name {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.short-code-description {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.short-code-info {
+  font-style: italic;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.code-index li {
+  margin-bottom: 0.7rem;
+}
+
+.code-index .code-name {
+  padding-right: 1em;
+  font-weight: bold;
 }
 
 #footer {
