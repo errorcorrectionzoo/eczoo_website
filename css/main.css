@@ -139,7 +139,7 @@ dt {
 
 dd {
   grid-column-start: 2;
-  margin-left: 1.5rem;
+  margin-left: 1rem;
 }
 
 #header {
@@ -221,11 +221,18 @@ dd {
 }
 
 .ecc-code > dt {
-  min-width: 80px;
+  min-width: 90px;
 }
 
-.ecc-code > dt,
+.ecc-code > dt.dt-wrap-label {
+  max-width: 90px;
+}
+
 .ecc-code > dd {
+  margin-left: 1rem;
+}
+
+.ecc-code > dt, .ecc-code > dd {
   padding: 2px 0px;
   margin-bottom: 10px;
 }
@@ -290,10 +297,6 @@ a.code-self-edit {
 
 dd.code-name {
   font-weight: bold;
-}
-
-dt.display-code-id {
-  max-width: 80px;
 }
 
 .display-code-id {

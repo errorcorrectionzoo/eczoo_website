@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Qudit stabilizer code
+      \(\mathbb{Z}_p\)-qudit stabilizer code
     [error correction zoo]
   </title>
 
@@ -34,11 +34,10 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
-    <h1>Qudit stabilizer code</h1>
+    <h1><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -49,14 +48,14 @@
 
 <dt>Name</dt>
 <dd class="code-name">
-  Qudit stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
+  <span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
      href="/c/qudit_stabilizer#ecc_qudit_stabilizer">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,q^k,d))_q\)</span> stabilizer code for prime <span class="inline-math">\(q\)</span> is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(q^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">An <span class="inline-math">\(((n,q^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.</dd>
@@ -93,7 +92,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
 </ul>
 </dd>
 
@@ -103,7 +102,7 @@
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Error-correcting code
+      Perfect code
     [error correction zoo]
   </title>
 
@@ -37,25 +37,25 @@
   class="app-full-width"   >
 
   <header id="header">
-    <h1>Error-correcting code</h1>
+    <h1>Perfect code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_ecc">
+<dl class="ecc-code ecc-code-page" id="ecc_perfect">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Error-correcting code<a class="code-info-corner-icon code-self-permalink"
+  Perfect code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/ecc#ecc_ecc">&nbsp;</a>
+     href="/c/perfect#ecc_perfect">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>. Formally, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span>.</dd>
+<dd class="code-description">An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound <span class="inline-math">\(\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</dd>
 
 
 
@@ -81,6 +81,10 @@
 
 
 
+<dt>Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list"></span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -90,23 +94,20 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/oaecc#ecc_oaecc">Operator-algebra error-correcting code</a></span>  </li>
-</ul>
-</dd>
-
-<dt>Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/cyclic#ecc_cyclic">Cyclic code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
 </ul>
 </dd>
 
 
+
+<dt>Cousin of</dt>
+<dd class="code-cousin-of">
+
+
+<ul class="code-relations-list code-cousin-of-list">
+  <li><span class="code-cousin-of-1-code"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>    <span class="code-cousin-of-1-detail">(A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.)</span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -117,15 +118,15 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    ecc
+    perfect
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/ecc.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/perfect.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=ecc">edit on this site</a>
+       href="/edit_code?code_id=perfect">edit on this site</a>
   </div>
 </dd>
 

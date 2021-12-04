@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1>Fock-state bosonic code</h1>
@@ -49,17 +48,17 @@
 
 <dt>Name</dt>
 <dd class="code-name">
-  Fock-state bosonic code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span><a class="code-info-corner-icon code-self-permalink"
+  Fock-state bosonic code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
      href="/c/fock_state#ecc_fock_state">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Qudit-into-osillator code whose error correcting properties against oscillator amplitude damping (i.e., photon loss) stem from the use of disjoint sets of Fock states in the code state construction. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock states <span class="inline-math">\(|0\rangle,|4\rangle,|8\rangle,\cdots\)</span> and <span class="inline-math">\(|2\rangle,|6\rangle,|10\rangle,\cdots\)</span>. As a result, the code states typically are most naturally expressed in terms of Fock states.</dd>
+<dd class="code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</dd>
 
 <dt>Protection</dt>
-<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (in some metric) between any two Fock states of the code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states of the code basis states. Such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</dd>
+<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</dd>
 
 
 <!-- Display features -->
@@ -103,7 +102,7 @@
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between qubit basis states.)</span>  </li>
+  <li><span class="code-cousins-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between binary strings.)</span>  </li>
 </ul>
 </dd>
 
@@ -111,7 +110,7 @@
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">
@@ -131,21 +130,6 @@
 
 </dl>
 
-   <div id="endnotes">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9505011" target="_blank" class="href">quant-ph/9505011</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610043" target="_blank" class="href">quant-ph/9610043</a>
-      </dd>
-    
-    </dl>
-   </div>
 
   </main><!-- #main -->
 

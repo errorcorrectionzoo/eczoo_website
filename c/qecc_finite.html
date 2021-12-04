@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Quantum error-correcting code (QECC) in finite dimensions
+      Finite-dimensional QECC
     [error correction zoo]
   </title>
 
@@ -34,11 +34,10 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
-    <h1>Quantum error-correcting code (QECC) in finite dimensions</h1>
+    <h1>Finite-dimensional QECC</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -49,14 +48,14 @@
 
 <dt>Name</dt>
 <dd class="code-name">
-  Quantum error-correcting code (QECC) in finite dimensions<a class="code-info-corner-icon code-self-permalink"
+  Finite-dimensional QECC<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
      href="/c/qecc_finite#ecc_qecc_finite">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace <span class="inline-math">\(\mathsf{H_K}\)</span> of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space <span class="inline-math">\(\mathsf{H_N}\)</span> such that it is possible to recover said information from errors. Formally, a finite-dimensional QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>.</dd>
+<dd class="code-description">A quantum error-correcting code that encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace <span class="inline-math">\(\mathsf{H}_K\)</span> of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space <span class="inline-math">\(\mathsf{H}_N\)</span> such that it is possible to recover said information from errors. Formally, a finite-dimensional QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Correction capability is determined by the Knill-Laflamme error correction criteria <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>.</dd>
@@ -105,7 +104,8 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li><span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/fermions#ecc_fermions">Fermionic code</a></span>  </li>
 </ul>
 </dd>
@@ -116,14 +116,14 @@
 
 
 <ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(For physical spaces associated with finite groups.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(Group quantum codes whose physical spaces are constructed using finite groups are finite-dimensional.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">

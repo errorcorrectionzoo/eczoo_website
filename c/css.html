@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1>Calderbank-Shor-Steane (CSS) stabilizer code</h1>
@@ -98,6 +97,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li><span class="code-parents-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type.)</span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/movassagh_ouyang#ecc_movassagh_ouyang">Movassagh-Ouyang Hamiltonian Codes</a></span>    <span class="code-parents-1-detail">(Movassagh-Ouyang codes stem from a prescription that converts at <span class="textit">arbitrary</span> classical code into a quantum code.)</span>  </li>
 </ul>
 </dd>
 
@@ -106,10 +106,8 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/homological#ecc_homological">Homological code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/quantum_polar#ecc_quantum_polar">Quantum polar code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/homological_product#ecc_homological_product">Homological product code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(X\)</span>- and <span class="inline-math">\(Z\)</span>-type checks are based on the classical seed matrices <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.)</span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/lifted_product#ecc_lifted_product">Lifted product code</a></span>    <span class="code-parent-of-1-detail">(Since lifted product codes are defined by a length-three chain complex they are CSS codes.)</span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/quantum_repetition#ecc_quantum_repetition">Qubit repetition code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/surface#ecc_surface">Kitaev&#x27;s surface code</a></span>    <span class="code-parent-of-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
 </ul>
@@ -130,13 +128,14 @@
 
 <ul class="code-relations-list code-cousin-of-list">
   <li><span class="code-cousin-of-1-code"><a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a></span>    <span class="code-cousin-of-1-detail">(For an <span class="inline-math">\(n\)</span>-qubit CSS code, the nested group construction <span class="inline-math">\(C_1^\perp \subseteq C_2 \subset \mathbb{Z}_2^{\times n}\)</span>.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/majorana_stab#ecc_majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousin-of-1-detail">(‘When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.’)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">
@@ -172,6 +171,16 @@
       <dt id="cite-2">[3]</dt>
       <dd>
         “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
       </dd>
     
     </dl>

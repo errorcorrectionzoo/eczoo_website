@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1><span class="inline-math">\(q\)</span>-ary Digits Kingdom</h1>
@@ -58,7 +57,26 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+      <a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a>,       <a href="/c/q-ary_linear#ecc_q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>,       <a href="/c/perfect#ecc_perfect">Perfect code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_weakly_self_dual">
+  <span class="short-code-name"><a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a></span>
+  <span class="short-code-description">Also called a <span class="textit">self-orthogonal</span> code. A linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is contained in <span class="inline-math">\(C\)</span>.</span>
+  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/self_dual#ecc_self_dual">Self-dual linear code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/majorana_stab#ecc_majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
@@ -74,6 +92,31 @@
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/reed_solomon#ecc_reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_perfect">
+  <span class="short-code-name"><a href="/c/perfect#ecc_perfect">Perfect code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound <span class="inline-math">\(\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_self_dual">
+  <span class="short-code-name"><a href="/c/self_dual#ecc_self_dual">Self-dual linear code</a></span>
+  <span class="short-code-description">A linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is equal to <span class="inline-math">\(C\)</span>.</span>
+  <span class="short-code-info">Protection: The generator and parity-check matrices of <span class="inline-math">\(C\)</span> are equal.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/weakly_self_dual#ecc_weakly_self_dual">Weakly self-dual linear code</a>.
   </span>
 </div>
 

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Qudit code
+      \(\mathbb{Z}_q\)-qudit code
     [error correction zoo]
   </title>
 
@@ -34,11 +34,10 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
-    <h1>Qudit code</h1>
+    <h1><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -49,14 +48,14 @@
 
 <dt>Name</dt>
 <dd class="code-name">
-  Qudit code<a class="code-info-corner-icon code-self-permalink"
+  <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code<a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
      href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined.</dd>
+<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers modulo <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</dd>
 
 
 
@@ -91,7 +90,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Quantum error-correcting code (QECC) in finite dimensions</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Finite-dimensional QECC</a></span>  </li>
 </ul>
 </dd>
 
@@ -100,7 +99,8 @@
 
 
 <ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>  </li>
 </ul>
 </dd>
 
@@ -110,14 +110,15 @@
 
 
 <ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a></span>    <span class="code-cousin-of-1-detail">(Hybrid code with <span class="inline-math">\(n_2=0\)</span>.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>    <span class="code-cousin-of-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits. The two coincide when <span class="inline-math">\(q\)</span> is prime. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(Group quantum codes whose physical spaces are constructed using modular-integer groups are <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit codes.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">

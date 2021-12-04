@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1>Oscillator Kingdom</h1>
@@ -50,7 +49,7 @@
 
 <div class="ecc-code" id="ecc_oscillators">
   <span class="short-code-name"><a href="/c/oscillators#ecc_oscillators">Bosonic code</a></span>
-  <span class="short-code-description">Also called an <span class="textit">oscillator code</span>. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one oscillator (i.e., one copy of the space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>). Ideal codewords may not be normalizable, depending on whether <span class="inline-math">\(G\)</span> is continuous and/or noncompact, so approximate versions have to be constructed.</span>
+  <span class="short-code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one oscillator (i.e., one copy of the space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>). Ideal codewords may not be normalizable, so approximate versions have to be constructed.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc#ecc_qecc">Quantum error-correcting code (QECC)</a>.
@@ -58,6 +57,10 @@
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>,       <a href="/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators">Oscillator-into-oscillator code</a>,       <a href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>,       <a href="/c/fermions#ecc_fermions">Fermionic code</a>.
   </span>
 </div>
 
@@ -89,21 +92,21 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a>,       <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>.
+      <a href="/c/group_gkp#ecc_group_gkp">Group GKP codes</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_hybrid_qudit_oscillator">
   <span class="short-code-name"><a href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a></span>
-  <span class="short-code-description">Encodes a <span class="inline-math">\(K\)</span>-dimensional logical Hilbert space into <span class="inline-math">\(n_1\)</span> qudits of dimension <span class="inline-math">\(q\)</span> and <span class="inline-math">\(n_2\)</span> oscillators, i.e., the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{Z}_q^{n_1} \times \mathbb{R}^{n_2}\)</span>.</span>
+  <span class="short-code-description">Encodes a <span class="inline-math">\(K\)</span>-dimensional logical Hilbert space into <span class="inline-math">\(n_1\)</span> qudits of dimension <span class="inline-math">\(q\)</span> and <span class="inline-math">\(n_2 \neq 0\)</span> oscillators, i.e., the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{Z}_q^{n_1} \times \mathbb{R}^{n_2}\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/oscillators#ecc_oscillators">Bosonic code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a>,       <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>.
+      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>.
   </span>
 </div>
 
@@ -127,9 +130,9 @@
 
 
 <div class="ecc-code" id="ecc_fock_state">
-  <span class="short-code-name"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a></span></span>
-  <span class="short-code-description">Qudit-into-osillator code whose error correcting properties against oscillator amplitude damping (i.e., photon loss) stem from the use of disjoint sets of Fock states in the code state construction. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock states <span class="inline-math">\(|0\rangle,|4\rangle,|8\rangle,\cdots\)</span> and <span class="inline-math">\(|2\rangle,|6\rangle,|10\rangle,\cdots\)</span>. As a result, the code states typically are most naturally expressed in terms of Fock states.</span>
-  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (in some metric) between any two Fock states of the code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states of the code basis states. Such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</span>
+  <span class="short-code-name"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>
+  <span class="short-code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</span>
+  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>.
@@ -142,7 +145,7 @@
 
 
 <div class="ecc-code" id="ecc_cat">
-  <span class="short-code-name"><a href="/c/cat#ecc_cat">Cat code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/cat#ecc_cat">Cat code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -171,25 +174,15 @@
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9505011" target="_blank" class="href">quant-ph/9505011</a>
+        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610043" target="_blank" class="href">quant-ph/9610043</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
         Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
+      <dt id="cite-5">[6]</dt>
       <dd>
         M. Mirrahimi et al., “Dynamically protected cat-qubits: a new paradigm for universal quantum computation”, New Journal of Physics <span class="textbf">16</span>, 045014 (2014). <a href="https://doi.org/10.1088/1367-2630/16/4/045014" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.2017" target="_blank" class="href">1312.2017</a>
       </dd>

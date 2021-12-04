@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1>Qu<span class="emph">d</span>it Kingdom</h1>
@@ -49,30 +48,45 @@
 
 
 <div class="ecc-code" id="ecc_qudits_into_qudits">
-  <span class="short-code-name"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined.</span>
+  <span class="short-code-name"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers modulo <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qecc_finite#ecc_qecc_finite">Quantum error-correcting code (QECC) in finite dimensions</a>.
+      <a href="/c/qecc_finite#ecc_qecc_finite">Finite-dimensional QECC</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a>.
+      <a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a>,       <a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
+      <a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a>,       <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_qudit_stabilizer">
-  <span class="short-code-name"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer">Qudit stabilizer code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\(((n,q^k,d))_q\)</span> stabilizer code for prime <span class="inline-math">\(q\)</span> is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(q^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-name"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,q^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qudits_into_qudits#ecc_qudits_into_qudits">Qudit code</a>.
+      <a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_quantum_perfect">
+  <span class="short-code-name"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>
+  <span class="short-code-description">A non-degenerate <span class="inline-math">\((n,K,2t+1)_q\)</span> qudit code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="inline-math">\(\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. This bound can be saturated at <span class="inline-math">\(n=5\)</span> but not, e.g., at <span class="inline-math">\(n=7\)</span>. However, one can take the large-<span class="inline-math">\(n\)</span> limit and work out an asymptotic Hamming bound <span class="inline-math">\(\frac{k}{n}\leq1-\frac{t}{n}\log_{2}3-H(t/n)\)</span>, where <span class="inline-math">\(H\)</span> is the binary entropy function.</span>
+  <span class="short-code-info">Protection: Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/perfect#ecc_perfect">Perfect code</a>.
   </span>
 </div>
 
@@ -83,6 +97,26 @@
       <dt id="cite-0">[1]</dt>
       <dd>
         Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href">quant-ph/9607027</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href">0907.0049</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

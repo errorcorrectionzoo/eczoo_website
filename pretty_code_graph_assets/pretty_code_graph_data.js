@@ -50,7 +50,7 @@ pretty_code_graph_data = {
                     "id": "c_ecc",
                     "label": "Error-correcting code",
                     "_description": [
-                        "Encodes \\(K\\) states (codewords) over an alphabet with \\(N\\) elements such that it is possible to recover the codewords from errors \\(E\\). Formally, an error-correcting code \\((u,\\cal{E})\\) is an \\..."
+                        "Encodes \\(K\\) states (codewords) over an alphabet with \\(N\\) elements such that it is possible to recover the codewords from errors \\(E\\) from some error set \\(\\mathcal{E}\\). Formally, an error-cor..."
                     ],
                     "_code_href": "/c/ecc#ecc_ecc",
                     "_family_generation_level": 1
@@ -78,12 +78,12 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "c_polar_codes",
+                    "id": "c_polar",
                     "label": "Polar code",
                     "_description": [
                         "In its basic version, a binary linear polar code encodes \\(K\\) message bits into \\(N=2^n\\) bits. The linear transformation that defines the code is given by the matrix \\(G^{(n)}=B_N G^{\\otimes n}\\)..."
                     ],
-                    "_code_href": "/c/polar_codes#ecc_polar_codes",
+                    "_code_href": "/c/polar#ecc_polar",
                     "_family_generation_level": 4
                 }
             },
@@ -97,15 +97,6 @@ pretty_code_graph_data = {
                     "_is_kingdom": 1,
                     "_kingdom_name": "Binary Kingdom",
                     "_kingdom_href": "/kingdom/bits_into_bits"
-                }
-            },
-            {
-                "data": {
-                    "id": "c_weakly_self_dual",
-                    "label": "Weakly self-dual linear code",
-                    "_description": "A binary linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_2^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is contained in \\(C\\).",
-                    "_code_href": "/c/weakly_self_dual#ecc_weakly_self_dual",
-                    "_family_generation_level": 4
                 }
             },
             {
@@ -124,15 +115,6 @@ pretty_code_graph_data = {
                     "_description": "Stub.",
                     "_code_href": "/c/tanner#ecc_tanner",
                     "_family_generation_level": 4
-                }
-            },
-            {
-                "data": {
-                    "id": "c_self_dual",
-                    "label": "Self-dual linear code",
-                    "_description": "A binary linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_2^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is equal to \\(C\\).",
-                    "_code_href": "/c/self_dual#ecc_self_dual",
-                    "_family_generation_level": 5
                 }
             },
             {
@@ -171,6 +153,24 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_weakly_self_dual",
+                    "label": "Weakly self-dual linear code",
+                    "_description": "Also called a \\textit{self-orthogonal} code. A linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_q^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is contained in \\(C\\).",
+                    "_code_href": "/c/weakly_self_dual#ecc_weakly_self_dual",
+                    "_family_generation_level": 3
+                }
+            },
+            {
+                "data": {
+                    "id": "c_self_dual",
+                    "label": "Self-dual linear code",
+                    "_description": "A linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_q^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is equal to \\(C\\).",
+                    "_code_href": "/c/self_dual#ecc_self_dual",
+                    "_family_generation_level": 4
+                }
+            },
+            {
+                "data": {
                     "id": "c_q-ary_linear",
                     "label": "\\(q\\)-ary linear code",
                     "_description": [
@@ -184,9 +184,20 @@ pretty_code_graph_data = {
                 "data": {
                     "id": "c_cyclic",
                     "label": "Cyclic code",
-                    "_description": "A code \\(C\\) of length \\(n\\) over an alphabet is cyclic if, for each string \\(c_1 c_2 \\cdots c_n\\in C\\), the cyclically shifted string \\(c_n c_1 \\cdots c_{n-1}\\in C\\).",
+                    "_description": "A classical code \\(C\\) of length \\(n\\) over an alphabet is cyclic if, for each string \\(c_1 c_2 \\cdots c_n\\in C\\), the cyclically shifted string \\(c_n c_1 \\cdots c_{n-1}\\in C\\).",
                     "_code_href": "/c/cyclic#ecc_cyclic",
-                    "_family_generation_level": 1
+                    "_family_generation_level": 2
+                }
+            },
+            {
+                "data": {
+                    "id": "c_perfect",
+                    "label": "Perfect code",
+                    "_description": [
+                        "An \\((n,K,2t+1)_q\\) \\(q\\)-ary code is perfect if parameters \\(n\\), \\(k\\), \\(t\\), and \\(q\\) are such that the Hamming (a.k.a. sphere-packing) bound \\(\\sum_{j=0}^{t}(q-1)^{j}{n \\choose j}\\leq q^{n}/K..."
+                    ],
+                    "_code_href": "/c/perfect#ecc_perfect",
+                    "_family_generation_level": 3
                 }
             },
             {
@@ -212,9 +223,9 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qecc_finite",
-                    "label": "Quantum error-correcting code (QECC) in finite dimensions",
+                    "label": "Finite-dimensional QECC",
                     "_description": [
-                        "Encodes quantum information in a \\(K\\)-dimensional (\\textit{logical}) subspace \\(\\mathsf{H_K}\\) of an \\(N\\)-dimensional (\\textit{physical}) Hilbert space \\(\\mathsf{H_N}\\) such that it is possible t..."
+                        "A quantum error-correcting code that encodes quantum information in a \\(K\\)-dimensional (\\textit{logical}) subspace \\(\\mathsf{H}_K\\) of an \\(N\\)-dimensional (\\textit{physical}) Hilbert space \\(\\mat..."
                     ],
                     "_code_href": "/c/qecc_finite#ecc_qecc_finite",
                     "_family_generation_level": 3
@@ -234,7 +245,7 @@ pretty_code_graph_data = {
                     "id": "c_oscillators",
                     "label": "Bosonic code",
                     "_description": [
-                        "Also called an \\textit{oscillator code}. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one oscillator (i.e., one copy of the s..."
+                        "Also called an \\textit{oscillator} or a \\textit{continuous-variable (CV)} code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least ..."
                     ],
                     "_code_href": "/c/oscillators#ecc_oscillators",
                     "_family_generation_level": 3,
@@ -248,7 +259,7 @@ pretty_code_graph_data = {
                     "id": "c_fock_state",
                     "label": "Fock-state bosonic code",
                     "_description": [
-                        "Qudit-into-osillator code whose error correcting properties against oscillator amplitude damping (i.e., photon loss) stem from the use of disjoint sets of Fock states in the code state construction..."
+                        "Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For examp..."
                     ],
                     "_code_href": "/c/fock_state#ecc_fock_state",
                     "_family_generation_level": 5
@@ -286,10 +297,19 @@ pretty_code_graph_data = {
                     "id": "c_hybrid_qudit_oscillator",
                     "label": "Hybrid qudit-oscillator code",
                     "_description": [
-                        "Encodes a \\(K\\)-dimensional logical Hilbert space into \\(n_1\\) qudits of dimension \\(q\\) and \\(n_2\\) oscillators, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}_q^{n_1..."
+                        "Encodes a \\(K\\)-dimensional logical Hilbert space into \\(n_1\\) qudits of dimension \\(q\\) and \\(n_2 \\neq 0\\) oscillators, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}..."
                     ],
                     "_code_href": "/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator",
                     "_family_generation_level": 4
+                }
+            },
+            {
+                "data": {
+                    "id": "c_quantum_polar",
+                    "label": "Quantum polar code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/quantum_polar#ecc_quantum_polar",
+                    "_family_generation_level": 5
                 }
             },
             {
@@ -300,7 +320,16 @@ pretty_code_graph_data = {
                         "An \\([[n,k,d]]\\) stabilizer code whose encoding is based on two \\hyperref[code:binary_linear]{binary linear codes}, an \\([n,k_1,d_1]\\) code \\(C_1\\) and \\([n,k_2,d_2]\\) code \\(C_2\\) with \\(C_1^\\perp..."
                     ],
                     "_code_href": "/c/css#ecc_css",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 4
+                }
+            },
+            {
+                "data": {
+                    "id": "c_quantum_parity",
+                    "label": "Quantum parity code (QPC)",
+                    "_description": "Stub.",
+                    "_code_href": "/c/quantum_parity#ecc_quantum_parity",
+                    "_family_generation_level": 1
                 }
             },
             {
@@ -309,15 +338,6 @@ pretty_code_graph_data = {
                     "label": "Quantum Hamming code",
                     "_description": "Stub.",
                     "_code_href": "/c/quantum_hamming#ecc_quantum_hamming",
-                    "_family_generation_level": 6
-                }
-            },
-            {
-                "data": {
-                    "id": "c_homological",
-                    "label": "Homological code",
-                    "_description": "Stub.",
-                    "_code_href": "/c/homological#ecc_homological",
                     "_family_generation_level": 7
                 }
             },
@@ -327,7 +347,16 @@ pretty_code_graph_data = {
                     "label": "Homological product code",
                     "_description": "Stub.",
                     "_code_href": "/c/homological_product#ecc_homological_product",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 5
+                }
+            },
+            {
+                "data": {
+                    "id": "c_movassagh_ouyang",
+                    "label": "Movassagh-Ouyang Hamiltonian Codes",
+                    "_description": "Stub.",
+                    "_code_href": "/c/movassagh_ouyang#ecc_movassagh_ouyang",
+                    "_family_generation_level": 3
                 }
             },
             {
@@ -336,7 +365,16 @@ pretty_code_graph_data = {
                     "label": "Hypergraph product code",
                     "_description": "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two binary linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\).",
                     "_code_href": "/c/hypergraph_product#ecc_hypergraph_product",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 6
+                }
+            },
+            {
+                "data": {
+                    "id": "c_cws",
+                    "label": "Codeword stabilized (CWS) code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/cws#ecc_cws",
+                    "_family_generation_level": 5
                 }
             },
             {
@@ -347,16 +385,18 @@ pretty_code_graph_data = {
                         "An \\(((n,2^k,d))\\) stabilizer code is denoted as \\([[n,k]]\\) or \\([[n,k,d]]\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting ..."
                     ],
                     "_code_href": "/c/stabilizer#ecc_stabilizer",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 6
                 }
             },
             {
                 "data": {
                     "id": "c_lifted_product",
                     "label": "Lifted product code",
-                    "_description": "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\) with a free action of a group G.",
+                    "_description": [
+                        "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\) with a free action of a group \\(G\\). Lifted product codes can also be defined o..."
+                    ],
                     "_code_href": "/c/lifted_product#ecc_lifted_product",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 6
                 }
             },
             {
@@ -367,6 +407,15 @@ pretty_code_graph_data = {
                         "Encodes \\(1\\) qubit into \\(n\\) qubits according to \\(|0\\rangle\\to|\\phi_0\\rangle^{\\otimes n}\\) and \\(|1\\rangle\\to|\\phi_1\\rangle^{\\otimes n}\\). Also known as a \\textit{bit-flip} code when \\(|\\phi_i\\r..."
                     ],
                     "_code_href": "/c/quantum_repetition#ecc_quantum_repetition",
+                    "_family_generation_level": 5
+                }
+            },
+            {
+                "data": {
+                    "id": "c_quantum_reed_muller",
+                    "label": "Quantum Reed-Muller code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/quantum_reed_muller#ecc_quantum_reed_muller",
                     "_family_generation_level": 7
                 }
             },
@@ -376,7 +425,7 @@ pretty_code_graph_data = {
                     "label": "Quantum low-density parity-check (QLDPC) code",
                     "_description": "",
                     "_code_href": "/c/quantum_ldpc#ecc_quantum_ldpc",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 7
                 }
             },
             {
@@ -392,6 +441,15 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_bacon_shor",
+                    "label": "Bacon-Shor code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/bacon_shor#ecc_bacon_shor",
+                    "_family_generation_level": 0
+                }
+            },
+            {
+                "data": {
                     "id": "c_qubits_into_qubits",
                     "label": "Qubit code",
                     "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(2^n\\)-dimensional (i.e., \\(n\\)-qubit) Hilbert space. Usually denoted as \\(((n,K))\\) or \\(((n,K,d))\\), where \\(d\\) is the code's distance.",
@@ -400,6 +458,26 @@ pretty_code_graph_data = {
                     "_is_kingdom": 1,
                     "_kingdom_name": "Qubit Kingdom",
                     "_kingdom_href": "/kingdom/qubits_into_qubits"
+                }
+            },
+            {
+                "data": {
+                    "id": "c_galois_stabilizer",
+                    "label": "Galois-qudit stabilizer code",
+                    "_description": "Stub.",
+                    "_code_href": "/c/galois_stabilizer#ecc_galois_stabilizer",
+                    "_family_generation_level": 5
+                }
+            },
+            {
+                "data": {
+                    "id": "c_galois_into_galois",
+                    "label": "Galois-qudit code",
+                    "_description": [
+                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the \\textit{Galois field} \\(GF..."
+                    ],
+                    "_code_href": "/c/galois_into_galois#ecc_galois_into_galois",
+                    "_family_generation_level": 4
                 }
             },
             {
@@ -441,9 +519,9 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_stabilizer",
-                    "label": "Qudit stabilizer code",
+                    "label": "\\(\\mathbb{Z}_p\\)-qudit stabilizer code",
                     "_description": [
-                        "An \\(((n,q^k,d))_q\\) stabilizer code for prime \\(q\\) is denoted as \\([[n,k]]_q\\) or \\([[n,k,d]]_q\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of ..."
+                        "An \\(((n,q^k,d))_p\\) (with \\(p\\) prime) stabilizer code is denoted as \\([[n,k]]_p\\) or \\([[n,k,d]]_p\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set ..."
                     ],
                     "_code_href": "/c/qudit_stabilizer#ecc_qudit_stabilizer",
                     "_family_generation_level": 5
@@ -452,8 +530,10 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudits_into_qudits",
-                    "label": "Qudit code",
-                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space. Usually denoted as \\(((n,K))_q\\) or \\(((n,K,d))_q\\), whenever the code's distance \\(d\\) is defined.",
+                    "label": "\\(\\mathbb{Z}_q\\)-qudit code",
+                    "_description": [
+                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the group \\(\\mathbb{Z}_q\\) of ..."
+                    ],
                     "_code_href": "/c/qudits_into_qudits#ecc_qudits_into_qudits",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
@@ -463,11 +543,31 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_quantum_perfect",
+                    "label": "Perfect quantum code",
+                    "_description": [
+                        "A non-degenerate \\((n,K,2t+1)_q\\) qudit code is perfect if parameters \\(n\\), \\(k\\), \\(t\\), and \\(q\\) are such that the quantum Hamming bound \\(\\sum_{j=0}^{t}(q^2-1)^{j}{n \\choose j}\\leq q^{n}/K\\) b..."
+                    ],
+                    "_code_href": "/c/quantum_perfect#ecc_quantum_perfect",
+                    "_family_generation_level": 5
+                }
+            },
+            {
+                "data": {
                     "id": "c_random_circuit",
                     "label": "Random-circuit code",
-                    "_description": "Code that is naturally constructed by randomly sampling from a large set of quantum circuits.",
+                    "_description": "Code whose encoding is naturally constructed by randomly sampling from a large set of quantum circuits.",
                     "_code_href": "/c/random_circuit#ecc_random_circuit",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 3
+                }
+            },
+            {
+                "data": {
+                    "id": "c_fracton",
+                    "label": "Fracton code",
+                    "_description": "A code whose codewords make up the ground-state space of a fracton-phase Hamiltonian.",
+                    "_code_href": "/c/fracton#ecc_fracton",
+                    "_family_generation_level": 3
                 }
             },
             {
@@ -475,7 +575,7 @@ pretty_code_graph_data = {
                     "id": "c_hamiltonian",
                     "label": "Hamiltonian-based code",
                     "_description": [
-                        "Encoding consists of a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of arbit..."
+                        "Encoding corresponds to a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of ar..."
                     ],
                     "_code_href": "/c/hamiltonian#ecc_hamiltonian",
                     "_family_generation_level": 2
@@ -484,10 +584,10 @@ pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_dynamic_gen",
-                    "label": "Dynamically-generated error-correcting code",
+                    "label": "Dynamically-generated quantum error-correcting code",
                     "_description": "Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process.",
                     "_code_href": "/c/dynamic_gen#ecc_dynamic_gen",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 2
                 }
             },
             {
@@ -503,9 +603,22 @@ pretty_code_graph_data = {
                 "data": {
                     "id": "c_fermions",
                     "label": "Fermionic code",
-                    "_description": "stub",
+                    "_description": [
+                        "Finite-dimensional quantum error-correcting code encoding a logical Hilbert space into a physical Fock space of fermionic modes. Codes are typically described using Majorana operators, which are li..."
+                    ],
                     "_code_href": "/c/fermions#ecc_fermions",
                     "_family_generation_level": 4
+                }
+            },
+            {
+                "data": {
+                    "id": "c_majorana_stab",
+                    "label": "Majorana stabilizer code",
+                    "_description": [
+                        "Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code a..."
+                    ],
+                    "_code_href": "/c/majorana_stab#ecc_majorana_stab",
+                    "_family_generation_level": 5
                 }
             }
         ],
@@ -539,28 +652,28 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_polar_codes_binary_linear_3",
+                    "id": "parent_polar_binary_linear_3",
                     "label": "parent",
                     "_rel_type": "parent",
-                    "source": "c_polar_codes",
+                    "source": "c_polar",
                     "target": "c_binary_linear"
                 }
             },
             {
                 "data": {
-                    "id": "cousin_polar_codes_reed_muller__0",
+                    "id": "cousin_polar_reed_muller__0",
                     "label": "cousin",
                     "_rel_type": "cousin",
-                    "source": "c_polar_codes",
+                    "source": "c_polar",
                     "target": "c_reed_muller"
                 }
             },
             {
                 "data": {
-                    "id": "cousin_polar_codes_generalized_concatenated__1",
+                    "id": "cousin_polar_generalized_concatenated__1",
                     "label": "cousin",
                     "_rel_type": "cousin",
-                    "source": "c_polar_codes",
+                    "source": "c_polar",
                     "target": "c_generalized_concatenated"
                 }
             },
@@ -584,16 +697,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_weakly_self_dual_binary_linear_5",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_weakly_self_dual",
-                    "target": "c_binary_linear"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_reed_muller_binary_linear_6",
+                    "id": "parent_reed_muller_binary_linear_5",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_reed_muller",
@@ -602,7 +706,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_tanner_binary_linear_7",
+                    "id": "parent_tanner_binary_linear_6",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_tanner",
@@ -611,16 +715,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_self_dual_weakly_self_dual_8",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_self_dual",
-                    "target": "c_weakly_self_dual"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_ldpc_binary_linear_9",
+                    "id": "parent_ldpc_binary_linear_7",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_ldpc",
@@ -629,7 +724,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_reed_solomon_q-ary_linear_10",
+                    "id": "parent_reed_solomon_q-ary_linear_8",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_reed_solomon",
@@ -647,11 +742,29 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_q-ary_digits_into_q-ary_digits_ecc_11",
+                    "id": "parent_q-ary_digits_into_q-ary_digits_ecc_9",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_q-ary_digits_into_q-ary_digits",
                     "target": "c_ecc"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_weakly_self_dual_q-ary_digits_into_q-ary_digits_10",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_weakly_self_dual",
+                    "target": "c_q-ary_digits_into_q-ary_digits"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_self_dual_weakly_self_dual_11",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_self_dual",
+                    "target": "c_weakly_self_dual"
                 }
             },
             {
@@ -665,16 +778,25 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_cyclic_classical_abelian_group_13",
+                    "id": "parent_cyclic_ecc_13",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_cyclic",
-                    "target": "c_classical_abelian_group"
+                    "target": "c_ecc"
                 }
             },
             {
                 "data": {
-                    "id": "parent_qecc_oecc_14",
+                    "id": "parent_perfect_q-ary_digits_into_q-ary_digits_14",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_perfect",
+                    "target": "c_q-ary_digits_into_q-ary_digits"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_qecc_oecc_15",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qecc",
@@ -683,7 +805,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_oecc_oaecc_15",
+                    "id": "parent_oecc_oaecc_16",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_oecc",
@@ -692,7 +814,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qecc_finite_qecc_16",
+                    "id": "parent_qecc_finite_qecc_17",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qecc_finite",
@@ -701,7 +823,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_gkp_qudits_into_oscillators_17",
+                    "id": "parent_gkp_qudits_into_oscillators_18",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_gkp",
@@ -728,7 +850,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_oscillators_qecc_18",
+                    "id": "parent_oscillators_qecc_19",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_oscillators",
@@ -737,7 +859,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fock_state_qudits_into_oscillators_19",
+                    "id": "parent_fock_state_qudits_into_oscillators_20",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_fock_state",
@@ -755,7 +877,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_cat_qudits_into_oscillators_20",
+                    "id": "parent_cat_qudits_into_oscillators_21",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_cat",
@@ -764,7 +886,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qudits_into_oscillators_oscillators_21",
+                    "id": "parent_qudits_into_oscillators_oscillators_22",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qudits_into_oscillators",
@@ -773,7 +895,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_oscillators_into_oscillators_oscillators_22",
+                    "id": "parent_oscillators_into_oscillators_oscillators_23",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_oscillators_into_oscillators",
@@ -782,7 +904,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hybrid_qudit_oscillator_oscillators_23",
+                    "id": "parent_hybrid_qudit_oscillator_oscillators_24",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_hybrid_qudit_oscillator",
@@ -791,16 +913,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_hybrid_qudit_oscillator_qudits_into_qudits__4",
-                    "label": "cousin",
-                    "_rel_type": "cousin",
-                    "source": "c_hybrid_qudit_oscillator",
-                    "target": "c_qudits_into_qudits"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_hybrid_qudit_oscillator_qudits_into_oscillators__5",
+                    "id": "cousin_hybrid_qudit_oscillator_qudits_into_oscillators__4",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_hybrid_qudit_oscillator",
@@ -809,11 +922,38 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_css_stabilizer_24",
+                    "id": "parent_quantum_polar_css_25",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_quantum_polar",
+                    "target": "c_css"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_quantum_polar_polar__5",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_quantum_polar",
+                    "target": "c_polar"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_css_stabilizer_26",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_css",
                     "target": "c_stabilizer"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_css_movassagh_ouyang_27",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_css",
+                    "target": "c_movassagh_ouyang"
                 }
             },
             {
@@ -827,7 +967,16 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_hamming_stabilizer_25",
+                    "id": "parent_quantum_parity_bacon_shor_28",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_quantum_parity",
+                    "target": "c_bacon_shor"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_quantum_hamming_stabilizer_29",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_hamming",
@@ -836,16 +985,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_homological_css_26",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_homological",
-                    "target": "c_css"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_homological_product_css_27",
+                    "id": "parent_homological_product_css_30",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_homological_product",
@@ -854,7 +994,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_homological_product_quantum_ldpc_28",
+                    "id": "parent_homological_product_quantum_ldpc_31",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_homological_product",
@@ -863,38 +1003,47 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hypergraph_product_css_29",
+                    "id": "parent_movassagh_ouyang_qecc_32",
                     "label": "parent",
                     "_rel_type": "parent",
-                    "source": "c_hypergraph_product",
-                    "target": "c_css"
+                    "source": "c_movassagh_ouyang",
+                    "target": "c_qecc"
                 }
             },
             {
                 "data": {
-                    "id": "parent_hypergraph_product_homological_30",
+                    "id": "parent_hypergraph_product_lifted_product_33",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_hypergraph_product",
-                    "target": "c_homological"
+                    "target": "c_lifted_product"
                 }
             },
             {
                 "data": {
-                    "id": "parent_hypergraph_product_quantum_ldpc_31",
+                    "id": "parent_hypergraph_product_homological_product_34",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_hypergraph_product",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_homological_product"
                 }
             },
             {
                 "data": {
-                    "id": "parent_stabilizer_qubits_into_qubits_32",
+                    "id": "parent_cws_qubits_into_qubits_35",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_cws",
+                    "target": "c_qubits_into_qubits"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_stabilizer_cws_36",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_stabilizer",
-                    "target": "c_qubits_into_qubits"
+                    "target": "c_cws"
                 }
             },
             {
@@ -908,16 +1057,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_lifted_product_css_33",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_lifted_product",
-                    "target": "c_css"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_lifted_product_homological_product_34",
+                    "id": "parent_lifted_product_homological_product_37",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_lifted_product",
@@ -926,25 +1066,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_lifted_product_quantum_ldpc_35",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_lifted_product",
-                    "target": "c_quantum_ldpc"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_lifted_product_hypergraph_product__8",
-                    "label": "cousin",
-                    "_rel_type": "cousin",
-                    "source": "c_lifted_product",
-                    "target": "c_hypergraph_product"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_quantum_repetition_css_36",
+                    "id": "parent_quantum_repetition_css_38",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_repetition",
@@ -953,7 +1075,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_repetition_hamiltonian__9",
+                    "id": "cousin_quantum_repetition_hamiltonian__8",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_quantum_repetition",
@@ -962,7 +1084,16 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_ldpc_stabilizer_37",
+                    "id": "parent_quantum_reed_muller_stabilizer_39",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_quantum_reed_muller",
+                    "target": "c_stabilizer"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_quantum_ldpc_stabilizer_40",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_quantum_ldpc",
@@ -971,7 +1102,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_ldpc_hamiltonian__10",
+                    "id": "cousin_quantum_ldpc_hamiltonian__9",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_quantum_ldpc",
@@ -980,7 +1111,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_ldpc_dynamic_gen__11",
+                    "id": "cousin_quantum_ldpc_dynamic_gen__10",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_quantum_ldpc",
@@ -989,7 +1120,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_surface_css_38",
+                    "id": "parent_surface_css_41",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_surface",
@@ -998,16 +1129,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_surface_homological_39",
-                    "label": "parent",
-                    "_rel_type": "parent",
-                    "source": "c_surface",
-                    "target": "c_homological"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_surface_quantum_ldpc_40",
+                    "id": "parent_surface_quantum_ldpc_42",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_surface",
@@ -1016,7 +1138,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_surface_topological_41",
+                    "id": "parent_surface_topological_43",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_surface",
@@ -1025,20 +1147,11 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_surface_hypergraph_product__12",
+                    "id": "cousin_surface_hypergraph_product__11",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_surface",
                     "target": "c_hypergraph_product"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_surface_hamiltonian__13",
-                    "label": "cousin",
-                    "_rel_type": "cousin",
-                    "source": "c_surface",
-                    "target": "c_hamiltonian"
                 }
             },
             {
@@ -1052,7 +1165,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qubits_into_qubits_qecc_finite_42",
+                    "id": "parent_qubits_into_qubits_qecc_finite_44",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qubits_into_qubits",
@@ -1061,7 +1174,34 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_group_gkp_group_quantum_43",
+                    "id": "parent_galois_stabilizer_galois_into_galois_45",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_galois_stabilizer",
+                    "target": "c_galois_into_galois"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_galois_into_galois_qecc_finite_46",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_galois_into_galois",
+                    "target": "c_qecc_finite"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_galois_into_galois_qudits_into_qudits__12",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_galois_into_galois",
+                    "target": "c_qudits_into_qudits"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_group_gkp_group_quantum_47",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_group_gkp",
@@ -1070,7 +1210,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_group_gkp_oscillators_into_oscillators__14",
+                    "id": "cousin_group_gkp_oscillators_into_oscillators__13",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_group_gkp",
@@ -1079,7 +1219,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_group_gkp_css__15",
+                    "id": "cousin_group_gkp_css__14",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_group_gkp",
@@ -1088,7 +1228,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_group_gkp_gkp__16",
+                    "id": "cousin_group_gkp_gkp__15",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_group_gkp",
@@ -1106,7 +1246,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_group_quantum_qecc_44",
+                    "id": "parent_group_quantum_qecc_48",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_group_quantum",
@@ -1115,7 +1255,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_group_quantum_qecc_finite__17",
+                    "id": "cousin_group_quantum_qecc_finite__16",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_group_quantum",
@@ -1124,16 +1264,25 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_group_quantum_oscillators_into_oscillators__18",
+                    "id": "cousin_group_quantum_qudits_into_qudits__17",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_group_quantum",
-                    "target": "c_oscillators_into_oscillators"
+                    "target": "c_qudits_into_qudits"
                 }
             },
             {
                 "data": {
-                    "id": "parent_molecular_group_gkp_45",
+                    "id": "cousin_group_quantum_oscillators__18",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_group_quantum",
+                    "target": "c_oscillators"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_molecular_group_gkp_49",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_molecular",
@@ -1142,7 +1291,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qudit_stabilizer_qudits_into_qudits_46",
+                    "id": "parent_qudit_stabilizer_qudits_into_qudits_50",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qudit_stabilizer",
@@ -1160,7 +1309,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_qudits_into_qudits_qecc_finite_47",
+                    "id": "parent_qudits_into_qudits_qecc_finite_51",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_qudits_into_qudits",
@@ -1169,7 +1318,25 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_random_circuit_dynamic_gen_48",
+                    "id": "parent_quantum_perfect_qudits_into_qudits_52",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_quantum_perfect",
+                    "target": "c_qudits_into_qudits"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_quantum_perfect_perfect__19",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_quantum_perfect",
+                    "target": "c_perfect"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_random_circuit_dynamic_gen_53",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_random_circuit",
@@ -1178,7 +1345,25 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hamiltonian_oecc_49",
+                    "id": "parent_fracton_hamiltonian_54",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_fracton",
+                    "target": "c_hamiltonian"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_fracton_topological__20",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_fracton",
+                    "target": "c_topological"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_hamiltonian_oecc_55",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_hamiltonian",
@@ -1187,16 +1372,16 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_dynamic_gen_qecc_50",
+                    "id": "parent_dynamic_gen_oecc_56",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_dynamic_gen",
-                    "target": "c_qecc"
+                    "target": "c_oecc"
                 }
             },
             {
                 "data": {
-                    "id": "parent_topological_hamiltonian_51",
+                    "id": "parent_topological_hamiltonian_57",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_topological",
@@ -1205,7 +1390,7 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_topological_quantum_ldpc__19",
+                    "id": "cousin_topological_quantum_ldpc__21",
                     "label": "cousin",
                     "_rel_type": "cousin",
                     "source": "c_topological",
@@ -1214,11 +1399,83 @@ pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fermions_qecc_finite_52",
+                    "id": "parent_fermions_qecc_finite_58",
                     "label": "parent",
                     "_rel_type": "parent",
                     "source": "c_fermions",
                     "target": "c_qecc_finite"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_fermions_qubits_into_qubits__22",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_fermions",
+                    "target": "c_qubits_into_qubits"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_fermions_oscillators__23",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_fermions",
+                    "target": "c_oscillators"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_majorana_stab_fermions_59",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_majorana_stab",
+                    "target": "c_fermions"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_majorana_stab_stabilizer_60",
+                    "label": "parent",
+                    "_rel_type": "parent",
+                    "source": "c_majorana_stab",
+                    "target": "c_stabilizer"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_majorana_stab_weakly_self_dual__24",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_majorana_stab",
+                    "target": "c_weakly_self_dual"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_majorana_stab_css__25",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_majorana_stab",
+                    "target": "c_css"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_majorana_stab_cyclic__26",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_majorana_stab",
+                    "target": "c_cyclic"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_majorana_stab_reed_muller__27",
+                    "label": "cousin",
+                    "_rel_type": "cousin",
+                    "source": "c_majorana_stab",
+                    "target": "c_reed_muller"
                 }
             }
         ]
@@ -1268,17 +1525,12 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_polar_codes",
+            "bottom": "c_polar",
             "gap": 100
         },
         {
             "top": "domain_classical_domain",
             "bottom": "c_bits_into_bits",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
-            "bottom": "c_weakly_self_dual",
             "gap": 100
         },
         {
@@ -1289,11 +1541,6 @@ pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_tanner",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
-            "bottom": "c_self_dual",
             "gap": 100
         },
         {
@@ -1313,12 +1560,27 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_weakly_self_dual",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_self_dual",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_q-ary_linear",
             "gap": 100
         },
         {
             "top": "domain_classical_domain",
             "bottom": "c_cyclic",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_perfect",
             "gap": 100
         },
         {
@@ -1373,7 +1635,17 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_quantum_polar",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_css",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_quantum_parity",
             "gap": 100
         },
         {
@@ -1383,17 +1655,22 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_homological",
-            "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
             "bottom": "c_homological_product",
             "gap": 100
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_movassagh_ouyang",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_hypergraph_product",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_cws",
             "gap": 100
         },
         {
@@ -1413,6 +1690,11 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_quantum_reed_muller",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_quantum_ldpc",
             "gap": 100
         },
@@ -1423,7 +1705,22 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_bacon_shor",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_qubits_into_qubits",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_galois_stabilizer",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_galois_into_galois",
             "gap": 100
         },
         {
@@ -1453,7 +1750,17 @@ pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
+            "bottom": "c_quantum_perfect",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
             "bottom": "c_random_circuit",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_fracton",
             "gap": 100
         },
         {
@@ -1474,6 +1781,11 @@ pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_fermions",
+            "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_majorana_stab",
             "gap": 100
         }
     ]

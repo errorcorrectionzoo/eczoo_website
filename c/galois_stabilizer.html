@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Error-correcting code
+      Galois-qudit stabilizer code
     [error correction zoo]
   </title>
 
@@ -37,25 +37,25 @@
   class="app-full-width"   >
 
   <header id="header">
-    <h1>Error-correcting code</h1>
+    <h1>Galois-qudit stabilizer code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_ecc">
+<dl class="ecc-code ecc-code-page" id="ecc_galois_stabilizer">
 
 
 <dt>Name</dt>
 <dd class="code-name">
-  Error-correcting code<a class="code-info-corner-icon code-self-permalink"
+  Galois-qudit stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/ecc#ecc_ecc">&nbsp;</a>
+     href="/c/galois_stabilizer#ecc_galois_stabilizer">&nbsp;</a>
 </dd>
 
 
 <dt>Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>. Formally, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span>.</dd>
+<dd class="code-description">Stub.</dd>
 
 
 
@@ -90,21 +90,10 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/oaecc#ecc_oaecc">Operator-algebra error-correcting code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>  </li>
 </ul>
 </dd>
 
-<dt>Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li><span class="code-parent-of-1-code"><a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
-  <li><span class="code-parent-of-1-code"><a href="/c/cyclic#ecc_cyclic">Cyclic code</a></span>  </li>
-</ul>
-</dd>
 
 
 
@@ -117,20 +106,30 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    ecc
+    galois_stabilizer
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/ecc.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/galois_stabilizer.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=ecc">edit on this site</a>
+       href="/edit_code?code_id=galois_stabilizer">edit on this site</a>
   </div>
 </dd>
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

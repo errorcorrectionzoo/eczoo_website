@@ -34,8 +34,7 @@
 <body>
 <div
   id="bodycontents"
-  class=""
-  >
+  class="app-full-width"   >
 
   <header id="header">
     <h1>Stabilizer code</h1>
@@ -56,7 +55,7 @@
 
 
 <dt>Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits.</dd>
@@ -95,7 +94,7 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
+  <li><span class="code-parents-1-code"><a href="/c/cws#ecc_cws">Codeword stabilized (CWS) code</a></span>  </li>
 </ul>
 </dd>
 
@@ -106,7 +105,9 @@
 <ul class="code-relations-list code-parent-of-list">
   <li><span class="code-parent-of-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type.)</span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/quantum_hamming#ecc_quantum_hamming">Quantum Hamming code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/quantum_reed_muller#ecc_quantum_reed_muller">Quantum Reed-Muller code</a></span>  </li>
   <li><span class="code-parent-of-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
+  <li><span class="code-parent-of-1-code"><a href="/c/majorana_stab#ecc_majorana_stab">Majorana stabilizer code</a></span>    <span class="code-parent-of-1-detail">(The Majorana stabilizer code is a stabilizer code whose stabilizers are composed of Majorana fermion operators. In addition, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped into a [[2n,k,2d]]_f Majorana stabilizer code <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. However, Pauli- and Majorana-based stabilizer codes have different notions of locality <a href="#cite-4" class="cite">[5]</a> and are thus useful for different physical platforms.)</span>  </li>
 </ul>
 </dd>
 
@@ -124,14 +125,14 @@
 
 
 <ul class="code-relations-list code-cousin-of-list">
-  <li><span class="code-cousin-of-1-code"><a href="/c/gkp#ecc_gkp">Gotteman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousin-of-1-detail">(Displacement operators can be thought of as analgues of Pauli operators for the oscillator.)</span>  </li>
+  <li><span class="code-cousin-of-1-code"><a href="/c/gkp#ecc_gkp">Gotteman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousin-of-1-detail">(Displacement operators can be thought of as analogues of Pauli operators for the oscillator.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id">
+<dt class="display-code-id dt-wrap-label">
   Zoo code information
 </dt>
 <dd class="display-code-id">
@@ -162,6 +163,21 @@
       <dt id="cite-1">[2]</dt>
       <dd>
         J. Dengis, R. König, and F. Pastawski, “An optimal dissipative encoder for the toric code”, New Journal of Physics <span class="textbf">16</span>, 013023 (2014). <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.1036" target="_blank" class="href">1310.1036</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
       </dd>
     
     </dl>
