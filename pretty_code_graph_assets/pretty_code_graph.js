@@ -1,3 +1,12 @@
+make_pretty_code_graph_data = function()
+{
+    var d = GENERATED_pretty_code_graph_data;
+
+    // might add some constraints in the future to improve visual result
+
+    return d;
+};
+
 pretty_code_graph_setup = function()
 {
     var codegraph = {};
@@ -8,6 +17,8 @@ pretty_code_graph_setup = function()
     var font_family = window.getComputedStyle(document.body).getPropertyValue('font-family');
     // console.log('font_family=');
     // console.log(font_family);
+
+    pretty_code_graph_data = make_pretty_code_graph_data();
 
     codegraph.cy = cytoscape({
         // Main HTML DOM container
@@ -46,18 +57,39 @@ pretty_code_graph_setup = function()
             name: 'fcose',
             quality: "proof",
             animate: true,
-            randomize: true,
+            randomize: false,
             animationDuration: 750,
             animationEasing: undefined,
 
             nodeDimensionsIncludeLabels: true,
 
             // Node repulsion (non overlapping) multiplier
-            nodeRepulsion: function( node ){ return 4500; },
+            nodeRepulsion: function( node ) {
+                return 10000;
+            },
             // Ideal edge (non nested) length
-            idealEdgeLength: function( edge ){ return 80; },
+            idealEdgeLength: function( edge ) {
+                if (edge.data()._rel_type == 'cousin') {
+                    return 500;
+                }
+                if (edge.data()._rel_type == 'domain') {
+                    return 100;
+                }
+                return 200;
+            },
             // Divisor to compute edge forces
-            edgeElasticity: function( edge ){ return .45; },
+            edgeElasticity: function( edge ) {
+                if (edge.target._is_abstract_code) {
+                    return .001;
+                }
+                if (edge.data()._rel_type == 'cousin') {
+                    return .01;
+                }
+                if (edge.data()._rel_type == 'domain') {
+                    return 1;
+                }
+                return .45;
+            },
 
             // fixed node constraints -- root codes
             fixedNodeConstraint: pretty_code_graph_data.fixed_node_constraint,
@@ -69,6 +101,7 @@ pretty_code_graph_setup = function()
         //     // cf. https://github.com/iVis-at-Bilkent/cytoscape.js-fcose#api
         //     name: 'cose-bilkent',
         // },
+
 
         style: [ // the stylesheet for the graph
 
@@ -83,6 +116,14 @@ pretty_code_graph_setup = function()
                     'font-size': '14px',
                     'font-family': font_family,
                     'font-weight': '400'
+                }
+            },
+            {
+                selector: 'node[_is_abstract_code=1]',
+                style: {
+                    'shape': 'round-diamond',
+                    'background-color': '#007f00',
+                    'color': '#007f00',
                 }
             },
             {
@@ -111,7 +152,7 @@ pretty_code_graph_setup = function()
                     'opacity': 0.5,
                     'target-arrow-shape': 'triangle',
                     'curve-style': 'bezier',
-                    'label': 'data(label)',
+                    //'label': 'data(label)',
                     'font-size': '12px'
                 }
             },
