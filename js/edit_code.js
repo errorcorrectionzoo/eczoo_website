@@ -39,7 +39,7 @@ window.eczoo_edit_code_setup = function(base_url, install_in_element)
     }
     console.log('refs=', refs);
 
-    var all_codes_info = fetch_load_json('all_codes_info_dump.json');
+    var all_codes_info = fetch_load_json('dat/all_codes_info_dump.json');
 
     // set all string properties to 'textarea' format
     var set_string_textarea_properties = function (obj) {

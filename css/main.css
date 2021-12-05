@@ -1,4 +1,5 @@
 /* Automatically generated file. Changes will be overwritten. */
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&display=swap");
 html,
 body {
@@ -210,6 +211,14 @@ dd {
   padding: 2px 0px;
 }
 
+#footer {
+  font-style: italic;
+  font-size: 0.8rem;
+  font-color: #78788c;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+
 .ecc-code {
   margin: 1rem 0px 1rem;
   padding: 10px;
@@ -357,6 +366,16 @@ dd.code-name {
   display: none;
 }
 
+.visual-highlight {
+  background-color: #ffe646;
+  box-shadow: #ffe646 0px 0px 10px;
+}
+
+.visual-highlight + dd {
+  background-color: #ffe646;
+  box-shadow: #ffe646 0px 0px 10px;
+}
+
 #endnotes {
   margin: 1rem 0px 1rem;
   padding: 10px;
@@ -393,16 +412,6 @@ dd.code-name {
   margin-top: -0.3em;
 }
 
-.visual-highlight {
-  background-color: yellow;
-  box-shadow: yellow 0px 0px 10px;
-}
-
-.visual-highlight + dd {
-  background-color: yellow;
-  box-shadow: yellow 0px 0px 10px;
-}
-
 .short-code-name {
   font-weight: bold;
   display: block;
@@ -430,10 +439,58 @@ dd.code-name {
   font-weight: bold;
 }
 
-#footer {
+#EczooSearchWidget .search-input {
+  padding: 0.5em 1em;
+  font-size: 1.2rem;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+#EczooSearchWidget .search-no-results, #EczooSearchWidget .search-no-query-string,
+#EczooSearchWidget .search-results-error {
+  padding: 2em 0px;
+}
+
+#EczooSearchWidget .search-no-query-string {
   font-style: italic;
-  font-size: 0.8rem;
-  font-color: #78788c;
-  padding: 4px;
-  margin-bottom: 20px;
+}
+
+#EczooSearchWidget .search-results-error {
+  padding: 2em 0px;
+  color: #b40000;
+}
+
+#EczooSearchWidget .search-query-info {
+  display: block;
+  margin-top: 0.5em;
+}
+
+#EczooSearchWidget .search-result {
+  margin: 1rem 0px 1rem;
+  padding: 10px;
+  border: solid 1px rgba(120, 120, 140, 0.15);
+}
+
+#EczooSearchWidget .search-result .search-result-title {
+  font-style: bold;
+  display: block;
+}
+
+#EczooSearchWidget .search-result .search-result-display-field-name {
+  color: rgba(0, 0, 0, 0.6);
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+#EczooSearchWidget .search-result .search-result-display-field-name::before {
+  content: ' — ';
+}
+
+#EczooSearchWidget .search-result .search-result-field-display {
+  display: block;
+  font-style: italic;
+}
+
+#EczooSearchWidget .search-result .sr-highlight {
+  background-color: #ffe646;
 }
