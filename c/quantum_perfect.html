@@ -56,7 +56,7 @@
 
 
 <dt>Description</dt>
-<dd class="code-description">A non-degenerate <span class="inline-math">\((n,K,2t+1)_q\)</span> qudit code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="inline-math">\(\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. This bound can be saturated at <span class="inline-math">\(n=5\)</span> but not, e.g., at <span class="inline-math">\(n=7\)</span>. However, one can take the large-<span class="inline-math">\(n\)</span> limit and work out an asymptotic Hamming bound <span class="inline-math">\(\frac{k}{n}\leq1-\frac{t}{n}\log_{2}3-H(t/n)\)</span>, where <span class="inline-math">\(H\)</span> is the binary entropy function.</dd>
+<dd class="code-description">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\([[n,K,2t+1]]\)</span> is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="inline-math">\(\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. This bound can be saturated at <span class="inline-math">\(n=5\)</span> but not, e.g., at <span class="inline-math">\(n=7\)</span>. However, one can take the large-<span class="inline-math">\(n\)</span> limit and work out an asymptotic Hamming bound <span class="inline-math">\(\frac{k}{n}\leq1-\frac{t}{n}\log_{2}3-H(t/n)\)</span>, where <span class="inline-math">\(H\)</span> is the binary entropy function.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</dd>
@@ -95,7 +95,8 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
 </ul>
 </dd>
 
@@ -105,7 +106,8 @@
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/c/perfect#ecc_perfect">Perfect code</a></span>    <span class="code-cousins-1-detail">(A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/perfect#ecc_perfect">Perfect code</a></span>    <span class="code-cousins-1-detail">(A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.)</span>  </li>
 </ul>
 </dd>
 
@@ -124,7 +126,7 @@
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/quantum_perfect.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/quantum_perfect.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=quantum_perfect">edit on this site</a>

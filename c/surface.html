@@ -56,7 +56,7 @@
 
 
 <dt>Description</dt>
-<dd class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-2" class="cite">[3]</a>.</dd>
+<dd class="code-description">A family of <a href="/c/css#ecc_css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-2" class="cite">[3]</a>.</dd>
 
 <dt>Protection</dt>
 <dd class="code-protection">When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-3" class="cite">[4]</a>.</dd>
@@ -111,9 +111,10 @@
 
 
 <ul class="code-relations-list code-parents-list">
-  <li><span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
-  <li><span class="code-parents-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-parents-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation, and most conventional tesselations satisfy the QLDPC requirements.)</span>  </li>
-  <li><span class="code-parents-1-code"><a href="/c/topological#ecc_topological">Topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-35" class="cite">[36]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/topological#ecc_topological">Topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-35" class="cite">[36]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -123,7 +124,10 @@
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li><span class="code-cousins-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two (cyclic) repetition codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation, and most tesselations satisfy yields QLDPC codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two repetition (cyclic) codes.)</span>  </li>
 </ul>
 </dd>
 

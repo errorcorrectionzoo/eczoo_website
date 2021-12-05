@@ -313,28 +313,6 @@ dd.code-name {
   color: #78788c;
 }
 
-.emph, .textit {
-  font-style: italic;
-}
-
-.textbf {
-  font-weight: bold;
-}
-
-.cite {
-  font-size: 0.8rem;
-  display: inline-block;
-  vertical-align: 0.3em;
-  margin-top: -0.3em;
-}
-
-.footnote {
-  font-size: 0.8rem;
-  display: inline-block;
-  vertical-align: 0.3em;
-  margin-top: -0.3em;
-}
-
 .paragraph-in-list {
   display: block;
   margin-top: 0.35em;
@@ -366,14 +344,36 @@ dd.code-name {
   display: none;
 }
 
+.emph, .textit {
+  font-style: italic;
+}
+
+.textbf {
+  font-weight: bold;
+}
+
+.cite {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: 0.3em;
+  margin-top: -0.3em;
+}
+
+.footnote {
+  font-size: 0.8rem;
+  display: inline-block;
+  vertical-align: 0.3em;
+  margin-top: -0.3em;
+}
+
 .visual-highlight {
-  background-color: #ffe646;
-  box-shadow: #ffe646 0px 0px 10px;
+  background-color: rgba(255, 230, 70, 0.8);
+  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
 }
 
 .visual-highlight + dd {
-  background-color: #ffe646;
-  box-shadow: #ffe646 0px 0px 10px;
+  background-color: rgba(255, 230, 70, 0.8);
+  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
 }
 
 #endnotes {
@@ -478,12 +478,11 @@ dd.code-name {
 
 #EczooSearchWidget .search-result .search-result-display-field-name {
   color: rgba(0, 0, 0, 0.6);
-  display: inline-block;
   font-size: 0.9rem;
 }
 
 #EczooSearchWidget .search-result .search-result-display-field-name::before {
-  content: ' — ';
+  content: ' — ';
 }
 
 #EczooSearchWidget .search-result .search-result-field-display {
@@ -492,5 +491,5 @@ dd.code-name {
 }
 
 #EczooSearchWidget .search-result .sr-highlight {
-  background-color: #ffe646;
+  background-color: rgba(255, 230, 70, 0.8);
 }
