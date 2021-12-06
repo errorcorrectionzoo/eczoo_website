@@ -114,17 +114,23 @@ h1 {
   line-height: 1.6em;
 }
 
+h2 {
+  font-size: 20px;
+  font-weight: 550;
+  line-height: 1.6em;
+}
+
 p, ul, ol {
-  margin-top: 0.35em;
-  margin-bottom: 0.35em;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
 }
 
 p:first-child, ul:first-child, ol:first-child {
-  margin-top: 0px;
+  margin-top: 0px !important;
 }
 
 p:last-child, ul:last-child, ol:last-child {
-  margin-bottom: 0px;
+  margin-bottom: 0px !important;
 }
 
 dl {
@@ -223,6 +229,11 @@ dd {
   margin: 1rem 0px 1rem;
   padding: 10px;
   border: solid 1px rgba(120, 120, 140, 0.15);
+}
+
+.ecc-code p, .ecc-code ul, .ecc-code ol {
+  margin-top: 0.35em;
+  margin-bottom: 0.35em;
 }
 
 .ecc-code.ecc-code-page {

@@ -50,7 +50,7 @@
 
 <div class="ecc-code" id="ecc_oscillators">
   <span class="short-code-name"><a href="/c/oscillators#ecc_oscillators">Bosonic code</a></span>
-  <span class="short-code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> or <span class="textit">mode</span> (i.e., one copy of the space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>). Ideal codewords may not be normalizable, so approximate versions have to be constructed.</span>
+  <span class="short-code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> or <span class="textit">mode</span> (i.e., one copy of the space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}\)</span>). Ideal codewords may not be normalizable, so approximate versions have to be constructed.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc#ecc_qecc">Quantum error-correcting code (QECC)</a>.
@@ -61,7 +61,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>,       <a href="/c/fermions#ecc_fermions">Fermionic code</a>.
+      <a href="/c/fermions#ecc_fermions">Fermionic code</a>,       <a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a>.
   </span>
 </div>
 
@@ -75,7 +75,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/gkp#ecc_gkp">Gottesman-Kitaev-Preskill (GKP) code</a>,       <a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a>,       <a href="/c/cat#ecc_cat">Cat code</a>.
+      <a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a>,       <a href="/c/gkp#ecc_gkp">Gottesman-Kitaev-Preskill (GKP) code</a>,       <a href="/c/cat#ecc_cat">Cat code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -112,6 +112,21 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_fock_state">
+  <span class="short-code-name"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>
+  <span class="short-code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</span>
+  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_gkp">
   <span class="short-code-name"><a href="/c/gkp#ecc_gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
   <span class="short-code-description">Stub.</span>
@@ -126,21 +141,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/group_gkp#ecc_group_gkp">Group GKP code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_fock_state">
-  <span class="short-code-name"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>
-  <span class="short-code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</span>
-  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/qudits_into_oscillators#ecc_qudits_into_oscillators">Qudit-into-oscillator code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
   </span>
 </div>
 
