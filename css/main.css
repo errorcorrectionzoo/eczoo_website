@@ -241,11 +241,11 @@ dd {
 }
 
 .ecc-code > dt {
-  min-width: 90px;
+  min-width: 120px;
 }
 
 .ecc-code > dt.dt-wrap-label {
-  max-width: 90px;
+  max-width: 120px;
 }
 
 .ecc-code > dd {
@@ -257,20 +257,24 @@ dd {
   margin-bottom: 10px;
 }
 
-.na {
+.ecc-code .na {
   font-style: italic;
   color: #78788c;
 }
 
-.code-relations-list {
+.ecc-code .code-relations-list {
   list-style: none;
   padding: 0px;
   margin: 0px;
 }
 
-.code-introduced {
+.ecc-code span.code-introduced {
   display: inline-block;
-  margin-left: 0.5em;
+  margin-left: 0.3em;
+}
+
+.ecc-code dt.code-feature-code_capacity_threshold {
+  max-width: 120px;
 }
 
 a.code-info-corner-icon {

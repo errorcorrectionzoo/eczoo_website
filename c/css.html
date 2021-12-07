@@ -47,7 +47,7 @@
 <dl class="ecc-code ecc-code-page" id="ecc_css">
 
 
-<dt>Name</dt>
+<dt class="code-name">Name</dt>
 <dd class="code-name">
   Calderbank-Shor-Steane (CSS) stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
@@ -55,7 +55,7 @@
 </dd>
 
 
-<dt>Description</dt>
+<dt class="code-description">Description</dt>
 <dd class="code-description"><p>An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose stabilizer generators are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings. The parity check matrix is of the form
 <span id="eq--parity" class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
@@ -66,7 +66,7 @@ H_{X} &amp; 0
 <p>Encoding is based on two <a href="/c/binary_linear#ecc_binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]\)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]\)</span> code <span class="inline-math">\(C_Z\)</span> with <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>, such that <span class="inline-math">\(k=k_X+k_Z-n\)</span> and <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>. The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is associated with the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>), and the requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers of <span class="inline-math">\(C_X\)</span> commute with the <span class="inline-math">\(Z\)</span>-stabilizers of <span class="inline-math">\(C_Z\)</span>.</p>
 <p>A CSS code has <span class="textit">stabilizer weight</span> <span class="inline-math">\(w\)</span> if the highest weight of any stabilizer generator is <span class="inline-math">\(w\)</span>, i.e., any row and column of <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span> has weight at most <span class="inline-math">\(w\)</span>. In the context of comparing weight as well as of noise models biased toward <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-type errors, an extended notation for CSS codes is <span class="inline-math">\([[n,k,(d_X,d_Z),w]]\)</span>.</p></dd>
 
-<dt>Protection</dt>
+<dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
 
 
@@ -80,6 +80,7 @@ H_{X} &amp; 0
 
 
 
+ 
 
 
 
@@ -92,7 +93,7 @@ H_{X} &amp; 0
 
 
 
-<dt>Notes</dt>
+<dt class="code-notes">Notes</dt>
 <dd class="code-notes">
   <span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product#ecc_hypergraph_product" class="ref">hypergraph product</a> codes.</span>
 </dd>
@@ -100,7 +101,7 @@ H_{X} &amp; 0
 
 <!-- Relationships to other codes -->
 
-<dt>Parent(s)</dt>
+<dt class="code-parents">Parent(s)</dt>
 <dd class="code-parents">
 
 
@@ -112,7 +113,7 @@ H_{X} &amp; 0
 </ul>
 </dd>
 
-<dt>Parent of</dt>
+<dt class="code-parent-of">Parent of</dt>
 <dd class="code-parent-of">
 
 
@@ -128,7 +129,7 @@ H_{X} &amp; 0
 </ul>
 </dd>
 
-<dt>Cousin(s)</dt>
+<dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
 
 
@@ -140,7 +141,7 @@ H_{X} &amp; 0
 </ul>
 </dd>
 
-<dt>Cousin of</dt>
+<dt class="code-cousin-of">Cousin of</dt>
 <dd class="code-cousin-of">
 
 

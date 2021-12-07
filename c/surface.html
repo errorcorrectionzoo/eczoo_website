@@ -47,7 +47,7 @@
 <dl class="ecc-code ecc-code-page" id="ecc_surface">
 
 
-<dt>Name</dt>
+<dt class="code-name">Name</dt>
 <dd class="code-name">
   Kitaev&#x27;s surface code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
@@ -55,10 +55,10 @@
 </dd>
 
 
-<dt>Description</dt>
+<dt class="code-description">Description</dt>
 <dd class="code-description">A family of <a href="/c/css#ecc_css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qubit located at each edge of the tesselation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-2" class="cite">[3]</a>.</dd>
 
-<dt>Protection</dt>
+<dt class="code-protection">Protection</dt>
 <dd class="code-protection">When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is related to the homology of the tessellation <a href="#cite-3" class="cite">[4]</a>.</dd>
 
 
@@ -70,35 +70,36 @@
 
 
 
-<dt>Encoder</dt>
-  <dd class="code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-8" class="cite">[9]</a>.</span></dd>
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-8" class="cite">[9]</a>.</span></dd>
 
 
-<dt>Transversal Gates</dt>
-  <dd class="code-feature-transversal_gates">Pauli gates on torus geometry.</dd>
+<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
+  <dd class="code-feature code-feature-transversal_gates">Pauli gates on torus geometry.</dd>
+ 
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a> or braiding defects <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation <a href="#cite-15" class="cite">[16]</a> or just-in-time decoding <a href="#cite-16" class="cite">[17]</a>.</span></dd>
 
 
-<dt>Gates</dt>
-  <dd class="code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a> or braiding defects <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation <a href="#cite-15" class="cite">[16]</a> or just-in-time decoding <a href="#cite-16" class="cite">[17]</a>.</span></dd>
-
-
-<dt>Decoder</dt>
-  <dd class="code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching <a href="#cite-3" class="cite">[4]</a><a href="#cite-17" class="cite">[18]</a>, union-find <a href="#cite-18" class="cite">[19]</a>, renormalization group <a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a>, tensor network <a href="#cite-21" class="cite">[22]</a>, Markov chain Monte Carlo <a href="#cite-22" class="cite">[23]</a>, cellular automaton <a href="#cite-23" class="cite">[24]</a>, machine learning <a href="#cite-24" class="cite">[25]</a><a href="#cite-25" class="cite">[26]</a><a href="#cite-26" class="cite">[27]</a>.</span></dd>
-
-
-
-
-<dt>Threshold</dt>
-  <dd class="code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> with independent <span class="inline-math">\(X/Z\)</span> errors for square tiling <a href="#cite-27" class="cite">[28]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-28" class="cite">[29]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-29" class="cite">[30]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-30" class="cite">[31]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-31" class="cite">[32]</a>.</span></dd>
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching <a href="#cite-3" class="cite">[4]</a><a href="#cite-17" class="cite">[18]</a>, union-find <a href="#cite-18" class="cite">[19]</a>, renormalization group <a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a>, tensor network <a href="#cite-21" class="cite">[22]</a>, Markov chain Monte Carlo <a href="#cite-22" class="cite">[23]</a>, cellular automaton <a href="#cite-23" class="cite">[24]</a>, machine learning <a href="#cite-24" class="cite">[25]</a><a href="#cite-25" class="cite">[26]</a><a href="#cite-26" class="cite">[27]</a>.</span></dd>
 
 
 
-<dt>Realizations</dt>
+
+
+
+<dt class="code-feature code-feature-threshold">Threshold</dt>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> with independent <span class="inline-math">\(X/Z\)</span> errors for square tiling <a href="#cite-27" class="cite">[28]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-28" class="cite">[29]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-29" class="cite">[30]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-30" class="cite">[31]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-31" class="cite">[32]</a>.</span></dd>
+
+
+
+<dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
   <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-32" class="cite">[33]</a>, Erhard et al. <a href="#cite-33" class="cite">[34]</a> and Google Quantum AI <a href="#cite-34" class="cite">[35]</a>.</span>
 </dd>
 
-<dt>Notes</dt>
+<dt class="code-notes">Notes</dt>
 <dd class="code-notes">
   <span class="paragraph-in-list">2D and 3D surface code <a href="http://gui.quantumcodes.io/" target="_blank" class="href">visualization tool</a>.</span><span class="paragraph-in-list">Toric code introductions from error-correction perspective by <a href="https://boulderschool.yale.edu/2018/boulder-school-2018-lecture-notes" target="_blank" class="href">J. Haah</a> and condensed-matter perspective by <a href="https://boulderschool.yale.edu/2016/boulder-school-2016-lecture-notes" target="_blank" class="href">M. Levin and C. Nayak</a>.</span>
 </dd>
@@ -106,7 +107,7 @@
 
 <!-- Relationships to other codes -->
 
-<dt>Parent(s)</dt>
+<dt class="code-parents">Parent(s)</dt>
 <dd class="code-parents">
 
 
@@ -119,7 +120,7 @@
 </dd>
 
 
-<dt>Cousin(s)</dt>
+<dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
 
 
