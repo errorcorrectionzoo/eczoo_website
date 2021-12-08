@@ -454,6 +454,33 @@ dd.code-name {
   font-weight: bold;
 }
 
+.tiles-collection {
+  margin-bottom: 1rem;
+  display: grid;
+  grid: auto-flow/repeat(1, 1fr);
+  grid-row-gap: 5px;
+  grid-column-gap: 5px;
+}
+
+.tiles-collection .tile {
+  padding: 5px 5px 5px;
+  padding-left: 65px;
+  min-height: 50px;
+  border: solid 1px rgba(120, 120, 140, 0.15);
+  background-position: 5px 50%;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  display: grid;
+}
+
+.tiles-collection .tile > span {
+  grid-row: 2;
+}
+
+.person-list {
+  max-width: 400px;
+}
+
 #EczooSearchWidget .search-input {
   padding: 0.5em 1em;
   font-size: 1.2rem;
