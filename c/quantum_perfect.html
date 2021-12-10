@@ -56,7 +56,16 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\([[n,K,2t+1]]\)</span> is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="inline-math">\(\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K\)</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit <span class="inline-math">\(K=2\)</span> and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. This bound can be saturated at <span class="inline-math">\(n=5\)</span> but not, e.g., at <span class="inline-math">\(n=7\)</span>. However, one can take the large-<span class="inline-math">\(n\)</span> limit and work out an asymptotic Hamming bound <span class="inline-math">\(\frac{k}{n}\leq1-\frac{t}{n}\log_{2}3-H(t/n)\)</span>, where <span class="inline-math">\(H\)</span> is the binary entropy function.</dd>
+<dd class="code-description"><p>A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
+<span class="display-math env-align">\begin{align}
+\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
+\end{align}</span>
+becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</p>
+<p>For qubit codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
+<span class="display-math env-align">\begin{align}
+\frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-H(t/n),
+\end{align}</span>
+where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</dd>
@@ -101,6 +110,15 @@
 </ul>
 </dd>
 
+<dt class="code-parent-of">Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/stab_5_1_3#ecc_stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> stabilizer code</a></span>    <span class="code-parent-of-1-detail">(The smallest perfect code.)</span>  </li>
+</ul>
+</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">

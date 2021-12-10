@@ -59,7 +59,7 @@
 <dd class="code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events.</dd>
+<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock states; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distanced are defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</dd>
 
 
 <!-- Display features -->
@@ -99,6 +99,17 @@
 </ul>
 </dd>
 
+<dt class="code-parent-of">Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/wasilewski-banaszek#ecc_wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
+</ul>
+</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -107,6 +118,8 @@
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between binary strings.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>    <span class="code-cousins-1-detail">(Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">$N$</span> can be mapped into a qubit code with <span class="inline-math">$n\geq\log_2 N$</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">$n$</span> and treating each binary digit as an index for a qubit state. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -134,6 +147,16 @@
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href">2111.08894</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

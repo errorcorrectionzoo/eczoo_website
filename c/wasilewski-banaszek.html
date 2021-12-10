@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      \(\mathbb{Z}_q\)-qudit code
+      Wasilewski-Banaszek code
     [error correction zoo]
   </title>
 
@@ -38,26 +38,28 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</h1>
+    <h1>Wasilewski-Banaszek code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_qudits">
+<dl class="ecc-code ecc-code-page" id="ecc_wasilewski-banaszek">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code<a class="code-info-corner-icon code-self-permalink"
+  Wasilewski-Banaszek code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
+     href="/c/wasilewski-banaszek#ecc_wasilewski-banaszek">&nbsp;</a>
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers modulo <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</dd>
+<dd class="code-description">Three-oscillator code encoding a single logical qubit using codewords <span class="inline-math">\(|0_L\rangle = (|003\rangle+|030\rangle+|300\rangle)/\sqrt{3},\qquad|1_L\rangle = |111\rangle\)</span>.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protects against single photon loss in any one mode.</dd>
 
 
 <!-- Display features -->
@@ -68,11 +70,17 @@
 
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Qubit encoded in dual-rail representation can be transferred to this code by input qubit modes into linear optical network with four other modes, each with one photon input. Successful encoding is conditioned on measurement of the state <span class="inline-math">\(|110\rangle\)</span> on the last three modes.</span></dd>
 
 
  
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Single-qubit gates implemented using linear optical networks, sometimes with the addition of auxiliary modes with vacuum input and (conditional) output.</span></dd>
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Destructive measurement with photon number measurements on each mode.</span></dd>
 
 
 
@@ -93,34 +101,21 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Finite-dimensional QECC</a></span>  </li>
-</ul>
-</dd>
-
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>  </li>
 </ul>
 </dd>
 
 
-<dt class="code-cousin-of">Cousin of</dt>
-<dd class="code-cousin-of">
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
 
 
-<ul class="code-relations-list code-cousin-of-list">
+<ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(Group quantum codes whose physical spaces are constructed using modular-integer groups are <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousin-of-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>    <span class="code-cousin-of-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits. The two coincide when <span class="inline-math">\(q\)</span> is prime. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
 </ul>
 </dd>
+
 
 
 <!-- zoo-related information and how to edit -->
@@ -131,20 +126,30 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    qudits_into_qudits
+    wasilewski-banaszek
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudits_into_qudits.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/wasilewski-banaszek.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=qudits_into_qudits">edit on this site</a>
+       href="/edit_code?code_id=wasilewski-banaszek">edit on this site</a>
   </div>
 </dd>
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

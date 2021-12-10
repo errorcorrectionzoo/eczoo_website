@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      \(\mathbb{Z}_q\)-qudit code
+      Chuang-Leung-Yamamoto code
     [error correction zoo]
   </title>
 
@@ -38,26 +38,32 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</h1>
+    <h1>Chuang-Leung-Yamamoto code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_qudits">
+<dl class="ecc-code ecc-code-page" id="ecc_chuang-leung-yamamoto">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code<a class="code-info-corner-icon code-self-permalink"
+  Chuang-Leung-Yamamoto code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
      title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
+     href="/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto">&nbsp;</a>
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers modulo <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</dd>
+<dd class="code-description">Bosonic qubit-into-oscillator code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer#ecc_stabilizer" class="ref">stabilizer code</a> notation.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protects against amplitude damping for loss of up to <span class="inline-math">\(t = d-1\)</span> excitations. Defining the <span class="textit">separation</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
+<span class="display-math env-align">\begin{align}
+\text{Sep}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
+\end{align}</span>
+the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial separation between Fock states making up the codewords.</dd>
 
 
 <!-- Display features -->
@@ -66,13 +72,19 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">Code rate is <span class="inline-math">\(\frac{k}{n \log_2(N+1)}\)</span>. To correct the loss of up to <span class="inline-math">\(t\)</span> excitations with <span class="inline-math">\(K+1\)</span> codewords, a code exists with scaling <span class="inline-math">\(N \sim t^3 K/2\)</span>.</dd>
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Photon Fock state input into a network of beamsplitters, phase shifters, and Kerr media. These operations all preserve total photon number. Beamsplitters and phase shifters take annihilation operators to linear combinations of annihilation operators, and the transformation matrix is unitary. The operations corresponding to Kerr nonlinear media are diagonal in the Fock basis, but they implement phases that in general depend nonlinearly on the number of photons in each mode. State preparation may require ancillary modes and be conditioned on photon-number measurement results.</span></dd>
 
 
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Destructive decoding with a photon number measurement on each mode.</span><span class="paragraph-in-list">State can be decoded with a network of beamsplitters, phase shifters, and Kerr media.</span></dd>
 
 
 
@@ -93,21 +105,10 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Finite-dimensional QECC</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>  </li>
 </ul>
 </dd>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>  </li>
-</ul>
-</dd>
 
 
 <dt class="code-cousin-of">Cousin of</dt>
@@ -116,9 +117,7 @@
 
 <ul class="code-relations-list code-cousin-of-list">
   <li class="paragraph-in-list">
-    <span class="code-cousin-of-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousin-of-1-detail">(Group quantum codes whose physical spaces are constructed using modular-integer groups are <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousin-of-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>    <span class="code-cousin-of-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits. The two coincide when <span class="inline-math">\(q\)</span> is prime. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+    <span class="code-cousin-of-1-code"><a href="/c/wasilewski-banaszek#ecc_wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
 </ul>
 </dd>
 
@@ -131,20 +130,30 @@
 <dd class="display-code-id">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    qudits_into_qudits
+    chuang-leung-yamamoto
   </div><div>
     <a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudits_into_qudits.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/chuang-leung-yamamoto.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=qudits_into_qudits">edit on this site</a>
+       href="/edit_code?code_id=chuang-leung-yamamoto">edit on this site</a>
   </div>
 </dd>
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 
