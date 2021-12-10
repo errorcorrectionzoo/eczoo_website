@@ -483,7 +483,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_stab_5_1_3",
-                    "label": "\\([[5,1,3]]\\) stabilizer code",
+                    "label": "\\([[5,1,3]]\\) code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -2229,15 +2229,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_random_circuit_qecc_71",
-                    "_rel_type": "parent",
-                    "source": "c_random_circuit",
-                    "target": "c_qecc"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_approximate_qecc_qecc_72",
+                    "id": "parent_approximate_qecc_qecc_71",
                     "_rel_type": "parent",
                     "source": "c_approximate_qecc",
                     "target": "c_qecc"
@@ -2245,7 +2237,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fracton_hamiltonian_73",
+                    "id": "parent_fracton_hamiltonian_72",
                     "_rel_type": "parent",
                     "source": "c_fracton",
                     "target": "c_hamiltonian"
@@ -2261,7 +2253,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hamiltonian_oecc_74",
+                    "id": "parent_hamiltonian_oecc_73",
                     "_rel_type": "parent",
                     "source": "c_hamiltonian",
                     "target": "c_oecc"
@@ -2269,7 +2261,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_perfect_qudits_into_qudits_75",
+                    "id": "parent_quantum_perfect_qudits_into_qudits_74",
                     "_rel_type": "parent",
                     "source": "c_quantum_perfect",
                     "target": "c_qudits_into_qudits"
@@ -2293,7 +2285,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fermions_qecc_finite_76",
+                    "id": "parent_fermions_qecc_finite_75",
                     "_rel_type": "parent",
                     "source": "c_fermions",
                     "target": "c_qecc_finite"
@@ -2317,7 +2309,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_fermions_77",
+                    "id": "parent_majorana_stab_fermions_76",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_fermions"
@@ -2325,7 +2317,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_stabilizer_78",
+                    "id": "parent_majorana_stab_stabilizer_77",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_stabilizer"
@@ -3118,11 +3110,6 @@ GENERATED_pretty_code_graph_data = {
         },
         {
             "top": "c_dynamic_gen",
-            "bottom": "c_random_circuit",
-            "gap": 100
-        },
-        {
-            "top": "c_qecc",
             "bottom": "c_random_circuit",
             "gap": 100
         },
