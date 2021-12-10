@@ -56,7 +56,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and logical states <span class="display-math env-align">\begin{align} \begin{split} |00\rangle_L = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |01\rangle_L = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |10\rangle_L = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |11\rangle_L = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}.\end{align}</span></dd>
+<dd class="code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}.\end{align}</span></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects a single-qubit error <a href="#cite-0" class="cite">[1]</a> or single erasure <a href="#cite-1" class="cite">[2]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-2" class="cite">[3]</a>.</dd>
@@ -80,7 +80,7 @@
 
 
 <dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but require post-selection because the code cannot correct errors <a href="#cite-3" class="cite">[4]</a>.</span></dd>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but requires post-selection because the code cannot correct errors <a href="#cite-3" class="cite">[4]</a>.</span></dd>
 
 
 
@@ -120,7 +120,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/surface#ecc_surface">Kitaev&#x27;s surface code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is a surface code on the smallest torus (a 2-by-2 square lattice with periodic boundary conditions).)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3#ecc_stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> stabilizer code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> can be derived from <span class="inline-math">\([[5,1,3]]\)</span> code using a protocal that converts <span class="inline-math">\([[n,k,d]]\)</span> code into an <span class="inline-math">\([[n-1, k+1, d-1]]\)</span> code; Sec. 3.5 in <a href="#cite-6" class="cite">[7]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3#ecc_stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> stabilizer code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> can be derived from <span class="inline-math">\([[5,1,3]]\)</span> code using a protocal that converts <span class="inline-math">\([[n,k,d]]\)</span> code into an <span class="inline-math">\([[n-1, k+1, d-1]]\)</span> code; see Sec. 3.5 in Gottesman <a href="#cite-6" class="cite">[7]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_parity#ecc_quantum_parity">Quantum parity code (QPC)</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is the simplest QPC.)</span>  </li>
   <li class="paragraph-in-list">

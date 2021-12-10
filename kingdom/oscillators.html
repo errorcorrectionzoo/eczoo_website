@@ -118,7 +118,7 @@
 
 <div class="ecc-code" id="ecc_very-small-logical-qubit">
   <span class="short-code-name"><a href="/c/very-small-logical-qubit#ecc_very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
-  <span class="short-code-description">The code states are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
+  <span class="short-code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
   <span class="short-code-info">Protection: Passively protects against single photon loss.</span>
   <span class="short-code-parents">
     Parents:
@@ -181,7 +181,7 @@
 <div class="ecc-code" id="ecc_chuang-leung-yamamoto">
   <span class="short-code-name"><a href="/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
   <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer#ecc_stabilizer" class="ref">stabilizer code</a> notation.</span>
-  <span class="short-code-info">Protection: Protects against amplitude damping for loss of up to <span class="inline-math">\(t = d-1\)</span> excitations. Defining the <span class="textit">separation</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
+  <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">separation</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
 <span class="display-math env-align">\begin{align}
 \text{Sep}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
 \end{align}</span>
@@ -199,7 +199,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 <div class="ecc-code" id="ecc_wasilewski-banaszek">
   <span class="short-code-name"><a href="/c/wasilewski-banaszek#ecc_wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
-  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="inline-math">\(|0_L\rangle = (|003\rangle+|030\rangle+|300\rangle)/\sqrt{3},\qquad|1_L\rangle = |111\rangle\)</span>.</span>
+  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}.\end{align}</span></span>
   <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
   <span class="short-code-parents">
     Parents:
