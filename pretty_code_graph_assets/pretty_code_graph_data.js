@@ -538,7 +538,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\([[n,k,d]]\\) stabilizer code whose stabilizer generators are either \\(Z\\)-type or \\(X\\)-type Pauli strings. The parity check matrix is of the form\n\\begin{align}\nH=\\begin{pmatrix}0 & H_{Z}\\\\\nH_{..."
+                        "An \\([[n,k,d]]\\) stabilizer code admitting a set of stabilizer generators that are either \\(Z\\)-type or \\(X\\)-type Pauli strings. The parity check matrix is of the form\n\\begin{align}\nH=\\begin{pmatr..."
                     ],
                     "_code_href": "/c/css",
                     "_family_generation_level": 4
@@ -1597,10 +1597,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_parity_stabilizer_31",
+                    "id": "parent_quantum_parity_css_31",
                     "_rel_type": "parent",
                     "source": "c_quantum_parity",
-                    "target": "c_stabilizer"
+                    "target": "c_css"
                 }
             },
             {
@@ -2906,7 +2906,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_stabilizer",
+            "top": "c_css",
             "bottom": "c_quantum_parity",
             "gap": 100
         },
