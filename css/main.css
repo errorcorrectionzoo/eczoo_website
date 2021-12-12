@@ -328,8 +328,18 @@ span.code-name {
   display: none;
 }
 
+dd.code-name {
+  display: grid;
+  grid-template-columns: 10fr auto;
+  gap: 1rem;
+}
+
+.code-name-cell {
+  grid-column: 1;
+}
+
 .info-popup-button-container {
-  float: right;
+  grid-column: 2;
 }
 
 .tippy-content .code-popup-info-frame {
