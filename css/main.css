@@ -296,6 +296,15 @@ input.navbar-search {
   grid-column: span 2;
 }
 
+@media (max-width: 600px) {
+  #bodycontents.page-index > main {
+    grid-template-columns: 1fr;
+  }
+  #bodycontents.page-index > main .page-index-box-span-2 {
+    grid-column: span 1;
+  }
+}
+
 .ecc-code {
   margin: 1rem 0px 1rem;
   padding: 10px;
