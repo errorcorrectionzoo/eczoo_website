@@ -38,6 +38,10 @@ body {
   margin-left: 0px;
 }
 
+#bodycontents.page-no-sidebar #sidebar {
+  display: none;
+}
+
 @media (max-width: 880px) {
   #bodycontents:not(.app-full-width) #sidebar {
     margin-left: 0px;
@@ -169,7 +173,7 @@ dd {
 #header {
   background-image: url(/static/icons/eczoo-main-logo.svg);
   background-repeat: no-repeat;
-  background-position-x: right 3px;
+  background-position-x: calc(100% - 3px);
   background-position-y: center;
   background-size: 150px auto;
   padding-right: 166px;
@@ -194,22 +198,22 @@ dd {
   min-width: 220px;
 }
 
-#sidebar h1 {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5em;
-}
-
 #sidebar .sidebarbox {
   border: none 0px;
   background-color: #f5f5ff;
-  z-index: 90;
   box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 6px;
   padding: 5px;
+  z-index: 90;
 }
 
 .app-full-width #sidebar .sidebarbox {
   box-shadow: none;
+}
+
+nav h1 {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5em;
 }
 
 .navlinks {
@@ -222,12 +226,74 @@ dd {
   padding: 2px 0px;
 }
 
+input.navbar-search {
+  border: solid 1px rgba(120, 120, 140, 0.5);
+  border-radius: 3px;
+  padding: 6px 3px;
+  margin: 2px -3px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
 #footer {
   font-style: italic;
   font-size: 0.8rem;
   font-color: #78788c;
   padding: 4px;
   margin-bottom: 20px;
+}
+
+#bodycontents.page-index > main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+#bodycontents.page-index > main .page-index-box {
+  grid-column: span 1;
+  border: none 0px;
+  background-color: #f5f5ff;
+  box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 6px;
+  padding: 5px;
+  padding: 8px;
+}
+
+#bodycontents.page-index > main .page-index-box h1:first-child {
+  margin-top: 0px;
+}
+
+#bodycontents.page-index > main .page-index-box h1 {
+  margin-bottom: 5px;
+}
+
+#bodycontents.page-index > main .page-index-box ul.page-index-box-links {
+  display: inline;
+  list-style: none;
+  padding: 0px 0px 0px 1px;
+  margin: 0px;
+}
+
+#bodycontents.page-index > main .page-index-box ul.page-index-box-links .page-index-box-links-head {
+  display: inline-block;
+  font-weight: 550;
+}
+
+#bodycontents.page-index > main .page-index-box ul.page-index-box-links > li {
+  display: inline;
+  padding: 2px 0px;
+}
+
+#bodycontents.page-index > main .page-index-box ul.page-index-box-links .spacer {
+  display: inline-block;
+  padding-right: 8px;
+}
+
+#bodycontents.page-index > main .page-index-box .stat-number {
+  font-weight: bold;
+}
+
+#bodycontents.page-index > main .page-index-box-span-2 {
+  grid-column: span 2;
 }
 
 .ecc-code {

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-Error Correction Zoo — Home    [error correction zoo]
+Welcome to the error correction zoo    [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -20,31 +21,114 @@ Error Correction Zoo — Home    [error correction zoo]
 
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
   <script type="text/javascript" async
 	  src="/js/misc.js">
   </script>
-
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
 
+  <script type="text/javascript" async src="/js/eczhomestuff.js"></script>
 
 
 </head>
 <body>
+
 <div
   id="bodycontents"
-  class=""
+    class="page-index page-no-sidebar"
   >
 
   <header id="header">
-    <h1>Error Correction Zoo — Home</h1>
+    <h1>Welcome to the error correction zoo</h1>
   </header><!-- #header -->
 
   <main id="main">
 
-<h1>Welcome to the error correction zoo</h1>
 
-<p>Select a page to visit in the navigation bar.</p>
+
+<nav class="page-index-box">
+  <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+  <ul class="page-index-box-links">
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/bits_into_bits">Binary Kingdom</a>:
+<a href="/c/bits_into_bits">Binary code</a>, <a href="/c/binary_linear">Binary linear code</a>, <a href="/c/polar">Polar code</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a>:
+<a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>, <a href="/c/weakly_self_dual">Weakly self-dual linear code</a>, <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>, <span class="spacer">…</span></li>
+  </ul>
+</nav>
+
+
+<nav class="page-index-box">
+  <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+  <ul class="page-index-box-links">
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/qubits_into_qubits">Qubit Kingdom</a>:
+<a href="/c/qubits_into_qubits">Qubit code</a>, <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>, <a href="/c/quantum_parity">Quantum parity code (QPC)</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a>:
+<a href="/c/qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a>, <a href="/c/qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a>, <a href="/c/quantum_perfect">Perfect quantum code</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/oscillators">Oscillator Kingdom</a>:
+<a href="/c/oscillators">Bosonic code</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/fermions">Fermionic Kingdom</a>:
+<a href="/c/fermions">Fermionic code</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/group_quantum">Group Kingdom</a>:
+<a href="/c/group_quantum">Group quantum code</a>, <span class="spacer">…</span></li>
+      <li>
+        <a class="page-index-box-links-head"
+           href="/kingdom/galois_into_galois">Galois Field Kingdom</a>:
+<a href="/c/galois_into_galois">Galois-qudit code</a>, <span class="spacer">…</span></li>
+  </ul>
+</nav>
+
+<nav class="page-index-box">
+  <h1><a href="/">Home Page</a></h1>
+  <ul class="navlinks">
+    <li><a href="/code_graph">Code graph</a></li>
+    <li><a href="/all">All codes</a></li>
+    <!--<li><a href="/search">Search</a></li>-->
+    <li>
+      <form action="/search" method="GET">
+        <input type="text" class="navbar-search" name="q" placeholder="search"></input>
+      </form>
+    </li>
+  </ul>
+
+  <h1>More</h1>
+  <ul class="navlinks">
+    <li><a href="/edit_code">Add new code</a></li>
+    <li><a href="/additional_resources">Additional resources</a></li>
+    <li><a href="/about">About</a></li>
+  </ul>
+</nav>
+
+<nav class="page-index-box page-index-box-span-2" id="random-code-box">
+  <span style="font-style:italic">(Random code loading …)</span>
+</nav>
+
+
+<nav class="page-index-box" id="quick-stats-box">
+  Stats at a glance:
+  <span class="stat-number">74</span>&nbsp;codes,
+  <span class="stat-number">8</span>&nbsp;kingdoms, 
+  <span class="stat-number">2</span>&nbsp;domains.
+</nav>
+
+
 
   </main><!-- #main -->
 
