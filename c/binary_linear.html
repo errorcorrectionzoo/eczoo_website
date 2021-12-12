@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Binary linear code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Binary linear code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Binary linear code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_binary_linear">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_binary_linear">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Binary linear code<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/binary_linear#ecc_binary_linear">&nbsp;</a>
+  <span class="code-name">Binary linear code</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/binary_linear">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -99,7 +118,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/bits_into_bits">Binary code</a></span>  </li>
 </ul>
 </dd>
 
@@ -109,13 +128,13 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/polar#ecc_polar">Polar code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/polar">Polar code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/reed_muller">Reed-Muller code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/tanner#ecc_tanner">Tanner code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/tanner">Tanner code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>  </li>
 </ul>
 </dd>
 
@@ -125,31 +144,50 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between binary strings.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between binary strings.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(Construction uses two related binary linear codes <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(Construction uses two related binary linear codes <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span>.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     binary_linear
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Binary linear code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/binary_linear</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_binary_linear,
+  title={Binary linear code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/binary_linear}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/binary_linear</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/binary_linear.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/binary_linear.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=binary_linear">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=binary_linear">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>binary_linear</code></div>
 </dd>
 
 </dl>

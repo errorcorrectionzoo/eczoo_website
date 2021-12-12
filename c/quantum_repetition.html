@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Qubit repetition code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Qubit repetition code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Qubit repetition code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_quantum_repetition">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_repetition">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Qubit repetition code<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/quantum_repetition#ecc_quantum_repetition">&nbsp;</a>
+  <span class="code-name">Qubit repetition code</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/quantum_repetition">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -103,7 +122,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
 </ul>
 </dd>
 
@@ -114,33 +133,52 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamiltonian#ecc_hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/very-small-logical-qubit#ecc_very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></span>    <span class="code-cousins-1-detail">(Parts of the VSLQ codewords resemble the two-qubit phase-flip repetition code, though the code cannot correct phase errors. Unlike the phase-flip code, the VSLQ code can correct for single photon loss because it uses the second excited state in the construction, which remains distinct from the vacuum even after photon loss.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></span>    <span class="code-cousins-1-detail">(Parts of the VSLQ codewords resemble the two-qubit phase-flip repetition code, though the code cannot correct phase errors. Unlike the phase-flip code, the VSLQ code can correct for single photon loss because it uses the second excited state in the construction, which remains distinct from the vacuum even after photon loss.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/shor_nine#ecc_shor_nine">Shor&#x27;s <span class="inline-math">\([[9,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(Shor&#x27;s code is a concatenation of a three-qubit bit-flip with a three-qubit phase-flip repetition code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/shor_nine">Shor&#x27;s <span class="inline-math">\([[9,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(Shor&#x27;s code is a concatenation of a three-qubit bit-flip with a three-qubit phase-flip repetition code.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     quantum_repetition
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Qubit repetition code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_repetition</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_quantum_repetition,
+  title={Qubit repetition code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/quantum_repetition}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/quantum_repetition</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_repetition.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_repetition.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=quantum_repetition">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=quantum_repetition">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_repetition</code></div>
 </dd>
 
 </dl>

@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Hamiltonian-based code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Hamiltonian-based code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Hamiltonian-based code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,19 +62,20 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_hamiltonian">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_hamiltonian">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Hamiltonian-based code<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/hamiltonian#ecc_hamiltonian">&nbsp;</a>
+  <span class="code-name">Hamiltonian-based code</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/hamiltonian">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encoding corresponds to a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of arbitrarily high energy. When the physical space is a tensor product of subsystems, the Hamiltonian is typically <span class="textit">local</span>, consisting of operators acting on a number of subsystems that is independent of the total number of subsystems (e.g., <a href="/c/quantum_ldpc#ecc_quantum_ldpc" class="ref">quantum LDPC codes</a>). When the physical space is endowed with a geometry, the Hamiltonian is typically <span class="textit">geometrically local</span>, consisting of operators acting on subsystems that occupy a region whose size is independent of the number of subsystems (e.g., <a href="/c/topological#ecc_topological" class="ref">topological codes</a>).</dd>
+<dd class="code-description">Encoding corresponds to a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of arbitrarily high energy. When the physical space is a tensor product of subsystems, the Hamiltonian is typically <span class="textit">local</span>, consisting of operators acting on a number of subsystems that is independent of the total number of subsystems (e.g., <a href="/c/quantum_ldpc" class="ref">quantum LDPC codes</a>). When the physical space is endowed with a geometry, the Hamiltonian is typically <span class="textit">geometrically local</span>, consisting of operators acting on subsystems that occupy a region whose size is independent of the number of subsystems (e.g., <a href="/c/topological" class="ref">topological codes</a>).</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Typically determined from the underlying physical properties of the Hamiltonian.</dd>
@@ -97,7 +116,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/oecc#ecc_oecc">Operator quantum error-correcting code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/oecc">Operator quantum error-correcting code</a></span>  </li>
 </ul>
 </dd>
 
@@ -107,9 +126,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/fracton#ecc_fracton">Fracton code</a></span>    <span class="code-parent-of-1-detail">(Codespace is the ground-state subspace of a geometrically local Hamiltonian admitting a fracton phase.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/fracton">Fracton code</a></span>    <span class="code-parent-of-1-detail">(Codespace is the ground-state subspace of a geometrically local Hamiltonian admitting a fracton phase.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/topological#ecc_topological">Topological code</a></span>    <span class="code-parent-of-1-detail">(Codespace is either the ground-state or low-energy subspace of a geometrically local Hamiltonian admitting a topological phase.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parent-of-1-detail">(Codespace is either the ground-state or low-energy subspace of a geometrically local Hamiltonian admitting a topological phase.)</span>  </li>
 </ul>
 </dd>
 
@@ -119,35 +138,54 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3#ecc_stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of Majorana operators <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of Majorana operators <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stabilizer#ecc_stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of the <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of the <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_repetition#ecc_quantum_repetition">Qubit repetition code</a></span>    <span class="code-cousins-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/quantum_repetition">Qubit repetition code</a></span>    <span class="code-cousins-1-detail">(Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     hamiltonian
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Hamiltonian-based code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/hamiltonian</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_hamiltonian,
+  title={Hamiltonian-based code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/hamiltonian}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/hamiltonian</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=hamiltonian">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=hamiltonian">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hamiltonian</code></div>
 </dd>
 
 </dl>

@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Homological product code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Homological product code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Homological product code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_homological_product">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_product">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Homological product code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/homological_product#ecc_homological_product">&nbsp;</a>
+  <span class="code-name">Homological product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/homological_product">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -97,9 +116,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
 </ul>
 </dd>
 
@@ -109,9 +128,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/hypergraph_product#ecc_hypergraph_product">Hypergraph product code</a></span>    <span class="code-parent-of-1-detail">(Hypergraph product obtained from the homological product of two length-two chain complexes, i.e., classical binary codes.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-parent-of-1-detail">(Hypergraph product obtained from the homological product of two length-two chain complexes, i.e., classical binary codes.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/lifted_product#ecc_lifted_product">Lifted product code</a></span>    <span class="code-parent-of-1-detail">(Lifted product obtained from the homological product over a group algebra <span class="inline-math">\(\mathbb{F}_2 G\)</span> of two length-two chain complexes over <span class="inline-math">\(\mathbb{F}_2 G\)</span>, i.e., classical binary codes with a free action of the group <span class="inline-math">\(G\)</span>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/lifted_product">Lifted product code</a></span>    <span class="code-parent-of-1-detail">(Lifted product obtained from the homological product over a group algebra <span class="inline-math">\(\mathbb{F}_2 G\)</span> of two length-two chain complexes over <span class="inline-math">\(\mathbb{F}_2 G\)</span>, i.e., classical binary codes with a free action of the group <span class="inline-math">\(G\)</span>.)</span>  </li>
 </ul>
 </dd>
 
@@ -119,22 +138,41 @@
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     homological_product
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Homological product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/homological_product</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_homological_product,
+  title={Homological product code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/homological_product}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/homological_product</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/homological_product.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/homological_product.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=homological_product">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=homological_product">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>homological_product</code></div>
 </dd>
 
 </dl>

@@ -277,25 +277,6 @@ dd {
   max-width: 120px;
 }
 
-a.code-info-corner-icon {
-  display: inline-block;
-  float: right;
-  margin: -3px 0px -3px 5px;
-  padding: 3px 5px;
-  color: #78788c;
-  opacity: 0.2;
-  width: 12px;
-  height: 12px;
-  margin-top: 2px;
-  vertical-align: middle;
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
-}
-
-a.code-info-corner-icon:hover {
-  opacity: 0.9;
-}
-
 a.code-link-with-icon {
   display: inline-block;
   vertical-align: middle;
@@ -307,19 +288,7 @@ a.code-link-with-icon {
   background-repeat: no-repeat;
 }
 
-a.code-self-permalink {
-  background-image: url(/static/icons/permalink-logo.svg);
-}
-
-a.code-show-github {
-  background-image: url(/static/icons/github-logo.svg);
-}
-
-a.code-self-edit {
-  background-image: url(/static/icons/edit-icon.svg);
-}
-
-dd.code-name {
+span.code-name {
   font-weight: bold;
 }
 
@@ -357,6 +326,76 @@ dd.code-name {
 
 .paragraph-in-list:only-child::before {
   display: none;
+}
+
+.info-popup-button-container {
+  float: right;
+}
+
+.tippy-content .code-popup-info-frame {
+  padding: 16px;
+}
+
+a.code-self-permalink {
+  background-image: url(/static/icons/permalink-logo.svg);
+}
+
+a.code-show-citation {
+  background-image: url(/static/icons/cite-icon.svg);
+}
+
+a.code-show-github {
+  background-image: url(/static/icons/github-logo.svg);
+}
+
+a.code-self-edit {
+  background-image: url(/static/icons/edit-icon.svg);
+}
+
+.show-citation {
+  display: block;
+  min-width: 350px;
+}
+
+.show-citation > dt {
+  display: block;
+}
+
+.show-citation > dd {
+  display: block;
+  margin-left: 0px;
+  padding: 0px;
+  background-color: rgba(240, 240, 255, 0.5);
+  padding: 5px;
+  resize: none;
+  margin-bottom: 0.3rem;
+  border: solid 1px rgba(120, 120, 140, 0.5);
+  box-sizing: border-box;
+  max-width: 100%;
+  min-width: 100%;
+}
+
+.show-citation > dd.bibtex {
+  font-family: monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+}
+
+.code-popup-info-frame h2 {
+  font-size: inherit;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+}
+
+.code-popup-info-frame .zoo-code-id {
+  margin-top: 1rem;
+  color: rgba(0, 0, 0, 0.8);
+}
+
+.code-popup-info-frame .zoo-code-id code {
+  font-family: monospace;
+  font-size: 13px;
+  margin-left: 1em;
 }
 
 .emph, .textit {

@@ -19,7 +19,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +27,7 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
 
 
 </head>
@@ -49,92 +49,92 @@
 
 
 <div class="ecc-code" id="ecc_bits_into_bits">
-  <span class="short-code-name"><a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a></span>
+  <span class="short-code-name"><a href="/c/bits_into_bits">Binary code</a></span>
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/ecc#ecc_ecc">Error-correcting code</a>.
+      <a href="/c/ecc">Error-correcting code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Binary linear code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_binary_linear">
-  <span class="short-code-name"><a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a></span>
+  <span class="short-code-name"><a href="/c/binary_linear">Binary linear code</a></span>
   <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
   <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set for which no two elements of the set add up to a codeword.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bits_into_bits#ecc_bits_into_bits">Binary code</a>.
+      <a href="/c/bits_into_bits">Binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/polar#ecc_polar">Polar code</a>,       <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/tanner#ecc_tanner">Tanner code</a>,       <a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a>.
+      <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/tanner">Tanner code</a>,       <a href="/c/ldpc">Low-density parity-check (LDPC) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/fock_state#ecc_fock_state">Fock-state bosonic code</a>,       <a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
+      <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_polar">
-  <span class="short-code-name"><a href="/c/polar#ecc_polar">Polar code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>. The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</span>
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Binary linear code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a>,       <a href="/c/generalized_concatenated#ecc_generalized_concatenated">Generalized concatenated classical code</a>.
+      <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/generalized_concatenated">Generalized concatenated classical code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_polar#ecc_quantum_polar">Quantum polar code</a>.
+      <a href="/c/quantum_polar">Quantum polar code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_reed_muller">
-  <span class="short-code-name"><a href="/c/reed_muller#ecc_reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Binary linear code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/polar#ecc_polar">Polar code</a>,       <a href="/c/majorana_stab#ecc_majorana_stab">Majorana stabilizer code</a>.
+      <a href="/c/polar">Polar code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_tanner">
-  <span class="short-code-name"><a href="/c/tanner#ecc_tanner">Tanner code</a></span>
+  <span class="short-code-name"><a href="/c/tanner">Tanner code</a></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Binary linear code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_ldpc">
-  <span class="short-code-name"><a href="/c/ldpc#ecc_ldpc">Low-density parity-check (LDPC) code</a></span>
+  <span class="short-code-name"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear#ecc_binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Binary linear code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_ldpc#ecc_quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a>.
+      <a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a>.
   </span>
 </div>
 

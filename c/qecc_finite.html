@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Finite-dimensional QECC" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Finite-dimensional QECC" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Finite-dimensional QECC
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qecc_finite">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qecc_finite">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Finite-dimensional QECC<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/qecc_finite#ecc_qecc_finite">&nbsp;</a>
+  <span class="code-name">Finite-dimensional QECC</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/qecc_finite">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -59,7 +78,7 @@
 <dd class="code-description">A quantum error-correcting code that encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace <span class="inline-math">\(\mathsf{H}_K\)</span> of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space <span class="inline-math">\(\mathsf{H}_N\)</span> such that it is possible to recover said information from errors. Formally, a finite-dimensional QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Correction capability is determined by the Knill-Laflamme error correction criteria <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc#ecc_approximate_qecc" class="ref">approximate code</a>.</dd>
+<dd class="code-protection">Correction capability is determined by the Knill-Laflamme error correction criteria <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate code</a>.</dd>
 
 
 <!-- Display features -->
@@ -97,7 +116,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc#ecc_qecc">Quantum error-correcting code (QECC)</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>  </li>
 </ul>
 </dd>
 
@@ -107,13 +126,13 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits#ecc_qubits_into_qubits">Qubit code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/galois_into_galois">Galois-qudit code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits#ecc_qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/fermions#ecc_fermions">Fermionic code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/fermions">Fermionic code</a></span>  </li>
 </ul>
 </dd>
 
@@ -123,29 +142,48 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousins-1-detail">(Group quantum codes whose physical spaces are constructed using finite groups are finite-dimensional.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/group_quantum">Group quantum code</a></span>    <span class="code-cousins-1-detail">(Group quantum codes whose physical spaces are constructed using finite groups are finite-dimensional.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     qecc_finite
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Finite-dimensional QECC”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qecc_finite</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_qecc_finite,
+  title={Finite-dimensional QECC},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/qecc_finite}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/qecc_finite</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qecc_finite.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qecc_finite.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=qecc_finite">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=qecc_finite">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qecc_finite</code></div>
 </dd>
 
 </dl>

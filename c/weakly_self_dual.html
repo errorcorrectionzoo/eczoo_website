@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Weakly self-dual linear code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Weakly self-dual linear code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       Weakly self-dual linear code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_weakly_self_dual">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_weakly_self_dual">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  Weakly self-dual linear code<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/weakly_self_dual#ecc_weakly_self_dual">&nbsp;</a>
+  <span class="code-name">Weakly self-dual linear code</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/weakly_self_dual">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -99,7 +118,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
 </ul>
 </dd>
 
@@ -109,7 +128,7 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/self_dual#ecc_self_dual">Self-dual linear code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/self_dual">Self-dual linear code</a></span>  </li>
 </ul>
 </dd>
 
@@ -119,31 +138,50 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/css#ecc_css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(CSS codes for which <span class="inline-math">\(C_X=C_Z \equiv C\)</span> are called <span class="textit">weakly self-dual</span> since <span class="inline-math">\(C^{\perp} \subseteq C\)</span>. The stabilizer group of such codes is invariant under the Hadamard gate exchanging <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(CSS codes for which <span class="inline-math">\(C_X=C_Z \equiv C\)</span> are called <span class="textit">weakly self-dual</span> since <span class="inline-math">\(C^{\perp} \subseteq C\)</span>. The stabilizer group of such codes is invariant under the Hadamard gate exchanging <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/majorana_stab#ecc_majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousins-1-detail">(Classical weakly self-dual codes can be used to construct Majorana stabilizer codes <a href="#cite-0" class="cite">[1]</a>. The direct relationship between the two codes follows from expressing the Majorana strings as binary vectors – akin to the binary symplectic representation – and observing that the binary stabilizer matrix <span class="inline-math">\(S\)</span> for such a Majorana stabilizer code satisfies <span class="inline-math">\(S\cdot S^T=0\)</span> because it has commuting stabilizers, which is precisely the condition <span class="inline-math">\(G\cdot G^T=0\)</span> on the generator matrix <span class="inline-math">\(G\)</span> of a weakly self-dual classical code. A weakly self-dual classical code <span class="inline-math">\(C\)</span> with parameters <span class="inline-math">\([2N,k,d]\)</span> yields a Majorana stabilizer code with parameters <span class="inline-math">\([[N,N-k,d^\perp]]_f\)</span>, where <span class="inline-math">\(d^\perp\)</span> is the code distance of the dual code <span class="inline-math">\(C^\perp\)</span>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousins-1-detail">(Classical weakly self-dual codes can be used to construct Majorana stabilizer codes <a href="#cite-0" class="cite">[1]</a>. The direct relationship between the two codes follows from expressing the Majorana strings as binary vectors – akin to the binary symplectic representation – and observing that the binary stabilizer matrix <span class="inline-math">\(S\)</span> for such a Majorana stabilizer code satisfies <span class="inline-math">\(S\cdot S^T=0\)</span> because it has commuting stabilizers, which is precisely the condition <span class="inline-math">\(G\cdot G^T=0\)</span> on the generator matrix <span class="inline-math">\(G\)</span> of a weakly self-dual classical code. A weakly self-dual classical code <span class="inline-math">\(C\)</span> with parameters <span class="inline-math">\([2N,k,d]\)</span> yields a Majorana stabilizer code with parameters <span class="inline-math">\([[N,N-k,d^\perp]]_f\)</span>, where <span class="inline-math">\(d^\perp\)</span> is the code distance of the dual code <span class="inline-math">\(C^\perp\)</span>.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     weakly_self_dual
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Weakly self-dual linear code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/weakly_self_dual</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_weakly_self_dual,
+  title={Weakly self-dual linear code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/weakly_self_dual}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/weakly_self_dual</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/weakly_self_dual.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/weakly_self_dual.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=weakly_self_dual">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=weakly_self_dual">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>weakly_self_dual</code></div>
 </dd>
 
 </dl>

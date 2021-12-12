@@ -34,7 +34,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/oaecc#ecc_oaecc",
+                    "_code_href": "/c/oaecc",
                     "_family_generation_level": 0
                 },
                 "position": {
@@ -51,7 +51,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\) states (codewords) over an alphabet with \\(N\\) elements such that it is possible to recover the codewords from errors \\(E\\) from some error set \\(\\mathcal{E}\\). Formally, an error-cor..."
                     ],
-                    "_code_href": "/c/ecc#ecc_ecc",
+                    "_code_href": "/c/ecc",
                     "_family_generation_level": 1
                 },
                 "position": {
@@ -66,7 +66,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/classical_abelian_group#ecc_classical_abelian_group",
+                    "_code_href": "/c/classical_abelian_group",
                     "_family_generation_level": 0
                 },
                 "position": {
@@ -83,7 +83,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\((n,2^k,d)\\) linear code is denoted as \\([n,k,d]\\). Its codewords form a linear subspace, i.e., for any codewords \\(x,y\\), \\(x+y\\) is also a codeword. Often defined in terms of a generator matr..."
                     ],
-                    "_code_href": "/c/binary_linear#ecc_binary_linear",
+                    "_code_href": "/c/binary_linear",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -100,7 +100,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "In its basic version, a binary linear polar code encodes \\(K\\) message bits into \\(N=2^n\\) bits. The linear transformation that defines the code is given by the matrix \\(G^{(n)}=B_N G^{\\otimes n}\\)..."
                     ],
-                    "_code_href": "/c/polar#ecc_polar",
+                    "_code_href": "/c/polar",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -115,7 +115,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Encodes \\(K\\) states (codewords) in \\(n\\) binary coordinates and has distance \\(d\\). Usually denoted as \\((n,K,d)\\). The distance is the minimum Hamming distance between a pair of distinct codewords.",
-                    "_code_href": "/c/bits_into_bits#ecc_bits_into_bits",
+                    "_code_href": "/c/bits_into_bits",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Binary Kingdom",
@@ -133,7 +133,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/reed_muller#ecc_reed_muller",
+                    "_code_href": "/c/reed_muller",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -148,7 +148,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/tanner#ecc_tanner",
+                    "_code_href": "/c/tanner",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -163,7 +163,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/ldpc#ecc_ldpc",
+                    "_code_href": "/c/ldpc",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -178,7 +178,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/generalized_concatenated#ecc_generalized_concatenated",
+                    "_code_href": "/c/generalized_concatenated",
                     "_family_generation_level": 2
                 },
                 "position": {
@@ -193,7 +193,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "A classical code \\(C\\) of length \\(n\\) over an alphabet is cyclic if, for each string \\(c_1 c_2 \\cdots c_n\\in C\\), the cyclically shifted string \\(c_n c_1 \\cdots c_{n-1}\\in C\\).",
-                    "_code_href": "/c/cyclic#ecc_cyclic",
+                    "_code_href": "/c/cyclic",
                     "_family_generation_level": 2
                 },
                 "position": {
@@ -210,7 +210,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "\\([n,k,n-k+1]_q\\) linear code. Let \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) be \\(n\\) distinct nonzero elements of \\(GF(q)\\) for prime \\(q>n\\). Encodes \\(\\mu=\\{\\mu_0,\\cdots,\\mu_{k-1}\\}\\) into \\(\\{f_\\mu(\\alp..."
                     ],
-                    "_code_href": "/c/reed_solomon#ecc_reed_solomon",
+                    "_code_href": "/c/reed_solomon",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -227,7 +227,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\) states (codewords) in \\(n\\) \\(q\\)-ary coordinates and has distance \\(d\\). Usually denoted as \\((n,K,d)_q\\). The distance is the minimum number of coordinates where two strings in the ..."
                     ],
-                    "_code_href": "/c/q-ary_digits_into_q-ary_digits#ecc_q-ary_digits_into_q-ary_digits",
+                    "_code_href": "/c/q-ary_digits_into_q-ary_digits",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
                     "_kingdom_name": "\\(q\\)-ary Digits Kingdom",
@@ -245,7 +245,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Also called a \\textit{self-orthogonal} code. A \\(q\\)-ary linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_q^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is contained in \\(C\\).",
-                    "_code_href": "/c/weakly_self_dual#ecc_weakly_self_dual",
+                    "_code_href": "/c/weakly_self_dual",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -260,7 +260,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Also called \\textit{strictly self-dual}. A \\(q\\)-ary linear code \\(C\\) whose dual code \\(C^\\perp = \\{ y\\in\\mathbb{Z}_q^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}\\) is equal to \\(C\\).",
-                    "_code_href": "/c/self_dual#ecc_self_dual",
+                    "_code_href": "/c/self_dual",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -277,7 +277,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\((n,K,d)_q\\) linear code is denoted as \\([n,k,d]_q\\), where \\(k=\\log_{q}K\\) need not be an integer. Its codewords form a linear subspace, i.e., for any codewords \\(x,y\\), \\(\\alpha x+ \\beta y\\) ..."
                     ],
-                    "_code_href": "/c/q-ary_linear#ecc_q-ary_linear",
+                    "_code_href": "/c/q-ary_linear",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -294,7 +294,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\((n,K,2t+1)_q\\) \\(q\\)-ary code is perfect if parameters \\(n\\), \\(K\\), \\(t\\), and \\(q\\) are such that the Hamming (a.k.a. sphere-packing) bound\n\\begin{align}\n\\sum_{j=0}^{t}(q-1)^{j}{n \\choose j}..."
                     ],
-                    "_code_href": "/c/perfect#ecc_perfect",
+                    "_code_href": "/c/perfect",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -311,7 +311,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes quantum information in a (\\textit{logical}) subspace of a (\\textit{physical}) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the p..."
                     ],
-                    "_code_href": "/c/qecc#ecc_qecc",
+                    "_code_href": "/c/qecc",
                     "_family_generation_level": 2
                 },
                 "position": {
@@ -326,7 +326,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/oecc#ecc_oecc",
+                    "_code_href": "/c/oecc",
                     "_family_generation_level": 1
                 },
                 "position": {
@@ -343,7 +343,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "A quantum error-correcting code that encodes quantum information in a \\(K\\)-dimensional (\\textit{logical}) subspace \\(\\mathsf{H}_K\\) of an \\(N\\)-dimensional (\\textit{physical}) Hilbert space \\(\\mat..."
                     ],
-                    "_code_href": "/c/qecc_finite#ecc_qecc_finite",
+                    "_code_href": "/c/qecc_finite",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -358,7 +358,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/gkp#ecc_gkp",
+                    "_code_href": "/c/gkp",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -375,7 +375,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Also called an \\textit{oscillator} or a \\textit{continuous-variable (CV)} code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least ..."
                     ],
-                    "_code_href": "/c/oscillators#ecc_oscillators",
+                    "_code_href": "/c/oscillators",
                     "_family_generation_level": 3,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Oscillator Kingdom",
@@ -395,7 +395,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For examp..."
                     ],
-                    "_code_href": "/c/fock_state#ecc_fock_state",
+                    "_code_href": "/c/fock_state",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -410,7 +410,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/cat#ecc_cat",
+                    "_code_href": "/c/cat",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -425,7 +425,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Encodes \\(K\\)-dimensional Hilbert space into Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{R}^n\\).",
-                    "_code_href": "/c/qudits_into_oscillators#ecc_qudits_into_oscillators",
+                    "_code_href": "/c/qudits_into_oscillators",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -440,7 +440,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Encodes Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{R}^k\\) into that on \\(\\mathbb{R}^n\\). Usually denoted as \\(((n,k))_{\\mathbb{R}}\\).",
-                    "_code_href": "/c/oscillators_into_oscillators#ecc_oscillators_into_oscillators",
+                    "_code_href": "/c/oscillators_into_oscillators",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -457,7 +457,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Three-oscillator Fock-state code encoding a single logical qubit using codewords \\begin{align} \\begin{split} |\\overline{0}\\rangle &= \\frac{1}{\\sqrt{3}}(|003\\rangle+|030\\rangle+|300\\rangle)\\\\ |\\over..."
                     ],
-                    "_code_href": "/c/wasilewski-banaszek#ecc_wasilewski-banaszek",
+                    "_code_href": "/c/wasilewski-banaszek",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -474,7 +474,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Bosonic Fock-state code that encodes \\(k\\) qubits into \\(n\\) oscillators, with each oscillator restricted to having at most \\(N\\) excitations. Codewords are superpositions of oscillator Fock states..."
                     ],
-                    "_code_href": "/c/chuang-leung-yamamoto#ecc_chuang-leung-yamamoto",
+                    "_code_href": "/c/chuang-leung-yamamoto",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -491,7 +491,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes a \\(K\\)-dimensional logical Hilbert space into \\(n_1\\) qudits of dimension \\(q\\) and \\(n_2 \\neq 0\\) oscillators, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}..."
                     ],
-                    "_code_href": "/c/hybrid_qudit_oscillator#ecc_hybrid_qudit_oscillator",
+                    "_code_href": "/c/hybrid_qudit_oscillator",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -508,7 +508,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "The two logical codewords are \\(|\\pm\\rangle \\propto (|0\\rangle\\pm|2\\rangle)(|0\\rangle\\pm|2\\rangle)|0\\rangle|0\\rangle\\), where the total Hilbert space is the tensor product of two qudits (whose grou..."
                     ],
-                    "_code_href": "/c/very-small-logical-qubit#ecc_very-small-logical-qubit",
+                    "_code_href": "/c/very-small-logical-qubit",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -523,7 +523,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/quantum_polar#ecc_quantum_polar",
+                    "_code_href": "/c/quantum_polar",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -540,7 +540,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\([[n,k,d]]\\) stabilizer code whose stabilizer generators are either \\(Z\\)-type or \\(X\\)-type Pauli strings. The parity check matrix is of the form\n\\begin{align}\nH=\\begin{pmatrix}0 & H_{Z}\\\\\nH_{..."
                     ],
-                    "_code_href": "/c/css#ecc_css",
+                    "_code_href": "/c/css",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -555,7 +555,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/quantum_parity#ecc_quantum_parity",
+                    "_code_href": "/c/quantum_parity",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -570,7 +570,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/quantum_hamming#ecc_quantum_hamming",
+                    "_code_href": "/c/quantum_hamming",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -585,7 +585,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/homological_product#ecc_homological_product",
+                    "_code_href": "/c/homological_product",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -600,7 +600,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/movassagh_ouyang#ecc_movassagh_ouyang",
+                    "_code_href": "/c/movassagh_ouyang",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -615,7 +615,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two binary linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\).",
-                    "_code_href": "/c/hypergraph_product#ecc_hypergraph_product",
+                    "_code_href": "/c/hypergraph_product",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -630,7 +630,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/cws#ecc_cws",
+                    "_code_href": "/c/cws",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -647,7 +647,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, \\begin{align} \\begin{split} S_1 &= IXZZX \\\\ S_2 &= XZZXI \\\\ S_3 &= ZZXIX \\\\ S_4 &= ZXIXZ. \\end{spli..."
                     ],
-                    "_code_href": "/c/stab_5_1_3#ecc_stab_5_1_3",
+                    "_code_href": "/c/stab_5_1_3",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -664,7 +664,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Nine-qubit CSS code that is the smallest such code to correct a single-qubit error. Shor's code works by concatenating each qubit of a phase-flip with a bit-flip repetition code. Therefore, the cod..."
                     ],
-                    "_code_href": "/c/shor_nine#ecc_shor_nine",
+                    "_code_href": "/c/shor_nine",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -681,7 +681,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\(((n,2^k,d))\\) stabilizer code is denoted as \\([[n,k]]\\) or \\([[n,k,d]]\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting ..."
                     ],
-                    "_code_href": "/c/stabilizer#ecc_stabilizer",
+                    "_code_href": "/c/stabilizer",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -698,7 +698,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\) with a free action of a group \\(G\\). Lifted product codes can also be defined o..."
                     ],
-                    "_code_href": "/c/lifted_product#ecc_lifted_product",
+                    "_code_href": "/c/lifted_product",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -715,7 +715,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(1\\) qubit into \\(n\\) qubits according to \\(|0\\rangle\\to|\\phi_0\\rangle^{\\otimes n}\\) and \\(|1\\rangle\\to|\\phi_1\\rangle^{\\otimes n}\\). Also known as a \\textit{bit-flip} code when \\(|\\phi_i\\r..."
                     ],
-                    "_code_href": "/c/quantum_repetition#ecc_quantum_repetition",
+                    "_code_href": "/c/quantum_repetition",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -730,7 +730,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/quantum_reed_muller#ecc_quantum_reed_muller",
+                    "_code_href": "/c/quantum_reed_muller",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -747,7 +747,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\(n\\)-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal \\(n\\)-qubit states and acting with a random unitary cir..."
                     ],
-                    "_code_href": "/c/t-designs#ecc_t-designs",
+                    "_code_href": "/c/t-designs",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -764,7 +764,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         " \\([[15,1,3]]\\) CSS code that is most easily thought of as a tetrahedral 3D color code. This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body..."
                     ],
-                    "_code_href": "/c/stab_15_1_3#ecc_stab_15_1_3",
+                    "_code_href": "/c/stab_15_1_3",
                     "_family_generation_level": 8
                 },
                 "position": {
@@ -779,7 +779,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "",
-                    "_code_href": "/c/quantum_ldpc#ecc_quantum_ldpc",
+                    "_code_href": "/c/quantum_ldpc",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -796,7 +796,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "A family of \\hyperref[code:css]{CSS stabilizer} codes whose generators are few-body \\(X\\)-type and \\(Z\\)-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation o..."
                     ],
-                    "_code_href": "/c/surface#ecc_surface",
+                    "_code_href": "/c/surface",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -813,7 +813,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         " Four-qubit CSS stabilizer code with generators \\(\\{XXXX, ZZZZ\\} \\) and codewords \\begin{align} \\begin{split} |\\overline{00}\\rangle = (|0000\\rangle + |1111\\rangle)/\\sqrt{2}\\\\ |\\overline{01}\\rangle ..."
                     ],
-                    "_code_href": "/c/stab_4_2_2#ecc_stab_4_2_2",
+                    "_code_href": "/c/stab_4_2_2",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -828,7 +828,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/bacon_shor#ecc_bacon_shor",
+                    "_code_href": "/c/bacon_shor",
                     "_family_generation_level": 0
                 },
                 "position": {
@@ -843,7 +843,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(2^n\\)-dimensional (i.e., \\(n\\)-qubit) Hilbert space. Usually denoted as \\(((n,K))\\) or \\(((n,K,d))\\), where \\(d\\) is the code's distance.",
-                    "_code_href": "/c/qubits_into_qubits#ecc_qubits_into_qubits",
+                    "_code_href": "/c/qubits_into_qubits",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Qubit Kingdom",
@@ -861,7 +861,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/galois_polynomial#ecc_galois_polynomial",
+                    "_code_href": "/c/galois_polynomial",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -876,7 +876,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
-                    "_code_href": "/c/galois_css#ecc_galois_css",
+                    "_code_href": "/c/galois_css",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -891,7 +891,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "An \\(((n,p^k,d))_{GF(q)}\\) stabilizer code is denoted as \\([[n,k]]_{GF(q)}\\) or \\([[n,k,d]]_{GF(q)}\\), where \\(d\\) is the code's distance. Stub.",
-                    "_code_href": "/c/galois_stabilizer#ecc_galois_stabilizer",
+                    "_code_href": "/c/galois_stabilizer",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -908,7 +908,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the \\textit{Galois field} \\(GF..."
                     ],
-                    "_code_href": "/c/galois_into_galois#ecc_galois_into_galois",
+                    "_code_href": "/c/galois_into_galois",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Galois Field Kingdom",
@@ -928,7 +928,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Group code whose construction is based on nested subgroups \\(H\\subset K \\subset G\\). Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \\(H\\) in \\(K\\..."
                     ],
-                    "_code_href": "/c/group_gkp#ecc_group_gkp",
+                    "_code_href": "/c/group_gkp",
                     "_family_generation_level": 4
                 },
                 "position": {
@@ -945,7 +945,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes a \\textit{logical} Hilbert space, finite- or infinite-dimensional, into a \\textit{physical} Hilbert space of \\(\\ell^2\\)-normalizable functions on a second-countable unimodular group. For \\(..."
                     ],
-                    "_code_href": "/c/group_quantum#ecc_group_quantum",
+                    "_code_href": "/c/group_quantum",
                     "_family_generation_level": 3,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Group Kingdom",
@@ -965,7 +965,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes finite-dimensional Hilbert space into the Hilbert space of \\(\\ell^2\\)-normalizable functions on the group \\(SO_3\\). Construction is based on nested subgroups \\(H\\subset K \\subset SO_3\\), wh..."
                     ],
-                    "_code_href": "/c/molecular#ecc_molecular",
+                    "_code_href": "/c/molecular",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -980,7 +980,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Often, but not always, defined for prime qudits (\\(q=p\\)). Stub.",
-                    "_code_href": "/c/qudit_css#ecc_qudit_css",
+                    "_code_href": "/c/qudit_css",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -995,7 +995,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "An \\(((n,p^k,d))_q\\) (with \\(q\\) not necessarily prime) stabilizer code is denoted as \\([[n,k]]_q\\) or \\([[n,k,d]]_q\\), where \\(d\\) is the code's distance. Stub.",
-                    "_code_href": "/c/qudit_stabilizer#ecc_qudit_stabilizer",
+                    "_code_href": "/c/qudit_stabilizer",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -1012,7 +1012,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "An \\(((n,p^k,d))_p\\) (with \\(p\\) prime) stabilizer code is denoted as \\([[n,k]]_p\\) or \\([[n,k,d]]_p\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set ..."
                     ],
-                    "_code_href": "/c/prime_qudit_stabilizer#ecc_prime_qudit_stabilizer",
+                    "_code_href": "/c/prime_qudit_stabilizer",
                     "_family_generation_level": 6
                 },
                 "position": {
@@ -1029,7 +1029,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the group \\(\\mathbb{Z}_q\\) of ..."
                     ],
-                    "_code_href": "/c/qudits_into_qudits#ecc_qudits_into_qudits",
+                    "_code_href": "/c/qudits_into_qudits",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Qu\\emph{d}it Kingdom",
@@ -1047,7 +1047,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Also called \\textit{quantum Reed-Solomon code}. Stub.",
-                    "_code_href": "/c/polynomial#ecc_polynomial",
+                    "_code_href": "/c/polynomial",
                     "_family_generation_level": 7
                 },
                 "position": {
@@ -1064,7 +1064,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "A concatened code is a combination of two codes, an inner code \\(C\\) and an outer code \\(C^\\prime\\), where the physical subspace used for the outer code consists of the logical subspace of the inne..."
                     ],
-                    "_code_href": "/c/quantum_concatenated#ecc_quantum_concatenated",
+                    "_code_href": "/c/quantum_concatenated",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1079,7 +1079,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "An \\(n\\)-qubit code \\(C\\) is cyclic if a cyclic permutation of the qubits leaves the code subspace invariant.",
-                    "_code_href": "/c/quantum_cyclic#ecc_quantum_cyclic",
+                    "_code_href": "/c/quantum_cyclic",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1094,7 +1094,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Code whose encoding is naturally constructed by randomly sampling from a large set of quantum circuits.",
-                    "_code_href": "/c/random_circuit#ecc_random_circuit",
+                    "_code_href": "/c/random_circuit",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1109,7 +1109,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/approximate_qecc#ecc_approximate_qecc",
+                    "_code_href": "/c/approximate_qecc",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1124,7 +1124,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "A code whose codewords make up the ground-state space of a fracton-phase Hamiltonian.",
-                    "_code_href": "/c/fracton#ecc_fracton",
+                    "_code_href": "/c/fracton",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1141,7 +1141,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Encoding corresponds to a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of ar..."
                     ],
-                    "_code_href": "/c/hamiltonian#ecc_hamiltonian",
+                    "_code_href": "/c/hamiltonian",
                     "_family_generation_level": 2
                 },
                 "position": {
@@ -1156,7 +1156,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process.",
-                    "_code_href": "/c/dynamic_gen#ecc_dynamic_gen",
+                    "_code_href": "/c/dynamic_gen",
                     "_family_generation_level": 2
                 },
                 "position": {
@@ -1171,7 +1171,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
-                    "_code_href": "/c/topological#ecc_topological",
+                    "_code_href": "/c/topological",
                     "_family_generation_level": 3
                 },
                 "position": {
@@ -1188,7 +1188,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "A non-degenerate code constructed out of \\(q\\)-dimensional qudits and having parameters \\(((n,K,2t+1))\\) is perfect if \\(n\\), \\(K\\), \\(t\\), and \\(q\\) are such that the quantum Hamming bound\n\\begin{..."
                     ],
-                    "_code_href": "/c/quantum_perfect#ecc_quantum_perfect",
+                    "_code_href": "/c/quantum_perfect",
                     "_family_generation_level": 5
                 },
                 "position": {
@@ -1205,7 +1205,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Finite-dimensional quantum error-correcting code encoding a logical Hilbert space into a physical Fock space of fermionic modes. Codes are typically described using Majorana operators, which are li..."
                     ],
-                    "_code_href": "/c/fermions#ecc_fermions",
+                    "_code_href": "/c/fermions",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
                     "_kingdom_name": "Fermionic Kingdom",
@@ -1225,7 +1225,7 @@ GENERATED_pretty_code_graph_data = {
                     "_description": [
                         "Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code a..."
                     ],
-                    "_code_href": "/c/majorana_stab#ecc_majorana_stab",
+                    "_code_href": "/c/majorana_stab",
                     "_family_generation_level": 5
                 },
                 "position": {

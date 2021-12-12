@@ -4,6 +4,23 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="\(\mathbb{Z}_q\)-qudit code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="\(\mathbb{Z}_q\)-qudit code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
   <title>
       \(\mathbb{Z}_q\)-qudit code
     [error correction zoo]
@@ -19,7 +36,6 @@
   <meta name="theme-color" content="#ffffff">
   <!-- end favicon code -->
 
-
   <link type="text/css" rel="stylesheet" href="/css/main.css" />
 
   <script type="text/javascript" async
@@ -28,6 +44,8 @@
 
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
 
 
 </head>
@@ -44,14 +62,15 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page" id="ecc_qudits_into_qudits">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qudits_into_qudits">
 
 
 <dt class="code-name">Name</dt>
 <dd class="code-name">
-  <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code<a class="code-info-corner-icon code-self-permalink"
-     title="permanent link to this code (click and then copy the location in the address bar)"
-     href="/c/qudits_into_qudits#ecc_qudits_into_qudits">&nbsp;</a>
+  <span class="code-name"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</span><!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/qudits_into_qudits">&nbsp;</a>-->
+  <div class="info-popup-button-container"></div>
 </dd>
 
 
@@ -93,7 +112,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc_finite#ecc_qecc_finite">Finite-dimensional QECC</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/qecc_finite">Finite-dimensional QECC</a></span>  </li>
 </ul>
 </dd>
 
@@ -103,9 +122,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer#ecc_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_perfect#ecc_quantum_perfect">Perfect quantum code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span>  </li>
 </ul>
 </dd>
 
@@ -115,31 +134,50 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_into_galois#ecc_galois_into_galois">Galois-qudit code</a></span>    <span class="code-cousins-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits. The two coincide when <span class="inline-math">\(q\)</span> is prime. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/galois_into_galois">Galois-qudit code</a></span>    <span class="code-cousins-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits. The two coincide when <span class="inline-math">\(q\)</span> is prime. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/group_quantum#ecc_group_quantum">Group quantum code</a></span>    <span class="code-cousins-1-detail">(Group quantum codes whose physical spaces are constructed using modular-integer groups are <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit codes.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/group_quantum">Group quantum code</a></span>    <span class="code-cousins-1-detail">(Group quantum codes whose physical spaces are constructed using modular-integer groups are <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit codes.)</span>  </li>
 </ul>
 </dd>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label">
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
 </dt>
-<dd class="display-code-id">
+<dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     qudits_into_qudits
-  </div><div>
-    <a class="code-link-with-icon code-show-github"
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“\(\mathbb{Z}_q\)-qudit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qudits_into_qudits</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_qudits_into_qudits,
+  title={\(\mathbb{Z}_q\)-qudit code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/qudits_into_qudits}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/qudits_into_qudits</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudits_into_qudits.yml">code information on github.com</a><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudits_into_qudits.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=qudits_into_qudits">edit on this site</a>
-  </div>
+       href="/edit_code?code_id=qudits_into_qudits">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qudits_into_qudits</code></div>
 </dd>
 
 </dl>
