@@ -81,10 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth linear in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.</dd>
+<dd class="code-description">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth linear in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
+The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>), while general codes for higher-dimensional geometries required <span class="inline-math">\(O(N^{1/D}\)</span>-depth circuits <a href="#cite-0" class="cite">[1]</a>. Follow-up work <a href="#cite-1" class="cite">[2]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{N})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{N}\)</span>-depth circuits for a two-dimensional square-lattice geometry.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Approximately detects any error with support on a segment of length <span class="inline-math">\(\leq n/4\)</span> (in a 1D geometry), with deviations exponentially suppressed in <span class="inline-math">\(n\)</span>.</dd>
+<dd class="code-protection">In a 1D geometry, the code approximately detects any error with support on a segment of length <span class="inline-math">\(\leq n/4\)</span>, with deviations exponentially suppressed in <span class="inline-math">\(n\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -191,6 +192,11 @@
       <dt id="cite-0">[1]</dt>
       <dd>
         F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
       </dd>
     
     </dl>

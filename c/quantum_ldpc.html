@@ -81,8 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"></dd>
+<dd class="code-description">A quantum LDPC code is a family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes such that the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction. A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>. A <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -104,10 +106,16 @@
 
 
 
+<dt class="code-feature code-feature-threshold">Threshold</dt>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">Quantum LDPC codes with a constant encoding rate can reduce the overhead of fault-tolerant quantum computation to be constant <a href="#cite-2" class="cite">[3]</a>.</span></dd>
 
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">Links to code tables <a href="#cite-0" class="cite">[1]</a>.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -118,7 +126,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Quantum LDPC codes are stabilizer codes)</span>  </li>
 </ul>
 </dd>
 
@@ -128,7 +136,11 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(Z\)</span>- and <span class="inline-math">\(X\)</span>- row and column weights are bounded from above by the weights of the two codes that are used in the construction of this code <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/homological_product">Homological product code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>    <span class="code-parent-of-1-detail">(Distance-balancing procedure can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -138,13 +150,17 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>    <span class="code-cousins-1-detail">(Quantum analogue to a classical LDPC code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>    <span class="code-cousins-1-detail">(QLDPC codes can arise form a dynamical process <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>    <span class="code-cousins-1-detail">(QLDPC codes can arise form a dynamical process <a href="#cite-5" class="cite">[6]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation, and most tesselations yield QLDPC codes.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/surface">Kitaev&#x27;s surface code</a></span>    <span class="code-cousins-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the tessellation, and most tesselations yield QLDPC codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>    <span class="code-cousins-1-detail">(Distance-balancing procedure can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-cousins-1-detail">(Stabilizer-based topological codes (e.g., the surface code) on appropriate tesselations are QLDPC.)</span>  </li>
 </ul>
@@ -196,6 +212,31 @@
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
+      <dd>
+        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href">0810.1983</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        Daniel Gottesman, “Fault-Tolerant Quantum Computation with Constant Overhead”. <a href="https://arxiv.org/abs/1310.2984" target="_blank" class="href">1310.2984</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Shai Evra, Tali Kaufman, and Gilles Zémor, “Decodable quantum LDPC codes beyond the <span class="inline-math">$\sqrt{n}$</span> distance barrier using high dimensional expanders”. <a href="https://arxiv.org/abs/2004.07935" target="_blank" class="href">2004.07935</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        M. B. Hastings, “Weight Reduction for Quantum Codes”. <a href="https://arxiv.org/abs/1611.03790" target="_blank" class="href">1611.03790</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         M. Ippoliti et al., “Entanglement Phase Transitions in Measurement-Only Dynamics”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.011030" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2004.09560" target="_blank" class="href">2004.09560</a>
       </dd>

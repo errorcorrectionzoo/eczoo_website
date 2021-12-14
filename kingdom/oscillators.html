@@ -60,43 +60,11 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>,       <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a>,       <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
+      <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>,       <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a>,       <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/group_quantum">Group quantum code</a>,       <a href="/c/fermions">Fermionic code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_qudits_into_oscillators">
-  <span class="short-code-name"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/oscillators">Bosonic code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a>,       <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/cat">Cat code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_oscillators_into_oscillators">
-  <span class="short-code-name"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/oscillators">Bosonic code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/group_gkp">Group GKP code</a>.
   </span>
 </div>
 
@@ -119,8 +87,65 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_oscillators_into_oscillators">
+  <span class="short-code-name"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/oscillators">Bosonic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/group_gkp">Group GKP code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_qudits_into_oscillators">
+  <span class="short-code-name"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/oscillators">Bosonic code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/cat">Cat code</a>,       <a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a>,       <a href="/c/fock_state">Fock-state bosonic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_very-small-logical-qubit">
+  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
+  <span class="short-code-info">Protection: Passively protects against single photon loss.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/quantum_repetition">Qubit repetition code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_cat">
+  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_gkp">
-  <span class="short-code-name"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -147,7 +172,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
+      <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>,       <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -156,48 +181,8 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_cat">
-  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_very-small-logical-qubit">
-  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
-  <span class="short-code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
-  <span class="short-code-info">Protection: Passively protects against single photon loss.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/quantum_repetition">Qubit repetition code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_wasilewski-banaszek">
-  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
-  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}.\end{align}</span></span>
-  <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/fock_state">Fock-state bosonic code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_chuang-leung-yamamoto">
-  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
   <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</span>
   <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">separation</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
 <span class="display-math env-align">\begin{align}
@@ -211,6 +196,21 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_wasilewski-banaszek">
+  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}.\end{align}</span></span>
+  <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/fock_state">Fock-state bosonic code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
   </span>
 </div>
 
@@ -230,7 +230,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
+        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
@@ -250,17 +250,17 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
+        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
