@@ -579,7 +579,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_surface",
-                    "label": "Kitaev's surface code",
+                    "label": "Kitaev surface code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -643,7 +643,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_shor_nine",
-                    "label": "Shor's \\([[9,1,3]]\\) code",
+                    "label": "Shor \\([[9,1,3]]\\) code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
