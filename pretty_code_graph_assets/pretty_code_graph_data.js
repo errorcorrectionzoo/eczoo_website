@@ -358,7 +358,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Color code is a topological stabilizer code defined on a \\(\\d\\)-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial \\(\\d\\)-complex obtained as a triangul..."
+                        "Color code is a topological stabilizer code defined on a \\(D\\)-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial \\(D\\)-complex obtained as a triangulat..."
                     ],
                     "_code_href": "/c/color",
                     "_family_generation_level": 4
@@ -371,11 +371,11 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_ramanujan_tensor_product",
-                    "label": "Ramanujan tensor-product",
+                    "label": "Ramanujan tensor-product code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A quantum codes constructed from Ramanujan quantum codes and an asymptotically good classical LDPC code using distance balancing. Ramanujan quantum codes are defined using Ramanujan complexes which..."
+                        "Constructed from a Ramanujan quantum code and an asymptotically good classical LDPC code using distance balancing. Ramanujan quantum codes are defined using Ramanujan complexes which are simplicial..."
                     ],
                     "_code_href": "/c/ramanujan_tensor_product",
                     "_family_generation_level": 6
@@ -741,7 +741,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A quantum LDPC code is a family of \\([[n,k,d]]\\) stabilizer codes such that the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit p..."
+                        "Family of \\([[n,k,d]]\\) stabilizer codes for which the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit participates in are both b..."
                     ],
                     "_code_href": "/c/quantum_ldpc",
                     "_family_generation_level": 7

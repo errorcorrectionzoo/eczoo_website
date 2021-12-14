@@ -81,10 +81,12 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A quantum LDPC code is a family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes such that the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</dd>
+<dd class="code-description">Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction. A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>. A <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction.
+A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.
+A <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -126,7 +128,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(Quantum LDPC codes are stabilizer codes)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
 </ul>
 </dd>
 
@@ -136,7 +138,7 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(Z\)</span>- and <span class="inline-math">\(X\)</span>- row and column weights are bounded from above by the weights of the two codes that are used in the construction of this code <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(Z\)</span>- and <span class="inline-math">\(X\)</span>- row and column weights are bounded from above by the weights of the two codes that are used in the construction of this code <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/homological_product">Homological product code</a></span>  </li>
   <li class="paragraph-in-list">
@@ -150,7 +152,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>    <span class="code-cousins-1-detail">(Quantum analogue to a classical LDPC code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
