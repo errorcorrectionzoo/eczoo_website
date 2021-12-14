@@ -386,6 +386,9 @@ dl.ecc-code dt.code-feature-code_capacity_threshold {
     display: block;
     margin-left: 0px;
   }
+  dl.ecc-code dt.code-name {
+    display: none;
+  }
   dl.ecc-code .info-popup-button-container {
     display: block;
   }
