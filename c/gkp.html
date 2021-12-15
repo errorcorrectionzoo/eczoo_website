@@ -81,8 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description">Bosonic qudit-into-oscillator code whose stabilizers are oscillator displacement operators <span class="inline-math">\(\hat{S}_q(2\alpha)=e^{-2i\alpha \hat{p}}\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)=e^{2i\beta \hat{q}}\)</span>. To ensure <span class="inline-math">\(\hat{S}_q(2\alpha)\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)\)</span> generate a stabilizer group that is Abelian, there is another constraint that <span class="inline-math">\(\alpha\beta=2k\pi\)</span> where <span class="inline-math">\(k\)</span> is an integer. Codewords can be expressed as equal weight superpositions of coherent states on an infinite lattice, such as a square lattice in phase space with spatial period <span class="inline-math">\(2\sqrt{\pi}\)</span>. The exact GKP state is non-normalizable, so approximate constructs have to be considered.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">For stabilizer <span class="inline-math">\(\hat{S}_q(2\alpha),\hat{S}_p(2\beta)\)</span>, code can correct displacement errors up to <span class="inline-math">\(\frac{\alpha}{2}\)</span> in the <span class="inline-math">\(q\)</span>-direction and <span class="inline-math">\(\frac{\beta}{2}\)</span> at <span class="inline-math">\(p\)</span>-direction. Approximately protects against photon loss errors <a href="#cite-1" class="cite">[2]</a>, outperforming most other codes designed to explicitly protect against loss <a href="#cite-2" class="cite">[3]</a>. Very sensitive to dephasing errors <a href="#cite-3" class="cite">[4]</a>. A biased-noise GKP error correcting code can be prepared by choosing <span class="inline-math">\(\alpha\neq \beta\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -93,9 +95,19 @@
 
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Preparation of approximate GKP states is studied both theoretically and experimentally on circuit-QED platforms, by putting the GKP lattice inside a Gaussian envelope <a href="#cite-1" class="cite">[2]</a>, <a href="#cite-4" class="cite">[5]</a>, <a href="#cite-5" class="cite">[6]</a>.</span></dd>
 
 
+<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
+  <dd class="code-feature code-feature-transversal_gates">Clifford gates can be realized by performing linear optics operations, sympletic transformations and displacements <a href="#cite-0" class="cite">[1]</a>, all of which are Gaussian operations. Pauli gates can be performed using displacement operators.</dd>
  
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">By applying GKP error correction to Gaussian input states, universality can be achieved without non-Gaussian elements <a href="#cite-6" class="cite">[7]</a>.</span></dd>
+
+
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Syndrome measruement of displacement error can be done by applying a controlled-displacement controlled by an ancilla qubit. The syndrome information can be obtained by measuring the ancilla qubit after controlled-displacement opearation. See Section. 2D in <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Pauli <span class="inline-math">\(X\)</span>,<span class="inline-math">\(Y\)</span> and <span class="inline-math">\(Z\)</span> measurements can be performed by measuring <span class="inline-math">\(-\hat{p},\hat{q}-\hat{p}\)</span> and <span class="inline-math">\(\hat{q}\)</span> repectively. If the measurement outcome is closed to an even multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is +1. If the measurement outcome is closed to an odd multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is -1. See Section. 2D in <a href="#cite-3" class="cite">[4]</a>.</span></dd>
 
 
 
@@ -105,8 +117,10 @@
 
 
 
-
-
+<dt class="code-realizations">Realizations</dt>
+<dd class="code-realizations">
+  <span class="paragraph-in-list">Approximate GKP code is realized on a superconducting microwave cavity <a href="#cite-5" class="cite">[6]</a> and a trapped-ion oscillator <a href="#cite-7" class="cite">[8]</a>.</span>
+</dd>
 
 
 
@@ -129,7 +143,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Displacement operators can be thought of as analogues of Pauli operators for the oscillator.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/approximate_qecc">Approximate QECC</a></span>    <span class="code-cousins-1-detail">(GKP codes approximately protect against photon loss <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(GKP codes are a continuous-variable analogue of stabilizer codes.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_gkp">Group GKP code</a></span>    <span class="code-cousins-1-detail">(For a single-mode qubit GKP code, the nested group construction is <span class="inline-math">\(2\mathbb{Z}\subset\mathbb{Z}\subset\mathbb{R}\)</span>.)</span>  </li>
 </ul>
@@ -182,7 +198,42 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
+        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        B. M. Terhal and D. Weigand, “Encoding a qubit into a cavity mode in circuit QED using phase estimation”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.012315" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        A. L. Grimsmo and S. Puri, “Quantum Error Correction with the Gottesman-Kitaev-Preskill Code”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.020101" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        D. J. Weigand and B. M. Terhal, “Generating grid states from Schrödinger-cat states without postselection”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.022341" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        P. Campagne-Ibarcq et al., “Quantum error correction of a qubit encoded in grid states of an oscillator”, Nature <span class="textbf">584</span>, 368 (2020). <a href="https://doi.org/10.1038/s41586-020-2603-3" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        B. Q. Baragiola et al., “All-Gaussian Universality and Fault Tolerance with the Gottesman-Kitaev-Preskill Code”, Physical Review Letters <span class="textbf">123</span>, (2019). <a href="https://doi.org/10.1103/PhysRevLett.123.200502" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
+      <dd>
+        C. Flühmann et al., “Encoding a qubit in a trapped-ion mechanical oscillator”, Nature <span class="textbf">566</span>, 513 (2019). <a href="https://doi.org/10.1038/s41586-019-0960-6" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

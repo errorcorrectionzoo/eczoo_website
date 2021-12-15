@@ -76,12 +76,22 @@
   </li>
   <li>
     <span class="code-name">
+      <a href="/c/repetition">Binary repetition code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
+    <span class="code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</span>
+  </li>
+  <li>
+    <span class="code-name">
       <a href="/c/oscillators">Bosonic code</a></span>
     <span class="code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> or <span class="textit">mode</span> (i.e., one copy of the space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}\)</span>). Ideal codewords may not be normalizable, so approximate versions have to be constructed.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a></span></span>
+      <a href="/c/bosonic_rotation">Bosonic rotation code</a></span>
+    <span class="code-description">Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
     <span class="code-description"><p>An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings. The parity check matrix is of the form
 <span id="eq--parity" class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
@@ -94,8 +104,8 @@ H_{X} &amp; 0
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a></span></span>
-    <span class="code-description">Stub.</span>
+      <a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a></span></span>
+    <span class="code-description">Rotation-symmetric bosonic Fock-state code encoding a logical qubit into one oscillator. Codewords consists of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. Hence, the logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace.</span>
   </li>
   <li>
     <span class="code-name">
@@ -210,7 +220,7 @@ H_{X} &amp; 0
   <li>
     <span class="code-name">
       <a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
-    <span class="code-description">Stub.</span>
+    <span class="code-description">Bosonic qudit-into-oscillator code whose stabilizers are oscillator displacement operators <span class="inline-math">\(\hat{S}_q(2\alpha)=e^{-2i\alpha \hat{p}}\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)=e^{2i\beta \hat{q}}\)</span>. To ensure <span class="inline-math">\(\hat{S}_q(2\alpha)\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)\)</span> generate a stabilizer group that is Abelian, there is another constraint that <span class="inline-math">\(\alpha\beta=2k\pi\)</span> where <span class="inline-math">\(k\)</span> is an integer. Codewords can be expressed as equal weight superpositions of coherent states on an infinite lattice, such as a square lattice in phase space with spatial period <span class="inline-math">\(2\sqrt{\pi}\)</span>. The exact GKP state is non-normalizable, so approximate constructs have to be considered.</span>
   </li>
   <li>
     <span class="code-name">
@@ -276,7 +286,7 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
   <li>
     <span class="code-name">
       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian Codes</a></span>
-    <span class="code-description">Stub.</span>
+    <span class="code-description">The code construction is only explicit for linear distance codes encoding one logical qubit. For finite rate codes, there is no rigorous proof that the algorithm succeeds, and approximate constructions are described instead.</span>
   </li>
   <li>
     <span class="code-name">
@@ -292,6 +302,11 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
     <span class="code-name">
       <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-37" class="cite">[38]</a><a href="#cite-38" class="cite">[39]</a></span></span>
     <span class="code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/parity_check">Parity-check code</a></span>
+    <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
@@ -338,6 +353,11 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-42" class="cite">[43]</a></span></span>
+    <span class="code-description">Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
       <a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>
     <span class="code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. More formally, denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a QECC <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>. Ideal code states <span class="inline-math">\(|\psi\rangle\)</span> may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed.</span>
   </li>
@@ -348,23 +368,23 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_parity">Quantum parity code (QPC)</a><span class="code-introduced"><a href="#cite-42" class="cite">[43]</a></span></span>
+      <a href="/c/quantum_parity">Quantum parity code (QPC)</a><span class="code-introduced"><a href="#cite-43" class="cite">[44]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_polar">Quantum polar code</a><span class="code-introduced"><a href="#cite-43" class="cite">[44]</a></span></span>
+      <a href="/c/quantum_polar">Quantum polar code</a><span class="code-introduced"><a href="#cite-44" class="cite">[45]</a></span></span>
     <span class="code-description">Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/quantum_repetition">Quantum repetition code</a></span>
+    <span class="code-description">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
       <a href="/c/qubits_into_qubits">Qubit code</a></span>
     <span class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</span>
-  </li>
-  <li>
-    <span class="code-name">
-      <a href="/c/quantum_repetition">Qubit repetition code</a></span>
-    <span class="code-description">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
@@ -383,12 +403,12 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-44" class="cite">[45]</a><a href="#cite-45" class="cite">[46]</a></span></span>
+      <a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-45" class="cite">[46]</a><a href="#cite-46" class="cite">[47]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-46" class="cite">[47]</a></span></span>
+      <a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-47" class="cite">[48]</a></span></span>
     <span class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
   </li>
   <li>
@@ -398,12 +418,17 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-47" class="cite">[48]</a></span></span>
+      <a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-48" class="cite">[49]</a></span></span>
     <span class="code-description">Nine-qubit CSS code that is the smallest such code to correct a single-qubit error. Shor&#x27;s code works by concatenating each qubit of a phase-flip with a bit-flip repetition code. Therefore, the code can correct both type of errors simultaneously. To be specific, a state is phase-flip error-corrected by a three-qubit phase-flip correction code, with parity checks of <span class="inline-math">\(X_0 X_1I_2\)</span> and <span class="inline-math">\(X_0I_1X_2\)</span> in <span class="inline-math">\(X\)</span> basis, where the subscript represents the qubit index. Each logical qubit is encoded using <span id="eq--phase-flip" class="display-math env-align">\begin{align} \label{eq:phase-flip} \begin{split} |0\rangle_{L_P} &amp;= |+_0+_1+_2\rangle \\ |1\rangle_{L_P} &amp;= |-_0-_1-_2\rangle . \end{split}\end{align}</span> Then, each physical qubit used in <span class="inline-math eqref">\eqref{eq:phase-flip}</span> is further encoded in the three-qubit bit-flip correction code: <span class="display-math env-align">\begin{align} |\pm _j \rangle  = \frac{1}{\sqrt{2}}( |0_{j0}0_{j1}0_{j2}\rangle \pm |1_{j0}1_{j1}1_{j2}\rangle),\end{align}</span> each with bit-flip error parity check <span class="inline-math">\(Z_{j0}Z_{j1}I_{j2}\)</span> and  <span class="inline-math">\(Z_{j0}I_{j1}Z_{j2} \)</span>, where <span class="inline-math">\(j=0,1,2\)</span>. Notice now the phase-flip error parity check is extended as <span class="inline-math">\(X_j = X_{j0}X_{j1}X_{j2}\)</span>. As a result, the overall parity checks with the flattened qubit index are <span class="display-math env-align">\begin{align} \begin{split} Z_{j0}Z_{j1}I_{j2} &amp;\rightarrow \{Z_0Z_1, Z_3Z_4, Z_6Z_7\} \\ Z_{j0}I_{j1}Z_{j2} &amp;\rightarrow \{Z_0Z_2, Z_3Z_5, Z_6Z_8\} \\ X_0 X_1I_2  &amp;\rightarrow  \{X_0X_1X_2X_3X_4X_5\}\\ X_0 I_1X_2  &amp;\rightarrow  \{X_0X_1X_2X_6X_7X_8\}. \end{split}\end{align}</span> The logical state is encoded using <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\ |\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3} \end{split}\end{align}</span></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-48" class="cite">[49]</a><a href="#cite-49" class="cite">[50]</a></span></span>
+      <a href="/c/single_parity_check">Single parity-check code</a></span>
+    <span class="code-description">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-49" class="cite">[50]</a><a href="#cite-50" class="cite">[51]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
@@ -418,12 +443,12 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-50" class="cite">[51]</a></span></span>
+      <a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-51" class="cite">[52]</a></span></span>
     <span class="code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-51" class="cite">[52]</a></span></span>
+      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-52" class="cite">[53]</a></span></span>
     <span class="code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}.\end{align}</span></span>
   </li>
   <li>
@@ -438,22 +463,22 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-52" class="cite">[53]</a></span></span>
+      <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-53" class="cite">[54]</a></span></span>
     <span class="code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}.\end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\\end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-53" class="cite">[54]</a></span></span>
+      <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-54" class="cite">[55]</a></span></span>
     <span class="code-description">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split}\end{align}</span></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a><span class="code-introduced"><a href="#cite-54" class="cite">[55]</a><a href="#cite-55" class="cite">[56]</a></span></span>
+      <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a><span class="code-introduced"><a href="#cite-55" class="cite">[56]</a><a href="#cite-56" class="cite">[57]</a></span></span>
     <span class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-49" class="cite">[50]</a></span></span>
+      <a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-50" class="cite">[51]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
@@ -509,32 +534,32 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
+        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
+        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
+        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
+        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        M. Mirrahimi et al., “Dynamically protected cat-qubits: a new paradigm for universal quantum computation”, New Journal of Physics <span class="textbf">16</span>, 045014 (2014). <a href="https://doi.org/10.1088/1367-2630/16/4/045014" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.2017" target="_blank" class="href">1312.2017</a>
+        Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
@@ -589,7 +614,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
+        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
@@ -699,70 +724,75 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-42">[43]</dt>
       <dd>
-        T. C. Ralph, A. J. F. Hayes, and A. Gilchrist, “Loss-Tolerant Optical Qubits”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0501184" target="_blank" class="href">quant-ph/0501184</a>
+        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-43">[44]</dt>
       <dd>
-        J. M. Renes, F. Dupuis, and R. Renner, “Efficient Polar Coding of Quantum Information”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1109.3195" target="_blank" class="href">1109.3195</a>
+        T. C. Ralph, A. J. F. Hayes, and A. Gilchrist, “Loss-Tolerant Optical Qubits”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0501184" target="_blank" class="href">quant-ph/0501184</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-44">[45]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        J. M. Renes, F. Dupuis, and R. Renner, “Efficient Polar Coding of Quantum Information”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1109.3195" target="_blank" class="href">1109.3195</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-45">[46]</dt>
       <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-46">[47]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-47">[48]</dt>
       <dd>
-        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-48">[49]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction and Orthogonal Geometry”, Physical Review Letters <span class="textbf">78</span>, 405 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.405" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9605005" target="_blank" class="href">quant-ph/9605005</a>
+        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-49">[50]</dt>
       <dd>
-        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+        A. R. Calderbank et al., “Quantum Error Correction and Orthogonal Geometry”, Physical Review Letters <span class="textbf">78</span>, 405 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.405" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9605005" target="_blank" class="href">quant-ph/9605005</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-50">[51]</dt>
       <dd>
-        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
+        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-51">[52]</dt>
       <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-52">[53]</dt>
       <dd>
-        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-53">[54]</dt>
       <dd>
-        Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
+        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-54">[55]</dt>
       <dd>
-        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
+        Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-55">[56]</dt>
+      <dd>
+        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-56">[57]</dt>
       <dd>
         M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
       </dd>

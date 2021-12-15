@@ -76,7 +76,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/tanner">Tanner code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/ldpc">Low-density parity-check (LDPC) code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>.
+      <a href="/c/tanner">Tanner code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -114,16 +114,16 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_ldpc">
-  <span class="short-code-name"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>
+<div class="ecc-code" id="ecc_parity_check">
+  <span class="short-code-name"><a href="/c/parity_check">Parity-check code</a></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_linear">Binary linear code</a>.
   </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a>.
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/single_parity_check">Single parity-check code</a>,       <a href="/c/ldpc">Low-density parity-check (LDPC) code</a>.
   </span>
 </div>
 
@@ -138,6 +138,35 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/polar">Polar code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_single_parity_check">
+  <span class="short-code-name"><a href="/c/single_parity_check">Single parity-check code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check.</span>
+  <span class="short-code-info">Protection: This code cannot protect information, it can only detect 1-bit error.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/parity_check">Parity-check code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/repetition">Binary repetition code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_ldpc">
+  <span class="short-code-name"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/parity_check">Parity-check code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a>.
   </span>
 </div>
 
