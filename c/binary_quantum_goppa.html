@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Binary quantum Goppa Code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Binary quantum Goppa Code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+      Binary quantum Goppa Code
+    [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+<div
+  id="bodycontents"
+  >
+
+  <header id="header">
+    <h1>Binary quantum Goppa Code</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_binary_quantum_goppa">
+
+<!--<dt></dt>-->
+<dd class="info-popup-button-container"></dd>
+
+<dt class="code-name">Name</dt>
+<dd class="code-name">
+  <span class="code-name-cell">
+  <span class="code-name">Binary quantum Goppa Code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/binary_quantum_goppa">&nbsp;</a>-->
+</dd>
+
+
+<dt class="code-description">Description</dt>
+<dd class="code-description">Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> Galois-qudit stabilizer codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes. Let <span class="inline-math">\( F/GF(q) \)</span> be an algebraic function field of one variable, <span class="inline-math">\(\sigma \)</span> be an automorphism of order 2 of <span class="inline-math">\(F\)</span> which leaves <span class="inline-math">\(GF(q)\)</span> invariant, and <span class="inline-math">\(P_1, \cdots, P_n \)</span> be pairwise distinct places of degree one such that <span class="inline-math">\( \sigma P_i = P_j\)</span> for all <span class="inline-math">\(i,j = 1, \cdots, n\)</span>. A place <span class="inline-math">\( P_i \)</span> of <span class="inline-math">\( F/ GF(q) \)</span> is the unique maximal ideal of a discrete valuation ring of the function field. Let <span class="inline-math">\( \nu \)</span> be a  differential that satisfies the properties guaranteed by  the strong approximation theorem of discrete evaluations. Let <span class="inline-math">\(G\)</span> be a divisor such that <span class="inline-math">\( \sigma G = G \)</span> and the discrete valuation corresponding to place <span class="inline-math">\(P_i \)</span> of <span class="inline-math">\(G\)</span> and the discrete valuation corresponding to place <span class="inline-math">\(\sigma P_i \)</span> of <span class="inline-math">\(G\)</span> are both 0 for all <span class="inline-math">\(i\)</span>. Then we can define a code <span class="inline-math">\( C(G)  = \{ f(P_1), \cdots, f(P_n), f(\sigma P_1), \cdots , f(\sigma P_n) | f \in \mathcal{L}(G)\} \subst GF(q^{2n})\)</span> and a code <span class="inline-math">\(C(H)\)</span> where <span class="inline-math">\(H = (P_1 + \cdots + P_n + \sigma P_1 + \cdots + \sigma P_n) - G + \nu \)</span>. Then the dual of <span class="inline-math">\(C(G)\)</span> with respect to the weighted symplectic inner product with weights <span class="inline-math">\(s_i\)</span> on <span class="inline-math">\( GF(q^n) \)</span> is equivalent to <span class="inline-math">\(C(H)\)</span>. Therefore, the orthogonal code of <span class="inline-math">\(C(G)\)</span> is generated by <span class="inline-math">\(H\)</span>. Using these properties and the assumption that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline-math">\(G\)</span>, we can construct a classical Goppa code <span class="inline-math">\(C(D,G)\)</span>, where <span class="inline-math">\(D\)</span> is the sum of all <span class="inline-math">\(P_i\)</span>. Using <span class="inline-math">\(C(D,G)\)</span>, we can construct a <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> quantum stabilizer code such that <span class="inline-math">\(k  = dim G - dim(G-P_1 - \cdots - P_n - \sigma P_1 - \cdots  - \sigma P_n) - n\)</span>.</dd>
+
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protects against weight t errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \)</span> where <span class="inline-math">\( d^* = deg G + 2 -2g \)</span> and g is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</dd>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding defined in Matsumoto <a href="#cite-2" class="cite">[3]</a> uses a technique from Ashikhmin and Knill <a href="#cite-3" class="cite">[4]</a> to encode quantum stabilizer codes.</span></dd>
+
+
+ 
+
+
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Farran algorithm <a href="#cite-4" class="cite">[5]</a>.</span></dd>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Relationships to other codes -->
+
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
+</ul>
+</dd>
+
+
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(Goppa codes can be constructed using CSS codes over hyperelliptic curves <a href="#cite-1" class="cite">[2]</a>. The construction provided here is Matsumoto&#x27;s construction.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/goppa">Goppa Code</a></span>    <span class="code-cousins-1-detail">(Classical Goppa codes are used to construct their quantum versions.)</span>  </li>
+</ul>
+</dd>
+
+
+<!-- zoo-related information and how to edit -->
+
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</dt>
+<dd class="display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    binary_quantum_goppa
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Binary quantum Goppa Code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/binary_quantum_goppa</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_binary_quantum_goppa,
+  title={Binary quantum Goppa Code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/binary_quantum_goppa}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/binary_quantum_goppa</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/binary_quantum_goppa.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=binary_quantum_goppa">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>binary_quantum_goppa</code></div>
+</dd>
+
+</dl>
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        R. Matsumoto, “Improvement of Ashikhmin-Litsyn-Tsfasman bound for quantum codes”, IEEE Transactions on Information Theory <span class="textbf">48</span>, 2122 (2002). <a href="https://doi.org/10.1109/TIT.2002.1013156" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0107129" target="_blank" class="href">quant-ph/0107129</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        J. I. Farran, “Decoding Algebraic Geometry codes by a key equation”. <a href="https://arxiv.org/abs/math/9910151" target="_blank" class="href">math/9910151</a>
+      </dd>
+    
+    </dl>
+   </div>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/edit_code">Add new code</a></li>
+        <li><a href="/additional_resources">Additional resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <!-- <h1>Additional resources</h1> -->
+      <!-- <ul class="navlinks"> -->
+      <!--   <li>…</li> -->
+      <!-- </ul> -->
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+Error correction zoo by Victor V. Albert, Philippe Faist, and
+<a href="/about">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

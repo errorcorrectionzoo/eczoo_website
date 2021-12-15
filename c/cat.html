@@ -96,12 +96,12 @@
 
 
 <dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based encoding utilizing multi-photon absorption <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-3" class="cite">[4]</a>.</span></dd>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based dissipative encoding utilizing multi-photon absorption <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Combined dissipative and Hamiltonian-based encoding utilizing two-photon exchange for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-4" class="cite">[5]</a>.</span></dd>
 
 
  
 <dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=1\)</span>, universal gates can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-2" class="cite">[3]</a>. For <span class="inline-math">\(S=2\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing a topological Berry phase <a href="#cite-5" class="cite">[6]</a>.</span></dd>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=1\)</span>, universal gates can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-2" class="cite">[3]</a>. For <span class="inline-math">\(S=2\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing a topological Berry phase <a href="#cite-6" class="cite">[7]</a>.</span></dd>
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
@@ -109,7 +109,7 @@
 
 
 <dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-5" class="cite">[6]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-6" class="cite">[7]</a><a href="#cite-5" class="cite">[6]</a>.</span></dd>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-6" class="cite">[7]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-7" class="cite">[8]</a><a href="#cite-6" class="cite">[7]</a>.</span></dd>
 
 
 
@@ -119,7 +119,7 @@
 
 <dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
-  <span class="paragraph-in-list">Two-legged (<span class="inline-math">\(S=1\)</span>) cat code has been realized by two superconducting cavities coupled through a Josephson junction <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Four-legged (<span class="inline-math">\(S=2\)</span>) cat code has been realized in superconducting circuit <a href="#cite-8" class="cite">[9]</a>. This paper is the first break-even point of quantum error-correction, where the lifetime of a logical qubit is on par with the lifetime of the noisiest constituent of the system.</span>
+  <span class="paragraph-in-list">Two-legged (<span class="inline-math">\(S=1\)</span>) cat code has been realized by two superconducting cavities coupled through a Josephson junction <a href="#cite-8" class="cite">[9]</a>.</span><span class="paragraph-in-list">Four-legged (<span class="inline-math">\(S=2\)</span>) cat code has been realized in superconducting circuit <a href="#cite-9" class="cite">[10]</a>. This paper is the first break-even point of quantum error-correction, where the lifetime of a logical qubit is on par with the lifetime of the noisiest constituent of the system.</span>
 </dd>
 
 
@@ -214,25 +214,30 @@
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        V. V. Albert et al., “Holonomic Quantum Control with Continuous Variable Systems”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.140502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.00194" target="_blank" class="href">1503.00194</a>
+        Ronan Gautier, Alain Sarlette, and Mazyar Mirrahimi, “Combined Dissipative and Hamiltonian Confinement of Cat Qubits”. <a href="https://arxiv.org/abs/2112.05545" target="_blank" class="href">2112.05545</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        S. Puri et al., “Bias-preserving gates with stabilized cat qubits”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay5901" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.00450" target="_blank" class="href">1905.00450</a>
+        V. V. Albert et al., “Holonomic Quantum Control with Continuous Variable Systems”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.140502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.00194" target="_blank" class="href">1503.00194</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        J. Guillaud and M. Mirrahimi, “Repetition Cat Qubits for Fault-Tolerant Quantum Computation”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041053" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.09474" target="_blank" class="href">1904.09474</a>
+        S. Puri et al., “Bias-preserving gates with stabilized cat qubits”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay5901" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.00450" target="_blank" class="href">1905.00450</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        Z. Leghtas et al., “Confining the state of light to a quantum manifold by engineered two-photon loss”, Science <span class="textbf">347</span>, 853 (2015). <a href="https://doi.org/10.1126/science.aaa2085" target="_blank" class="href">DOI</a>
+        J. Guillaud and M. Mirrahimi, “Repetition Cat Qubits for Fault-Tolerant Quantum Computation”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041053" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.09474" target="_blank" class="href">1904.09474</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
+      <dd>
+        Z. Leghtas et al., “Confining the state of light to a quantum manifold by engineered two-photon loss”, Science <span class="textbf">347</span>, 853 (2015). <a href="https://doi.org/10.1126/science.aaa2085" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
       <dd>
         N. Ofek et al., “Extending the lifetime of a quantum bit with error correction in superconducting circuits”, Nature <span class="textbf">536</span>, 441 (2016). <a href="https://doi.org/10.1038/nature18949" target="_blank" class="href">DOI</a>
       </dd>

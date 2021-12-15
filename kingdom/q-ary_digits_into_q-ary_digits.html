@@ -61,26 +61,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/weakly_self_dual">Weakly self-dual linear code</a>,       <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>,       <a href="/c/perfect">Perfect code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_weakly_self_dual">
-  <span class="short-code-name"><a href="/c/weakly_self_dual">Weakly self-dual linear code</a></span>
-  <span class="short-code-description">Also called a <span class="textit">self-orthogonal</span> code. A <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is contained in <span class="inline-math">\(C\)</span>.</span>
-  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/self_dual">Self-dual linear code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/perfect">Perfect code</a>.
   </span>
 </div>
 
@@ -95,7 +76,26 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/reed_solomon">Reed-Solomon code</a>.
+      <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dual">
+  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description"><p>For any <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code
+<span class="display-math env-align">\begin{align}
+C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
+\end{align}</span></p>
+<p>A code that contains its dual code, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>.</p></span>
+  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
@@ -123,24 +123,64 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 </div>
 
 
-<div class="ecc-code" id="ecc_self_dual">
-  <span class="short-code-name"><a href="/c/self_dual">Self-dual linear code</a></span>
-  <span class="short-code-description">Also called <span class="textit">strictly self-dual</span>. A <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span> whose dual code <span class="inline-math">\(C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}\)</span> is equal to <span class="inline-math">\(C\)</span>.</span>
-  <span class="short-code-info">Protection: The generator and parity-check matrices of <span class="inline-math">\(C\)</span> are equal.</span>
+<div class="ecc-code" id="ecc_alternant">
+  <span class="short-code-name"><a href="/c/alternant">Alternant Codes</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/weakly_self_dual">Weakly self-dual linear code</a>.
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/goppa">Goppa Code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
   <span class="short-code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
   <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a>,       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_goppa">
+  <span class="short-code-name"><a href="/c/goppa">Goppa Code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = deg G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/alternant">Alternant Codes</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_bch">
+  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/alternant">Alternant Codes</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>.
   </span>
 </div>
 
@@ -150,7 +190,37 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
         I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        V. D. Goppa, &#x27;A new class of linear error-correcting codes&#x27;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        V. D. Goppa, &#x27;Rational representation of codes and (Lg) codes&#x27;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

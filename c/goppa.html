@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Galois-qudit code" />
+<meta name="citation_title" content="Goppa Code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Galois-qudit code" />
+<meta name="DC.title" content="Goppa Code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Galois-qudit code
+      Goppa Code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Galois-qudit code</h1>
+    <h1>Goppa Code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_galois_into_galois">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_goppa">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,16 +73,18 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Galois-qudit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Goppa Code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/galois_into_galois">&nbsp;</a>-->
+   href="/c/goppa">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined.</dd>
+<dd class="code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = deg G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</dd>
 
 
 <!-- Display features -->
@@ -91,6 +93,8 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">There exist Goppa codes defined over larger alphabets that meet the Gilbert-Varshamov, or GV,  bound.</dd>
 
 
 
@@ -98,6 +102,8 @@
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Algebraic decoding algorithms <a href="#cite-3" class="cite">[4]</a></span><span class="paragraph-in-list">If <span class="inline-math">\( \text{deg} G(z) = 2t \)</span> , then there exists a <span class="inline-math">\(t\)</span>-correcting algebraic decoding algorithm for <span class="inline-math">\( \Gamma(L,G) \)</span>.</span></dd>
 
 
 
@@ -107,10 +113,14 @@
 
 
 
+<dt class="code-realizations">Realizations</dt>
+<dd class="code-realizations">
+  <span class="paragraph-in-list">The binary version <span class="inline-math">\( (q=2) \)</span> is commonly used in post-quantum cryptosystems such as the McElise cryptosystem.</span>
+</dd>
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list">Introduction to Galois qudits by <a href="https://ethz.ch/content/vp/en/conferences/2014/qec/05_thursday/dab6ca18-7453-4197-aaaa-8b1964ece714.html" target="_blank" class="href">Gottesman</a>.</span>
+  <span class="paragraph-in-list">GAP function <a href="https://www.gap-system.org/Manuals/pkg/guava/doc/chap5.html#X7EE808BB7D1E487A" target="_blank" class="href">GoppaCode(G,L)</a> takes in a polynomial <span class="inline-math">\(G\)</span> that satisfies the necessary conditions for a Goppa code and a list <span class="inline-math">\(L\)</span> that contains elements in <span class="inline-math">\(GF(q)\)</span> that are not roots of <span class="inline-math">\(G\)</span>. It returns a Goppa code <span class="inline-math">\(C\)</span>.</span>
 </dd>
 
 
@@ -122,19 +132,10 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc_finite">Finite-dimensional QECC</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/alternant">Alternant Codes</a></span>  </li>
 </ul>
 </dd>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
-</ul>
-</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -142,7 +143,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a></span>    <span class="code-cousins-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> <span class="inline-math">\(\mathbb{Z}_q\)</span>-qudits <a href="#cite-1" class="cite">[2]</a>; see Sec. 5.3 of Ref. <a href="#cite-2" class="cite">[3]</a>. The two coincide when <span class="inline-math">\(q\)</span> is prime, and reduce to qubits when <span class="inline-math">\(q=2\)</span>. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a></span>    <span class="code-cousins-1-detail">(Classical Goppa codes are used to construct their quantum versions.)</span>  </li>
 </ul>
 </dd>
 
@@ -155,24 +156,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    galois_into_galois
+    goppa
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Galois-qudit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/galois_into_galois</dd>
+      <dd>“Goppa Code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/goppa</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_galois_into_galois,
-  title={Galois-qudit code},
+      <dd class="bibtex">@incollection{eczoo_goppa,
+  title={Goppa Code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/galois_into_galois}
+  url={https://errorcorrectionzoo.org/c/goppa}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/galois_into_galois</dd>
+      <dd>https://errorcorrectionzoo.org/c/goppa</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -180,10 +181,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/galois_into_galois.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/goppa.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=galois_into_galois">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>galois_into_galois</code></div>
+       href="/edit_code?code_id=goppa">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>goppa</code></div>
 </dd>
 
 </dl>
@@ -193,17 +194,22 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
+        V. D. Goppa, &#x27;A new class of linear error-correcting codes&#x27;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+        V. D. Goppa, &#x27;Rational representation of codes and (Lg) codes&#x27;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
+        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        N. Patterson, “The algebraic decoding of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">21</span>, 203 (1975). <a href="https://doi.org/10.1109/TIT.1975.1055350" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
