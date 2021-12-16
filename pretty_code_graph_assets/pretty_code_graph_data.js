@@ -1227,7 +1227,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Also known as a \\textit{quantum AG code}. Binary quantum Goppa codes are a family of \\( [[n,k,d]]_{GF(q)} \\) Galois-qudit stabilizer codes for \\( q=2^m \\), generated using classical Goppa codes. Le..."
+                        "Also known as a \\textit{quantum AG code}. Binary quantum Goppa codes are a family of \\( [[n,k,d]]_{GF(q)} \\) Galois-qudit stabilizer codes for \\( q=2^m \\), generated using classical Goppa codes.\n\nL..."
                     ],
                     "_code_href": "/c/binary_quantum_goppa",
                     "_family_generation_level": 6
@@ -1267,11 +1267,11 @@ GENERATED_pretty_code_graph_data = {
                         "An approximate family of \\( [[n,k,d]]_{GF(q)} \\) CSS codes approximately correcting errors on up to \\(\\lfloor (n-1)/2 \\rfloor\\) qubits, i.e., with approximate distance approaching the no-cloning bo..."
                     ],
                     "_code_href": "/c/quantum_secret_sharing",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -450,
-                    "y": 500
+                    "x": 150,
+                    "y": 600
                 }
             },
             {
@@ -2597,18 +2597,18 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_secret_sharing_approximate_qecc_75",
+                    "id": "parent_quantum_secret_sharing_css_75",
                     "_rel_type": "parent",
                     "source": "c_quantum_secret_sharing",
-                    "target": "c_approximate_qecc"
+                    "target": "c_css"
                 }
             },
             {
                 "data": {
-                    "id": "cousin_quantum_secret_sharing_css__55",
+                    "id": "cousin_quantum_secret_sharing_approximate_qecc__55",
                     "_rel_type": "cousin",
                     "source": "c_quantum_secret_sharing",
-                    "target": "c_css"
+                    "target": "c_approximate_qecc"
                 }
             },
             {
@@ -3761,7 +3761,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_approximate_qecc",
+            "top": "c_css",
             "bottom": "c_quantum_secret_sharing",
             "gap": 100
         },

@@ -84,7 +84,7 @@
 <dd class="code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = deg G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</dd>
+<dd class="code-protection">The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</dd>
 
 
 <!-- Display features -->
@@ -103,7 +103,7 @@
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Algebraic decoding algorithms <a href="#cite-3" class="cite">[4]</a></span><span class="paragraph-in-list">If <span class="inline-math">\( \text{deg} G(z) = 2t \)</span> , then there exists a <span class="inline-math">\(t\)</span>-correcting algebraic decoding algorithm for <span class="inline-math">\( \Gamma(L,G) \)</span>.</span></dd>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Algebraic decoding algorithms <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">If <span class="inline-math">\( \text{deg} G(z) = 2t \)</span> , then there exists a <span class="inline-math">\(t\)</span>-correcting algebraic decoding algorithm for <span class="inline-math">\( \Gamma(L,G) \)</span>.</span></dd>
 
 
 
@@ -115,7 +115,7 @@
 
 <dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
-  <span class="paragraph-in-list">The binary version <span class="inline-math">\( (q=2) \)</span> is commonly used in post-quantum cryptosystems such as the McElise cryptosystem.</span>
+  <span class="paragraph-in-list">The binary version <span class="inline-math">\( (q=2) \)</span> is commonly used in post-quantum cryptosystems such as the McElise cryptosystem <a href="#cite-4" class="cite">[5]</a>.</span>
 </dd>
 
 <dt class="code-notes">Notes</dt>
@@ -210,6 +210,11 @@
       <dt id="cite-3">[4]</dt>
       <dd>
         N. Patterson, “The algebraic decoding of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">21</span>, 203 (1975). <a href="https://doi.org/10.1109/TIT.1975.1055350" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        H. Janwa and O. Moreno, “McEliece public key cryptosystems using algebraic-geometric codes”, Designs, Codes and Cryptography <span class="textbf">8</span>, (1996). <a href="https://doi.org/10.1007/BF00173300" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
