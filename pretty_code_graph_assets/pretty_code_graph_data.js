@@ -233,7 +233,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Linear rank-metric code with maximum rank \\([n,k,n-k+1]_q\\) over rank metric. For any vector \\(g=(g_1, \\ldots, g_n)\\) with linearly independent elements \\(g_i\\)s over \\(GF(q)\\),\nthe generator matri..."
+                        "Linear rank-metric code with maximum rank \\([n,k,n-k+1]_q\\) over rank metric. For any vector \\(g=(g_1, \\ldots, g_n)\\) with linearly independent elements \\(g_i\\) over \\(GF(q)\\),\nthe generator matrix..."
                     ],
                     "_code_href": "/c/maximum_rank_distance",
                     "_family_generation_level": 4
@@ -453,7 +453,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_expander",
-                    "label": "Expander Codes",
+                    "label": "Expander code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -783,7 +783,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_expander",
-                    "label": "Quantum Expander code",
+                    "label": "Quantum expander code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [

@@ -194,8 +194,9 @@ C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/expander">Expander Codes</a><span class="code-introduced"><a href="#cite-23" class="cite">[24]</a></span></span>
-    <span class="code-description">Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes. Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-24" class="cite">[25]</a>.</span>
+      <a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-23" class="cite">[24]</a></span></span>
+    <span class="code-description"><p>Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</p>
+<p>Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(\gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-24" class="cite">[25]</a>.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -341,7 +342,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
   <li>
     <span class="code-name">
       <a href="/c/maximum_rank_distance">Maximum-rank code</a><span class="code-introduced"><a href="#cite-48" class="cite">[49]</a><a href="#cite-49" class="cite">[50]</a></span></span>
-    <span class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span>s over <span class="inline-math">\(GF(q)\)</span>,
+    <span class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
 the generator matrix
 <span class="display-math env-align">\begin{align}
 G = \begin{pmatrix} g_1^{[0]} &amp; g_2^{[0]} &amp; \ldots &amp; g_n^{[0]} \\ g_1^{[1]} &amp; g_2^{[1]} &amp; \ldots &amp; g_n^{[1]} \\ g_1^{[k-1]} &amp; g_2^{[k-1]} &amp; \ldots &amp; g_n^{[k-1]} \end{pmatrix}~,
@@ -419,28 +420,28 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_expander">Quantum Expander code</a><span class="code-introduced"><a href="#cite-59" class="cite">[60]</a></span></span>
-    <span class="code-description">CSS codes constructed from bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</span>
-  </li>
-  <li>
-    <span class="code-name">
-      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a><span class="code-introduced"><a href="#cite-60" class="cite">[61]</a></span></span>
+      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a><span class="code-introduced"><a href="#cite-59" class="cite">[60]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-61" class="cite">[62]</a></span></span>
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-60" class="cite">[61]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_cyclic">Quantum cyclic code</a><span class="code-introduced"><a href="#cite-62" class="cite">[63]</a></span></span>
+      <a href="/c/quantum_cyclic">Quantum cyclic code</a><span class="code-introduced"><a href="#cite-61" class="cite">[62]</a></span></span>
     <span class="code-description">A code <span class="inline-math">\(C\)</span> constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits) is cyclic if a cyclic permutation of the subsystems leaves the code subspace invariant.</span>
   </li>
   <li>
     <span class="code-name">
       <a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>
     <span class="code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. More formally, denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>, <span class="inline-math">\({\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\)</span> for some constant <span class="inline-math">\(c\)</span>. Ideal code states <span class="inline-math">\(|\psi\rangle\)</span> may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-62" class="cite">[63]</a></span></span>
+    <span class="code-description">CSS codes constructed from bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</span>
   </li>
   <li>
     <span class="code-name">
@@ -496,7 +497,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 A(x) = \begin{pmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\  a_{N1} &amp; a_{N2} &amp; \ldots &amp; a_{Nn} \end{pmatrix}
 \end{align}</span>
 and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u_N \)</span> for some fixed basis <span class="inline-math">\(\{u_i\}_{i=1}^N\)</span>.</p>
-<p>If the vector set <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> defines a <span class="inline-math">\(k\)</span>-dimensional subspace, then the code is [n,k]-linear.</p></span>
+<p>If the vector set <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> defines a <span class="inline-math">\(k\)</span>-dimensional subspace, then the code is <span class="inline-math">\([n,k]\)</span>-linear.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -924,22 +925,22 @@ The classical self-orthogonal code <span class="inline-math">\(C\)</span> over <
       <!-- Citation:  -->
       <dt id="cite-59">[60]</dt>
       <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>
+        Andrew Steane, “Quantum Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/9608026" target="_blank" class="href">quant-ph/9608026</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-60">[61]</dt>
       <dd>
-        Andrew Steane, “Quantum Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/9608026" target="_blank" class="href">quant-ph/9608026</a>
+        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-61">[62]</dt>
       <dd>
-        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
+        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-62">[63]</dt>
       <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
+        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-63">[64]</dt>
