@@ -61,11 +61,25 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/binary_linear">Binary linear code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_convolutional">
+  <span class="short-code-name"><a href="/c/convolutional">Convolutional code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description">Classical codes that are formed using generator polynomials over the finite field with two elements. The encoder slides across contiguous subsets of the input bit-string (like a convolutional neural network) evaluating the polynomials on that window to obtain a number of parity bits. These parity bits are the encoded information. There are many ways to formulate these codes</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/bits_into_bits">Binary code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>.
   </span>
 </div>
 
@@ -80,7 +94,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/tanner">Tanner code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>.
+      <a href="/c/tanner">Tanner code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -104,7 +118,7 @@
 
 
 <div class="ecc-code" id="ecc_polar">
-  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>. The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</span>
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
@@ -136,8 +150,22 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_homological_classical">
+  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_linear">Binary linear code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/perfect">Perfect code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_reed_muller">
-  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -145,15 +173,15 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/polar">Polar code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+      <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_expander">
-  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
   <span class="short-code-description"><p>Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</p>
-<p>Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(\gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-4" class="cite">[5]</a>.</p></span>
+<p>Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(\gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-6" class="cite">[7]</a>.</p></span>
   <span class="short-code-info">Protection: Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</span>
   <span class="short-code-parents">
     Parents:
@@ -200,25 +228,35 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
+        Peter Elias. Coding for noisy channels. IRE Convention Records, 3(4):37–46, 1955.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
       <dd>
         M. Capalbo et al., “Randomness conductors and constant-degree lossless expanders”, Proceedings of the thiry-fourth annual ACM symposium on Theory of computing  - STOC &#x27;02 (2002). <a href="https://doi.org/10.1145/509907.510003" target="_blank" class="href">DOI</a>
       </dd>

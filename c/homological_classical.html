@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Perfect code" />
+<meta name="citation_title" content="Graph homology code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Perfect code" />
+<meta name="DC.title" content="Graph homology code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Perfect code
+      Graph homology code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Perfect code</h1>
+    <h1>Graph homology code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_perfect">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_classical">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,24 +73,15 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Perfect code</span></span>
+  <span class="code-name">Graph homology code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/perfect">&nbsp;</a>-->
+   href="/c/homological_classical">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
-<span class="display-math env-align">\begin{align}
-\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p>
-<p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
-\frac{k}{n}\leq 1-H(t/n),
-\end{align}</span>
-where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></dd>
+<dd class="code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.</dd>
 
 
 
@@ -117,10 +108,6 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list"></span>
-</dd>
 
 
 <!-- Relationships to other codes -->
@@ -131,7 +118,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/binary_linear">Binary linear code</a></span>    <span class="code-parents-1-detail">(Homology codes are linear codes, but not every linear code can be constructed homologically.)</span>  </li>
 </ul>
 </dd>
 
@@ -142,9 +129,9 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/homological_classical">Graph homology code</a></span>    <span class="code-cousins-1-detail">(A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/perfect">Perfect code</a></span>    <span class="code-cousins-1-detail">(A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span>    <span class="code-cousins-1-detail">(A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(CSS codes can also be constructed using homology techniques but for manifolds of dimension two or greater.)</span>  </li>
 </ul>
 </dd>
 
@@ -157,24 +144,24 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    perfect
+    homological_classical
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Perfect code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/perfect</dd>
+      <dd>“Graph homology code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/homological_classical</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_perfect,
-  title={Perfect code},
+      <dd class="bibtex">@incollection{eczoo_homological_classical,
+  title={Graph homology code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/perfect}
+  url={https://errorcorrectionzoo.org/c/homological_classical}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/perfect</dd>
+      <dd>https://errorcorrectionzoo.org/c/homological_classical</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -182,10 +169,10 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/perfect.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/homological_classical.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=perfect">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>perfect</code></div>
+       href="/edit_code?code_id=homological_classical">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>homological_classical</code></div>
 </dd>
 
 </dl>

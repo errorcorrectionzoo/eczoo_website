@@ -81,10 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-orthogonal <span class="inline-math">\([n, n-k, d^*]\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
+<dd class="code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
 <span class="inline-math">\(GF(4)\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
 There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
-The classical self-orthogonal code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</dd>
+The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
@@ -134,7 +134,7 @@ The classical self-orthogonal code <span class="inline-math">\(C\)</span> over <
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>    <span class="code-cousins-1-detail">(With <span class="inline-math">\(q=4\)</span>, <span class="inline-math">\(q\)</span>-ary linear codes are used in this construction.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>    <span class="code-cousins-1-detail">(Quaternary <span class="inline-math">\(q=4\)</span> linear codes are used in this construction.)</span>  </li>
 </ul>
 </dd>
 

@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Reed-Solomon code" />
+<meta name="citation_title" content="Convolutional code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Reed-Solomon code" />
+<meta name="DC.title" content="Convolutional code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Reed-Solomon code
+      Convolutional code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Reed-Solomon code</h1>
+    <h1>Convolutional code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_reed_solomon">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_convolutional">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,18 +73,16 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Reed-Solomon code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Convolutional code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/reed_solomon">&nbsp;</a>-->
+   href="/c/convolutional">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</dd>
+<dd class="code-description">Classical codes that are formed using generator polynomials over the finite field with two elements. The encoder slides across contiguous subsets of the input bit-string (like a convolutional neural network) evaluating the polynomials on that window to obtain a number of parity bits. These parity bits are the encoded information. There are many ways to formulate these codes</dd>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</dd>
 
 
 <!-- Display features -->
@@ -93,13 +91,19 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">Depends on the polynomials used. Using puncturing removal <a href="#cite-1" class="cite">[2]</a> the rate for the code can be increased from <span class="inline-math">\(\frac{1}{t}\)</span> to <span class="inline-math">\(\frac{s}{t}\)</span>, where <span class="inline-math">\(t\)</span> is the number of output bits, and <span class="inline-math">\(s\)</span> depends on the puncturing done. This is done by deleting some pieces of the encoder output such that the most-likely decoders remain effective</dd>
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Evaluation on the generator polynomials. Can be implemented with a small number of XOR gates</span></dd>
 
 
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Decoders based on the Viterbi algorithm (trellis decoding) were developed first, which result in the most-likely codeword for the encoded bits <a href="#cite-2" class="cite">[3]</a>. Following, other trellis decoders such as the BCJR decoding algorithm <a href="#cite-3" class="cite">[4]</a> were developed later.</span></dd>
 
 
 
@@ -111,7 +115,7 @@
 
 <dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
-  <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span>
+  <span class="paragraph-in-list">A type of convolutional code used in Real-time Applcation networks <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Mobile and radio communications (3G networks) use convolutional codes concatenated with Reed-Solomon codes to obtain suitable performance <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">A convolutional code with rate 1/2 was used for deep-space and satellite communication <a href="#cite-6" class="cite">[7]</a></span>
 </dd>
 
 
@@ -124,7 +128,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/bits_into_bits">Binary code</a></span>  </li>
 </ul>
 </dd>
 
@@ -135,21 +139,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/alternant">Alternant Codes</a></span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/quantum_convolutional">Quantum convolutional code</a></span>    <span class="code-cousins-1-detail">(Quantum analogue of convolutional codes)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank code</a></span>    <span class="code-cousins-1-detail">(The construction of the generators matrix of both codes uses a Vandermonde matrix.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span>    <span class="code-cousins-1-detail">(Every Reed Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span>    <span class="code-cousins-1-detail">(Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(The classical information in this code is encoded using a reed_solomon code.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code</a></span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-5" class="cite">[6]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -162,24 +154,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    reed_solomon
+    convolutional
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Reed-Solomon code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/reed_solomon</dd>
+      <dd>“Convolutional code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/convolutional</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_reed_solomon,
-  title={Reed-Solomon code},
+      <dd class="bibtex">@incollection{eczoo_convolutional,
+  title={Convolutional code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/reed_solomon}
+  url={https://errorcorrectionzoo.org/c/convolutional}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/reed_solomon</dd>
+      <dd>https://errorcorrectionzoo.org/c/convolutional</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -187,10 +179,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/reed_solomon.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/convolutional.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=reed_solomon">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>reed_solomon</code></div>
+       href="/edit_code?code_id=convolutional">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>convolutional</code></div>
 </dd>
 
 </dl>
@@ -200,17 +192,37 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        Peter Elias. Coding for noisy channels. IRE Convention Records, 3(4):37–46, 1955.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+        L. Sari, “Effects of Puncturing Patterns on Punctured Convolutional Codes”, TELKOMNIKA (Telecommunication, Computing, Electronics and Control) <span class="textbf">10</span>, (2012). <a href="https://doi.org/10.12928/telkomnika.v10i4.171" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
+        A. Viterbi, “Error bounds for convolutional codes and an asymptotically optimum decoding algorithm”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 260 (1967). <a href="https://doi.org/10.1109/TIT.1967.1054010" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        L. Bahl et al., “Optimal decoding of linear codes for minimizing symbol error rate (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">20</span>, 284 (1974). <a href="https://doi.org/10.1109/TIT.1974.1055186" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        S. I. Mrutu, A. Sam, and N. H. Mvungi, “Forward Error Correction Convolutional Codes for RTAs&#x27; Networks: An Overview”, International Journal of Computer Network and Information Security <span class="textbf">6</span>, 19 (2014). <a href="https://doi.org/10.5815/ijcnis.2014.07.03" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
         T. Halonen, J. Romero, and J. Melero, editors , <span class="textit">GSM, GPRS and EDGE Performance</span> (Wiley, 2003). <a href="https://doi.org/10.1002/0470866969" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        Butman, Deutsch, and Miller. Performance of concatenated codes for deep space missions. 1981.
       </dd>
     
     </dl>
