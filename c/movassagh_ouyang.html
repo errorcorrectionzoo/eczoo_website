@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Movassagh-Ouyang Hamiltonian Codes" />
+<meta name="citation_title" content="Movassagh-Ouyang Hamiltonian code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Movassagh-Ouyang Hamiltonian Codes" />
+<meta name="DC.title" content="Movassagh-Ouyang Hamiltonian code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Movassagh-Ouyang Hamiltonian Codes
+      Movassagh-Ouyang Hamiltonian code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Movassagh-Ouyang Hamiltonian Codes</h1>
+    <h1>Movassagh-Ouyang Hamiltonian code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Movassagh-Ouyang Hamiltonian Codes</span></span>
+  <span class="code-name">Movassagh-Ouyang Hamiltonian code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/movassagh_ouyang">&nbsp;</a>-->
@@ -81,8 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">The code construction is only explicit for linear distance codes encoding one logical qubit. For finite rate codes, there is no rigorous proof that the algorithm succeeds, and approximate constructions are described instead.</dd>
+<dd class="code-description"><p>This is a family of codes derived via an algorithm that takes as input <span class="textit">any</span> binary classical code and outputs a quantum code (note that this framework can be extended to <span class="inline-math">\(q\)</span>-ary codes). The algorithm is probabalistic but succeeds almost surely if the classical code is random. An explicit code construction does exist for linear distance codes encoding one logical qubit. For finite rate codes, there is no rigorous proof that the construction algorithm succeeds, and approximate constructions are described instead.</p>
+<p>This family strictly generalizes CSS codes (because CSS codes come only from linear or self orthogonal classical codes). These codes can be shown to be realized as a subspace of the ground space of a (geometrically) local Hamiltonian.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Let <span class="inline-math">\(C \subset \{0,1,\dots,q-1\}^n\)</span> be a classical code with distance <span class="inline-math">\(d_x\)</span>. Let <span class="inline-math">\(d_z\)</span> satisfy <span class="inline-math">\(q^n &gt; 2 V_q(d_z-1) -1\)</span>, where <span class="inline-math">\(V_q(r)\)</span> is the volume of the <span class="inline-math">\(q\)</span>-ary Hamming ball of radius <span class="inline-math">\(r\)</span>. Then the algorithm produces a quantum code with distance <span class="inline-math">\(d = \text{min}(d_x,d_z)\)</span>. Asymptotically, the distance scales linearly with <span class="inline-math">\(n\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -91,6 +94,8 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">The rate depends on the classical code, but distance can scale linearly with <span class="inline-math">\(n\)</span>.</dd>
 
 
 
@@ -118,7 +123,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-parents-1-detail">(Movassagh-Ouyang codes reside in the ground space of a local Hamiltonian.)</span>  </li>
 </ul>
 </dd>
 
@@ -132,6 +137,21 @@
 </ul>
 </dd>
 
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/cws">Codeword stabilized (CWS) code</a></span>    <span class="code-cousins-1-detail">(Movassagh-Ouyang codes overlap the CWS (code-word stabilized) codes but neither family is contained in the other.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Many, but not all, Movassagh-Ouyang codes are stabilizer codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/bits_into_bits">Binary code</a></span>    <span class="code-cousins-1-detail">(Movassagh-Ouyang codes are constructed from classical binary codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/cws">Codeword stabilized (CWS) code</a></span>    <span class="code-cousins-1-detail">(The Movassagh-Ouyang codes overlap the CWS codes but neither family is contained in the other.)</span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -149,10 +169,10 @@
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Movassagh-Ouyang Hamiltonian Codes”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/movassagh_ouyang</dd>
+      <dd>“Movassagh-Ouyang Hamiltonian code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/movassagh_ouyang</dd>
       <dt>BibTeX:</dt>
       <dd class="bibtex">@incollection{eczoo_movassagh_ouyang,
-  title={Movassagh-Ouyang Hamiltonian Codes},
+  title={Movassagh-Ouyang Hamiltonian code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
@@ -175,6 +195,16 @@
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Ramis Movassagh and Yingkai Ouyang, “Constructing quantum codes from any classical code and their embedding in ground space of local Hamiltonians”. <a href="https://arxiv.org/abs/2012.01453" target="_blank" class="href">2012.01453</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Gauge stabilizer code</span></span>
+  <span class="code-name">Gauge stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/gauge_stabilizer">&nbsp;</a>-->
@@ -81,8 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>Also called a <span class="textit">subsystem stabilizer code</span>. A stabilizer code with some of its logical qubits denoted as <span class="textit">gauge</span> qubits and not used for storage of logical information. Note that this doesnt lead to new codes but does lead to new error correction and fault tolerance procedures. Subsystem codes are denoted by <span class="inline-math">\([[n,k,r,d]]\)</span>, similar to stabilizer codes, but with an extra parameter <span class="inline-math">\(r\)</span> denoting the number of gauge qubits.</p>
+<p>To create these codes proceed as follows. Choose <span class="inline-math">\(2n\)</span> operators <span class="inline-math">\(\{ \tilde{X}_j,\tilde{Z}_j\}_{j=1}^n\)</span> from <span class="inline-math">\(\mathsf{P}_n\)</span>, the Pauli group on <span class="inline-math">\(n\)</span> qubits, such that they obey the same commutation relations as the regular <span class="inline-math">\(n\)</span>-qubit Pauli generators <span class="inline-math">\( \{X_j,Z_j\}_{j=1}^n \)</span> (the subscript on these latter operators indicates the single qubit the Pauli matrix acts on). The tilde operators might act on more than one physical (or <span class="textit">bare</span>) qubit but they behave as if they acted only on a single qubit. WLOG we can choose a stabilizer group as <span class="inline-math">\( \mathsf{S} = \langle Z_1,\dots,Z_s \rangle \)</span>. It follows that the normalizer of <span class="inline-math">\(\mathsf{S} \)</span> is <span class="inline-math">\( N(\mathsf{S}) = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_n, \tilde{X}_{s+1},\dots, \tilde{X}_n \rangle \)</span>. We now choose a gauge group as <span class="inline-math">\( \mathsf{G} = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_s, \tilde{X}_{s+1}, \tilde{Z}_{s+1}, \dots, \tilde{X}_{s+r}, \tilde{Z}_{s+r} \rangle \)</span> with <span class="inline-math">\( s + r \leq n \)</span>. The logical group is choosen as <span class="inline-math">\( \mathsf{L} = N(\mathsf{S})/\mathsf{G} \simeq \langle \tilde{X}_{s+r+1},\tilde{Z}_{s+r+1}, \dots, \tilde{X}_n,\tilde{Z}_n \rangle \)</span>. Now the codespace <span class="inline-math">\( C \)</span> is as usual the <span class="inline-math">\(+1\)</span> eigenspace of the stabilizer <span class="inline-math">\( \mathsf{S} \)</span>. But the gauge and logical groups have further decomposed this space into <span class="inline-math">\( C = A \otimes B \simeq (\mathbb{C}^2)^{\otimes k} \otimes (\mathbb{C}^2)^{\otimes r} \)</span>. Thus the Hilbert space is partitioned into 3 sets; <span class="inline-math">\(k\)</span> logical qubits, <span class="inline-math">\(r\)</span> gauge qubits, and <span class="inline-math">\(s\)</span> stabilizer qubits, with <span class="inline-math">\(s+r+k=n\)</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. More generally, a set of errors <span class="inline-math">\( \{ E_a \} \)</span> is correctable iff <span class="inline-math">\( E_aE_b \not\in N(\mathsf{S}) \setminus \mathsf{G} \)</span> for all pairs <span class="inline-math">\(a,b\)</span>. The distance of the code is the minimal weight of operators in <span class="inline-math">\( N(\mathsf{S}) \setminus \mathsf{G}\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -108,10 +111,23 @@
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">When the gauge group <span class="inline-math">\( \mathsf{G} \)</span> is abelian, the above is reduced to the standard stabilizer formalism.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
 
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/oecc">Operator quantum error-correcting code</a></span>  </li>
+</ul>
+</dd>
 
 
 <dt class="code-cousins">Cousin(s)</dt>
@@ -119,6 +135,10 @@
 
 
 <ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Gauge stabilizer codes reduce to stabilizer codes when there are no gauge qubits.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced-product code</a></span>    <span class="code-cousins-1-detail">(According to <a href="#cite-1" class="cite">[2]</a>, distance balancing is a construction for forming balanced-product subsystem codes.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>  </li>
 </ul>
@@ -166,6 +186,21 @@
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        D. Poulin, “Stabilizer Formalism for Operator Quantum Error Correction”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.230504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0508131" target="_blank" class="href">quant-ph/0508131</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Cyclic quantum code" />
+<meta name="citation_title" content="Quantum cyclic code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Cyclic quantum code" />
+<meta name="DC.title" content="Quantum cyclic code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Cyclic quantum code
+      Quantum cyclic code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Cyclic quantum code</h1>
+    <h1>Quantum cyclic code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Cyclic quantum code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Quantum cyclic code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/quantum_cyclic">&nbsp;</a>-->
@@ -81,8 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An code <span class="inline-math">\(C\)</span> constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits) is cyclic if a cyclic permutation of the subsystems leaves the code subspace invariant.</dd>
+<dd class="code-description">A code <span class="inline-math">\(C\)</span> constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits) is cyclic if a cyclic permutation of the subsystems leaves the code subspace invariant.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Cyclic symmetry guarantees that if a single subsystem is protected against some noise, then all other subsystems are also.</dd>
 
 
 <!-- Display features -->
@@ -98,6 +100,8 @@
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
 
@@ -110,7 +114,7 @@
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list"></span>
+  <span class="paragraph-in-list">Many examples have been found by computer algebra programs. Ref. <a href="#cite-0" class="cite">[1]</a> give examples of <span class="inline-math">\([[17,1,7]]\)</span> and <span class="inline-math">\([[17,9,3]]\)</span> quantum cyclic codes.</span>
 </dd>
 
 
@@ -136,6 +140,8 @@
     <span class="code-cousins-1-code"><a href="/c/cyclic">Cyclic code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[5,1,3]]\)</span> code is the smallest known example of quantum cyclic code .)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/frobenius">Frobenius code</a></span>  </li>
 </ul>
 </dd>
 
@@ -155,10 +161,10 @@
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Cyclic quantum code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_cyclic</dd>
+      <dd>“Quantum cyclic code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_cyclic</dd>
       <dt>BibTeX:</dt>
       <dd class="bibtex">@incollection{eczoo_quantum_cyclic,
-  title={Cyclic quantum code},
+  title={Quantum cyclic code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},

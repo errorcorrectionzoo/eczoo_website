@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</dd>
+<dd class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</dd>
@@ -136,6 +136,10 @@
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/alternant">Alternant Codes</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank code</a></span>    <span class="code-cousins-1-detail">(The construction of the generators matrix of both codes uses a Vandermonde matrix.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span>    <span class="code-cousins-1-detail">(Every Reed Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [[n,k,n-k+1]]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span>  </li>
   <li class="paragraph-in-list">
@@ -195,6 +199,11 @@
       <dt id="cite-0">[1]</dt>
       <dd>
         I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

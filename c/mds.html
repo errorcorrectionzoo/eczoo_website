@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Cyclic code" />
+<meta name="citation_title" content="Maximum distance separable (MDS) code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Cyclic code" />
+<meta name="DC.title" content="Maximum distance separable (MDS) code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Cyclic code
+      Maximum distance separable (MDS) code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Cyclic code</h1>
+    <h1>Maximum distance separable (MDS) code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_cyclic">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_mds">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,16 +73,22 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Cyclic code</span></span>
+  <span class="code-name">Maximum distance separable (MDS) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/cyclic">&nbsp;</a>-->
+   href="/c/mds">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over an alphabet is cyclic if, for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\in C\)</span>.</dd>
+<dd class="code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
+<span class="display-math env-align">\begin{align}
+d \leq n-k+1
+\end{align}</span>
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-1" class="cite">[2]</a>.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</dd>
 
 
 <!-- Display features -->
@@ -110,7 +116,7 @@
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list"></span>
+  <span class="paragraph-in-list">The dual of an MDS codes is always MDS.</span><span class="paragraph-in-list">The codes <span class="inline-math">\( [[n,1,n]]_q, [[n,n-1,2]]_q, [[n,n,1]]_q \)</span> for any <span class="inline-math">\(q\)</span> are MDS codes. These are called the <span class="textit">trivial</span> MDS codes.</span><span class="paragraph-in-list">The only binary MDS codes are the trivial ones.</span>
 </dd>
 
 
@@ -122,7 +128,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/skew_cyclic">Skew-cyclic code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>  </li>
 </ul>
 </dd>
 
@@ -133,15 +139,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_cyclic">Quantum cyclic code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousins-1-detail">(Cyclic codes can be used to construct translation-invariant Majorana stabilizer codes, provided that they are also weakly self-dual <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(Every Reed Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [[n,k,n-k+1]]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -154,24 +152,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    cyclic
+    mds
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Cyclic code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/cyclic</dd>
+      <dd>“Maximum distance separable (MDS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/mds</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_cyclic,
-  title={Cyclic code},
+      <dd class="bibtex">@incollection{eczoo_mds,
+  title={Maximum distance separable (MDS) code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/cyclic}
+  url={https://errorcorrectionzoo.org/c/mds}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/cyclic</dd>
+      <dd>https://errorcorrectionzoo.org/c/mds</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -179,10 +177,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/cyclic.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/mds.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=cyclic">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>cyclic</code></div>
+       href="/edit_code?code_id=mds">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>mds</code></div>
 </dd>
 
 </dl>
@@ -192,7 +190,17 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

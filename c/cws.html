@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Codeword stabilized (CWS) code</span></span>
+  <span class="code-name">Codeword stabilized (CWS) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/cws">&nbsp;</a>-->
@@ -81,8 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p>
+<p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>.</dd>
 
 
 <!-- Display features -->
@@ -93,11 +96,15 @@
 
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">If <span class="inline-math">\( \mathcal{C} \)</span> has an efficient classical encoder, then so does the CWS code <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span>.</span></dd>
 
 
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">There is no known <span class="textit">efficient</span> algorithm to decode <span class="textit">non-additive</span> (non-stabilizer) CWS codes.</span></dd>
 
 
 
@@ -128,10 +135,21 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parent-of-1-detail">(If the CWS set <span class="inline-math">\( \mathcal{W} \)</span> is an abelian group not containing <span class="inline-math">\(-I\)</span>, then the CWS code is a stabilizer code.)</span>  </li>
 </ul>
 </dd>
 
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span>    <span class="code-cousins-1-detail">(The Movassagh-Ouyang codes overlap the CWS codes but neither family is contained in the other.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span>    <span class="code-cousins-1-detail">(Movassagh-Ouyang codes overlap the CWS (code-word stabilized) codes but neither family is contained in the other.)</span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -175,6 +193,16 @@
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. Cross et al., “Codeword Stabilized Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 433 (2009). <a href="https://doi.org/10.1109/TIT.2008.2008136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0708.1021" target="_blank" class="href">0708.1021</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 
