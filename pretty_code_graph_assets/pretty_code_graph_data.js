@@ -403,7 +403,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qecc_finite",
-                    "label": "Finite-dimensional QECC",
+                    "label": "Finite-dimensional quantum code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
@@ -1399,7 +1399,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_approximate_qecc",
-                    "label": "Approximate QECC",
+                    "label": "Approximate quantum code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
