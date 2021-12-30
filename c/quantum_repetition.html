@@ -111,7 +111,7 @@
 
 <dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
-  <span class="paragraph-in-list">Implemented on Sycamore processor by Google Quantum AI <a href="#cite-0" class="cite">[1]</a> and earlier in other devices (see Table S6 in said paper).</span>
+  <span class="paragraph-in-list">15-qubit IBM processor <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Sycamore processor by Google Quantum AI <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">See Table S6 in Ref. <a href="#cite-1" class="cite">[2]</a> for a history of earlier implementations.</span>
 </dd>
 
 <dt class="code-notes">Notes</dt>
@@ -143,9 +143,9 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></span>    <span class="code-cousins-1-detail">(Parts of the VSLQ codewords resemble the two-qubit phase-flip repetition code, though the code cannot correct phase errors. Unlike the phase-flip code, the VSLQ code can correct for single photon loss because it uses the second excited state in the construction, which remains distinct from the vacuum even after photon loss.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(Shor&#x27;s code is a concatenation of a three-qubit bit-flip with a three-qubit phase-flip repetition code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></span>    <span class="code-cousins-1-detail">(Parts of the VSLQ codewords resemble the two-qubit phase-flip repetition code, though the code cannot correct phase errors. Unlike the phase-flip code, the VSLQ code can correct for single photon loss because it uses the second excited state in the construction, which remains distinct from the vacuum even after photon loss.)</span>  </li>
 </ul>
 </dd>
 
@@ -196,6 +196,11 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
+        J. R. Wootton and D. Loss, “Repetition code of 15 qubits”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.052313" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.00990" target="_blank" class="href">1709.00990</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
         Zijun Chen et al., “Exponential suppression of bit or phase flip errors with repetitive error correction”. <a href="https://arxiv.org/abs/2102.06132" target="_blank" class="href">2102.06132</a>
       </dd>
     
@@ -222,11 +227,11 @@
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

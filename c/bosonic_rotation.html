@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Bosonic rotation code</span></span>
+  <span class="code-name">Bosonic rotation code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/bosonic_rotation">&nbsp;</a>-->
@@ -81,8 +81,12 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</p>
+<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |j q N + kN \rangle\)</span> for some coefficients <span class="inline-math">\(\c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
+<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(qk_j+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(|\overline{j}\rangle \mid j \in \mathbb{Z}_q\)</span> are constructed as <span class="inline-math">\(|\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle\)</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Losses or gains less than <span class="inline-math">\(N\)</span> are detectable. Dephasing rotations <span class="inline-math">\(\exp(\matrhm{i}\theta \hat{n})\)</span> can be detected whenever <span class="inline-math">\(\theta\)</span> is roughly less than <span class="inline-math">\(\pi/N\)</span>. To get precise bounds on <span class="inline-math">\(\theta\)</span>, one needs to analyze the particular bosonic rotation code.</dd>
 
 
 <!-- Display features -->
@@ -93,9 +97,17 @@
 
 
 
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">The optimal way to prepare codewords depends on the exact rotation code in question <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
  
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">The logical Pauli-<span class="inline-math">\(Z\)</span> gate can be the discrete rotation operator <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \pi \hat n /N}\)</span>, and the logical Pauli-<span class="inline-math">\(X\)</span> gate can be the (note: non-unitary) number-translation operator <span class="inline-math">\(\sum_{n=0}^\infty |n\rangle\bra{n+N}\)</span>.</span><span class="paragraph-in-list">For qubit codes, a logical phase gate is <span class="inline-math">\(S = \mathrm{e}^{\pi \mathrm{i} \hat n^2 / 2N^2}\)</span>.</span><span class="paragraph-in-list">The <span class="inline-math">\(T = \mathrm{diag}(1,\exp(\mathrm{i}\pi/4))\)</span> gate can be done via gate teleportation and a resource state <span class="inline-math">\(\vert 0_N\rangle + \exp(\mathrm{i}\pi/4) \vert 1_N \rangle\)</span>.</span><span class="paragraph-in-list">A controlled-rotation gate between an order <span class="inline-math">\(N\)</span> rotation code and an order <span class="inline-math">\(M\)</span> rotation code is <span class="inline-math">\(\mathrm{CROT}_{NM} = \mathrm{e}^{(2\pi\mathrm{i} / qNM) \hat n \otimes \hat n}\)</span>.</span></dd>
+
+
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span></dd>
 
 
 
@@ -106,12 +118,6 @@
 
 
 
-
-
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list"></span>
-</dd>
 
 
 <!-- Relationships to other codes -->
@@ -132,10 +138,23 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/cat">Cat code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/binomial">Binomial code</a></span>    <span class="code-parent-of-1-detail">(One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/cat">Cat code</a></span>    <span class="code-parent-of-1-detail">(The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/number_phase">Number phase code</a></span>    <span class="code-parent-of-1-detail">(Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
 </ul>
 </dd>
 
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousins-1-detail">(GKP codes utilize the translational symmetry in phase space, while rotation codes utilize rotational symmetry.)</span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -171,7 +190,7 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/bosonic_rotation.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state/bosonic_rotation.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=bosonic_rotation">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>bosonic_rotation</code></div>
@@ -179,6 +198,21 @@
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 
@@ -200,11 +234,11 @@
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

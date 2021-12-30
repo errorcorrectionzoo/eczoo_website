@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Dual-rail code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Dual-rail code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+      Dual-rail code
+    [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+<div
+  id="bodycontents"
+  >
+
+  <header id="header">
+    <h1>Dual-rail code</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_dual_rail">
+
+<!--<dt></dt>-->
+<dd class="info-popup-button-container"></dd>
+
+<dt class="code-name">Name</dt>
+<dd class="code-name">
+  <span class="code-name-cell">
+  <span class="code-name">Dual-rail code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/dual_rail">&nbsp;</a>-->
+</dd>
+
+
+<dt class="code-description">Description</dt>
+<dd class="code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</dd>
+
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection"><p>This is an error-detecting code against one photon loss event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state <span class="inline-math">\(|00\rangle\)</span> is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.</p>
+<p>For Deutsch&#x27;&#x27;s  problem specifically, this code protects against errors resulting in states that have the correct photon number, but in the wrong modes <a href="#cite-0" class="cite">[1]</a>.</p></dd>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+ 
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">General gates are performed using beamsplitters and Kerr non-linearities. Universal quantum computing can be achieved with photons in dual-rail encodings using the KLM protocol <a href="#cite-1" class="cite">[2]</a> with only linear optical elements and photon detectors.</span></dd>
+
+
+
+
+
+
+
+
+
+
+
+
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">For Deutsch&#x27;s problem <a href="#cite-2" class="cite">[3]</a> with optical qubits, error correction using photon number detection reduces the error probability from <span class="inline-math">\(\frac{1}{4} (1+e^{-\gamma}-2e^{-3\gamma/2}) \)</span>   to <span class="inline-math">\(\frac{1}{2} (1- sech \gamma/2)\)</span>.</span>
+</dd>
+
+
+<!-- Relationships to other codes -->
+
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>  </li>
+</ul>
+</dd>
+
+
+
+
+<!-- zoo-related information and how to edit -->
+
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</dt>
+<dd class="display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    dual_rail
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Dual-rail code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/dual_rail</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_dual_rail,
+  title={Dual-rail code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/dual_rail}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/dual_rail</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state/dual_rail.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=dual_rail">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>dual_rail</code></div>
+</dd>
+
+</dl>
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        E. Knill, R. Laflamme, and G. J. Milburn, “A scheme for efficient quantum computation with linear optics”, Nature <span class="textbf">409</span>, 46 (2001). <a href="https://doi.org/10.1038/35051009" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        “Rapid solution of problems by quantum computation”, Proceedings of the Royal Society of London. Series A: Mathematical and Physical Sciences <span class="textbf">439</span>, 553 (1992). <a href="https://doi.org/10.1098/rspa.1992.0167" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+   </div>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
+        <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/edit_code">Add new code</a></li>
+        <li><a href="/additional_resources">Additional resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <!-- <h1>Additional resources</h1> -->
+      <!-- <ul class="navlinks"> -->
+      <!--   <li>…</li> -->
+      <!-- </ul> -->
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+Error correction zoo by Victor V. Albert, Philippe Faist, and
+<a href="/about">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

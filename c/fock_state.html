@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. For example, single-mode Fock-state codes include any qubit codes whose basis states are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</dd>
+<dd class="code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</dd>
@@ -130,11 +130,13 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parent-of-1-detail">(Single-mode Fock-state codes are typically rotationally invariant.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/dual_rail">Dual-rail code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parent-of-1-detail">(Single-mode Fock-state codes are typically rotationally invariant.)</span>  </li>
 </ul>
 </dd>
 
@@ -147,6 +149,8 @@
     <span class="code-cousins-1-code"><a href="/c/binary_linear">Binary linear code</a></span>    <span class="code-cousins-1-detail">(Fock-state code distance is a natural extension of Hamming distance between binary strings.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span>    <span class="code-cousins-1-detail">(Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-0" class="cite">[1]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/fusion">Fusion Based Quantum Computing</a></span>    <span class="code-cousins-1-detail">(While FBQC is a general framework, an intended application to linear-optical quantum computing will likely utilize small Fock-state bosonic codes such as the dual-rail code.)</span>  </li>
 </ul>
 </dd>
 
@@ -184,7 +188,7 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state/fock_state.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=fock_state">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>fock_state</code></div>
@@ -228,11 +232,11 @@
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

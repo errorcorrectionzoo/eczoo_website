@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Number phase code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Number phase code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+      Number phase code
+    [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+<div
+  id="bodycontents"
+  >
+
+  <header id="header">
+    <h1>Number phase code</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_number_phase">
+
+<!--<dt></dt>-->
+<dd class="info-popup-button-container"></dd>
+
+<dt class="code-name">Name</dt>
+<dd class="code-name">
+  <span class="code-name-cell">
+  <span class="code-name">Number phase code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/number_phase">&nbsp;</a>-->
+</dd>
+
+
+<dt class="code-description">Description</dt>
+<dd class="code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-1" class="cite">[2]</a>,
+<span class="display-math env-align">\begin{align}
+|\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
+\end{align}</span>
+Since phase states and thus the ideal codewords are not normalizable, approximate versions need to be constructed. The codes&#x27; key feature is that, in the ideal case, phase measurement has zero uncertainty, making it a good canditate for a syndrome measurement.</p>
+<p>Logical states of an order-<span class="inline-math">\(N\)</span> number-phase qubit encoding are <span class="inline-math">\(|\overline{0}\rangle= \sum_{m=0}^{2N-1} |\phi = m\pi/N\rangle\)</span> and <span class="inline-math">\(|\overline{1}\rangle = \sum_{m=0}^{2N-1} (-1)^m |\phi=m\pi/N\rangle\)</span>. By performing the summation over <span class="inline-math">\(m\)</span>, one finds that <span class="inline-math">\(|\overline{0}\rangle\)</span> is supported on Fock states <span class="inline-math">\(|2kN\rangle\)</span>, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is supported on states <span class="inline-math">\(|(2k+1)N\rangle\)</span>, for <span class="inline-math">\(k \geq 0\)</span>.</p></dd>
+
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Number-phase codes of order <span class="inline-math">\(N\)</span> detect up to <span class="inline-math">\(N\)</span> photon loss or gain errors, and dephasing up to <span class="inline-math">\(\theta = \pi/N\)</span>.</dd>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+ 
+
+
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Measurement done in the logical <span class="inline-math">\(X\)</span>, or dual, basis has zero uncertainty in the case of ideal number phase codes. Approximate number-phase codes are characterized by vanishing phase uncertainty.</span><span class="paragraph-in-list">Number measurement can be done by using the CROT gate <span class="inline-math">\(\mathrm{e}^{(2\pi \mathrm{i} / NM) \hat n \otimes \hat n}\)</span>. See Section 4.B.1 of Ref. <a href="#cite-0" class="cite">[1]</a>.</span></dd>
+
+
+<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Fault-tolerant computation schemes with number-phase codes have been proposed based on concatenation with Bacon-Shor subsystem codes <a href="#cite-0" class="cite">[1]</a>.</span></dd>
+
+
+
+
+
+
+
+
+
+
+<!-- Relationships to other codes -->
+
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parents-1-detail">(Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+</ul>
+</dd>
+
+
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/rotor_gkp">Rotor GKP code</a></span>    <span class="code-cousins-1-detail">(Number phase codes are a manifestation of planar-rotor GKP codes in an oscillator. Both codes protect against small shifts in angular degrees of freedom.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binomial">Binomial code</a></span>    <span class="code-cousins-1-detail">(In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the binomial code has vanishing variance, just like in a number-phase code <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/cat">Cat code</a></span>    <span class="code-cousins-1-detail">(In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the cat code has vanishing variance, just like in a number-phase code <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+</ul>
+</dd>
+
+
+<!-- zoo-related information and how to edit -->
+
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</dt>
+<dd class="display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    number_phase
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Number phase code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/number_phase</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_number_phase,
+  title={Number phase code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/number_phase}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/number_phase</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state/number_phase.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=number_phase">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>number_phase</code></div>
+</dd>
+
+</dl>
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+   </div>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
+        <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/edit_code">Add new code</a></li>
+        <li><a href="/additional_resources">Additional resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <!-- <h1>Additional resources</h1> -->
+      <!-- <ul class="navlinks"> -->
+      <!--   <li>…</li> -->
+      <!-- </ul> -->
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+Error correction zoo by Victor V. Albert, Philippe Faist, and
+<a href="/about">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

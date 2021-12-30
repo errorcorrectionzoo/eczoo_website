@@ -88,13 +88,17 @@ H_{X} &amp; 0
 \end{pmatrix}~.
 \label{eq:parity}
 \end{align}</span></p>
-<p>Encoding is based on two related <a href="/c/binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]\)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]\)</span> code <span class="inline-math">\(C_Z\)</span>, satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>. The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is associated with the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>), and the requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers of <span class="inline-math">\(C_X\)</span> commute with the <span class="inline-math">\(Z\)</span>-stabilizers of <span class="inline-math">\(C_Z\)</span>.</p>
-<p>A CSS code has <span class="textit">stabilizer weight</span> <span class="inline-math">\(w\)</span> if the highest weight of any stabilizer generator is <span class="inline-math">\(w\)</span>, i.e., any row and column of <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span> has weight at most <span class="inline-math">\(w\)</span>. In the context of comparing weight as well as of noise models biased toward <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-type errors, an extended notation for CSS codes is <span class="inline-math">\([[n,k,(d_X,d_Z),w]]\)</span>.</p>
-<p>There exists a many-to-one mapping from size three chain complexes to CSS codes <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a> that allows one to extract code properties from topological features of the complexes. Codes constructed in this manner are sometimes called <span class="textit">homological codes</span>, but they are equivalent to CSS codes.</p>
-<p>A <span class="textit">chain complex</span> of size three is given by binary vector spaces <span class="inline-math">\(C_2\)</span>, <span class="inline-math">\(C_1\)</span>, <span class="inline-math">\(C_0\)</span> and boundary operators (read: matrices) <span class="inline-math">\(\partial_2\)</span>, <span class="inline-math">\(\partial_1\)</span> that satisfy <span class="inline-math">\(\partial_1 \circ \partial_2 = 0\)</span>.
-One constructs a CSS code by associating a physical qubit to every basis element of <span class="inline-math">\(C_1\)</span> and associating vectors of <span class="inline-math">\(\text{Im}(\partial_1^T)\)</span> and <span class="inline-math">\(\text{Im}(\partial_2)\)</span> with the symplectic representation of stabilizers <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span>, respectively.
-Then, the normalizer of the stabilizers <span class="inline-math">\({\mathsf{N}}(C_X)\)</span> and <span class="inline-math">\({\mathsf{N}}(C_Z)\)</span> is <span class="inline-math">\(\text{Ker}(\partial_2^T)\)</span> and <span class="inline-math">\(\text{Ker}(\partial_1)\)</span>, respectively. Usually, the chain complex used in the construction comes from the chain complex associated with a cellulation of a manifold. When the manifold is a two-dimensional surface, its entire chain is used. For larger dimensions, one can use the three largest non-trivial vector spaces in its chain.</p>
-<p>The reverse mapping is as follows <a href="#cite-5" class="cite">[6]</a><a href="#cite-7" class="cite">[8]</a>. Given a CSS code with parity check matrices <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span>, let both boundary operators be <span class="inline-math">\(\partial = H_Z^TUH_X\)</span> for an arbitrary invertible matrix <span class="inline-math">\(U\)</span>. Then, the code derived from a chain with this boundary operator yields <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span> corresponding to <span class="inline-math">\(\text{Im}(\partial^T)\)</span> and <span class="inline-math">\(\text{Im}(\partial)\)</span>, respectively.</p></dd>
+<p>Encoding is based on two related <a href="/c/binary_linear" class="ref">binary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]\)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]\)</span> code <span class="inline-math">\(C_Z\)</span>, satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>. The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>). The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.</p>
+<p>A CSS code has <span class="textit">stabilizer weight</span> <span class="inline-math">\(w\)</span> if the highest weight of any stabilizer generator is <span class="inline-math">\(w\)</span>, i.e., any row and column of <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span> has weight at most <span class="inline-math">\(w\)</span>. In the context of comparing weight as well as of noise models biased toward <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-type errors, an extended notation for CSS codes is <span class="inline-math">\([[n,k,(d_X,d_Z),w]]\)</span>. The quantity <span class="inline-math">\(\min\{d_X,d_Z\}\)</span> is often called the <span class="textit">worst-case minimum distance</span>.</p>
+<p>There exists a many-to-one mapping from size three chain complexes to CSS codes <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a> that allows one to extract code properties from topological features of the complexes. Codes constructed in this manner are sometimes called <span class="textit">homological CSS codes</span>, but they are equivalent to CSS codes. This mapping has allowed the application of results from topology to error correction, yielding QLDPC codes with favorable properties.</p>
+<p>A <span class="textit">chain complex</span> of size three is given by binary vector spaces <span class="inline-math">\(A_2\)</span>, <span class="inline-math">\(A_1\)</span>, <span class="inline-math">\(A_0\)</span> and binary matrices <span class="inline-math">\(\partial_{i=1,2}\)</span> (called <span class="textit">boundary operators</span>) <span class="inline-math">\(A_i\)</span> to <span class="inline-math">\(A_{i-1}\)</span> that satisfy <span class="inline-math">\(\partial_1 \partial_2 = 0\)</span>. Such a complex is typically denoted as
+<span id="eq--chain" class="display-math env-align">\begin{align}
+A_2 \xrightarrow{\partial_2} A_1 \xrightarrow{\partial_1} A_0~.
+\label{eq:chain}
+\end{align}</span>
+One constructs a CSS code by associating a physical qubit to every basis element of <span class="inline-math">\(A_1\)</span>, and defining parity-check matrices <span class="inline-math">\(H_X=\partial_1^T\)</span> and <span class="inline-math">\(H_Z=\partial_2\)</span>). That way, the spaces <span class="inline-math">\(A_0\)</span> and <span class="inline-math">\(A_2\)</span> can be associated with <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli operators, respectively, and boundary operators determine the Paulis making up the stabilizer generators. The requirement <span class="inline-math">\(\partial_1 \partial_2 = 0\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers associated with <span class="inline-math">\(H_X\)</span> commute with the <span class="inline-math">\(Z\)</span>-stabilizers associated with <span class="inline-math">\(H_Z\)</span>.</p>
+<p>Usually, the chain complex <span class="inline-math eqref">\eqref{eq:chain}</span> used in the construction comes from the chain complex associated with a cellulation of a manifold. When the manifold is a two-dimensional surface, its entire chain is used. Higher-dimensional manifolds allow for longer chain complexes, and one can use the three largest non-trivial vector spaces in its chain.</p>
+<p>The reverse mapping is as follows <a href="#cite-5" class="cite">[6]</a><a href="#cite-7" class="cite">[8]</a>. Given a CSS code with parity check matrices <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span>, let both boundary operators be <span class="inline-math">\(\partial = H_Z^TUH_X\)</span> for an arbitrary invertible matrix <span class="inline-math">\(U\)</span>. The fact that the stabilizer generators commute ensures that the boundary operator satisfies <span class="inline-math">\(\partial^2=0\)</span>, yielding a chain complex.</p></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection"><p>Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</p>
@@ -128,7 +132,7 @@ Then, the normalizer of the stabilizers <span class="inline-math">\({\mathsf{N}}
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product" class="ref">hypergraph product</a> codes.</span>
+  <span class="paragraph-in-list">Introduction to CSS dictionary by <a href="https://www.youtube.com/watch?v=SeLpWg_8qlc" target="_blank" class="href">M. Hastings</a>.</span><span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product" class="ref">hypergraph product</a> codes.</span>
 </dd>
 
 
@@ -152,23 +156,23 @@ Then, the normalizer of the stabilizers <span class="inline-math">\({\mathsf{N}}
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_polar">Quantum polar code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/color">Color code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/homological_product">Homological product code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_repetition">Quantum repetition code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-parent-of-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r, 2^r-1-2r, 3]]\)</span> Hamming-based CSS code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-parent-of-1-detail">(The code required to construct this code must be a non-degenerate css code.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/homological_product">Homological product code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_repetition">Quantum repetition code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_polar">Quantum polar code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-parent-of-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>  </li>
 </ul>
@@ -186,13 +190,13 @@ Then, the normalizer of the stabilizers <span class="inline-math">\({\mathsf{N}}
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/homological_classical">Graph homology code</a></span>    <span class="code-cousins-1-detail">(CSS codes can also be constructed using homology techniques but for manifolds of dimension two or greater.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a></span>    <span class="code-cousins-1-detail">(Goppa codes can be constructed using CSS codes over hyperelliptic curves <a href="#cite-11" class="cite">[12]</a>. The construction provided here is Matsumoto&#x27;s construction.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span>    <span class="code-cousins-1-detail">(Extension of qubit CSS codes to Galois qudits.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_gkp">Group GKP code</a></span>    <span class="code-cousins-1-detail">(For an <span class="inline-math">\(n\)</span>-qubit CSS code, the nested group construction <span class="inline-math">\(C_1^\perp \subseteq C_2 \subset \mathbb{Z}_2^{\times n}\)</span>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit CSS code</a></span>    <span class="code-cousins-1-detail">(Extension of CSS codes to modular-integer qudits.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a></span>    <span class="code-cousins-1-detail">(Goppa codes can be constructed using CSS codes over hyperelliptic curves <a href="#cite-11" class="cite">[12]</a>. The construction provided here is Matsumoto&#x27;s construction.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span>    <span class="code-cousins-1-detail">(Extension of qubit CSS codes to Galois qudits.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousins-1-detail">(When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-10" class="cite">[11]</a><a href="#cite-12" class="cite">[13]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.)</span>  </li>
 </ul>
@@ -331,11 +335,11 @@ Then, the normalizer of the stabilizers <span class="inline-math">\({\mathsf{N}}
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

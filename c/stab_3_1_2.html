@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Three qutrit Code" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Three qutrit Code" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+      Three qutrit Code
+    [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+<div
+  id="bodycontents"
+  >
+
+  <header id="header">
+    <h1>Three qutrit Code</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_3_1_2">
+
+<!--<dt></dt>-->
+<dd class="info-popup-button-container"></dd>
+
+<dt class="code-name">Name</dt>
+<dd class="code-name">
+  <span class="code-name-cell">
+  <span class="code-name">Three qutrit Code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/stab_3_1_2">&nbsp;</a>-->
+</dd>
+
+
+<dt class="code-description">Description</dt>
+<dd class="code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
+<span class="display-math env-align">\begin{align}
+  \begin{split}
+    | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
+    | \overline{1} \rangle &amp;= \frac{1}{\sqrt{3}} (| 012 \rangle + | 120 \rangle + | 201 \rangle) \\
+    | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
+  \end{split}
+\end{align}</span>
+The elements in the superposition of each logical codeword are related to each other via cyclic permutations.</dd>
+
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection"><p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p>
+<p>The code is an example of a <span class="inline-math">\( ((n = 3, k = 2)) \)</span> threshold scheme where a secret (the quantum information) is split into <span class="inline-math">\( n \)</span> shares and can be reconstructed by <span class="inline-math">\( k \)</span> pieces.</p>
+<p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></dd>
+
+
+<!-- Display features -->
+
+
+
+
+
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">k/n = 1/3</dd>
+
+
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">In addition to thinking about the encoding of states, it is also interesting to look at the trasformation of operators from the physical space into the logical space. Due to the unique structure and recovery protocol of the three qutrit code, the representation of a logical operator <span class="inline-math">\( \overline{O} \)</span> is not unique. Instead, <span class="inline-math">\( \overline{O} \)</span> can be constructed from unitary matricies with support on only two out of the three qutrits. Therefore, the logical operator has valid representations constructed from support on different sets of two qutrits. This operator construction is directly analogous to the construction of operators in the bulk (at the center) of the AdS<span class="inline-math">\(_3\)</span>-Rindler reconstruction. The three-qutrit code can then be used to describe how these local bulk operators are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">This construction is related to the cleaning lemma <a href="#cite-2" class="cite">[3]</a>, which was introduced in the context of constructing self-correcting quantum memories from stabilizer codes with geometrically-local generators. In this lemma, subspaces can be <span class="textit">cleaned out</span> by removing operators with support on a subset of qutrits.</span></dd>
+
+
+ 
+
+
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">The quantum information (the secret) can be recovered from a unitary transformation acting on only two qutrits, <span class="inline-math">\( U_{ij} \ocross I \)</span>, where <span class="inline-math">\(U_{ij}\)</span> acts on qutrits <span class="inline-math">\(i,j\)</span> and <span class="inline-math">\(I\)</span> is the identity on the remaining qutrit. By the cyclic structure of the codewords, this unitary transformation performs a permutation that recovers the information and stores it in one of the two qutrits involved in recovery.</span></dd>
+
+
+
+
+
+
+
+
+
+
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">Connections to Ads/CFT from the perspetive of how arbitrary operators are encoded into the logical space. This encoding is analagous and helps explain why operators acting on the bulk are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span>
+</dd>
+
+
+<!-- Relationships to other codes -->
+
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/qudit_css"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit CSS code</a></span>    <span class="code-parents-1-detail">(Smallest single-erasure correcting qudit code for <span class="inline-math">\(q&gt;2\)</span>.)</span>  </li>
+</ul>
+</dd>
+
+
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(Three-qutrit code defines a minimal secret-sharing scheme <a href="#cite-0" class="cite">[1]</a> that is substantially generalized by approximate secret-sharing codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/holographic">Holographic code</a></span>    <span class="code-cousins-1-detail">(Three-qutrit code is a minimal model for holography <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
+</ul>
+</dd>
+
+
+<!-- zoo-related information and how to edit -->
+
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</dt>
+<dd class="display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    stab_3_1_2
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Three qutrit Code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/stab_3_1_2</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_stab_3_1_2,
+  title={Three qutrit Code},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/stab_3_1_2}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/stab_3_1_2</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/stab_3_1_2.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=stab_3_1_2">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>stab_3_1_2</code></div>
+</dd>
+
+</dl>
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. Almheiri, X. Dong, and D. Harlow, “Bulk locality and quantum error correction in AdS/CFT”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP04(2015)163" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.7041" target="_blank" class="href">1411.7041</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href">0810.1983</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        D. Harlow, “The Ryu–Takayanagi Formula from Quantum Error Correction”, Communications in Mathematical Physics <span class="textbf">354</span>, 865 (2017). <a href="https://doi.org/10.1007/s00220-017-2904-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1607.03901" target="_blank" class="href">1607.03901</a>
+      </dd>
+    
+    </dl>
+   </div>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
+        <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/edit_code">Add new code</a></li>
+        <li><a href="/additional_resources">Additional resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <!-- <h1>Additional resources</h1> -->
+      <!-- <ul class="navlinks"> -->
+      <!--   <li>…</li> -->
+      <!-- </ul> -->
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+Error correction zoo by Victor V. Albert, Philippe Faist, and
+<a href="/about">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

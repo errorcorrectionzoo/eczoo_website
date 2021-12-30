@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      Qu\emph{d}it Kingdom
+      Cyclic-qudit Kingdom
     [error correction zoo]
   </title>
 
@@ -41,12 +41,12 @@
   >
 
   <header id="header">
-    <h1>Qu<span class="emph">d</span>it Kingdom</h1>
+    <h1>Cyclic-qudit Kingdom</h1>
   </header><!-- #header -->
 
   <main id="main">
 
-<p>Welcome to the Qu<span class="emph">d</span>it Kingdom.</p>
+<p>Welcome to the Cyclic-qudit Kingdom.</p>
 
 
 
@@ -64,13 +64,27 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/galois_into_galois">Galois-qudit code</a>,       <a href="/c/group_quantum">Group quantum code</a>.
+      <a href="/c/group_quantum">Group quantum code</a>,       <a href="/c/galois_into_galois">Galois-qudit code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_double_semion">
+  <span class="short-code-name"><a href="/c/double_semion">Double-semion code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a>,       <a href="/c/topological">Topological code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/surface">Kitaev surface code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_frobenius">
-  <span class="short-code-name"><a href="/c/frobenius">Frobenius code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/frobenius">Frobenius code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Let <span class="inline-math">\(C\)</span> be a quantum cyclic code on <span class="inline-math">\(n\)</span> <span class="inline-math">\(\mathbb{Z}_p\)</span>-qudits. <span class="inline-math">\(C\)</span> is a Frobenius code if there exists a positive integer <span class="inline-math">\(t\)</span> such that <span class="inline-math">\(n\)</span> divides <span class="inline-math">\(p^t +1\)</span>.</span>
   <span class="short-code-info">Protection: Protects against Pauli noise.</span>
   <span class="short-code-parents">
@@ -93,7 +107,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/qudit_css"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit CSS code</a>,       <a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a>.
+      <a href="/c/double_semion">Double-semion code</a>,       <a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a>,       <a href="/c/qudit_css"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit CSS code</a>.
   </span>
 </div>
 
@@ -110,10 +124,10 @@ becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)<
 \frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-H(t/n),
 \end{align}</span>
 where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></span>
-  <span class="short-code-info">Protection: Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</span>
+  <span class="short-code-info">Protection: Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a>.
+      <a href="/c/qudits_into_qudits"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit code</a>,       <a href="/c/galois_into_galois">Galois-qudit code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -122,6 +136,17 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_prime_qudit_stabilizer">
+  <span class="short-code-name"><a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.  More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a generalized Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a>,       <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>.
   </span>
 </div>
 
@@ -135,7 +160,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a>.
+      <a href="/c/stab_3_1_2">Three qutrit Code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code (QPyC)</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -148,19 +173,33 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 </div>
 
 
-<div class="ecc-code" id="ecc_prime_qudit_stabilizer">
-  <span class="short-code-name"><a href="/c/prime_qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
-  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.  More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a generalized Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
+<div class="ecc-code" id="ecc_stab_3_1_2">
+  <span class="short-code-name"><a href="/c/stab_3_1_2">Three qutrit Code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
+<span class="display-math env-align">\begin{align}
+  \begin{split}
+    | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
+    | \overline{1} \rangle &amp;= \frac{1}{\sqrt{3}} (| 012 \rangle + | 120 \rangle + | 201 \rangle) \\
+    | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
+  \end{split}
+\end{align}</span>
+The elements in the superposition of each logical codeword are related to each other via cyclic permutations.</span>
+  <span class="short-code-info">Protection: <p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p>
+<p>The code is an example of a <span class="inline-math">\( ((n = 3, k = 2)) \)</span> threshold scheme where a secret (the quantum information) is split into <span class="inline-math">\( n \)</span> shares and can be reconstructed by <span class="inline-math">\( k \)</span> pieces.</p>
+<p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qudit_stabilizer"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit stabilizer code</a>,       <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>.
+      <a href="/c/qudit_css"><span class="inline-math">\(\mathbb{Z}_q\)</span>-qudit CSS code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/holographic">Holographic code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_polynomial">
-  <span class="short-code-name"><a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -172,7 +211,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/galois_polynomial">Galois-qudit polynomial code</a>.
+      <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>.
   </span>
 </div>
 
@@ -182,35 +221,45 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code of length dividing <span class="inline-math">$p^{t}+1$</span>”. <a href="https://arxiv.org/abs/1011.5814" target="_blank" class="href">1011.5814</a>
+        M. A. Levin and X.-G. Wen, “String-net condensation: A physical mechanism for topological phases”, Physical Review B <span class="textbf">71</span>, (2005). <a href="https://doi.org/10.1103/PhysRevB.71.045110" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0404617" target="_blank" class="href">cond-mat/0404617</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href">quant-ph/9607027</a>
+        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code of length dividing <span class="inline-math">$p^{t}+1$</span>”. <a href="https://arxiv.org/abs/1011.5814" target="_blank" class="href">1011.5814</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+        Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href">quant-ph/9607027</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href">0907.0049</a>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
+        Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href">0907.0049</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
+      <dd>
+        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
+      <dd>
+        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
       <dd>
         M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
       </dd>
@@ -240,11 +289,11 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

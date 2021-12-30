@@ -61,7 +61,49 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/gabidulin">Rank code</a>,       <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>,       <a href="/c/perfect">Perfect code</a>.
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/gabidulin">Rank code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_linear">
+  <span class="short-code-name"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/dual">Dual linear code</a>,       <a href="/c/quasi_cyclic">Quasi-cyclic code</a>,       <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_perfect">
+  <span class="short-code-name"><a href="/c/perfect">Perfect code</a></span>
+  <span class="short-code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
+<span class="display-math env-align">\begin{align}
+\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
+\end{align}</span>
+becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p>
+<p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
+<span class="display-math env-align">\begin{align}
+\frac{k}{n}\leq 1-H(t/n),
+\end{align}</span>
+where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/hamming">Hamming code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/quantum_perfect">Perfect quantum code</a>.
   </span>
 </div>
 
@@ -87,44 +129,87 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 </div>
 
 
-<div class="ecc-code" id="ecc_q-ary_linear">
-  <span class="short-code-name"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
-  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+<div class="ecc-code" id="ecc_dual">
+  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-description"><p>For any <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code
+<span class="display-math env-align">\begin{align}
+C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
+\end{align}</span></p>
+<p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p></span>
+  <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/quasi_cyclic">Quasi-cyclic code</a>.
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>.
+      <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
 
-<div class="ecc-code" id="ecc_perfect">
-  <span class="short-code-name"><a href="/c/perfect">Perfect code</a></span>
-  <span class="short-code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
-<span class="display-math env-align">\begin{align}
-\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p>
-<p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
-\frac{k}{n}\leq 1-H(t/n),
-\end{align}</span>
-where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></span>
+<div class="ecc-code" id="ecc_quasi_cyclic">
+  <span class="short-code-name"><a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_alternant">
+  <span class="short-code-name"><a href="/c/alternant">Alternant Codes</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/goppa">Goppa Code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_mds">
+  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
+<span class="display-math env-align">\begin{align}
+d \leq n-k+1
+\end{align}</span>
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-2" class="cite">[3]</a>.</span>
+  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
+  <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/quantum_perfect">Perfect quantum code</a>.
+      <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/maximum_rank_distance">Maximum-rank code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code (QPyC)</a>,       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>.
   </span>
 </div>
 
@@ -149,126 +234,8 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 </div>
 
 
-<div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant Codes</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/goppa">Goppa Code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
-  <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/alternant">Alternant Codes</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code</a>,       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_dual">
-  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
-  <span class="short-code-description"><p>For any <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code
-<span class="display-math env-align">\begin{align}
-C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
-\end{align}</span></p>
-<p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>.</p></span>
-  <span class="short-code-info">Protection: The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_mds">
-  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
-<span class="display-math env-align">\begin{align}
-d \leq n-k+1
-\end{align}</span>
-becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-4" class="cite">[5]</a>.</span>
-  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_quasi_cyclic">
-  <span class="short-code-name"><a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_bch">
-  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/alternant">Alternant Codes</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/reed_solomon">Reed-Solomon code</a>,       <a href="/c/cyclic">Cyclic code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Goppa Code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
-  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
-  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/alternant">Alternant Codes</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_skew_cyclic">
-  <span class="short-code-name"><a href="/c/skew_cyclic">Skew-cyclic code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/skew_cyclic">Skew-cyclic code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
   <span class="short-code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over <span class="inline-math">\(GF(q)\)</span> is skew-cyclic if there exists an automorphism, <span class="inline-math">\(\theta\)</span>, of <span class="inline-math">\(GF(q)\)</span>, such that for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the skew-cyclically shifted string <span class="inline-math">\(\theta(c_n) \theta(c_1) \cdots \theta(c_{n-1})\in C\)</span>. We say that <span class="inline-math">\(C\)</span> is a <span class="inline-math">\(\theta\)</span>-cyclic code over <span class="inline-math">\(GF(q)\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -289,6 +256,39 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
 </div>
 
 
+<div class="ecc-code" id="ecc_goppa">
+  <span class="short-code-name"><a href="/c/goppa">Goppa Code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/alternant">Alternant Codes</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_bch">
+  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/alternant">Alternant Codes</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>,       <a href="/c/cyclic">Cyclic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_cyclic">
   <span class="short-code-name"><a href="/c/cyclic">Cyclic code</a></span>
   <span class="short-code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over an alphabet is cyclic if, for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\in C\)</span>.</span>
@@ -298,7 +298,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code</a>,       <a href="/c/quantum_cyclic">Quantum cyclic code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/polynomial"><span class="inline-math">\(\mathbb{Z}_p\)</span>-qudit polynomial code (QPyC)</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/quantum_cyclic">Quantum cyclic code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
 </div>
 
@@ -318,17 +318,17 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        R. Townsend and E. Weldon, “Self-orthogonal quasi-cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 183 (1967). <a href="https://doi.org/10.1109/TIT.1967.1053974" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
@@ -338,12 +338,12 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        R. Townsend and E. Weldon, “Self-orthogonal quasi-cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 183 (1967). <a href="https://doi.org/10.1109/TIT.1967.1053974" target="_blank" class="href">DOI</a>
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
+        Delphine Boucher, Willi Geiselmann, and Félix Ulmer, “Skew-cyclic codes”. <a href="https://arxiv.org/abs/math/0604603" target="_blank" class="href">math/0604603</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
@@ -363,7 +363,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        Delphine Boucher, Willi Geiselmann, and Félix Ulmer, “Skew-cyclic codes”. <a href="https://arxiv.org/abs/math/0604603" target="_blank" class="href">math/0604603</a>
+        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
@@ -391,11 +391,11 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">

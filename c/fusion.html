@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Fusion Based Quantum Computing" />
+<meta name="citation_publication_date" content="2021" />
+<meta name="citation_date" content="2021" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Fusion Based Quantum Computing" />
+<meta name="DC.issued" content="2021" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+      Fusion Based Quantum Computing
+    [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+<div
+  id="bodycontents"
+  >
+
+  <header id="header">
+    <h1>Fusion Based Quantum Computing</h1>
+  </header><!-- #header -->
+
+  <main id="main">
+
+
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fusion">
+
+<!--<dt></dt>-->
+<dd class="info-popup-button-container"></dd>
+
+<dt class="code-name">Name</dt>
+<dd class="code-name">
+  <span class="code-name-cell">
+  <span class="code-name">Fusion Based Quantum Computing</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <!--<a class="code-info-corner-icon code-self-permalink"
+   title="permanent link to this code (click and then copy the location in the address bar)"
+   href="/c/fusion">&nbsp;</a>-->
+</dd>
+
+
+<dt class="code-description">Description</dt>
+<dd class="code-description">Fusion Based Quantum Computing, or FBQC, describes a fault tolerant way to produce <span class="textit">fusion networks</span>, or large entangled states starting from small constant-sized entangled resource states along with destructive measurements called <span class="textit">fusions</span>. These large states can be produced asychronously in the fusion framework and can be used as resources, as in measurement-based quantum computation (MBQC), or as logical states of topological codes. The difference from ordinary MBQC is that error-correction is baked into the state-generation protocol.</dd>
+
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protects against erasure, Pauli errors, photon loss, fusion failure from non-determinism, and faulty resource states. Redundancy in fusion outcomes is captured by the check operator group. Fusion measurement outcomes form a syndrome that allows to correct for Pauli errors. There is no physical error correction, and decoding output is simply used to update the Pauli frame.</dd>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+<dt class="code-feature code-feature-encoders">Encoder</dt>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Resource state generators, which produce small constant size cluster states, and Fusion measurements (Bell fusions).</span></dd>
+
+
+ 
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates by creating topological features such as boundaries, defects, or twists, which can be done by single qubit measurements.</span><span class="paragraph-in-list">Logical gates can be performed by code deformation.</span><span class="paragraph-in-list">Non Clifford gates by Magic-state injection</span><span class="paragraph-in-list">Logical Clifford operations can be kept track of using the classical Pauli-frame register and need not be explicitly applied at the quantum level.</span></dd>
+
+
+
+
+<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Fusion networks are constructed in a fault tolerant way (as a stabilizer code), and they can be created in a way that naturally encodes topological fault tolerance.</span></dd>
+
+
+
+
+<dt class="code-feature code-feature-threshold">Threshold</dt>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(11.98\%\)</span> against erasure in fusion measurements.</span><span class="paragraph-in-list"><span class="inline-math">\(1.07\%\)</span> against Pauli error.</span><span class="paragraph-in-list">In linear optical systems, can tolerate <span class="inline-math">\(10.4\%\)</span> probability of photon loss in each fusion.</span><span class="paragraph-in-list"><span class="inline-math">\(43.2\%\)</span> against fusion failure.</span></dd>
+
+
+
+
+
+
+<!-- Relationships to other codes -->
+
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(The resource states in FBQC are small stabilizer states, and after fusion measurements, the outputs are stabilizers (conditioned on measurement outcomes).)</span>  </li>
+</ul>
+</dd>
+
+
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-cousins-1-detail">(Arbitrary topological codes can be created using FBQC, as can topological features such as defects and boundaries, by modifying fusion measurements or adding single qubit measurements.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>    <span class="code-cousins-1-detail">(While FBQC is a general framework, an intended application to linear-optical quantum computing will likely utilize small Fock-state bosonic codes such as the dual-rail code.)</span>  </li>
+</ul>
+</dd>
+
+
+<!-- zoo-related information and how to edit -->
+
+<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</dt>
+<dd class="display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    fusion
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation">
+    <dl class="show-citation">
+      <dt>Cite as:</dt>
+      <dd>“Fusion Based Quantum Computing”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/fusion</dd>
+      <dt>BibTeX:</dt>
+      <dd class="bibtex">@incollection{eczoo_fusion,
+  title={Fusion Based Quantum Computing},
+  booktitle={The Error Correction Zoo},
+  year={2021},
+  editor={Albert, Victor V. and Faist, Philippe},
+  url={https://errorcorrectionzoo.org/c/fusion}
+}</dd>
+      <dt>Permanent link:</dt>
+      <dd>https://errorcorrectionzoo.org/c/fusion</dd>
+    </dl>
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/fusion.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=fusion">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>fusion</code></div>
+</dd>
+
+</dl>
+
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Sara Bartolucci et al., “Fusion-based quantum computation”. <a href="https://arxiv.org/abs/2101.09310" target="_blank" class="href">2101.09310</a>
+      </dd>
+    
+    </dl>
+   </div>
+
+  </main><!-- #main -->
+
+
+  <nav id="sidebar">
+    <div class="sidebarbox">
+      <!--<h1>Pages</h1>-->
+      <ul class="navlinks">
+        <li><a href="/">Home</a></li>
+        <li><a href="/code_graph">Code graph</a></li>
+        <li><a href="/all">All codes</a></li>
+        <li><a href="/search">Search</a></li>
+      </ul>
+      <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+      </ul>
+      <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
+      <ul class="navlinks">
+        <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
+        <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
+        <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
+      </ul>
+      <h1>More</h1>
+      <ul class="navlinks">
+        <li><a href="/edit_code">Add new code</a></li>
+        <li><a href="/additional_resources">Additional resources</a></li>
+        <li><a href="/about">About</a></li>
+      </ul>
+      <!-- <h1>Additional resources</h1> -->
+      <!-- <ul class="navlinks"> -->
+      <!--   <li>…</li> -->
+      <!-- </ul> -->
+    </div>
+  </nav><!-- #sidebar -->
+  <footer id="footer">
+    <div class="footer-stuff">
+Error correction zoo by Victor V. Albert, Philippe Faist, and
+<a href="/about">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

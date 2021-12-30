@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A triorthogonal <span class="inline-math">\(m \times n\)</span> binary matrix is triorthogonal if its rows <span class="inline-math">\(r_1, \ldots, r_m\)</span> satisfy <span class="inline-math">\(|r_i \cdot r_j| = 0\)</span> and <span class="inline-math">\(|f_i \cdot f_j \cdot f_k| = 0\)</span>, where addition and multiplication are done on <span class="inline-math">\(\mathbb{Z}_2\)</span>. The triorthogonal code associated with the matrix is constructed by mapping non-zero entries in even-weight rows to <span class="inline-math">\(X\)</span> operators, and <span class="inline-math">\(Z\)</span> operators for each row in the orthogonal complement.</dd>
+<dd class="code-description">A triorthogonal <span class="inline-math">\(m \times n\)</span> binary matrix is triorthogonal if its rows <span class="inline-math">\(r_1, \ldots, r_m\)</span> satisfy <span class="inline-math">\(|r_i \cdot r_j| = 0\)</span> and <span class="inline-math">\(|r_i \cdot r_j \cdot r_k| = 0\)</span>, where addition and multiplication are done on <span class="inline-math">\(\mathbb{Z}_2\)</span>. The triorthogonal code associated with the matrix is constructed by mapping non-zero entries in even-weight rows to <span class="inline-math">\(X\)</span> operators, and <span class="inline-math">\(Z\)</span> operators for each row in the orthogonal complement.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Weight <span class="inline-math">\(t\)</span> Pauli errors, where <span class="inline-math">\(t\)</span> depends on the family. For example, Ref. <a href="#cite-0" class="cite">[1]</a> provides a family of distance <span class="inline-math">\(2\)</span> codes. It also presents a <span class="inline-math">\([[49, 1, 5]]\)</span> code.</dd>
@@ -94,7 +94,7 @@
 
 
 <dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Depends on the matrix. Ref. <a href="#cite-0" class="cite">[1]</a> gave a family of <span class="inline-math">\(\frac{k}{3k+8}\)</span> codes</dd>
+  <dd class="code-feature code-feature-rate">Depends on the matrix. Ref. <a href="#cite-0" class="cite">[1]</a> gave a family of <span class="inline-math">\(\frac{k}{3k+8}\)</span> codes with magic-state distillation scaling exponent <span class="inline-math">\(\gamma = \log_2 \frac{3k+8}{k}\)</span>.</dd>
 
 
 <dt class="code-feature code-feature-encoders">Encoder</dt>
@@ -236,11 +236,11 @@
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Qu<span class="emph">d</span>it Kingdom</a></li>
-        <li><a href="/kingdom/oscillators">Oscillator Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
+        <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
         <li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-        <li><a href="/kingdom/galois_into_galois">Galois Field Kingdom</a></li>
       </ul>
       <h1>More</h1>
       <ul class="navlinks">
