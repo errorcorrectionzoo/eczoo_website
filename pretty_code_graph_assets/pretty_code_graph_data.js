@@ -2029,7 +2029,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_fusion",
-                    "label": "Fusion Based Quantum Computing",
+                    "label": "Fusion-based quantum computing (FBQC) code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
