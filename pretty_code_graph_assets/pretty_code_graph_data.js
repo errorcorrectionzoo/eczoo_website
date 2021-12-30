@@ -1648,7 +1648,7 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Frobenius code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Let \\(C\\) be a quantum cyclic code on \\(n\\) \\(\\mathbb{Z}_p\\)-qudits. \\(C\\) is a Frobenius code if there exists a positive integer \\(t\\) such that \\(n\\) divides \\(p^t +1\\).",
+                    "_description": "Let \\(C\\) be a quantum cyclic code on \\(n\\) prime-dimensional qudits. \\(C\\) is a Frobenius code if there exists a positive integer \\(t\\) such that \\(n\\) divides \\(p^t +1\\).",
                     "_code_href": "/c/frobenius",
                     "_family_generation_level": 5
                 },
@@ -1660,7 +1660,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_stabilizer",
-                    "label": "\\(\\mathbb{Z}_q\\)-qudit stabilizer code",
+                    "label": "Cyclic-qudit stabilizer code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "An \\(((n,p^k,d))_q\\) (with \\(q\\) not necessarily prime) stabilizer code is denoted as \\([[n,k]]_q\\) or \\([[n,k,d]]_q\\), where \\(d\\) is the code's distance. Stub.",
@@ -1675,7 +1675,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_polynomial",
-                    "label": "\\(\\mathbb{Z}_p\\)-qudit polynomial code (QPyC)",
+                    "label": "Prime-qudit polynomial code (QPyC)",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Also called \\textit{quantum Reed-Solomon code}. Stub.",
@@ -1690,7 +1690,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_prime_qudit_stabilizer",
-                    "label": "\\(\\mathbb{Z}_p\\)-qudit stabilizer code",
+                    "label": "Prime-qudit stabilizer code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1707,7 +1707,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudits_into_qudits",
-                    "label": "\\(\\mathbb{Z}_q\\)-qudit code",
+                    "label": "Cyclic-qudit code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1727,7 +1727,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_css",
-                    "label": "\\(\\mathbb{Z}_q\\)-qudit CSS code",
+                    "label": "Cyclic-qudit CSS code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Often, but not always, defined for prime qudits (\\(q=p\\)). Stub.",
