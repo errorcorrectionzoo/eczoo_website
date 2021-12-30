@@ -130,8 +130,11 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
     <span class="code-name">
       <a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
     <span class="code-description"><p>A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</p>
-<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |j q N + kN \rangle\)</span> for some coefficients <span class="inline-math">\(\c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
-<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(qk_j+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(|\overline{j}\rangle \mid j \in \mathbb{Z}_q\)</span> are constructed as <span class="inline-math">\(|\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle\)</span>.</p></span>
+<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |(kq+j)N \rangle\)</span> for some coefficients <span class="inline-math">\(c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
+<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(k_j q+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(\{|\overline{j}\rangle \mid j \in \mathbb{Z}_q\}\)</span> are constructed as
+<span class="display-math env-align">\begin{align}
+|\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle~.
+\end{align}</span></p></span>
   </li>
   <li>
     <span class="code-name">
@@ -466,7 +469,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/number_phase">Number phase code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
+      <a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
     <span class="code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-75" class="cite">[76]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
@@ -681,15 +684,15 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/steane">Steane</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
-    <span class="code-description">The Steane code is a <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
+      <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
+    <span class="code-description">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
 <span class="display-math env-align">\begin{align}
   H = \left(\begin{matrix}
     1&amp;0&amp;0&amp;1&amp;0&amp;1&amp;1\\
     0&amp;1&amp;0&amp;1&amp;1&amp;0&amp;1\\
     0&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1
   \end{matrix}\right),
-\end{align}</span>,
+\end{align}</span>
 and the check matrix for the Steane code is therefore
 <span class="display-math env-align">\begin{align}
   \left(\begin{matrix}

@@ -225,8 +225,11 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 <div class="ecc-code" id="ecc_bosonic_rotation">
   <span class="short-code-name"><a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description"><p>A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</p>
-<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |j q N + kN \rangle\)</span> for some coefficients <span class="inline-math">\(\c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
-<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(qk_j+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(|\overline{j}\rangle \mid j \in \mathbb{Z}_q\)</span> are constructed as <span class="inline-math">\(|\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle\)</span>.</p></span>
+<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |(kq+j)N \rangle\)</span> for some coefficients <span class="inline-math">\(c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
+<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(k_j q+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(\{|\overline{j}\rangle \mid j \in \mathbb{Z}_q\}\)</span> are constructed as
+<span class="display-math env-align">\begin{align}
+|\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle~.
+\end{align}</span></p></span>
   <span class="short-code-info">Protection: Losses or gains less than <span class="inline-math">\(N\)</span> are detectable. Dephasing rotations <span class="inline-math">\(\exp(\mathrm{i}\theta \hat{n})\)</span> can be detected whenever <span class="inline-math">\(\theta\)</span> is roughly less than <span class="inline-math">\(\pi/N\)</span>. To get precise bounds on <span class="inline-math">\(\theta\)</span>, one needs to analyze the particular bosonic rotation code.</span>
   <span class="short-code-parents">
     Parents:
@@ -234,7 +237,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binomial">Binomial code</a>,       <a href="/c/cat">Cat code</a>,       <a href="/c/number_phase">Number phase code</a>.
+      <a href="/c/binomial">Binomial code</a>,       <a href="/c/cat">Cat code</a>,       <a href="/c/number_phase">Number-phase code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -260,7 +263,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/cat">Cat code</a>,       <a href="/c/number_phase">Number phase code</a>.
+      <a href="/c/cat">Cat code</a>,       <a href="/c/number_phase">Number-phase code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -279,7 +282,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/number_phase">Number phase code</a>,       <a href="/c/hamiltonian">Hamiltonian-based code</a>.
+      <a href="/c/number_phase">Number-phase code</a>,       <a href="/c/hamiltonian">Hamiltonian-based code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -289,7 +292,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_number_phase">
-  <span class="short-code-name"><a href="/c/number_phase">Number phase code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-14" class="cite">[15]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.

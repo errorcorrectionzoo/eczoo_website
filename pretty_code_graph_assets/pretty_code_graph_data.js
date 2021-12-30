@@ -815,11 +815,11 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_steane",
-                    "label": "Steane",
+                    "label": "Steane \\([[7,1,3]]\\) code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "The Steane code is a \\([[7,1,3]]\\) CSS code that uses the classical binary \\([7,4,3]\\) Hamming code for protecting against \\(X\\) errors and its dual \\([7,3,4]\\) for \\(Z\\) errors. The parity-check m..."
+                        "A \\([[7,1,3]]\\) CSS code that uses the classical binary \\([7,4,3]\\) Hamming code for protecting against \\(X\\) errors and its dual \\([7,3,4]\\) for \\(Z\\) errors. The parity-check matrix for the \\([7,..."
                     ],
                     "_code_href": "/c/steane",
                     "_family_generation_level": 6
@@ -1525,7 +1525,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_number_phase",
-                    "label": "Number phase code",
+                    "label": "Number-phase code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
