@@ -845,7 +845,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_hamming_css",
-                    "label": "\\([[2^r, 2^r-1-2r, 3]]\\) Hamming-based CSS code",
+                    "label": "\\([[2^r - 1, 2^r - 2r - 1, 3]]\\) Hamming-based CSS code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
