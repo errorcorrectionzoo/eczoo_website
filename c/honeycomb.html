@@ -82,10 +82,11 @@
 
 <dt class="code-description">Description</dt>
 <dd class="code-description"><p>Floquet code inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a> whose logical qubits are generated through a particular sequence of measurements.</p>
-<p>The code is defined on a hexagonal (honeycomb) lattice with a physical qubit located at each vertex. Edges are labeled <span class="inline-math">\(x\)</span>, <span class="inline-math">\(y\)</span>, and <span class="inline-math">\(z\)</span>, such one edge of each label meet at every vertex. Check operators are defined as <span class="inline-math">\(XX\)</span> acting on any two qubits joined by an <span class="inline-math">\(x\)</span> edge, and similarly for <span class="inline-math">\(y\)</span> and <span class="inline-math">\(z\)</span>. The hexagonal lattice is 3-colorable, so the hexagons may be labeled 0, 1, 2 such that no two neighboring hexagons have the same label. This code has dynamically generated logical qubits: although it has no logical qubits when viewed as a subsystem code, it is able to generate logical qubits through a measurement pattern. The measurement pattern consists of measuring the check operators located on all of the <span class="inline-math">\(r\)</span>-labeled edges in round <span class="inline-math">\(r\)</span> mod 3. The code space is the <span class="inline-math">\(+1\)</span> eigenspace of the instantaneous stabilizer group (ISG). The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured.</p></dd>
+<p>The code is defined on a hexagonal (honeycomb) lattice with a physical qubit located at each vertex. Edges are labeled <span class="inline-math">\(x\)</span>, <span class="inline-math">\(y\)</span>, and <span class="inline-math">\(z\)</span>, such that one edge of each label meet at every vertex. Check operators are defined as <span class="inline-math">\(XX\)</span> acting on any two qubits joined by an <span class="inline-math">\(x\)</span> edge, and similarly for <span class="inline-math">\(y\)</span> and <span class="inline-math">\(z\)</span>. The hexagonal lattice is 3-colorable, so the hexagons may be labeled 0, 1, 2 such that no two neighboring hexagons have the same label.</p>
+<p>The code-generating measurement pattern consists of measuring the check operators located on all of the <span class="inline-math">\(r\)</span>-labeled edges in round <span class="inline-math">\(r\)</span> mod 3. The code space is the <span class="inline-math">\(+1\)</span> eigenspace of the instantaneous stabilizer group (ISG). The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against single-qubit Pauli noise and check operator measurement errors.</dd>
+<dd class="code-protection">Protective features similar to the surface code: on a torus geometry, the code protects two logical qubits with a code distance proportional to the linear size of the torus. Properties of the code with open boundaries are discussed in Refs. <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</dd>
 
 
 <!-- Display features -->
@@ -102,7 +103,7 @@
 
  
 <dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">There are two types of logical operators, <span class="textit">inner</span> and <span class="textit">outer</span>. An inner logical operator is the product of check operators on a homologically nontrivial cycle. They belong to the stabilizer group as a subsystem code. Outer logical operators have an interpretation in terms of magnetic and electric operators of an embedded surface code, and they do not belong to the stabilizer group as a subsystem code.</span></dd>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">There are two types of logical operators, <span class="textit">inner</span> and <span class="textit">outer</span>. An inner logical operator is the product of check operators on a homologically nontrivial cycle. They belong to the stabilizer group as a subsystem code. Outer logical operators have an interpretation in terms of magnetic and electric operators of an embedded surface code, and they do not belong to the stabilizer group of the associated subsystem code.</span></dd>
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
@@ -110,7 +111,7 @@
 
 
 <dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">One can run a fault-tolerant decoding algorithm by bipartitioning the syndrome lattice into two graphs which are congruent to the Cayley graph of the free abelian group with three generators (up to boundary conditions) are performing a matching algorithm to deduce errors.</span></dd>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">One can run a fault-tolerant decoding algorithm by (1) bipartitioning the syndrome lattice into two graphs which are congruent to the Cayley graph of the free abelian group with three generators (up to boundary conditions) and (2) performing a matching algorithm to deduce errors.</span></dd>
 
 
 
@@ -121,10 +122,6 @@
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list">Formulating the code with open boundaries is discussed in <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span>
-</dd>
 
 
 <!-- Relationships to other codes -->

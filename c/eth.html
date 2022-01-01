@@ -86,10 +86,10 @@
 <span class="display-math env-align">\begin{align}
 |\langle E_l|O|E_l\rangle-\langle E_{l+1}|O|E_{l+1}\rangle|\leq\exp(-cn)
 \end{align}</span>
-for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></dd>
+for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around some energy <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good apporoximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has approximation parameter (against the erasure of a constant number of sites) which scales as <span class="inline-math">\(\epsilon_\text{worst}(\mathcal{N}\circ\mathcal{E}=O(1/n)\)</span>, where <span class="inline-math">\(\mathcal{E}\)</span> is the encoder and <span class="inline-math">\(\mathcal{N}\)</span> is the erasure channel <a href="#cite-1" class="cite">[2]</a>.</dd>
+<dd class="code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good approximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has recovery infidelity (against the erasure of a constant number of sites) scale as <span class="inline-math">\(\epsilon_\text{worst}=O(1/n)\)</span> <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -127,9 +127,9 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-parents-1-detail">(ETH codewords are eigenstates of a local Hamiltonian.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-parents-1-detail">(ETH codewords are eigenstates of a local Hamiltonian whose eigenstates satisfy ETH.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>    <span class="code-parents-1-detail">(ETH codes approximately protect against erasure in the thermodynamic limit.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>    <span class="code-parents-1-detail">(ETH codes approximately protect against erasures in the thermodynamic limit.)</span>  </li>
 </ul>
 </dd>
 
