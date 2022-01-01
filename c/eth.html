@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Matching code" />
+<meta name="citation_title" content="Eigenstate thermalization hypothesis (ETH) code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Matching code" />
+<meta name="DC.title" content="Eigenstate thermalization hypothesis (ETH) code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Matching code
+      Eigenstate thermalization hypothesis (ETH) code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Matching code</h1>
+    <h1>Eigenstate thermalization hypothesis (ETH) code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_matching">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_eth">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,16 +73,23 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Matching code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Eigenstate thermalization hypothesis (ETH) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/matching">&nbsp;</a>-->
+   href="/c/eth">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>Also called a <span class="textit">thermodynamic code</span> <a href="#cite-1" class="cite">[2]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</p>
+<p>ETH requires that for ordered energy eigenstates <span class="inline-math">\(|E_l\rangle\)</span> and any local observable <span class="inline-math">\(O\)</span>,
+<span class="display-math env-align">\begin{align}
+|\langle E_l|O|E_l\rangle-\langle E_{l+1}|O|E_{l+1}\rangle|\leq\exp(-cn)
+\end{align}</span>
+for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good apporoximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has approximation parameter (against the erasure of a constant number of sites) which scales as <span class="inline-math">\(\epsilon_\text{worst}(\mathcal{N}\circ\mathcal{E}=O(1/n)\)</span>, where <span class="inline-math">\(\mathcal{E}\)</span> is the encoder and <span class="inline-math">\(\mathcal{N}\)</span> is the erasure channel <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -98,6 +105,8 @@
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">An explicit universal recovery channel for the ETH code is given in <a href="#cite-2" class="cite">[3]</a>.</span></dd>
 
 
 
@@ -118,21 +127,12 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-parents-1-detail">(ETH codewords are eigenstates of a local Hamiltonian.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(Matching codes were inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a>, which realizes <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>    <span class="code-parents-1-detail">(ETH codes approximately protect against erasure in the thermodynamic limit.)</span>  </li>
 </ul>
 </dd>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a></span>  </li>
-</ul>
-</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -140,9 +140,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-cousins-1-detail">(Matching code realizes the same topological order as the surface code.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/honeycomb">Honeycomb code</a></span>    <span class="code-cousins-1-detail">(Matching and honeycomb codes are both inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-cousins-1-detail">(ETH codewords, like topological codewords, are locally indistinguishable.)</span>  </li>
 </ul>
 </dd>
 
@@ -155,24 +153,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    matching
+    eth
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Matching code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/matching</dd>
+      <dd>“Eigenstate thermalization hypothesis (ETH) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/eth</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_matching,
-  title={Matching code},
+      <dd class="bibtex">@incollection{eczoo_eth,
+  title={Eigenstate thermalization hypothesis (ETH) code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/matching}
+  url={https://errorcorrectionzoo.org/c/eth}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/matching</dd>
+      <dd>https://errorcorrectionzoo.org/c/eth</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -180,10 +178,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/matching.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/eth.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=matching">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>matching</code></div>
+       href="/edit_code?code_id=eth">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>eth</code></div>
 </dd>
 
 </dl>
@@ -193,12 +191,17 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        J. R. Wootton, “A family of stabilizer codes for <span class="inline-math">$D({{\mathbb{Z}}_{2}})$</span> anyons and Majorana modes”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">48</span>, 215302 (2015). <a href="https://doi.org/10.1088/1751-8113/48/21/215302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1501.07779" target="_blank" class="href">1501.07779</a>
+        F. G. S. L. Brandão et al., “Quantum Error Correcting Codes in Eigenstates of Translation-Invariant Spin Chains”, Physical Review Letters <span class="textbf">123</span>, (2019). <a href="https://doi.org/10.1103/PhysRevLett.123.110502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1710.04631" target="_blank" class="href">1710.04631</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+        P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href">1902.07714</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        N. Bao and N. Cheng, “Eigenstate thermalization hypothesis and approximate quantum error correction”, Journal of High Energy Physics <span class="textbf">2019</span>, (2019). <a href="https://doi.org/10.1007/JHEP08(2019)152" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1906.03669" target="_blank" class="href">1906.03669</a>
       </dd>
     
     </dl>
