@@ -1022,11 +1022,11 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_monitored_random_circuits",
-                    "label": "Monitored Random Circuits",
+                    "label": "Monitored random-circuit code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A monitored random circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of \\tex..."
+                        "Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution ..."
                     ],
                     "_code_href": "/c/monitored_random_circuits",
                     "_family_generation_level": 4
