@@ -10,7 +10,7 @@ GENERATED_pretty_code_graph_data = {
                     "_page_href": "/domain/classical_domain"
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 0
                 }
             },
@@ -23,7 +23,7 @@ GENERATED_pretty_code_graph_data = {
                     "_page_href": "/domain/quantum_domain"
                 },
                 "position": {
-                    "x": 450,
+                    "x": 500,
                     "y": 0
                 }
             },
@@ -70,7 +70,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 6
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 720
                 }
             },
@@ -90,7 +90,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/q-ary_digits_into_q-ary_digits"
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 100
                 }
             },
@@ -107,7 +107,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 360
                 }
             },
@@ -124,7 +124,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -141,7 +141,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 360
                 }
             },
@@ -158,7 +158,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 600
                 }
             },
@@ -175,7 +175,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 360
                 }
             },
@@ -190,7 +190,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -205,7 +205,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -222,7 +222,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 600
                 }
             },
@@ -239,7 +239,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -256,7 +256,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -273,7 +273,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 480
                 }
             },
@@ -320,7 +320,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 360
                 }
             },
@@ -335,7 +335,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -352,7 +352,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 600
                 }
             },
@@ -367,7 +367,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -384,7 +384,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -401,7 +401,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 0
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -418,7 +418,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 360
                 }
             },
@@ -433,7 +433,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -450,7 +450,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -465,7 +465,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 600
                 }
             },
@@ -480,7 +480,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 600
                 }
             },
@@ -497,7 +497,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -512,7 +512,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 480
                 }
             },
@@ -529,7 +529,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 5
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 600
                 }
             },
@@ -547,7 +547,7 @@ GENERATED_pretty_code_graph_data = {
                     "_kingdom_href": "/kingdom/bits_into_bits"
                 },
                 "position": {
-                    "x": -550,
+                    "x": -600,
                     "y": 100
                 }
             },
@@ -662,7 +662,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -711,7 +711,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 2
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -728,7 +728,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -808,7 +808,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -823,7 +823,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 0
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -919,7 +919,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 0
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -1083,7 +1083,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -1162,7 +1162,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 3
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -1179,7 +1179,7 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 2
                 },
                 "position": {
-                    "x": -450,
+                    "x": -500,
                     "y": 500
                 }
             },
@@ -1625,7 +1625,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_group_quantum",
-                    "label": "Group quantum code",
+                    "label": "Group-based quantum code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -2161,6 +2161,54 @@ GENERATED_pretty_code_graph_data = {
                 "position": {
                     "x": 550,
                     "y": 600
+                }
+            },
+            {
+                "data": {
+                    "id": "c_turaev_viro",
+                    "label": "Turaev-Viro code",
+                    "_is_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "Stub.",
+                    "_code_href": "/c/turaev_viro",
+                    "_family_generation_level": 5
+                },
+                "position": {
+                    "x": 750,
+                    "y": 600
+                }
+            },
+            {
+                "data": {
+                    "id": "c_levin_wen",
+                    "label": "Levin-Wen model code",
+                    "_is_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "Stub.",
+                    "_code_href": "/c/levin_wen",
+                    "_family_generation_level": 5
+                },
+                "position": {
+                    "x": 750,
+                    "y": 600
+                }
+            },
+            {
+                "data": {
+                    "id": "c_category_quantum",
+                    "label": "Category-based quantum code",
+                    "_is_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "Encodes a finite-dimensional \\textit{logical} Hilbert space into a \\textit{physical} Hilbert space associated with a category.",
+                    "_code_href": "/c/category_quantum",
+                    "_family_generation_level": 4,
+                    "_is_kingdom": 1,
+                    "_kingdom_name": "Category Kingdom",
+                    "_kingdom_href": "/kingdom/category_quantum"
+                },
+                "position": {
+                    "x": 750,
+                    "y": 100
                 }
             }
         ],
@@ -4428,6 +4476,46 @@ GENERATED_pretty_code_graph_data = {
                     "source": "c_majorana_stab",
                     "target": "c_reed_muller"
                 }
+            },
+            {
+                "data": {
+                    "id": "parent_turaev_viro_category_quantum_139",
+                    "_rel_type": "parent",
+                    "source": "c_turaev_viro",
+                    "target": "c_category_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_turaev_viro_levin_wen__136",
+                    "_rel_type": "cousin",
+                    "source": "c_turaev_viro",
+                    "target": "c_levin_wen"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_levin_wen_category_quantum_140",
+                    "_rel_type": "parent",
+                    "source": "c_levin_wen",
+                    "target": "c_category_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "kingdomtodomain_category_quantum_quantum_domain_8",
+                    "_rel_type": "domain",
+                    "source": "c_category_quantum",
+                    "target": "domain_quantum_domain"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_category_quantum_qecc_finite_141",
+                    "_rel_type": "parent",
+                    "source": "c_category_quantum",
+                    "target": "c_qecc_finite"
+                }
             }
         ]
     },
@@ -4435,14 +4523,14 @@ GENERATED_pretty_code_graph_data = {
         {
             "nodeId": "domain_classical_domain",
             "position": {
-                "x": -450,
+                "x": -500,
                 "y": 0
             }
         },
         {
             "nodeId": "domain_quantum_domain",
             "position": {
-                "x": 450,
+                "x": 500,
                 "y": 0
             }
         }
@@ -4457,7 +4545,8 @@ GENERATED_pretty_code_graph_data = {
                 "c_galois_into_galois",
                 "c_oscillators",
                 "c_fermions",
-                "c_group_quantum"
+                "c_group_quantum",
+                "c_category_quantum"
             ]
         ]
     },
@@ -5111,6 +5200,21 @@ GENERATED_pretty_code_graph_data = {
             "top": "domain_classical_domain",
             "bottom": "c_majorana_stab",
             "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_turaev_viro",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_levin_wen",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_category_quantum",
+            "gap": 100
         },
         {
             "top": "c_oaecc",
@@ -5780,6 +5884,21 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_stabilizer",
             "bottom": "c_majorana_stab",
+            "gap": 100
+        },
+        {
+            "top": "c_category_quantum",
+            "bottom": "c_turaev_viro",
+            "gap": 100
+        },
+        {
+            "top": "c_category_quantum",
+            "bottom": "c_levin_wen",
+            "gap": 100
+        },
+        {
+            "top": "c_qecc_finite",
+            "bottom": "c_category_quantum",
             "gap": 100
         }
     ]

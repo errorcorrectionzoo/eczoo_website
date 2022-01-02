@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Perfect code" />
+<meta name="citation_title" content="Turaev-Viro code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Perfect code" />
+<meta name="DC.title" content="Turaev-Viro code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Perfect code
+      Turaev-Viro code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Perfect code</h1>
+    <h1>Turaev-Viro code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_perfect">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_turaev_viro">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,24 +73,15 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Perfect code</span></span>
+  <span class="code-name">Turaev-Viro code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/perfect">&nbsp;</a>-->
+   href="/c/turaev_viro">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
-<span class="display-math env-align">\begin{align}
-\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p>
-<p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
-\frac{k}{n}\leq 1-H(t/n),
-\end{align}</span>
-where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></dd>
+<dd class="code-description">Stub.</dd>
 
 
 
@@ -117,10 +108,6 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list"></span>
-</dd>
 
 
 <!-- Relationships to other codes -->
@@ -131,7 +118,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/category_quantum">Category-based quantum code</a></span>  </li>
 </ul>
 </dd>
 
@@ -142,11 +129,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamming">Hamming code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/homological_classical">Graph homology code</a></span>    <span class="code-cousins-1-detail">(A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span>    <span class="code-cousins-1-detail">(A classical (quantum) perfect code saturates the classical (quantum) Hamming bound.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/levin_wen">Levin-Wen model code</a></span>    <span class="code-cousins-1-detail">(For certain categories, Turaev-Viro codes can be realized using Levin-Wen model Hamiltonians.)</span>  </li>
 </ul>
 </dd>
 
@@ -159,24 +142,24 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    perfect
+    turaev_viro
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Perfect code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/perfect</dd>
+      <dd>“Turaev-Viro code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/turaev_viro</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_perfect,
-  title={Perfect code},
+      <dd class="bibtex">@incollection{eczoo_turaev_viro,
+  title={Turaev-Viro code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/perfect}
+  url={https://errorcorrectionzoo.org/c/turaev_viro}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/perfect</dd>
+      <dd>https://errorcorrectionzoo.org/c/turaev_viro</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -184,10 +167,10 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/perfect.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/categories/turaev_viro.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=perfect">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>perfect</code></div>
+       href="/edit_code?code_id=turaev_viro">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>turaev_viro</code></div>
 </dd>
 
 </dl>
@@ -197,7 +180,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
+        R. Koenig, G. Kuperberg, and B. W. Reichardt, “Quantum computation with Turaev–Viro codes”, Annals of Physics <span class="textbf">325</span>, 2707 (2010). <a href="https://doi.org/10.1016/j.aop.2010.08.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.2816" target="_blank" class="href">1002.2816</a>
       </dd>
     
     </dl>
