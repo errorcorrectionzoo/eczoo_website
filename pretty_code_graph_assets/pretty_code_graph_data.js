@@ -2184,13 +2184,13 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Levin-Wen model code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Stub.",
+                    "_description": "Also called a \\textit{string-net model} code. Stub.",
                     "_code_href": "/c/levin_wen",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 750,
-                    "y": 600
+                    "y": 480
                 }
             },
             {
@@ -4495,10 +4495,26 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "cousin_turaev_viro_topological__137",
+                    "_rel_type": "cousin",
+                    "source": "c_turaev_viro",
+                    "target": "c_topological"
+                }
+            },
+            {
+                "data": {
                     "id": "parent_levin_wen_category_quantum_140",
                     "_rel_type": "parent",
                     "source": "c_levin_wen",
                     "target": "c_category_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_levin_wen_topological_141",
+                    "_rel_type": "parent",
+                    "source": "c_levin_wen",
+                    "target": "c_topological"
                 }
             },
             {
@@ -4511,7 +4527,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_category_quantum_qecc_finite_141",
+                    "id": "parent_category_quantum_qecc_finite_142",
                     "_rel_type": "parent",
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
@@ -5893,6 +5909,11 @@ GENERATED_pretty_code_graph_data = {
         },
         {
             "top": "c_category_quantum",
+            "bottom": "c_levin_wen",
+            "gap": 100
+        },
+        {
+            "top": "c_topological",
             "bottom": "c_levin_wen",
             "gap": 100
         },
