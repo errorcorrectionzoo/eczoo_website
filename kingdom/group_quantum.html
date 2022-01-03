@@ -60,17 +60,42 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/group_gkp">Group GKP code</a>.
+      <a href="/c/quantum_double">Quantum-double code</a>,       <a href="/c/group_gkp">Group GKP code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/qecc_finite">Finite-dimensional quantum code</a>,       <a href="/c/qudits_into_qudits">Cyclic-qudit code</a>,       <a href="/c/oscillators">Bosonic code</a>.
   </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/group">Group code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_quantum_double">
+  <span class="short-code-name"><a href="/c/quantum_double">Quantum-double code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description"><p>A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</p>
+<p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( Hom(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-1" class="cite">[2]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
+<p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic excitations of model <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></span>
+  <span class="short-code-info">Protection: The code distance is the number of edges in the shortest non contractible cycle in the tesselation or dual tesselation  <a href="#cite-5" class="cite">[6]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/group_quantum">Group-based quantum code</a>,       <a href="/c/topological">Topological code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/qudit_surface">Qudit surface code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/levin_wen">Levin-Wen model code</a>.
+  </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_group_gkp">
-  <span class="short-code-name"><a href="/c/group_gkp">Group GKP code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/group_gkp">Group GKP code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Group code whose construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset G\)</span>. Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>, and can be finite- or infinite-dimensional. Extension of the <a href="/c/gkp" class="ref">GKP code</a> construction.</span>
   <span class="short-code-info">Protection: Protects against generalized bit-flip errors <span class="inline-math">\(g\in G\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</span>
   <span class="short-code-parents">
@@ -89,7 +114,7 @@
 
 
 <div class="ecc-code" id="ecc_rotor_gkp">
-  <span class="short-code-name"><a href="/c/rotor_gkp">Rotor GKP code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/rotor_gkp">Rotor GKP code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">GKP code protecting against small angular position and momentum shifts of a planar rotor.</span>
   <span class="short-code-parents">
     Parents:
@@ -107,7 +132,7 @@
 
 
 <div class="ecc-code" id="ecc_molecular">
-  <span class="short-code-name"><a href="/c/molecular">Molecular code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/molecular">Molecular code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on the group <span class="inline-math">\(SO_3\)</span>. Construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset SO_3\)</span>, where <span class="inline-math">\(H,K\)</span> are finite. The <span class="inline-math">\(|K|/|H|\)</span>-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>.</span>
   <span class="short-code-info">Protection: Protects against generalized bit-flip errors <span class="inline-math">\(g\in SO_3\)</span> that are inside the fundamental domain of <span class="inline-math">\(G/K\)</span>. Protection against phase-flip errors determined by branching rules of irreps of <span class="inline-math">\(G\)</span> into those of <span class="inline-math">\(K\)</span>, and further into those of <span class="inline-math">\(H\)</span>.</span>
   <span class="short-code-parents">
@@ -122,10 +147,40 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        V. V. Albert, J. P. Covey, and J. Preskill, “Robust Encoding of a Qubit in a Molecule”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.031050" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="href">1911.00099</a>
+        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
+      <dd>
+        S. X. Cui et al., “Kitaev&#x27;s quantum double model as an error correcting code”, Quantum <span class="textbf">4</span>, 331 (2020). <a href="https://doi.org/10.22331/q-2020-09-24-331" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1908.02829" target="_blank" class="href">1908.02829</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        R. Walter Ogburn and J. Preskill, “Topological Quantum Computation”, Quantum Computing and Quantum Communications 341 (1999). <a href="https://doi.org/10.1007/3-540-49208-9_31" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        C. Mochon, “Anyon computers with smaller groups”, Physical Review A <span class="textbf">69</span>, (2004). <a href="https://doi.org/10.1103/PhysRevA.69.032306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0306063" target="_blank" class="href">quant-ph/0306063</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        J. K. Pachos, <span class="textit">Introduction to Topological Quantum Computation</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511792908" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        V. V. Albert, J. P. Covey, and J. Preskill, “Robust Encoding of a Qubit in a Molecule”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.031050" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00099" target="_blank" class="href">1911.00099</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
       <dd>
         D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
       </dd>

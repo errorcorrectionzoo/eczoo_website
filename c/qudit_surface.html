@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Turaev-Viro code" />
+<meta name="citation_title" content="Qudit surface code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Turaev-Viro code" />
+<meta name="DC.title" content="Qudit surface code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Turaev-Viro code
+      Qudit surface code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Turaev-Viro code</h1>
+    <h1>Qudit surface code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_turaev_viro">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qudit_surface">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,16 +73,18 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Turaev-Viro code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Qudit surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/turaev_viro">&nbsp;</a>-->
+   href="/c/qudit_surface">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">When defined on an <span class="inline-math">\(L\times L\)</span> square tiling of the torus, protects against <span class="inline-math">\(L\)</span> errors. More generally, the code distance is the number of edges in the shortest non contractible cycle in the tesselation or dual tesselation  <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -108,6 +110,10 @@
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">The simplest <a href="https://citizensciencegames.com/games/decodoku/" target="_blank" class="href">Decodoku game</a> is based on the qudit surface code with <span class="inline-math">\( q=10\)</span>.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -118,9 +124,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/category_quantum">Category-based quantum code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/qudit_css">Cyclic-qudit CSS code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(For certain categories, Turaev-Viro codes can be realized using Levin-Wen model Hamiltonians <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(Qudit surface code Hamiltonians admit topological phases associated with <span class="inline-math">\(\mathbb{Z}_q\)</span> <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -131,7 +137,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/levin_wen">Levin-Wen model code</a></span>    <span class="code-cousins-1-detail">(For certain categories, Turaev-Viro codes can be realized using Levin-Wen model Hamiltonians <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-cousins-1-detail">(The qudit surface code with <span class="inline-math">\(q=2\)</span> is the surface code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_double">Quantum-double code</a></span>    <span class="code-cousins-1-detail">(The quantum-double model with <span class="inline-math">\(G=\mathbb{Z}_q\)</span> is the qudit surface code.)</span>  </li>
 </ul>
 </dd>
 
@@ -144,24 +152,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    turaev_viro
+    qudit_surface
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Turaev-Viro code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/turaev_viro</dd>
+      <dd>“Qudit surface code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qudit_surface</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_turaev_viro,
-  title={Turaev-Viro code},
+      <dd class="bibtex">@incollection{eczoo_qudit_surface,
+  title={Qudit surface code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/turaev_viro}
+  url={https://errorcorrectionzoo.org/c/qudit_surface}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/turaev_viro</dd>
+      <dd>https://errorcorrectionzoo.org/c/qudit_surface</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -169,10 +177,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/categories/turaev_viro.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudit_surface.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=turaev_viro">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>turaev_viro</code></div>
+       href="/edit_code?code_id=qudit_surface">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qudit_surface</code></div>
 </dd>
 
 </dl>
@@ -182,7 +190,17 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        R. Koenig, G. Kuperberg, and B. W. Reichardt, “Quantum computation with Turaev–Viro codes”, Annals of Physics <span class="textbf">325</span>, 2707 (2010). <a href="https://doi.org/10.1016/j.aop.2010.08.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.2816" target="_blank" class="href">1002.2816</a>
+        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        S. S. Bullock and G. K. Brennen, “Qudit surface codes and gauge theory with finite cyclic groups”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">40</span>, 3481 (2007). <a href="https://doi.org/10.1088/1751-8113/40/13/013" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0609070" target="_blank" class="href">quant-ph/0609070</a>
       </dd>
     
     </dl>
