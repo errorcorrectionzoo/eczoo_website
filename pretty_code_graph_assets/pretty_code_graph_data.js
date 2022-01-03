@@ -1313,7 +1313,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Hyperbolic surface code constructed using cellulation of a Riemann Manifold \\(M\\) exhibitng systolic freedom. Codes derived from such manifolds can achieve distances scaling better than \\(\\sqrt{n}\\..."
+                        "Hyperbolic surface code constructed using cellulation of a Riemann Manifold \\(M\\) exhibitng systolic freedom \\cite{doi:10.2140/gtm.1999.2.113}. Codes derived from such manifolds can achieve distanc..."
                     ],
                     "_code_href": "/c/freedman_meyer_luo",
                     "_family_generation_level": 6
@@ -1997,7 +1997,9 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Distance-balanced code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
-                    "_description": "CSS stabilizer code constructed from another CSS code using a distance-balancing procedure.",
+                    "_description": [
+                        "CSS stabilizer code constructed from another CSS code using a distance-balancing procedure The initial code is said to be \\textit{unbalanced}, i.e., tailored to noise biased toward either bit- or p..."
+                    ],
                     "_code_href": "/c/distance_balanced",
                     "_family_generation_level": 5
                 },
