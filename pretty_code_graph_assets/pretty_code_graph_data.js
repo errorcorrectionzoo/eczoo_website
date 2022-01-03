@@ -1364,7 +1364,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A family of LDPC CSS codes with linear rate based on cellulations of four-dimensional manifolds that is based on a natural extension of Kitaev's surface-code construction \\cite{arxiv:1712.08578}. T..."
+                        "Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, wit..."
                     ],
                     "_code_href": "/c/four_dimensional_hyperbolic",
                     "_family_generation_level": 6
@@ -1398,7 +1398,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A family of Kitaev surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry; think saddle surfaces when defined on a 2D plane).\n\nFor a ..."
+                        "Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).\n\nFor a tessella..."
                     ],
                     "_code_href": "/c/two_dimensional_hyperbolic_surface",
                     "_family_generation_level": 6
