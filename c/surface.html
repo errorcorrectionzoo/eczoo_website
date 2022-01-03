@@ -82,10 +82,10 @@
 
 <dt class="code-description">Description</dt>
 <dd class="code-description"><p>A family of <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
-<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></dd>
+<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-5" class="cite">[6]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-6" class="cite">[7]</a>.</dd>
+<dd class="code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-6" class="cite">[7]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-7" class="cite">[8]</a>.</dd>
 
 
 <!-- Display features -->
@@ -95,22 +95,22 @@
 
 
 <dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-7" class="cite">[8]</a>, meaning that surface codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>. Loewner&#x27;s theorem provides an upper bound for any bounded-geometry surface code <a href="#cite-8" class="cite">[9]</a>.</dd>
+  <dd class="code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span> <a href="#cite-9" class="cite">[10]</a>, and (2) surface codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>. Loewner&#x27;s theorem provides an upper bound for any bounded-geometry surface code <a href="#cite-4" class="cite">[5]</a>.</dd>
 
 
 <dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-13" class="cite">[14]</a>.</span></dd>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-14" class="cite">[15]</a>.</span></dd>
 
 
 <dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
   <dd class="code-feature code-feature-transversal_gates">Pauli gates on torus geometry.</dd>
  
 <dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery <a href="#cite-5" class="cite">[6]</a><a href="#cite-14" class="cite">[15]</a> or braiding defects <a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a>.</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation <a href="#cite-19" class="cite">[20]</a> or just-in-time decoding <a href="#cite-20" class="cite">[21]</a>.</span></dd>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery <a href="#cite-6" class="cite">[7]</a><a href="#cite-15" class="cite">[16]</a> or braiding defects <a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation <a href="#cite-20" class="cite">[21]</a> or just-in-time decoding <a href="#cite-21" class="cite">[22]</a>.</span></dd>
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching <a href="#cite-6" class="cite">[7]</a><a href="#cite-21" class="cite">[22]</a>, union-find <a href="#cite-22" class="cite">[23]</a>, renormalization group <a href="#cite-23" class="cite">[24]</a><a href="#cite-24" class="cite">[25]</a>, tensor network <a href="#cite-25" class="cite">[26]</a>, Markov chain Monte Carlo <a href="#cite-26" class="cite">[27]</a>, cellular automaton <a href="#cite-27" class="cite">[28]</a>, machine learning <a href="#cite-28" class="cite">[29]</a><a href="#cite-29" class="cite">[30]</a><a href="#cite-30" class="cite">[31]</a>.</span></dd>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching <a href="#cite-7" class="cite">[8]</a><a href="#cite-22" class="cite">[23]</a>, union-find <a href="#cite-23" class="cite">[24]</a>, renormalization group <a href="#cite-24" class="cite">[25]</a><a href="#cite-25" class="cite">[26]</a>, tensor network <a href="#cite-26" class="cite">[27]</a>, Markov chain Monte Carlo <a href="#cite-27" class="cite">[28]</a>, cellular automaton <a href="#cite-28" class="cite">[29]</a>, machine learning <a href="#cite-29" class="cite">[30]</a><a href="#cite-30" class="cite">[31]</a><a href="#cite-31" class="cite">[32]</a>.</span></dd>
 
 
 
@@ -118,13 +118,13 @@
 
 
 <dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> with independent <span class="inline-math">\(X/Z\)</span> errors for square tiling <a href="#cite-31" class="cite">[32]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-32" class="cite">[33]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-33" class="cite">[34]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-34" class="cite">[35]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-35" class="cite">[36]</a>.</span></dd>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> with independent <span class="inline-math">\(X/Z\)</span> errors for square tiling <a href="#cite-32" class="cite">[33]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-33" class="cite">[34]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-34" class="cite">[35]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-35" class="cite">[36]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-36" class="cite">[37]</a>.</span></dd>
 
 
 
 <dt class="code-realizations">Realizations</dt>
 <dd class="code-realizations">
-  <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-36" class="cite">[37]</a>, Erhard et al. <a href="#cite-37" class="cite">[38]</a>, and Google Quantum AI <a href="#cite-38" class="cite">[39]</a>.</span><span class="paragraph-in-list">Signatures of corresponding topological phase of matter detected in superconducting circuits <a href="#cite-39" class="cite">[40]</a> and two-dimensional arrays of Rydberg atoms <a href="#cite-40" class="cite">[41]</a>.</span><span class="paragraph-in-list">Distance-three surface code implemented at ETH Zurich <a href="#cite-41" class="cite">[42]</a> and on the Zuchongzhi 2.1 superconducting quantum processor <a href="#cite-42" class="cite">[43]</a>.</span>
+  <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-37" class="cite">[38]</a>, Erhard et al. <a href="#cite-38" class="cite">[39]</a>, and Google Quantum AI <a href="#cite-39" class="cite">[40]</a>.</span><span class="paragraph-in-list">Signatures of corresponding topological phase of matter detected in superconducting circuits <a href="#cite-40" class="cite">[41]</a> and two-dimensional arrays of Rydberg atoms <a href="#cite-41" class="cite">[42]</a>.</span><span class="paragraph-in-list">Distance-three surface code implemented at ETH Zurich <a href="#cite-42" class="cite">[43]</a> and on the Zuchongzhi 2.1 superconducting quantum processor <a href="#cite-43" class="cite">[44]</a>.</span>
 </dd>
 
 <dt class="code-notes">Notes</dt>
@@ -143,7 +143,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-43" class="cite">[44]</a>.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-44" class="cite">[45]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -155,13 +155,9 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/xzzx">XZZX surface code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(XZZX\)</span> code is obtained from the surface code by Hadamard gates.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a></span>    <span class="code-parent-of-1-detail">(Freedman-Meyer-Luo codes are extensions of the surface code to 4D hyperbolic manifolds exhibiting systolic freedom.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/real_projective_plane">Projective-plane surface code</a></span>    <span class="code-parent-of-1-detail">(Surface code on the real projective plane.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky hyperbolic surface code</a></span>    <span class="code-parent-of-1-detail">(The Guth-Lubotzky code is an extension of the surface code to the 4D hyperbolic setting <a href="#cite-44" class="cite">[45]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a></span>    <span class="code-parent-of-1-detail">(Surface code on a two-dimensional hyperbolic surface.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/hyperbolic_surface">Hyperbolic surface code</a></span>    <span class="code-parent-of-1-detail">(Hyperbolic surface codes are extensions of the surface code to hyperbolic manifolds.)</span>  </li>
 </ul>
 </dd>
 
@@ -256,207 +252,207 @@
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
+        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        C. Horsman et al., “Surface code quantum computing by lattice surgery”, New Journal of Physics <span class="textbf">14</span>, 123011 (2012). <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1111.4022" target="_blank" class="href">1111.4022</a>
+        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+        C. Horsman et al., “Surface code quantum computing by lattice surgery”, New Journal of Physics <span class="textbf">14</span>, 123011 (2012). <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1111.4022" target="_blank" class="href">1111.4022</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        N. Delfosse, “Tradeoffs for reliable quantum information storage in surface codes and color codes”, 2013 IEEE International Symposium on Information Theory (2013). <a href="https://doi.org/10.1109/ISIT.2013.6620360" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1301.6588" target="_blank" class="href">1301.6588</a>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
+        N. Delfosse, “Tradeoffs for reliable quantum information storage in surface codes and color codes”, 2013 IEEE International Symposium on Information Theory (2013). <a href="https://doi.org/10.1109/ISIT.2013.6620360" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1301.6588" target="_blank" class="href">1301.6588</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        M. Aguado and G. Vidal, “Entanglement Renormalization and Topological Order”, Physical Review Letters <span class="textbf">100</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.100.070404" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0712.0348" target="_blank" class="href">0712.0348</a>
+        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        O. Higgott et al., “Optimal local unitary encoding circuits for the surface code”, Quantum <span class="textbf">5</span>, 517 (2021). <a href="https://doi.org/10.22331/q-2021-08-05-517" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2002.00362" target="_blank" class="href">2002.00362</a>
+        M. Aguado and G. Vidal, “Entanglement Renormalization and Topological Order”, Physical Review Letters <span class="textbf">100</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.100.070404" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0712.0348" target="_blank" class="href">0712.0348</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        Yu-Jie Liu et al., “Methods for simulating string-net states and anyons on a digital quantum computer”. <a href="https://arxiv.org/abs/2110.02020" target="_blank" class="href">2110.02020</a>
+        O. Higgott et al., “Optimal local unitary encoding circuits for the surface code”, Quantum <span class="textbf">5</span>, 517 (2021). <a href="https://doi.org/10.22331/q-2021-08-05-517" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2002.00362" target="_blank" class="href">2002.00362</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        J. Dengis, R. König, and F. Pastawski, “An optimal dissipative encoder for the toric code”, New Journal of Physics <span class="textbf">16</span>, 013023 (2014). <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.1036" target="_blank" class="href">1310.1036</a>
+        Yu-Jie Liu et al., “Methods for simulating string-net states and anyons on a digital quantum computer”. <a href="https://arxiv.org/abs/2110.02020" target="_blank" class="href">2110.02020</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
+        J. Dengis, R. König, and F. Pastawski, “An optimal dissipative encoder for the toric code”, New Journal of Physics <span class="textbf">16</span>, 013023 (2014). <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.1036" target="_blank" class="href">1310.1036</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        D. Litinski and F. von . Oppen, “Lattice Surgery with a Twist: Simplifying Clifford Gates of Surface Codes”, Quantum <span class="textbf">2</span>, 62 (2018). <a href="https://doi.org/10.22331/q-2018-05-04-62" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.02318" target="_blank" class="href">1709.02318</a>
+        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        R. Raussendorf and J. Harrington, “Fault-Tolerant Quantum Computation with High Threshold in Two Dimensions”, Physical Review Letters <span class="textbf">98</span>, (2007). <a href="https://doi.org/10.1103/PhysRevLett.98.190504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0610082" target="_blank" class="href">quant-ph/0610082</a>
+        D. Litinski and F. von . Oppen, “Lattice Surgery with a Twist: Simplifying Clifford Gates of Surface Codes”, Quantum <span class="textbf">2</span>, 62 (2018). <a href="https://doi.org/10.22331/q-2018-05-04-62" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.02318" target="_blank" class="href">1709.02318</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        R. Raussendorf, J. Harrington, and K. Goyal, “Topological fault-tolerance in cluster state quantum computation”, New Journal of Physics <span class="textbf">9</span>, 199 (2007). <a href="https://doi.org/10.1088/1367-2630/9/6/199" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703143" target="_blank" class="href">quant-ph/0703143</a>
+        R. Raussendorf and J. Harrington, “Fault-Tolerant Quantum Computation with High Threshold in Two Dimensions”, Physical Review Letters <span class="textbf">98</span>, (2007). <a href="https://doi.org/10.1103/PhysRevLett.98.190504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0610082" target="_blank" class="href">quant-ph/0610082</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        A. G. Fowler et al., “Surface codes: Towards practical large-scale quantum computation”, Physical Review A <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevA.86.032324" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.0928" target="_blank" class="href">1208.0928</a>
+        R. Raussendorf, J. Harrington, and K. Goyal, “Topological fault-tolerance in cluster state quantum computation”, New Journal of Physics <span class="textbf">9</span>, 199 (2007). <a href="https://doi.org/10.1088/1367-2630/9/6/199" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703143" target="_blank" class="href">quant-ph/0703143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        B. J. Brown et al., “Poking Holes and Cutting Corners to Achieve Clifford Gates with the Surface Code”, Physical Review X <span class="textbf">7</span>, (2017). <a href="https://doi.org/10.1103/PhysRevX.7.021029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1609.04673" target="_blank" class="href">1609.04673</a>
+        A. G. Fowler et al., “Surface codes: Towards practical large-scale quantum computation”, Physical Review A <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevA.86.032324" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.0928" target="_blank" class="href">1208.0928</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        D. Litinski, “Magic State Distillation: Not as Costly as You Think”, Quantum <span class="textbf">3</span>, 205 (2019). <a href="https://doi.org/10.22331/q-2019-12-02-205" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.06903" target="_blank" class="href">1905.06903</a>
+        B. J. Brown et al., “Poking Holes and Cutting Corners to Achieve Clifford Gates with the Surface Code”, Physical Review X <span class="textbf">7</span>, (2017). <a href="https://doi.org/10.1103/PhysRevX.7.021029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1609.04673" target="_blank" class="href">1609.04673</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        B. J. Brown, “A fault-tolerant non-Clifford gate for the surface code in two dimensions”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay4929" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.11634" target="_blank" class="href">1903.11634</a>
+        D. Litinski, “Magic State Distillation: Not as Costly as You Think”, Quantum <span class="textbf">3</span>, 205 (2019). <a href="https://doi.org/10.22331/q-2019-12-02-205" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.06903" target="_blank" class="href">1905.06903</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        A. G. Fowler, “Minimum weight perfect matching of fault-tolerant topological quantum error correction in average O(1) parallel time”, Quantum Information and Computation <span class="textbf">15</span>, 145 (2015). <a href="https://doi.org/10.26421/QIC15.1-2-9" target="_blank" class="href">DOI</a>
+        B. J. Brown, “A fault-tolerant non-Clifford gate for the surface code in two dimensions”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay4929" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.11634" target="_blank" class="href">1903.11634</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        Nicolas Delfosse and Naomi H. Nickerson, “Almost-linear time decoding algorithm for topological codes”. <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="href">1709.06218</a>
+        A. G. Fowler, “Minimum weight perfect matching of fault-tolerant topological quantum error correction in average O(1) parallel time”, Quantum Information and Computation <span class="textbf">15</span>, 145 (2015). <a href="https://doi.org/10.26421/QIC15.1-2-9" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        G. Duclos-Cianci and D. Poulin, “Fault-tolerant renormalization group decoder for abelian topological codes”, Quantum Information and Computation <span class="textbf">14</span>, 721 (2014). <a href="https://doi.org/10.26421/QIC14.9-10-1" target="_blank" class="href">DOI</a>
+        Nicolas Delfosse and Naomi H. Nickerson, “Almost-linear time decoding algorithm for topological codes”. <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="href">1709.06218</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        F. H. E. Watson, H. Anwar, and D. E. Browne, “Fast fault-tolerant decoder for qubit and qudit surface codes”, Physical Review A <span class="textbf">92</span>, (2015). <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.3028" target="_blank" class="href">1411.3028</a>
+        G. Duclos-Cianci and D. Poulin, “Fault-tolerant renormalization group decoder for abelian topological codes”, Quantum Information and Computation <span class="textbf">14</span>, 721 (2014). <a href="https://doi.org/10.26421/QIC14.9-10-1" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        S. Bravyi, M. Suchara, and A. Vargo, “Efficient algorithms for maximum likelihood decoding in the surface code”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1405.4883" target="_blank" class="href">1405.4883</a>
+        F. H. E. Watson, H. Anwar, and D. E. Browne, “Fast fault-tolerant decoder for qubit and qudit surface codes”, Physical Review A <span class="textbf">92</span>, (2015). <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.3028" target="_blank" class="href">1411.3028</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
       <dd>
-        A. Hutter, J. R. Wootton, and D. Loss, “Efficient Markov chain Monte Carlo algorithm for the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1302.2669" target="_blank" class="href">1302.2669</a>
+        S. Bravyi, M. Suchara, and A. Vargo, “Efficient algorithms for maximum likelihood decoding in the surface code”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1405.4883" target="_blank" class="href">1405.4883</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-27">[28]</dt>
       <dd>
-        M. Herold et al., “Cellular automaton decoders of topological quantum memories in the fault tolerant setting”, New Journal of Physics <span class="textbf">19</span>, 063012 (2017). <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1511.05579" target="_blank" class="href">1511.05579</a>
+        A. Hutter, J. R. Wootton, and D. Loss, “Efficient Markov chain Monte Carlo algorithm for the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1302.2669" target="_blank" class="href">1302.2669</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-28">[29]</dt>
       <dd>
-        G. Torlai and R. G. Melko, “Neural Decoder for Topological Codes”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1610.04238" target="_blank" class="href">1610.04238</a>
+        M. Herold et al., “Cellular automaton decoders of topological quantum memories in the fault tolerant setting”, New Journal of Physics <span class="textbf">19</span>, 063012 (2017). <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1511.05579" target="_blank" class="href">1511.05579</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[30]</dt>
       <dd>
-        C. Chamberland and P. Ronagh, “Deep neural decoders for near term fault-tolerant experiments”, Quantum Science and Technology <span class="textbf">3</span>, 044002 (2018). <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1802.06441" target="_blank" class="href">1802.06441</a>
+        G. Torlai and R. G. Melko, “Neural Decoder for Topological Codes”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1610.04238" target="_blank" class="href">1610.04238</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-30">[31]</dt>
       <dd>
-        R. Sweke et al., “Reinforcement learning decoders for fault-tolerant quantum computation”, Machine Learning: Science and Technology <span class="textbf">2</span>, 025005 (2021). <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.07207" target="_blank" class="href">1810.07207</a>
+        C. Chamberland and P. Ronagh, “Deep neural decoders for near term fault-tolerant experiments”, Quantum Science and Technology <span class="textbf">3</span>, 044002 (2018). <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1802.06441" target="_blank" class="href">1802.06441</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-31">[32]</dt>
       <dd>
-        M. Ohzeki, “Locations of multicritical points for spin glasses on regular lattices”, Physical Review E <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.0464" target="_blank" class="href">0811.0464</a>
+        R. Sweke et al., “Reinforcement learning decoders for fault-tolerant quantum computation”, Machine Learning: Science and Technology <span class="textbf">2</span>, 025005 (2021). <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.07207" target="_blank" class="href">1810.07207</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-32">[33]</dt>
       <dd>
-        H. Bombin et al., “Strong Resilience of Topological Codes to Depolarization”, Physical Review X <span class="textbf">2</span>, (2012). <a href="https://doi.org/10.1103/PhysRevX.2.021004" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.1852" target="_blank" class="href">1202.1852</a>
+        M. Ohzeki, “Locations of multicritical points for spin glasses on regular lattices”, Physical Review E <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevE.79.021129" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.0464" target="_blank" class="href">0811.0464</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-33">[34]</dt>
       <dd>
-        T. M. Stace, S. D. Barrett, and A. C. Doherty, “Thresholds for Topological Codes in the Presence of Loss”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0904.3556" target="_blank" class="href">0904.3556</a>
+        H. Bombin et al., “Strong Resilience of Topological Codes to Depolarization”, Physical Review X <span class="textbf">2</span>, (2012). <a href="https://doi.org/10.1103/PhysRevX.2.021004" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.1852" target="_blank" class="href">1202.1852</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-34">[35]</dt>
       <dd>
-        T. Ohno et al., “Phase structure of the random-plaquette gauge model: accuracy threshold for a toric quantum memory”, Nuclear Physics B <span class="textbf">697</span>, 462 (2004). <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0401101" target="_blank" class="href">quant-ph/0401101</a>
+        T. M. Stace, S. D. Barrett, and A. C. Doherty, “Thresholds for Topological Codes in the Presence of Loss”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0904.3556" target="_blank" class="href">0904.3556</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-35">[36]</dt>
       <dd>
-        A. M. Stephens, “Fault-tolerant thresholds for quantum error correction with the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1311.5003" target="_blank" class="href">1311.5003</a>
+        T. Ohno et al., “Phase structure of the random-plaquette gauge model: accuracy threshold for a toric quantum memory”, Nuclear Physics B <span class="textbf">697</span>, 462 (2004). <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0401101" target="_blank" class="href">quant-ph/0401101</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-36">[37]</dt>
       <dd>
-        C. K. Andersen et al., “Repeated quantum error detection in a surface code”, Nature Physics <span class="textbf">16</span>, 875 (2020). <a href="https://doi.org/10.1038/s41567-020-0920-y" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1912.09410" target="_blank" class="href">1912.09410</a>
+        A. M. Stephens, “Fault-tolerant thresholds for quantum error correction with the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022321" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1311.5003" target="_blank" class="href">1311.5003</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-37">[38]</dt>
       <dd>
-        A. Erhard et al., “Entangling logical qubits with lattice surgery”, Nature <span class="textbf">589</span>, 220 (2021). <a href="https://doi.org/10.1038/s41586-020-03079-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2006.03071" target="_blank" class="href">2006.03071</a>
+        C. K. Andersen et al., “Repeated quantum error detection in a surface code”, Nature Physics <span class="textbf">16</span>, 875 (2020). <a href="https://doi.org/10.1038/s41567-020-0920-y" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1912.09410" target="_blank" class="href">1912.09410</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-38">[39]</dt>
       <dd>
-        Google Quantum AI et al., “Exponential suppression of bit or phase errors with cyclic error correction”, Nature <span class="textbf">595</span>, 383 (2021). <a href="https://doi.org/10.1038/s41586-021-03588-y" target="_blank" class="href">DOI</a>
+        A. Erhard et al., “Entangling logical qubits with lattice surgery”, Nature <span class="textbf">589</span>, 220 (2021). <a href="https://doi.org/10.1038/s41586-020-03079-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2006.03071" target="_blank" class="href">2006.03071</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-39">[40]</dt>
       <dd>
-        K. J. Satzinger et al., “Realizing topologically ordered states on a quantum processor”. <a href="https://arxiv.org/abs/2104.01180" target="_blank" class="href">2104.01180</a>
+        Google Quantum AI et al., “Exponential suppression of bit or phase errors with cyclic error correction”, Nature <span class="textbf">595</span>, 383 (2021). <a href="https://doi.org/10.1038/s41586-021-03588-y" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-40">[41]</dt>
       <dd>
-        Giulia Semeghini et al., “Probing Topological Spin Liquids on a Programmable Quantum Simulator”. <a href="https://arxiv.org/abs/2104.04119" target="_blank" class="href">2104.04119</a>
+        K. J. Satzinger et al., “Realizing topologically ordered states on a quantum processor”. <a href="https://arxiv.org/abs/2104.01180" target="_blank" class="href">2104.01180</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-41">[42]</dt>
       <dd>
-        Sebastian Krinner et al., “Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code”. <a href="https://arxiv.org/abs/2112.03708" target="_blank" class="href">2112.03708</a>
+        Giulia Semeghini et al., “Probing Topological Spin Liquids on a Programmable Quantum Simulator”. <a href="https://arxiv.org/abs/2104.04119" target="_blank" class="href">2104.04119</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-42">[43]</dt>
       <dd>
-        Youwei Zhao et al., “Realizing an Error-Correcting Surface Code with Superconducting Qubits”. <a href="https://arxiv.org/abs/2112.13505" target="_blank" class="href">2112.13505</a>
+        Sebastian Krinner et al., “Realizing Repeated Quantum Error Correction in a Distance-Three Surface Code”. <a href="https://arxiv.org/abs/2112.03708" target="_blank" class="href">2112.03708</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-43">[44]</dt>
       <dd>
-        F. J. Wegner, “Duality in Generalized Ising Models and Phase Transitions without Local Order Parameters”, Journal of Mathematical Physics <span class="textbf">12</span>, 2259 (1971). <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="href">DOI</a>
+        Youwei Zhao et al., “Realizing an Error-Correcting Surface Code with Superconducting Qubits”. <a href="https://arxiv.org/abs/2112.13505" target="_blank" class="href">2112.13505</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-44">[45]</dt>
       <dd>
-        “[]”, Quantum Information and Computation <span class="textbf">19</span>, (2019). <a href="https://doi.org/10.26421/QIC19.5-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1712.08578" target="_blank" class="href">1712.08578</a>
+        F. J. Wegner, “Duality in Generalized Ising Models and Phase Transitions without Local Order Parameters”, Journal of Mathematical Physics <span class="textbf">12</span>, 2259 (1971). <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-45">[46]</dt>
