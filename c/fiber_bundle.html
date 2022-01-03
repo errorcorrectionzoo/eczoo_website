@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Fiber-bundle code" />
+<meta name="citation_title" content="Hastings-Haah-O&#39;Donnell fiber-bundle code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Fiber-bundle code" />
+<meta name="DC.title" content="Hastings-Haah-O&#39;Donnell fiber-bundle code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Fiber-bundle code
+      Hastings-Haah-O&#39;Donnell fiber-bundle code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Fiber-bundle code</h1>
+    <h1>Hastings-Haah-O&#x27;Donnell fiber-bundle code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Fiber-bundle code</span></span>
+  <span class="code-name">Hastings-Haah-O&#x27;Donnell fiber-bundle code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/fiber_bundle">&nbsp;</a>-->
@@ -81,8 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description">Hastings, Haah, and O’Donnell constructed the first fiber bundle code by combining a random LDPC code as the base and a cyclic repetition code as the fiber. After applying distance balancing, they obtained a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> where n is the number of physical qubits. In addition, weight reduction can be used to make this an LDPC code.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Pauli errors up to weight <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span></dd>
 
 
 <!-- Display features -->
@@ -91,6 +93,8 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">k/n: <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span>, distance: <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span></dd>
 
 
 
@@ -98,6 +102,8 @@
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Greedy algorithm can be used to efficiently decode x errors, but no known efficient decoding of z errors yet.</span></dd>
 
 
 
@@ -112,6 +118,15 @@
 
 <!-- Relationships to other codes -->
 
+<dt class="code-parents">Parent(s)</dt>
+<dd class="code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/homological_product">Homological product code</a></span>    <span class="code-parents-1-detail">(Fiber-bundle code can be viewed as a homological product code with twisted product.)</span>  </li>
+</ul>
+</dd>
 
 
 <dt class="code-cousins">Cousin(s)</dt>
@@ -120,11 +135,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></span>    <span class="code-cousins-1-detail">(Introduce a twist, which is an automorphism on one of the complexes in the tensor product, to increase distance <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></span>    <span class="code-cousins-1-detail">(Introduce a twist, which is an automorphism on one of the complexes in the tensor product, to increase distance <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/homological_product">Homological product code</a></span>    <span class="code-cousins-1-detail">(Fiber-bundle code can be viewed as a homological product code with twisted product.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced-product code</a></span>    <span class="code-cousins-1-detail">(Some special cases of balanced product codes are fiber bundle codes <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced product code</a></span>    <span class="code-cousins-1-detail">(Some special cases of balanced product codes are fiber bundle codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -144,10 +157,10 @@
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Fiber-bundle code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/fiber_bundle</dd>
+      <dd>“Hastings-Haah-O&#39;Donnell fiber-bundle code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/fiber_bundle</dd>
       <dt>BibTeX:</dt>
       <dd class="bibtex">@incollection{eczoo_fiber_bundle,
-  title={Fiber-bundle code},
+  title={Hastings-Haah-O&#39;Donnell fiber-bundle code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
@@ -175,10 +188,15 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
+        Matthew B. Hastings, Jeongwan Haah, and Ryan O&#x27;Donnell, “Fiber Bundle Codes: Breaking the <span class="inline-math">$N^{1/2} \operatorname{polylog}(N)$</span> Barrier for Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2009.03921" target="_blank" class="href">2009.03921</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
+      <dd>
+        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
       <dd>
         N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
       </dd>

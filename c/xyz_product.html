@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Distance-balanced code" />
+<meta name="citation_title" content="XYZ product code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Distance-balanced code" />
+<meta name="DC.title" content="XYZ product code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Distance-balanced code
+      XYZ product code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Distance-balanced code</h1>
+    <h1>XYZ product code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_distance_balanced">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_xyz_product">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,15 +73,15 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Distance-balanced code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="code-name">XYZ product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/distance_balanced">&nbsp;</a>-->
+   href="/c/xyz_product">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">CSS stabilizer code constructed from another CSS code using a distance-balancing procedure The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors.</dd>
+<dd class="code-description">A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than taking a product of only two classical codes to produce a CSS code, a third classical code is considered, acting with Pauli-<span class="inline-math">\(Y\)</span> operators.</dd>
 
 
 
@@ -91,6 +91,8 @@
 
 
 
+<dt class="code-feature code-feature-rate">Rate</dt>
+  <dd class="code-feature code-feature-rate">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-0" class="cite">[1]</a>.</dd>
 
 
 
@@ -118,9 +120,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-parents-1-detail">(Distance-balancing procedure can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-parents-1-detail">(Using the assumption that the input classical codes are LDPC codes, XYZ-product codes will be QLDPC codes.)</span>  </li>
 </ul>
 </dd>
 
@@ -131,15 +133,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced product code</a></span>    <span class="code-cousins-1-detail">(According to <a href="#cite-2" class="cite">[3]</a>, distance balancing is used to form balanced-product subsystem codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(Distance-balancing procedure can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></span>    <span class="code-cousins-1-detail">(Ramanujan tensor-product constructions use distance balancing to increase distance.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced product code</a></span>    <span class="code-cousins-1-detail">(Distance balancing is used to form balanced-product subsystem codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Construction of a XYZ product code is similar to a hypergraph product, but using a third classical code.)</span>  </li>
 </ul>
 </dd>
 
@@ -152,24 +146,24 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    distance_balanced
+    xyz_product
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Distance-balanced code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/distance_balanced</dd>
+      <dd>“XYZ product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/xyz_product</dd>
       <dt>BibTeX:</dt>
-      <dd class="bibtex">@incollection{eczoo_distance_balanced,
-  title={Distance-balanced code},
+      <dd class="bibtex">@incollection{eczoo_xyz_product,
+  title={XYZ product code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
-  url={https://errorcorrectionzoo.org/c/distance_balanced}
+  url={https://errorcorrectionzoo.org/c/xyz_product}
 }</dd>
       <dt>Permanent link:</dt>
-      <dd>https://errorcorrectionzoo.org/c/distance_balanced</dd>
+      <dd>https://errorcorrectionzoo.org/c/xyz_product</dd>
     </dl>
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
@@ -177,10 +171,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/distance_balanced.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/xyz_product.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=distance_balanced">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>distance_balanced</code></div>
+       href="/edit_code?code_id=xyz_product">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>xyz_product</code></div>
 </dd>
 
 </dl>
@@ -190,17 +184,7 @@
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        M. B. Hastings, “Weight Reduction for Quantum Codes”. <a href="https://arxiv.org/abs/1611.03790" target="_blank" class="href">1611.03790</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Shai Evra, Tali Kaufman, and Gilles Zémor, “Decodable quantum LDPC codes beyond the <span class="inline-math">$\sqrt{n}$</span> distance barrier using high dimensional expanders”. <a href="https://arxiv.org/abs/2004.07935" target="_blank" class="href">2004.07935</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
+        Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
     
     </dl>

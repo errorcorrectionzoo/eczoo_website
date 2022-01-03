@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Lifted product code" />
+<meta name="citation_title" content="Lifted-product code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Lifted product code" />
+<meta name="DC.title" content="Lifted-product code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Lifted product code
+      Lifted-product code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Lifted product code</h1>
+    <h1>Lifted-product code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Lifted product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Lifted-product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/lifted_product">&nbsp;</a>-->
@@ -81,10 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span> with a free action of a group <span class="inline-math">\(G\)</span>. Lifted product codes can also be defined over arbitrary matrix rings.</dd>
+<dd class="code-description">A QLDPC code that is the &quot;lifted version&quot; of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of &#x27;&#x27;product&#x27;&#x27; is taken between two input classical codes to produce a CSS code. What differentiates a lifted product code from a hypergraph product code is that a reduction of symmetry is exploited to decrease the number of physical qubits required. Lifted product codes are notable because they were the first QLDPC codes to achieve almost linear distance.</dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Code performance strongly depends on <span class="inline-math">\(G\)</span>, but lifted product codes contain <a href="#cite-1" class="cite">[2]</a> families of QLDPC codes with the parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span>.</dd>
+<dd class="code-protection">Code performance strongly depends on <span class="inline-math">\(G\)</span> <a href="#cite-1" class="cite">[2]</a>, but lifted product codes contain <a href="#cite-2" class="cite">[3]</a> families of QLDPC codes with the parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -94,7 +94,7 @@
 
 
 <dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Lifted product codes include the first examples <a href="#cite-1" class="cite">[2]</a> of <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-2" class="cite">[3]</a>.</dd>
+  <dd class="code-feature code-feature-rate">Lifted-product codes include the first examples <a href="#cite-2" class="cite">[3]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-3" class="cite">[4]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">$0 \leq \alpha &lt; 1$</span> <a href="#cite-1" class="cite">[2]</a>. There is no known simple way to compute the logical dimension <span class="inline-math">\(k\)</span> in the general case <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 
@@ -103,7 +103,7 @@
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">BP-OSD decoder <a href="#cite-0" class="cite">[1]</a>.</span></dd>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">BP-OSD decoder <a href="#cite-0" class="cite">[1]</a> adds OSD-like post-processing to the belief propogation decoder for improved performance.</span></dd>
 
 
 
@@ -114,6 +114,10 @@
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">Formerly known as <span class="textit">generalized hypergraph product codes</span> <a href="#cite-0" class="cite">[1]</a>, and later renamed to lifted-product codes <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a>.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -125,6 +129,8 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/homological_product">Homological product code</a></span>    <span class="code-parents-1-detail">(Lifted product obtained from the homological product over a group algebra <span class="inline-math">\(\mathbb{F}_2 G\)</span> of two length-two chain complexes over <span class="inline-math">\(\mathbb{F}_2 G\)</span>, i.e., classical binary codes with a free action of the group <span class="inline-math">\(G\)</span>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/balanced_product">Balanced product code</a></span>  </li>
 </ul>
 </dd>
 
@@ -155,10 +161,10 @@
        data-popup-button-class-list="code-show-citation">
     <dl class="show-citation">
       <dt>Cite as:</dt>
-      <dd>“Lifted product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/lifted_product</dd>
+      <dd>“Lifted-product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/lifted_product</dd>
       <dt>BibTeX:</dt>
       <dd class="bibtex">@incollection{eczoo_lifted_product,
-  title={Lifted product code},
+  title={Lifted-product code},
   booktitle={The Error Correction Zoo},
   year={2021},
   editor={Albert, Victor V. and Faist, Philippe},
@@ -173,7 +179,7 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/lifted_product.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/lifted_product.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=lifted_product">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>lifted_product</code></div>
@@ -191,10 +197,15 @@
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+        Pavel Panteleev and Gleb Kalachev, “Quantum LDPC Codes with Almost Linear Minimum Distance”. <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
+      <dd>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
       <dd>
         N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
       </dd>
