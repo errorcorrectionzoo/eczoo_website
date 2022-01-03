@@ -233,7 +233,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
-                        "An \\( [n,k]_{q} \\) code based on a finite group \\( G \\) of size \\(n \\). A group code for an abelian group is called an \\textit{abelian group code}.\n\nThe code is a \\( k \\) dimensional linear subspac..."
+                        "An \\( [n,k]_{q} \\) code based on a finite group \\( G \\) of size \\(n \\). A group code for an abelian group is called an \\textit{abelian group code}.\n\nThe code is a \\( k \\)-dimensional linear subspac..."
                     ],
                     "_code_href": "/c/group",
                     "_family_generation_level": 4
@@ -1745,7 +1745,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_stabilizer",
-                    "label": "Cyclic-qudit stabilizer code",
+                    "label": "Modular-qudit stabilizer code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "An \\(((n,p^k,d))_q\\) (with \\(q\\) not necessarily prime) stabilizer code is denoted as \\([[n,k]]_q\\) or \\([[n,k,d]]_q\\), where \\(d\\) is the code's distance. Stub.",
@@ -1809,7 +1809,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudits_into_qudits",
-                    "label": "Cyclic-qudit code",
+                    "label": "Modular-qudit code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1829,7 +1829,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_css",
-                    "label": "Cyclic-qudit CSS code",
+                    "label": "Modular-qudit CSS code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Often, but not always, defined for prime qudits (\\(q=p\\)). Stub.",

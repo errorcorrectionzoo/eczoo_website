@@ -201,21 +201,6 @@ One constructs a CSS code by associating a physical qubit to every basis element
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/qudit_css">Cyclic-qudit CSS code</a></span>
-    <span class="code-description">Often, but not always, defined for prime qudits (<span class="inline-math">\(q=p\)</span>). Stub.</span>
-  </li>
-  <li>
-    <span class="code-name">
-      <a href="/c/qudits_into_qudits">Cyclic-qudit code</a></span>
-    <span class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers modulo <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</span>
-  </li>
-  <li>
-    <span class="code-name">
-      <a href="/c/qudit_stabilizer">Cyclic-qudit stabilizer code</a></span>
-    <span class="code-description">An <span class="inline-math">\(((n,p^k,d))_q\)</span> (with <span class="inline-math">\(q\)</span> not necessarily prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Stub.</span>
-  </li>
-  <li>
-    <span class="code-name">
       <a href="/c/distance_balanced">Distance-balanced code</a><span class="code-introduced"><a href="#cite-29" class="cite">[30]</a><a href="#cite-6" class="cite">[7]</a></span></span>
     <span class="code-description">CSS stabilizer code constructed from another CSS code using a distance-balancing procedure.</span>
   </li>
@@ -374,7 +359,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
     <span class="code-name">
       <a href="/c/group">Group code</a></span>
     <span class="code-description"><p>An <span class="inline-math">\( [n,k]_{q} \)</span> code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</p>
-<p>The code is a <span class="inline-math">\( k \)</span> dimensional linear subspace of the group algebra of <span class="inline-math">\( G\)</span> with coefficients in the field with <span class="inline-math">\( q \)</span> elements. To be precise, the code must be closed under permutations corresponding to the elements of the group <span class="inline-math">\( G \)</span>; therefore, <span class="inline-math">\( G \)</span> must be a subgroup of the permutation automorphism group of the code, which is defined as the group of permutations of the physical bits that preserve the code space. This leads us to the formal definition of a group code: a group code is an ideal in the group algebra <span class="inline-math">\( \mathbb{F}_q G \)</span>.</p></span>
+<p>The code is a <span class="inline-math">\( k \)</span>-dimensional linear subspace of the group algebra of <span class="inline-math">\( G\)</span> with coefficients in the field <span class="inline-math">\(GF(q) = \mathbb{F}_q\)</span> with <span class="inline-math">\(q\)</span> elements. To be precise, the code must be closed under permutations corresponding to the elements of the group <span class="inline-math">\( G \)</span>; therefore, <span class="inline-math">\( G \)</span> must be a subgroup of the permutation automorphism group of the code, which is defined as the group of permutations of the physical bits that preserve the code space. This leads us to the formal definition of a group code: a group code is an ideal in the group algebra <span class="inline-math">\( \mathbb{F}_q G \)</span>.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -493,6 +478,21 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   </li>
   <li>
     <span class="code-name">
+      <a href="/c/qudit_css">Modular-qudit CSS code</a></span>
+    <span class="code-description">Often, but not always, defined for prime qudits (<span class="inline-math">\(q=p\)</span>). Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/qudits_into_qudits">Modular-qudit code</a></span>
+    <span class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers <span class="textit">modulo</span> <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.</span>
+  </li>
+  <li>
+    <span class="code-name">
+      <a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span>
+    <span class="code-description">An <span class="inline-math">\(((n,p^k,d))_q\)</span> (with <span class="inline-math">\(q\)</span> not necessarily prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
       <a href="/c/molecular">Molecular code</a><span class="code-introduced"><a href="#cite-49" class="cite">[50]</a></span></span>
     <span class="code-description">Encodes finite-dimensional Hilbert space into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on the group <span class="inline-math">\(SO_3\)</span>. Construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset SO_3\)</span>, where <span class="inline-math">\(H,K\)</span> are finite. The <span class="inline-math">\(|K|/|H|\)</span>-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>.</span>
   </li>
@@ -536,7 +536,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
   <li>
     <span class="code-name">
       <a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a><span class="code-introduced"><a href="#cite-52" class="cite">[53]</a></span></span>
-    <span class="code-description"><p>Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to cyclic qudits, oscillators, and rotors <a href="#cite-34" class="cite">[35]</a>.</p>
+    <span class="code-description"><p>Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-34" class="cite">[35]</a>.</p>
 <p>Encoding is accomplished using a tensor network of <span class="inline-math">\([[5,1,3]]\)</span> encoding isometries, which are six-legged perfect tensors (with five legs corresponding to the physical qubits and one for the encoded logical qubit). A <span class="inline-math">\(2n\)</span>-legged <span class="textit">perfect tensor</span> is proportional to an isometry for any bipartition of its indices into a set <span class="inline-math">\(A\)</span> and a complementary set <span class="inline-math">\(A^{\perp}\)</span> such that <span class="inline-math">\(|A|\leq|A^{\perp}|\)</span>.</p>
 <p>To construct the encoding, one first uniformly tiles the hyperbolic AdS/CFT disc using pentagons and hexagons. Then, one places a 6-legged <span class="inline-math">\([[5,1,3]]\)</span> encoding tensor at each hexagon and pentagon, contracting legs between neighboring shapes and leaving one leg uncontracted at each pentagon. This construction forms an encoding isometry from the uncontracted legs in the bulk to the uncontracted legs at the boundary.</p></span>
   </li>
@@ -648,7 +648,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
     <span class="code-name">
       <a href="/c/quantum_double">Quantum-double code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a></span></span>
     <span class="code-description"><p>A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</p>
-<p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( Hom(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-95" class="cite">[96]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
+<p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( \text{Hom}(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-95" class="cite">[96]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
 <p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic excitations of model <a href="#cite-96" class="cite">[97]</a><a href="#cite-97" class="cite">[98]</a><a href="#cite-98" class="cite">[99]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></span>
   </li>
   <li>
