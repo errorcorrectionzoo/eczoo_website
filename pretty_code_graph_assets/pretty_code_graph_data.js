@@ -641,7 +641,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Random code whose codewords are produced by performing a unitarily covariant projective measurement on a typical subspace of a tensor-power state. Reference \\cite{arXiv:quant-ph/0702005} showed tha..."
+                        "Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity o..."
                     ],
                     "_code_href": "/c/haar_random",
                     "_family_generation_level": 4
