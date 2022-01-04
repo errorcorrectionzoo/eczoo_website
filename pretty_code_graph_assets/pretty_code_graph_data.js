@@ -1168,7 +1168,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Nine-qubit CSS code that is the smallest such code to correct a single-qubit error. The logical state is encoded using\n\\begin{align}\n\\begin{split}\n|\\overline{0}\\rangle&=\\frac{1}{2\\sqrt{2}}\\left(|00..."
+                        "Nine-qubit \\hyperref[code:css]{CSS code} that is the smallest such code to correct a single-qubit error. The logical state is encoded using\n\\begin{align}\n\\begin{split}\n|\\overline{0}\\rangle&=\\frac{1..."
                     ],
                     "_code_href": "/c/shor_nine",
                     "_family_generation_level": 5

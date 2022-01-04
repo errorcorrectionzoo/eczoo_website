@@ -746,7 +746,7 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
   <li>
     <span class="code-name">
       <a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-119" class="cite">[120]</a></span></span>
-    <span class="code-description"><p>Nine-qubit CSS code that is the smallest such code to correct a single-qubit error. The logical state is encoded using
+    <span class="code-description"><p>Nine-qubit <a href="/c/css" class="ref">CSS code</a> that is the smallest such code to correct a single-qubit error. The logical state is encoded using
 <span class="display-math env-align">\begin{align}
 \begin{split}
 |\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\
@@ -754,7 +754,7 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 \end{split}
 \end{align}</span>
 The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</p>
-<p>Specifically, a state is phase-flip error-corrected by a three-qubit phase-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>, with parity checks of <span class="inline-math">\(X_0 X_1I_2\)</span> and <span class="inline-math">\(X_0I_1X_2\)</span> in <span class="inline-math">\(X\)</span> basis, where the subscript represents the qubit index. Each logical qubit is encoded using
+<p>Specifically, a state is phase-flip error-corrected by a three-qubit phase-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>, with stabilizer generators <span class="inline-math">\(X_0 X_1I_2\)</span> and <span class="inline-math">\(X_0I_1X_2\)</span> in <span class="inline-math">\(X\)</span> basis, where the subscript represents the qubit index. Each logical qubit is encoded using
 <span id="eq--phase-flip" class="display-math env-align">\begin{align}
 \label{eq:phase-flip}
 \begin{split}
@@ -766,9 +766,9 @@ Then, each physical qubit used in <span class="inline-math eqref">\eqref{eq:phas
 <span class="display-math env-align">\begin{align}
   |\pm _j \rangle  = \frac{1}{\sqrt{2}}( |0_{j0}0_{j1}0_{j2}\rangle \pm |1_{j0}1_{j1}1_{j2}\rangle),
 \end{align}</span>
-each with bit-flip error parity check <span class="inline-math">\(Z_{j0}Z_{j1}I_{j2}\)</span> and  <span class="inline-math">\(Z_{j0}I_{j1}Z_{j2} \)</span> with <span class="inline-math">\(j=0,1,2\)</span>.
-Notice now the phase-flip error parity check is extended as <span class="inline-math">\(X_j = X_{j0}X_{j1}X_{j2}\)</span>.
-As a result, the overall parity checks with the flattened qubit index are
+each with bit-flip error stabilizer generators <span class="inline-math">\(Z_{j0}Z_{j1}I_{j2}\)</span> and  <span class="inline-math">\(Z_{j0}I_{j1}Z_{j2} \)</span> with <span class="inline-math">\(j=0,1,2\)</span>.
+Notice now the phase-flip error stabilizer generator is extended as <span class="inline-math">\(X_j = X_{j0}X_{j1}X_{j2}\)</span>.
+As a result, the stabilizer generators with the qubit index flattened are
 <span class="display-math env-align">\begin{align}
 \begin{split}
   Z_{j0}Z_{j1}I_{j2} &amp;\rightarrow \{Z_0Z_1, Z_3Z_4, Z_6Z_7\} \\
