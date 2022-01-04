@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Oscillator-into-oscillator code" />
+<meta name="citation_title" content="Bosonic stabilizer code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Oscillator-into-oscillator code" />
+<meta name="DC.title" content="Bosonic stabilizer code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Oscillator-into-oscillator code
+      Bosonic stabilizer code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Oscillator-into-oscillator code</h1>
+    <h1>Bosonic stabilizer code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_oscillators_into_oscillators">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_oscillator_stabilizer">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,16 +73,21 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Oscillator-into-oscillator code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="code-name">Bosonic stabilizer code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/oscillators_into_oscillators">&nbsp;</a>-->
+   href="/c/oscillator_stabilizer">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</dd>
+<dd class="code-description"><p>Bosonic code whose codespace is defined as the common eigenspace of a group of mutually commuting <span class="textit">displacement operators</span> (exponentials of linear combinations of position and momentum operators). Such displacement-based codes closely resemble and inherit some features of qubit stabilizer codes.</p>
+<p>Stabilizer codewords encoding a logical oscillator admit a continuous stabilizer group, and can thus be defined in terms of the group&#x27;&#x27;s Lie algebra, i.e., as the common <span class="inline-math">\(0\)</span>-eigenvalue eigenspace of mutually commuting linear combinations of oscillator position and momentum operators called <span class="textit">annihilators</span>. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> oscillator-into-oscillator stabilizer code is denoted as <span class="inline-math">\([[n,k]]_{\mathbb{R}}\)</span> or <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;&#x27;s distance.</p>
+<p>Stabilizer codewords encoding a finite-dimensional codespace admit a discrete infinite stabilizer group. Qubit-into-oscillator stabilizer codes are equivalent to GKP codes.</p>
+<p>A bosonic stabilizer code admitting a set of mutually commuting operators (either annihilators or displacements) such that each operator consists of either position operators or momentum operators is called a <span class="textit">bosonic CSS code</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protective properties can be delineated in terms of the annihilators or displacements. If an error operator does not commute with a stabilizer group element, then that error is detectable. Oscillator-into-oscillator stabilizer codes protect against erasures of a subset of modes, while GKP codes protect against sufficiently small displacements in any number of modes.</dd>
 
 
 <!-- Display features -->
@@ -118,7 +123,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/oscillators">Bosonic code</a></span>    <span class="code-parents-1-detail">(Bosonic code with infinite-dimensional logical subspace.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/oscillators">Bosonic code</a></span>  </li>
 </ul>
 </dd>
 
@@ -128,9 +133,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/homological_cv">Homological continuous-variable (CV) Code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/homological_cv">Homological continuous-variable (CV) Code</a></span>    <span class="code-parent-of-1-detail">(Homological CV codes are bosonic CSS codes.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-parent-of-1-detail">(GKP codes defined on rectangular lattice are bosonic CSS codes, which more general lattices yield bosonic stabilizer codes.)</span>  </li>
 </ul>
 </dd>
 
@@ -140,7 +145,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/group_gkp">Group GKP code</a></span>    <span class="code-cousins-1-detail">(For logical and physical spaces based on the real line <span class="inline-math">\(\mathbb{R}\)</span>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Bosonic stabilizer codes are a continuous-variable analogue of qubit stabilizer codes.)</span>  </li>
 </ul>
 </dd>
 
@@ -153,54 +158,39 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    oscillators_into_oscillators
+    oscillator_stabilizer
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/oscillators_into_oscillators.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/oscillator_stabilizer.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=oscillators_into_oscillators">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>oscillators_into_oscillators</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=oscillator_stabilizer">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>oscillator_stabilizer</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Oscillator-into-oscillator code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/oscillators_into_oscillators</dd>
+    <dd>“Bosonic stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/oscillator_stabilizer</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_oscillators_into_oscillators,
-title={Oscillator-into-oscillator code},
+    <dd class="bibtex">@incollection{eczoo_oscillator_stabilizer,
+title={Bosonic stabilizer code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/oscillators_into_oscillators}
+url={https://errorcorrectionzoo.org/c/oscillator_stabilizer}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/oscillators_into_oscillators</dd>
+    <dd>https://errorcorrectionzoo.org/c/oscillator_stabilizer</dd>
   </dl>
 </div>
 </dd>
 
 </dl>
 
-   <div id="endnotes">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href">quant-ph/9711021</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        S. L. Braunstein, “Error Correction for Continuous Quantum Variables”, Physical Review Letters <span class="textbf">80</span>, 4084 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4084" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="href">quant-ph/9711049</a>
-      </dd>
-    
-    </dl>
-   </div>
 
   </main><!-- #main -->
 

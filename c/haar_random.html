@@ -81,12 +81,12 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information (CITE) arXiv:1106.1445, but encoding and decoding in random <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</p>
-<p>There are different approaches to create random codewords. In the construction of Ref. <a href="#cite-1" class="cite">[2]</a>, random codewords are produced by performing a unitarily covariant projective measurement on a <span class="textit">typical</span> subspace of a tensor-power state. Reference <a href="#cite-1" class="cite">[2]</a> showed that the capacity of a noisy quantum channel can be achieved by encoding in such Haar-random codes. In particular, random codes achieve perfect transmission in the thermodynamic (<span class="inline-math">\(n\to\infty\)</span>) limit by proving that the encoded information becomes decoupled from the environment. This is a necessary and sufficient condition for successful decoding since measurements of the environment should never reveal the encoded information <a href="#cite-4" class="cite">[5]</a>.</p>
-<p>Intuitively, coupling with the environment can be decreased by projecting the system onto a random codespace. The more qubits that are randomly discarded, the more the codespace is decoupled from the environment. One may ask what is the least amount of qubits that can be discarded, i.e. the largest remaining codespace, that still achieves decoupling. It can be shown through the decoupling inequality <a href="#cite-5" class="cite">[6]</a> that the largest possible dimension of the random codespace that achieves arbitrarily large decoupling is exactly the coherent information of the channel. Therefore, there exist codes that can transmit information with rate equal to the coherent information. Furthermore, these codes can be constructed with high probability by performing a Haar-random isometry from an <span class="inline-math">\(n\)</span>-dimensional physical space to a <span class="inline-math">\(k\)</span>-dimensional codespace, where <span class="inline-math">\(k/n\)</span> is equal to the coherent information. Such an isometry can be produced by QR decomposition of a Gaussian random matrix <a href="#cite-6" class="cite">[7]</a>.&#x27;</p></dd>
+<dd class="code-description"><p>Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#cite-4" class="cite">[5]</a>, but encoding and decoding in random <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</p>
+<p>There are different approaches to create random codewords. In the construction of Ref. <a href="#cite-1" class="cite">[2]</a>, random codewords are produced by performing a unitarily covariant projective measurement on a <span class="textit">typical</span> subspace of a tensor-power state. Reference <a href="#cite-1" class="cite">[2]</a> showed that the capacity of a noisy quantum channel can be achieved by encoding in such Haar-random codes. In particular, random codes achieve perfect transmission in the <span class="inline-math">\(n\to\infty\)</span>) limit by proving that the encoded information becomes decoupled from the environment. This is a necessary and sufficient condition for successful decoding since measurements of the environment should never reveal the encoded information <a href="#cite-5" class="cite">[6]</a>.</p>
+<p>Intuitively, coupling with the environment can be decreased by projecting the system onto a random codespace. The more qubits that are randomly discarded, the more the codespace is decoupled from the environment. One may ask what is the least amount of qubits that can be discarded, i.e. the largest remaining codespace, that still achieves decoupling. It can be shown through the decoupling inequality <a href="#cite-6" class="cite">[7]</a> that the largest possible dimension of the random codespace that achieves arbitrarily large decoupling is exponential in the coherent information of the channel. Therefore, there exist codes that can transmit information with rate equal to the coherent information. Furthermore, these codes can be constructed with high probability by performing a Haar-random isometry embedding a <span class="inline-math">\(k\)</span>-dimensional logical subspace into an <span class="inline-math">\(n\)</span>-dimensional physical space, where <span class="inline-math">\(k/n\)</span> is equal to the coherent information. Such an isometry can be produced by QR decomposition of a Gaussian random matrix <a href="#cite-7" class="cite">[8]</a>.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Achieves the capacity of any noisy quantum channel</dd>
+<dd class="code-protection">Random code achieve the capacity of any noisy quantum channel.</dd>
 
 
 <!-- Display features -->
@@ -206,15 +206,20 @@ url={https://errorcorrectionzoo.org/c/haar_random}
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        B. Schumacher and M. A. Nielsen, “Quantum data processing and error correction”, Physical Review A <span class="textbf">54</span>, 2629 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.2629" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604022" target="_blank" class="href">quant-ph/9604022</a>
+        M. M. Wilde, “Preface to the Second Edition”, Quantum Information Theory xi. <a href="https://doi.org/10.1017/9781316809976.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.1445" target="_blank" class="href">1106.1445</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        M. Horodecki, J. Oppenheim, and A. Winter, “Quantum State Merging and Negative Information”, Communications in Mathematical Physics <span class="textbf">269</span>, 107 (2006). <a href="https://doi.org/10.1007/s00220-006-0118-x" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0512247" target="_blank" class="href">quant-ph/0512247</a>
+        B. Schumacher and M. A. Nielsen, “Quantum data processing and error correction”, Physical Review A <span class="textbf">54</span>, 2629 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.2629" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604022" target="_blank" class="href">quant-ph/9604022</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
+      <dd>
+        M. Horodecki, J. Oppenheim, and A. Winter, “Quantum State Merging and Negative Information”, Communications in Mathematical Physics <span class="textbf">269</span>, 107 (2006). <a href="https://doi.org/10.1007/s00220-006-0118-x" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0512247" target="_blank" class="href">quant-ph/0512247</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
       <dd>
         G. W. Stewart, “The Efficient Generation of Random Orthogonal Matrices with an Application to Condition Estimators”, SIAM Journal on Numerical Analysis <span class="textbf">17</span>, 403 (1980). <a href="https://doi.org/10.1137/0717034" target="_blank" class="href">DOI</a>
       </dd>
