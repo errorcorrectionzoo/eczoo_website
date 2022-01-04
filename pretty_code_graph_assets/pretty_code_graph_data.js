@@ -2132,11 +2132,11 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_concatenated",
-                    "label": "Concatened code",
+                    "label": "Concatenated code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
-                        "A concatened code is a combination of two codes, an inner code \\(C\\) and an outer code \\(C^\\prime\\), where the physical subspace used for the outer code consists of the logical subspace of the inne..."
+                        "A concatenated code is a combination of two codes, an inner code \\(C\\) and an outer code \\(C^\\prime\\), where the physical subspace used for the outer code consists of the logical subspace of the in..."
                     ],
                     "_code_href": "/c/quantum_concatenated",
                     "_family_generation_level": 3
