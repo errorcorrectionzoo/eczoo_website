@@ -374,6 +374,12 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   </li>
   <li>
     <span class="code-name">
+      <a href="/c/haar_random">Haar-random code</a><span class="code-introduced"><a href="#cite-55" class="cite">[56]</a></span></span>
+    <span class="code-description"><p>Random code whose codewords are produced by performing a unitarily covariant projective measurement on a typical subspace of a tensor-power state. Reference <a href="#cite-55" class="cite">[56]</a> showed that the capacity of a noisy quantum channel can be achieved by encoding in such Haar-random codes. In particular, random codes achieve perfect transmission in the thermodynamic (<span class="inline-math">\(n\to\infty\)</span>) limit by proving that the encoded information becomes decoupled from the environment. This is a necessary and sufficient condition for successful decoding since measurements of the environment should never reveal the encoded information <a href="#cite-56" class="cite">[57]</a>.</p>
+<p>Intuitively, coupling with the environment can be decreased by projecting the system onto a random codespace. The more qubits that are randomly discarded, the more the codespace is decoupled from the environment. One may ask what is the least amount of qubits that can be discarded, i.e. the largest remaining codespace, that still achieves decoupling. It can be shown through the decoupling inequality <a href="#cite-57" class="cite">[58]</a> that the largest possible dimension of the random codespace that achieves arbitrarily large decoupling is exactly the coherent information of the channel. Therefore, there exist codes that can transmit information with rate equal to the coherent information. Furthermore, these codes can be constructed with high probability by performing a Haar-random isometry from an <span class="inline-math">\(n\)</span>-dimensional physical space to a <span class="inline-math">\(k\)</span>-dimensional codespace, where <span class="inline-math">\(k/n\)</span> is equal to the coherent information. Such an isometry can be produced by QR decomposition of a Gaussian random matrix <a href="#cite-58" class="cite">[59]</a>.&#x27;</p></span>
+  </li>
+  <li>
+    <span class="code-name">
       <a href="/c/hadamard">Hadamard code</a></span>
     <span class="code-description">The Hadamard code is dual to the extended Hamming Code.</span>
   </li>
@@ -384,18 +390,18 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-55" class="cite">[56]</a></span></span>
+      <a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-59" class="cite">[60]</a></span></span>
     <span class="code-description">Hamming codes are a family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for any <span class="inline-math">\(r\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix, <span class="inline-math">\(H\)</span>, has all possible non-zero r-bit strings as its columns. The codewords are <span class="inline-math">\({x|Hx=0}\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a><span class="code-introduced"><a href="#cite-56" class="cite">[57]</a></span></span>
-    <span class="code-description">Hastings, Haah, and O’Donnell constructed the first fiber bundle code by combining a random LDPC code as the base and a cyclic repetition code as the fiber. After applying distance balancing, they obtained a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> where n is the number of physical qubits. In addition, weight reduction can be used to make this an LDPC code.</span>
+      <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a><span class="code-introduced"><a href="#cite-60" class="cite">[61]</a></span></span>
+    <span class="code-description">Code constructed by combining a random LDPC code as the base and a cyclic repetition code as the fiber of a fiber bundle. After applying distance balancing, a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> is obtained. In addition, weight reduction can be used to make this an <span class="inline-math">\([[n,\Omega(n^{3/5}/\text{polylog}n,\Omega(n^{3/5}/\text{polylog}n)]]\)</span> QLDPC code family.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/holographic">Holographic code</a><span class="code-introduced"><a href="#cite-57" class="cite">[58]</a></span></span>
-    <span class="code-description"><p>A code whose encoding isometry serves to model aspects of the AdS/CFT holographic duality. Encodes operators in the bulk of the Anti de Sitter (AdS) space, represented by logical qudits, into operators on the boundary of the corresponding Conformal Field Theory (CFT), represented by physical qudits. Encoding can often be represented by a tensor network associated with a tiling of hyperbolic space. See Defn 4.3 of Ref. <a href="#cite-58" class="cite">[59]</a> for a technical formulation.</p>
+      <a href="/c/holographic">Holographic code</a><span class="code-introduced"><a href="#cite-61" class="cite">[62]</a></span></span>
+    <span class="code-description"><p>A code whose encoding isometry serves to model aspects of the AdS/CFT holographic duality. Encodes operators in the bulk of the Anti de Sitter (AdS) space, represented by logical qudits, into operators on the boundary of the corresponding Conformal Field Theory (CFT), represented by physical qudits. Encoding can often be represented by a tensor network associated with a tiling of hyperbolic space. See Defn 4.3 of Ref. <a href="#cite-62" class="cite">[63]</a> for a technical formulation.</p>
 <p>Typically, the encoding isometry <span class="inline-math">\(U\)</span> obeys the <span class="textit">entanglement-wedge reconstruction condition</span>, which states that for any boundary region <span class="inline-math">\(R\)</span>, any bulk operator <span class="inline-math">\(O\)</span> localized to the entanglement wedge of <span class="inline-math">\(R\)</span> must be implementable by some boundary operator <span class="inline-math">\(\tilde{O}\)</span> localized to <span class="inline-math">\(R\)</span>. Formally, <span class="inline-math">\(UO = \tilde{O}U\)</span> and <span class="inline-math">\([\tilde{O},UU^\dagger] = 0\)</span>. The entanglement wedge is the space enclosed within the Ryu–Takayanagi surface in the bulk (minimal surface) with boundary <span class="inline-math">\(R\)</span>.</p></span>
   </li>
   <li>
@@ -406,7 +412,7 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   <li>
     <span class="code-name">
       <a href="/c/honeycomb">Honeycomb code</a><span class="code-introduced"><a href="#cite-39" class="cite">[40]</a></span></span>
-    <span class="code-description"><p>Floquet code inspired by the Kitaev honeycomb model <a href="#cite-59" class="cite">[60]</a> whose logical qubits are generated through a particular sequence of measurements.</p>
+    <span class="code-description"><p>Floquet code inspired by the Kitaev honeycomb model <a href="#cite-63" class="cite">[64]</a> whose logical qubits are generated through a particular sequence of measurements.</p>
 <p>The code is defined on a hexagonal (honeycomb) lattice with a physical qubit located at each vertex. Edges are labeled <span class="inline-math">\(x\)</span>, <span class="inline-math">\(y\)</span>, and <span class="inline-math">\(z\)</span>, such that one edge of each label meet at every vertex. Check operators are defined as <span class="inline-math">\(XX\)</span> acting on any two qubits joined by an <span class="inline-math">\(x\)</span> edge, and similarly for <span class="inline-math">\(y\)</span> and <span class="inline-math">\(z\)</span>. The hexagonal lattice is 3-colorable, so the hexagons may be labeled 0, 1, 2 such that no two neighboring hexagons have the same label.</p>
 <p>The code-generating measurement pattern consists of measuring the check operators located on all of the <span class="inline-math">\(r\)</span>-labeled edges in round <span class="inline-math">\(r\)</span> mod 3. The code space is the <span class="inline-math">\(+1\)</span> eigenspace of the instantaneous stabilizer group (ISG). The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured.</p></span>
   </li>
@@ -422,14 +428,14 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#cite-60" class="cite">[61]</a><a href="#cite-61" class="cite">[62]</a></span></span>
+      <a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#cite-64" class="cite">[65]</a><a href="#cite-65" class="cite">[66]</a></span></span>
     <span class="code-description">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two binary linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/surface">Kitaev surface code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-62" class="cite">[63]</a><a href="#cite-63" class="cite">[64]</a></span></span>
-    <span class="code-description"><p>A family of <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-64" class="cite">[65]</a>.</p>
-<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-40" class="cite">[41]</a><a href="#cite-65" class="cite">[66]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></span>
+      <a href="/c/surface">Kitaev surface code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-66" class="cite">[67]</a><a href="#cite-67" class="cite">[68]</a></span></span>
+    <span class="code-description"><p>A family of <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-68" class="cite">[69]</a>.</p>
+<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-40" class="cite">[41]</a><a href="#cite-69" class="cite">[70]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -438,14 +444,14 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/lifted_product">Lifted-product code</a><span class="code-introduced"><a href="#cite-66" class="cite">[67]</a></span></span>
+      <a href="/c/lifted_product">Lifted-product code</a><span class="code-introduced"><a href="#cite-70" class="cite">[71]</a></span></span>
     <span class="code-description">A QLDPC code that is the &quot;lifted version&quot; of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of &#x27;&#x27;product&#x27;&#x27; is taken between two input classical codes to produce a CSS code. What differentiates a lifted product code from a hypergraph product code is that a reduction of symmetry is exploited to decrease the number of physical qubits required. Lifted product codes are notable because they were the first QLDPC codes to achieve almost linear distance.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/t-designs">Local Haar-random circuit code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
+      <a href="/c/t-designs">Local Haar-random circuit code</a><span class="code-introduced"><a href="#cite-71" class="cite">[72]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
-The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-67" class="cite">[68]</a>. Follow-up work <a href="#cite-68" class="cite">[69]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</span>
+The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-71" class="cite">[72]</a>. Follow-up work <a href="#cite-72" class="cite">[73]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</span>
   </li>
   <li>
     <span class="code-name">
@@ -454,17 +460,17 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/majorana_stab">Majorana stabilizer code</a><span class="code-introduced"><a href="#cite-69" class="cite">[70]</a></span></span>
-    <span class="code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-70" class="cite">[71]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</span>
+      <a href="/c/majorana_stab">Majorana stabilizer code</a><span class="code-introduced"><a href="#cite-73" class="cite">[74]</a></span></span>
+    <span class="code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-74" class="cite">[75]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/matching">Matching code</a><span class="code-introduced"><a href="#cite-71" class="cite">[72]</a></span></span>
+      <a href="/c/matching">Matching code</a><span class="code-introduced"><a href="#cite-75" class="cite">[76]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-72" class="cite">[73]</a></span></span>
+      <a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-76" class="cite">[77]</a></span></span>
     <span class="code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
 <span class="display-math env-align">\begin{align}
 d \leq n-k+1
@@ -473,7 +479,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/maximum_rank_distance">Maximum-rank code</a><span class="code-introduced"><a href="#cite-73" class="cite">[74]</a><a href="#cite-74" class="cite">[75]</a></span></span>
+      <a href="/c/maximum_rank_distance">Maximum-rank code</a><span class="code-introduced"><a href="#cite-77" class="cite">[78]</a><a href="#cite-78" class="cite">[79]</a></span></span>
     <span class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
 the generator matrix
 <span class="display-math env-align">\begin{align}
@@ -503,20 +509,20 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/monitored_random_circuits">Monitored random-circuit code</a><span class="code-introduced"><a href="#cite-75" class="cite">[76]</a><a href="#cite-76" class="cite">[77]</a><a href="#cite-77" class="cite">[78]</a></span></span>
-    <span class="code-description"><p>Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-78" class="cite">[79]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-79" class="cite">[80]</a><a href="#cite-80" class="cite">[81]</a>.</p>
-<p>Monitored random circuits have a finite information capacity that decays exponentially with respect to system size <a href="#cite-80" class="cite">[81]</a>. When <span class="inline-math">\( p = 0 \)</span>, the random circuit achieves channel capacity, meaning that it stores the most amount of information possible. This notion quantifies the recoverability of information and the reversability of the system under the monitored random dynamics. In the volume-law phase (<span class="inline-math">\( p &lt; p_c \)</span> for some critical probability <span class="inline-math">\(p_c\)</span>), the channel capacity remains non-zero, and the monitored channel projects an initial state into a random error-correcting code <a href="#cite-80" class="cite">[81]</a>. With appropriately chosen evolution operators and measurements, the code is a stabilizer code whose parameters depend on time, <span class="inline-math">\( [[n,k(t),d(t)]] \)</span>. A similar notion applies to Haar random circuits with measurements <a href="#cite-81" class="cite">[82]</a>.</p></span>
+      <a href="/c/monitored_random_circuits">Monitored random-circuit code</a><span class="code-introduced"><a href="#cite-79" class="cite">[80]</a><a href="#cite-80" class="cite">[81]</a><a href="#cite-81" class="cite">[82]</a></span></span>
+    <span class="code-description"><p>Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-82" class="cite">[83]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-83" class="cite">[84]</a><a href="#cite-84" class="cite">[85]</a>.</p>
+<p>Monitored random circuits have a finite information capacity that decays exponentially with respect to system size <a href="#cite-84" class="cite">[85]</a>. When <span class="inline-math">\( p = 0 \)</span>, the random circuit achieves channel capacity, meaning that it stores the most amount of information possible. This notion quantifies the recoverability of information and the reversability of the system under the monitored random dynamics. In the volume-law phase (<span class="inline-math">\( p &lt; p_c \)</span> for some critical probability <span class="inline-math">\(p_c\)</span>), the channel capacity remains non-zero, and the monitored channel projects an initial state into a random error-correcting code <a href="#cite-84" class="cite">[85]</a>. With appropriately chosen evolution operators and measurements, the code is a stabilizer code whose parameters depend on time, <span class="inline-math">\( [[n,k(t),d(t)]] \)</span>. A similar notion applies to Haar random circuits with measurements <a href="#cite-85" class="cite">[86]</a>.</p></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a><span class="code-introduced"><a href="#cite-82" class="cite">[83]</a></span></span>
+      <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a><span class="code-introduced"><a href="#cite-86" class="cite">[87]</a></span></span>
     <span class="code-description"><p>This is a family of codes derived via an algorithm that takes as input <span class="textit">any</span> binary classical code and outputs a quantum code (note that this framework can be extended to <span class="inline-math">\(q\)</span>-ary codes). The algorithm is probabalistic but succeeds almost surely if the classical code is random. An explicit code construction does exist for linear distance codes encoding one logical qubit. For finite rate codes, there is no rigorous proof that the construction algorithm succeeds, and approximate constructions are described instead.</p>
 <p>This family strictly generalizes CSS codes (because CSS codes come only from linear or self orthogonal classical codes). These codes can be shown to be realized as a subspace of the ground space of a (geometrically) local Hamiltonian.</p></span>
   </li>
   <li>
     <span class="code-name">
       <a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
-    <span class="code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-83" class="cite">[84]</a>,
+    <span class="code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-87" class="cite">[88]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
 \end{align}</span>
@@ -525,12 +531,12 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/oaecc">Operator-algebra error-correcting code</a><span class="code-introduced"><a href="#cite-84" class="cite">[85]</a><a href="#cite-85" class="cite">[86]</a></span></span>
+      <a href="/c/oaecc">Operator-algebra error-correcting code</a><span class="code-introduced"><a href="#cite-88" class="cite">[89]</a><a href="#cite-89" class="cite">[90]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-86" class="cite">[87]</a><a href="#cite-87" class="cite">[88]</a></span></span>
+      <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-90" class="cite">[91]</a><a href="#cite-91" class="cite">[92]</a></span></span>
     <span class="code-description">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</span>
   </li>
   <li>
@@ -540,7 +546,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a><span class="code-introduced"><a href="#cite-57" class="cite">[58]</a></span></span>
+      <a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a><span class="code-introduced"><a href="#cite-61" class="cite">[62]</a></span></span>
     <span class="code-description"><p>Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-35" class="cite">[36]</a>.</p>
 <p>Encoding is accomplished using a tensor network of <span class="inline-math">\([[5,1,3]]\)</span> encoding isometries, which are six-legged perfect tensors (with five legs corresponding to the physical qubits and one for the encoded logical qubit). A <span class="inline-math">\(2n\)</span>-legged <span class="textit">perfect tensor</span> is proportional to an isometry for any bipartition of its indices into a set <span class="inline-math">\(A\)</span> and a complementary set <span class="inline-math">\(A^{\perp}\)</span> such that <span class="inline-math">\(|A|\leq|A^{\perp}|\)</span>.</p>
 <p>To construct the encoding, one first uniformly tiles the hyperbolic AdS/CFT disc using pentagons and hexagons. Then, one places a 6-legged <span class="inline-math">\([[5,1,3]]\)</span> encoding tensor at each hexagon and pentagon, contracting legs between neighboring shapes and leaving one leg uncontracted at each pentagon. This construction forms an encoding isometry from the uncontracted legs in the bulk to the uncontracted legs at the boundary.</p></span>
@@ -575,42 +581,42 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/permutation_invariant">Permutation-invariant code</a><span class="code-introduced"><a href="#cite-88" class="cite">[89]</a></span></span>
+      <a href="/c/permutation_invariant">Permutation-invariant code</a><span class="code-introduced"><a href="#cite-92" class="cite">[93]</a></span></span>
     <span class="code-description">Codes which are stabilized by the symmetric group <span class="inline-math">\(S_n\)</span> on <span class="inline-math">\(n\)</span> elements, in a generalization of stabilizer codes to binary codes utilizing (non-abelian) group actions (in particular, <span class="inline-math">\(S_n\)</span> is non-abelian).</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-89" class="cite">[90]</a></span></span>
+      <a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-93" class="cite">[94]</a></span></span>
     <span class="code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>. The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-90" class="cite">[91]</a></span></span>
+      <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-94" class="cite">[95]</a></span></span>
     <span class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-91" class="cite">[92]</a></span></span>
+      <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-95" class="cite">[96]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/real_projective_plane">Projective-plane surface code</a><span class="code-introduced"><a href="#cite-92" class="cite">[93]</a></span></span>
+      <a href="/c/real_projective_plane">Projective-plane surface code</a><span class="code-introduced"><a href="#cite-96" class="cite">[97]</a></span></span>
     <span class="code-description">A family of Kitaev surface codes on the non-orientable 2-dimensional compact manifold <span class="inline-math">\(\mathbb{R}P^2\)</span> (in contrast to a genus-<span class="inline-math">\(g\)</span> surface). Whereas genus-<span class="inline-math">\(g\)</span> surface codes require <span class="inline-math">\(2g\)</span> logical qubits, qubit codes on <span class="inline-math">\(\mathbb{R}P^2\)</span> are made from a single logical qubit.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a><span class="code-introduced"><a href="#cite-93" class="cite">[94]</a></span></span>
+      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a><span class="code-introduced"><a href="#cite-97" class="cite">[98]</a></span></span>
     <span class="code-description">A CSS code formed from a classical Reed-Muller code in which polynomials over finite fields encode data. This is done by transforming these polynomials into the stabilizer generator matrices</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-94" class="cite">[95]</a></span></span>
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-98" class="cite">[99]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_cyclic">Quantum cyclic code</a><span class="code-introduced"><a href="#cite-95" class="cite">[96]</a></span></span>
+      <a href="/c/quantum_cyclic">Quantum cyclic code</a><span class="code-introduced"><a href="#cite-99" class="cite">[100]</a></span></span>
     <span class="code-description">A code <span class="inline-math">\(C\)</span> constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits) is cyclic if a cyclic permutation of the subsystems leaves the code subspace invariant.</span>
   </li>
   <li>
@@ -620,7 +626,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-96" class="cite">[97]</a></span></span>
+      <a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-100" class="cite">[101]</a></span></span>
     <span class="code-description">CSS codes constructed from bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</span>
   </li>
   <li>
@@ -630,7 +636,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_parity">Quantum parity code (QPC)</a><span class="code-introduced"><a href="#cite-97" class="cite">[98]</a><a href="#cite-98" class="cite">[99]</a></span></span>
+      <a href="/c/quantum_parity">Quantum parity code (QPC)</a><span class="code-introduced"><a href="#cite-101" class="cite">[102]</a><a href="#cite-102" class="cite">[103]</a></span></span>
     <span class="code-description">A <span class="inline-math">\([[m_1 m_2,1,\min(m_1,m_2)]]\)</span> CSS code family obtained from concatenating an <span class="inline-math">\(m_1\)</span>-qubit phase-flip repetition code with an <span class="inline-math">\(m_2\)</span>-qubit bit-flip repetition code. Logical codewords are
 <span class="display-math env-align">\begin{align}
 \begin{split}
@@ -641,7 +647,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_polar">Quantum polar code</a><span class="code-introduced"><a href="#cite-99" class="cite">[100]</a></span></span>
+      <a href="/c/quantum_polar">Quantum polar code</a><span class="code-introduced"><a href="#cite-103" class="cite">[104]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
@@ -651,14 +657,14 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_double">Quantum-double code</a><span class="code-introduced"><a href="#cite-63" class="cite">[64]</a></span></span>
+      <a href="/c/quantum_double">Quantum-double code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
     <span class="code-description"><p>A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</p>
-<p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( \text{Hom}(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-100" class="cite">[101]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
-<p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic excitations of model <a href="#cite-101" class="cite">[102]</a><a href="#cite-102" class="cite">[103]</a><a href="#cite-103" class="cite">[104]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></span>
+<p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( \text{Hom}(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-104" class="cite">[105]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
+<p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic excitations of model <a href="#cite-105" class="cite">[106]</a><a href="#cite-106" class="cite">[107]</a><a href="#cite-107" class="cite">[108]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-104" class="cite">[105]</a></span></span>
+      <a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-108" class="cite">[109]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
@@ -668,7 +674,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/qudit_surface">Qudit surface code</a><span class="code-introduced"><a href="#cite-63" class="cite">[64]</a></span></span>
+      <a href="/c/qudit_surface">Qudit surface code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
     <span class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</span>
   </li>
   <li>
@@ -688,7 +694,7 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/gabidulin">Rank code</a><span class="code-introduced"><a href="#cite-73" class="cite">[74]</a><a href="#cite-74" class="cite">[75]</a></span></span>
+      <a href="/c/gabidulin">Rank code</a><span class="code-introduced"><a href="#cite-77" class="cite">[78]</a><a href="#cite-78" class="cite">[79]</a></span></span>
     <span class="code-description"><p>Also called <span class="textit">Gabidulin</span> or <span class="textit">(matrix) rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q^N)\)</span> is the maximum number of its linearly independent coordinates.</p>
 <p>Given <span class="inline-math">\(X^n\)</span>, an <span class="inline-math">\(n\)</span>-dimensional vector space over <span class="inline-math">\(GF(q^N)\)</span> where <span class="inline-math">\(q\)</span> is a power of a prime number, the <span class="textit">rank metric</span> <span class="inline-math">\(d(x, y)\)</span> is defined via the rank norm <span class="inline-math">\(r(x, q) = \mathrm{rank}(A(x))\)</span>, where
 <span class="display-math env-align">\begin{align}
@@ -699,12 +705,12 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-105" class="cite">[106]</a><a href="#cite-106" class="cite">[107]</a></span></span>
+      <a href="/c/reed_muller">Reed-Muller code</a><span class="code-introduced"><a href="#cite-109" class="cite">[110]</a><a href="#cite-110" class="cite">[111]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-107" class="cite">[108]</a></span></span>
+      <a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-111" class="cite">[112]</a></span></span>
     <span class="code-description"><span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> for prime <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> with polynomial <span class="inline-math">\(f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}\)</span>.</span>
   </li>
   <li>
@@ -714,7 +720,7 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-108" class="cite">[109]</a></span></span>
+      <a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-112" class="cite">[113]</a></span></span>
     <span class="code-description">Nine-qubit CSS code that is the smallest such code to correct a single-qubit error. Shor&#x27;s code works by concatenating each qubit of a phase-flip with a bit-flip repetition code. Therefore, the code can correct both type of errors simultaneously. To be specific, a state is phase-flip error-corrected by a three-qubit phase-flip correction code, with parity checks of <span class="inline-math">\(X_0 X_1I_2\)</span> and <span class="inline-math">\(X_0I_1X_2\)</span> in <span class="inline-math">\(X\)</span> basis, where the subscript represents the qubit index. Each logical qubit is encoded using <span id="eq--phase-flip" class="display-math env-align">\begin{align} \label{eq:phase-flip} \begin{split} |0\rangle_{L_P} &amp;= |+_0+_1+_2\rangle \\ |1\rangle_{L_P} &amp;= |-_0-_1-_2\rangle . \end{split}\end{align}</span> Then, each physical qubit used in <span class="inline-math eqref">\eqref{eq:phase-flip}</span> is further encoded in the three-qubit bit-flip correction code: <span class="display-math env-align">\begin{align} |\pm _j \rangle  = \frac{1}{\sqrt{2}}( |0_{j0}0_{j1}0_{j2}\rangle \pm |1_{j0}1_{j1}1_{j2}\rangle),\end{align}</span> each with bit-flip error parity check <span class="inline-math">\(Z_{j0}Z_{j1}I_{j2}\)</span> and  <span class="inline-math">\(Z_{j0}I_{j1}Z_{j2} \)</span>, where <span class="inline-math">\(j=0,1,2\)</span>. Notice now the phase-flip error parity check is extended as <span class="inline-math">\(X_j = X_{j0}X_{j1}X_{j2}\)</span>. As a result, the overall parity checks with the flattened qubit index are <span class="display-math env-align">\begin{align} \begin{split} Z_{j0}Z_{j1}I_{j2} &amp;\rightarrow \{Z_0Z_1, Z_3Z_4, Z_6Z_7\} \\ Z_{j0}I_{j1}Z_{j2} &amp;\rightarrow \{Z_0Z_2, Z_3Z_5, Z_6Z_8\} \\ X_0 X_1I_2  &amp;\rightarrow  \{X_0X_1X_2X_3X_4X_5\}\\ X_0 I_1X_2  &amp;\rightarrow  \{X_0X_1X_2X_6X_7X_8\}. \end{split}\end{align}</span> The logical state is encoded using <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\ |\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3}~. \end{split}\end{align}</span></span>
   </li>
   <li>
@@ -724,22 +730,22 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-109" class="cite">[110]</a></span></span>
+      <a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-113" class="cite">[114]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/skew_cyclic">Skew-cyclic code</a><span class="code-introduced"><a href="#cite-110" class="cite">[111]</a></span></span>
+      <a href="/c/skew_cyclic">Skew-cyclic code</a><span class="code-introduced"><a href="#cite-114" class="cite">[115]</a></span></span>
     <span class="code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over <span class="inline-math">\(GF(q)\)</span> is skew-cyclic if there exists an automorphism, <span class="inline-math">\(\theta\)</span>, of <span class="inline-math">\(GF(q)\)</span>, such that for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the skew-cyclically shifted string <span class="inline-math">\(\theta(c_n) \theta(c_1) \cdots \theta(c_{n-1})\in C\)</span>. We say that <span class="inline-math">\(C\)</span> is a <span class="inline-math">\(\theta\)</span>-cyclic code over <span class="inline-math">\(GF(q)\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-111" class="cite">[112]</a><a href="#cite-91" class="cite">[92]</a></span></span>
+      <a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-115" class="cite">[116]</a><a href="#cite-95" class="cite">[96]</a></span></span>
     <span class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-112" class="cite">[113]</a></span></span>
+      <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-116" class="cite">[117]</a></span></span>
     <span class="code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
 <span class="inline-math">\(GF(4)\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
 There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
@@ -767,17 +773,17 @@ The stabilizer group for the Steane code has six generators.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/oecc">Subsystem code</a><span class="code-introduced"><a href="#cite-113" class="cite">[114]</a><a href="#cite-114" class="cite">[115]</a></span></span>
+      <a href="/c/oecc">Subsystem code</a><span class="code-introduced"><a href="#cite-117" class="cite">[118]</a><a href="#cite-118" class="cite">[119]</a></span></span>
     <span class="code-description">Also called an operator error-correcting code. Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/subsystem_color">Subsystem color code</a><span class="code-introduced"><a href="#cite-115" class="cite">[116]</a><a href="#cite-116" class="cite">[117]</a></span></span>
+      <a href="/c/subsystem_color">Subsystem color code</a><span class="code-introduced"><a href="#cite-119" class="cite">[120]</a><a href="#cite-120" class="cite">[121]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a><span class="code-introduced"><a href="#cite-117" class="cite">[118]</a></span></span>
+      <a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a><span class="code-introduced"><a href="#cite-121" class="cite">[122]</a></span></span>
     <span class="code-description"><p>Also called a <span class="textit">gauge stabilizer code</span>. A stabilizer code with some of its logical qubits denoted as <span class="textit">gauge</span> qubits and not used for storage of logical information. Note that this doesnt lead to new codes but does lead to new error correction and fault tolerance procedures. Subsystem codes are denoted by <span class="inline-math">\([[n,k,r,d]]\)</span>, similar to stabilizer codes, but with an extra parameter <span class="inline-math">\(r\)</span> denoting the number of gauge qubits.</p>
 <p>To create these codes proceed as follows. Choose <span class="inline-math">\(2n\)</span> operators <span class="inline-math">\(\{ \tilde{X}_j,\tilde{Z}_j\}_{j=1}^n\)</span> from <span class="inline-math">\(\mathsf{P}_n\)</span>, the Pauli group on <span class="inline-math">\(n\)</span> qubits, such that they obey the same commutation relations as the regular <span class="inline-math">\(n\)</span>-qubit Pauli generators <span class="inline-math">\( \{X_j,Z_j\}_{j=1}^n \)</span> (the subscript on these latter operators indicates the single qubit the Pauli matrix acts on). The tilde operators might act on more than one physical (or <span class="textit">bare</span>) qubit but they behave as if they acted only on a single qubit. WLOG we can choose a stabilizer group as <span class="inline-math">\( \mathsf{S} = \langle Z_1,\dots,Z_s \rangle \)</span>. It follows that the normalizer of <span class="inline-math">\(\mathsf{S} \)</span> is <span class="inline-math">\( N(\mathsf{S}) = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_n, \tilde{X}_{s+1},\dots, \tilde{X}_n \rangle \)</span>. We now choose a gauge group as <span class="inline-math">\( \mathsf{G} = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_s, \tilde{X}_{s+1}, \tilde{Z}_{s+1}, \dots, \tilde{X}_{s+r}, \tilde{Z}_{s+r} \rangle \)</span> with <span class="inline-math">\( s + r \leq n \)</span>. The logical group is choosen as <span class="inline-math">\( \mathsf{L} = N(\mathsf{S})/\mathsf{G} \simeq \langle \tilde{X}_{s+r+1},\tilde{Z}_{s+r+1}, \dots, \tilde{X}_n,\tilde{Z}_n \rangle \)</span>. Now the codespace <span class="inline-math">\( C \)</span> is as usual the <span class="inline-math">\(+1\)</span> eigenspace of the stabilizer <span class="inline-math">\( \mathsf{S} \)</span>. But the gauge and logical groups have further decomposed this space into <span class="inline-math">\( C = A \otimes B \simeq (\mathbb{C}^2)^{\otimes k} \otimes (\mathbb{C}^2)^{\otimes r} \)</span>. Thus the Hilbert space is partitioned into 3 sets; <span class="inline-math">\(k\)</span> logical qubits, <span class="inline-math">\(r\)</span> gauge qubits, and <span class="inline-math">\(s\)</span> stabilizer qubits, with <span class="inline-math">\(s+r+k=n\)</span>.</p></span>
   </li>
@@ -788,7 +794,7 @@ The stabilizer group for the Steane code has six generators.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stab_3_1_2">Three qutrit Code</a><span class="code-introduced"><a href="#cite-118" class="cite">[119]</a></span></span>
+      <a href="/c/stab_3_1_2">Three qutrit Code</a><span class="code-introduced"><a href="#cite-122" class="cite">[123]</a></span></span>
     <span class="code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
 <span class="display-math env-align">\begin{align}
   \begin{split}
@@ -806,43 +812,43 @@ The elements in the superposition of each logical codeword are related to each o
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_triorthogonal">Triorthogonal code</a><span class="code-introduced"><a href="#cite-119" class="cite">[120]</a></span></span>
+      <a href="/c/quantum_triorthogonal">Triorthogonal code</a><span class="code-introduced"><a href="#cite-123" class="cite">[124]</a></span></span>
     <span class="code-description">A triorthogonal <span class="inline-math">\(m \times n\)</span> binary matrix is triorthogonal if its rows <span class="inline-math">\(r_1, \ldots, r_m\)</span> satisfy <span class="inline-math">\(|r_i \cdot r_j| = 0\)</span> and <span class="inline-math">\(|r_i \cdot r_j \cdot r_k| = 0\)</span>, where addition and multiplication are done on <span class="inline-math">\(\mathbb{Z}_2\)</span>. The triorthogonal code associated with the matrix is constructed by mapping non-zero entries in even-weight rows to <span class="inline-math">\(X\)</span> operators, and <span class="inline-math">\(Z\)</span> operators for each row in the orthogonal complement.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/turaev_viro">Turaev-Viro code</a><span class="code-introduced"><a href="#cite-120" class="cite">[121]</a></span></span>
+      <a href="/c/turaev_viro">Turaev-Viro code</a><span class="code-introduced"><a href="#cite-124" class="cite">[125]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a><span class="code-introduced"><a href="#cite-121" class="cite">[122]</a></span></span>
+      <a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a><span class="code-introduced"><a href="#cite-125" class="cite">[126]</a></span></span>
     <span class="code-description"><p>Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</p>
 <p>For a tessellation involving regular polygons with <span class="inline-math">\( r \)</span> sides and <span class="inline-math">\( s \)</span> polygons meeting at each edge, the number of logical qubits is given by <span class="inline-math">\( k = (1-2/r - 2/s) n + 2 \)</span>. Some possible tilings are <span class="inline-math">\( {r,s}: {7,3}, {5,4} \)</span>. The weight of the stabilizer generators are dependent on the tiling, with <span class="inline-math">\({5,4}\)</span> having lower weight than <span class="inline-math">\({7,3}\)</span>.</p></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-122" class="cite">[123]</a></span></span>
+      <a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-126" class="cite">[127]</a></span></span>
     <span class="code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-123" class="cite">[124]</a></span></span>
+      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-127" class="cite">[128]</a></span></span>
     <span class="code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}.\end{align}</span></span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/xyz_product">XYZ product code</a><span class="code-introduced"><a href="#cite-124" class="cite">[125]</a></span></span>
+      <a href="/c/xyz_product">XYZ product code</a><span class="code-introduced"><a href="#cite-128" class="cite">[129]</a></span></span>
     <span class="code-description">A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than taking a product of only two classical codes to produce a CSS code, a third classical code is considered, acting with Pauli-<span class="inline-math">\(Y\)</span> operators.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a><span class="code-introduced"><a href="#cite-125" class="cite">[126]</a></span></span>
+      <a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a><span class="code-introduced"><a href="#cite-129" class="cite">[130]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/xzzx">XZZX surface code</a><span class="code-introduced"><a href="#cite-126" class="cite">[127]</a></span></span>
+      <a href="/c/xzzx">XZZX surface code</a><span class="code-introduced"><a href="#cite-130" class="cite">[131]</a></span></span>
     <span class="code-description">A family of stabilizer codes whose generators are <span class="inline-math">\(XZXZ\)</span> Pauli strings associated, clock-wise, to the vertices of each face of a two-dimensional lattice (with a qubit located at each vertex of the tessellation).</span>
   </li>
   <li>
@@ -862,17 +868,17 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a><span class="code-introduced"><a href="#cite-127" class="cite">[128]</a></span></span>
+      <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a><span class="code-introduced"><a href="#cite-131" class="cite">[132]</a></span></span>
     <span class="code-description">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-128" class="cite">[129]</a></span></span>
+      <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-132" class="cite">[133]</a></span></span>
     <span class="code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}.\end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\\end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</span>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-129" class="cite">[130]</a></span></span>
+      <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-133" class="cite">[134]</a></span></span>
     <span class="code-description">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split}\end{align}</span></span>
   </li>
   <li>
@@ -1168,375 +1174,395 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <!-- Citation:  -->
       <dt id="cite-55">[56]</dt>
       <dd>
-        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
+        P. Hayden et al., “A Decoupling Approach to the Quantum Capacity”, Open Systems &amp; Information Dynamics <span class="textbf">15</span>, 7 (2008). <a href="https://doi.org/10.1142/S1230161208000043" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0702005" target="_blank" class="href">quant-ph/0702005</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-56">[57]</dt>
       <dd>
-        Matthew B. Hastings, Jeongwan Haah, and Ryan O&#x27;Donnell, “Fiber Bundle Codes: Breaking the <span class="inline-math">$N^{1/2} \operatorname{polylog}(N)$</span> Barrier for Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2009.03921" target="_blank" class="href">2009.03921</a>
+        B. Schumacher and M. A. Nielsen, “Quantum data processing and error correction”, Physical Review A <span class="textbf">54</span>, 2629 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.2629" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604022" target="_blank" class="href">quant-ph/9604022</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-57">[58]</dt>
       <dd>
-        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+        M. Horodecki, J. Oppenheim, and A. Winter, “Quantum State Merging and Negative Information”, Communications in Mathematical Physics <span class="textbf">269</span>, 107 (2006). <a href="https://doi.org/10.1007/s00220-006-0118-x" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0512247" target="_blank" class="href">quant-ph/0512247</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-58">[59]</dt>
       <dd>
-        Kfir Dolev et al., “Gauging the bulk: generalized gauging maps and holographic codes”. <a href="https://arxiv.org/abs/2108.11402" target="_blank" class="href">2108.11402</a>
+        G. W. Stewart, “The Efficient Generation of Random Orthogonal Matrices with an Application to Condition Estimators”, SIAM Journal on Numerical Analysis <span class="textbf">17</span>, 403 (1980). <a href="https://doi.org/10.1137/0717034" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-59">[60]</dt>
       <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-60">[61]</dt>
       <dd>
-        J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href">0903.0566</a>
+        Matthew B. Hastings, Jeongwan Haah, and Ryan O&#x27;Donnell, “Fiber Bundle Codes: Breaking the <span class="inline-math">$N^{1/2} \operatorname{polylog}(N)$</span> Barrier for Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2009.03921" target="_blank" class="href">2009.03921</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-61">[62]</dt>
       <dd>
-        A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href">1202.0928</a>
+        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-62">[63]</dt>
       <dd>
-        A. Y. Kitaev, “Quantum Error Correction with Imperfect Gates”, Quantum Communication, Computing, and Measurement 181 (1997). <a href="https://doi.org/10.1007/978-1-4615-5923-8_19" target="_blank" class="href">DOI</a>
+        Kfir Dolev et al., “Gauging the bulk: generalized gauging maps and holographic codes”. <a href="https://arxiv.org/abs/2108.11402" target="_blank" class="href">2108.11402</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-63">[64]</dt>
       <dd>
-        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-64">[65]</dt>
       <dd>
-        S. B. Bravyi and A. Yu. Kitaev, “Quantum codes on a lattice with boundary”. <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="href">quant-ph/9811052</a>
+        J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href">0903.0566</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-65">[66]</dt>
       <dd>
-        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
+        A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href">1202.0928</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-66">[67]</dt>
       <dd>
-        P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href">1904.02703</a>
+        A. Y. Kitaev, “Quantum Error Correction with Imperfect Gates”, Quantum Communication, Computing, and Measurement 181 (1997). <a href="https://doi.org/10.1007/978-1-4615-5923-8_19" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-67">[68]</dt>
       <dd>
-        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
+        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-68">[69]</dt>
       <dd>
-        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
+        S. B. Bravyi and A. Yu. Kitaev, “Quantum codes on a lattice with boundary”. <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="href">quant-ph/9811052</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-69">[70]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-70">[71]</dt>
       <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+        P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href">1904.02703</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-71">[72]</dt>
       <dd>
-        J. R. Wootton, “A family of stabilizer codes for <span class="inline-math">$D({{\mathbb{Z}}_{2}})$</span> anyons and Majorana modes”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">48</span>, 215302 (2015). <a href="https://doi.org/10.1088/1751-8113/48/21/215302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1501.07779" target="_blank" class="href">1501.07779</a>
+        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-72">[73]</dt>
       <dd>
-        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
+        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-73">[74]</dt>
       <dd>
-        E. M. Gabidulin, &quot;Theory of Codes with Maximum Rank Distance&quot;, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-74">[75]</dt>
       <dd>
-        R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-75">[76]</dt>
       <dd>
-        B. Skinner, J. Ruhman, and A. Nahum, “Measurement-Induced Phase Transitions in the Dynamics of Entanglement”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.031009" target="_blank" class="href">DOI</a>
+        J. R. Wootton, “A family of stabilizer codes for <span class="inline-math">$D({{\mathbb{Z}}_{2}})$</span> anyons and Majorana modes”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">48</span>, 215302 (2015). <a href="https://doi.org/10.1088/1751-8113/48/21/215302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1501.07779" target="_blank" class="href">1501.07779</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-76">[77]</dt>
       <dd>
-        Y. Li, X. Chen, and M. P. A. Fisher, “Quantum Zeno effect and the many-body entanglement transition”, Physical Review B <span class="textbf">98</span>, (2018). <a href="https://doi.org/10.1103/PhysRevB.98.205136" target="_blank" class="href">DOI</a>
+        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-77">[78]</dt>
       <dd>
-        A. Chan et al., “Unitary-projective entanglement dynamics”, Physical Review B <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.99.224307" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1808.05949" target="_blank" class="href">1808.05949</a>
+        E. M. Gabidulin, &quot;Theory of Codes with Maximum Rank Distance&quot;, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
       </dd>
       <!-- Citation:  -->
       <dt id="cite-78">[79]</dt>
       <dd>
-        Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href">1901.08092</a>
+        R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-79">[80]</dt>
       <dd>
-        S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href">1903.05124</a>
+        B. Skinner, J. Ruhman, and A. Nahum, “Measurement-Induced Phase Transitions in the Dynamics of Entanglement”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.031009" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-80">[81]</dt>
       <dd>
-        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+        Y. Li, X. Chen, and M. P. A. Fisher, “Quantum Zeno effect and the many-body entanglement transition”, Physical Review B <span class="textbf">98</span>, (2018). <a href="https://doi.org/10.1103/PhysRevB.98.205136" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-81">[82]</dt>
       <dd>
-        A. Zabalo et al., “Critical properties of the measurement-induced transition in random quantum circuits”, Physical Review B <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevB.101.060301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00008" target="_blank" class="href">1911.00008</a>
+        A. Chan et al., “Unitary-projective entanglement dynamics”, Physical Review B <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.99.224307" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1808.05949" target="_blank" class="href">1808.05949</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-82">[83]</dt>
       <dd>
-        Ramis Movassagh and Yingkai Ouyang, “Constructing quantum codes from any classical code and their embedding in ground space of local Hamiltonians”. <a href="https://arxiv.org/abs/2012.01453" target="_blank" class="href">2012.01453</a>
+        Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href">1901.08092</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-83">[84]</dt>
       <dd>
-        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+        S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href">1903.05124</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-84">[85]</dt>
       <dd>
-        Greg Kuperberg, “The capacity of hybrid quantum memory”. <a href="https://arxiv.org/abs/quant-ph/0203105" target="_blank" class="href">quant-ph/0203105</a>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-85">[86]</dt>
       <dd>
-        C. Bény, A. Kempf, and D. W. Kribs, “Quantum error correction of observables”, Physical Review A <span class="textbf">76</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.76.042303" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0705.1574" target="_blank" class="href">0705.1574</a>
+        A. Zabalo et al., “Critical properties of the measurement-induced transition in random quantum circuits”, Physical Review B <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevB.101.060301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1911.00008" target="_blank" class="href">1911.00008</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-86">[87]</dt>
       <dd>
-        S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href">quant-ph/9711021</a>
+        Ramis Movassagh and Yingkai Ouyang, “Constructing quantum codes from any classical code and their embedding in ground space of local Hamiltonians”. <a href="https://arxiv.org/abs/2012.01453" target="_blank" class="href">2012.01453</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-87">[88]</dt>
       <dd>
-        S. L. Braunstein, “Error Correction for Continuous Quantum Variables”, Physical Review Letters <span class="textbf">80</span>, 4084 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4084" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="href">quant-ph/9711049</a>
+        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-88">[89]</dt>
       <dd>
-        Harriet Pollatsek and Mary Beth Ruskai, “Permutationally Invariant Codes for Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0304153" target="_blank" class="href">quant-ph/0304153</a>
+        Greg Kuperberg, “The capacity of hybrid quantum memory”. <a href="https://arxiv.org/abs/quant-ph/0203105" target="_blank" class="href">quant-ph/0203105</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-89">[90]</dt>
       <dd>
-        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
+        C. Bény, A. Kempf, and D. W. Kribs, “Quantum error correction of observables”, Physical Review A <span class="textbf">76</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.76.042303" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0705.1574" target="_blank" class="href">0705.1574</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-90">[91]</dt>
       <dd>
-        M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
+        S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href">quant-ph/9711021</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-91">[92]</dt>
       <dd>
-        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+        S. L. Braunstein, “Error Correction for Continuous Quantum Variables”, Physical Review Letters <span class="textbf">80</span>, 4084 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4084" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="href">quant-ph/9711049</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-92">[93]</dt>
       <dd>
-        Michael H. Freedman and David A. Meyer, “Projective plane and planar quantum codes”. <a href="https://arxiv.org/abs/quant-ph/9810055" target="_blank" class="href">quant-ph/9810055</a>
+        Harriet Pollatsek and Mary Beth Ruskai, “Permutationally Invariant Codes for Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0304153" target="_blank" class="href">quant-ph/0304153</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-93">[94]</dt>
       <dd>
-        Andrew Steane, “Quantum Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/9608026" target="_blank" class="href">quant-ph/9608026</a>
+        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-94">[95]</dt>
       <dd>
-        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
+        M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-95">[96]</dt>
       <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
+        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-96">[97]</dt>
       <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>
+        Michael H. Freedman and David A. Meyer, “Projective plane and planar quantum codes”. <a href="https://arxiv.org/abs/quant-ph/9810055" target="_blank" class="href">quant-ph/9810055</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-97">[98]</dt>
       <dd>
-        T. C. Ralph, A. J. F. Hayes, and A. Gilchrist, “Loss-Tolerant Optical Qubits”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0501184" target="_blank" class="href">quant-ph/0501184</a>
+        Andrew Steane, “Quantum Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/9608026" target="_blank" class="href">quant-ph/9608026</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-98">[99]</dt>
       <dd>
-        E. Knill, R. Laflamme, and G. Milburn, “Efficient Linear Optics Quantum Computation”. <a href="https://arxiv.org/abs/quant-ph/0006088" target="_blank" class="href">quant-ph/0006088</a>
+        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-99">[100]</dt>
       <dd>
-        J. M. Renes, F. Dupuis, and R. Renner, “Efficient Polar Coding of Quantum Information”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1109.3195" target="_blank" class="href">1109.3195</a>
+        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-100">[101]</dt>
       <dd>
-        S. X. Cui et al., “Kitaev&#x27;s quantum double model as an error correcting code”, Quantum <span class="textbf">4</span>, 331 (2020). <a href="https://doi.org/10.22331/q-2020-09-24-331" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1908.02829" target="_blank" class="href">1908.02829</a>
+        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-101">[102]</dt>
       <dd>
-        R. Walter Ogburn and J. Preskill, “Topological Quantum Computation”, Quantum Computing and Quantum Communications 341 (1999). <a href="https://doi.org/10.1007/3-540-49208-9_31" target="_blank" class="href">DOI</a>
+        T. C. Ralph, A. J. F. Hayes, and A. Gilchrist, “Loss-Tolerant Optical Qubits”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0501184" target="_blank" class="href">quant-ph/0501184</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-102">[103]</dt>
       <dd>
-        C. Mochon, “Anyon computers with smaller groups”, Physical Review A <span class="textbf">69</span>, (2004). <a href="https://doi.org/10.1103/PhysRevA.69.032306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0306063" target="_blank" class="href">quant-ph/0306063</a>
+        E. Knill, R. Laflamme, and G. Milburn, “Efficient Linear Optics Quantum Computation”. <a href="https://arxiv.org/abs/quant-ph/0006088" target="_blank" class="href">quant-ph/0006088</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-103">[104]</dt>
       <dd>
-        J. K. Pachos, <span class="textit">Introduction to Topological Quantum Computation</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511792908" target="_blank" class="href">DOI</a>
+        J. M. Renes, F. Dupuis, and R. Renner, “Efficient Polar Coding of Quantum Information”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1109.3195" target="_blank" class="href">1109.3195</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-104">[105]</dt>
       <dd>
-        R. Townsend and E. Weldon, “Self-orthogonal quasi-cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 183 (1967). <a href="https://doi.org/10.1109/TIT.1967.1053974" target="_blank" class="href">DOI</a>
+        S. X. Cui et al., “Kitaev&#x27;s quantum double model as an error correcting code”, Quantum <span class="textbf">4</span>, 331 (2020). <a href="https://doi.org/10.22331/q-2020-09-24-331" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1908.02829" target="_blank" class="href">1908.02829</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-105">[106]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        R. Walter Ogburn and J. Preskill, “Topological Quantum Computation”, Quantum Computing and Quantum Communications 341 (1999). <a href="https://doi.org/10.1007/3-540-49208-9_31" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-106">[107]</dt>
       <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+        C. Mochon, “Anyon computers with smaller groups”, Physical Review A <span class="textbf">69</span>, (2004). <a href="https://doi.org/10.1103/PhysRevA.69.032306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0306063" target="_blank" class="href">quant-ph/0306063</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-107">[108]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        J. K. Pachos, <span class="textit">Introduction to Topological Quantum Computation</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511792908" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-108">[109]</dt>
       <dd>
-        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
+        R. Townsend and E. Weldon, “Self-orthogonal quasi-cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 183 (1967). <a href="https://doi.org/10.1109/TIT.1967.1053974" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-109">[110]</dt>
       <dd>
-        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-110">[111]</dt>
       <dd>
-        Delphine Boucher, Willi Geiselmann, and Félix Ulmer, “Skew-cyclic codes”. <a href="https://arxiv.org/abs/math/0604603" target="_blank" class="href">math/0604603</a>
+        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-111">[112]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction and Orthogonal Geometry”, Physical Review Letters <span class="textbf">78</span>, 405 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.405" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9605005" target="_blank" class="href">quant-ph/9605005</a>
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-112">[113]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-113">[114]</dt>
       <dd>
-        D. Kribs, R. Laflamme, and D. Poulin, “Unified and Generalized Approach to Quantum Error Correction”, Physical Review Letters <span class="textbf">94</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.94.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0412076" target="_blank" class="href">quant-ph/0412076</a>
+        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-114">[115]</dt>
       <dd>
-        David W. Kribs et al., “Operator quantum error correction”. <a href="https://arxiv.org/abs/quant-ph/0504189" target="_blank" class="href">quant-ph/0504189</a>
+        Delphine Boucher, Willi Geiselmann, and Félix Ulmer, “Skew-cyclic codes”. <a href="https://arxiv.org/abs/math/0604603" target="_blank" class="href">math/0604603</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-115">[116]</dt>
       <dd>
-        H. Bombin, “Topological subsystem codes”, Physical Review A <span class="textbf">81</span>, (2010). <a href="https://doi.org/10.1103/PhysRevA.81.032301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0908.4246" target="_blank" class="href">0908.4246</a>
+        A. R. Calderbank et al., “Quantum Error Correction and Orthogonal Geometry”, Physical Review Letters <span class="textbf">78</span>, 405 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.405" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9605005" target="_blank" class="href">quant-ph/9605005</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-116">[117]</dt>
       <dd>
-        H. Bombin, “Gauge Color Codes: Optimal Transversal Gates and Gauge Fixing in Topological Stabilizer Codes”. <a href="https://arxiv.org/abs/1311.0879" target="_blank" class="href">1311.0879</a>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-117">[118]</dt>
       <dd>
-        D. Poulin, “Stabilizer Formalism for Operator Quantum Error Correction”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.230504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0508131" target="_blank" class="href">quant-ph/0508131</a>
+        D. Kribs, R. Laflamme, and D. Poulin, “Unified and Generalized Approach to Quantum Error Correction”, Physical Review Letters <span class="textbf">94</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.94.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0412076" target="_blank" class="href">quant-ph/0412076</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-118">[119]</dt>
       <dd>
-        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
+        David W. Kribs et al., “Operator quantum error correction”. <a href="https://arxiv.org/abs/quant-ph/0504189" target="_blank" class="href">quant-ph/0504189</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-119">[120]</dt>
       <dd>
-        S. Bravyi and J. Haah, “Magic-state distillation with low overhead”, Physical Review A <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevA.86.052329" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1209.2426" target="_blank" class="href">1209.2426</a>
+        H. Bombin, “Topological subsystem codes”, Physical Review A <span class="textbf">81</span>, (2010). <a href="https://doi.org/10.1103/PhysRevA.81.032301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0908.4246" target="_blank" class="href">0908.4246</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-120">[121]</dt>
       <dd>
-        R. Koenig, G. Kuperberg, and B. W. Reichardt, “Quantum computation with Turaev–Viro codes”, Annals of Physics <span class="textbf">325</span>, 2707 (2010). <a href="https://doi.org/10.1016/j.aop.2010.08.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.2816" target="_blank" class="href">1002.2816</a>
+        H. Bombin, “Gauge Color Codes: Optimal Transversal Gates and Gauge Fixing in Topological Stabilizer Codes”. <a href="https://arxiv.org/abs/1311.0879" target="_blank" class="href">1311.0879</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-121">[122]</dt>
       <dd>
-        N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href">1506.04029</a>
+        D. Poulin, “Stabilizer Formalism for Operator Quantum Error Correction”, Physical Review Letters <span class="textbf">95</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.95.230504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0508131" target="_blank" class="href">quant-ph/0508131</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-122">[123]</dt>
       <dd>
-        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
+        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-123">[124]</dt>
       <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+        S. Bravyi and J. Haah, “Magic-state distillation with low overhead”, Physical Review A <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevA.86.052329" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1209.2426" target="_blank" class="href">1209.2426</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-124">[125]</dt>
       <dd>
-        Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
+        R. Koenig, G. Kuperberg, and B. W. Reichardt, “Quantum computation with Turaev–Viro codes”, Annals of Physics <span class="textbf">325</span>, 2707 (2010). <a href="https://doi.org/10.1016/j.aop.2010.08.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.2816" target="_blank" class="href">1002.2816</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-125">[126]</dt>
       <dd>
-        Basudha Srivastava, Anton Frisk Kockum, and Mats Granath, “The XYZ<span class="inline-math">$^2$</span> hexagonal stabilizer code”. <a href="https://arxiv.org/abs/2112.06036" target="_blank" class="href">2112.06036</a>
+        N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href">1506.04029</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-126">[127]</dt>
       <dd>
-        J. P. Bonilla Ataides et al., “The XZZX surface code”, Nature Communications <span class="textbf">12</span>, (2021). <a href="https://doi.org/10.1038/s41467-021-22274-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07851" target="_blank" class="href">2009.07851</a>
+        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-127">[128]</dt>
       <dd>
-        D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href">quant-ph/9604038</a>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-128">[129]</dt>
       <dd>
-        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
+        Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-129">[130]</dt>
+      <dd>
+        Basudha Srivastava, Anton Frisk Kockum, and Mats Granath, “The XYZ<span class="inline-math">$^2$</span> hexagonal stabilizer code”. <a href="https://arxiv.org/abs/2112.06036" target="_blank" class="href">2112.06036</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-130">[131]</dt>
+      <dd>
+        J. P. Bonilla Ataides et al., “The XZZX surface code”, Nature Communications <span class="textbf">12</span>, (2021). <a href="https://doi.org/10.1038/s41467-021-22274-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07851" target="_blank" class="href">2009.07851</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-131">[132]</dt>
+      <dd>
+        D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href">quant-ph/9604038</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-132">[133]</dt>
+      <dd>
+        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-133">[134]</dt>
       <dd>
         Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
       </dd>

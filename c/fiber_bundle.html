@@ -81,10 +81,8 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Hastings, Haah, and O’Donnell constructed the first fiber bundle code by combining a random LDPC code as the base and a cyclic repetition code as the fiber. After applying distance balancing, they obtained a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> where n is the number of physical qubits. In addition, weight reduction can be used to make this an LDPC code.</dd>
+<dd class="code-description">Code constructed by combining a random LDPC code as the base and a cyclic repetition code as the fiber of a fiber bundle. After applying distance balancing, a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> is obtained. In addition, weight reduction can be used to make this an <span class="inline-math">\([[n,\Omega(n^{3/5}/\text{polylog}n,\Omega(n^{3/5}/\text{polylog}n)]]\)</span> QLDPC code family.</dd>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Pauli errors up to weight <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span></dd>
 
 
 <!-- Display features -->
@@ -94,7 +92,7 @@
 
 
 <dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">k/n: <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span>, distance: <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span></dd>
+  <dd class="code-feature code-feature-rate">k/n: <span class="inline-math">\(\Omega(n^{-2/5}/\text{polylog}n)\)</span>, distance: <span class="inline-math">\(\Omega(n^{3/5}/\text{polylog}n)\)</span>. This is the first QLDPC code to achieve a distance scaling better than <span class="inline-math">\(\sqrt{n}\text{polylog}n\)</span>.</dd>
 
 
 
@@ -103,7 +101,7 @@
 
 
 <dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Greedy algorithm can be used to efficiently decode x errors, but no known efficient decoding of z errors yet.</span></dd>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Greedy algorithm can be used to efficiently decode <span class="inline-math">\(X\)</span> errors, but no known efficient decoding of <span class="inline-math">\(Z\)</span> errors yet <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
 
@@ -134,6 +132,8 @@
 
 
 <ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>    <span class="code-cousins-1-detail">(Fiber-bundle code constructions use distance balancing to increase distance.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></span>    <span class="code-cousins-1-detail">(Introduce a twist, which is an automorphism on one of the complexes in the tensor product, to increase distance <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
   <li class="paragraph-in-list">
@@ -175,7 +175,7 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/fiber_bundle.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/fiber_bundle.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=fiber_bundle">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>fiber_bundle</code></div>
