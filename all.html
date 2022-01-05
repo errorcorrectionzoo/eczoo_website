@@ -51,6 +51,11 @@
 <ol class="code-index">
   <li>
     <span class="code-name">
+      <a href="/c/topological_abelian">Abelian topological code</a></span>
+    <span class="code-description">Code whose codewords realize topological order associated with an abelian group. Stub.</span>
+  </li>
+  <li>
+    <span class="code-name">
       <a href="/c/alternant">Alternant Codes</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
     <span class="code-description">Stub.</span>
   </li>
@@ -72,7 +77,7 @@
   <li>
     <span class="code-name">
       <a href="/c/balanced_product">Balanced product code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
-    <span class="code-description">A large family of CSS quantum codes based on products of two classical codes which share common symmetries. The balanced product can be understood as taking the usual tensor/hypergraph product and then factoring out the symmetries factored. This reduces the overall number of physical qubits n, while, under certain circumstances, leaving the number of encoded qubits k and the code distance d invariant. This leads to a more favourable encoding rate k/n and relative distance d/n compared to the tensor/hypergraph product.</span>
+    <span class="code-description">Family of CSS quantum codes based on products of two classical codes which share common symmetries. The balanced product can be understood as taking the usual tensor/hypergraph product and then factoring out the symmetries factored. This reduces the overall number of physical qubits n, while, under certain circumstances, leaving the number of encoded qubits <span class="inline-math">\(k\)</span> and the code distance <span class="inline-math">\(d\)</span> invariant. This leads to a more favourable encoding rate <span class="inline-math">\(k/n\)</span> and relative distance <span class="inline-math">\(d/n\)</span> compared to the tensor/hypergraph product.</span>
   </li>
   <li>
     <span class="code-name">
@@ -190,7 +195,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li>
     <span class="code-name">
       <a href="/c/color">Color code</a><span class="code-introduced"><a href="#cite-25" class="cite">[26]</a></span></span>
-    <span class="code-description">Color code is a topological stabilizer code defined on a <span class="inline-math">\(D\)</span>-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial <span class="inline-math">\(D\)</span>-complex obtained as a triangulation of the interior of a <span class="inline-math">\(D\)</span>-simplex and (2) is <span class="inline-math">\(D+1\)</span>-colorable. Qubits are placed on the <span class="inline-math">\(D\)</span>-simplices and generators are supported on suitable simplices <a href="#cite-26" class="cite">[27]</a>. For 2-dimensional color code, the lattice must be such that it is 3-valent and has 3-colorable faces, such as a honeycomb lattice. The qubits are placed on the vertices and two stabilizer generators are placed on each face <a href="#cite-27" class="cite">[28]</a>.</span>
+    <span class="code-description">A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes defined on a <span class="inline-math">\(D\)</span>-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial <span class="inline-math">\(D\)</span>-complex obtained as a triangulation of the interior of a <span class="inline-math">\(D\)</span>-simplex and (2) is <span class="inline-math">\(D+1\)</span>-colorable. Qubits are placed on the <span class="inline-math">\(D\)</span>-simplices and generators are supported on suitable simplices <a href="#cite-26" class="cite">[27]</a>. For 2-dimensional color code, the lattice must be such that it is 3-valent and has 3-colorable faces, such as a honeycomb lattice. The qubits are placed on the vertices and two stabilizer generators are placed on each face <a href="#cite-27" class="cite">[28]</a>.</span>
   </li>
   <li>
     <span class="code-name">
@@ -454,7 +459,7 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   <li>
     <span class="code-name">
       <a href="/c/surface">Kitaev surface code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-72" class="cite">[73]</a><a href="#cite-73" class="cite">[74]</a></span></span>
-    <span class="code-description"><p>A family of <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-74" class="cite">[75]</a>.</p>
+    <span class="code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-74" class="cite">[75]</a>.</p>
 <p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-40" class="cite">[41]</a><a href="#cite-75" class="cite">[76]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></span>
   </li>
   <li>
@@ -1079,7 +1084,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Topological Quantum Distillation”, Physical Review Letters <span class="textbf">97</span>, (2006). <a href="https://doi.org/10.1103/PhysRevLett.97.180501" target="_blank" class="href">DOI</a>
+        H. Bombin and M. A. Martin-Delgado, “Topological Quantum Distillation”, Physical Review Letters <span class="textbf">97</span>, (2006). <a href="https://doi.org/10.1103/PhysRevLett.97.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605138" target="_blank" class="href">quant-ph/0605138</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
@@ -1680,7 +1685,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li>
         <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
         <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>

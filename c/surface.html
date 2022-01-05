@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>A family of <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
+<dd class="code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
 <p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></dd>
 
 <dt class="code-protection">Protection</dt>
@@ -141,9 +141,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parents-1-detail">(Plaquette and star operators are stabilizer generators.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-45" class="cite">[46]</a>.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-45" class="cite">[46]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -167,11 +167,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(Stabilizer generator weights and qubit degrees are given by the properties of the cellulation, and most cellulations yield QLDPC codes.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two repetition (cyclic) codes.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Color code is equivalent to surface code in several ways <a href="#cite-46" class="cite">[47]</a>. For example, the color code on a <span class="inline-math">\(D\)</span>-dimensional closed manifold is equivalent to multiple decoupled copies of the <span class="inline-math">\(D\)</span>-dimensional surface code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Color code is equivalent to surface code in several ways <a href="#cite-46" class="cite">[47]</a>. For example, the color code on a <span class="inline-math">\(D\)</span>-dimensional closed manifold is equivalent to multiple decoupled copies of the <span class="inline-math">\(D-1\)</span>-dimensional surface code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/haah_cubic">Haah cubic code</a></span>    <span class="code-cousins-1-detail">(The energy of any partial implementation of code 1 is proportional to the boundary length similar to the 4D toric code, which can potentially surpress the effects of thermal errors, but it is currently an open problem.)</span>  </li>
   <li class="paragraph-in-list">
@@ -182,6 +180,8 @@
     <span class="code-cousins-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is the smallest toric code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_surface">Qudit surface code</a></span>    <span class="code-cousins-1-detail">(The qudit surface code with <span class="inline-math">\(q=2\)</span> is the surface code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-47" class="cite">[48]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -464,6 +464,11 @@ url={https://errorcorrectionzoo.org/c/surface}
       <dd>
         A. Kubica, B. Yoshida, and F. Pastawski, “Unfolding the color code”, New Journal of Physics <span class="textbf">17</span>, 083026 (2015). <a href="https://doi.org/10.1088/1367-2630/17/8/083026" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.02065" target="_blank" class="href">1503.02065</a>
       </dd>
+      <!-- Citation:  -->
+      <dt id="cite-47">[48]</dt>
+      <dd>
+        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
+      </dd>
     
     </dl>
    </div>
@@ -488,7 +493,7 @@ url={https://errorcorrectionzoo.org/c/surface}
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-        <li><a href="/kingdom/qudits_into_qudits">Cyclic-qudit Kingdom</a></li>
+        <li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li>
         <li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
         <li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
         <li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
