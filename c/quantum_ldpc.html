@@ -81,12 +81,13 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of qubits participating in each stabilizer generator and the number of stabilizer generators that each qubit participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</dd>
+<dd class="code-description"><p>Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</p>
+<p>Strictly speaking, the term <span class="textit">parity check</span> describes only bitwise qubit error syndromes. Nevertheless, qudit codes satisfying the above criteria are often called QLDPC codes.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction.
-A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.
-A <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> sites, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> sites. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction.
+A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good qubit codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.
+For qubits, a <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
 <!-- Display features -->
@@ -116,7 +117,7 @@ A <span class="textit">geometrically local LDPC code</span> is an LDPC code wher
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list">Links to code tables <a href="#cite-0" class="cite">[1]</a>.</span>
+  <span class="paragraph-in-list">Links to code tables of notable QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</span>
 </dd>
 
 
@@ -146,9 +147,9 @@ A <span class="textit">geometrically local LDPC code</span> is an LDPC code wher
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>    <span class="code-parent-of-1-detail">(Distance-balancing procedure can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parent-of-1-detail">(Topological codes defined on appropriate tesselations are QLDPC.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/fracton">Fracton code</a></span>    <span class="code-parent-of-1-detail">(Fracton codes admit geometrically local stabilizer generators.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-parent-of-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-4" class="cite">[5]</a>, and topological-code Hamiltonians are geometrically local.)</span>  </li>
 </ul>
 </dd>
 
@@ -160,11 +161,13 @@ A <span class="textit">geometrically local LDPC code</span> is an LDPC code wher
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of a local <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Codes forming the ground-state subspace of a local <span class="textit">code Hamiltonian</span> are QLDPC codes.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>    <span class="code-cousins-1-detail">(QLDPC codes can arise form a dynamical process <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>    <span class="code-cousins-1-detail">(QLDPC codes can arise form a dynamical process <a href="#cite-5" class="cite">[6]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/honeycomb">Honeycomb code</a></span>    <span class="code-cousins-1-detail">(The Floquet check operators are weight-two, and each qubit participates in one check each round.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-cousins-1-detail">(Topological codes are not generally defined using Pauli strings. However, for appropriate tesselations, the codespace forms a ground-state subspace of a geometrically local Hamiltonain. In this sense, topological codes are QLDPC codes.)</span>  </li>
 </ul>
 </dd>
 
@@ -234,6 +237,11 @@ url={https://errorcorrectionzoo.org/c/quantum_ldpc}
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        Tyler D. Ellison et al., “Pauli stabilizer models of twisted quantum doubles”. <a href="https://arxiv.org/abs/2112.11394" target="_blank" class="href">2112.11394</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         M. Ippoliti et al., “Entanglement Phase Transitions in Measurement-Only Dynamics”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.011030" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2004.09560" target="_blank" class="href">2004.09560</a>
       </dd>
