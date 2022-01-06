@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Galois-qudit code" />
+<meta name="citation_title" content="Quantum maximum-distance-separable (MDS) code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Galois-qudit code" />
+<meta name="DC.title" content="Quantum maximum-distance-separable (MDS) code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Galois-qudit code
+      Quantum maximum-distance-separable (MDS) code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Galois-qudit code</h1>
+    <h1>Quantum maximum-distance-separable (MDS) code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_galois_into_galois">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_mds">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,15 +73,19 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Galois-qudit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Quantum maximum-distance-separable (MDS) code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/galois_into_galois">&nbsp;</a>-->
+   href="/c/quantum_mds">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined.</dd>
+<dd class="code-description">An <span class="inline-math">\(((n,q^k,d))\)</span> code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Singleton bound
+<span class="display-math env-align">\begin{align}
+2(d-1) \leq n-k
+\end{align}</span>
+becomes an equality.</dd>
 
 
 
@@ -108,10 +112,6 @@
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list">Introduction to Galois qudits by <a href="https://ethz.ch/content/vp/en/conferences/2014/qec/05_thursday/dab6ca18-7453-4197-aaaa-8b1964ece714.html" target="_blank" class="href">Gottesman</a>.</span>
-</dd>
 
 
 <!-- Relationships to other codes -->
@@ -122,23 +122,12 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qecc_finite">Finite-dimensional quantum code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/galois_into_galois">Galois-qudit code</a></span>  </li>
 </ul>
 </dd>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>  </li>
-</ul>
-</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -146,7 +135,13 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>    <span class="code-cousins-1-detail">(A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> modular qudits <a href="#cite-1" class="cite">[2]</a>; see Sec. 5.3 of Ref. <a href="#cite-2" class="cite">[3]</a>. The two coincide when <span class="inline-math">\(q\)</span> is prime, and reduce to qubits when <span class="inline-math">\(q=2\)</span>. However, Pauli matrices for the two types of qudits are defined differently.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(The smallest quantum MDS code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span>  </li>
 </ul>
 </dd>
 
@@ -159,59 +154,39 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    galois_into_galois
+    quantum_mds
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/galois_into_galois.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/quantum_mds.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=galois_into_galois">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>galois_into_galois</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=quantum_mds">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_mds</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Galois-qudit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/galois_into_galois</dd>
+    <dd>“Quantum maximum-distance-separable (MDS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_mds</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_galois_into_galois,
-title={Galois-qudit code},
+    <dd class="bibtex">@incollection{eczoo_quantum_mds,
+title={Quantum maximum-distance-separable (MDS) code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/galois_into_galois}
+url={https://errorcorrectionzoo.org/c/quantum_mds}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/galois_into_galois</dd>
+    <dd>https://errorcorrectionzoo.org/c/quantum_mds</dd>
   </dl>
 </div>
 </dd>
 
 </dl>
 
-   <div id="endnotes">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
-      </dd>
-    
-    </dl>
-   </div>
 
   </main><!-- #main -->
 
