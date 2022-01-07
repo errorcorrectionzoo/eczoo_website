@@ -1317,7 +1317,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A QLDPC code that is the \"lifted version\" of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of ''product'' is taken bet..."
+                        "QLDPC code that is the \"lifted version\" of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of ''product'' is taken betwe..."
                     ],
                     "_code_href": "/c/lifted_product",
                     "_family_generation_level": 6
