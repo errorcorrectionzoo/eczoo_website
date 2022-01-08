@@ -2394,7 +2394,9 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Category-based quantum code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Encodes a finite-dimensional \\textit{logical} Hilbert space into a \\textit{physical} Hilbert space associated with a category.",
+                    "_description": [
+                        "Encodes a finite-dimensional \\textit{logical} Hilbert space into a \\textit{physical} Hilbert space associated with a category. Often associated with a particular topological quantum field theory (T..."
+                    ],
                     "_code_href": "/c/category_quantum",
                     "_family_generation_level": 4,
                     "_is_kingdom": 1,
@@ -4762,14 +4764,6 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_topological_quantum_ldpc__139",
-                    "_rel_type": "cousin",
-                    "source": "c_topological",
-                    "target": "c_quantum_ldpc"
-                }
-            },
-            {
-                "data": {
                     "id": "parent_random_circuit_dynamic_gen_148",
                     "_rel_type": "parent",
                     "source": "c_random_circuit",
@@ -4818,7 +4812,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fracton_topological__140",
+                    "id": "cousin_fracton_topological__139",
                     "_rel_type": "cousin",
                     "source": "c_fracton",
                     "target": "c_topological"
@@ -4834,7 +4828,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_hamiltonian_quantum_ldpc__141",
+                    "id": "cousin_hamiltonian_quantum_ldpc__140",
                     "_rel_type": "cousin",
                     "source": "c_hamiltonian",
                     "target": "c_quantum_ldpc"
@@ -4858,7 +4852,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_topological_abelian_qudit_stabilizer__142",
+                    "id": "cousin_topological_abelian_qudit_stabilizer__141",
                     "_rel_type": "cousin",
                     "source": "c_topological_abelian",
                     "target": "c_qudit_stabilizer"
@@ -4874,7 +4868,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fusion_topological__143",
+                    "id": "cousin_fusion_topological__142",
                     "_rel_type": "cousin",
                     "source": "c_fusion",
                     "target": "c_topological"
@@ -4882,7 +4876,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fusion_fock_state__144",
+                    "id": "cousin_fusion_fock_state__143",
                     "_rel_type": "cousin",
                     "source": "c_fusion",
                     "target": "c_fock_state"
@@ -4906,7 +4900,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_perfect_perfect__145",
+                    "id": "cousin_quantum_perfect_perfect__144",
                     "_rel_type": "cousin",
                     "source": "c_quantum_perfect",
                     "target": "c_perfect"
@@ -4930,7 +4924,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_mds_mds__146",
+                    "id": "cousin_quantum_mds_mds__145",
                     "_rel_type": "cousin",
                     "source": "c_quantum_mds",
                     "target": "c_mds"
@@ -4954,10 +4948,18 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_ldpc_ldpc__147",
+                    "id": "cousin_quantum_ldpc_ldpc__146",
                     "_rel_type": "cousin",
                     "source": "c_quantum_ldpc",
                     "target": "c_ldpc"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_quantum_ldpc_topological__147",
+                    "_rel_type": "cousin",
+                    "source": "c_quantum_ldpc",
+                    "target": "c_topological"
                 }
             },
             {
@@ -5110,6 +5112,14 @@ GENERATED_pretty_code_graph_data = {
                     "_rel_type": "parent",
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_category_quantum_topological__157",
+                    "_rel_type": "cousin",
+                    "source": "c_category_quantum",
+                    "target": "c_topological"
                 }
             }
         ]
