@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Modular-qudit stabilizer code</span></span>
+  <span class="code-name">Modular-qudit stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qudit_stabilizer">&nbsp;</a>-->
@@ -81,8 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,p^k,d))_q\)</span> (with <span class="inline-math">\(q\)</span> not necessarily prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_q\)</span> or <span class="inline-math">\([[n,k,d]]_q\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Stub.</dd>
+<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>.</p>
+<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudts, with <span class="inline-math">\(K=q^n/|S|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -108,6 +111,10 @@
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">A standardized definition of the qudit stabilizer group is developed in <a href="#cite-1" class="cite">[2]</a>.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -128,7 +135,7 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/double_semion">Double-semion code</a></span>    <span class="code-parent-of-1-detail">(Double-semion code can be realized as a modular-qudit stabilizer code with <span class="inline-math">\(q=4\)</span> <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/double_semion">Double-semion code</a></span>    <span class="code-parent-of-1-detail">(Double-semion code can be realized as a modular-qudit stabilizer code with <span class="inline-math">\(q=4\)</span> <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Prime-qudit stabilizer codes are modular-qudit stabilizer codes with <span class="inline-math">\(q\)</span> being prime.)</span>  </li>
   <li class="paragraph-in-list">
@@ -144,7 +151,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
 </dd>
 
@@ -194,6 +203,16 @@ url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
+      <dd>
+        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        V. Gheorghiu, “Standard form of qudit stabilizer groups”, Physics Letters A <span class="textbf">378</span>, 505 (2014). <a href="https://doi.org/10.1016/j.physleta.2013.12.009" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1101.1519" target="_blank" class="href">1101.1519</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
       <dd>
         Tyler D. Ellison et al., “Pauli stabilizer models of twisted quantum doubles”. <a href="https://arxiv.org/abs/2112.11394" target="_blank" class="href">2112.11394</a>
       </dd>

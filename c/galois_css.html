@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Galois-qudit CSS code</span></span>
+  <span class="code-name">Galois-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/galois_css">&nbsp;</a>-->
@@ -81,8 +81,31 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
+The parity check matrix is of the form
+<span id="eq--parity" class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}~.
+\label{eq:parity}
+\end{align}</span></p>
+<p>Encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(q\)</span>-ary linear codes</a>,
+an <span class="inline-math">\([n,k_X,d_X]_{GF(q)} \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_{GF(q)} \)</span> code <span class="inline-math">\(C_Z\)</span>,
+satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>.
+The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
+The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
+The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers,
+defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>,
+commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
+The codewords are
+<span class="display-math env-align">\begin{align}
+|\gamma + C_Z^\perp \rangle = \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
+\end{align}</span>
+for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
 
 
 <!-- Display features -->
@@ -118,7 +141,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a></span>  </li>
 </ul>
 </dd>
 
@@ -144,7 +167,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-cousins-1-detail">(Extension of qubit CSS codes to Galois qudits.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/prime_qudit_css">Prime-qudit CSS code</a></span>    <span class="code-cousins-1-detail">(Prime-qudit CSS codes are Galois-qudit CSS codes with <span class="inline-math">\(m=1\)</span>.)</span>  </li>
 </ul>
 </dd>
 
@@ -190,6 +213,26 @@ url={https://errorcorrectionzoo.org/c/galois_css}
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
+<dd class="code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.  More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a generalized Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
@@ -122,16 +122,27 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span>    <span class="code-parents-1-detail">(Prime-qudit stabilizer codes are modular-qudit stabilizer codes with <span class="inline-math">\(q\)</span> being prime.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>    <span class="code-parents-1-detail">(Prime-qudit stabilizer codes are Galois-qudit stabilizer codes with <span class="inline-math">\(m=1\)</span>.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a></span>    <span class="code-parents-1-detail">(Prime-qudit stabilizer codes are Galois-qudit true stabilizer codes with <span class="inline-math">\(m=1\)</span>.)</span>  </li>
 </ul>
 </dd>
 
+<dt class="code-parent-of">Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/prime_qudit_css">Prime-qudit CSS code</a></span>  </li>
+</ul>
+</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Prime-qudit stabilizer codes inherit most of the features of qubit stabilizer codes, including encoding an integer number of qudits and a Pauli group with a unique number of generators.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_surface">Qudit surface code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D prime-qudit topological stabilizer codes are equivalent to a finite number of copies of the qudit surface code stabilizer group via a local constant-depth Clifford circuit <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
 </ul>

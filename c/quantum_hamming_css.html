@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="\([[2^r - 1, 2^r - 2r - 1, 3]]\) Hamming-based CSS code" />
+<meta name="citation_title" content="\([[2^r, 2^r-2r-1, 3]]\) Hamming-based CSS code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="\([[2^r - 1, 2^r - 2r - 1, 3]]\) Hamming-based CSS code" />
+<meta name="DC.title" content="\([[2^r, 2^r-2r-1, 3]]\) Hamming-based CSS code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      \([[2^r - 1, 2^r - 2r - 1, 3]]\) Hamming-based CSS code
+      \([[2^r, 2^r-2r-1, 3]]\) Hamming-based CSS code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\([[2^r - 1, 2^r - 2r - 1, 3]]\)</span> Hamming-based CSS code</h1>
+    <h1><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name"><span class="inline-math">\([[2^r - 1, 2^r - 2r - 1, 3]]\)</span> Hamming-based CSS code</span></span>
+  <span class="code-name"><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/quantum_hamming_css">&nbsp;</a>-->
@@ -81,8 +81,10 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description">A Hamming-based CSS code is a CCS code constructed with a classical Hamming code <span class="inline-math">\([2^r-1,2^r-1-r,3]=C_X=C_Z\)</span>.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Protects against any single qubit error.</dd>
 
 
 <!-- Display features -->
@@ -100,6 +102,8 @@
 
 
 
+<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Syndrome measurement using two ancilla qubits <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
 
@@ -132,6 +136,15 @@
 </ul>
 </dd>
 
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hamming">Hamming code</a></span>    <span class="code-cousins-1-detail">(Quantum Hamming codes result from applying the CSS construction to Hamming codes.)</span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->
@@ -158,10 +171,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“\([[2^r - 1, 2^r - 2r - 1, 3]]\) Hamming-based CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_hamming_css</dd>
+    <dd>“\([[2^r, 2^r-2r-1, 3]]\) Hamming-based CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_hamming_css</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_quantum_hamming_css,
-title={\([[2^r - 1, 2^r - 2r - 1, 3]]\) Hamming-based CSS code},
+title={\([[2^r, 2^r-2r-1, 3]]\) Hamming-based CSS code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -175,6 +188,16 @@ url={https://errorcorrectionzoo.org/c/quantum_hamming_css}
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href">1705.02329</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

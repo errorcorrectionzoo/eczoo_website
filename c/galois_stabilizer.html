@@ -81,8 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,p^k,d))_{GF(q)}\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Stub.</dd>
+<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>.</p>
+<p>Such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits. A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both. The distance is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</p></dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. Corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qudits.</dd>
 
 
 <!-- Display features -->
@@ -96,6 +99,8 @@
 
 
  
+<dt class="code-feature code-feature-general_gates">Gates</dt>
+  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">As opposed to modular qudits for composite <span class="inline-math">\(q\)</span>, Galois qudits inherit most of the properties of the prime-qudit Clifford group due to the correspondence between a <span class="inline-math">\(q=p^m\)</span> Galois qudit and <span class="inline-math">\(m\)</span> prime qudits of dimension <span class="inline-math">\(p\)</span> <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
 
@@ -108,6 +113,10 @@
 
 
 
+<dt class="code-notes">Notes</dt>
+<dd class="code-notes">
+  <span class="paragraph-in-list">The code can be considered either as GF(<span class="inline-math">\(q\)</span>) stabilizer on <span class="inline-math">\(n\)</span> qudits giving  <span class="inline-math">\(k=n-r/m\)</span>, or GF(<span class="inline-math">\(p\)</span>) stabilizer on <span class="inline-math">\(mn\)</span> qubdits, giving  <span class="inline-math">\(k=nm-r\)</span>.</span>
+</dd>
 
 
 <!-- Relationships to other codes -->
@@ -128,18 +137,23 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Prime-qudit stabilizer codes are Galois-qudit stabilizer codes with <span class="inline-math">\(m=1\)</span>.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_ldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
 </ul>
 </dd>
 
+<dt class="code-cousins">Cousin(s)</dt>
+<dd class="code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span>  </li>
+</ul>
+</dd>
 
 
 <!-- zoo-related information and how to edit -->

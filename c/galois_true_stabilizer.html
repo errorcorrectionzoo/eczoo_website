@@ -82,7 +82,7 @@
 
 <dt class="code-description">Description</dt>
 <dd class="code-description"><p>Also called a linear stabilizer code. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</p>
-<p>The number of generators <span class="inline-math">\(r\)</span> is a multiple of <span class="inline-math">\(m\)</span> (recall that <span class="inline-math">\(q=p^m\)</span> for Galois qudits). As a result, the number <span class="inline-math">\(k=n-r/m\)</span> of logical qudits is an integer.</p></dd>
+<p>The number of generators <span class="inline-math">\(r\)</span> for a true stabilizer code is a multiple of <span class="inline-math">\(m\)</span> (recall that <span class="inline-math">\(q=p^m\)</span> for Galois qudits). As a result, the number <span class="inline-math">\(k=n-r/m\)</span> of logical qudits is an integer.</p></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.</dd>
@@ -125,6 +125,17 @@
 </ul>
 </dd>
 
+<dt class="code-parent-of">Parent of</dt>
+<dd class="code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Prime-qudit stabilizer codes are Galois-qudit true stabilizer codes with <span class="inline-math">\(m=1\)</span>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span>  </li>
+</ul>
+</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -132,7 +143,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>    <span class="code-cousins-1-detail">(A true Galois-qudit stabilizer code is the closest quantum analogue of a <span class="inline-math">\(q\)</span>-ary linear code because the <span class="inline-math">\(q\)</span>-ary vectors defining each code form a linear subspace.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>    <span class="code-cousins-1-detail">(A true Galois-qudit stabilizer code is the closest quantum analogue of a linear code over <span class="inline-math">\(GF(q)\)</span> because the <span class="inline-math">\(q\)</span>-ary vectors defining each code form a linear subspace.)</span>  </li>
 </ul>
 </dd>
 
