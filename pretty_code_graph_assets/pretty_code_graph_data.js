@@ -1220,11 +1220,11 @@ GENERATED_pretty_code_graph_data = {
                         "Constructed from a Ramanujan quantum code and an asymptotically good classical LDPC code using distance balancing. Ramanujan quantum codes are defined using Ramanujan complexes which are simplicial..."
                     ],
                     "_code_href": "/c/ramanujan_tensor_product",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 150,
-                    "y": 720
+                    "y": 600
                 }
             },
             {
@@ -1237,11 +1237,11 @@ GENERATED_pretty_code_graph_data = {
                         "Code constructed by combining a random LDPC code as the base and a cyclic repetition code as the fiber of a fiber bundle. After applying distance balancing, a QLDPC code with distance \\(\\Omega(n^{3..."
                     ],
                     "_code_href": "/c/fiber_bundle",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 150,
-                    "y": 720
+                    "y": 600
                 }
             },
             {
@@ -1254,11 +1254,11 @@ GENERATED_pretty_code_graph_data = {
                         "CSS codes constructed from bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns index..."
                     ],
                     "_code_href": "/c/quantum_expander",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 250,
-                    "y": 840
+                    "x": -500,
+                    "y": 500
                 }
             },
             {
@@ -1269,11 +1269,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "CSS code formulated using the \\hyperref[code:css]{CSS chain-complex} construction using chain complexes consisting of products of two other chain complexes.\n",
                     "_code_href": "/c/homological_product",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 150,
-                    "y": 600
+                    "y": 480
                 }
             },
             {
@@ -1303,11 +1303,11 @@ GENERATED_pretty_code_graph_data = {
                         "A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than ..."
                     ],
                     "_code_href": "/c/xyz_product",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 150,
-                    "y": 840
+                    "y": 480
                 }
             },
             {
@@ -1318,11 +1318,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "A family of \\([[n,k,d]]\\) CSS codes whose construction is based on two binary linear \\textit{seed} codes \\(C_1\\) and \\(C_2\\).",
                     "_code_href": "/c/hypergraph_product",
-                    "_family_generation_level": 7
+                    "_family_generation_level": 6
                 },
                 "position": {
                     "x": 150,
-                    "y": 840
+                    "y": 720
                 }
             },
             {
@@ -1335,11 +1335,11 @@ GENERATED_pretty_code_graph_data = {
                         "QLDPC code that is the \"lifted version\" of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of ''product'' is taken betwe..."
                     ],
                     "_code_href": "/c/lifted_product",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 150,
-                    "y": 720
+                    "y": 600
                 }
             },
             {
@@ -2128,11 +2128,11 @@ GENERATED_pretty_code_graph_data = {
                         "CSS stabilizer code constructed from another CSS code using a distance-balancing procedure The initial code is said to be \\textit{unbalanced}, i.e., tailored to noise biased toward either bit- or p..."
                     ],
                     "_code_href": "/c/distance_balanced",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 150,
-                    "y": 600
+                    "y": 480
                 }
             },
             {
@@ -2229,6 +2229,23 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_qldpc",
+                    "label": "Quantum low-density parity-check (QLDPC) code",
+                    "_is_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": [
+                        "Family of \\([[n,k,d]]\\) stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site part..."
+                    ],
+                    "_code_href": "/c/qldpc",
+                    "_family_generation_level": 3
+                },
+                "position": {
+                    "x": -500,
+                    "y": 500
+                }
+            },
+            {
+                "data": {
                     "id": "c_holographic",
                     "label": "Holographic code",
                     "_is_code": 1,
@@ -2287,8 +2304,8 @@ GENERATED_pretty_code_graph_data = {
                     "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 250,
-                    "y": 480
+                    "x": 0,
+                    "y": -300
                 }
             },
             {
@@ -2340,23 +2357,6 @@ GENERATED_pretty_code_graph_data = {
                 "position": {
                     "x": 250,
                     "y": 600
-                }
-            },
-            {
-                "data": {
-                    "id": "c_quantum_ldpc",
-                    "label": "Quantum low-density parity-check (QLDPC) code",
-                    "_is_code": 1,
-                    "_is_abstract_code": 0,
-                    "_description": [
-                        "Family of \\([[n,k,d]]\\) stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site part..."
-                    ],
-                    "_code_href": "/c/quantum_ldpc",
-                    "_family_generation_level": 6
-                },
-                "position": {
-                    "x": 250,
-                    "y": 720
                 }
             },
             {
@@ -3458,10 +3458,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_honeycomb_quantum_ldpc__58",
+                    "id": "cousin_honeycomb_qldpc__58",
                     "_rel_type": "cousin",
                     "source": "c_honeycomb",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
@@ -3818,10 +3818,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_expander_quantum_ldpc_82",
+                    "id": "parent_quantum_expander_qldpc_82",
                     "_rel_type": "parent",
                     "source": "c_quantum_expander",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
@@ -3842,10 +3842,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_homological_product_quantum_ldpc_84",
+                    "id": "parent_homological_product_qldpc_84",
                     "_rel_type": "parent",
                     "source": "c_homological_product",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
@@ -3898,10 +3898,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_xyz_product_quantum_ldpc_88",
+                    "id": "parent_xyz_product_qldpc_88",
                     "_rel_type": "parent",
                     "source": "c_xyz_product",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
@@ -4802,10 +4802,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_distance_balanced_quantum_ldpc_145",
+                    "id": "parent_distance_balanced_qldpc_145",
                     "_rel_type": "parent",
                     "source": "c_distance_balanced",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
@@ -4874,18 +4874,42 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_holographic_oaecc_152",
+                    "id": "parent_qldpc_qecc_152",
                     "_rel_type": "parent",
-                    "source": "c_holographic",
-                    "target": "c_oaecc"
+                    "source": "c_qldpc",
+                    "target": "c_qecc"
                 }
             },
             {
                 "data": {
-                    "id": "parent_fracton_hamiltonian_153",
+                    "id": "cousin_qldpc_ldpc__144",
+                    "_rel_type": "cousin",
+                    "source": "c_qldpc",
+                    "target": "c_ldpc"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_qldpc_topological__145",
+                    "_rel_type": "cousin",
+                    "source": "c_qldpc",
+                    "target": "c_topological"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_qldpc_dynamic_gen__146",
+                    "_rel_type": "cousin",
+                    "source": "c_qldpc",
+                    "target": "c_dynamic_gen"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_holographic_oaecc_153",
                     "_rel_type": "parent",
-                    "source": "c_fracton",
-                    "target": "c_hamiltonian"
+                    "source": "c_holographic",
+                    "target": "c_oaecc"
                 }
             },
             {
@@ -4898,15 +4922,23 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fracton_quantum_ldpc_155",
+                    "id": "parent_fracton_hamiltonian_155",
                     "_rel_type": "parent",
                     "source": "c_fracton",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_hamiltonian"
                 }
             },
             {
                 "data": {
-                    "id": "cousin_fracton_topological__144",
+                    "id": "parent_fracton_qldpc_156",
+                    "_rel_type": "parent",
+                    "source": "c_fracton",
+                    "target": "c_qldpc"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_fracton_topological__147",
                     "_rel_type": "cousin",
                     "source": "c_fracton",
                     "target": "c_topological"
@@ -4914,7 +4946,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hamiltonian_oecc_156",
+                    "id": "parent_hamiltonian_oecc_157",
                     "_rel_type": "parent",
                     "source": "c_hamiltonian",
                     "target": "c_oecc"
@@ -4922,15 +4954,15 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_hamiltonian_quantum_ldpc__145",
+                    "id": "cousin_hamiltonian_qldpc__148",
                     "_rel_type": "cousin",
                     "source": "c_hamiltonian",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
                 "data": {
-                    "id": "parent_topological_abelian_topological_157",
+                    "id": "parent_topological_abelian_topological_158",
                     "_rel_type": "parent",
                     "source": "c_topological_abelian",
                     "target": "c_topological"
@@ -4938,15 +4970,15 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_topological_abelian_quantum_ldpc_158",
+                    "id": "parent_topological_abelian_qldpc_159",
                     "_rel_type": "parent",
                     "source": "c_topological_abelian",
-                    "target": "c_quantum_ldpc"
+                    "target": "c_qldpc"
                 }
             },
             {
                 "data": {
-                    "id": "cousin_topological_abelian_qudit_stabilizer__146",
+                    "id": "cousin_topological_abelian_qudit_stabilizer__149",
                     "_rel_type": "cousin",
                     "source": "c_topological_abelian",
                     "target": "c_qudit_stabilizer"
@@ -4954,7 +4986,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fusion_stabilizer_159",
+                    "id": "parent_fusion_stabilizer_160",
                     "_rel_type": "parent",
                     "source": "c_fusion",
                     "target": "c_stabilizer"
@@ -4962,7 +4994,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fusion_topological__147",
+                    "id": "cousin_fusion_topological__150",
                     "_rel_type": "cousin",
                     "source": "c_fusion",
                     "target": "c_topological"
@@ -4970,7 +5002,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fusion_fock_state__148",
+                    "id": "cousin_fusion_fock_state__151",
                     "_rel_type": "cousin",
                     "source": "c_fusion",
                     "target": "c_fock_state"
@@ -4978,7 +5010,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_perfect_qudits_into_qudits_160",
+                    "id": "parent_quantum_perfect_qudits_into_qudits_161",
                     "_rel_type": "parent",
                     "source": "c_quantum_perfect",
                     "target": "c_qudits_into_qudits"
@@ -4986,7 +5018,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_perfect_galois_into_galois_161",
+                    "id": "parent_quantum_perfect_galois_into_galois_162",
                     "_rel_type": "parent",
                     "source": "c_quantum_perfect",
                     "target": "c_galois_into_galois"
@@ -4994,7 +5026,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_perfect_perfect__149",
+                    "id": "cousin_quantum_perfect_perfect__152",
                     "_rel_type": "cousin",
                     "source": "c_quantum_perfect",
                     "target": "c_perfect"
@@ -5002,7 +5034,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_mds_qudits_into_qudits_162",
+                    "id": "parent_quantum_mds_qudits_into_qudits_163",
                     "_rel_type": "parent",
                     "source": "c_quantum_mds",
                     "target": "c_qudits_into_qudits"
@@ -5010,7 +5042,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_mds_galois_into_galois_163",
+                    "id": "parent_quantum_mds_galois_into_galois_164",
                     "_rel_type": "parent",
                     "source": "c_quantum_mds",
                     "target": "c_galois_into_galois"
@@ -5018,7 +5050,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_mds_mds__150",
+                    "id": "cousin_quantum_mds_mds__153",
                     "_rel_type": "cousin",
                     "source": "c_quantum_mds",
                     "target": "c_mds"
@@ -5026,50 +5058,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_quantum_mds_generalized_reed_solomon__151",
+                    "id": "cousin_quantum_mds_generalized_reed_solomon__154",
                     "_rel_type": "cousin",
                     "source": "c_quantum_mds",
                     "target": "c_generalized_reed_solomon"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_quantum_ldpc_qudit_stabilizer_164",
-                    "_rel_type": "parent",
-                    "source": "c_quantum_ldpc",
-                    "target": "c_qudit_stabilizer"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_quantum_ldpc_galois_stabilizer_165",
-                    "_rel_type": "parent",
-                    "source": "c_quantum_ldpc",
-                    "target": "c_galois_stabilizer"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_quantum_ldpc_ldpc__152",
-                    "_rel_type": "cousin",
-                    "source": "c_quantum_ldpc",
-                    "target": "c_ldpc"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_quantum_ldpc_topological__153",
-                    "_rel_type": "cousin",
-                    "source": "c_quantum_ldpc",
-                    "target": "c_topological"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_quantum_ldpc_dynamic_gen__154",
-                    "_rel_type": "cousin",
-                    "source": "c_quantum_ldpc",
-                    "target": "c_dynamic_gen"
                 }
             },
             {
@@ -5082,7 +5074,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fermions_qecc_finite_166",
+                    "id": "parent_fermions_qecc_finite_165",
                     "_rel_type": "parent",
                     "source": "c_fermions",
                     "target": "c_qecc_finite"
@@ -5106,7 +5098,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_fermions_167",
+                    "id": "parent_majorana_stab_fermions_166",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_fermions"
@@ -5114,7 +5106,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_stabilizer_168",
+                    "id": "parent_majorana_stab_stabilizer_167",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_stabilizer"
@@ -5154,7 +5146,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_turaev_viro_category_quantum_169",
+                    "id": "parent_turaev_viro_category_quantum_168",
                     "_rel_type": "parent",
                     "source": "c_turaev_viro",
                     "target": "c_category_quantum"
@@ -5162,7 +5154,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_turaev_viro_topological_170",
+                    "id": "parent_turaev_viro_topological_169",
                     "_rel_type": "parent",
                     "source": "c_turaev_viro",
                     "target": "c_topological"
@@ -5178,7 +5170,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_levin_wen_category_quantum_171",
+                    "id": "parent_levin_wen_category_quantum_170",
                     "_rel_type": "parent",
                     "source": "c_levin_wen",
                     "target": "c_category_quantum"
@@ -5186,7 +5178,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_levin_wen_topological_172",
+                    "id": "parent_levin_wen_topological_171",
                     "_rel_type": "parent",
                     "source": "c_levin_wen",
                     "target": "c_topological"
@@ -5210,7 +5202,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_category_quantum_qecc_finite_173",
+                    "id": "parent_category_quantum_qecc_finite_172",
                     "_rel_type": "parent",
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
@@ -5924,6 +5916,11 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
+            "top": "domain_classical_domain",
+            "bottom": "c_qldpc",
+            "gap": 200
+        },
+        {
             "bottom": "domain_classical_domain",
             "top": "c_holographic",
             "gap": 100
@@ -5957,11 +5954,6 @@ GENERATED_pretty_code_graph_data = {
             "bottom": "domain_classical_domain",
             "top": "c_quantum_mds",
             "gap": 100
-        },
-        {
-            "top": "domain_classical_domain",
-            "bottom": "c_quantum_ldpc",
-            "gap": 200
         },
         {
             "top": "domain_classical_domain",
@@ -6394,7 +6386,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_quantum_ldpc",
+            "top": "c_qldpc",
             "bottom": "c_quantum_expander",
             "gap": 100
         },
@@ -6404,7 +6396,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_quantum_ldpc",
+            "top": "c_qldpc",
             "bottom": "c_homological_product",
             "gap": 100
         },
@@ -6424,7 +6416,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_quantum_ldpc",
+            "top": "c_qldpc",
             "bottom": "c_xyz_product",
             "gap": 100
         },
@@ -6734,6 +6726,11 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
+            "top": "c_qecc",
+            "bottom": "c_qldpc",
+            "gap": 100
+        },
+        {
             "top": "c_oaecc",
             "bottom": "c_holographic",
             "gap": 100
@@ -6751,16 +6748,6 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_topological",
             "bottom": "c_topological_abelian",
-            "gap": 100
-        },
-        {
-            "top": "c_qudit_stabilizer",
-            "bottom": "c_quantum_ldpc",
-            "gap": 100
-        },
-        {
-            "top": "c_galois_stabilizer",
-            "bottom": "c_quantum_ldpc",
             "gap": 100
         },
         {

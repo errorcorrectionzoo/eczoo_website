@@ -332,7 +332,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 <div class="ecc-code" id="ecc_cat">
   <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a></span></span>
   <span class="short-code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.</span>
-  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error.</span>
+  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error.   <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=1\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-16" class="cite">[17]</a> or squeezing <a href="#cite-17" class="cite">[18]</a> that add such protection.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.
@@ -350,7 +350,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 <div class="ecc-code" id="ecc_number_phase">
   <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
-  <span class="short-code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-16" class="cite">[17]</a>,
+  <span class="short-code-description"><p>Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-18" class="cite">[19]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
 \end{align}</span>
@@ -456,6 +456,16 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
+      <dd>
+        L. Li et al., “Phase-engineered bosonic quantum codes”, Physical Review A <span class="textbf">103</span>, (2021). <a href="https://doi.org/10.1103/PhysRevA.103.062427" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.05358" target="_blank" class="href">1901.05358</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-17">[18]</dt>
+      <dd>
+        David S. Schlegel, Fabrizio Minganti, and Vincenzo Savona, “Quantum error correction using squeezed Schrödinger cat states”. <a href="https://arxiv.org/abs/2201.02570" target="_blank" class="href">2201.02570</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-18">[19]</dt>
       <dd>
         S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
       </dd>
