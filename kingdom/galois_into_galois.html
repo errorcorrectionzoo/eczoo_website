@@ -60,7 +60,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>,       <a href="/c/quantum_perfect">Perfect quantum code</a>,       <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
+      <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -89,57 +89,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_quantum_perfect">
-  <span class="short-code-name"><a href="/c/quantum_perfect">Perfect quantum code</a></span>
-  <span class="short-code-description"><p>A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
-<span class="display-math env-align">\begin{align}
-\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</p>
-<p>For qubit codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
-\frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-H(t/n),
-\end{align}</span>
-where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></span>
-  <span class="short-code-info">Protection: Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-4" class="cite">[5]</a><a href="#cite-0" class="cite">[1]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/qudits_into_qudits">Modular-qudit code</a>,       <a href="/c/galois_into_galois">Galois-qudit code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/perfect">Perfect code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_quantum_mds">
-  <span class="short-code-name"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\(((n,q^k,d))\)</span> code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Singleton bound
-<span class="display-math env-align">\begin{align}
-2(d-1) \leq n-k
-\end{align}</span>
-becomes an equality.</span>
-  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/qudits_into_qudits">Modular-qudit code</a>,       <a href="/c/galois_into_galois">Galois-qudit code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_galois_true_stabilizer">
   <span class="short-code-name"><a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a></span>
   <span class="short-code-description"><p>Also called a linear stabilizer code. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</p>
@@ -161,7 +110,7 @@ becomes an equality.</span>
 
 
 <div class="ecc-code" id="ecc_binary_quantum_goppa">
-  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa Code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a></span></span>
   <span class="short-code-description"><p>Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> Galois-qudit stabilizer codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</p>
 <p>Let <span class="inline-math">\( F/GF(q) \)</span> be an algebraic function field of one variable, <span class="inline-math">\(\sigma \)</span> be an automorphism of order 2
 of <span class="inline-math">\(F\)</span> which leaves <span class="inline-math">\(GF(q)\)</span> invariant, and <span class="inline-math">\(P_1, \cdots, P_n \)</span> be pairwise distinct places of degree one such that <span class="inline-math">\( \sigma P_i = P_j\)</span> for all
@@ -186,7 +135,7 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
 
 
 <div class="ecc-code" id="ecc_prime_qudit_stabilizer">
-  <span class="short-code-name"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.  More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a generalized Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
   <span class="short-code-parents">
@@ -205,7 +154,7 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
 
 
 <div class="ecc-code" id="ecc_galois_css">
-  <span class="short-code-name"><a href="/c/galois_css">Galois-qudit CSS code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/galois_css">Galois-qudit CSS code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
   <span class="short-code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
 are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
 The parity check matrix is of the form
@@ -267,7 +216,7 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 
 
 <div class="ecc-code" id="ecc_polynomial">
-  <span class="short-code-name"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -285,7 +234,7 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 
 
 <div class="ecc-code" id="ecc_skew-cyclic_galois_css">
-  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
+  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -299,7 +248,7 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 
 
 <div class="ecc-code" id="ecc_quantum_secret_sharing">
-  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">A family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes approximately correcting errors on up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> qubits, i.e., with approximate distance approaching the no-cloning bound <span class="inline-math">\(n/2\)</span>. Constructed using a non-degenerate CSS code, such as a polynomial quantum code, and a classical authentication scheme. The code can be viewed as an <span class="inline-math">\(t\)</span>-error tolerant secret sharing scheme. Since the code yields a small logical subspace using large registers that contain both classical and quantum information, it is not useful for practical error correction problems, but instead demonstrates the power of approximate quantum error correction.</span>
   <span class="short-code-info">Protection: Corrects up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> errors with fidelity exponentially lose to 1.</span>
   <span class="short-code-parents">
@@ -318,8 +267,8 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 
 
 <div class="ecc-code" id="ecc_galois_polynomial">
-  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a></span></span>
-  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Let <span class="inline-math">\(C_1\)</span> be a Reed-Solomon code with <span class="inline-math">\([n,k_1,d_1]_{GF(q)}\)</span> and <span class="inline-math">\(C_2^\perp\)</span> with <span class="inline-math">\([n,k_2,d_2]_{GF(q)}\)</span> to be a modified Reed-Solomon code such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\inGF(q) } \otimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j  \right\rangle,\end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span> with (n&lt;q).</span>
+  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Let <span class="inline-math">\(C_1\)</span> be a Reed-Solomon code with <span class="inline-math">\([n,k_1,d_1]_{GF(q)}\)</span> and <span class="inline-math">\(C_2^\perp\)</span> with <span class="inline-math">\([n,k_2,d_2]_{GF(q)}\)</span> to be a modified Reed-Solomon code such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \otimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j  \right\rangle,\end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span> with (n&lt;q).</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/galois_css">Galois-qudit CSS code</a>.
@@ -350,65 +299,50 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href">quant-ph/9607027</a>
+        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+        A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href">0907.0049</a>
+        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
+        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href">DOI</a>
+        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
+        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
+        M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
+        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-11">[12]</dt>
-      <dd>
-        M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-12">[13]</dt>
-      <dd>
-        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-13">[14]</dt>
-      <dd>
         Claude Crepeau, Daniel Gottesman, and Adam Smith, “Approximate Quantum Error-Correcting Codes and Secret Sharing Schemes”. <a href="https://arxiv.org/abs/quant-ph/0503139" target="_blank" class="href">quant-ph/0503139</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-14">[15]</dt>
+      <dt id="cite-11">[12]</dt>
       <dd>
         Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
       </dd>

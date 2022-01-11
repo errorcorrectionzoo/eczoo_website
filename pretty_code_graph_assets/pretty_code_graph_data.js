@@ -2141,7 +2141,9 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Dynamically-generated quantum error-correcting code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
-                    "_description": "Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process.",
+                    "_description": [
+                        "Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process. Such processes update the code structure and can include random unitary evolution or non-commuti..."
+                    ],
                     "_code_href": "/c/dynamic_gen",
                     "_family_generation_level": 2
                 },
@@ -2335,11 +2337,11 @@ GENERATED_pretty_code_graph_data = {
                         "A non-degenerate code constructed out of \\(q\\)-dimensional qudits and having parameters \\(((n,K,2t+1))\\) is perfect if \\(n\\), \\(K\\), \\(t\\), and \\(q\\) are such that the quantum Hamming bound\n\\begin{..."
                     ],
                     "_code_href": "/c/quantum_perfect",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 250,
-                    "y": 600
+                    "x": 0,
+                    "y": -300
                 }
             },
             {
@@ -2352,11 +2354,11 @@ GENERATED_pretty_code_graph_data = {
                         "An \\(((n,q^k,d))\\) code constructed out of \\(q\\)-dimensional qudits is an MDS code if parameters \\(n\\), \\(k\\), \\(d\\), and \\(q\\) are such that the quantum Singleton bound\n\\begin{align}\n2(d-1) \\leq n..."
                     ],
                     "_code_href": "/c/quantum_mds",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
-                    "x": 250,
-                    "y": 600
+                    "x": 0,
+                    "y": -300
                 }
             },
             {
@@ -5010,18 +5012,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_perfect_qudits_into_qudits_161",
+                    "id": "parent_quantum_perfect_qecc_finite_161",
                     "_rel_type": "parent",
                     "source": "c_quantum_perfect",
-                    "target": "c_qudits_into_qudits"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_quantum_perfect_galois_into_galois_162",
-                    "_rel_type": "parent",
-                    "source": "c_quantum_perfect",
-                    "target": "c_galois_into_galois"
+                    "target": "c_qecc_finite"
                 }
             },
             {
@@ -5034,18 +5028,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_quantum_mds_qudits_into_qudits_163",
+                    "id": "parent_quantum_mds_qecc_finite_162",
                     "_rel_type": "parent",
                     "source": "c_quantum_mds",
-                    "target": "c_qudits_into_qudits"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_quantum_mds_galois_into_galois_164",
-                    "_rel_type": "parent",
-                    "source": "c_quantum_mds",
-                    "target": "c_galois_into_galois"
+                    "target": "c_qecc_finite"
                 }
             },
             {
@@ -5074,7 +5060,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fermions_qecc_finite_165",
+                    "id": "parent_fermions_qecc_finite_163",
                     "_rel_type": "parent",
                     "source": "c_fermions",
                     "target": "c_qecc_finite"
@@ -5098,7 +5084,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_fermions_166",
+                    "id": "parent_majorana_stab_fermions_164",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_fermions"
@@ -5106,7 +5092,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_stabilizer_167",
+                    "id": "parent_majorana_stab_stabilizer_165",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_stabilizer"
@@ -5146,7 +5132,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_turaev_viro_category_quantum_168",
+                    "id": "parent_turaev_viro_category_quantum_166",
                     "_rel_type": "parent",
                     "source": "c_turaev_viro",
                     "target": "c_category_quantum"
@@ -5154,7 +5140,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_turaev_viro_topological_169",
+                    "id": "parent_turaev_viro_topological_167",
                     "_rel_type": "parent",
                     "source": "c_turaev_viro",
                     "target": "c_topological"
@@ -5170,7 +5156,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_levin_wen_category_quantum_170",
+                    "id": "parent_levin_wen_category_quantum_168",
                     "_rel_type": "parent",
                     "source": "c_levin_wen",
                     "target": "c_category_quantum"
@@ -5178,7 +5164,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_levin_wen_topological_171",
+                    "id": "parent_levin_wen_topological_169",
                     "_rel_type": "parent",
                     "source": "c_levin_wen",
                     "target": "c_topological"
@@ -5202,7 +5188,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_category_quantum_qecc_finite_172",
+                    "id": "parent_category_quantum_qecc_finite_170",
                     "_rel_type": "parent",
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
@@ -6748,6 +6734,16 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_topological",
             "bottom": "c_topological_abelian",
+            "gap": 100
+        },
+        {
+            "top": "c_qecc_finite",
+            "bottom": "c_quantum_perfect",
+            "gap": 100
+        },
+        {
+            "top": "c_qecc_finite",
+            "bottom": "c_quantum_mds",
             "gap": 100
         },
         {
