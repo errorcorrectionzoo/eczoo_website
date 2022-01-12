@@ -1477,7 +1477,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_higher_dimensional_surface",
-                    "label": "Higher-dimensioanl surface code",
+                    "label": "Higher-dimensional surface code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "A family of Kitaev surface codes on planar or toric surfaces of dimension greater than two. Stub.",
