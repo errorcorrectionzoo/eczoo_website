@@ -81,7 +81,14 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. Stub.</dd>
+<dd class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) modular-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
+<span class="display-math env-align">\begin{align}
+  f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
+\end{align}</span>
+where the first <span class="inline-math">\(k\)</span> coefficients are indexed by the coefficient vector <span class="inline-math">\(\mu\in\mathbb{Z}_p^{\times k}\)</span>, and the remaining coefficients are indexed by the vector <span class="inline-math">\(c\in\mathbb{Z}_p^{\times (g+1-k)}\)</span>. Logical states, labeled by <span class="inline-math">\(\mu\)</span>, are superpositions of canonical basis states whose <span class="inline-math">\(i\)</span>th bit is <span class="inline-math">\(f_{\mu\cup c}\)</span>, evaluated at <span class="inline-math">\(\alpha_i\)</span> and summed over all possible vectors <span class="inline-math">\(c\)</span>,
+<span class="display-math env-align">\begin{align}
+  |\overline{\mu}\rangle=\sum_{c\in\mathbb{Z}_{p}^{\times(g+1-k)}}|f_{\mu\cup c}(\alpha_{1}),|f_{\mu\cup c}(\alpha_{2}),\cdots,|f_{\mu\cup c}(\alpha_{n})\rangle.
+\end{align}</span></dd>
 
 
 
@@ -135,7 +142,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>    <span class="code-cousins-1-detail">(A polynomial code is a quantum MDS code when <span class="inline-math">\(n-k_1=k_1-k_2\)</span>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes can be defined for modular-qudits of prime dimension or, more generally, for Galois qudits.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes can be defined for modular qudits of prime dimension or, more generally, for Galois qudits.)</span>  </li>
 </ul>
 </dd>
 

@@ -81,11 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>.</p>
-<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudts, with <span class="inline-math">\(K=q^n/|S|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p></dd>
+<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudts, with <span class="inline-math">\(K=q^n/|S|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>.</p></dd>
 
 <dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
+<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
 
 
 <!-- Display features -->
@@ -149,7 +149,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>    <span class="code-cousins-1-detail">(Recalling that <span class="inline-math">\(q=p^m\)</span>, Galois-qudit stabilizer codes can also be treated as prime-dimensional modular-qudit stabilizer codes on <span class="inline-math">\(mn\)</span> qubdits, giving  <span class="inline-math">\(k=nm-r\)</span> <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
@@ -213,6 +213,11 @@ url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
       <dt id="cite-2">[3]</dt>
       <dd>
         Tyler D. Ellison et al., “Pauli stabilizer models of twisted quantum doubles”. <a href="https://arxiv.org/abs/2112.11394" target="_blank" class="href">2112.11394</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
       </dd>
     
     </dl>

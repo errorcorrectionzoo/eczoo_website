@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Galois-qudit polynomial code (QPyC)" />
+<meta name="citation_title" content="Fractal surface code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Galois-qudit polynomial code (QPyC)" />
+<meta name="DC.title" content="Fractal surface code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Galois-qudit polynomial code (QPyC)
+      Fractal surface code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1>Galois-qudit polynomial code (QPyC)</h1>
+    <h1>Fractal surface code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_galois_polynomial">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fractal_surface">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,15 +73,15 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Galois-qudit polynomial code (QPyC)</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Fractal surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/galois_polynomial">&nbsp;</a>-->
+   href="/c/fractal_surface">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_{GF(q)}\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_{GF(q)}\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle,\end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span> with (n&lt;q).</dd>
+<dd class="code-description">Kitaev surface code on a fractal geometry, which is obtained by removing qubits from the surface code on a cubic lattice. Stub.</dd>
 
 
 
@@ -118,7 +118,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/surface">Kitaev surface code</a></span>  </li>
 </ul>
 </dd>
 
@@ -129,15 +129,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes can be defined for modular qudits of prime dimension or, more generally, for Galois qudits.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(Polynomial codes are CSS codes constructed from Reed-Solomon codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/cyclic">Cyclic code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>    <span class="code-cousins-1-detail">(A polynomial code is a quantum MDS code when <span class="inline-math">\(n-k_1=k_1-k_2\)</span>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(Polynomial codes can be used for a specific construction of this code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/higher_dimensional_surface">Higher-dimensioanl surface code</a></span>    <span class="code-cousins-1-detail">(Fractal surface codes are obtained by removing qubits from the surface code on a cubic lattice.)</span>  </li>
 </ul>
 </dd>
 
@@ -150,33 +142,33 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    galois_polynomial
+    fractal_surface
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/galois_polynomial.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/surface/fractal_surface.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=galois_polynomial">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>galois_polynomial</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=fractal_surface">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>fractal_surface</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Galois-qudit polynomial code (QPyC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/galois_polynomial</dd>
+    <dd>“Fractal surface code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/fractal_surface</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_galois_polynomial,
-title={Galois-qudit polynomial code (QPyC)},
+    <dd class="bibtex">@incollection{eczoo_fractal_surface,
+title={Fractal surface code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/galois_polynomial}
+url={https://errorcorrectionzoo.org/c/fractal_surface}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/galois_polynomial</dd>
+    <dd>https://errorcorrectionzoo.org/c/fractal_surface</dd>
   </dl>
 </div>
 </dd>
@@ -188,7 +180,12 @@ url={https://errorcorrectionzoo.org/c/galois_polynomial}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
+        Guanyu Zhu, Tomas Jochym-O&#x27;Connor, and Arpit Dua, “Topological Order, Quantum Codes and Quantum Computation on Fractal Geometries”. <a href="https://arxiv.org/abs/2108.00018" target="_blank" class="href">2108.00018</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        Arpit Dua, Tomas Jochym-O&#x27;Connor, and Guanyu Zhu, “Quantum error correction with fractal topological codes”. <a href="https://arxiv.org/abs/2201.03568" target="_blank" class="href">2201.03568</a>
       </dd>
     
     </dl>
