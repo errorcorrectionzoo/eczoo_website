@@ -282,7 +282,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\([n,k,n-k+1]_q\\) linear code based on polynomials over \\(GF(q)\\). Let \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) be \\(n\\) distinct nonzero elements of \\(GF(q)\\) for prime \\(q>n\\). Encodes \\(\\mu=\\{\\mu_0,\\..."
+                        "An \\([n,k,n-k+1]_q\\) linear code based on polynomials over \\(GF(q)\\). Let \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) be \\(n\\) distinct nonzero elements of \\(GF(q)\\) with \\(q>n\\). Encodes \\(\\mu=\\{\\mu_0,\\cdots..."
                     ],
                     "_code_href": "/c/reed_solomon",
                     "_family_generation_level": 6
