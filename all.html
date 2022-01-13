@@ -334,7 +334,7 @@ H_{X} &amp; 0
 \label{eq:parity}
 \end{align}</span></p>
 <p>Encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(q\)</span>-ary linear codes</a>,
-an <span class="inline-math">\([n,k_X,d_X]_{GF(q)} \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_{GF(q)} \)</span> code <span class="inline-math">\(C_Z\)</span>,
+an <span class="inline-math">\([n,k_X,d_X]_q \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_q \)</span> code <span class="inline-math">\(C_Z\)</span>,
 satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>.
 The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
 The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
@@ -360,8 +360,8 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
   <li>
     <span class="code-name">
       <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-48" class="cite">[49]</a></span></span>
-    <span class="code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</p>
-<p>Such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits. A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both.</p></span>
+    <span class="code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+<p>A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both. Galois-qudit stabilizer codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -567,8 +567,8 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   <li>
     <span class="code-name">
       <a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-91" class="cite">[92]</a></span></span>
-    <span class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
-<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudts, with <span class="inline-math">\(K=q^n/|S|\)</span> <a href="#cite-92" class="cite">[93]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>.</p></span>
+    <span class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+<p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-92" class="cite">[93]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p></span>
   </li>
   <li>
     <span class="code-name">
@@ -664,13 +664,8 @@ where <span class="inline-math">\(H\)</span> is the binary entropy function.</p>
   </li>
   <li>
     <span class="code-name">
-      <a href="/c/prime_qudit_css">Prime-qudit CSS code</a></span>
-    <span class="code-description">Stub.</span>
-  </li>
-  <li>
-    <span class="code-name">
       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-109" class="cite">[110]</a></span></span>
-    <span class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) modular-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
+    <span class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) prime-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
 <span class="display-math env-align">\begin{align}
   f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
 \end{align}</span>
@@ -678,11 +673,6 @@ where the first <span class="inline-math">\(k\)</span> coefficients are indexed 
 <span class="display-math env-align">\begin{align}
   |\overline{\mu}\rangle=\sum_{c\in\mathbb{Z}_{p}^{\times(g+1-k)}}|f_{\mu\cup c}(\alpha_{1}),|f_{\mu\cup c}(\alpha_{2}),\cdots,|f_{\mu\cup c}(\alpha_{n})\rangle.
 \end{align}</span></span>
-  </li>
-  <li>
-    <span class="code-name">
-      <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-91" class="cite">[92]</a></span></span>
-    <span class="code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
   </li>
   <li>
     <span class="code-name">

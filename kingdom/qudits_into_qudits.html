@@ -86,8 +86,8 @@
 
 <div class="ecc-code" id="ecc_qudit_stabilizer">
   <span class="short-code-name"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators <span class="inline-math">\(S\)</span> forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
-<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudts, with <span class="inline-math">\(K=q^n/|S|\)</span> <a href="#cite-2" class="cite">[3]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>.</p></span>
+  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+<p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-2" class="cite">[3]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p></span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -95,11 +95,11 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/double_semion">Double-semion code</a>,       <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>.
+      <a href="/c/double_semion">Double-semion code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>,       <a href="/c/topological_abelian">Abelian topological code</a>.
+      <a href="/c/stabilizer">Stabilizer code</a>,       <a href="/c/qudit_surface">Qudit surface code</a>,       <a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a>,       <a href="/c/topological_abelian">Abelian topological code</a>.
   </span>
 </div>
 
@@ -128,30 +128,11 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a>.
+      <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/quantum_double">Quantum-double code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_prime_qudit_stabilizer">
-  <span class="short-code-name"><a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\(((n,p^k,d))_p\)</span> (with <span class="inline-math">\(p\)</span> prime) stabilizer code is denoted as <span class="inline-math">\([[n,k]]_p\)</span> or <span class="inline-math">\([[n,k,d]]_p\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(p^{n-k}\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group, cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance is the minimum weight of an error that implements a nontrivial logical operation on the code.</span>
-  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.  More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a generalized Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{\hat{N}(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a>,       <a href="/c/galois_true_stabilizer">Galois-qudit true stabilizer code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/prime_qudit_css">Prime-qudit CSS code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/stabilizer">Stabilizer code</a>,       <a href="/c/qudit_surface">Qudit surface code</a>.
   </span>
 </div>
 
@@ -165,33 +146,11 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/stab_3_1_2">Three qutrit Code</a>,       <a href="/c/qudit_surface">Qudit surface code</a>.
+      <a href="/c/stab_3_1_2">Three qutrit Code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/qudit_surface">Qudit surface code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/prime_qudit_css">Prime-qudit CSS code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_prime_qudit_css">
-  <span class="short-code-name"><a href="/c/prime_qudit_css">Prime-qudit CSS code</a></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/prime_qudit_stabilizer">Prime-qudit stabilizer code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/qudit_css">Modular-qudit CSS code</a>,       <a href="/c/galois_css">Galois-qudit CSS code</a>.
   </span>
 </div>
 
@@ -223,7 +182,7 @@ The elements in the superposition of each logical codeword are related to each o
 
 <div class="ecc-code" id="ecc_polynomial">
   <span class="short-code-name"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
-  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) modular-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
+  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) prime-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
 <span class="display-math env-align">\begin{align}
   f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
 \end{align}</span>
@@ -233,7 +192,7 @@ where the first <span class="inline-math">\(k\)</span> coefficients are indexed 
 \end{align}</span></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/prime_qudit_css">Prime-qudit CSS code</a>.
+      <a href="/c/qudit_css">Modular-qudit CSS code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
