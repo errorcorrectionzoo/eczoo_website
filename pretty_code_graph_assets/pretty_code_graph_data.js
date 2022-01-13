@@ -210,7 +210,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_goppa",
-                    "label": "Goppa Code",
+                    "label": "Goppa code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -310,7 +310,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_alternant",
-                    "label": "Alternant Codes",
+                    "label": "Alternant code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": "Stub.",
@@ -1492,7 +1492,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_homological_cv",
-                    "label": "Homological continuous-variable (CV) Code",
+                    "label": "Homological continuous-variable (CV) code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1864,7 +1864,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_stab_3_1_2",
-                    "label": "Three qutrit Code",
+                    "label": "Three qutrit code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -2031,7 +2031,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_binary_quantum_goppa",
-                    "label": "Binary quantum Goppa Code",
+                    "label": "Binary quantum Goppa code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
