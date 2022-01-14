@@ -1362,7 +1362,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A family of stabilizer codes whose generators are \\(XZXZ\\) Pauli strings associated, clock-wise, to the vertices of each face of a two-dimensional lattice (with a qubit located at each vertex of th..."
+                        "Non-CSS derivative of the surface code whose generators are \\(XZXZ\\) Pauli strings associated, clock-wise, to the vertices of each face of a two-dimensional lattice (with a qubit located at each ve..."
                     ],
                     "_code_href": "/c/xzzx",
                     "_family_generation_level": 7
