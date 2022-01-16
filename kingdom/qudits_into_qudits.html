@@ -86,7 +86,7 @@
 
 <div class="ecc-code" id="ecc_qudit_stabilizer">
   <span class="short-code-name"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code. The code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator.</p>
 <p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-2" class="cite">[3]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p></span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
   <span class="short-code-parents">
@@ -138,8 +138,25 @@
 
 
 <div class="ecc-code" id="ecc_qudit_css">
-  <span class="short-code-name"><a href="/c/qudit_css">Modular-qudit CSS code</a></span>
-  <span class="short-code-description">Stub.</span>
+  <span class="short-code-name"><a href="/c/qudit_css">Modular-qudit CSS code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings.
+The stabilizer generator matrix, taking values from <span class="inline-math">\(\mathbb{Z}_q\)</span>, is of the form
+<span id="eq--parity" class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}~.
+\label{eq:parity}
+\end{align}</span></p>
+<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits. For prime <span class="inline-math">\(q=p\)</span>, properties reminiscent of qubit CSS codes are restored: encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(p\)</span>-ary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]_p \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_p \)</span> code <span class="inline-math">\(C_Z\)</span>,
+satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
+The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
+The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
+The codewords are
+<span class="display-math env-align">\begin{align}
+|\gamma + C_Z^\perp \rangle = \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
+\end{align}</span>
+for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a>.
@@ -156,7 +173,7 @@
 
 
 <div class="ecc-code" id="ecc_stab_3_1_2">
-  <span class="short-code-name"><a href="/c/stab_3_1_2">Three qutrit code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/stab_3_1_2">Three qutrit code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
 <span class="display-math env-align">\begin{align}
   \begin{split}
@@ -181,7 +198,7 @@ The elements in the superposition of each logical codeword are related to each o
 
 
 <div class="ecc-code" id="ecc_polynomial">
-  <span class="short-code-name"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) prime-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
 <span class="display-math env-align">\begin{align}
   f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
@@ -240,10 +257,15 @@ where the first <span class="inline-math">\(k\)</span> coefficients are indexed 
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
+        Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
+      <dd>
+        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
       <dd>
         M. Grassl, W. Geiselmann, and T. Beth, “Quantum Reed—Solomon Codes”, Applied Algebra, Algebraic Algorithms and Error-Correcting Codes 231 (1999). <a href="https://doi.org/10.1007/3-540-46796-3_23" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9910059" target="_blank" class="href">quant-ph/9910059</a>
       </dd>

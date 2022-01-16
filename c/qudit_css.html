@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Modular-qudit CSS code</span></span>
+  <span class="code-name">Modular-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qudit_css">&nbsp;</a>-->
@@ -81,7 +81,24 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Stub.</dd>
+<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings.
+The stabilizer generator matrix, taking values from <span class="inline-math">\(\mathbb{Z}_q\)</span>, is of the form
+<span id="eq--parity" class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}~.
+\label{eq:parity}
+\end{align}</span></p>
+<p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits. For prime <span class="inline-math">\(q=p\)</span>, properties reminiscent of qubit CSS codes are restored: encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(p\)</span>-ary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]_p \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_p \)</span> code <span class="inline-math">\(C_Z\)</span>,
+satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
+The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parity}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
+The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
+The codewords are
+<span class="display-math env-align">\begin{align}
+|\gamma + C_Z^\perp \rangle = \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
+\end{align}</span>
+for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></dd>
 
 
 
@@ -188,6 +205,16 @@ url={https://errorcorrectionzoo.org/c/qudit_css}
 
 </dl>
 
+   <div id="endnotes">
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
+      </dd>
+    
+    </dl>
+   </div>
 
   </main><!-- #main -->
 

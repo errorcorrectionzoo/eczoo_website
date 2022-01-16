@@ -705,7 +705,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\(((n,2^k,d))\\) stabilizer code is denoted as \\([[n,k]]\\) or \\([[n,k,d]]\\), where \\(d\\) is the code's distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting ..."
+                        "An \\(((n,2^k,d))\\) stabilizer code is denoted as \\([[n,k]]\\) or \\([[n,k,d]]\\), where \\(d\\) is the code''s distance. Logical subspace is the joint \\(+1\\) eigenspace of a set of \\(2^{n-k}\\) commuting..."
                     ],
                     "_code_href": "/c/stabilizer",
                     "_family_generation_level": 6
@@ -932,7 +932,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\([[n,k,d]]\\) stabilizer code admitting a set of stabilizer generators that are either \\(Z\\)-type or \\(X\\)-type Pauli strings. The parity check matrix is of the form\n\\begin{align}\nH=\\begin{pmatr..."
+                        "An \\([[n,k,d]]\\) stabilizer code admitting a set of stabilizer generators that are either \\(Z\\)-type or \\(X\\)-type Pauli strings. The stabilizer generator matrix is of the form\n\\begin{align}\nH=\\beg..."
                     ],
                     "_code_href": "/c/css",
                     "_family_generation_level": 4
@@ -1970,7 +1970,9 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Modular-qudit CSS code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Stub.",
+                    "_description": [
+                        "An \\(((n,K,d))_q\\) modular-qudit stabilizer code admitting a set of stabilizer generators that\nare either \\(Z\\)-type or \\(X\\)-type Pauli strings.\nThe stabilizer generator matrix, taking values from..."
+                    ],
                     "_code_href": "/c/qudit_css",
                     "_family_generation_level": 6
                 },
@@ -2089,7 +2091,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\([[n,k,d]]_{GF(q)} \\) Galois-qudit true stabilizer code admitting a set of stabilizer generators that\nare either \\(Z\\)-type or \\(X\\)-type Galois-qudit Pauli strings.\nThe parity check matrix is ..."
+                        "An \\([[n,k,d]]_{GF(q)} \\) Galois-qudit true stabilizer code admitting a set of stabilizer generators that\nare either \\(Z\\)-type or \\(X\\)-type Galois-qudit Pauli strings.\nThe stabilizer generator ma..."
                     ],
                     "_code_href": "/c/galois_css",
                     "_family_generation_level": 7
