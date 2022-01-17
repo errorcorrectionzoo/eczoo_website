@@ -86,7 +86,7 @@
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> sites, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> sites. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction.
-A <span class="textit">good quantum LDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good qubit codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.
+A <span class="textit">good QLDPC code</span> family satisfies <span class="inline-math">\(k \in \theta(n) \)</span> and <span class="inline-math">\(d \in \theta(n)\)</span> <a href="#cite-0" class="cite">[1]</a>, and the first examples of good qubit codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.
 For qubits, a <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-1" class="cite">[2]</a>.</dd>
 
 
@@ -103,6 +103,8 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
  
 
 
+<dt class="code-feature code-feature-decoders">Decoder</dt>
+  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Non-binary decoding algorithm for CSS-type QLDPC codes <a href="#cite-2" class="cite">[3]</a>.</span></dd>
 
 
 
@@ -110,14 +112,14 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 
 
 <dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">Quantum LDPC codes with a constant encoding rate can reduce the overhead of fault-tolerant quantum computation to be constant <a href="#cite-2" class="cite">[3]</a>.</span></dd>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">QLDPC codes with a constant encoding rate can reduce the overhead of fault-tolerant quantum computation to be constant <a href="#cite-3" class="cite">[4]</a>.</span></dd>
 
 
 
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list">Links to code tables of notable QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Reviews of QLDPC codes provided in Refs. <a href="#cite-3" class="cite">[4]</a><a href="#cite-0" class="cite">[1]</a>.</span>
+  <span class="paragraph-in-list">Links to code tables of notable QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Reviews of QLDPC codes provided in Refs. <a href="#cite-2" class="cite">[3]</a><a href="#cite-0" class="cite">[1]</a>.</span>
 </dd>
 
 
@@ -187,7 +189,7 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/qldpc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=qldpc">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qldpc</code></div><div class="code-popup-info-frame"
@@ -228,12 +230,12 @@ url={https://errorcorrectionzoo.org/c/qldpc}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Daniel Gottesman, “Fault-Tolerant Quantum Computation with Constant Overhead”. <a href="https://arxiv.org/abs/1310.2984" target="_blank" class="href">1310.2984</a>
+        Z. Babar et al., “Fifteen Years of Quantum LDPC Coding and Improved Decoding Strategies”, IEEE Access <span class="textbf">3</span>, 2492 (2015). <a href="https://doi.org/10.1109/ACCESS.2015.2503267" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        Z. Babar et al., “Fifteen Years of Quantum LDPC Coding and Improved Decoding Strategies”, IEEE Access <span class="textbf">3</span>, 2492 (2015). <a href="https://doi.org/10.1109/ACCESS.2015.2503267" target="_blank" class="href">DOI</a>
+        Daniel Gottesman, “Fault-Tolerant Quantum Computation with Constant Overhead”. <a href="https://arxiv.org/abs/1310.2984" target="_blank" class="href">1310.2984</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
