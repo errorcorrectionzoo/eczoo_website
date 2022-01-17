@@ -2020,7 +2020,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Also called a linear stabilizer code. A \\([[n,k,d]]_{GF(q)}\\) stabilizer code whose stabilizer's symplectic representation forms a linear subspace. In other words, the set of \\(q\\)-ary vectors repr..."
+                        "Also called a \\textit{linear stabilizer code}. A \\([[n,k,d]]_{GF(q)}\\) stabilizer code whose stabilizer's symplectic representation forms a linear subspace. In other words, the set of \\(q\\)-ary vec..."
                     ],
                     "_code_href": "/c/galois_true_stabilizer",
                     "_family_generation_level": 6
