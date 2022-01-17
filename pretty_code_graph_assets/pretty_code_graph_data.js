@@ -2368,7 +2368,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "QLDPC code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) \\textit{good QLDPC codes}.\n\nA \\textit{l..."
+                        "Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) \\textit{good QLDPC codes}.\n\nA \\textit{lifted ..."
                     ],
                     "_code_href": "/c/lifted_product",
                     "_family_generation_level": 5
