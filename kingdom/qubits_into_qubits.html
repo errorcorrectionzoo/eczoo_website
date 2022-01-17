@@ -183,7 +183,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/color">Color code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>,       <a href="/c/quantum_parity">Quantum parity code (QPC)</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/quantum_polar">Quantum polar code</a>,       <a href="/c/quantum_triorthogonal">Triorthogonal code</a>,       <a href="/c/homological_product">Homological product code</a>,       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/distance_balanced">Distance-balanced code</a>.
+      <a href="/c/color">Color code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>,       <a href="/c/quantum_parity">Quantum parity code (QPC)</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/quantum_polar">Quantum polar code</a>,       <a href="/c/quantum_triorthogonal">Triorthogonal code</a>,       <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/distance_balanced">Distance-balanced code</a>,       <a href="/c/homological_product">Homological product code</a>,       <a href="/c/balanced_product">Balanced product code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -221,21 +221,6 @@ One constructs a CSS code by associating a physical qubit to every basis element
 </div>
 
 
-<div class="ecc-code" id="ecc_homological_product">
-  <span class="short-code-name"><a href="/c/homological_product">Homological product code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
-  <span class="short-code-description">CSS code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction using chain complexes consisting of products of two other chain complexes.</span>
-  <span class="short-code-info">Protection: Given two codes <span class="inline-math">\([[n_a, k_a, d_a, w_a]]\)</span> for <span class="inline-math">\(a\in\{1,2\}\)</span>, where <span class="inline-math">\(w_a\)</span> denotes the maximum hamming weight of all rows and columns of <span class="inline-math">\(\partial_a\)</span>, the homological product code has parameter <span class="inline-math">\([[n=n_1 n_2, k=k_1 k_2, d\leq d_1 d_2, w\leq w_1+w_2]]\)</span>. From this formula, and the fact that a randomly selected boundary operator <span class="inline-math">\(\partial\)</span> yields a CSS code that is good with high probability, we see that the product code has <span class="inline-math">\(k=\Theta(n)\)</span> and <span class="inline-math">\(w=O(\sqrt{n})\)</span> with high probability. The main result in <a href="#cite-9" class="cite">[10]</a> is to show that the product code actually has linear distance with high probability as well. To sum up, it is shown that we have a family of <span class="inline-math">\([[n,k=c_1 n, d=c_2 n, w=c_3 \sqrt{n}]]\)</span> codes given small enough <span class="inline-math">\(c_1,c_2,c_3\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a>,       <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a>,       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/lifted_product">Lifted-product code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_distance_balanced">
   <span class="short-code-name"><a href="/c/distance_balanced">Distance-balanced code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a></span></span>
   <span class="short-code-description">CSS stabilizer code constructed from another CSS code using a distance-balancing procedure The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors.</span>
@@ -250,6 +235,21 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a>,       <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a>,       <a href="/c/balanced_product">Balanced product code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_homological_product">
+  <span class="short-code-name"><a href="/c/homological_product">Homological product code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-description">CSS code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction using chain complexes consisting of products of two other chain complexes.</span>
+  <span class="short-code-info">Protection: Given two codes <span class="inline-math">\([[n_a, k_a, d_a, w_a]]\)</span> for <span class="inline-math">\(a\in\{1,2\}\)</span>, where <span class="inline-math">\(w_a\)</span> denotes the maximum hamming weight of all rows and columns of <span class="inline-math">\(\partial_a\)</span>, the homological product code has parameter <span class="inline-math">\([[n=n_1 n_2, k=k_1 k_2, d\leq d_1 d_2, w\leq w_1+w_2]]\)</span>. From this formula, and the fact that a randomly selected boundary operator <span class="inline-math">\(\partial\)</span> yields a CSS code that is good with high probability, we see that the product code has <span class="inline-math">\(k=\Theta(n)\)</span> and <span class="inline-math">\(w=O(\sqrt{n})\)</span> with high probability. The main result in <a href="#cite-9" class="cite">[10]</a> is to show that the product code actually has linear distance with high probability as well. To sum up, it is shown that we have a family of <span class="inline-math">\([[n,k=c_1 n, d=c_2 n, w=c_3 \sqrt{n}]]\)</span> codes given small enough <span class="inline-math">\(c_1,c_2,c_3\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a>,       <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a>,       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/lifted_product">Lifted-product code</a>.
   </span>
 </div>
 
@@ -297,6 +297,10 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/color">Color code</a>,       <a href="/c/surface">Kitaev surface code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/lifted_product">Lifted-product code</a>.
   </span>
 </div>
 
@@ -457,30 +461,11 @@ One constructs a CSS code by associating a physical qubit to every basis element
 </div>
 
 
-<div class="ecc-code" id="ecc_balanced_product">
-  <span class="short-code-name"><a href="/c/balanced_product">Balanced product code</a><span class="code-introduced"><a href="#cite-37" class="cite">[38]</a></span></span>
-  <span class="short-code-description">Family of CSS quantum codes based on products of two classical codes which share common symmetries. The balanced product can be understood as taking the usual tensor/hypergraph product and then factoring out the symmetries factored. This reduces the overall number of physical qubits n, while, under certain circumstances, leaving the number of encoded qubits <span class="inline-math">\(k\)</span> and the code distance <span class="inline-math">\(d\)</span> invariant. This leads to a more favourable encoding rate <span class="inline-math">\(k/n\)</span> and relative distance <span class="inline-math">\(d/n\)</span> compared to the tensor/hypergraph product.</span>
-  <span class="short-code-info">Protection: Taking balanced products of two classical LDPC codes which have a symmetry group which grows linearly in their block lengths were known to give quantum LDPC codes with a linear rate and which were conjectured to have linear distance <a href="#cite-37" class="cite">[38]</a>. This conjecture was proved in Ref. <a href="#cite-38" class="cite">[39]</a>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/homological_product">Homological product code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/lifted_product">Lifted-product code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a>,       <a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a>,       <a href="/c/distance_balanced">Distance-balanced code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_surface">
-  <span class="short-code-name"><a href="/c/surface">Kitaev surface code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-39" class="cite">[40]</a><a href="#cite-40" class="cite">[41]</a></span></span>
-  <span class="short-code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-41" class="cite">[42]</a>.</p>
-<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-42" class="cite">[43]</a><a href="#cite-43" class="cite">[44]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></span>
-  <span class="short-code-info">Protection: Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-44" class="cite">[45]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-45" class="cite">[46]</a>.</span>
+  <span class="short-code-name"><a href="/c/surface">Kitaev surface code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-37" class="cite">[38]</a><a href="#cite-38" class="cite">[39]</a></span></span>
+  <span class="short-code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-39" class="cite">[40]</a>.</p>
+<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-40" class="cite">[41]</a><a href="#cite-41" class="cite">[42]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></span>
+  <span class="short-code-info">Protection: Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-42" class="cite">[43]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-43" class="cite">[44]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/topological_abelian">Abelian topological code</a>.
@@ -495,7 +480,26 @@ One constructs a CSS code by associating a physical qubit to every basis element
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/color">Color code</a>,       <a href="/c/haah_cubic">Haah cubic code</a>,       <a href="/c/double_semion">Double-semion code</a>,       <a href="/c/honeycomb">Honeycomb code</a>,       <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a>,       <a href="/c/xzzx">XZZX surface code</a>,       <a href="/c/qudit_surface">Qudit surface code</a>.
+      <a href="/c/color">Color code</a>,       <a href="/c/haah_cubic">Haah cubic code</a>,       <a href="/c/double_semion">Double-semion code</a>,       <a href="/c/honeycomb">Honeycomb code</a>,       <a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a>,       <a href="/c/xzzx">XZZX surface code</a>,       <a href="/c/qudit_surface">Qudit surface code</a>,       <a href="/c/lifted_product">Lifted-product code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_balanced_product">
+  <span class="short-code-name"><a href="/c/balanced_product">Balanced product code</a><span class="code-introduced"><a href="#cite-44" class="cite">[45]</a></span></span>
+  <span class="short-code-description">Family of CSS quantum codes based on products of two classical codes which share common symmetries. The balanced product can be understood as taking the usual tensor/hypergraph product and then factoring out the symmetries factored. This reduces the overall number of physical qubits n, while, under certain circumstances, leaving the number of encoded qubits <span class="inline-math">\(k\)</span> and the code distance <span class="inline-math">\(d\)</span> invariant. This leads to a more favourable encoding rate <span class="inline-math">\(k/n\)</span> and relative distance <span class="inline-math">\(d/n\)</span> compared to the tensor/hypergraph product.</span>
+  <span class="short-code-info">Protection: Taking balanced products of two classical LDPC codes which have a symmetry group which grows linearly in their block lengths were known to give quantum LDPC codes with a linear rate and which were conjectured to have linear distance <a href="#cite-44" class="cite">[45]</a>. This conjecture was proved in Ref. <a href="#cite-45" class="cite">[46]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/homological_product">Homological product code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/lifted_product">Lifted-product code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/fiber_bundle">Hastings-Haah-O&#x27;Donnell fiber-bundle code</a>,       <a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a>,       <a href="/c/distance_balanced">Distance-balanced code</a>.
   </span>
 </div>
 
@@ -594,16 +598,22 @@ As a result, the stabilizer generators with the qubit index flattened are
 
 
 <div class="ecc-code" id="ecc_lifted_product">
-  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product code</a><span class="code-introduced"><a href="#cite-51" class="cite">[52]</a></span></span>
-  <span class="short-code-description">QLDPC code that is the &quot;lifted version&quot; of a hypergraph product code. The construction of a lifted product code is similar to that of a hypergraph product code; a sort of &#x27;&#x27;product&#x27;&#x27; is taken between two input classical codes to produce a CSS code. What differentiates a lifted product code from a hypergraph product code is that a reduction of symmetry is exploited to decrease the number of physical qubits required. Lifted product codes are notable because they were the first QLDPC codes to achieve almost linear distance.</span>
-  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span> <a href="#cite-52" class="cite">[53]</a>, but lifted product codes contain <a href="#cite-38" class="cite">[39]</a> families of QLDPC codes with the parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span>.</span>
+  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product code</a><span class="code-introduced"><a href="#cite-51" class="cite">[52]</a><a href="#cite-45" class="cite">[46]</a></span></span>
+  <span class="short-code-description"><p>QLDPC code that utilizes the notion of a lifted product in its construction. Lifted products of classical expander codes are notable because they were the first (asymptotically) <span class="textit">good QLDPC codes</span>.</p>
+<p>A <span class="textit">lifted product over</span> a ring <span class="inline-math">\(R\)</span> is a product of two chain complexes whose chains are free modules over <span class="inline-math">\(R\)</span>. An interesting case is when <span class="inline-math">\(R={\mathbb{F}}_q G\)</span>, the group-<span class="inline-math">\(G\)</span> algebra over the finite field <span class="inline-math">\({\mathbb{F}}_q = GF(q)\)</span>; in this case, the product can be called a <span class="inline-math">\(G\)</span>-<span class="textit">lifted product</span>. Just like its further generalization the balanced product, a lifted product code generalizes a hypergraph product code in that a reduction of symmetry is exploited to decrease the number of physical qubits required.</p>
+<p>The key operation behind the <span class="inline-math">\(G\)</span>-lifted product is the <span class="inline-math">\(G\)</span>-<span class="textit">lift</span>. Roughly speaking, a <span class="inline-math">\(G\)</span>-lift of a <span class="inline-math">\(\mathbb{F}_q\)</span>-valued matrix <span class="inline-math">\(A\)</span> substitutes matrix elements of <span class="inline-math">\(A\)</span> with matrices forming the regular representation of the group algebra <span class="inline-math">\({\mathbb{F}}_q G\)</span>. A combination of the lift and the usual hypergraph product yields lifted-product codes. The two operations commute: one can first take the usual hypergraph product of two chain complexes, and then lift the resulting product complex; equivalently, one can take the hypergraph product of the two lifted complexes.</p></span>
+  <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#cite-52" class="cite">[53]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/homological_product">Homological product code</a>,       <a href="/c/balanced_product">Balanced product code</a>.
+      <a href="/c/homological_product">Homological product code</a>,       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/galois_css">Galois-qudit CSS code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/hypergraph_product">Hypergraph product code</a>.
+      <a href="/c/expander_lifted_product">Expander lifted-product code</a>,       <a href="/c/hypergraph_product">Hypergraph product code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/haah_cubic">Haah cubic code</a>.
   </span>
 </div>
 
@@ -694,23 +704,8 @@ The stabilizer group for the Steane code has six generators.</span>
 </div>
 
 
-<div class="ecc-code" id="ecc_hypergraph_product">
-  <span class="short-code-name"><a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#cite-56" class="cite">[57]</a><a href="#cite-57" class="cite">[58]</a></span></span>
-  <span class="short-code-description">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two binary linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
-  <span class="short-code-info">Protection: The hypergraph product has distance <span class="inline-math">\(d=O(\sqrt{n})\)</span>. The number of encoded logical qubits is <span class="inline-math">\(k=O(k_1k_2)\)</span> where <span class="inline-math">\(k_1\)</span> and <span class="inline-math">\(k_2\)</span> are the dimensions of the classical seed codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/lifted_product">Lifted-product code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a>,       <a href="/c/xyz_product">XYZ product code</a>,       <a href="/c/surface">Kitaev surface code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_fractal_surface">
-  <span class="short-code-name"><a href="/c/fractal_surface">Fractal surface code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a><a href="#cite-59" class="cite">[60]</a></span></span>
+  <span class="short-code-name"><a href="/c/fractal_surface">Fractal surface code</a><span class="code-introduced"><a href="#cite-56" class="cite">[57]</a><a href="#cite-57" class="cite">[58]</a></span></span>
   <span class="short-code-description">Kitaev surface code on a fractal geometry, which is obtained by removing qubits from the surface code on a cubic lattice. Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -724,7 +719,7 @@ The stabilizer group for the Steane code has six generators.</span>
 
 
 <div class="ecc-code" id="ecc_real_projective_plane">
-  <span class="short-code-name"><a href="/c/real_projective_plane">Projective-plane surface code</a><span class="code-introduced"><a href="#cite-60" class="cite">[61]</a></span></span>
+  <span class="short-code-name"><a href="/c/real_projective_plane">Projective-plane surface code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a></span></span>
   <span class="short-code-description">A family of Kitaev surface codes on the non-orientable 2-dimensional compact manifold <span class="inline-math">\(\mathbb{R}P^2\)</span> (in contrast to a genus-<span class="inline-math">\(g\)</span> surface). Whereas genus-<span class="inline-math">\(g\)</span> surface codes require <span class="inline-math">\(2g\)</span> logical qubits, qubit codes on <span class="inline-math">\(\mathbb{R}P^2\)</span> are made from a single logical qubit.</span>
   <span class="short-code-info">Protection: If <span class="inline-math">\(\mathcal{C}\)</span> is a cellulation of <span class="inline-math">\(\mathbb{R}P^2\)</span>, then the bit-flip distance <span class="inline-math">\(d_X\)</span> is the shortest cycle in <span class="inline-math">\(\mathcal{C}\)</span>, and the phase-flip distance <span class="inline-math">\(d_Z\)</span> is the shortest cycle in the dual cellulation <span class="inline-math">\(\mathcal{C}^*\)</span>.</span>
   <span class="short-code-parents">
@@ -758,7 +753,7 @@ The stabilizer group for the Steane code has six generators.</span>
 
 
 <div class="ecc-code" id="ecc_higher_dimensional_surface">
-  <span class="short-code-name"><a href="/c/higher_dimensional_surface">Higher-dimensional surface code</a><span class="code-introduced"><a href="#cite-45" class="cite">[46]</a></span></span>
+  <span class="short-code-name"><a href="/c/higher_dimensional_surface">Higher-dimensional surface code</a><span class="code-introduced"><a href="#cite-43" class="cite">[44]</a></span></span>
   <span class="short-code-description">A family of Kitaev surface codes on planar or toric surfaces of dimension greater than two. Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -767,6 +762,33 @@ The stabilizer group for the Steane code has six generators.</span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/fractal_surface">Fractal surface code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_expander_lifted_product">
+  <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#cite-45" class="cite">[46]</a></span></span>
+  <span class="short-code-description"><p>Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined using expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-45" class="cite">[46]</a>.</p>
+<p>An expander lifted-product code family is constructed as follows. First, take the Cayley graph of a finite group <span class="inline-math">\(G\)</span>. Second, take the double cover of the graph, resulting in a graph that satisfies the requirements of participating in a <span class="inline-math">\(G\)</span>-lifted product (i.e., the resulting graph is a free <span class="inline-math">\({\mathbb{F}}_q G\)</span>-module). Third, create a Tanner code out of the graph, in which parity-check supports are defined by the graph, and bitstrings satisfying a particular parity check are defined to be the codewords of a small random code. Fourth, take the <span class="inline-math">\(G\)</span>-lifted product of two copies of the Tanner code.</p></span>
+  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span> <a href="#cite-52" class="cite">[53]</a>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lifted_product">Lifted-product code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_hypergraph_product">
+  <span class="short-code-name"><a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#cite-59" class="cite">[60]</a><a href="#cite-60" class="cite">[61]</a></span></span>
+  <span class="short-code-description">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two binary linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
+  <span class="short-code-info">Protection: The hypergraph product has distance <span class="inline-math">\(d=O(\sqrt{n})\)</span>. The number of encoded logical qubits is <span class="inline-math">\(k=O(k_1k_2)\)</span> where <span class="inline-math">\(k_1\)</span> and <span class="inline-math">\(k_2\)</span> are the dimensions of the classical seed codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lifted_product">Lifted-product code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a>,       <a href="/c/xyz_product">XYZ product code</a>.
   </span>
 </div>
 
@@ -781,7 +803,7 @@ The stabilizer group for the Steane code has six generators.</span>
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/quantum_convolutional">Quantum convolutional code</a>,       <a href="/c/matching">Matching code</a>,       <a href="/c/floquet">Floquet code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a>,       <a href="/c/xyz_product">XYZ product code</a>,       <a href="/c/xzzx">XZZX surface code</a>,       <a href="/c/fracton">Fracton code</a>,       <a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a>,       <a href="/c/matching">Matching code</a>,       <a href="/c/floquet">Floquet code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a>,       <a href="/c/xzzx">XZZX surface code</a>,       <a href="/c/fracton">Fracton code</a>,       <a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a>,       <a href="/c/xyz_product">XYZ product code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -825,7 +847,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 
 <div class="ecc-code" id="ecc_freedman_meyer_luo">
-  <span class="short-code-name"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a><span class="code-introduced"><a href="#cite-42" class="cite">[43]</a></span></span>
+  <span class="short-code-name"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a><span class="code-introduced"><a href="#cite-40" class="cite">[41]</a></span></span>
   <span class="short-code-description">Hyperbolic surface code constructed using cellulation of a Riemann Manifold <span class="inline-math">\(M\)</span> exhibitng systolic freedom <a href="#cite-65" class="cite">[66]</a>. Codes derived from such manifolds can achieve distances scaling better than <span class="inline-math">\(\sqrt{n}\)</span>, something that is impossible using closed 2D surfaces or 2D surfaces with boundaries <a href="#cite-66" class="cite">[67]</a>. Improved codes are obtained by studying a weak family of Riemann metrics on closed 4-dimensional manifolds <span class="inline-math">\(S^2\otimes S^2\)</span> with the <span class="inline-math">\(Z_2-homology\)</span>.</span>
   <span class="short-code-info">Protection: Four-dimensional manifolds with weak systolic freedom yield <span class="inline-math">\([[n,2,\Omega(\sqrt{n \sqrt{\log n}})]]\)</span> surface codes.</span>
   <span class="short-code-parents">
@@ -1162,47 +1184,47 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
       <!-- Citation:  -->
       <dt id="cite-37">[38]</dt>
       <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
+        A. Y. Kitaev, “Quantum Error Correction with Imperfect Gates”, Quantum Communication, Computing, and Measurement 181 (1997). <a href="https://doi.org/10.1007/978-1-4615-5923-8_19" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-38">[39]</dt>
       <dd>
-        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-39">[40]</dt>
       <dd>
-        A. Y. Kitaev, “Quantum Error Correction with Imperfect Gates”, Quantum Communication, Computing, and Measurement 181 (1997). <a href="https://doi.org/10.1007/978-1-4615-5923-8_19" target="_blank" class="href">DOI</a>
+        S. B. Bravyi and A. Yu. Kitaev, “Quantum codes on a lattice with boundary”. <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="href">quant-ph/9811052</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-40">[41]</dt>
       <dd>
-        A. Y. Kitaev, “Fault-tolerant quantum computation by anyons”, Annals of Physics <span class="textbf">303</span>, 2 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00018-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9707021" target="_blank" class="href">quant-ph/9707021</a>
+        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-41">[42]</dt>
       <dd>
-        S. B. Bravyi and A. Yu. Kitaev, “Quantum codes on a lattice with boundary”. <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="href">quant-ph/9811052</a>
+        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-42">[43]</dt>
       <dd>
-        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
+        C. Horsman et al., “Surface code quantum computing by lattice surgery”, New Journal of Physics <span class="textbf">14</span>, 123011 (2012). <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1111.4022" target="_blank" class="href">1111.4022</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-43">[44]</dt>
       <dd>
-        G. Zémor, “On Cayley Graphs, Surface Codes, and the Limits of Homological Coding for Quantum Error Correction”, Lecture Notes in Computer Science 259 (2009). <a href="https://doi.org/10.1007/978-3-642-01877-0_21" target="_blank" class="href">DOI</a>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-44">[45]</dt>
       <dd>
-        C. Horsman et al., “Surface code quantum computing by lattice surgery”, New Journal of Physics <span class="textbf">14</span>, 123011 (2012). <a href="https://doi.org/10.1088/1367-2630/14/12/123011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1111.4022" target="_blank" class="href">1111.4022</a>
+        N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-45">[46]</dt>
       <dd>
-        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-46">[47]</dt>
@@ -1257,27 +1279,27 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
       <!-- Citation:  -->
       <dt id="cite-56">[57]</dt>
       <dd>
-        J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href">0903.0566</a>
+        Guanyu Zhu, Tomas Jochym-O&#x27;Connor, and Arpit Dua, “Topological Order, Quantum Codes and Quantum Computation on Fractal Geometries”. <a href="https://arxiv.org/abs/2108.00018" target="_blank" class="href">2108.00018</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-57">[58]</dt>
       <dd>
-        A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href">1202.0928</a>
+        Arpit Dua, Tomas Jochym-O&#x27;Connor, and Guanyu Zhu, “Quantum error correction with fractal topological codes”. <a href="https://arxiv.org/abs/2201.03568" target="_blank" class="href">2201.03568</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-58">[59]</dt>
       <dd>
-        Guanyu Zhu, Tomas Jochym-O&#x27;Connor, and Arpit Dua, “Topological Order, Quantum Codes and Quantum Computation on Fractal Geometries”. <a href="https://arxiv.org/abs/2108.00018" target="_blank" class="href">2108.00018</a>
+        Michael H. Freedman and David A. Meyer, “Projective plane and planar quantum codes”. <a href="https://arxiv.org/abs/quant-ph/9810055" target="_blank" class="href">quant-ph/9810055</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-59">[60]</dt>
       <dd>
-        Arpit Dua, Tomas Jochym-O&#x27;Connor, and Guanyu Zhu, “Quantum error correction with fractal topological codes”. <a href="https://arxiv.org/abs/2201.03568" target="_blank" class="href">2201.03568</a>
+        J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href">0903.0566</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-60">[61]</dt>
       <dd>
-        Michael H. Freedman and David A. Meyer, “Projective plane and planar quantum codes”. <a href="https://arxiv.org/abs/quant-ph/9810055" target="_blank" class="href">quant-ph/9810055</a>
+        A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href">1202.0928</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-61">[62]</dt>
