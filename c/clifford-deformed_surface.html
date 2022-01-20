@@ -81,7 +81,7 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Non-CSS derivative of the surface code. CDSCs include codes whose thresholds and subthreshold performance are enhanced under noise biased towards dephasing, unlike typical CSS codes. Examples of CDSCs include the <span class="inline-math">\(XY\)</span> code, <span class="inline-math">\(XZZX\)</span> code, and random CDSCs.</dd>
+<dd class="code-description">Non-CSS derivative of the surface code defined by applying a Clifford circuit to the original surface code. Such a circuit preserves most of the coarse-grained properties of the original code. However, unlike the surface code, CDSCs include codes whose thresholds and subthreshold performance are enhanced under noise biased towards dephasing. Examples of CDSCs include the <span class="inline-math">\(XY\)</span> code, <span class="inline-math">\(XZZX\)</span> code, and random CDSCs.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">As a stabilizer code, <span class="inline-math">\([[n=O(d^2), k=O(1), d]]\)</span>.</dd>
@@ -125,6 +125,8 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-parents-1-detail">(Local deformations of the surface code preserve its topological phase.)</span>  </li>
 </ul>
 </dd>
 
@@ -137,6 +139,8 @@
     <span class="code-parent-of-1-code"><a href="/c/xzzx"><span class="inline-math">\(XZZX\)</span> surface code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(XZZX\)</span> code is obtained from the surface code by applying Hadamard gates on a subset of qubits such that <span class="inline-math">\(XXXX\)</span> and <span class="inline-math">\(ZZZZ\)</span> generators are both mapped to <span class="inline-math">\(XZXZ\)</span>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/xysurface"><span class="inline-math">\(XY\)</span> surface code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\(XY\)</span> code is obtained from the surface code by applying <span class="inline-math">\(H\sqrt{Z}H\)</span> to all qubits, thereby exchaning <span class="inline-math">\(Z\leftrightarrow Y\)</span>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-parent-of-1-detail">(CDSS is a non-CSS derivative of the surface code.)</span>  </li>
 </ul>
 </dd>
 
@@ -145,10 +149,6 @@
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(Local deformations of the surface code preserve its topological phase.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>    <span class="code-cousins-1-detail">(To create CDSCs, a dynamical process is applied on top of the surface code.)</span>  </li>
 </ul>
