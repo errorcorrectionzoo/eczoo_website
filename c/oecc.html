@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Subsystem code" />
+<meta name="citation_title" content="Operator quantum error-correcting code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Subsystem code" />
+<meta name="DC.title" content="Operator quantum error-correcting code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Subsystem code
+      Operator quantum error-correcting code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Subsystem code</h1>
+    <h1>Operator quantum error-correcting code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -73,7 +73,7 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name">Subsystem code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="code-name">Operator quantum error-correcting code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/oecc">&nbsp;</a>-->
@@ -81,8 +81,18 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">Also called an operator error-correcting code. Stub.</dd>
+<dd class="code-description">An operator QECC, also known as <span class="textit">subsystem code</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>.
+<span class="display-math env-align">\begin{align}
+H=\mathsf{C} \bigoplus \mathsf{C}^{\perp} = \mathsf{A} \bigotimes \mathsf{B} \bigoplus \mathsf{C}^{\perp}
+\end{align}</span>
+Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code can yield more efficient correction procedures and a wider variety of encoding procedures.</dd>
 
+<dt class="code-protection">Protection</dt>
+<dd class="code-protection">Necessary and sufficient <a href="#cite-2" class="cite">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>,
+<span class="display-math env-align">\begin{align}
+P E^{\dagger}_a E_b P = I_{\mathsf{A}} \bigotimes g_{ab}^{\mathsf{B}}
+\end{align}</span>
+where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem.</dd>
 
 
 <!-- Display features -->
@@ -164,10 +174,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Subsystem code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/oecc</dd>
+    <dd>“Operator quantum error-correcting code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/oecc</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_oecc,
-title={Subsystem code},
+title={Operator quantum error-correcting code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -192,6 +202,11 @@ url={https://errorcorrectionzoo.org/c/oecc}
       <dt id="cite-1">[2]</dt>
       <dd>
         David W. Kribs et al., “Operator quantum error correction”. <a href="https://arxiv.org/abs/quant-ph/0504189" target="_blank" class="href">quant-ph/0504189</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        M. A. Nielsen and D. Poulin, “Algebraic and information-theoretic conditions for operator quantum error correction”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.064304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0506069" target="_blank" class="href">quant-ph/0506069</a>
       </dd>
     
     </dl>
