@@ -83,14 +83,14 @@
 <dt class="code-description">Description</dt>
 <dd class="code-description">An operator QECC, also known as <span class="textit">subsystem code</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>.
 <span class="display-math env-align">\begin{align}
-H=\mathsf{C} \bigoplus \mathsf{C}^{\perp} = \mathsf{A} \bigotimes \mathsf{B} \bigoplus \mathsf{C}^{\perp}
+H=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}
 \end{align}</span>
 Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code can yield more efficient correction procedures and a wider variety of encoding procedures.</dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Necessary and sufficient <a href="#cite-2" class="cite">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>,
 <span class="display-math env-align">\begin{align}
-P E^{\dagger}_a E_b P = I_{\mathsf{A}} \bigotimes g_{ab}^{\mathsf{B}}
+P E^{\dagger}_a E_b P = I_{\mathsf{A}} \otimes g_{ab}^{\mathsf{B}}
 \end{align}</span>
 where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem.</dd>
 
