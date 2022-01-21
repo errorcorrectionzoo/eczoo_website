@@ -1351,7 +1351,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Such a circuit preserves most of the coarse-grained properties of th..."
+                        "A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thres..."
                     ],
                     "_code_href": "/c/clifford-deformed_surface",
                     "_family_generation_level": 5
