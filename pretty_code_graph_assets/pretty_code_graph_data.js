@@ -1346,23 +1346,6 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "c_clifford-deformed_surface",
-                    "label": "Clifford-deformed surface code (CDSC)",
-                    "_is_code": 1,
-                    "_is_abstract_code": 0,
-                    "_description": [
-                        "A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thres..."
-                    ],
-                    "_code_href": "/c/clifford-deformed_surface",
-                    "_family_generation_level": 5
-                },
-                "position": {
-                    "x": 150,
-                    "y": 600
-                }
-            },
-            {
-                "data": {
                     "id": "c_four_dimensional_hyperbolic",
                     "label": "Guth-Lubotzky code",
                     "_is_code": 1,
@@ -1425,6 +1408,23 @@ GENERATED_pretty_code_graph_data = {
                 "position": {
                     "x": 150,
                     "y": 720
+                }
+            },
+            {
+                "data": {
+                    "id": "c_clifford-deformed_surface",
+                    "label": "Clifford-deformed surface code (CDSC)",
+                    "_is_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": [
+                        "A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thres..."
+                    ],
+                    "_code_href": "/c/clifford-deformed_surface",
+                    "_family_generation_level": 5
+                },
+                "position": {
+                    "x": 150,
+                    "y": 600
                 }
             },
             {
@@ -2423,7 +2423,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "A non-CSS QLDPC code constructed from three classical codes. The construction of an \\(XYZ\\) product code is similar to that of a hypergraph product code and related codes. The idea is that rather t..."
+                        "A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than ..."
                     ],
                     "_code_href": "/c/xyz_product",
                     "_family_generation_level": 5
@@ -4004,31 +4004,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_clifford-deformed_surface_stabilizer_92",
-                    "_rel_type": "parent",
-                    "source": "c_clifford-deformed_surface",
-                    "target": "c_stabilizer"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_clifford-deformed_surface_topological_abelian_93",
-                    "_rel_type": "parent",
-                    "source": "c_clifford-deformed_surface",
-                    "target": "c_topological_abelian"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_clifford-deformed_surface_dynamic_gen__86",
-                    "_rel_type": "cousin",
-                    "source": "c_clifford-deformed_surface",
-                    "target": "c_dynamic_gen"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_four_dimensional_hyperbolic_hyperbolic_surface_94",
+                    "id": "parent_four_dimensional_hyperbolic_hyperbolic_surface_92",
                     "_rel_type": "parent",
                     "source": "c_four_dimensional_hyperbolic",
                     "target": "c_hyperbolic_surface"
@@ -4036,7 +4012,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_hyperbolic_surface_surface_95",
+                    "id": "parent_hyperbolic_surface_surface_93",
                     "_rel_type": "parent",
                     "source": "c_hyperbolic_surface",
                     "target": "c_surface"
@@ -4044,7 +4020,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_hyperbolic_surface_holographic__87",
+                    "id": "cousin_hyperbolic_surface_holographic__86",
                     "_rel_type": "cousin",
                     "source": "c_hyperbolic_surface",
                     "target": "c_holographic"
@@ -4052,7 +4028,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_two_dimensional_hyperbolic_surface_hyperbolic_surface_96",
+                    "id": "parent_two_dimensional_hyperbolic_surface_hyperbolic_surface_94",
                     "_rel_type": "parent",
                     "source": "c_two_dimensional_hyperbolic_surface",
                     "target": "c_hyperbolic_surface"
@@ -4060,10 +4036,34 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_higher_dimensional_surface_surface_97",
+                    "id": "parent_higher_dimensional_surface_surface_95",
                     "_rel_type": "parent",
                     "source": "c_higher_dimensional_surface",
                     "target": "c_surface"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_clifford-deformed_surface_stabilizer_96",
+                    "_rel_type": "parent",
+                    "source": "c_clifford-deformed_surface",
+                    "target": "c_stabilizer"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_clifford-deformed_surface_topological_abelian_97",
+                    "_rel_type": "parent",
+                    "source": "c_clifford-deformed_surface",
+                    "target": "c_topological_abelian"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_clifford-deformed_surface_dynamic_gen__87",
+                    "_rel_type": "cousin",
+                    "source": "c_clifford-deformed_surface",
+                    "target": "c_dynamic_gen"
                 }
             },
             {
@@ -5830,11 +5830,6 @@ GENERATED_pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_clifford-deformed_surface",
-            "gap": 200
-        },
-        {
-            "top": "domain_classical_domain",
             "bottom": "c_four_dimensional_hyperbolic",
             "gap": 200
         },
@@ -5851,6 +5846,11 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_higher_dimensional_surface",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_clifford-deformed_surface",
             "gap": 200
         },
         {
@@ -6644,16 +6644,6 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_stabilizer",
-            "bottom": "c_clifford-deformed_surface",
-            "gap": 100
-        },
-        {
-            "top": "c_topological_abelian",
-            "bottom": "c_clifford-deformed_surface",
-            "gap": 100
-        },
-        {
             "top": "c_hyperbolic_surface",
             "bottom": "c_four_dimensional_hyperbolic",
             "gap": 100
@@ -6671,6 +6661,16 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_surface",
             "bottom": "c_higher_dimensional_surface",
+            "gap": 100
+        },
+        {
+            "top": "c_stabilizer",
+            "bottom": "c_clifford-deformed_surface",
+            "gap": 100
+        },
+        {
+            "top": "c_topological_abelian",
+            "bottom": "c_clifford-deformed_surface",
             "gap": 100
         },
         {
