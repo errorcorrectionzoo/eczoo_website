@@ -5373,14 +5373,6 @@ GENERATED_pretty_code_graph_data = {
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
                 }
-            },
-            {
-                "data": {
-                    "id": "cousin_category_quantum_topological__164",
-                    "_rel_type": "cousin",
-                    "source": "c_category_quantum",
-                    "target": "c_topological"
-                }
             }
         ]
     },
