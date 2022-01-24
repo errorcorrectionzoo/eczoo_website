@@ -79,7 +79,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Encodes \\(K\\) states (codewords) in \\(n\\) \\(q\\)-ary coordinates and has distance \\(d\\). Usually denoted as \\((n,K,d)_q\\). The distance is the minimum number of coordinates where two strings in the ..."
+                        "Encodes \\(K\\) states (codewords) in \\(n\\) \\(q\\)-ary coordinates over the field \\(GF(q)=\\mathbb{F}_q\\) and has distance \\(d\\). Usually denoted as \\((n,K,d)_q\\). The distance is the minimum number of..."
                     ],
                     "_code_href": "/c/q-ary_digits_into_q-ary_digits",
                     "_family_generation_level": 2,
@@ -116,7 +116,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "For any \\(q\\)-ary linear code \\(C\\), the dual code\n\\begin{align}\nC^\\perp = \\{ y\\in\\mathbb{Z}_q^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\}~.\n\\end{align}\n\nA code that contains its dual, \\(C^\\perp \\su..."
+                        "For any  \\([n,k]_q\\) linear code \\(C\\), the dual code,\n\\begin{align}\nC^\\perp = \\{ y\\in GF(q)^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\},\n\\end{align}\nis the row space of the parity check matrix of \\..."
                     ],
                     "_code_href": "/c/dual",
                     "_family_generation_level": 4
@@ -427,7 +427,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "An \\((n,2^k,d)\\) linear code is denoted as \\([n,k,d]\\). Its codewords form a linear subspace, i.e., for any codewords \\(x,y\\), \\(x+y\\) is also a codeword. Often defined in terms of a generator matr..."
+                        "An \\((n,2^k,d)\\) linear code is denoted as \\([n,k,d]\\). Its codewords form a linear subspace, i.e., for any codewords \\(x,y\\), \\(x+y\\) is also a codeword. Often defined in terms of a \\textit{genera..."
                     ],
                     "_code_href": "/c/binary_linear",
                     "_family_generation_level": 3

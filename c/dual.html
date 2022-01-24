@@ -81,10 +81,11 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description"><p>For any <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code
+<dd class="code-description"><p>For any  <span class="inline-math">\([n,k]_q\)</span> linear code <span class="inline-math">\(C\)</span>, the dual code,
 <span class="display-math env-align">\begin{align}
-C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
-\end{align}</span></p>
+C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
+\end{align}</span>
+is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. Given encoding map <span class="inline-math">\(\mathcal{C}\)</span> for <span class="inline-math">\(C\)</span>, the dual code is the kernel of <span class="inline-math">\(\mathcal{C}\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p>
 <p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p></dd>
 
 <dt class="code-protection">Protection</dt>

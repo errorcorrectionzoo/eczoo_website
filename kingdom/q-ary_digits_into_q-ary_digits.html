@@ -53,7 +53,7 @@
 
 <div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
   <span class="short-code-name"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>
-  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum number of coordinates where two strings in the code differ.</span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates over the field <span class="inline-math">\(GF(q)=\mathbb{F}_q\)</span> and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum number of coordinates where two strings in the code differ.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
   <span class="short-code-parents">
     Parents:
@@ -108,10 +108,11 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 
 <div class="ecc-code" id="ecc_dual">
   <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
-  <span class="short-code-description"><p>For any <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code
+  <span class="short-code-description"><p>For any  <span class="inline-math">\([n,k]_q\)</span> linear code <span class="inline-math">\(C\)</span>, the dual code,
 <span class="display-math env-align">\begin{align}
-C^\perp = \{ y\in\mathbb{Z}_q^{\times n} ~|~ x\cdot y=0 \forall x\in C\}~.
-\end{align}</span></p>
+C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
+\end{align}</span>
+is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. Given encoding map <span class="inline-math">\(\mathcal{C}\)</span> for <span class="inline-math">\(C\)</span>, the dual code is the kernel of <span class="inline-math">\(\mathcal{C}\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p>
 <p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p></span>
   <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
   <span class="short-code-parents">
