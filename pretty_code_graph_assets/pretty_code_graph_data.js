@@ -459,7 +459,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Hamming codes are a family of linear codes with parameters \\((2^r-1,2^r-r-1, 3)\\) for any \\(r\\). The \\(r \\times (2^r-1) \\) parity check matrix, \\(H\\), has all possible non-zero r-bit strings as its..."
+                        "Hamming codes are an infinite family of linear codes with parameters \\((2^r-1,2^r-r-1, 3)\\) for \\(r \\geq 3\\). The \\(r \\times (2^r-1) \\) parity check matrix \\(H\\) has all possible non-zero \\(r\\)-bit..."
                     ],
                     "_code_href": "/c/hamming",
                     "_family_generation_level": 4

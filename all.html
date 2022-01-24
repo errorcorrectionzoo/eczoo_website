@@ -255,7 +255,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 <span class="display-math env-align">\begin{align}
 C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
 \end{align}</span>
-is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. Given encoding map <span class="inline-math">\(\mathcal{C}\)</span> for <span class="inline-math">\(C\)</span>, the dual code is the kernel of <span class="inline-math">\(\mathcal{C}\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p>
+is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p>
 <p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p></span>
   </li>
   <li>
@@ -487,7 +487,7 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
   <li>
     <span class="code-name">
       <a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-77" class="cite">[78]</a></span></span>
-    <span class="code-description">Hamming codes are a family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for any <span class="inline-math">\(r\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix, <span class="inline-math">\(H\)</span>, has all possible non-zero r-bit strings as its columns. The codewords are <span class="inline-math">\({x|Hx=0}\)</span>.</span>
+    <span class="code-description">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</span>
   </li>
   <li>
     <span class="code-name">
