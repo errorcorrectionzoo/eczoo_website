@@ -86,9 +86,9 @@
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors if
 <span class="display-math env-align">\begin{align}
-  \forall x \in C~,~d(x,x+y) &lt; d(x&#x27; , x+y) \forall C \ni x&#x27; \neq x~\text{and}~y~|~|y|=t~,
+  \forall x \in C~,~d(x,x+y) &lt; d(x&#x27; , x+y)
 \end{align}</span>
-where <span class="inline-math">\(d\)</span> is the Hamming distance and <span class="inline-math">\(|y| = d(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> if and only if <span class="inline-math">\(d \geq 2t+1\)</span>. In other words, a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</dd>
+for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(d\)</span> is the Hamming distance and <span class="inline-math">\(|y| = d(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</dd>
 
 
 <!-- Display features -->
