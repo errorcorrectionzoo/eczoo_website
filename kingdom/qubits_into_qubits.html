@@ -283,13 +283,17 @@ One constructs a CSS code by associating a physical qubit to every basis element
     Parents:
       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/topological_abelian">Abelian topological code</a>.
   </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>.
+  </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/surface">Kitaev surface code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/haah_cubic">Haah cubic code</a>,       <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>,       <a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a>,       <a href="/c/subsystem_color">Subsystem color code</a>.
+      <a href="/c/haah_cubic">Haah cubic code</a>,       <a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a>,       <a href="/c/subsystem_color">Subsystem color code</a>.
   </span>
 </div>
 
@@ -587,25 +591,6 @@ As a result, the stabilizer generators with the qubit index flattened are
 </div>
 
 
-<div class="ecc-code" id="ecc_stab_15_1_3">
-  <span class="short-code-name"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></span>
-  <span class="short-code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
-This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center.
-The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers.
-Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check.
-A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron.
-The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_triorthogonal">Triorthogonal code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/color">Color code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_steane">
   <span class="short-code-name"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
@@ -627,11 +612,30 @@ The stabilizer group for the Steane code has six generators.</span>
   <span class="short-code-info">Protection: The Steane code is a distance 3 code. It detects errors on 2 qubits, corrects errors on 1 qubit.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
+      <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>,       <a href="/c/color">Color code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/hamming">Hamming code</a>,       <a href="/c/color">Color code</a>.
+      <a href="/c/hamming">Hamming code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_stab_15_1_3">
+  <span class="short-code-name"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></span>
+  <span class="short-code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
+This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center.
+The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers.
+Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check.
+A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron.
+The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_triorthogonal">Triorthogonal code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/color">Color code</a>.
   </span>
 </div>
 
@@ -962,7 +966,7 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
 <div class="ecc-code" id="ecc_stabilizer_over_gf4">
   <span class="short-code-name"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-75" class="cite">[76]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
-<span class="inline-math">\(GF(4)\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
+The field <span class="inline-math">\(GF(4)=\mathbf{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
 There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
 The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</span>
   <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
