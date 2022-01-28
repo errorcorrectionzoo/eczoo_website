@@ -1868,7 +1868,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qudit_surface",
-                    "label": "Qudit surface code",
+                    "label": "Modular-qudit surface code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1889,7 +1889,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the group \\(\\mathbb{Z}_q\\) of ..."
+                        "Also called a \\(\\mathbb{Z}_q\\)\\textit{-qudit code}. Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled..."
                     ],
                     "_code_href": "/c/qudits_into_qudits",
                     "_family_generation_level": 4,
@@ -1954,7 +1954,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_galois_true_stabilizer",
-                    "label": "Galois-qudit true stabilizer code",
+                    "label": "True Galois-qudit stabilizer code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
@@ -1992,7 +1992,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
-                        "Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit states \\(|k\\rangle\\) labeled by elements \\(k\\) of the \\textit{Galois field} \\(GF..."
+                        "Also called a \\(GF(q)\\)\\textit{-} or \\(\\mathbb{F}_q\\)\\textit{-qudit code}. Encodes \\(K\\)-dimensional Hilbert space into a \\(q^n\\)-dimensional (\\(n\\)-qudit) Hilbert space, with canonical qudit state..."
                     ],
                     "_code_href": "/c/galois_into_galois",
                     "_family_generation_level": 4,
@@ -2451,7 +2451,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_lifted_product",
-                    "label": "Lifted-product code",
+                    "label": "Lifted-product (LP) code",
                     "_is_code": 1,
                     "_is_abstract_code": 0,
                     "_description": [
