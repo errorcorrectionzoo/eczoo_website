@@ -56,9 +56,9 @@
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</span>
   <span class="short-code-info">Protection: A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors if
 <span class="display-math env-align">\begin{align}
-  \forall x \in C~,~d(x,x+y) &lt; d(x&#x27; , x+y)
+  \forall x \in C~,~D(x,x+y) &lt; D(x&#x27; , x+y)
 \end{align}</span>
-for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(d\)</span> is the Hamming distance and <span class="inline-math">\(|y| = d(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</span>
+for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(D\)</span> is the Hamming distance and <span class="inline-math">\(|y| = D(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/ecc">Error-correcting code</a>.
