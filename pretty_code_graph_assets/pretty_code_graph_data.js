@@ -590,7 +590,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
-                        "A quantum error-correcting code that encodes quantum information in a \\(K\\)-dimensional (\\textit{logical}) subspace \\(\\mathsf{H}_K\\) of an \\(N\\)-dimensional (\\textit{physical}) Hilbert space \\(\\mat..."
+                        "Encodes quantum information in a \\(K\\)-dimensional (\\textit{logical}) subspace of an \\(N\\)-dimensional (\\textit{physical}) Hilbert space such that it is possible to recover said information from er..."
                     ],
                     "_code_href": "/c/qecc_finite",
                     "_family_generation_level": 3
