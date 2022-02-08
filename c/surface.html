@@ -82,7 +82,7 @@
 
 <dt class="code-description">Description</dt>
 <dd class="code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
-<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces. Several constructions based on hyperbolic manifolds (see code children below) have yielded distances scaling favorably with the number of qubits.</p></dd>
+<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces.</p></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-6" class="cite">[7]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-7" class="cite">[8]</a>.</dd>
@@ -95,7 +95,7 @@
 
 
 <dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span> <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>, and (2) surface codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>. Loewner&#x27;s theorem provides an upper bound for any bounded-geometry surface code <a href="#cite-4" class="cite">[5]</a>.</dd>
+  <dd class="code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span> <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>, and (2) surface codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>. Higher-dimensional hyperbolic manifolds (see code children below) yield distances scaling more favorably. Loewner&#x27;s theorem provides an upper bound for any bounded-geometry surface code <a href="#cite-4" class="cite">[5]</a>.</dd>
 
 
 
@@ -181,7 +181,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-52" class="cite">[53]</a><a href="#cite-53" class="cite">[54]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Color code is equivalent to surface code in several ways <a href="#cite-54" class="cite">[55]</a>. For example, the color code on a <span class="inline-math">\(D\)</span>-dimensional closed manifold is equivalent to multiple decoupled copies of the <span class="inline-math">\(D-1\)</span>-dimensional surface code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Color code is equivalent to surface code in several ways <a href="#cite-54" class="cite">[55]</a><a href="#cite-55" class="cite">[56]</a>. For example, the color code on a <span class="inline-math">\(D\)</span>-dimensional closed manifold is equivalent to multiple decoupled copies of the <span class="inline-math">\(D-1\)</span>-dimensional surface code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/haah_cubic">Haah cubic code</a></span>    <span class="code-cousins-1-detail">(The energy of any partial implementation of code 1 is proportional to the boundary length similar to the 4D toric code, which can potentially surpress the effects of thermal errors, but it is currently an open problem.)</span>  </li>
   <li class="paragraph-in-list">
@@ -513,6 +513,11 @@ url={https://errorcorrectionzoo.org/c/surface}
       <dt id="cite-54">[55]</dt>
       <dd>
         A. Kubica, B. Yoshida, and F. Pastawski, “Unfolding the color code”, New Journal of Physics <span class="textbf">17</span>, 083026 (2015). <a href="https://doi.org/10.1088/1367-2630/17/8/083026" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.02065" target="_blank" class="href">1503.02065</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-55">[56]</dt>
+      <dd>
+        Arun B. Aloshious, Arjun Nitin Bhagoji, and Pradeep Kiran Sarvepalli, “On the Local Equivalence of 2D Color Codes and Surface Codes with Applications”. <a href="https://arxiv.org/abs/1804.00866" target="_blank" class="href">1804.00866</a>
       </dd>
     
     </dl>

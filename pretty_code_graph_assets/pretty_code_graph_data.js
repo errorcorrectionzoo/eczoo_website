@@ -2205,7 +2205,9 @@ GENERATED_pretty_code_graph_data = {
                     "label": "Abelian topological code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
-                    "_description": "Code whose codewords realize topological order associated with an abelian group. Stub.",
+                    "_description": [
+                        "Code whose codewords realize topological order associated with an abelian group. Stub.\n\nAny local quantum circuit connecting ground states of topological orders with non-isomorphic abelian groups m..."
+                    ],
                     "_code_href": "/c/topological_abelian",
                     "_family_generation_level": 4
                 },
