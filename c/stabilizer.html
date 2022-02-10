@@ -81,7 +81,9 @@
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code. The code can be represented by a <span class="inline-math">\((n-k) \times 2n\)</span> stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the binary symplectic representation of a stabilizer generator.</dd>
+<dd class="code-description"><p>An <span class="inline-math">\(((n,2^k,d))\)</span> stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</p>
+<p>Each code can be represented by a <span class="inline-math">\((n-k) \times 2n\)</span> stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the binary symplectic representation of a stabilizer generator. (Standard form goes here.)</p>
+<p>Stabilizer codes can be extended to modular-qudit stabilizer codes by decorating appropriate generators with powers. For example, <span class="inline-math">\([[4,2,2]]\)</span> qubit code stabilizer generators can be adjusted to <span class="inline-math">\(ZZZ^{-1} Z^{-1}\)</span> and <span class="inline-math">\(XX^{-1} X^{-1} X\)</span>. A systematic procedure extending a qubit code to prime-qudit codes involves putting its generator matrix into <span class="textit">local-translational-invariant (LDI)</span> form  <a href="#cite-2" class="cite">[3]</a>. Various bounds exist on the distance of the resulting codes <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</p></dd>
 
 <dt class="code-protection">Protection</dt>
 <dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
@@ -98,7 +100,7 @@
 
 
 <dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Dissipative preparation, for which codespace is steady-state space of a Lindbladian <a href="#cite-2" class="cite">[3]</a>.</span></dd>
+  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Dissipative preparation, for which codespace is steady-state space of a Lindbladian <a href="#cite-5" class="cite">[6]</a>.</span></dd>
 
 
  
@@ -109,20 +111,20 @@
 
 
 <dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Shor error correction <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Knill error correction <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</span></dd>
+  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Shor error correction <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Knill error correction <a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>.</span></dd>
 
 
 
 
 <dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">For correlated Pauli noise, bounds can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-6" class="cite">[7]</a>.</span></dd>
+  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">For correlated Pauli noise, bounds can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-9" class="cite">[10]</a>.</span></dd>
 
 
 
 
 <dt class="code-notes">Notes</dt>
 <dd class="code-notes">
-  <span class="paragraph-in-list">Tables of bounds and examples of stabilizer codes for various <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, based on algorithms developed in Ref. <a href="#cite-7" class="cite">[8]</a>, are maintained by M. Grassl at this <a href="http://codetables.markus-grassl.de/" target="_blank" class="href">website</a>.</span>
+  <span class="paragraph-in-list">Tables of bounds and examples of stabilizer codes for various <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, based on algorithms developed in Ref. <a href="#cite-10" class="cite">[11]</a>, are maintained by M. Grassl at this <a href="http://codetables.markus-grassl.de/" target="_blank" class="href">website</a>.</span>
 </dd>
 
 
@@ -154,11 +156,11 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-8" class="cite">[9]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>    <span class="code-parent-of-1-detail">(Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-11" class="cite">[12]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></span>    <span class="code-parent-of-1-detail">(The HaPPY code is a stabilizer code because it is defined by a contracted network of stabilizer tensors; see Thm. 6 in Ref. <a href="#cite-9" class="cite">[10]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></span>    <span class="code-parent-of-1-detail">(The HaPPY code is a stabilizer code because it is defined by a contracted network of stabilizer tensors; see Thm. 6 in Ref. <a href="#cite-12" class="cite">[13]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></span>  </li>
   <li class="paragraph-in-list">
@@ -166,7 +168,7 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/xyz_product">XYZ product code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-parent-of-1-detail">(The Majorana stabilizer code is a stabilizer code whose stabilizers are composed of Majorana fermion operators. In addition, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped into a <span class="inline-math">\([[2n,k,2d]]_{f}\)</span> Majorana stabilizer code <a href="#cite-10" class="cite">[11]</a><a href="#cite-8" class="cite">[9]</a>. However, Pauli- and Majorana-based stabilizer codes have different notions of locality <a href="#cite-11" class="cite">[12]</a> and are thus useful for different physical platforms.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-parent-of-1-detail">(The Majorana stabilizer code is a stabilizer code whose stabilizers are composed of Majorana fermion operators. In addition, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped into a <span class="inline-math">\([[2n,k,2d]]_{f}\)</span> Majorana stabilizer code <a href="#cite-13" class="cite">[14]</a><a href="#cite-11" class="cite">[12]</a>. However, Pauli- and Majorana-based stabilizer codes have different notions of locality <a href="#cite-14" class="cite">[15]</a> and are thus useful for different physical platforms.)</span>  </li>
 </ul>
 </dd>
 
@@ -180,13 +182,13 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>    <span class="code-cousins-1-detail">(Codespace is the ground-state space of the <span class="textit">code Hamiltonian</span>, consisting of an equal linear combination of stabilizer generators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span>    <span class="code-cousins-1-detail">(Modular-qudit stabilizer codes for prime-dimensional qudits <span class="inline-math">\(q=p\)</span> inherit most of the features of qubit stabilizer codes, including encoding an integer number of qudits and a Pauli group with a unique number of generators.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span>    <span class="code-cousins-1-detail">(Modular-qudit stabilizer codes for prime-dimensional qudits <span class="inline-math">\(q=p\)</span> inherit most of the features of qubit stabilizer codes, including encoding an integer number of qudits and a Pauli group with a unique number of generators. Conversely, qubit stabilizer codes can be extended to qudits by decorating the appropriate Pauli strings with powers, and the local-translational-invariant (LDI) form <a href="#cite-2" class="cite">[3]</a> of the generator matrix yields systematic extensions to prime qudits.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span>    <span class="code-cousins-1-detail">(Many, but not all, Movassagh-Ouyang codes are stabilizer codes.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a></span>    <span class="code-cousins-1-detail">(Gauge stabilizer codes reduce to stabilizer codes when there are no gauge qubits.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a></span>    <span class="code-cousins-1-detail">(Bosonic stabilizer codes are a continuous-variable analogue of qubit stabilizer codes.)</span>  </li>
 </ul>
@@ -249,60 +251,75 @@ url={https://errorcorrectionzoo.org/c/stabilizer}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        J. Dengis, R. König, and F. Pastawski, “An optimal dissipative encoder for the toric code”, New Journal of Physics <span class="textbf">16</span>, 013023 (2014). <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.1036" target="_blank" class="href">1310.1036</a>
+        L. G. Gunderman, “Local-dimension-invariant qudit stabilizer codes”, Physical Review A <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevA.101.052343" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1910.08122" target="_blank" class="href">1910.08122</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        Peter W. Shor, “Fault-tolerant quantum computation”. <a href="https://arxiv.org/abs/quant-ph/9605011" target="_blank" class="href">quant-ph/9605011</a>
+        Arun J. Moorthy and Lane G. Gunderman, “Local-dimension-invariant Calderbank-Shor-Steane Codes with an Improved Distance Promise”. <a href="https://arxiv.org/abs/2110.11510" target="_blank" class="href">2110.11510</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        E. Knill, “Quantum computing with realistically noisy devices”, Nature <span class="textbf">434</span>, 39 (2005). <a href="https://doi.org/10.1038/nature03350" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410199" target="_blank" class="href">quant-ph/0410199</a>
+        Lane G. Gunderman, “Degenerate Local-dimension-invariant Stabilizer Codes and an Alternative Bound for the Distance Preservation Condition”. <a href="https://arxiv.org/abs/2110.15274" target="_blank" class="href">2110.15274</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        E. Knill, “Scalable Quantum Computation in the Presence of Large Detected-Error Rates”. <a href="https://arxiv.org/abs/quant-ph/0312190" target="_blank" class="href">quant-ph/0312190</a>
+        J. Dengis, R. König, and F. Pastawski, “An optimal dissipative encoder for the toric code”, New Journal of Physics <span class="textbf">16</span>, 013023 (2014). <a href="https://doi.org/10.1088/1367-2630/16/1/013023" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.1036" target="_blank" class="href">1310.1036</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        C. T. Chubb and S. T. Flammia, “Statistical mechanical models for quantum codes with correlated noise”, Annales de l’Institut Henri Poincaré D <span class="textbf">8</span>, 269 (2021). <a href="https://doi.org/10.4171/AIHPD/105" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.10704" target="_blank" class="href">1809.10704</a>
+        Peter W. Shor, “Fault-tolerant quantum computation”. <a href="https://arxiv.org/abs/quant-ph/9605011" target="_blank" class="href">quant-ph/9605011</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        M. Grassl, “Searching for linear codes with large minimum distance”, Discovering Mathematics with Magma 287. <a href="https://doi.org/10.1007/978-3-540-37634-7_13" target="_blank" class="href">DOI</a>
+        E. Knill, “Quantum computing with realistically noisy devices”, Nature <span class="textbf">434</span>, 39 (2005). <a href="https://doi.org/10.1038/nature03350" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410199" target="_blank" class="href">quant-ph/0410199</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        E. Knill, “Scalable Quantum Computation in the Presence of Large Detected-Error Rates”. <a href="https://arxiv.org/abs/quant-ph/0312190" target="_blank" class="href">quant-ph/0312190</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+        C. T. Chubb and S. T. Flammia, “Statistical mechanical models for quantum codes with correlated noise”, Annales de l’Institut Henri Poincaré D <span class="textbf">8</span>, 269 (2021). <a href="https://doi.org/10.4171/AIHPD/105" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.10704" target="_blank" class="href">1809.10704</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+        M. Grassl, “Searching for linear codes with large minimum distance”, Discovering Mathematics with Magma 287. <a href="https://doi.org/10.1007/978-3-540-37634-7_13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
+        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
+      <dd>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
       <dd>
         H. Bombín, “Structure of 2D Topological Stabilizer Codes”, Communications in Mathematical Physics <span class="textbf">327</span>, 387 (2014). <a href="https://doi.org/10.1007/s00220-014-1893-4" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1107.2707" target="_blank" class="href">1107.2707</a>
       </dd>

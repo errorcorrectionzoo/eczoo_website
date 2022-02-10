@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="\([[2^r-1, 2^r-2r-1, 3]]\) Hamming-based CSS code" />
+<meta name="citation_title" content="\([[2^r-1, 2^r-2r-1, 3]]_p\) prime-qudit CSS code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="\([[2^r-1, 2^r-2r-1, 3]]\) Hamming-based CSS code" />
+<meta name="DC.title" content="\([[2^r-1, 2^r-2r-1, 3]]_p\) prime-qudit CSS code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      \([[2^r-1, 2^r-2r-1, 3]]\) Hamming-based CSS code
+      \([[2^r-1, 2^r-2r-1, 3]]_p\) prime-qudit CSS code
     [error correction zoo]
   </title>
 
@@ -59,13 +59,13 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</h1>
+    <h1><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> prime-qudit CSS code</h1>
   </header><!-- #header -->
 
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_hamming_css">
+<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qudit_hamming_css">
 
 <!--<dt></dt>-->
 <dd class="info-popup-button-container"></dd>
@@ -73,18 +73,16 @@
 <dt class="code-name">Name</dt>
 <dd class="code-name">
   <span class="code-name-cell">
-  <span class="code-name"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</span></span>
+  <span class="code-name"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> prime-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/quantum_hamming_css">&nbsp;</a>-->
+   href="/c/qudit_hamming_css">&nbsp;</a>-->
 </dd>
 
 
 <dt class="code-description">Description</dt>
-<dd class="code-description">A Hamming-based CSS code is a CCS code constructed with a classical Hamming code <span class="inline-math">\([2^r-1,2^r-1-r,3]=C_X=C_Z\)</span>.</dd>
+<dd class="code-description">A family of CSS codes extending <a href="/c/quantum_hamming_css" class="ref">Hamming-based CSS codes</a> to prime qudits of dimension <span class="inline-math">\(p\)</span> by expressing the qubit code stabilizers in local-dimension-invariant (LDI) form <a href="#cite-0" class="cite">[1]</a>.</dd>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against any single qubit error.</dd>
 
 
 <!-- Display features -->
@@ -104,8 +102,6 @@
 
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Syndrome measurement using two ancilla qubits <a href="#cite-0" class="cite">[1]</a>.</span></dd>
 
 
 
@@ -124,19 +120,10 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
+    <span class="code-parents-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span>  </li>
 </ul>
 </dd>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></span>    <span class="code-parent-of-1-detail">(Steane code is the smallest member of a family of Hamming-based CSS codes.)</span>  </li>
-</ul>
-</dd>
 
 <dt class="code-cousins">Cousin(s)</dt>
 <dd class="code-cousins">
@@ -144,9 +131,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamming">Hamming code</a></span>    <span class="code-cousins-1-detail">(Quantum Hamming codes result from applying the CSS construction to Hamming codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudit_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> prime-qudit CSS code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> codes are prime-qudit extensions of <span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> codes.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> codes are prime-qudit extensions of <span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> codes.)</span>  </li>
 </ul>
 </dd>
 
@@ -159,33 +144,33 @@
 <dd class="display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    quantum_hamming_css
+    qudit_hamming_css
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_hamming_css.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudit_hamming_css.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=quantum_hamming_css">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_hamming_css</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=qudit_hamming_css">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qudit_hamming_css</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“\([[2^r-1, 2^r-2r-1, 3]]\) Hamming-based CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_hamming_css</dd>
+    <dd>“\([[2^r-1, 2^r-2r-1, 3]]_p\) prime-qudit CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qudit_hamming_css</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_quantum_hamming_css,
-title={\([[2^r-1, 2^r-2r-1, 3]]\) Hamming-based CSS code},
+    <dd class="bibtex">@incollection{eczoo_qudit_hamming_css,
+title={\([[2^r-1, 2^r-2r-1, 3]]_p\) prime-qudit CSS code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/quantum_hamming_css}
+url={https://errorcorrectionzoo.org/c/qudit_hamming_css}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/quantum_hamming_css</dd>
+    <dd>https://errorcorrectionzoo.org/c/qudit_hamming_css</dd>
   </dl>
 </div>
 </dd>
@@ -197,7 +182,7 @@ url={https://errorcorrectionzoo.org/c/quantum_hamming_css}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href">1705.02329</a>
+        Arun J. Moorthy and Lane G. Gunderman, “Local-dimension-invariant Calderbank-Shor-Steane Codes with an Improved Distance Promise”. <a href="https://arxiv.org/abs/2110.11510" target="_blank" class="href">2110.11510</a>
       </dd>
     
     </dl>
