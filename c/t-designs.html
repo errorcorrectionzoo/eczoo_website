@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_t-designs">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_t-designs">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Local Haar-random circuit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/t-designs">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
-The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-0" class="cite">[1]</a>. Follow-up work <a href="#cite-1" class="cite">[2]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
+The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-0" class="cite">[1]</a>. Follow-up work <a href="#cite-1" class="cite">[2]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">In a 1D geometry, the code approximately detects any error with support on a segment of length <span class="inline-math">\(\leq n/4\)</span>, with deviations exponentially suppressed in <span class="inline-math">\(n\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">In a 1D geometry, the code approximately detects any error with support on a segment of length <span class="inline-math">\(\leq n/4\)</span>, with deviations exponentially suppressed in <span class="inline-math">\(n\)</span>.</div>
 
 
 <!-- Display features -->
@@ -98,8 +104,8 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Random local circuit of depth proportional to <span class="inline-math">\(n^{\alpha}\)</span>, with <span class="inline-math">\(\alpha\)</span> depending on system geometry.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Random local circuit of depth proportional to <span class="inline-math">\(n^{\alpha}\)</span>, with <span class="inline-math">\(\alpha\)</span> depending on system geometry.</span></div>
 
 
  
@@ -119,19 +125,19 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/random_circuit">Random-circuit code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -142,15 +148,15 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/haar_random">Haar-random code</a></span>    <span class="code-cousins-1-detail">(Approximating the random projections through <span class="inline-math">\(t\)</span>-designs is necessary in order to make the protocol practical. Replacing with random Clifford gates is especially convenient since the Clifford group forms a unitary 2-design and produces stabilizer codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     t-designs
@@ -178,15 +184,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/t-designs}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/t-designs</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -202,6 +213,8 @@ url={https://errorcorrectionzoo.org/c/t-designs}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -211,7 +224,7 @@ url={https://errorcorrectionzoo.org/c/t-designs}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

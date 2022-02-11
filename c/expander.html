@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_expander">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_expander">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Expander code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/expander">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</p>
-<p>Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(\gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-1" class="cite">[2]</a>.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</p>
+<p>Expander codes are important because they admit efficient encoding and decoding algorithms and have the desirable property that their rate and relative distance are constant. The rate and distance of the expander code depend on specific parameters of the corresponding graph. A (<span class="inline-math">\(n, m, D, \gamma, \alpha\)</span>) bipartite expander graph is defined as a <span class="inline-math">\(D\)</span>-left-regular graph with <span class="inline-math">\(n\)</span> left nodes, and <span class="inline-math">\(m\)</span> right nodes such that for any subset of left nodes <span class="inline-math">\(S\)</span> of size at most <span class="inline-math">\(\gamma n\)</span> the neighborhood <span class="inline-math">\(N(S)\)</span> is at least of size <span class="inline-math">\(\alpha|S|\)</span>. Given a (<span class="inline-math">\(n, m, D, \gamma, (1-\epsilon)D\)</span>) expander graph, the corresponding expander code has rate of <span class="inline-math">\(1 - m/n\)</span> and a distance of at least <span class="inline-math">\(2(1-\epsilon)\gamma n\)</span> for any <span class="inline-math">\(\epsilon &lt; 1/2\)</span>. Explicit constructions for expander graphs with any ratio <span class="inline-math">\(n/m\)</span> are known where <span class="inline-math">\(D = \text{polylog}(n/m)\)</span>, <span class="inline-math">\(\gamma = \Omega(1/D)\)</span> and arbitrary <span class="inline-math">\(\epsilon\)</span> <a href="#cite-1" class="cite">[2]</a>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</div>
 
 
 <!-- Display features -->
@@ -94,21 +100,21 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">The rate is <span class="inline-math">\(1 - m/n\)</span> where <span class="inline-math">\(n\)</span> is the number of left nodes and <span class="inline-math">\(m\)</span> is the number of right nodes in the bipartite expander graph.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">The rate is <span class="inline-math">\(1 - m/n\)</span> where <span class="inline-math">\(n\)</span> is the number of left nodes and <span class="inline-math">\(m\)</span> is the number of right nodes in the bipartite expander graph.</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Multiplication by generator matrix with runtime <span class="inline-math">\(O(n^2)\)</span></span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Multiplication by generator matrix with runtime <span class="inline-math">\(O(n^2)\)</span></span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding can be done in <span class="inline-math">\(O(n)\)</span> runtime using a greedy algorithm. The algorithm consists of flipping a bit of the received word if it will result in a greater number of satisfied parity checks. This is repeated until a codeword is reached.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding can be done in <span class="inline-math">\(O(n)\)</span> runtime using a greedy algorithm. The algorithm consists of flipping a bit of the received word if it will result in a greater number of satisfied parity checks. This is repeated until a codeword is reached.</span></div>
 
 
 
@@ -123,34 +129,34 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/tanner">Tanner code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_expander">Quantum expander code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     expander
@@ -178,15 +184,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/expander}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/expander</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -202,6 +213,8 @@ url={https://errorcorrectionzoo.org/c/expander}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -211,7 +224,7 @@ url={https://errorcorrectionzoo.org/c/expander}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

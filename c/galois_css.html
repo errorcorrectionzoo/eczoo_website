@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_galois_css">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_galois_css">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Galois-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/galois_css">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
 are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
 The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form
-<span id="eq--parityg" class="display-math env-align">\begin{align}
+<span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
 \end{pmatrix}~.
@@ -102,10 +108,10 @@ The codewords are
 <span class="display-math env-align">\begin{align}
 |\gamma + C_Z^\perp \rangle = \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
 \end{align}</span>
-for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></dd>
+for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
 
 
 <!-- Display features -->
@@ -137,36 +143,36 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></dd>
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-parent-of-1-detail">(The code required to construct this code must be a non-degenerate Galois-qubit CSS code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a></span>    <span class="code-parent-of-1-detail">(Goppa codes can be realized in the CSS code construction <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-parent-of-1-detail">(The code required to construct this code must be a non-degenerate Galois-qubit CSS code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/lifted_product">Lifted-product (LP) code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -175,15 +181,15 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></dd>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>    <span class="code-cousins-1-detail">(Construction uses two related <span class="inline-math">\(q\)</span>-ary linear codes <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     galois_css
@@ -211,15 +217,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/galois_css}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/galois_css</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -240,6 +251,8 @@ url={https://errorcorrectionzoo.org/c/galois_css}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -249,7 +262,7 @@ url={https://errorcorrectionzoo.org/c/galois_css}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

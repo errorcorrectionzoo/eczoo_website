@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_reed_muller">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_reed_muller">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Quantum Reed-Muller code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/quantum_reed_muller">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A CSS code formed from a classical Reed-Muller code in which polynomials over finite fields encode data. This is done by transforming these polynomials into the stabilizer generator matrices</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A CSS code formed from a classical Reed-Muller code in which polynomials over finite fields encode data. This is done by transforming these polynomials into the stabilizer generator matrices</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
 
 
 <!-- Display features -->
@@ -93,8 +99,8 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-1" class="cite">[2]</a>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-1" class="cite">[2]</a>.</div>
 
 
 
@@ -102,20 +108,20 @@
 
 
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Magic state distillation in all prime dimensions <a href="#cite-2" class="cite">[3]</a></span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Magic state distillation in all prime dimensions <a href="#cite-2" class="cite">[3]</a></span></div>
 
 
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Gate switching protocol for universal computation <a href="#cite-3" class="cite">[4]</a>.</span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Gate switching protocol for universal computation <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">Between <span class="inline-math">\(10^{-3}\)</span> and <span class="inline-math">\(10^{-6}\)</span> for depolarizing noise (assuming ideal decoders), see <a href="#cite-4" class="cite">[5]</a></span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Between <span class="inline-math">\(10^{-3}\)</span> and <span class="inline-math">\(10^{-6}\)</span> for depolarizing noise (assuming ideal decoders), see <a href="#cite-4" class="cite">[5]</a></span></div>
 
 
 
@@ -124,28 +130,28 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></span>    <span class="code-parent-of-1-detail">(The <span class="inline-math">\([[15,1,3]]\)</span> code is often noted as the 15-qubit quantum Reed-Muller code in the literature.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -156,15 +162,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span>    <span class="code-cousins-1-detail">(Classification of triorthongonal codes yields a connection to Reed-Muller polynomials <a href="#cite-6" class="cite">[7]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     quantum_reed_muller
@@ -192,15 +198,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/quantum_reed_muller}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/quantum_reed_muller</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -241,6 +252,8 @@ url={https://errorcorrectionzoo.org/c/quantum_reed_muller}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -250,7 +263,7 @@ url={https://errorcorrectionzoo.org/c/quantum_reed_muller}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

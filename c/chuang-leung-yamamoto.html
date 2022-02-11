@@ -65,30 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_chuang-leung-yamamoto">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_chuang-leung-yamamoto">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Chuang-Leung-Yamamoto code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/chuang-leung-yamamoto">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
 <span class="display-math env-align">\begin{align}
 \text{Spacing}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
 \end{align}</span>
-the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords.</dd>
+the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords.
+</div>
 
 
 <!-- Display features -->
@@ -97,21 +104,21 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Code rate is <span class="inline-math">\(\frac{k}{n \log_2(N+1)}\)</span>. To correct the loss of up to <span class="inline-math">\(t\)</span> excitations with <span class="inline-math">\(K+1\)</span> codewords, a code exists with scaling <span class="inline-math">\(N \sim t^3 K/2\)</span>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Code rate is <span class="inline-math">\(\frac{k}{n \log_2(N+1)}\)</span>. To correct the loss of up to <span class="inline-math">\(t\)</span> excitations with <span class="inline-math">\(K+1\)</span> codewords, a code exists with scaling <span class="inline-math">\(N \sim t^3 K/2\)</span>.</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Photon Fock state input into a network of beamsplitters, phase shifters, and Kerr media. These operations all preserve total photon number. Beamsplitters and phase shifters take annihilation operators to linear combinations of annihilation operators, and the transformation matrix is unitary. The operations corresponding to Kerr nonlinear media are diagonal in the Fock basis, but they implement phases that in general depend nonlinearly on the number of photons in each mode. State preparation may require ancillary modes and be conditioned on photon-number measurement results.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Photon Fock state input into a network of beamsplitters, phase shifters, and Kerr media. These operations all preserve total photon number. Beamsplitters and phase shifters take annihilation operators to linear combinations of annihilation operators, and the transformation matrix is unitary. The operations corresponding to Kerr nonlinear media are diagonal in the Fock basis, but they implement phases that in general depend nonlinearly on the number of photons in each mode. State preparation may require ancillary modes and be conditioned on photon-number measurement results.</span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Destructive decoding with a photon number measurement on each mode.</span><span class="paragraph-in-list">State can be decoded with a network of beamsplitters, phase shifters, and Kerr media.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Destructive decoding with a photon number measurement on each mode.</span><span class="paragraph-in-list">State can be decoded with a network of beamsplitters, phase shifters, and Kerr media.</span></div>
 
 
 
@@ -126,34 +133,34 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     chuang-leung-yamamoto
@@ -181,15 +188,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/chuang-leung-yamamoto}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -200,6 +212,8 @@ url={https://errorcorrectionzoo.org/c/chuang-leung-yamamoto}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -209,7 +223,7 @@ url={https://errorcorrectionzoo.org/c/chuang-leung-yamamoto}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

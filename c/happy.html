@@ -65,28 +65,34 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_happy">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_happy">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/happy">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-1" class="cite">[2]</a>.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-1" class="cite">[2]</a>.</p>
 <p>Encoding is accomplished using a tensor network of <span class="inline-math">\([[5,1,3]]\)</span> encoding isometries, which are six-legged perfect tensors (with five legs corresponding to the physical qubits and one for the encoded logical qubit). A <span class="inline-math">\(2n\)</span>-legged <span class="textit">perfect tensor</span> is proportional to an isometry for any bipartition of its indices into a set <span class="inline-math">\(A\)</span> and a complementary set <span class="inline-math">\(A^{\perp}\)</span> such that <span class="inline-math">\(|A|\leq|A^{\perp}|\)</span>.</p>
-<p>To construct the encoding, one first uniformly tiles the hyperbolic AdS/CFT disc using pentagons and hexagons. Then, one places a 6-legged <span class="inline-math">\([[5,1,3]]\)</span> encoding tensor at each hexagon and pentagon, contracting legs between neighboring shapes and leaving one leg uncontracted at each pentagon. This construction forms an encoding isometry from the uncontracted legs in the bulk to the uncontracted legs at the boundary.</p></dd>
+<p>To construct the encoding, one first uniformly tiles the hyperbolic AdS/CFT disc using pentagons and hexagons. Then, one places a 6-legged <span class="inline-math">\([[5,1,3]]\)</span> encoding tensor at each hexagon and pentagon, contracting legs between neighboring shapes and leaving one leg uncontracted at each pentagon. This construction forms an encoding isometry from the uncontracted legs in the bulk to the uncontracted legs at the boundary.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against erasure errors and Pauli errors on the boundary qubits.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against erasure errors and Pauli errors on the boundary qubits.</div>
 
 
 <!-- Display features -->
@@ -95,31 +101,31 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">The pentagon HaPPY code converges to <span class="inline-math">\(\frac{1}{\sqrt{5}} \approx 0.447\)</span>. The pentagon/hexagon HaPPY code, with alternating layers of pentagons and hexagons in the tiling, has a rate of <span class="inline-math">\(0.299\)</span> if the last layer is a pentagon layer and a rate of <span class="inline-math">\(0.088\)</span> if the last layer is a hexagon layer.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">The pentagon HaPPY code converges to <span class="inline-math">\(\frac{1}{\sqrt{5}} \approx 0.447\)</span>. The pentagon/hexagon HaPPY code, with alternating layers of pentagons and hexagons in the tiling, has a rate of <span class="inline-math">\(0.299\)</span> if the last layer is a pentagon layer and a rate of <span class="inline-math">\(0.088\)</span> if the last layer is a hexagon layer.</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Heisenberg-picture encoding is done through <span class="textit">tensor pushing</span>. Each bulk operator (logical) is pushed to an operator supported on a portion of the boundary region (physical). Pushing all the bulk operators through results in reconstruction of the boundary.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Heisenberg-picture encoding is done through <span class="textit">tensor pushing</span>. Each bulk operator (logical) is pushed to an operator supported on a portion of the boundary region (physical). Pushing all the bulk operators through results in reconstruction of the boundary.</span></div>
 
 
-<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
-  <dd class="code-feature code-feature-transversal_gates">For locality-preserving physical gates on the boundary, the set of transversally implementable logical operations in the bulk is strictly contained in the Clifford group <a href="#cite-2" class="cite">[3]</a>.</dd>
+<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">For locality-preserving physical gates on the boundary, the set of transversally implementable logical operations in the bulk is strictly contained in the Clifford group <a href="#cite-2" class="cite">[3]</a>.</div>
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Greedy algorithm for decoding specified in Ref. <a href="#cite-0" class="cite">[1]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Greedy algorithm for decoding specified in Ref. <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(26\%\)</span> for boundary erasure errors on the the pentagon/hexagon HaPPY code, which has alternating layers of pentagons and hexagons in the tiling.</span><span class="paragraph-in-list"><span class="inline-math">\(\sim 50\%\)</span> for boundary erasure errors on the single-qubit HaPPY code, which has a central pentagon encoding one bulk operator and hexagons tiling all other layers</span><span class="paragraph-in-list"><span class="inline-math">\(16.3\%\)</span> for boundary Pauli errors on the single-qubit HaPPY code with 3 layers <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">There is no threshold for the pentagon HaPPY code as a constant number of errors (two) can make bulk recovery impossible.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(26\%\)</span> for boundary erasure errors on the the pentagon/hexagon HaPPY code, which has alternating layers of pentagons and hexagons in the tiling.</span><span class="paragraph-in-list"><span class="inline-math">\(\sim 50\%\)</span> for boundary erasure errors on the single-qubit HaPPY code, which has a central pentagon encoding one bulk operator and hexagons tiling all other layers</span><span class="paragraph-in-list"><span class="inline-math">\(16.3\%\)</span> for boundary Pauli errors on the single-qubit HaPPY code with 3 layers <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">There is no threshold for the pentagon HaPPY code as a constant number of errors (two) can make bulk recovery impossible.</span></div>
 
 
 
@@ -128,8 +134,8 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -138,26 +144,26 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(The HaPPY code is a stabilizer code because it is defined by a contracted network of stabilizer tensors; see Thm. 6 in Ref. <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(The <span class="inline-math">\([[5,1,3]]\)</span> encoding isometry tiles various holographic codes because its corresponding tensor is perfect <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     happy
@@ -185,15 +191,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/happy}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/happy</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -219,6 +230,8 @@ url={https://errorcorrectionzoo.org/c/happy}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -228,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/happy}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

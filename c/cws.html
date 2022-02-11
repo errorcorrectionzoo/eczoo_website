@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_cws">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_cws">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Codeword stabilized (CWS) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/cws">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p>
-<p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p>
+<p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>.</div>
 
 
 <!-- Display features -->
@@ -98,15 +104,15 @@
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">If <span class="inline-math">\( \mathcal{C} \)</span> has an efficient classical encoder, then so does the CWS code <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span>.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">If <span class="inline-math">\( \mathcal{C} \)</span> has an efficient classical encoder, then so does the CWS code <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span>.</span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">There is no known <span class="textit">efficient</span> algorithm to decode <span class="textit">non-additive</span> (non-stabilizer) CWS codes.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">There is no known <span class="textit">efficient</span> algorithm to decode <span class="textit">non-additive</span> (non-stabilizer) CWS codes.</span></div>
 
 
 
@@ -121,43 +127,43 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parent-of-1-detail">(If the CWS set <span class="inline-math">\( \mathcal{W} \)</span> is an abelian group not containing <span class="inline-math">\(-I\)</span>, then the CWS code is a stabilizer code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span>    <span class="code-cousins-1-detail">(The Movassagh-Ouyang codes overlap the CWS codes but neither family is contained in the other.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     cws
@@ -185,15 +191,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/cws}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/cws</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -204,6 +215,8 @@ url={https://errorcorrectionzoo.org/c/cws}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -213,7 +226,7 @@ url={https://errorcorrectionzoo.org/c/cws}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

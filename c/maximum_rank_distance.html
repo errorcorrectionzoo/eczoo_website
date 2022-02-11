@@ -65,31 +65,38 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_maximum_rank_distance">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_maximum_rank_distance">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Maximum-rank code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/maximum_rank_distance">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
 the generator matrix
 <span class="display-math env-align">\begin{align}
 G = \begin{pmatrix} g_1^{[0]} &amp; g_2^{[0]} &amp; \ldots &amp; g_n^{[0]} \\ g_1^{[1]} &amp; g_2^{[1]} &amp; \ldots &amp; g_n^{[1]} \\ g_1^{[k-1]} &amp; g_2^{[k-1]} &amp; \ldots &amp; g_n^{[k-1]} \end{pmatrix}~,
 \end{align}</span>
-where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math">\(k=n-d+1\)</span> defines a maximum rank distance code.</dd>
+where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math">\(k=n-d+1\)</span> defines a maximum rank distance code.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection"><span class="inline-math">\(d\)</span>-distance codes protect agains all errors of rank not greater <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span></dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><span class="inline-math">\(d\)</span>-distance codes protect agains all errors of rank not greater <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span></div>
 
 
 <!-- Display features -->
@@ -121,34 +128,34 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/gabidulin">Rank code</a></span>    <span class="code-parents-1-detail">(Linear rank codes with maximum rank.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(The construction of the generators matrix of both codes uses a Vandermonde matrix.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     maximum_rank_distance
@@ -176,15 +183,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/maximum_rank_distance</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -200,6 +212,8 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -209,7 +223,7 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

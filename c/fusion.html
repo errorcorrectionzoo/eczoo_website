@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fusion">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fusion">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Fusion-based quantum computing (FBQC) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/fusion">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Fusion Based Quantum Computing, or FBQC, describes a fault tolerant way to produce <span class="textit">fusion networks</span>, or large entangled states starting from small constant-sized entangled resource states along with destructive measurements called <span class="textit">fusions</span>. These large states can be produced asychronously in the fusion framework and can be used as resources, as in measurement-based quantum computation (MBQC), or as logical states of topological codes. The difference from ordinary MBQC is that error-correction is baked into the state-generation protocol.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Fusion Based Quantum Computing, or FBQC, describes a fault tolerant way to produce <span class="textit">fusion networks</span>, or large entangled states starting from small constant-sized entangled resource states along with destructive measurements called <span class="textit">fusions</span>. These large states can be produced asychronously in the fusion framework and can be used as resources, as in measurement-based quantum computation (MBQC), or as logical states of topological codes. The difference from ordinary MBQC is that error-correction is baked into the state-generation protocol.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against erasure, Pauli errors, photon loss, fusion failure from non-determinism, and faulty resource states. Redundancy in fusion outcomes is captured by the check operator group. Fusion measurement outcomes form a syndrome that allows to correct for Pauli errors. There is no physical error correction, and decoding output is simply used to update the Pauli frame.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against erasure, Pauli errors, photon loss, fusion failure from non-determinism, and faulty resource states. Redundancy in fusion outcomes is captured by the check operator group. Fusion measurement outcomes form a syndrome that allows to correct for Pauli errors. There is no physical error correction, and decoding output is simply used to update the Pauli frame.</div>
 
 
 <!-- Display features -->
@@ -97,25 +103,25 @@
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Resource state generators, which produce small constant size cluster states, and Fusion measurements (Bell fusions).</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Resource state generators, which produce small constant size cluster states, and Fusion measurements (Bell fusions).</span></div>
 
 
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates by creating topological features such as boundaries, defects, or twists, which can be done by single qubit measurements.</span><span class="paragraph-in-list">Logical gates can be performed by code deformation.</span><span class="paragraph-in-list">Non Clifford gates by Magic-state injection</span><span class="paragraph-in-list">Logical Clifford operations can be kept track of using the classical Pauli-frame register and need not be explicitly applied at the quantum level.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates by creating topological features such as boundaries, defects, or twists, which can be done by single qubit measurements.</span><span class="paragraph-in-list">Logical gates can be performed by code deformation.</span><span class="paragraph-in-list">Non Clifford gates by Magic-state injection</span><span class="paragraph-in-list">Logical Clifford operations can be kept track of using the classical Pauli-frame register and need not be explicitly applied at the quantum level.</span></div>
 
 
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Fusion networks are constructed in a fault tolerant way (as a stabilizer code), and they can be created in a way that naturally encodes topological fault tolerance.</span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Fusion networks are constructed in a fault tolerant way (as a stabilizer code), and they can be created in a way that naturally encodes topological fault tolerance.</span></div>
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(11.98\%\)</span> against erasure in fusion measurements.</span><span class="paragraph-in-list"><span class="inline-math">\(1.07\%\)</span> against Pauli error.</span><span class="paragraph-in-list">In linear optical systems, can tolerate <span class="inline-math">\(10.4\%\)</span> probability of photon loss in each fusion.</span><span class="paragraph-in-list"><span class="inline-math">\(43.2\%\)</span> against fusion failure.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(11.98\%\)</span> against erasure in fusion measurements.</span><span class="paragraph-in-list"><span class="inline-math">\(1.07\%\)</span> against Pauli error.</span><span class="paragraph-in-list">In linear optical systems, can tolerate <span class="inline-math">\(10.4\%\)</span> probability of photon loss in each fusion.</span><span class="paragraph-in-list"><span class="inline-math">\(43.2\%\)</span> against fusion failure.</span></div>
 
 
 
@@ -124,19 +130,19 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(The resource states in FBQC are small stabilizer states, and after fusion measurements, the outputs are stabilizers (conditioned on measurement outcomes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -145,15 +151,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>    <span class="code-cousins-1-detail">(While FBQC is a general framework, an intended application to linear-optical quantum computing will likely utilize small Fock-state bosonic codes such as the dual-rail code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     fusion
@@ -181,15 +187,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/fusion}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/fusion</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -200,6 +211,8 @@ url={https://errorcorrectionzoo.org/c/fusion}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -209,7 +222,7 @@ url={https://errorcorrectionzoo.org/c/fusion}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

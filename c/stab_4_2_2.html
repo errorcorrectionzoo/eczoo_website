@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_4_2_2">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_4_2_2">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/stab_4_2_2">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}.\end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\\end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"> Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}. \end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\ \end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects a single-qubit error <a href="#cite-0" class="cite">[1]</a> or single erasure <a href="#cite-1" class="cite">[2]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-2" class="cite">[3]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects a single-qubit error <a href="#cite-0" class="cite">[1]</a> or single erasure <a href="#cite-1" class="cite">[2]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-2" class="cite">[3]</a>.</div>
 
 
 <!-- Display features -->
@@ -99,15 +105,15 @@
 
 
 
-<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
-  <dd class="code-feature code-feature-transversal_gates">Transversal Pauli, Hadamard, and two-qubit <span class="inline-math">\(R\)</span> gates <a href="#cite-3" class="cite">[4]</a>.</dd>
+<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Transversal Pauli, Hadamard, and two-qubit <span class="inline-math">\(R\)</span> gates <a href="#cite-3" class="cite">[4]</a>.</div>
  
 
 
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but requires post-selection because the code cannot correct errors <a href="#cite-3" class="cite">[4]</a>.</span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but requires post-selection because the code cannot correct errors <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
@@ -115,21 +121,21 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Realized in trapped-ion quantum devices <a href="#cite-4" class="cite">[5]</a> and superconducting circuits <a href="#cite-5" class="cite">[6]</a>.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Concatenating <span class="inline-math">\([[4,2,2]]\)</span> code with surface code can generate 2D topological code with a reasonable circuit-based threshold <a href="#cite-6" class="cite">[7]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -138,11 +144,11 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-parents-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is the smallest toric code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -153,15 +159,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code approximately corrects a single amplitude damping error <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     stab_4_2_2
@@ -189,15 +195,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/stab_4_2_2}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/stab_4_2_2</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -248,6 +259,8 @@ url={https://errorcorrectionzoo.org/c/stab_4_2_2}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -257,7 +270,7 @@ url={https://errorcorrectionzoo.org/c/stab_4_2_2}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

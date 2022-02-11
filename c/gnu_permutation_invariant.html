@@ -65,31 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_gnu_permutation_invariant">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_gnu_permutation_invariant">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">GNU permutation-invariant code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/gnu_permutation_invariant">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Can be expressed in terms of Dicke states where the logical states are
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Can be expressed in terms of Dicke states where the logical states are
 <span class="display-math env-align">\begin{align}
 |\overline{\pm}\rangle = \sum_{\ell=0}^{n} \frac{(\pm 1)^\ell}{\sqrt{2^n}} \sqrt{n \choose \ell} |D^m_{g \ell}\rangle~.
 \end{align}</span>
 Here, <span class="inline-math">\(m\)</span> is the number of particles used for encoding <span class="inline-math">\(1\)</span> qubit, and <span class="inline-math">\(g, n \leq m\)</span> are arbitrary positive integers. The state <span class="inline-math">\(|D^m_w\rangle\)</span> is a Dicke state -- a normalized permutation-invariant state on <span class="inline-math">\(m\)</span> qubits with <span class="inline-math">\(w\)</span> excitations, i.e., a normalized sum over all basis elements with <span class="inline-math">\(w\)</span> ones and <span class="inline-math">\(m - w\)</span> zeroes.</p>
-<p>A qudit extension of such codes, based on a correspondence with binomial codes, exists <a href="#cite-1" class="cite">[2]</a>.</p></dd>
+<p>A qudit extension of such codes, based on a correspondence with binomial codes, exists <a href="#cite-1" class="cite">[2]</a>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Depends on the family. One family which is completely symmetrized versions of Bacon-Shor codes (parameterized by <span class="inline-math">\(t\)</span>) protects against arbitrary weight-<span class="inline-math">\(t\)</span> qubit errors. Additionally, codes with large enough length <span class="inline-math">\((t+1)(3t+1)+t\)</span> can approximately correct <span class="inline-math">\(t\)</span> spontaneous decay errors.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Depends on the family. One family which is completely symmetrized versions of Bacon-Shor codes (parameterized by <span class="inline-math">\(t\)</span>) protects against arbitrary weight-<span class="inline-math">\(t\)</span> qubit errors. Additionally, codes with large enough length <span class="inline-math">\((t+1)(3t+1)+t\)</span> can approximately correct <span class="inline-math">\(t\)</span> spontaneous decay errors.</div>
 
 
 <!-- Display features -->
@@ -121,19 +127,19 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/permutation_invariant">Permutation-invariant code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -146,15 +152,15 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binomial">Binomial code</a></span>    <span class="code-cousins-1-detail">(Binomial codes and GNU codes are both described by spin-coherent states <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     gnu_permutation_invariant
@@ -182,15 +188,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/gnu_permutation_invariant}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/gnu_permutation_invariant</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -211,6 +222,8 @@ url={https://errorcorrectionzoo.org/c/gnu_permutation_invariant}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -220,7 +233,7 @@ url={https://errorcorrectionzoo.org/c/gnu_permutation_invariant}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

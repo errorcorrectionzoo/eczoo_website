@@ -65,31 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_eth">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_eth">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Eigenstate thermalization hypothesis (ETH) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/eth">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Also called a <span class="textit">thermodynamic code</span> <a href="#cite-1" class="cite">[2]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Also called a <span class="textit">thermodynamic code</span> <a href="#cite-1" class="cite">[2]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</p>
 <p>ETH requires that for ordered energy eigenstates <span class="inline-math">\(|E_l\rangle\)</span> and any local observable <span class="inline-math">\(O\)</span>,
 <span class="display-math env-align">\begin{align}
 |\langle E_l|O|E_l\rangle-\langle E_{l+1}|O|E_{l+1}\rangle|\leq\exp(-cn)
 \end{align}</span>
-for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around some energy <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></dd>
+for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around some energy <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good approximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has recovery infidelity (against the erasure of a constant number of sites) scale as <span class="inline-math">\(\epsilon_\text{worst}=O(1/n)\)</span> <a href="#cite-1" class="cite">[2]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good approximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has recovery infidelity (against the erasure of a constant number of sites) scale as <span class="inline-math">\(\epsilon_\text{worst}=O(1/n)\)</span> <a href="#cite-1" class="cite">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -107,8 +113,8 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">An explicit universal recovery channel for the ETH code is given in <a href="#cite-2" class="cite">[3]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">An explicit universal recovery channel for the ETH code is given in <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -123,8 +129,8 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -133,26 +139,26 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>    <span class="code-parents-1-detail">(ETH codes approximately protect against erasures in the thermodynamic limit.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-cousins-1-detail">(ETH codewords, like topological codewords, are locally indistinguishable.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     eth
@@ -180,15 +186,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/eth}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/eth</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -209,6 +220,8 @@ url={https://errorcorrectionzoo.org/c/eth}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -218,7 +231,7 @@ url={https://errorcorrectionzoo.org/c/eth}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

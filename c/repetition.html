@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_repetition">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_repetition">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Binary repetition code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/repetition">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</div>
 
 
 <!-- Display features -->
@@ -93,8 +99,8 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Code rate is <span class="inline-math">\(\frac{1}{n}\)</span>, code distance is <span class="inline-math">\(n\)</span>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Code rate is <span class="inline-math">\(\frac{1}{n}\)</span>, code distance is <span class="inline-math">\(n\)</span>.</div>
 
 
 
@@ -104,41 +110,41 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Calculate the Hamming weight <span class="inline-math">\(d_H\)</span> of the code. If <span class="inline-math">\(d_H\leq \frac{n-1}{2}\)</span>, decode the code as 0. If <span class="inline-math">\(d_H\geq \frac{n+1}{2}\)</span>, decode the code as 1.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Calculate the Hamming weight <span class="inline-math">\(d_H\)</span> of the code. If <span class="inline-math">\(d_H\leq \frac{n-1}{2}\)</span>, decode the code as 0. If <span class="inline-math">\(d_H\geq \frac{n+1}{2}\)</span>, decode the code as 1.</span></div>
 
 
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">Suppose each bit has probability <span class="inline-math">\(p\)</span> of being received correctly, independent for each bit. The probability that a repetition code is received correctly is <span class="inline-math">\(\sum_{k=0}^{(n-1)/2}\frac{n!}{k!(n-k)!}p^{n-k}(1-p)^{k}\)</span>. If <span class="inline-math">\(\frac{1}{2}\leq p\)</span>, then people can always increase the probability of success by increasing the number of physical bit <span class="inline-math">\(n\)</span>.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Suppose each bit has probability <span class="inline-math">\(p\)</span> of being received correctly, independent for each bit. The probability that a repetition code is received correctly is <span class="inline-math">\(\sum_{k=0}^{(n-1)/2}\frac{n!}{k!(n-k)!}p^{n-k}(1-p)^{k}\)</span>. If <span class="inline-math">\(\frac{1}{2}\leq p\)</span>, then people can always increase the probability of success by increasing the number of physical bit <span class="inline-math">\(n\)</span>.</span></div>
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Repetition codes were used in magnetic disks.</span><span class="paragraph-in-list">Although classical repetition code does not have many real-world applications, it still inspire the studies of quantum error correction. Quantum repetition code is widely studied in quantum computing community.</span>
-</dd>
+</div>
 
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/hamming">Hamming code</a></span>    <span class="code-parents-1-detail">(A <span class="inline-math">\([n,1,n]\)</span> repetition code is an <span class="inline-math">\((n,1)\)</span> Hamming code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -147,15 +153,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/single_parity_check">Single parity-check code</a></span>    <span class="code-cousins-1-detail">(Repetition code is dual to the single-parity check code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     repetition
@@ -183,15 +189,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/repetition}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/repetition</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -202,6 +213,8 @@ url={https://errorcorrectionzoo.org/c/repetition}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -211,7 +224,7 @@ url={https://errorcorrectionzoo.org/c/repetition}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

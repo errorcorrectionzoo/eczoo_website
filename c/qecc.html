@@ -65,31 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qecc">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qecc">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Quantum error-correcting code (QECC)</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qecc">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. Codewords may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. Codewords may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>,
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>,
 <span class="display-math env-align">\begin{align}
 {\cal D} (EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|
 \end{align}</span>
 for some constant <span class="inline-math">\(c\)</span>.</p>
-<p>Equivalently, correction capability is determined by of the <span class="textit">quantum error-correction conditions</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>, which may admit infinite terms due to non-normalizability of ideal code states. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate code</a>.</p></dd>
+<p>Equivalently, correction capability is determined by of the <span class="textit">quantum error-correction conditions</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>, which may admit infinite terms due to non-normalizability of ideal code states. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate code</a>.</p></div>
 
 
 <!-- Display features -->
@@ -121,46 +127,46 @@ for some constant <span class="inline-math">\(c\)</span>.</p>
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oecc">Subsystem quantum error-correcting code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qecc_finite">Finite-dimensional quantum code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/oscillators">Bosonic code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_concatenated">Concatenated code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qecc_finite">Finite-dimensional quantum code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_cyclic">Quantum cyclic code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/approximate_qecc">Approximate quantum code</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     qecc
@@ -188,15 +194,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/qecc}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/qecc</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -212,6 +223,8 @@ url={https://errorcorrectionzoo.org/c/qecc}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -221,7 +234,7 @@ url={https://errorcorrectionzoo.org/c/qecc}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

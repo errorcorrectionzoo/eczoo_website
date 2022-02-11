@@ -65,26 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_product">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_product">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Homological product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/homological_product">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">CSS code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction in the homological product construction. Stub.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">CSS code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction in the homological product construction. Stub.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Given two codes <span class="inline-math">\([[n_a, k_a, d_a, w_a]]\)</span> for <span class="inline-math">\(a\in\{1,2\}\)</span>, where <span class="inline-math">\(w_a\)</span> denotes the maximum hamming weight of all rows and columns of <span class="inline-math">\(\partial_a\)</span>, the homological product code has parameter <span class="inline-math">\([[n=n_1 n_2, k=k_1 k_2, d\leq d_1 d_2, w\leq w_1+w_2]]\)</span>. From this formula, and the fact that a randomly selected boundary operator <span class="inline-math">\(\partial\)</span> yields a CSS code that is good with high probability, we see that the product code has <span class="inline-math">\(k=\Theta(n)\)</span> and <span class="inline-math">\(w=O(\sqrt{n})\)</span> with high probability. The main result in <a href="#cite-1" class="cite">[2]</a> is to show that the product code actually has linear distance with high probability as well. To sum up, it is shown that we have a family of <span class="inline-math">\([[n,k=c_1 n, d=c_2 n, w=c_3 \sqrt{n}]]\)</span> codes given small enough <span class="inline-math">\(c_1,c_2,c_3\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Given two codes <span class="inline-math">\([[n_a, k_a, d_a, w_a]]\)</span> for <span class="inline-math">\(a\in\{1,2\}\)</span>, where <span class="inline-math">\(w_a\)</span> denotes the maximum hamming weight of all rows and columns of <span class="inline-math">\(\partial_a\)</span>, the homological product code has parameter <span class="inline-math">\([[n=n_1 n_2, k=k_1 k_2, d\leq d_1 d_2, w\leq w_1+w_2]]\)</span>. From this formula, and the fact that a randomly selected boundary operator <span class="inline-math">\(\partial\)</span> yields a CSS code that is good with high probability, we see that the product code has <span class="inline-math">\(k=\Theta(n)\)</span> and <span class="inline-math">\(w=O(\sqrt{n})\)</span> with high probability. The main result in <a href="#cite-1" class="cite">[2]</a> is to show that the product code actually has linear distance with high probability as well. To sum up, it is shown that we have a family of <span class="inline-math">\([[n,k=c_1 n, d=c_2 n, w=c_3 \sqrt{n}]]\)</span> codes given small enough <span class="inline-math">\(c_1,c_2,c_3\)</span>.</div>
 
 
 <!-- Display features -->
@@ -102,12 +109,12 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Union-find <a href="#cite-2" class="cite">[3]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Union-find <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Universal set of gates can be obtained by fault-tolerantly mapping between different encoded representations of a given logical state <a href="#cite-3" class="cite">[4]</a>.</span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Universal set of gates can be obtained by fault-tolerantly mapping between different encoded representations of a given logical state <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
@@ -120,18 +127,18 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/fiber_bundle">Fiber-bundle code</a></span>    <span class="code-parents-1-detail">(Fiber-bundle code can be viewed as a homological product code with a twisted product.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
@@ -140,16 +147,16 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-parent-of-1-detail">(A homological product of chain complexes corresponding to two classical codes is a hypergraph product code <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     homological_product
@@ -177,15 +184,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/homological_product}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/homological_product</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -216,6 +228,8 @@ url={https://errorcorrectionzoo.org/c/homological_product}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -225,7 +239,7 @@ url={https://errorcorrectionzoo.org/c/homological_product}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

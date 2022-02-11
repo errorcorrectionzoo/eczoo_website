@@ -65,28 +65,34 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qudit_stabilizer">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qudit_stabilizer">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Modular-qudit stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qudit_stabilizer">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
 <p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p>
-<p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator. (Standard form goes here.)</p></dd>
+<p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator. (Standard form goes here.)</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</div>
 
 
 <!-- Display features -->
@@ -104,8 +110,8 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits <a href="#cite-2" class="cite">[3]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -116,26 +122,26 @@
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">A standardized definition of the qudit stabilizer group is developed in <a href="#cite-1" class="cite">[2]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
@@ -144,31 +150,31 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Modular-qudit stabilizer codes for prime-dimensional qudits <span class="inline-math">\(q=p\)</span> inherit most of the features of qubit stabilizer codes, including encoding an integer number of qudits and a Pauli group with a unique number of generators. Conversely, qubit stabilizer codes can be extended to qudits by decorating the appropriate Pauli strings with powers, and the local-translational-invariant (LDI) form <a href="#cite-4" class="cite">[5]</a> of the generator matrix yields systematic extensions to prime qudits.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>    <span class="code-cousins-1-detail">(Recalling that <span class="inline-math">\(q=p^m\)</span>, Galois-qudit stabilizer codes can also be treated as prime-qudit stabilizer codes on <span class="inline-math">\(mn\)</span> qudits, giving <span class="inline-math">\(k=nm-r\)</span> <a href="#cite-4" class="cite">[5]</a>. The case <span class="inline-math">\(m=1\)</span> reduces to conventional prime-qudit stabilizer codes on <span class="inline-math">\(n\)</span> qudits.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_surface">Modular-qudit surface code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D prime-qudit topological stabilizer codes are equivalent to a finite number of copies of the qudit surface code stabilizer group via a local constant-depth Clifford circuit <a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span>    <span class="code-cousins-1-detail">(Recalling that <span class="inline-math">\(q=p^m\)</span>, Galois-qudit stabilizer codes can also be treated as prime-qudit stabilizer codes on <span class="inline-math">\(mn\)</span> qudits, giving <span class="inline-math">\(k=nm-r\)</span> <a href="#cite-7" class="cite">[8]</a>. The case <span class="inline-math">\(m=1\)</span> reduces to conventional prime-qudit stabilizer codes on <span class="inline-math">\(n\)</span> qudits.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Modular-qudit stabilizer codes for prime-dimensional qudits <span class="inline-math">\(q=p\)</span> inherit most of the features of qubit stabilizer codes, including encoding an integer number of qudits and a Pauli group with a unique number of generators. Conversely, qubit stabilizer codes can be extended to qudits by decorating the appropriate Pauli strings with powers, and the local-translational-invariant (LDI) form <a href="#cite-7" class="cite">[8]</a> of the generator matrix yields systematic extensions to prime qudits.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     qudit_stabilizer
@@ -196,15 +202,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/qudit_stabilizer</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -229,7 +240,7 @@ url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        L. G. Gunderman, “Local-dimension-invariant qudit stabilizer codes”, Physical Review A <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevA.101.052343" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1910.08122" target="_blank" class="href">1910.08122</a>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
@@ -244,12 +255,14 @@ url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+        L. G. Gunderman, “Local-dimension-invariant qudit stabilizer codes”, Physical Review A <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevA.101.052343" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1910.08122" target="_blank" class="href">1910.08122</a>
       </dd>
     
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -259,7 +272,7 @@ url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

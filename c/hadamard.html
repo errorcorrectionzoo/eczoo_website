@@ -65,23 +65,29 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_hadamard">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_hadamard">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Hadamard code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/hadamard">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">The Hadamard code is dual to the extended Hamming Code.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">The Hadamard code is dual to the extended Hamming Code.</div>
 
 
 
@@ -114,19 +120,19 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/binary_linear">Binary linear code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -137,15 +143,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller code</a></span>    <span class="code-cousins-1-detail">(For any Hamming code <span class="inline-math">\([2^m,2^m-m-1,3]\)</span>, the dual Hadamard code, when augmented with a bit that is always 0, gives the <span class="inline-math">\(R(1,m)\)</span> 1st order Reed-Muller code. In general, <span class="inline-math">\(R(1,m)\)</span> is related to the duals of the Hamming code, and when <span class="inline-math">\(R(1,m)\)</span> is self dual, it is directly related to the Hamming code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     hadamard
@@ -173,15 +179,22 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/hadamard}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/hadamard</dd>
   </dl>
 </div>
-</dd>
-
-</dl>
+</div>
 
 
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+
+
+</section>
   </main><!-- #main -->
 
 
@@ -191,7 +204,7 @@ url={https://errorcorrectionzoo.org/c/hadamard}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fock_state">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_fock_state">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Fock-state bosonic code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/fock_state">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</div>
 
 
 <!-- Display features -->
@@ -116,34 +122,34 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parent-of-1-detail">(Single-mode Fock-state codes are typically rotationally invariant.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/dual_rail">Dual-rail code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parent-of-1-detail">(Single-mode Fock-state codes are typically rotationally invariant.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -154,15 +160,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a></span>    <span class="code-cousins-1-detail">(While FBQC is a general framework, an intended application to linear-optical quantum computing will likely utilize small Fock-state bosonic codes such as the dual-rail code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     fock_state
@@ -190,15 +196,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/fock_state}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/fock_state</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -214,6 +225,8 @@ url={https://errorcorrectionzoo.org/c/fock_state}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -223,7 +236,7 @@ url={https://errorcorrectionzoo.org/c/fock_state}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

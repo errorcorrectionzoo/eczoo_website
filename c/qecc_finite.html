@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qecc_finite">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_qecc_finite">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Finite-dimensional quantum code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qecc_finite">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a finite-dimensional quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>,
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a finite-dimensional quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>,
 <span class="display-math env-align">\begin{align}
 {\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\end{align}</span>
 for some constant <span class="inline-math">\(c\)</span>. A code is said to <span class="textit">protect against</span> or <span class="textit">correct</span> the errors <span class="inline-math">\(\mathcal{E}\)</span>.</p>
@@ -92,7 +98,7 @@ for some constant <span class="inline-math">\(c\)</span>. A code is said to <spa
 <span class="display-math env-align">\begin{align}
   \langle \psi | E^{\dagger}_a E_b |\phi \rangle = C_{ab} \langle \psi | \phi \rangle~,
 \end{align}</span>
-where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend on <span class="inline-math">\(|\psi\rangle\)</span> or <span class="inline-math">\(|\phi\rangle\)</span>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate error-correcting code</a>.</p></dd>
+where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend on <span class="inline-math">\(|\psi\rangle\)</span> or <span class="inline-math">\(|\phi\rangle\)</span>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate error-correcting code</a>.</p></div>
 
 
 <!-- Display features -->
@@ -105,17 +111,17 @@ where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Given a decoder, an encoding that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>).</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Given a decoder, an encoding that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>).</span></div>
 
 
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Universal gate set cannot be transversal due to Eastin-Knill theorem <a href="#cite-5" class="cite">[6]</a>.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Universal gate set cannot be transversal due to Eastin-Knill theorem <a href="#cite-5" class="cite">[6]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Given an encoding, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>).</span><span class="paragraph-in-list">Quantum machine-learning based decoders such as quantum convolutional neural networks <a href="#cite-6" class="cite">[7]</a> and quantum autoencoders <a href="#cite-7" class="cite">[8]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Given an encoding, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>).</span><span class="paragraph-in-list">Quantum machine-learning based decoders such as quantum convolutional neural networks <a href="#cite-6" class="cite">[7]</a> and quantum autoencoders <a href="#cite-7" class="cite">[8]</a>.</span></div>
 
 
 
@@ -130,55 +136,55 @@ where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/category_quantum">Category-based quantum code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/fermions">Fermionic code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/galois_into_galois">Galois-qudit code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/fermions">Fermionic code</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/category_quantum">Category-based quantum code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span>    <span class="code-cousins-1-detail">(Group quantum codes whose physical spaces are constructed using finite groups are finite-dimensional.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     qecc_finite
@@ -206,15 +212,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/qecc_finite}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/qecc_finite</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -260,6 +271,8 @@ url={https://errorcorrectionzoo.org/c/qecc_finite}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -269,7 +282,7 @@ url={https://errorcorrectionzoo.org/c/qecc_finite}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

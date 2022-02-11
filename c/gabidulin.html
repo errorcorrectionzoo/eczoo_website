@@ -65,32 +65,38 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_gabidulin">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_gabidulin">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Rank code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/gabidulin">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Also called <span class="textit">Gabidulin</span> or <span class="textit">(matrix) rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q^N)\)</span> is the maximum number of its linearly independent coordinates.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Also called <span class="textit">Gabidulin</span> or <span class="textit">(matrix) rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q^N)\)</span> is the maximum number of its linearly independent coordinates.</p>
 <p>Given <span class="inline-math">\(X^n\)</span>, an <span class="inline-math">\(n\)</span>-dimensional vector space over <span class="inline-math">\(GF(q^N)\)</span> where <span class="inline-math">\(q\)</span> is a power of a prime number, the <span class="textit">rank metric</span> <span class="inline-math">\(d(x, y)\)</span> is defined via the rank norm <span class="inline-math">\(r(x, q) = \mathrm{rank}(A(x))\)</span>, where
 <span class="display-math env-align">\begin{align}
 A(x) = \begin{pmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\  a_{N1} &amp; a_{N2} &amp; \ldots &amp; a_{Nn} \end{pmatrix}
 \end{align}</span>
 and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u_N \)</span> for some fixed basis <span class="inline-math">\(\{u_i\}_{i=1}^N\)</span>.</p>
-<p>If the vector set <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> defines a <span class="inline-math">\(k\)</span>-dimensional subspace, then the code is <span class="inline-math">\([n,k]\)</span>-linear.</p></dd>
+<p>If the vector set <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> defines a <span class="inline-math">\(k\)</span>-dimensional subspace, then the code is <span class="inline-math">\([n,k]\)</span>-linear.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</div>
 
 
 <!-- Display features -->
@@ -117,43 +123,43 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Useful for error and erasure correction in network coding</span>
-</dd>
+</div>
 
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/maximum_rank_distance">Maximum-rank code</a></span>    <span class="code-parent-of-1-detail">(Linear rank codes with maximum rank.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     gabidulin
@@ -181,15 +187,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/gabidulin}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/gabidulin</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -205,6 +216,8 @@ url={https://errorcorrectionzoo.org/c/gabidulin}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -214,7 +227,7 @@ url={https://errorcorrectionzoo.org/c/gabidulin}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

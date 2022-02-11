@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_monitored_random_circuits">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_monitored_random_circuits">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Monitored random-circuit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/monitored_random_circuits">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-3" class="cite">[4]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</p>
-<p>Monitored random circuits have a finite information capacity that decays exponentially with respect to system size <a href="#cite-5" class="cite">[6]</a>. When <span class="inline-math">\( p = 0 \)</span>, the random circuit achieves channel capacity, meaning that it stores the most amount of information possible. This notion quantifies the recoverability of information and the reversability of the system under the monitored random dynamics. In the volume-law phase (<span class="inline-math">\( p &lt; p_c \)</span> for some critical probability <span class="inline-math">\(p_c\)</span>), the channel capacity remains non-zero, and the monitored channel projects an initial state into a random error-correcting code <a href="#cite-5" class="cite">[6]</a>. With appropriately chosen evolution operators and measurements, the code is a stabilizer code whose parameters depend on time, <span class="inline-math">\( [[n,k(t),d(t)]] \)</span>. A similar notion applies to Haar random circuits with measurements <a href="#cite-6" class="cite">[7]</a>.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-3" class="cite">[4]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</p>
+<p>Monitored random circuits have a finite information capacity that decays exponentially with respect to system size <a href="#cite-5" class="cite">[6]</a>. When <span class="inline-math">\( p = 0 \)</span>, the random circuit achieves channel capacity, meaning that it stores the most amount of information possible. This notion quantifies the recoverability of information and the reversability of the system under the monitored random dynamics. In the volume-law phase (<span class="inline-math">\( p &lt; p_c \)</span> for some critical probability <span class="inline-math">\(p_c\)</span>), the channel capacity remains non-zero, and the monitored channel projects an initial state into a random error-correcting code <a href="#cite-5" class="cite">[6]</a>. With appropriately chosen evolution operators and measurements, the code is a stabilizer code whose parameters depend on time, <span class="inline-math">\( [[n,k(t),d(t)]] \)</span>. A similar notion applies to Haar random circuits with measurements <a href="#cite-6" class="cite">[7]</a>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">When in the volume-law phase, protects against random projective measurements at a rate <span class="inline-math">\( p &lt; p_c \)</span>. While the true code distance is not known, it is conjectured to be proportional to the contiguous distance. As first described in Ref. <a href="#cite-5" class="cite">[6]</a>, the  contiguous distance for these circuits is defined with respect to all partitions of the system.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">When in the volume-law phase, protects against random projective measurements at a rate <span class="inline-math">\( p &lt; p_c \)</span>. While the true code distance is not known, it is conjectured to be proportional to the contiguous distance. As first described in Ref. <a href="#cite-5" class="cite">[6]</a>, the  contiguous distance for these circuits is defined with respect to all partitions of the system.</div>
 
 
 <!-- Display features -->
@@ -94,58 +100,58 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Rate can be finite <a href="#cite-5" class="cite">[6]</a>, depending on the family of random codes generated by the circuit.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Rate can be finite <a href="#cite-5" class="cite">[6]</a>, depending on the family of random codes generated by the circuit.</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">The dynamics of the monitored random circuit can be recast in the language of stabilizer codes <a href="#cite-5" class="cite">[6]</a>. The stabilizer group of the error-correcting code resulting from a monitored Clifford circuit either grows or shrinks with each time step, depending on which projective measurements were performed during the time step.</span><span class="paragraph-in-list">One can construct optimal single-copy encoding operations for strong purification transitions <a href="#cite-5" class="cite">[6]</a></span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The dynamics of the monitored random circuit can be recast in the language of stabilizer codes <a href="#cite-5" class="cite">[6]</a>. The stabilizer group of the error-correcting code resulting from a monitored Clifford circuit either grows or shrinks with each time step, depending on which projective measurements were performed during the time step.</span><span class="paragraph-in-list">One can construct optimal single-copy encoding operations for strong purification transitions <a href="#cite-5" class="cite">[6]</a></span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">The recovery operation is the reverse unitary transformation with access to the measurement record (for dynamically generated codes with a strong purification transition) <a href="#cite-5" class="cite">[6]</a></span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The recovery operation is the reverse unitary transformation with access to the measurement record (for dynamically generated codes with a strong purification transition) <a href="#cite-5" class="cite">[6]</a></span></div>
 
 
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">Above the critical measurement rate <span class="inline-math">\( p_c\)</span>, the natural error correction properties of the circuit can no longer protect the information. This can be interpreted as the code threshold.</span><span class="paragraph-in-list">These dynamically generated codes saturate the trade off between density of encoded information and the error rate threshold <a href="#cite-5" class="cite">[6]</a></span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Above the critical measurement rate <span class="inline-math">\( p_c\)</span>, the natural error correction properties of the circuit can no longer protect the information. This can be interpreted as the code threshold.</span><span class="paragraph-in-list">These dynamically generated codes saturate the trade off between density of encoded information and the error rate threshold <a href="#cite-5" class="cite">[6]</a></span></div>
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Measurement induced quantum phases have been realized in a trapped-ion processor <a href="#cite-7" class="cite">[8]</a>.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Connections to information scrambling in black hole physics, as introduced in Section 11 of <a href="#cite-4" class="cite">[5]</a>. In particular, monitored random circuits can be viewed as the Hayden-Preskill recovery problem <a href="#cite-8" class="cite">[9]</a> running backwards in time. In this setting, the volume-law entanglement phase of the monitored circuit describes the phase when information can be recovered from an old black hole (ie, a black hole that is maximally entangled with the early universe).</span><span class="paragraph-in-list">Mapping monitored random circuits to statistical mechanics models can help estimate thresholds and code distances for these systems <a href="#cite-9" class="cite">[10]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/random_circuit">Random-circuit code</a></span>    <span class="code-parents-1-detail">(Monitored random circuits are random circuits where projective measurements are interspersed throughout the circuit and measurement results are recorded.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -154,15 +160,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/floquet">Floquet code</a></span>    <span class="code-cousins-1-detail">(Both Floquet and monitored random circuit codes can have an instantaneous stabilizer group which evolves through unitary evolution and measurements. However, Floquet codewords are generated via a specific sequence of measurements, while random-circuit codes maintain a stabilizer group after any measurement. Floquet codes have the additional capability of detecting errors induced during the measurement process; see Appx. A of Ref. <a href="#cite-11" class="cite">[12]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     monitored_random_circuits
@@ -190,15 +196,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/monitored_random_circuits}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/monitored_random_circuits</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -266,6 +277,8 @@ url={https://errorcorrectionzoo.org/c/monitored_random_circuits}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -275,7 +288,7 @@ url={https://errorcorrectionzoo.org/c/monitored_random_circuits}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

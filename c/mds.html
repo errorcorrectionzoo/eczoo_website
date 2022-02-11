@@ -65,30 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_mds">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_mds">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Maximum distance separable (MDS) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/mds">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
 <span class="display-math env-align">\begin{align}
 d \leq n-k+1
 \end{align}</span>
-becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-1" class="cite">[2]</a>.</dd>
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-1" class="cite">[2]</a>.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</div>
 
 
 <!-- Display features -->
@@ -116,44 +123,44 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">The dual of an MDS codes is always MDS.</span><span class="paragraph-in-list">The codes <span class="inline-math">\( [[n,1,n]]_q, [[n,n-1,2]]_q, [[n,n,1]]_q \)</span> for any <span class="inline-math">\(q\)</span> are MDS codes. These are called the <span class="textit">trivial</span> MDS codes.</span><span class="paragraph-in-list">The only binary MDS codes are the trivial ones.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>    <span class="code-cousins-1-detail">(Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     mds
@@ -181,15 +188,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/mds}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/mds</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -210,6 +222,8 @@ url={https://errorcorrectionzoo.org/c/mds}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -219,7 +233,7 @@ url={https://errorcorrectionzoo.org/c/mds}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

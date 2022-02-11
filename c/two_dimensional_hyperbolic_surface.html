@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_two_dimensional_hyperbolic_surface">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_two_dimensional_hyperbolic_surface">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Two-dimensional hyperbolic surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/two_dimensional_hyperbolic_surface">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</p>
-<p>For a tessellation involving regular polygons with <span class="inline-math">\( r \)</span> sides and <span class="inline-math">\( s \)</span> polygons meeting at each edge, the number of logical qubits is given by <span class="inline-math">\( k = (1-2/r - 2/s) n + 2 \)</span>. Some possible tilings are <span class="inline-math">\( {r,s}: {7,3}, {5,4} \)</span>. The weight of the stabilizer generators are dependent on the tiling, with <span class="inline-math">\({5,4}\)</span> having lower weight than <span class="inline-math">\({7,3}\)</span>.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</p>
+<p>For a tessellation involving regular polygons with <span class="inline-math">\( r \)</span> sides and <span class="inline-math">\( s \)</span> polygons meeting at each edge, the number of logical qubits is given by <span class="inline-math">\( k = (1-2/r - 2/s) n + 2 \)</span>. Some possible tilings are <span class="inline-math">\( {r,s}: {7,3}, {5,4} \)</span>. The weight of the stabilizer generators are dependent on the tiling, with <span class="inline-math">\({5,4}\)</span> having lower weight than <span class="inline-math">\({7,3}\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against Pauli errors with distance <span class="inline-math">\( d \propto \log(n) \)</span>. Code parameters are <span class="inline-math">\( [[n, (1-2/r - 2/s)  n + 2, \log(n) ]] \)</span></dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against Pauli errors with distance <span class="inline-math">\( d \propto \log(n) \)</span>. Code parameters are <span class="inline-math">\( [[n, (1-2/r - 2/s)  n + 2, \log(n) ]] \)</span></div>
 
 
 <!-- Display features -->
@@ -94,8 +100,8 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Two-dimensional hyperbolic surface codes have an asymptotically constant encoding rate <span class="inline-math">\( k/n \)</span> with a distance scaling logarithmically with <span class="inline-math">\( n\)</span> when the surface is closed. The encoding rate depends on the tiling <span class="inline-math">\( {r,s} \)</span> and is given by <span class="inline-math">\( k/n = (1-2/r - 2/s) + 2/n \)</span>, which approaches a constant value as the number of physical qubits grows. The weight of the stabilizers is <span class="inline-math">\( r \)</span> for <span class="inline-math">\( Z \)</span>-checks and <span class="inline-math">\( s \)</span> for <span class="inline-math">\( X \)</span>-checks. For open boundary conditions, the code reduces to constant distnace.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Two-dimensional hyperbolic surface codes have an asymptotically constant encoding rate <span class="inline-math">\( k/n \)</span> with a distance scaling logarithmically with <span class="inline-math">\( n\)</span> when the surface is closed. The encoding rate depends on the tiling <span class="inline-math">\( {r,s} \)</span> and is given by <span class="inline-math">\( k/n = (1-2/r - 2/s) + 2/n \)</span>, which approaches a constant value as the number of physical qubits grows. The weight of the stabilizers is <span class="inline-math">\( r \)</span> for <span class="inline-math">\( Z \)</span>-checks and <span class="inline-math">\( s \)</span> for <span class="inline-math">\( X \)</span>-checks. For open boundary conditions, the code reduces to constant distnace.</div>
 
 
 
@@ -105,47 +111,47 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#cite-1" class="cite">[2]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
 
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">1<span class="inline-math">\(\%\)</span> - 5<span class="inline-math">\(\%\)</span> for a <span class="inline-math">\({5,4}\)</span> tiling under minimum-weight decoding <a href="#cite-2" class="cite">[3]</a>. For larger tilings, the lower bound on the distance decreases, suggesting the threshold will also decrease.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">1<span class="inline-math">\(\%\)</span> - 5<span class="inline-math">\(\%\)</span> for a <span class="inline-math">\({5,4}\)</span> tiling under minimum-weight decoding <a href="#cite-2" class="cite">[3]</a>. For larger tilings, the lower bound on the distance decreases, suggesting the threshold will also decrease.</span></div>
 
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">See Sec III A of Ref. <a href="#cite-3" class="cite">[4]</a> for a description of this code.</span><span class="paragraph-in-list">Connection to percolation theory as shown in <a href="#cite-4" class="cite">[5]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/hyperbolic_surface">Hyperbolic surface code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     two_dimensional_hyperbolic_surface
@@ -173,15 +179,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/two_dimensional_hyperbolic_surface}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/two_dimensional_hyperbolic_surface</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -212,6 +223,8 @@ url={https://errorcorrectionzoo.org/c/two_dimensional_hyperbolic_surface}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -221,7 +234,7 @@ url={https://errorcorrectionzoo.org/c/two_dimensional_hyperbolic_surface}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

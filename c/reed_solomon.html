@@ -65,29 +65,36 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_reed_solomon">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_reed_solomon">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Reed-Solomon code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/reed_solomon">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
 <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
-\end{align}</span></dd>
+\end{align}</span>
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</div>
 
 
 <!-- Display features -->
@@ -105,8 +112,8 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-1" class="cite">[2]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-1" class="cite">[2]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span></div>
 
 
 
@@ -116,32 +123,32 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Decoding Reed-Solomon codes is equivalent to the problem of Polynomial Reconstruction and has applications to cryptography <a href="#cite-2" class="cite">[3]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -152,27 +159,27 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/cyclic">Cyclic code</a></span>    <span class="code-cousins-1-detail">(Reed-Solomon codes are cyclic whenever the length divides <span class="inline-math">\(q-1\)</span>.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank code</a></span>    <span class="code-cousins-1-detail">(The construction of the generators matrix of both codes uses a Vandermonde matrix.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span>    <span class="code-cousins-1-detail">(Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(The classical information in this code is encoded using a Reed-Solomon code.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes are CSS codes constructed from Reed-Solomon codes.)</span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(The classical information in this code is encoded using a Reed-Solomon code.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span>    <span class="code-cousins-1-detail">(Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-4" class="cite">[5]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes are CSS codes constructed from Reed-Solomon codes.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank code</a></span>    <span class="code-cousins-1-detail">(The construction of the generators matrix of both codes uses a Vandermonde matrix.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></span>    <span class="code-cousins-1-detail">(Polynomial codes are CSS codes constructed from Reed-Solomon codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     reed_solomon
@@ -200,15 +207,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/reed_solomon}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/reed_solomon</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -239,6 +251,8 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -248,7 +262,7 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

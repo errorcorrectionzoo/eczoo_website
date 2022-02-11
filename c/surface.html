@@ -65,27 +65,65 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_surface">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_surface">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
-  <span class="code-name">Kitaev surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="code-name">Kitaev surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>
+</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/surface">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a cellulation of a two-dimensional surface (with a qubit located at each edge of the cellulation). <span class="textit">Toric code</span> often either refers to the construction on the two-dimensional torus or is an alternative name for the general construction. The construction on surfaces with boundaries is often called the <span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
-<p>The original construction can be naturally extended to arbitrary dimensional manifolds <a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes
+whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings
+associated to the stars and plaquettes, respectively, of a cellulation of a
+two-dimensional surface (with a qubit located at each edge of the
+cellulation). <span class="textit">Toric code</span> often either refers to the construction on
+the two-dimensional torus or is an alternative name for the general
+construction. The construction on surfaces with boundaries is often called the
+<span class="textit">planar code</span> <a href="#cite-3" class="cite">[4]</a>.</p>
+<p>The original construction can be naturally extended to arbitrary dimensional
+manifolds
+<a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>. Given a
+cellulation, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers
+are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are
+associated with <span class="inline-math">\(i+1\)</span>-faces.</p>
+<p>The stabilizers of the surface code on the 2-dimensional torus are generated
+by star operators <span class="inline-math">\(A_v\)</span> and plaquette operators <span class="inline-math">\(B_p\)</span>.  Each star operator
+is a product of four Pauli-<span class="inline-math">\(X\)</span> operators on the edges adjacent to a vertex
+<span class="inline-math">\(v\)</span> of the lattice; each plaquette operator is a product of four Pauli-<span class="inline-math">\(Z\)</span>
+operators applied to the edges adjacent to a face, or plaquette, <span class="inline-math">\(p\)</span> of the
+lattice (<a href="#figure-0" class="ref">Figure&nbsp;I</a>).</p>
+<p><figure id="figure-0" class="float float-figure"><div class="float-contents"><img src="/fig/b6fd83b194b16ea32b8af614490b858b.svg" style="width: 165.120000pt; height: 163.200000pt" alt="(float)"></div><figcaption><span class="center-if-single-line"><span class="float-number">Figure&nbsp;I</span>: <span class="caption-text">Stabilizer generators and logical operators of the 2D surface
+    code on a torus.  The star operators <span class="inline-math">\(A_v\)</span> and the plaquette operators
+    <span class="inline-math">\(B_p\)</span> generate the stabilizer group of the toric surface code.  The logical
+    operators of the toric code are strings that wrap around the torus.</span></span></figcaption></figure></p>
+<p>The two-dimensional toric code encodes two logical qubits.  We denote by
+<span class="inline-math">\(\overline{X}_i,\overline{Z}_i\)</span> the logical Pauli-<span class="inline-math">\(X\)</span> and Pauli-<span class="inline-math">\(Z\)</span>
+operator of the <span class="inline-math">\(i\)</span>-th logical qubit.  They can are represented by strings
+of Pauli-<span class="inline-math">\(X\)</span> operators or Pauli-<span class="inline-math">\(Z\)</span> operators that wrap around the torus
+as shown in <a href="#figure-0" class="ref">Figure&nbsp;I</a>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-6" class="cite">[7]</a>. More generally, the code distance is related to the homology of the cellulation <a href="#cite-7" class="cite">[8]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there
+exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-6" class="cite">[7]</a>. More
+generally, the code distance is related to the homology of the cellulation
+<a href="#cite-7" class="cite">[8]</a>.
+</div>
 
 
 <!-- Display features -->
@@ -94,53 +132,97 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span> <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>, and (2) surface codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>. Higher-dimensional hyperbolic manifolds (see code children below) yield distances scaling more favorably. Loewner&#x27;s theorem provides an upper bound for any bounded-geometry surface code <a href="#cite-4" class="cite">[5]</a>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D
+manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span>
+<a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded
+geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span>
+<a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>, and (2) surface codes with
+finite rate can only achieve an asymptotic minimum distance that is
+logarithmic in <span class="inline-math">\(n\)</span>. Higher-dimensional hyperbolic manifolds (see code
+children below) yield distances scaling more favorably. Loewner&#x27;s theorem
+provides an upper bound for any bounded-geometry surface code
+<a href="#cite-4" class="cite">[5]</a>.
+</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-15" class="cite">[16]</a>.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-15" class="cite">[16]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
-  <dd class="code-feature code-feature-transversal_gates">Pauli gates on torus geometry.</dd>
+<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Pauli gates on torus geometry.
+</div>
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery <a href="#cite-6" class="cite">[7]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a>, twist-based lattice surgery <a href="#cite-19" class="cite">[20]</a>, or braiding defects <a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a><a href="#cite-22" class="cite">[23]</a><a href="#cite-23" class="cite">[24]</a>.</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation <a href="#cite-24" class="cite">[25]</a>, Dehn twists <a href="#cite-25" class="cite">[26]</a>, or just-in-time decoding <a href="#cite-26" class="cite">[27]</a>.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery
+<a href="#cite-6" class="cite">[7]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a>,
+twist-based lattice surgery <a href="#cite-19" class="cite">[20]</a>, or braiding defects
+<a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a><a href="#cite-22" class="cite">[23]</a><a href="#cite-23" class="cite">[24]</a>.
+</span><span class="paragraph-in-list">Non-Clifford gates require magic state distillation
+<a href="#cite-24" class="cite">[25]</a>, Dehn twists <a href="#cite-25" class="cite">[26]</a>, or
+just-in-time decoding <a href="#cite-26" class="cite">[27]</a>.
+</span></div>
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching <a href="#cite-7" class="cite">[8]</a><a href="#cite-27" class="cite">[28]</a>, union-find <a href="#cite-28" class="cite">[29]</a>, renormalization group <a href="#cite-29" class="cite">[30]</a><a href="#cite-30" class="cite">[31]</a>, tensor network <a href="#cite-31" class="cite">[32]</a>, Markov chain Monte Carlo <a href="#cite-32" class="cite">[33]</a>, cellular automaton <a href="#cite-33" class="cite">[34]</a>, machine learning <a href="#cite-34" class="cite">[35]</a><a href="#cite-35" class="cite">[36]</a><a href="#cite-36" class="cite">[37]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching
+<a href="#cite-7" class="cite">[8]</a><a href="#cite-27" class="cite">[28]</a>, union-find
+<a href="#cite-28" class="cite">[29]</a>, renormalization group
+<a href="#cite-29" class="cite">[30]</a><a href="#cite-30" class="cite">[31]</a>, tensor network
+<a href="#cite-31" class="cite">[32]</a>, Markov chain Monte Carlo <a href="#cite-32" class="cite">[33]</a>,
+cellular automaton <a href="#cite-33" class="cite">[34]</a>, machine learning
+<a href="#cite-34" class="cite">[35]</a><a href="#cite-35" class="cite">[36]</a><a href="#cite-36" class="cite">[37]</a>.
+</span></div>
 
 
 
 
-<dt class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</dt>
-  <dd class="code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> (<span class="inline-math">\(10.31\%\)</span>) with pure <span class="inline-math">\(Z\)</span>-dephasing noise for square tiling using tensor-network <a href="#cite-37" class="cite">[38]</a><a href="#cite-31" class="cite">[32]</a> (minimum-weight perfect matching <a href="#cite-38" class="cite">[39]</a>) decoder.</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-39" class="cite">[40]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-40" class="cite">[41]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-41" class="cite">[42]</a>.</span></dd>
+<h2 class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> (<span class="inline-math">\(10.31\%\)</span>) with pure <span class="inline-math">\(Z\)</span>-dephasing noise for square tiling
+using tensor-network <a href="#cite-37" class="cite">[38]</a><a href="#cite-31" class="cite">[32]</a>
+(minimum-weight perfect matching <a href="#cite-38" class="cite">[39]</a>) decoder.
+</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-39" class="cite">[40]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-40" class="cite">[41]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-41" class="cite">[42]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-42" class="cite">[43]</a><a href="#cite-43" class="cite">[44]</a>.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-42" class="cite">[43]</a><a href="#cite-43" class="cite">[44]</a>.</span></div>
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
-  <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et al. <a href="#cite-44" class="cite">[45]</a>, Erhard et al. <a href="#cite-45" class="cite">[46]</a>, and Google Quantum AI <a href="#cite-46" class="cite">[47]</a>.</span><span class="paragraph-in-list">Signatures of corresponding topological phase of matter detected in superconducting circuits <a href="#cite-47" class="cite">[48]</a> and two-dimensional arrays of Rydberg atoms <a href="#cite-48" class="cite">[49]</a>.</span><span class="paragraph-in-list">Distance-three surface code implemented at ETH Zurich <a href="#cite-49" class="cite">[50]</a> and on the Zuchongzhi 2.1 superconducting quantum processor <a href="#cite-50" class="cite">[51]</a>.</span>
-</dd>
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et
+al. <a href="#cite-44" class="cite">[45]</a>, Erhard et al. <a href="#cite-45" class="cite">[46]</a>, and
+Google Quantum AI <a href="#cite-46" class="cite">[47]</a>.
+</span><span class="paragraph-in-list">Signatures of corresponding topological phase of matter detected in
+superconducting circuits <a href="#cite-47" class="cite">[48]</a> and two-dimensional arrays
+of Rydberg atoms <a href="#cite-48" class="cite">[49]</a>.
+</span><span class="paragraph-in-list">Distance-three surface code implemented at ETH Zurich
+<a href="#cite-49" class="cite">[50]</a> and on the Zuchongzhi 2.1 superconducting quantum
+processor <a href="#cite-50" class="cite">[51]</a>.
+</span>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
-  <span class="paragraph-in-list">2D and 3D surface code <a href="http://gui.quantumcodes.io/" target="_blank" class="href">visualization tool</a>.</span><span class="paragraph-in-list">Tutorials from error-correction perspective by <a href="https://boulderschool.yale.edu/2018/boulder-school-2018-lecture-notes" target="_blank" class="href">J. Haah</a> and condensed-matter perspective by <a href="https://boulderschool.yale.edu/2016/boulder-school-2016-lecture-notes" target="_blank" class="href">M. Levin and C. Nayak</a>.</span>
-</dd>
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">2D and 3D surface code <a href="http://gui.quantumcodes.io/" target="_blank" class="href">visualization
+tool</a>.
+</span><span class="paragraph-in-list">Tutorials from error-correction perspective by
+<a href="https://boulderschool.yale.edu/2018/boulder-school-2018-lecture-notes" target="_blank" class="href">J. Haah</a>
+and condensed-matter perspective by
+<a href="https://boulderschool.yale.edu/2016/boulder-school-2016-lecture-notes" target="_blank" class="href">M. Levin
+and C. Nayak</a>.
+</span>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -149,59 +231,70 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></span>    <span class="code-parents-1-detail">(CDSC is generally a non-CSS derivative of the surface code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is the smallest toric code.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/fractal_surface">Fractal surface code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/real_projective_plane">Projective-plane surface code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/higher_dimensional_surface">Higher-dimensional surface code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/hyperbolic_surface">Hyperbolic surface code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/higher_dimensional_surface">Higher-dimensional surface code</a></span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/real_projective_plane">Projective-plane surface code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span>    <span class="code-parent-of-1-detail">(<span class="inline-math">\([[4,2,2]]\)</span> code is the smallest toric code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(When treated as ground states of the code Hamiltonian, the code states realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory <a href="#cite-51" class="cite">[52]</a>. On the other hand, translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-52" class="cite">[53]</a><a href="#cite-53" class="cite">[54]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-cousins-1-detail">(When treated as ground states of the code Hamiltonian, the code states
+realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of
+matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory
+<a href="#cite-51" class="cite">[52]</a>. On the other hand, translation-invariant
+2D qubit topological stabilizer codes are equivalent to several copies
+of the Kitaev surface code <a href="#cite-52" class="cite">[53]</a><a href="#cite-53" class="cite">[54]</a>.
+)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two repetition (cyclic) codes.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span>    <span class="code-cousins-1-detail">(Planar (toric) code obtained from hypergraph product of two repetition
+(cyclic) codes.
+)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code <a href="#cite-52" class="cite">[53]</a><a href="#cite-53" class="cite">[54]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Translation-invariant 2D qubit topological stabilizer codes are
+equivalent to several copies of the Kitaev surface code
+<a href="#cite-52" class="cite">[53]</a><a href="#cite-53" class="cite">[54]</a>.
+)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(Color code is equivalent to surface code in several ways <a href="#cite-54" class="cite">[55]</a><a href="#cite-55" class="cite">[56]</a>. For example, the color code on a <span class="inline-math">\(D\)</span>-dimensional closed manifold is equivalent to multiple decoupled copies of the <span class="inline-math">\(D-1\)</span>-dimensional surface code.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/haah_cubic">Haah cubic code</a></span>    <span class="code-cousins-1-detail">(The energy of any partial implementation of code 1 is proportional to the boundary length similar to the 4D toric code, which can potentially surpress the effects of thermal errors, but it is currently an open problem.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/double_semion">Double-semion code</a></span>    <span class="code-cousins-1-detail">(There is a logical basis for the toric and double-semion codes where each codeword is a superposition of states corresponding to all noncontractible loops of a particular homotopy type. The superposition is equal for the toric code, whereas some loops appear with a <span class="inline-math">\(-1\)</span> coefficient for the double semion.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/haah_cubic">Haah cubic code</a></span>    <span class="code-cousins-1-detail">(The energy of any partial implementation of code 1 is proportional to the boundary length similar to the 4D toric code, which can potentially surpress the effects of thermal errors, but it is currently an open problem.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/honeycomb">Honeycomb code</a></span>    <span class="code-cousins-1-detail">(Measurement of each check operator involves two qubits and projects the state of the two qubits to a two-dimensional subspace, which we regard as an effective qubit. These effective qubits form a surface code on a hexagonal superlattice. Electric and magnetic operators on the embedded surface code correspond to outer logical operators of the Floquet code. In fact, outer logical operators transition back and forth from magnetic to electric surface code operators under the measurement dynamics.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qudit_surface">Modular-qudit surface code</a></span>    <span class="code-cousins-1-detail">(The qudit surface code with <span class="inline-math">\(q=2\)</span> is the surface code.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/lifted_product">Lifted-product (LP) code</a></span>    <span class="code-cousins-1-detail">(A lifted product code for the ring <span class="inline-math">\(R=\mathbb{F}_2[x,y]/(x^L-1,y^L-1)\)</span> is the toric code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qudit_surface">Modular-qudit surface code</a></span>    <span class="code-cousins-1-detail">(The qudit surface code with <span class="inline-math">\(q=2\)</span> is the surface code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     surface
@@ -211,7 +304,7 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/surface/surface.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/surface/surface/surface.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
        href="/edit_code?code_id=surface">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>surface</code></div><div class="code-popup-info-frame"
@@ -229,15 +322,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/surface}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/surface</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -523,6 +621,8 @@ url={https://errorcorrectionzoo.org/c/surface}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -532,7 +632,7 @@ url={https://errorcorrectionzoo.org/c/surface}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

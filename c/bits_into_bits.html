@@ -65,30 +65,37 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_bits_into_bits">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_bits_into_bits">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Binary code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/bits_into_bits">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors if
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors if
 <span class="display-math env-align">\begin{align}
   \forall x \in C~,~D(x,x+y) &lt; D(x&#x27; , x+y)
 \end{align}</span>
-for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(D\)</span> is the Hamming distance and <span class="inline-math">\(|y| = D(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</dd>
+for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(D\)</span> is the Hamming distance and <span class="inline-math">\(|y| = D(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.
+</div>
 
 
 <!-- Display features -->
@@ -120,45 +127,45 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/ecc">Error-correcting code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/convolutional">Convolutional code</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_linear">Binary linear code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/convolutional">Convolutional code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span>    <span class="code-cousins-1-detail">(Movassagh-Ouyang codes are constructed from classical binary codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     bits_into_bits
@@ -186,15 +193,22 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/bits_into_bits}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/bits_into_bits</dd>
   </dl>
 </div>
-</dd>
-
-</dl>
+</div>
 
 
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+
+
+</section>
   </main><!-- #main -->
 
 
@@ -204,7 +218,7 @@ url={https://errorcorrectionzoo.org/c/bits_into_bits}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

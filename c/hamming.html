@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_hamming">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_hamming">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Hamming code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/hamming">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</div>
 
 
 <!-- Display features -->
@@ -93,8 +99,8 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Asymptotic rate <span class="inline-math">\(k/n = 1-\frac{\log n}{n} \to 1\)</span> and relative distance <span class="inline-math">\(d/n \to 0\)</span>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Asymptotic rate <span class="inline-math">\(k/n = 1-\frac{\log n}{n} \to 1\)</span> and relative distance <span class="inline-math">\(d/n \to 0\)</span>.</div>
 
 
 
@@ -113,41 +119,41 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Commonly used when error rates are very low, for example, computer RAM.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Has the maximum rate among binary codes for that block length and with minimum distance 3. Therefore, it is a perfect code, i.e, it saturates the Hamming Bound.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/binary_linear">Binary linear code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/repetition">Binary repetition code</a></span>    <span class="code-parent-of-1-detail">(A <span class="inline-math">\([n,1,n]\)</span> repetition code is an <span class="inline-math">\((n,1)\)</span> Hamming code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -156,23 +162,23 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hadamard">Hadamard code</a></span>    <span class="code-cousins-1-detail">(The Hadamard code is the dual of the extended Hamming Code. Conversely, the shortened Hadamard code is the dual of the Hamming Code.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></span>    <span class="code-cousins-1-detail">(Quantum Hamming codes result from applying the CSS construction to Hamming codes.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(The Steane code is constructed from a classical Hamming code.)</span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></span>    <span class="code-cousins-1-detail">(Quantum Hamming codes result from applying the CSS construction to Hamming codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     hamming
@@ -200,15 +206,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/hamming}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/hamming</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -219,6 +230,8 @@ url={https://errorcorrectionzoo.org/c/hamming}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -228,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/hamming}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

@@ -65,23 +65,29 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_skew_cyclic">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_skew_cyclic">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Skew-cyclic code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/skew_cyclic">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over <span class="inline-math">\(GF(q)\)</span> is skew-cyclic if there exists an automorphism, <span class="inline-math">\(\theta\)</span>, of <span class="inline-math">\(GF(q)\)</span>, such that for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the skew-cyclically shifted string <span class="inline-math">\(\theta(c_n) \theta(c_1) \cdots \theta(c_{n-1})\in C\)</span>. We say that <span class="inline-math">\(C\)</span> is a <span class="inline-math">\(\theta\)</span>-cyclic code over <span class="inline-math">\(GF(q)\)</span>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A classical code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> over <span class="inline-math">\(GF(q)\)</span> is skew-cyclic if there exists an automorphism, <span class="inline-math">\(\theta\)</span>, of <span class="inline-math">\(GF(q)\)</span>, such that for each string <span class="inline-math">\(c_1 c_2 \cdots c_n\in C\)</span>, the skew-cyclically shifted string <span class="inline-math">\(\theta(c_n) \theta(c_1) \cdots \theta(c_{n-1})\in C\)</span>. We say that <span class="inline-math">\(C\)</span> is a <span class="inline-math">\(\theta\)</span>-cyclic code over <span class="inline-math">\(GF(q)\)</span>.</div>
 
 
 
@@ -100,8 +106,8 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Only given for skew-BCH codes, adapted froom standard BCH codes.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Only given for skew-BCH codes, adapted froom standard BCH codes.</span></div>
 
 
 
@@ -111,41 +117,41 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Not directly implemented, but BCH codes form a subclass, and are used in DVD, solid state drive storage, etc.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Computer algebra software is used to find most codes of this type. Ref. <a href="#cite-0" class="cite">[1]</a> gives several examples of codes, which have slightly improved minimum distance for some <span class="inline-math">\((n,k)\)</span> codes.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quasi_cyclic">Quasi-cyclic code</a></span>    <span class="code-parents-1-detail">(For every skew-cyclic code there is an equivalent quasi-cyclic code <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/cyclic">Cyclic code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -154,15 +160,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a></span>    <span class="code-cousins-1-detail">(Skew-cyclic CSS codes are constructed from classical skew-cylic codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     skew_cyclic
@@ -190,15 +196,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/skew_cyclic}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/skew_cyclic</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -214,6 +225,8 @@ url={https://errorcorrectionzoo.org/c/skew_cyclic}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -223,7 +236,7 @@ url={https://errorcorrectionzoo.org/c/skew_cyclic}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

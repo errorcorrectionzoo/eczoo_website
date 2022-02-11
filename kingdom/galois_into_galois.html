@@ -50,7 +50,6 @@
 
 
 
-
 <div class="ecc-code" id="ecc_galois_into_galois">
   <span class="short-code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,k,d))_q\)</span>, is usually used for both.</span>
@@ -71,9 +70,7 @@
 
 <div class="ecc-code" id="ecc_galois_stabilizer">
   <span class="short-code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</p>
-<p>A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both. Galois-qudit stabilizer codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits.</p>
-<p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the <span class="inline-math">\(GF(q)\)</span>-valued symplectic representation of a stabilizer generator.</p></span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. Corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qudits.</span>
   <span class="short-code-parents">
     Parents:
@@ -92,8 +89,7 @@
 
 <div class="ecc-code" id="ecc_galois_true_stabilizer">
   <span class="short-code-name"><a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a></span>
-  <span class="short-code-description"><p>Also called a <span class="textit">linear stabilizer code</span>. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</p>
-<p>The number of generators <span class="inline-math">\(r\)</span> for a true stabilizer code is a multiple of <span class="inline-math">\(m\)</span> (recall that <span class="inline-math">\(q=p^m\)</span> for Galois qudits). As a result, the number <span class="inline-math">\(k=n-r/m\)</span> of logical qudits is an integer.</p></span>
+  <span class="short-code-description">Also called a <span class="textit">linear stabilizer code</span>. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits.</span>
   <span class="short-code-parents">
     Parents:
@@ -112,9 +108,7 @@
 
 <div class="ecc-code" id="ecc_lifted_product">
   <span class="short-code-name"><a href="/c/lifted_product">Lifted-product (LP) code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a></span></span>
-  <span class="short-code-description"><p>Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</p>
-<p>A <span class="textit">lifted product over</span> a ring <span class="inline-math">\(R\)</span> is a product of two chain complexes whose chains are free modules over <span class="inline-math">\(R\)</span>. An interesting case is when <span class="inline-math">\(R={\mathbb{F}}_q G\)</span>, the group-<span class="inline-math">\(G\)</span> algebra over the finite field <span class="inline-math">\({\mathbb{F}}_q = GF(q)\)</span>; in this case, the product can be called a <span class="inline-math">\(G\)</span>-<span class="textit">lifted product</span>. Just like its further generalization the balanced product, a lifted product code generalizes a hypergraph product code in that a reduction of symmetry is exploited to decrease the number of physical qubits required.</p>
-<p>The key operation behind the <span class="inline-math">\(G\)</span>-lifted product is the <span class="inline-math">\(G\)</span>-<span class="textit">lift</span>. A <span class="inline-math">\(G\)</span>-lift of a <span class="inline-math">\(\mathbb{F}_q\)</span>-valued matrix <span class="inline-math">\(A\)</span> substitutes matrix elements of <span class="inline-math">\(A\)</span> with matrices forming the regular representation of the group algebra <span class="inline-math">\({\mathbb{F}}_q G\)</span> according to some rule. A combination of the lift and the usual hypergraph product yields lifted-product codes. The two operations commute: one can first take the usual hypergraph product of two chain complexes, and then lift the resulting product complex; equivalently, one can take the hypergraph product of the two lifted complexes.</p></span>
+  <span class="short-code-description">Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</span>
   <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#cite-5" class="cite">[6]</a>.</span>
   <span class="short-code-parents">
     Parents:
@@ -133,28 +127,15 @@
 
 <div class="ecc-code" id="ecc_galois_css">
   <span class="short-code-name"><a href="/c/galois_css">Galois-qudit CSS code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
+  <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
 are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
 The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form
-<span id="eq--parityg" class="display-math env-align">\begin{align}
+<span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
 \end{pmatrix}~.
 \label{eq:parityg}
-\end{align}</span></p>
-<p>Encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(q\)</span>-ary linear codes</a>,
-an <span class="inline-math">\([n,k_X,d_X]_q \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_q \)</span> code <span class="inline-math">\(C_Z\)</span>,
-satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>.
-The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
-The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityg}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
-The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers,
-defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>,
-commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
-The codewords are
-<span class="display-math env-align">\begin{align}
-|\gamma + C_Z^\perp \rangle = \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
-\end{align}</span>
-for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
+\end{align}</span></span>
   <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:
@@ -162,7 +143,7 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a>,       <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/lifted_product">Lifted-product (LP) code</a>.
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/lifted_product">Lifted-product (LP) code</a>,       <a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -173,9 +154,7 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 
 <div class="ecc-code" id="ecc_expander_lifted_product">
   <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
-  <span class="short-code-description"><p>Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-4" class="cite">[5]</a>.</p>
-<p>An expander lifted-product code family is constructed as follows. First, take the Cayley graph of a finite group <span class="inline-math">\(G\)</span>. Second, take the double cover of the graph, resulting in a graph that satisfies the requirements of participating in a <span class="inline-math">\(G\)</span>-lifted product (i.e., the resulting graph is a free <span class="inline-math">\({\mathbb{F}}_q G\)</span>-module). Third, create a <a href="/c/tanner" class="ref">Tanner code</a> out of the graph, in which parity-check supports are defined by the graph, and bitstrings satisfying a particular parity check are defined to be the codewords of a small classical code (chosen to be a random code in the construction). Fourth, take the <span class="inline-math">\(G\)</span>-lifted product of two copies of the <a href="/c/tanner" class="ref">Tanner code</a>.</p>
-<p>The small classical codes used in the construction of good QLDPC codes are required to have a certain product-expansion property (Lemma 10 in Ref. <a href="#cite-4" class="cite">[5]</a>); it is proven that random codes satisfy said property in the thermodynamic limit.</p></span>
+  <span class="short-code-description">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-4" class="cite">[5]</a>.</span>
   <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-4" class="cite">[5]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-5" class="cite">[6]</a>.</span>
   <span class="short-code-parents">
     Parents:
@@ -207,47 +186,8 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></span>
 </div>
 
 
-<div class="ecc-code" id="ecc_skew-cyclic_galois_css">
-  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/galois_css">Galois-qudit CSS code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_binary_quantum_goppa">
-  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
-  <span class="short-code-description"><p>Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</p>
-<p>Let <span class="inline-math">\( F/GF(q) \)</span> be an algebraic function field of one variable, <span class="inline-math">\(\sigma \)</span> be an automorphism of order 2
-of <span class="inline-math">\(F\)</span> which leaves <span class="inline-math">\(GF(q)\)</span> invariant, and <span class="inline-math">\(P_1, \cdots, P_n \)</span> be pairwise distinct places of degree one such that <span class="inline-math">\( \sigma P_i = P_j\)</span> for all
-<span class="inline-math">\(i,j = 1, \cdots, n\)</span>. A place <span class="inline-math">\( P_i \)</span> of <span class="inline-math">\( F/ GF(q) \)</span> is the unique maximal ideal of a discrete valuation ring of the function field. Let <span class="inline-math">\( \nu \)</span> be a  differential
-that satisfies the properties guaranteed by  the strong approximation theorem of discrete evaluations. Let <span class="inline-math">\(G\)</span> be a divisor such that <span class="inline-math">\( \sigma G = G \)</span> and the
-discrete valuation corresponding to place <span class="inline-math">\(P_i \)</span> of <span class="inline-math">\(G\)</span> and the discrete valuation corresponding to place <span class="inline-math">\(\sigma P_i \)</span> of <span class="inline-math">\(G\)</span> are both 0 for all <span class="inline-math">\(i\)</span>. Then we can define
-a code <span class="inline-math">\( C(G)  = \{ f(P_1), \cdots, f(P_n), f(\sigma P_1), \cdots , f(\sigma P_n) | f \in \mathcal{L}(G)\} \subset GF(q^{2n})\)</span> and
-a code <span class="inline-math">\(C(H)\)</span> where <span class="inline-math">\(H = (P_1 + \cdots + P_n + \sigma P_1 + \cdots + \sigma P_n) - G + \nu \)</span>. Then the dual of <span class="inline-math">\(C(G)\)</span> with respect to the weighted symplectic inner
-product with weights <span class="inline-math">\(s_i\)</span> on <span class="inline-math">\( GF(q^n) \)</span> is equivalent to <span class="inline-math">\(C(H)\)</span>. Therefore, the orthogonal code of <span class="inline-math">\(C(G)\)</span> is generated by <span class="inline-math">\(H\)</span>. Using these properties and the assumption
-that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline-math">\(G\)</span>, we can construct a classical Goppa code <span class="inline-math">\(C(D,G)\)</span>, where <span class="inline-math">\(D\)</span> is the sum of all <span class="inline-math">\(P_i\)</span>. Using <span class="inline-math">\(C(D,G)\)</span>, we can construct a <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> quantum stabilizer code such that
-<span class="inline-math">\(k  = \text{dim} G - \text{dim}(G-P_1 - \cdots - P_n - \sigma P_1 - \cdots  - \sigma P_n) - n~.\)</span></p></span>
-  <span class="short-code-info">Protection: Protects against weight t errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \rfloor \)</span> where <span class="inline-math">\( d^* = \text{deg} G + 2 -2g \)</span> and <span class="inline-math">\(g\)</span> is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/galois_css">Galois-qudit CSS code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/goppa">Goppa code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_quantum_secret_sharing">
-  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">A family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes approximately correcting errors on up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> qubits, i.e., with approximate distance approaching the no-cloning bound <span class="inline-math">\(n/2\)</span>. Constructed using a non-degenerate CSS code, such as a polynomial quantum code, and a classical authentication scheme. The code can be viewed as an <span class="inline-math">\(t\)</span>-error tolerant secret sharing scheme. Since the code yields a small logical subspace using large registers that contain both classical and quantum information, it is not useful for practical error correction problems, but instead demonstrates the power of approximate quantum error correction.</span>
   <span class="short-code-info">Protection: Corrects up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> errors with fidelity exponentially lose to 1.</span>
   <span class="short-code-parents">
@@ -265,9 +205,24 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
 </div>
 
 
+<div class="ecc-code" id="ecc_binary_quantum_goppa">
+  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-description">Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</span>
+  <span class="short-code-info">Protection: Protects against weight t errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \rfloor \)</span> where <span class="inline-math">\( d^* = \text{deg} G + 2 -2g \)</span> and <span class="inline-math">\(g\)</span> is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/galois_css">Galois-qudit CSS code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/goppa">Goppa code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_galois_polynomial">
-  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
-  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_q\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_q\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle,\end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span>.</span>
+  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_q\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_q\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle, \end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/galois_css">Galois-qudit CSS code</a>.
@@ -279,6 +234,20 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_skew-cyclic_galois_css">
+  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/galois_css">Galois-qudit CSS code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
   </span>
 </div>
 
@@ -298,12 +267,12 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
 </div>
 
 
-   <div id="endnotes">
+   <div id="endnotes" class="">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
+        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&lt;174::AID-JCD3&gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
@@ -343,7 +312,7 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
+        Claude Crepeau, Daniel Gottesman, and Adam Smith, “Approximate Quantum Error-Correcting Codes and Secret Sharing Schemes”. <a href="https://arxiv.org/abs/quant-ph/0503139" target="_blank" class="href">quant-ph/0503139</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
@@ -358,12 +327,12 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        Claude Crepeau, Daniel Gottesman, and Adam Smith, “Approximate Quantum Error-Correcting Codes and Secret Sharing Schemes”. <a href="https://arxiv.org/abs/quant-ph/0503139" target="_blank" class="href">quant-ph/0503139</a>
+        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
+        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
@@ -374,8 +343,6 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
     </dl>
    </div>
 
-
-
   </main><!-- #main -->
 
 
@@ -385,7 +352,7 @@ that <span class="inline-math">\(H\)</span> is a subgroup of <span class="inline
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

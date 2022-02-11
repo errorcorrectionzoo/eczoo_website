@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_subsystem_stabilizer">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_subsystem_stabilizer">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Subsystem stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/subsystem_stabilizer">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Also called a <span class="textit">gauge stabilizer code</span>. A stabilizer code with some of its logical qubits denoted as <span class="textit">gauge</span> qubits and not used for storage of logical information. Note that this doesnt lead to new codes but does lead to new error correction and fault tolerance procedures. Subsystem codes are denoted by <span class="inline-math">\([[n,k,r,d]]\)</span>, similar to stabilizer codes, but with an extra parameter <span class="inline-math">\(r\)</span> denoting the number of gauge qubits.</p>
-<p>To create these codes proceed as follows. Choose <span class="inline-math">\(2n\)</span> operators <span class="inline-math">\(\{ \tilde{X}_j,\tilde{Z}_j\}_{j=1}^n\)</span> from <span class="inline-math">\(\mathsf{P}_n\)</span>, the Pauli group on <span class="inline-math">\(n\)</span> qubits, such that they obey the same commutation relations as the regular <span class="inline-math">\(n\)</span>-qubit Pauli generators <span class="inline-math">\( \{X_j,Z_j\}_{j=1}^n \)</span> (the subscript on these latter operators indicates the single qubit the Pauli matrix acts on). The tilde operators might act on more than one physical (or <span class="textit">bare</span>) qubit but they behave as if they acted only on a single qubit. WLOG we can choose a stabilizer group as <span class="inline-math">\( \mathsf{S} = \langle Z_1,\dots,Z_s \rangle \)</span>. It follows that the normalizer of <span class="inline-math">\(\mathsf{S} \)</span> is <span class="inline-math">\( N(\mathsf{S}) = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_n, \tilde{X}_{s+1},\dots, \tilde{X}_n \rangle \)</span>. We now choose a gauge group as <span class="inline-math">\( \mathsf{G} = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_s, \tilde{X}_{s+1}, \tilde{Z}_{s+1}, \dots, \tilde{X}_{s+r}, \tilde{Z}_{s+r} \rangle \)</span> with <span class="inline-math">\( s + r \leq n \)</span>. The logical group is choosen as <span class="inline-math">\( \mathsf{L} = N(\mathsf{S})/\mathsf{G} \simeq \langle \tilde{X}_{s+r+1},\tilde{Z}_{s+r+1}, \dots, \tilde{X}_n,\tilde{Z}_n \rangle \)</span>. Now the codespace <span class="inline-math">\( C \)</span> is as usual the <span class="inline-math">\(+1\)</span> eigenspace of the stabilizer <span class="inline-math">\( \mathsf{S} \)</span>. But the gauge and logical groups have further decomposed this space into <span class="inline-math">\( C = A \otimes B \simeq (\mathbb{C}^2)^{\otimes k} \otimes (\mathbb{C}^2)^{\otimes r} \)</span>. Thus the Hilbert space is partitioned into 3 sets; <span class="inline-math">\(k\)</span> logical qubits, <span class="inline-math">\(r\)</span> gauge qubits, and <span class="inline-math">\(s\)</span> stabilizer qubits, with <span class="inline-math">\(s+r+k=n\)</span>.</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Also called a <span class="textit">gauge stabilizer code</span>. A stabilizer code with some of its logical qubits denoted as <span class="textit">gauge</span> qubits and not used for storage of logical information. Note that this doesnt lead to new codes but does lead to new error correction and fault tolerance procedures. Subsystem codes are denoted by <span class="inline-math">\([[n,k,r,d]]\)</span>, similar to stabilizer codes, but with an extra parameter <span class="inline-math">\(r\)</span> denoting the number of gauge qubits.</p>
+<p>To create these codes proceed as follows. Choose <span class="inline-math">\(2n\)</span> operators <span class="inline-math">\(\{ \tilde{X}_j,\tilde{Z}_j\}_{j=1}^n\)</span> from <span class="inline-math">\(\mathsf{P}_n\)</span>, the Pauli group on <span class="inline-math">\(n\)</span> qubits, such that they obey the same commutation relations as the regular <span class="inline-math">\(n\)</span>-qubit Pauli generators <span class="inline-math">\( \{X_j,Z_j\}_{j=1}^n \)</span> (the subscript on these latter operators indicates the single qubit the Pauli matrix acts on). The tilde operators might act on more than one physical (or <span class="textit">bare</span>) qubit but they behave as if they acted only on a single qubit. WLOG we can choose a stabilizer group as <span class="inline-math">\( \mathsf{S} = \langle Z_1,\dots,Z_s \rangle \)</span>. It follows that the normalizer of <span class="inline-math">\(\mathsf{S} \)</span> is <span class="inline-math">\( N(\mathsf{S}) = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_n, \tilde{X}_{s+1},\dots, \tilde{X}_n \rangle \)</span>. We now choose a gauge group as <span class="inline-math">\( \mathsf{G} = \langle i, \tilde{Z}_1,\dots, \tilde{Z}_s, \tilde{X}_{s+1}, \tilde{Z}_{s+1}, \dots, \tilde{X}_{s+r}, \tilde{Z}_{s+r} \rangle \)</span> with <span class="inline-math">\( s + r \leq n \)</span>. The logical group is choosen as <span class="inline-math">\( \mathsf{L} = N(\mathsf{S})/\mathsf{G} \simeq \langle \tilde{X}_{s+r+1},\tilde{Z}_{s+r+1}, \dots, \tilde{X}_n,\tilde{Z}_n \rangle \)</span>. Now the codespace <span class="inline-math">\( C \)</span> is as usual the <span class="inline-math">\(+1\)</span> eigenspace of the stabilizer <span class="inline-math">\( \mathsf{S} \)</span>. But the gauge and logical groups have further decomposed this space into <span class="inline-math">\( C = A \otimes B \simeq (\mathbb{C}^2)^{\otimes k} \otimes (\mathbb{C}^2)^{\otimes r} \)</span>. Thus the Hilbert space is partitioned into 3 sets; <span class="inline-math">\(k\)</span> logical qubits, <span class="inline-math">\(r\)</span> gauge qubits, and <span class="inline-math">\(s\)</span> stabilizer qubits, with <span class="inline-math">\(s+r+k=n\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. More generally, a set of errors <span class="inline-math">\( \{ E_a \} \)</span> is correctable iff <span class="inline-math">\( E_aE_b \not\in N(\mathsf{S}) \setminus \mathsf{G} \)</span> for all pairs <span class="inline-math">\(a,b\)</span>. The distance of the code is the minimal weight of operators in <span class="inline-math">\( N(\mathsf{S}) \setminus \mathsf{G}\)</span>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits. More generally, a set of errors <span class="inline-math">\( \{ E_a \} \)</span> is correctable iff <span class="inline-math">\( E_aE_b \not\in N(\mathsf{S}) \setminus \mathsf{G} \)</span> for all pairs <span class="inline-math">\(a,b\)</span>. The distance of the code is the minimal weight of operators in <span class="inline-math">\( N(\mathsf{S}) \setminus \mathsf{G}\)</span>.</div>
 
 
 <!-- Display features -->
@@ -109,32 +115,32 @@
 
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list">For correlated Pauli noise, bounds can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-1" class="cite">[2]</a>.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">For correlated Pauli noise, bounds can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">When the gauge group <span class="inline-math">\( \mathsf{G} \)</span> is abelian, the above is reduced to the standard stabilizer formalism.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oecc">Subsystem quantum error-correcting code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
@@ -143,31 +149,31 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/subsystem_color">Subsystem color code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-cousins-1-detail">(Gauge stabilizer codes reduce to stabilizer codes when there are no gauge qubits.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/floquet">Floquet code</a></span>    <span class="code-cousins-1-detail">(This code can be viewed as a subsystem stabilizer code, albeit one with less logical qubits.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced product code</a></span>    <span class="code-cousins-1-detail">(Distance balancing is used to form balanced-product subsystem codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/distance_balanced">Distance-balanced code</a></span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/balanced_product">Balanced product code</a></span>    <span class="code-cousins-1-detail">(Distance balancing is used to form balanced-product subsystem codes <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/floquet">Floquet code</a></span>    <span class="code-cousins-1-detail">(This code can be viewed as a subsystem stabilizer code, albeit one with less logical qubits.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     subsystem_stabilizer
@@ -195,15 +201,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/subsystem_stabilizer}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/subsystem_stabilizer</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -224,6 +235,8 @@ url={https://errorcorrectionzoo.org/c/subsystem_stabilizer}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -233,7 +246,7 @@ url={https://errorcorrectionzoo.org/c/subsystem_stabilizer}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

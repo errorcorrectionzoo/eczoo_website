@@ -65,33 +65,40 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_binomial">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_binomial">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Binomial code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/binomial">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-1" class="cite">[2]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-1" class="cite">[2]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
   <span class="display-math env-align">\begin{align}
     |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
-\end{align}</span>
+  \end{align}</span>
   Here, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
   <span class="display-math env-align">\begin{align}
     \binom{n}{m}_1 \equiv 1,\quad \binom{n}{m}_q \equiv \sum_{k=0}^n \binom{n}{k}\binom{k}{m-k}_{q-1}.
-\end{align}</span></dd>
+  \end{align}</span>
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{\D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>. Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{\D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>. Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</div>
 
 
 <!-- Display features -->
@@ -109,8 +116,8 @@
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} hat n / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#cite-1" class="cite">[2]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} hat n / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#cite-1" class="cite">[2]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
 
@@ -120,32 +127,32 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Realized in microwave cavities coupled to superconducting circuits <a href="#cite-2" class="cite">[3]</a>.</span>
-</dd>
+</div>
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">The mean occupation number, or average Fock-state number in maximally-mixed state of the code, is <span class="inline-math">\((N+1)(S+1)(q-1)/2 \)</span>, where <span class="inline-math">\(q\)</span> is the qudit dimension.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parents-1-detail">(One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -156,15 +163,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></span>    <span class="code-cousins-1-detail">(Binomial codes and GNU codes are both described by spin-coherent states <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     binomial
@@ -192,15 +199,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/binomial}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/binomial</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -226,6 +238,8 @@ url={https://errorcorrectionzoo.org/c/binomial}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -235,7 +249,7 @@ url={https://errorcorrectionzoo.org/c/binomial}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

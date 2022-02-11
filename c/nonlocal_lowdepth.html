@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_nonlocal_lowdepth">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_nonlocal_lowdepth">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Low-depth random Clifford-circuit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/nonlocal_lowdepth">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">An encoder for an <span class="inline-math">\([[n,k]]\)</span> quantum error correcting code, is an <span class="inline-math">\(n\)</span>-qubit unitary transformation that takes a <span class="inline-math">\(k\)</span>-qubit state as input (with <span class="inline-math">\(k\leq n\)</span>, and the remaining <span class="inline-math">\(n-k\)</span> qubits initialized to <span class="inline-math">\(|0\rangle^{\otimes n-k}\)</span> ) to give a corresponding state in the codespace as the output. An n-qubit quantum circuit with random 2-qubit Clifford gates can act as an encoder into a code with distance <span class="inline-math">\(d\)</span> with high probability, with a size (i.e. number of gates in the circuit) at most <span class="inline-math">\(O(n^2 log n)\)</span>). Noting that two gates acting on disjoint qubits could in fact be executed simultaneously, this is equivalent to the depth (number of time steps in the circuit) being at most <span class="inline-math">\(O(log^3 n)\)</span>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">An encoder for an <span class="inline-math">\([[n,k]]\)</span> quantum error correcting code, is an <span class="inline-math">\(n\)</span>-qubit unitary transformation that takes a <span class="inline-math">\(k\)</span>-qubit state as input (with <span class="inline-math">\(k\leq n\)</span>, and the remaining <span class="inline-math">\(n-k\)</span> qubits initialized to <span class="inline-math">\(|0\rangle^{\otimes n-k}\)</span> ) to give a corresponding state in the codespace as the output. An n-qubit quantum circuit with random 2-qubit Clifford gates can act as an encoder into a code with distance <span class="inline-math">\(d\)</span> with high probability, with a size (i.e. number of gates in the circuit) at most <span class="inline-math">\(O(n^2 log n)\)</span>). Noting that two gates acting on disjoint qubits could in fact be executed simultaneously, this is equivalent to the depth (number of time steps in the circuit) being at most <span class="inline-math">\(O(log^3 n)\)</span>.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Creates a random <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code that detects errors on <span class="inline-math">\(d-1\)</span> qubits, and corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Creates a random <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code that detects errors on <span class="inline-math">\(d-1\)</span> qubits, and corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
 
 
 <!-- Display features -->
@@ -116,25 +122,25 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/random_circuit">Random-circuit code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     nonlocal_lowdepth
@@ -162,15 +168,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/nonlocal_lowdepth}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/nonlocal_lowdepth</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -181,6 +192,8 @@ url={https://errorcorrectionzoo.org/c/nonlocal_lowdepth}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -190,7 +203,7 @@ url={https://errorcorrectionzoo.org/c/nonlocal_lowdepth}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

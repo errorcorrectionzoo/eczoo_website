@@ -65,27 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_cv">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_homological_cv">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Homological continuous-variable (CV) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/homological_cv">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/oscillator_stabilizer" class="ref">oscillator-into-oscillator CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex.</p>
-<p>Stabilizer generators are defined by two orthogonal subspaces of the <span class="inline-math">\(C_1\)</span> in the chain complex. <span class="inline-math">\(C_X = \partial_2 C_2\)</span> and <span class="inline-math">\(C_P = \partial_1^T Q\)</span> for some <span class="inline-math">\(Q \subset C_0\)</span>. The standard approach would use <span class="inline-math">\(Q = C_0\)</span>, which would mean the logical dimension would be the dimension of the 1st homology group <span class="inline-math">\(H^1\)</span>. However, <span class="inline-math">\(H^1\)</span> is trivial for the <span class="inline-math">\(n-1\)</span> simplex, so one chooses <span class="inline-math">\(Q \neq C_0\)</span> such that exactly one stabilizer is removed, yielding a stabilizer code instead of a single stabilized state.&#x27;</p></dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/oscillator_stabilizer" class="ref">oscillator-into-oscillator CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex.</p>
+<p>Stabilizer generators are defined by two orthogonal subspaces of the <span class="inline-math">\(C_1\)</span> in the chain complex. <span class="inline-math">\(C_X = \partial_2 C_2\)</span> and <span class="inline-math">\(C_P = \partial_1^T Q\)</span> for some <span class="inline-math">\(Q \subset C_0\)</span>. The standard approach would use <span class="inline-math">\(Q = C_0\)</span>, which would mean the logical dimension would be the dimension of the 1st homology group <span class="inline-math">\(H^1\)</span>. However, <span class="inline-math">\(H^1\)</span> is trivial for the <span class="inline-math">\(n-1\)</span> simplex, so one chooses <span class="inline-math">\(Q \neq C_0\)</span> such that exactly one stabilizer is removed, yielding a stabilizer code instead of a single stabilized state.&#x27;</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protects against certain types of erasure errors (depending on the specific dimension). Certain constructions also protect arbitrary sized errors on multiple photon states.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against certain types of erasure errors (depending on the specific dimension). Certain constructions also protect arbitrary sized errors on multiple photon states.</div>
 
 
 <!-- Display features -->
@@ -98,15 +104,15 @@
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding depends on the specific dimension, but can generally be done using generalized conditional-rotation and Fourier-transform gates.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding depends on the specific dimension, but can generally be done using generalized conditional-rotation and Fourier-transform gates.</span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding requires a different circuit for each possible erasure error, with no general circuit decoding any possible erasure error. Every circuit relies on a generalized conditional rotation, which Ref. <a href="#cite-0" class="cite">[1]</a> calls the <span class="textit">QND Gate</span> and which is defined as <span class="inline-math">\(QND_c | x , y \rangle = |x + c y, y \rangle\)</span>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding requires a different circuit for each possible erasure error, with no general circuit decoding any possible erasure error. Every circuit relies on a generalized conditional rotation, which Ref. <a href="#cite-0" class="cite">[1]</a> calls the <span class="textit">QND Gate</span> and which is defined as <span class="inline-math">\(QND_c | x , y \rangle = |x + c y, y \rangle\)</span>.</span></div>
 
 
 
@@ -116,17 +122,17 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">No experimental realization. However, Ref. <a href="#cite-0" class="cite">[1]</a> describes a potential experimental optical procedure for the simplest non-trival code with 5 modes.</span>
-</dd>
+</div>
 
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -135,11 +141,11 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a></span>    <span class="code-parents-1-detail">(Homological CV codes are bosonic CSS codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -148,15 +154,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a></span>    <span class="code-cousins-1-detail">(The Niest-Andersen-Cerf code can be viewed as a scheme to replicate quantum information in multiple regions <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     homological_cv
@@ -184,15 +190,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/homological_cv}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/homological_cv</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -203,6 +214,8 @@ url={https://errorcorrectionzoo.org/c/homological_cv}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -212,7 +225,7 @@ url={https://errorcorrectionzoo.org/c/homological_cv}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

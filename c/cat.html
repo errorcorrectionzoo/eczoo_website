@@ -65,26 +65,33 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_cat">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_cat">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Cat code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/cat">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=1\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-2" class="cite">[3]</a> or squeezing <a href="#cite-3" class="cite">[4]</a> that add such protection.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=1\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-2" class="cite">[3]</a> or squeezing <a href="#cite-3" class="cite">[4]</a> that add such protection.</div>
 
 
 <!-- Display features -->
@@ -97,50 +104,50 @@
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based dissipative encoding utilizing multi-photon absorption <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Combined dissipative and Hamiltonian-based encoding utilizing two-photon exchange for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-6" class="cite">[7]</a>.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based dissipative encoding utilizing multi-photon absorption <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Combined dissipative and Hamiltonian-based encoding utilizing two-photon exchange for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-6" class="cite">[7]</a>.</span></div>
 
 
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=1\)</span>, universal gates can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-4" class="cite">[5]</a>. For <span class="inline-math">\(S=2\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing a topological Berry phase <a href="#cite-8" class="cite">[9]</a>.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=1\)</span>, universal gates can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-4" class="cite">[5]</a>. For <span class="inline-math">\(S=2\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing a topological Berry phase <a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Measurement in the Fock basis. For a <span class="inline-math">\(2(S+1)\)</span> cat code, a number measurement returns outcome <span class="inline-math">\(2(S+1)k\)</span>, if <span class="inline-math">\(k\)</span> is even, then it corresponds to logical 0 state; if <span class="inline-math">\(k\)</span> is odd, then it corresponds to logical 1 state.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Measurement in the Fock basis. For a <span class="inline-math">\(2(S+1)\)</span> cat code, a number measurement returns outcome <span class="inline-math">\(2(S+1)k\)</span>, if <span class="inline-math">\(k\)</span> is even, then it corresponds to logical 0 state; if <span class="inline-math">\(k\)</span> is odd, then it corresponds to logical 1 state.</span></div>
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-8" class="cite">[9]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-9" class="cite">[10]</a><a href="#cite-8" class="cite">[9]</a>.</span></dd>
-
-
-
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-8" class="cite">[9]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-9" class="cite">[10]</a><a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+
+
+
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Two-legged (<span class="inline-math">\(S=1\)</span>) cat code has been realized by two superconducting cavities coupled through a Josephson junction <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Four-legged (<span class="inline-math">\(S=2\)</span>) cat code has been realized in superconducting circuit <a href="#cite-11" class="cite">[12]</a>. This paper is the first break-even point of quantum error-correction, where the lifetime of a logical qubit is on par with the lifetime of the noisiest constituent of the system.</span>
-</dd>
+</div>
 
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span>    <span class="code-parents-1-detail">(The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-12" class="cite">[13]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -151,15 +158,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binomial">Binomial code</a></span>    <span class="code-cousins-1-detail">(For a fixed <span class="inline-math">\(S\)</span>, binomial codes with <span class="inline-math">\(N \to \infty\)</span> coincide with cat codes as <span class="inline-math">\(\alpha \to \infty\)</span> <a href="#cite-13" class="cite">[14]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     cat
@@ -187,15 +194,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/cat}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/cat</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -271,6 +283,8 @@ url={https://errorcorrectionzoo.org/c/cat}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -280,7 +294,7 @@ url={https://errorcorrectionzoo.org/c/cat}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

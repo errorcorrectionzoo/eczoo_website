@@ -65,28 +65,34 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_double">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_double">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Quantum-double code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/quantum_double">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</p>
 <p>The physical Hilbert space has dimension <span class="inline-math">\( |G|^E  \)</span>, where <span class="inline-math">\( E \)</span> is the number of  edges in the tessellation. The dimension of the code space is the number of orbits of the conjugation action of <span class="inline-math">\( G \)</span> on <span class="inline-math">\( \text{Hom}(\pi_1(\Sigma),G) \)</span>,  the set of group homomorphisms from the fundamental group of the surface <span class="inline-math">\( \Sigma \)</span> into the finite group <span class="inline-math">\( G \)</span> <a href="#cite-1" class="cite">[2]</a>. When <span class="inline-math">\( G \)</span> is abelian, the formula for the dimension simplifies to <span class="inline-math">\( |G|^{2g} \)</span>, where <span class="inline-math">\( g \)</span> is the genus of the surface <span class="inline-math">\( \Sigma \)</span>.</p>
-<p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic quasiparticle excitations of the model <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></dd>
+<p>The codespace is the ground-state subspace of the quantum double model Hamiltonian. For nonabelian groups, alternative constructions are possible, encoding information in the fusion space of the low-energy anyonic quasiparticle excitations of the model <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>. The fusion space of such nonabelian anyons has dimension greater than one, allowing for topological quantum computation of logical information stored in the fusion outcomes.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Error-correcting properties established in Ref. <a href="#cite-1" class="cite">[2]</a>. The code distance is the number of edges in the shortest non contractible cycle in the tesselation or dual tesselation  <a href="#cite-5" class="cite">[6]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Error-correcting properties established in Ref. <a href="#cite-1" class="cite">[2]</a>. The code distance is the number of edges in the shortest non contractible cycle in the tesselation or dual tesselation  <a href="#cite-5" class="cite">[6]</a>.</div>
 
 
 <!-- Display features -->
@@ -114,16 +120,16 @@
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">The <span class="inline-math">\( \Phi, \Lambda \)</span>  <a href="https://citizensciencegames.com/games/decodoku/" target="_blank" class="href">Decodoku game</a> is based on the quantum double model for the group <span class="inline-math">\(S_3\)</span> of permutations on three letters.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -132,11 +138,11 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span>    <span class="code-parents-1-detail">(Quantum-double code Hamiltonians admit topological phases associated with finite groups <span class="inline-math">\(G\)</span>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -145,15 +151,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/string_net">String-net code</a></span>    <span class="code-cousins-1-detail">(String-net model reduces to the quantum-double model for group categories.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     quantum_double
@@ -181,15 +187,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/quantum_double}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/quantum_double</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -230,6 +241,8 @@ url={https://errorcorrectionzoo.org/c/quantum_double}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -239,7 +252,7 @@ url={https://errorcorrectionzoo.org/c/quantum_double}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_niset_andersen_cerf">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_niset_andersen_cerf">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Niest-Andersen-Cerf code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/niset_andersen_cerf">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</div>
 
 
 <!-- Display features -->
@@ -97,15 +103,15 @@
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">After an EPR pair preparation, use 2 continuous CNOT and 2 continuous inverse CNOT gates to entangle a bosonic EPR pair with initial states <span class="inline-math">\(|\alpha \rangle\)</span> and <span class="inline-math">\(|\beta \rangle\)</span>.</span><span class="paragraph-in-list">Alternate optical encoder using a two-mode squeezed vacuum state and two balanced beam splitters to mix the input coherent states with the EPR pair.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">After an EPR pair preparation, use 2 continuous CNOT and 2 continuous inverse CNOT gates to entangle a bosonic EPR pair with initial states <span class="inline-math">\(|\alpha \rangle\)</span> and <span class="inline-math">\(|\beta \rangle\)</span>.</span><span class="paragraph-in-list">Alternate optical encoder using a two-mode squeezed vacuum state and two balanced beam splitters to mix the input coherent states with the EPR pair.</span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Optical decoder using three beam splitters, electronic gain detectors, and two phase-insensitive amplifiers as described in Ref. <a href="#cite-0" class="cite">[1]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Optical decoder using three beam splitters, electronic gain detectors, and two phase-insensitive amplifiers as described in Ref. <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
 
@@ -115,43 +121,43 @@
 
 
 
-<dt class="code-realizations">Realizations</dt>
-<dd class="code-realizations">
+<h2 class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Realized in Ref. <a href="#cite-1" class="cite">[2]</a> in an optical system with 3 beam-splitters. The fidelity peaked around <span class="inline-math">\(0.6\)</span> for deterministic approach, and around <span class="inline-math">\(0.77\)</span> for the probabilistic approach (with a 25% chance of error).</span>
-</dd>
+</div>
 
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/homological_cv">Homological continuous-variable (CV) code</a></span>    <span class="code-cousins-1-detail">(The Niest-Andersen-Cerf code can be viewed as a scheme to replicate quantum information in multiple regions <a href="#cite-2" class="cite">[3]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     niset_andersen_cerf
@@ -179,15 +185,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/niset_andersen_cerf}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/niset_andersen_cerf</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -208,6 +219,8 @@ url={https://errorcorrectionzoo.org/c/niset_andersen_cerf}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -217,7 +230,7 @@ url={https://errorcorrectionzoo.org/c/niset_andersen_cerf}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

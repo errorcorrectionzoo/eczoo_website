@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_majorana_stab">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_majorana_stab">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Majorana stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/majorana_stab">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-1" class="cite">[2]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-1" class="cite">[2]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Detects products of Majorana operators with weight up to <span class="inline-math">\(d-1\)</span>. Physically, protects against dephasing errors caused by coupling of fermion density to the environment and bit-flip errors caused by quasiparticle poisoning processes.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Detects products of Majorana operators with weight up to <span class="inline-math">\(d-1\)</span>. Physically, protects against dephasing errors caused by coupling of fermion density to the environment and bit-flip errors caused by quasiparticle poisoning processes.</div>
 
 
 <!-- Display features -->
@@ -116,8 +122,8 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -126,11 +132,11 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span>    <span class="code-parents-1-detail">(The Majorana stabilizer code is a stabilizer code whose stabilizers are composed of Majorana fermion operators. In addition, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped into a <span class="inline-math">\([[2n,k,2d]]_{f}\)</span> Majorana stabilizer code <a href="#cite-2" class="cite">[3]</a><a href="#cite-0" class="cite">[1]</a>. However, Pauli- and Majorana-based stabilizer codes have different notions of locality <a href="#cite-3" class="cite">[4]</a> and are thus useful for different physical platforms.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -147,15 +153,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></span>    <span class="code-cousins-1-detail">(<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of Majorana operators <a href="#cite-5" class="cite">[6]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     majorana_stab
@@ -183,15 +189,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/majorana_stab}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/majorana_stab</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -227,6 +238,8 @@ url={https://errorcorrectionzoo.org/c/majorana_stab}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -236,7 +249,7 @@ url={https://errorcorrectionzoo.org/c/majorana_stab}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

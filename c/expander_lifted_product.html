@@ -65,28 +65,34 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_expander_lifted_product">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_expander_lifted_product">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Expander lifted-product code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/expander_lifted_product">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</p>
 <p>An expander lifted-product code family is constructed as follows. First, take the Cayley graph of a finite group <span class="inline-math">\(G\)</span>. Second, take the double cover of the graph, resulting in a graph that satisfies the requirements of participating in a <span class="inline-math">\(G\)</span>-lifted product (i.e., the resulting graph is a free <span class="inline-math">\({\mathbb{F}}_q G\)</span>-module). Third, create a <a href="/c/tanner" class="ref">Tanner code</a> out of the graph, in which parity-check supports are defined by the graph, and bitstrings satisfying a particular parity check are defined to be the codewords of a small classical code (chosen to be a random code in the construction). Fourth, take the <span class="inline-math">\(G\)</span>-lifted product of two copies of the <a href="/c/tanner" class="ref">Tanner code</a>.</p>
-<p>The small classical codes used in the construction of good QLDPC codes are required to have a certain product-expansion property (Lemma 10 in Ref. <a href="#cite-0" class="cite">[1]</a>); it is proven that random codes satisfy said property in the thermodynamic limit.</p></dd>
+<p>The small classical codes used in the construction of good QLDPC codes are required to have a certain product-expansion property (Lemma 10 in Ref. <a href="#cite-0" class="cite">[1]</a>); it is proven that random codes satisfy said property in the thermodynamic limit.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-0" class="cite">[1]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-1" class="cite">[2]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-0" class="cite">[1]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-1" class="cite">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -95,8 +101,8 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">Expander lifted-product codes include the first examples <a href="#cite-0" class="cite">[1]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-2" class="cite">[3]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-1" class="cite">[2]</a>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Expander lifted-product codes include the first examples <a href="#cite-0" class="cite">[1]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-2" class="cite">[3]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-1" class="cite">[2]</a>.</div>
 
 
 
@@ -116,42 +122,42 @@
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Construction outlined in talk by <a href="https://www.youtube.com/watch?v=k7LuOiOBYyQ" target="_blank" class="href">R. O&#x27;Donnell</a>.</span><span class="paragraph-in-list">Popular summary in <a href="https://www.quantamagazine.org/qubits-can-be-as-safe-as-bits-researchers-show-20220106" target="_blank" class="href">Quanta Magazine</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/lifted_product">Lifted-product (LP) code</a></span>    <span class="code-parents-1-detail">(Lifted products of certain classical Tanner codes are the first asymptotically good QLDPC codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/tanner">Tanner code</a></span>    <span class="code-cousins-1-detail">(Expander lifted-product codes are products of Tanner codes defined on expander graphs.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     expander_lifted_product
@@ -179,15 +185,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/expander_lifted_product}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/expander_lifted_product</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -208,6 +219,8 @@ url={https://errorcorrectionzoo.org/c/expander_lifted_product}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -217,7 +230,7 @@ url={https://errorcorrectionzoo.org/c/expander_lifted_product}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

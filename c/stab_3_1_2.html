@@ -65,23 +65,29 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_3_1_2">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_3_1_2">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Three qutrit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/stab_3_1_2">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
 <span class="display-math env-align">\begin{align}
   \begin{split}
     | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
@@ -89,12 +95,13 @@
     | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
   \end{split}
 \end{align}</span>
-The elements in the superposition of each logical codeword are related to each other via cyclic permutations.</dd>
+The elements in the superposition of each logical codeword are related to each other via cyclic permutations.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection"><p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p>
 <p>The code is an example of a <span class="inline-math">\( ((n = 3, k = 2)) \)</span> threshold scheme where a secret (the quantum information) is split into <span class="inline-math">\( n \)</span> shares and can be reconstructed by <span class="inline-math">\( k \)</span> pieces.</p>
-<p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></dd>
+<p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></div>
 
 
 <!-- Display features -->
@@ -103,21 +110,21 @@ The elements in the superposition of each logical codeword are related to each o
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate"><span class="inline-math">\(k/n = 1/3\)</span>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\(k/n = 1/3\)</span>.</div>
 
 
 
 
-<dt class="code-feature code-feature-encoders">Encoder</dt>
-  <dd class="code-feature code-feature-encoders"><span class="paragraph-in-list">In addition to thinking about the encoding of states, it is also interesting to look at the trasformation of operators from the physical space into the logical space. Due to the unique structure and recovery protocol of the three qutrit code, the representation of a logical operator <span class="inline-math">\( \overline{O} \)</span> is not unique. Instead, <span class="inline-math">\( \overline{O} \)</span> can be constructed from unitary matricies with support on only two out of the three qutrits. Therefore, the logical operator has valid representations constructed from support on different sets of two qutrits. This operator construction is directly analogous to the construction of operators in the bulk (at the center) of the AdS<span class="inline-math">\(_3\)</span>-Rindler reconstruction. The three-qutrit code can then be used to describe how these local bulk operators are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">This construction is related to the cleaning lemma <a href="#cite-2" class="cite">[3]</a>, which was introduced in the context of constructing self-correcting quantum memories from stabilizer codes with geometrically-local generators. In this lemma, subspaces can be <span class="textit">cleaned out</span> by removing operators with support on a subset of qutrits.</span></dd>
+<h2 class="code-feature code-feature-encoders">Encoder</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">In addition to thinking about the encoding of states, it is also interesting to look at the trasformation of operators from the physical space into the logical space. Due to the unique structure and recovery protocol of the three qutrit code, the representation of a logical operator <span class="inline-math">\( \overline{O} \)</span> is not unique. Instead, <span class="inline-math">\( \overline{O} \)</span> can be constructed from unitary matricies with support on only two out of the three qutrits. Therefore, the logical operator has valid representations constructed from support on different sets of two qutrits. This operator construction is directly analogous to the construction of operators in the bulk (at the center) of the AdS<span class="inline-math">\(_3\)</span>-Rindler reconstruction. The three-qutrit code can then be used to describe how these local bulk operators are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">This construction is related to the cleaning lemma <a href="#cite-2" class="cite">[3]</a>, which was introduced in the context of constructing self-correcting quantum memories from stabilizer codes with geometrically-local generators. In this lemma, subspaces can be <span class="textit">cleaned out</span> by removing operators with support on a subset of qutrits.</span></div>
 
 
  
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">The quantum information (the secret) can be recovered from a unitary transformation acting on only two qutrits, <span class="inline-math">\( U_{ij} \otimes I \)</span>, where <span class="inline-math">\(U_{ij}\)</span> acts on qutrits <span class="inline-math">\(i,j\)</span> and <span class="inline-math">\(I\)</span> is the identity on the remaining qutrit. By the cyclic structure of the codewords, this unitary transformation performs a permutation that recovers the information and stores it in one of the two qutrits involved in recovery.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The quantum information (the secret) can be recovered from a unitary transformation acting on only two qutrits, <span class="inline-math">\( U_{ij} \otimes I \)</span>, where <span class="inline-math">\(U_{ij}\)</span> acts on qutrits <span class="inline-math">\(i,j\)</span> and <span class="inline-math">\(I\)</span> is the identity on the remaining qutrit. By the cyclic structure of the codewords, this unitary transformation performs a permutation that recovers the information and stores it in one of the two qutrits involved in recovery.</span></div>
 
 
 
@@ -128,16 +135,16 @@ The elements in the superposition of each logical codeword are related to each o
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Connections to Ads/CFT from the perspetive of how arbitrary operators are encoded into the logical space. This encoding is analagous and helps explain why operators acting on the bulk are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -146,26 +153,26 @@ The elements in the superposition of each logical codeword are related to each o
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/holographic">Holographic code</a></span>    <span class="code-parents-1-detail">(Three-qutrit code is a minimal model for holography <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span>    <span class="code-cousins-1-detail">(Three-qutrit code defines a minimal secret-sharing scheme <a href="#cite-0" class="cite">[1]</a> that is substantially generalized by approximate secret-sharing codes.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     stab_3_1_2
@@ -193,15 +200,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/stab_3_1_2}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/stab_3_1_2</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -227,6 +239,8 @@ url={https://errorcorrectionzoo.org/c/stab_3_1_2}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -236,7 +250,7 @@ url={https://errorcorrectionzoo.org/c/stab_3_1_2}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

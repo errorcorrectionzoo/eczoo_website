@@ -65,32 +65,38 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_four_dimensional_hyperbolic">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_four_dimensional_hyperbolic">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Guth-Lubotzky code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/four_dimensional_hyperbolic">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><p>Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, with corresponding codes exhibiting linear rate.</p>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, with corresponding codes exhibiting linear rate.</p>
 <p>Guth and Lubotzky <a href="#cite-0" class="cite">[1]</a> show that there exists <span class="inline-math">\(\epsilon\)</span>, a four-dimensional hyperbolic manifold <span class="inline-math">\(M\)</span>, and a sequence of manifolds <span class="inline-math">\(M_i\)</span> such that
 each <span class="inline-math">\(M_i\)</span> is a finite sheeted <a href="https://en.wikipedia.org/wiki/Covering_space" target="_blank" class="href">covering</a> of <span class="inline-math">\(M\)</span>, and the four-dimensional volumes of the manifolds <span class="inline-math">\(\text{Vol}_4(M_i)\)</span> of the sequence tend to infinity.
 Also, the dimension of the second homology and size of systoles are bounded by <span class="inline-math">\(H_2(M_i, Z_2) \geq \frac{\text{Vol}_4(M_i)}{100}\)</span> and <span class="inline-math">\(\text{Sys}_2(M_i) \geq \text{Vol}_4(M_i)^\epsilon\)</span>, respectively.</p>
 <p>Then given any cellulation of <span class="inline-math">\(M\)</span>, it can naturally be extended to cellulations for each of the manifolds <span class="inline-math">\(M_i\)</span> and used to define CSS codes via the homological construction by choosing the size three chain complex consisting of the <span class="inline-math">\(3,2\)</span> and <span class="inline-math">\(1\)</span>-cells of the cellulations.</p>
 <p>For dense cellulations (i.e. large <span class="inline-math">\(n\)</span>) the number of physical qubits for these codes will scale with the volume of the manifolds.
-Therefore, bounds on the dimension of the second homology and size of systoles are achieved in terms of <span class="inline-math">\(n\)</span> for large <span class="inline-math">\(n\)</span>.</p></dd>
+Therefore, bounds on the dimension of the second homology and size of systoles are achieved in terms of <span class="inline-math">\(n\)</span> for large <span class="inline-math">\(n\)</span>.</p></div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Protection stems from the relationship between properties of manifolds and CSS codes derived from their cellulation. The number of physical <span class="inline-math">\(k\)</span> qubits and distance <span class="inline-math">\(d\)</span> of the code will scale as <span class="inline-math">\(\Omega(n)\)</span> and <span class="inline-math">\(\Omega(n^\epsilon)\)</span>, respectively.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protection stems from the relationship between properties of manifolds and CSS codes derived from their cellulation. The number of physical <span class="inline-math">\(k\)</span> qubits and distance <span class="inline-math">\(d\)</span> of the code will scale as <span class="inline-math">\(\Omega(n)\)</span> and <span class="inline-math">\(\Omega(n^\epsilon)\)</span>, respectively.</div>
 
 
 <!-- Display features -->
@@ -122,25 +128,25 @@ Therefore, bounds on the dimension of the second homology and size of systoles a
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/hyperbolic_surface">Hyperbolic surface code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     four_dimensional_hyperbolic
@@ -168,15 +174,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/four_dimensional_hyperbolic}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/four_dimensional_hyperbolic</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -187,6 +198,8 @@ url={https://errorcorrectionzoo.org/c/four_dimensional_hyperbolic}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -196,7 +209,7 @@ url={https://errorcorrectionzoo.org/c/four_dimensional_hyperbolic}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

@@ -65,28 +65,35 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_15_1_3">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_stab_15_1_3">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/stab_15_1_3">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
 This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center.
 The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers.
 Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check.
 A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron.
-The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.</dd>
+The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.
+</div>
 
 
 
@@ -98,23 +105,23 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 
-<dt class="code-feature code-feature-magic_scaling_exponent">Magic</dt>
-  <dd class="code-feature code-feature-magic_scaling_exponent">Magic-state distillation scaling exponent <span class="inline-math">\( \gamma= \log_d (n/k)\approx 2.46\)</span> <a href="#cite-0" class="cite">[1]</a>.</dd>
+<h2 class="code-feature code-feature-magic_scaling_exponent">Magic</h2>
+  <div class="sectioncontent code-feature code-feature-magic_scaling_exponent">Magic-state distillation scaling exponent <span class="inline-math">\( \gamma= \log_d (n/k)\approx 2.46\)</span> <a href="#cite-0" class="cite">[1]</a>.</div>
 
 
 
 
-<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
-  <dd class="code-feature code-feature-transversal_gates">A transversal logical <span class="inline-math">\(T^\dagger\)</span> is implemented by applying a <span class="inline-math">\(T\)</span> gate on every qubit <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</dd>
+<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">A transversal logical <span class="inline-math">\(T^\dagger\)</span> is implemented by applying a <span class="inline-math">\(T\)</span> gate on every qubit <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</div>
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Code is often used in magic-state distillation protocols because of its transversal <span class="inline-math">\(T\)</span> gate <a href="#cite-4" class="cite">[5]</a>.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Code is often used in magic-state distillation protocols because of its transversal <span class="inline-math">\(T\)</span> gate <a href="#cite-4" class="cite">[5]</a>.</span></div>
 
 
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Combining the Steane code and the 15-qubit Reed-Muller code through a fault-tolerant conversion can result in a universal transversal gate set that does not need magic state distillation <a href="#cite-2" class="cite">[3]</a><a href="#cite-5" class="cite">[6]</a>.</span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Combining the Steane code and the 15-qubit Reed-Muller code through a fault-tolerant conversion can result in a universal transversal gate set that does not need magic state distillation <a href="#cite-2" class="cite">[3]</a><a href="#cite-5" class="cite">[6]</a>.</span></div>
 
 
 
@@ -123,16 +130,16 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 
-<dt class="code-notes">Notes</dt>
-<dd class="code-notes">
+<h2 class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
   <span class="paragraph-in-list">The <span class="inline-math">\([[15,1,3]]\)</span> code can be converted into the smallest known stabilizer code with a fault-tolerant logical <span class="inline-math">\(T\)</span> gate (i.e., the <span class="inline-math">\([[10,1,2]]\)</span> code) through a &quot;morphing procedure&quot; <a href="#cite-6" class="cite">[7]</a>.</span>
-</dd>
+</div>
 
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -141,26 +148,26 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span>    <span class="code-parents-1-detail">(The <span class="inline-math">\([[15, 1, 3]]\)</span> code is a triorthogonal code <a href="#cite-7" class="cite">[8]</a>)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/color">Color code</a></span>    <span class="code-cousins-1-detail">(The <span class="inline-math">\([[15,1,3]]\)</span> code is the smallest 3D color code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     stab_15_1_3
@@ -188,15 +195,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/stab_15_1_3}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/stab_15_1_3</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -242,6 +254,8 @@ url={https://errorcorrectionzoo.org/c/stab_15_1_3}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -251,7 +265,7 @@ url={https://errorcorrectionzoo.org/c/stab_15_1_3}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

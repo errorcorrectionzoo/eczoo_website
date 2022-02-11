@@ -65,26 +65,32 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_color">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_color">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Color code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/color">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes defined on a <span class="inline-math">\(D\)</span>-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial <span class="inline-math">\(D\)</span>-complex obtained as a triangulation of the interior of a <span class="inline-math">\(D\)</span>-simplex and (2) is <span class="inline-math">\(D+1\)</span>-colorable. Qubits are placed on the <span class="inline-math">\(D\)</span>-simplices and generators are supported on suitable simplices <a href="#cite-1" class="cite">[2]</a>. For 2-dimensional color code, the lattice must be such that it is 3-valent and has 3-colorable faces, such as a honeycomb lattice. The qubits are placed on the vertices and two stabilizer generators are placed on each face <a href="#cite-2" class="cite">[3]</a>.</dd>
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes defined on a <span class="inline-math">\(D\)</span>-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial <span class="inline-math">\(D\)</span>-complex obtained as a triangulation of the interior of a <span class="inline-math">\(D\)</span>-simplex and (2) is <span class="inline-math">\(D+1\)</span>-colorable. Qubits are placed on the <span class="inline-math">\(D\)</span>-simplices and generators are supported on suitable simplices <a href="#cite-1" class="cite">[2]</a>. For 2-dimensional color code, the lattice must be such that it is 3-valent and has 3-colorable faces, such as a honeycomb lattice. The qubits are placed on the vertices and two stabilizer generators are placed on each face <a href="#cite-2" class="cite">[3]</a>.</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">As with the surface code, the code distance depends on the specific kind of lattice used to define the code. More precisely, the distance depends on the homology of logical string operators <a href="#cite-2" class="cite">[3]</a>.</dd>
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">As with the surface code, the code distance depends on the specific kind of lattice used to define the code. More precisely, the distance depends on the homology of logical string operators <a href="#cite-2" class="cite">[3]</a>.</div>
 
 
 <!-- Display features -->
@@ -93,35 +99,35 @@
 
 
 
-<dt class="code-feature code-feature-rate">Rate</dt>
-  <dd class="code-feature code-feature-rate">For general 2D manifolds, <span class="inline-math">\(kd^2 \leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-3" class="cite">[4]</a>, meaning that color codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>.</dd>
+<h2 class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">For general 2D manifolds, <span class="inline-math">\(kd^2 \leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-3" class="cite">[4]</a>, meaning that color codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>.</div>
 
 
 
 
 
 
-<dt class="code-feature code-feature-transversal_gates">Transversal Gates</dt>
-  <dd class="code-feature code-feature-transversal_gates">Transversal CNOT can be implemented via braiding <a href="#cite-4" class="cite">[5]</a>. Universal transversal gates can be achieved in 3D color code using gauge fixing <a href="#cite-5" class="cite">[6]</a>, lattice surgery <a href="#cite-6" class="cite">[7]</a>, or code deformation <a href="#cite-7" class="cite">[8]</a><a href="#cite-4" class="cite">[5]</a>.</dd>
+<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Transversal CNOT can be implemented via braiding <a href="#cite-4" class="cite">[5]</a>. Universal transversal gates can be achieved in 3D color code using gauge fixing <a href="#cite-5" class="cite">[6]</a>, lattice surgery <a href="#cite-6" class="cite">[7]</a>, or code deformation <a href="#cite-7" class="cite">[8]</a><a href="#cite-4" class="cite">[5]</a>.</div>
  
-<dt class="code-feature code-feature-general_gates">Gates</dt>
-  <dd class="code-feature code-feature-general_gates"><span class="paragraph-in-list">Magic-state distillation protocols <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Non-clifford gates can be implemented via code switching <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Lattice surgery scheme for 2D layout yields lower resource overhead when compared to analogous surface code scheme <a href="#cite-8" class="cite">[9]</a>.</span></dd>
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Magic-state distillation protocols <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Non-clifford gates can be implemented via code switching <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Lattice surgery scheme for 2D layout yields lower resource overhead when compared to analogous surface code scheme <a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-decoders">Decoder</dt>
-  <dd class="code-feature code-feature-decoders"><span class="paragraph-in-list">Projection decoder <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Matching decoder gives low logical failure rate <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">Integer-program-based decoder <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Restriction decoder <a href="#cite-11" class="cite">[12]</a>.</span></dd>
+<h2 class="code-feature code-feature-decoders">Decoder</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Projection decoder <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Matching decoder gives low logical failure rate <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">Integer-program-based decoder <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Restriction decoder <a href="#cite-11" class="cite">[12]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-fault_tolerance">Fault Tolerance</dt>
-  <dd class="code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Clifford gates can be performed fault-tolerantly on a suitable 2D lattice <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Syndrome measurement <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Steane&#x27;s ancilla-coupled measurement method <a href="#cite-6" class="cite">[7]</a></span></dd>
+<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Clifford gates can be performed fault-tolerantly on a suitable 2D lattice <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Syndrome measurement <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Steane&#x27;s ancilla-coupled measurement method <a href="#cite-6" class="cite">[7]</a></span></div>
 
 
-<dt class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</dt>
-  <dd class="code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(\geq 6\%\)</span> threshold with rescaling-based decoder <a href="#cite-12" class="cite">[13]</a>.</span></dd>
+<h2 class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(\geq 6\%\)</span> threshold with rescaling-based decoder <a href="#cite-12" class="cite">[13]</a>.</span></div>
 
 
-<dt class="code-feature code-feature-threshold">Threshold</dt>
-  <dd class="code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(\geq 6.25\%\)</span> threshold for 2d color codes with error-free syndrome extraction, and <span class="inline-math">\(0.1\%\)</span> with faulty syndrome extraction <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.46\%\)</span> for 3d codes with clustering decoder <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(1.9\%\)</span> for 1D string-like logical operators and <span class="inline-math">\(27.6\%\)</span> for 2D sheet-like operators for 3D codes with noise models using optimal decoding and perfect measurements <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.31\%\)</span> noise threshold error rate for gauge code using clustering decoder <a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.143\%\)</span> with depolarising circuit-level noise using perfect-matching decoder <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(&gt;0\%\)</span> threshold with sweep decoder <a href="#cite-1" class="cite">[2]</a>.</span></dd>
+<h2 class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(\geq 6.25\%\)</span> threshold for 2d color codes with error-free syndrome extraction, and <span class="inline-math">\(0.1\%\)</span> with faulty syndrome extraction <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.46\%\)</span> for 3d codes with clustering decoder <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(1.9\%\)</span> for 1D string-like logical operators and <span class="inline-math">\(27.6\%\)</span> for 2D sheet-like operators for 3D codes with noise models using optimal decoding and perfect measurements <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.31\%\)</span> noise threshold error rate for gauge code using clustering decoder <a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(0.143\%\)</span> with depolarising circuit-level noise using perfect-matching decoder <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(&gt;0\%\)</span> threshold with sweep decoder <a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
 
@@ -130,8 +136,8 @@
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
@@ -140,20 +146,20 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span>    <span class="code-parents-1-detail">(When treated as ground states of the code Hamiltonian, 2D color code states on realize <span class="inline-math">\(\mathbb{Z}_2\times\mathbb{Z}_2\)</span> topological order <a href="#cite-16" class="cite">[17]</a>, equivalent to the phase realized by two copies of the surface code <a href="#cite-17" class="cite">[18]</a>.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></span>    <span class="code-parent-of-1-detail">(Steane code is the smallest 2D color code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-cousins">Cousin(s)</dt>
-<dd class="code-cousins">
+<h2 class="code-cousins">Cousin(s)</h2>
+<div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
@@ -162,19 +168,19 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/haah_cubic">Haah cubic code</a></span>    <span class="code-cousins-1-detail">(The color code is another 3D code that does admit string-like operators.)</span>  </li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></span>    <span class="code-cousins-1-detail">(The <span class="inline-math">\([[15,1,3]]\)</span> code is the smallest 3D color code.)</span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/subsystem_color">Subsystem color code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></span>    <span class="code-cousins-1-detail">(The <span class="inline-math">\([[15,1,3]]\)</span> code is the smallest 3D color code.)</span>  </li>
 </ul>
-</dd>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     color
@@ -202,15 +208,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/color}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/color</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -311,6 +322,8 @@ url={https://errorcorrectionzoo.org/c/color}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -320,7 +333,7 @@ url={https://errorcorrectionzoo.org/c/color}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>

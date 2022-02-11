@@ -65,34 +65,42 @@
   <main id="main">
 
 
-<dl class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_oecc">
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  -->
 
-<!--<dt></dt>-->
-<dd class="info-popup-button-container"></dd>
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_oecc">
 
-<dt class="code-name">Name</dt>
-<dd class="code-name">
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<h2 class="code-name">Name</h2>
+<div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Subsystem quantum error-correcting code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/oecc">&nbsp;</a>-->
-</dd>
+</div>
 
 
-<dt class="code-description">Description</dt>
-<dd class="code-description">A subsystem code, also known as an <span class="textit">operator QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>.
+<h2 class="code-description">Description</h2>
+<div class="sectioncontent code-description">A subsystem code, also known as an <span class="textit">operator QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>.
 <span class="display-math env-align">\begin{align}
 \mathsf{H}=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}
 \end{align}</span>
-Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code can yield more efficient correction procedures and a wider variety of encoding procedures.</dd>
+Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code can yield more efficient correction procedures and a wider variety of encoding procedures.
+</div>
 
-<dt class="code-protection">Protection</dt>
-<dd class="code-protection">Necessary and sufficient <a href="#cite-2" class="cite">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>,
+<h2 class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Necessary and sufficient <a href="#cite-2" class="cite">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>,
 <span class="display-math env-align">\begin{align}
 P E^{\dagger}_a E_b P = I_{\mathsf{A}} \otimes g_{ab}^{\mathsf{B}}
 \end{align}</span>
-where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem.</dd>
+where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem.
+</div>
 
 
 <!-- Display features -->
@@ -124,40 +132,40 @@ where <span class="inline-math">\(P\)</span> is a projector onto the codespace <
 
 <!-- Relationships to other codes -->
 
-<dt class="code-parents">Parent(s)</dt>
-<dd class="code-parents">
+<h2 class="code-parents">Parent(s)</h2>
+<div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oaecc">Operator-algebra error-correcting code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
-<dt class="code-parent-of">Parent of</dt>
-<dd class="code-parent-of">
+<h2 class="code-parent-of">Parent of</h2>
+<div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>  </li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a></span>  </li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span>  </li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span>  </li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a></span>  </li>
 </ul>
-</dd>
+</div>
 
 
 
 <!-- zoo-related information and how to edit -->
 
-<dt class="display-code-id dt-wrap-label redundant-if-info-popup-button-installed">
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
   Zoo code information
-</dt>
-<dd class="display-code-id redundant-if-info-popup-button-installed">
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
     oecc
@@ -185,15 +193,20 @@ year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/oecc}
 }</dd>
-    <dt>Permanent link:</dt>
+    <h2>Permanent link:</h2>
     <dd>https://errorcorrectionzoo.org/c/oecc</dd>
   </dl>
 </div>
-</dd>
+</div>
 
-</dl>
 
-   <div id="endnotes">
+
+
+<!-- endnotes -->
+
+<h2>References</h2>
+
+   <div id="endnotes" class="sectioncontent">
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
@@ -214,6 +227,8 @@ url={https://errorcorrectionzoo.org/c/oecc}
     </dl>
    </div>
 
+
+</section>
   </main><!-- #main -->
 
 
@@ -223,7 +238,7 @@ url={https://errorcorrectionzoo.org/c/oecc}
       <ul class="navlinks">
         <li><a href="/">Home</a></li>
         <li><a href="/code_graph">Code graph</a></li>
-        <li><a href="/all">All codes</a></li>
+        <li><a href="/lists">Code lists</a></li>
         <li><a href="/search">Search</a></li>
       </ul>
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
