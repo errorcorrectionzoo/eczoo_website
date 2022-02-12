@@ -128,8 +128,8 @@ h2 {
 }
 
 p, ul, ol {
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 p:first-child, ul:first-child, ol:first-child {
@@ -315,8 +315,8 @@ input.navbar-search {
 }
 
 .ecc-code p, .ecc-code ul, .ecc-code ol {
-  margin-top: 0.35em;
-  margin-bottom: 0.35em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
 }
 
 ul.code-index, ul.code-index:first-child, ol.code-index, ol.code-index:first-child {
@@ -519,8 +519,8 @@ a.code-link-with-icon {
 
 .paragraph-in-list {
   display: block;
-  margin-top: 0.7em;
-  margin-bottom: 0.35em;
+  margin-top: 0.6em;
+  margin-bottom: 0.6em;
   margin-left: 1rem;
 }
 
@@ -538,15 +538,6 @@ a.code-link-with-icon {
   float: left;
   margin-left: -0.8rem;
   color: #78788c;
-}
-
-.paragraph-in-list:only-child {
-  margin-left: 0px;
-  margin-top: 0.35em;
-}
-
-.paragraph-in-list:only-child::before {
-  display: none;
 }
 
 .tippy-content .code-popup-info-frame {
@@ -625,6 +616,7 @@ a.code-self-edit {
 figure.float {
   /*min-width: 200pt;*/
   width: 100%;
+  background-color: rgba(245, 245, 255, 0.5);
   margin: 0.5rem 0px;
   padding: 0.5rem 0px;
 }

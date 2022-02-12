@@ -105,7 +105,7 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoder</h2>
+<h2 class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Initialization can be performed by preparing each pair of qubits  on an edge in some particular state independently specified by the effective-one-qubit operators (two-qubit Pauli strings centered on an edge) and then beginning the check measurement sequence. This is analogous to projecting a state into the code space by measuring stabilizers.</span></div>
 
 
@@ -114,7 +114,7 @@
   <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">There are two types of logical operators, <span class="textit">inner</span> and <span class="textit">outer</span>. An inner logical operator is the product of check operators on a homologically nontrivial cycle. They belong to the stabilizer group as a subsystem code. Outer logical operators have an interpretation in terms of magnetic and electric operators of an embedded surface code, and they do not belong to the stabilizer group of the associated subsystem code.</span></div>
 
 
-<h2 class="code-feature code-feature-decoders">Decoder</h2>
+<h2 class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The ISG has a static subgroup for all time steps <span class="inline-math">\(r\geq 3\)</span> – that is, a subgroup which remains a subgroup of the ISG for all future times – given by so-called <span class="textit">plaquette stabilizers</span>. These are stabilizers consisting of products of check operators around homologically trivial paths. The syndrome bits correspond to the eigenvalues of the plaquette stabilizers. Because of the structure of the check operators, only one-third of all plaquettes are measured each round. The syndrome bits must therefore be represented by a lattice in spacetime, to reflect when and where the outcome was obtained.</span></div>
 
 
@@ -140,7 +140,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/floquet">Floquet code</a></span>    <span class="code-parents-1-detail">(The honeycomb code is the first 2D Floquet code.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/floquet">Floquet code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The honeycomb code is the first 2D Floquet code.</span></li>
 </ul>
 </div>
 
@@ -151,15 +153,25 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span>    <span class="code-cousins-1-detail">(Measurement of each check operator involves two qubits and projects the state of the two qubits to a two-dimensional subspace, which we regard as an effective qubit. These effective qubits form a surface code on a hexagonal superlattice. Electric and magnetic operators on the embedded surface code correspond to outer logical operators of the Floquet code. In fact, outer logical operators transition back and forth from magnetic to electric surface code operators under the measurement dynamics.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Measurement of each check operator involves two qubits and projects the state of the two qubits to a two-dimensional subspace, which we regard as an effective qubit. These effective qubits form a surface code on a hexagonal superlattice. Electric and magnetic operators on the embedded surface code correspond to outer logical operators of the Floquet code. In fact, outer logical operators transition back and forth from magnetic to electric surface code operators under the measurement dynamics.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/subsystem_color">Subsystem color code</a></span>    <span class="code-cousins-1-detail">(Both honeycomb and subsystem color codes are generated via periodic sequences of measurements. However, any measurement sequence can be performed on the color code without destroying the logical qubits, while honeycomb codes can be maintained only with specific sequences. Honeycomb codes require a shorter measurement cycle and use fewer qubits at the given code distance <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/subsystem_color">Subsystem color code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Both honeycomb and subsystem color codes are generated via periodic sequences of measurements. However, any measurement sequence can be performed on the color code without destroying the logical qubits, while honeycomb codes can be maintained only with specific sequences. Honeycomb codes require a shorter measurement cycle and use fewer qubits at the given code distance <a href="#cite-0" class="cite">[1]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span>    <span class="code-cousins-1-detail">(The Honeycomb code admits a representation in terms of Majorana fermions. This leads to a possible physical realization of the code in terms of tetrons <a href="#cite-5" class="cite">[6]</a>, where each physical qubit is composed of four Majorana modes.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The Honeycomb code admits a representation in terms of Majorana fermions. This leads to a possible physical realization of the code in terms of tetrons <a href="#cite-5" class="cite">[6]</a>, where each physical qubit is composed of four Majorana modes.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/matching">Matching code</a></span>    <span class="code-cousins-1-detail">(Matching and honeycomb codes are both inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/matching">Matching code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Matching and honeycomb codes are both inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span>    <span class="code-cousins-1-detail">(The Floquet check operators are weight-two, and each qubit participates in one check each round.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The Floquet check operators are weight-two, and each qubit participates in one check each round.</span></li>
 </ul>
 </div>
 

@@ -108,7 +108,7 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoder</h2>
+<h2 class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The optimal way to prepare codewords depends on the exact rotation code in question <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
@@ -117,7 +117,7 @@
   <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">The logical Pauli-<span class="inline-math">\(Z\)</span> gate can be the discrete rotation operator <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \pi \hat n /N}\)</span>, and the logical Pauli-<span class="inline-math">\(X\)</span> gate can be the (note: non-unitary) number-translation operator <span class="inline-math">\(\sum_{n=0}^\infty |n\rangle\bra{n+N}\)</span>.</span><span class="paragraph-in-list">For qubit codes, a logical phase gate is <span class="inline-math">\(S = \mathrm{e}^{\pi \mathrm{i} \hat n^2 / 2N^2}\)</span>.</span><span class="paragraph-in-list">The <span class="inline-math">\(T = \mathrm{diag}(1,\exp(\mathrm{i}\pi/4))\)</span> gate can be done via gate teleportation and a resource state <span class="inline-math">\(\vert 0_N\rangle + \exp(\mathrm{i}\pi/4) \vert 1_N \rangle\)</span>.</span><span class="paragraph-in-list">A controlled-rotation gate between an order <span class="inline-math">\(N\)</span> rotation code and an order <span class="inline-math">\(M\)</span> rotation code is <span class="inline-math">\(\mathrm{CROT}_{NM} = \mathrm{e}^{(2\pi\mathrm{i} / qNM) \hat n \otimes \hat n}\)</span>.</span></div>
 
 
-<h2 class="code-feature code-feature-decoders">Decoder</h2>
+<h2 class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span></div>
 
 
@@ -139,7 +139,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span>    <span class="code-parents-1-detail">(Single-mode Fock-state codes are typically rotationally invariant.)</span>  </li>
+    <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Single-mode Fock-state codes are typically rotationally invariant.</span></li>
 </ul>
 </div>
 
@@ -149,11 +151,17 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/binomial">Binomial code</a></span>    <span class="code-parent-of-1-detail">(One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/binomial">Binomial code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-0" class="cite">[1]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/cat">Cat code</a></span>    <span class="code-parent-of-1-detail">(The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-0" class="cite">[1]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/cat">Cat code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-0" class="cite">[1]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/number_phase">Number-phase code</a></span>    <span class="code-parent-of-1-detail">(Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#cite-1" class="cite">[2]</a>.)</span>  </li>
+    <span class="code-parent-of-1-code"><a href="/c/number_phase">Number-phase code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#cite-1" class="cite">[2]</a>.</span></li>
 </ul>
 </div>
 
@@ -163,7 +171,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span>    <span class="code-cousins-1-detail">(GKP codes utilize the translational symmetry in phase space, while rotation codes utilize rotational symmetry.)</span>  </li>
+    <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GKP codes utilize the translational symmetry in phase space, while rotation codes utilize rotational symmetry.</span></li>
 </ul>
 </div>
 
