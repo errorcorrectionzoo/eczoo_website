@@ -767,7 +767,7 @@ figure.float figcaption .center-if-single-line {
   display: grid;
 }
 
-.tiles-collection .tile > span {
+.tiles-collection .tile > .tile-content {
   grid-row: 2;
 }
 
@@ -777,6 +777,35 @@ figure.float figcaption .center-if-single-line {
 
 .person-list.two-columns {
   max-width: calc(max(400px, 90%));
+}
+
+@media (max-width: 600px) {
+  .person-list.two-columns {
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 400px;
+  }
+}
+
+.tile-person .tile-person-line {
+  display: block;
+  line-height: 1.3em;
+}
+
+.tile-person .tile-person-line .person-name {
+  font-weight: bold;
+}
+
+.tile-person .tile-person-name-line {
+  margin-top: 0.5rem;
+}
+
+.tile-person .tile-person-links-line {
+  margin-top: 0.25rem;
+  font-size: 0.8rem;
+}
+
+.tile-person .tile-person-links-line > span:not(:first-child)::before {
+  content: ' • ';
 }
 
 #EczooSearchWidget .search-input {
