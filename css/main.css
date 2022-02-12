@@ -742,19 +742,26 @@ figure.float figcaption .center-if-single-line {
 }
 
 .tiles-collection {
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
   display: grid;
-  grid: auto-flow/repeat(1, 1fr);
-  grid-row-gap: 5px;
-  grid-column-gap: 5px;
+  grid-auto-flow: row;
+  grid-template-columns: repeat(1, 1fr);
+  grid-row-gap: 8px;
+  grid-column-gap: 8px;
+}
+
+.tiles-collection.two-columns {
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .tiles-collection .tile {
-  padding: 5px 5px 5px;
-  padding-left: 65px;
+  padding: 8px 8px 8px;
+  padding-left: 68px;
   min-height: 50px;
-  border: solid 1px rgba(120, 120, 140, 0.15);
-  background-position: 5px 50%;
+  background-color: #f5f5fc;
+  box-shadow: rgba(0, 0, 0, 0.08) 4px 4px 8px;
+  border-radius: 8px;
+  background-position: 8px 50%;
   background-repeat: no-repeat;
   background-size: 50px;
   display: grid;
@@ -766,6 +773,10 @@ figure.float figcaption .center-if-single-line {
 
 .person-list {
   max-width: 400px;
+}
+
+.person-list.two-columns {
+  max-width: calc(max(400px, 90%));
 }
 
 #EczooSearchWidget .search-input {
