@@ -38,7 +38,6 @@
 
 <div
   id="bodycontents"
-    class="codelistpage_style_cards codelistpage codelistpage_style_cards"
   >
 
   <header id="header">
@@ -61,7 +60,26 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/gabidulin">Rank code</a>,       <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/gabidulin">Rank code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_linear">
+  <span class="short-code-name"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/alternant">Alternant code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/quasi_cyclic">Quasi-cyclic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/galois_css">Galois-qudit CSS code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a>.
   </span>
 </div>
 
@@ -81,21 +99,83 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_q-ary_linear">
-  <span class="short-code-name"><a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
-  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
+<div class="ecc-code" id="ecc_alternant">
+  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/alternant">Alternant code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/quasi_cyclic">Quasi-cyclic code</a>.
+      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>,       <a href="/c/goppa">Goppa code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dual">
+  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-description">For any  <span class="inline-math">\([n,k]_q\)</span> linear code <span class="inline-math">\(C\)</span>, the dual code,
+<span class="display-math env-align">\begin{align}
+C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
+\end{align}</span>
+is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</span>
+  <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/galois_css">Galois-qudit CSS code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a>.
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_group">
+  <span class="short-code-name"><a href="/c/group">Group code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\( [n,k]_{q} \)</span> code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/group_quantum">Group-based quantum code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_mds">
+  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
+<span class="display-math env-align">\begin{align}
+d \leq n-k+1
+\end{align}</span>
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-3" class="cite">[4]</a>.
+</span>
+  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_quasi_cyclic">
+  <span class="short-code-name"><a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
   </span>
 </div>
 
@@ -117,87 +197,6 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>,       <a href="/c/goppa">Goppa code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_dual">
-  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">For any  <span class="inline-math">\([n,k]_q\)</span> linear code <span class="inline-math">\(C\)</span>, the dual code,
-<span class="display-math env-align">\begin{align}
-C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
-\end{align}</span>
-is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</span>
-  <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_group">
-  <span class="short-code-name"><a href="/c/group">Group code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\( [n,k]_{q} \)</span> code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/group_quantum">Group-based quantum code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_mds">
-  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
-<span class="display-math env-align">\begin{align}
-d \leq n-k+1
-\end{align}</span>
-becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-3" class="cite">[4]</a>.
-</span>
-  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_quasi_cyclic">
-  <span class="short-code-name"><a href="/c/quasi_cyclic">Quasi-cyclic code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
   </span>
 </div>
 

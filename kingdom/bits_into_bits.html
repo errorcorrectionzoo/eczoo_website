@@ -38,7 +38,6 @@
 
 <div
   id="bodycontents"
-    class="codelistpage_style_cards codelistpage codelistpage_style_cards"
   >
 
   <header id="header">
@@ -66,30 +65,11 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_linear">Binary linear code</a>,       <a href="/c/convolutional">Convolutional code</a>.
+      <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_binary_linear">
-  <span class="short-code-name"><a href="/c/binary_linear">Binary linear code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword. Often defined in terms of a <span class="textit">generator matrix</span> <span class="inline-math">\(G\)</span>, whose rows form a basis for the <span class="inline-math">\(k\)</span>-dimensional codespace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
-  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set for which no two elements of the set add up to a codeword.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/bits_into_bits">Binary code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/tanner">Tanner code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/stabilizer">Stabilizer code</a>.
   </span>
 </div>
 
@@ -108,13 +88,32 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 </div>
 
 
+<div class="ecc-code" id="ecc_binary_linear">
+  <span class="short-code-name"><a href="/c/binary_linear">Linear binary code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,2^k,d)\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]\)</span>. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword. Often defined in terms of a <span class="textit">generator matrix</span> <span class="inline-math">\(G\)</span>, whose rows form a basis for the <span class="inline-math">\(k\)</span>-dimensional codespace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set for which no two elements of the set add up to a codeword.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/bits_into_bits">Binary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller code</a>,       <a href="/c/tanner">Tanner code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/stabilizer">Stabilizer code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_homological_classical">
   <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.
 </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -128,7 +127,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-description">The Hadamard code is dual to the extended Hamming Code.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -143,7 +142,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -165,7 +164,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -180,7 +179,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -198,7 +197,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -212,7 +211,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Binary linear code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
