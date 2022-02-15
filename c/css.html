@@ -130,12 +130,14 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 
  
+<h2 class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Symmetries of the code called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates <a href="#cite-10" class="cite">[11]</a>.</span></div>
 
 
 
 
 <h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-10" class="cite">[11]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-11" class="cite">[12]</a>.</span></div>
 
 
 
@@ -162,7 +164,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-11" class="cite">[12]</a>.</span></li>
+      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-12" class="cite">[13]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -238,7 +240,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
+      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -348,15 +350,20 @@ url={https://errorcorrectionzoo.org/c/css}
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
+        Nikolas P. Breuckmann and Simon Burton, “Fold-Transversal Clifford Gates for Quantum Codes”. <a href="https://arxiv.org/abs/2202.06647" target="_blank" class="href">2202.06647</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
+      <dd>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
       <dd>
         Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
       </dd>
