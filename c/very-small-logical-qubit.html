@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Very small logical qubit (VSLQ) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Passively protects against single photon loss.</div>
 
 
@@ -103,16 +103,19 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Engineering a circuit made of two transmons and two oscillators coupled through three driven superconducting quantum interference devices (SQUIDs) results in passive stabilization of the logical states.</span></div>
 
 
  
-<h2 class="code-feature code-feature-general_gates">Gates</h2>
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
   <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Single logical qubit operations implemented by resonant physical qubit driving and phase shifting the SQUID drives.</span><span class="paragraph-in-list">A CZ gate between two logical qubits implemented by coupling devices through another driven SQUID and applying a pulse to the coupling squid simultaneously with a single qubit operation on one of the logical qubits.</span></div>
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Logical qubit can be measured with physical qubit measurements along <span class="inline-math">\(X\)</span>. Can be implemented by engineering a coupling of one of the qubits to a readout cavity via the interaction <span class="inline-math">\(\sigma_x (a+a^\dagger)\)</span> <a href="#cite-1" class="cite">[2]</a>. This results in an <span class="inline-math">\(X\)</span>-dependent shift of the readout cavity resonance which can be measured.</span></div>
 
 
@@ -128,7 +131,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -143,7 +146,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

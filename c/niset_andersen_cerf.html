@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Niest-Andersen-Cerf code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</div>
 
 
@@ -103,14 +103,16 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">After an EPR pair preparation, use 2 continuous CNOT and 2 continuous inverse CNOT gates to entangle a bosonic EPR pair with initial states <span class="inline-math">\(|\alpha \rangle\)</span> and <span class="inline-math">\(|\beta \rangle\)</span>.</span><span class="paragraph-in-list">Alternate optical encoder using a two-mode squeezed vacuum state and two balanced beam splitters to mix the input coherent states with the EPR pair.</span></div>
 
 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Optical decoder using three beam splitters, electronic gain detectors, and two phase-insensitive amplifiers as described in Ref. <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
@@ -121,7 +123,7 @@
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Realized in Ref. <a href="#cite-1" class="cite">[2]</a> in an optical system with 3 beam-splitters. The fidelity peaked around <span class="inline-math">\(0.6\)</span> for deterministic approach, and around <span class="inline-math">\(0.77\)</span> for the probabilistic approach (with a 25% chance of error).</span>
 </div>
@@ -130,7 +132,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -143,7 +145,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Calderbank-Shor-Steane (CSS) stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
@@ -86,7 +86,7 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings. The stabilizer generator matrix is of the form
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
@@ -110,7 +110,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 <p>Usually, the chain complex <span class="inline-math eqref">\eqref{eq:chain}</span> used in the construction comes from the chain complex associated with a cellulation of a manifold. When the manifold is a two-dimensional surface, its entire chain is used. Higher-dimensional manifolds allow for longer chain complexes, and one can use the three largest non-trivial vector spaces in its chain.</p>
 <p>The reverse mapping is as follows <a href="#cite-5" class="cite">[6]</a><a href="#cite-7" class="cite">[8]</a>. Given a CSS code with parity check matrices <span class="inline-math">\(H_X\)</span> and <span class="inline-math">\(H_Z\)</span>, let both boundary operators be <span class="inline-math">\(\partial = H_Z^TUH_X\)</span> for an arbitrary invertible matrix <span class="inline-math">\(U\)</span>. The fact that the stabilizer generators commute ensures that the boundary operator satisfies <span class="inline-math">\(\partial^2=0\)</span>, yielding a chain complex.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</p>
 <p>Using the relation to chain complexes, the number of encoded logical qubits is equal to the dimension of the first <span class="inline-math">\(\mathbb{Z}_2\)</span>-homology of the chain complex, <span class="inline-math">\(H_1(\partial, \mathbb{Z}_2) = \frac{\text{Ker}(\partial_1)}{\text{Im}(\partial_2)}\)</span>. The distance of the CSS code is equal to the minimum of the combinatorial (<span class="inline-math">\(d-1\)</span>)-systole of the cellulated <span class="inline-math">\(d\)</span>-dimensional manifold and its dual. For surfaces, there is an upper bound of <span class="inline-math">\(d \leq O(\sqrt{n})\)</span> on the distance <a href="#cite-8" class="cite">[9]</a>, therefore codes coming from higher-dimensional spaces are studied for larger distance.</p></div>
 
@@ -125,18 +125,21 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Stabilizer measurement <a href="#cite-9" class="cite">[10]</a>.</span></div>
 
 
  
-<h2 class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by permutations <a href="#cite-10" class="cite">[11]</a>.</span></div>
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by qubit permutations <a href="#cite-10" class="cite">[11]</a>.</span></div>
 
 
 
 
-<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
   <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-11" class="cite">[12]</a>.</span></div>
 
 
@@ -146,7 +149,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Introduction to CSS-to-homology dictionary by <a href="https://www.youtube.com/watch?v=SeLpWg_8qlc" target="_blank" class="href">M. Hastings</a>.</span><span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product" class="ref">hypergraph product</a> codes.</span>
 </div>
@@ -154,7 +157,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parents
 </h2>
 <div class="sectioncontent code-parents">
@@ -172,7 +175,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Children
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -202,7 +205,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

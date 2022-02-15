@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Dual-rail code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>This is an error-detecting code against one photon loss event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state <span class="inline-math">\(|00\rangle\)</span> is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.</p>
 <p>For Deutsch&#x27;&#x27;s  problem specifically, this code protects against errors resulting in states that have the correct photon number, but in the wrong modes <a href="#cite-0" class="cite">[1]</a>.</p></div>
 
@@ -107,7 +107,8 @@
 
 
  
-<h2 class="code-feature code-feature-general_gates">Gates</h2>
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
   <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">General gates are performed using beamsplitters and Kerr non-linearities. Universal quantum computing can be achieved with photons in dual-rail encodings using the KLM protocol <a href="#cite-1" class="cite">[2]</a> with only linear optical elements and photon detectors.</span></div>
 
 
@@ -121,7 +122,7 @@
 
 
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">For Deutsch&#x27;s problem <a href="#cite-2" class="cite">[3]</a> with optical qubits, error correction using photon number detection reduces the error probability from <span class="inline-math">\(\frac{1}{4} (1+e^{-\gamma}-2e^{-3\gamma/2}) \)</span>   to <span class="inline-math">\(\frac{1}{2} (1- \text{sech} \gamma/2)\)</span>.</span>
 </div>
@@ -129,7 +130,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">

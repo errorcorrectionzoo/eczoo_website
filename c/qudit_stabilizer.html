@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Modular-qudit stabilizer code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,12 +86,12 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
 <p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p>
-<p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(H_X|H_Z)\)</span>, where each row <span class="inline-math">\((h_X|h_Z)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator. (Standard form goes here.)</p></div>
+<p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(A|B)\)</span>, where each row <span class="inline-math">\((a|b)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator. (Standard form goes here.)</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</div>
 
 
@@ -110,7 +110,8 @@
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
@@ -122,7 +123,7 @@
 
 
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">A standardized definition of the qudit stabilizer group is developed in <a href="#cite-1" class="cite">[2]</a>.</span>
 </div>
@@ -130,7 +131,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -142,7 +143,7 @@
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Children
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -158,7 +159,7 @@
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

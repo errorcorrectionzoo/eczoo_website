@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Single parity-check code</span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check. </div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">This code cannot protect information, it can only detect 1-bit error.</div>
 
 
@@ -99,20 +99,23 @@
 
 
 
-<h2 class="code-feature code-feature-rate">Rate</h2>
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
   <div class="sectioncontent code-feature code-feature-rate">The code rate is <span class="inline-math">\(\frac{n}{n+1}\to 1\)</span> as <span class="inline-math">\(n\to\infty\)</span>. The code distance is 2.</div>
 
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Concatenate the codeword with a parity bit which encodes the parity information of codeword.</span></div>
 
 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">If the receiver finds that the parity information of a codeword disagrees with the parity bit, then the receiver will discard the information and request a resend.</span></div>
 
 
@@ -123,7 +126,7 @@
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Can be realized on almost every communication device.</span>
 </div>
@@ -132,7 +135,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -145,7 +148,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

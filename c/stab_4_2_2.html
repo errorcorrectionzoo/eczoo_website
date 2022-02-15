@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"> Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}. \end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\ \end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects a single-qubit error <a href="#cite-0" class="cite">[1]</a> or single erasure <a href="#cite-1" class="cite">[2]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-2" class="cite">[3]</a>.</div>
 
 
@@ -105,14 +105,16 @@
 
 
 
-<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+<h2 id="feature_transversal_gates"
+      class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
   <div class="sectioncontent code-feature code-feature-transversal_gates">Transversal Pauli, Hadamard, and two-qubit <span class="inline-math">\(R\)</span> gates <a href="#cite-3" class="cite">[4]</a>.</div>
  
 
 
 
 
-<h2 class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
   <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but requires post-selection because the code cannot correct errors <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
@@ -121,12 +123,12 @@
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Realized in trapped-ion quantum devices <a href="#cite-4" class="cite">[5]</a> and superconducting circuits <a href="#cite-5" class="cite">[6]</a>.</span>
 </div>
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Concatenating <span class="inline-math">\([[4,2,2]]\)</span> code with surface code can generate 2D topological code with a reasonable circuit-based threshold <a href="#cite-6" class="cite">[7]</a>.</span>
 </div>
@@ -134,7 +136,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parents
 </h2>
 <div class="sectioncontent code-parents">
@@ -153,7 +155,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

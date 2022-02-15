@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Homological continuous-variable (CV) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,11 +86,11 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/oscillator_stabilizer" class="ref">oscillator-into-oscillator CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex.</p>
 <p>Stabilizer generators are defined by two orthogonal subspaces of the <span class="inline-math">\(C_1\)</span> in the chain complex. <span class="inline-math">\(C_X = \partial_2 C_2\)</span> and <span class="inline-math">\(C_P = \partial_1^T Q\)</span> for some <span class="inline-math">\(Q \subset C_0\)</span>. The standard approach would use <span class="inline-math">\(Q = C_0\)</span>, which would mean the logical dimension would be the dimension of the 1st homology group <span class="inline-math">\(H^1\)</span>. However, <span class="inline-math">\(H^1\)</span> is trivial for the <span class="inline-math">\(n-1\)</span> simplex, so one chooses <span class="inline-math">\(Q \neq C_0\)</span> such that exactly one stabilizer is removed, yielding a stabilizer code instead of a single stabilized state.&#x27;</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against certain types of erasure errors (depending on the specific dimension). Certain constructions also protect arbitrary sized errors on multiple photon states.</div>
 
 
@@ -104,14 +104,16 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding depends on the specific dimension, but can generally be done using generalized conditional-rotation and Fourier-transform gates.</span></div>
 
 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding requires a different circuit for each possible erasure error, with no general circuit decoding any possible erasure error. Every circuit relies on a generalized conditional rotation, which Ref. <a href="#cite-0" class="cite">[1]</a> calls the <span class="textit">QND Gate</span> and which is defined as <span class="inline-math">\(QND_c | x , y \rangle = |x + c y, y \rangle\)</span>.</span></div>
 
 
@@ -122,7 +124,7 @@
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">No experimental realization. However, Ref. <a href="#cite-0" class="cite">[1]</a> describes a potential experimental optical procedure for the simplest non-trival code with 5 modes.</span>
 </div>
@@ -131,7 +133,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parents
 </h2>
 <div class="sectioncontent code-parents">
@@ -148,7 +150,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

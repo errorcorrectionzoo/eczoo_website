@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Quantum low-density parity-check (QLDPC) code</span></span>
@@ -86,11 +86,11 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</p>
 <p>Strictly speaking, the term <span class="textit">parity check</span> describes only bitwise qubit error syndromes. Nevertheless, qudit codes satisfying the above criteria are often called QLDPC codes.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> sites, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> sites. Asymptotic scaling of <span class="inline-math">\(k\)</span> and <span class="inline-math">\(d\)</span> with <span class="inline-math">\(n\)</span> is often of interest, and this depends heavily on the code construction.
 For qubits, a <span class="textit">geometrically local LDPC code</span> is an LDPC code where the qubits involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>; such codes are limited to having <span class="inline-math">\(d=O(n^{1-1/D})\)</span> for <span class="inline-math">\(D\)</span>-dimensional lattice geometries <a href="#cite-0" class="cite">[1]</a>.</div>
 
@@ -101,7 +101,8 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 
 
 
-<h2 class="code-feature code-feature-rate">Rate</h2>
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
   <div class="sectioncontent code-feature code-feature-rate">A family of QLDPC codes <span class="inline-math">\([[n_i,k_i,d_i]]\)</span> is <span class="textit">asymptotically good</span> if the asymptotic rate <span class="inline-math">\(\lim_{i\to\infty} k_i/n_i\)</span> and asymptotic distance <span class="inline-math">\(\lim_{i\to\infty} d_i/n_i\)</span> are both positive. The first examples of good qubit codes are a family of <a href="/c/lifted_product" class="ref">lifted-product codes</a>.</div>
 
 
@@ -112,7 +113,8 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Non-binary decoding algorithm for CSS-type QLDPC codes <a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
@@ -120,13 +122,14 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 
 
 
-<h2 class="code-feature code-feature-threshold">Threshold</h2>
+<h2 id="feature_threshold"
+      class="code-feature code-feature-threshold">Threshold</h2>
   <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">QLDPC codes with a constant encoding rate can reduce the overhead of fault-tolerant quantum computation to be constant <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">Links to code tables of notable QLDPC codes <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Reviews of QLDPC codes provided in Refs. <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a>.</span>
 </div>
@@ -134,7 +137,7 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -146,7 +149,7 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Children
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -168,7 +171,7 @@ For qubits, a <span class="textit">geometrically local LDPC code</span> is an LD
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Convolutional code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,7 +86,7 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">Classical codes that are formed using generator polynomials over the finite field with two elements. The encoder slides across contiguous subsets of the input bit-string (like a convolutional neural network) evaluating the polynomials on that window to obtain a number of parity bits. These parity bits are the encoded information. There are many ways to formulate these codes</div>
 
 
@@ -97,20 +97,23 @@
 
 
 
-<h2 class="code-feature code-feature-rate">Rate</h2>
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
   <div class="sectioncontent code-feature code-feature-rate">Depends on the polynomials used. Using puncturing removal <a href="#cite-1" class="cite">[2]</a> the rate for the code can be increased from <span class="inline-math">\(\frac{1}{t}\)</span> to <span class="inline-math">\(\frac{s}{t}\)</span>, where <span class="inline-math">\(t\)</span> is the number of output bits, and <span class="inline-math">\(s\)</span> depends on the puncturing done. This is done by deleting some pieces of the encoder output such that the most-likely decoders remain effective</div>
 
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Evaluation on the generator polynomials. Can be implemented with a small number of XOR gates</span></div>
 
 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoders based on the Viterbi algorithm (trellis decoding) were developed first, which result in the most-likely codeword for the encoded bits <a href="#cite-2" class="cite">[3]</a>. Following, other trellis decoders such as the BCJR decoding algorithm <a href="#cite-3" class="cite">[4]</a> were developed later.</span></div>
 
 
@@ -121,7 +124,7 @@
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">A type of convolutional code used in Real-time Applcation networks <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Mobile and radio communications (3G networks) use convolutional codes concatenated with Reed-Solomon codes to obtain suitable performance <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">A convolutional code with rate 1/2 was used for deep-space and satellite communication <a href="#cite-6" class="cite">[7]</a></span>
 </div>
@@ -130,7 +133,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -143,7 +146,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Kitaev surface code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>
@@ -87,7 +87,7 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes
 whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings
 associated to the stars and plaquettes, respectively, of a cellulation of a
@@ -108,7 +108,7 @@ is a product of four Pauli-<span class="inline-math">\(X\)</span> operators on t
 <span class="inline-math">\(v\)</span> of the lattice; each plaquette operator is a product of four Pauli-<span class="inline-math">\(Z\)</span>
 operators applied to the edges adjacent to a face, or plaquette, <span class="inline-math">\(p\)</span> of the
 lattice (<a href="#figure-0" class="ref">Figure&nbsp;I</a>).</p>
-<p><figure id="figure-0" class="float float-figure"><div class="float-contents"><img src="/fig/10984313c3f1783519305366c5a897ce.svg" style="width: 165.120000pt; height: 163.200000pt" alt="(float)"></div><figcaption><span class="center-if-single-line"><span class="float-number">Figure&nbsp;I</span>: <span class="caption-text">Stabilizer generators and logical operators of the 2D surface
+<p><figure id="figure-0" class="float float-figure"><div class="float-contents"><img src="/fig/d580bfd1b11ef8689fbb2b97ed51f625.svg" style="width: 165.120000pt; height: 163.200000pt" alt="(float)"></div><figcaption><span class="center-if-single-line"><span class="float-number">Figure&nbsp;I</span>: <span class="caption-text">Stabilizer generators and logical operators of the 2D surface
     code on a torus.  The star operators <span class="inline-math">\(A_v\)</span> and the plaquette operators
     <span class="inline-math">\(B_p\)</span> generate the stabilizer group of the toric surface code.  The logical
     operators of the toric code are strings that wrap around the torus.</span></span></figcaption></figure></p>
@@ -118,7 +118,7 @@ operator of the <span class="inline-math">\(i\)</span>-th logical qubit.  They c
 of Pauli-<span class="inline-math">\(X\)</span> operators or Pauli-<span class="inline-math">\(Z\)</span> operators that wrap around the torus
 as shown in <a href="#figure-0" class="ref">Figure&nbsp;I</a>.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Toric code on an <span class="inline-math">\(L\times L\)</span> torus is a <span class="inline-math">\([[2L^2,2,L]]\)</span> CSS code, and there
 exists a planar code with <span class="inline-math">\([[L^2,1,L]]\)</span> <a href="#cite-6" class="cite">[7]</a>. More
 generally, the code distance is related to the homology of the cellulation
@@ -132,7 +132,8 @@ generally, the code distance is related to the homology of the cellulation
 
 
 
-<h2 class="code-feature code-feature-rate">Rate</h2>
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
   <div class="sectioncontent code-feature code-feature-rate">Rate depends on the underlying cellulation and manifold. For general 2D
 manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span>
 <a href="#cite-8" class="cite">[9]</a>, meaning that (1) 2D surface codes with bounded
@@ -148,16 +149,19 @@ provides an upper bound for any bounded-geometry surface code
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Dissipative <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Stabilizer measurement-based <a href="#cite-15" class="cite">[16]</a>.</span></div>
 
 
-<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
-  <div class="sectioncontent code-feature code-feature-transversal_gates">- &#x27;Transversal Pauli gates based on non-trivial loops in the surface&#x27;s geometry.&#x27;
-- &#x27;Transversal Clifford gates can be done on folded surface codes <a href="#cite-16" class="cite">[17]</a>.&#x27;
+<h2 id="feature_transversal_gates"
+      class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Transversal Pauli gates exist and are based on non-trivial loops on surface.
+Transversal Clifford gates can be done on folded surface codes <a href="#cite-16" class="cite">[17]</a>.
 </div>
  
-<h2 class="code-feature code-feature-general_gates">Gates</h2>
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
   <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Clifford gates can be implemented via lattice surgery
 <a href="#cite-6" class="cite">[7]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>,
 twist-based lattice surgery <a href="#cite-20" class="cite">[21]</a>, or braiding defects
@@ -168,7 +172,8 @@ just-in-time decoding <a href="#cite-27" class="cite">[28]</a>.
 </span></div>
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Minimum weight perfect-matching
 <a href="#cite-7" class="cite">[8]</a><a href="#cite-28" class="cite">[29]</a>, union-find
 <a href="#cite-29" class="cite">[30]</a>, renormalization group
@@ -181,19 +186,21 @@ cellular automaton <a href="#cite-34" class="cite">[35]</a>, machine learning
 
 
 
-<h2 class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
+<h2 id="feature_code_capacity_threshold"
+      class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
   <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> (<span class="inline-math">\(10.31\%\)</span>) with pure <span class="inline-math">\(Z\)</span>-dephasing noise for square tiling
 using tensor-network <a href="#cite-38" class="cite">[39]</a><a href="#cite-32" class="cite">[33]</a>
 (minimum-weight perfect matching <a href="#cite-39" class="cite">[40]</a>) decoder.
 </span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-40" class="cite">[41]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with loss errors for square tiling <a href="#cite-41" class="cite">[42]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-42" class="cite">[43]</a>.</span></div>
 
 
-<h2 class="code-feature code-feature-threshold">Threshold</h2>
+<h2 id="feature_threshold"
+      class="code-feature code-feature-threshold">Threshold</h2>
   <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.5-1.1\%\)</span> for various error models <a href="#cite-43" class="cite">[44]</a><a href="#cite-44" class="cite">[45]</a>.</span></div>
 
 
 
-<h2 class="code-realizations">Realizations</h2>
+<h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
   <span class="paragraph-in-list">Distance-two surface codes have been implemented by Andersen et
 al. <a href="#cite-45" class="cite">[46]</a>, Erhard et al. <a href="#cite-46" class="cite">[47]</a>, and
@@ -207,7 +214,7 @@ processor <a href="#cite-51" class="cite">[52]</a>.
 </span>
 </div>
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">2D and 3D surface code <a href="http://gui.quantumcodes.io/" target="_blank" class="href">visualization
 tool</a>.
@@ -222,7 +229,7 @@ and C. Nayak</a>.
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parents
 </h2>
 <div class="sectioncontent code-parents">
@@ -238,7 +245,7 @@ and C. Nayak</a>.
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Children
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -260,7 +267,7 @@ and C. Nayak</a>.
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousins
 </h2>
 <div class="sectioncontent code-cousins">

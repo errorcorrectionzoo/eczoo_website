@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Holographic code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,11 +86,11 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>A code whose encoding isometry serves to model aspects of the AdS/CFT holographic duality. Encodes operators in the bulk of the Anti de Sitter (AdS) space, represented by logical qudits, into operators on the boundary of the corresponding Conformal Field Theory (CFT), represented by physical qudits. Encoding can often be represented by a tensor network associated with a tiling of hyperbolic space. See Defn 4.3 of Ref. <a href="#cite-1" class="cite">[2]</a> for a technical formulation.</p>
 <p>Typically, the encoding isometry <span class="inline-math">\(U\)</span> obeys the <span class="textit">entanglement-wedge reconstruction condition</span>, which states that for any boundary region <span class="inline-math">\(R\)</span>, any bulk operator <span class="inline-math">\(O\)</span> localized to the entanglement wedge of <span class="inline-math">\(R\)</span> must be implementable by some boundary operator <span class="inline-math">\(\tilde{O}\)</span> localized to <span class="inline-math">\(R\)</span>. Formally, <span class="inline-math">\(UO = \tilde{O}U\)</span> and <span class="inline-math">\([\tilde{O},UU^\dagger] = 0\)</span>. The entanglement wedge is the space enclosed within the Ryu–Takayanagi surface in the bulk (minimal surface) with boundary <span class="inline-math">\(R\)</span>.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against erasure errors on the boundary. Error-correction properties are often stated in the Heisenberg picture, i.e., in terms of which logical operators can be <span class="textit">reconstructed</span> after erasures. Specifically, bulk operators outside the entanglement wedges of the erased boundary operators can be reconstructed using the remaining boundary operators. However, the protection can be nontrivial, and may only apply to a subalgebra of bulk operators <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</div>
 
 
@@ -106,7 +106,8 @@
 
 
 
-<h2 class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+<h2 id="feature_transversal_gates"
+      class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
   <div class="sectioncontent code-feature code-feature-transversal_gates">There exist holographic approximate codes with arbitrary transversal gate sets for any compact Lie group <a href="#cite-1" class="cite">[2]</a>.</div>
  
 
@@ -115,7 +116,8 @@
 
 
 
-<h2 class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
+<h2 id="feature_code_capacity_threshold"
+      class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
   <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">The ideal holographic code (perfect representation of AdS/CFT) should be able to protect a central bulk operator against erasures of half of the physical qubits on the boundary, in line with AdS-Rindler reconstruction <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Holographic codes are argued to have a <span class="textit">algebraic threshold</span>, for which the error rate scales polynomially (as opposed to exponentially) in the thermodynamic limit <a href="#cite-4" class="cite">[5]</a>. Such a threshold is governed by the underlying conformal field theory describing the boundary.</span></div>
 
 
@@ -123,7 +125,7 @@
 
 
 
-<h2 class="code-notes">Notes</h2>
+<h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
   <span class="paragraph-in-list">All Boundary global symmetries must be dual to bulk gauge symmetries, and vice versa <a href="#cite-5" class="cite">[6]</a>.</span>
 </div>
@@ -131,7 +133,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -145,7 +147,7 @@
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Children
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -161,7 +163,7 @@
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Haar-random code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a></span></span>
@@ -86,12 +86,12 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#cite-4" class="cite">[5]</a>, but encoding and decoding in random <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</p>
 <p>There are different approaches to create random codewords. In the construction of Ref. <a href="#cite-1" class="cite">[2]</a>, random codewords are produced by performing a unitarily covariant projective measurement on a <span class="textit">typical</span> subspace of a tensor-power state. Reference <a href="#cite-1" class="cite">[2]</a> showed that the capacity of a noisy quantum channel can be achieved by encoding in such Haar-random codes. In particular, random codes achieve perfect transmission in the <span class="inline-math">\(n\to\infty\)</span>) limit by proving that the encoded information becomes decoupled from the environment. This is a necessary and sufficient condition for successful decoding since measurements of the environment should never reveal the encoded information <a href="#cite-5" class="cite">[6]</a>.</p>
 <p>Intuitively, coupling with the environment can be decreased by projecting the system onto a random codespace. The more qubits that are randomly discarded, the more the codespace is decoupled from the environment. One may ask what is the least amount of qubits that can be discarded, i.e. the largest remaining codespace, that still achieves decoupling. It can be shown through the decoupling inequality <a href="#cite-6" class="cite">[7]</a> that the largest possible dimension of the random codespace that achieves arbitrarily large decoupling is exponential in the coherent information of the channel. Therefore, there exist codes that can transmit information with rate equal to the coherent information. Furthermore, these codes can be constructed with high probability by performing a Haar-random isometry embedding a <span class="inline-math">\(k\)</span>-dimensional logical subspace into an <span class="inline-math">\(n\)</span>-dimensional physical space, where <span class="inline-math">\(k/n\)</span> is equal to the coherent information. Such an isometry can be produced by QR decomposition of a Gaussian random matrix <a href="#cite-7" class="cite">[8]</a>.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Random code achieve the capacity of any noisy quantum channel.</div>
 
 
@@ -101,7 +101,8 @@
 
 
 
-<h2 class="code-feature code-feature-rate">Rate</h2>
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
   <div class="sectioncontent code-feature code-feature-rate">The rate of the code is equal to the coherent information of the channel (i.e. the quantum channel capacity).</div>
 
 
@@ -126,7 +127,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -139,7 +140,7 @@
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

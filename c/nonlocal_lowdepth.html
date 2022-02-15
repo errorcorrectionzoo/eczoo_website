@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Low-depth random Clifford-circuit code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,10 +86,10 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">An encoder for an <span class="inline-math">\([[n,k]]\)</span> quantum error correcting code, is an <span class="inline-math">\(n\)</span>-qubit unitary transformation that takes a <span class="inline-math">\(k\)</span>-qubit state as input (with <span class="inline-math">\(k\leq n\)</span>, and the remaining <span class="inline-math">\(n-k\)</span> qubits initialized to <span class="inline-math">\(|0\rangle^{\otimes n-k}\)</span> ) to give a corresponding state in the codespace as the output. An n-qubit quantum circuit with random 2-qubit Clifford gates can act as an encoder into a code with distance <span class="inline-math">\(d\)</span> with high probability, with a size (i.e. number of gates in the circuit) at most <span class="inline-math">\(O(n^2 log n)\)</span>). Noting that two gates acting on disjoint qubits could in fact be executed simultaneously, this is equivalent to the depth (number of time steps in the circuit) being at most <span class="inline-math">\(O(log^3 n)\)</span>.</div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Creates a random <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code that detects errors on <span class="inline-math">\(d-1\)</span> qubits, and corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
 
 
@@ -122,7 +122,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">

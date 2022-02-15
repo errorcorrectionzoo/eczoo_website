@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Eigenstate thermalization hypothesis (ETH) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,7 +86,7 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Also called a <span class="textit">thermodynamic code</span> <a href="#cite-1" class="cite">[2]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</p>
 <p>ETH requires that for ordered energy eigenstates <span class="inline-math">\(|E_l\rangle\)</span> and any local observable <span class="inline-math">\(O\)</span>,
 <span class="display-math env-align">\begin{align}
@@ -94,7 +94,7 @@
 \end{align}</span>
 for a constant <span class="inline-math">\(c\)</span>. This implies that energy eigenstates around some energy <span class="inline-math">\(\bar E\)</span> are approximately locally indistinguishable from one another, as their reduced density matrices on any subsystem are both approximately thermal at energy <span class="inline-math">\(\bar E\)</span>. In this way, global information is protected from local measurements by the environment as <span class="inline-math">\(n\to\infty\)</span>.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Approximately protects against erasure errors at known locations. Translation invariance alone is sufficient for good approximate error-correcting properties in a many-body spectrum, including in integrable models <a href="#cite-0" class="cite">[1]</a>. The ETH code generated from the spectrum of the translation-invariant 1D Heisenberg spin chain <a href="#cite-0" class="cite">[1]</a> has recovery infidelity (against the erasure of a constant number of sites) scale as <span class="inline-math">\(\epsilon_\text{worst}=O(1/n)\)</span> <a href="#cite-1" class="cite">[2]</a>.</div>
 
 
@@ -113,7 +113,8 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">An explicit universal recovery channel for the ETH code is given in <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
@@ -129,7 +130,7 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parents
 </h2>
 <div class="sectioncontent code-parents">
@@ -148,7 +149,7 @@ for a constant <span class="inline-math">\(c\)</span>. This implies that energy 
 </div>
 
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">

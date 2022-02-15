@@ -76,7 +76,7 @@
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
 
-<h2 class="code-name">Name</h2>
+<h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
   <span class="code-name">Codeword stabilized (CWS) code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
@@ -86,11 +86,11 @@
 </div>
 
 
-<h2 class="code-description">Description</h2>
+<h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p>
 <p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></div>
 
-<h2 class="code-protection">Protection</h2>
+<h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>.</div>
 
 
@@ -104,14 +104,16 @@
 
 
 
-<h2 class="code-feature code-feature-encoders">Encoding</h2>
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
   <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">If <span class="inline-math">\( \mathcal{C} \)</span> has an efficient classical encoder, then so does the CWS code <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span>.</span></div>
 
 
  
 
 
-<h2 class="code-feature code-feature-decoders">Decoding</h2>
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">There is no known <span class="textit">efficient</span> algorithm to decode <span class="textit">non-additive</span> (non-stabilizer) CWS codes.</span></div>
 
 
@@ -127,7 +129,7 @@
 
 <!-- Relationships to other codes -->
 
-<h2 class="code-parents">
+<h2 id="relations_parents" class="code-parents">
     Parent
 </h2>
 <div class="sectioncontent code-parents">
@@ -139,7 +141,7 @@
 </ul>
 </div>
 
-<h2 class="code-parent-of">
+<h2 id="relations_parent_of" class="code-parent-of">
     Child
 </h2>
 <div class="sectioncontent code-parent-of">
@@ -153,7 +155,7 @@
 </ul>
 </div>
 
-<h2 class="code-cousins">
+<h2 id="relations_cousins" class="code-cousins">
     Cousin
 </h2>
 <div class="sectioncontent code-cousins">
