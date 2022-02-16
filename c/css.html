@@ -111,7 +111,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</p>
-<p>Using the relation to chain complexes, the number of encoded logical qubits is equal to the dimension of the first <span class="inline-math">\(\mathbb{Z}_2\)</span>-homology of the chain complex, <span class="inline-math">\(H_1(\partial, \mathbb{Z}_2) = \frac{\text{Ker}(\partial_1)}{\text{Im}(\partial_2)}\)</span>. The distance of the CSS code is equal to the minimum of the combinatorial (<span class="inline-math">\(d-1\)</span>)-systole of the cellulated <span class="inline-math">\(d\)</span>-dimensional manifold and its dual. For surfaces, there is an upper bound of <span class="inline-math">\(d \leq O(\sqrt{n})\)</span> on the distance <a href="#cite-7" class="cite">[8]</a>, therefore codes coming from higher-dimensional spaces are studied for larger distance.</p></div>
+<p>Using the relation to chain complexes, the number of encoded logical qubits is equal to the dimension of the first <span class="inline-math">\(\mathbb{Z}_2\)</span>-homology of the chain complex, <span class="inline-math">\(H_1(\partial, \mathbb{Z}_2) = \frac{\text{Ker}(\partial_1)}{\text{Im}(\partial_2)}\)</span>. The distance of the CSS code is equal to the minimum of the combinatorial (<span class="inline-math">\(d-1\)</span>)-systole of the cellulated <span class="inline-math">\(d\)</span>-dimensional manifold and its dual.</p></div>
 
 
 <!-- Display features -->
@@ -126,25 +126,25 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Stabilizer measurement <a href="#cite-8" class="cite">[9]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Stabilizer measurement <a href="#cite-7" class="cite">[8]</a>.</span></div>
 
 
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by qubit permutations <a href="#cite-9" class="cite">[10]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by qubit permutations <a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
 
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-10" class="cite">[11]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-9" class="cite">[10]</a>.</span></div>
 
 
 <h2 id="feature_code_capacity_threshold"
       class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a>.</span></div>
 
 
 
@@ -169,7 +169,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-13" class="cite">[14]</a>.</span></li>
+      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-12" class="cite">[13]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -245,7 +245,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
+      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -340,40 +340,35 @@ url={https://errorcorrectionzoo.org/c/css}
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href">0810.1983</a>
+        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
+        Nikolas P. Breuckmann and Simon Burton, “Fold-Transversal Clifford Gates for Quantum Codes”. <a href="https://arxiv.org/abs/2202.06647" target="_blank" class="href">2202.06647</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        Nikolas P. Breuckmann and Simon Burton, “Fold-Transversal Clifford Gates for Quantum Codes”. <a href="https://arxiv.org/abs/2202.06647" target="_blank" class="href">2202.06647</a>
+        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
+        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
+        I. Dumer, A. A. Kovalev, and L. P. Pryadko, “Thresholds for Correcting Errors, Erasures, and Faulty Syndrome Measurements in Degenerate Quantum Codes”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.6172" target="_blank" class="href">1412.6172</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        I. Dumer, A. A. Kovalev, and L. P. Pryadko, “Thresholds for Correcting Errors, Erasures, and Faulty Syndrome Measurements in Degenerate Quantum Codes”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.6172" target="_blank" class="href">1412.6172</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-13">[14]</dt>
-      <dd>
         S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-14">[15]</dt>
+      <dt id="cite-13">[14]</dt>
       <dd>
         Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
       </dd>
