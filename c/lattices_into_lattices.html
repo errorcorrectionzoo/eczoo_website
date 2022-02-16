@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Quantum expander code" />
+<meta name="citation_title" content="Lattice-based code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Quantum expander code" />
+<meta name="DC.title" content="Lattice-based code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Quantum expander code
+      Lattice-based code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Quantum expander code</h1>
+    <h1>Lattice-based code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -71,7 +71,7 @@
      dd -> div class="sectioncontent"
   -->
 
-<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_quantum_expander">
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_lattices_into_lattices">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -79,18 +79,16 @@
 <h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
-  <span class="code-name">Quantum expander code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Lattice-based code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/quantum_expander">&nbsp;</a>-->
+   href="/c/lattices_into_lattices">&nbsp;</a>-->
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</div>
+<div class="sectioncontent code-description">Encodes states (codewords) in coordinates of a lattice in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Pauli errors of weight <span class="inline-math">\(\leq t\)</span>, distance scales as <span class="inline-math">\(\Omega(n^{1/2})\)</span>.</div>
 
 
 <!-- Display features -->
@@ -99,9 +97,6 @@
 
 
 
-<h2 id="feature_rate"
-      class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\([[n,k=\Theta(n),d=O(\sqrt{n})]]\)</span> code with asymptotically constant rate.</div>
 
 
 
@@ -111,18 +106,12 @@
  
 
 
-<h2 id="feature_decoders"
-      class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Ref. <a href="#cite-0" class="cite">[1]</a> details a linear time decoder, which corrects <span class="inline-math">\(\Omega(n^{1/2})\)</span> adversarial errors.</span></div>
 
 
 
 
 
 
-<h2 id="feature_threshold"
-      class="code-feature code-feature-threshold">Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Current estimate of <span class="inline-math">\(2.7 \cdot 10^{-16}\)</span> in locally stochastic noise model <a href="#cite-1" class="cite">[2]</a>.</span></div>
 
 
 
@@ -139,7 +128,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/hypergraph_product">Hypergraph product code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/ecc">Error-correcting code</a></span></li>
 </ul>
 </div>
 
@@ -152,7 +141,9 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/expander">Expander code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/binary_linear">Linear binary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span></li>
 </ul>
 </div>
 
@@ -165,33 +156,33 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    quantum_expander
+    lattices_into_lattices
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/quantum_expander.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/lattices/lattices_into_lattices.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=quantum_expander">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_expander</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=lattices_into_lattices">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>lattices_into_lattices</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Quantum expander code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/quantum_expander</dd>
+    <dd>“Lattice-based code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/lattices_into_lattices</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_quantum_expander,
-title={Quantum expander code},
+    <dd class="bibtex">@incollection{eczoo_lattices_into_lattices,
+title={Lattice-based code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/quantum_expander}
+url={https://errorcorrectionzoo.org/c/lattices_into_lattices}
 }</dd>
     <h2>Permanent link:</h2>
-    <dd>https://errorcorrectionzoo.org/c/quantum_expander</dd>
+    <dd>https://errorcorrectionzoo.org/c/lattices_into_lattices</dd>
   </dl>
 </div>
 </div>
@@ -203,21 +194,6 @@ url={https://errorcorrectionzoo.org/c/quantum_expander}
 
 <h2>References</h2>
 
-   <div id="endnotes" class="sectioncontent">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Omar Fawzi, Antoine Grospellier, and Anthony Leverrier, “Efficient decoding of random errors for quantum expander codes”. <a href="https://arxiv.org/abs/1711.08351" target="_blank" class="href">1711.08351</a>
-      </dd>
-    
-    </dl>
-   </div>
 
 
 </section>
