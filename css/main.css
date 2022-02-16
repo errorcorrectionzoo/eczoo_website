@@ -681,10 +681,6 @@ figure.float figcaption .center-if-single-line {
 }
 
 #endnotes {
-  margin: 1rem 0px 1rem;
-  padding: 10px;
-  border: solid 1px rgba(120, 120, 140, 0.15);
-  opacity: 0.85;
   font-size: 0.9rem;
   margin-bottom: 20px;
 }
@@ -696,7 +692,6 @@ figure.float figcaption .center-if-single-line {
 
 #endnotes dt {
   font-style: normal;
-  min-width: 2.5em;
   text-align: right;
 }
 
@@ -714,6 +709,17 @@ figure.float figcaption .center-if-single-line {
   display: inline-block;
   vertical-align: 0.3em;
   margin-top: -0.3em;
+}
+
+.codelistpage_style_cards #endnotes {
+  margin: 1rem 0px 1rem;
+  padding: 10px;
+  border: solid 1px rgba(120, 120, 140, 0.15);
+  opacity: 0.8;
+}
+
+.codelistpage_style_cards #endnotes dt {
+  min-width: 2em;
 }
 
 .short-code-name {
@@ -801,57 +807,8 @@ figure.float figcaption .center-if-single-line {
   content: ' • ';
 }
 
-#EczooSearchWidget .search-input {
-  padding: 0.5em 1em;
-  font-size: 1.2rem;
-  box-sizing: border-box;
-  width: 100%;
-}
-
-#EczooSearchWidget .search-no-results, #EczooSearchWidget .search-no-query-string,
-#EczooSearchWidget .search-results-error {
-  padding: 2em 0px;
-}
-
-#EczooSearchWidget .search-no-query-string {
-  font-style: italic;
-}
-
-#EczooSearchWidget .search-results-error {
-  padding: 2em 0px;
-  color: #b40000;
-}
-
-#EczooSearchWidget .search-query-info {
-  display: block;
-  margin-top: 0.5em;
-}
-
 #EczooSearchWidget .search-result {
   margin: 1rem 0px 1rem;
   padding: 10px;
   border: solid 1px rgba(120, 120, 140, 0.15);
-}
-
-#EczooSearchWidget .search-result .search-result-title {
-  font-style: bold;
-  display: block;
-}
-
-#EczooSearchWidget .search-result .search-result-display-field-name {
-  color: rgba(0, 0, 0, 0.6);
-  font-size: 0.9rem;
-}
-
-#EczooSearchWidget .search-result .search-result-display-field-name::before {
-  content: ' — ';
-}
-
-#EczooSearchWidget .search-result .search-result-field-display {
-  display: block;
-  font-style: italic;
-}
-
-#EczooSearchWidget .search-result .sr-highlight {
-  background-color: rgba(255, 230, 70, 0.8);
 }
