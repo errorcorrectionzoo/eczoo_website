@@ -8,7 +8,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Maximum-rank vector rank-metric code" />
+<meta name="citation_title" content="Matrix code" />
 <meta name="citation_publication_date" content="2021" />
 <meta name="citation_date" content="2021" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -16,13 +16,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Maximum-rank vector rank-metric code" />
+<meta name="DC.title" content="Matrix code" />
 <meta name="DC.issued" content="2021" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-      Maximum-rank vector rank-metric code
+      Matrix code
     [error correction zoo]
   </title>
 
@@ -59,7 +59,7 @@
   >
 
   <header id="header">
-    <h1>Maximum-rank vector rank-metric code</h1>
+    <h1>Matrix code</h1>
   </header><!-- #header -->
 
   <main id="main">
@@ -71,7 +71,7 @@
      dd -> div class="sectioncontent"
   -->
 
-<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_maximum_rank_distance">
+<section class="ecc-code ecc-code-page info-popup-button-zone" id="ecc_matrices_into_matrices">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -79,24 +79,16 @@
 <h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
-  <span class="code-name">Maximum-rank vector rank-metric code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="code-name">Matrix code</span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
-   href="/c/maximum_rank_distance">&nbsp;</a>-->
+   href="/c/matrices_into_matrices">&nbsp;</a>-->
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
-the generator matrix
-<span class="display-math env-align">\begin{align}
-G = \begin{pmatrix} g_1^{[0]} &amp; g_2^{[0]} &amp; \ldots &amp; g_n^{[0]} \\ g_1^{[1]} &amp; g_2^{[1]} &amp; \ldots &amp; g_n^{[1]} \\ g_1^{[k-1]} &amp; g_2^{[k-1]} &amp; \ldots &amp; g_n^{[k-1]} \end{pmatrix}~,
-\end{align}</span>
-where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math">\(k=n-d+1\)</span> defines a maximum rank distance code.
-</div>
+<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in an <span class="inline-math">\(m\times n\)</span>-dimensional <span class="textit">matrix</span> of coordinates over the field <span class="inline-math">\(GF(q)\)</span>.</div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><span class="inline-math">\(d\)</span>-distance codes protect agains all errors of rank not greater <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span></div>
 
 
 <!-- Display features -->
@@ -136,26 +128,11 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/gabidulin">Vector rank-metric code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Vector rank-metric codes with maximum rank.</span></li>
+    <span class="code-parents-1-code"><a href="/c/ecc">Error-correcting code</a></span></li>
 </ul>
 </div>
 
 
-<h2 id="relations_cousins" class="code-cousins">
-    Cousin
-</h2>
-<div class="sectioncontent code-cousins">
-
-
-<ul class="code-relations-list code-cousins-list">
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The construction of the generators matrix of both codes uses a Vandermonde matrix.</span></li>
-</ul>
-</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -166,33 +143,33 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    maximum_rank_distance
+    matrices_into_matrices
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/maximum_rank_distance.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/matrices_into_matrices.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=maximum_rank_distance">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>maximum_rank_distance</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=matrices_into_matrices">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>matrices_into_matrices</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Maximum-rank vector rank-metric code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/maximum_rank_distance</dd>
+    <dd>“Matrix code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/matrices_into_matrices</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_maximum_rank_distance,
-title={Maximum-rank vector rank-metric code},
+    <dd class="bibtex">@incollection{eczoo_matrices_into_matrices,
+title={Matrix code},
 booktitle={The Error Correction Zoo},
 year={2021},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
+url={https://errorcorrectionzoo.org/c/matrices_into_matrices}
 }</dd>
     <h2>Permanent link:</h2>
-    <dd>https://errorcorrectionzoo.org/c/maximum_rank_distance</dd>
+    <dd>https://errorcorrectionzoo.org/c/matrices_into_matrices</dd>
   </dl>
 </div>
 </div>
@@ -204,21 +181,6 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
 
 <h2>References</h2>
 
-   <div id="endnotes" class="sectioncontent">
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        E. M. Gabidulin, &quot;Theory of Codes with Maximum Rank Distance&quot;, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-   </div>
 
 
 </section>

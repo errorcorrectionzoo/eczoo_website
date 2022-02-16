@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-      \(q\)-ary Digits Kingdom
+      Galois-field \(q\)-ary Kingdom
     [error correction zoo]
   </title>
 
@@ -42,17 +42,17 @@
   >
 
   <header id="header">
-    <h1><span class="inline-math">\(q\)</span>-ary Digits Kingdom</h1>
+    <h1>Galois-field <span class="inline-math">\(q\)</span>-ary Kingdom</h1>
   </header><!-- #header -->
 
   <main id="main">
 
-<p>Welcome to the <span class="inline-math">\(q\)</span>-ary Digits Kingdom.</p>
+<p>Welcome to the Galois-field <span class="inline-math">\(q\)</span>-ary Kingdom.</p>
 
 
 
 <div class="ecc-code" id="ecc_q-ary_digits_into_q-ary_digits">
-  <span class="short-code-name"><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a></span>
+  <span class="short-code-name"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span>
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates over the field <span class="inline-math">\(GF(q)=\mathbb{F}_q\)</span> and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)_q\)</span>. The distance is the minimum number of coordinates where two strings in the code differ.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects general errors on up to <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates.</span>
   <span class="short-code-parents">
@@ -61,18 +61,18 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/gabidulin">Rank code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/gabidulin">Vector rank-metric code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_q-ary_linear">
-  <span class="short-code-name"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span>
+  <span class="short-code-name"><a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span>
   <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
   <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -86,16 +86,16 @@
 
 
 <div class="ecc-code" id="ecc_gabidulin">
-  <span class="short-code-name"><a href="/c/gabidulin">Rank code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">Also called <span class="textit">Gabidulin</span> or <span class="textit">(matrix) rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q^N)\)</span> is the maximum number of its linearly independent coordinates.</span>
+  <span class="short-code-name"><a href="/c/gabidulin">Vector rank-metric code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-description">Also called <span class="textit">Gabidulin</span> or <span class="textit">vector rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q)^N\)</span> is the maximum number of its linearly independent coordinates.</span>
   <span class="short-code-info">Protection: Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/maximum_rank_distance">Maximum-rank code</a>.
+      <a href="/c/maximum_rank_distance">Maximum-rank vector rank-metric code</a>.
   </span>
 </div>
 
@@ -105,7 +105,7 @@
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -124,7 +124,7 @@ is the row space of the parity check matrix of <span class="inline-math">\(C\)</
   <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -138,7 +138,7 @@ is the row space of the parity check matrix of <span class="inline-math">\(C\)</
   <span class="short-code-description">An <span class="inline-math">\( [n,k]_{q} \)</span> code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -158,7 +158,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
   <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -172,7 +172,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_linear">Linear Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -182,7 +182,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
 
 
 <div class="ecc-code" id="ecc_maximum_rank_distance">
-  <span class="short-code-name"><a href="/c/maximum_rank_distance">Maximum-rank code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/maximum_rank_distance">Maximum-rank vector rank-metric code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
 the generator matrix
 <span class="display-math env-align">\begin{align}
@@ -193,7 +193,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   <span class="short-code-info">Protection: <span class="inline-math">\(d\)</span>-distance codes protect agains all errors of rank not greater <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span></span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/gabidulin">Rank code</a>.
+      <a href="/c/gabidulin">Vector rank-metric code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -297,7 +297,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/maximum_rank_distance">Maximum-rank code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>.
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/maximum_rank_distance">Maximum-rank vector rank-metric code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>.
   </span>
 </div>
 
@@ -404,7 +404,8 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
       <h1><a href="/domain/classical_domain">Classical Domain</a></h1>
       <ul class="navlinks">
         <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
-        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary Digits Kingdom</a></li>
+        <li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary Kingdom</a></li>
+        <li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li>
       </ul>
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
       <ul class="navlinks">
