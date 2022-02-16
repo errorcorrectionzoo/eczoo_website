@@ -102,7 +102,7 @@ GENERATED_pretty_code_graph_data = {
                     "_code_href": "/c/q-ary_digits_into_q-ary_digits",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
-                    "_kingdom_name": "Galois-field \\(q\\)-ary Kingdom",
+                    "_kingdom_name": "Galois-field Kingdom",
                     "_kingdom_href": "/kingdom/q-ary_digits_into_q-ary_digits"
                 },
                 "position": {
