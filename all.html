@@ -371,7 +371,7 @@ becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-
 </span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/maximum_rank_distance">Maximum-rank vector rank-metric code</a><span class="code-introduced"><a href="#cite-89" class="cite">[90]</a><a href="#cite-90" class="cite">[91]</a></span></span><span class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
+    <span class="code-name"><a href="/c/maximum_rank_distance">Maximum-rank vector code</a><span class="code-introduced"><a href="#cite-89" class="cite">[90]</a><a href="#cite-90" class="cite">[91]</a></span></span><span class="code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
 the generator matrix
 <span class="display-math env-align">\begin{align}
 G = \begin{pmatrix} g_1^{[0]} &amp; g_2^{[0]} &amp; \ldots &amp; g_n^{[0]} \\ g_1^{[1]} &amp; g_2^{[1]} &amp; \ldots &amp; g_n^{[1]} \\ g_1^{[k-1]} &amp; g_2^{[k-1]} &amp; \ldots &amp; g_n^{[k-1]} \end{pmatrix}~,
@@ -536,6 +536,9 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </span>
   </li>
   <li>
+    <span class="code-name"><a href="/c/rings_into_rings">Ring code</a></span><span class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates over a ring <span class="inline-math">\(R\)</span>.</span>
+  </li>
+  <li>
     <span class="code-name"><a href="/c/rotor_gkp">Rotor GKP code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a><a href="#cite-60" class="cite">[61]</a></span></span><span class="code-description">GKP code protecting against small angular position and momentum shifts of a planar rotor.</span>
   </li>
   <li>
@@ -632,7 +635,7 @@ The elements in the superposition of each logical codeword are related to each o
     <span class="code-name"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a><span class="code-introduced"><a href="#cite-134" class="cite">[135]</a></span></span><span class="code-description">Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/gabidulin">Vector rank-metric code</a><span class="code-introduced"><a href="#cite-89" class="cite">[90]</a><a href="#cite-90" class="cite">[91]</a></span></span><span class="code-description">Also called <span class="textit">Gabidulin</span> or <span class="textit">vector rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q)^N\)</span> is the maximum number of its linearly independent coordinates.</span>
+    <span class="code-name"><a href="/c/gabidulin">Vector code</a><span class="code-introduced"><a href="#cite-89" class="cite">[90]</a><a href="#cite-90" class="cite">[91]</a></span></span><span class="code-description">Also called <span class="textit">Gabidulin</span> or <span class="textit">vector rank-metric code</span>. The code corrects errors over rank metric instead of the traditional Hamming distance. The rank of an <span class="inline-math">\(n\)</span>-dimensional vector over <span class="inline-math">\(GF(q)^N\)</span> is the maximum number of its linearly independent coordinates.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-135" class="cite">[136]</a></span></span><span class="code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
@@ -1435,6 +1438,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <ul class="navlinks">
         <li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li>
         <li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li>
+        <li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li>
         <li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li>
       </ul>
       <h1><a href="/domain/quantum_domain">Quantum Domain</a></h1>
