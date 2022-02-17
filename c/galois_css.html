@@ -9,15 +9,15 @@
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
 <meta name="citation_title" content="Galois-qudit CSS code" />
-<meta name="citation_publication_date" content="2021" />
-<meta name="citation_date" content="2021" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
 <meta name="citation_editor" content="Faist, Philippe" />
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
 <meta name="DC.title" content="Galois-qudit CSS code" />
-<meta name="DC.issued" content="2021" />
+<meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
@@ -93,22 +93,24 @@ The stabilizer generator matrix, taking values from <span class="inline-math">\(
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parityg}
-\end{align}</span></p>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commG}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</p>
 <p>Encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(q\)</span>-ary linear codes</a>,
 an <span class="inline-math">\([n,k_X,d_X]_q \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_q \)</span> code <span class="inline-math">\(C_Z\)</span>,
 satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>.
 The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
-The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityg}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
-The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers,
-defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>,
-commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
-The codewords are
+The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityg}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>). The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees <span class="inline-math eqref">\eqref{eq:commG}</span>.
+Basis states for the code are, for <span class="inline-math">\(\gamma \in C_X\)</span>,
 <span class="display-math env-align">\begin{align}
-|\gamma + C_Z^\perp \rangle = \frac{1}{\sqrt{|C_Z^\perp|}} \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
-\end{align}</span>
-for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></div>
+|\gamma + C_Z^\perp \rangle = \frac{1}{\sqrt{|C_Z^\perp|}} \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle.
+\end{align}</span></p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
@@ -222,16 +224,16 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></div>
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Galois-qudit CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/galois_css</dd>
+    <dd>“Galois-qudit CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/galois_css</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_galois_css,
 title={Galois-qudit CSS code},
 booktitle={The Error Correction Zoo},
-year={2021},
+year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/galois_css}
 }</dd>
-    <h2>Permanent link:</h2>
+    <dt>Permanent link:</dt>
     <dd>https://errorcorrectionzoo.org/c/galois_css</dd>
   </dl>
 </div>

@@ -53,7 +53,7 @@
 
 <div class="ecc-code" id="ecc_galois_into_galois">
   <span class="short-code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,k,d))_q\)</span>, is usually used for both.</span>
+  <span class="short-code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc_finite">Finite-dimensional quantum code</a>.
@@ -71,7 +71,7 @@
 
 <div class="ecc-code" id="ecc_galois_stabilizer">
   <span class="short-code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</span>
+  <span class="short-code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. Corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qudits.</span>
   <span class="short-code-parents">
     Parents:
@@ -134,9 +134,15 @@ The stabilizer generator matrix, taking values from <span class="inline-math">\(
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parityg}
-\end{align}</span></span>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commG}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
   <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:

@@ -9,15 +9,15 @@
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
 <meta name="citation_title" content="Modular-qudit CSS code" />
-<meta name="citation_publication_date" content="2021" />
-<meta name="citation_date" content="2021" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
 <meta name="citation_editor" content="Faist, Philippe" />
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
 <meta name="DC.title" content="Modular-qudit CSS code" />
-<meta name="DC.issued" content="2021" />
+<meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
@@ -79,7 +79,7 @@
 <h2 id="code_name" class="code-name">Name</h2>
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
-  <span class="code-name">Modular-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="code-name">Modular-qudit CSS code</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <!--<a class="code-info-corner-icon code-self-permalink"
    title="permanent link to this code (click and then copy the location in the address bar)"
    href="/c/qudit_css">&nbsp;</a>-->
@@ -93,18 +93,22 @@ The stabilizer generator matrix, taking values from <span class="inline-math">\(
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parityq}
-\end{align}</span></p>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commQ}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</p>
 <p>For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits. For prime <span class="inline-math">\(q=p\)</span>, properties reminiscent of qubit CSS codes are restored: encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(p\)</span>-ary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]_p \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_p \)</span> code <span class="inline-math">\(C_Z\)</span>,
 satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
-The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityq}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>).
-The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees that the <span class="inline-math">\(X\)</span>-stabilizers commute with the <span class="inline-math">\(Z\)</span>-stabilizers of associated with <span class="inline-math">\(H_Z\)</span>.
-The codewords are
+The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityq}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>). The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees <span class="inline-math eqref">\eqref{eq:commQ}</span>.
+Basis states for the code are, for <span class="inline-math">\(\gamma \in C_X\)</span>,
 <span class="display-math env-align">\begin{align}
-|\gamma + C_Z^\perp \rangle = \frac{1}{\sqrt{|C_Z^\perp|}} \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle,
-\end{align}</span>
-for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></div>
+|\gamma + C_Z^\perp \rangle = \frac{1}{\sqrt{|C_Z^\perp|}} \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle.
+\end{align}</span></p></div>
 
 
 
@@ -214,16 +218,16 @@ for <span class="inline-math">\(\gamma \in C_X\)</span>.</p></div>
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Modular-qudit CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qudit_css</dd>
+    <dd>“Modular-qudit CSS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qudit_css</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_qudit_css,
 title={Modular-qudit CSS code},
 booktitle={The Error Correction Zoo},
-year={2021},
+year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/qudit_css}
 }</dd>
-    <h2>Permanent link:</h2>
+    <dt>Permanent link:</dt>
     <dd>https://errorcorrectionzoo.org/c/qudit_css</dd>
   </dl>
 </div>
@@ -240,6 +244,11 @@ url={https://errorcorrectionzoo.org/c/qudit_css}
     <dl id="citations">
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
+      <dd>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
       <dd>
         Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
       </dd>

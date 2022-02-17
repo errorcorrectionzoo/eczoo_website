@@ -122,9 +122,15 @@ Syndrome extraction can be done by measuring these gauge operators, which are on
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parity}
-\end{align}</span></span>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:comm}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a><a href="#cite-22" class="cite">[23]</a></span></span><span class="code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
@@ -237,18 +243,24 @@ The stabilizer generator matrix, taking values from <span class="inline-math">\(
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parityg}
-\end{align}</span></span>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commG}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-52" class="cite">[53]</a><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,k,d))_q\)</span>, is usually used for both.</span>
+    <span class="code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-52" class="cite">[53]</a><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-53" class="cite">[54]</a></span></span><span class="code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_q\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_q\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle, \end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span>.</span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-50" class="cite">[51]</a><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation on the code.</span>
+    <span class="code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-50" class="cite">[51]</a><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a><span class="code-introduced"><a href="#cite-54" class="cite">[55]</a></span></span><span class="code-description">Stub.</span>
@@ -335,9 +347,6 @@ construction. The construction on surfaces with boundaries is often called the
 <span class="textit">planar code</span> <a href="#cite-80" class="cite">[81]</a>.</span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/lattices_into_lattices">Lattice-based code</a></span><span class="code-description">Encodes states (codewords) in coordinates of a lattice in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span>
-  </li>
-  <li>
     <span class="code-name"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-description">Encodes states (codewords) in coordinates of a lattice in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span>
   </li>
   <li>
@@ -386,22 +395,28 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 </span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/qudit_css">Modular-qudit CSS code</a><span class="code-introduced"><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
+    <span class="code-name"><a href="/c/qudit_css">Modular-qudit CSS code</a><span class="code-introduced"><a href="#cite-50" class="cite">[51]</a><a href="#cite-51" class="cite">[52]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
 are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings.
 The stabilizer generator matrix, taking values from <span class="inline-math">\(\mathbb{Z}_q\)</span>, is of the form
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
-\end{pmatrix}~.
+\end{pmatrix}
 \label{eq:parityq}
-\end{align}</span></span>
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commQ}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span><span class="code-description">Also called a <span class="inline-math">\(\mathbb{Z}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers <span class="textit">modulo</span> <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.
 </span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-91" class="cite">[92]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</span>
+    <span class="code-name"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-91" class="cite">[92]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation in the code.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/qudit_surface">Modular-qudit surface code</a><span class="code-introduced"><a href="#cite-79" class="cite">[80]</a></span></span><span class="code-description">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</span>
@@ -542,7 +557,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/rings_into_rings">Ring code</a></span><span class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary coordinates over a ring <span class="inline-math">\(R\)</span>.</span>
+    <span class="code-name"><a href="/c/rings_into_rings">Ring code</a></span><span class="code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> coordinates over a ring <span class="inline-math">\(R\)</span>.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/rotor_gkp">Rotor GKP code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a><a href="#cite-60" class="cite">[61]</a></span></span><span class="code-description">GKP code protecting against small angular position and momentum shifts of a planar rotor.</span>
@@ -570,7 +585,7 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
     <span class="code-name"><a href="/c/points_into_spheres">Spherical code</a></span><span class="code-description">Encodes states (codewords) into points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>.</span>
   </li>
   <li>
-    <span class="code-name"><a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-123" class="cite">[124]</a><a href="#cite-91" class="cite">[92]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation on the code.</span>
+    <span class="code-name"><a href="/c/stabilizer">Stabilizer code</a><span class="code-introduced"><a href="#cite-123" class="cite">[124]</a><a href="#cite-91" class="cite">[92]</a></span></span><span class="code-description">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation in the code.</span>
   </li>
   <li>
     <span class="code-name"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-124" class="cite">[125]</a></span></span><span class="code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.

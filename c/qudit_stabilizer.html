@@ -9,15 +9,15 @@
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
 <meta name="citation_title" content="Modular-qudit stabilizer code" />
-<meta name="citation_publication_date" content="2021" />
-<meta name="citation_date" content="2021" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
 <meta name="citation_editor" content="Faist, Philippe" />
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
 <meta name="DC.title" content="Modular-qudit stabilizer code" />
-<meta name="DC.issued" content="2021" />
+<meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
@@ -87,8 +87,8 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation on the code.</p>
-<p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation in the code.</p>
+<p>A modular-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{q}\)</span> or <span class="inline-math">\([[n,k,d]]_{q}\)</span>. For composite <span class="inline-math">\(q\)</span>, such codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^n/|\mathsf{S}|\)</span> <a href="#cite-1" class="cite">[2]</a>. This is because <span class="inline-math">\(|{\mathsf{S}}|\)</span> need not be a power of <span class="inline-math">\(q\)</span>, as group generators may have different orders. As a result, <span class="inline-math">\([[n,k,d]]\)</span> notation is often used with non-integer <span class="inline-math">\(k=\log_q K\)</span>. <span class="textit">Prime-qudit</span> stabilizer codes, where <span class="inline-math">\(q=p\)</span> for some prime <span class="inline-math">\(p\)</span>, do not suffer from this issue and encode <span class="inline-math">\(n-k\)</span> logical qudits, with <span class="inline-math">\(K=p^{n-k}\)</span>.</p>
 <p>Each code can be represented by a stabilizer generator matrix <span class="inline-math">\(H=(A|B)\)</span>, where each row <span class="inline-math">\((a|b)\)</span> is the <span class="inline-math">\(q\)</span>-ary symplectic representation of a stabilizer generator. (Standard form goes here.)</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
@@ -112,7 +112,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The structure of stabilizer codes allows for <span class="textit">syndrome-based decoding</span>, where errors are corrected based on the results of stabilizer measurements (<span class="textit">syndromes</span>).</span><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits, which builds a compact representation of the algebraic structure of the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -210,16 +210,16 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Modular-qudit stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2021. https://errorcorrectionzoo.org/c/qudit_stabilizer</dd>
+    <dd>“Modular-qudit stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qudit_stabilizer</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_qudit_stabilizer,
 title={Modular-qudit stabilizer code},
 booktitle={The Error Correction Zoo},
-year={2021},
+year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/qudit_stabilizer}
 }</dd>
-    <h2>Permanent link:</h2>
+    <dt>Permanent link:</dt>
     <dd>https://errorcorrectionzoo.org/c/qudit_stabilizer</dd>
   </dl>
 </div>
