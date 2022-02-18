@@ -662,7 +662,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qecc_finite",
-                    "label": "Finite-dimensional quantum code",
+                    "label": "Finite-dimensional quantum error-correcting code",
                     "_is_code": 1,
                     "_is_abstract_code": 1,
                     "_description": [
