@@ -152,12 +152,16 @@ h1 {
   font-size: 30px;
   font-weight: 350;
   line-height: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
 }
 
 h2 {
   font-size: 20px;
   font-weight: 550;
   line-height: 1.6em;
+  margin-top: 1em;
+  margin-bottom: 0.25em;
 }
 
 p, ul, ol {
@@ -262,56 +266,16 @@ dd {
   transform: scale(1.3, 1);
 }
 
-@media screen and (max-width: 600px) {
-  #navigation {
-    border: none 0px;
-    background-color: #f5f5ff;
-    box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 6px;
-    padding: 5px;
-  }
-}
-
-@media not screen and (max-width: 600px) {
-  #navigation {
-    color: white;
-    margin: auto 0px auto 0px;
-    line-height: 1.2;
-    padding: 4px 0px;
-  }
-  #navigation h1, #navigation h2, #navigation h3, #navigation ul, #navigation ol, #navigation li, #navigation p {
-    margin: 0px;
-    display: inline;
-    line-height: inherit;
-    font-size: inherit;
-  }
-  #navigation h1:not(:last-child)::after, #navigation h2:not(:last-child)::after, #navigation h3:not(:last-child)::after, #navigation ul:not(:last-child)::after, #navigation ol:not(:last-child)::after, #navigation li:not(:last-child)::after, #navigation p:not(:last-child)::after {
-    content: ' - ';
-  }
-  #navigation h1 {
-    font-style: italic;
-  }
-  #navigation a, #navigation a:link, #navigation a:visited {
-    color: #d2d2f4;
-  }
-  #navigation a:active, #navigation a:hover {
-    color: white;
-  }
-}
-
 nav h1 {
   font-size: 1rem;
   font-weight: bold;
-  margin-bottom: 0.5em;
+  margin-bottom: 0px;
 }
 
 .navlinks {
   list-style: none;
   padding: 0px 0px 0px 1px;
   margin: 0px;
-}
-
-.navlinks > li {
-  padding: 2px 0px;
 }
 
 input.navbar-search {
@@ -321,6 +285,61 @@ input.navbar-search {
   margin: 2px -3px;
   width: 100%;
   box-sizing: border-box;
+}
+
+@media screen and (max-width: 600px) {
+  #navigation {
+    border: none 0px;
+    background-color: #f5f5ff;
+    box-shadow: rgba(0, 0, 0, 0.08) 3px 3px 6px;
+    padding: 5px;
+  }
+  #navigation a {
+    display: block;
+    padding: 5px 10px;
+    margin: 2px 0px 0px 0px;
+    background-color: #ebebff;
+  }
+  #navigation ul, #navigation li {
+    padding: 0px;
+  }
+}
+
+@media not screen and (max-width: 600px) {
+  #navigation {
+    color: #ffc2a4;
+    margin: auto 0px auto 0px;
+    font-size: 0.95rem;
+    line-height: 1.2;
+    padding: 12px 12px 12px 0px;
+  }
+  #navigation h1, #navigation h2, #navigation h3, #navigation ul, #navigation ol, #navigation li, #navigation p {
+    margin: 0px;
+    display: inline;
+    line-height: inherit;
+    font-size: inherit;
+  }
+  #navigation h2:not(:first-child)::before, #navigation h3:not(:first-child)::before, #navigation li:not(:first-child)::before, #navigation p:not(:first-child)::before {
+    content: ' ⋅ ';
+  }
+  #navigation h1 {
+    font-style: italic;
+    display: inline-block;
+  }
+  #navigation h1:not(:first-child)::before {
+    content: ' | ';
+    margin-left: 0.3em;
+    margin-right: 0.3em;
+  }
+  #navigation h1:not(:empty) + ul::before {
+    content: ' — ';
+  }
+  #navigation a, #navigation a:link, #navigation a:visited {
+    color: #ffc2a4;
+  }
+  #navigation a:active, #navigation a:hover {
+    color: #ffd3be;
+  }
 }
 
 #footer {
@@ -544,9 +563,9 @@ article.ecc-code-page h1.code-name {
   display: inline-block;
 }
 
-article.ecc-code-page h1.code-name .code-introduced .cite {
+article.ecc-code-page h1.code-name .code-introduced {
+  font-size: 1.5rem;
   font-weight: normal;
-  font-size: 1rem;
 }
 
 article.ecc-code-page .code-relations-list {
@@ -703,7 +722,9 @@ a.code-self-edit {
 figure.float {
   /*min-width: 200pt;*/
   width: 100%;
-  background-color: rgba(245, 245, 255, 0.5);
+  border-width: 1px 0px 1px 0px;
+  border-style: solid none solid none;
+  border-color: rgba(120, 120, 140, 0.15);
   margin: 0.5rem 0px;
   padding: 0.5rem 0px;
 }
@@ -743,14 +764,14 @@ figure.float figcaption .center-if-single-line {
 }
 
 .cite {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   display: inline-block;
   vertical-align: 0.3em;
   margin-top: -0.3em;
 }
 
 .footnote {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   display: inline-block;
   vertical-align: 0.3em;
   margin-top: -0.3em;
@@ -793,7 +814,7 @@ figure.float figcaption .center-if-single-line {
 }
 
 #endnotes #footnotes dt {
-  font-size: 0.8rem;
+  font-size: 0.8em;
   display: inline-block;
   vertical-align: 0.3em;
   margin-top: -0.3em;
@@ -888,7 +909,7 @@ figure.float figcaption .center-if-single-line {
 
 .tile-person .tile-person-links-line {
   margin-top: 0.25rem;
-  font-size: 0.8rem;
+  font-size: 0.8em;
 }
 
 .tile-person .tile-person-links-line > span:not(:first-child)::before {
