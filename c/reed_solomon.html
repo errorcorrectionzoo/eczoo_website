@@ -69,9 +69,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  -->
-
-<article class="ecc-code-page info-popup-button-zone" id="ecc_reed_solomon">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_reed_solomon">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -125,12 +123,12 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span>
+  <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span><span class="paragraph-in-list">Correcting pooled testing results for SARS-CoV-2 <a href="#cite-2" class="cite">[3]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Decoding Reed-Solomon codes is equivalent to the problem of Polynomial Reconstruction and has applications to cryptography <a href="#cite-2" class="cite">[3]</a>.</span>
+  <span class="paragraph-in-list">Decoding Reed-Solomon codes is equivalent to the problem of Polynomial Reconstruction and has applications to cryptography <a href="#cite-3" class="cite">[4]</a>.</span>
 </div>
 
 
@@ -161,7 +159,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-4" class="cite">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/cyclic">Cyclic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -175,7 +173,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-5" class="cite">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -253,15 +251,20 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        A. Kiayias and M. Yung, “Cryptographic Hardness Based on the Decoding of Reed-Solomon Codes”, Automata, Languages and Programming 232 (2002). <a href="https://doi.org/10.1007/3-540-45465-9_21" target="_blank" class="href">DOI</a>
+        N. Shental et al., “Efficient high-throughput SARS-CoV-2 testing to detect asymptomatic carriers”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.abc5961" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+        A. Kiayias and M. Yung, “Cryptographic Hardness Based on the Decoding of Reed-Solomon Codes”, Automata, Languages and Programming 232 (2002). <a href="https://doi.org/10.1007/3-540-45465-9_21" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         T. Halonen, J. Romero, and J. Melero, editors , <span class="textit">GSM, GPRS and EDGE Performance</span> (Wiley, 2003). <a href="https://doi.org/10.1002/0470866969" target="_blank" class="href">DOI</a>
       </dd>
@@ -270,13 +273,28 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
   </div>
 
 
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Reed-Solomon code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/reed_solomon</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/reed_solomon.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/reed_solomon.yml</a>.</p>
+</div>
+
+
+
 </article>
   </main><!-- #main -->
 
   <nav id="navigation">
 
-<!--<h1>Related</h1>-->
-<ul class="navlinks"><li><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a></li><li><a href="/c/alternant">Alternant code</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></li><li><a href="/c/hamming">Hamming code</a></li><li><a href="/c/mds">MDS code</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></li><li><a href="/c/bch">BCH code</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon</a></li><li><a href="/c/alternant">Alternant</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing</a></li><li><a href="/c/bch">BCH</a></li><li><a href="/c/convolutional">Convolutional</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

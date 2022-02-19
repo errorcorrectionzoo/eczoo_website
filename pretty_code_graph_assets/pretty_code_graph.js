@@ -118,9 +118,16 @@ pretty_code_graph_setup = function()
                     'color': '#7f3000',
                     'font-size': '14px',
                     'font-family': font_family,
-                    'font-weight': '400'
+                    'font-weight': '400',
+                    'width': 15,
+                    'height': 15
                 }
             },
+            // {
+            //     selector: 'node[_is_plain_concrete_code=1]',
+            //     style: {
+            //     }
+            // },
             {
                 selector: 'node[_is_abstract_code=1]',
                 style: {
@@ -172,6 +179,7 @@ pretty_code_graph_setup = function()
                 selector: 'edge[_rel_type="cousin"]',
                 style: {
                     'width': 1,
+                    'target-arrow-shape': 'none',
                     'line-style': 'dotted',
                     'line-color': '#00883f',
                     'target-arrow-color': '#00883f',
@@ -278,7 +286,7 @@ pretty_code_graph_setup = function()
 
             // update tooltip contents
             var html =
-                "<span class=\"code-name\">" + node_data.label + "</span>"
+                "<span class=\"code-name\">" + node_data._code_name + "</span>"
                 + "<span class=\"code-description\">" + node_data._description + "</span>"
                 + "<span class=\"spacer\"> </span><a class=\"code-link\" href=\""
                 + node_data._code_href + "\">go to code →</a>"
