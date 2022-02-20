@@ -30,8 +30,7 @@
   <script type="text/javascript" src="/js/mathjaxinit.js" async>
   </script>
 
-  <link type="text/css" rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css" />
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+  <script type="text/javascript" async src="/js/eczeditcodeapp.js"></script>
 
 
 </head>
@@ -40,6 +39,7 @@
 
 <div
   id="bodycontents"
+    class="app-full-width "
   >
 
   <div id="header-bg-decoration"></div>
@@ -49,96 +49,6 @@
   <header id="header"></header>
 
   <main id="main">
-
-
-
-
-<!-- any instructions to display to the user -->
-
-<div id="edit-code-instructions">
-
-<p>
-  Thanks for contributing!  On this page you can edit the information relating
-  to a code in the error correcting zoo database.
-</p>
-
-<p>
-  Please note that changes are not saved as you type; it is recommended that you
-  prepare your text content separately, in your favorite text editor, and then
-  paste your text in the fields below.  Once you're ready, you can follow the
-  instructions at the bottom of the page to submit your contribution.  Please
-  allow for some time for us to process your submission.
-</p>
-
-<p>
-  You can use some selected LaTeX commands in text
-  fields, <a
-            href="https://github.com/errorcorrectionzoo/eczoo_data/blob/main/README.md#latex-inspired-mini-language-in-text"
-            target="_blank">as explained here</a>.
-</p>
-
-</div>
-
-
-
-<!-- the automatically generated form code -->
-
-<div id="edit-code"></div>
-
-<button id="submit" style="display:block">Download data file to email to Victor →</button>
-<p>Attach the downloaded file to <a href="mailto:errorcorrectionzoo@XXXXXX?subject=code data&body=Please attach the downloaded file and send this email, replacing '@XXXXXX' in the email address by '@gmail.com'. Thanks for your contribution! You can add additional notes to our attention below:">an email to this address</a>.</p>
-
-<a id="a-download-code-json" download="code.json" type="text/json" style="display:none">&nbsp;</a>
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-<script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@json-editor/json-editor@latest/dist/jsoneditor.min.js">
-</script>
-<script type="text/javascript"
-        src="/js/edit_code.js">
-</script>
-<script type="text/javascript">
-window.addEventListener("load", function() {
-    eczoo_edit_code_setup("/", document.getElementById('edit-code'));
-});
-</script>
-
-<style type="text/css">
-.card-body {
-    padding: 0.5rem 5px;
-    border: none 0px;
-}
-label {
-    font-size: 0.8em;
-    font-weight: 500;
-    padding-left: 5px;
-    margin-bottom: 5px;
-}
-/* .card-title { */
-/*     width: 100%; */
-/*     background-color: #ddf !important; */
-/* } */
-/* div[data-schematype='array'] > .card-body.bg-light, */
-/* div[data-schematype='object']:not([data-schemapath='ecc']) > .card-body.bg-light { */
-/*     background-color: #ddf !important; */
-/* } */
-div[data-schemaid="ecc"] > div > div > div > div.row:nth-child(odd) {
-    background-color: #f2f2f2 !important;
-}
-div[data-schemaid="ecc"] > div > div > div > div.row:nth-child(even) {
-    background-color: #dbdbdb !important;
-}
-.bg-light {
-    background-color: #e0eaf4 !important;
-}
-div[data-schemaid="ecc"] > .bg-light {
-    background-color: transparent !important;
-}
-</style>
-
   </main><!-- #main -->
 
   <nav id="navigation">
@@ -149,12 +59,6 @@ div[data-schemaid="ecc"] > .bg-light {
   <nav id="navigation-shortcuts">
     <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
   </nav>
-  <footer id="footer">
-    <div class="footer-stuff">
-<a href="/about">Error correction zoo</a>
-by Victor V. Albert, Philippe Faist, and
-<a href="/team">many contributors</a>.    </div>
-  </footer>
 
 </div>
 </body>
