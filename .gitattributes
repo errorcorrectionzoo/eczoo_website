@@ -1,4 +1,3 @@
 dat/*.json              binary
-js/eczsearch.js         binary
-js/ecztooldecodesubmittedjson.js        binary
+js/ecz*.js              binary
 *.svg                   binary
