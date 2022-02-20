@@ -53,7 +53,9 @@ window.addEventListener("load", function() {
         .addEventListener("click", possible_link_activated_callback);
 
     // also do this for our navigation shortcut "hamburger" button
-    document.getElementById('nav-shortcut-to-navigation-links')
-        .addEventListener("click", possible_link_activated_callback);
+    var navlinkelem = document.getElementById('nav-shortcut-to-navigation-links');
+    if (navlinkelem) {
+        navlinkelem.addEventListener("click", possible_link_activated_callback);
+    }
 
 });
