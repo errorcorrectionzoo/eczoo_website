@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Quantum Domain [error correction zoo]
+    Spin Kingdom [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -38,6 +38,7 @@
 
 <div
   id="bodycontents"
+    class="codelistpage_style_cards codelistpage codelistpage_style_cards"
   >
 
   <div id="header-bg-decoration"></div>
@@ -48,20 +49,22 @@
 
   <main id="main">
 
-<p>Welcome to the Quantum Domain.</p>
+<p>Welcome to the Spin Kingdom.</p>
 
-<p>Kingdoms:</p>
 
-<ul class="domain-kingdoms-list">
-<li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li>
-<li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li>
-<li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li>
-<li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li>
-<li><a href="/kingdom/fermions">Fermionic Kingdom</a></li>
-<li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li>
-<li><a href="/kingdom/group_quantum">Group Kingdom</a></li>
-<li><a href="/kingdom/category_quantum">Category Kingdom</a></li>
-</ul>
+
+<div class="ecc-code" id="ecc_spins_into_spins">
+  <span class="short-code-name"><a href="/c/spins_into_spins">Spin code</a></span>
+  <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states are associated with states of a spin-<span class="inline-math">\(\ell\)</span> system. In other words, canonical single-qudit states <span class="inline-math">\(|^\ell_m\rangle\)</span> are labeled by total angular momentum <span class="inline-math">\(\ell\)</span> and its <span class="inline-math">\(z\)</span>-axis projection <span class="inline-math">\(m\)</span>, with <span class="inline-math">\(\ell\)</span> being integer or half-integer, and with the qudit dimension being <span class="inline-math">\(q=2\ell+1\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/qubits_into_qubits">Qubit code</a>.
+  </span>
+</div>
 
 
 
