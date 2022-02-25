@@ -61,69 +61,160 @@ Here is a list of all quantum codes with fault-tolerant gadgets.
 <tbody>
 <tr>
   <td class="small left top"><a href="/c/bacon_shor">Bacon-Shor code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Piecably fault-tolerant circuits can be employed to construct non-transversal gates effectively <a href="#cite-0" class="cite">[1]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Steane error correction <a href="#cite-1" class="cite">[2]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/cat">Cat code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-2" class="cite">[3]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-3" class="cite">[4]</a><a href="#cite-2" class="cite">[3]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">In order to leverage the benefits of CDSCs into practical universal computation, we have to implement syndrome measurement circuits and fault-tolerant logical gates in a bias-preserving way.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/color">Color code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Clifford gates can be performed fault-tolerantly on a suitable 2D lattice <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Syndrome measurement <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Steane&#x27;s ancilla-coupled measurement method <a href="#cite-5" class="cite">[6]</a></span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Fusion networks are constructed in a fault tolerant way (as a stabilizer code), and they can be created in a way that naturally encodes topological fault tolerance.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/homological_product">Homological product code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Universal set of gates can be obtained by fault-tolerantly mapping between different encoded representations of a given logical state <a href="#cite-6" class="cite">[7]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/honeycomb">Honeycomb code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">One can run a fault-tolerant decoding algorithm by (1) bipartitioning the syndrome lattice into two graphs which are congruent to the Cayley graph of the free abelian group with three generators (up to boundary conditions) and (2) performing a matching algorithm to deduce errors.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/number_phase">Number-phase code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Fault-tolerant computation schemes with number-phase codes have been proposed based on concatenation with Bacon-Shor subsystem codes <a href="#cite-7" class="cite">[8]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Gate switching protocol for universal computation <a href="#cite-8" class="cite">[9]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/stabilizer">Stabilizer code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Fault-tolerant error correction can be done using Shor error correction <a href="#cite-9" class="cite">[10]</a>, which is based on repeated measurements, or Knill error correction, which is based on teleportation <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Syndrome measurement can be done with flag qubits <a href="#cite-12" class="cite">[13]</a> or with no extra qubits <a href="#cite-13" class="cite">[14]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Combining the Steane code and the 15-qubit Reed-Muller code through a fault-tolerant conversion can result in a universal transversal gate set that does not need magic state distillation <a href="#cite-8" class="cite">[9]</a><a href="#cite-14" class="cite">[15]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Syndrome measurement using two ancilla qubits <a href="#cite-15" class="cite">[16]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
-  <td class="small top"></td>
+  <td class="small top"><span class="paragraph-in-list">Preparation of certain states along with transversal gates can be performed fault-tolerantly, but requires post-selection because the code cannot correct errors <a href="#cite-16" class="cite">[17]</a>.</span></td>
 </tr>
 </tbody>
 </table>
 
 
 
+  <div id="endnotes" class="">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Yoder, Theodore., <span class="emph">DSpace@MIT</span> Practical Fault-Tolerant Quantum Computation (2018)
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        S. Puri et al., “Bias-preserving gates with stabilized cat qubits”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay5901" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.00450" target="_blank" class="href">1905.00450</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        J. Guillaud and M. Mirrahimi, “Repetition Cat Qubits for Fault-Tolerant Quantum Computation”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041053" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.09474" target="_blank" class="href">1904.09474</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        H. Bombin and M. A. Martin-Delgado, “Topological Quantum Distillation”, Physical Review Letters <span class="textbf">97</span>, (2006). <a href="https://doi.org/10.1103/PhysRevLett.97.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605138" target="_blank" class="href">quant-ph/0605138</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        Andrew J. Landahl and Ciaran Ryan-Anderson, “Quantum computing by color-code lattice surgery”. <a href="https://arxiv.org/abs/1407.5103" target="_blank" class="href">1407.5103</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        T. Jochym-O&#x27;Connor, “Fault-tolerant gates via homological product codes”, Quantum <span class="textbf">3</span>, 120 (2019). <a href="https://doi.org/10.22331/q-2019-02-04-120" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1807.09783" target="_blank" class="href">1807.09783</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
+      <dd>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
+      <dd>
+        J. T. Anderson, G. Duclos-Cianci, and D. Poulin, “Fault-Tolerant Conversion between the Steane and Reed-Muller Quantum Codes”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.080501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1403.2734" target="_blank" class="href">1403.2734</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        Peter W. Shor, “Fault-tolerant quantum computation”. <a href="https://arxiv.org/abs/quant-ph/9605011" target="_blank" class="href">quant-ph/9605011</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        E. Knill, “Quantum computing with realistically noisy devices”, Nature <span class="textbf">434</span>, 39 (2005). <a href="https://doi.org/10.1038/nature03350" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410199" target="_blank" class="href">quant-ph/0410199</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        E. Knill, “Scalable Quantum Computation in the Presence of Large Detected-Error Rates”. <a href="https://arxiv.org/abs/quant-ph/0312190" target="_blank" class="href">quant-ph/0312190</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        T. J. Yoder and I. H. Kim, “The surface code with a twist”, Quantum <span class="textbf">1</span>, 2 (2017). <a href="https://doi.org/10.22331/q-2017-04-25-2" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.04795" target="_blank" class="href">1612.04795</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        B. W. Reichardt, “Fault-tolerant quantum error correction for Steane’s seven-qubit color code with few or no extra qubits”, Quantum Science and Technology <span class="textbf">6</span>, 015007 (2020). <a href="https://doi.org/10.1088/2058-9565/abc6f4" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        D.-X. Quan et al., “Fault-tolerant conversion between adjacent Reed–Muller quantum codes based on gauge fixing”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">51</span>, 115305 (2018). <a href="https://doi.org/10.1088/1751-8121/aaad13" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1703.03860" target="_blank" class="href">1703.03860</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href">1705.02329</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
+      <dd>
+        Daniel Gottesman, “Quantum fault tolerance in small experiments”. <a href="https://arxiv.org/abs/1610.03507" target="_blank" class="href">1610.03507</a>
+      </dd>
+    
+    </dl>
+  </div>
 
   </main><!-- #main -->
 
