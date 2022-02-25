@@ -60,8 +60,16 @@ Here is a list of all quantum codes that specify what rate they have.
 </thead>
 <tbody>
 <tr>
+  <td class="small left top"><a href="/c/bacon_shor">Bacon-Shor code</a></td>
+  <td class="small top">A non-LDPC family of Bacon-Shor codes achieves a distance of <span class="inline-math">\(\Omega(n^{1-\epsilon})\)</span> with sparse gauge operators.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/balanced_product">Balanced product code</a></td>
   <td class="small top">A notable family of balanced product codes encode <span class="inline-math">\(k \in \Theta(n^{4/5})\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{3/5})\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span>. Additionally, it is known that the code constructed from the balanced product of two good classical LDPC codes over groups of order <span class="inline-math">\(\Theta(n)\)</span> has a constant encoding rate <a href="#cite-0" class="cite">[1]</a>.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/repetition">Binary repetition code</a></td>
+  <td class="small top">Code rate is <span class="inline-math">\(\frac{1}{n}\)</span>, code distance is <span class="inline-math">\(n\)</span>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></td>
@@ -72,8 +80,16 @@ Here is a list of all quantum codes that specify what rate they have.
   <td class="small top">For general 2D manifolds, <span class="inline-math">\(kd^2 \leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-1" class="cite">[2]</a>, meaning that color codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/convolutional">Convolutional code</a></td>
+  <td class="small top">Depends on the polynomials used. Using puncturing removal <a href="#cite-2" class="cite">[3]</a> the rate for the code can be increased from <span class="inline-math">\(\frac{1}{t}\)</span> to <span class="inline-math">\(\frac{s}{t}\)</span>, where <span class="inline-math">\(t\)</span> is the number of output bits, and <span class="inline-math">\(s\)</span> depends on the puncturing done. This is done by deleting some pieces of the encoder output such that the most-likely decoders remain effective</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/expander">Expander code</a></td>
+  <td class="small top">The rate is <span class="inline-math">\(1 - m/n\)</span> where <span class="inline-math">\(n\)</span> is the number of left nodes and <span class="inline-math">\(m\)</span> is the number of right nodes in the bipartite expander graph.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/expander_lifted_product">Expander lifted-product code</a></td>
-  <td class="small top">Expander lifted-product codes include the first examples <a href="#cite-2" class="cite">[3]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-3" class="cite">[4]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-4" class="cite">[5]</a>.</td>
+  <td class="small top">Expander lifted-product codes include the first examples <a href="#cite-3" class="cite">[4]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-4" class="cite">[5]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-5" class="cite">[6]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/fiber_bundle">Fiber-bundle code</a></td>
@@ -84,22 +100,42 @@ Here is a list of all quantum codes that specify what rate they have.
   <td class="small top">Codes held a 20-year record the best lower bound on asymptotic scaling of the minimum code distance, <span class="inline-math">\(d=\Omega(\sqrt{n \sqrt{\log n}})\)</span>, broken by Ramanujan tensor-product codes.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/goppa">Goppa code</a></td>
+  <td class="small top">There exist Goppa codes defined over larger alphabets that meet the Gilbert-Varshamov, or GV,  bound.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/haar_random">Haar-random code</a></td>
+  <td class="small top">The rate of the code is equal to the coherent information of the channel (i.e. the quantum channel capacity).</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/hamming">Hamming code</a></td>
+  <td class="small top">Asymptotic rate <span class="inline-math">\(k/n = 1-\frac{\log n}{n} \to 1\)</span> and normalized distance <span class="inline-math">\(d/n \to 0\)</span>.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/surface">Kitaev surface code</a></td>
   <td class="small top">Rate depends on the underlying cellulation and manifold. For general 2D
 manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span>
 <a href="#cite-1" class="cite">[2]</a>, meaning that (1) 2D surface codes with bounded
 geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span>
-<a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>, and (2) surface codes with
+<a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>, and (2) surface codes with
 finite rate can only achieve an asymptotic minimum distance that is
 logarithmic in <span class="inline-math">\(n\)</span>. Higher-dimensional hyperbolic manifolds (see code
 children below) yield distances scaling more favorably. Loewner&#x27;s theorem
 provides an upper bound for any bounded-geometry surface code
-<a href="#cite-7" class="cite">[8]</a>.
+<a href="#cite-8" class="cite">[9]</a>.
 </td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/lifted_product">Lifted-product (LP) code</a></td>
-  <td class="small top">There is no known simple way to compute the logical dimension <span class="inline-math">\(k\)</span> in the general case <a href="#cite-4" class="cite">[5]</a>.</td>
+  <td class="small top">There is no known simple way to compute the logical dimension <span class="inline-math">\(k\)</span> in the general case <a href="#cite-5" class="cite">[6]</a>.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/binary_linear">Linear binary code</a></td>
+  <td class="small top">A family of linear codes <span class="inline-math">\(C_i = [n_i,k_i,d_i]\)</span> is <span class="textit">asymptotically good</span> if the asymptotic rate <span class="inline-math">\(\lim_{i\to\infty} k_i/n_i\)</span> and asymptotic distance <span class="inline-math">\(\lim_{i\to\infty} d_i/n_i\)</span> are both positive.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
+  <td class="small top">Rate can be finite <a href="#cite-9" class="cite">[10]</a>, depending on the family of random codes generated by the circuit.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></td>
@@ -107,11 +143,15 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
-  <td class="small top">The pentagon HaPPY code converges to <span class="inline-math">\(\frac{1}{\sqrt{5}} \approx 0.447\)</span>. The pentagon/hexagon HaPPY code, with alternating layers of pentagons and hexagons in the tiling, has a rate of <span class="inline-math">\(0.299\)</span> if the last layer is a pentagon layer and a rate of <span class="inline-math">\(0.088\)</span> if the last layer is a hexagon layer.</td>
+  <td class="small top">The pentagon HaPPY code has an asymptotic rate <span class="inline-math">\(\frac{1}{\sqrt{5}} \approx 0.447\)</span>. The pentagon/hexagon HaPPY code, with alternating layers of pentagons and hexagons in the tiling, has a rate of <span class="inline-math">\(0.299\)</span> if the last layer is a pentagon layer and a rate of <span class="inline-math">\(0.088\)</span> if the last layer is a hexagon layer.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_perfect">Perfect quantum code</a></td>
   <td class="small top"><span class="inline-math">\(k/n\to 1\)</span> asymptotically with <span class="inline-math">\(n\)</span>.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/polar">Polar code</a></td>
+  <td class="small top">Supports reliable transmission at rates <span class="inline-math">\(K/N\)</span> approaching the Shannon capacity of the channel.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/real_projective_plane">Projective-plane surface code</a></td>
@@ -119,7 +159,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></td>
-  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-8" class="cite">[9]</a>.</td>
+  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-10" class="cite">[11]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_expander">Quantum expander code</a></td>
@@ -134,8 +174,8 @@ provides an upper bound for any bounded-geometry surface code
   <td class="small top">For 2D Ramanujan complexes, the rate is <span class="inline-math">\(\Omega(\sqrt{ \frac{1}{n \log n} })\)</span>, with minimum distance <span class="inline-math">\(d = \Omega(\sqrt{n \log n}) \)</span>. For 3D, the rate is <span class="inline-math">\( \Omega(\frac{1}{\sqrt{n}\log n}) \)</span> with minimum distance <span class="inline-math">\(d \geq \sqrt{n} \log n \)</span>.</td>
 </tr>
 <tr>
-  <td class="small left top"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
-  <td class="small top"><span class="inline-math">\(k/n = 1/3\)</span>.</td>
+  <td class="small left top"><a href="/c/single_parity_check">Single parity-check code</a></td>
+  <td class="small top">The code rate is <span class="inline-math">\(\frac{n}{n+1}\to 1\)</span> as <span class="inline-math">\(n\to\infty\)</span>. The code distance is 2.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a></td>
@@ -143,7 +183,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xyz_product">XYZ product code</a></td>
-  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-9" class="cite">[10]</a>.
+  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-11" class="cite">[12]</a>.
 </td>
 </tr>
 </tbody>
@@ -167,40 +207,50 @@ provides an upper bound for any bounded-geometry surface code
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+        L. Sari, “Effects of Puncturing Patterns on Punctured Convolutional Codes”, TELKOMNIKA (Telecommunication, Computing, Electronics and Control) <span class="textbf">10</span>, (2012). <a href="https://doi.org/10.12928/telkomnika.v10i4.171" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        Pavel Panteleev and Gleb Kalachev, “Quantum LDPC Codes with Almost Linear Minimum Distance”. <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
+        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        S. Bravyi, D. Poulin, and B. Terhal, “Tradeoffs for Reliable Quantum Information Storage in 2D Systems”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0909.5200" target="_blank" class="href">0909.5200</a>
+        Pavel Panteleev and Gleb Kalachev, “Quantum LDPC Codes with Almost Linear Minimum Distance”. <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
+        S. Bravyi, D. Poulin, and B. Terhal, “Tradeoffs for Reliable Quantum Information Storage in 2D Systems”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0909.5200" target="_blank" class="href">0909.5200</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
+        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
+      <dd>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
       <dd>
         Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
