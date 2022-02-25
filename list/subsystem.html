@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Subsystem codes
+ [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+Here is a list of quantum <a href="/c/oecc" class="ref">subsystem codes</a>.
+
+<table class="codelistpage-table xtra-xtra-stretch">
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="top left"><a href="/c/topological_abelian">Abelian topological code</a></td>
+  <td class="textit">Code whose codewords realize topological order associated with an abelian group. Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/approximate_qecc">Approximate quantum code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></td>
+  <td class="textit">A family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes approximately correcting errors on up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> qubits, i.e., with approximate distance approaching the no-cloning bound <span class="inline-math">\(n/2\)</span>. Constructed using a non-degenerate CSS code, such as a polynomial quantum code, and a classical authentication scheme. The code can be viewed as an <span class="inline-math">\(t\)</span>-error tolerant secret sharing scheme. Since the code yields a small logical subspace using large registers that contain both classical and quantum information, it is not useful for practical error correction problems, but instead demonstrates the power of approximate quantum error correction.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/bacon_shor">Bacon-Shor code</a></td>
+  <td class="textit">CSS subsystem stabilizer code defined on an <span class="inline-math">\(m_1 \times m_2\)</span> lattice of qubits. It is said to be symmetric when <span class="inline-math">\(m_1=m_2\)</span>. The <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type stabilizers defined as <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> operators acting on all qubits on adjacent columns and rows, respectively. Let <span class="inline-math">\(O_{i,j}\)</span> denote an operator acting on the qubit at a position <span class="inline-math">\((i,j)\)</span> on the lattice, with <span class="inline-math">\(i\in\{0,1,\ldots ,m_1-1\}\)</span> and <span class="inline-math">\(j\in\{0,1,\ldots,m_2-1\}\)</span>. The code&#x27;s stabilizer group is
+<span class="display-math env-align">\begin{align}
+\mathsf{S}=\langle X_{i,*}X_{i+1,*},Z_{*,j}Z_{*,j+1}\rangle~,
+\end{align}</span>
+with generators expressed as products of nearest-neightbour 2-qubit gauge operators,
+<span class="display-math env-align">\begin{align}
+\begin{split}
+X_{i,*}X_{i+1,*}= \bigotimes_{k=0}^{m_2-1} X_{i,k}X_{i+1,k} \\
+Z_{*,j}Z_{*,j+1}=\bigotimes_{k=0}^{m_1-1} Z_{k,j}Z_{k,j+1}~.
+\end{split}
+\end{align}</span>
+Syndrome extraction can be done by measuring these gauge operators, which are on fewer qubits and local.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/balanced_product">Balanced product code</a></td>
+  <td class="textit">Family of CSS quantum codes based on products of two classical codes which share common symmetries. The balanced product can be understood as taking the usual tensor/hypergraph product and then factoring out the symmetries factored. This reduces the overall number of physical qubits <span class="inline-math">\(n\)</span>, while, under certain circumstances, leaving the number of encoded qubits <span class="inline-math">\(k\)</span> and the code distance <span class="inline-math">\(d\)</span> invariant. This leads to a more favourable encoding rate <span class="inline-math">\(k/n\)</span> and normalized distance <span class="inline-math">\(d/n\)</span> compared to the tensor/hypergraph product.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a></td>
+  <td class="textit">Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/binomial">Binomial code</a></td>
+  <td class="textit">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-0" class="cite">[1]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
+  <span class="display-math env-align">\begin{align}
+    |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
+  \end{align}</span>
+  Here, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
+  <span class="display-math env-align">\begin{align}
+    \binom{n}{m}_1 \equiv 1,\quad \binom{n}{m}_q \equiv \sum_{k=0}^n \binom{n}{k}\binom{k}{m-k}_{q-1}.
+  \end{align}</span>
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/oscillators">Bosonic code</a></td>
+  <td class="textit">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> (a.k.a. <span class="textit">bosonic mode</span> or <span class="textit">qumode</span>). States of a single oscillator are elements of the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}\)</span>). Ideal codewords may not be normalizable because the space is infinite-dimensional, so approximate versions have to be constructed in practice.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/bosonic_rotation">Bosonic rotation code</a></td>
+  <td class="textit">A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a></td>
+  <td class="textit">Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting <span class="textit">displacement operators</span> (exponentials of linear combinations of position and momentum operators). Such displacement-based codes closely resemble and inherit some features of qubit stabilizer codes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/bravyi_bacon_shor">Bravyi-Bacon-Shor (BBS) code</a></td>
+  <td class="textit">An <span class="inline-math">\([[n,k,d]]\)</span> CSS subsystem stabilizer code generalizing Bacon-Shor codes to a larger set of qubit geometries. Defined through a binary matrix <span class="inline-math">\(A\)</span> such that physical qubits live on sites <span class="inline-math">\((i,j)\)</span> whenever <span class="inline-math">\(A_{i,j}=1\)</span>. The gauge group is generated by 2-qubit operators, including <span class="inline-math">\(XX\)</span> interations between any two qubits sharing a column in <span class="inline-math">\(A\)</span>, and <span class="inline-math">\(ZZ\)</span> interations between two qubits sharing a row. The code parameters are: <span class="inline-math">\(n=\sum_{i,j}A_{i,j}\)</span>, <span class="inline-math">\(k=\text{rank}(A)\)</span>, and the distance is the minimum weight of any row or column.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings. The stabilizer generator matrix is of the form
+<span class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}
+\label{eq:parity}
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:comm}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/cat">Cat code</a></td>
+  <td class="textit">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/category_quantum">Category-based quantum code</a></td>
+  <td class="textit">Encodes a finite-dimensional <span class="textit">logical</span> Hilbert space into a <span class="textit">physical</span> Hilbert space associated with a category. Often associated with a particular topological quantum field theory (TQFT), as the data of such theories is described by a category.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></td>
+  <td class="textit">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></td>
+  <td class="textit">A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thresholds and subthreshold performance are enhanced under noise biased towards dephasing. Examples of CDSCs include the XY code, XZZX code, and random CDSCs.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/cws">Codeword stabilized (CWS) code</a></td>
+  <td class="textit">This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/color">Color code</a></td>
+  <td class="textit">A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes defined on a <span class="inline-math">\(D\)</span>-dimensional lattice which satisfies two properties: The lattice is (1) a homogeneous simplicial <span class="inline-math">\(D\)</span>-complex obtained as a triangulation of the interior of a <span class="inline-math">\(D\)</span>-simplex and (2) is <span class="inline-math">\(D+1\)</span>-colorable. Qubits are placed on the <span class="inline-math">\(D\)</span>-simplices and generators are supported on suitable simplices <a href="#cite-1" class="cite">[2]</a>. For 2-dimensional color code, the lattice must be such that it is 3-valent and has 3-colorable faces, such as a honeycomb lattice. The qubits are placed on the vertices and two stabilizer generators are placed on each face <a href="#cite-2" class="cite">[3]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_concatenated">Concatenated code</a></td>
+  <td class="textit">A concatenated code is a combination of two codes, an inner code <span class="inline-math">\(C\)</span> and an outer code <span class="inline-math">\(C^\prime\)</span>, where the physical subspace used for the outer code consists of the logical subspace of the inner code. In other words, first one encodes in the outer code <span class="inline-math">\(C^\prime\)</span>, and then one encodes each of the physical registers of <span class="inline-math">\(C^\prime\)</span> in an inner code <span class="inline-math">\(C\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/distance_balanced">Distance-balanced code</a></td>
+  <td class="textit">CSS stabilizer code constructed from a CSS code and a classical code using a distance-balancing procedure based on a generalized homological product. The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors, and the procedure can result in a code that is treats both types of errors on a more equal footing. The original distance-balancing procedure <a href="#cite-3" class="cite">[4]</a>, later generalized in Ref. <a href="#cite-4" class="cite">[5]</a>, can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-3" class="cite">[4]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/double_semion">Double-semion code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/dual_rail">Dual-rail code</a></td>
+  <td class="textit">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></td>
+  <td class="textit">Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process. Such processes update the code structure and can include random unitary evolution or non-commuting projective measurements.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/eth">Eigenstate thermalization hypothesis (ETH) code</a></td>
+  <td class="textit">Also called a <span class="textit">thermodynamic code</span> <a href="#cite-5" class="cite">[6]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/expander_lifted_product">Expander lifted-product code</a></td>
+  <td class="textit">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-6" class="cite">[7]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fermions">Fermionic code</a></td>
+  <td class="textit">Finite-dimensional quantum error-correcting code encoding a logical Hilbert space into a physical Fock space of fermionic modes. Codes are typically described using Majorana operators, which are linear combinations of fermionic creation and annihilation operators <a href="#cite-7" class="cite">[8]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fiber_bundle">Fiber-bundle code</a></td>
+  <td class="textit">CSS code constructed by combining a random LDPC code as the base and a cyclic repetition code as the fiber of a fiber bundle. After applying distance balancing, a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> is obtained.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fibonacci">Fibonacci string-net code</a></td>
+  <td class="textit">Quantum error correcting code associated with the Levin-Wen string-net model with the Fibonacci input category, admitting two types of encodings.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a></td>
+  <td class="textit">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/floquet">Floquet code</a></td>
+  <td class="textit">Dynamically-generated stabilizer-based code whose logical qubits are generated through a particular sequence of measurements such that the number of logical qubits is larger than when the code is viewed as a static subsystem stabilizer code. The code space is the <span class="inline-math">\(+1\)</span> eigenspace of the instantaneous stabilizer group (ISG). The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured. As opposed to subsystem codes, only specific measurement sequences maintain the codespace.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fock_state">Fock-state bosonic code</a></td>
+  <td class="textit">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fractal_surface">Fractal surface code</a></td>
+  <td class="textit">Kitaev surface code on a fractal geometry, which is obtained by removing qubits from the surface code on a cubic lattice. Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fracton">Fracton code</a></td>
+  <td class="textit">A code whose codewords make up the ground-state space of a fracton-phase Hamiltonian.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a></td>
+  <td class="textit">Hyperbolic surface code constructed using cellulation of a Riemann Manifold <span class="inline-math">\(M\)</span> exhibitng systolic freedom <a href="#cite-8" class="cite">[9]</a>. Codes derived from such manifolds can achieve distances scaling better than <span class="inline-math">\(\sqrt{n}\)</span>, something that is impossible using closed 2D surfaces or 2D surfaces with boundaries <a href="#cite-9" class="cite">[10]</a>. Improved codes are obtained by studying a weak family of Riemann metrics on closed 4-dimensional manifolds <span class="inline-math">\(S^2\otimes S^2\)</span> with the <span class="inline-math">\(Z_2\)</span>-homology.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/frobenius">Frobenius code</a></td>
+  <td class="textit">Let <span class="inline-math">\(C\)</span> be a quantum cyclic code on <span class="inline-math">\(n\)</span> prime-dimensional qudits. <span class="inline-math">\(C\)</span> is a Frobenius code if there exists a positive integer <span class="inline-math">\(t\)</span> such that <span class="inline-math">\(n\)</span> divides <span class="inline-math">\(p^t +1\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a></td>
+  <td class="textit">Fusion Based Quantum Computing, or FBQC, describes a fault tolerant way to produce <span class="textit">fusion networks</span>, or large entangled states starting from small constant-sized entangled resource states along with destructive measurements called <span class="textit">fusions</span>. These large states can be produced asychronously in the fusion framework and can be used as resources, as in measurement-based quantum computation (MBQC), or as logical states of topological codes. The difference from ordinary MBQC is that error-correction is baked into the state-generation protocol.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></td>
+  <td class="textit">Can be expressed in terms of Dicke states where the logical states are
+<span class="display-math env-align">\begin{align}
+|\overline{\pm}\rangle = \sum_{\ell=0}^{n} \frac{(\pm 1)^\ell}{\sqrt{2^n}} \sqrt{n \choose \ell} |D^m_{g \ell}\rangle~.
+\end{align}</span>
+Here, <span class="inline-math">\(m\)</span> is the number of particles used for encoding <span class="inline-math">\(1\)</span> qubit, and <span class="inline-math">\(g, n \leq m\)</span> are arbitrary positive integers. The state <span class="inline-math">\(|D^m_w\rangle\)</span> is a Dicke state -- a normalized permutation-invariant state on <span class="inline-math">\(m\)</span> qubits with <span class="inline-math">\(w\)</span> excitations, i.e., a normalized sum over all basis elements with <span class="inline-math">\(w\)</span> ones and <span class="inline-math">\(m - w\)</span> zeroes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/galois_css">Galois-qudit CSS code</a></td>
+  <td class="textit">An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
+The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form
+<span class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}
+\label{eq:parityg}
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commG}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/galois_into_galois">Galois-qudit code</a></td>
+  <td class="textit">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></td>
+  <td class="textit">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_q\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_q\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle, \end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(e^{i\phi}I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/generalized_homological_product">Generalized homological product code</a></td>
+  <td class="textit">Stabilizer code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction, with chain complexes consisting of products of other chain complexes. The chain-complex construction of codes yields an interpretation of codes in terms of manifolds, thus allowing for the use of various products from topology in constructing codes. The codes participating in the product can be quantum, classical, or mixed. Products can be of more than two codes, in which case the output code need not be of CSS type (e.g., for <a href="/c/xyz_product" class="ref">XYZ-product codes</a>). The simplest product is a tensor product, with more general products imposing equivalence or symmetry relations on the outputs of the tensor product. A product of two codes can be interpreted as a fiber bundle, with one element of the product being the base and the other being the fiber.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></td>
+  <td class="textit">Bosonic qudit-into-oscillator code whose stabilizers are oscillator displacement operators <span class="inline-math">\(\hat{S}_q(2\alpha)=e^{-2i\alpha \hat{p}}\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)=e^{2i\beta \hat{q}}\)</span>. To ensure <span class="inline-math">\(\hat{S}_q(2\alpha)\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)\)</span> generate a stabilizer group that is Abelian, there is another constraint that <span class="inline-math">\(\alpha\beta=2k\pi\)</span> where <span class="inline-math">\(k\)</span> is an integer. Codewords can be expressed as equal weight superpositions of coherent states on an infinite lattice, such as a square lattice in phase space with spatial period <span class="inline-math">\(2\sqrt{\pi}\)</span>. The exact GKP state is non-normalizable, so approximate constructs have to be considered.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/group_gkp">Group GKP code</a></td>
+  <td class="textit">Group code whose construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset G\)</span>. Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>, and can be finite- or infinite-dimensional. Extension of the <a href="/c/gkp" class="ref">GKP code</a> construction.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/group_quantum">Group-based quantum code</a></td>
+  <td class="textit">Encodes a <span class="textit">logical</span> Hilbert space, finite- or infinite-dimensional, into a <span class="textit">physical</span> Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on a second-countable unimodular group. For <span class="inline-math">\(K\)</span>-dimensional logical subspace and for groups <span class="inline-math">\(G^{\times n}\)</span>, can be denoted as <span class="inline-math">\(((n,K))_G\)</span>. When the logical subspace is the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(G^{\times k}\)</span>, can be denoted as <span class="inline-math">\([[n,k]]_G\)</span>. Ideal codewords may not be normalizable, depending on whether <span class="inline-math">\(G\)</span> is continuous and/or noncompact, so approximate versions have to be constructed in practice.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a></td>
+  <td class="textit">Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, with corresponding codes exhibiting linear rate.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/haah_cubic">Haah cubic code</a></td>
+  <td class="textit">Class of stabilizer codes on a length-<span class="inline-math">\(L\)</span> cubic lattice with one or two qubits per site. We also require that the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> is translation invariant and generated by two types of operators with support on a cube. In the non-CSS case, these two are related by spatial inversion. For CSS codes, we require that the product of all corner operators is the identity. We lastly require that there are no non-trival &#x27;&#x27;string operators&#x27;&#x27;, meaning that single-site operators are a phase, and any period one logical operator <span class="inline-math">\(l \in \mathsf{S}^{\perp}\)</span> is just a phase. Haah showed in his original construction that there is exactly one non-CSS code of this form, and 17 CSS codes <a href="#cite-10" class="cite">[11]</a>. The non-CSS code is labeled code 0, and the rest are numbered from 1 - 17. Codes 1-4 do not have string logical operators, while codes 11-17 do.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/haar_random">Haar-random code</a></td>
+  <td class="textit">Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#cite-11" class="cite">[12]</a>, but encoding and decoding in random <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hamiltonian">Hamiltonian-based code</a></td>
+  <td class="textit">Encoding corresponds to a set of energy eigenstates of a quantum-mechanical Hamiltonian. The codespace is typically a set of low-energy eigenstates or ground states, but can include subspaces of arbitrarily high energy.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/higher_dimensional_surface">Higher-dimensional surface code</a></td>
+  <td class="textit">A family of Kitaev surface codes on planar or toric surfaces of dimension greater than two. Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/homological_cv">Homological bosonic code</a></td>
+  <td class="textit">An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/oscillator_stabilizer" class="ref">oscillator-into-oscillator CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/homological_product">Homological product code</a></td>
+  <td class="textit">CSS code formulated using the <a href="/c/css" class="ref">CSS chain-complex</a> construction in the homological product construction. Stub.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/honeycomb">Honeycomb code</a></td>
+  <td class="textit">Floquet code inspired by the Kitaev honeycomb model <a href="#cite-12" class="cite">[13]</a> whose logical qubits are generated through a particular sequence of measurements.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hybrid_qudit_oscillator">Hybrid qudit-oscillator code</a></td>
+  <td class="textit">Encodes a <span class="inline-math">\(K\)</span>-dimensional logical Hilbert space into <span class="inline-math">\(n_1\)</span> qudits of dimension <span class="inline-math">\(q\)</span> and <span class="inline-math">\(n_2 \neq 0\)</span> oscillators, i.e., the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{Z}_q^{n_1} \times \mathbb{R}^{n_2}\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hyperbolic_surface">Hyperbolic surface code</a></td>
+  <td class="textit">An extension of the Kitaev surface code construction to hyperbolic manifolds in dimension two or greater. Given a cellulation of a manifold, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hypergraph_product">Hypergraph product code</a></td>
+  <td class="textit">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two binary linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/surface">Kitaev surface code</a></td>
+  <td class="textit">A family of abelian topological <a href="/c/css" class="ref">CSS stabilizer</a> codes
+whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings
+associated to the stars and plaquettes, respectively, of a cellulation of a
+two-dimensional surface (with a qubit located at each edge of the
+cellulation). <span class="textit">Toric code</span> often either refers to the construction on
+the two-dimensional torus or is an alternative name for the general
+construction. The construction on surfaces with boundaries is often called the
+<span class="textit">planar code</span> <a href="#cite-13" class="cite">[14]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/lifted_product">Lifted-product (LP) code</a></td>
+  <td class="textit">Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/t-designs">Local Haar-random circuit code</a></td>
+  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
+The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-14" class="cite">[15]</a>. Follow-up work <a href="#cite-15" class="cite">[16]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/nonlocal_lowdepth">Low-depth random Clifford-circuit code</a></td>
+  <td class="textit">An encoder for an <span class="inline-math">\([[n,k]]\)</span> quantum error correcting code, is an <span class="inline-math">\(n\)</span>-qubit unitary transformation that takes a <span class="inline-math">\(k\)</span>-qubit state as input (with <span class="inline-math">\(k\leq n\)</span>, and the remaining <span class="inline-math">\(n-k\)</span> qubits initialized to <span class="inline-math">\(|0\rangle^{\otimes n-k}\)</span> ) to give a corresponding state in the codespace as the output. An n-qubit quantum circuit with random 2-qubit Clifford gates can act as an encoder into a code with distance <span class="inline-math">\(d\)</span> with high probability, with a size (i.e. number of gates in the circuit) at most <span class="inline-math">\(O(n^2 log n)\)</span>). Noting that two gates acting on disjoint qubits could in fact be executed simultaneously, this is equivalent to the depth (number of time steps in the circuit) being at most <span class="inline-math">\(O(log^3 n)\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/majorana_stab">Majorana stabilizer code</a></td>
+  <td class="textit">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-16" class="cite">[17]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/matching">Matching code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_css">Modular-qudit CSS code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings.
+The stabilizer generator matrix, taking values from <span class="inline-math">\(\mathbb{Z}_q\)</span>, is of the form
+<span class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}
+\label{eq:parityq}
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commQ}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudits_into_qudits">Modular-qudit code</a></td>
+  <td class="textit">Also called a <span class="inline-math">\(\mathbb{Z}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers <span class="textit">modulo</span> <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation in the code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_surface">Modular-qudit surface code</a></td>
+  <td class="textit">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/molecular">Molecular code</a></td>
+  <td class="textit">Encodes finite-dimensional Hilbert space into the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on the group <span class="inline-math">\(SO_3\)</span>. Construction is based on nested subgroups <span class="inline-math">\(H\subset K \subset SO_3\)</span>, where <span class="inline-math">\(H,K\)</span> are finite. The <span class="inline-math">\(|K|/|H|\)</span>-dimensional logical subspace is spanned by basis states that are equal superpositions of elements of cosets of <span class="inline-math">\(H\)</span> in <span class="inline-math">\(K\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
+  <td class="textit">Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-17" class="cite">[18]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></td>
+  <td class="textit">This is a family of codes derived via an algorithm that takes as input <span class="textit">any</span> binary classical code and outputs a quantum code (note that this framework can be extended to <span class="inline-math">\(q\)</span>-ary codes). The algorithm is probabalistic but succeeds almost surely if the classical code is random. An explicit code construction does exist for linear distance codes encoding one logical qubit. For finite rate codes, there is no rigorous proof that the construction algorithm succeeds, and approximate constructions are described instead.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a></td>
+  <td class="textit">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/number_phase">Number-phase code</a></td>
+  <td class="textit">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-20" class="cite">[21]</a>,
+<span class="display-math env-align">\begin{align}
+|\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
+\end{align}</span>
+Since phase states and thus the ideal codewords are not normalizable, approximate versions need to be constructed. The codes&#x27; key feature is that, in the ideal case, phase measurement has zero uncertainty, making it a good canditate for a syndrome measurement.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a></td>
+  <td class="textit">Encodes Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^k\)</span> into that on <span class="inline-math">\(\mathbb{R}^n\)</span>. Usually denoted as <span class="inline-math">\(((n,k))_{\mathbb{R}}\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
+  <td class="textit">Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-5" class="cite">[6]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_perfect">Perfect quantum code</a></td>
+  <td class="textit">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
+<span class="display-math env-align">\begin{align}
+\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
+\end{align}</span>
+becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/permutation_invariant">Permutation-invariant code</a></td>
+  <td class="textit">Codes which are stabilized by the symmetric group <span class="inline-math">\(S_n\)</span> on <span class="inline-math">\(n\)</span> elements, in a generalization of stabilizer codes to binary codes utilizing (non-abelian) group actions (in particular, <span class="inline-math">\(S_n\)</span> is non-abelian).</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></td>
+  <td class="textit">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) prime-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
+<span class="display-math env-align">\begin{align}
+  f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
+\end{align}</span>
+where the first <span class="inline-math">\(k\)</span> coefficients are indexed by the coefficient vector <span class="inline-math">\(\mu\in\mathbb{Z}_p^{\times k}\)</span>, and the remaining coefficients are indexed by the vector <span class="inline-math">\(c\in\mathbb{Z}_p^{\times (g+1-k)}\)</span>. Logical states, labeled by <span class="inline-math">\(\mu\)</span>, are superpositions of canonical basis states whose <span class="inline-math">\(i\)</span>th bit is <span class="inline-math">\(f_{\mu\cup c}\)</span>, evaluated at <span class="inline-math">\(\alpha_i\)</span> and summed over all possible vectors <span class="inline-math">\(c\)</span>,
+<span class="display-math env-align">\begin{align}
+  |\overline{\mu}\rangle=\sum_{c\in\mathbb{Z}_{p}^{\times(g+1-k)}}|f_{\mu\cup c}(\alpha_{1}),|f_{\mu\cup c}(\alpha_{2}),\cdots,|f_{\mu\cup c}(\alpha_{n})\rangle.
+\end{align}</span>
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/real_projective_plane">Projective-plane surface code</a></td>
+  <td class="textit">A family of Kitaev surface codes on the non-orientable 2-dimensional compact manifold <span class="inline-math">\(\mathbb{R}P^2\)</span> (in contrast to a genus-<span class="inline-math">\(g\)</span> surface). Whereas genus-<span class="inline-math">\(g\)</span> surface codes require <span class="inline-math">\(2g\)</span> logical qubits, qubit codes on <span class="inline-math">\(\mathbb{R}P^2\)</span> are made from a single logical qubit.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></td>
+  <td class="textit">A CSS code formed from a classical Reed-Muller code in which polynomials over finite fields encode data. This is done by transforming these polynomials into the stabilizer generator matrices</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_convolutional">Quantum convolutional code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_cyclic">Quantum cyclic code</a></td>
+  <td class="textit">A code <span class="inline-math">\(C\)</span> constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits) is cyclic if a cyclic permutation of the subsystems leaves the code subspace invariant.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></td>
+  <td class="textit">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. Codewords may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed in practice.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_expander">Quantum expander code</a></td>
+  <td class="textit">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
+  <td class="textit">Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,q^k,d))\)</span> code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Singleton bound
+<span class="display-math env-align">\begin{align}
+2(d-1) \leq n-k
+\end{align}</span>
+becomes an equality.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></td>
+  <td class="textit">A <span class="inline-math">\([[m_1 m_2,1,\min(m_1,m_2)]]\)</span> CSS code family obtained from concatenating an <span class="inline-math">\(m_1\)</span>-qubit phase-flip repetition code with an <span class="inline-math">\(m_2\)</span>-qubit bit-flip repetition code. Logical codewords are
+<span class="display-math env-align">\begin{align}
+\begin{split}
+|\overline{0}\rangle&amp;=\frac{1}{2^{m_2/2}}\left(|0\rangle^{\otimes m_1}+|1\rangle^{\otimes m_1}\right)^{\otimes m_2}\\
+|\overline{1}\rangle&amp;=\frac{1}{2^{m_2/2}}\left(|0\rangle^{\otimes m_1}-|1\rangle^{\otimes m_1}\right)^{\otimes m_2}~.
+\end{split}
+\end{align}</span>
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_polar">Quantum polar code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_repetition">Quantum repetition code</a></td>
+  <td class="textit">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_double">Quantum-double code</a></td>
+  <td class="textit">A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qubits_into_qubits">Qubit code</a></td>
+  <td class="textit">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></td>
+  <td class="textit">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}^n\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/ramanujan_tensor_product">Ramanujan tensor-product code</a></td>
+  <td class="textit">CSS code constructed from a Ramanujan quantum code and an asymptotically good classical LDPC code using distance balancing. Ramanujan quantum codes are defined using Ramanujan complexes which are simplicial complexes that generalise Ramanujan graphs. Combining the quantum code obtained from a Ramanujan complex and a good classical LDPC code, which can be thought of as coming from a 1-dimensional chain complex, yields a new quantum code that is defined on a 2-dimensional chain complex. This 2-dimensional chain complex is obtained by the co-complex of the product of the 2 co-complexes. The length, dimension and distance of the new quantum code depend on the input codes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/random_circuit">Random-circuit code</a></td>
+  <td class="textit">Code whose encoding is naturally constructed by randomly sampling from a large set of quantum circuits.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/rotor_gkp">Rotor GKP code</a></td>
+  <td class="textit">GKP code protecting against small angular position and momentum shifts of a planar rotor.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></td>
+  <td class="textit">Nine-qubit <a href="/c/css" class="ref">CSS code</a> that is the smallest such code to correct a single-qubit error. The logical state is encoded using
+<span class="display-math env-align">\begin{align}
+\begin{split}
+|\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\
+|\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3}~.
+\end{split}
+\end{align}</span>
+The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/spins_into_spins">Spin code</a></td>
+  <td class="textit">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, where the canonical qudit basis consists of states of a quantum mechanical spin. In other words, canonical single-qudit states <span class="inline-math">\(|^\ell_m\rangle\)</span> are labeled by total angular momentum <span class="inline-math">\(\ell\)</span> (either integer or half-integer) and its <span class="inline-math">\(z\)</span>-axis projection <span class="inline-math">\(m\)</span>, with <span class="inline-math">\(q=2\ell+1\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stabilizer">Stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation in the code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></td>
+  <td class="textit">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
+The field <span class="inline-math">\(GF(4)=\mathbf{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
+There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
+The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></td>
+  <td class="textit">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
+<span class="display-math env-align">\begin{align}
+  H = \left(\begin{matrix}
+    1&amp;0&amp;0&amp;1&amp;0&amp;1&amp;1\\
+    0&amp;1&amp;0&amp;1&amp;1&amp;0&amp;1\\
+    0&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1
+  \end{matrix}\right),
+\end{align}</span>
+and the check matrix for the Steane code is therefore
+<span class="display-math env-align">\begin{align}
+  \left(\begin{matrix}
+    0&amp;H\\
+    H&amp;0
+  \end{matrix}\right).
+\end{align}</span>
+The stabilizer group for the Steane code has six generators.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/string_net">String-net code</a></td>
+  <td class="textit">Also called a <span class="textit">Turaev-Viro</span> or <span class="textit">Levin-Wen model</span> code. A family of topological codes, defined by a finite unitary spherical category <span class="inline-math">\( \mathcal{C} \)</span>,  whose generators are few-body operators acting on a cell decomposition dual to a triangulation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |\mathcal{C}| \)</span> located at each edge of the decomposition).</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/subsystem_color">Subsystem color code</a></td>
+  <td class="textit">Stub.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/oecc">Subsystem quantum error-correcting code</a></td>
+  <td class="textit">A subsystem code, also known as an <span class="textit">operator QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>.
+<span class="display-math env-align">\begin{align}
+\mathsf{H}=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}
+\end{align}</span>
+Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code can yield more efficient correction procedures and a wider variety of encoding procedures.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/subsystem_stabilizer">Subsystem stabilizer code</a></td>
+  <td class="textit">Also called a <span class="textit">gauge stabilizer code</span>. A stabilizer code with some of its logical qubits denoted as <span class="textit">gauge</span> qubits and not used for storage of logical information. Note that this doesnt lead to new codes but does lead to new error correction and fault tolerance procedures. Subsystem codes are denoted by <span class="inline-math">\([[n,k,r,d]]\)</span>, similar to stabilizer codes, but with an extra parameter <span class="inline-math">\(r\)</span> denoting the number of gauge qubits.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
+  <td class="textit">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
+<span class="display-math env-align">\begin{align}
+  \begin{split}
+    | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
+    | \overline{1} \rangle &amp;= \frac{1}{\sqrt{3}} (| 012 \rangle + | 120 \rangle + | 201 \rangle) \\
+    | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
+  \end{split}
+\end{align}</span>
+The elements in the superposition of each logical codeword are related to each other via cyclic permutations.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/topological">Topological code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></td>
+  <td class="textit">A triorthogonal <span class="inline-math">\(m \times n\)</span> binary matrix is triorthogonal if its rows <span class="inline-math">\(r_1, \ldots, r_m\)</span> satisfy <span class="inline-math">\(|r_i \cdot r_j| = 0\)</span> and <span class="inline-math">\(|r_i \cdot r_j \cdot r_k| = 0\)</span>, where addition and multiplication are done on <span class="inline-math">\(\mathbb{Z}_2\)</span>. The triorthogonal code associated with the matrix is constructed by mapping non-zero entries in even-weight rows to <span class="inline-math">\(X\)</span> operators, and <span class="inline-math">\(Z\)</span> operators for each row in the orthogonal complement.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a></td>
+  <td class="textit">Also called a <span class="textit">linear stabilizer code</span>. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a></td>
+  <td class="textit">Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></td>
+  <td class="textit">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></td>
+  <td class="textit">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/xysurface">XY surface code</a></td>
+  <td class="textit">Non-CSS derivative of the surface code whose generators are <span class="inline-math">\(XXXX\)</span>  and <span class="inline-math">\(YYYY\)</span>, obtained by mapping <span class="inline-math">\(Z \to Y\)</span> in the surface code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/xyz_product">XYZ product code</a></td>
+  <td class="textit">A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than taking a product of only two classical codes to produce a CSS code, a third classical code is considered, acting with Pauli-<span class="inline-math">\(Y\)</span> operators.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/xzzx">XZZX surface code</a></td>
+  <td class="textit">Non-CSS derivative of the surface code whose generators are <span class="inline-math">\(XZXZ\)</span> Pauli strings associated, clock-wise, to the vertices of each face of a two-dimensional lattice (with a qubit located at each vertex of the tessellation).</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_15_1_3"><span class="inline-math">\([[15,1,3]]\)</span> Reed-Muller code</a></td>
+  <td class="textit"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
+This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center.
+The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers.
+Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check.
+A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron.
+The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></td>
+  <td class="textit">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></td>
+  <td class="textit">A Hamming-based CSS code is a CCS code constructed with a classical Hamming code <span class="inline-math">\([2^r-1,2^r-1-r,3]=C_X=C_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> prime-qudit CSS code</a></td>
+  <td class="textit">A family of CSS codes extending <a href="/c/quantum_hamming_css" class="ref">Hamming-based CSS codes</a> to prime qudits of dimension <span class="inline-math">\(p\)</span> by expressing the qubit code stabilizers in local-dimension-invariant (LDI) form <a href="#cite-21" class="cite">[22]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
+  <td class="textit"> Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}. \end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\ \end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></td>
+  <td class="textit">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split} \end{align}</span></td>
+</tr>
+</tbody>
+</table>
+
+
+
+  <div id="endnotes" class="">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. M. Kubica, The Abcs of the Color Code: A Study of Topological Quantum Codes as Toy Models for Fault-tolerant Quantum Computation and Quantum Phases of Matter, California Institute of Technology, 2018. <a href="https://doi.org/10.7907/059V-MG69" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        H. Bombin, “An Introduction to Topological Quantum Codes”. <a href="https://arxiv.org/abs/1311.0277" target="_blank" class="href">1311.0277</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        M. B. Hastings, “Weight Reduction for Quantum Codes”. <a href="https://arxiv.org/abs/1611.03790" target="_blank" class="href">1611.03790</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Shai Evra, Tali Kaufman, and Gilles Zémor, “Decodable quantum LDPC codes beyond the <span class="inline-math">$\sqrt{n}$</span> distance barrier using high dimensional expanders”. <a href="https://arxiv.org/abs/2004.07935" target="_blank" class="href">2004.07935</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href">1902.07714</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
+      <dd>
+        S. B. Bravyi and A. Y. Kitaev, “Fermionic Quantum Computation”, Annals of Physics <span class="textbf">298</span>, 210 (2002). <a href="https://doi.org/10.1006/aphy.2002.6254" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0003137" target="_blank" class="href">quant-ph/0003137</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
+      <dd>
+        M. H. Freedman, “Z2–Systolic-Freedom”, Proceedings of the Kirbyfest (1999). <a href="https://doi.org/10.2140/gtm.1999.2.113" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        J. Haah, “Local stabilizer codes in three dimensions without string logical operators”, Physical Review A <span class="textbf">83</span>, (2011). <a href="https://doi.org/10.1103/PhysRevA.83.042330" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1101.1962" target="_blank" class="href">1101.1962</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        M. M. Wilde, “Preface to the Second Edition”, Quantum Information Theory xi. <a href="https://doi.org/10.1017/9781316809976.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.1445" target="_blank" class="href">1106.1445</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        S. B. Bravyi and A. Yu. Kitaev, “Quantum codes on a lattice with boundary”. <a href="https://arxiv.org/abs/quant-ph/9811052" target="_blank" class="href">quant-ph/9811052</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
+      <dd>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-17">[18]</dt>
+      <dd>
+        Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href">1901.08092</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-18">[19]</dt>
+      <dd>
+        S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href">1903.05124</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-19">[20]</dt>
+      <dd>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-20">[21]</dt>
+      <dd>
+        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-21">[22]</dt>
+      <dd>
+        Arun J. Moorthy and Lane G. Gunderman, “Local-dimension-invariant Calderbank-Shor-Steane Codes with an Improved Distance Promise”. <a href="https://arxiv.org/abs/2110.11510" target="_blank" class="href">2110.11510</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

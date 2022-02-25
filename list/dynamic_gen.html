@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Dynamically generated quantum codes
+ [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+Here is a list of quantum <a href="/c/dynamic_gen" class="ref">dynamically generated codes</a>.
+
+<table class="codelistpage-table xtra-xtra-stretch">
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="top left"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></td>
+  <td class="textit">Code whose natural definition is in terms of a many-body scaling limit of a local dynamical process. Such processes update the code structure and can include random unitary evolution or non-commuting projective measurements.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/floquet">Floquet code</a></td>
+  <td class="textit">Dynamically-generated stabilizer-based code whose logical qubits are generated through a particular sequence of measurements such that the number of logical qubits is larger than when the code is viewed as a static subsystem stabilizer code. The code space is the <span class="inline-math">\(+1\)</span> eigenspace of the instantaneous stabilizer group (ISG). The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured. As opposed to subsystem codes, only specific measurement sequences maintain the codespace.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/haar_random">Haar-random code</a></td>
+  <td class="textit">Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#cite-0" class="cite">[1]</a>, but encoding and decoding in random <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/honeycomb">Honeycomb code</a></td>
+  <td class="textit">Floquet code inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a> whose logical qubits are generated through a particular sequence of measurements.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/t-designs">Local Haar-random circuit code</a></td>
+  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
+The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-2" class="cite">[3]</a>. Follow-up work <a href="#cite-3" class="cite">[4]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/nonlocal_lowdepth">Low-depth random Clifford-circuit code</a></td>
+  <td class="textit">An encoder for an <span class="inline-math">\([[n,k]]\)</span> quantum error correcting code, is an <span class="inline-math">\(n\)</span>-qubit unitary transformation that takes a <span class="inline-math">\(k\)</span>-qubit state as input (with <span class="inline-math">\(k\leq n\)</span>, and the remaining <span class="inline-math">\(n-k\)</span> qubits initialized to <span class="inline-math">\(|0\rangle^{\otimes n-k}\)</span> ) to give a corresponding state in the codespace as the output. An n-qubit quantum circuit with random 2-qubit Clifford gates can act as an encoder into a code with distance <span class="inline-math">\(d\)</span> with high probability, with a size (i.e. number of gates in the circuit) at most <span class="inline-math">\(O(n^2 log n)\)</span>). Noting that two gates acting on disjoint qubits could in fact be executed simultaneously, this is equivalent to the depth (number of time steps in the circuit) being at most <span class="inline-math">\(O(log^3 n)\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
+  <td class="textit">Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-4" class="cite">[5]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/random_circuit">Random-circuit code</a></td>
+  <td class="textit">Code whose encoding is naturally constructed by randomly sampling from a large set of quantum circuits.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+  <div id="endnotes" class="">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        M. M. Wilde, “Preface to the Second Edition”, Quantum Information Theory xi. <a href="https://doi.org/10.1017/9781316809976.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.1445" target="_blank" class="href">1106.1445</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href">1901.08092</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href">1903.05124</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
