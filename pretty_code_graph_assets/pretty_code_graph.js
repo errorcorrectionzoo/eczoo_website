@@ -9,7 +9,7 @@ make_pretty_code_graph_data = function()
 
 pretty_code_graph_setup = function()
 {
-    var codegraph = {};
+    window.codegraph = {};
 
     var main_element = document.getElementById('main');
 
@@ -20,7 +20,7 @@ pretty_code_graph_setup = function()
 
     pretty_code_graph_data = make_pretty_code_graph_data();
 
-    codegraph.cy = cytoscape({
+    window.codegraph.cy = cytoscape({
         // Main HTML DOM container
         container: main_element, //'cy-code-graph'),
 
@@ -217,7 +217,7 @@ pretty_code_graph_setup = function()
         virtualElement.getBoundingClientRect =
             generateGetBoundingClientRect(base_pos.x + node_pos.x - window.pageXOffset,
                                           base_pos.y + node_pos.y - window.pageYOffset);
-        codegraph.popper_obj.update();
+        window.codegraph.popper_obj.update();
 
         tooltip_element.style.display = 'block';
     };
@@ -239,7 +239,7 @@ pretty_code_graph_setup = function()
         getBoundingClientRect: generateGetBoundingClientRect(),
     };
 
-    codegraph.popper_obj = Popper.createPopper(
+    window.codegraph.popper_obj = Popper.createPopper(
         virtualElement,
         tooltip_element,
         {
@@ -254,7 +254,7 @@ pretty_code_graph_setup = function()
         }
     )
     
-    codegraph.cy.on('tap', function(event) {
+    window.codegraph.cy.on('tap', function(event) {
         // target holds a reference to the originator
         // of the event (core or element)
         var eventTarget = event.target;
@@ -307,6 +307,14 @@ pretty_code_graph_setup = function()
             window.pretty_code_graph_show_tooltip(node_pos);
         }
     });
+
+
+    codegraph.downloadsvg = function() {
+        var a = document.createElement("a");
+        a.setAttribute("href", "data:image/svg+xml;base64,"+btoa(codegraph.cy.svg()));
+        a.setAttribute("download", "codegraph.svg");
+        a.click();
+    };
 
 };
 
