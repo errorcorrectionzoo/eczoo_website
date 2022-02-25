@@ -84,6 +84,11 @@ H_X H_Z^T=0~.
 The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/cat">Cat code</a></td>
+  <td class="textit">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
+</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></td>
   <td class="textit">A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thresholds and subthreshold performance are enhanced under noise biased towards dephasing. Examples of CDSCs include the XY code, XZZX code, and random CDSCs.</td>
 </tr>
@@ -127,6 +132,14 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
   <td class="top left"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a></td>
   <td class="textit">Hyperbolic surface code constructed using cellulation of a Riemann Manifold <span class="inline-math">\(M\)</span> exhibitng systolic freedom <a href="#cite-6" class="cite">[7]</a>. Codes derived from such manifolds can achieve distances scaling better than <span class="inline-math">\(\sqrt{n}\)</span>, something that is impossible using closed 2D surfaces or 2D surfaces with boundaries <a href="#cite-7" class="cite">[8]</a>. Improved codes are obtained by studying a weak family of Riemann metrics on closed 4-dimensional manifolds <span class="inline-math">\(S^2\otimes S^2\)</span> with the <span class="inline-math">\(Z_2\)</span>-homology.
 </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></td>
+  <td class="textit">Can be expressed in terms of Dicke states where the logical states are
+<span class="display-math env-align">\begin{align}
+|\overline{\pm}\rangle = \sum_{\ell=0}^{n} \frac{(\pm 1)^\ell}{\sqrt{2^n}} \sqrt{n \choose \ell} |D^m_{g \ell}\rangle~.
+\end{align}</span>
+Here, <span class="inline-math">\(m\)</span> is the number of particles used for encoding <span class="inline-math">\(1\)</span> qubit, and <span class="inline-math">\(g, n \leq m\)</span> are arbitrary positive integers. The state <span class="inline-math">\(|D^m_w\rangle\)</span> is a Dicke state -- a normalized permutation-invariant state on <span class="inline-math">\(m\)</span> qubits with <span class="inline-math">\(w\)</span> excitations, i.e., a normalized sum over all basis elements with <span class="inline-math">\(w\)</span> ones and <span class="inline-math">\(m - w\)</span> zeroes.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a></td>
@@ -198,6 +211,10 @@ construction. The construction on surfaces with boundaries is often called the
   <td class="textit">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
+  <td class="textit">Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></td>
   <td class="textit">A <span class="inline-math">\([[m_1 m_2,1,\min(m_1,m_2)]]\)</span> CSS code family obtained from concatenating an <span class="inline-math">\(m_1\)</span>-qubit phase-flip repetition code with an <span class="inline-math">\(m_2\)</span>-qubit bit-flip repetition code. Logical codewords are
 <span class="display-math env-align">\begin{align}
@@ -234,6 +251,10 @@ construction. The construction on surfaces with boundaries is often called the
 \end{split}
 \end{align}</span>
 The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stabilizer">Stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>, which cannot contain <span class="inline-math">\(-I\)</span>. The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation in the code.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></td>
@@ -300,6 +321,10 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 <tr>
   <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
   <td class="textit"> Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}\\ |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}\\ |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}\\ |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2} \end{split}. \end{align}</span> Its subcode is the <span class="inline-math">\([[4,1,2]]\)</span> code, whose <span class="inline-math">\(\pm\)</span>-basis codewords can be written as <span class="display-math env-align">\begin{align} |\overline{\pm}\rangle = \frac{1}{2}(|00\rangle \pm |11\rangle)^{\otimes 2}\\ \end{align}</span> This code can be thought of as a concatenation of a two-qubit bit-flip with a two-qubit phase-flip code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></td>
+  <td class="textit">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split} \end{align}</span></td>
 </tr>
 </tbody>
 </table>

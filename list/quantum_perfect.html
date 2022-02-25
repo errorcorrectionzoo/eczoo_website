@@ -60,12 +60,28 @@ Here is a list of code families which contain <a href="/c/quantum_perfect" class
 </thead>
 <tbody>
 <tr>
+  <td class="top left"><a href="/c/perfect">Perfect code</a></td>
+  <td class="textit">An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
+<span class="display-math env-align">\begin{align}
+\sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
+\end{align}</span>
+becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/quantum_perfect">Perfect quantum code</a></td>
   <td class="textit">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
 <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
 \end{align}</span>
 becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></td>
+  <td class="textit">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> code</a></td>
+  <td class="textit">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split} \end{align}</span></td>
 </tr>
 </tbody>
 </table>

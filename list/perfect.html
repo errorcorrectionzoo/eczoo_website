@@ -60,12 +60,29 @@ Here is a list of code families which contain <a href="/c/perfect" class="ref">p
 </thead>
 <tbody>
 <tr>
+  <td class="top left"><a href="/c/homological_classical">Graph homology code</a></td>
+  <td class="textit">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.
+</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hamming">Hamming code</a></td>
+  <td class="textit">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/perfect">Perfect code</a></td>
   <td class="textit">An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
 <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
 \end{align}</span>
 becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_perfect">Perfect quantum code</a></td>
+  <td class="textit">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
+<span class="display-math env-align">\begin{align}
+\sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
+\end{align}</span>
+becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</td>
 </tr>
 </tbody>
 </table>
