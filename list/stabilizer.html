@@ -100,6 +100,10 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
   <td class="textit">CSS stabilizer code constructed from a CSS code and a classical code using a distance-balancing procedure based on a generalized homological product. The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors, and the procedure can result in a code that is treats both types of errors on a more equal footing. The original distance-balancing procedure <a href="#cite-2" class="cite">[3]</a>, later generalized in Ref. <a href="#cite-3" class="cite">[4]</a>, can yield QLDPC codes; see Thm. 1 in Ref. <a href="#cite-2" class="cite">[3]</a>.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/double_semion">Double-semion code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/expander_lifted_product">Expander lifted-product code</a></td>
   <td class="textit">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-4" class="cite">[5]</a>.</td>
 </tr>
@@ -205,8 +209,46 @@ construction. The construction on surfaces with boundaries is often called the
   <td class="textit">Stub.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/qudit_css">Modular-qudit CSS code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit stabilizer code admitting a set of stabilizer generators that
+are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings.
+The stabilizer generator matrix, taking values from <span class="inline-math">\(\mathbb{Z}_q\)</span>, is of the form
+<span class="display-math env-align">\begin{align}
+H=\begin{pmatrix}0 &amp; H_{Z}\\
+H_{X} &amp; 0
+\end{pmatrix}
+\label{eq:parityq}
+\end{align}</span>
+such that the rows of the two blocks must be orthogonal
+<span class="display-math env-align">\begin{align}
+H_X H_Z^T=0~.
+\label{eq:commQ}
+\end{align}</span>
+The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(|{\mathsf{S}}|\)</span> commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\({\mathsf{S}}\)</span>, which cannot contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation in the code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_surface">Modular-qudit surface code</a></td>
+  <td class="textit">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
   <td class="textit">Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#cite-11" class="cite">[12]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></td>
+  <td class="textit">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_p\)</span> (with prime <span class="inline-math">\(p&gt;n\)</span>) prime-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(p)=\mathbb{Z}_p\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(\mathbb{Z}_p\)</span>, and let <span class="inline-math">\(g\)</span> be a number satisfying <span class="inline-math">\(0\leq k \leq g &lt; n\)</span>. Then, define degree-<span class="inline-math">\(g\)</span> polynomials
+<span class="display-math env-align">\begin{align}
+  f_{\mu\cup c}\left(x\right)=\mu_{0}+\mu_{1}x+\cdots+\mu_{k-1}x^{k-1}+c_{k}x^{k}+\cdots+c_{g}x^{g}\,,
+\end{align}</span>
+where the first <span class="inline-math">\(k\)</span> coefficients are indexed by the coefficient vector <span class="inline-math">\(\mu\in\mathbb{Z}_p^{\times k}\)</span>, and the remaining coefficients are indexed by the vector <span class="inline-math">\(c\in\mathbb{Z}_p^{\times (g+1-k)}\)</span>. Logical states, labeled by <span class="inline-math">\(\mu\)</span>, are superpositions of canonical basis states whose <span class="inline-math">\(i\)</span>th bit is <span class="inline-math">\(f_{\mu\cup c}\)</span>, evaluated at <span class="inline-math">\(\alpha_i\)</span> and summed over all possible vectors <span class="inline-math">\(c\)</span>,
+<span class="display-math env-align">\begin{align}
+  |\overline{\mu}\rangle=\sum_{c\in\mathbb{Z}_{p}^{\times(g+1-k)}}|f_{\mu\cup c}(\alpha_{1}),|f_{\mu\cup c}(\alpha_{2}),\cdots,|f_{\mu\cup c}(\alpha_{n})\rangle.
+\end{align}</span>
+</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/real_projective_plane">Projective-plane surface code</a></td>
@@ -295,6 +337,19 @@ The stabilizer group for the Steane code has six generators.
 </td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
+  <td class="textit">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
+<span class="display-math env-align">\begin{align}
+  \begin{split}
+    | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
+    | \overline{1} \rangle &amp;= \frac{1}{\sqrt{3}} (| 012 \rangle + | 120 \rangle + | 201 \rangle) \\
+    | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
+  \end{split}
+\end{align}</span>
+The elements in the superposition of each logical codeword are related to each other via cyclic permutations.
+</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></td>
   <td class="textit">A triorthogonal <span class="inline-math">\(m \times n\)</span> binary matrix is triorthogonal if its rows <span class="inline-math">\(r_1, \ldots, r_m\)</span> satisfy <span class="inline-math">\(|r_i \cdot r_j| = 0\)</span> and <span class="inline-math">\(|r_i \cdot r_j \cdot r_k| = 0\)</span>, where addition and multiplication are done on <span class="inline-math">\(\mathbb{Z}_2\)</span>. The triorthogonal code associated with the matrix is constructed by mapping non-zero entries in even-weight rows to <span class="inline-math">\(X\)</span> operators, and <span class="inline-math">\(Z\)</span> operators for each row in the orthogonal complement.</td>
 </tr>
@@ -340,6 +395,10 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 <tr>
   <td class="top left"><a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a></td>
   <td class="textit">A Hamming-based CSS code is a CCS code constructed with a classical Hamming code <span class="inline-math">\([2^r-1,2^r-1-r,3]=C_X=C_Z\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]_p\)</span> prime-qudit CSS code</a></td>
+  <td class="textit">A family of CSS codes extending <a href="/c/quantum_hamming_css" class="ref">Hamming-based CSS codes</a> to prime qudits of dimension <span class="inline-math">\(p\)</span> by expressing the qubit code stabilizers in local-dimension-invariant (LDI) form <a href="#cite-12" class="cite">[13]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
@@ -416,6 +475,11 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <dt id="cite-11">[12]</dt>
       <dd>
         P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href">1902.07714</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        Arun J. Moorthy and Lane G. Gunderman, “Local-dimension-invariant Calderbank-Shor-Steane Codes with an Improved Distance Promise”. <a href="https://arxiv.org/abs/2110.11510" target="_blank" class="href">2110.11510</a>
       </dd>
     
     </dl>
