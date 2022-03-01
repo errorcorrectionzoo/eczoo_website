@@ -708,7 +708,7 @@ The stabilizer group for the Steane code has six generators.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
+      <a href="/c/dual_rail">Dual-rail code</a>,       <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
   </span>
 </div>
 
@@ -951,8 +951,19 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 </div>
 
 
+<div class="ecc-code" id="ecc_dual_rail">
+  <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#cite-65" class="cite">[66]</a></span></span>
+  <span class="short-code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</span>
+  <span class="short-code-info">Protection: This is an error-detecting code against one photon loss event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state <span class="inline-math">\(|00\rangle\)</span> is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_wasilewski-banaszek">
-  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-65" class="cite">[66]</a></span></span>
+  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-66" class="cite">[67]</a></span></span>
   <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></span>
   <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
   <span class="short-code-parents">
@@ -963,7 +974,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 <div class="ecc-code" id="ecc_quantum_expander">
-  <span class="short-code-name"><a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-66" class="cite">[67]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
   <span class="short-code-description">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</span>
   <span class="short-code-info">Protection: Pauli errors of weight <span class="inline-math">\(\leq t\)</span>, distance scales as <span class="inline-math">\(\Omega(n^{1/2})\)</span>.</span>
   <span class="short-code-parents">
@@ -978,8 +989,8 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 <div class="ecc-code" id="ecc_freedman_meyer_luo">
-  <span class="short-code-name"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
-  <span class="short-code-description">Hyperbolic surface code constructed using cellulation of a Riemann Manifold <span class="inline-math">\(M\)</span> exhibitng systolic freedom <a href="#cite-68" class="cite">[69]</a>. Codes derived from such manifolds can achieve distances scaling better than <span class="inline-math">\(\sqrt{n}\)</span>, something that is impossible using closed 2D surfaces or 2D surfaces with boundaries <a href="#cite-69" class="cite">[70]</a>. Improved codes are obtained by studying a weak family of Riemann metrics on closed 4-dimensional manifolds <span class="inline-math">\(S^2\otimes S^2\)</span> with the <span class="inline-math">\(Z_2\)</span>-homology.
+  <span class="short-code-name"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a><span class="code-introduced"><a href="#cite-68" class="cite">[69]</a></span></span>
+  <span class="short-code-description">Hyperbolic surface code constructed using cellulation of a Riemann Manifold <span class="inline-math">\(M\)</span> exhibitng systolic freedom <a href="#cite-69" class="cite">[70]</a>. Codes derived from such manifolds can achieve distances scaling better than <span class="inline-math">\(\sqrt{n}\)</span>, something that is impossible using closed 2D surfaces or 2D surfaces with boundaries <a href="#cite-70" class="cite">[71]</a>. Improved codes are obtained by studying a weak family of Riemann metrics on closed 4-dimensional manifolds <span class="inline-math">\(S^2\otimes S^2\)</span> with the <span class="inline-math">\(Z_2\)</span>-homology.
 </span>
   <span class="short-code-info">Protection: Four-dimensional manifolds with weak systolic freedom yield <span class="inline-math">\([[n,2,\Omega(\sqrt{n \sqrt{\log n}})]]\)</span> surface codes.</span>
   <span class="short-code-parents">
@@ -994,7 +1005,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 <div class="ecc-code" id="ecc_four_dimensional_hyperbolic">
-  <span class="short-code-name"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a><span class="code-introduced"><a href="#cite-70" class="cite">[71]</a></span></span>
+  <span class="short-code-name"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a><span class="code-introduced"><a href="#cite-71" class="cite">[72]</a></span></span>
   <span class="short-code-description">Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, with corresponding codes exhibiting linear rate.</span>
   <span class="short-code-info">Protection: Protection stems from the relationship between properties of manifolds and CSS codes derived from their cellulation. The number of physical <span class="inline-math">\(k\)</span> qubits and distance <span class="inline-math">\(d\)</span> of the code will scale as <span class="inline-math">\(\Omega(n)\)</span> and <span class="inline-math">\(\Omega(n^\epsilon)\)</span>, respectively.</span>
   <span class="short-code-parents">
@@ -1005,7 +1016,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 <div class="ecc-code" id="ecc_two_dimensional_hyperbolic_surface">
-  <span class="short-code-name"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a><span class="code-introduced"><a href="#cite-71" class="cite">[72]</a></span></span>
+  <span class="short-code-name"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a><span class="code-introduced"><a href="#cite-72" class="cite">[73]</a></span></span>
   <span class="short-code-description">Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</span>
   <span class="short-code-info">Protection: Protects against Pauli errors with distance <span class="inline-math">\( d \propto \log(n) \)</span>. Code parameters are <span class="inline-math">\( [[n, (1-2/r - 2/s)  n + 2, \log(n) ]] \)</span></span>
   <span class="short-code-parents">
@@ -1016,7 +1027,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 
 <div class="ecc-code" id="ecc_stab_5_1_3">
-  <span class="short-code-name"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a><span class="code-introduced"><a href="#cite-72" class="cite">[73]</a></span></span>
+  <span class="short-code-name"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a><span class="code-introduced"><a href="#cite-73" class="cite">[74]</a></span></span>
   <span class="short-code-description">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split} \end{align}</span></span>
   <span class="short-code-info">Protection: Smallest stabilizer code that protects against a single error on any one qubit. Detects two-qubit errors.</span>
   <span class="short-code-parents">
@@ -1365,40 +1376,45 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <!-- Citation:  -->
       <dt id="cite-65">[66]</dt>
       <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-66">[67]</dt>
       <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-67">[68]</dt>
       <dd>
-        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
+        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-68">[69]</dt>
       <dd>
-        M. H. Freedman, “Z2–Systolic-Freedom”, Proceedings of the Kirbyfest (1999). <a href="https://doi.org/10.2140/gtm.1999.2.113" target="_blank" class="href">DOI</a>
+        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-69">[70]</dt>
       <dd>
-        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
+        M. H. Freedman, “Z2–Systolic-Freedom”, Proceedings of the Kirbyfest (1999). <a href="https://doi.org/10.2140/gtm.1999.2.113" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-70">[71]</dt>
       <dd>
-        L. Guth and A. Lubotzky, “Quantum error correcting codes and 4-dimensional arithmetic hyperbolic manifolds”, Journal of Mathematical Physics <span class="textbf">55</span>, 082202 (2014). <a href="https://doi.org/10.1063/1.4891487" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.5555" target="_blank" class="href">1310.5555</a>
+        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-71">[72]</dt>
       <dd>
-        N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href">1506.04029</a>
+        L. Guth and A. Lubotzky, “Quantum error correcting codes and 4-dimensional arithmetic hyperbolic manifolds”, Journal of Mathematical Physics <span class="textbf">55</span>, 082202 (2014). <a href="https://doi.org/10.1063/1.4891487" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.5555" target="_blank" class="href">1310.5555</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-72">[73]</dt>
+      <dd>
+        N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href">1506.04029</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-73">[74]</dt>
       <dd>
         Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
       </dd>
