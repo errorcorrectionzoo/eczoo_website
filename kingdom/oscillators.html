@@ -121,7 +121,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/homological_cv">Homological bosonic code</a>,       <a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a>.
+      <a href="/c/homological_cv">Homological bosonic code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>.
   </span>
 </div>
 
@@ -173,7 +173,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a>.
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>.
   </span>
 </div>
 
@@ -194,7 +194,7 @@
 
 
 <div class="ecc-code" id="ecc_niset_andersen_cerf">
-  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niest-Andersen-Cerf code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</span>
   <span class="short-code-info">Protection: The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</span>
   <span class="short-code-parents">
@@ -218,7 +218,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/bosonic_rotation">Bosonic rotation code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>,       <a href="/c/dual_rail">Dual-rail code</a>,       <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
+      <a href="/c/bosonic_rotation">Bosonic rotation code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>,       <a href="/c/dual_rail">Dual-rail code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -231,8 +231,28 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_chuang-leung-yamamoto">
+  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</span>
+  <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
+<span class="display-math env-align">\begin{align}
+\text{Spacing}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
+\end{align}</span>
+the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords.
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/constant_excitation">Constant-excitation (CE) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_bosonic_rotation">
-  <span class="short-code-name"><a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</span>
   <span class="short-code-info">Protection: Losses or gains less than <span class="inline-math">\(N\)</span> are detectable. Dephasing rotations <span class="inline-math">\(\exp(\mathrm{i}\theta \hat{n})\)</span> can be detected whenever <span class="inline-math">\(\theta\)</span> is roughly less than <span class="inline-math">\(\pi/N\)</span>. To get precise bounds on <span class="inline-math">\(\theta\)</span>, one needs to analyze the particular bosonic rotation code.</span>
   <span class="short-code-parents">
@@ -250,26 +270,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_chuang-leung-yamamoto">
-  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
-  <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</span>
-  <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
-<span class="display-math env-align">\begin{align}
-\text{Spacing}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
-\end{align}</span>
-the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords.
-</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/fock_state">Fock-state bosonic code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_dual_rail">
   <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
   <span class="short-code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</span>
@@ -281,17 +281,17 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 </div>
 
 
-<div class="ecc-code" id="ecc_wasilewski-banaszek">
-  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
-  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></span>
-  <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
+<div class="ecc-code" id="ecc_constant_excitation_permutation_invariant">
+  <span class="short-code-name"><a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
+  <span class="short-code-description">Stub.
+</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/fock_state">Fock-state bosonic code</a>.
+      <a href="/c/permutation_invariant">Permutation-invariant code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
   </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a>.
   </span>
 </div>
 
@@ -344,7 +344,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_number_phase">
-  <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-18" class="cite">[19]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
@@ -362,6 +362,17 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/binomial">Binomial code</a>,       <a href="/c/cat">Cat code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_wasilewski-banaszek">
+  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
+  <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></span>
+  <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a>.
   </span>
 </div>
 
@@ -417,12 +428,12 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
@@ -432,7 +443,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
+        Y. Ouyang and R. Chao, “Permutation-Invariant Constant-Excitation Quantum Codes for Amplitude Damping”, IEEE Transactions on Information Theory <span class="textbf">66</span>, 2921 (2020). <a href="https://doi.org/10.1109/TIT.2019.2956142" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.09801" target="_blank" class="href">1809.09801</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
@@ -463,6 +474,11 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       <dt id="cite-18">[19]</dt>
       <dd>
         S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-19">[20]</dt>
+      <dd>
+        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
