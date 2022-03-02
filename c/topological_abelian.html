@@ -128,9 +128,9 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/topological">Topological code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-1" class="cite">[2]</a>, and topological-code Hamiltonians are geometrically local for appropriate tesselations.</span></li>
+      &#x2014;&nbsp;All abelian topological orders can be realized as geometrically local modular-qudit stabilizer codes <a href="#cite-1" class="cite">[2]</a>, and topological-code Hamiltonians are geometrically local for appropriate tesselations.</span></li>
 </ul>
 </div>
 
@@ -154,13 +154,25 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;When treated as ground states of the code Hamiltonian, the code states realize double-semion topological order, a topological phase of matter that also exists in twisted <span class="inline-math">\(\mathbb{Z}_2\)</span> gauge theory <a href="#cite-4" class="cite">[5]</a>.</span></li>
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/surface">Kitaev surface code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;When treated as ground states of the code Hamiltonian, the code states
+realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of
+matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory
+<a href="#cite-5" class="cite">[6]</a>.
+</span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/matching">Matching code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Matching codes were inspired by the Kitaev honeycomb model <a href="#cite-5" class="cite">[6]</a>, which realizes <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order.</span></li>
+      &#x2014;&nbsp;Matching codes were inspired by the Kitaev honeycomb model <a href="#cite-6" class="cite">[7]</a>, which realizes <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/qudit_surface">Modular-qudit surface code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Qudit surface code Hamiltonians admit topological phases associated with <span class="inline-math">\(\mathbb{Z}_q\)</span> <a href="#cite-6" class="cite">[7]</a>. On the other hand, translation-invariant 2D prime-qudit topological stabilizer codes are equivalent to a finite number of copies of the qudit surface code stabilizer group via a local constant-depth Clifford circuit <a href="#cite-7" class="cite">[8]</a>.</span></li>
+      &#x2014;&nbsp;Qudit surface code Hamiltonians admit topological phases associated with <span class="inline-math">\(\mathbb{Z}_q\)</span> <a href="#cite-7" class="cite">[8]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/translationally_invariant_stabilizer.yml">Translationally-invariant stabilizer code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Topological abelian codes need not be translationally invariant, and can realize multiple topological phases on one lattice.</span></li>
 </ul>
 </div>
 
@@ -176,19 +188,9 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;All abelian topological orders can be realized as modular-qudit stabilizer codes <a href="#cite-1" class="cite">[2]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;When treated as ground states of the code Hamiltonian, the code states
-realize <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order, a topological phase of
-matter that also exists in <span class="inline-math">\(\mathbb{Z}_2\)</span> lattice gauge theory
-<a href="#cite-8" class="cite">[9]</a>. On the other hand, translation-invariant
-2D qubit topological stabilizer codes are equivalent to several copies
-of the Kitaev surface code <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>.
-</span></li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/xzzx">XZZX surface code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-11" class="cite">[12]</a>.</span></li>
+      &#x2014;&nbsp;Example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-8" class="cite">[9]</a>.</span></li>
 </ul>
 </div>
 
@@ -269,35 +271,20 @@ url={https://errorcorrectionzoo.org/c/topological_abelian}
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+        F. J. Wegner, “Duality in Generalized Ising Models and Phase Transitions without Local Order Parameters”, Journal of Mathematical Physics <span class="textbf">12</span>, 2259 (1971). <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        S. S. Bullock and G. K. Brennen, “Qudit surface codes and gauge theory with finite cyclic groups”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">40</span>, 3481 (2007). <a href="https://doi.org/10.1088/1751-8113/40/13/013" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0609070" target="_blank" class="href">quant-ph/0609070</a>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        J. Haah, “Classification of translation invariant topological Pauli stabilizer codes for prime dimensional qudits on two-dimensional lattices”, Journal of Mathematical Physics <span class="textbf">62</span>, 012201 (2021). <a href="https://doi.org/10.1063/5.0021068" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1812.11193" target="_blank" class="href">1812.11193</a>
+        S. S. Bullock and G. K. Brennen, “Qudit surface codes and gauge theory with finite cyclic groups”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">40</span>, 3481 (2007). <a href="https://doi.org/10.1088/1751-8113/40/13/013" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0609070" target="_blank" class="href">quant-ph/0609070</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
-      <dd>
-        F. J. Wegner, “Duality in Generalized Ising Models and Phase Transitions without Local Order Parameters”, Journal of Mathematical Physics <span class="textbf">12</span>, 2259 (1971). <a href="https://doi.org/10.1063/1.1665530" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-9">[10]</dt>
-      <dd>
-        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-10">[11]</dt>
-      <dd>
-        H. Bombín, “Structure of 2D Topological Stabilizer Codes”, Communications in Mathematical Physics <span class="textbf">327</span>, 387 (2014). <a href="https://doi.org/10.1007/s00220-014-1893-4" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1107.2707" target="_blank" class="href">1107.2707</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-11">[12]</dt>
       <dd>
         X.-G. Wen, “Quantum Orders in an Exact Soluble Model”, Physical Review Letters <span class="textbf">90</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.90.016803" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0205004" target="_blank" class="href">quant-ph/0205004</a>
       </dd>
@@ -327,7 +314,7 @@ url={https://errorcorrectionzoo.org/c/topological_abelian}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/topological">Topological</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></li><li><a href="/c/color">Color</a></li><li><a href="/c/double_semion">Double-semion</a></li><li><a href="/c/matching">Matching</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/surface">Kitaev surface</a></li><li><a href="/c/xzzx">XZZX surface</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/topological">Topological</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></li><li><a href="/c/color">Color</a></li><li><a href="/c/double_semion">Double-semion</a></li><li><a href="/c/surface">Kitaev surface</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/xzzx">XZZX surface</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
