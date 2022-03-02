@@ -84,7 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states, either balanced (i.e., uniform) or unbalanced. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</div>
+<div class="sectioncontent code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
@@ -141,7 +141,9 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Chuang-Leung-Yamamoto codewords are multi-mode Fock-state codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/constant_excitation">Constant-excitation (CE) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
