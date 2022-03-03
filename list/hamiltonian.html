@@ -228,7 +228,7 @@ construction. The construction on surfaces with boundaries is often called the
   <td class="textit">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) stabilizer code</a></td>
+  <td class="top left"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
   <td class="textit">Family of <span class="inline-math">\([[n,k,d]]\)</span> stabilizer codes for which the number of sites (either qubit or qudit) participating in each stabilizer generator and the number of stabilizer generators that each site participates in are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>. A <span class="textit">geometrically local stabilizer code</span> is a QLDPC code where the sites involved in any syndrome bit are contained in a fixed volume that does not scale with <span class="inline-math">\(n\)</span>.</td>
 </tr>
 <tr>
@@ -255,6 +255,10 @@ construction. The construction on surfaces with boundaries is often called the
   <td class="textit">A family of topological codes, defined by a finite group <span class="inline-math">\( G \)</span>,  whose generators are few-body operators associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit of dimension <span class="inline-math">\( |G| \)</span> located at each edge of the tesselation).</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></td>
+  <td class="textit">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint eigenspace of commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators which do not contain <span class="inline-math">\(-I\)</span>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></td>
   <td class="textit">Nine-qubit <a href="/c/css" class="ref">CSS code</a> that is the smallest such code to correct a single-qubit error. The logical state is encoded using
 <span class="display-math env-align">\begin{align}
@@ -264,10 +268,6 @@ construction. The construction on surfaces with boundaries is often called the
 \end{split}
 \end{align}</span>
 The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="ref">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/stabilizer">Stabilizer code</a></td>
-  <td class="textit">An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint eigenspace of commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators which do not contain <span class="inline-math">\(-I\)</span>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></td>
@@ -295,10 +295,6 @@ The stabilizer group for the Steane code has six generators.
 </tr>
 <tr>
   <td class="top left"><a href="/c/topological">Topological code</a></td>
-  <td class="textit">Stub.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/translationally_invariant_stabilizer.yml">Translationally-invariant stabilizer code</a></td>
   <td class="textit">Stub.</td>
 </tr>
 <tr>
