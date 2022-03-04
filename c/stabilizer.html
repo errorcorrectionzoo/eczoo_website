@@ -84,8 +84,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A stabilizer code is a code whose logical subspace is the joint eigenspace (usually with eigenvalue <span class="inline-math">\(+1\)</span>) of a set of commuting unitary operators forming the code&#x27;s stabilizer group. Stabilizer codes have been defined for qubits, modular qudits, Galois qudits, and oscillators using their respective Pauli-type groups.
-</div>
+<div class="sectioncontent code-description"><p>A stabilizer code is a code whose logical subspace is the joint eigenspace (usually with eigenvalue <span class="inline-math">\(+1\)</span>) of a set of commuting unitary operators forming the code&#x27;s stabilizer group. Stabilizer codes have been defined for qubits, modular qudits, Galois qudits, and oscillators using their respective Pauli-type groups.</p>
+<p>The coding theory motivation for stabilizer codes came from linear binary codes, whose codewords form a closed subspace in the space of binary strings. Stabilizer codes extend this property, in various ways, to quantum error correction. The stabilizer formalism is applicable to the qubit, modular-qudit, Galois-qudit, bosonic, and fermionic kingdoms; see <a href="https://errorcorrectionzoo.org/list/stabilizer" target="_blank" class="href">list of stabilizer codes</a> for a list of all stabilizer codes in the zoo.</p>
+<p>Stabilizer codes were originally defined for qubits, where the relevant commuting operators are tensor products of Pauli matrices. The Pauli stabilizer structure is immensely useful in providing standardized encoding, gates, decoding, and performance bounds. Elements of this structure remain in qudit extensions, in particular for prime-dimensional modular qudits and Galois qudits.</p>
+<p>An important property of qubit and qudit stabilizer codes is the QLDPC property, which means (roughly) that working with them remains not too hard as number of qudits grows; these are the primary candidates for a future quantum memory.</p></div>
 
 
 
@@ -150,6 +152,19 @@
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Majorana stabilizer codes are useful for Majorana-based architectures, where the degrees of freedom are electrons, and the notion of locality is different than all other code kingdoms.</span></li>
+</ul>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -220,7 +235,7 @@ url={https://errorcorrectionzoo.org/c/stabilizer}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/oscillator_stabilizer">Bosonic stabilizer</a></li><li><a href="/c/galois_stabilizer">Galois-qudit stabilizer</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/qldpc">QLDPC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/oscillator_stabilizer">Bosonic stabilizer</a></li><li><a href="/c/galois_stabilizer">Galois-qudit stabilizer</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/majorana_stab">Majorana stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
