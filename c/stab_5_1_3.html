@@ -109,13 +109,19 @@
       class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
   <div class="sectioncontent code-feature code-feature-transversal_gates">Pauli gates are transversal.</div>
  
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Pieceable fault-tolerant CZ and CCZ gates <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Combined dynamical decoupling and error correction protocol on individually-controlled qubits with always-on Ising couplings <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Symmetric decoder correcting all weight-one Pauli errors. The resulting logical error channel after coherent noise has been explicitly derived <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Combined dynamical decoupling and error correction protocol on individually-controlled qubits with always-on Ising couplings <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Symmetric decoder correcting all weight-one Pauli errors. The resulting logical error channel after coherent noise has been explicitly derived <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Pieceable fault-tolerant CZ and CCZ gates <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Syndrome measurement can be done with two ancillary flag qubits <a href="#cite-4" class="cite">[5]</a>.</span></div>
 
 
 
@@ -125,7 +131,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">First realized in NMR <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Demonstration with superconducting qubits <a href="#cite-4" class="cite">[5]</a>.</span>
+  <span class="paragraph-in-list">First realized in NMR <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Demonstration with superconducting qubits <a href="#cite-6" class="cite">[7]</a>.</span>
 </div>
 
 
@@ -169,19 +175,19 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of mutually commuting Majorana operators <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of mutually commuting Majorana operators <a href="#cite-7" class="cite">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of mutually commuting Majorana operators <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([[5,1,3]]\)</span> code Hamiltonian is local when expressed in terms of mutually commuting Majorana operators <a href="#cite-7" class="cite">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The <span class="inline-math">\([[5,1,3]]\)</span> encoding isometry tiles various holographic codes because its corresponding tensor is perfect <a href="#cite-6" class="cite">[7]</a>.</span></li>
+      &#x2014;&nbsp;The <span class="inline-math">\([[5,1,3]]\)</span> encoding isometry tiles various holographic codes because its corresponding tensor is perfect <a href="#cite-8" class="cite">[9]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([[4,2,2]]\)</span> can be derived from <span class="inline-math">\([[5,1,3]]\)</span> code using a protocal that converts <span class="inline-math">\([[n,k,d]]\)</span> code into an <span class="inline-math">\([[n-1, k+1, d-1]]\)</span> code; see Sec. 3.5 in Gottesman <a href="#cite-7" class="cite">[8]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([[4,2,2]]\)</span> can be derived from <span class="inline-math">\([[5,1,3]]\)</span> code using a protocal that converts <span class="inline-math">\([[n,k,d]]\)</span> code into an <span class="inline-math">\([[n-1, k+1, d-1]]\)</span> code; see Sec. 3.5 in Gottesman <a href="#cite-9" class="cite">[10]</a>.</span></li>
 </ul>
 </div>
 
@@ -247,30 +253,40 @@ url={https://errorcorrectionzoo.org/c/stab_5_1_3}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Chaobin Liu, “Exact performance of the five-qubit code with coherent errors”. <a href="https://arxiv.org/abs/2203.01706" target="_blank" class="href">2203.01706</a>
+        T. J. Yoder, R. Takagi, and I. L. Chuang, “Universal Fault-Tolerant Gates on Concatenated Stabilizer Codes”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1603.03948" target="_blank" class="href">1603.03948</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        E. Knill et al., “Benchmarking Quantum Computers: The Five-Qubit Error Correcting Code”, Physical Review Letters <span class="textbf">86</span>, 5811 (2001). <a href="https://doi.org/10.1103/PhysRevLett.86.5811" target="_blank" class="href">DOI</a>
+        Chaobin Liu, “Exact performance of the five-qubit code with coherent errors”. <a href="https://arxiv.org/abs/2203.01706" target="_blank" class="href">2203.01706</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        M. Gong et al., “Experimental exploration of five-qubit quantum error-correcting code with superconducting qubits”, National Science Review <span class="textbf">9</span>, (2021). <a href="https://doi.org/10.1093/nsr/nwab011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.04507" target="_blank" class="href">1907.04507</a>
+        R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href">1705.02329</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        Aleksander Kubica, private communication, 2019
+        E. Knill et al., “Benchmarking Quantum Computers: The Five-Qubit Error Correcting Code”, Physical Review Letters <span class="textbf">86</span>, 5811 (2001). <a href="https://doi.org/10.1103/PhysRevLett.86.5811" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+        M. Gong et al., “Experimental exploration of five-qubit quantum error-correcting code with superconducting qubits”, National Science Review <span class="textbf">9</span>, (2021). <a href="https://doi.org/10.1093/nsr/nwab011" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.04507" target="_blank" class="href">1907.04507</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
+      <dd>
+        Aleksander Kubica, private communication, 2019
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
+      <dd>
+        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
       <dd>
         Daniel Gottesman, “Stabilizer Codes and Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/9705052" target="_blank" class="href">quant-ph/9705052</a>
       </dd>

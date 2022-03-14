@@ -78,7 +78,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/alternant">Alternant code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
+      <a href="/c/alternant">Alternant code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -116,25 +116,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_dual">
-  <span class="short-code-name"><a href="/c/dual">Dual linear code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">For any  <span class="inline-math">\([n,k]_q\)</span> linear code <span class="inline-math">\(C\)</span>, the dual code,
-<span class="display-math env-align">\begin{align}
-C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
-\end{align}</span>
-is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</span>
-  <span class="short-code-info">Protection: The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_group">
   <span class="short-code-name"><a href="/c/group">Group code</a></span>
   <span class="short-code-description">An <span class="inline-math">\( [n,k]_{q} \)</span> code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</span>
@@ -150,12 +131,12 @@ is the row space of the parity check matrix of <span class="inline-math">\(C\)</
 
 
 <div class="ecc-code" id="ecc_mds">
-  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
+  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
 <span class="display-math env-align">\begin{align}
 d \leq n-k+1
 \end{align}</span>
-becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-3" class="cite">[4]</a>.
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-4" class="cite">[5]</a>.
 </span>
   <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
   <span class="short-code-parents">
@@ -250,7 +231,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 <div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
 <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
@@ -293,12 +274,12 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
@@ -329,6 +310,11 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
+      <dd>
+        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
       <dd>
         I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>

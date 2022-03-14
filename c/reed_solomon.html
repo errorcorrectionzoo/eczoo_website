@@ -78,7 +78,7 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Reed-Solomon code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Reed-Solomon code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
   </span>
 </div>
 
@@ -111,7 +111,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-1" class="cite">[2]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-2" class="cite">[3]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span></div>
 
 
 
@@ -123,12 +123,12 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span><span class="paragraph-in-list">Correcting pooled testing results for SARS-CoV-2 <a href="#cite-2" class="cite">[3]</a>.</span>
+  <span class="paragraph-in-list">Numerous applications: computer hard-disks, DVDs, digital audio tapes, 3G telephone networks (IS-2000, Release D), NASA deep-space exploration, etc.</span><span class="paragraph-in-list">Correcting pooled testing results for SARS-CoV-2 <a href="#cite-3" class="cite">[4]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Decoding Reed-Solomon codes is equivalent to the problem of Polynomial Reconstruction and has applications to cryptography <a href="#cite-3" class="cite">[4]</a>.</span>
+  <span class="paragraph-in-list">Decoding Reed-Solomon codes is equivalent to the problem of Polynomial Reconstruction and has applications to cryptography <a href="#cite-4" class="cite">[5]</a>.</span>
 </div>
 
 
@@ -146,7 +146,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;Every Reed-Solomon code is MDS. If <span class="inline-math">\(k \leq p\)</span> then all MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are Reed-Solomon codes <a href="#cite-5" class="cite">[6]</a>.</span></li>
 </ul>
 </div>
 
@@ -173,7 +173,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-6" class="cite">[7]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -241,30 +241,35 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        E. R. Berlekamp and L. Welch, Error Correction of Algebraic Block Codes. U.S. Patent, Number 4,633,470 1986.
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        N. Shental et al., “Efficient high-throughput SARS-CoV-2 testing to detect asymptomatic carriers”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.abc5961" target="_blank" class="href">DOI</a>
+        E. R. Berlekamp and L. Welch, Error Correction of Algebraic Block Codes. U.S. Patent, Number 4,633,470 1986.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        A. Kiayias and M. Yung, “Cryptographic Hardness Based on the Decoding of Reed-Solomon Codes”, Automata, Languages and Programming 232 (2002). <a href="https://doi.org/10.1007/3-540-45465-9_21" target="_blank" class="href">DOI</a>
+        N. Shental et al., “Efficient high-throughput SARS-CoV-2 testing to detect asymptomatic carriers”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.abc5961" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+        A. Kiayias and M. Yung, “Cryptographic Hardness Based on the Decoding of Reed-Solomon Codes”, Automata, Languages and Programming 232 (2002). <a href="https://doi.org/10.1007/3-540-45465-9_21" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
+      <dd>
+        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
       <dd>
         T. Halonen, J. Romero, and J. Melero, editors , <span class="textit">GSM, GPRS and EDGE Performance</span> (Wiley, 2003). <a href="https://doi.org/10.1002/0470866969" target="_blank" class="href">DOI</a>
       </dd>
