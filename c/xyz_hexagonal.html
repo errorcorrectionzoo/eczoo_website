@@ -84,8 +84,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">An instance of the matching code based on the Kitaev honeycomb model. It is described on a hexagonal lattice with <span class="inline-math">\(XYZXYZ\)</span> stabilizers on each hexagonal plaquette. Each vertical pair of qubits has an <span class="inline-math">\(XX\)</span>, <span class="inline-math">\(YY\)</span>, or <span class="inline-math">\(ZZ\)</span> link stabilizer depending on the orientation of the plaquette stabilizers.</div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">As a stabilizer code with boundaries, protects a single qubit with parameters <span class="inline-math">\([[2 d^2, 1, d]]\)</span>.</div>
 
 
 <!-- Display features -->
@@ -103,16 +105,26 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Maximum-likelihood decoding using the EWD decoder <a href="#cite-2" class="cite">[3]</a>.</span></div>
+
+
+
+
+<h2 id="feature_code_capacity_threshold"
+      class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> for pure <span class="inline-math">\(Z\)</span>, <span class="inline-math">\(Y\)</span>, or <span class="inline-math">\(Z\)</span> noise under maximum likelihood decoding.</span><span class="paragraph-in-list">Threshold matches that of the <span class="inline-math">\(XZZX\)</span> code for various bias levels of <span class="inline-math">\(X\)</span>, <span class="inline-math">\(Y\)</span>, or <span class="inline-math">\(Z\)</span> biased noise  under maximum likelihood decoding.</span><span class="paragraph-in-list"><span class="inline-math">\(\sim 18\%\)</span> for depolarizing noise under maximum likelihood decoding.</span></div>
 
 
 
 
 
 
-
-
-
-
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Isolated <span class="inline-math">\(X\)</span>, <span class="inline-math">\(Y\)</span>, and <span class="inline-math">\(Z\)</span> errors lead to unidirectional pairs of plaquette defects along the three directions of the triangular lattice.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -189,6 +201,11 @@ url={https://errorcorrectionzoo.org/c/xyz_hexagonal}
       <dt id="cite-1">[2]</dt>
       <dd>
         Basudha Srivastava, Anton Frisk Kockum, and Mats Granath, “The XYZ<span class="inline-math">$^2$</span> hexagonal stabilizer code”. <a href="https://arxiv.org/abs/2112.06036" target="_blank" class="href">2112.06036</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        Karl Hammar et al., “Error-rate-agnostic decoding of topological stabilizer codes”. <a href="https://arxiv.org/abs/2112.01977" target="_blank" class="href">2112.01977</a>
       </dd>
     
     </dl>
