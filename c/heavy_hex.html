@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Heavy-hexagon subsystem code" />
+<meta name="citation_title" content="Heavy-hexagon code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Heavy-hexagon subsystem code" />
+<meta name="DC.title" content="Heavy-hexagon code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Heavy-hexagon subsystem code [error correction zoo]
+    Heavy-hexagon code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,14 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Heavy-hexagon subsystem code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Heavy-hexagon code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Subsystem stabilizer code on the heavy-hexagonal lattice that combines Bacon-Shor and surface-code stabilizers. Encodes one logical qubit into <span class="inline-math">\(n=(5*d^2-2*d-1)/2\)</span> physical qubits with distance <span class="inline-math">\(d\)</span>. The heavy-hexagonal lattice allows for low degree (at most 3) connectivity between all the data and ancilla qubits, which is suitable for fixed-frequency transom qubits subject to frequency collision errors.</p>
-<p>Data qubits and ancillas of the code are placed on a heavy-hexagonal lattice (vertices and edges of a tilling of hexagons). A subset of the ancilla qubits are flag qubits used for detecting high-weight errors arising from fewer faults. The code stabilizers for detecting <span class="inline-math">\(X\)</span>-type errors are measured by measuring weight-2 <span class="inline-math">\(Z\)</span>-type gauge operators whose product produces stabilizers of the surface code. <span class="inline-math">\(X\)</span>-type stabilizers are column operators corresponding to stabilizers of the Bacon-Shor code, which are measured by taking products of weight-4 and weight-2 <span class="inline-math">\(X\)</span>-type gauge operators.</p></div>
+<div class="sectioncontent code-description"><p>Subsystem stabilizer code on the heavy-hexagonal lattice that combines Bacon-Shor and surface-code stabilizers. Encodes one logical qubit into <span class="inline-math">\(n=(5d^2-2d-1)/2\)</span> physical qubits with distance <span class="inline-math">\(d\)</span>. The heavy-hexagonal lattice allows for low degree (at most 3) connectivity between all the data and ancilla qubits, which is suitable for fixed-frequency transom qubits subject to frequency collision errors.</p>
+<p>Data qubits and ancillas of the code are placed on a heavy-hexagonal lattice (vertices and edges of a tilling of hexagons). A subset of the ancilla qubits are flag qubits used for detecting high-weight errors arising from fewer faults. The code stabilizers for detecting <span class="inline-math">\(X\)</span>-type errors are measured by measuring weight-two <span class="inline-math">\(Z\)</span>-type gauge operators whose product produces stabilizers of the surface code. <span class="inline-math">\(X\)</span>-type stabilizers are column operators corresponding to stabilizers of the Bacon-Shor code, which are measured by taking products of weight-four and weight-two <span class="inline-math">\(X\)</span>-type gauge operators.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against Pauli noise. The code has no threshold for <span class="inline-math">\(Z\)</span>-type Pauli errors since they are detected by Bacon-Shor-type stabilizers.</div>
@@ -99,7 +99,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\(1/n\)</span>, where for a distance-<span class="inline-math">\(d\)</span> heavy-hexagon code, <span class="inline-math">\(n = (5*d^2-2*d-1)/2\)</span>.</div>
+  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\(1/n\)</span> for a distance-<span class="inline-math">\(d\)</span> heavy-hexagon code on <span class="inline-math">\(n = (5d^2-2d-1)/2\)</span> qubits.</div>
 
 
 
@@ -125,14 +125,14 @@
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">All logical gates can be fault-tolerantly implemented using lattice surgery and magic state injection.</span><span class="paragraph-in-list">Stabilizer measurements are measured fault-tolerantly using 1-flag circuits since some single-fault events can result in weight-2 data qubit errors which are parallel to the code&#x27;s logical operators. Hence, using information from the flag-qubit measurements is crucial to fault-tolerantly measure the code stabilizers.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">All logical gates can be fault-tolerantly implemented using lattice surgery and magic state injection.</span><span class="paragraph-in-list">Stabilizer measurements are measured fault-tolerantly using one-flag circuits since some single-fault events can result in weight-two data qubit errors which are parallel to the code&#x27;s logical operators. Hence, using information from the flag-qubit measurements is crucial to fault-tolerantly measure the code stabilizers.</span></div>
 
 
 
 
 <h2 id="feature_threshold"
       class="code-feature code-feature-threshold">Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.45\%\)</span> for <span class="inline-math">\(X\)</span> errors under a full circuit-level depolarizing noise model (obtained from Monte Carlo simulations).</span><span class="paragraph-in-list"><span class="inline-math">\(Z\)</span>-errors have no threshold given the <span class="inline-math">\(X\)</span>-type Bacon-Shop stabilizers.</span></div>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.45\%\)</span> for <span class="inline-math">\(X\)</span> errors under a full circuit-level depolarizing noise model (obtained from Monte Carlo simulations).</span><span class="paragraph-in-list"><span class="inline-math">\(Z\)</span>-errors have no threshold given the <span class="inline-math">\(X\)</span>-type Bacon-Shor stabilizers.</span></div>
 
 
 
@@ -205,10 +205,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Heavy-hexagon subsystem code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</dd>
+    <dd>“Heavy-hexagon code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_heavy_hex,
-title={Heavy-hexagon subsystem code},
+title={Heavy-hexagon code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -261,7 +261,7 @@ url={https://errorcorrectionzoo.org/c/heavy_hex}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Heavy-hexagon subsystem code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</p>
+  <p>“Heavy-hexagon code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/subsystem/heavy_hex.yml"
                 class="ashowurl"
