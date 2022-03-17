@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Heavy-hexagon subsystem code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Heavy-hexagon subsystem code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Heavy-hexagon subsystem code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_heavy_hex">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Heavy-hexagon subsystem code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Subsystem stabilizer code on the heavy-hexagonal lattice that combines Bacon-Shor and surface-code stabilizers. Encodes one logical qubit into <span class="inline-math">\(n=(5*d^2-2*d-1)/2\)</span> physical qubits with distance <span class="inline-math">\(d\)</span>. The heavy-hexagonal lattice allows for low degree (at most 3) connectivity between all the data and ancilla qubits, which is suitable for fixed-frequency transom qubits subject to frequency collision errors.</p>
+<p>Data qubits and ancillas of the code are placed on a heavy-hexagonal lattice (vertices and edges of a tilling of hexagons). A subset of the ancilla qubits are flag qubits used for detecting high-weight errors arising from fewer faults. The code stabilizers for detecting <span class="inline-math">\(X\)</span>-type errors are measured by measuring weight-2 <span class="inline-math">\(Z\)</span>-type gauge operators whose product produces stabilizers of the surface code. <span class="inline-math">\(X\)</span>-type stabilizers are column operators corresponding to stabilizers of the Bacon-Shor code, which are measured by taking products of weight-4 and weight-2 <span class="inline-math">\(X\)</span>-type gauge operators.</p></div>
+
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against Pauli noise. The code has no threshold for <span class="inline-math">\(Z\)</span>-type Pauli errors since they are detected by Bacon-Shor-type stabilizers.</div>
+
+
+<!-- Display features -->
+
+
+
+
+
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate"><span class="inline-math">\(1/n\)</span>, where for a distance-<span class="inline-math">\(d\)</span> heavy-hexagon code, <span class="inline-math">\(n = (5*d^2-2*d-1)/2\)</span>.</div>
+
+
+
+
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">For a logical-zero state, prepare all data qubits in the physical-zero state and then measure the <span class="inline-math">\(X\)</span>-type Bacon-Shor stabilizers. For logical-plus state, prepare all data qubits in the physical-plus state and then measure <span class="inline-math">\(Z\)</span>-type surface code stabilizers.</span><span class="paragraph-in-list">Stabilizer measurement encoding circuits have a constant depth of 10 time steps (excluding ancilla state preparation and measurement).</span></div>
+
+
+<h2 id="feature_transversal_gates"
+      class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">CNOT gates are transveral for this code. However, for most architectures, all logical gates would be implemented using lattice surgery methods.</div>
+ 
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Universal gate set achieved with magic state injection and lattice surgery.</span></div>
+
+
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Any graph-based decoder can be used, such as MWPM and Union Find. However, edge weights must be dynamically renormalized using flag-qubit measurement outcomes after each syndrome measurement round.</span></div>
+
+
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">All logical gates can be fault-tolerantly implemented using lattice surgery and magic state injection.</span><span class="paragraph-in-list">Stabilizer measurements are measured fault-tolerantly using 1-flag circuits since some single-fault events can result in weight-2 data qubit errors which are parallel to the code&#x27;s logical operators. Hence, using information from the flag-qubit measurements is crucial to fault-tolerantly measure the code stabilizers.</span></div>
+
+
+
+
+<h2 id="feature_threshold"
+      class="code-feature code-feature-threshold">Threshold</h2>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list"><span class="inline-math">\(0.45\%\)</span> for <span class="inline-math">\(X\)</span> errors under a full circuit-level depolarizing noise model (obtained from Monte Carlo simulations).</span><span class="paragraph-in-list"><span class="inline-math">\(Z\)</span>-errors have no threshold given the <span class="inline-math">\(X\)</span>-type Bacon-Shop stabilizers.</span></div>
+
+
+
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Logical state preparation and flag-qubit error correction realized in superconducting-circuit devices (specifically, fixed-frequency transmon qubit architectures) by IBM for <span class="inline-math">\(d=2\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a> and <span class="inline-math">\(d=3\)</span> <a href="#cite-3" class="cite">[4]</a>.</span>
+</div>
+
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer code</a></span></li>
+</ul>
+</div>
+
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Surface code stabilizers are used to measure the Z-type stabilizers of the code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/bacon_shor">Bacon-Shor code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Bacon-Shor stabilizers are used to measure the X-type stabilizers of the code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The <span class="inline-math">\(d=2\)</span> heavy-hexagonal code is closely related to the <span class="inline-math">\([[4,1,2]]\)</span> code.</span></li>
+</ul>
+</div>
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    heavy_hex
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/subsystem/heavy_hex.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=heavy_hex&amp;code_yml_filename=quantum/qubits/subsystem/heavy_hex.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>heavy_hex</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Heavy-hexagon subsystem code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_heavy_hex,
+title={Heavy-hexagon subsystem code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/heavy_hex}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/heavy_hex</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        C. Chamberland et al., “Topological and Subsystem Codes on Low-Degree Graphs with Flag Qubits”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011022" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.09528" target="_blank" class="href">1907.09528</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        M. Takita et al., “Experimental Demonstration of Fault-Tolerant State Preparation with Superconducting Qubits”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.09259" target="_blank" class="href">1705.09259</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        Edward H. Chen et al., “Calibrated decoders for experimental quantum error correction”. <a href="https://arxiv.org/abs/2110.04285" target="_blank" class="href">2110.04285</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Neereja Sundaresan et al., “Matching and maximum likelihood decoding of a multi-round subsystem quantum error correction experiment”. <a href="https://arxiv.org/abs/2203.07205" target="_blank" class="href">2203.07205</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Heavy-hexagon subsystem code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/heavy_hex</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/subsystem/heavy_hex.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/subsystem/heavy_hex.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer</a></li><li><a href="/c/oecc">Subsystem QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/surface">Kitaev surface</a></li><li><a href="/c/bacon_shor">Bacon-Shor</a></li><li><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
