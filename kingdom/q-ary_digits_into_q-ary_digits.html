@@ -63,14 +63,28 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/gabidulin">Vector code</a>.
+      <a href="/c/ag">Algebraic-geometry (AG) code</a>,       <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/gabidulin">Vector code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_ag">
+  <span class="short-code-name"><a href="/c/ag">Algebraic-geometry (AG) code</a></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/residue">Residue AG code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_q-ary_linear">
   <span class="short-code-name"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>. Often defined in terms of a generator matrix <span class="inline-math">\(G\)</span>, whose rows form a basis for the subspace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>.</span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>.</span>
   <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set such that the difference of any pair of distinct elements of the set is a codeword.</span>
   <span class="short-code-parents">
     Parents:
@@ -82,7 +96,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/galois_css">Galois-qudit CSS code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a>.
+      <a href="/c/galois_css">Galois-qudit CSS code</a>,       <a href="/c/qudit_css">Modular-qudit CSS code</a>,       <a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a>,       <a href="/c/stabilizer_over_gfqsq">Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span></a>,       <a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a>.
   </span>
 </div>
 
@@ -98,6 +112,20 @@
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/maximum_rank_distance">Maximum-rank vector code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_residue">
+  <span class="short-code-name"><a href="/c/residue">Residue AG code</a></span>
+  <span class="short-code-description">Also called a <span class="textit">differential code</span>. Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/ag">Algebraic-geometry (AG) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/goppa">Goppa code</a>.
   </span>
 </div>
 
@@ -175,8 +203,23 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 </div>
 
 
+<div class="ecc-code" id="ecc_goppa">
+  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/alternant">Alternant code</a>,       <a href="/c/residue">Residue AG code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_bch">
-  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -194,7 +237,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 <div class="ecc-code" id="ecc_generalized_reed_solomon">
-  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -211,21 +254,6 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a></span></span>
-  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
-  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/alternant">Alternant code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>.
   </span>
 </div>
 
@@ -284,29 +312,29 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
+        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        Florence Jessie MacWilliams and Neil James
-  Alexander Sloane. <span class="emph">The theory of error correcting codes</span>.
-  Ch.10, Sec.8. Vol. 16. Elsevier, 1977
+        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
+        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
+        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
+        Florence Jessie MacWilliams and Neil James
+  Alexander Sloane. <span class="emph">The theory of error correcting codes</span>.
+  Ch.10, Sec.8. Vol. 16. Elsevier, 1977
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>

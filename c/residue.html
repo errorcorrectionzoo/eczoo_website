@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Frobenius code" />
+<meta name="citation_title" content="Residue AG code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Frobenius code" />
+<meta name="DC.title" content="Residue AG code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Frobenius code [error correction zoo]
+    Residue AG code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -69,7 +69,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_frobenius">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_residue">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -78,16 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Frobenius code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Residue AG code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Let <span class="inline-math">\(C\)</span> be a quantum cyclic code on <span class="inline-math">\(n\)</span> prime-dimensional qudits. <span class="inline-math">\(C\)</span> is a Frobenius code if there exists a positive integer <span class="inline-math">\(t\)</span> such that <span class="inline-math">\(n\)</span> divides <span class="inline-math">\(p^t +1\)</span>.</div>
+<div class="sectioncontent code-description">Also called a <span class="textit">differential code</span>. Stub.</div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Protects against Pauli noise.</div>
 
 
 <!-- Display features -->
@@ -105,9 +103,6 @@
  
 
 
-<h2 id="feature_decoders"
-      class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes. There exists a polynomial time quantum algorithm to correct errors of weight at most <span class="inline-math">\(\tau\)</span>, where <span class="inline-math">\(\delta=2\tau+1\)</span> is the BCH distance of the code <a href="#cite-0" class="cite">[1]</a>. </span></div>
 
 
 
@@ -118,28 +113,33 @@
 
 
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Frobenius codes that are also stabilizer codes have been completely classified. No such codes exist when <span class="inline-math">\(t\)</span> is odd. All such codes with even <span class="inline-math">\(t\)</span> can be directly constructed.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parents
+    Parent
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/quantum_cyclic">Quantum cyclic code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/ag">Algebraic-geometry (AG) code</a></span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/goppa">Goppa code</a></span></li>
+</ul>
+</div>
 
 
 
@@ -151,33 +151,33 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    frobenius
+    residue
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/frobenius.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/residue.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=frobenius&amp;code_yml_filename=quantum/qudits/frobenius.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>frobenius</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=residue&amp;code_yml_filename=classical/q-ary_digits/residue.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>residue</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Frobenius code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/frobenius</dd>
+    <dd>“Residue AG code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/residue</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_frobenius,
-title={Frobenius code},
+    <dd class="bibtex">@incollection{eczoo_residue,
+title={Residue AG code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/frobenius}
+url={https://errorcorrectionzoo.org/c/residue}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/frobenius</dd>
+    <dd>https://errorcorrectionzoo.org/c/residue</dd>
   </dl>
 </div>
 </div>
@@ -188,17 +188,6 @@ url={https://errorcorrectionzoo.org/c/frobenius}
 <!-- endnotes -->
 
 
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code of length dividing <span class="inline-math">$p^{t}+1$</span>”. <a href="https://arxiv.org/abs/1011.5814" target="_blank" class="href">1011.5814</a>
-      </dd>
-    
-    </dl>
-  </div>
 
 
 
@@ -208,11 +197,11 @@ url={https://errorcorrectionzoo.org/c/frobenius}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Frobenius code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/frobenius</p>
+  <p>“Residue AG code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/residue</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/frobenius.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/residue.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/frobenius.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/residue.yml</a>.</p>
 </div>
 
 
@@ -222,7 +211,7 @@ url={https://errorcorrectionzoo.org/c/frobenius}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/quantum_cyclic">Quantum cyclic</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ag">Algebraic-geometry (AG)</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">Error-correcting</a></li><li><a href="/c/goppa">Goppa</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

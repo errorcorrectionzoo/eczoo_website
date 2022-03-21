@@ -107,7 +107,7 @@
 
 <h2 id="feature_transversal_gates"
       class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
-  <div class="sectioncontent code-feature code-feature-transversal_gates">Clifford gates can be realized by performing linear optics operations, sympletic transformations and displacements <a href="#cite-0" class="cite">[1]</a>, all of which are Gaussian operations. Pauli gates can be performed using displacement operators.</div>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Clifford gates can be realized by performing linear-optical operations, sympletic transformations and displacements <a href="#cite-0" class="cite">[1]</a>, all of which are Gaussian operations. Pauli gates can be performed using displacement operators.</div>
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
@@ -119,6 +119,9 @@
   <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Syndrome measruement of displacement error can be done by applying a controlled-displacement controlled by an ancilla qubit. The syndrome information can be obtained by measuring the ancilla qubit after controlled-displacement opearation. See Section. 2D in <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Pauli <span class="inline-math">\(X\)</span>,<span class="inline-math">\(Y\)</span> and <span class="inline-math">\(Z\)</span> measurements can be performed by measuring <span class="inline-math">\(-\hat{p},\hat{q}-\hat{p}\)</span> and <span class="inline-math">\(\hat{q}\)</span> repectively. If the measurement outcome is closed to an even multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is +1. If the measurement outcome is closed to an odd multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is -1. See Section. 2D in <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Clifford gates for the qubit square-lattice GKP code performed by occupation-number-preserving Gaussian operations are fault tolerant in the sense that they do not magnify small displacement errors <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Error correction scheme is fault-tolerant to displacement noise as long as all input states have displacement errors less than <span class="inline-math">\(\sqrt{\pi}/6\)</span> <a href="#cite-7" class="cite">[8]</a>.</span></div>
 
 
 
@@ -128,7 +131,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Approximate GKP code is realized on a superconducting microwave cavity <a href="#cite-5" class="cite">[6]</a> and a trapped-ion oscillator <a href="#cite-7" class="cite">[8]</a>.</span>
+  <span class="paragraph-in-list">Microwave cavity coupled to superconducting circuits <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Motional degree of freedom in a trapped ion <a href="#cite-8" class="cite">[9]</a>.</span>
 </div>
 
 
@@ -260,6 +263,11 @@ url={https://errorcorrectionzoo.org/c/gkp}
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
+      <dd>
+        S. Glancy and E. Knill, “Error analysis for encoding a qubit in an oscillator”, Physical Review A <span class="textbf">73</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.73.012325" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0510107" target="_blank" class="href">quant-ph/0510107</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
       <dd>
         C. Flühmann et al., “Encoding a qubit in a trapped-ion mechanical oscillator”, Nature <span class="textbf">566</span>, 513 (2019). <a href="https://doi.org/10.1038/s41586-019-0960-6" target="_blank" class="href">DOI</a>
       </dd>
