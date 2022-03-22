@@ -116,6 +116,57 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_mds">
+  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
+<span class="display-math env-align">\begin{align}
+d \leq n-k+1
+\end{align}</span>
+becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-3" class="cite">[4]</a>.
+</span>
+  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/reed_solomon">Reed-Solomon code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
+<span class="display-math env-align">\begin{align}
+f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
+\end{align}</span>
+</span>
+  <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/folded_reed_solomon">Folder Reed-Solomon code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/hamming">Hamming code</a>,       <a href="/c/cyclic">Cyclic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/maximum_rank_distance">Maximum-rank vector code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_evaluation">
   <span class="short-code-name"><a href="/c/evaluation">Evaluation AG code</a></span>
   <span class="short-code-description">Stub.</span>
@@ -141,7 +192,7 @@
 
 
 <div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -168,26 +219,12 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_mds">
-  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
-<span class="display-math env-align">\begin{align}
-d \leq n-k+1
-\end{align}</span>
-becomes an equality. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-4" class="cite">[5]</a>.
-</span>
-  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
+<div class="ecc-code" id="ecc_folded_reed_solomon">
+  <span class="short-code-name"><a href="/c/folded_reed_solomon">Folder Reed-Solomon code</a></span>
+  <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
       <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
   </span>
 </div>
 
@@ -214,7 +251,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 <div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a></span></span>
   <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
   <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
   <span class="short-code-parents">
@@ -229,7 +266,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 <div class="ecc-code" id="ecc_bch">
-  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -247,7 +284,7 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 <div class="ecc-code" id="ecc_generalized_reed_solomon">
-  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -268,43 +305,6 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 </div>
 
 
-<div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. Encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
-<span class="display-math env-align">\begin{align}
-f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
-\end{align}</span>
-</span>
-  <span class="short-code-info">Protection: Corrects erasures on <span class="inline-math">\(n-k\)</span> coordinates.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/folded_reed_solomon">Folder Reed-Solomon code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/hamming">Hamming code</a>,       <a href="/c/cyclic">Cyclic code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/maximum_rank_distance">Maximum-rank vector code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_folded_reed_solomon">
-  <span class="short-code-name"><a href="/c/folded_reed_solomon">Folder Reed-Solomon code</a></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/reed_solomon">Reed-Solomon code</a>.
-  </span>
-</div>
-
-
   <div id="endnotes" class="">
     <h2>References</h2>
     <dl id="citations">
@@ -321,52 +321,52 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        R. Singleton, “Maximum distance&amp;lt;tex&amp;gt;q&amp;lt;/tex&amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
+        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
+        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
+        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977
+        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
+        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977
       </dd>
     
     </dl>
