@@ -146,6 +146,10 @@ provides an upper bound for any bounded-geometry surface code
   <td class="small top">The rate depends on the classical code, but distance can scale linearly with <span class="inline-math">\(n\)</span>.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/multimodegkp">Multi-mode GKP code</a></td>
+  <td class="small top">Transmission schemes with multimode GKP codes achieve, up to a constant-factor offset, the capacity of displacement-noise and thermal-noise Gaussian loss channels <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
   <td class="small top">The pentagon HaPPY code has an asymptotic rate <span class="inline-math">\(\frac{1}{\sqrt{5}} \approx 0.447\)</span>. The pentagon/hexagon HaPPY code, with alternating layers of pentagons and hexagons in the tiling, has a rate of <span class="inline-math">\(0.299\)</span> if the last layer is a pentagon layer and a rate of <span class="inline-math">\(0.088\)</span> if the last layer is a hexagon layer.</td>
 </tr>
@@ -163,7 +167,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></td>
-  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-10" class="cite">[11]</a>.</td>
+  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-14" class="cite">[15]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_expander">Quantum expander code</a></td>
@@ -187,7 +191,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xyz_product">XYZ product code</a></td>
-  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-11" class="cite">[12]</a>.
+  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-15" class="cite">[16]</a>.
 </td>
 </tr>
 </tbody>
@@ -251,10 +255,30 @@ provides an upper bound for any bounded-geometry surface code
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
+      <dd>
+        K. Sharma et al., “Bounding the energy-constrained quantum and private capacities of phase-insensitive bosonic Gaussian channels”, New Journal of Physics <span class="textbf">20</span>, 063025 (2018). <a href="https://doi.org/10.1088/1367-2630/aac11a" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.07257" target="_blank" class="href">1708.07257</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        M. Rosati, A. Mari, and V. Giovannetti, “Narrow bounds for the quantum capacity of thermal attenuators”, Nature Communications <span class="textbf">9</span>, (2018). <a href="https://doi.org/10.1038/s41467-018-06848-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.04731" target="_blank" class="href">1801.04731</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
       <dd>
         Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
