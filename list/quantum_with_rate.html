@@ -80,8 +80,12 @@ Here is a list of all quantum codes that specify what rate they have.
   <td class="small top">For general 2D manifolds, <span class="inline-math">\(kd^2 \leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span> <a href="#cite-1" class="cite">[2]</a>, meaning that color codes with finite rate can only achieve an asymptotic minimum distance that is logarithmic in <span class="inline-math">\(n\)</span>.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/constant_excitation">Constant-excitation (CE) code</a></td>
+  <td class="small top">Fock-state CE codes can be used in a protocol that achieves the two-way quantum capacity of the pure-loss Gaussian channel <a href="#cite-2" class="cite">[3]</a>.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/convolutional">Convolutional code</a></td>
-  <td class="small top">Depends on the polynomials used. Using puncturing removal <a href="#cite-2" class="cite">[3]</a> the rate for the code can be increased from <span class="inline-math">\(\frac{1}{t}\)</span> to <span class="inline-math">\(\frac{s}{t}\)</span>, where <span class="inline-math">\(t\)</span> is the number of output bits, and <span class="inline-math">\(s\)</span> depends on the puncturing done. This is done by deleting some pieces of the encoder output such that the most-likely decoders remain effective</td>
+  <td class="small top">Depends on the polynomials used. Using puncturing removal <a href="#cite-3" class="cite">[4]</a> the rate for the code can be increased from <span class="inline-math">\(\frac{1}{t}\)</span> to <span class="inline-math">\(\frac{s}{t}\)</span>, where <span class="inline-math">\(t\)</span> is the number of output bits, and <span class="inline-math">\(s\)</span> depends on the puncturing done. This is done by deleting some pieces of the encoder output such that the most-likely decoders remain effective</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/expander">Expander code</a></td>
@@ -89,7 +93,7 @@ Here is a list of all quantum codes that specify what rate they have.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/expander_lifted_product">Expander lifted-product code</a></td>
-  <td class="small top">Expander lifted-product codes include the first examples <a href="#cite-3" class="cite">[4]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-4" class="cite">[5]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-5" class="cite">[6]</a>.</td>
+  <td class="small top">Expander lifted-product codes include the first examples <a href="#cite-4" class="cite">[5]</a> of (asymptotically) <span class="textit">good QLDPC codes</span>, i.e., codes with asymptotically constant rate and linear distance. The existence of such codes proves the QLDPC conjecture <a href="#cite-5" class="cite">[6]</a>. Another notable family encodes <span class="inline-math">\(k \in \Theta(n^\alpha \log n)\)</span> logical qubits with distance <span class="inline-math">\(d \in \Omega(n^{1 - \alpha} / \log n)\)</span> for any number of physical qubits <span class="inline-math">\(n\)</span> and any real parameter <span class="inline-math">\(0 \leq \alpha &lt; 1\)</span> <a href="#cite-6" class="cite">[7]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/fiber_bundle">Fiber-bundle code</a></td>
@@ -121,17 +125,17 @@ Here is a list of all quantum codes that specify what rate they have.
 manifolds, <span class="inline-math">\(kd^2\leq c(\log k)^2 n\)</span> for some constant <span class="inline-math">\(c\)</span>
 <a href="#cite-1" class="cite">[2]</a>, meaning that (1) 2D surface codes with bounded
 geometry have distance scaling at most as <span class="inline-math">\(O(\sqrt{n})\)</span>
-<a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>, and (2) surface codes with
+<a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>, and (2) surface codes with
 finite rate can only achieve an asymptotic minimum distance that is
 logarithmic in <span class="inline-math">\(n\)</span>. Higher-dimensional hyperbolic manifolds (see code
 children below) yield distances scaling more favorably. Loewner&#x27;s theorem
 provides an upper bound for any bounded-geometry surface code
-<a href="#cite-8" class="cite">[9]</a>.
+<a href="#cite-9" class="cite">[10]</a>.
 </td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/lifted_product">Lifted-product (LP) code</a></td>
-  <td class="small top">There is no known simple way to compute the logical dimension <span class="inline-math">\(k\)</span> in the general case <a href="#cite-5" class="cite">[6]</a>.</td>
+  <td class="small top">There is no known simple way to compute the logical dimension <span class="inline-math">\(k\)</span> in the general case <a href="#cite-6" class="cite">[7]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/binary_linear">Linear binary code</a></td>
@@ -139,7 +143,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
-  <td class="small top">Rate can be finite <a href="#cite-9" class="cite">[10]</a>, depending on the family of random codes generated by the circuit.</td>
+  <td class="small top">Rate can be finite <a href="#cite-10" class="cite">[11]</a>, depending on the family of random codes generated by the circuit.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></td>
@@ -147,7 +151,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/multimodegkp">Multi-mode GKP code</a></td>
-  <td class="small top">Transmission schemes with multimode GKP codes achieve, up to a constant-factor offset, the capacity of displacement-noise and thermal-noise Gaussian loss channels <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</td>
+  <td class="small top">Transmission schemes with multimode GKP codes achieve, up to a constant-factor offset, the capacity of displacement-noise and thermal-noise Gaussian loss channels <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
@@ -167,7 +171,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></td>
-  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-14" class="cite">[15]</a>.</td>
+  <td class="small top"><span class="inline-math">\(\frac{k}{n}\)</span>, where <span class="inline-math">\(k = 2^r - {r \choose t} + 2 \sum_{i=0}^{t-1} {r \choose i}\)</span>. Additionally, CSS codes formed from binary Reed-Muller codes achieve channel capacity on erasure channels <a href="#cite-15" class="cite">[16]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_expander">Quantum expander code</a></td>
@@ -191,7 +195,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xyz_product">XYZ product code</a></td>
-  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-15" class="cite">[16]</a>.
+  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-16" class="cite">[17]</a>.
 </td>
 </tr>
 </tbody>
@@ -215,70 +219,75 @@ provides an upper bound for any bounded-geometry surface code
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        L. Sari, “Effects of Puncturing Patterns on Punctured Convolutional Codes”, TELKOMNIKA (Telecommunication, Computing, Electronics and Control) <span class="textbf">10</span>, (2012). <a href="https://doi.org/10.12928/telkomnika.v10i4.171" target="_blank" class="href">DOI</a>
+        Matthew S. Winnel et al., “Achieving the ultimate end-to-end rates of lossy quantum communication networks”. <a href="https://arxiv.org/abs/2203.13924" target="_blank" class="href">2203.13924</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+        L. Sari, “Effects of Puncturing Patterns on Punctured Convolutional Codes”, TELKOMNIKA (Telecommunication, Computing, Electronics and Control) <span class="textbf">10</span>, (2012). <a href="https://doi.org/10.12928/telkomnika.v10i4.171" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
+        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        S. Bravyi, D. Poulin, and B. Terhal, “Tradeoffs for Reliable Quantum Information Storage in 2D Systems”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0909.5200" target="_blank" class="href">0909.5200</a>
+        P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
+        S. Bravyi, D. Poulin, and B. Terhal, “Tradeoffs for Reliable Quantum Information Storage in 2D Systems”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0909.5200" target="_blank" class="href">0909.5200</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
+        E. Fetaya, “Bounding the distance of quantum surface codes”, Journal of Mathematical Physics <span class="textbf">53</span>, 062202 (2012). <a href="https://doi.org/10.1063/1.4726034" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+        “Z2-systolic freedom and quantum codes”, Mathematics of Quantum Computation 303 (2002). <a href="https://doi.org/10.1201/9781420035377-13" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        K. Sharma et al., “Bounding the energy-constrained quantum and private capacities of phase-insensitive bosonic Gaussian channels”, New Journal of Physics <span class="textbf">20</span>, 063025 (2018). <a href="https://doi.org/10.1088/1367-2630/aac11a" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.07257" target="_blank" class="href">1708.07257</a>
+        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        M. Rosati, A. Mari, and V. Giovannetti, “Narrow bounds for the quantum capacity of thermal attenuators”, Nature Communications <span class="textbf">9</span>, (2018). <a href="https://doi.org/10.1038/s41467-018-06848-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.04731" target="_blank" class="href">1801.04731</a>
+        K. Sharma et al., “Bounding the energy-constrained quantum and private capacities of phase-insensitive bosonic Gaussian channels”, New Journal of Physics <span class="textbf">20</span>, 063025 (2018). <a href="https://doi.org/10.1088/1367-2630/aac11a" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.07257" target="_blank" class="href">1708.07257</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+        M. Rosati, A. Mari, and V. Giovannetti, “Narrow bounds for the quantum capacity of thermal attenuators”, Nature Communications <span class="textbf">9</span>, (2018). <a href="https://doi.org/10.1038/s41467-018-06848-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.04731" target="_blank" class="href">1801.04731</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
+      <dd>
+        Shrinivas Kudekar et al., “Reed-Muller Codes Achieve Capacity on Erasure Channels”. <a href="https://arxiv.org/abs/1601.04689" target="_blank" class="href">1601.04689</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
       <dd>
         Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
