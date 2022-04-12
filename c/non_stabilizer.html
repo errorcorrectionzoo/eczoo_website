@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Non-stabilizer code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Non-stabilizer code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Non-stabilizer code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_non_stabilizer">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Non-stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>The projection onto a stabilizer code is proportional to an equal sum over all elements of the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>.
+Non-stabilizer codes generalize stabilizer codes by modifying the code projection with elements of a subset <span class="inline-math">\(\mathsf{B}\subset\mathsf{S}\)</span> called the <span class="textit">Fourier description</span> (see proof of Thm. 2.7 in Ref. <a href="#cite-0" class="cite">[1]</a>).</p>
+<p>Asymptotically good non-stabilizer codes admitting efficient encoding and decoding procedures have been constructed.</p>
+<p>More technically, for any <span class="inline-math">\(\alpha\)</span>-good <span class="inline-math">\(n\times n\)</span> matrix over <span class="inline-math">\(\mathbb{Z}\)</span> and
+any <span class="inline-math">\(\lfloor\alpha n\rfloor\)</span>-pure maximal Gottesman subgroup of the error group <span class="inline-math">\(\mathcal{E}, 0&lt;\alpha&lt;1\)</span>,
+there exists an <span class="inline-math">\(((n,\frac{2^n}{N(n,2,\lfloor\alpha n\rfloor)},2\alpha n))\)</span> QECC,
+where <span class="inline-math">\(N(n,q,d)=\sum_{i=1}^d\begin{pmatrix} n \\ i\end{pmatrix}(q^2-1)^i\)</span>.
+A subgroup <span class="inline-math">\(\mathcal{S}\)</span> of <span class="inline-math">\(\mathcal{E}\)</span> is a <span class="inline-math">\(d\)</span>-pure Gottesman subgroup if <span class="inline-math">\(\mathcal{S}\)</span> does not contain <span class="inline-math">\(e^{2\pi ik/N}I,\forall 1\leq k\leq N-1\)</span>,
+and all non-trivial centralizers of <span class="inline-math">\(\mathcal{S}\)</span> have weights at least <span class="inline-math">\(d\)</span>.</p></div>
+
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The encoding circuit involves the application of quantum Fourier transformation. (If the underlying registers are qubits, this reduces to a single Hadamard gate.)</span></div>
+
+
+ 
+
+
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoding circuit involves the application of phase estimation.</span></div>
+
+
+
+
+
+
+
+
+
+
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">The following code (families) have been explicitly constructed in <a href="#cite-0" class="cite">[1]</a>: ((33, 155, 3)), ((15, 8, 3)), <span class="inline-math">\(((n, \lceil\frac{q^n}{n(q^2-1)}\rceil,2))_q\)</span> and <span class="inline-math">\(((n, 1+n(q-1),2))_q\)</span>, where <span class="inline-math">\(n\)</span> is odd. In particular, the last code family is a general case for <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">A QECC <span class="inline-math">\(\mathcal{C}\)</span> is a stabilizer code if its Fourier description <span class="inline-math">\(B\)</span> is a subgroup of some Gottesman subgroup <span class="inline-math">\(S\)</span>. Otherwise <span class="inline-math">\(B\)</span> is just a subset, and <span class="inline-math">\(\mathcal{C}\)</span> is a non-stabilizer code.</span>
+</div>
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/galois_into_galois">Galois-qudit code</a></span></li>
+</ul>
+</div>
+
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span></li>
+</ul>
+</div>
+
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    non_stabilizer
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/non_stabilizer.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=non_stabilizer&amp;code_yml_filename=quantum/qudits_galois/non_stabilizer.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>non_stabilizer</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Non-stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/non_stabilizer</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_non_stabilizer,
+title={Non-stabilizer code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/non_stabilizer}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/non_stabilizer</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        V. Arvind, Piyush P Kurur, and K. R. Parthasarathy, “Nonstabilizer Quantum Codes from Abelian Subgroups of the Error Group”. <a href="https://arxiv.org/abs/quant-ph/0210097" target="_blank" class="href">quant-ph/0210097</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        E. M. Rains et al., “A Nonadditive Quantum Code”, Physical Review Letters <span class="textbf">79</span>, 953 (1997). <a href="https://doi.org/10.1103/PhysRevLett.79.953" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Non-stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/non_stabilizer</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/non_stabilizer.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits_galois/non_stabilizer.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/galois_into_galois">Galois-qudit</a></li><li><a href="/c/qecc_finite">Finite QECC</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/galois_stabilizer">Galois-qudit stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

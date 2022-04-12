@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Rank-modulation code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Rank-modulation code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Rank-modulation code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_rank_modulation">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Rank-modulation code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description">Also known as a <span class="textit">code in permutations</span>.
+A family of codes that encode a finite set of size <span class="inline-math">\(M\)</span> into a set <span class="inline-math">\(S_n\)</span> of permutations of <span class="inline-math">\([n]=(1,2,...,n)\)</span>.
+They can be derived from Lee-metric codes, Reed-Solomon codes <a href="#cite-2" class="cite">[3]</a>, quadratic residue codes and most binary codes.
+</div>
+
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Protects against errors in the Kendall tau distance on the space of permutations.
+The Kendall distance between permutations <span class="inline-math">\(\sigma\)</span> and <span class="inline-math">\(\pi\)</span> is defined as the minimum number of adjacent transpositions required to change <span class="inline-math">\(\sigma\)</span> into <span class="inline-math">\(\pi\)</span>.
+</div>
+
+
+<!-- Display features -->
+
+
+
+
+
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Rank modulation codes with code distance <span class="inline-math">\(d=\Theta(n^{1+\epsilon})\)</span> for <span class="inline-math">\(\epsilon\in[0,1]\)</span> achieve a rate of <span class="inline-math">\(1-\epsilon\)</span> <a href="#cite-3" class="cite">[4]</a>.</div>
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Electronic devices where charges can either increase in an individual cell or decrease in a block of adjacent cells, e.g., flash memories <a href="#cite-4" class="cite">[5]</a>.</span>
+</div>
+
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/group_classical">Group-based code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Group-based codes whose alphabet is based on the permutation group <span class="inline-math">\(S_n\)</span> are rank-modulation codes.</span></li>
+</ul>
+</div>
+
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;RS codes can be used to design rank modulation codes <a href="#cite-2" class="cite">[3]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binary_permutation">Binary permutation-based code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Binary permutation-based codes also encode messages into permutations but protect against errors with the Hamming distance.</span></li>
+</ul>
+</div>
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    rank_modulation
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/groups/rank_modulation.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=rank_modulation&amp;code_yml_filename=classical/groups/rank_modulation.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>rank_modulation</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Rank-modulation code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/rank_modulation</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_rank_modulation,
+title={Rank-modulation code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/rank_modulation}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/rank_modulation</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        H. Chadwick and L. Kurz, “Rank permutation group codes based on Kendall&#x27;s correlation statistic”, IEEE Transactions on Information Theory <span class="textbf">15</span>, 306 (1969). <a href="https://doi.org/10.1109/TIT.1969.1054291" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        Anxiao Jiang, M. Schwartz, and J. Bruck, “Error-correcting codes for rank modulation”, 2008 IEEE International Symposium on Information Theory (2008). <a href="https://doi.org/10.1109/ISIT.2008.4595285" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. Mazumdar, A. Barg, and G. Zemor, “Constructions of rank modulation codes”, 2011 IEEE International Symposium on Information Theory Proceedings (2011). <a href="https://doi.org/10.1109/ISIT.2011.6034261" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        A. Barg and A. Mazumdar, “Codes in permutations and error correction for rank modulation”, 2010 IEEE International Symposium on Information Theory (2010). <a href="https://doi.org/10.1109/ISIT.2010.5513604" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Anxiao Jiang et al., “Rank Modulation for Flash Memories”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 2659 (2009). <a href="https://doi.org/10.1109/TIT.2009.2018336" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Rank-modulation code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/rank_modulation</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/groups/rank_modulation.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/groups/rank_modulation.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/group_classical">Group-based</a></li><li><a href="/c/ecc">Error-correcting</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/reed_solomon">Reed-Solomon (RS)</a></li><li><a href="/c/binary_permutation">Binary permutation-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
