@@ -1,3 +1,4 @@
 dat/*.json              binary
 js/ecz*.js              binary
+pretty_code_graph_assets/pretty_code_graph_data.js      binary
 *.svg                   binary
