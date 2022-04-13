@@ -86,13 +86,7 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>The projection onto a stabilizer code is proportional to an equal sum over all elements of the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>.
 Non-stabilizer codes generalize stabilizer codes by modifying the code projection with elements of a subset <span class="inline-math">\(\mathsf{B}\subset\mathsf{S}\)</span> called the <span class="textit">Fourier description</span> (see proof of Thm. 2.7 in Ref. <a href="#cite-0" class="cite">[1]</a>).</p>
-<p>Asymptotically good non-stabilizer codes admitting efficient encoding and decoding procedures have been constructed.</p>
-<p>More technically, for any <span class="inline-math">\(\alpha\)</span>-good <span class="inline-math">\(n\times n\)</span> matrix over <span class="inline-math">\(\mathbb{Z}\)</span> and
-any <span class="inline-math">\(\lfloor\alpha n\rfloor\)</span>-pure maximal Gottesman subgroup of the error group <span class="inline-math">\(\mathcal{E}, 0&lt;\alpha&lt;1\)</span>,
-there exists an <span class="inline-math">\(((n,\frac{2^n}{N(n,2,\lfloor\alpha n\rfloor)},2\alpha n))\)</span> QECC,
-where <span class="inline-math">\(N(n,q,d)=\sum_{i=1}^d\begin{pmatrix} n \\ i\end{pmatrix}(q^2-1)^i\)</span>.
-A subgroup <span class="inline-math">\(\mathcal{S}\)</span> of <span class="inline-math">\(\mathcal{E}\)</span> is a <span class="inline-math">\(d\)</span>-pure Gottesman subgroup if <span class="inline-math">\(\mathcal{S}\)</span> does not contain <span class="inline-math">\(e^{2\pi ik/N}I,\forall 1\leq k\leq N-1\)</span>,
-and all non-trivial centralizers of <span class="inline-math">\(\mathcal{S}\)</span> have weights at least <span class="inline-math">\(d\)</span>.</p></div>
+<p>Asymptotically good non-stabilizer codes admitting efficient encoding and decoding procedures have been constructed.</p></div>
 
 
 
@@ -108,7 +102,7 @@ and all non-trivial centralizers of <span class="inline-math">\(\mathcal{S}\)</s
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The encoding circuit involves the application of quantum Fourier transformation. (If the underlying registers are qubits, this reduces to a single Hadamard gate.)</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The encoding circuit involves the application of quantum Fourier transform.</span></div>
 
 
  
@@ -129,7 +123,7 @@ and all non-trivial centralizers of <span class="inline-math">\(\mathcal{S}\)</s
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The following code (families) have been explicitly constructed in <a href="#cite-0" class="cite">[1]</a>: ((33, 155, 3)), ((15, 8, 3)), <span class="inline-math">\(((n, \lceil\frac{q^n}{n(q^2-1)}\rceil,2))_q\)</span> and <span class="inline-math">\(((n, 1+n(q-1),2))_q\)</span>, where <span class="inline-math">\(n\)</span> is odd. In particular, the last code family is a general case for <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">A QECC <span class="inline-math">\(\mathcal{C}\)</span> is a stabilizer code if its Fourier description <span class="inline-math">\(B\)</span> is a subgroup of some Gottesman subgroup <span class="inline-math">\(S\)</span>. Otherwise <span class="inline-math">\(B\)</span> is just a subset, and <span class="inline-math">\(\mathcal{C}\)</span> is a non-stabilizer code.</span>
+  <span class="paragraph-in-list">The following code (families) have been explicitly constructed in <a href="#cite-0" class="cite">[1]</a>: <span class="inline-math">\(((33, 155, 3))\)</span>, <span class="inline-math">\(((15, 8, 3))\)</span>, <span class="inline-math">\(((n, \lceil\frac{q^n}{n(q^2-1)}\rceil,2))_{GF(q)}\)</span> and <span class="inline-math">\(((n, 1+n(q-1),2))_{GF(q)}\)</span>, where <span class="inline-math">\(n\)</span> is odd. In particular, the last code family is a general case of the non-additive <span class="inline-math">\(((5,6,2))\)</span> code from Ref. <a href="#cite-1" class="cite">[2]</a>.</span>
 </div>
 
 
@@ -155,7 +149,9 @@ and all non-trivial centralizers of <span class="inline-math">\(\mathcal{S}\)</s
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A non-stabilizer code is also a stabilizer code if its Fourier description <span class="inline-math">\(\mathsf{B}\)</span> is a subgroup of some Gottesman subgroup <span class="inline-math">\(\mathsf{S}\)</span>. When <span class="inline-math">\(\mathsf{B}\)</span> is just a subset, the code is explicitly not a stabilizer code.</span></li>
 </ul>
 </div>
 
@@ -217,7 +213,7 @@ url={https://errorcorrectionzoo.org/c/non_stabilizer}
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        E. M. Rains et al., “A Nonadditive Quantum Code”, Physical Review Letters <span class="textbf">79</span>, 953 (1997). <a href="https://doi.org/10.1103/PhysRevLett.79.953" target="_blank" class="href">DOI</a>
+        E. M. Rains et al., “A Nonadditive Quantum Code”, Physical Review Letters <span class="textbf">79</span>, 953 (1997). <a href="https://doi.org/10.1103/PhysRevLett.79.953" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9703002" target="_blank" class="href">quant-ph/9703002</a>
       </dd>
     
     </dl>
