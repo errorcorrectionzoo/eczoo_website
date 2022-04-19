@@ -84,7 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint eigenspace of commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators which do not contain <span class="inline-math">\(-I\)</span>.</p>
+<div class="sectioncontent code-description"><p>Also called a <span class="textit">Pauli stabilizer code</span>. An <span class="inline-math">\(((n,2^k,d))\)</span> qubit stabilizer code is denoted as <span class="inline-math">\([[n,k]]\)</span> or <span class="inline-math">\([[n,k,d]]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Logical subspace is the joint eigenspace of commuting Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace of a set of <span class="inline-math">\(2^{n-k}\)</span> commuting Pauli operators which do not contain <span class="inline-math">\(-I\)</span>.</p>
 <p>The distance is the minimum weight of a Pauli string that implements a nontrivial logical operation in the code.</p>
 <p>(Pauli matrices go here.)</p>
 <p>Each stabilizer code can be represented by a <span class="inline-math">\((n-k) \times 2n\)</span> stabilizer generator matrix <span class="inline-math">\(H=(A|B)\)</span>, where each row <span class="inline-math">\((a|b)\)</span> is the binary symplectic representation of a stabilizer generator. (Standard form goes here.)</p>
@@ -153,9 +153,9 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/stabilizer">Stabilizer code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/cws">Codeword stabilized (CWS) code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/xp_stabilizer">XP stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;If the CWS set <span class="inline-math">\( \mathcal{W} \)</span> is an abelian group not containing <span class="inline-math">\(-I\)</span>, then the CWS code is a stabilizer code.</span></li>
+      &#x2014;&nbsp;The XP stabilizer formalism reduces to the Pauli formalism at <span class="inline-math">\(N=2\)</span>.</span></li>
 </ul>
 </div>
 
@@ -438,7 +438,7 @@ url={https://errorcorrectionzoo.org/c/qubit_stabilizer}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/cws">CWS</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></li><li><a href="/c/floquet">Floquet</a></li><li><a href="/c/fusion">FBQC</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian</a></li><li><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/xp_stabilizer">XP stabilizer</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></li><li><a href="/c/floquet">Floquet</a></li><li><a href="/c/fusion">FBQC</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian</a></li><li><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
