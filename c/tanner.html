@@ -84,8 +84,15 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>Binary linear code defined on edges on a regular graph <span class="inline-math">\(G\)</span> such that each subsequence of bits corresponding to edges in the neighborhood a vertex belong to some short binary linear code <span class="inline-math">\(C_0\)</span>. Expansion properties of the underlying graph can yield efficient decoding algorithms.</p>
+<p>More technically, let <span class="inline-math">\(G(V,E)\)</span> be a <span class="inline-math">\(\Delta\)</span>-regular (not necessarily bipartite) graph with number of vertices <span class="inline-math">\(|V| = n \)</span> and number of edges <span class="inline-math">\(|E| = N = n\Delta/2\)</span>. Let <span class="inline-math">\(C_0\)</span> be a binary linear code of length <span class="inline-math">\(\Delta\)</span> and rate <span class="inline-math">\(R\)</span>. The Tanner code <span class="inline-math">\(T(G,C_0)\)</span> is defined as the set
+<span class="display-math env-align">\begin{align}
+\left\{ c \in GF(2)^{n}\,\text{s.t. }\forall v\in V,\left.c\right|_{N(v)}\in C_{0}\right\} ~,
+\end{align}</span>
+where <span class="inline-math">\(\left.c\right|_{N(v)}\)</span> is the subsequence formed by the <span class="inline-math">\(\Delta\)</span> bits located on the neighbors <span class="inline-math">\(N(v)\)</span> of the vertex <span class="inline-math">\(v\)</span>. The dimension of <span class="inline-math">\(T\)</span> is at least <span class="inline-math">\(N -n(\Delta -\Delta R_0) = N(2R_0-1)\geq 0\)</span> whenever <span class="inline-math">\(R_0 \geq \frac{1}{2}\)</span>.</p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Tanner Codes protect against noise on classical bit strings. If <span class="inline-math">\(C_0\)</span> is an <span class="inline-math">\([d, d-t,d&#x27;&gt; d(\gamma_0 +\frac{\lambda}{d})]_2\)</span> code and G is an <span class="inline-math">\((N, M, 2, d, \rho,\alpha)\)</span>- expander where <span class="inline-math">\(\rho = \gamma_0 (\gamma_0 +\frac{\lambda}{d})\)</span>, then the Tanner Code <span class="inline-math">\(T(G, C_0)\)</span> has rate <span class="inline-math">\(1-\frac{M}{N}t\)</span> and relative distance <span class="inline-math">\(\geq \gamma_0(\gamma_0+\frac{\lambda}{d})\)</span>.</div>
 
 
 <!-- Display features -->
@@ -94,15 +101,24 @@
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">For <span class="inline-math">\(C_0\)</span> with rate <span class="inline-math">\(R\)</span>, the Tanner code has rate at least <span class="inline-math">\(2R-1\)</span>. If <span class="inline-math">\(C_0\)</span> satisfies the Gilbert-Varshamov bound, the rate <span class="inline-math">\(R\)</span> relative distance <span class="inline-math">\(\delta\)</span> of the Tanner code satisfy <span class="inline-math">\(R \geq \delta = (1-2h(\delta_0))\)</span>, where <span class="inline-math">\(\delta_0\)</span> is the relative distance of <span class="inline-math">\(C_0\)</span>.</div>
 
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Quadratic algorithm: This technique works for all linear block codes and encodes using matrix multiplication <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Using the non-Abelian Fast Fourier Transform and exploiting the symmetry of the underlying graph, an encoding algorithm that requires <span class="inline-math">\(O(n^{4/3})\)</span> has been devised in <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">A modified construction yields codes that may be encoded in linear time yet maintain similar performance <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Parallel decoding algorithm corrects a fraction <span class="inline-math">\(\delta_0^2/48\)</span> of errors for Tanner codes <a href="#cite-3" class="cite">[4]</a>. A modification of said algorithm improves the fraction to <span class="inline-math">\(\delta_0^2/4\)</span> with no extra cost to complexity <a href="#cite-4" class="cite">[5]</a>.</span></div>
 
 
 
@@ -113,10 +129,6 @@
 
 
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list"></span>
-</div>
 
 
 <!-- Relationships to other codes -->
@@ -214,6 +226,26 @@ url={https://errorcorrectionzoo.org/c/tanner}
       <dt id="cite-0">[1]</dt>
       <dd>
         R. Tanner, “A recursive approach to low complexity codes”, IEEE Transactions on Information Theory <span class="textbf">27</span>, 533 (1981). <a href="https://doi.org/10.1109/TIT.1981.1056404" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        J. D. Lafferty and D. N. Rockmore, “Spectral techniques for expander codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258575" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        D. A. Spielman, “Linear-time encodable and decodable error-correcting codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1723 (1996). <a href="https://doi.org/10.1109/18.556668" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        G. Zemor, “On expander codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 835 (2001). <a href="https://doi.org/10.1109/18.910593" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
