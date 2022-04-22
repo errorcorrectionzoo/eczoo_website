@@ -78,7 +78,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/cws">Codeword stabilized (CWS) code</a>,       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a>,       <a href="/c/permutation_invariant">Permutation-invariant code</a>.
+      <a href="/c/cws">Codeword stabilized (CWS) code</a>,       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a>,       <a href="/c/permutation_invariant">Permutation-invariant code</a>,       <a href="/c/xp_stabilizer">XP stabilizer code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -116,7 +116,7 @@
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qubits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits. More generally, define the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> of <span class="inline-math">\(\mathsf{S}\)</span> to be the set of all operators that commute with all <span class="inline-math">\(S\in\mathsf{S}\)</span>. A stabilizer code can correct a Pauli error set <span class="inline-math">\({\mathcal{E}}\)</span> if and only if <span class="inline-math">\(E^\dagger F \notin \mathsf{N(S)}\setminus \mathsf{S}\)</span> for all <span class="inline-math">\(E,F \in {\mathcal{E}}\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/stabilizer">Stabilizer code</a>,       <a href="/c/xp_stabilizer">XP stabilizer code</a>.
+      <a href="/c/stabilizer">Stabilizer code</a>,       <a href="/c/cws">Codeword stabilized (CWS) code</a>,       <a href="/c/xp_stabilizer">XP stabilizer code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -189,11 +189,15 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/xp_stabilizer">XP stabilizer code</a>.
+      <a href="/c/qubit_stabilizer">Qubit stabilizer code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a>,       <a href="/c/spacetime">Spacetime code (STC)</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/xp_stabilizer">XP stabilizer code</a>.
   </span>
 </div>
 
@@ -217,8 +221,26 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_xp_stabilizer">
+  <span class="short-code-name"><a href="/c/xp_stabilizer">XP stabilizer code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-description">The XP Stabilizer formalism is a generalization of the XS and Pauli stabilizer formalisms, with stabilizer generators taken from the group <span class="inline-math">\( \{\omega I, X, P\}^{\otimes n} \)</span>. Here, <span class="inline-math">\( \omega \)</span> is a <span class="inline-math">\( 2N \)</span> root of unity, and <span class="inline-math">\( P = \text{diag} ( 1, \omega^2) \)</span>. The codespace is a <span class="inline-math">\(+1\)</span> eigenspace of a set of XP stabilizer generators, which need not commute to define a valid codespace.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qubits_into_qubits">Qubit code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/qubit_stabilizer">Qubit stabilizer code</a>,       <a href="/c/xs_stabilizer">XS stabilizer code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/cws">Codeword stabilized (CWS) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_css">
-  <span class="short-code-name"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-name"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Pauli strings. The stabilizer generator matrix is of the form
 <span class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
@@ -253,7 +275,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_clifford-deformed_surface">
-  <span class="short-code-name"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a></span></span>
+  <span class="short-code-name"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a></span></span>
   <span class="short-code-description">A generally non-CSS derivative of the surface code defined by applying a constant-depth Clifford circuit to the original (CSS) surface code. Unlike the surface code, CDSCs include codes whose thresholds and subthreshold performance are enhanced under noise biased towards dephasing. Examples of CDSCs include the XY code, XZZX code, and random CDSCs.</span>
   <span class="short-code-info">Protection: As a stabilizer code, <span class="inline-math">\([[n=O(d^2), k=O(1), d]]\)</span>.</span>
   <span class="short-code-parents">
@@ -272,7 +294,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_fusion">
-  <span class="short-code-name"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a></span></span>
+  <span class="short-code-name"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a><span class="code-introduced"><a href="#cite-23" class="cite">[24]</a></span></span>
   <span class="short-code-description">Fusion Based Quantum Computing, or FBQC, describes a fault tolerant way to produce <span class="textit">fusion networks</span>, or large entangled states starting from small constant-sized entangled resource states along with destructive measurements called <span class="textit">fusions</span>. These large states can be produced asychronously in the fusion framework and can be used as resources, as in measurement-based quantum computation (MBQC), or as logical states of topological codes. The difference from ordinary MBQC is that error-correction is baked into the state-generation protocol.</span>
   <span class="short-code-info">Protection: Protects against erasure, Pauli errors, photon loss, fusion failure from non-determinism, and faulty resource states. Redundancy in fusion outcomes is captured by the check operator group. Fusion measurement outcomes form a syndrome that allows to correct for Pauli errors. There is no physical error correction, and decoding output is simply used to update the Pauli frame.</span>
   <span class="short-code-parents">
@@ -287,8 +309,8 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_haah_cubic">
-  <span class="short-code-name"><a href="/c/haah_cubic">Haah cubic code</a><span class="code-introduced"><a href="#cite-23" class="cite">[24]</a></span></span>
-  <span class="short-code-description">Class of stabilizer codes on a length-<span class="inline-math">\(L\)</span> cubic lattice with one or two qubits per site. We also require that the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> is translation invariant and generated by two types of operators with support on a cube. In the non-CSS case, these two are related by spatial inversion. For CSS codes, we require that the product of all corner operators is the identity. We lastly require that there are no non-trival &#x27;&#x27;string operators&#x27;&#x27;, meaning that single-site operators are a phase, and any period one logical operator <span class="inline-math">\(l \in \mathsf{S}^{\perp}\)</span> is just a phase. Haah showed in his original construction that there is exactly one non-CSS code of this form, and 17 CSS codes <a href="#cite-23" class="cite">[24]</a>. The non-CSS code is labeled code 0, and the rest are numbered from 1 - 17. Codes 1-4 do not have string logical operators, while codes 11-17 do.</span>
+  <span class="short-code-name"><a href="/c/haah_cubic">Haah cubic code</a><span class="code-introduced"><a href="#cite-24" class="cite">[25]</a></span></span>
+  <span class="short-code-description">Class of stabilizer codes on a length-<span class="inline-math">\(L\)</span> cubic lattice with one or two qubits per site. We also require that the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> is translation invariant and generated by two types of operators with support on a cube. In the non-CSS case, these two are related by spatial inversion. For CSS codes, we require that the product of all corner operators is the identity. We lastly require that there are no non-trival &#x27;&#x27;string operators&#x27;&#x27;, meaning that single-site operators are a phase, and any period one logical operator <span class="inline-math">\(l \in \mathsf{S}^{\perp}\)</span> is just a phase. Haah showed in his original construction that there is exactly one non-CSS code of this form, and 17 CSS codes <a href="#cite-24" class="cite">[25]</a>. The non-CSS code is labeled code 0, and the rest are numbered from 1 - 17. Codes 1-4 do not have string logical operators, while codes 11-17 do.</span>
   <span class="short-code-info">Protection: Cubic codes protect against simultaneous independent Pauli errors on different sites (not qubits, since there can be 2 qubits per site). Codes 0-4 are known to have distance <span class="inline-math">\(d \ge L\)</span>, meaning they can achieve macroscopic code distance as <span class="inline-math">\(L\to\infty\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -306,8 +328,8 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_majorana_stab">
-  <span class="short-code-name"><a href="/c/majorana_stab">Majorana stabilizer code</a><span class="code-introduced"><a href="#cite-24" class="cite">[25]</a></span></span>
-  <span class="short-code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-25" class="cite">[26]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</span>
+  <span class="short-code-name"><a href="/c/majorana_stab">Majorana stabilizer code</a><span class="code-introduced"><a href="#cite-25" class="cite">[26]</a></span></span>
+  <span class="short-code-description">Majorana fermion stabilizer codes are stabilizer codes whose stabilizers are products of an even number of Majorana fermion operators, analogous to Pauli strings for a traditional stabilizer code and referred to as <span class="textit">Majorana stabilizers</span>. The codespace is the mutual <span class="inline-math">\(+1\)</span> eigenspace of all Majorana stabilizers. In such systems, Majorana fermions may either be considered individually or paired into creation and annihilation operators for fermionic modes. Codes can be denoted as <span class="inline-math">\([[n,k,d]]_{f}\)</span> <a href="#cite-26" class="cite">[27]</a>, where <span class="inline-math">\(n\)</span> is the number of fermionic modes.</span>
   <span class="short-code-info">Protection: Detects products of Majorana operators with weight up to <span class="inline-math">\(d-1\)</span>. Physically, protects against dephasing errors caused by coupling of fermion density to the environment and bit-flip errors caused by quasiparticle poisoning processes.</span>
   <span class="short-code-parents">
     Parents:
@@ -325,7 +347,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_matching">
-  <span class="short-code-name"><a href="/c/matching">Matching code</a><span class="code-introduced"><a href="#cite-26" class="cite">[27]</a></span></span>
+  <span class="short-code-name"><a href="/c/matching">Matching code</a><span class="code-introduced"><a href="#cite-27" class="cite">[28]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -343,7 +365,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_quantum_convolutional">
-  <span class="short-code-name"><a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-27" class="cite">[28]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_convolutional">Quantum convolutional code</a><span class="code-introduced"><a href="#cite-28" class="cite">[29]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -357,7 +379,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_stabilizer_over_gf4">
-  <span class="short-code-name"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-28" class="cite">[29]</a></span></span>
+  <span class="short-code-name"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a><span class="code-introduced"><a href="#cite-29" class="cite">[30]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a self-dual quaternary <span class="inline-math">\([n, n-k, d^*]_4\)</span> code over <span class="inline-math">\(GF(4)^n\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
 The field <span class="inline-math">\(GF(4)=\mathbf{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
 There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
@@ -384,7 +406,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
 
 
 <div class="ecc-code" id="ecc_xyz_product">
-  <span class="short-code-name"><a href="/c/xyz_product">XYZ product code</a><span class="code-introduced"><a href="#cite-29" class="cite">[30]</a></span></span>
+  <span class="short-code-name"><a href="/c/xyz_product">XYZ product code</a><span class="code-introduced"><a href="#cite-30" class="cite">[31]</a></span></span>
   <span class="short-code-description">A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than taking a product of only two classical codes to produce a CSS code, a third classical code is considered, acting with Pauli-<span class="inline-math">\(Y\)</span> operators.
 </span>
   <span class="short-code-parents">
@@ -399,7 +421,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
 
 
 <div class="ecc-code" id="ecc_quantum_hamming">
-  <span class="short-code-name"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a><span class="code-introduced"><a href="#cite-30" class="cite">[31]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a><span class="code-introduced"><a href="#cite-31" class="cite">[32]</a></span></span>
   <span class="short-code-description">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound.</span>
   <span class="short-code-info">Protection: Protects against any single qubit error.</span>
   <span class="short-code-parents">
@@ -418,7 +440,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
 
 
 <div class="ecc-code" id="ecc_stab_4_2_2">
-  <span class="short-code-name"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-31" class="cite">[32]</a></span></span>
+  <span class="short-code-name"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a><span class="code-introduced"><a href="#cite-32" class="cite">[33]</a></span></span>
   <span class="short-code-description">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords
 <span class="display-math env-align">\begin{align}
   \begin{split}
@@ -428,7 +450,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
     |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2}~.
   \end{split}
 \end{align}</span></span>
-  <span class="short-code-info">Protection: Detects a single-qubit error <a href="#cite-31" class="cite">[32]</a> or single erasure <a href="#cite-32" class="cite">[33]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-33" class="cite">[34]</a>.</span>
+  <span class="short-code-info">Protection: Detects a single-qubit error <a href="#cite-32" class="cite">[33]</a> or single erasure <a href="#cite-33" class="cite">[34]</a>. Not able to correct arbitrary single-qubit errors because <span class="inline-math">\( \lfloor \frac{d-1}{2} \rfloor =0 \)</span>. Approximately corrects a single amplitude damping error <a href="#cite-34" class="cite">[35]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/quantum_parity">Quantum parity code (QPC)</a>,       <a href="/c/surface">Kitaev surface code</a>.
@@ -445,7 +467,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
 
 
 <div class="ecc-code" id="ecc_shor_nine">
-  <span class="short-code-name"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-34" class="cite">[35]</a></span></span>
+  <span class="short-code-name"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-35" class="cite">[36]</a></span></span>
   <span class="short-code-description">Nine-qubit <a href="/c/css" class="ref">CSS code</a> that is the smallest such code to correct a single-qubit error. The logical state is encoded using
 <span class="display-math env-align">\begin{align}
 \begin{split}
@@ -468,8 +490,8 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
 
 <div class="ecc-code" id="ecc_honeycomb">
   <span class="short-code-name"><a href="/c/honeycomb">Honeycomb code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
-  <span class="short-code-description">Floquet code inspired by the Kitaev honeycomb model <a href="#cite-35" class="cite">[36]</a> whose logical qubits are generated through a particular sequence of measurements.</span>
-  <span class="short-code-info">Protection: Protective features similar to the surface code: on a torus geometry, the code protects two logical qubits with a code distance proportional to the linear size of the torus. Properties of the code with open boundaries are discussed in Refs. <a href="#cite-36" class="cite">[37]</a><a href="#cite-37" class="cite">[38]</a>.</span>
+  <span class="short-code-description">Floquet code inspired by the Kitaev honeycomb model <a href="#cite-36" class="cite">[37]</a> whose logical qubits are generated through a particular sequence of measurements.</span>
+  <span class="short-code-info">Protection: Protective features similar to the surface code: on a torus geometry, the code protects two logical qubits with a code distance proportional to the linear size of the torus. Properties of the code with open boundaries are discussed in Refs. <a href="#cite-37" class="cite">[38]</a><a href="#cite-38" class="cite">[39]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/floquet">Floquet code</a>.
@@ -477,24 +499,6 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/subsystem_color">Subsystem color code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/matching">Matching code</a>,       <a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_xp_stabilizer">
-  <span class="short-code-name"><a href="/c/xp_stabilizer">XP stabilizer code</a><span class="code-introduced"><a href="#cite-38" class="cite">[39]</a></span></span>
-  <span class="short-code-description">The XP Stabilizer formalism is a generalization of the XS and Pauli stabilizer formalisms, with stabilizer generators taken from the group <span class="inline-math">\( \{\omega I, X, P\}^{\otimes n} \)</span>. Here, <span class="inline-math">\( \omega \)</span> is a <span class="inline-math">\( 2N \)</span> root of unity, and <span class="inline-math">\( P = \text{diag} ( 1, \omega^2) \)</span>. The codespace is a <span class="inline-math">\(+1\)</span> eigenspace of a set of XP stabilizer generators, which need not commute to define a valid codespace.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/cws">Codeword stabilized (CWS) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/qubit_stabilizer">Qubit stabilizer code</a>,       <a href="/c/xs_stabilizer">XS stabilizer code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
   </span>
 </div>
 
@@ -843,7 +847,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 
 <div class="ecc-code" id="ecc_steane">
-  <span class="short-code-name"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-name"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
 <span class="display-math env-align">\begin{align}
   H = \left(\begin{matrix}
@@ -1177,107 +1181,107 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
+        Mark A. Webster, Benjamin J. Brown, and Stephen D. Bartlett, “The XP Stabiliser Formalism: a Generalisation of the Pauli Stabiliser Formalism with Arbitrary Phases”. <a href="https://arxiv.org/abs/2203.00103" target="_blank" class="href">2203.00103</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
+        A. R. Calderbank and P. W. Shor, “Good quantum error-correcting codes exist”, Physical Review A <span class="textbf">54</span>, 1098 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1098" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9512032" target="_blank" class="href">quant-ph/9512032</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
+        A. M. Steane, “Error Correcting Codes in Quantum Theory”, Physical Review Letters <span class="textbf">77</span>, 793 (1996). <a href="https://doi.org/10.1103/PhysRevLett.77.793" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        Arpit Dua et al., “Clifford-deformed Surface Codes”. <a href="https://arxiv.org/abs/2201.07802" target="_blank" class="href">2201.07802</a>
+        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        Sara Bartolucci et al., “Fusion-based quantum computation”. <a href="https://arxiv.org/abs/2101.09310" target="_blank" class="href">2101.09310</a>
+        Arpit Dua et al., “Clifford-deformed Surface Codes”. <a href="https://arxiv.org/abs/2201.07802" target="_blank" class="href">2201.07802</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        J. Haah, “Local stabilizer codes in three dimensions without string logical operators”, Physical Review A <span class="textbf">83</span>, (2011). <a href="https://doi.org/10.1103/PhysRevA.83.042330" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1101.1962" target="_blank" class="href">1101.1962</a>
+        Sara Bartolucci et al., “Fusion-based quantum computation”. <a href="https://arxiv.org/abs/2101.09310" target="_blank" class="href">2101.09310</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        J. Haah, “Local stabilizer codes in three dimensions without string logical operators”, Physical Review A <span class="textbf">83</span>, (2011). <a href="https://doi.org/10.1103/PhysRevA.83.042330" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1101.1962" target="_blank" class="href">1101.1962</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
       <dd>
-        J. R. Wootton, “A family of stabilizer codes for <span class="inline-math">$D({{\mathbb{Z}}_{2}})$</span> anyons and Majorana modes”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">48</span>, 215302 (2015). <a href="https://doi.org/10.1088/1751-8113/48/21/215302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1501.07779" target="_blank" class="href">1501.07779</a>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-27">[28]</dt>
       <dd>
-        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
+        J. R. Wootton, “A family of stabilizer codes for <span class="inline-math">$D({{\mathbb{Z}}_{2}})$</span> anyons and Majorana modes”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">48</span>, 215302 (2015). <a href="https://doi.org/10.1088/1751-8113/48/21/215302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1501.07779" target="_blank" class="href">1501.07779</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-28">[29]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+        G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href">quant-ph/0511016</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[30]</dt>
       <dd>
-        Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-30">[31]</dt>
       <dd>
-        D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href">quant-ph/9604038</a>
+        Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-31">[32]</dt>
       <dd>
-        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
+        D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href">quant-ph/9604038</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-32">[33]</dt>
       <dd>
-        M. Grassl, T. Beth, and T. Pellizzari, “Codes for the quantum erasure channel”, Physical Review A <span class="textbf">56</span>, 33 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.33" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610042" target="_blank" class="href">quant-ph/9610042</a>
+        L. Vaidman, L. Goldenberg, and S. Wiesner, “Error prevention scheme with four particles”, Physical Review A <span class="textbf">54</span>, R1745 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.R1745" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9603031" target="_blank" class="href">quant-ph/9603031</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-33">[34]</dt>
       <dd>
-        D. W. Leung et al., “Approximate quantum error correction can lead to better codes”, Physical Review A <span class="textbf">56</span>, 2567 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.2567" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9704002" target="_blank" class="href">quant-ph/9704002</a>
+        M. Grassl, T. Beth, and T. Pellizzari, “Codes for the quantum erasure channel”, Physical Review A <span class="textbf">56</span>, 33 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.33" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610042" target="_blank" class="href">quant-ph/9610042</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-34">[35]</dt>
       <dd>
-        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
+        D. W. Leung et al., “Approximate quantum error correction can lead to better codes”, Physical Review A <span class="textbf">56</span>, 2567 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.2567" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9704002" target="_blank" class="href">quant-ph/9704002</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-35">[36]</dt>
       <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
+        P. W. Shor, “Scheme for reducing decoherence in quantum computer memory”, Physical Review A <span class="textbf">52</span>, R2493 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.R2493" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-36">[37]</dt>
       <dd>
-        Jeongwan Haah and Matthew B. Hastings, “Boundaries for the Honeycomb Code”. <a href="https://arxiv.org/abs/2110.09545" target="_blank" class="href">2110.09545</a>
+        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-37">[38]</dt>
       <dd>
-        Christophe Vuillot, “Planar Floquet Codes”. <a href="https://arxiv.org/abs/2110.05348" target="_blank" class="href">2110.05348</a>
+        Jeongwan Haah and Matthew B. Hastings, “Boundaries for the Honeycomb Code”. <a href="https://arxiv.org/abs/2110.09545" target="_blank" class="href">2110.09545</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-38">[39]</dt>
       <dd>
-        Mark A. Webster, Benjamin J. Brown, and Stephen D. Bartlett, “The XP Stabiliser Formalism: a Generalisation of the Pauli Stabiliser Formalism with Arbitrary Phases”. <a href="https://arxiv.org/abs/2203.00103" target="_blank" class="href">2203.00103</a>
+        Christophe Vuillot, “Planar Floquet Codes”. <a href="https://arxiv.org/abs/2110.05348" target="_blank" class="href">2110.05348</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-39">[40]</dt>
