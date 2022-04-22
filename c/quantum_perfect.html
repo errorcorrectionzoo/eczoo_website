@@ -91,9 +91,9 @@
 becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</p>
 <p>For qubit codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
 <span class="display-math env-align">\begin{align}
-\frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-H(t/n),
+\frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-h(t/n),
 \end{align}</span>
-where <span class="inline-math">\(H\)</span> is the binary entropy function.</p></div>
+where <span class="inline-math">\(h\)</span> is the binary entropy function.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</div>

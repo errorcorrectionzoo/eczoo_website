@@ -78,13 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Random code</h1>
+      Random code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Code whose construction is non-deterministic in some way, i.e., codes that utilize an elements of randomness somewhere in their construction. Members of this class range from fully non-deterministic codes, to codes whose multi-step construction is deterministic with the exception of a single step.</div>
+<div class="sectioncontent code-description"><p>Code whose construction is non-deterministic in some way, i.e., codes that utilize an elements of randomness somewhere in their construction. Members of this class range from fully non-deterministic codes, to codes whose multi-step construction is deterministic with the exception of a single step.</p>
+<p>Typically, random codes are selected with uniform distribution from some ensemble of codes. For example, a random binary code is a set of <span class="inline-math">\(2^{K}\)</span> codewords with length <span class="inline-math">\(N\)</span> chosen uniformly from the ensemble of all <span class="inline-math">\(2^N\)</span> bit-strings. Each bit in the codeword is randomly chosen between 0 and 1 with equal probability. For another example, a random binary linear code is generated from a random chosen <span class="inline-math">\(K\)</span> generators of length <span class="inline-math">\(N\)</span>, where each bit of the generators is randomly chosen between 0 and 1 with equal probability. Equivalently, a random binary linear code is defined by a randomly generated <span class="inline-math">\(K\)</span> by <span class="inline-math">\(N\)</span> generator matrix, where each entry is randomly chosen between 0 and 1 with equal probability.&#x27;</p></div>
 
 
 
@@ -94,6 +95,9 @@
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Typical random codes (TRC) or typical random linear codes (TLC) refer to codes in the respective ensemble that satisfy a certain minimum distance. The relative fraction of typical codes in the ensemble approaches one as <span class="inline-math">\(N\)</span> goes to infinity <a href="#cite-0" class="cite">[1]</a> (see also Ref. <a href="#cite-1" class="cite">[2]</a>). Asymptotically, given distance <span class="inline-math">\(d\)</span>, the maximum rate for a TRC is given by <span class="inline-math">\(R=\frac{1}{2}R_{GV}(\delta)\)</span> where <span class="inline-math">\(R_{GV}\)</span> is the Gilbert–Varshamov (GV) bound <span class="inline-math">\(R_{GV}=1-h(\delta)\)</span>, and <span class="inline-math">\(h(\delta)=h(\frac{d}{n})\)</span> is the binary entropy function. The maximum rate for a TLC is given by <span class="inline-math">\(R=R_{GV}(d)\)</span>, meaning that TLCs achieve the asymoptic GV bound.</div>
 
 
 
@@ -103,6 +107,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Ball-collision decoding <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Finiasz and Sendrier (FS-ISD) decoding <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
@@ -112,7 +119,15 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Distributed storage systems <a href="#cite-4" class="cite">[5]</a>.</span>
+</div>
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Shannon&#x27;s pioneering work <a href="#cite-0" class="cite">[1]</a> analyzes the distance distribution of the code given a rate. Given <span class="inline-math">\(N\)</span> and the rate <span class="inline-math">\(R\)</span>, the minimum distance of a TRC is given by the GV bound <span class="inline-math">\(d=N\delta_{GV}(2R)\)</span>, where <span class="inline-math">\(\delta_{GV} = h^{-1}(1-R)\)</span>, <span class="inline-math">\(0\le R \le 1\)</span>, and <span class="inline-math">\(\delta_{GV}(x)=0\)</span> for all other <span class="inline-math">\(R\)</span>. For a TLC, the minimum distane is given by <span class="inline-math">\(d=N\delta_{GV}(R)\)</span>.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -188,6 +203,37 @@ url={https://errorcorrectionzoo.org/c/random}
 <!-- endnotes -->
 
 
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. Barg and G. D. Forney, “Random codes: minimum distances and error exponents”, IEEE Transactions on Information Theory <span class="textbf">48</span>, 2568 (2002). <a href="https://doi.org/10.1109/TIT.2002.800480" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        D. J. Bernstein, T. Lange, and C. Peters, “Smaller Decoding Exponents: Ball-Collision Decoding”, Advances in Cryptology – CRYPTO 2011 743 (2011). <a href="https://doi.org/10.1007/978-3-642-22792-9_42" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        M. Finiasz and N. Sendrier, “Security Bounds for the Design of Code-Based Cryptosystems”, Advances in Cryptology – ASIACRYPT 2009 88 (2009). <a href="https://doi.org/10.1007/978-3-642-10366-7_6" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Yunfeng Lin, Ben Liang, and Baochun Li, “Priority Random Linear Codes in Distributed Storage Systems”, IEEE Transactions on Parallel and Distributed Systems <span class="textbf">20</span>, 1653 (2009). <a href="https://doi.org/10.1109/TPDS.2008.251" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+  </div>
 
 
 
