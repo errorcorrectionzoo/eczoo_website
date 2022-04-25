@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Low-density parity-check (LDPC) code" />
+<meta name="citation_title" content="Low-density parity-check code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Low-density parity-check (LDPC) code" />
+<meta name="DC.title" content="Low-density parity-check code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Low-density parity-check (LDPC) code [error correction zoo]
+    Low-density parity-check code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,14 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Low-density parity-check (LDPC) code</h1>
+      Low-density parity-check code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Stub.</p>
-<p>Strictly speaking, the term <span class="textit">parity check</span> describes only bitwise qubit error syndromes. Nevertheless, <span class="inline-math">\(q\)</span>-ary linear codes satisfying the above criteria are also called LDPC codes.</p></div>
+<div class="sectioncontent code-description"><p>Also known as <span class="textit">Gallager codes</span>. Family of <span class="inline-math">\([n,k,d]\)</span> linear codes for which the number of nonzero entries in each row and column of the parity check matrix are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>. In other words, the parity-check matrix of an LDPC code is sparse.</p>
+<p>A <span class="textit">parity check</span> is performed by taking the inner product of a row of the parity-check matrix with a codeword that has been affected by a noise channel. A parity check yields either zero (no error) or one (error) for binary codes, while yielding zero (no error) or a nonzero field element (error) for <span class="inline-math">\(q\)</span>-ary codes. Despite the fact that there is more than one nonzero outcome, <span class="inline-math">\(q\)</span>-ary linear codes with sparse parity-check matrices are also called LDPC codes.</p></div>
 
 
 
@@ -113,6 +113,10 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Used in 5G NR cellular communication for the traffic channel <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">WiMAX (IEEE 802.16e) <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Satelite transmission of digital television <a href="#cite-3" class="cite">[4]</a>.</span>
+</div>
 
 
 
@@ -139,9 +143,13 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/parity_check">Parity-check code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/binary_linear">Linear binary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binary LDPC codes are parity check codes.</span></li>
+      &#x2014;&nbsp;Binary LDPC codes are a subset of binary linear codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;<span class="inline-math">\(q\)</span>-ary LDPC codes are a subset of <span class="inline-math">\(q\)</span>-ary linear codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span></li>
 </ul>
@@ -172,10 +180,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Low-density parity-check (LDPC) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ldpc</dd>
+    <dd>“Low-density parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ldpc</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_ldpc,
-title={Low-density parity-check (LDPC) code},
+title={Low-density parity-check code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -193,6 +201,32 @@ url={https://errorcorrectionzoo.org/c/ldpc}
 <!-- endnotes -->
 
 
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        R. Gallager, “Low-density parity-check codes”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 21 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057683" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        M. V. Patil, S. Pawar, and Z. Saquib, “Coding Techniques for 5G Networks: A Review”, 2020 3rd International Conference on Communication System, Computing and IT Applications (CSCITA) (2020). <a href="https://doi.org/10.1109/CSCITA47329.2020.9137797" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        LDPC coding for OFDMA PHY. 802.16REVe Sponsor Ballot Recirculation comment, July 2004. IEEE C802.16e-04/141r2
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        R. Purnamasari, H. Wijanto, and I. Hidayat, “Design and implementation of LDPC(Low Density Parity Check) coding technique on FPGA (Field Programmable Gate Array) for DVB-S2 (Digital Video Broadcasting-Satellite)”, 2014 IEEE International Conference on Aerospace Electronics and Remote Sensing Technology (2014). <a href="https://doi.org/10.1109/ICARES.2014.7024407" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+  </div>
 
 
 
@@ -202,7 +236,7 @@ url={https://errorcorrectionzoo.org/c/ldpc}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Low-density parity-check (LDPC) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ldpc</p>
+  <p>“Low-density parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ldpc</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ldpc.yml"
                 class="ashowurl"
@@ -216,7 +250,7 @@ url={https://errorcorrectionzoo.org/c/ldpc}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/parity_check">Parity-check</a></li><li><a href="/c/qldpc">QLDPC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/qldpc">QLDPC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
