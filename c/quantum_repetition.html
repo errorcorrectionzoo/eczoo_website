@@ -78,13 +78,21 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quantum repetition code</h1>
+      Quantum repetition code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</div>
+<div class="sectioncontent code-description"><p>Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</p>
+<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
+<span class="display-math env-align">\begin{align}
+  \begin{split}
+    |\overline{+}\rangle&amp;=\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=0}|v_{1},\cdots,v_{n}\ket\\
+    |\overline{-}\rangle&amp;=\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=1}|v_{1},\cdots,v_{n}\ket~,
+  \end{split}
+\end{align}</span>
+showing that the phase-flip code code stores information in the global parity of the qubits.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Bit-flip code detects bit-flip errors <span class="inline-math">\(X\)</span> on <span class="inline-math">\(\left\lfloor (n-1)/2\right\rfloor\)</span> qubits and does not detect any phase-flip errors <span class="inline-math">\(Z\)</span>. Phase-flip code detects phase-flip errors <span class="inline-math">\(Z\)</span> on <span class="inline-math">\(\left\lfloor (n-1)/2\right\rfloor\)</span> qubits and does not detect any bit-flip errors <span class="inline-math">\(X\)</span>.</div>
@@ -116,7 +124,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Superconducting circuits: IBM 15-qubit <a href="#cite-0" class="cite">[1]</a>, Google Quantum AI Sycamore <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">3-qubit semiconductor spin-qubit computer at RIKEN <a href="#cite-2" class="cite">[3]</a> and Delft <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">3-qubit codes can be used to benchmark device performance <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">See Table S6 in Ref. <a href="#cite-1" class="cite">[2]</a> for a history of earlier implementations.</span>
+  <span class="paragraph-in-list">Superconducting circuits: IBM 15-qubit <a href="#cite-1" class="cite">[2]</a>, Google Quantum AI Sycamore <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">3-qubit semiconductor spin-qubit computer at RIKEN <a href="#cite-3" class="cite">[4]</a> and Delft <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">3-qubit codes can be used to benchmark device performance <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">See Table S6 in Ref. <a href="#cite-2" class="cite">[3]</a> for a history of earlier implementations.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
@@ -153,6 +161,10 @@
       &#x2014;&nbsp;Bit-flip codespace is the ground-state space of a one-dimensional classical Ising model with nearest-neighbor interactions.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GNU codewords for <span class="inline-math">\(g=1\)</span> reduce to the phase-flip code.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -220,25 +232,30 @@ url={https://errorcorrectionzoo.org/c/quantum_repetition}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        J. R. Wootton and D. Loss, “Repetition code of 15 qubits”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.052313" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.00990" target="_blank" class="href">1709.00990</a>
+        A. Peres, “Reversible logic and quantum computers”, Physical Review A <span class="textbf">32</span>, 3266 (1985). <a href="https://doi.org/10.1103/PhysRevA.32.3266" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        Zijun Chen et al., “Exponential suppression of bit or phase flip errors with repetitive error correction”. <a href="https://arxiv.org/abs/2102.06132" target="_blank" class="href">2102.06132</a>
+        J. R. Wootton and D. Loss, “Repetition code of 15 qubits”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.052313" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.00990" target="_blank" class="href">1709.00990</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Kenta Takeda et al., “Quantum error correction with silicon spin qubits”. <a href="https://arxiv.org/abs/2201.08581" target="_blank" class="href">2201.08581</a>
+        Zijun Chen et al., “Exponential suppression of bit or phase flip errors with repetitive error correction”. <a href="https://arxiv.org/abs/2102.06132" target="_blank" class="href">2102.06132</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        F. van Riggelen et al., “Phase flip code with semiconductor spin qubits”. <a href="https://arxiv.org/abs/2202.11530" target="_blank" class="href">2202.11530</a>
+        Kenta Takeda et al., “Quantum error correction with silicon spin qubits”. <a href="https://arxiv.org/abs/2201.08581" target="_blank" class="href">2201.08581</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        F. van Riggelen et al., “Phase flip code with semiconductor spin qubits”. <a href="https://arxiv.org/abs/2202.11530" target="_blank" class="href">2202.11530</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         Teague Tomesh et al., “SupermarQ: A Scalable Quantum Benchmark Suite”. <a href="https://arxiv.org/abs/2202.11045" target="_blank" class="href">2202.11045</a>
       </dd>
@@ -268,7 +285,7 @@ url={https://errorcorrectionzoo.org/c/quantum_repetition}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/quantum_parity">Quantum parity code (QPC)</a></li><li><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/gnu_permutation_invariant">GNU</a></li><li><a href="/c/quantum_parity">Quantum parity code (QPC)</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
