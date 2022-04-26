@@ -85,7 +85,8 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Code whose construction is non-deterministic in some way, i.e., codes that utilize an elements of randomness somewhere in their construction. Members of this class range from fully non-deterministic codes, to codes whose multi-step construction is deterministic with the exception of a single step.</p>
-<p>Typically, random codes are selected with uniform distribution from some ensemble of codes. For example, a random binary code is a set of <span class="inline-math">\(2^{K}\)</span> codewords with length <span class="inline-math">\(N\)</span> chosen uniformly from the ensemble of all <span class="inline-math">\(2^N\)</span> bit-strings. Each bit in the codeword is randomly chosen between 0 and 1 with equal probability. For another example, a random binary linear code is generated from a random chosen <span class="inline-math">\(K\)</span> generators of length <span class="inline-math">\(N\)</span>, where each bit of the generators is randomly chosen between 0 and 1 with equal probability. Equivalently, a random binary linear code is defined by a randomly generated <span class="inline-math">\(K\)</span> by <span class="inline-math">\(N\)</span> generator matrix, where each entry is randomly chosen between 0 and 1 with equal probability.&#x27;</p></div>
+<p>Typically, random codes are selected with uniform distribution from some ensemble of codes. For example, a random binary code is a set of <span class="inline-math">\(2^{K}\)</span> codewords with length <span class="inline-math">\(N\)</span> chosen uniformly from the ensemble of all <span class="inline-math">\(2^N\)</span> bit-strings. Each bit in the codeword is randomly chosen between 0 and 1 with equal probability. For another example, a random binary linear code is generated from a random chosen <span class="inline-math">\(K\)</span> generators of length <span class="inline-math">\(N\)</span>, where each bit of the generators is randomly chosen between 0 and 1 with equal probability. Equivalently, a random binary linear code is defined by a randomly generated <span class="inline-math">\(K\)</span> by <span class="inline-math">\(N\)</span> generator matrix, where each entry is randomly chosen between 0 and 1 with equal probability.</p>
+<p>In both of the above random code constructions, the ensemble size scales exponentially with <span class="inline-math">\(N\)</span>. A common convention is to think of the resulting code constructions as effectively explicit (as opposed to random) in cases where the ensemble size is independent of <span class="inline-math">\(N\)</span> or even when the size scales polynomially with <span class="inline-math">\(N\)</span>.</p></div>
 
 
 
@@ -155,9 +156,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/expander_lifted_product">Expander lifted-product code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Expander lifted-product codes utilize short classical codes in their construction which need to satisfy some properties (Ref. <a href="#cite-5" class="cite">[6]</a>, Lemma 10). These codes exist, and can be obtained by repeated random sampling of all codes of desired length.</span></li>
+      &#x2014;&nbsp;Expander lifted-product codes utilize short classical codes in their construction which need to satisfy some properties (Ref. <a href="#cite-5" class="cite">[6]</a>, Lemma 10). It is shown that such codes exist, but they are not explicitly constructed. Such codes can be obtained by repeated random sampling or by performing a search of all codes of desired length. Nevertheless, since the length of the desired short codes does not scale with <span class="inline-math">\(n\)</span>, this construction is effectively explicit.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/justesen">Justesen code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/justesen">Justesen code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The required inner codes are obtained by random sampling from the Wozencraft ensemble, whose length scales logarithmically with <span class="inline-math">\(n\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_random">Random quantum code</a></span></li>
 </ul>
