@@ -85,10 +85,10 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</p>
-<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
+<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the bit-flip code are GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>. The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
 <span class="display-math env-align">\begin{align}
   \begin{split}
-    |\overline{+}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=0}|v_{1},\cdots,v_{n}\rangle\\
+    |\overline{+}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=0}|v_{1},\cdots,v_{n}\rangle~{\phantom{,}}\\
     |\overline{-}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=1}|v_{1},\cdots,v_{n}\rangle~,
   \end{split}
 \end{align}</span>
@@ -127,10 +127,6 @@ showing that the phase-flip code code stores information in the total parity of 
   <span class="paragraph-in-list">Superconducting circuits: IBM 15-qubit <a href="#cite-1" class="cite">[2]</a>, Google Quantum AI Sycamore <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">3-qubit semiconductor spin-qubit computer at RIKEN <a href="#cite-3" class="cite">[4]</a> and Delft <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">3-qubit codes can be used to benchmark device performance <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">See Table S6 in Ref. <a href="#cite-2" class="cite">[3]</a> for a history of earlier implementations.</span>
 </div>
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Logical basis for the bit-flip code is spanned by GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>, which are used in Shor error correction.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
