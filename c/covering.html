@@ -84,15 +84,15 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A code <span class="inline-math">\(C\)</span> in a metric space is covering if the union of balls of some radius centered at the codewords covers the entire space. For example, a <span class="inline-math">\(q\)</span>-ary code <span class="inline-math">\(C\)</span> is called <span class="inline-math">\(\rho\)</span>-covering code if <span class="inline-math">\(\forall v \in GF(q)^{n}\)</span> <span class="inline-math">\(\exists c \in C\)</span> such that the Hadamard distance <span class="inline-math">\(d(c,v)\leq \rho\)</span>.</p>
-<p>The <span class="textit">covering radius</span> <span class="inline-math">\(\rho(C)\)</span> is smallest non-negative integer <span class="inline-math">\(\rho\)</span> such that <span class="inline-math">\(C\)</span> is <span class="inline-math">\(\rho\)</span>-covering, i.e.
+<div class="sectioncontent code-description"><p>A code <span class="inline-math">\(C\)</span> in a metric space is covering if the union of balls of some radius centered at the codewords covers the entire space. For example, a <span class="inline-math">\(q\)</span>-ary code <span class="inline-math">\(C\)</span> is <span class="inline-math">\(\rho\)</span>-covering if <span class="inline-math">\(\forall v \in GF(q)^{n}\)</span>, there is a codeword <span class="inline-math">\(c \in C\)</span> such that the Hadamard distance <span class="inline-math">\(d(c,v)\leq \rho\)</span>.</p>
+<p>The <span class="textit">covering radius</span> <span class="inline-math">\(\rho(C)\)</span> is the smallest non-negative integer <span class="inline-math">\(\rho\)</span> such that <span class="inline-math">\(C\)</span> is <span class="inline-math">\(\rho\)</span>-covering, i.e.
 <span class="display-math env-align">\begin{align}
   \rho(C)=\max_{{v\in GF(q)^{n}}}\min_{{c\in C}}d(v,c)~.
 \end{align}</span>
-For a linear code <span class="inline-math">\([n,k]_q\)</span>, the covering radius is minimum number of columns of the code&#x27;s parity check matrix which cover <span class="inline-math">\(GF(q)^{n-k}\)</span>.</p>
+For a linear code <span class="inline-math">\([n,k]_q\)</span>, the covering radius is the minimum number of columns of the code&#x27;s parity check matrix which cover <span class="inline-math">\(GF(q)^{n-k}\)</span>.</p>
 <p>The covering radius satisfies various inequalities. A code <span class="inline-math">\(C\)</span> with distance <span class="inline-math">\(d\)</span> satisfies the relation
 <span class="display-math env-align">\begin{align}
-  \rho(C)\geq \frac{|d-1|}{2} \label{perfect-ref}
+  \rho(C)\geq \frac{|d-1|}{2}~. \label{perfect-ref}
 \end{align}</span>
 Linear <span class="inline-math">\([n,k]_q\)</span> codes also satisfy the <span class="textit">redundancy bound</span>
 <span class="display-math env-align">\begin{align}
@@ -102,7 +102,7 @@ and the <span class="textit">sphere covering bound</span>
 <span class="display-math env-align">\begin{align}
   \rho(C)\leq \min{\left(p~\bigg\rvert \sum_{i=0}^{p} {n \choose i}(q-1)^{i}|C| \geq q^{n}\right)}~. \label{spherepacking-perfect-label}
 \end{align}</span>
-A code is perfect iff it satisfies <span class="inline-math eqref">\eqref{perfect-ref}</span> and <span class="inline-math eqref">\eqref{spherepacking-perfect-label}</span> with equality.</p>
+A code is perfect iff it satisfies Eqs. <span class="inline-math eqref">\eqref{perfect-ref}</span> and <span class="inline-math eqref">\eqref{spherepacking-perfect-label}</span> with equality.</p>
 <p>In general, finding the covering radius of a given code is difficult. Complexity analysis as well as an extensive study on bounds can be found in Ref. <a href="#cite-0" class="cite">[1]</a>.</p></div>
 
 

@@ -78,7 +78,7 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Locally recoverable code (LRC)</h1>
+      Locally recoverable code (LRC)<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
@@ -86,10 +86,10 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Any code for which, given a codeword <span class="inline-math">\(x\)</span> and coordinate <span class="inline-math">\(i\)</span>, <span class="inline-math">\(x_i\)</span> can be recovered from (at most <span class="inline-math">\(r\)</span>) other coordinates of <span class="inline-math">\(x\)</span>. An <span class="inline-math">\(r\)</span>-locally recoverable code of length <span class="inline-math">\(n\)</span> and dimension <span class="inline-math">\(k\)</span> is denoted as an <span class="inline-math">\((n,k,r)\)</span> LRC code.</p>
 <p>More technically, a <span class="inline-math">\(q\)</span>-ary code <span class="inline-math">\(C\)</span> with length <span class="inline-math">\(n\)</span> is <span class="inline-math">\(r\)</span>-locally recoverable, or <span class="textit">has locality</span> <span class="inline-math">\(r\)</span>, if <span class="inline-math">\(\forall i \in [n]\)</span>, there exists <span class="inline-math">\(I_i \subset [n]\setminus i\)</span> such that <span class="inline-math">\(|I_i|\leq r\)</span>, and the projection of the set <span class="inline-math">\(\mathcal{C}(i,a)=\{x\in C : x_i=a\}\)</span> on to the coordinates in <span class="inline-math">\(I_i\)</span>, i.e., <span class="inline-math">\(\mathcal{C}_{I_i}(i,a)\)</span> is disjoint from <span class="inline-math">\(\mathcal{C}_{I_i}(i,a^\prime)\)</span> where <span class="inline-math">\(a\neq a^\prime\)</span>.</p>
-<p>The definition can be generalized to <span class="inline-math">\(t\)</span>-LRC code, if every coordinate is recoverable from <span class="inline-math">\(t\)</span> disjoint subsets of coordinates. A study on the parameters of <span class="inline-math">\(t\)</span>-LRC codes, together with known bounds, can be found in Ref. <a href="#cite-0" class="cite">[1]</a>.</p></div>
+<p>The definition can be generalized to <span class="inline-math">\(t\)</span>-LRC code, if every coordinate is recoverable from <span class="inline-math">\(t\)</span> disjoint subsets of coordinates. A study on the parameters of <span class="inline-math">\(t\)</span>-LRC codes, together with known bounds, can be found in Ref. <a href="#cite-1" class="cite">[2]</a>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">The distance, <span class="inline-math">\(d\)</span>, of an <span class="inline-math">\((n,k,r)\)</span> LRC code satisfies <span class="display-math env-align">\begin{align} d\leq n-k-\left \lceil\frac{k}{r}\right \rceil+2~,\label{gen-singleton} \end{align}</span> where <span class="inline-math">\(r\leq k\)</span>. When <span class="inline-math">\(k=r\)</span>, the bound on the distance gives the Singleton bound. The generalized Singleton bound <span class="inline-math eqref">\eqref{gen-singleton}</span> does not account for <span class="inline-math">\(q\)</span>-ary alphabet size. A more generalized bound (including the non-linear case) is given in Ref. <a href="#cite-1" class="cite">[2]</a>.</div>
+<div class="sectioncontent code-protection">The distance, <span class="inline-math">\(d\)</span>, of an <span class="inline-math">\((n,k,r)\)</span> LRC code satisfies <span class="display-math env-align">\begin{align} d\leq n-k-\left \lceil\frac{k}{r}\right \rceil+2~,\label{gen-singleton} \end{align}</span> where <span class="inline-math">\(r\leq k\)</span>. When <span class="inline-math">\(k=r\)</span>, the bound on the distance gives the Singleton bound. The generalized Singleton bound <span class="inline-math eqref">\eqref{gen-singleton}</span> does not account for <span class="inline-math">\(q\)</span>-ary alphabet size. A more generalized bound (including the non-linear case) is given in Ref. <a href="#cite-2" class="cite">[3]</a>.</div>
 
 
 <!-- Display features -->
@@ -137,12 +137,16 @@
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;MDS codes are most efficient in terms of minimizing storage overhead for handling erasures. They are locally recoverable with locality <span class="inline-math">\(k\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/sequential_recovery">Sequential-recovery code</a></span></li>
 </ul>
@@ -201,10 +205,15 @@ url={https://errorcorrectionzoo.org/c/locally_recoverable}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        I. Tamo, A. Barg, and A. Frolov, “Bounds on the Parameters of Locally Recoverable Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3070 (2016). <a href="https://doi.org/10.1109/TIT.2016.2518663" target="_blank" class="href">DOI</a>
+        I. Tamo and A. Barg, “A Family of Optimal Locally Recoverable Codes”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 4661 (2014). <a href="https://doi.org/10.1109/TIT.2014.2321280" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1311.3284" target="_blank" class="href">1311.3284</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
+      <dd>
+        I. Tamo, A. Barg, and A. Frolov, “Bounds on the Parameters of Locally Recoverable Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3070 (2016). <a href="https://doi.org/10.1109/TIT.2016.2518663" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
       <dd>
         V. R. Cadambe and A. Mazumdar, “Bounds on the Size of Locally Recoverable Codes”, IEEE Transactions on Information Theory <span class="textbf">61</span>, 5787 (2015). <a href="https://doi.org/10.1109/TIT.2015.2477406" target="_blank" class="href">DOI</a>
       </dd>
@@ -234,7 +243,7 @@ url={https://errorcorrectionzoo.org/c/locally_recoverable}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/sequential_recovery">Sequential-recovery</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/sequential_recovery">Sequential-recovery</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
