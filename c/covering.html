@@ -84,7 +84,26 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Covering codes are set of codewords that are within fixed distance to each other. Specifically, a code <span class="inline-math">\(C\)</span> is called <span class="inline-math">\(\rho\)</span>-covering code if <span class="inline-math">\(\forall \bm{v} \in \mathbb{F}_q^{n}\)</span> <span class="inline-math">\(\exists \bm{c} \in C\)</span> such that <span class="inline-math">\(d(\bm{c},\bm{v})\leq \rho\)</span>. The covering radius of a code <span class="inline-math">\(C\)</span>, <span class="inline-math">\(\rho(C)\)</span> is smallest <span class="inline-math">\(\rho \in \mathbb{Z}^{+}\)</span> such that <span class="inline-math">\(C\)</span> is <span class="inline-math">\(\rho\)</span>-covering, i.e. <span class="display-math env-align">\begin{align} \rho(C)=\max_{{\bm{v}\in \mathbb{F}_q^{n}}}\min_{{\bm{c}\in C}}d(\bm{v},\bm{c}) \end{align}</span> In general finding covering radius for a given code is difficult. Complexity analysis as well as an extensive study on bounds can be found in <a href="#cite-0" class="cite">[1]</a>. For <span class="inline-math">\([n,k]\)</span> linear codes over <span class="inline-math">\(GF(q)\)</span>, <span class="inline-math">\(\rho\)</span> is minimum number of columns of <span class="inline-math">\(H\)</span> which cover <span class="inline-math">\(\mathbb{F}_q^{n-k}\)</span>.</div>
+<div class="sectioncontent code-description"><p>A code <span class="inline-math">\(C\)</span> in a metric space is covering if the union of balls of some radius centered at the codewords covers the entire space. For example, a <span class="inline-math">\(q\)</span>-ary code <span class="inline-math">\(C\)</span> is called <span class="inline-math">\(\rho\)</span>-covering code if <span class="inline-math">\(\forall v \in GF(q)^{n}\)</span> <span class="inline-math">\(\exists c \in C\)</span> such that the Hadamard distance <span class="inline-math">\(d(c,v)\leq \rho\)</span>.</p>
+<p>The <span class="textit">covering radius</span> <span class="inline-math">\(\rho(C)\)</span> is smallest non-negative integer <span class="inline-math">\(\rho\)</span> such that <span class="inline-math">\(C\)</span> is <span class="inline-math">\(\rho\)</span>-covering, i.e.
+<span class="display-math env-align">\begin{align}
+  \rho(C)=\max_{{v\in GF(q)^{n}}}\min_{{c\in C}}d(v,c)~.
+\end{align}</span>
+For a linear code <span class="inline-math">\([n,k]_q\)</span>, the covering radius is minimum number of columns of the code&#x27;s parity check matrix which cover <span class="inline-math">\(GF(q)^{n-k}\)</span>.</p>
+<p>The covering radius satisfies various inequalities. A code <span class="inline-math">\(C\)</span> with distance <span class="inline-math">\(d\)</span> satisfies the relation
+<span class="display-math env-align">\begin{align}
+  \rho(C)\geq \frac{|d-1|}{2} \label{perfect-ref}
+\end{align}</span>
+Linear <span class="inline-math">\([n,k]_q\)</span> codes also satisfy the <span class="textit">redundancy bound</span>
+<span class="display-math env-align">\begin{align}
+  \rho(C)\leq n-k
+\end{align}</span>
+and the <span class="textit">sphere covering bound</span>
+<span class="display-math env-align">\begin{align}
+  \rho(C)\leq \min{\left(p~\bigg\rvert \sum_{i=0}^{p} {n \choose i}(q-1)^{i}|C| \geq q^{n}\right)}~. \label{spherepacking-perfect-label}
+\end{align}</span>
+A code is perfect iff it satisfies <span class="inline-math eqref">\eqref{perfect-ref}</span> and <span class="inline-math eqref">\eqref{spherepacking-perfect-label}</span> with equality.</p>
+<p>In general, finding the covering radius of a given code is difficult. Complexity analysis as well as an extensive study on bounds can be found in Ref. <a href="#cite-0" class="cite">[1]</a>.</p></div>
 
 
 
@@ -114,13 +133,9 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Data compression both with or without compression.</span><span class="paragraph-in-list">Football-pool problem: smallest number of bets(on n matches) needed to guarantee at least one bet has at most <span class="inline-math">\(\rho\)</span> errors.</span>
+  <span class="paragraph-in-list">Data compression both with or without compression <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Football-pool problem: finding the smallest number of bets on a set of matches needed to guarantee at least one bet has at most <span class="inline-math">\(\rho\)</span> errors <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>.</span>
 </div>
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">A code <span class="inline-math">\(C\)</span> with <span class="inline-math">\(d(C)=d\)</span> satisfies <span class="display-math env-align">\begin{align} \rho(C)\geq \frac{|d-1|}{2} \label{perfect-ref} \end{align}</span></span><span class="paragraph-in-list"><span class="textbf">(Redundancy Bound)</span>A code <span class="inline-math">\(C\)</span> with <span class="inline-math">\([n,k]\)</span> satisfies <span class="display-math env-align">\begin{align} \rho(C)\leq n-k \end{align}</span></span><span class="paragraph-in-list"><span class="textbf">(Sphere Covering Bound)</span> A code <span class="inline-math">\(C\)</span>  over <span class="inline-math">\(\mathbb{F}_q^{n}\)</span> satisfies <span class="display-math env-align">\begin{align} \rho(C)\leq \min{\left(p~\bigg\rvert \sum_{i=0}^{p} {n \choose i}(q-1)^{i}|C| \geq q^{n}\right)} \label{spherepacking-perfect-label} \end{align}</span></span><span class="paragraph-in-list">Perfect codes satisfy <span class="inline-math eqref">\eqref{perfect-ref}</span> and <span class="inline-math eqref">\eqref{spherepacking-perfect-label}</span> with equality. Converse is also true.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
@@ -204,7 +219,17 @@ url={https://errorcorrectionzoo.org/c/covering}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        G. Cohen, I. Honkala, S. Litsyn, A. Lobstein, Covering Codes, Elsevier (1997).
+        G. Cohen, I. Honkala, S. Litsyn, A. Lobstein, <span class="emph">Covering Codes</span>, Elsevier (1997).
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        H. Hamalainen et al., “Football Pools--A Game for Mathematicians”, The American Mathematical Monthly <span class="textbf">102</span>, 579 (1995). <a href="https://doi.org/10.2307/2974552" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/BF03025254" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
