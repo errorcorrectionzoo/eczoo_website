@@ -84,8 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>Consider a CSS code whose <span class="inline-math">\(Z\)</span>-stabilizers are determined by the dual of a classical <span class="inline-math">\([n, k_1]\)</span> linear binary code <span class="inline-math">\(C_1\)</span>, and whose <span class="inline-math">\(X\)</span>-stabilizers are determined by a classical <span class="inline-math">\([n, k_2]\)</span> binary code <span class="inline-math">\(C_2 \subset C_1\)</span>. This code is quantum divisible if all weights in <span class="inline-math">\(C_2\)</span> share a common divisor <span class="inline-math">\(\Delta &gt; 1\)</span>, and all weights in each coset of <span class="inline-math">\(C_2\)</span> in <span class="inline-math">\(C_1\)</span> are congruent to <span class="inline-math">\(\Delta\)</span>.</p>
+<p>For example, if <span class="inline-math">\(C_2\)</span> is the first-order Reed-Muller code, and <span class="inline-math">\(C_1/ C_2\)</span> consists of quadratic forms with a bounded rank, then <span class="inline-math">\([[n = 2m − 1, 1 \leq k \leq 1 + \sum_{i=1}^{m-4}(m − i), d = 3]]\)</span> is a family of quantum divisible codes.</p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Distance <span class="inline-math">\(d\)</span> is upper bounded by the two classical codes that determine the CSS code.</div>
 
 
 <!-- Display features -->
@@ -101,10 +104,16 @@
 
 
  
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">The <span class="inline-math">\([[n = 2m − 1, 1 \leq k \leq 1 + \sum_{i=1}^{m-4}(m − i), d = 3]]\)</span> quantum divisible code family can serve as outer codes of either the five-qubit <span class="inline-math">\([[5,1,3]]\)</span> or Steane <span class="inline-math">\([[7,1,3]]\)</span> code to realize a <span class="inline-math">\(T\)</span> gate on the inner code. For example, when <span class="inline-math">\(m=5\)</span> (<span class="inline-math">\(m=6\)</span>), the resulting <span class="inline-math">\([[31,5,3]]\)</span> (<span class="inline-math">\([[63,7,3]]\)</span>) code yields the <span class="inline-math">\(T\)</span> gate on the inner five-qubit (Steane) code.</span></div>
 
 
 
 
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">The <span class="inline-math">\(T\)</span> gate realized by concatenating members of the <span class="inline-math">\([[n = 2m − 1, 1 \leq k \leq 1 + \sum_{i=1}^{m-4}(m − i), d = 3]]\)</span> quantum divisible code family with either the five-qubit <span class="inline-math">\([[5,1,3]]\)</span> or Steane <span class="inline-math">\([[7,1,3]]\)</span> code is fault-tolerant and does not require magic-state distillation. The gate is performed on the inner five-qubit/Steane code and does require encoding and decoding algorithms to pass between the inner and outer codes.</span></div>
 
 
 
@@ -138,9 +147,33 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/divisible">Divisible code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/divisible">Divisible code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum divisible codes are constructed via the CSS construction using a divisible linear binary code.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum divisible codes can be constructed out of first-order RM codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum RM codes can be derived using a procedure that yields sufficient conditions for a CSS code to admit a given transversal diagonal logical gate. Quantum divisible codes are derived in a similar procedure, but one that yields necessary and sufficient conditions.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Triorthogonal codes can be derived using a procedure that yields sufficient conditions for a CSS code to admit a given transversal diagonal logical gate. Quantum divisible codes are derived in a similar procedure, but one that yields necessary and sufficient conditions.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_concatenated">Concatenated quantum code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A fault-tolerant <span class="inline-math">\(T\)</span> gate on the five-qubit or Steane code can be obtained by concatenating with particular quantum divisible codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A fault-tolerant <span class="inline-math">\(T\)</span> gate on the five-qubit code can be obtained by concatenating with particular quantum divisible codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A fault-tolerant <span class="inline-math">\(T\)</span> gate on the Steane code can be obtained by concatenating with particular quantum divisible codes.</span></li>
 </ul>
 </div>
 
@@ -224,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/quantum_divisible}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/reed_muller">Reed-Muller (RM)</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/reed_muller">Reed-Muller (RM)</a></li><li><a href="/c/quantum_reed_muller">Quantum Reed-Muller</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
