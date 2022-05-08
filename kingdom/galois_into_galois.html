@@ -56,6 +56,15 @@
 <div class="ecc-code" id="ecc_galois_into_galois">
   <span class="short-code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</span>
+  <span class="short-code-info">Protection: A convenient and often considered error set is the Galois-qudit analogue of the Pauli string set for <a href="/c/qubits_into_qubits" class="ref">qubit</a> codes. For a single Galois qudit, this set consists of products of <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type operators labeled by elements <span class="inline-math">\(\beta \in GF(q)\)</span>, which act on computational basis states <span class="inline-math">\(|\gamma\rangle\)</span> for <span class="inline-math">\(\gamma\in GF(q)\)</span> as
+<span class="display-math env-align">\begin{align}
+  X_{\beta}\left|\gamma\right\rangle =\left|\gamma+\beta\right\rangle \,\,\text{ and }\,\,Z_{\beta}\left|\gamma\right\rangle =e^{i\frac{2\pi}{p}\text{Tr}(\beta\gamma)}\left|\gamma\right\rangle~,
+\end{align}</span>
+where the trace maps elements of the field to elements of <span class="inline-math">\(\mathbb{Z}_p\)</span> as
+<span class="display-math env-align">\begin{align}
+  \text{tr}(\gamma)=\sum_{k=0}^{m-1}\gamma^{p^{k}}~.
+\end{align}</span>
+For multiple Galois qudits, error set elements are tensor products of elements of the single-qudit error set.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a>.
@@ -193,7 +202,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 <div class="ecc-code" id="ecc_binary_quantum_goppa">
   <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</span>
-  <span class="short-code-info">Protection: Protects against weight t errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \rfloor \)</span> where <span class="inline-math">\( d^* = \text{deg} G + 2 -2g \)</span> and <span class="inline-math">\(g\)</span> is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</span>
+  <span class="short-code-info">Protection: Protects against weight <span class="inline-math">\(t\)</span> errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \rfloor \)</span> where <span class="inline-math">\( d^* = \text{deg} G + 2 -2g \)</span> and <span class="inline-math">\(g\)</span> is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/galois_css">Galois-qudit CSS code</a>.

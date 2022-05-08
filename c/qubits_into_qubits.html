@@ -84,10 +84,20 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</div>
+<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;&#x27;s distance.
+</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">The minimum size of a Pauli error that has a non-zero expectation value for some code basis state is called the <span class="textit">diagonal distance</span> <a href="#cite-0" class="cite">[1]</a>. Codes whose distance is greater than the diagonal distance are degenerate.</div>
+<div class="sectioncontent code-protection"><p>A convenient and often considered error set is the <span class="textit">Pauli error</span> or <span class="textit">Pauli string</span> basis. For a single qubit, this set consists of products of powers of the Pauli matrices
+<span class="display-math env-align">\begin{align}
+  X=\begin{pmatrix}0 &amp; 1\\
+  1 &amp; 0
+  \end{pmatrix}\,\,\text{ and }\,\,Z=\begin{pmatrix}1 &amp; 0\\
+  0 &amp; -1
+  \end{pmatrix}~.
+\end{align}</span>
+For multiple qubits, error set elements are tensor products of elements of the single-qubit error set.</p>
+<p>The Pauli error set is a unitary and Hermitian basis for linear operators on the multi-qubit Hilbert space that is orthonormal under the Hilbert-Schmidt inner product; it is a prototypical nice error basis <a href="#cite-0" class="cite">[1]</a>. The distance associated with this set is often the minimum weight of a Pauli string that implements a nontrivial logical operation in the code. The minimum weight of a Pauli error that has a non-zero expectation value for some code basis state is called the <span class="textit">diagonal distance</span> <a href="#cite-1" class="cite">[2]</a>. Codes whose distance is greater than the diagonal distance are degenerate.</p></div>
 
 
 <!-- Display features -->
@@ -162,11 +172,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fermions">Fermionic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;While the Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via the Jordan-Wigner transformation <a href="#cite-1" class="cite">[2]</a>, codes based on the two algebras have different notions of locality and thus qualitatively different physical interpretations.</span></li>
+      &#x2014;&nbsp;While the Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via the Jordan-Wigner transformation <a href="#cite-2" class="cite">[3]</a>, codes based on the two algebras have different notions of locality and thus qualitatively different physical interpretations.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-2" class="cite">[3]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-3" class="cite">[4]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-4" class="cite">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -230,20 +240,25 @@ url={https://errorcorrectionzoo.org/c/qubits_into_qubits}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        Upendra S. Kapshikar, “The Diagonal Distance of CWS Codes”. <a href="https://arxiv.org/abs/2107.11286" target="_blank" class="href">2107.11286</a>
+        E. Knill, “Non-binary Unitary Error Bases and Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9608048" target="_blank" class="href">quant-ph/9608048</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
+        Upendra S. Kapshikar, “The Diagonal Distance of CWS Codes”. <a href="https://arxiv.org/abs/2107.11286" target="_blank" class="href">2107.11286</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Victor V. Albert, private communication, 2016
+        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
+      <dd>
+        Victor V. Albert, private communication, 2016
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
       <dd>
         Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href">2111.08894</a>
       </dd>

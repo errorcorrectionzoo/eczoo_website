@@ -81,6 +81,11 @@ The elements in the superposition of each logical codeword are related to each o
   <span class="short-code-name"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span>
   <span class="short-code-description">Also called a <span class="inline-math">\(\mathbb{Z}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the group <span class="inline-math">\(\mathbb{Z}_q\)</span> of integers <span class="textit">modulo</span> <span class="inline-math">\(q\)</span>. Usually denoted as <span class="inline-math">\(((n,K))_q\)</span> or <span class="inline-math">\(((n,K,d))_q\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined, and with <span class="inline-math">\(q=p\)</span> when the dimension is prime.
 </span>
+  <span class="short-code-info">Protection: A convenient and often considered error set is the modular-qudit analogue of the Pauli string basis for <a href="/c/qubits_into_qubits" class="ref">qubit</a> codes. For a single qudit, this set consists of products of powers of the qudit Pauli matrices <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span>, which act on computational basis states <span class="inline-math">\(|k\rangle\)</span> for <span class="inline-math">\(k\in\mathbb{Z}_q\)</span> as
+<span class="display-math env-align">\begin{align}
+  X\left|k\right\rangle =\left|k+1\right\rangle \,\,\text{ and }\,\,Z\left|k\right\rangle =e^{i\frac{2\pi}{q}k}\left|k\right\rangle ~,
+\end{align}</span>
+with addition performed modulo <span class="inline-math">\(q\)</span>. For multiple qudits, error set elements are tensor products of elements of the single-qudit error set.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a>.

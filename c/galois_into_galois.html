@@ -86,6 +86,17 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><p>A convenient and often considered error set is the Galois-qudit analogue of the Pauli string set for <a href="/c/qubits_into_qubits" class="ref">qubit</a> codes. For a single Galois qudit, this set consists of products of <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type operators labeled by elements <span class="inline-math">\(\beta \in GF(q)\)</span>, which act on computational basis states <span class="inline-math">\(|\gamma\rangle\)</span> for <span class="inline-math">\(\gamma\in GF(q)\)</span> as
+<span class="display-math env-align">\begin{align}
+  X_{\beta}\left|\gamma\right\rangle =\left|\gamma+\beta\right\rangle \,\,\text{ and }\,\,Z_{\beta}\left|\gamma\right\rangle =e^{i\frac{2\pi}{p}\text{Tr}(\beta\gamma)}\left|\gamma\right\rangle~,
+\end{align}</span>
+where the trace maps elements of the field to elements of <span class="inline-math">\(\mathbb{Z}_p\)</span> as
+<span class="display-math env-align">\begin{align}
+  \text{tr}(\gamma)=\sum_{k=0}^{m-1}\gamma^{p^{k}}~.
+\end{align}</span>
+For multiple Galois qudits, error set elements are tensor products of elements of the single-qudit error set.</p>
+<p>The Galois-qudit Pauli error set is a unitary basis for linear operators on the multi-qudit Hilbert space that is orthonormal under the Hilbert-Schmidt inner product; it is a nice error basis <a href="#cite-2" class="cite">[3]</a>. The distance associated with this set is often the minimum weight of a Galois qudit Pauli string that implements a nontrivial logical operation in the code.</p></div>
 
 
 <!-- Display features -->
@@ -158,7 +169,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudits_into_qudits">Modular-qudit code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> modular qudits <a href="#cite-2" class="cite">[3]</a>; see Sec. 5.3 of Ref. <a href="#cite-3" class="cite">[4]</a>. The two coincide when <span class="inline-math">\(q\)</span> is prime, and reduce to qubits when <span class="inline-math">\(q=2\)</span>. However, Pauli matrices for the two types of qudits are defined differently.</span></li>
+      &#x2014;&nbsp;A Galois qudit for <span class="inline-math">\(q=p^m\)</span> can be decomposed into a Kronecker product of <span class="inline-math">\(m\)</span> modular qudits <a href="#cite-3" class="cite">[4]</a>; see Sec. 5.3 of Ref. <a href="#cite-4" class="cite">[5]</a>. The two coincide when <span class="inline-math">\(q\)</span> is prime, and reduce to qubits when <span class="inline-math">\(q=2\)</span>. However, Pauli matrices for the two types of qudits are defined differently.</span></li>
 </ul>
 </div>
 
@@ -224,10 +235,15 @@ url={https://errorcorrectionzoo.org/c/galois_into_galois}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+        E. Knill, “Non-binary Unitary Error Bases and Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9608048" target="_blank" class="href">quant-ph/9608048</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
+      <dd>
+        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
       <dd>
         Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
       </dd>
