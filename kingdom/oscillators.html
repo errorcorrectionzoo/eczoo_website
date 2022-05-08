@@ -56,11 +56,7 @@
 <div class="ecc-code" id="ecc_oscillators">
   <span class="short-code-name"><a href="/c/oscillators">Bosonic code</a></span>
   <span class="short-code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> (a.k.a. <span class="textit">bosonic mode</span> or <span class="textit">qumode</span>). States of a single oscillator are elements of the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}\)</span>). Ideal codewords may not be normalizable because the space is infinite-dimensional, so approximate versions have to be constructed in practice.</span>
-  <span class="short-code-info">Protection: A convenient and often considered error set is the set of <span class="textit">displacement operators</span>, a bosonic analogue of the Pauli string basis for <a href="/c/qubits_into_qubits" class="ref">qubit</a> codes. For a single mode, its elements are products of exponentials of the momentum <span class="inline-math">\(\hat p\)</span> and position <span class="inline-math">\(\hat x\)</span> operators, acting on the mode&#x27;s position states <span class="inline-math">\(|y\rangle\)</span> for <span class="inline-math">\(y\in\mathbb{R}\)</span> as
-<span class="display-math env-align">\begin{align}
-  e^{-i\xi\hat{p}}\left|y\right\rangle =\left|y+\xi\right\rangle \,\,\text{ and }\,\,e^{i\xi\hat{x}}\left|y\right\rangle =e^{i\xi y}\left|y\right\rangle ~,
-\end{align}</span>
-where <span class="inline-math">\(\xi\in\mathbb{R}\)</span>. For multiple modes, error set elements are tensor products of elements of the single-qudit error set.</span>
+  <span class="short-code-info">Protection: An error set relevant to <a href="/c/multimodegkp" class="ref">bosonic Fock-state</a> codes is the set of loss operators associated with the <span class="textit">amplitude damping</span> (a.k.a. <span class="textit">photon loss</span> or <span class="textit">attenuation</span>) noise channel, a common form of physical noise in bosonic systems. For a single mode, loss operators are proportional to powers of the mode&#x27;s annihilation operator <span class="inline-math">\(a=\frac{1}{\sqrt{2}}(\hat{x}+i\hat{p})\)</span>, where <span class="inline-math">\(\hat x\)</span> (<span class="inline-math">\(\hat p\)</span>) is the mode&#x27;s position (momentum) operator, and with the power signifying the number of particles lost during the error. For multiple modes, error set elements are tensor products of elements of the single-mode error set. A definition of distance associated with this error set is the minimum weight of a loss error that implements a nontrivial logical operation in the code.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc">Quantum error-correcting code (QECC)</a>.
@@ -78,7 +74,7 @@ where <span class="inline-math">\(\xi\in\mathbb{R}\)</span>. For multiple modes,
 
 <div class="ecc-code" id="ecc_oscillator_stabilizer">
   <span class="short-code-name"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a></span>
-  <span class="short-code-description">Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting displacement operators. Such displacement-based codes closely resemble and inherit some features of qubit stabilizer codes. Displacements, and therefore the stabilizers, have continuous eigenvalues, in contrast with the discrete set of eigenvalues of a qubit stabilizer code. Exact codewords are non-normalizable, so approximate constructions have to be considered.</span>
+  <span class="short-code-description">Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting displacement operators. Displacements form the stabilizers of the code, and, have continuous eigenvalues, in contrast with the discrete set of eigenvalues of qubit stabilizers. Exact codewords are non-normalizable, so approximate constructions have to be considered.</span>
   <span class="short-code-info">Protection: Protective properties can be delineated in terms of the annihilators or displacements. If an error operator does not commute with a stabilizer group element, then that error is detectable. Oscillator-into-oscillator stabilizer codes protect against erasures of a subset of modes, while GKP codes protect against sufficiently small displacements in any number of modes.</span>
   <span class="short-code-parents">
     Parents:
@@ -162,14 +158,7 @@ where <span class="inline-math">\(\xi\in\mathbb{R}\)</span>. For multiple modes,
 
 <div class="ecc-code" id="ecc_multimodegkp">
   <span class="short-code-name"><a href="/c/multimodegkp">Multi-mode GKP code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">Generalization of the GKP code to <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators <span class="inline-math">\(D(\xi)\)</span>. A group generated by a set of independent displacement operators is given by a lattice <span class="inline-math">\({\mathcal{L}}\)</span>
-<span class="display-math env-align">\begin{align}
-\langle D(\xi_1) ,\dots,  D(\xi_{2n})  \rangle = \{ e^{ i \phi_M (\xi) } D(\xi) ~\vert~ \xi \in {\mathcal{L}} \}
-\end{align}</span>
-and becomes a valid stabilizer group when every symplectic inner product between lattice vectors yields an integer. In other words, the corresponding lattice is symplectically integral, corresponding to an integer-valued symplectic Gram matrix <span class="inline-math">\(A\)</span>,
-<span class="display-math env-align">\begin{align}
-A_{ij}={\xi}^T_i J \xi_j \in \mathbb{Z}~.
-\end{align}</span></span>
+  <span class="short-code-description">Generalization of the GKP code to <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators.</span>
   <span class="short-code-info">Protection: The level of protection against displacement errors is quantified by the Euclidean code distance <span class="inline-math">\(\Delta=\min_{x\in {\mathcal{L}}^{\perp}\setminus {\mathcal{L}}} \|x\|_2\)</span> <a href="#cite-6" class="cite">[7]</a>.</span>
   <span class="short-code-parents">
     Parents:
