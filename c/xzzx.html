@@ -114,7 +114,7 @@
 
 <h2 id="feature_code_capacity_threshold"
       class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> threshold for noise infinitely biased towards <span class="inline-math">\(X\)</span> or <span class="inline-math">\(Y\)</span> or <span class="inline-math">\(Z\)</span> errors using a maximum-likelihood decoder.</span><span class="paragraph-in-list">For large but finite <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-biased noise, the code&#x27;s thresholds exceed the zero-rate hashing bound.  The difference of the threshold from the hashing bound exceeds <span class="inline-math">\(2.9\%\)</span> at a <span class="inline-math">\(Z\)</span> or <span class="inline-math">\(X\)</span> bias of 300.</span><span class="paragraph-in-list"><span class="inline-math">\(18.7\%\)</span> for standard depolarising noise with maximum-likelihood decoder.</span><span class="paragraph-in-list"><span class="inline-math">\(0.817\%\)</span> and <span class="inline-math">\(0.940\%\)</span> with minimum-weight perfect matching and belief-matching decoder, respectively, for biased circuit-level noise <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> threshold for noise infinitely biased towards <span class="inline-math">\(X\)</span> or <span class="inline-math">\(Y\)</span> or <span class="inline-math">\(Z\)</span> errors using a maximum-likelihood decoder.</span><span class="paragraph-in-list">For large but finite <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-biased noise, the code&#x27;s thresholds exceed the zero-rate hashing bound.  The difference of the threshold from the hashing bound exceeds <span class="inline-math">\(2.9\%\)</span> at a <span class="inline-math">\(Z\)</span> or <span class="inline-math">\(X\)</span> bias of 300.</span><span class="paragraph-in-list"><span class="inline-math">\(18.7\%\)</span> for standard depolarising noise with maximum-likelihood decoder.</span><span class="paragraph-in-list"><span class="inline-math">\(0.817\%\)</span> and <span class="inline-math">\(0.940\%\)</span> with minimum-weight perfect matching and belief-matching decoder, respectively, for biased circuit-level noise <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(4.15\%\)</span> when <span class="inline-math">\(98\%\)</span> of depolarizing errors are coverted into erasure errors with union-find decoder on a planar code, vs. <span class="inline-math">\(0.937\%\)</span> for pure depolarizing noise. In Rydberg atomic devices, erasure conversion during gates is promising because the dominant source of noise is spontaneous decay into detectable energy levels outside of the computational subspace <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 <h2 id="feature_threshold"
@@ -126,7 +126,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">A single <span class="inline-math">\(X\)</span> or <span class="inline-math">\(Z\)</span> error gives rise to two nearby defects, which can be viewed as endpoints of a string. That way, multiple <span class="inline-math">\(Z\)</span> errors can be decomposed into a combination of diagonal strings.</span><span class="paragraph-in-list">Originally formulated as an example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-3" class="cite">[4]</a>.</span>
+  <span class="paragraph-in-list">A single <span class="inline-math">\(X\)</span> or <span class="inline-math">\(Z\)</span> error gives rise to two nearby defects, which can be viewed as endpoints of a string. That way, multiple <span class="inline-math">\(Z\)</span> errors can be decomposed into a combination of diagonal strings.</span><span class="paragraph-in-list">Originally formulated as an example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-4" class="cite">[5]</a>.</span>
 </div>
 
 
@@ -157,11 +157,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fracton">Fracton code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Subsystem symmetries play a role in finite-bias decoders for both codes <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;Subsystem symmetries play a role in finite-bias decoders for both codes <a href="#cite-5" class="cite">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/topological_abelian">Abelian topological code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Example of <span class="inline-math">\(\mathbb{Z}_2\)</span> topological order in the Wen plaquette model <a href="#cite-4" class="cite">[5]</a>.</span></li>
 </ul>
 </div>
 
@@ -234,10 +234,15 @@ url={https://errorcorrectionzoo.org/c/xzzx}
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        X.-G. Wen, “Quantum Orders in an Exact Soluble Model”, Physical Review Letters <span class="textbf">90</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.90.016803" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0205004" target="_blank" class="href">quant-ph/0205004</a>
+        Yue Wu et al., “Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays”. <a href="https://arxiv.org/abs/2201.03540" target="_blank" class="href">2201.03540</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        X.-G. Wen, “Quantum Orders in an Exact Soluble Model”, Physical Review Letters <span class="textbf">90</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.90.016803" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0205004" target="_blank" class="href">quant-ph/0205004</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         B. J. Brown and D. J. Williamson, “Parallelized quantum error correction with fracton topological codes”, Physical Review Research <span class="textbf">2</span>, (2020). <a href="https://doi.org/10.1103/PhysRevResearch.2.013303" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08061" target="_blank" class="href">1901.08061</a>
       </dd>
