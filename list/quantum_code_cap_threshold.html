@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Quantum codes with code capacity thresholds
+ [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+Here is a list of all quantum codes that admit code capacity thresholds.
+
+<table class="codelistpage-table xtra-xtra-stretch">
+<thead>
+<tr>
+  <th>Name</th>
+  <th>Threshold</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="small left top"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/clifford-deformed_surface">Clifford-deformed surface code (CDSC)</a></td>
+  <td class="small top"><span class="paragraph-in-list">A class of random CDSCs, parametrized by the probabilities <span class="inline-math">\(\Pi_{XZ},~ \Pi_{YZ}\)</span> of <span class="inline-math">\(X\leftrightarrow Z\)</span> and <span class="inline-math">\(Y\leftrightarrow Z\)</span> Pauli permutations, respectively, has <span class="inline-math">\(50\%\)</span> code capacity threshold at infinite <span class="inline-math">\(Z\)</span> bias.</span><span class="paragraph-in-list">Certain translation-invariant CDSCs such as the XY code and the XZZX code also have <span class="inline-math">\(50\%\)</span> code capacity threshold at infinite <span class="inline-math">\(Z\)</span> bias.</span><span class="paragraph-in-list">XZZX code and the <span class="inline-math">\((0.5,\Pi_{YZ})\)</span> random CDSCs have a <span class="inline-math">\(50\%\)</span> code capacity threshold for noise infinitely biased towards either Pauli-<span class="inline-math">\(X\)</span>, <span class="inline-math">\(Y\)</span>, or <span class="inline-math">\(Z\)</span> errors.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/color">Color code</a></td>
+  <td class="small top"><span class="paragraph-in-list"><span class="inline-math">\(\geq 6\%\)</span> threshold with rescaling-based decoder <a href="#cite-2" class="cite">[3]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/holographic">Holographic code</a></td>
+  <td class="small top"><span class="paragraph-in-list">The ideal holographic code (perfect representation of AdS/CFT) should be able to protect a central bulk operator against erasures of half of the physical qubits on the boundary, in line with AdS-Rindler reconstruction <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Holographic codes are argued to have a <span class="textit">algebraic threshold</span>, for which the error rate scales polynomially (as opposed to exponentially) in the thermodynamic limit <a href="#cite-4" class="cite">[5]</a>. Such a threshold is governed by the underlying conformal field theory describing the boundary.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/surface">Kitaev surface code</a></td>
+  <td class="small top"><span class="paragraph-in-list">For correlated Pauli noise, bounds on code capacity thresholds can be obtained by mapping the effect of noise on the code to a statistical mechanical model. The first such threshold, based on the planar code, is <span class="inline-math">\(0.017\%\)</span> <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(10.9\%\)</span> (<span class="inline-math">\(10.31\%\)</span>) with pure <span class="inline-math">\(Z\)</span>-dephasing noise for square tiling
+using tensor-network <a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>
+(minimum-weight perfect matching <a href="#cite-8" class="cite">[9]</a>) decoder.
+</span><span class="paragraph-in-list"><span class="inline-math">\(18.9\%\)</span> with depolarizing noise for square tiling <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> with erasure errors for square tiling <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(3.3\%\)</span> with phenomenological noise for square tiling <a href="#cite-11" class="cite">[12]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
+  <td class="small top"><span class="paragraph-in-list">For correlated Pauli noise, bounds on code capacity thresholds for families of QLDPC codes can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-5" class="cite">[6]</a><a href="#cite-0" class="cite">[1]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-1" class="cite">[2]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></td>
+  <td class="small top"><span class="paragraph-in-list">For correlated Pauli noise, bounds on code capacity thresholds for any stabilizer codes can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-5" class="cite">[6]</a><a href="#cite-0" class="cite">[1]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer code</a></td>
+  <td class="small top"><span class="paragraph-in-list">For correlated Pauli noise, bounds can be obtained by mapping the effect of noise on the code to a statistical mechanical model <a href="#cite-13" class="cite">[14]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/xysurface">XY surface code</a></td>
+  <td class="small top"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> at infinite <span class="inline-math">\(Z\)</span> bias with maximum-likelihood decoder <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(18.7\%\)</span> for standard depolarising noise with maximum-likelihood decoder <a href="#cite-14" class="cite">[15]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a></td>
+  <td class="small top"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> for pure <span class="inline-math">\(Z\)</span>, <span class="inline-math">\(Y\)</span>, or <span class="inline-math">\(Z\)</span> noise under maximum-likelihood decoding.</span><span class="paragraph-in-list">Threshold matches that of the <span class="inline-math">\(XZZX\)</span> code for various bias levels of <span class="inline-math">\(X\)</span>, <span class="inline-math">\(Y\)</span>, or <span class="inline-math">\(Z\)</span> biased noise  under maximum-likelihood decoding.</span><span class="paragraph-in-list"><span class="inline-math">\(\sim 18\%\)</span> for depolarizing noise under maximum-likelihood decoding.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/xzzx">XZZX surface code</a></td>
+  <td class="small top"><span class="paragraph-in-list"><span class="inline-math">\(50\%\)</span> threshold for noise infinitely biased towards <span class="inline-math">\(X\)</span> or <span class="inline-math">\(Y\)</span> or <span class="inline-math">\(Z\)</span> errors using a maximum-likelihood decoder.</span><span class="paragraph-in-list">For large but finite <span class="inline-math">\(X\)</span>- or <span class="inline-math">\(Z\)</span>-biased noise, the code&#x27;s thresholds exceed the zero-rate hashing bound.  The difference of the threshold from the hashing bound exceeds <span class="inline-math">\(2.9\%\)</span> at a <span class="inline-math">\(Z\)</span> or <span class="inline-math">\(X\)</span> bias of 300.</span><span class="paragraph-in-list"><span class="inline-math">\(18.7\%\)</span> for standard depolarising noise with maximum-likelihood decoder.</span><span class="paragraph-in-list"><span class="inline-math">\(0.817\%\)</span> and <span class="inline-math">\(0.940\%\)</span> with minimum-weight perfect matching and belief-matching decoder, respectively, for biased circuit-level noise <a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list"><span class="inline-math">\(4.15\%\)</span> when <span class="inline-math">\(98\%\)</span> of depolarizing errors are coverted into erasure errors with union-find decoder on a planar code, vs. <span class="inline-math">\(0.937\%\)</span> for pure depolarizing noise. In Rydberg atomic devices, erasure conversion during gates is promising because the dominant source of noise is spontaneous decay into detectable energy levels outside of the computational subspace <a href="#cite-16" class="cite">[17]</a>.</span></td>
+</tr>
+</tbody>
+</table>
+
+
+
+  <div id="endnotes" class="">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        I. Dumer, A. A. Kovalev, and L. P. Pryadko, “Thresholds for Correcting Errors, Erasures, and Faulty Syndrome Measurements in Degenerate Quantum Codes”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.6172" target="_blank" class="href">1412.6172</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        Pedro Parrado-Rodríguez, Manuel Rispler, and Markus Müller, “Rescaling decoder for 2D topological quantum color codes on 4.8.8 lattices”. <a href="https://arxiv.org/abs/2112.09584" target="_blank" class="href">2112.09584</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        Ning Bao, Charles Cao, and Guanyu Zhu, “Deconfinement and Error Thresholds in Holography”. <a href="https://arxiv.org/abs/2202.04710" target="_blank" class="href">2202.04710</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
+      <dd>
+        F. Merz and J. T. Chalker, “Two-dimensional random-bond Ising model, free fermions, and the network model”, Physical Review B <span class="textbf">65</span>, (2002). <a href="https://doi.org/10.1103/PhysRevB.65.054425" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0106023" target="_blank" class="href">cond-mat/0106023</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-7">[8]</dt>
+      <dd>
+        S. Bravyi, M. Suchara, and A. Vargo, “Efficient algorithms for maximum likelihood decoding in the surface code”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1405.4883" target="_blank" class="href">1405.4883</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
+      <dd>
+        C. Wang, J. Harrington, and J. Preskill, “Confinement-Higgs transition in a disordered gauge theory and the accuracy threshold for quantum memory”, Annals of Physics <span class="textbf">303</span>, 31 (2003). <a href="https://doi.org/10.1016/S0003-4916(02)00019-2" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0207088" target="_blank" class="href">quant-ph/0207088</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        H. Bombin et al., “Strong Resilience of Topological Codes to Depolarization”, Physical Review X <span class="textbf">2</span>, (2012). <a href="https://doi.org/10.1103/PhysRevX.2.021004" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.1852" target="_blank" class="href">1202.1852</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        T. M. Stace, S. D. Barrett, and A. C. Doherty, “Thresholds for Topological Codes in the Presence of Loss”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0904.3556" target="_blank" class="href">0904.3556</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        T. Ohno et al., “Phase structure of the random-plaquette gauge model: accuracy threshold for a toric quantum memory”, Nuclear Physics B <span class="textbf">697</span>, 462 (2004). <a href="https://doi.org/10.1016/j.nuclphysb.2004.07.003" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0401101" target="_blank" class="href">quant-ph/0401101</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        Alexey A. Kovalev and Leonid P. Pryadko, “Spin glass reflection of the decoding transition for quantum error correcting codes”. <a href="https://arxiv.org/abs/1311.7688" target="_blank" class="href">1311.7688</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        C. T. Chubb and S. T. Flammia, “Statistical mechanical models for quantum codes with correlated noise”, Annales de l’Institut Henri Poincaré D <span class="textbf">8</span>, 269 (2021). <a href="https://doi.org/10.4171/AIHPD/105" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.10704" target="_blank" class="href">1809.10704</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        D. K. Tuckett et al., “Tailoring Surface Codes for Highly Biased Noise”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041031" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1812.08186" target="_blank" class="href">1812.08186</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        Oscar Higgott et al., “Fragile boundaries of tailored surface codes”. <a href="https://arxiv.org/abs/2203.04948" target="_blank" class="href">2203.04948</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
+      <dd>
+        Yue Wu et al., “Erasure conversion for fault-tolerant quantum computing in alkaline earth Rydberg atom arrays”. <a href="https://arxiv.org/abs/2201.03540" target="_blank" class="href">2201.03540</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
