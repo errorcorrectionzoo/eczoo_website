@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Stabilizer code over \(GF(q^2)\)" />
+<meta name="citation_title" content="Additive \(q\)-ary code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Stabilizer code over \(GF(q^2)\)" />
+<meta name="DC.title" content="Additive \(q\)-ary code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Stabilizer code over \(GF(q^2)\) [error correction zoo]
+    Additive \(q\)-ary code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -69,7 +69,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_stabilizer_over_gfqsq">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_q-ary_additive">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -78,13 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Additive <span class="inline-math">\(q\)</span>-ary code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">A code whose codewords are closed under addition, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword.
+</div>
 
 
 
@@ -125,10 +126,23 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;For <span class="inline-math">\(q&gt;2\)</span>, additive codes need not be linear since linearity also requires closure under multiplication.</span></li>
+</ul>
+</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -138,13 +152,13 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Additive <span class="inline-math">\(q\)</span>-ary codes are used in this construction.</span></li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Stabilizer codes over <span class="inline-math">\(GF(q^2)\)</span> are Galois-qudit extensions of those over <span class="inline-math">\(GF(4)\)</span>.</span></li>
+      &#x2014;&nbsp;Quaternary <span class="inline-math">\(q=4\)</span> additive codes are used in this construction.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stabilizer_over_gfqsq">Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span></a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Additive <span class="inline-math">\(q\)</span>-ary codes are used in this construction.</span></li>
 </ul>
 </div>
 
@@ -157,33 +171,33 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    stabilizer_over_gfqsq
+    q-ary_additive
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/stabilizer_over_gfqsq.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/q-ary_additive.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=stabilizer_over_gfqsq&amp;code_yml_filename=quantum/qudits/stabilizer_over_gfqsq.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>stabilizer_over_gfqsq</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=q-ary_additive&amp;code_yml_filename=classical/q-ary_digits/q-ary_additive.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>q-ary_additive</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Stabilizer code over \(GF(q^2)\)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq</dd>
+    <dd>“Additive \(q\)-ary code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/q-ary_additive</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_stabilizer_over_gfqsq,
-title={Stabilizer code over \(GF(q^2)\)},
+    <dd class="bibtex">@incollection{eczoo_q-ary_additive,
+title={Additive \(q\)-ary code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq}
+url={https://errorcorrectionzoo.org/c/q-ary_additive}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq</dd>
+    <dd>https://errorcorrectionzoo.org/c/q-ary_additive</dd>
   </dl>
 </div>
 </div>
@@ -194,17 +208,6 @@ url={https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq}
 <!-- endnotes -->
 
 
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
-      </dd>
-    
-    </dl>
-  </div>
 
 
 
@@ -214,11 +217,11 @@ url={https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Stabilizer code over \(GF(q^2)\)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq</p>
+  <p>“Additive \(q\)-ary code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/q-ary_additive</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/stabilizer_over_gfqsq.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/q-ary_additive.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/stabilizer_over_gfqsq.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/q-ary_additive.yml</a>.</p>
 </div>
 
 
@@ -228,7 +231,7 @@ url={https://errorcorrectionzoo.org/c/stabilizer_over_gfqsq}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/galois_stabilizer">Galois-qudit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></li><li><a href="/c/stabilizer_over_gfqsq">Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
