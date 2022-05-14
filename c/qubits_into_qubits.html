@@ -128,6 +128,10 @@ For multiple qubits, error set elements are tensor products of elements of the s
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">There is a relations between one-way entanglement distillation protocols and QECCs <a href="#cite-2" class="cite">[3]</a>.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -172,11 +176,11 @@ For multiple qubits, error set elements are tensor products of elements of the s
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fermions">Fermionic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;While the Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via the Jordan-Wigner transformation <a href="#cite-2" class="cite">[3]</a>, codes based on the two algebras have different notions of locality and thus qualitatively different physical interpretations.</span></li>
+      &#x2014;&nbsp;While the Majorana operator algebra is isomorphic to the qubit Pauli-operator algebra via the Jordan-Wigner transformation <a href="#cite-3" class="cite">[4]</a>, codes based on the two algebras have different notions of locality and thus qualitatively different physical interpretations.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-3" class="cite">[4]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-4" class="cite">[5]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-5" class="cite">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -250,15 +254,20 @@ url={https://errorcorrectionzoo.org/c/qubits_into_qubits}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
+        C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href">quant-ph/9604024</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        Victor V. Albert, private communication, 2016
+        A. Y. Kitaev, “Unpaired Majorana fermions in quantum wires”, Physics-Uspekhi <span class="textbf">44</span>, 131 (2001). <a href="https://doi.org/10.1070/1063-7869/44/10S/S29" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0010440" target="_blank" class="href">cond-mat/0010440</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
+      <dd>
+        Victor V. Albert, private communication, 2016
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
       <dd>
         Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href">2111.08894</a>
       </dd>
