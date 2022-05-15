@@ -85,7 +85,8 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</p>
-<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the bit-flip code are GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>. The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
+<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the bit-flip code are GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>. These are ground states of the one-dimensional <span class="textit">classical Ising model</span> Hamiltonian <span class="inline-math">\(H=\sum{x} Z^{(x)}Z^{(x+1)}\)</span>.</p>
+<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
 <span class="display-math env-align">\begin{align}
   \begin{split}
     |\overline{+}\rangle =\frac{1}{\sqrt{2^{n-1}}}\sum_{\sum_{i}v_{i}=0}|v_{1},\cdots,v_{n}\rangle~{\phantom{,}}\\
