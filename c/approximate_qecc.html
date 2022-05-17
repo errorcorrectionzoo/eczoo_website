@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Approximate quantum code" />
+<meta name="citation_title" content="Approximate quantum error-correcting code (AQECC)" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Approximate quantum code" />
+<meta name="DC.title" content="Approximate quantum error-correcting code (AQECC)" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Approximate quantum code [error correction zoo]
+    Approximate quantum error-correcting code (AQECC) [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,7 +78,7 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Approximate quantum code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></h1>
+      Approximate quantum error-correcting code (AQECC)<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></h1>
   </span>
 </div>
 
@@ -98,11 +98,17 @@
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Given a decoder, an encoding that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-6" class="cite">[7]</a><a href="#cite-2" class="cite">[3]</a> (see also Ref. <a href="#cite-7" class="cite">[8]</a>).</span></div>
 
 
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Given an encoding, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-6" class="cite">[7]</a><a href="#cite-2" class="cite">[3]</a> (see also Ref. <a href="#cite-7" class="cite">[8]</a>).</span><span class="paragraph-in-list">The <span class="textit">Petz recovery map</span> (a.k.a. the <span class="textit">transpose map</span>) <a href="#cite-8" class="cite">[9]</a><a href="#cite-9" class="cite">[10]</a>, a quantum channel determined by the codespace and noise channel, yields an infidelity of recovery that is at most twice away from the infidelity of an optimal recovery <a href="#cite-10" class="cite">[11]</a> and that can be bounded using relative entropies between uncorrupted and corrupted code states on countably infinite Hilbert spaces <a href="#cite-11" class="cite">[12]</a>. The Petz recovery is optimal for noise consisting of strictly correctable errors <a href="#cite-10" class="cite">[11]</a>.</span></div>
 
 
 
@@ -161,17 +167,21 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GKP codes approximately protect against photon loss <a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>.</span></li>
+      &#x2014;&nbsp;GKP codes approximately protect against photon loss <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/t-designs">Local Haar-random circuit code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/multimodegkp">Multi-mode GKP code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Approximate error-correction offered by GKP codes yields achievable rates that are a constant away from the capacity of Guassian loss channels <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-8" class="cite">[9]</a>.</span></li>
+      &#x2014;&nbsp;Approximate error-correction offered by GKP codes yields achievable rates that are a constant away from the capacity of Guassian loss channels <a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-14" class="cite">[15]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Approximate QEC techniques of finding the entanglement fidelity can be adapted to bosonic codes with a finite-dimensional codespace <a href="#cite-13" class="cite">[14]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([[4,1,2]]\)</span> subcodes <span class="inline-math">\(\{|\overline{00}\rangle,|\overline{10}\rangle\}\)</span> <a href="#cite-0" class="cite">[1]</a> and <span class="inline-math">\(\{|\overline{01}\rangle,|\overline{11}\rangle\}\)</span> <a href="#cite-12" class="cite">[13]</a> approximately correct a single amplitude damping error.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([[4,1,2]]\)</span> subcodes <span class="inline-math">\(\{|\overline{00}\rangle,|\overline{10}\rangle\}\)</span> <a href="#cite-0" class="cite">[1]</a> and <span class="inline-math">\(\{|\overline{01}\rangle,|\overline{11}\rangle\}\)</span> <a href="#cite-18" class="cite">[19]</a> approximately correct a single amplitude damping error.</span></li>
 </ul>
 </div>
 
@@ -200,10 +210,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Approximate quantum code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/approximate_qecc</dd>
+    <dd>“Approximate quantum error-correcting code (AQECC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/approximate_qecc</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_approximate_qecc,
-title={Approximate quantum code},
+title={Approximate quantum error-correcting code (AQECC)},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -257,35 +267,65 @@ url={https://errorcorrectionzoo.org/c/approximate_qecc}
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        B. M. Terhal and D. Weigand, “Encoding a qubit into a cavity mode in circuit QED using phase estimation”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.012315" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.05033" target="_blank" class="href">1506.05033</a>
+        K. Audenaert and B. De Moor, “Optimizing completely positive maps using semidefinite programming”, Physical Review A <span class="textbf">65</span>, (2002). <a href="https://doi.org/10.1103/PhysRevA.65.030302" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0109155" target="_blank" class="href">quant-ph/0109155</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
+        Andrew S. Fletcher, “Channel-Adapted Quantum Error Correction”. <a href="https://arxiv.org/abs/0706.3400" target="_blank" class="href">0706.3400</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+        D. Petz, “Sufficient subalgebras and the relative entropy of states of a von Neumann algebra”, Communications in Mathematical Physics <span class="textbf">105</span>, 123 (1986). <a href="https://doi.org/10.1007/BF01212345" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
+        D. PETZ, “SUFFICIENCY OF CHANNELS OVER VON NEUMANN ALGEBRAS”, The Quarterly Journal of Mathematics <span class="textbf">39</span>, 97 (1988). <a href="https://doi.org/10.1093/qmath/39.1.97" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        K. Sharma et al., “Bounding the energy-constrained quantum and private capacities of phase-insensitive bosonic Gaussian channels”, New Journal of Physics <span class="textbf">20</span>, 063025 (2018). <a href="https://doi.org/10.1088/1367-2630/aac11a" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.07257" target="_blank" class="href">1708.07257</a>
+        H. Barnum and E. Knill, “Reversing quantum dynamics with near-optimal quantum and classical fidelity”. <a href="https://arxiv.org/abs/quant-ph/0004088" target="_blank" class="href">quant-ph/0004088</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        M. Rosati, A. Mari, and V. Giovannetti, “Narrow bounds for the quantum capacity of thermal attenuators”, Nature Communications <span class="textbf">9</span>, (2018). <a href="https://doi.org/10.1038/s41467-018-06848-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.04731" target="_blank" class="href">1801.04731</a>
+        M. Junge et al., “Universal Recovery Maps and Approximate Sufficiency of Quantum Relative Entropy”, Annales Henri Poincaré <span class="textbf">19</span>, 2955 (2018). <a href="https://doi.org/10.1007/s00023-018-0716-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1509.07127" target="_blank" class="href">1509.07127</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
+      <dd>
+        B. M. Terhal and D. Weigand, “Encoding a qubit into a cavity mode in circuit QED using phase estimation”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.012315" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.05033" target="_blank" class="href">1506.05033</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
+      <dd>
+        K. Sharma et al., “Bounding the energy-constrained quantum and private capacities of phase-insensitive bosonic Gaussian channels”, New Journal of Physics <span class="textbf">20</span>, 063025 (2018). <a href="https://doi.org/10.1088/1367-2630/aac11a" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.07257" target="_blank" class="href">1708.07257</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-17">[18]</dt>
+      <dd>
+        M. Rosati, A. Mari, and V. Giovannetti, “Narrow bounds for the quantum capacity of thermal attenuators”, Nature Communications <span class="textbf">9</span>, (2018). <a href="https://doi.org/10.1038/s41467-018-06848-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.04731" target="_blank" class="href">1801.04731</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-18">[19]</dt>
       <dd>
         G. Alber et al., “Stabilizing Distinguishable Qubits against Spontaneous Decay by Detected-Jump Correcting Quantum Codes”, Physical Review Letters <span class="textbf">86</span>, 4402 (2001). <a href="https://doi.org/10.1103/PhysRevLett.86.4402" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0103042" target="_blank" class="href">quant-ph/0103042</a>
       </dd>
@@ -301,7 +341,7 @@ url={https://errorcorrectionzoo.org/c/approximate_qecc}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Approximate quantum code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/approximate_qecc</p>
+  <p>“Approximate quantum error-correcting code (AQECC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/approximate_qecc</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/approximate_qecc.yml"
                 class="ashowurl"
