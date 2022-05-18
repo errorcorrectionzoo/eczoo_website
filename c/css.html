@@ -140,17 +140,17 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-9" class="cite">[10]</a>. One method is table/multi-control decoding <a href="#cite-10" class="cite">[11]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Using linear programming to solve a set of equations and inequalities on weight distribution of a classical self-orthogonal code <span class="inline-math">\(C=(n, 2^n-k)\)</span> and its dual, one can find a <span class="inline-math">\(C\)</span> such that the <span class="inline-math">\([[n,k,d]]\)</span> CSS code constructed using <span class="inline-math">\(C\)</span> and its dual would have rate and distance close to the Singleton bound <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-10" class="cite">[11]</a>. One method is table/multi-control decoding <a href="#cite-11" class="cite">[12]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></div>
 
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-13" class="cite">[14]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Steane error correction <a href="#cite-14" class="cite">[15]</a>.</span></div>
 
 
 <h2 id="feature_code_capacity_threshold"
       class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">Bounds on code capacity thresholds for various noise models exist in terms of stabilizer generator weights <a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a>.</span></div>
 
 
 
@@ -175,7 +175,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-16" class="cite">[17]</a>.</span></li>
+      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-17" class="cite">[18]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -261,7 +261,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
+      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -269,7 +269,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/xp_stabilizer">XP stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Each XP-regular code can be mapped to a CSS code with a similar logical operator structure <a href="#cite-18" class="cite">[19]</a>.</span></li>
+      &#x2014;&nbsp;Each XP-regular code can be mapped to a CSS code with a similar logical operator structure <a href="#cite-19" class="cite">[20]</a>.</span></li>
 </ul>
 </div>
 
@@ -370,50 +370,55 @@ url={https://errorcorrectionzoo.org/c/css}
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
+        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        Albert T. Schmitz, “Thermal Stability of Dynamical Phase Transitions in Higher Dimensional Stabilizer Codes”. <a href="https://arxiv.org/abs/2002.11733" target="_blank" class="href">2002.11733</a>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
+        Albert T. Schmitz, “Thermal Stability of Dynamical Phase Transitions in Higher Dimensional Stabilizer Codes”. <a href="https://arxiv.org/abs/2002.11733" target="_blank" class="href">2002.11733</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
+        A. M. Steane, “Active Stabilization, Quantum Computation, and Quantum State Synthesis”, Physical Review Letters <span class="textbf">78</span>, 2252 (1997). <a href="https://doi.org/10.1103/PhysRevLett.78.2252" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9611027" target="_blank" class="href">quant-ph/9611027</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        I. Dumer, A. A. Kovalev, and L. P. Pryadko, “Thresholds for Correcting Errors, Erasures, and Faulty Syndrome Measurements in Degenerate Quantum Codes”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.6172" target="_blank" class="href">1412.6172</a>
+        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        I. Dumer, A. A. Kovalev, and L. P. Pryadko, “Thresholds for Correcting Errors, Erasures, and Faulty Syndrome Measurements in Degenerate Quantum Codes”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.6172" target="_blank" class="href">1412.6172</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
+      <dd>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-19">[20]</dt>
       <dd>
         Mark A. Webster, Benjamin J. Brown, and Stephen D. Bartlett, “The XP Stabiliser Formalism: a Generalisation of the Pauli Stabiliser Formalism with Arbitrary Phases”. <a href="https://arxiv.org/abs/2203.00103" target="_blank" class="href">2203.00103</a>
       </dd>
