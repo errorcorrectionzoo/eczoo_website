@@ -93,7 +93,7 @@ coarse classes <a href="#cite-6" class="cite">[7]</a>:</p>
 <p>1. <span class="textit">Abelian topological phase</span>: Excitations are mobile in all 3 dimensions, as is typical in a topological code. Such codes are conjectured to be equivalent to a <span class="inline-math">\(\mathbb{Z}_2\)</span> gauge theory, i.e., multiple copies of the 3D surface code or its variant where the charge excitation is a fermion.</p>
 <p>2. <span class="textit">Foliated type-I fracton phase</span>: Excitations are mobile in less than 3 dimensions, but codes can be grown by <span class="textit">foliation</span>, i.e., stacking copies of the 2D surface code.</p>
 <p>3. <span class="textit">Fractal type-I fracton phase</span>: Excitations are mobile in less than 3 dimensions, and codes are not foliated.</p>
-<p>4. <span class="textit">Type-II fracton phase</span>: Excitations are not mobile in any dimension.</p></div>
+<p>4. <span class="textit">Type-II fracton phase</span>: Excitations are not mobile in any dimension and there are no string operators.</p></div>
 
 
 
@@ -112,6 +112,9 @@ coarse classes <a href="#cite-6" class="cite">[7]</a>:</p>
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Clustering decoder <a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
 
@@ -159,7 +162,7 @@ coarse classes <a href="#cite-6" class="cite">[7]</a>:</p>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/surface">Kitaev surface code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code via a local constant-depth Clifford circuit <a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a><a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Translation-invariant 2D qubit topological stabilizer codes are equivalent to several copies of the Kitaev surface code via a local constant-depth Clifford circuit <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a><a href="#cite-3" class="cite">[4]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_surface">Modular-qudit surface code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -172,6 +175,10 @@ coarse classes <a href="#cite-6" class="cite">[7]</a>:</p>
     <span class="code-cousins-1-code"><a href="/c/fracton">Fracton code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Translationally-invariant stabilizer codes can realize fracton orders. Conversely, fracton codes need not be translationally invariant, and can realize multiple phases on one lattice.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/self_correct">Self-correcting quantum code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;3D translationally-invariant qubit stabilizer code families with constant <span class="inline-math">\(k\)</span> support logical string operators and thus cannot be self-correcting <a href="#cite-11" class="cite">[12]</a>. For non-constant <span class="inline-math">\(k\)</span>, such families can support at most a logarithmic energy barrier <a href="#cite-0" class="cite">[1]</a>.</span></li>
 </ul>
 </div>
 
@@ -262,12 +269,27 @@ url={https://errorcorrectionzoo.org/c/translationally_invariant_stabilizer}
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
+        J. W. Harrington, Analysis of Quantum Error-correcting Codes: Symplectic Lattice Codes and Toric Codes, California Institute of Technology, 2004. <a href="https://doi.org/10.7907/AHMQ-EG82" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
+        S. Bravyi and J. Haah, “Quantum Self-Correction in the 3D Cubic Code Model”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1112.3252" target="_blank" class="href">1112.3252</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        H. Bombin, G. Duclos-Cianci, and D. Poulin, “Universal topological phase of two-dimensional stabilizer codes”, New Journal of Physics <span class="textbf">14</span>, 073048 (2012). <a href="https://doi.org/10.1088/1367-2630/14/7/073048" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.4606" target="_blank" class="href">1103.4606</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
         H. Bombín, “Structure of 2D Topological Stabilizer Codes”, Communications in Mathematical Physics <span class="textbf">327</span>, 387 (2014). <a href="https://doi.org/10.1007/s00220-014-1893-4" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1107.2707" target="_blank" class="href">1107.2707</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        B. Yoshida, “Feasibility of self-correcting quantum memory and thermal stability of topological order”, Annals of Physics <span class="textbf">326</span>, 2566 (2011). <a href="https://doi.org/10.1016/j.aop.2011.06.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1103.1885" target="_blank" class="href">1103.1885</a>
       </dd>
     
     </dl>
@@ -295,7 +317,7 @@ url={https://errorcorrectionzoo.org/c/translationally_invariant_stabilizer}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/surface">Kitaev surface</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/surface">Kitaev surface</a></li><li><a href="/c/self_correct">Self-correcting quantum</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
