@@ -84,8 +84,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">A code constructed using a tensor-network based graphical framework from <span class="textit">quantum lego blocks</span>, which are smaller quantum codes over qubits or qudits. The class of codes constructed using the framework depends on the choice of atomic lego blocks. For instance, any stabilizer code can be built out of atomic blocks like the 2-subsystem repetition code, single-subsystem trivial stabilizer codes, and tensor-products of the <span class="inline-math">\(|0\rangle\)</span> state. The individual lego blocks and resulting quantum lego codes can be stabilizer or non-stabilizer. However, both the logical and physical degrees of freedom must have the same local dimension.</div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Specific to the code it constructs.</div>
 
 
 <!-- Display features -->
@@ -98,11 +100,17 @@
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary-circuit encoding for a restricted class of tensor networks contractible via isometries <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -130,7 +138,7 @@
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
@@ -138,9 +146,34 @@
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_concatenated">Concatenated quantum code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Modular-qudit stabilizer codes are quantum Lego codes built out of atomic blocks such as the 2-qudit repetition code, single-qudit trivial stabilizer codes, and tensor-products of the <span class="inline-math">\(|0\rangle\)</span> state.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The HaPPY code is a quantum Lego code whose atomic Lego block is the <span class="inline-math">\([[5,1,3]]\)</span> code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Qubit stabilizer codes are quantum Lego codes built out of atomic blocks such as the 2-qubit repetition code, single-qubit trivial stabilizer codes, and tensor-products of the <span class="inline-math">\(|0\rangle\)</span> state.</span></li>
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/holographic">Holographic code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Holographic codes whose encoders are tensor networks discretizing hyperbolic space are quantum Lego codes.</span></li>
+</ul>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -196,6 +229,16 @@ url={https://errorcorrectionzoo.org/c/quantum_lego}
       <dd>
         C. Cao and B. Lackey, “Quantum Lego: Building Quantum Error Correction Codes from Tensor Networks”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.020332" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2109.08158" target="_blank" class="href">2109.08158</a>
       </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        T. Farrelly et al., “Tensor-Network Codes”, Physical Review Letters <span class="textbf">127</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.127.040507" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.10329" target="_blank" class="href">2009.10329</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. J. Ferris and D. Poulin, “Tensor Networks and Quantum Error Correction”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.4578" target="_blank" class="href">1312.4578</a>
+      </dd>
     
     </dl>
   </div>
@@ -222,7 +265,7 @@ url={https://errorcorrectionzoo.org/c/quantum_lego}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/quantum_concatenated">Concatenated quantum</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/quantum_concatenated">Concatenated quantum</a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/happy">HaPPY</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/holographic">Holographic</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
