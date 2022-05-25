@@ -325,12 +325,13 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   <span class="display-math env-align">\begin{align}
     |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
   \end{align}</span>
-  Here, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
+  The set <span class="inline-math">\( \ket{i} \mid i \in \mathbb{N}\)</span> is the set of Fock states. Also, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
   <span class="display-math env-align">\begin{align}
     \binom{n}{m}_1 \equiv 1,\quad \binom{n}{m}_q \equiv \sum_{k=0}^n \binom{n}{k}\binom{k}{m-k}_{q-1}.
   \end{align}</span>
+  The extended binomial coefficients <span class="inline-math">\( \binom{n}{m}_q \)</span> are also the coefficients of <span class="inline-math">\( x^m \)</span> in the polynomial <span class="inline-math">\( (1 + x + \cdots + x^{q-1})^n \)</span>.
 </span>
-  <span class="short-code-info">Protection: An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>. Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</span>
+  <span class="short-code-info">Protection: An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>.  Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.

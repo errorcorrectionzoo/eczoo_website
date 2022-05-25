@@ -85,7 +85,8 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Code constructed using a tensor-network-based graphical framework from <span class="textit">quantum lego blocks</span>, which are smaller quantum codes over qubits or qudits. The class of codes constructed using the framework depends on the choice of atomic lego blocks. For instance, any stabilizer code can be built out of atomic blocks like the 2-site repetition code, single-site trivial stabilizer codes, and tensor products of the <span class="inline-math">\(|0\rangle\)</span> state. Specifically, the <a href="/c/happy" class="ref">HaPPY</a> code is a quantum Lego code whose atomic Lego block is the <a href="/c/stab_5_1_3" class="ref">five-qubit perfect</a> code.</p>
-<p>The individual lego blocks and resulting quantum lego codes can be stabilizer or non-stabilizer. However, both the logical and physical degrees of freedom must have the same local dimension.</p></div>
+<p>The individual lego blocks and resulting quantum lego codes can be stabilizer or non-stabilizer. However, both the logical and physical degrees of freedom must have the same local dimension.</p>
+<p>To construct a Lego code, the encoding map <span class="inline-math">\(V\)</span> for each code that is to be used in the construction is converted to a tensor by decomposing it using the formula <span class="inline-math">\(V = \sum_{i_j} V_{i_1 \ldots i_{n+k}} | i_{k+1} \ldots i_{k+n} \rangle \langle i_1 \ldots i_k |\)</span>. We then look at the codes graphically, treating each <span class="inline-math">\(i_j\)</span> as an edge dangling out of the tensor vertex <span class="inline-math">\(V_{i_1 \ldots i_{n+k}}\)</span>. These edges are either connected to another tensor vertex&#x27;s edges or left dangling. Each local tensor has unitary product stabilizers (UPS). The goal is to push each UPS through the tensor network until each dangling edge has only trivial support. Otherwise, a matching value is pushed through the edge and the process is repeated on the next tensor. If a UPS can be pushed through the whole network, then a UPS for the larger network has been found. The dangling legs (edges) and UPS of the whole network can then be converted to physical/logical elements and stabilizers/logical operators for a new quantum code.</p></div>
 
 
 
@@ -101,7 +102,7 @@
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary-circuit encoding for a restricted class of tensor networks contractible via isometries <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary-circuit encoding exists for a restricted class of tensor networks contractible via isometries <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
  
@@ -109,7 +110,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoder is created by creating a decoding quantum circuit with dangling legs replaced with input/output wires, and tensors converted to unitary gates. Maximum likelihood decoding can be used when the tensors are stabilizer codes.</span><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -120,6 +121,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Many known codes can be created using this code&#x27;s methods in order to further their understanding, including a 6 qubit implementaion of the generalized Bacon-Shor code, the Toric code, and the <span class="inline-math">\([[7,1,3]]\)</span> Steane code.</span><span class="paragraph-in-list">For example, a simple <span class="inline-math">\( [[4,2,2]] \)</span> stabilizer code can be written as a rank 6 tensor. Attaching two of these via gluing together one logical leg from each can produce a <span class="inline-math">\( [[6,4,2]] \)</span> stabilizer code.</span><span class="paragraph-in-list">Tensor-network codes are types of LEGO codes made from stabilizer codes where logical and physical legs are pre-assigned and logical legs are not contracted. In other words, logical legs resulting from the conversion of codes to tensors must remain logical in the final tensor network, and the same for physical. Contracting logical legs is another word for gluing two logical legs together.</span>
+</div>
 
 
 <!-- Relationships to other codes -->

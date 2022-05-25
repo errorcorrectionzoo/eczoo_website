@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Maximum-rank vector code" />
+<meta name="citation_title" content="Maximum-rank distance (MRD) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Maximum-rank vector code" />
+<meta name="DC.title" content="Maximum-rank distance (MRD) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Maximum-rank vector code [error correction zoo]
+    Maximum-rank distance (MRD) code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,22 +78,19 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Maximum-rank vector code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
+      Maximum-rank distance (MRD) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Linear rank-metric code with maximum rank <span class="inline-math">\([n,k,n-k+1]_q\)</span> over rank metric. For any vector <span class="inline-math">\(g=(g_1, \ldots, g_n)\)</span> with linearly independent elements <span class="inline-math">\(g_i\)</span> over <span class="inline-math">\(GF(q)\)</span>,
-the generator matrix
+<div class="sectioncontent code-description">Also called an <span class="textit">optimal rank-distance</span> code. An <span class="inline-math">\([n\times m,k,d]_q\)</span> rank-metric code whose parameters are such that the Singleton-like bound
 <span class="display-math env-align">\begin{align}
-G = \begin{pmatrix} g_1^{[0]} &amp; g_2^{[0]} &amp; \ldots &amp; g_n^{[0]} \\ g_1^{[1]} &amp; g_2^{[1]} &amp; \ldots &amp; g_n^{[1]} \\ g_1^{[k-1]} &amp; g_2^{[k-1]} &amp; \ldots &amp; g_n^{[k-1]} \end{pmatrix}~,
+k \leq max(n, m) (min(n, m) - d + 1)
 \end{align}</span>
-where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math">\(k=n-d+1\)</span> defines a maximum rank distance code.
+become an equality.
 </div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><span class="inline-math">\(d\)</span>-distance codes protect agains all errors of rank not greater <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span></div>
 
 
 <!-- Display features -->
@@ -120,6 +117,10 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Useful for error and erasure correction in network coding <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</span>
+</div>
 
 
 
@@ -133,24 +134,30 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/gabidulin">Vector code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Vector rank-metric codes with maximum rank.</span></li>
+    <span class="code-parents-1-code"><a href="/c/rank_metric">Rank-metric code</a></span></li>
 </ul>
 </div>
 
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;MRD codes are matrix-code analogues of MDS codes.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The construction of the generators matrix of both codes uses a Vandermonde matrix.</span></li>
+      &#x2014;&nbsp;MRD rank-metric codes can be thought of as matrix analogues of MDS Reed-Solomon codes as both constructions utilize a Vandermonde matrix <a href="#cite-5" class="cite">[6]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/gabidulin">Gabidulin code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span> with maximum rank-distance, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are MRD codes.</span></li>
 </ul>
 </div>
 
@@ -170,19 +177,19 @@ where <span class="inline-math">\([i]:=q^i\)</span> and <span class="inline-math
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/maximum_rank_distance.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/maximum_rank_distance.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=maximum_rank_distance&amp;code_yml_filename=classical/q-ary_digits/maximum_rank_distance.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>maximum_rank_distance</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=maximum_rank_distance&amp;code_yml_filename=classical/matrices/maximum_rank_distance.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>maximum_rank_distance</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Maximum-rank vector code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/maximum_rank_distance</dd>
+    <dd>“Maximum-rank distance (MRD) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/maximum_rank_distance</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_maximum_rank_distance,
-title={Maximum-rank vector code},
+title={Maximum-rank distance (MRD) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -206,12 +213,32 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        E. M. Gabidulin, &quot;Theory of Codes with Maximum Rank Distance&quot;, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
+        P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
+        E. M. Gabidulin, &quot;Theory of Codes with Maximum Rank Distance&quot;, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
         R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        Ralf Koetter and Frank Kschischang, “Coding for Errors and Erasures in Random Network Coding”. <a href="https://arxiv.org/abs/cs/0703061" target="_blank" class="href">cs/0703061</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        D. Silva, F. R. Kschischang, and R. Koetter, “A Rank-Metric Approach to Error Control in Random Network Coding”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 3951 (2008). <a href="https://doi.org/10.1109/TIT.2008.928291" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0711.0708" target="_blank" class="href">0711.0708</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        R. Koetter and F. R. Kschischang, “Coding for Errors and Erasures in Random Network Coding”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 3579 (2008). <a href="https://doi.org/10.1109/TIT.2008.926449" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
@@ -225,11 +252,11 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Maximum-rank vector code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/maximum_rank_distance</p>
+  <p>“Maximum-rank distance (MRD) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/maximum_rank_distance</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/maximum_rank_distance.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/maximum_rank_distance.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/maximum_rank_distance.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/maximum_rank_distance.yml</a>.</p>
 </div>
 
 
@@ -239,7 +266,7 @@ url={https://errorcorrectionzoo.org/c/maximum_rank_distance}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/gabidulin">Vector</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/reed_solomon">RS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/rank_metric">Rank-metric</a></li><li><a href="/c/matrices_into_matrices">Matrix</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/gabidulin">Gabidulin</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

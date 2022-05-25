@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Raptor (RAPid TORnado) code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Raptor (RAPid TORnado) code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Raptor (RAPid TORnado) code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_raptor">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Raptor (RAPid TORnado) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code.
+The pre-code is any traditional linear erasure code, which is applied first to the input to create some redundant data.
+The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted. Raptor codes with the simplest output distribution (LT code) are called <span class="textit">pre-code-only</span> (PCO).</p>
+<p>The parameters for a Raptor code are /( (k, C, \Omega(x)) /), with /(C/) being the pre-code with dimension /( k /), and /( \Omega(x) /) being the degree distribution for the LT code.</p>
+<p>The times to encode and decode source blocks are both linear. The space requirement is /(1/R /), where /(R/) is the rate of the pre-code.</p></div>
+
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">As a type of fountain code, a Raptor code is designed to correct erasures. The error probability of Raptor codes is measured in terms of its overhead, which is how many additional symbols are received above the dimension of the input /(k/). This relationship can vary widely depending on the input pre-code and degree distribution. For a well-designed degree distribution, the error probability of a Raptor code is directly related to the error probability of the pre-code&#x27;s decoder. In other words, if there is a linear time decoder for the pre-code that has subexponentially small error probability, then the Raptor code&#x27;s error probability will decrease exponentially with increasing overhead (past the /(n-k/) overhead symbols necessary for the pre-code).</div>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Raptor codes can be decoded using inactivation decoding <a href="#cite-1" class="cite">[2]</a>, a combination of belief-propogation and Gaussian elimination decoding.</span></div>
+
+
+
+
+
+
+
+
+
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Two versions of Raptor codes have been standardized by IETF: <a href="https://datatracker.ietf.org/doc/html/rfc5053" target="_blank" class="href">R10</a> and <a href="http://tools.ietf.org/html/rfc6330" target="_blank" class="href">RaptorQ</a>. RaptorQ, the more advanced and more recent version, is used in mobile multimedia broadcasts as specified in ETSI technical specifications. It is also used in the mobile <a href="https://www.atsc.org/wp-content/uploads/2016/01/A331S33-174r6-Signaling-Delivery-Sync-FEC.pdf" target="_blank" class="href">Next Gen TV</a> standard.</span><span class="paragraph-in-list">Raptor codes are useful in scenarios where erasure (i.e. weak signal or noisy channel) is common, such as in military or disaster scenarios.</span>
+</div>
+
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">There is an open source RaptorQ implementation in <a href="https://openrq-team.github.io/openrq/" target="_blank" class="href">Java</a> and <a href="https://github.com/cberner/raptorq" target="_blank" class="href">Rust</a></span>
+</div>
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/fountain">Fountain code</a></span></li>
+</ul>
+</div>
+
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/luby_transform">Luby transform (LT) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Raptor codes using a trivial pre-code are LT codes. Typically, Raptor codes have constant-sized more overhead but are faster to decode.</span></li>
+</ul>
+</div>
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/tornado">Tornado code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Tornado codes also use a multi-layer approach where redundant symbols are created by one code for another code to use as input.</span></li>
+</ul>
+</div>
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    raptor
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/raptor.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=raptor&amp;code_yml_filename=classical/bits/raptor.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>raptor</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Raptor (RAPid TORnado) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/raptor</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_raptor,
+title={Raptor (RAPid TORnado) code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/raptor}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/raptor</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        F. Lazaro, G. Liva, and G. Bauch, “Inactivation Decoding of LT and Raptor Codes: Analysis and Code Design”, IEEE Transactions on Communications 1 (2017). <a href="https://doi.org/10.1109/TCOMM.2017.2715805" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1706.05814" target="_blank" class="href">1706.05814</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Raptor (RAPid TORnado) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/raptor</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/raptor.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/raptor.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/luby_transform">LT</a></li><li><a href="/c/tornado">Tornado</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
