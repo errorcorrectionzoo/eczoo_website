@@ -85,12 +85,11 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Also called a <span class="textit">vector rank-metric code</span>. A linear code over <span class="inline-math">\(GF(q^N)\)</span> that corrects errors over rank metric instead of the traditional Hamming distance. Every element <span class="inline-math">\(GF(q^N)\)</span> can be written as an <span class="inline-math">\(N\)</span>-dimensional vector with coefficients in <span class="inline-math">\(GF(q)\)</span>, and the rank of a set of elements is rank of the matrix formed by their coefficients.</p>
-<p>More technically, given <span class="inline-math">\(X^n=\text{span}\{x_i\}\)</span>, an <span class="inline-math">\(n\)</span>-dimensional vector space over <span class="inline-math">\(GF(q^N)\)</span> (where <span class="inline-math">\(q\)</span> is a power of a prime number), the <span class="textit">rank metric</span> <span class="inline-math">\(d(x, y)\)</span> is defined via the rank norm <span class="inline-math">\(r(x, q) = \mathrm{rank}(A(x))\)</span>, where
+<p>Given <span class="inline-math">\(X^n=\text{span}\{x_i\}\)</span>, an <span class="inline-math">\(n\)</span>-dimensional vector space over <span class="inline-math">\(GF(q^N)\)</span> (where <span class="inline-math">\(q\)</span> is a power of a prime number), the <span class="textit">rank metric</span> <span class="inline-math">\(d(x, y)\)</span> is defined via the rank norm <span class="inline-math">\(r(x, q) = \mathrm{rank}(A(x))\)</span>, where
 <span class="display-math env-align">\begin{align}
-A(x) = \begin{pmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\  a_{N1} &amp; a_{N2} &amp; \ldots &amp; a_{Nn} \end{pmatrix}
+A(x) = \begin{pmatrix} a_{11} &amp; a_{12} &amp; \ldots &amp; a_{1n} \\ a_{21} &amp; a_{22} &amp; \ldots &amp; a_{2n} \\  a_{N1} &amp; a_{N2} &amp; \ldots &amp; a_{Nn}~, \end{pmatrix}
 \end{align}</span>
-and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u_N \)</span> for some fixed basis <span class="inline-math">\(\{u_i\}_{i=1}^N\)</span>.</p>
-<p>The code is called <span class="inline-math">\([n,k]\)</span>-linear if the vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> define a <span class="inline-math">\(k\)</span>-dimensional subspace.</p></div>
+and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u_N \)</span> for some fixed basis <span class="inline-math">\(\{u_i\}_{i=1}^N\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</div>
@@ -113,7 +112,7 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Fast decoder based on a transform-domain approach <a href="#cite-4" class="cite">[5]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Fast decoder based on a transform-domain approach <a href="#cite-2" class="cite">[3]</a>.</span></div>
 
 
 
@@ -136,11 +135,11 @@ and <span class="inline-math">\(x_i = a_{1i} u_1 + a_{2i} u_2 + \ldots + a_{Ni}u
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/rank_metric">Rank-metric code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#cite-5" class="cite">[6]</a>). The reverse is not always true since Gabidulin codes are <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#cite-5" class="cite">[6]</a>).</span></li>
+      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#cite-3" class="cite">[4]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#cite-3" class="cite">[4]</a>).</span></li>
 </ul>
 </div>
 
@@ -221,20 +220,10 @@ url={https://errorcorrectionzoo.org/c/gabidulin}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
         D. Silva and F. R. Kschischang, “Fast encoding and decoding of Gabidulin codes”, 2009 IEEE International Symposium on Information Theory (2009). <a href="https://doi.org/10.1109/ISIT.2009.5205272" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0901.2483" target="_blank" class="href">0901.2483</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
+      <dt id="cite-3">[4]</dt>
       <dd>
         Alberto Ravagnani, “Rank-metric codes and their duality theory”. <a href="https://arxiv.org/abs/1410.1333" target="_blank" class="href">1410.1333</a>
       </dd>
@@ -264,7 +253,7 @@ url={https://errorcorrectionzoo.org/c/gabidulin}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/rank_metric">Rank-metric</a></li><li><a href="/c/maximum_rank_distance">MRD</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/rank_metric">Rank-metric</a></li><li><a href="/c/maximum_rank_distance">MRD</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

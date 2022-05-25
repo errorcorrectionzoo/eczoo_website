@@ -84,16 +84,16 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A spin code whose codewords are subspaces of a spin&#x27;&#x27;s Hilbert space that house irreducible representations (irreps) of the single-qubit Clifford group (i.e., the binary octahedral (<span class="inline-math">\(2O\)</span>) subgroup of <span class="inline-math">\(SU(2)\)</span>). This is done by restricting the <span class="inline-math">\(SU(2)\)</span> irrep to <span class="inline-math">\(2O\)</span>, and determining the carrier spaces of any nontrivial irreps of <span class="inline-math">\(2O\)</span>. Since irreps of <span class="inline-math">\(2O\)</span> do not appear in integer spins, so half-integer spins are used.</p>
-<p>Producing codewords begins by creating a projection onto an instance of a particular irrep of <span class="inline-math">\(2O\)</span>, referred to as either <span class="inline-math">\( \varrho_4 \)</span> or <span class="inline-math">\( \varrho_5 \)</span>.
-In the case of only one instance of the desired irrep present, the projection is created as follows:
+<div class="sectioncontent code-description"><p>A spin code designed to realize Clifford gates using <span class="inline-math">\(SU(2)\)</span> rotations. Codewords are subspaces of a spin&#x27;s Hilbert space that house irreducible representations (irreps) of the single-qubit Clifford group (i.e., the binary octahedral (<span class="inline-math">\(2O\)</span>) subgroup of <span class="inline-math">\(SU(2)\)</span>). This is done by restricting the <span class="inline-math">\(SU(2)\)</span> irrep to <span class="inline-math">\(2O\)</span>, and determining the carrier spaces of any nontrivial irreps of <span class="inline-math">\(2O\)</span>. Since irreps of <span class="inline-math">\(2O\)</span> do not appear in integer spins, half-integer spins are used.</p>
+<p>A simple example of a codespace is a projection onto an instance of a particular irrep of <span class="inline-math">\(2O\)</span>, referred to as either <span class="inline-math">\( \varrho_4 \)</span> or <span class="inline-math">\( \varrho_5 \)</span>.
+In the case of only one instance of the desired irrep present in the spin, the projection is created as follows:
 <span class="display-math env-align">\begin{align}
-  P_\varrho = \frac{dim \varrho}{|2O|} \sum_{g \in 2O} \chi_\varrho (g)^* D(g)~,
+  P_\varrho = \frac{\text{dim} \varrho}{|2O|} \sum_{g \in 2O} \chi_\varrho (g)^* D(g)~,
 \end{align}</span>
-where <span class="inline-math">\(D(g)\)</span> is the <span class="inline-math">\(SU(2)\)</span> Wigner matrix corresponding to group element <span class="inline-math">\(g\)</span>, and the character <span class="inline-math">\(\chi_D (g) = tr(D(g))\)</span>.</p>
+where <span class="inline-math">\(D(g)\)</span> is the <span class="inline-math">\(SU(2)\)</span> Wigner matrix corresponding to group element <span class="inline-math">\(g\)</span>, and the character <span class="inline-math">\(\chi_D (g) = \text{tr}(D(g))\)</span>.</p>
 <p>Logical Pauli matrices <span class="inline-math">\(\overline{\sigma}_w\)</span> are defined using the above projection and the angular momentum operators:
 <span class="display-math env-align">\begin{align}
-  \overline{\sigma}_w = P_\varrho (i \exp(-i \pi J_w))P_\varrho
+  \overline{\sigma}_w = i P_\varrho \exp^{-i \pi J_w} P_\varrho~.
 \end{align}</span>
 Finally, <span class="inline-math">\(|\overline{0} \rangle\)</span> is defined as the <span class="inline-math">\(+1\)</span> eigenvalue of <span class="inline-math">\(\overline{\sigma}_z\)</span> and <span class="inline-math">\(|\overline{1} \rangle = \overline{\sigma}_x |\overline{0} \rangle \)</span>.</p></div>
 

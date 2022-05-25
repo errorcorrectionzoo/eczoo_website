@@ -85,13 +85,13 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code.
-The pre-code is any traditional linear erasure code, which is applied first to the input to create some redundant data.
-The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted. Raptor codes with the simplest output distribution (LT code) are called <span class="textit">pre-code-only</span> (PCO).</p>
-<p>The parameters for a Raptor code are /( (k, C, \Omega(x)) /), with /(C/) being the pre-code with dimension /( k /), and /( \Omega(x) /) being the degree distribution for the LT code.</p>
-<p>The times to encode and decode source blocks are both linear. The space requirement is /(1/R /), where /(R/) is the rate of the pre-code.</p></div>
+The pre-code is a linear binary erasure code, which is applied first to the input to create some redundant data.
+The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted.</p>
+<p>The parameters for a Raptor code are <span class="inline-math">\( (k, C, \Omega(x)) \)</span>, with <span class="inline-math">\(C\)</span> being the pre-code with dimension <span class="inline-math">\( k \)</span>, and <span class="inline-math">\( \Omega(x) \)</span> being the degree distribution for the LT code.</p>
+<p>The times to encode and decode source blocks are both linear. The space requirement is <span class="inline-math">\(1/R \)</span>, where <span class="inline-math">\(R\)</span> is the rate of the pre-code. Raptor codes with the simplest output distribution (LT code) are called <span class="textit">pre-code-only</span> (PCO).</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">As a type of fountain code, a Raptor code is designed to correct erasures. The error probability of Raptor codes is measured in terms of its overhead, which is how many additional symbols are received above the dimension of the input /(k/). This relationship can vary widely depending on the input pre-code and degree distribution. For a well-designed degree distribution, the error probability of a Raptor code is directly related to the error probability of the pre-code&#x27;s decoder. In other words, if there is a linear time decoder for the pre-code that has subexponentially small error probability, then the Raptor code&#x27;s error probability will decrease exponentially with increasing overhead (past the /(n-k/) overhead symbols necessary for the pre-code).</div>
+<div class="sectioncontent code-protection">As a type of fountain code, a Raptor code is designed to correct erasures. The error probability of Raptor codes is measured in terms of its overhead, which is how many additional symbols are received above the dimension of the input <span class="inline-math">\(k\)</span>. This relationship can vary widely depending on the input pre-code and degree distribution. For a well-designed degree distribution, the error probability of a Raptor code is directly related to the error probability of the pre-code&#x27;s decoder. In other words, if there is a linear time decoder for the pre-code that has subexponentially small error probability, then the Raptor code&#x27;s error probability will decrease exponentially with increasing overhead (past the <span class="inline-math">\(n-k\)</span> overhead symbols necessary for the pre-code).</div>
 
 
 <!-- Display features -->
@@ -123,12 +123,12 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Two versions of Raptor codes have been standardized by IETF: <a href="https://datatracker.ietf.org/doc/html/rfc5053" target="_blank" class="href">R10</a> and <a href="http://tools.ietf.org/html/rfc6330" target="_blank" class="href">RaptorQ</a>. RaptorQ, the more advanced and more recent version, is used in mobile multimedia broadcasts as specified in ETSI technical specifications. It is also used in the mobile <a href="https://www.atsc.org/wp-content/uploads/2016/01/A331S33-174r6-Signaling-Delivery-Sync-FEC.pdf" target="_blank" class="href">Next Gen TV</a> standard.</span><span class="paragraph-in-list">Raptor codes are useful in scenarios where erasure (i.e. weak signal or noisy channel) is common, such as in military or disaster scenarios.</span>
+  <span class="paragraph-in-list">Two versions of Raptor codes have been standardized by IETF: <a href="https://datatracker.ietf.org/doc/html/rfc5053" target="_blank" class="href">R10</a> and the more recent <a href="http://tools.ietf.org/html/rfc6330" target="_blank" class="href">RaptorQ</a>. RaptorQ is used in mobile multimedia broadcasts as specified in ETSI technical specifications. It is also used in the mobile <a href="https://www.atsc.org/wp-content/uploads/2016/01/A331S33-174r6-Signaling-Delivery-Sync-FEC.pdf" target="_blank" class="href">Next Gen TV</a> standard.</span><span class="paragraph-in-list">Raptor codes are useful in scenarios where erasure (i.e. weak signal or noisy channel) is common, such as in military or disaster scenarios.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">There is an open source RaptorQ implementation in <a href="https://openrq-team.github.io/openrq/" target="_blank" class="href">Java</a> and <a href="https://github.com/cberner/raptorq" target="_blank" class="href">Rust</a></span>
+  <span class="paragraph-in-list">There is an open source RaptorQ implementation in <a href="https://openrq-team.github.io/openrq/" target="_blank" class="href">Java</a> and <a href="https://github.com/cberner/raptorq" target="_blank" class="href">Rust</a>.</span>
 </div>
 
 

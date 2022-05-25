@@ -85,7 +85,7 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Also called a <span class="textit">Delsarte code</span>. Each codeword is a <span class="textit">matrix</span> over <span class="inline-math">\(GF(q)\)</span>, with codewords forming a <span class="inline-math">\(GF(q)\)</span>-linear subspace, and with the metric being the rank of the difference of matrices. The distance <span class="inline-math">\(d\)</span> is the minimum rank of all nonzero matrices in the code. Rank-metric codes on <span class="inline-math">\(n\times m\)</span> matrices are denoted as <span class="inline-math">\([n\times m,k,d]_q\)</span>.</p>
-<p>The number of codewords satisfies <span class="inline-math">\(k \leq max(n, m) M\)</span>, where <span class="inline-math">\(M\)</span> is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called <span class="textit">Delsarte optimal anticodes</span>.</p></div>
+<p>The number of codewords satisfies <span class="inline-math">\(k \leq \max(n, m) M\)</span>, where <span class="inline-math">\(M\)</span> is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called <span class="textit">Delsarte optimal anticodes</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</div>
@@ -149,7 +149,7 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/gabidulin">Gabidulin code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#cite-3" class="cite">[4]</a>). The reverse is not always true since Gabidulin codes are <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#cite-3" class="cite">[4]</a>).</span></li>
+      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#cite-3" class="cite">[4]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#cite-3" class="cite">[4]</a>).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span></li>
 </ul>
