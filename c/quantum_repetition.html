@@ -85,7 +85,7 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Encodes <span class="inline-math">\(1\)</span> qubit into <span class="inline-math">\(n\)</span> qubits according to <span class="inline-math">\(|0\rangle\to|\phi_0\rangle^{\otimes n}\)</span> and <span class="inline-math">\(|1\rangle\to|\phi_1\rangle^{\otimes n}\)</span>. Also known as a <span class="textit">bit-flip</span> code when <span class="inline-math">\(|\phi_i\rangle = |i\rangle\)</span>, and a <span class="textit">phase-flip</span> code when <span class="inline-math">\(|\phi_0\rangle = |+\rangle\)</span> and <span class="inline-math">\(|\phi_1\rangle = |-\rangle\)</span>.</p>
-<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the bit-flip code are GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>. These are ground states of the one-dimensional <span class="textit">classical Ising model</span> Hamiltonian <span class="inline-math">\(H=\sum{x} Z^{(x)}Z^{(x+1)}\)</span>.</p>
+<p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the bit-flip code are GHz (a.k.a. cat) states <span class="inline-math">\(|0\rangle^{\otimes n}\pm|1\rangle^{\otimes n}\)</span>. These are ground states of the one-dimensional <span class="textit">classical Ising model</span> Hamiltonian <span class="inline-math">\(H=\sum_{i} Z_{i}Z_{i+1}\)</span>.</p>
 <p>The <span class="inline-math">\(\pm\)</span>-basis codewords for the phase-flip code are expanded in the computational basis as
 <span class="display-math env-align">\begin{align}
   \begin{split}
@@ -140,7 +140,9 @@ showing that the phase-flip code code stores information in the total parity of 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A <span class="inline-math">\([[m_1 m_2,1,\min(m_1,m_2)]]\)</span> QPC is a concatenation of a <span class="inline-math">\(m_1\)</span> bit-flip and a <span class="inline-math">\(m_2\)</span> phase-flip repetition codes, reducing to a repetition code when <span class="inline-math">\(m_1\)</span> or <span class="inline-math">\(m_2\)</span> is one.</span></li>
 </ul>
 </div>
 
@@ -163,13 +165,17 @@ showing that the phase-flip code code stores information in the total parity of 
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;GNU codewords for <span class="inline-math">\(g=1\)</span> reduce to the phase-flip code.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/self_correct">Self-correcting quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A QPC is a concatenation of a bit-flip and a phase-flip repetition codes.</span></li>
+      &#x2014;&nbsp;The bit-flip repetition code associated with the 2D classical Ising model is a self-correcting classical memory.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Shor&#x27;s code is a concatenation of a three-qubit bit-flip with a three-qubit phase-flip repetition code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/tfim">Transverse-field Ising model (TFIM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;When written in the computational basis, the phase-flip and TFIM codewords are superpositions of qubit states of fixed total parity. The superposition is equal for the phase-flip code, whereas some states appear with a <span class="inline-math">\(-1\)</span> coefficient for TFIM code. However, the TFIM code can be encoded in constant depth.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -297,7 +303,7 @@ url={https://errorcorrectionzoo.org/c/quantum_repetition}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/gnu_permutation_invariant">GNU</a></li><li><a href="/c/quantum_parity">Quantum parity code (QPC)</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/quantum_parity">Quantum parity code (QPC)</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/gnu_permutation_invariant">GNU</a></li><li><a href="/c/self_correct">Self-correcting quantum</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
