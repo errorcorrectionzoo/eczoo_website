@@ -84,7 +84,8 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>Erasure codes based on fountain codes. They improve on random linear fountain codes by having a much more efficient encoding and decoding algorithm.</p>
+<p>LT codes can be constructed as follows. First, randomly choose a degree <span class="inline-math">\(d_n\)</span> from a degree distribution depending on total size <span class="inline-math">\(K\)</span>. Then, randomly choose <span class="inline-math">\(d_n\)</span> distinct source packets and let the packet to be transmitted <span class="inline-math">\(\hat{p}_n\)</span> be the bitwise sum of the chosen input packets. This forms a graph connecting encoded packets to source packets.</p></div>
 
 
 
@@ -103,6 +104,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Sum-product algorithm, often called a peeling decoder <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>, similar to belief propagation <a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
@@ -186,6 +190,21 @@ url={https://errorcorrectionzoo.org/c/luby_transform}
       <dt id="cite-0">[1]</dt>
       <dd>
         M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        T. Richardson and R. Urbanke, <span class="textit">Modern Coding Theory</span> (Cambridge University Press, 2008). <a href="https://doi.org/10.1017/CBO9780511791338" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        David J. C. MacKay. 2002. Information Theory, Inference &amp; Learning Algorithms. Cambridge University Press, USA
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        J. Pearl, “Reverend Bayes on Inference Engines: A Distributed Hierarchical Approach”, Probabilistic and Causal Inference 129 (2022). <a href="https://doi.org/10.1145/3501714.3501727" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

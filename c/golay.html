@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Binary Golay code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Binary Golay code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Binary Golay code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_golay">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Binary Golay code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^23\)</span>, or <span class="inline-math">\(GF(2)^24\)</span> in the extended case.</p>
+<p>The <span class="inline-math">\([23, 12, 7]\)</span> code can be constructed with the polynomial <span class="inline-math">\(x^{11} + x^{10} + x^6 + x^5 + x^4 + x^2 + 1\)</span> over GF(2). This representation of the Golay code is cyclic. Alternatively, one can use the Great Dodecahedron to generate codewords by placing message bits on the faces and calculating the parity bits that live on the 12 vertices of the inner icosahedron.</p></div>
+
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The binary Golay code has distance 7 and can correct up to <span class="inline-math">\(\frac{7-1}{2}=3\)</span> errors.</div>
+
+
+<!-- Display features -->
+
+
+
+
+
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">The perfect binary Golay code has a rate of <span class="inline-math">\(12/23 = 0.522\)</span>. The extended binary Golay code has a rate of <span class="inline-math">\(12/24 = 0.5\)</span>.</div>
+
+
+
+
+
+
+ 
+
+
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Table lookup or algebraic algorithms such as Berlekamp-Welch.</span><span class="paragraph-in-list">Both Golay codes have a trellis representation and can thus be decoded using trellis decoding <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>.</span></div>
+
+
+
+
+
+
+
+
+
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Used in the Voyager 1 and 2 spacecraft <a href="#cite-3" class="cite">[4]</a>.</span>
+</div>
+
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">The automorphism group of the binary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{23}\)</span>, and the automorphism group of the extended binary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{24}\)</span>, two of the sporadic simple groups.</span>
+</div>
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parents
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/quad_residue">Quadratic-residue code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The collection of nonzero quadratic residues modulo 23 can be used to construct a generator polynomial of the Golay code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/binary_linear">Linear binary code</a></span></li>
+</ul>
+</div>
+
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/perfect">Perfect code</a></span></li>
+</ul>
+</div>
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    golay
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/golay.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=golay&amp;code_yml_filename=classical/bits/golay.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>golay</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Binary Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_golay,
+title={Binary Golay code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/golay}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/golay</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Golay, M. J. E. &quot;Notes on Digital Coding.&quot; Proc. IRE 37, 657, 1949.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. J. VITERBI, “Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm”, The Foundations of the Digital Wireless World 41 (2009). <a href="https://doi.org/10.1142/9789814287517_0004" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        B. Honary and G. Markarian, “New simple encoder and trellis decoder for Golay codes”, Electronics Letters <span class="textbf">29</span>, 2170 (1993). <a href="https://doi.org/10.1049/el:19931456" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        E. C. Stone, “The Voyager 2 encounter with Uranus”, Journal of Geophysical Research: Space Physics <span class="textbf">92</span>, 14873 (1987). <a href="https://doi.org/10.1029/JA092iA13p14873" target="_blank" class="href">DOI</a>
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Binary Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/golay.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/golay.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/quad_residue">Quadratic-residue</a></li><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quasi_cyclic">Quasi-cyclic</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/perfect">Perfect</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>

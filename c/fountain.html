@@ -84,8 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits. The simplest example of a fountain code is the random linear fountain code.</p>
+<p>A simple fountain encoding is as follows. Take some message of size <span class="inline-math">\(Kl\)</span> and split into <span class="inline-math">\(K\)</span> packets, <span class="inline-math">\(p_0, p_1, ..., p_K\)</span>. For each packet <span class="inline-math">\(\hat{p}_n\)</span> to be transmitted do the following: Generate <span class="inline-math">\(K\)</span> random bits <span class="inline-math">\(G_{nk}\)</span> and let <span class="inline-math">\(\hat{p}_n\)</span> be the bitwise sum of the source packets when <span class="inline-math">\(G_{nk}\)</span> is 1, <span class="inline-math">\( \hat{p}_n = \sum_{k=1}^K p_k G_{kn} \)</span>. Error correction can then be applied to each packet.</p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Designed to protect against erasures during broadcasting of information by a sender to multiple receivers.</div>
 
 
 <!-- Display features -->
@@ -94,6 +97,9 @@
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Random linear fountain codes approach the Shannon limit as the file size <span class="inline-math">\(K\)</span> increases.</div>
 
 
 
@@ -103,6 +109,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Invert the fragment generator matrix resulting from the continuous encoding process. If exactly <span class="inline-math">\(K\)</span> packets are received, then the probability of decoding correctly is <span class="inline-math">\(0.289\)</span>. Extra packets increase this probability exponentially. The decoding runtime is dominated by the matrix inversion step, which takes order <span class="inline-math">\(O(n^3)\)</span> time.</span></div>
 
 
 
@@ -114,9 +123,13 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Ideal for servers sending data to many recipients <a href="#cite-1" class="cite">[2]</a>.</span>
+  <span class="paragraph-in-list">Designed for servers sending data to many recipients, such as during broadcasting or file distribution <a href="#cite-1" class="cite">[2]</a>.</span>
 </div>
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Review on fountain codes can be found in Refs. <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -157,7 +170,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/tornado">Tornado code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Tornado codes, the precursor to fountain codes, are much slower to encode and decode in the low-rate regime applicable to scalable data transmission <a href="#cite-2" class="cite">[3]</a><a href="#cite-1" class="cite">[2]</a>.</span></li>
+      &#x2014;&nbsp;Tornado codes, the precursor to fountain codes, are much slower to encode and decode in the low-rate regime applicable to scalable data transmission <a href="#cite-3" class="cite">[4]</a><a href="#cite-1" class="cite">[2]</a>.</span></li>
 </ul>
 </div>
 
@@ -222,6 +235,11 @@ url={https://errorcorrectionzoo.org/c/fountain}
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
+      <dd>
+        D. J. C. MacKay, “Fountain codes”, IEE Proceedings - Communications <span class="textbf">152</span>, 1062 (2005). <a href="https://doi.org/10.1049/ip-com:20050237" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
       <dd>
         Joshi, G., Rhim, J. B., Sun, J., &amp; Wang, D. (2010). Fountain codes. In Global telecommunications conference (GLOBECOM 2010) (pp. 7–12). IEEE.
       </dd>
