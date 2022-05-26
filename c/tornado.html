@@ -94,15 +94,24 @@
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Come arbitrarily close to the capacity of the binary erasure channel.</div>
 
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Linear-time encoder.</span></div>
 
 
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Linear-time decoder.</span></div>
 
 
 
@@ -140,11 +149,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fountain">Fountain code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Tornado do not quite satisfy the erasure tolerant requirements of fountain codes <a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Tornado codes, the precursor to fountain codes, are much slower to encode and decode in the low-rate regime applicable to scalable data transmission <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Tornado codes are similar to LDPC codes, but they use a highly irregular weight distribution for the underlying graphs <a href="#cite-4" class="cite">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/raptor">Raptor (RAPid TORnado) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Tornado codes also use a multi-layer approach where redundant symbols are created by one code for another code to use as input.</span></li>
+      &#x2014;&nbsp;Tornado codes, which can be used as a pre-code for raptor codes, also use a multi-layer approach where redundant symbols are created by one code for another code to use as input.</span></li>
 </ul>
 </div>
 
@@ -200,12 +213,12 @@ url={https://errorcorrectionzoo.org/c/tornado}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
+        J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href">DOI</a>
+        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
@@ -215,7 +228,12 @@ url={https://errorcorrectionzoo.org/c/tornado}
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-         Joshi, G., Rhim, J. B., Sun, J., &amp; Wang, D. (2010). Fountain codes. In Global telecommunications conference (GLOBECOM 2010) (pp. 7–12). IEEE.
+        Joshi, G., Rhim, J. B., Sun, J., &amp; Wang, D. (2010). Fountain codes. In Global telecommunications conference (GLOBECOM 2010) (pp. 7–12). IEEE.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
@@ -243,7 +261,7 @@ url={https://errorcorrectionzoo.org/c/tornado}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/raptor">Raptop</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/ldpc">LDPC</a></li><li><a href="/c/raptor">Raptor</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

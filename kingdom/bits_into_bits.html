@@ -92,7 +92,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_fountain">
-  <span class="short-code-name"><a href="/c/fountain">Fountain code</a></span>
+  <span class="short-code-name"><a href="/c/fountain">Fountain code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -114,9 +114,9 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_levenshtein">
-  <span class="short-code-name"><a href="/c/levenshtein">Levenshtein code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/levenshtein">Levenshtein code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
   <span class="short-code-description">Binary codes constructed from combining two codes <span class="inline-math">\(A&#x27;\)</span> constructed out of Hadamard matrices.</span>
-  <span class="short-code-info">Protection: Levenshtein codes meet the Plotkin bound <span class="inline-math">\(K\leq 2\left\lfloor\frac{d}{2d-n}\right\rfloor\)</span>, where <span class="inline-math">\(K\)</span> is the number of codewords, <span class="inline-math">\(d\)</span> is the distance, and <span class="inline-math">\(n\)</span> is the length, and with the assumption that the Hadamard matrices for such parameters exist. The general proof depends on the correctness of Hadamard&#x27;&#x27;s conjecture <a href="#cite-2" class="cite">[3]</a>.</span>
+  <span class="short-code-info">Protection: Levenshtein codes meet the Plotkin bound <span class="inline-math">\(K\leq 2\left\lfloor\frac{d}{2d-n}\right\rfloor\)</span>, where <span class="inline-math">\(K\)</span> is the number of codewords, <span class="inline-math">\(d\)</span> is the distance, and <span class="inline-math">\(n\)</span> is the length, and with the assumption that the Hadamard matrices for such parameters exist. The general proof depends on the correctness of Hadamard&#x27;&#x27;s conjecture <a href="#cite-3" class="cite">[4]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bits_into_bits">Binary code</a>.
@@ -144,7 +144,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_justesen">
-  <span class="short-code-name"><a href="/c/justesen">Justesen code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-name"><a href="/c/justesen">Justesen code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
   <span class="short-code-description">Binary code resulting from generalized concatenation of a Reed-Solomon (RS) outer code with multiple inner codes sampled from the Wozencraft ensemble, i.e., <span class="inline-math">\(N\)</span> distinct binary inner codes of dimension <span class="inline-math">\(m\)</span> and length <span class="inline-math">\(2m\)</span>. Justesen codes are parameterized by <span class="inline-math">\(m\)</span>, with length <span class="inline-math">\(n=2mN\)</span> and dimension <span class="inline-math">\(k=mK\)</span>, where <span class="inline-math">\((N=2^m-1,K)\)</span> is the RS outer code over <span class="inline-math">\(GF(2^m)\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -158,7 +158,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_polar">
-  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a></span></span>
+  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
   <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>.</span>
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
@@ -177,7 +177,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_tanner">
-  <span class="short-code-name"><a href="/c/tanner">Tanner code</a><span class="code-introduced"><a href="#cite-5" class="cite">[6]</a></span></span>
+  <span class="short-code-name"><a href="/c/tanner">Tanner code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
   <span class="short-code-description">Binary linear code defined on edges on a regular graph <span class="inline-math">\(G\)</span> such that each subsequence of bits corresponding to edges in the neighborhood any vertex belong to some <span class="textit">short</span> binary linear code <span class="inline-math">\(C_0\)</span>. Expansion properties of the underlying graph can yield efficient decoding algorithms.</span>
   <span class="short-code-info">Protection: Tanner Codes protect against noise on classical bit strings. If <span class="inline-math">\(C_0\)</span> is an <span class="inline-math">\([d, d-t,d&#x27;&gt; d(\gamma_0 +\frac{\lambda}{d})]_2\)</span> code and G is an <span class="inline-math">\((N, M, 2, d, \rho,\alpha)\)</span>- expander where <span class="inline-math">\(\rho = \gamma_0 (\gamma_0 +\frac{\lambda}{d})\)</span>, then the Tanner Code <span class="inline-math">\(T(G, C_0)\)</span> has rate <span class="inline-math">\(1-\frac{M}{N}t\)</span> and relative distance <span class="inline-math">\(\geq \gamma_0(\gamma_0+\frac{\lambda}{d})\)</span>.</span>
   <span class="short-code-parents">
@@ -196,7 +196,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_raptor">
-  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a></span></span>
   <span class="short-code-description">Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code.
 The pre-code is a linear binary erasure code, which is applied first to the input to create some redundant data.
 The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted.</span>
@@ -217,7 +217,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_homological_classical">
-  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
   <span class="short-code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.
 </span>
   <span class="short-code-parents">
@@ -246,7 +246,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_hamming">
-  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</span>
   <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
   <span class="short-code-parents">
@@ -283,7 +283,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_reed_muller">
-  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a></span></span>
   <span class="short-code-description">Stub. Define first order (<span class="inline-math">\(r=1\)</span>) and second order.</span>
   <span class="short-code-parents">
     Parents:
@@ -301,7 +301,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_tornado">
-  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a></span></span>
+  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -309,7 +309,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/fountain">Fountain code</a>.
+      <a href="/c/fountain">Fountain code</a>,       <a href="/c/ldpc">Low-density parity-check (LDPC) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -319,7 +319,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_zetterberg">
-  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a></span></span>
+  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a></span></span>
   <span class="short-code-description">Family of binary cyclic <span class="inline-math">\([2^{2s}+1,2^{2s}-4s+1]\)</span> codes with distance <span class="inline-math">\(d&gt;5\)</span> generated by the minimal polynomial <span class="inline-math">\(g_s(x)\)</span> of <span class="inline-math">\(\alpha\)</span> over <span class="inline-math">\(GF(2)\)</span>, where <span class="inline-math">\(\alpha\)</span> is a primitive <span class="inline-math">\(n\)</span>th root of unity in the field <span class="inline-math">\(GF(2^{4s})\)</span>. They are quasi-perfect codes and are one of the best known families of double-error correcting binary linear codes</span>
   <span class="short-code-info">Protection: Correct at least all weight-2 errors.</span>
   <span class="short-code-parents">
@@ -334,7 +334,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_expander">
-  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a></span></span>
+  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
   <span class="short-code-description">Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</span>
   <span class="short-code-info">Protection: Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</span>
   <span class="short-code-parents">
@@ -349,7 +349,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_luby_transform">
-  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
+  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -359,7 +359,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_repetition">
-  <span class="short-code-name"><a href="/c/repetition">Binary repetition code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
+  <span class="short-code-name"><a href="/c/repetition">Binary repetition code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
   <span class="short-code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</span>
   <span class="short-code-parents">
@@ -403,85 +403,90 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        V.I. Levenshtein, <span class="emph">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.
+        J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977
+        V.I. Levenshtein, <span class="emph">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href">DOI</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
+        J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        R. Tanner, “A recursive approach to low complexity codes”, IEEE Transactions on Information Theory <span class="textbf">27</span>, 533 (1981). <a href="https://doi.org/10.1109/TIT.1981.1056404" target="_blank" class="href">DOI</a>
+        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
+        R. Tanner, “A recursive approach to low complexity codes”, IEEE Transactions on Information Theory <span class="textbf">27</span>, 533 (1981). <a href="https://doi.org/10.1109/TIT.1981.1056404" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
+        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
+        Petar Maymounkov, <span class="emph">Online codes</span>, Technical report, New York University, 2002.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href">DOI</a>
+        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href">DOI</a>
+        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href">DOI</a>
+        M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+        L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href">DOI</a>
+        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
+      <dd>
+        M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-18">[19]</dt>
       <dd>
         W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
