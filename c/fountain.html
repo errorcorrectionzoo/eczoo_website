@@ -84,8 +84,12 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits. The simplest example of a fountain code is the random linear fountain code.</p>
-<p>A simple fountain encoding is as follows. Take some message of size <span class="inline-math">\(Kl\)</span> and split into <span class="inline-math">\(K\)</span> packets, <span class="inline-math">\(p_0, p_1, ..., p_K\)</span>. For each packet <span class="inline-math">\(\hat{p}_n\)</span> to be transmitted do the following: Generate <span class="inline-math">\(K\)</span> random bits <span class="inline-math">\(G_{nk}\)</span> and let <span class="inline-math">\(\hat{p}_n\)</span> be the bitwise sum of the source packets when <span class="inline-math">\(G_{nk}\)</span> is 1, <span class="inline-math">\( \hat{p}_n = \sum_{k=1}^K p_k G_{kn} \)</span>. Error correction can then be applied to each packet.</p></div>
+<div class="sectioncontent code-description"><p>Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits.</p>
+<p>The simplest example of a fountain code is the random linear fountain code. Take some message of size <span class="inline-math">\(Kl\)</span> and split into <span class="inline-math">\(K\)</span> packets, <span class="inline-math">\(p_0, p_1, ..., p_K\)</span>. For each packet <span class="inline-math">\(\hat{p}_n\)</span> to be transmitted do the following: Generate <span class="inline-math">\(K\)</span> random bits <span class="inline-math">\(G_{nk}\)</span> and let <span class="inline-math">\(\hat{p}_n\)</span> be the bitwise sum of the source packets when <span class="inline-math">\(G_{nk}\)</span> is 1,
+<span class="display-math env-align">\begin{align}
+\hat{p}_n = \sum_{k=1}^K p_k G_{kn}~.
+\end{align}</span>
+Error correction can then be applied to each packet.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Designed to protect against erasures during broadcasting of information by a sender to multiple receivers.</div>

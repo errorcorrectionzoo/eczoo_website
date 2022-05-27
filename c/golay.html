@@ -84,8 +84,8 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^23\)</span>, or <span class="inline-math">\(GF(2)^24\)</span> in the extended case.</p>
-<p>The <span class="inline-math">\([23, 12, 7]\)</span> code can be constructed with the polynomial <span class="inline-math">\(x^{11} + x^{10} + x^6 + x^5 + x^4 + x^2 + 1\)</span> over GF(2). This representation of the Golay code is cyclic. Alternatively, one can use the Great Dodecahedron to generate codewords by placing message bits on the faces and calculating the parity bits that live on the 12 vertices of the inner icosahedron.</p></div>
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^{23}\)</span>, or <span class="inline-math">\(GF(2)^{24}\)</span> in the extended case.</p>
+<p>The <span class="inline-math">\([23, 12, 7]\)</span> code can be constructed with the polynomial <span class="inline-math">\(x^{11} + x^{10} + x^6 + x^5 + x^4 + x^2 + 1\)</span> over <span class="inline-math">\(GF(2)\)</span>. This representation of the Golay code is cyclic. Alternatively, one can use the Great Dodecahedron to generate codewords by placing message bits on the faces and calculating the parity bits that live on the 12 vertices of the inner icosahedron.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">The binary Golay code has distance 7 and can correct up to <span class="inline-math">\(\frac{7-1}{2}=3\)</span> errors.</div>
@@ -111,7 +111,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Table lookup or algebraic algorithms such as Berlekamp-Welch.</span><span class="paragraph-in-list">Both Golay codes have a trellis representation and can thus be decoded using trellis decoding <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Table lookup or algebraic algorithms such as Berlekamp-Welch <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Both Golay codes have a trellis representation and can thus be decoded using trellis decoding <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span></div>
 
 
 
@@ -123,7 +123,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Used in the Voyager 1 and 2 spacecraft <a href="#cite-3" class="cite">[4]</a>.</span>
+  <span class="paragraph-in-list">Used in the Voyager 1 and 2 spacecraft <a href="#cite-4" class="cite">[5]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
@@ -220,15 +220,20 @@ url={https://errorcorrectionzoo.org/c/golay}
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        A. J. VITERBI, “Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm”, The Foundations of the Digital Wireless World 41 (2009). <a href="https://doi.org/10.1142/9789814287517_0004" target="_blank" class="href">DOI</a>
+        E. R. Berlekamp and L. Welch, Error Correction of Algebraic Block Codes. U.S. Patent, Number 4,633,470 1986.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        B. Honary and G. Markarian, “New simple encoder and trellis decoder for Golay codes”, Electronics Letters <span class="textbf">29</span>, 2170 (1993). <a href="https://doi.org/10.1049/el:19931456" target="_blank" class="href">DOI</a>
+        A. J. VITERBI, “Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm”, The Foundations of the Digital Wireless World 41 (2009). <a href="https://doi.org/10.1142/9789814287517_0004" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
+      <dd>
+        B. Honary and G. Markarian, “New simple encoder and trellis decoder for Golay codes”, Electronics Letters <span class="textbf">29</span>, 2170 (1993). <a href="https://doi.org/10.1049/el:19931456" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
       <dd>
         E. C. Stone, “The Voyager 2 encounter with Uranus”, Journal of Geophysical Research: Space Physics <span class="textbf">92</span>, 14873 (1987). <a href="https://doi.org/10.1029/JA092iA13p14873" target="_blank" class="href">DOI</a>
       </dd>
