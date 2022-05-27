@@ -84,7 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Hamming codes are an infinite family of linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 3\)</span>. The <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. The codewords are <span class="inline-math">\(\{x|Hx=0\}\)</span>.</div>
+<div class="sectioncontent code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</div>
@@ -119,13 +119,9 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Commonly used when error rates are very low, for example, computer RAM.</span>
+  <span class="paragraph-in-list">Commonly used when error rates are very low, for example, computer RAM or integrated circuits <a href="#cite-1" class="cite">[2]</a>.</span>
 </div>
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Has the maximum rate among binary codes for that block length and with minimum distance 3. Therefore, it is a perfect code, i.e, it saturates the Hamming Bound.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
@@ -138,23 +134,10 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/binary_linear">Linear binary code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/perfect">Perfect code</a></span></li>
 </ul>
 </div>
 
-<h2 id="relations_parent_of" class="code-parent-of">
-    Child
-</h2>
-<div class="sectioncontent code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/repetition">Binary repetition code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A <span class="inline-math">\([n,1,n]\)</span> repetition code is an <span class="inline-math">\((n,1)\)</span> Hamming code.</span></li>
-</ul>
-</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -164,13 +147,15 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/perfect">Perfect code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quad_residue">Quadratic-residue code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([7,4,3]\)</span> Hamming code is a quadratic-residue code <a href="#cite-1" class="cite">[2]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([7,4,3]\)</span> Hamming code is a quadratic-residue code <a href="#cite-2" class="cite">[3]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The triple repetition code <span class="inline-math">\([3,1,3]\)</span> is the smallest Hamming code.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hadamard">Hadamard code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -245,6 +230,11 @@ url={https://errorcorrectionzoo.org/c/hamming}
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
+        R. Hentschke et al., “Analyzing area and performance penalty of protecting different digital modules with Hamming code and triple modular redundancy”, Proceedings. 15th Symposium on Integrated Circuits and Systems Design. <a href="https://doi.org/10.1109/SBCCI.2002.1137643" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
         F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977
       </dd>
     
@@ -273,7 +263,7 @@ url={https://errorcorrectionzoo.org/c/hamming}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/quad_residue">Quadratic-residue</a></li><li><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/covering">Covering</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/quad_residue">Quadratic-residue</a></li><li><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/reed_solomon">RS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
