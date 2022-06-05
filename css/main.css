@@ -403,6 +403,11 @@ input.navbar-search {
   padding-right: 8px;
 }
 
+#bodycontents.page-index > main .page-index-box ul.page-index-box-links .page-index-box-links-thin-separator {
+  display: block;
+  padding-top: 2px;
+}
+
 #bodycontents.page-index > main .page-index-box .stat-number {
   font-weight: bold;
 }
