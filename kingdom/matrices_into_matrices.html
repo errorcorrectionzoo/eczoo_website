@@ -62,7 +62,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/rank_metric">Rank-metric code</a>,       <a href="/c/regenerating">Regenerating code (RGC)</a>,       <a href="/c/spacetime">Spacetime code (STC)</a>.
+      <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/rank_metric">Rank-metric code</a>,       <a href="/c/regenerating">Regenerating code (RGC)</a>,       <a href="/c/spacetime">Spacetime code (STC)</a>.
   </span>
 </div>
 
@@ -78,6 +78,22 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_matrix_computation">
+  <span class="short-code-name"><a href="/c/matrix_computation">Matrix computation code</a></span>
+  <span class="short-code-description">Encoding that provides an extra redundancy for distributed matrix computation algorithms such as matrix multiplication. Parallelized algorithms distribute a desired computation over many nodes, and a key performance bottleneck is due to some nodes completing their individual tasks much later than other nodes. Matrix computation codes provide a layer of redundancy such that the computation can be performed without having all nodes finish their piece of the computation.
+</span>
+  <span class="short-code-info">Protection: Allows computation to complete without waiting for <span class="textit">stragglers</span>, or nodes that either do not finish or finish their portion of the computation much later than all other nodes.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/matrices_into_matrices">Matrix code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/mds">Maximum distance separable (MDS) code</a>.
   </span>
 </div>
 
