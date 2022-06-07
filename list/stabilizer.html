@@ -377,7 +377,7 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
 <tr>
   <td class="top left"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></td>
   <td class="textit">An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a weakly self-dual additive quaternary code <span class="inline-math">\((n, 2^{n-k}, d^*)_4\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
-The quaternary field <span class="inline-math">\(GF(4)=\mathbf{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
+The quaternary field <span class="inline-math">\(GF(4)=\mathbb{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
 There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
 The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</td>
 </tr>
@@ -404,6 +404,10 @@ and the check matrix for the Steane code is therefore
 \end{align}</span>
 The stabilizer group for the Steane code has six generators.
 </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/surface-17">Surface-17 code</a></td>
+  <td class="textit">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code with 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
@@ -488,7 +492,8 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
     |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}~{\phantom{.}}\\
     |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2}~.
   \end{split}
-\end{align}</span></td>
+\end{align}</span>
+This code is the smallest instance of the toric code, and its various single-qubit subcodes are small planar surface codes.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a></td>
