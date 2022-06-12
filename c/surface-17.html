@@ -84,7 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code with 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</div>
+<div class="sectioncontent code-description">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code named for the sum of its 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Independent correction of single-qubit <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> errors. Correction for some two-qubit <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> errors.</div>
@@ -104,12 +104,18 @@
 
 <h2 id="feature_transversal_gates"
       class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
-  <div class="sectioncontent code-feature code-feature-transversal_gates">Pauli gates, CNOT gate, and H gate (with relabeling).</div>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">Pauli gates, CNOT gate, and <span class="inline-math">\(H\)</span> gate (with relabeling).</div>
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Lookup table <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">For the rotated surface code, a particular choice of CNOT gates during syndrome extraction is required to be fault-tolerant to syndrome qubit errors <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
 
@@ -119,7 +125,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Implemented at ETH Zurich
+  <span class="paragraph-in-list">Implemented at ETH Zurich by the Wallraff group
 <a href="#cite-1" class="cite">[2]</a> and on the Zuchongzhi 2.1 superconducting quantum processor <a href="#cite-2" class="cite">[3]</a>. Both experimental error rates are above the pseudothreshold for this code relative to a single qubit.
 </span>
 </div>
