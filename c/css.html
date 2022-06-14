@@ -123,24 +123,27 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">For a depolarizing channel with probability <span class="inline-math">\(p\)</span>, CSS codes allowing for arbitrarily accurate recovery exist with asymptotic rate <span class="inline-math">\(1-2h(p)\)</span>, where <span class="inline-math">\(h\)</span> is the binary entropy function <a href="#cite-7" class="cite">[8]</a>.</div>
 
 
 
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Stabilizer measurement <a href="#cite-7" class="cite">[8]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Stabilizer measurement <a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by qubit permutations <a href="#cite-8" class="cite">[9]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">LDPC CSS code symmetries called <span class="inline-math">\(XZ\)</span>-dualities allow for fold-transversal gates, i.e., transversal gates followed by qubit permutations <a href="#cite-9" class="cite">[10]</a>.</span></div>
 
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-9" class="cite">[10]</a>. One method is table/multi-control decoding <a href="#cite-10" class="cite">[11]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-10" class="cite">[11]</a>. One method is table/multi-control decoding <a href="#cite-11" class="cite">[12]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-7" class="cite">[8]</a><a href="#cite-12" class="cite">[13]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></div>
 
 
 <h2 id="feature_fault_tolerance"
@@ -358,27 +361,27 @@ url={https://errorcorrectionzoo.org/c/css}
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        Nikolas P. Breuckmann and Simon Burton, “Fold-Transversal Clifford Gates for Quantum Codes”. <a href="https://arxiv.org/abs/2202.06647" target="_blank" class="href">2202.06647</a>
+        J. Łodyga et al., “Simple scheme for encoding and decoding a qubit in unknown state for various topological codes”, Scientific Reports <span class="textbf">5</span>, (2015). <a href="https://doi.org/10.1038/srep08975" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.2495" target="_blank" class="href">1404.2495</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
+        Nikolas P. Breuckmann and Simon Burton, “Fold-Transversal Clifford Gates for Quantum Codes”. <a href="https://arxiv.org/abs/2202.06647" target="_blank" class="href">2202.06647</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
+        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>

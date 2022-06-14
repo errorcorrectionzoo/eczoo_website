@@ -87,7 +87,7 @@
 <div class="sectioncontent code-description">A <span class="textit">code</span> is a subset of a set or <span class="textit">alphabet</span>, with each element called a <span class="textit">codeword</span>. An <span class="textit">error-correcting code</span> consists of <span class="inline-math">\(K\)</span> codewords over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span>.</div>
+<div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span> <a href="#cite-0" class="cite">[1]</a>.</div>
 
 
 <!-- Display features -->
@@ -117,7 +117,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The modern theory of error-correcting codes is rooted in the foundational work of C. Shannon <a href="#cite-0" class="cite">[1]</a>, but error-correcting codes have been used prior to that work <a href="#cite-1" class="cite">[2]</a>.</span>
+  <span class="paragraph-in-list">The modern theory of error-correcting codes is rooted in the foundational work of C. Shannon <a href="#cite-1" class="cite">[2]</a>, but error-correcting codes have been used prior to that work <a href="#cite-2" class="cite">[3]</a>.</span>
 </div>
 
 
@@ -234,10 +234,15 @@ url={https://errorcorrectionzoo.org/c/ecc}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href">DOI</a>
+        D. Gottesman.  <span class="emph">Surviving as a quantum computer in a classical world</span>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
+      <dd>
+        C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
       <dd>
         A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/bf03025254" target="_blank" class="href">DOI</a>
       </dd>
