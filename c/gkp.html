@@ -102,13 +102,13 @@
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Preparation of approximate GKP states is studied both theoretically and experimentally on circuit-QED platforms, by putting the GKP lattice inside a Gaussian envelope <a href="#cite-1" class="cite">[2]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Dissipative stabilization of finite-energy GKP states using stabilizers conjugated by a <span class="textit">damping operator</span>, i.e., a damped exponential of the total occupation number <a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Preparation of approximate GKP states is studied both theoretically and experimentally on circuit-QED platforms, by putting the GKP lattice inside a Gaussian envelope <a href="#cite-1" class="cite">[2]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Dissipative stabilization of finite-energy GKP states using stabilizers conjugated by a <span class="textit">cooling</span> (<a href="#cite-6" class="cite">[7]</a>, Appx. B) or <span class="textit">damping</span> operator, i.e., a damped exponential of the total occupation number <a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>.</span></div>
 
 
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">By applying GKP error correction to Gaussian input states, universality can be achieved without non-Gaussian elements <a href="#cite-8" class="cite">[9]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">By applying GKP error correction to Gaussian input states, universality can be achieved without non-Gaussian elements <a href="#cite-9" class="cite">[10]</a>.</span></div>
 
 
 <h2 id="feature_decoders"
@@ -118,7 +118,7 @@
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Clifford gates can be realized by performing linear-optical operations, sympletic transformations and displacements, all of which are Gaussian operations. Pauli gates can be performed using displacement operators. Clifford gates are fault tolerant in the sense that they map bounded-size errors to bounded-size errors <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Error correction scheme is fault-tolerant to displacement noise as long as all input states have displacement errors less than <span class="inline-math">\(\sqrt{\pi}/6\)</span> <a href="#cite-9" class="cite">[10]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Clifford gates can be realized by performing linear-optical operations, sympletic transformations and displacements, all of which are Gaussian operations. Pauli gates can be performed using displacement operators. Clifford gates are fault tolerant in the sense that they map bounded-size errors to bounded-size errors <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Error correction scheme is fault-tolerant to displacement noise as long as all input states have displacement errors less than <span class="inline-math">\(\sqrt{\pi}/6\)</span> <a href="#cite-10" class="cite">[11]</a>.</span></div>
 
 
 
@@ -128,12 +128,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">GKP encoding realized in the motional degree of freedom of a trapped ion <a href="#cite-10" class="cite">[11]</a>, followed by realization of dissipative stabilization scheme <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">A reduced form of GKP error correction, consisting of measuring only the direction of a displacement error with an ancillary transmon, realized in a microwave cavity coupled to superconducting circuits <a href="#cite-11" class="cite">[12]</a>.</span>
+  <span class="paragraph-in-list">GKP encoding realized in the motional degree of freedom of a trapped ion <a href="#cite-11" class="cite">[12]</a>, followed by realization of dissipative stabilization scheme <a href="#cite-8" class="cite">[9]</a>.</span><span class="paragraph-in-list">A reduced form of GKP error correction, consisting of measuring only the direction of a displacement error with an ancillary transmon, realized in a microwave cavity coupled to superconducting circuits <a href="#cite-12" class="cite">[13]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">GKP codes were obtained after iterative numerical optimization of encoding and recovery against photon loss, starting with Haar-random states <a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Pedagogical introduction into GKP codes presented in Ref. <a href="#cite-3" class="cite">[4]</a>.</span>
+  <span class="paragraph-in-list">GKP codes were obtained after iterative numerical optimization of encoding and recovery against photon loss, starting with Haar-random states <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Pedagogical introduction into GKP codes presented in Ref. <a href="#cite-3" class="cite">[4]</a>.</span>
 </div>
 
 
@@ -164,11 +164,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/approximate_qecc">Approximate quantum error-correcting code (AQECC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GKP codes approximately protect against photon loss <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-12" class="cite">[13]</a>.</span></li>
+      &#x2014;&nbsp;GKP codes approximately protect against photon loss <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-13" class="cite">[14]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GKP codes utilize the translational symmetry in phase space, while rotation codes utilize rotational symmetry. However, properties of rotation-symmetric codes can be obtained from those of the GKP codes via a mapping <a href="#cite-13" class="cite">[14]</a>.</span></li>
+      &#x2014;&nbsp;GKP codes utilize the translational symmetry in phase space, while rotation codes utilize rotational symmetry. However, properties of rotation-symmetric codes can be obtained from those of the GKP codes via a mapping <a href="#cite-14" class="cite">[15]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/rotor_gkp">Rotor GKP code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -258,40 +258,45 @@ url={https://errorcorrectionzoo.org/c/gkp}
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        B. Royer, S. Singh, and S. M. Girvin, “Stabilization of Finite-Energy Gottesman-Kitaev-Preskill States”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.260509" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07941" target="_blank" class="href">2009.07941</a>
+        N. C. Menicucci, “Fault-Tolerant Measurement-Based Quantum Computing with Continuous-Variable Cluster States”, Physical Review Letters <span class="textbf">112</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.112.120504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.7596" target="_blank" class="href">1310.7596</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        Brennan de Neeve et al., “Error correction of a logical grid state qubit by dissipative pumping”. <a href="https://arxiv.org/abs/2010.09681" target="_blank" class="href">2010.09681</a>
+        B. Royer, S. Singh, and S. M. Girvin, “Stabilization of Finite-Energy Gottesman-Kitaev-Preskill States”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.260509" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07941" target="_blank" class="href">2009.07941</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        B. Q. Baragiola et al., “All-Gaussian Universality and Fault Tolerance with the Gottesman-Kitaev-Preskill Code”, Physical Review Letters <span class="textbf">123</span>, (2019). <a href="https://doi.org/10.1103/PhysRevLett.123.200502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.00012" target="_blank" class="href">1903.00012</a>
+        Brennan de Neeve et al., “Error correction of a logical grid state qubit by dissipative pumping”. <a href="https://arxiv.org/abs/2010.09681" target="_blank" class="href">2010.09681</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        S. Glancy and E. Knill, “Error analysis for encoding a qubit in an oscillator”, Physical Review A <span class="textbf">73</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.73.012325" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0510107" target="_blank" class="href">quant-ph/0510107</a>
+        B. Q. Baragiola et al., “All-Gaussian Universality and Fault Tolerance with the Gottesman-Kitaev-Preskill Code”, Physical Review Letters <span class="textbf">123</span>, (2019). <a href="https://doi.org/10.1103/PhysRevLett.123.200502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.00012" target="_blank" class="href">1903.00012</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        C. Flühmann et al., “Encoding a qubit in a trapped-ion mechanical oscillator”, Nature <span class="textbf">566</span>, 513 (2019). <a href="https://doi.org/10.1038/s41586-019-0960-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1807.01033" target="_blank" class="href">1807.01033</a>
+        S. Glancy and E. Knill, “Error analysis for encoding a qubit in an oscillator”, Physical Review A <span class="textbf">73</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.73.012325" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0510107" target="_blank" class="href">quant-ph/0510107</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        P. Campagne-Ibarcq et al., “Quantum error correction of a qubit encoded in grid states of an oscillator”. <a href="https://arxiv.org/abs/1907.12487" target="_blank" class="href">1907.12487</a>
+        C. Flühmann et al., “Encoding a qubit in a trapped-ion mechanical oscillator”, Nature <span class="textbf">566</span>, 513 (2019). <a href="https://doi.org/10.1038/s41586-019-0960-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1807.01033" target="_blank" class="href">1807.01033</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+        P. Campagne-Ibarcq et al., “Quantum error correction of a qubit encoded in grid states of an oscillator”. <a href="https://arxiv.org/abs/1907.12487" target="_blank" class="href">1907.12487</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
+      <dd>
+        K. Noh, V. V. Albert, and L. Jiang, “Quantum Capacity Bounds of Gaussian Thermal Loss Channels and Achievable Rates With Gottesman-Kitaev-Preskill Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 2563 (2019). <a href="https://doi.org/10.1109/TIT.2018.2873764" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.07271" target="_blank" class="href">1801.07271</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
       <dd>
         Allan D. C. Tosta, Thiago O. Maciel, and Leandro Aolita, “Grand Unification of continuous-variable codes”. <a href="https://arxiv.org/abs/2206.01751" target="_blank" class="href">2206.01751</a>
       </dd>

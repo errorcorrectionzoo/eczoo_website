@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Hyperbolic surface code" />
+<meta name="citation_title" content="Dinur-Hsieh-Lin-Vidick (DHLV) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Hyperbolic surface code" />
+<meta name="DC.title" content="Dinur-Hsieh-Lin-Vidick (DHLV) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Hyperbolic surface code [error correction zoo]
+    Dinur-Hsieh-Lin-Vidick (DHLV) code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -69,7 +69,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_hyperbolic_surface">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_dhlv">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -78,17 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Hyperbolic surface code</h1>
+      Dinur-Hsieh-Lin-Vidick (DHLV) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">An extension of the Kitaev surface code construction to hyperbolic manifolds in dimension two or greater. Given a cellulation of a manifold, qubits are put on <span class="inline-math">\(i\)</span>-dimensional faces, <span class="inline-math">\(X\)</span>-type stabilizers are associated with <span class="inline-math">\((i-1)\)</span>-faces, while <span class="inline-math">\(Z\)</span>-type stabilizers are associated with <span class="inline-math">\(i+1\)</span>-faces.
-</div>
+<div class="sectioncontent code-description">Stub.</div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Constructions (see code children below) have yielded distances scaling favorably with the number of qubits. The use of hyperbolic surfaces allows one to circumvent bounds on surface code parameters that are valid for surfaces with bounded geometry.</div>
 
 
 <!-- Display features -->
@@ -97,6 +94,9 @@
 
 
 
+<h2 id="feature_rate"
+      class="code-feature code-feature-rate">Rate</h2>
+  <div class="sectioncontent code-feature code-feature-rate">Asymptotically good QLDPC codes.</div>
 
 
 
@@ -106,6 +106,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Linear-time decoder utilizing the small set-flip decoder <a href="#cite-1" class="cite">[2]</a> for <span class="inline-math">\(Z\)</span> errors and a reconstruction procedure for <span class="inline-math">\(X\)</span> errors <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
 
@@ -121,44 +124,35 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/surface">Kitaev surface code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/balanced_product">Balanced product code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span></li>
 </ul>
 </div>
 
-<h2 id="relations_parent_of" class="code-parent-of">
-    Children
-</h2>
-<div class="sectioncontent code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a></span></li>
-</ul>
-</div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/holographic">Holographic code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/tanner">Tanner code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Both holographic and hyperbolic surface codes utilize tesselations of hyperbolic surfaces. Encodings for the former are hyperbolically tiled tensor networks, while the latter is defined on hyperbolically tiled physical-qubit lattices.</span></li>
+      &#x2014;&nbsp;Tanner codes are used in constructing quantum DHLV codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/tensor">Tensor code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Tensor codes are used in constructing quantum DHLV codes.</span></li>
 </ul>
 </div>
 
@@ -171,33 +165,33 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    hyperbolic_surface
+    dhlv
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/topological/surface/hyperbolic_surface.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/dhlv.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=hyperbolic_surface&amp;code_yml_filename=quantum/qubits/topological/surface/hyperbolic_surface.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hyperbolic_surface</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=dhlv&amp;code_yml_filename=quantum/properties/qldpc/dhlv.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>dhlv</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Hyperbolic surface code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/hyperbolic_surface</dd>
+    <dd>“Dinur-Hsieh-Lin-Vidick (DHLV) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/dhlv</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_hyperbolic_surface,
-title={Hyperbolic surface code},
+    <dd class="bibtex">@incollection{eczoo_dhlv,
+title={Dinur-Hsieh-Lin-Vidick (DHLV) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/hyperbolic_surface}
+url={https://errorcorrectionzoo.org/c/dhlv}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/hyperbolic_surface</dd>
+    <dd>https://errorcorrectionzoo.org/c/dhlv</dd>
   </dl>
 </div>
 </div>
@@ -208,6 +202,22 @@ url={https://errorcorrectionzoo.org/c/hyperbolic_surface}
 <!-- endnotes -->
 
 
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Irit Dinur et al., “Good Quantum LDPC Codes with Linear Time Decoders”. <a href="https://arxiv.org/abs/2206.07750" target="_blank" class="href">2206.07750</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        Shouzhen Gu, Christopher A. Pattison, and Eugene Tang, “An efficient decoder for a linear distance quantum LDPC code”. <a href="https://arxiv.org/abs/2206.06557" target="_blank" class="href">2206.06557</a>
+      </dd>
+    
+    </dl>
+  </div>
 
 
 
@@ -217,11 +227,11 @@ url={https://errorcorrectionzoo.org/c/hyperbolic_surface}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Hyperbolic surface code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/hyperbolic_surface</p>
+  <p>“Dinur-Hsieh-Lin-Vidick (DHLV) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/dhlv</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/topological/surface/hyperbolic_surface.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/dhlv.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/topological/surface/hyperbolic_surface.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/dhlv.yml</a>.</p>
 </div>
 
 
@@ -231,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/hyperbolic_surface}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/surface">Kitaev surface</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/freedman_meyer_luo">Freedman-Meyer-Luo</a></li><li><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky</a></li><li><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface</a></li><li><a href="/c/holographic">Holographic</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/balanced_product">Balanced product</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/tanner">Tanner</a></li><li><a href="/c/tensor">Tensor</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

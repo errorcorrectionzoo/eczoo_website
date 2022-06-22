@@ -54,7 +54,7 @@
 
 
 <div class="ecc-code" id="ecc_matrices_into_matrices">
-  <span class="short-code-name"><a href="/c/matrices_into_matrices">Matrix code</a></span>
+  <span class="short-code-name"><a href="/c/matrices_into_matrices">Matrix-based code</a></span>
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in an <span class="inline-math">\(m\times n\)</span>-dimensional <span class="textit">matrix</span> of coordinates over a field (e.g., the Galois field <span class="inline-math">\(GF(q)\)</span> or the complex numbers <span class="inline-math">\(\mathbb{C}\)</span>).</span>
   <span class="short-code-parents">
     Parents:
@@ -62,7 +62,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/rank_metric">Rank-metric code</a>,       <a href="/c/regenerating">Regenerating code (RGC)</a>,       <a href="/c/spacetime">Spacetime code (STC)</a>.
+      <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/rank_metric">Rank-metric code</a>,       <a href="/c/regenerating">Regenerating code (RGC)</a>,       <a href="/c/spacetime">Spacetime code (STC)</a>,       <a href="/c/tensor">Tensor code</a>.
   </span>
 </div>
 
@@ -89,7 +89,7 @@
   <span class="short-code-info">Protection: Allows computation to complete without waiting for <span class="textit">stragglers</span>, or nodes that either do not finish or finish their portion of the computation much later than all other nodes.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/matrices_into_matrices">Matrix code</a>.
+      <a href="/c/matrices_into_matrices">Matrix-based code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -104,7 +104,7 @@
   <span class="short-code-info">Protection: Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/matrices_into_matrices">Matrix code</a>.
+      <a href="/c/matrices_into_matrices">Matrix-based code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -118,7 +118,7 @@
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/distributed_storage">Distributed-storage code</a>,       <a href="/c/matrices_into_matrices">Matrix code</a>.
+      <a href="/c/distributed_storage">Distributed-storage code</a>,       <a href="/c/matrices_into_matrices">Matrix-based code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -133,7 +133,7 @@
 </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/matrices_into_matrices">Matrix code</a>.
+      <a href="/c/matrices_into_matrices">Matrix-based code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -142,6 +142,20 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/cws">Codeword stabilized (CWS) code</a>,       <a href="/c/homological_cv">Homological bosonic code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_tensor">
+  <span class="short-code-name"><a href="/c/tensor">Tensor code</a></span>
+  <span class="short-code-description">Martix-based code constructed out of two linear binary or <span class="inline-math">\(q\)</span>-ary codes <span class="inline-math">\(C_A,C_B\)</span> in an outer-product construction denoted as <span class="inline-math">\(C_A \otimes C_B\)</span>. The codewords are those matrices whose column vectors are in <span class="inline-math">\(C_A\)</span> and whose row vectors are in <span class="inline-math">\(C_B\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/matrices_into_matrices">Matrix-based code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/dhlv">Dinur-Hsieh-Lin-Vidick (DHLV) code</a>,       <a href="/c/quantum_tanner">Quantum Tanner code</a>.
   </span>
 </div>
 
