@@ -118,7 +118,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/homological_cv">Homological bosonic code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>.
+      <a href="/c/gkp-stabilizer">GKP-stabilizer code</a>,       <a href="/c/homological_cv">Homological bosonic code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>.
   </span>
 </div>
 
@@ -132,7 +132,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>,       <a href="/c/single-mode">Single-mode bosonic code</a>.
+      <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/gkp-cluster-state">GKP cluster-state concatenated code</a>,       <a href="/c/single-mode">Single-mode bosonic code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -166,7 +166,7 @@
   <span class="short-code-info">Protection: The level of protection against displacement errors is quantified by the Euclidean code distance <span class="inline-math">\(\Delta=\min_{x\in {\mathcal{L}}^{\perp}\setminus {\mathcal{L}}} \|x\|_2\)</span> <a href="#cite-7" class="cite">[8]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>,       <a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a>.
+      <a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -179,8 +179,32 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_gkp-cluster-state">
+  <span class="short-code-name"><a href="/c/gkp-cluster-state">GKP cluster-state concatenated code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-description">Multi-mode code encoding logical qubits into a cluster-state stabilizer code concatenated with a single-mode GKP code. Provides a way to perform a continuous-variable (CV) analogue of fault-tolerant measurement-based qubit computation.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/quantum_concatenated">Concatenated quantum code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_gkp-stabilizer">
+  <span class="short-code-name"><a href="/c/gkp-stabilizer">GKP-stabilizer code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_very-small-logical-qubit">
-  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-8" class="cite">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
   <span class="short-code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
   <span class="short-code-info">Protection: Passively protects against single photon loss.</span>
   <span class="short-code-parents">
@@ -195,7 +219,7 @@
 
 
 <div class="ecc-code" id="ecc_niset_andersen_cerf">
-  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
   <span class="short-code-description">Encodes two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> over two modes into four modes such that the values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</span>
   <span class="short-code-info">Protection: The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</span>
   <span class="short-code-parents">
@@ -247,7 +271,7 @@
 
 
 <div class="ecc-code" id="ecc_chuang-leung-yamamoto">
-  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
   <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</span>
   <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
 <span class="display-math env-align">\begin{align}
@@ -266,30 +290,6 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/binomial">Binomial code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_gkp-cluster-state">
-  <span class="short-code-name"><a href="/c/gkp-cluster-state">GKP cluster-state concatenated code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
-  <span class="short-code-description">Multi-mode code encoding logical qubits into a cluster-state stabilizer code constructed out of single-mode GKP qubits. Provides a way to perform a continuous-variable (CV) analogue of fault-tolerant measurement-based qubit computation.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/multimodegkp">Multi-mode GKP code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/quantum_concatenated">Concatenated quantum code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_gkp-stabilizer">
-  <span class="short-code-name"><a href="/c/gkp-stabilizer">GKP-stabilizer code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/multimodegkp">Multi-mode GKP code</a>.
   </span>
 </div>
 
@@ -390,7 +390,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a></span></span>
   <span class="short-code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
 </span>
-  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=1\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-21" class="cite">[22]</a> or squeezing <a href="#cite-22" class="cite">[23]</a> that add such protection.</span>
+  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=0\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-21" class="cite">[22]</a> or squeezing <a href="#cite-22" class="cite">[23]</a> that add such protection.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.
@@ -497,27 +497,27 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
+        N. C. Menicucci, “Fault-Tolerant Measurement-Based Quantum Computing with Continuous-Variable Cluster States”, Physical Review Letters <span class="textbf">112</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.112.120504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.7596" target="_blank" class="href">1310.7596</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href">0710.4858</a>
+        K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href">1903.12615</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
+        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        N. C. Menicucci, “Fault-Tolerant Measurement-Based Quantum Computing with Continuous-Variable Cluster States”, Physical Review Letters <span class="textbf">112</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.112.120504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.7596" target="_blank" class="href">1310.7596</a>
+        J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href">0710.4858</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href">1903.12615</a>
+        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
