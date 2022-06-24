@@ -5,7 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-     [error correction zoo]
+    Asymptotically good QLDPC codes
+ [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -48,66 +49,56 @@
 
   <main id="main">
 
-<h1>List of code lists</h1>
+Here is a list of <a href="/c/good_qldpc" class="ref">good QLDPC</a> codes.
 
-<ul>
-  <li><p><a href="/list/approximate_qecc">Approximate quantum codes
-</a></p></li>
-  <li><p><a href="/list/binary_linear">Binary linear codes
-</a></p></li>
-  <li><p><a href="/list/css">Quantum CSS codes
-</a></p></li>
-  <li><p><a href="/list/decoders">Codes with notable decoders
-</a></p></li>
-  <li><p><a href="/list/dynamic_gen">Dynamically generated quantum codes
-</a></p></li>
-  <li><p><a href="/list/good_qldpc">Asymptotically good QLDPC codes
-</a></p></li>
-  <li><p><a href="/list/hamiltonian">Hamiltonian-based codes
-</a></p></li>
-  <li><p><a href="/list/holographic">Holographic codes
-</a></p></li>
-  <li><p><a href="/list/homological">Quantum codes based on homological products
-</a></p></li>
-  <li><p><a href="/list/ldpc">LDPC codes
-</a></p></li>
-  <li><p><a href="/list/mds">MDS codes
-</a></p></li>
-  <li><p><a href="/list/perfect">Perfect codes
-</a></p></li>
-  <li><p><a href="/list/q-ary_linear"><span class="inline-math">\(q\)</span>-ary linear codes
-</a></p></li>
-  <li><p><a href="/list/qldpc">Quantum LDPC codes
-</a></p></li>
-  <li><p><a href="/list/quantum_code_cap_threshold">Quantum codes with code capacity thresholds
-</a></p></li>
-  <li><p><a href="/list/quantum_fault_tolerance">Quantum codes with fault-tolerant gadgets
-</a></p></li>
-  <li><p><a href="/list/quantum_magic">Quantum codes with magic-state distillation scaling exponents
-</a></p></li>
-  <li><p><a href="/list/quantum_mds">Quantum MDS codes
-</a></p></li>
-  <li><p><a href="/list/quantum_perfect">Perfect quantum codes
-</a></p></li>
-  <li><p><a href="/list/quantum_surface">Variants of the surface code
-</a></p></li>
-  <li><p><a href="/list/quantum_threshold">Quantum codes with other thresholds
-</a></p></li>
-  <li><p><a href="/list/quantum_transversal">Quantum codes with transversal gates
-</a></p></li>
-  <li><p><a href="/list/quantum_with_rate">Quantum codes with a rate
-</a></p></li>
-  <li><p><a href="/list/realizations">Codes with applications
-</a></p></li>
-  <li><p><a href="/list/stabilizer">Stabilizer codes
-</a></p></li>
-  <li><p><a href="/list/subsystem">Subsystem codes
-</a></p></li>
-  <li><p><a href="/list/topological">Topological codes
-</a></p></li>
-  <li><p><a href="/all">Index of all codes
-</a></p></li>
-</ul>
+<table class="codelistpage-table xtra-xtra-stretch">
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="top left"><a href="/c/dhlv">Dinur-Hsieh-Lin-Vidick (DHLV) code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/expander_lifted_product">Expander lifted-product code</a></td>
+  <td class="textit">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-0" class="cite">[1]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/good_qldpc">Good QLDPC code</a></td>
+  <td class="textit">Also called <span class="textit">asymptotically good QLDPC codes</span>. A family of QLDPC codes <span class="inline-math">\([[n_i,k_i,d_i]]\)</span> whose asymptotic rate <span class="inline-math">\(\lim_{i\to\infty} k_i/n_i\)</span> and asymptotic distance <span class="inline-math">\(\lim_{i\to\infty} d_i/n_i\)</span> are both positive.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_tanner">Quantum Tanner code</a></td>
+  <td class="textit">Stub.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/rotated_surface">Rotated surface code</a></td>
+  <td class="textit">Variant of the surface code defined on a square lattice that has been rotated 45 degrees such that qubits are on vertices, and both <span class="inline-math">\(X\)</span>- and <span class="inline-math">\(Z\)</span>-type check operators occupy plaquettes in an alternating checkerboard pattern.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/surface-17">Surface-17 code</a></td>
+  <td class="textit">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code named for the sum of its 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+  <div id="endnotes" class="">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
+      </dd>
+    
+    </dl>
+  </div>
 
   </main><!-- #main -->
 

@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Lloyd-Slotine nine-mode code" />
+<meta name="citation_title" content="Good QLDPC code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Lloyd-Slotine nine-mode code" />
+<meta name="DC.title" content="Good QLDPC code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Lloyd-Slotine nine-mode code [error correction zoo]
+    Good QLDPC code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -69,7 +69,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_lloyd_slotine">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_good_qldpc">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -78,14 +78,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Lloyd-Slotine nine-mode code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Good QLDPC code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\([[9,1,3]]_{\mathbb{R}}\)</span> bosonic CSS analogue of Shor&#x27;s nine-qubit code.
-</div>
+<div class="sectioncontent code-description"><p>Also called <span class="textit">asymptotically good QLDPC codes</span>. A family of QLDPC codes <span class="inline-math">\([[n_i,k_i,d_i]]\)</span> whose asymptotic rate <span class="inline-math">\(\lim_{i\to\infty} k_i/n_i\)</span> and asymptotic distance <span class="inline-math">\(\lim_{i\to\infty} d_i/n_i\)</span> are both positive.</p>
+<p>The first good QLDPC codes are families of <a href="/c/expander_lifted_product" class="ref">expander lifted-product</a> codes, followed by <a href="/c/quantum_tanner" class="ref">quantum Tanner</a> codes and <a href="/c/dhlv" class="ref">Dinur-Hsieh-Lin-Vidick</a> codes.</p></div>
 
 
 
@@ -113,43 +113,41 @@
 
 
 
-<h2 id="realizations" class="code-realizations">Realizations</h2>
-<div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Optical network by the Furusawa group <a href="#cite-1" class="cite">[2]</a>.</span>
-</div>
 
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parents
+    Parent
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span></li>
 </ul>
 </div>
 
-
-<h2 id="relations_cousins" class="code-cousins">
-    Cousin
+<h2 id="relations_parent_of" class="code-parent-of">
+    Children
 </h2>
-<div class="sectioncontent code-cousins">
+<div class="sectioncontent code-parent-of">
 
 
-<ul class="code-relations-list code-cousins-list">
+<ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></span><span class="code-cousins-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/dhlv">Dinur-Hsieh-Lin-Vidick (DHLV) code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/expander_lifted_product">Expander lifted-product code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The Lloyd-Slotine nine-mode code is a bosonic analogue of Shor&#x27;s code.</span></li>
+      &#x2014;&nbsp;Lifted products of certain classical Tanner codes are the first asymptotically good QLDPC codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_tanner">Quantum Tanner code</a></span></li>
 </ul>
 </div>
+
 
 
 <!-- zoo-related information and how to edit -->
@@ -160,33 +158,33 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    lloyd_slotine
+    good_qldpc
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/lloyd_slotine.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/good_qldpc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=lloyd_slotine&amp;code_yml_filename=quantum/oscillators/stabilizer/lloyd_slotine.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>lloyd_slotine</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=good_qldpc&amp;code_yml_filename=quantum/properties/qldpc/good_qldpc.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>good_qldpc</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Lloyd-Slotine nine-mode code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/lloyd_slotine</dd>
+    <dd>“Good QLDPC code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/good_qldpc</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_lloyd_slotine,
-title={Lloyd-Slotine nine-mode code},
+    <dd class="bibtex">@incollection{eczoo_good_qldpc,
+title={Good QLDPC code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/lloyd_slotine}
+url={https://errorcorrectionzoo.org/c/good_qldpc}
 }</dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/lloyd_slotine</dd>
+    <dd>https://errorcorrectionzoo.org/c/good_qldpc</dd>
   </dl>
 </div>
 </div>
@@ -197,22 +195,6 @@ url={https://errorcorrectionzoo.org/c/lloyd_slotine}
 <!-- endnotes -->
 
 
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href">quant-ph/9711021</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Takao Aoki et al., “Quantum error correction beyond qubits”. <a href="https://arxiv.org/abs/0811.3734" target="_blank" class="href">0811.3734</a>
-      </dd>
-    
-    </dl>
-  </div>
 
 
 
@@ -222,11 +204,11 @@ url={https://errorcorrectionzoo.org/c/lloyd_slotine}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Lloyd-Slotine nine-mode code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/lloyd_slotine</p>
+  <p>“Good QLDPC code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/good_qldpc</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/lloyd_slotine.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/good_qldpc.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/lloyd_slotine.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qldpc/good_qldpc.yml</a>.</p>
 </div>
 
 
@@ -236,7 +218,7 @@ url={https://errorcorrectionzoo.org/c/lloyd_slotine}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oscillator_stabilizer">Bosonic stabilizer</a></li><li><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/dhlv">DHLV</a></li><li><a href="/c/expander_lifted_product">Expander lifted-product</a></li><li><a href="/c/quantum_tanner">Quantum Tanner</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

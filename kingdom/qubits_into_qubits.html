@@ -511,7 +511,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
+      <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/good_qldpc">Good QLDPC code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -612,7 +612,7 @@ generally, the code distance is related to the homology of the cellulation
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/generalized_homological_product">Generalized homological product code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>.
+      <a href="/c/generalized_homological_product">Generalized homological product code</a>,       <a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a>,       <a href="/c/good_qldpc">Good QLDPC code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -734,8 +734,27 @@ generally, the code distance is related to the homology of the cellulation
 </div>
 
 
+<div class="ecc-code" id="ecc_expander_lifted_product">
+  <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#cite-35" class="cite">[36]</a></span></span>
+  <span class="short-code-description">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-35" class="cite">[36]</a>.</span>
+  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-35" class="cite">[36]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-58" class="cite">[59]</a>; this construction can be derandomized by being reformulated as a balanced product code <a href="#cite-34" class="cite">[35]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lifted_product">Lifted-product (LP) code</a>,       <a href="/c/good_qldpc">Good QLDPC code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/tanner">Tanner code</a>,       <a href="/c/random">Random code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_tanner">Quantum Tanner code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_rotated_surface">
-  <span class="short-code-name"><a href="/c/rotated_surface">Rotated surface code</a><span class="code-introduced"><a href="#cite-58" class="cite">[59]</a><a href="#cite-59" class="cite">[60]</a><a href="#cite-60" class="cite">[61]</a><a href="#cite-61" class="cite">[62]</a></span></span>
+  <span class="short-code-name"><a href="/c/rotated_surface">Rotated surface code</a><span class="code-introduced"><a href="#cite-59" class="cite">[60]</a><a href="#cite-60" class="cite">[61]</a><a href="#cite-61" class="cite">[62]</a><a href="#cite-62" class="cite">[63]</a></span></span>
   <span class="short-code-description">Variant of the surface code defined on a square lattice that has been rotated 45 degrees such that qubits are on vertices, and both <span class="inline-math">\(X\)</span>- and <span class="inline-math">\(Z\)</span>-type check operators occupy plaquettes in an alternating checkerboard pattern.</span>
   <span class="short-code-parents">
     Parents:
@@ -757,7 +776,7 @@ generally, the code distance is related to the homology of the cellulation
 
 
 <div class="ecc-code" id="ecc_xysurface">
-  <span class="short-code-name"><a href="/c/xysurface">XY surface code</a><span class="code-introduced"><a href="#cite-62" class="cite">[63]</a></span></span>
+  <span class="short-code-name"><a href="/c/xysurface">XY surface code</a><span class="code-introduced"><a href="#cite-63" class="cite">[64]</a></span></span>
   <span class="short-code-description">Non-CSS derivative of the surface code whose generators are <span class="inline-math">\(XXXX\)</span>  and <span class="inline-math">\(YYYY\)</span>, obtained by mapping <span class="inline-math">\(Z \to Y\)</span> in the surface code.</span>
   <span class="short-code-info">Protection: As a stabilizer code, <span class="inline-math">\([[n=O(d^2), k=O(1), d]]\)</span>.</span>
   <span class="short-code-parents">
@@ -768,7 +787,7 @@ generally, the code distance is related to the homology of the cellulation
 
 
 <div class="ecc-code" id="ecc_xzzx">
-  <span class="short-code-name"><a href="/c/xzzx">XZZX surface code</a><span class="code-introduced"><a href="#cite-63" class="cite">[64]</a></span></span>
+  <span class="short-code-name"><a href="/c/xzzx">XZZX surface code</a><span class="code-introduced"><a href="#cite-64" class="cite">[65]</a></span></span>
   <span class="short-code-description">Non-CSS derivative of the rotated surface code whose generators are <span class="inline-math">\(XZXZ\)</span> Pauli strings associated, clock-wise, to the vertices of each face of a two-dimensional lattice (with a qubit located at each vertex of the tessellation).</span>
   <span class="short-code-info">Protection: As a stabilizer code, <span class="inline-math">\([[n=O(d^2), k=O(1), d]]\)</span>.</span>
   <span class="short-code-parents">
@@ -783,7 +802,7 @@ generally, the code distance is related to the homology of the cellulation
 
 
 <div class="ecc-code" id="ecc_xyz_hexagonal">
-  <span class="short-code-name"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a><span class="code-introduced"><a href="#cite-64" class="cite">[65]</a><a href="#cite-65" class="cite">[66]</a></span></span>
+  <span class="short-code-name"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a><span class="code-introduced"><a href="#cite-65" class="cite">[66]</a><a href="#cite-66" class="cite">[67]</a></span></span>
   <span class="short-code-description">An instance of the matching code based on the Kitaev honeycomb model. It is described on a hexagonal lattice with <span class="inline-math">\(XYZXYZ\)</span> stabilizers on each hexagonal plaquette. Each vertical pair of qubits has an <span class="inline-math">\(XX\)</span>, <span class="inline-math">\(YY\)</span>, or <span class="inline-math">\(ZZ\)</span> link stabilizer depending on the orientation of the plaquette stabilizers.</span>
   <span class="short-code-info">Protection: As a stabilizer code with boundaries, protects a single qubit with parameters <span class="inline-math">\([[2 d^2, 1, d]]\)</span>.</span>
   <span class="short-code-parents">
@@ -794,7 +813,7 @@ generally, the code distance is related to the homology of the cellulation
 
 
 <div class="ecc-code" id="ecc_stab_5_1_3">
-  <span class="short-code-name"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a><span class="code-introduced"><a href="#cite-66" class="cite">[67]</a></span></span>
+  <span class="short-code-name"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
   <span class="short-code-description">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ. \end{split} \end{align}</span></span>
   <span class="short-code-info">Protection: Smallest stabilizer code that protects against a single error on any one qubit. Detects two-qubit errors.</span>
   <span class="short-code-parents">
@@ -847,7 +866,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 
 <div class="ecc-code" id="ecc_xs_stabilizer">
-  <span class="short-code-name"><a href="/c/xs_stabilizer">XS stabilizer code</a><span class="code-introduced"><a href="#cite-67" class="cite">[68]</a></span></span>
+  <span class="short-code-name"><a href="/c/xs_stabilizer">XS stabilizer code</a><span class="code-introduced"><a href="#cite-68" class="cite">[69]</a></span></span>
   <span class="short-code-description">A type of stabilizer code where stabilizer generators are elements of the group <span class="inline-math">\( \{\alpha I, X, \sqrt{Z}]\}^{\otimes n} \)</span>, with <span class="inline-math">\( \sqrt{Z} = \text{diag} (1, i)\)</span>. The codespace is a joint <span class="inline-math">\(+1\)</span> eigenspace of a set of stabilizer generators, which need not commute to define a valid codespace.
 </span>
   <span class="short-code-parents">
@@ -862,7 +881,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 
 <div class="ecc-code" id="ecc_fiber_bundle">
-  <span class="short-code-name"><a href="/c/fiber_bundle">Fiber-bundle code</a><span class="code-introduced"><a href="#cite-68" class="cite">[69]</a></span></span>
+  <span class="short-code-name"><a href="/c/fiber_bundle">Fiber-bundle code</a><span class="code-introduced"><a href="#cite-69" class="cite">[70]</a></span></span>
   <span class="short-code-description">CSS code constructed by combining a random LDPC code as the base and a cyclic repetition code as the fiber of a fiber bundle. After applying distance balancing, a QLDPC code with distance <span class="inline-math">\(\Omega(n^{3/5}\text{polylog}(n))\)</span> and rate <span class="inline-math">\(\Omega(n^{-2/5}\text{polylog}(n))\)</span> is obtained.</span>
   <span class="short-code-parents">
     Parents:
@@ -880,9 +899,9 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 
 
 <div class="ecc-code" id="ecc_lifted_product">
-  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product (LP) code</a><span class="code-introduced"><a href="#cite-69" class="cite">[70]</a><a href="#cite-35" class="cite">[36]</a></span></span>
-  <span class="short-code-description">Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</span>
-  <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#cite-70" class="cite">[71]</a>.</span>
+  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product (LP) code</a><span class="code-introduced"><a href="#cite-70" class="cite">[71]</a><a href="#cite-35" class="cite">[36]</a></span></span>
+  <span class="short-code-description">Also called a <span class="textit">Panteleev-Kalachev (PK)</span> code. Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</span>
+  <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#cite-58" class="cite">[59]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/galois_css">Galois-qudit CSS code</a>.
@@ -1045,7 +1064,7 @@ This code is the smallest single-qubit error-detecting code. It is also the smal
 
 
 <div class="ecc-code" id="ecc_surface-17">
-  <span class="short-code-name"><a href="/c/surface-17">Surface-17 code</a><span class="code-introduced"><a href="#cite-61" class="cite">[62]</a></span></span>
+  <span class="short-code-name"><a href="/c/surface-17">Surface-17 code</a><span class="code-introduced"><a href="#cite-62" class="cite">[63]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code named for the sum of its 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</span>
   <span class="short-code-info">Protection: Independent correction of single-qubit <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> errors. Correction for some two-qubit <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> errors.</span>
   <span class="short-code-parents">
@@ -1157,25 +1176,6 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/surface">Kitaev surface code</a>,       <a href="/c/xyz_product">XYZ product code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_expander_lifted_product">
-  <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#cite-35" class="cite">[36]</a></span></span>
-  <span class="short-code-description">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-35" class="cite">[36]</a>.</span>
-  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-35" class="cite">[36]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-70" class="cite">[71]</a>; this construction can be derandomized by being reformulated as a balanced product code <a href="#cite-34" class="cite">[35]</a>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/lifted_product">Lifted-product (LP) code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/tanner">Tanner code</a>,       <a href="/c/random">Random code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_tanner">Quantum Tanner code</a>.
   </span>
 </div>
 
@@ -1547,67 +1547,67 @@ The code works by <a href="/c/quantum_concatenated" class="ref">concatenating</a
       <!-- Citation:  -->
       <dt id="cite-58">[59]</dt>
       <dd>
-        X.-G. Wen, “Quantum Orders in an Exact Soluble Model”, Physical Review Letters <span class="textbf">90</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.90.016803" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0205004" target="_blank" class="href">quant-ph/0205004</a>
+        P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-59">[60]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Optimal resources for topological two-dimensional stabilizer codes: Comparative study”, Physical Review A <span class="textbf">76</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.76.012305" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703272" target="_blank" class="href">quant-ph/0703272</a>
+        X.-G. Wen, “Quantum Orders in an Exact Soluble Model”, Physical Review Letters <span class="textbf">90</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.90.016803" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0205004" target="_blank" class="href">quant-ph/0205004</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-60">[61]</dt>
       <dd>
-        Jonas T. Anderson, “Homological Stabilizer Codes”. <a href="https://arxiv.org/abs/1107.3502" target="_blank" class="href">1107.3502</a>
+        H. Bombin and M. A. Martin-Delgado, “Optimal resources for topological two-dimensional stabilizer codes: Comparative study”, Physical Review A <span class="textbf">76</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.76.012305" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703272" target="_blank" class="href">quant-ph/0703272</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-61">[62]</dt>
       <dd>
-        Y. Tomita and K. M. Svore, “Low-distance surface codes under realistic quantum noise”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.062320" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.3747" target="_blank" class="href">1404.3747</a>
+        Jonas T. Anderson, “Homological Stabilizer Codes”. <a href="https://arxiv.org/abs/1107.3502" target="_blank" class="href">1107.3502</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-62">[63]</dt>
       <dd>
-        D. K. Tuckett, S. D. Bartlett, and S. T. Flammia, “Ultrahigh Error Threshold for Surface Codes with Biased Noise”, Physical Review Letters <span class="textbf">120</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.120.050505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.08474" target="_blank" class="href">1708.08474</a>
+        Y. Tomita and K. M. Svore, “Low-distance surface codes under realistic quantum noise”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.062320" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.3747" target="_blank" class="href">1404.3747</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-63">[64]</dt>
       <dd>
-        J. P. Bonilla Ataides et al., “The XZZX surface code”, Nature Communications <span class="textbf">12</span>, (2021). <a href="https://doi.org/10.1038/s41467-021-22274-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07851" target="_blank" class="href">2009.07851</a>
+        D. K. Tuckett, S. D. Bartlett, and S. T. Flammia, “Ultrahigh Error Threshold for Surface Codes with Biased Noise”, Physical Review Letters <span class="textbf">120</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.120.050505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.08474" target="_blank" class="href">1708.08474</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-64">[65]</dt>
       <dd>
-        James R. Wootton, “Hexagonal matching codes with 2-body measurements”. <a href="https://arxiv.org/abs/2109.13308" target="_blank" class="href">2109.13308</a>
+        J. P. Bonilla Ataides et al., “The XZZX surface code”, Nature Communications <span class="textbf">12</span>, (2021). <a href="https://doi.org/10.1038/s41467-021-22274-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.07851" target="_blank" class="href">2009.07851</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-65">[66]</dt>
       <dd>
-        B. Srivastava, A. Frisk Kockum, and M. Granath, “The XYZ&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:msup&gt;&lt;mml:mi /&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;/mml:msup&gt;&lt;/mml:math&gt; hexagonal stabilizer code”, Quantum <span class="textbf">6</span>, 698 (2022). <a href="https://doi.org/10.22331/q-2022-04-27-698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2112.06036" target="_blank" class="href">2112.06036</a>
+        James R. Wootton, “Hexagonal matching codes with 2-body measurements”. <a href="https://arxiv.org/abs/2109.13308" target="_blank" class="href">2109.13308</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-66">[67]</dt>
       <dd>
-        Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
+        B. Srivastava, A. Frisk Kockum, and M. Granath, “The XYZ&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot;&gt;&lt;mml:msup&gt;&lt;mml:mi /&gt;&lt;mml:mn&gt;2&lt;/mml:mn&gt;&lt;/mml:msup&gt;&lt;/mml:math&gt; hexagonal stabilizer code”, Quantum <span class="textbf">6</span>, 698 (2022). <a href="https://doi.org/10.22331/q-2022-04-27-698" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2112.06036" target="_blank" class="href">2112.06036</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-67">[68]</dt>
       <dd>
-        X. Ni, O. Buerschaper, and M. Van den Nest, “A non-commuting stabilizer formalism”, Journal of Mathematical Physics <span class="textbf">56</span>, 052201 (2015). <a href="https://doi.org/10.1063/1.4920923" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.5327" target="_blank" class="href">1404.5327</a>
+        Raymond Laflamme et al., “Perfect Quantum Error Correction Code”. <a href="https://arxiv.org/abs/quant-ph/9602019" target="_blank" class="href">quant-ph/9602019</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-68">[69]</dt>
       <dd>
-        Matthew B. Hastings, Jeongwan Haah, and Ryan O&#x27;Donnell, “Fiber Bundle Codes: Breaking the <span class="inline-math">$N^{1/2} \operatorname{polylog}(N)$</span> Barrier for Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2009.03921" target="_blank" class="href">2009.03921</a>
+        X. Ni, O. Buerschaper, and M. Van den Nest, “A non-commuting stabilizer formalism”, Journal of Mathematical Physics <span class="textbf">56</span>, 052201 (2015). <a href="https://doi.org/10.1063/1.4920923" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.5327" target="_blank" class="href">1404.5327</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-69">[70]</dt>
       <dd>
-        P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href">1904.02703</a>
+        Matthew B. Hastings, Jeongwan Haah, and Ryan O&#x27;Donnell, “Fiber Bundle Codes: Breaking the <span class="inline-math">$N^{1/2} \operatorname{polylog}(N)$</span> Barrier for Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2009.03921" target="_blank" class="href">2009.03921</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-70">[71]</dt>
       <dd>
-        P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
+        P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href">1904.02703</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-71">[72]</dt>
