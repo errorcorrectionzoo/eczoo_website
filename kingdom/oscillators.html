@@ -273,7 +273,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/bosonic_rotation">Bosonic rotation code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
+      <a href="/c/bosonic_rotation">Bosonic rotation code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>,       <a href="/c/paircat">Pair-cat code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -362,8 +362,23 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 </div>
 
 
+<div class="ecc-code" id="ecc_paircat">
+  <span class="short-code-name"><a href="/c/paircat">Pair-cat code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
+  <span class="short-code-description">Two- or higher-mode extension of cat codes whose codewords are right eigenstates of powers of products of the modes&#x27; lowering operators. Stub.
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/fock_state">Fock-state bosonic code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/cat">Cat code</a>,       <a href="/c/hamiltonian">Hamiltonian-based code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_constant_excitation_permutation_invariant">
-  <span class="short-code-name"><a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
+  <span class="short-code-name"><a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
   <span class="short-code-description">Stub.
 </span>
   <span class="short-code-parents">
@@ -378,7 +393,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_numopt">
-  <span class="short-code-name"><a href="/c/numopt">Numerically optimized code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a><a href="#cite-14" class="cite">[15]</a></span></span>
+  <span class="short-code-name"><a href="/c/numopt">Numerically optimized code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a><a href="#cite-14" class="cite">[15]</a></span></span>
   <span class="short-code-description">Bosonic Fock-state code obtained from a numerical minimization procedure, e.g., from enforcing error-correction criteria against some number of losses while minimizing average occupation number.</span>
   <span class="short-code-info">Protection: Number phase codes protect from a finite number of loss events. However, unlike Fock-state codes, their protection does not stem from a Fock-state spacing.</span>
   <span class="short-code-parents">
@@ -389,7 +404,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_binomial">
-  <span class="short-code-name"><a href="/c/binomial">Binomial code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-name"><a href="/c/binomial">Binomial code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
   <span class="short-code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-14" class="cite">[15]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
   <span class="display-math env-align">\begin{align}
     |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
@@ -417,10 +432,10 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_cat">
-  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a></span></span>
   <span class="short-code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
 </span>
-  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=0\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-21" class="cite">[22]</a> or squeezing <a href="#cite-22" class="cite">[23]</a> that add such protection.</span>
+  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=0\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-22" class="cite">[23]</a> or squeezing <a href="#cite-23" class="cite">[24]</a> that add such protection.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.
@@ -431,14 +446,14 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/binomial">Binomial code</a>.
+      <a href="/c/binomial">Binomial code</a>,       <a href="/c/paircat">Pair-cat code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_number_phase">
   <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
-  <span class="short-code-description">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-23" class="cite">[24]</a>,
+  <span class="short-code-description">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-24" class="cite">[25]</a>,
 <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
 \end{align}</span>
@@ -460,7 +475,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
 
 
 <div class="ecc-code" id="ecc_dual_rail">
-  <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#cite-24" class="cite">[25]</a></span></span>
+  <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#cite-25" class="cite">[26]</a></span></span>
   <span class="short-code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</span>
   <span class="short-code-info">Protection: This is an error-detecting code against one photon loss event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state <span class="inline-math">\(|00\rangle\)</span> is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.</span>
   <span class="short-code-parents">
@@ -471,7 +486,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
 
 
 <div class="ecc-code" id="ecc_wasilewski-banaszek">
-  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-25" class="cite">[26]</a></span></span>
+  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-26" class="cite">[27]</a></span></span>
   <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></span>
   <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
   <span class="short-code-parents">
@@ -572,45 +587,50 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        Y. Ouyang and R. Chao, “Permutation-Invariant Constant-Excitation Quantum Codes for Amplitude Damping”, IEEE Transactions on Information Theory <span class="textbf">66</span>, 2921 (2020). <a href="https://doi.org/10.1109/TIT.2019.2956142" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.09801" target="_blank" class="href">1809.09801</a>
+        V. V. Albert et al., “Pair-cat codes: autonomous error-correction with low-order nonlinearity”, Quantum Science and Technology <span class="textbf">4</span>, 035007 (2019). <a href="https://doi.org/10.1088/2058-9565/ab1e69" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.05897" target="_blank" class="href">1801.05897</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
+        Y. Ouyang and R. Chao, “Permutation-Invariant Constant-Excitation Quantum Codes for Amplitude Damping”, IEEE Transactions on Information Theory <span class="textbf">66</span>, 2921 (2020). <a href="https://doi.org/10.1109/TIT.2019.2956142" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.09801" target="_blank" class="href">1809.09801</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
+        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
+        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        L. Li et al., “Phase-engineered bosonic quantum codes”, Physical Review A <span class="textbf">103</span>, (2021). <a href="https://doi.org/10.1103/PhysRevA.103.062427" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.05358" target="_blank" class="href">1901.05358</a>
+        Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        David S. Schlegel, Fabrizio Minganti, and Vincenzo Savona, “Quantum error correction using squeezed Schrödinger cat states”. <a href="https://arxiv.org/abs/2201.02570" target="_blank" class="href">2201.02570</a>
+        L. Li et al., “Phase-engineered bosonic quantum codes”, Physical Review A <span class="textbf">103</span>, (2021). <a href="https://doi.org/10.1103/PhysRevA.103.062427" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.05358" target="_blank" class="href">1901.05358</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
+        David S. Schlegel, Fabrizio Minganti, and Vincenzo Savona, “Quantum error correction using squeezed Schrödinger cat states”. <a href="https://arxiv.org/abs/2201.02570" target="_blank" class="href">2201.02570</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>
+        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
+      <dd>
+        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-26">[27]</dt>
       <dd>
         W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
       </dd>

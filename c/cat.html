@@ -103,13 +103,13 @@
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based dissipative encoding utilizing multi-photon absorption <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-5" class="cite">[6]</a> (see also Ref. <a href="#cite-6" class="cite">[7]</a>).</span><span class="paragraph-in-list">Combined dissipative and Hamiltonian-based encoding utilizing two-photon exchange for <span class="inline-math">\(S=0\)</span> codes <a href="#cite-7" class="cite">[8]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Lindbladian-based dissipative encoding <a href="#cite-4" class="cite">[5]</a> utilizing multi-photon absorption <a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a><a href="#cite-8" class="cite">[9]</a>. Encoding passively protects against cavity dephasing, suppressing dephasing noise exponentially with <span class="inline-math">\(\alpha^2\)</span>.</span><span class="paragraph-in-list">Hamiltonian-based &#x27;Kerr-cat&#x27; encoding utilizing the Kerr effect <a href="#cite-9" class="cite">[10]</a> (see also Ref. <a href="#cite-10" class="cite">[11]</a>).</span><span class="paragraph-in-list">Combined dissipative and Hamiltonian-based encoding utilizing two-photon exchange for <span class="inline-math">\(S=0\)</span> codes <a href="#cite-11" class="cite">[12]</a>.</span></div>
 
 
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=0\)</span>, universal gates in the quantum optical setting can be performed using teleportation, Bell measurements, displacements, and rotations <a href="#cite-8" class="cite">[9]</a>.</span><span class="paragraph-in-list">For <span class="inline-math">\(S=0\)</span>, universal gates in the microwave setting can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-4" class="cite">[5]</a>. For <span class="inline-math">\(S=1\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing a topological Berry phase <a href="#cite-10" class="cite">[11]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">For <span class="inline-math">\(S=0\)</span>, universal gates in the quantum optical setting can be performed using teleportation, Bell measurements, displacements, and rotations <a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">For <span class="inline-math">\(S=0\)</span>, universal gates in the microwave setting can be performed using displacement operators and a rotation based on the Kerr nonlinearity <a href="#cite-4" class="cite">[5]</a>. For <span class="inline-math">\(S=1\)</span>, squeezing replaces displacements.</span><span class="paragraph-in-list">Holonomic gates utilizing the Berry phase of coherent states are universal <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Bias-preserving CNOT gate utilizing an <span class="inline-math">\(X\)</span> gate with a topological Berry phase <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span></div>
 
 
 <h2 id="feature_decoders"
@@ -119,7 +119,7 @@
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-10" class="cite">[11]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-11" class="cite">[12]</a><a href="#cite-10" class="cite">[11]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Bias-preserving CNOT gate <a href="#cite-15" class="cite">[16]</a> is part of a universal bias-preserving gate set that can be made fault tolerant using concatenation <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Ancilla qubits encoded in cat codes yield fault-tolerant syndrome extraction circuits <a href="#cite-16" class="cite">[17]</a>.</span></div>
 
 
 
@@ -129,12 +129,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Two-legged (<span class="inline-math">\(S=0\)</span>) Lindbladian-based <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a> and Hamiltonian-based &#x27;Kerr-cat&#x27; encoding <a href="#cite-14" class="cite">[15]</a> has been achieved in superconducting circuit devices by the Devoret group; Ref. <a href="#cite-13" class="cite">[14]</a> also demonstrated a displacement-based gate. The Lindbladian-based scheme has further achieved a suppression of bit-flip errors that is exponential in the average photon number <a href="#cite-15" class="cite">[16]</a> up to a bit-flip time of 1 ms. A bit-flip time of up to 1 sec has been achieved while away from the logical-qubit regime <a href="#cite-16" class="cite">[17]</a>.</span><span class="paragraph-in-list">Four-legged (<span class="inline-math">\(S=1\)</span>) cat code has been realized in a superconducting circuit device <a href="#cite-17" class="cite">[18]</a>. This paper is the first to reach break-even error-correction, where the lifetime of a logical qubit is on par with the lifetime of the noisiest constituent of the system.</span><span class="paragraph-in-list">Approximate version of the <span class="inline-math">\(S=0\)</span> code realized in a superconducting circuit device by the Wang group <a href="#cite-18" class="cite">[19]</a>.</span>
+  <span class="paragraph-in-list">Two-legged (<span class="inline-math">\(S=0\)</span>) Lindbladian-based <a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a> and Hamiltonian-based &#x27;Kerr-cat&#x27; encoding <a href="#cite-19" class="cite">[20]</a> has been achieved in superconducting circuit devices by the Devoret group; Ref. <a href="#cite-18" class="cite">[19]</a> also demonstrated a displacement-based gate. The Lindbladian-based scheme has further achieved a suppression of bit-flip errors that is exponential in the average photon number <a href="#cite-20" class="cite">[21]</a> up to a bit-flip time of 1 ms. A bit-flip time of up to 1 sec has been achieved while away from the logical-qubit regime <a href="#cite-21" class="cite">[22]</a>.</span><span class="paragraph-in-list">Four-legged (<span class="inline-math">\(S=1\)</span>) cat code has been realized in a superconducting circuit device <a href="#cite-22" class="cite">[23]</a>. This paper is the first to reach break-even error-correction, where the lifetime of a logical qubit is on par with the lifetime of the noisiest constituent of the system.</span><span class="paragraph-in-list">Approximate version of the <span class="inline-math">\(S=0\)</span> code realized in a superconducting circuit device by the Wang group <a href="#cite-23" class="cite">[24]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Pedagogical introduction to cat codes in the context of microwave cavities can be found in Ref. <a href="#cite-19" class="cite">[20]</a>, and in the context of optical systems in books <a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a>.</span>
+  <span class="paragraph-in-list">Pedagogical introduction to cat codes in the context of microwave cavities can be found in Ref. <a href="#cite-24" class="cite">[25]</a>, and in the context of optical systems in books <a href="#cite-25" class="cite">[26]</a><a href="#cite-26" class="cite">[27]</a>.</span>
 </div>
 
 
@@ -150,7 +150,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-22" class="cite">[23]</a>.</span></li>
+      &#x2014;&nbsp;The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-27" class="cite">[28]</a>.</span></li>
 </ul>
 </div>
 
@@ -165,15 +165,19 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/number_phase">Number-phase code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the cat code has vanishing variance, just like in a number-phase code <a href="#cite-22" class="cite">[23]</a>.</span></li>
+      &#x2014;&nbsp;In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the cat code has vanishing variance, just like in a number-phase code <a href="#cite-27" class="cite">[28]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamiltonian">Hamiltonian-based code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Two-legged cat codewords form ground-state subspace of a Kerr Hamiltonian <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;Two-legged cat codewords form ground-state subspace of a Kerr Hamiltonian <a href="#cite-9" class="cite">[10]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binomial">Binomial code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;For a fixed <span class="inline-math">\(S\)</span>, binomial codes with <span class="inline-math">\(N \to \infty\)</span> coincide with cat codes as <span class="inline-math">\(\alpha \to \infty\)</span> <a href="#cite-23" class="cite">[24]</a>.</span></li>
+      &#x2014;&nbsp;For a fixed <span class="inline-math">\(S\)</span>, binomial codes with <span class="inline-math">\(N \to \infty\)</span> coincide with cat codes as <span class="inline-math">\(\alpha \to \infty\)</span> <a href="#cite-28" class="cite">[29]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/paircat">Pair-cat code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Cat (pair-cat) codewords are superpositions of coherent (pair-coherent) states.</span></li>
 </ul>
 </div>
 
@@ -254,95 +258,120 @@ url={https://errorcorrectionzoo.org/c/cat}
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        S. Puri, S. Boutin, and A. Blais, “Engineering the quantum states of light in a Kerr-nonlinear resonator by two-photon driving”, npj Quantum Information <span class="textbf">3</span>, (2017). <a href="https://doi.org/10.1038/s41534-017-0019-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1605.09408" target="_blank" class="href">1605.09408</a>
+        M. Wolinsky and H. J. Carmichael, “Quantum noise in the parametric oscillator: From squeezed states to coherent-state superpositions”, Physical Review Letters <span class="textbf">60</span>, 1836 (1988). <a href="https://doi.org/10.1103/PhysRevLett.60.1836" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        H. Goto, “Bifurcation-based adiabatic quantum computation with a nonlinear oscillator network”, Scientific Reports <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1038/srep21686" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1510.02566" target="_blank" class="href">1510.02566</a>
+        L. Krippner, W. J. Munro, and M. D. Reid, “Transient macroscopic quantum superposition states in degenerate parametric oscillation: Calculations in the large-quantum-noise limit using the positive&lt;i&gt;P&lt;/i&gt;representation”, Physical Review A <span class="textbf">50</span>, 4330 (1994). <a href="https://doi.org/10.1103/PhysRevA.50.4330" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        Ronan Gautier, Alain Sarlette, and Mazyar Mirrahimi, “Combined Dissipative and Hamiltonian Confinement of Cat Qubits”. <a href="https://arxiv.org/abs/2112.05545" target="_blank" class="href">2112.05545</a>
+        E. E. Hach III and C. C. Gerry, “Generation of mixtures of Schrödinger-cat states from a competitive two-photon process”, Physical Review A <span class="textbf">49</span>, 490 (1994). <a href="https://doi.org/10.1103/PhysRevA.49.490" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        T. C. Ralph et al., “Quantum computation with optical coherent states”, Physical Review A <span class="textbf">68</span>, (2003). <a href="https://doi.org/10.1103/PhysRevA.68.042319" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0306004" target="_blank" class="href">quant-ph/0306004</a>
+        L. Gilles, B. M. Garraway, and P. L. Knight, “Generation of nonclassical light by dissipative two-photon processes”, Physical Review A <span class="textbf">49</span>, 2785 (1994). <a href="https://doi.org/10.1103/PhysRevA.49.2785" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        V. V. Albert et al., “Holonomic Quantum Control with Continuous Variable Systems”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.140502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.00194" target="_blank" class="href">1503.00194</a>
+        S. Puri, S. Boutin, and A. Blais, “Engineering the quantum states of light in a Kerr-nonlinear resonator by two-photon driving”, npj Quantum Information <span class="textbf">3</span>, (2017). <a href="https://doi.org/10.1038/s41534-017-0019-1" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1605.09408" target="_blank" class="href">1605.09408</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        S. Puri et al., “Bias-preserving gates with stabilized cat qubits”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay5901" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.00450" target="_blank" class="href">1905.00450</a>
+        H. Goto, “Bifurcation-based adiabatic quantum computation with a nonlinear oscillator network”, Scientific Reports <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1038/srep21686" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1510.02566" target="_blank" class="href">1510.02566</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        J. Guillaud and M. Mirrahimi, “Repetition Cat Qubits for Fault-Tolerant Quantum Computation”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041053" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.09474" target="_blank" class="href">1904.09474</a>
+        Ronan Gautier, Alain Sarlette, and Mazyar Mirrahimi, “Combined Dissipative and Hamiltonian Confinement of Cat Qubits”. <a href="https://arxiv.org/abs/2112.05545" target="_blank" class="href">2112.05545</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        Z. Leghtas et al., “Confining the state of light to a quantum manifold by engineered two-photon loss”, Science <span class="textbf">347</span>, 853 (2015). <a href="https://doi.org/10.1126/science.aaa2085" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.4633" target="_blank" class="href">1412.4633</a>
+        T. C. Ralph et al., “Quantum computation with optical coherent states”, Physical Review A <span class="textbf">68</span>, (2003). <a href="https://doi.org/10.1103/PhysRevA.68.042319" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0306004" target="_blank" class="href">quant-ph/0306004</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        S. Touzard et al., “Coherent Oscillations inside a Quantum Manifold Stabilized by Dissipation”, Physical Review X <span class="textbf">8</span>, (2018). <a href="https://doi.org/10.1103/PhysRevX.8.021005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02401" target="_blank" class="href">1705.02401</a>
+        V. V. Albert et al., “Holonomic Quantum Control with Continuous Variable Systems”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.140502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.00194" target="_blank" class="href">1503.00194</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        A. Grimm et al., “Stabilization and operation of a Kerr-cat qubit”, Nature <span class="textbf">584</span>, 205 (2020). <a href="https://doi.org/10.1038/s41586-020-2587-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.12131" target="_blank" class="href">1907.12131</a>
+        J. Guillaud and M. Mirrahimi, “Repetition Cat Qubits for Fault-Tolerant Quantum Computation”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041053" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.09474" target="_blank" class="href">1904.09474</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        R. Lescanne et al., “Exponential suppression of bit-flips in a qubit encoded in an oscillator”, Nature Physics <span class="textbf">16</span>, 509 (2020). <a href="https://doi.org/10.1038/s41567-020-0824-x" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.11729" target="_blank" class="href">1907.11729</a>
+        S. Puri et al., “Bias-preserving gates with stabilized cat qubits”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.aay5901" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.00450" target="_blank" class="href">1905.00450</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        C. Berdou et al., “One hundred second bit-flip time in a two-photon dissipative oscillator”. <a href="https://arxiv.org/abs/2204.09128" target="_blank" class="href">2204.09128</a>
+        S. Puri et al., “Stabilized Cat in a Driven Nonlinear Cavity: A Fault-Tolerant Error Syndrome Detector”, Physical Review X <span class="textbf">9</span>, (2019). <a href="https://doi.org/10.1103/PhysRevX.9.041009" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1807.09334" target="_blank" class="href">1807.09334</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        Nissim Ofek et al., “Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information”. <a href="https://arxiv.org/abs/1602.04768" target="_blank" class="href">1602.04768</a>
+        Z. Leghtas et al., “Confining the state of light to a quantum manifold by engineered two-photon loss”, Science <span class="textbf">347</span>, 853 (2015). <a href="https://doi.org/10.1126/science.aaa2085" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1412.4633" target="_blank" class="href">1412.4633</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        J. M. Gertler et al., “Protecting a bosonic qubit with autonomous quantum error correction”, Nature <span class="textbf">590</span>, 243 (2021). <a href="https://doi.org/10.1038/s41586-021-03257-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2004.09322" target="_blank" class="href">2004.09322</a>
+        S. Touzard et al., “Coherent Oscillations inside a Quantum Manifold Stabilized by Dissipation”, Physical Review X <span class="textbf">8</span>, (2018). <a href="https://doi.org/10.1103/PhysRevX.8.021005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02401" target="_blank" class="href">1705.02401</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        Jérémie Guillaud, Joachim Cohen, and Mazyar Mirrahimi, “Quantum computation with cat qubits”. <a href="https://arxiv.org/abs/2203.03222" target="_blank" class="href">2203.03222</a>
+        A. Grimm et al., “Stabilization and operation of a Kerr-cat qubit”, Nature <span class="textbf">584</span>, 205 (2020). <a href="https://doi.org/10.1038/s41586-020-2587-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.12131" target="_blank" class="href">1907.12131</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        S. Haroche and J.-M. Raimond, <span class="textit">Exploring the Quantum</span> (Oxford University Press, 2006). <a href="https://doi.org/10.1093/acprof:oso/9780198509141.001.0001" target="_blank" class="href">DOI</a>
+        R. Lescanne et al., “Exponential suppression of bit-flips in a qubit encoded in an oscillator”, Nature Physics <span class="textbf">16</span>, 509 (2020). <a href="https://doi.org/10.1038/s41567-020-0824-x" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.11729" target="_blank" class="href">1907.11729</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        H. Bachor and T. C. Ralph, <span class="textit">A Guide to Experiments in Quantum Optics</span> (Wiley, 2019). <a href="https://doi.org/10.1002/9783527695805" target="_blank" class="href">DOI</a>
+        C. Berdou et al., “One hundred second bit-flip time in a two-photon dissipative oscillator”. <a href="https://arxiv.org/abs/2204.09128" target="_blank" class="href">2204.09128</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+        Nissim Ofek et al., “Demonstrating Quantum Error Correction that Extends the Lifetime of Quantum Information”. <a href="https://arxiv.org/abs/1602.04768" target="_blank" class="href">1602.04768</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
+      <dd>
+        J. M. Gertler et al., “Protecting a bosonic qubit with autonomous quantum error correction”, Nature <span class="textbf">590</span>, 243 (2021). <a href="https://doi.org/10.1038/s41586-021-03257-0" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2004.09322" target="_blank" class="href">2004.09322</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-24">[25]</dt>
+      <dd>
+        Jérémie Guillaud, Joachim Cohen, and Mazyar Mirrahimi, “Quantum computation with cat qubits”. <a href="https://arxiv.org/abs/2203.03222" target="_blank" class="href">2203.03222</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-25">[26]</dt>
+      <dd>
+        S. Haroche and J.-M. Raimond, <span class="textit">Exploring the Quantum</span> (Oxford University Press, 2006). <a href="https://doi.org/10.1093/acprof:oso/9780198509141.001.0001" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-26">[27]</dt>
+      <dd>
+        H. Bachor and T. C. Ralph, <span class="textit">A Guide to Experiments in Quantum Optics</span> (Wiley, 2019). <a href="https://doi.org/10.1002/9783527695805" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-27">[28]</dt>
+      <dd>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-28">[29]</dt>
       <dd>
         M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
       </dd>
@@ -372,7 +401,7 @@ url={https://errorcorrectionzoo.org/c/cat}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bosonic_rotation">Bosonic rotation</a></li><li><a href="/c/single-mode">Single-mode bosonic</a></li><li><a href="/c/qudits_into_oscillators">Qudit-into-oscillator</a></li><li><a href="/c/number_phase">Number-phase</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/binomial">Binomial</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bosonic_rotation">Bosonic rotation</a></li><li><a href="/c/single-mode">Single-mode bosonic</a></li><li><a href="/c/qudits_into_oscillators">Qudit-into-oscillator</a></li><li><a href="/c/number_phase">Number-phase</a></li><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/binomial">Binomial</a></li><li><a href="/c/paircat">Pair-cat</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
