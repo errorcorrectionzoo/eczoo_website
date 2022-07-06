@@ -162,7 +162,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Introduction to CSS-to-homology dictionary by <a href="https://www.youtube.com/watch?v=SeLpWg_8qlc" target="_blank" class="href">M. Hastings</a>.</span><span class="paragraph-in-list">Using linear programming to solve a set of equations and inequalities on weight distribution of a classical self-orthogonal code <span class="inline-math">\(C=(n, 2^n-k)\)</span> and its dual, one can find a <span class="inline-math">\(C\)</span> such that the <span class="inline-math">\([[n,k,d]]\)</span> CSS code constructed using <span class="inline-math">\(C\)</span> and its dual would have rate and distance close to the Singleton bound <a href="#cite-16" class="cite">[17]</a>.</span><span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product" class="ref">hypergraph product</a> codes.</span>
+  <span class="paragraph-in-list">Introduction to CSS-to-homology dictionary by <a href="https://www.youtube.com/watch?v=SeLpWg_8qlc" target="_blank" class="href">M. Hastings</a>.</span><span class="paragraph-in-list">Entanglement purification protocols related to quantum key distribution (QKD) utilize CSS error correction <a href="#cite-16" class="cite">[17]</a>.</span><span class="paragraph-in-list">Using linear programming to solve a set of equations and inequalities on weight distribution of a classical self-orthogonal code <span class="inline-math">\(C=(n, 2^n-k)\)</span> and its dual, one can find a <span class="inline-math">\(C\)</span> such that the <span class="inline-math">\([[n,k,d]]\)</span> CSS code constructed using <span class="inline-math">\(C\)</span> and its dual would have rate and distance close to the Singleton bound <a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Original requirement of <span class="inline-math">\(C_X^\perp \subset C_Z\)</span> <a href="#cite-0" class="cite">[1]</a> has been relaxed to absorb <a href="/c/hypergraph_product" class="ref">hypergraph product</a> codes.</span>
 </div>
 
 
@@ -178,7 +178,7 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-17" class="cite">[18]</a>.</span></li>
+      &#x2014;&nbsp;Stabilizer generators can be expressed as either only <span class="inline-math">\(X\)</span>-type or only <span class="inline-math">\(Z\)</span>-type. However, any <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code can be mapped onto a <span class="inline-math">\([[4n,2k,2d]]\)</span> weakly self-dual CSS code, with the mapping preserving geometric locality of a code up to a constant factor <a href="#cite-18" class="cite">[19]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -213,8 +213,6 @@ One constructs a CSS code by associating a physical qubit to every basis element
     <span class="code-parent-of-1-code"><a href="/c/quantum_divisible">Quantum divisible code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_parity">Quantum parity code (QPC)</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quantum_polar">Quantum polar code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span></li>
   <li class="paragraph-in-list">
@@ -264,15 +262,19 @@ One constructs a CSS code by associating a physical qubit to every basis element
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
+      &#x2014;&nbsp;When constructing a Majorana stabilizer code from a weakly self-dual classical code with an odd number of bits and generator matrix <span class="inline-math">\(G\)</span>, a more complex procedure must be applied to ensure that the fermion code has an even number of Majorana zero modes, and thus a physical Hilbert space <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>. Rather than taking <span class="inline-math">\(G\)</span> to be the stabilizer matrix as in the even case, we take <span class="inline-math">\(G\oplus G\)</span>. This is a concatenation of classical codes as in the CSS construction and it yields a mapping <span class="inline-math">\([2N-1,k,d]\rightarrow [[2N-1,2N-1-k,d^\perp]]_f\)</span>. This procedure may be further generalized by concatenating two different weakly self-dual classical codes with an odd number of bits, as is often done in the CSS construction.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Extension of CSS codes to modular-integer qudits.</span></li>
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_polar">Quantum polar code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum polar codes are CSS codes used in an entanglement generation scheme.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/xp_stabilizer">XP stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Each XP-regular code can be mapped to a CSS code with a similar logical operator structure <a href="#cite-19" class="cite">[20]</a>.</span></li>
+      &#x2014;&nbsp;Each XP-regular code can be mapped to a CSS code with a similar logical operator structure <a href="#cite-20" class="cite">[21]</a>.</span></li>
 </ul>
 </div>
 
@@ -408,20 +410,25 @@ url={https://errorcorrectionzoo.org/c/css}
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
+        P. W. Shor and J. Preskill, “Simple Proof of Security of the BB84 Quantum Key Distribution Protocol”, Physical Review Letters <span class="textbf">85</span>, 441 (2000). <a href="https://doi.org/10.1103/PhysRevLett.85.441" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0003004" target="_blank" class="href">quant-ph/0003004</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
+        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+        S. Bravyi, B. M. Terhal, and B. Leemhuis, “Majorana fermion codes”, New Journal of Physics <span class="textbf">12</span>, 083039 (2010). <a href="https://doi.org/10.1088/1367-2630/12/8/083039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1004.3791" target="_blank" class="href">1004.3791</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
+      <dd>
+        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-20">[21]</dt>
       <dd>
         Mark A. Webster, Benjamin J. Brown, and Stephen D. Bartlett, “The XP Stabiliser Formalism: a Generalisation of the Pauli Stabiliser Formalism with Arbitrary Phases”. <a href="https://arxiv.org/abs/2203.00103" target="_blank" class="href">2203.00103</a>
       </dd>
