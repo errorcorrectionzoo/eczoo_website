@@ -87,12 +87,12 @@
 <div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> binary coordinates and has distance <span class="inline-math">\(d\)</span>. Usually denoted as <span class="inline-math">\((n,K,d)\)</span>. The distance is the minimum Hamming distance between a pair of distinct codewords.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors if
+<div class="sectioncontent code-protection"><p>A binary code <span class="inline-math">\(C\)</span> <span class="textit">corrects</span> <span class="inline-math">\(t\)</span> errors in the Hamming distance if
 <span class="display-math env-align">\begin{align}
   \forall x \in C~,~D(x,x+y) &lt; D(x&#x27; , x+y)
 \end{align}</span>
-for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(D\)</span> is the Hamming distance and <span class="inline-math">\(|y| = D(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.
-</div>
+for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <span class="inline-math">\(y\)</span> such that <span class="inline-math">\(|y|=t\)</span>, where <span class="inline-math">\(D\)</span> is the <span class="textit">Hamming distance</span> and <span class="inline-math">\(|y| = D(y,0) \)</span>. A code corrects <span class="inline-math">\(t\)</span> errors if and only if <span class="inline-math">\(d \geq 2t+1\)</span>, i.e., a code corrects errors on <span class="inline-math">\(t \leq \left\lfloor (d-1)/2 \right\rfloor\)</span> coordinates. In addition, a code detects errors on up to <span class="inline-math">\(d-1\)</span> coordinates, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> coordinates.</p>
+<p>Performance of binary codes can also be measured with respect to deletions and insertions of bits into the codewords. In this case, the metric measuring distance of an error word to the nearest codeword is the <span class="textit">deletion distance</span>: given vectors <span class="inline-math">\(u,v\)</span>, this distance is one-half the smallest number of deletions and insertions needed to change <span class="inline-math">\(u\)</span> to <span class="inline-math">\(v\)</span>. A code <span class="inline-math">\(C\)</span> corrects <span class="inline-math">\(e\)</span> delections if all codewords are separated by at least <span class="inline-math">\(e+1\)</span> in the deletion distance <a href="#cite-0" class="cite">[1]</a>.</p></div>
 
 
 <!-- Display features -->
@@ -147,7 +147,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/deletion">Binary deletion-correcting code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/vt_single_deletion">Binary Varshamov-Tenengolts (VT) code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/convolutional">Convolutional code</a></span></li>
   <li class="paragraph-in-list">
@@ -223,6 +223,17 @@ url={https://errorcorrectionzoo.org/c/bits_into_bits}
 <!-- endnotes -->
 
 
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        N. J. A. Sloane, “On Single-Deletion-Correcting Codes”. <a href="https://arxiv.org/abs/math/0207197" target="_blank" class="href">math/0207197</a>
+      </dd>
+    
+    </dl>
+  </div>
 
 
 
@@ -246,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/bits_into_bits}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/deletion">Binary deletion-correcting</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/levenshtein">Levenshtein</a></li><li><a href="/c/group_classical">Group-based</a></li><li><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/vt_single_deletion">Binary VT</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/levenshtein">Levenshtein</a></li><li><a href="/c/group_classical">Group-based</a></li><li><a href="/c/movassagh_ouyang">Movassagh-Ouyang Hamiltonian</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
