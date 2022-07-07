@@ -67,21 +67,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_gabidulin">
-  <span class="short-code-name"><a href="/c/gabidulin">Gabidulin code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">Also called a <span class="textit">vector rank-metric code</span>. A linear code over <span class="inline-math">\(GF(q^N)\)</span> that corrects errors over rank metric instead of the traditional Hamming distance. Every element <span class="inline-math">\(GF(q^N)\)</span> can be written as an <span class="inline-math">\(N\)</span>-dimensional vector with coefficients in <span class="inline-math">\(GF(q)\)</span>, and the rank of a set of elements is rank of the matrix formed by their coefficients.</span>
-  <span class="short-code-info">Protection: Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/rank_metric">Rank-metric code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_matrix_computation">
   <span class="short-code-name"><a href="/c/matrix_computation">Matrix computation code</a></span>
   <span class="short-code-description">Encoding that provides an extra redundancy for distributed matrix computation algorithms such as matrix multiplication. Parallelized algorithms distribute a desired computation over many nodes, and a key performance bottleneck is due to some nodes completing their individual tasks much later than other nodes. Matrix computation codes provide a layer of redundancy such that the computation can be performed without having all nodes finish their piece of the computation.
@@ -99,7 +84,7 @@
 
 
 <div class="ecc-code" id="ecc_rank_metric">
-  <span class="short-code-name"><a href="/c/rank_metric">Rank-metric code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/rank_metric">Rank-metric code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
   <span class="short-code-description">Also called a <span class="textit">Delsarte code</span>. Each codeword is a <span class="textit">matrix</span> over <span class="inline-math">\(GF(q)\)</span>, with codewords forming a <span class="inline-math">\(GF(q)\)</span>-linear subspace, and with the metric being the rank of the difference of matrices. The distance <span class="inline-math">\(d\)</span> is the minimum rank of all nonzero matrices in the code. Rank-metric codes on <span class="inline-math">\(n\times m\)</span> matrices are denoted as <span class="inline-math">\([n\times m,k,d]_q\)</span>.</span>
   <span class="short-code-info">Protection: Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</span>
   <span class="short-code-parents">
@@ -128,7 +113,7 @@
 
 
 <div class="ecc-code" id="ecc_spacetime">
-  <span class="short-code-name"><a href="/c/spacetime">Spacetime code (STC)</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-name"><a href="/c/spacetime">Spacetime code (STC)</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
   <span class="short-code-description">Code designed for wireless transmission of information (via, e.g., radio waves) such that the sender can send multiple times from multiple locations. A spacetime code uses a modulation scheme to encode a message into signals that are sent at different times through different antennas, thereby utilizing both spatial and temporal (i.e., <span class="textit">spacetime</span>) degrees of freedom.
 </span>
   <span class="short-code-parents">
@@ -160,8 +145,23 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_gabidulin">
+  <span class="short-code-name"><a href="/c/gabidulin">Gabidulin code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-description">Also called a <span class="textit">vector rank-metric code</span>. A linear code over <span class="inline-math">\(GF(q^N)\)</span> that corrects errors over rank metric instead of the traditional Hamming distance. Every element <span class="inline-math">\(GF(q^N)\)</span> can be written as an <span class="inline-math">\(N\)</span>-dimensional vector with coefficients in <span class="inline-math">\(GF(q)\)</span>, and the rank of a set of elements is rank of the matrix formed by their coefficients.</span>
+  <span class="short-code-info">Protection: Set of vectors <span class="inline-math">\(\{x_1, x_2, \ldots, x_M\}\)</span> determines a rank code with distance <span class="inline-math">\(d=\min d(x_i, x_j)\)</span>. The code with distance <span class="inline-math">\(d\)</span> corrects all errors with rank of the error not greater than <span class="inline-math">\(\lfloor (d-1)/2\rfloor\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/rank_metric">Rank-metric code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_maximum_rank_distance">
-  <span class="short-code-name"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-3" class="cite">[4]</a></span></span>
   <span class="short-code-description">Also called an <span class="textit">optimal rank-distance</span> code. An <span class="inline-math">\([n\times m,k,d]_q\)</span> rank-metric code whose parameters are such that the Singleton-like bound
 <span class="display-math env-align">\begin{align}
 k \leq \max(n, m) (\min(n, m) - d + 1)
@@ -256,22 +256,22 @@ where <span class="inline-math">\(c_i\)</span> are complex numbers.
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        E. M. Gabidulin, <span class="textit">Theory of Codes with Maximum Rank Distance</span>, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
+        P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
+        V. Tarokh, N. Seshadri, and A. R. Calderbank, “Space-time codes for high data rate wireless communication: performance criterion and code construction”, IEEE Transactions on Information Theory <span class="textbf">44</span>, 744 (1998). <a href="https://doi.org/10.1109/18.661517" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href">DOI</a>
+        E. M. Gabidulin, <span class="textit">Theory of Codes with Maximum Rank Distance</span>, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="emph">3–16</span> (1985)
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        V. Tarokh, N. Seshadri, and A. R. Calderbank, “Space-time codes for high data rate wireless communication: performance criterion and code construction”, IEEE Transactions on Information Theory <span class="textbf">44</span>, 744 (1998). <a href="https://doi.org/10.1109/18.661517" target="_blank" class="href">DOI</a>
+        R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
