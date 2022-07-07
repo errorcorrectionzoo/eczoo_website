@@ -84,9 +84,14 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Two- or higher-mode extension of cat codes whose codewords are right eigenstates of powers of products of the modes&#x27; lowering operators. Stub.
-</div>
+<div class="sectioncontent code-description"><p>Two- or higher-mode extension of cat codes whose codewords are right eigenstates of powers of products of the modes&#x27; lowering operators.</p>
+<p>Paircat codewords suppored by two-mode Fock states with occupation number difference <span class="inline-math">\(\Delta\)</span> are <span class="inline-math">\(|\overline{0}_{\gamma,\Delta}\rangle \sim |\gamma_\Delta \rangle + (-1)^\Delta |I\gamma_\Delta\rangle\)</span> and <span class="inline-math">\(|\overline{1}_{\gamma,\Delta}\rangle \sim |\gamma_\Delta\rangle - (-1)^\Delta |i \gamma\rangle\)</span>, where the corresponding pair-coherent state <a href="#cite-1" class="cite">[2]</a> with amplitude <span class="inline-math">\(\gamma\)</span> is
+<span class="display-math env-align">\begin{align}
+|\gamma_\Delta \rangle =\frac{1}{\sqrt{I_\Delta (2|\gamma|^2)}} \sum_{n=0}^\infty \frac{\gamma^{2n+\Delta}}{\sqrt{n! (n+\Delta)!}} |n,n+\Delta\rangle~.
+\end{align}</span></p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Can detect any loss errors of at most <span class="inline-math">\(M-1\)</span> weight. The two-mode cat code protects against arbitrary single-mode losses, but cannot correct simultaneous photon loss in both modes. The occupation-number differences form the syndromes, as opposed to the photon number parity for the single-mode cat code. Any loss even combination that changes the relative differences of photons between modes is a detectable error.</div>
 
 
 <!-- Display features -->
@@ -102,6 +107,9 @@
 
 
  
+<h2 id="feature_general_gates"
+      class="code-feature code-feature-general_gates">Gates</h2>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Hamiltonian <span class="inline-math">\(X\)</span>, <span class="inline-math">\(XX\)</span>, <span class="inline-math">\(Z\)</span> gates, holonomic <span class="inline-math">\(Z\)</span> gate, control-phase gate are available. Many cat-code gates have two-mode analogues for the pair-cat codes.</span></div>
 
 
 
@@ -202,6 +210,11 @@ url={https://errorcorrectionzoo.org/c/paircat}
       <dt id="cite-0">[1]</dt>
       <dd>
         V. V. Albert et al., “Pair-cat codes: autonomous error-correction with low-order nonlinearity”, Quantum Science and Technology <span class="textbf">4</span>, 035007 (2019). <a href="https://doi.org/10.1088/2058-9565/ab1e69" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.05897" target="_blank" class="href">1801.05897</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        A. O. Barut and L. Girardello, “New “Coherent” States associated with non-compact groups”, Communications in Mathematical Physics <span class="textbf">21</span>, 41 (1971). <a href="https://doi.org/10.1007/BF01646483" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
