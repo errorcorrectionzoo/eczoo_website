@@ -67,7 +67,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/batch">Batch code</a>,       <a href="/c/vt_single_deletion">Binary Varshamov-Tenengolts (VT) code</a>,       <a href="/c/binary_cyclic">Binary cyclic code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/levenshtein">Levenshtein code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
+      <a href="/c/batch">Batch code</a>,       <a href="/c/vt_single_deletion">Binary Varshamov-Tenengolts (VT) code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/levenshtein">Levenshtein code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -101,8 +101,22 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 </div>
 
 
+<div class="ecc-code" id="ecc_convolutional">
+  <span class="short-code-name"><a href="/c/convolutional">Convolutional code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
+  <span class="short-code-description">Classical codes that are formed using generator polynomials over the finite field with two elements. The encoder slides across contiguous subsets of the input bit-string (like a convolutional neural network) evaluating the polynomials on that window to obtain a number of parity bits. These parity bits are the encoded information. There are many ways to formulate these codes</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/bits_into_bits">Binary code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/quantum_convolutional">Quantum convolutional code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_binary_cyclic">
-  <span class="short-code-name"><a href="/c/binary_cyclic">Binary cyclic code</a></span>
+  <span class="short-code-name"><a href="/c/binary_cyclic">Cyclic binary code</a></span>
   <span class="short-code-description">A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword.</span>
   <span class="short-code-parents">
     Parents:
@@ -115,20 +129,6 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_convolutional">
-  <span class="short-code-name"><a href="/c/convolutional">Convolutional code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">Classical codes that are formed using generator polynomials over the finite field with two elements. The encoder slides across contiguous subsets of the input bit-string (like a convolutional neural network) evaluating the polynomials on that window to obtain a number of parity bits. These parity bits are the encoded information. There are many ways to formulate these codes</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/bits_into_bits">Binary code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/quantum_convolutional">Quantum convolutional code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
   </span>
 </div>
 
@@ -195,7 +195,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_cyclic">Binary cyclic code</a>.
+      <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -262,7 +262,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-info">Protection: Since duadic codes are cyclic, the BCH bound can be used to determine their minimum distance.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/binary_cyclic">Binary cyclic code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -281,7 +281,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-info">Protection: Correct at least all weight-2 errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_cyclic">Binary cyclic code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
+      <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -578,7 +578,7 @@ The codewords can be generated using a one-dimensional cellular automaton of len
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        P. Camion, P. Charpin, and S. Harari, editors , <span class="textit">Eurocode ’92</span> (Springer Vienna, 1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5" target="_blank" class="href">DOI</a>
+        V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>

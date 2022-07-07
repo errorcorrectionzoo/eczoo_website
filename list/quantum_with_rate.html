@@ -227,24 +227,28 @@ provides an upper bound for any bounded-geometry surface code
   <td class="small top"><span class="inline-math">\([[n,k=\Theta(n),d=O(\sqrt{n})]]\)</span> code with asymptotically constant rate.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/quantum_polar">Quantum polar code</a></td>
+  <td class="small top">The rate approaches the symmetric coherent information of the quantum noise channel <a href="#cite-23" class="cite">[24]</a>.</td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/ramanujan_tensor_product">Ramanujan-complex product code</a></td>
   <td class="small top">For 2D Ramanujan complexes, the rate is <span class="inline-math">\(\Omega(\sqrt{ \frac{1}{n \log n} })\)</span>, with minimum distance <span class="inline-math">\(d = \Omega(\sqrt{n \log n}) \)</span>. For 3D, the rate is <span class="inline-math">\( \Omega(\frac{1}{\sqrt{n}\log n}) \)</span> with minimum distance <span class="inline-math">\(d \geq \sqrt{n} \log n \)</span>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/random">Random code</a></td>
-  <td class="small top">Typical random codes (TRC) or typical random linear codes (TLC) refer to codes in the respective ensemble that satisfy a certain minimum distance. The relative fraction of typical codes in the ensemble approaches one as <span class="inline-math">\(N\)</span> goes to infinity <a href="#cite-23" class="cite">[24]</a> (see also Ref. <a href="#cite-24" class="cite">[25]</a>). Asymptotically, given distance <span class="inline-math">\(d\)</span>, the maximum rate for a TRC is given by <span class="inline-math">\(R=\frac{1}{2}R_{GV}(\delta)\)</span> where <span class="inline-math">\(R_{GV}\)</span> is the Gilbert–Varshamov (GV) bound <span class="inline-math">\(R_{GV}=1-h(\delta)\)</span>, and <span class="inline-math">\(h(\delta)=h(\frac{d}{n})\)</span> is the binary entropy function. The maximum rate for a TLC is given by <span class="inline-math">\(R=R_{GV}(d)\)</span>, meaning that TLCs achieve the asymoptic GV bound.</td>
+  <td class="small top">Typical random codes (TRC) or typical random linear codes (TLC) refer to codes in the respective ensemble that satisfy a certain minimum distance. The relative fraction of typical codes in the ensemble approaches one as <span class="inline-math">\(N\)</span> goes to infinity <a href="#cite-24" class="cite">[25]</a> (see also Ref. <a href="#cite-25" class="cite">[26]</a>). Asymptotically, given distance <span class="inline-math">\(d\)</span>, the maximum rate for a TRC is given by <span class="inline-math">\(R=\frac{1}{2}R_{GV}(\delta)\)</span> where <span class="inline-math">\(R_{GV}\)</span> is the Gilbert–Varshamov (GV) bound <span class="inline-math">\(R_{GV}=1-h(\delta)\)</span>, and <span class="inline-math">\(h(\delta)=h(\frac{d}{n})\)</span> is the binary entropy function. The maximum rate for a TLC is given by <span class="inline-math">\(R=R_{GV}(d)\)</span>, meaning that TLCs achieve the asymoptic GV bound.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/rank_modulation">Rank-modulation code</a></td>
-  <td class="small top">Rank modulation codes with code distance <span class="inline-math">\(d=\Theta(n^{1+\epsilon})\)</span> for <span class="inline-math">\(\epsilon\in[0,1]\)</span> achieve a rate of <span class="inline-math">\(1-\epsilon\)</span> <a href="#cite-25" class="cite">[26]</a>.</td>
+  <td class="small top">Rank modulation codes with code distance <span class="inline-math">\(d=\Theta(n^{1+\epsilon})\)</span> for <span class="inline-math">\(\epsilon\in[0,1]\)</span> achieve a rate of <span class="inline-math">\(1-\epsilon\)</span> <a href="#cite-26" class="cite">[27]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
-  <td class="small top">Achieves capacity of the binary erasure channel <a href="#cite-26" class="cite">[27]</a> and of the binary memoryless symmetric (BMS) channel under bitwise maximum-a-posteriori decoding <a href="#cite-27" class="cite">[28]</a>.</td>
+  <td class="small top">Achieves capacity of the binary erasure channel <a href="#cite-27" class="cite">[28]</a> and of the binary memoryless symmetric (BMS) channel under bitwise maximum-a-posteriori decoding <a href="#cite-28" class="cite">[29]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
-  <td class="small top">Generic Reed-Solomon codes achieve list-decoding capacity <a href="#cite-28" class="cite">[29]</a>.</td>
+  <td class="small top">Generic Reed-Solomon codes achieve list-decoding capacity <a href="#cite-29" class="cite">[30]</a>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/single_parity_check">Single parity-check code</a></td>
@@ -264,7 +268,7 @@ provides an upper bound for any bounded-geometry surface code
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xyz_product">XYZ product code</a></td>
-  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-29" class="cite">[30]</a>.
+  <td class="small top">Not much has been proven about the relationship between XYZ-product codes and other codes. The logical dimension depends on properties of the input classical codes, specifically <span class="textit">similarity invariants</span> from abstract algebra. It is conjectured that specific instances of XYZ-product codes have a constant encoding rate and a minimum distance of <span class="inline-math">\(d \in \Theta(n^{2/3})\)</span> <a href="#cite-30" class="cite">[31]</a>.
 </td>
 </tr>
 <tr>
@@ -397,35 +401,40 @@ provides an upper bound for any bounded-geometry surface code
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href">DOI</a>
+        M. M. Wilde and J. M. Renes, “Quantum polar codes for arbitrary channels”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284203" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1201.2906" target="_blank" class="href">1201.2906</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        A. Barg and G. D. Forney, “Random codes: minimum distances and error exponents”, IEEE Transactions on Information Theory <span class="textbf">48</span>, 2568 (2002). <a href="https://doi.org/10.1109/TIT.2002.800480" target="_blank" class="href">DOI</a>
+        C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        A. Barg and A. Mazumdar, “Codes in permutations and error correction for rank modulation”, 2010 IEEE International Symposium on Information Theory (2010). <a href="https://doi.org/10.1109/ISIT.2010.5513604" target="_blank" class="href">DOI</a>
+        A. Barg and G. D. Forney, “Random codes: minimum distances and error exponents”, IEEE Transactions on Information Theory <span class="textbf">48</span>, 2568 (2002). <a href="https://doi.org/10.1109/TIT.2002.800480" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
       <dd>
-        S. Kudekar et al., “Reed–Muller Codes Achieve Capacity on Erasure Channels”, IEEE Transactions on Information Theory <span class="textbf">63</span>, 4298 (2017). <a href="https://doi.org/10.1109/TIT.2017.2673829" target="_blank" class="href">DOI</a>
+        A. Barg and A. Mazumdar, “Codes in permutations and error correction for rank modulation”, 2010 IEEE International Symposium on Information Theory (2010). <a href="https://doi.org/10.1109/ISIT.2010.5513604" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-27">[28]</dt>
       <dd>
-        Galen Reeves and Henry D. Pfister, “Reed-Muller Codes Achieve Capacity on BMS Channels”. <a href="https://arxiv.org/abs/2110.14631" target="_blank" class="href">2110.14631</a>
+        S. Kudekar et al., “Reed–Muller Codes Achieve Capacity on Erasure Channels”, IEEE Transactions on Information Theory <span class="textbf">63</span>, 4298 (2017). <a href="https://doi.org/10.1109/TIT.2017.2673829" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-28">[29]</dt>
       <dd>
-        Joshua Brakensiek, Sivakanth Gopi, and Visu Makam, “Generic Reed-Solomon codes achieve list-decoding capacity”. <a href="https://arxiv.org/abs/2206.05256" target="_blank" class="href">2206.05256</a>
+        Galen Reeves and Henry D. Pfister, “Reed-Muller Codes Achieve Capacity on BMS Channels”. <a href="https://arxiv.org/abs/2110.14631" target="_blank" class="href">2110.14631</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[30]</dt>
+      <dd>
+        Joshua Brakensiek, Sivakanth Gopi, and Visu Makam, “Generic Reed-Solomon codes achieve list-decoding capacity”. <a href="https://arxiv.org/abs/2206.05256" target="_blank" class="href">2206.05256</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-30">[31]</dt>
       <dd>
         Anthony Leverrier, Simon Apers, and Christophe Vuillot, “Quantum XYZ Product Codes”. <a href="https://arxiv.org/abs/2011.09746" target="_blank" class="href">2011.09746</a>
       </dd>

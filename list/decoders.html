@@ -88,12 +88,8 @@ Here is a list of all classical and quantum codes that have notable decoders.
   <td class="small top"><span class="paragraph-in-list">For few-bit codes (<span class="inline-math">\(n\)</span> is small), decoding can be based on a lookup table. For infinite code families, the size of such a table scales exponentially with <span class="inline-math">\(n\)</span>, so approximate decoding algorithms scaling polynomially with <span class="inline-math">\(n\)</span> have to be used. The decoder determining the most likely error given a noise channel is called the <span class="textit">maximum-likelihood decoder</span>.</span><span class="paragraph-in-list">Given a received string <span class="inline-math">\(x\)</span> and an error bound <span class="inline-math">\(e\)</span>, a <span class="textit">list decoder</span> returns a list of all codewords that are at most <span class="inline-math">\(e\)</span> from <span class="inline-math">\(x\)</span> in Hamming distance. The number of codewords in a neighborhood of <span class="inline-math">\(x\)</span> has to be polynomial in <span class="inline-math">\(n\)</span> in order for this decoder to run in time polynomial in <span class="inline-math">\(n\)</span>.</span></td>
 </tr>
 <tr>
-  <td class="small left top"><a href="/c/binary_cyclic">Binary cyclic code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-15" class="cite">[16]</a>.</span></td>
-</tr>
-<tr>
   <td class="small left top"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Farran algorithm <a href="#cite-16" class="cite">[17]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Farran algorithm <a href="#cite-15" class="cite">[16]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/repetition">Binary repetition code</a></td>
@@ -101,19 +97,19 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/binomial">Binomial code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} \hat{n} / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#cite-17" class="cite">[18]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#cite-18" class="cite">[19]</a><a href="#cite-17" class="cite">[18]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} \hat{n} / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#cite-16" class="cite">[17]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#cite-17" class="cite">[18]</a><a href="#cite-16" class="cite">[17]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/bosonic_rotation">Bosonic rotation code</a></td>
-  <td class="small top"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span><span class="paragraph-in-list">Autonomous quantum error correction schemes for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-19" class="cite">[20]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span><span class="paragraph-in-list">Autonomous quantum error correction schemes for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-18" class="cite">[19]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/braunstein">Braunstein five-mode code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Error correction can be done using linear-optical elements and feedback <a href="#cite-20" class="cite">[21]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Error correction can be done using linear-optical elements and feedback <a href="#cite-19" class="cite">[20]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-21" class="cite">[22]</a>. One method is table/multi-control decoding <a href="#cite-22" class="cite">[23]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-23" class="cite">[24]</a><a href="#cite-24" class="cite">[25]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Coherent decoders allow for measurement-free error correction <a href="#cite-20" class="cite">[21]</a>. One method is table/multi-control decoding <a href="#cite-21" class="cite">[22]</a>, which scales exponentially with the number of ancillas used in syndrome measurement. Another method, the Ising-based decoder, utilizes the mapping of the effect of the noise to a statistical mechanical model <a href="#cite-22" class="cite">[23]</a><a href="#cite-23" class="cite">[24]</a> such that the decoding problem maps to preparation of the ground state of an Ising model.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/cat">Cat code</a></td>
@@ -129,11 +125,19 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/color">Color code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Projection decoder <a href="#cite-25" class="cite">[26]</a>.</span><span class="paragraph-in-list">Matching decoder gives low logical failure rate <a href="#cite-26" class="cite">[27]</a>.</span><span class="paragraph-in-list">Integer-program-based decoder <a href="#cite-27" class="cite">[28]</a>.</span><span class="paragraph-in-list">Restriction decoder <a href="#cite-28" class="cite">[29]</a>.</span><span class="paragraph-in-list">Cellular-automaton decoder for the <span class="inline-math">\(XYZ\)</span> color code <a href="#cite-29" class="cite">[30]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Projection decoder <a href="#cite-24" class="cite">[25]</a>.</span><span class="paragraph-in-list">Matching decoder gives low logical failure rate <a href="#cite-25" class="cite">[26]</a>.</span><span class="paragraph-in-list">Integer-program-based decoder <a href="#cite-26" class="cite">[27]</a>.</span><span class="paragraph-in-list">Restriction decoder <a href="#cite-27" class="cite">[28]</a>.</span><span class="paragraph-in-list">Cellular-automaton decoder for the <span class="inline-math">\(XYZ\)</span> color code <a href="#cite-28" class="cite">[29]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/convolutional">Convolutional code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Decoders based on the Viterbi algorithm (trellis decoding) were developed first, which result in the most-likely codeword for the encoded bits <a href="#cite-30" class="cite">[31]</a>. Following, other trellis decoders such as the BCJR decoding algorithm <a href="#cite-31" class="cite">[32]</a> were developed later.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Decoders based on the Viterbi algorithm (trellis decoding) were developed first, which result in the most-likely codeword for the encoded bits <a href="#cite-29" class="cite">[30]</a>. Following, other trellis decoders such as the BCJR decoding algorithm <a href="#cite-30" class="cite">[31]</a> were developed later.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-31" class="cite">[32]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/binary_cyclic">Cyclic binary code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-31" class="cite">[32]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/dhlv">Dinur-Hsieh-Lin-Vidick (DHLV) code</a></td>
@@ -233,7 +237,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/surface">Kitaev surface code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood (ML) <a href="#cite-23" class="cite">[24]</a>.</span><span class="paragraph-in-list">Minimum weight perfect-matching (MWPM) <a href="#cite-23" class="cite">[24]</a><a href="#cite-50" class="cite">[51]</a> (based on work by Edmonds on finding a matching in a graph <a href="#cite-51" class="cite">[52]</a><a href="#cite-52" class="cite">[53]</a>). Pipeline MWPM <a href="#cite-53" class="cite">[54]</a><a href="#cite-54" class="cite">[55]</a> - a modification accounting for correlations between events. A modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-55" class="cite">[56]</a>.</span><span class="paragraph-in-list">Renormalization group (RG) <a href="#cite-56" class="cite">[57]</a><a href="#cite-57" class="cite">[58]</a><a href="#cite-58" class="cite">[59]</a>.</span><span class="paragraph-in-list">Markov-chain Monte Carlo <a href="#cite-59" class="cite">[60]</a>.</span><span class="paragraph-in-list">Tensor network <a href="#cite-60" class="cite">[61]</a>.</span><span class="paragraph-in-list">Cellular automaton <a href="#cite-61" class="cite">[62]</a>.</span><span class="paragraph-in-list">Machine learning <a href="#cite-62" class="cite">[63]</a><a href="#cite-63" class="cite">[64]</a><a href="#cite-64" class="cite">[65]</a>.</span><span class="paragraph-in-list">Union-find <a href="#cite-65" class="cite">[66]</a> and a modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-55" class="cite">[56]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood (ML) <a href="#cite-22" class="cite">[23]</a>.</span><span class="paragraph-in-list">Minimum weight perfect-matching (MWPM) <a href="#cite-22" class="cite">[23]</a><a href="#cite-50" class="cite">[51]</a> (based on work by Edmonds on finding a matching in a graph <a href="#cite-51" class="cite">[52]</a><a href="#cite-52" class="cite">[53]</a>). Pipeline MWPM <a href="#cite-53" class="cite">[54]</a><a href="#cite-54" class="cite">[55]</a> - a modification accounting for correlations between events. A modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-55" class="cite">[56]</a>.</span><span class="paragraph-in-list">Renormalization group (RG) <a href="#cite-56" class="cite">[57]</a><a href="#cite-57" class="cite">[58]</a><a href="#cite-58" class="cite">[59]</a>.</span><span class="paragraph-in-list">Markov-chain Monte Carlo <a href="#cite-59" class="cite">[60]</a>.</span><span class="paragraph-in-list">Tensor network <a href="#cite-60" class="cite">[61]</a>.</span><span class="paragraph-in-list">Cellular automaton <a href="#cite-61" class="cite">[62]</a>.</span><span class="paragraph-in-list">Machine learning <a href="#cite-62" class="cite">[63]</a><a href="#cite-63" class="cite">[64]</a><a href="#cite-64" class="cite">[65]</a>.</span><span class="paragraph-in-list">Union-find <a href="#cite-65" class="cite">[66]</a> and a modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-55" class="cite">[56]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/luby_transform">Luby transform (LT) code</a></td>
@@ -317,7 +321,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Given an encoding of a finite-dimensional code, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a> (see also Ref. <a href="#cite-2" class="cite">[3]</a>). This approximate QEC technique can be adapted to bosonic codes as long as they are restricted to a finite-dimensional subspace of the oscillator Hilbert space <a href="#cite-17" class="cite">[18]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Given an encoding of a finite-dimensional code, a decoder that yields the optimal entanglement fidelity can be obtained by solving a semi-definite program <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a> (see also Ref. <a href="#cite-2" class="cite">[3]</a>). This approximate QEC technique can be adapted to bosonic codes as long as they are restricted to a finite-dimensional subspace of the oscillator Hilbert space <a href="#cite-16" class="cite">[17]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/ramanujan_tensor_product">Ramanujan-complex product code</a></td>
@@ -407,10 +411,6 @@ Here is a list of all classical and quantum codes that have notable decoders.
   <td class="small left top"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a></td>
   <td class="small top"><span class="paragraph-in-list">Combined dynamical decoupling and error correction protocol on individually-controlled qubits with always-on Ising couplings <a href="#cite-127" class="cite">[128]</a>.</span><span class="paragraph-in-list">Symmetric decoder correcting all weight-one Pauli errors. The resulting logical error channel after coherent noise has been explicitly derived <a href="#cite-128" class="cite">[129]</a>.</span></td>
 </tr>
-<tr>
-  <td class="small left top"><a href="/c/q-ary_cyclic"><span class="inline-math">\(q\)</span>-ary cyclic code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-15" class="cite">[16]</a>.</span></td>
-</tr>
 </tbody>
 </table>
 
@@ -497,87 +497,87 @@ Here is a list of all classical and quantum codes that have notable decoders.
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href">DOI</a>
+        J. I. Farran, “Decoding Algebraic Geometry codes by a key equation”. <a href="https://arxiv.org/abs/math/9910151" target="_blank" class="href">math/9910151</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        J. I. Farran, “Decoding Algebraic Geometry codes by a key equation”. <a href="https://arxiv.org/abs/math/9910151" target="_blank" class="href">math/9910151</a>
+        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
+        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
+        S. Kwon, S. Watabe, and J.-S. Tsai, “Autonomous quantum error correction in a four-photon Kerr parametric oscillator”, npj Quantum Information <span class="textbf">8</span>, (2022). <a href="https://doi.org/10.1038/s41534-022-00553-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2203.09234" target="_blank" class="href">2203.09234</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        S. Kwon, S. Watabe, and J.-S. Tsai, “Autonomous quantum error correction in a four-photon Kerr parametric oscillator”, npj Quantum Information <span class="textbf">8</span>, (2022). <a href="https://doi.org/10.1038/s41534-022-00553-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2203.09234" target="_blank" class="href">2203.09234</a>
+        S. L. Braunstein, “Quantum error correction for communication with linear optics”, Nature <span class="textbf">394</span>, 47 (1998). <a href="https://doi.org/10.1038/27850" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        S. L. Braunstein, “Quantum error correction for communication with linear optics”, Nature <span class="textbf">394</span>, 47 (1998). <a href="https://doi.org/10.1038/27850" target="_blank" class="href">DOI</a>
+        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        Toshiaki Inada et al., “Measurement-Free Ultrafast Quantum Error Correction by Using Multi-Controlled Gates in Higher-Dimensional State Space”. <a href="https://arxiv.org/abs/2109.00086" target="_blank" class="href">2109.00086</a>
+        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        G. A. Paz-Silva, G. K. Brennen, and J. Twamley, “Fault Tolerance with Noisy and Slow Measurements and Preparation”, Physical Review Letters <span class="textbf">105</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.105.100501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1002.1536" target="_blank" class="href">1002.1536</a>
+        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        E. Dennis et al., “Topological quantum memory”, Journal of Mathematical Physics <span class="textbf">43</span>, 4452 (2002). <a href="https://doi.org/10.1063/1.1499754" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0110143" target="_blank" class="href">quant-ph/0110143</a>
+        Albert T. Schmitz, “Thermal Stability of Dynamical Phase Transitions in Higher Dimensional Stabilizer Codes”. <a href="https://arxiv.org/abs/2002.11733" target="_blank" class="href">2002.11733</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        Albert T. Schmitz, “Thermal Stability of Dynamical Phase Transitions in Higher Dimensional Stabilizer Codes”. <a href="https://arxiv.org/abs/2002.11733" target="_blank" class="href">2002.11733</a>
+        A. M. Kubica, The Abcs of the Color Code: A Study of Topological Quantum Codes as Toy Models for Fault-tolerant Quantum Computation and Quantum Phases of Matter, California Institute of Technology, 2018. <a href="https://doi.org/10.7907/059V-MG69" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        A. M. Kubica, The Abcs of the Color Code: A Study of Topological Quantum Codes as Toy Models for Fault-tolerant Quantum Computation and Quantum Phases of Matter, California Institute of Technology, 2018. <a href="https://doi.org/10.7907/059V-MG69" target="_blank" class="href">DOI</a>
+        K. Sahay and B. J. Brown, “Decoder for the Triangular Color Code by Matching on a Möbius Strip”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.010310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2108.11395" target="_blank" class="href">2108.11395</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
       <dd>
-        K. Sahay and B. J. Brown, “Decoder for the Triangular Color Code by Matching on a Möbius Strip”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.010310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2108.11395" target="_blank" class="href">2108.11395</a>
+        Ashley M. Stephens, “Efficient fault-tolerant decoding of topological color codes”. <a href="https://arxiv.org/abs/1402.3037" target="_blank" class="href">1402.3037</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-27">[28]</dt>
       <dd>
-        Ashley M. Stephens, “Efficient fault-tolerant decoding of topological color codes”. <a href="https://arxiv.org/abs/1402.3037" target="_blank" class="href">1402.3037</a>
+        C. Chamberland et al., “Triangular color codes on trivalent graphs with flag qubits”, New Journal of Physics <span class="textbf">22</span>, 023019 (2020). <a href="https://doi.org/10.1088/1367-2630/ab68fd" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-28">[29]</dt>
       <dd>
-        C. Chamberland et al., “Triangular color codes on trivalent graphs with flag qubits”, New Journal of Physics <span class="textbf">22</span>, 023019 (2020). <a href="https://doi.org/10.1088/1367-2630/ab68fd" target="_blank" class="href">DOI</a>
+        Jonathan F. San Miguel, Dominic J. Williamson, and Benjamin J. Brown, “A cellular automaton decoder for a noise-bias tailored color code”. <a href="https://arxiv.org/abs/2203.16534" target="_blank" class="href">2203.16534</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-29">[30]</dt>
       <dd>
-        Jonathan F. San Miguel, Dominic J. Williamson, and Benjamin J. Brown, “A cellular automaton decoder for a noise-bias tailored color code”. <a href="https://arxiv.org/abs/2203.16534" target="_blank" class="href">2203.16534</a>
+        A. Viterbi, “Error bounds for convolutional codes and an asymptotically optimum decoding algorithm”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 260 (1967). <a href="https://doi.org/10.1109/TIT.1967.1054010" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-30">[31]</dt>
       <dd>
-        A. Viterbi, “Error bounds for convolutional codes and an asymptotically optimum decoding algorithm”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 260 (1967). <a href="https://doi.org/10.1109/TIT.1967.1054010" target="_blank" class="href">DOI</a>
+        L. Bahl et al., “Optimal decoding of linear codes for minimizing symbol error rate (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">20</span>, 284 (1974). <a href="https://doi.org/10.1109/TIT.1974.1055186" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-31">[32]</dt>
       <dd>
-        L. Bahl et al., “Optimal decoding of linear codes for minimizing symbol error rate (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">20</span>, 284 (1974). <a href="https://doi.org/10.1109/TIT.1974.1055186" target="_blank" class="href">DOI</a>
+        J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-32">[33]</dt>
