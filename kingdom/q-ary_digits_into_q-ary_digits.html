@@ -147,13 +147,17 @@
     Parents:
       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/group">Group code</a>.
   </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/hamming">Binary Hamming code</a>.
+  </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>.
+      <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>.
   </span>
 </div>
 
@@ -239,15 +243,11 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon (GRS) code</a>.
+      <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon (GRS) code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/binary_cyclic">Cyclic binary code</a>.
+      <a href="/c/hamming">Binary Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -290,11 +290,30 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/hamming">Hamming code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/hamming">Binary Hamming code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/rank_modulation">Rank-modulation code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_hamming">
+  <span class="short-code-name"><a href="/c/hamming">Binary Hamming code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</span>
+  <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
   </span>
 </div>
 
@@ -336,7 +355,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 
 <div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -392,7 +411,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 
 <div class="ecc-code" id="ecc_wozencraft">
-  <span class="short-code-name"><a href="/c/wozencraft">Wozencraft ensemble code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
+  <span class="short-code-name"><a href="/c/wozencraft">Wozencraft ensemble code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -454,7 +473,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/extended_reed_solomon">Extended RS code</a>,       <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+      <a href="/c/extended_reed_solomon">Extended RS code</a>,       <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hamming">Binary Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
   </span>
 </div>
 
@@ -555,10 +574,15 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
+      <dd>
+        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-20">[21]</dt>
       <dd>
         J. L. Massey, Threshold Decoding. Cambridge, MA: M.I.T. Press, 1963.
       </dd>
