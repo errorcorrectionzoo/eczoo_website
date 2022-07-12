@@ -84,7 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(k,q)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\((n,n-k,3)\)</span> Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>.
+<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>.
 </div>
 
 
@@ -152,15 +152,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\(S(1,k)\)</span> reduces to the repetition code.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\(S(2,1)\)</span> reduces to the repetition code.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamming">Binary Hamming code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The dual code is the <span class="inline-math">\((n,n-k,3)\)</span> Hamming code.</span></li>
+      &#x2014;&nbsp;Hamming and simplex codes are dual to each other.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The <span class="inline-math">\(q=2\)</span> case can be constructed from the generator matrix of RM<span class="inline-math">\((1,k)\)</span> by removing first the all-ones row, and then the all-zero column.</span></li>
+      &#x2014;&nbsp;Binary simplex codes can be constructed from the generator matrix of RM<span class="inline-math">\((1,k)\)</span> by removing first the all-ones row, and then the all-zero column.</span></li>
 </ul>
 </div>
 
@@ -259,7 +259,7 @@ url={https://errorcorrectionzoo.org/c/simplex}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/extended_reed_solomon">Extended RS</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/hamming">Binary Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/extended_reed_solomon">Extended RS</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

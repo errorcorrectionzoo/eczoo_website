@@ -114,9 +114,12 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding can be done in <span class="inline-math">\(O(n)\)</span> runtime using a greedy algorithm. The algorithm consists of flipping a bit of the received word if it will result in a greater number of satisfied parity checks. This is repeated until a codeword is reached.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding can be done in <span class="inline-math">\(O(n)\)</span> runtime using a greedy <span class="textit">flip</span> algorithm. The algorithm consists of flipping a bit of the received word if it will result in a greater number of satisfied parity checks. This is repeated until a codeword is reached.</span></div>
 
 
+<h2 id="feature_fault_tolerance"
+      class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">The flip decoding algorithm is fault tolerant against parity check errors <a href="#cite-2" class="cite">[3]</a>; see also <a href="http://courses.csail.mit.edu/6.440/spring08/index.html" target="_blank" class="href">course notes</a> by M. Sudan.</span></div>
 
 
 
@@ -212,6 +215,11 @@ url={https://errorcorrectionzoo.org/c/expander}
       <dt id="cite-1">[2]</dt>
       <dd>
         M. Capalbo et al., “Randomness conductors and constant-degree lossless expanders”, Proceedings of the thiry-fourth annual ACM symposium on Theory of computing  - STOC &#x27;02 (2002). <a href="https://doi.org/10.1145/509907.510003" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        D. A. Spielman, “Linear-time encodable and decodable error-correcting codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1723 (1996). <a href="https://doi.org/10.1109/18.556668" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>
