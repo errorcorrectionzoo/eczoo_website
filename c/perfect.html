@@ -152,10 +152,6 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/golay">Binary Golay code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Double error-correcting BCH codes are quasi-perfect <a href="#cite-2" class="cite">[3]</a> (see also <a href="#cite-3" class="cite">[4]</a>, Ch. 9).</span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/hamming">Hamming code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a></span></li>
@@ -170,13 +166,17 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Only double error-correcting BCH codes <span class="inline-math">\([2^m-1,n-2m,5]\)</span> are quasi-perfect <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>, Ch. 9).</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Repetition codes for odd <span class="inline-math">\(n\)</span> are perfect.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/homological_classical">Graph homology code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-5" class="cite">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -184,7 +184,7 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/zetterberg">Zetterberg code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Zetterberg codes are quasi-perfect, with each <span class="inline-math">\(n\)</span>-bit string at most three bit-flips away from a codeword <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;Zetterberg codes are quasi-perfect, with each <span class="inline-math">\(n\)</span>-bit string at most three bit-flips away from a codeword <a href="#cite-6" class="cite">[7]</a>.</span></li>
 </ul>
 </div>
 
@@ -255,15 +255,20 @@ url={https://errorcorrectionzoo.org/c/perfect}
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
+        T. Helleseth, “No primitive binary&amp;amp;lt;tex&amp;amp;gt;t&amp;amp;lt;/tex&amp;amp;gt;-error-correcting BCH code with&amp;amp;lt;tex&amp;amp;gt;t &amp;amp;gt; 2&amp;amp;lt;/tex&amp;amp;gt;is quasi-perfect (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">25</span>, 361 (1979). <a href="https://doi.org/10.1109/TIT.1979.1056043" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
+      <dd>
+        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-6">[7]</dt>
       <dd>
         S. M. Dodunekov and J. E. M. Nilsson, “Algebraic decoding of the Zetterberg codes”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 1570 (1992). <a href="https://doi.org/10.1109/18.149509" target="_blank" class="href">DOI</a>
       </dd>
@@ -293,7 +298,7 @@ url={https://errorcorrectionzoo.org/c/perfect}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/covering">Covering</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/bch">BCH</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/homological_classical">Graph homology</a></li><li><a href="/c/quantum_perfect">Perfect quantum</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/covering">Covering</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/homological_classical">Graph homology</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

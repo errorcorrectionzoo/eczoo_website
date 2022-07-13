@@ -117,14 +117,14 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 <div class="ecc-code" id="ecc_binary_cyclic">
   <span class="short-code-name"><a href="/c/binary_cyclic">Cyclic binary code</a></span>
-  <span class="short-code-description">A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword.</span>
+  <span class="short-code-description">A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/bits_into_bits">Binary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
+      <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -191,7 +191,7 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/group">Group code</a>.
+      <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/group">Group code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -260,9 +260,33 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 </div>
 
 
+<div class="ecc-code" id="ecc_bch">
+  <span class="short-code-name"><a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a><a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a></span></span>
+  <span class="short-code-description">Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeros <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</span>
+  <span class="short-code-info">Protection: By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true minimum distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that.
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_cyclic">Cyclic binary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/golay">Binary Golay code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/perfect">Perfect code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/skew_cyclic">Skew-cyclic code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_binary_duadic">
-  <span class="short-code-name"><a href="/c/binary_duadic">Binary duadic code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
-  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#cite-14" class="cite">[15]</a>.</span>
+  <span class="short-code-name"><a href="/c/binary_duadic">Binary duadic code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
+  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#cite-17" class="cite">[18]</a>.</span>
   <span class="short-code-info">Protection: Since duadic codes are cyclic, the BCH bound can be used to determine their minimum distance.</span>
   <span class="short-code-parents">
     Parents:
@@ -279,26 +303,8 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 </div>
 
 
-<div class="ecc-code" id="ecc_bch">
-  <span class="short-code-name"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed-Solomon (GRS) code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/perfect">Perfect code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/hamming">Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/skew_cyclic">Skew-cyclic code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_zetterberg">
-  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a></span></span>
+  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
   <span class="short-code-description">Family of binary cyclic <span class="inline-math">\([2^{2s}+1,2^{2s}-4s+1]\)</span> codes with distance <span class="inline-math">\(d&gt;5\)</span> generated by the minimal polynomial <span class="inline-math">\(g_s(x)\)</span> of <span class="inline-math">\(\alpha\)</span> over <span class="inline-math">\(GF(2)\)</span>, where <span class="inline-math">\(\alpha\)</span> is a primitive <span class="inline-math">\(n\)</span>th root of unity in the field <span class="inline-math">\(GF(2^{4s})\)</span>. They are quasi-perfect codes and are one of the best known families of double-error correcting binary linear codes</span>
   <span class="short-code-info">Protection: Correct at least all weight-2 errors.</span>
   <span class="short-code-parents">
@@ -313,23 +319,23 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
 
 
 <div class="ecc-code" id="ecc_golay">
-  <span class="short-code-name"><a href="/c/golay">Binary Golay code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
+  <span class="short-code-name"><a href="/c/golay">Binary Golay code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
   <span class="short-code-description">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^{23}\)</span>, or <span class="inline-math">\(GF(2)^{24}\)</span> in the extended case.</span>
   <span class="short-code-info">Protection: The binary Golay code has distance 7 and can correct up to <span class="inline-math">\(\frac{7-1}{2}=3\)</span> errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_hamming">
-  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
   <span class="short-code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</span>
   <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -337,13 +343,13 @@ for all codewords <span class="inline-math">\(x&#x27; \neq x\)</span> and all <s
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
+      <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_raptor">
-  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a><a href="#cite-22" class="cite">[23]</a></span></span>
   <span class="short-code-description">Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code.
 The pre-code is a linear binary erasure code, which is applied first to the input to create some redundant data.
 The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted.</span>
@@ -383,7 +389,7 @@ The LT code is then applied to the intermediate symbols from the pre-code to gen
 
 
 <div class="ecc-code" id="ecc_fibonacci_model">
-  <span class="short-code-name"><a href="/c/fibonacci_model">Fibonacci code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a></span></span>
+  <span class="short-code-name"><a href="/c/fibonacci_model">Fibonacci code</a><span class="code-introduced"><a href="#cite-23" class="cite">[24]</a></span></span>
   <span class="short-code-description">The code is defined on an <span class="inline-math">\(L\times L/2\)</span> lattice with one bit on each site, where <span class="inline-math">\(L=2^N\)</span> for an integer <span class="inline-math">\(N\geq 2\)</span>. The codewords are defined to satisfy the condition that, for each lattice site <span class="inline-math">\((x,y)\)</span>, the bits on <span class="inline-math">\((x,y)\)</span>, <span class="inline-math">\((x+1,y)\)</span>, <span class="inline-math">\((x-1,y)\)</span> and <span class="inline-math">\((x,y+1)\)</span> (where the lattice is taken to be periodic in both directions) contain an even numbers of <span class="inline-math">\(1\)</span>&#x27;s.
 The codewords can be generated using a one-dimensional cellular automaton of length <span class="inline-math">\(L\)</span> (periodic). The <span class="inline-math">\(2^L\)</span> possible initial states correspond to the <span class="inline-math">\(2^L\)</span> codewords. For each generation, the state of each cell is the xor sum of that cell and its two neighbors in the previous generation. After <span class="inline-math">\(L/2-1\)</span> generations, the entire history generated by the automaton corresponds to a codeword, where the initial state is the first row of the lattice, the first generation is the second row, etc.
 </span>
@@ -401,7 +407,7 @@ The codewords can be generated using a one-dimensional cellular automaton of len
 
 
 <div class="ecc-code" id="ecc_homological_classical">
-  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a></span></span>
+  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#cite-24" class="cite">[25]</a></span></span>
   <span class="short-code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree.
 </span>
   <span class="short-code-parents">
@@ -444,7 +450,7 @@ The codewords can be generated using a one-dimensional cellular automaton of len
 
 
 <div class="ecc-code" id="ecc_tornado">
-  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-23" class="cite">[24]</a><a href="#cite-24" class="cite">[25]</a></span></span>
+  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-25" class="cite">[26]</a><a href="#cite-26" class="cite">[27]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -462,7 +468,7 @@ The codewords can be generated using a one-dimensional cellular automaton of len
 
 
 <div class="ecc-code" id="ecc_expander">
-  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-25" class="cite">[26]</a></span></span>
+  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#cite-27" class="cite">[28]</a></span></span>
   <span class="short-code-description">Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</span>
   <span class="short-code-info">Protection: Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</span>
   <span class="short-code-parents">
@@ -500,7 +506,7 @@ The codewords can be generated using a one-dimensional cellular automaton of len
 
 
 <div class="ecc-code" id="ecc_luby_transform">
-  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#cite-26" class="cite">[27]</a></span></span>
+  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#cite-28" class="cite">[29]</a></span></span>
   <span class="short-code-description">Erasure codes based on fountain codes. They improve on random linear fountain codes by having a much more efficient encoding and decoding algorithm.</span>
   <span class="short-code-parents">
     Parents:
@@ -595,70 +601,80 @@ The codewords can be generated using a one-dimensional cellular automaton of len
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        J. Leon, J. Masley, and V. Pless, “Duadic Codes”, IEEE Transactions on Information Theory <span class="textbf">30</span>, 709 (1984). <a href="https://doi.org/10.1109/TIT.1984.1056944" target="_blank" class="href">DOI</a>
+        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href">DOI</a>
+        R. C. Bose and D. K. Ray-Chaudhuri, “Further results on error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 279 (1960). <a href="https://doi.org/10.1016/S0019-9958(60)90870-6" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href">DOI</a>
+        A. Hocquenghem, Codes correcteurs d&#x27;Erreurs, Chiffres (Paris), vol.2, pp.147-156, 1959.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href">DOI</a>
+        J. Leon, J. Masley, and V. Pless, “Duadic Codes”, IEEE Transactions on Information Theory <span class="textbf">30</span>, 709 (1984). <a href="https://doi.org/10.1109/TIT.1984.1056944" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        Golay, M. J. E. &quot;Notes on Digital Coding.&quot; Proc. IRE 37, 657, 1949.
+        V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
+        L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
+        Golay, M. J. E. &quot;Notes on Digital Coding.&quot; Proc. IRE 37, 657, 1949.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        Petar Maymounkov, <span class="emph">Online codes</span>, Technical report, New York University, 2002.
+        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        G. M. Nixon and B. J. Brown, “Correcting Spanning Errors With a Fractal Code”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 4504 (2021). <a href="https://doi.org/10.1109/TIT.2021.3068359" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2002.11738" target="_blank" class="href">2002.11738</a>
+        A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
+        Petar Maymounkov, <span class="emph">Online codes</span>, Technical report, New York University, 2002.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
+        G. M. Nixon and B. J. Brown, “Correcting Spanning Errors With a Fractal Code”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 4504 (2021). <a href="https://doi.org/10.1109/TIT.2021.3068359" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2002.11738" target="_blank" class="href">2002.11738</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href">DOI</a>
+        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
       <dd>
-        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+        M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing  - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-26">[27]</dt>
+      <dd>
+        M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-27">[28]</dt>
+      <dd>
+        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-28">[29]</dt>
       <dd>
         M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href">DOI</a>
       </dd>

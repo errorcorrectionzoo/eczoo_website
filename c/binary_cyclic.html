@@ -84,8 +84,9 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword.</p>
-<p>Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a binary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with binary coefficients, <span class="inline-math">\(\mathbb{F}_2[x]\)</span> with <span class="inline-math">\(\mathbb{F}_2=GF(2)\)</span>. Polynomials corresponding to codewords of a linear cyclic code form an ideal (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_2[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Codeword polynomials of such a code can be generated, via multiplication, by a <span class="textit">generator polynomial</span> <span class="inline-math">\(g(x)\)</span>. A particular generator polynomial <span class="inline-math">\(e(x)\)</span> has the additional property of being <span class="textit">idempotent</span>, i.e., <span class="inline-math">\(e(x)^2=e(x)\)</span> <a href="#cite-0" class="cite">[1]</a>.</p></div>
+<div class="sectioncontent code-description"><p>A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes.</p>
+<p>Cyclic codes correspond to ideals in a particular polynomial ring. Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a binary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with binary coefficients, <span class="inline-math">\(\mathbb{F}_2[x]\)</span> with <span class="inline-math">\(\mathbb{F}_2=GF(2)\)</span>. That way, multiplication by <span class="inline-math">\(x\)</span> corresponds to a cyclic shift. Polynomials corresponding to codewords of a linear cyclic code form an <span class="textit">ideal</span> (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_2[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Codeword polynomials of such a code can be generated, via multiplication, by a <span class="textit">generator polynomial</span> <span class="inline-math">\(g(x)\)</span>. A particular generator polynomial <span class="inline-math">\(e(x)\)</span> has the additional property of being <span class="textit">idempotent</span>, i.e., <span class="inline-math">\(e(x)^2=e(x)\)</span>. Given a generator polynomial, the corresponding <span class="textit">check polynomial</span> <span class="inline-math">\(h(x)=(x^n-1)/g(x)\)</span> yields zero when multiplying a codeword polynomial. Its entries correspond to the code&#x27;s parity check matrix.</p>
+<p>Odd-length cyclic codes can also be defined in terms of zeroes of their generator polynomial. Since <span class="inline-math">\(g(x)\)</span> is a polynomial over the binary field, it can be factorized over some potentially larger <span class="textit">splitting field</span> (just like <span class="inline-math">\(x^2+1\)</span> can be factorized over the complex numbers but not the reals). Roots of <span class="inline-math">\(g(x)\)</span> are called <span class="textit">zeroes</span> of the code, and they are all powers of a primitive <span class="inline-math">\(n\)</span>th root of unity because <span class="inline-math">\(g(x)\)</span> is a divisor of <span class="inline-math">\(x^n-1\)</span>. Since the generator polynomial generates all codeword polynomials <span class="inline-math">\(c(x)\)</span> by multiplication by <span class="inline-math">\(x\)</span>, its zeroes are also zeroes of those polynomials.</p></div>
 
 
 
@@ -106,7 +107,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-0" class="cite">[1]</a>.</span></div>
 
 
 
@@ -117,6 +118,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#cite-1" class="cite">[2]</a> for an exposition on cyclic codes.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -143,9 +148,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/binary_duadic">Binary duadic code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/binary_duadic">Binary duadic code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/zetterberg">Zetterberg code</a></span></li>
 </ul>
@@ -165,7 +170,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#cite-3" class="cite">[4]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes.</span></li>
+      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#cite-1" class="cite">[2]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes.</span></li>
 </ul>
 </div>
 
@@ -221,22 +226,17 @@ url={https://errorcorrectionzoo.org/c/binary_cyclic}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href">DOI</a>
+        J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href">DOI</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
         Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
       </dd>
     
     </dl>
@@ -264,7 +264,7 @@ url={https://errorcorrectionzoo.org/c/binary_cyclic}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quasi_cyclic">Quasi-cyclic</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/binary_duadic">Binary duadic</a></li><li><a href="/c/bch">BCH</a></li><li><a href="/c/zetterberg">Zetterberg</a></li><li><a href="/c/majorana_stab">Majorana stabilizer</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quasi_cyclic">Quasi-cyclic</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/binary_duadic">Binary duadic</a></li><li><a href="/c/zetterberg">Zetterberg</a></li><li><a href="/c/majorana_stab">Majorana stabilizer</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

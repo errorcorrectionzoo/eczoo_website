@@ -115,7 +115,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-5" class="cite">[6]</a>.</span><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-6" class="cite">[7]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span><span class="paragraph-in-list">Gao decoder using extended Euclidean algorithm <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">List decoders try to find a low-degree bivariate polynomial <span class="inline-math">\(Q(x,y)\)</span> such that evaluation of <span class="inline-math">\(Q\)</span> at <span class="inline-math">\((\alpha_i,y_i)\)</span> is zero. By choosing proper degrees, it can be shown such polynomial exists by drawing an analogy between evaulation of <span class="inline-math">\(Q(\alpha_i,y_i)\)</span> and homogenous linear equation(interpolation). Once this is done, list roots of <span class="inline-math">\(y\)</span> that agree at <span class="inline-math">\(\geq t\)</span> points. The Sudan list decoding algorithm corrects up to <span class="inline-math">\(1-\sqrt{2R}\)</span> proportion of errors <a href="#cite-8" class="cite">[9]</a>. The Sudan–Guruswami algorithm improves that to <span class="inline-math">\(1-\sqrt{R}\)</span> <a href="#cite-9" class="cite">[10]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-8" class="cite">[9]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span><span class="paragraph-in-list">Gao decoder using extended Euclidean algorithm <a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">List decoders try to find a low-degree bivariate polynomial <span class="inline-math">\(Q(x,y)\)</span> such that evaluation of <span class="inline-math">\(Q\)</span> at <span class="inline-math">\((\alpha_i,y_i)\)</span> is zero. By choosing proper degrees, it can be shown such polynomial exists by drawing an analogy between evaulation of <span class="inline-math">\(Q(\alpha_i,y_i)\)</span> and homogenous linear equation(interpolation). Once this is done, list roots of <span class="inline-math">\(y\)</span> that agree at <span class="inline-math">\(\geq t\)</span> points. The Sudan list decoding algorithm corrects up to <span class="inline-math">\(1-\sqrt{2R}\)</span> proportion of errors <a href="#cite-10" class="cite">[11]</a>. The Guruswami-Sudan algorithm improves that to <span class="inline-math">\(1-\sqrt{R}\)</span> <a href="#cite-11" class="cite">[12]</a>. A further modification by Koetter-Vardy is used for soft-decision decoding <a href="#cite-12" class="cite">[13]</a>.</span></div>
 
 
 
@@ -127,30 +127,26 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Cross-interleaved RS code (CIRC) is adopted in Compact Discs (CDs) and RS Product Code (RSPC) in DVDs; see Ch. 4 of Ref. <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">In DSL technologies and its variants against impluse noise <a href="#cite-11" class="cite">[12]</a>.</span><span class="paragraph-in-list">RS codes as outer codes concatenated with convolutional codes are used indirectly in solar exploration programs; see Ch. 3 of Ref. <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Coded sharding designs in blockchains to increase efficiency <a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Private Information Retrieval <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Used in QR-Codes to retrieve damaged barcodes <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">Wireless communication systems such as 3G, DVB, and WiMAX <a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Correcting pooled testing results for SARS-CoV-2 <a href="#cite-16" class="cite">[17]</a>.</span>
+  <span class="paragraph-in-list">Cross-interleaved RS code (CIRC) is adopted in Compact Discs (CDs) and RS Product Code (RSPC) in DVDs; see Ch. 4 of Ref. <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">In DSL technologies and its variants against impluse noise <a href="#cite-14" class="cite">[15]</a>.</span><span class="paragraph-in-list">RS codes as outer codes concatenated with convolutional codes are used indirectly in solar exploration programs; see Ch. 3 of Ref. <a href="#cite-13" class="cite">[14]</a>.</span><span class="paragraph-in-list">Coded sharding designs in blockchains to increase efficiency <a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Private Information Retrieval <a href="#cite-16" class="cite">[17]</a>.</span><span class="paragraph-in-list">Used in QR-Codes to retrieve damaged barcodes <a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Wireless communication systems such as 3G, DVB, and WiMAX <a href="#cite-18" class="cite">[19]</a>.</span><span class="paragraph-in-list">Correcting pooled testing results for SARS-CoV-2 <a href="#cite-19" class="cite">[20]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See database <a href="#cite-17" class="cite">[18]</a> for explicit codes.</span><span class="paragraph-in-list"><span class="inline-math">\([n,k,n-k+1]\)</span> RS code requires an order <span class="inline-math">\(O(n^2)\)</span> operations while encoding if a straightforward matrix multiplication is employed and <span class="inline-math">\(k=\mathcal{O}(n)\)</span>. Using the FFT algorithm, complexity of evaluating a polynomial at <span class="inline-math">\(n\)</span> roots of unity becomes <span class="inline-math">\(O(n\log n)\)</span>. The FFT can be generalized to finite fields and rings, which is referred as Number-theoretic Transform (NTT). However, for some values of <span class="inline-math">\(n\)</span>, which can not be factorized into small primes or do not have <span class="inline-math">\(n\)</span> roots of unity, the FFT algorithm fails. Independently developed by <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a> and generalized in Ref. <a href="#cite-20" class="cite">[21]</a>, the additive FFT solves this problem by evaluating the polynomial at <span class="inline-math">\(n-1\)</span> roots of unity when <span class="inline-math">\(n\)</span> is power of 2.</span><span class="paragraph-in-list">Although using iFFT has its counterpart iNNT for finite fields, the decoding is usually standard polynomial interpolation in <span class="inline-math">\(k=\mathcal{O}(n\log^2 (n))\)</span>. However, in erasure decoding, encoded values are only erased in <span class="inline-math">\(r\)</span> points, which is a specific case of polynomial interpolation and can be done in <span class="inline-math">\(\mathcal{O}(n\log (n)\)</span> by computing product of the received polynomial and an erasure locator polynomial and using long division to find an original polynomial. The long division step can be omitted to increase speed further by only dividing the derivative of the product polynomial, and derivative of erasure locator polynomial evaluated at erasure locations.</span>
+  <span class="paragraph-in-list">See database <a href="#cite-20" class="cite">[21]</a> for explicit codes.</span><span class="paragraph-in-list"><span class="inline-math">\([n,k,n-k+1]\)</span> RS code requires an order <span class="inline-math">\(O(n^2)\)</span> operations while encoding if a straightforward matrix multiplication is employed and <span class="inline-math">\(k=\mathcal{O}(n)\)</span>. Using the FFT algorithm, complexity of evaluating a polynomial at <span class="inline-math">\(n\)</span> roots of unity becomes <span class="inline-math">\(O(n\log n)\)</span>. The FFT can be generalized to finite fields and rings, which is referred as Number-theoretic Transform (NTT). However, for some values of <span class="inline-math">\(n\)</span>, which can not be factorized into small primes or do not have <span class="inline-math">\(n\)</span> roots of unity, the FFT algorithm fails. Independently developed by <a href="#cite-21" class="cite">[22]</a><a href="#cite-22" class="cite">[23]</a> and generalized in Ref. <a href="#cite-23" class="cite">[24]</a>, the additive FFT solves this problem by evaluating the polynomial at <span class="inline-math">\(n-1\)</span> roots of unity when <span class="inline-math">\(n\)</span> is power of 2.</span><span class="paragraph-in-list">Although using iFFT has its counterpart iNNT for finite fields, the decoding is usually standard polynomial interpolation in <span class="inline-math">\(k=\mathcal{O}(n\log^2 (n))\)</span>. However, in erasure decoding, encoded values are only erased in <span class="inline-math">\(r\)</span> points, which is a specific case of polynomial interpolation and can be done in <span class="inline-math">\(\mathcal{O}(n\log (n)\)</span> by computing product of the received polynomial and an erasure locator polynomial and using long division to find an original polynomial. The long division step can be omitted to increase speed further by only dividing the derivative of the product polynomial, and derivative of erasure locator polynomial evaluated at erasure locations.</span>
 </div>
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parents
+    Parent
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed-Solomon (GRS) code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Every RS code is MDS. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#cite-21" class="cite">[22]</a>.</span></li>
+    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></span></li>
 </ul>
 </div>
 
@@ -176,11 +172,13 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/hamming">Hamming code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Cyclic RS codes of length <span class="inline-math">\(q-1\)</span> are a particular case of BCH codes; see Remark 15.3.21 of Ref. <a href="#cite-22" class="cite">[23]</a>.</span></li>
+      &#x2014;&nbsp;If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#cite-24" class="cite">[25]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Cyclic RS codes of length <span class="inline-math">\(n=q-1\)</span> are BCH codes; see Remark 15.3.21 of Ref. <a href="#cite-25" class="cite">[26]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -192,7 +190,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-23" class="cite">[24]</a>.</span></li>
+      &#x2014;&nbsp;Convolutional codes are often used in concatenation with Reed-Solomon codes for communication <a href="#cite-26" class="cite">[27]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -204,7 +202,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;MRD rank-metric codes can be thought of as matrix analogues of MDS Reed-Solomon codes as both constructions utilize a Vandermonde matrix <a href="#cite-24" class="cite">[25]</a>.</span></li>
+      &#x2014;&nbsp;MRD rank-metric codes can be thought of as matrix analogues of MDS Reed-Solomon codes as both constructions utilize a Vandermonde matrix <a href="#cite-27" class="cite">[28]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -212,7 +210,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/rank_modulation">Rank-modulation code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RS codes can be used to design rank modulation codes <a href="#cite-25" class="cite">[26]</a>.</span></li>
+      &#x2014;&nbsp;RS codes can be used to design rank modulation codes <a href="#cite-28" class="cite">[29]</a>.</span></li>
 </ul>
 </div>
 
@@ -293,105 +291,120 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        R.E. Blahut, Theory and practice of error-control codes, Addison-Wesley 1983.
+        D. Gorenstein and N. Zierler, “A Class of Error-Correcting Codes in <span class="inline-math">$p^m $</span> Symbols”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">9</span>, 207 (1961). <a href="https://doi.org/10.1137/0109020" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        E. R. Berlekamp and L. Welch, Error Correction of Algebraic Block Codes. U.S. Patent, Number 4,633,470 1986.
+        W. Peterson, “Encoding and error-correction procedures for the Bose-Chaudhuri codes”, IEEE Transactions on Information Theory <span class="textbf">6</span>, 459 (1960). <a href="https://doi.org/10.1109/TIT.1960.1057586" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        S. Gao, “A New Algorithm for Decoding Reed-Solomon Codes”, Communications, Information and Network Security 55 (2003). <a href="https://doi.org/10.1007/978-1-4757-3789-9_5" target="_blank" class="href">DOI</a>
+        R.E. Blahut, <span class="emph">Theory and practice of error-control codes</span>, Addison-Wesley 1983.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
       <dd>
-        M. Sudan, “Decoding of Reed Solomon Codes beyond the Error-Correction Bound”, Journal of Complexity <span class="textbf">13</span>, 180 (1997). <a href="https://doi.org/10.1006/JCOM.1997.0439" target="_blank" class="href">DOI</a>
+        E. R. Berlekamp and L. Welch, Error Correction of Algebraic Block Codes. U.S. Patent, Number 4,633,470 1986.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-9">[10]</dt>
       <dd>
-        V. Guruswami and M. Sudan, “Improved decoding of Reed-Solomon and algebraic-geometric codes”, Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280). <a href="https://doi.org/10.1109/SFCS.1998.743426" target="_blank" class="href">DOI</a>
+        S. Gao, “A New Algorithm for Decoding Reed-Solomon Codes”, Communications, Information and Network Security 55 (2003). <a href="https://doi.org/10.1007/978-1-4757-3789-9_5" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-10">[11]</dt>
       <dd>
-        S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href">DOI</a>
+        M. Sudan, “Decoding of Reed Solomon Codes beyond the Error-Correction Bound”, Journal of Complexity <span class="textbf">13</span>, 180 (1997). <a href="https://doi.org/10.1006/JCOM.1997.0439" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-11">[12]</dt>
       <dd>
-        D. Zhang, K. Ho-Van, and T. Le-Ngoc, “Impulse noise detection techniques for retransmission to reduce delay in DSL systems”, 2012 IEEE International Conference on Communications (ICC) (2012). <a href="https://doi.org/10.1109/ICC.2012.6364040" target="_blank" class="href">DOI</a>
+        V. Guruswami and M. Sudan, “Improved decoding of Reed-Solomon and algebraic-geometric codes”, Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280). <a href="https://doi.org/10.1109/SFCS.1998.743426" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        Songze Li et al., “PolyShard: Coded Sharding Achieves Linearly Scaling Efficiency and Security Simultaneously”. <a href="https://arxiv.org/abs/1809.10361" target="_blank" class="href">1809.10361</a>
+        R. Koetter and A. Vardy, “Algebraic soft-decision decoding of reed-solomon codes”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2809 (2003). <a href="https://doi.org/10.1109/TIT.2003.819332" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        B. Sasidharan and E. Viterbo, “Private Data Access in Blockchain Systems Employing Coded Sharding”, 2021 IEEE International Symposium on Information Theory (ISIT) (2021). <a href="https://doi.org/10.1109/ISIT45174.2021.9517900" target="_blank" class="href">DOI</a>
+        S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        International Organization for Standardization, Information Technology: Automatic Identification and Data Capture Techniques-QR Code 2005 Bar Code Symbology Specification, 2nd ed., IEC18004 (ISO, 2006).
+        D. Zhang, K. Ho-Van, and T. Le-Ngoc, “Impulse noise detection techniques for retransmission to reduce delay in DSL systems”, 2012 IEEE International Conference on Communications (ICC) (2012). <a href="https://doi.org/10.1109/ICC.2012.6364040" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        I. Shakeel et al., “Reed-Solomon coding for cooperative wireless communication”, 21st Annual IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (2010). <a href="https://doi.org/10.1109/PIMRC.2010.5672091" target="_blank" class="href">DOI</a>
+        Songze Li et al., “PolyShard: Coded Sharding Achieves Linearly Scaling Efficiency and Security Simultaneously”. <a href="https://arxiv.org/abs/1809.10361" target="_blank" class="href">1809.10361</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        N. Shental et al., “Efficient high-throughput SARS-CoV-2 testing to detect asymptomatic carriers”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.abc5961" target="_blank" class="href">DOI</a>
+        B. Sasidharan and E. Viterbo, “Private Data Access in Blockchain Systems Employing Coded Sharding”, 2021 IEEE International Symposium on Information Theory (ISIT) (2021). <a href="https://doi.org/10.1109/ISIT45174.2021.9517900" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="emph">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href">URL</a>, 2022.
+        International Organization for Standardization, Information Technology: Automatic Identification and Data Capture Techniques-QR Code 2005 Bar Code Symbology Specification, 2nd ed., IEC18004 (ISO, 2006).
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        Y. Wang and X. Zhu, “A fast algorithm for the Fourier transform over finite fields and its VLSI implementation”, IEEE Journal on Selected Areas in Communications <span class="textbf">6</span>, 572 (1988). <a href="https://doi.org/10.1109/49.1926" target="_blank" class="href">DOI</a>
+        I. Shakeel et al., “Reed-Solomon coding for cooperative wireless communication”, 21st Annual IEEE International Symposium on Personal, Indoor and Mobile Radio Communications (2010). <a href="https://doi.org/10.1109/PIMRC.2010.5672091" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        D. G. Cantor, “On arithmetical algorithms over finite fields”, Journal of Combinatorial Theory, Series A <span class="textbf">50</span>, 285 (1989). <a href="https://doi.org/10.1016/0097-3165(89)90020-4" target="_blank" class="href">DOI</a>
+        N. Shental et al., “Efficient high-throughput SARS-CoV-2 testing to detect asymptomatic carriers”, Science Advances <span class="textbf">6</span>, (2020). <a href="https://doi.org/10.1126/sciadv.abc5961" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
-        J. von zur Gathen and J. Gerhard, <span class="textit">Modern Computer Algebra</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9781139856065" target="_blank" class="href">DOI</a>
+        Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="emph">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href">URL</a>, 2022.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-21">[22]</dt>
       <dd>
-        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
+        Y. Wang and X. Zhu, “A fast algorithm for the Fourier transform over finite fields and its VLSI implementation”, IEEE Journal on Selected Areas in Communications <span class="textbf">6</span>, 572 (1988). <a href="https://doi.org/10.1109/49.1926" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-22">[23]</dt>
       <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+        D. G. Cantor, “On arithmetical algorithms over finite fields”, Journal of Combinatorial Theory, Series A <span class="textbf">50</span>, 285 (1989). <a href="https://doi.org/10.1016/0097-3165(89)90020-4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-23">[24]</dt>
       <dd>
-        T. Halonen, J. Romero, and J. Melero, editors , <span class="textit">GSM, GPRS and EDGE Performance</span> (Wiley, 2003). <a href="https://doi.org/10.1002/0470866969" target="_blank" class="href">DOI</a>
+        J. von zur Gathen and J. Gerhard, <span class="textit">Modern Computer Algebra</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9781139856065" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-24">[25]</dt>
       <dd>
-        R. Koetter and F. R. Kschischang, “Coding for Errors and Erasures in Random Network Coding”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 3579 (2008). <a href="https://doi.org/10.1109/TIT.2008.926449" target="_blank" class="href">DOI</a>
+        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-25">[26]</dt>
+      <dd>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-26">[27]</dt>
+      <dd>
+        T. Halonen, J. Romero, and J. Melero, editors , <span class="textit">GSM, GPRS and EDGE Performance</span> (Wiley, 2003). <a href="https://doi.org/10.1002/0470866969" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-27">[28]</dt>
+      <dd>
+        R. Koetter and F. R. Kschischang, “Coding for Errors and Erasures in Random Network Coding”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 3579 (2008). <a href="https://doi.org/10.1109/TIT.2008.926449" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-28">[29]</dt>
       <dd>
         A. Mazumdar, A. Barg, and G. Zemor, “Constructions of rank modulation codes”, 2011 IEEE International Symposium on Information Theory Proceedings (2011). <a href="https://doi.org/10.1109/ISIT.2011.6034261" target="_blank" class="href">DOI</a>
       </dd>
@@ -421,7 +434,7 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/alternant">Alternant</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/extended_reed_solomon">Extended RS</a></li><li><a href="/c/folded_reed_solomon">Folded RS</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/bch">BCH</a></li><li><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/galois_polynomial">Galois QPyC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/ag">AG</a></li><li><a href="/c/extended_reed_solomon">Extended RS</a></li><li><a href="/c/folded_reed_solomon">Folded RS</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/galois_polynomial">Galois QPyC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

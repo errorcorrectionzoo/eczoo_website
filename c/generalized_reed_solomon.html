@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Generalized Reed-Solomon (GRS) code" />
+<meta name="citation_title" content="Generalized Reed Solomon (GRS) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Generalized Reed-Solomon (GRS) code" />
+<meta name="DC.title" content="Generalized Reed Solomon (GRS) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Generalized Reed-Solomon (GRS) code [error correction zoo]
+    Generalized Reed Solomon (GRS) code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,14 +78,17 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Generalized Reed-Solomon (GRS) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Generalized Reed Solomon (GRS) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>, and the case where all <span class="inline-math">\(v_i=1\)</span> reduces to the RS case.
+</div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \floor*{\frac{n-k}{2}} \)</span> errors.</div>
 
 
 <!-- Display features -->
@@ -103,6 +106,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoding process reduces to the solution of a polynomial congruence equation, usually referred to as the key equation.</span><span class="paragraph-in-list">Decoding schemes are based on applications of Euclid algorithm to solve the key equation.</span><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-4" class="cite">[5]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-5" class="cite">[6]</a>.</span></div>
 
 
 
@@ -114,9 +120,13 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Various cloud storage systems <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Public-key cryptosystems <a href="#cite-2" class="cite">[3]</a>. Initial construction of McEliece Public Key Cryptosystem was based on Goppa codes which are subfield subcode of GRS codes. Public Key Cryptosystem designs based on GRS codes first proposed in Ref. <a href="#cite-3" class="cite">[4]</a>, which replaced the generator matrix with the parity check matrix, were proven to be insecure <a href="#cite-4" class="cite">[5]</a> since the public key exposes algebraic structure of code. More recent works focus on methods to mask the algebraic structure using subcodes of GRS codes <a href="#cite-2" class="cite">[3]</a>. Lately a key-recovery attack was developed in <a href="#cite-5" class="cite">[6]</a> for a variant of masking method proposed by <a href="#cite-6" class="cite">[7]</a>.</span>
+  <span class="paragraph-in-list">Various cloud storage systems <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Public-key cryptosystems <a href="#cite-7" class="cite">[8]</a>. Initial construction of McEliece Public Key Cryptosystem was based on Goppa codes which are subfield subcode of GRS codes. Public Key Cryptosystem designs based on GRS codes first proposed in Ref. <a href="#cite-8" class="cite">[9]</a>, which replaced the generator matrix with the parity check matrix, were proven to be insecure <a href="#cite-9" class="cite">[10]</a> since the public key exposes algebraic structure of code. More recent works focus on methods to mask the algebraic structure using subcodes of GRS codes <a href="#cite-7" class="cite">[8]</a>. Lately a key-recovery attack was developed in <a href="#cite-10" class="cite">[11]</a> for a variant of masking method proposed by <a href="#cite-11" class="cite">[12]</a>.</span>
 </div>
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Since the distance of the code is <span class="inline-math">\(n-k+1\)</span>, the family of codes saturate the singelton bound. Hence these are MDS codes.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -129,15 +139,15 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/alternant">Alternant code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/evaluation">Evaluation AG code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GRS codes are evaluation AG codes on the projetive line; see Thm. 15.3.24 of Ref. <a href="#cite-7" class="cite">[8]</a>.</span></li>
+      &#x2014;&nbsp;GRS codes are evaluation AG codes on the projetive line; see Thm. 15.3.24 of Ref. <a href="#cite-12" class="cite">[13]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/distributed_storage">Distributed-storage code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GRS codes are used in various cloud storage systems <a href="#cite-1" class="cite">[2]</a>.</span></li>
+      &#x2014;&nbsp;GRS codes are used in various cloud storage systems <a href="#cite-6" class="cite">[7]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span></li>
 </ul>
 </div>
 
@@ -149,7 +159,11 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/alternant">Alternant code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Alternant codes are subfield subcodes of GRS codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;BCH codes are subfield subcodes of GRS codes.</span></li>
   <li class="paragraph-in-list">
@@ -171,7 +185,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum MDS codes can be constructed through classical generalized Reed-Solomon codes <a href="#cite-8" class="cite">[9]</a>.</span></li>
+      &#x2014;&nbsp;Quantum MDS codes can be constructed through classical generalized Reed-Solomon codes <a href="#cite-13" class="cite">[14]</a>.</span></li>
 </ul>
 </div>
 
@@ -200,10 +214,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Generalized Reed-Solomon (GRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/generalized_reed_solomon</dd>
+    <dd>“Generalized Reed Solomon (GRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/generalized_reed_solomon</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_generalized_reed_solomon,
-title={Generalized Reed-Solomon (GRS) code},
+title={Generalized Reed Solomon (GRS) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -232,40 +246,65 @@ url={https://errorcorrectionzoo.org/c/generalized_reed_solomon}
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        H. Dau et al., “Repairing Reed-Solomon Codes With Multiple Erasures”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 6567 (2018). <a href="https://doi.org/10.1109/TIT.2018.2827942" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.01361" target="_blank" class="href">1612.01361</a>
+        E. Berlekamp, “Nonbinary BCH decoding (Abstr.)”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 242 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054109" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        T. P. Berger and P. Loidreau, “How to Mask the Structure of Codes for a Cryptographic Use”, Designs, Codes and Cryptography <span class="textbf">35</span>, 63 (2005). <a href="https://doi.org/10.1007/s10623-003-6151-2" target="_blank" class="href">DOI</a>
+        J. Massey, “Shift-register synthesis and BCH decoding”, IEEE Transactions on Information Theory <span class="textbf">15</span>, 122 (1969). <a href="https://doi.org/10.1109/TIT.1969.1054260" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        L. Socha, “Some remarks about open-loop control in stochastic quasilinear systems”, Optimal Control Applications and Methods <span class="textbf">7</span>, 105 (1986). <a href="https://doi.org/10.1002/oca.4660070108" target="_blank" class="href">DOI</a>
+        E. R. Berlekamp, <span class="emph">Algebraic Coding Theory</span>, McGraw-Hill, 1968
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        V. M. SIDELNIKOV and S. O. SHESTAKOV, “On insecurity of cryptosystems based on generalized Reed-Solomon codes”, Discrete Mathematics and Applications <span class="textbf">2</span>, (1992). <a href="https://doi.org/10.1515/dma.1992.2.4.439" target="_blank" class="href">DOI</a>
+        V. Guruswami and M. Sudan, “Improved decoding of Reed-Solomon and algebraic-geometric codes”, Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280). <a href="https://doi.org/10.1109/SFCS.1998.743426" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        Alain Couvreur et al., “Distinguisher-Based Attacks on Public-Key Cryptosystems Using Reed-Solomon Codes”. <a href="https://arxiv.org/abs/1307.6458" target="_blank" class="href">1307.6458</a>
+        R. Koetter and A. Vardy, “Algebraic soft-decision decoding of reed-solomon codes”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2809 (2003). <a href="https://doi.org/10.1109/TIT.2003.819332" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        Marco Baldi et al., “Enhanced public key security for the McEliece cryptosystem”. <a href="https://arxiv.org/abs/1108.2462" target="_blank" class="href">1108.2462</a>
+        H. Dau et al., “Repairing Reed-Solomon Codes With Multiple Erasures”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 6567 (2018). <a href="https://doi.org/10.1109/TIT.2018.2827942" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.01361" target="_blank" class="href">1612.01361</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
       <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+        T. P. Berger and P. Loidreau, “How to Mask the Structure of Codes for a Cryptographic Use”, Designs, Codes and Cryptography <span class="textbf">35</span>, 63 (2005). <a href="https://doi.org/10.1007/s10623-003-6151-2" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-8">[9]</dt>
+      <dd>
+        L. Socha, “Some remarks about open-loop control in stochastic quasilinear systems”, Optimal Control Applications and Methods <span class="textbf">7</span>, 105 (1986). <a href="https://doi.org/10.1002/oca.4660070108" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        V. M. SIDELNIKOV and S. O. SHESTAKOV, “On insecurity of cryptosystems based on generalized Reed-Solomon codes”, Discrete Mathematics and Applications <span class="textbf">2</span>, (1992). <a href="https://doi.org/10.1515/dma.1992.2.4.439" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        Alain Couvreur et al., “Distinguisher-Based Attacks on Public-Key Cryptosystems Using Reed-Solomon Codes”. <a href="https://arxiv.org/abs/1307.6458" target="_blank" class="href">1307.6458</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        Marco Baldi et al., “Enhanced public key security for the McEliece cryptosystem”. <a href="https://arxiv.org/abs/1108.2462" target="_blank" class="href">1108.2462</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
       <dd>
         Hualu Liu and Xiusheng Liu, “Constructions of quantum MDS codes”. <a href="https://arxiv.org/abs/2002.06040" target="_blank" class="href">2002.06040</a>
       </dd>
@@ -281,7 +320,7 @@ url={https://errorcorrectionzoo.org/c/generalized_reed_solomon}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Generalized Reed-Solomon (GRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/generalized_reed_solomon</p>
+  <p>“Generalized Reed Solomon (GRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/generalized_reed_solomon</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/generalized_reed_solomon.yml"
                 class="ashowurl"
@@ -295,7 +334,7 @@ url={https://errorcorrectionzoo.org/c/generalized_reed_solomon}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/alternant">Alternant</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/bch">BCH</a></li><li><a href="/c/goppa">Goppa</a></li><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/quantum_mds">Quantum MDS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/ag">AG</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/alternant">Alternant</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/goppa">Goppa</a></li><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/quantum_mds">Quantum MDS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

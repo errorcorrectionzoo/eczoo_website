@@ -60,16 +60,16 @@ Here is a list of code families which contain <a href="/c/perfect" class="ref">p
 </thead>
 <tbody>
 <tr>
+  <td class="top left"><a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
+  <td class="textit">Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeros <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/golay">Binary Golay code</a></td>
   <td class="textit">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^{23}\)</span>, or <span class="inline-math">\(GF(2)^{24}\)</span> in the extended case.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/repetition">Binary repetition code</a></td>
   <td class="textit"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="textit">Stub.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/homological_classical">Graph homology code</a></td>
@@ -95,10 +95,6 @@ becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)
 \sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
 \end{align}</span>
 becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
-  <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/zetterberg">Zetterberg code</a></td>
