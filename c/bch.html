@@ -84,11 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeros <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</p>
+<div class="sectioncontent code-description"><p>Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span> (see <a href="/c/binary_cyclic" class="ref">binary cyclic</a> code description). More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</p>
 <p>The code dimension is related to the <span class="textit">multiplicative order</span> of <span class="inline-math">\(2\)</span> modulo <span class="inline-math">\(n\)</span>, i.e., the smallest integer <span class="inline-math">\(m\)</span> such that <span class="inline-math">\(n\)</span> divides <span class="inline-math">\(2^m-1\)</span>. The dimension of a BCH code with <span class="inline-math">\(\delta=2t+1\)</span> is at least <span class="inline-math">\(n-mt\)</span>. The field <span class="inline-math">\(GF(2^m)\)</span> is the smallest field containing the above root of unity <span class="inline-math">\(\alpha\)</span>, and is the splitting field of the polynomial <span class="inline-math">\(x^n-1\)</span> (see <a href="/c/binary_cyclic" class="ref">binary cyclic</a> code description).</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true minimum distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that.
+<div class="sectioncontent code-protection">By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that.
 </div>
 
 
@@ -179,8 +179,6 @@
       &#x2014;&nbsp;Only double error-correcting BCH codes <span class="inline-math">\([2^m-1,n-2m,5]\)</span> are quasi-perfect <a href="#cite-20" class="cite">[21]</a><a href="#cite-21" class="cite">[22]</a> (see also Ref. <a href="#cite-14" class="cite">[15]</a>, Ch. 9).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/skew_cyclic">Skew-cyclic code</a></span></li>
 </ul>
 </div>
 
@@ -369,7 +367,7 @@ url={https://errorcorrectionzoo.org/c/bch}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_cyclic">Cyclic binary</a></li><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quasi_cyclic">Quasi-cyclic</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/skew_cyclic">Skew-cyclic</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_cyclic">Cyclic binary</a></li><li><a href="/c/cyclic">Cyclic</a></li><li><a href="/c/quasi_cyclic">Quasi-cyclic</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/q-ary_bch">BCH</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

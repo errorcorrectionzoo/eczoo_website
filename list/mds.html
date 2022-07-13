@@ -67,7 +67,7 @@ Here is a list of code families which contain <a href="/c/mds" class="ref">MDS c
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeros <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
+  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
   <td class="textit"></td>
 </tr>
 <tr>
@@ -82,9 +82,8 @@ Here is a list of code families which contain <a href="/c/mds" class="ref">MDS c
 </tr>
 <tr>
   <td class="top left"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>, and the case where all <span class="inline-math">\(v_i=1\)</span> reduces to the RS case.
-</td>
-  <td class="textit"></td>
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</td>
+  <td class="textit">GRS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/goppa">Goppa code</a></td>

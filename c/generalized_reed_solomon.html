@@ -84,11 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>, and the case where all <span class="inline-math">\(v_i=1\)</span> reduces to the RS case.
-</div>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</p>
+<p>The decoding process of GRS codes reduces to the solution of a polynomial congruence equation, usually referred to as the key equation. Decoding schemes are based on applications of Euclid algorithm to solve the key equation.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \floor*{\frac{n-k}{2}} \)</span> errors.</div>
+<div class="sectioncontent code-protection">The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</div>
 
 
 <!-- Display features -->
@@ -108,7 +108,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoding process reduces to the solution of a polynomial congruence equation, usually referred to as the key equation.</span><span class="paragraph-in-list">Decoding schemes are based on applications of Euclid algorithm to solve the key equation.</span><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-4" class="cite">[5]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-5" class="cite">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-4" class="cite">[5]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-5" class="cite">[6]</a>.</span></div>
 
 
 
@@ -123,10 +123,6 @@
   <span class="paragraph-in-list">Various cloud storage systems <a href="#cite-6" class="cite">[7]</a>.</span><span class="paragraph-in-list">Public-key cryptosystems <a href="#cite-7" class="cite">[8]</a>. Initial construction of McEliece Public Key Cryptosystem was based on Goppa codes which are subfield subcode of GRS codes. Public Key Cryptosystem designs based on GRS codes first proposed in Ref. <a href="#cite-8" class="cite">[9]</a>, which replaced the generator matrix with the parity check matrix, were proven to be insecure <a href="#cite-9" class="cite">[10]</a> since the public key exposes algebraic structure of code. More recent works focus on methods to mask the algebraic structure using subcodes of GRS codes <a href="#cite-7" class="cite">[8]</a>. Lately a key-recovery attack was developed in <a href="#cite-10" class="cite">[11]</a> for a variant of masking method proposed by <a href="#cite-11" class="cite">[12]</a>.</span>
 </div>
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Since the distance of the code is <span class="inline-math">\(n-k+1\)</span>, the family of codes saturate the singelton bound. Hence these are MDS codes.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
@@ -147,7 +143,9 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;GRS codes are used in various cloud storage systems <a href="#cite-6" class="cite">[7]</a>.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GRS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound.</span></li>
 </ul>
 </div>
 
@@ -171,7 +169,9 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Goppa codes are subfield subcodes of GRS codes.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A GRS code for whic all mujltipliers <span class="inline-math">\(v_i=1\)</span> reduces to an RS code.</span></li>
 </ul>
 </div>
 
