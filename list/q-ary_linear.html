@@ -60,32 +60,8 @@ Here is a list of <a href="/c/q-ary_linear" class="ref"><span class="inline-math
 </thead>
 <tbody>
 <tr>
-  <td class="top left"><a href="/c/alternant">Alternant code</a></td>
-  <td class="textit">Stub.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/extended_reed_solomon">Extended RS code</a></td>
-  <td class="textit">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/folded_reed_solomon">Folded RS code</a></td>
-  <td class="textit">Stub.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/gabidulin">Gabidulin code</a></td>
   <td class="textit">Also called a <span class="textit">vector rank-metric code</span>. A linear code over <span class="inline-math">\(GF(q^N)\)</span> that corrects errors over rank metric instead of the traditional Hamming distance. Every element <span class="inline-math">\(GF(q^N)\)</span> can be written as an <span class="inline-math">\(N\)</span>-dimensional vector with coefficients in <span class="inline-math">\(GF(q)\)</span>, and the rank of a set of elements is rank of the matrix formed by their coefficients.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/goppa">Goppa code</a></td>
-  <td class="textit">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/group">Group code</a></td>
@@ -115,15 +91,6 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
 <tr>
   <td class="top left"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
   <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
-<span class="display-math env-align">\begin{align}
-f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
-\end{align}</span>
-In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>.
-</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/simplex">Simplex code</a></td>

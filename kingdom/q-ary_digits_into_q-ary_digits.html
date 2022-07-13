@@ -63,7 +63,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/ag">Algebraic-geometry (AG) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/ag">Algebraic-geometry (AG) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
   </span>
 </div>
 
@@ -118,8 +118,31 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_generalized_reed_solomon">
+  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</span>
+  <span class="short-code-info">Protection: The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/alternant">Alternant code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/goppa">Goppa code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/mds">Maximum distance separable (MDS) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_reed_muller">
-  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a></span></span>
   <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
@@ -136,25 +159,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_generalized_reed_solomon">
-  <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</span>
-  <span class="short-code-info">Protection: The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/alternant">Alternant code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/goppa">Goppa code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>.
   </span>
 </div>
 
@@ -231,13 +235,9 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
     Parents:
       <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/locally_recoverable">Locally recoverable code (LRC)</a>.
   </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
-  </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>,       <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
   </span>
 </div>
 
@@ -294,6 +294,42 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/repetition">Binary repetition code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/steane">Steane <span class="inline-math">\([[7,1,3]]\)</span> code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_evaluation">
+  <span class="short-code-name"><a href="/c/evaluation">Evaluation AG code</a></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/ag">Algebraic-geometry (AG) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/residue">Residue AG code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_residue">
+  <span class="short-code-name"><a href="/c/residue">Residue AG code</a></span>
+  <span class="short-code-description">Also called a <span class="textit">differential code</span>. Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/ag">Algebraic-geometry (AG) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/goppa">Goppa code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/evaluation">Evaluation AG code</a>.
   </span>
 </div>
 
@@ -367,42 +403,6 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 </div>
 
 
-<div class="ecc-code" id="ecc_evaluation">
-  <span class="short-code-name"><a href="/c/evaluation">Evaluation AG code</a></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/ag">Algebraic-geometry (AG) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/residue">Residue AG code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_residue">
-  <span class="short-code-name"><a href="/c/residue">Residue AG code</a></span>
-  <span class="short-code-description">Also called a <span class="textit">differential code</span>. Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/ag">Algebraic-geometry (AG) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/goppa">Goppa code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/evaluation">Evaluation AG code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_group">
   <span class="short-code-name"><a href="/c/group">Group code</a></span>
   <span class="short-code-description">An <span class="inline-math">\( [n,k] \)</span> binary or <span class="inline-math">\(q\)</span>-ary code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</span>
@@ -459,6 +459,21 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 </div>
 
 
+<div class="ecc-code" id="ecc_q-ary_quad_residue">
+  <span class="short-code-name"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></span>
+  <span class="short-code-description">Member of a quadruple of cyclic <span class="inline-math">\(q\)</span>-ary codes of prime length that satisfy certain relations (<a href="#cite-0" class="cite">[1]</a> Ch. 16). Stub.
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_extended_reed_solomon">
   <span class="short-code-name"><a href="/c/extended_reed_solomon">Extended RS code</a></span>
   <span class="short-code-description">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</span>
@@ -479,21 +494,6 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <span class="short-code-parents">
     Parents:
       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_q-ary_quad_residue">
-  <span class="short-code-name"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></span>
-  <span class="short-code-description">Member of a quadruple of cyclic <span class="inline-math">\(q\)</span>-ary codes of prime length that satisfy certain relations (<a href="#cite-3" class="cite">[4]</a> Ch. 16). Stub.
-</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
   </span>
 </div>
 
@@ -519,22 +519,22 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        N. Mitani, <span class="emph">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.
+        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
+        N. Mitani, <span class="emph">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
