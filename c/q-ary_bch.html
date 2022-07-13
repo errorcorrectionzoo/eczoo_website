@@ -112,7 +112,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoding process is similar to Reed-Solomon codes. In particular, the Berlekamp-Massey algorithm can be used to decode BCH codes.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a> and modification by Burton <a href="#cite-5" class="cite">[6]</a>; see also <a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-8" class="cite">[9]</a><a href="#cite-0" class="cite">[1]</a><a href="#cite-9" class="cite">[10]</a>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-12" class="cite">[13]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-13" class="cite">[14]</a>.</span></div>
 
 
 
@@ -124,12 +124,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">DVDs, disk drives, and two-dimensional bar codes <a href="#cite-2" class="cite">[3]</a>.</span>
+  <span class="paragraph-in-list">DVDs, disk drives, and two-dimensional bar codes <a href="#cite-14" class="cite">[15]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See books <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a> for expositions on BCH codes and code tables.</span><span class="paragraph-in-list">See database <a href="#cite-5" class="cite">[6]</a> for explicit codes.</span><span class="paragraph-in-list">See corresponding MinT database entry <a href="#cite-6" class="cite">[7]</a>.</span>
+  <span class="paragraph-in-list">See books <a href="#cite-1" class="cite">[2]</a><a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a> for expositions on BCH codes and code tables.</span><span class="paragraph-in-list">See database <a href="#cite-17" class="cite">[18]</a> for explicit codes.</span><span class="paragraph-in-list">See corresponding MinT database entry <a href="#cite-18" class="cite">[19]</a>.</span>
 </div>
 
 
@@ -162,7 +162,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Cyclic RS codes of length <span class="inline-math">\(n=q-1\)</span> are BCH codes; see Remark 15.3.21 of Ref. <a href="#cite-7" class="cite">[8]</a>.</span></li>
+      &#x2014;&nbsp;Cyclic RS codes of length <span class="inline-math">\(n=q-1\)</span> are BCH codes; see Remark 15.3.21 of Ref. <a href="#cite-19" class="cite">[20]</a>.</span></li>
 </ul>
 </div>
 
@@ -228,30 +228,90 @@ url={https://errorcorrectionzoo.org/c/q-ary_bch}
       <!-- Citation:  -->
       <dt id="cite-2">[3]</dt>
       <dd>
-        S. Zhu, Z. Sun, and X. Kai, “A Class of Narrow-Sense BCH Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 4699 (2019). <a href="https://doi.org/10.1109/TIT.2019.2913389" target="_blank" class="href">DOI</a>
+        E. Berlekamp, “Nonbinary BCH decoding (Abstr.)”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 242 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054109" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-3">[4]</dt>
       <dd>
-        S. Lin and D. J. Costello, <span class="emph">Error Control Coding</span>, 2nd ed. Englewood Cliffs, NJ: Prentice-Hall, 2004.
+        J. Massey, “Shift-register synthesis and BCH decoding”, IEEE Transactions on Information Theory <span class="textbf">15</span>, 122 (1969). <a href="https://doi.org/10.1109/TIT.1969.1054260" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-4">[5]</dt>
       <dd>
-        W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href">DOI</a>
+        E. R. Berlekamp, <span class="emph">Algebraic Coding Theory</span>, McGraw-Hill, 1968
       </dd>
       <!-- Citation:  -->
       <dt id="cite-5">[6]</dt>
       <dd>
-        Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="emph">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href">URL</a>, 2022.
+        H. Burton, “Inversionless decoding of binary BCH codes”, IEEE Transactions on Information Theory <span class="textbf">17</span>, 464 (1971). <a href="https://doi.org/10.1109/TIT.1971.1054655" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-6">[7]</dt>
       <dd>
-        Rudolf Schürer and Wolfgang Ch. Schmid. “Cyclic Codes (BCH-Bound).” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CCyclic-BCHBound.html
+        W. W. Peterson and E. J. Weldon, <span class="emph">Error-correcting codes</span>. MIT press 1972.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-7">[8]</dt>
+      <dd>
+        R. Gallager, <span class="textit">Information Theory and Reliable Communication</span> (Springer Vienna, 1972). <a href="https://doi.org/10.1007/978-3-7091-2945-6" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-8">[9]</dt>
+      <dd>
+        W. Peterson, “Encoding and error-correction procedures for the Bose-Chaudhuri codes”, IEEE Transactions on Information Theory <span class="textbf">6</span>, 459 (1960). <a href="https://doi.org/10.1109/TIT.1960.1057586" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-9">[10]</dt>
+      <dd>
+        R.E. Blahut, <span class="emph">Theory and practice of error-control codes</span>, Addison-Wesley 1983.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-10">[11]</dt>
+      <dd>
+        Y. Sugiyama et al., “A method for solving key equation for decoding goppa codes”, Information and Control <span class="textbf">27</span>, 87 (1975). <a href="https://doi.org/10.1016/S0019-9958(75)90090-X" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-11">[12]</dt>
+      <dd>
+        R. McEliece, <span class="textit">The Theory of Information and Coding</span> (Cambridge University Press, 2002). <a href="https://doi.org/10.1017/CBO9780511606267" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-12">[13]</dt>
+      <dd>
+        V. Guruswami and M. Sudan, “Improved decoding of Reed-Solomon and algebraic-geometric codes”, Proceedings 39th Annual Symposium on Foundations of Computer Science (Cat. No.98CB36280). <a href="https://doi.org/10.1109/SFCS.1998.743426" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-13">[14]</dt>
+      <dd>
+        R. Koetter and A. Vardy, “Algebraic soft-decision decoding of reed-solomon codes”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2809 (2003). <a href="https://doi.org/10.1109/TIT.2003.819332" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-14">[15]</dt>
+      <dd>
+        S. Zhu, Z. Sun, and X. Kai, “A Class of Narrow-Sense BCH Codes”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 4699 (2019). <a href="https://doi.org/10.1109/TIT.2019.2913389" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-15">[16]</dt>
+      <dd>
+        S. Lin and D. J. Costello, <span class="emph">Error Control Coding</span>, 2nd ed. Englewood Cliffs, NJ: Prentice-Hall, 2004.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-16">[17]</dt>
+      <dd>
+        W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-17">[18]</dt>
+      <dd>
+        Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="emph">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href">URL</a>, 2022.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-18">[19]</dt>
+      <dd>
+        Rudolf Schürer and Wolfgang Ch. Schmid. “Cyclic Codes (BCH-Bound).” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CCyclic-BCHBound.html
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-19">[20]</dt>
       <dd>
         W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
       </dd>
