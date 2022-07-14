@@ -63,7 +63,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/ag">Algebraic-geometry (AG) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
+      <a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/ag">Algebraic-geometry (AG) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
 </div>
 
@@ -120,11 +120,14 @@
 
 <div class="ecc-code" id="ecc_generalized_reed_solomon">
   <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</span>
+  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
+<span class="display-math env-align">\begin{align}
+  \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
+\end{align}</span></span>
   <span class="short-code-info">Protection: The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>.
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/distributed_storage">Distributed-storage code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -146,7 +149,7 @@
   <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/group">Group code</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/group">Group code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -198,7 +201,7 @@ where the trace inner product is <span class="inline-math">\(x\star y = \sum_{i=
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/gabidulin">Gabidulin code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/projective">Projective <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/two_weight">Two-weight code</a>,       <a href="/c/wozencraft">Wozencraft ensemble code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>,       <a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a>.
+      <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>,       <a href="/c/gabidulin">Gabidulin code</a>,       <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>,       <a href="/c/group">Group code</a>,       <a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/projective">Projective <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/two_weight">Two-weight code</a>,       <a href="/c/wozencraft">Wozencraft ensemble code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>,       <a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -279,13 +282,84 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
 </div>
 
 
+<div class="ecc-code" id="ecc_reed_solomon">
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero points in <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial
+<span class="display-math env-align">\begin{align}
+f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
+\end{align}</span>
+In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>,
+<span class="display-math env-align">\begin{align}
+  \mu\to\left\{ f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right\} \,.
+\end{align}</span></span>
+  <span class="short-code-info">Protection: Since each polynomial <span class="inline-math">\(f_{\mu}\)</span> is of degree less than <span class="inline-math">\(k\)</span>, it can be determined from its values at <span class="inline-math">\(k\)</span> points. This means that RS codes can correct erasures on up to <span class="inline-math">\(n-k\)</span> registers. The resulting distance, <span class="inline-math">\(d=n-k+1\)</span>, saturates the Singleton bound.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>,       <a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a>,       <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/extended_reed_solomon">Extended RS code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/rank_modulation">Rank-modulation code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_alternant">
+  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a></span></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_q-ary_bch">
+  <span class="short-code-name"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a></span></span>
+  <span class="short-code-description">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</span>
+  <span class="short-code-info">Protection: By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true minimum distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that.
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_goppa">
+  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>,       <a href="/c/residue">Residue AG code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_hamming">
-  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
+  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
   <span class="short-code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</span>
   <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/bch">Binary BCH code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -334,71 +408,26 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
 </div>
 
 
-<div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_q-ary_bch">
-  <span class="short-code-name"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a></span></span>
-  <span class="short-code-description">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</span>
-  <span class="short-code-info">Protection: By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true minimum distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that.
-</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a></span></span>
-  <span class="short-code-description">Let <span class="inline-math">\( G(z) \)</span>  be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span>  where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
-  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(z) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>,       <a href="/c/residue">Residue AG code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
+<div class="ecc-code" id="ecc_folded_reed_solomon">
+  <span class="short-code-name"><a href="/c/folded_reed_solomon">Folded RS (FRS) code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-description">A linear <span class="inline-math">\([n/m,k]_{q^m}\)</span> code that is a modification of an <span class="inline-math">\([n,k]_q\)</span> RS code such that evaluations are grouped to yield a code with smaller length. In this case, the evaluation points are all powers of a generating field element <span class="inline-math">\(\gamma\)</span>, <span class="inline-math">\(\alpha_i=\gamma^i\)</span>. Each codeword <span class="inline-math">\(\mu\)</span> of an <span class="inline-math">\(m\)</span>-folded RS code is a string of <span class="inline-math">\(n/m\)</span> symbols, with each symbol being a string of values of a polynomial <span class="inline-math">\(f_\mu\)</span> at consecutive powers of <span class="inline-math">\(\gamma\)</span>,
 <span class="display-math env-align">\begin{align}
-f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
+\begin{split}
+  \mu\to&amp;\Big\{\left(f_{\mu}(\alpha^{0}),\cdots,f_{\mu}(\alpha^{m-1})\right),\left(f_{\mu}(\alpha^{m}),\cdots,f_{\mu}(\alpha^{2m-1})\right)\cdots\\&amp;\cdots,\left(f_{\mu}(\alpha^{n-m}),\cdots,f_{\mu}(\alpha^{n-1})\right)\Big\}~.
+\end{split}
 \end{align}</span>
-In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>.
 </span>
-  <span class="short-code-info">Protection: Since each polynomial <span class="inline-math">\(f_{\mu}\)</span> is of degree less than <span class="inline-math">\(k\)</span>, it can be determined from its values at <span class="inline-math">\(k\)</span> points. This means that RS codes can correct erasures on up to <span class="inline-math">\(n-k\)</span> registers. The resulting distance, <span class="inline-math">\(d=n-k+1\)</span>, saturates the Singleton bound.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a>.
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/extended_reed_solomon">Extended RS code</a>,       <a href="/c/folded_reed_solomon">Folded RS code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/rank_modulation">Rank-modulation code</a>.
+      <a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a>.
   </span>
 </div>
 
@@ -417,6 +446,29 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/cyclic">Cyclic code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_interleaved_reed_solomon">
+  <span class="short-code-name"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></span>
+  <span class="short-code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged into a matrix whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding codewords
+<span class="display-math env-align">\begin{align}
+\begin{split}
+  f_{\mu}^{(1)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(1)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(1)}\left(\alpha_{n}\right)\\
+  f_{\mu}^{(2)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(2)}\left(\alpha_{2}\right) &amp;  &amp; f_{\mu}^{(2)}\left(\alpha_{n}\right)\\
+  \vdots &amp;  &amp; \ddots &amp; \vdots\\
+  f_{\mu}^{(t)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(t)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(t)}\left(\alpha_{n}\right)
+\end{split}~.
+\end{align}</span>
+</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
   </span>
 </div>
 
@@ -446,7 +498,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 
 <div class="ecc-code" id="ecc_wozencraft">
-  <span class="short-code-name"><a href="/c/wozencraft">Wozencraft ensemble code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
+  <span class="short-code-name"><a href="/c/wozencraft">Wozencraft ensemble code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -455,6 +507,20 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/justesen">Justesen code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_extended_reed_solomon">
+  <span class="short-code-name"><a href="/c/extended_reed_solomon">Extended RS code</a></span>
+  <span class="short-code-description">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/simplex">Simplex code</a>.
   </span>
 </div>
 
@@ -474,26 +540,17 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 </div>
 
 
-<div class="ecc-code" id="ecc_extended_reed_solomon">
-  <span class="short-code-name"><a href="/c/extended_reed_solomon">Extended RS code</a></span>
-  <span class="short-code-description">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</span>
+<div class="ecc-code" id="ecc_parvaresh_vardy">
+  <span class="short-code-name"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a></span></span>
+  <span class="short-code-description">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) imposed between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity.
+</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+      <a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a>.
   </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/simplex">Simplex code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_folded_reed_solomon">
-  <span class="short-code-name"><a href="/c/folded_reed_solomon">Folded RS code</a></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>.
   </span>
 </div>
 
@@ -579,47 +636,57 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
       <!-- Citation:  -->
       <dt id="cite-12">[13]</dt>
       <dd>
-        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
+        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-13">[14]</dt>
       <dd>
-        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
+        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-14">[15]</dt>
       <dd>
-        D. Gorenstein and N. Zierler, “A Class of Error-Correcting Codes in <span class="inline-math">$p^m $</span> Symbols”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">9</span>, 207 (1961). <a href="https://doi.org/10.1137/0109020" target="_blank" class="href">DOI</a>
+        H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-15">[16]</dt>
       <dd>
-        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
+        D. Gorenstein and N. Zierler, “A Class of Error-Correcting Codes in <span class="inline-math">$p^m $</span> Symbols”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">9</span>, 207 (1961). <a href="https://doi.org/10.1137/0109020" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-16">[17]</dt>
       <dd>
-        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
+        V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-17">[18]</dt>
       <dd>
-        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
+        V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-18">[19]</dt>
       <dd>
-        K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href">DOI</a>
+        E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-19">[20]</dt>
       <dd>
-        I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href">DOI</a>
+        R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-20">[21]</dt>
       <dd>
+        V. Y. Krachkovsky, “Reed-solomon codes for correcting phased error bursts”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2975 (2003). <a href="https://doi.org/10.1109/TIT.2003.819333" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-21">[22]</dt>
+      <dd>
         J. L. Massey, Threshold Decoding. Cambridge, MA: M.I.T. Press, 1963.
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-22">[23]</dt>
+      <dd>
+        F. Parvaresh and A. Vardy, “Correcting Errors Beyond the Guruswami-Sudan Radius in Polynomial Time”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.29" target="_blank" class="href">DOI</a>
       </dd>
     
     </dl>

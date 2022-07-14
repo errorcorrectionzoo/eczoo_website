@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Folded RS code" />
+<meta name="citation_title" content="Folded RS (FRS) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Folded RS code" />
+<meta name="DC.title" content="Folded RS (FRS) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Folded RS code [error correction zoo]
+    Folded RS (FRS) code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,13 +78,19 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Folded RS code</h1>
+      Folded RS (FRS) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">A linear <span class="inline-math">\([n/m,k]_{q^m}\)</span> code that is a modification of an <span class="inline-math">\([n,k]_q\)</span> RS code such that evaluations are grouped to yield a code with smaller length. In this case, the evaluation points are all powers of a generating field element <span class="inline-math">\(\gamma\)</span>, <span class="inline-math">\(\alpha_i=\gamma^i\)</span>. Each codeword <span class="inline-math">\(\mu\)</span> of an <span class="inline-math">\(m\)</span>-folded RS code is a string of <span class="inline-math">\(n/m\)</span> symbols, with each symbol being a string of values of a polynomial <span class="inline-math">\(f_\mu\)</span> at consecutive powers of <span class="inline-math">\(\gamma\)</span>,
+<span class="display-math env-align">\begin{align}
+\begin{split}
+  \mu\to&amp;\Big\{\left(f_{\mu}(\alpha^{0}),\cdots,f_{\mu}(\alpha^{m-1})\right),\left(f_{\mu}(\alpha^{m}),\cdots,f_{\mu}(\alpha^{2m-1})\right)\cdots\\&amp;\cdots,\left(f_{\mu}(\alpha^{n-m}),\cdots,f_{\mu}(\alpha^{n-1})\right)\Big\}~.
+\end{split}
+\end{align}</span>
+</div>
 
 
 
@@ -105,7 +111,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Guruswami–Rudra achieved list decoding capacity of radius <span class="inline-math">\(1-R-\epsilon\)</span> <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Folded RS codes, concatenated with suitable inner codes, can be efficiently list-decoded up to the Zyablov bound <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Guruswami and Rudra <a href="#cite-1" class="cite">[2]</a> achieved list-decoding up to <span class="inline-math">\(1-\frac{k}{n}-\epsilon\)</span> fraction of errors using the Parvaresh-Vardy algorithm <a href="#cite-2" class="cite">[3]</a>. Randomized construction achieves list-decoding up to a slightly lower fraction, but with a faster list decoder <a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Folded RS codes, concatenated with suitable inner codes, can be efficiently list-decoded up to the Blokh-Zyablov bound <a href="#cite-1" class="cite">[2]</a><a href="#cite-4" class="cite">[5]</a>.</span></div>
 
 
 
@@ -116,6 +122,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See the book <a href="#cite-5" class="cite">[6]</a> for an introduction to FRS codes.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -128,11 +138,37 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
 
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An FRS code with no extra grouping (<span class="inline-math">\(m=1\)</span>) reduces to an RS code.</span></li>
+</ul>
+</div>
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The specific relations imposed on the polynomials of PV codes allow for them to be expressed in a similar way as FRS codes, but with more redundancy. Folded RS codes can be list-decoded up to a higher fraction of errors.</span></li>
+</ul>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -159,10 +195,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Folded RS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/folded_reed_solomon</dd>
+    <dd>“Folded RS (FRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/folded_reed_solomon</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_folded_reed_solomon,
-title={Folded RS code},
+title={Folded RS (FRS) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -186,12 +222,32 @@ url={https://errorcorrectionzoo.org/c/folded_reed_solomon}
       <!-- Citation:  -->
       <dt id="cite-0">[1]</dt>
       <dd>
-        V. Guruswami and A. Rudra, “Explicit Codes Achieving List Decoding Capacity: Error-Correction With Optimal Redundancy”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 135 (2008). <a href="https://doi.org/10.1109/TIT.2007.911222" target="_blank" class="href">DOI</a>
+        V. Y. Krachkovsky, “Reed-solomon codes for correcting phased error bursts”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2975 (2003). <a href="https://doi.org/10.1109/TIT.2003.819333" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-1">[2]</dt>
       <dd>
         Venkatesan Guruswami and Atri Rudra, “Explicit Codes Achieving List Decoding Capacity: Error-correction with Optimal Redundancy”. <a href="https://arxiv.org/abs/cs/0511072" target="_blank" class="href">cs/0511072</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        F. Parvaresh and A. Vardy, “Correcting Errors Beyond the Guruswami-Sudan Radius in Polynomial Time”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.29" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        V. Guruswami, “Linear-Algebraic List Decoding of Folded Reed-Solomon Codes”, 2011 IEEE 26th Annual Conference on Computational Complexity (2011). <a href="https://doi.org/10.1109/CCC.2011.22" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.0436" target="_blank" class="href">1106.0436</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-4">[5]</dt>
+      <dd>
+        V. Guruswami and A. Rudra, “Better Binary List Decodable Codes Via Multilevel Concatenation”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 19 (2009). <a href="https://doi.org/10.1109/TIT.2008.2008124" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-5">[6]</dt>
+      <dd>
+        V. Guruswami, A. Rudra, and M. Sudan. <span class="emph">Essential coding theory</span>. Draft available at <a href="https://cse.buffalo.edu/faculty/atri/courses/coding-theory/book/" target="_blank" class="href">this URL</a> (2012).
       </dd>
     
     </dl>
@@ -205,7 +261,7 @@ url={https://errorcorrectionzoo.org/c/folded_reed_solomon}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Folded RS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/folded_reed_solomon</p>
+  <p>“Folded RS (FRS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/folded_reed_solomon</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/folded_reed_solomon.yml"
                 class="ashowurl"
@@ -219,7 +275,7 @@ url={https://errorcorrectionzoo.org/c/folded_reed_solomon}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV)</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

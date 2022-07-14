@@ -80,8 +80,8 @@ Here is a list of all classical and quantum codes that have notable decoders.
   <td class="small top"><span class="paragraph-in-list">BP-OSD decoder <a href="#cite-10" class="cite">[11]</a>.</span></td>
 </tr>
 <tr>
-  <td class="small left top"><a href="/c/bch">Binary Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> and modification by Burton <a href="#cite-13" class="cite">[14]</a>; see also <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a>.</span></td>
+  <td class="small left top"><a href="/c/bch">Binary BCH code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> and modification by Burton <a href="#cite-13" class="cite">[14]</a>; see also <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder with runtime of order <span class="inline-math">\(O(n^3)\)</span> <a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/golay">Binary Golay code</a></td>
@@ -109,7 +109,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-28" class="cite">[29]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> and modification by Burton <a href="#cite-13" class="cite">[14]</a>; see also <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-16" class="cite">[17]</a><a href="#cite-29" class="cite">[30]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-28" class="cite">[29]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a> and modification by Burton <a href="#cite-13" class="cite">[14]</a>; see also <a href="#cite-14" class="cite">[15]</a><a href="#cite-15" class="cite">[16]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder with runtime of order <span class="inline-math">\(O(n^3)\)</span> <a href="#cite-16" class="cite">[17]</a><a href="#cite-29" class="cite">[30]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/bosonic_rotation">Bosonic rotation code</a></td>
@@ -184,8 +184,8 @@ Here is a list of all classical and quantum codes that have notable decoders.
   <td class="small top"><span class="paragraph-in-list">The operation <span class="inline-math">\(\cal{D}\)</span> in the definition of this code is called the decoder. However, the term <span class="textit">decoder</span> can sometimes be used for the inverse of an encoder, which does not correct errors.</span><span class="paragraph-in-list">Quantum machine-learning based decoders such as quantum convolutional neural networks <a href="#cite-51" class="cite">[52]</a> and quantum autoencoders <a href="#cite-52" class="cite">[53]</a>.</span></td>
 </tr>
 <tr>
-  <td class="small left top"><a href="/c/folded_reed_solomon">Folded RS code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Guruswami–Rudra achieved list decoding capacity of radius <span class="inline-math">\(1-R-\epsilon\)</span> <a href="#cite-53" class="cite">[54]</a>.</span><span class="paragraph-in-list">Folded RS codes, concatenated with suitable inner codes, can be efficiently list-decoded up to the Zyablov bound <a href="#cite-54" class="cite">[55]</a>.</span></td>
+  <td class="small left top"><a href="/c/folded_reed_solomon">Folded RS (FRS) code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Guruswami and Rudra <a href="#cite-53" class="cite">[54]</a> achieved list-decoding up to <span class="inline-math">\(1-\frac{k}{n}-\epsilon\)</span> fraction of errors using the Parvaresh-Vardy algorithm <a href="#cite-54" class="cite">[55]</a>. Randomized construction achieves list-decoding up to a slightly lower fraction, but with a faster list decoder <a href="#cite-55" class="cite">[56]</a>.</span><span class="paragraph-in-list">Folded RS codes, concatenated with suitable inner codes, can be efficiently list-decoded up to the Blokh-Zyablov bound <a href="#cite-53" class="cite">[54]</a><a href="#cite-56" class="cite">[57]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/fountain">Fountain code</a></td>
@@ -193,11 +193,11 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/frobenius">Frobenius code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes. There exists a polynomial time quantum algorithm to correct errors of weight at most <span class="inline-math">\(\tau\)</span>, where <span class="inline-math">\(\delta=2\tau+1\)</span> is the BCH distance of the code <a href="#cite-55" class="cite">[56]</a>. </span></td>
+  <td class="small top"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes. There exists a polynomial time quantum algorithm to correct errors of weight at most <span class="inline-math">\(\tau\)</span>, where <span class="inline-math">\(\delta=2\tau+1\)</span> is the BCH distance of the code <a href="#cite-57" class="cite">[58]</a>. </span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/gabidulin">Gabidulin code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Fast decoder based on a transform-domain approach <a href="#cite-56" class="cite">[57]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Fast decoder based on a transform-domain approach <a href="#cite-58" class="cite">[59]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></td>
@@ -217,15 +217,15 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-28" class="cite">[29]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-28" class="cite">[29]</a><a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/goppa">Goppa code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Algebraic decoding algorithms <a href="#cite-57" class="cite">[58]</a>.</span><span class="paragraph-in-list">If <span class="inline-math">\( \text{deg} G(z) = 2t \)</span> , then there exists a <span class="inline-math">\(t\)</span>-correcting algebraic decoding algorithm for <span class="inline-math">\( \Gamma(L,G) \)</span>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Algebraic decoding algorithms <a href="#cite-59" class="cite">[60]</a>.</span><span class="paragraph-in-list">If <span class="inline-math">\( \text{deg} G(z) = 2t \)</span> , then there exists a <span class="inline-math">\(t\)</span>-correcting algebraic decoding algorithm for <span class="inline-math">\( \Gamma(L,G) \)</span>.</span><span class="paragraph-in-list">Sugiyama et al. modification of the extended Euclidean algorithm <a href="#cite-18" class="cite">[19]</a><a href="#cite-19" class="cite">[20]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-0" class="cite">[1]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Syndrome measurement can be done by applying a controlled-displacement controlled by an ancilla qubit. The syndrome information can be obtained by measuring the ancilla qubit after controlled-displacement opearation. See Section. 2D in <a href="#cite-58" class="cite">[59]</a>.</span><span class="paragraph-in-list">Pauli <span class="inline-math">\(X\)</span>,<span class="inline-math">\(Y\)</span> and <span class="inline-math">\(Z\)</span> measurements can be performed by measuring <span class="inline-math">\(-\hat{p},\hat{x}-\hat{p}\)</span> and <span class="inline-math">\(\hat{x}\)</span> repectively. If the measurement outcome is closed to an even multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is +1. If the measurement outcome is closed to an odd multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is -1. See Section. 2D in <a href="#cite-58" class="cite">[59]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Syndrome measurement can be done by applying a controlled-displacement controlled by an ancilla qubit. The syndrome information can be obtained by measuring the ancilla qubit after controlled-displacement opearation. See Section. 2D in <a href="#cite-60" class="cite">[61]</a>.</span><span class="paragraph-in-list">Pauli <span class="inline-math">\(X\)</span>,<span class="inline-math">\(Y\)</span> and <span class="inline-math">\(Z\)</span> measurements can be performed by measuring <span class="inline-math">\(-\hat{p},\hat{x}-\hat{p}\)</span> and <span class="inline-math">\(\hat{x}\)</span> repectively. If the measurement outcome is closed to an even multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is +1. If the measurement outcome is closed to an odd multiple of <span class="inline-math">\(\sqrt{\pi}\)</span>, then the outcome is -1. See Section. 2D in <a href="#cite-60" class="cite">[61]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/heavy_hex">Heavy-hexagon code</a></td>
@@ -233,11 +233,11 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/homological_cv">Homological bosonic code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Decoding requires a different circuit for each possible erasure error, with no general circuit decoding any possible erasure error. Every circuit relies on a generalized conditional rotation, which Ref. <a href="#cite-59" class="cite">[60]</a> calls the <span class="textit">QND Gate</span> and which is defined as <span class="inline-math">\(QND_c | x , y \rangle = |x + c y, y \rangle\)</span>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Decoding requires a different circuit for each possible erasure error, with no general circuit decoding any possible erasure error. Every circuit relies on a generalized conditional rotation, which Ref. <a href="#cite-61" class="cite">[62]</a> calls the <span class="textit">QND Gate</span> and which is defined as <span class="inline-math">\(QND_c | x , y \rangle = |x + c y, y \rangle\)</span>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/homological_product">Homological product code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Union-find <a href="#cite-60" class="cite">[61]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Union-find <a href="#cite-62" class="cite">[63]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/honeycomb">Honeycomb code</a></td>
@@ -245,27 +245,31 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/hypergraph_product">Hypergraph product code</a></td>
-  <td class="small top"><span class="paragraph-in-list">ReShape decoder that uses minimum weight decoders for the classical codes used in the hypergraph construction <a href="#cite-61" class="cite">[62]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">ReShape decoder that uses minimum weight decoders for the classical codes used in the hypergraph construction <a href="#cite-63" class="cite">[64]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
+  <td class="small top"><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-\frac{2k+n}{3n}\)</span> fraction of random errors <a href="#cite-64" class="cite">[65]</a>.</span><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-(\frac{k}{n})^{2/3}\)</span> fraction of random errors <a href="#cite-65" class="cite">[66]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/justesen">Justesen code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Generalized minimum distance decoding <a href="#cite-62" class="cite">[63]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Generalized minimum distance decoding <a href="#cite-66" class="cite">[67]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/surface">Kitaev surface code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood (ML) <a href="#cite-35" class="cite">[36]</a>.</span><span class="paragraph-in-list">Minimum weight perfect-matching (MWPM) <a href="#cite-35" class="cite">[36]</a><a href="#cite-63" class="cite">[64]</a> (based on work by Edmonds on finding a matching in a graph <a href="#cite-64" class="cite">[65]</a><a href="#cite-65" class="cite">[66]</a>). Pipeline MWPM <a href="#cite-66" class="cite">[67]</a><a href="#cite-67" class="cite">[68]</a> - a modification accounting for correlations between events. A modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-68" class="cite">[69]</a>.</span><span class="paragraph-in-list">Renormalization group (RG) <a href="#cite-69" class="cite">[70]</a><a href="#cite-70" class="cite">[71]</a><a href="#cite-71" class="cite">[72]</a>.</span><span class="paragraph-in-list">Markov-chain Monte Carlo <a href="#cite-72" class="cite">[73]</a>.</span><span class="paragraph-in-list">Tensor network <a href="#cite-73" class="cite">[74]</a>.</span><span class="paragraph-in-list">Cellular automaton <a href="#cite-74" class="cite">[75]</a>.</span><span class="paragraph-in-list">Machine learning <a href="#cite-75" class="cite">[76]</a><a href="#cite-76" class="cite">[77]</a><a href="#cite-77" class="cite">[78]</a>.</span><span class="paragraph-in-list">Union-find <a href="#cite-78" class="cite">[79]</a> and a modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-68" class="cite">[69]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood (ML) <a href="#cite-35" class="cite">[36]</a>.</span><span class="paragraph-in-list">Minimum weight perfect-matching (MWPM) <a href="#cite-35" class="cite">[36]</a><a href="#cite-67" class="cite">[68]</a> (based on work by Edmonds on finding a matching in a graph <a href="#cite-68" class="cite">[69]</a><a href="#cite-69" class="cite">[70]</a>). Pipeline MWPM <a href="#cite-70" class="cite">[71]</a><a href="#cite-71" class="cite">[72]</a> - a modification accounting for correlations between events. A modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-72" class="cite">[73]</a>.</span><span class="paragraph-in-list">Renormalization group (RG) <a href="#cite-73" class="cite">[74]</a><a href="#cite-74" class="cite">[75]</a><a href="#cite-75" class="cite">[76]</a>.</span><span class="paragraph-in-list">Markov-chain Monte Carlo <a href="#cite-76" class="cite">[77]</a>.</span><span class="paragraph-in-list">Tensor network <a href="#cite-77" class="cite">[78]</a>.</span><span class="paragraph-in-list">Cellular automaton <a href="#cite-78" class="cite">[79]</a>.</span><span class="paragraph-in-list">Machine learning <a href="#cite-79" class="cite">[80]</a><a href="#cite-80" class="cite">[81]</a><a href="#cite-81" class="cite">[82]</a>.</span><span class="paragraph-in-list">Union-find <a href="#cite-82" class="cite">[83]</a> and a modification utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-72" class="cite">[73]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Random linear codes over large fields are list-recoverable and list-decodable up to near-optimal rates <a href="#cite-79" class="cite">[80]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Random linear codes over large fields are list-recoverable and list-decodable up to near-optimal rates <a href="#cite-83" class="cite">[84]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Belief propagation using min-sum algorithm <a href="#cite-80" class="cite">[81]</a>.</span><span class="paragraph-in-list">Linear programming <a href="#cite-81" class="cite">[82]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Belief propagation using min-sum algorithm <a href="#cite-84" class="cite">[85]</a>.</span><span class="paragraph-in-list">Linear programming <a href="#cite-85" class="cite">[86]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/luby_transform">Luby transform (LT) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Sum-product algorithm, often called a peeling decoder <a href="#cite-82" class="cite">[83]</a><a href="#cite-83" class="cite">[84]</a>, similar to belief propagation <a href="#cite-84" class="cite">[85]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Sum-product algorithm, often called a peeling decoder <a href="#cite-86" class="cite">[87]</a><a href="#cite-87" class="cite">[88]</a>, similar to belief propagation <a href="#cite-88" class="cite">[89]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qudits_into_qudits">Modular-qudit code</a></td>
@@ -273,43 +277,47 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></td>
-  <td class="small top"><span class="paragraph-in-list">The structure of stabilizer codes allows for <span class="textit">syndrome-based decoding</span>, where errors are corrected based on the results of stabilizer measurements (<span class="textit">syndromes</span>).</span><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits, which builds a compact representation of the algebraic structure of the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> <a href="#cite-85" class="cite">[86]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">The structure of stabilizer codes allows for <span class="textit">syndrome-based decoding</span>, where errors are corrected based on the results of stabilizer measurements (<span class="textit">syndromes</span>).</span><span class="paragraph-in-list">Trellis decoder for prime-dimensional qudits, which builds a compact representation of the algebraic structure of the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> <a href="#cite-89" class="cite">[90]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
-  <td class="small top"><span class="paragraph-in-list">The recovery operation is the reverse unitary transformation with access to the measurement record (for dynamically generated codes with a strong purification transition) <a href="#cite-86" class="cite">[87]</a></span></td>
+  <td class="small top"><span class="paragraph-in-list">The recovery operation is the reverse unitary transformation with access to the measurement record (for dynamically generated codes with a strong purification transition) <a href="#cite-90" class="cite">[91]</a></span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/multimodegkp">Multi-mode GKP code</a></td>
-  <td class="small top"><span class="paragraph-in-list">The MLD decoder for Gaussian displacement errors is realized by evaluating a lattice theta function, and in general the decision can be approximated by either solving (approximating) the closest vector problem (CVP) or by using other effective iterative schemes when e.g. the lattice represents a concatenated GKP code <a href="#cite-87" class="cite">[88]</a><a href="#cite-88" class="cite">[89]</a><a href="#cite-89" class="cite">[90]</a><a href="#cite-90" class="cite">[91]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">The MLD decoder for Gaussian displacement errors is realized by evaluating a lattice theta function, and in general the decision can be approximated by either solving (approximating) the closest vector problem (CVP) or by using other effective iterative schemes when e.g. the lattice represents a concatenated GKP code <a href="#cite-91" class="cite">[92]</a><a href="#cite-92" class="cite">[93]</a><a href="#cite-93" class="cite">[94]</a><a href="#cite-94" class="cite">[95]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Optical decoder using three beam splitters, electronic gain detectors, and two phase-insensitive amplifiers as described in Ref. <a href="#cite-91" class="cite">[92]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Optical decoder using three beam splitters, electronic gain detectors, and two phase-insensitive amplifiers as described in Ref. <a href="#cite-95" class="cite">[96]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/number_phase">Number-phase code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Modular phase measurement done in the logical <span class="inline-math">\(X\)</span>, or dual, basis has zero uncertainty in the case of ideal number phase codes. Approximate number-phase codes are characterized by vanishing phase uncertainty. Such measurements can be utilized for Knill error correction (a.k.a. telecorrection <a href="#cite-92" class="cite">[93]</a>), which is based on teleportation <a href="#cite-93" class="cite">[94]</a><a href="#cite-94" class="cite">[95]</a>. This type of error correction substitutes the complicated correction procedures typical in Fock-state codes for necessity of clean codewords <a href="#cite-95" class="cite">[96]</a>.</span><span class="paragraph-in-list">Number measurement can be done by extracting modular number information using a CROT gate <span class="inline-math">\(\mathrm{e}^{(2\pi \mathrm{i} / NM) \hat n \otimes \hat n}\)</span> and performing phase measurements <a href="#cite-96" class="cite">[97]</a><a href="#cite-97" class="cite">[98]</a> on an ancillary mode. See Section 4.B.1 of Ref. <a href="#cite-95" class="cite">[96]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Modular phase measurement done in the logical <span class="inline-math">\(X\)</span>, or dual, basis has zero uncertainty in the case of ideal number phase codes. Approximate number-phase codes are characterized by vanishing phase uncertainty. Such measurements can be utilized for Knill error correction (a.k.a. telecorrection <a href="#cite-96" class="cite">[97]</a>), which is based on teleportation <a href="#cite-97" class="cite">[98]</a><a href="#cite-98" class="cite">[99]</a>. This type of error correction substitutes the complicated correction procedures typical in Fock-state codes for necessity of clean codewords <a href="#cite-99" class="cite">[100]</a>.</span><span class="paragraph-in-list">Number measurement can be done by extracting modular number information using a CROT gate <span class="inline-math">\(\mathrm{e}^{(2\pi \mathrm{i} / NM) \hat n \otimes \hat n}\)</span> and performing phase measurements <a href="#cite-100" class="cite">[101]</a><a href="#cite-101" class="cite">[102]</a> on an ancillary mode. See Section 4.B.1 of Ref. <a href="#cite-99" class="cite">[100]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/orth_spacetime_block">Orthogonal Spacetime Block Code (OSTBC)</a></td>
-  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood decoding can be achieved with only linear processing <a href="#cite-98" class="cite">[99]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood decoding can be achieved with only linear processing <a href="#cite-102" class="cite">[103]</a>.</span></td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a></td>
+  <td class="small top"><span class="paragraph-in-list">PV codes can be list-decoded up to <span class="inline-math">\(1-(t k/n)^{1/(t+1)}\)</span> fraction of errors. This result improves over the Guruswami-Sudan algorithm for ordinary <a href="/c/reed_solomon" class="ref">RS</a> codes, which list-decodes up to <span class="inline-math">\(1-\sqrt{k/n}\)</span> fraction of errors.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Greedy algorithm for decoding specified in Ref. <a href="#cite-99" class="cite">[100]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Greedy algorithm for decoding specified in Ref. <a href="#cite-103" class="cite">[104]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/permutation_invariant">Permutation-invariant code</a></td>
-  <td class="small top"><span class="paragraph-in-list">For a family of codes, using projection, probability amplitude rebalancing, and gate teleportation can be done in <span class="inline-math">\(O(N^2)\)</span> <a href="#cite-100" class="cite">[101]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">For a family of codes, using projection, probability amplitude rebalancing, and gate teleportation can be done in <span class="inline-math">\(O(N^2)\)</span> <a href="#cite-104" class="cite">[105]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/polar">Polar code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Successive cancellation (SC) decoder <a href="#cite-101" class="cite">[102]</a>.</span><span class="paragraph-in-list">Successive cancellation list (SCL) decoder <a href="#cite-102" class="cite">[103]</a> and a modification utilizing sequence repetition (SR-List) <a href="#cite-103" class="cite">[104]</a>.</span><span class="paragraph-in-list">Soft cancellation (SCAN) decoder <a href="#cite-104" class="cite">[105]</a><a href="#cite-105" class="cite">[106]</a>.</span><span class="paragraph-in-list">Belief propagation (BP) decoder <a href="#cite-106" class="cite">[107]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Successive cancellation (SC) decoder <a href="#cite-105" class="cite">[106]</a>.</span><span class="paragraph-in-list">Successive cancellation list (SCL) decoder <a href="#cite-106" class="cite">[107]</a> and a modification utilizing sequence repetition (SR-List) <a href="#cite-107" class="cite">[108]</a>.</span><span class="paragraph-in-list">Soft cancellation (SCAN) decoder <a href="#cite-108" class="cite">[109]</a><a href="#cite-109" class="cite">[110]</a>.</span><span class="paragraph-in-list">Belief propagation (BP) decoder <a href="#cite-110" class="cite">[111]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_lego">Quantum Lego code</a></td>
-  <td class="small top"><span class="paragraph-in-list">The decoder is created by creating a decoding quantum circuit with dangling legs replaced with input/output wires, and tensors converted to unitary gates. Maximum likelihood decoding can be used when the tensors are stabilizer codes.</span><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-107" class="cite">[108]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-108" class="cite">[109]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">The decoder is created by creating a decoding quantum circuit with dangling legs replaced with input/output wires, and tensors converted to unitary gates. Maximum likelihood decoding can be used when the tensors are stabilizer codes.</span><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-111" class="cite">[112]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-112" class="cite">[113]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_tanner">Quantum Tanner code</a></td>
@@ -317,15 +325,15 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_cyclic">Quantum cyclic code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes <a href="#cite-109" class="cite">[110]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Adapted from the Berlekamp decoding algorithm for classical BCH codes <a href="#cite-113" class="cite">[114]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_expander">Quantum expander code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Small set-flip linear-time decoder, which corrects <span class="inline-math">\(\Omega(n^{1/2})\)</span> adversarial errors <a href="#cite-110" class="cite">[111]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Small set-flip linear-time decoder, which corrects <span class="inline-math">\(\Omega(n^{1/2})\)</span> adversarial errors <a href="#cite-114" class="cite">[115]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Non-binary decoding algorithm for CSS-type QLDPC codes <a href="#cite-111" class="cite">[112]</a>.</span><span class="paragraph-in-list">BP-OSD decoder adds a post-processing step based on ordered statistics decoding (OSD) to the belief propogation (BP) decoder <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Soft (i.e., analog) syndrome iterative belief propagation for CSS-type QLDPC codes, utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-112" class="cite">[113]</a>.</span><span class="paragraph-in-list">Message-passing decoder utilizing stabilizer inactivation (MP-SI) for CSS-type QLDPC qubit codes <a href="#cite-113" class="cite">[114]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Non-binary decoding algorithm for CSS-type QLDPC codes <a href="#cite-115" class="cite">[116]</a>.</span><span class="paragraph-in-list">BP-OSD decoder adds a post-processing step based on ordered statistics decoding (OSD) to the belief propogation (BP) decoder <a href="#cite-10" class="cite">[11]</a>.</span><span class="paragraph-in-list">Soft (i.e., analog) syndrome iterative belief propagation for CSS-type QLDPC codes, utilizing the continuous signal obtained in the physical implementation of the stabilizer measurement (as opposed to discretizing the signal into a syndrome bit) <a href="#cite-116" class="cite">[117]</a>.</span><span class="paragraph-in-list">Message-passing decoder utilizing stabilizer inactivation (MP-SI) for CSS-type QLDPC qubit codes <a href="#cite-117" class="cite">[118]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_polar">Quantum polar code</a></td>
@@ -333,7 +341,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/quantum_double">Quantum-double code</a></td>
-  <td class="small top"><span class="paragraph-in-list">For any solvable group <span class="inline-math">\(G\)</span>, topological charge measurements can be done with an adaptive constant-depth circuit with geometrically local gates and measurements throughout <a href="#cite-114" class="cite">[115]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">For any solvable group <span class="inline-math">\(G\)</span>, topological charge measurements can be done with an adaptive constant-depth circuit with geometrically local gates and measurements throughout <a href="#cite-118" class="cite">[119]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qubits_into_qubits">Qubit code</a></td>
@@ -341,7 +349,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></td>
-  <td class="small top"><span class="paragraph-in-list">The structure of stabilizer codes allows for <span class="textit">syndrome-based decoding</span>, where errors are corrected based on the results of stabilizer measurements (<span class="textit">syndromes</span>). Finding an optimal decoder is <span class="inline-math">\(\#P\)</span>-hard <a href="#cite-115" class="cite">[116]</a>.</span><span class="paragraph-in-list">Trellis decoder, which builds a compact representation of the algebraic structure of the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> <a href="#cite-116" class="cite">[117]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">The structure of stabilizer codes allows for <span class="textit">syndrome-based decoding</span>, where errors are corrected based on the results of stabilizer measurements (<span class="textit">syndromes</span>). Finding an optimal decoder is <span class="inline-math">\(\#P\)</span>-hard <a href="#cite-119" class="cite">[120]</a>.</span><span class="paragraph-in-list">Trellis decoder, which builds a compact representation of the algebraic structure of the normalizer <span class="inline-math">\(\mathsf{N(S)}\)</span> <a href="#cite-120" class="cite">[121]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a></td>
@@ -349,31 +357,31 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/ramanujan_tensor_product">Ramanujan-complex product code</a></td>
-  <td class="small top"><span class="paragraph-in-list">For 2D simplicial complexes, cycle code decoder admitting a polynomial-time decoding algorithm can be used <a href="#cite-117" class="cite">[118]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">For 2D simplicial complexes, cycle code decoder admitting a polynomial-time decoding algorithm can be used <a href="#cite-121" class="cite">[122]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/random">Random code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Ball-collision decoding <a href="#cite-118" class="cite">[119]</a>.</span><span class="paragraph-in-list">Finiasz and Sendrier (FS-ISD) decoding <a href="#cite-119" class="cite">[120]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Ball-collision decoding <a href="#cite-122" class="cite">[123]</a>.</span><span class="paragraph-in-list">Finiasz and Sendrier (FS-ISD) decoding <a href="#cite-123" class="cite">[124]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/rank_metric">Rank-metric code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#cite-120" class="cite">[121]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#cite-121" class="cite">[122]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#cite-124" class="cite">[125]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#cite-125" class="cite">[126]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/raptor">Raptor (RAPid TORnado) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Raptor codes can be decoded using inactivation decoding <a href="#cite-122" class="cite">[123]</a>, a combination of belief-propogation and Gaussian elimination decoding.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Raptor codes can be decoded using inactivation decoding <a href="#cite-126" class="cite">[127]</a>, a combination of belief-propogation and Gaussian elimination decoding.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Reed decoder with <span class="inline-math">\(r+1\)</span>-step majority decoding corrects <span class="inline-math">\(\frac{1}{2}(2^{m-r}-1)\)</span> errors <a href="#cite-123" class="cite">[124]</a> (see also Ch. 13 of Ref. <a href="#cite-124" class="cite">[125]</a>).</span><span class="paragraph-in-list">Sequential code-reduction decoding <a href="#cite-125" class="cite">[126]</a>.</span><span class="paragraph-in-list">First-order (<span class="inline-math">\(r=1\)</span>) RM codes admit specialized decoders <a href="#cite-126" class="cite">[127]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Reed decoder with <span class="inline-math">\(r+1\)</span>-step majority decoding corrects <span class="inline-math">\(\frac{1}{2}(2^{m-r}-1)\)</span> errors <a href="#cite-127" class="cite">[128]</a> (see also Ch. 13 of Ref. <a href="#cite-128" class="cite">[129]</a>).</span><span class="paragraph-in-list">Sequential code-reduction decoding <a href="#cite-129" class="cite">[130]</a>.</span><span class="paragraph-in-list">First-order (<span class="inline-math">\(r=1\)</span>) RM codes admit specialized decoders <a href="#cite-130" class="cite">[131]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder <a href="#cite-29" class="cite">[30]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-20" class="cite">[21]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span><span class="paragraph-in-list">Gao decoder using extended Euclidean algorithm <a href="#cite-127" class="cite">[128]</a>.</span><span class="paragraph-in-list">List decoders try to find a low-degree bivariate polynomial <span class="inline-math">\(Q(x,y)\)</span> such that evaluation of <span class="inline-math">\(Q\)</span> at <span class="inline-math">\((\alpha_i,y_i)\)</span> is zero. By choosing proper degrees, it can be shown such polynomial exists by drawing an analogy between evaulation of <span class="inline-math">\(Q(\alpha_i,y_i)\)</span> and homogenous linear equation(interpolation). Once this is done, list roots of <span class="inline-math">\(y\)</span> that agree at <span class="inline-math">\(\geq t\)</span> points. The Sudan list decoding algorithm corrects up to <span class="inline-math">\(1-\sqrt{2R}\)</span> proportion of errors <a href="#cite-128" class="cite">[129]</a>. Roth and Ruckenstein proposed a modified key equation that allows for correction of more than <span class="inline-math">\(\left\lfloor (n-k)/2 \right\rfloor\)</span> errors <a href="#cite-129" class="cite">[130]</a>. The Guruswami-Sudan algorithm improves that to <span class="inline-math">\(1-\sqrt{R}\)</span> <a href="#cite-0" class="cite">[1]</a>. A further modification by Koetter-Vardy is used for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-11" class="cite">[12]</a><a href="#cite-12" class="cite">[13]</a>.</span><span class="paragraph-in-list">Gorenstein-Peterson-Zierler decoder with runtime of order <span class="inline-math">\(O(n^3)\)</span> <a href="#cite-29" class="cite">[30]</a><a href="#cite-16" class="cite">[17]</a><a href="#cite-17" class="cite">[18]</a>.</span><span class="paragraph-in-list">Berlekamp-Welch decoder <a href="#cite-20" class="cite">[21]</a>, assuming that <span class="inline-math">\(t \geq (n+k)/2\)</span>.</span><span class="paragraph-in-list">Gao decoder using extended Euclidean algorithm <a href="#cite-131" class="cite">[132]</a>.</span><span class="paragraph-in-list">Fast-Fourier-transform decoder with runtime of order <span class="inline-math">\(O(n \text{polylog}n)\)</span> <a href="#cite-132" class="cite">[133]</a>.</span><span class="paragraph-in-list">List decoders try to find a low-degree bivariate polynomial <span class="inline-math">\(Q(x,y)\)</span> such that evaluation of <span class="inline-math">\(Q\)</span> at <span class="inline-math">\((\alpha_i,y_i)\)</span> is zero. By choosing proper degrees, it can be shown such polynomial exists by drawing an analogy between evaluation of <span class="inline-math">\(Q(\alpha_i,y_i)\)</span> and solving a homogenous linear equation (interpolation). Once this is done, list roots of <span class="inline-math">\(y\)</span> that agree at <span class="inline-math">\(\geq t\)</span> points. The Sudan list decoding algorithm corrects up to <span class="inline-math">\(1-\sqrt{2R}\)</span> fraction of errors <a href="#cite-133" class="cite">[134]</a>. Roth and Ruckenstein proposed a modified key equation that allows for correction of more than <span class="inline-math">\(\left\lfloor (n-k)/2 \right\rfloor\)</span> errors <a href="#cite-134" class="cite">[135]</a>. The Guruswami-Sudan algorithm improves that to <span class="inline-math">\(1-\sqrt{R}\)</span> <a href="#cite-0" class="cite">[1]</a>; see Ref. <a href="#cite-135" class="cite">[136]</a> for bounds. A further modification by Koetter and Vardy is used for soft-decision decoding <a href="#cite-30" class="cite">[31]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/simplex">Simplex code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Due to the small size, it can be decoded according to maximum likelihood.</span><span class="paragraph-in-list">Some faster decoders for the <span class="inline-math">\(q=2\)</span> case: <a href="#cite-130" class="cite">[131]</a><a href="#cite-131" class="cite">[132]</a></span><span class="paragraph-in-list">A quantum decoder for the <span class="inline-math">\(q=2\)</span> case: <a href="#cite-132" class="cite">[133]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Due to the small size, it can be decoded according to maximum likelihood.</span><span class="paragraph-in-list">Some faster decoders for the <span class="inline-math">\(q=2\)</span> case: <a href="#cite-136" class="cite">[137]</a><a href="#cite-137" class="cite">[138]</a></span><span class="paragraph-in-list">A quantum decoder for the <span class="inline-math">\(q=2\)</span> case: <a href="#cite-138" class="cite">[139]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/single_parity_check">Single parity-check code</a></td>
@@ -385,7 +393,7 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/string_net">String-net code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Syndrome measurement circuits analyzed in Ref. <a href="#cite-133" class="cite">[134]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Syndrome measurement circuits analyzed in Ref. <a href="#cite-139" class="cite">[140]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer code</a></td>
@@ -393,11 +401,11 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/surface-17">Surface-17 code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Lookup table <a href="#cite-134" class="cite">[135]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Lookup table <a href="#cite-140" class="cite">[141]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/tanner">Tanner code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Parallel decoding algorithm corrects a fraction <span class="inline-math">\(\delta_0^2/48\)</span> of errors for Tanner codes <a href="#cite-135" class="cite">[136]</a>. A modification of said algorithm improves the fraction to <span class="inline-math">\(\delta_0^2/4\)</span> with no extra cost to complexity <a href="#cite-136" class="cite">[137]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Parallel decoding algorithm corrects a fraction <span class="inline-math">\(\delta_0^2/48\)</span> of errors for Tanner codes <a href="#cite-141" class="cite">[142]</a>. A modification of said algorithm improves the fraction to <span class="inline-math">\(\delta_0^2/4\)</span> with no extra cost to complexity <a href="#cite-142" class="cite">[143]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
@@ -409,15 +417,15 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/translationally_invariant_stabilizer">Translationally-invariant stabilizer code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Clustering decoder <a href="#cite-137" class="cite">[138]</a><a href="#cite-138" class="cite">[139]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Clustering decoder <a href="#cite-143" class="cite">[144]</a><a href="#cite-144" class="cite">[145]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/two_dimensional_hyperbolic_surface">Two-dimensional hyperbolic surface code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#cite-139" class="cite">[140]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#cite-145" class="cite">[146]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Logical qubit can be measured with physical qubit measurements along <span class="inline-math">\(X\)</span>. Can be implemented by engineering a coupling of one of the qubits to a readout cavity via the interaction <span class="inline-math">\(\sigma_x (a+a^\dagger)\)</span> <a href="#cite-140" class="cite">[141]</a>. This results in an <span class="inline-math">\(X\)</span>-dependent shift of the readout cavity resonance which can be measured.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Logical qubit can be measured with physical qubit measurements along <span class="inline-math">\(X\)</span>. Can be implemented by engineering a coupling of one of the qubits to a readout cavity via the interaction <span class="inline-math">\(\sigma_x (a+a^\dagger)\)</span> <a href="#cite-146" class="cite">[147]</a>. This results in an <span class="inline-math">\(X\)</span>-dependent shift of the readout cavity resonance which can be measured.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a></td>
@@ -425,19 +433,19 @@ Here is a list of all classical and quantum codes that have notable decoders.
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xyz_hexagonal">XYZ<span class="inline-math">\(^2\)</span> hexagonal stabilizer code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood decoding using the EWD decoder <a href="#cite-141" class="cite">[142]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Maximum-likelihood decoding using the EWD decoder <a href="#cite-147" class="cite">[148]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/xzzx">XZZX surface code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Minimum-weight perfect matching decoder, which can be used for <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> noise. For <span class="inline-math">\(Y\)</span> noise, a variant of the matching decoder could be used like it is used for the XY code in Ref. <a href="#cite-142" class="cite">[143]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Minimum-weight perfect matching decoder, which can be used for <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> noise. For <span class="inline-math">\(Y\)</span> noise, a variant of the matching decoder could be used like it is used for the XY code in Ref. <a href="#cite-148" class="cite">[149]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/zetterberg">Zetterberg code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Kallquist first described an algebraic decoding theorem <a href="#cite-143" class="cite">[144]</a>. A faster version was later provided in Ref. <a href="#cite-144" class="cite">[145]</a> and further modified in Ref. <a href="#cite-145" class="cite">[146]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Kallquist first described an algebraic decoding theorem <a href="#cite-149" class="cite">[150]</a>. A faster version was later provided in Ref. <a href="#cite-150" class="cite">[151]</a> and further modified in Ref. <a href="#cite-151" class="cite">[152]</a>.</span></td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a></td>
-  <td class="small top"><span class="paragraph-in-list">Combined dynamical decoupling and error correction protocol on individually-controlled qubits with always-on Ising couplings <a href="#cite-146" class="cite">[147]</a>.</span><span class="paragraph-in-list">Symmetric decoder correcting all weight-one Pauli errors. The resulting logical error channel after coherent noise has been explicitly derived <a href="#cite-147" class="cite">[148]</a>.</span></td>
+  <td class="small top"><span class="paragraph-in-list">Combined dynamical decoupling and error correction protocol on individually-controlled qubits with always-on Ising couplings <a href="#cite-152" class="cite">[153]</a>.</span><span class="paragraph-in-list">Symmetric decoder correcting all weight-one Pauli errors. The resulting logical error channel after coherent noise has been explicitly derived <a href="#cite-153" class="cite">[154]</a>.</span></td>
 </tr>
 </tbody>
 </table>
@@ -715,477 +723,507 @@ Here is a list of all classical and quantum codes that have notable decoders.
       <!-- Citation:  -->
       <dt id="cite-53">[54]</dt>
       <dd>
-        V. Guruswami and A. Rudra, “Explicit Codes Achieving List Decoding Capacity: Error-Correction With Optimal Redundancy”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 135 (2008). <a href="https://doi.org/10.1109/TIT.2007.911222" target="_blank" class="href">DOI</a>
+        Venkatesan Guruswami and Atri Rudra, “Explicit Codes Achieving List Decoding Capacity: Error-correction with Optimal Redundancy”. <a href="https://arxiv.org/abs/cs/0511072" target="_blank" class="href">cs/0511072</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-54">[55]</dt>
       <dd>
-        Venkatesan Guruswami and Atri Rudra, “Explicit Codes Achieving List Decoding Capacity: Error-correction with Optimal Redundancy”. <a href="https://arxiv.org/abs/cs/0511072" target="_blank" class="href">cs/0511072</a>
+        F. Parvaresh and A. Vardy, “Correcting Errors Beyond the Guruswami-Sudan Radius in Polynomial Time”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.29" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-55">[56]</dt>
       <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code of length dividing <span class="inline-math">$p^{t}+1$</span>”. <a href="https://arxiv.org/abs/1011.5814" target="_blank" class="href">1011.5814</a>
+        V. Guruswami, “Linear-Algebraic List Decoding of Folded Reed-Solomon Codes”, 2011 IEEE 26th Annual Conference on Computational Complexity (2011). <a href="https://doi.org/10.1109/CCC.2011.22" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.0436" target="_blank" class="href">1106.0436</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-56">[57]</dt>
       <dd>
-        D. Silva and F. R. Kschischang, “Fast encoding and decoding of Gabidulin codes”, 2009 IEEE International Symposium on Information Theory (2009). <a href="https://doi.org/10.1109/ISIT.2009.5205272" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0901.2483" target="_blank" class="href">0901.2483</a>
+        V. Guruswami and A. Rudra, “Better Binary List Decodable Codes Via Multilevel Concatenation”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 19 (2009). <a href="https://doi.org/10.1109/TIT.2008.2008124" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-57">[58]</dt>
       <dd>
-        N. Patterson, “The algebraic decoding of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">21</span>, 203 (1975). <a href="https://doi.org/10.1109/TIT.1975.1055350" target="_blank" class="href">DOI</a>
+        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code of length dividing <span class="inline-math">$p^{t}+1$</span>”. <a href="https://arxiv.org/abs/1011.5814" target="_blank" class="href">1011.5814</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-58">[59]</dt>
       <dd>
-        A. L. Grimsmo and S. Puri, “Quantum Error Correction with the Gottesman-Kitaev-Preskill Code”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.020101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2106.12989" target="_blank" class="href">2106.12989</a>
+        D. Silva and F. R. Kschischang, “Fast encoding and decoding of Gabidulin codes”, 2009 IEEE International Symposium on Information Theory (2009). <a href="https://doi.org/10.1109/ISIT.2009.5205272" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0901.2483" target="_blank" class="href">0901.2483</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-59">[60]</dt>
       <dd>
-        P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href">1601.02544</a>
+        N. Patterson, “The algebraic decoding of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">21</span>, 203 (1975). <a href="https://doi.org/10.1109/TIT.1975.1055350" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-60">[61]</dt>
       <dd>
-        N. Delfosse and M. B. Hastings, “Union-Find Decoders For Homological Product Codes”, Quantum <span class="textbf">5</span>, 406 (2021). <a href="https://doi.org/10.22331/q-2021-03-10-406" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.14226" target="_blank" class="href">2009.14226</a>
+        A. L. Grimsmo and S. Puri, “Quantum Error Correction with the Gottesman-Kitaev-Preskill Code”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.020101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2106.12989" target="_blank" class="href">2106.12989</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-61">[62]</dt>
       <dd>
-        Armanda O. Quintavalle and Earl T. Campbell, “Lifting decoders for classical codes to decoders for quantum codes”. <a href="https://arxiv.org/abs/2105.02370" target="_blank" class="href">2105.02370</a>
+        P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href">1601.02544</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-62">[63]</dt>
       <dd>
-        J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href">DOI</a>
+        N. Delfosse and M. B. Hastings, “Union-Find Decoders For Homological Product Codes”, Quantum <span class="textbf">5</span>, 406 (2021). <a href="https://doi.org/10.22331/q-2021-03-10-406" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.14226" target="_blank" class="href">2009.14226</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-63">[64]</dt>
       <dd>
-        Austin G. Fowler, “Minimum weight perfect matching of fault-tolerant topological quantum error correction in average <span class="inline-math">$O(1)$</span> parallel time”. <a href="https://arxiv.org/abs/1307.1740" target="_blank" class="href">1307.1740</a>
+        Armanda O. Quintavalle and Earl T. Campbell, “Lifting decoders for classical codes to decoders for quantum codes”. <a href="https://arxiv.org/abs/2105.02370" target="_blank" class="href">2105.02370</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-64">[65]</dt>
       <dd>
-        J. Edmonds, “Paths, Trees, and Flowers”, Canadian Journal of Mathematics <span class="textbf">17</span>, 449 (1965). <a href="https://doi.org/10.4153/CJM-1965-045-4" target="_blank" class="href">DOI</a>
+        D. Bleichenbacher, A. Kiayias, and M. Yung, “Decoding interleaved Reed–Solomon codes over noisy channels”, Theoretical Computer Science <span class="textbf">379</span>, 348 (2007). <a href="https://doi.org/10.1016/j.tcs.2007.02.043" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-65">[66]</dt>
       <dd>
-        J. Edmonds, “Maximum matching and a polyhedron with 0,1-vertices”, Journal of Research of the National Bureau of Standards Section B Mathematics and Mathematical Physics <span class="textbf">69B</span>, 125 (1965). <a href="https://doi.org/10.6028/jres.069B.013" target="_blank" class="href">DOI</a>
+        D. Coppersmith and M. Sudan, “Reconstructing curves in three (and higher) dimensional space from noisy data”, Proceedings of the thirty-fifth ACM symposium on Theory of computing  - STOC &#x27;03 (2003). <a href="https://doi.org/10.1145/780542.780563" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-66">[67]</dt>
       <dd>
-        Austin G. Fowler, “Optimal complexity correction of correlated errors in the surface code”. <a href="https://arxiv.org/abs/1310.0863" target="_blank" class="href">1310.0863</a>
+        J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-67">[68]</dt>
       <dd>
-        Alexandru Paler and Austin G. Fowler, “Pipelined correlated minimum weight perfect matching of the surface code”. <a href="https://arxiv.org/abs/2205.09828" target="_blank" class="href">2205.09828</a>
+        Austin G. Fowler, “Minimum weight perfect matching of fault-tolerant topological quantum error correction in average <span class="inline-math">$O(1)$</span> parallel time”. <a href="https://arxiv.org/abs/1307.1740" target="_blank" class="href">1307.1740</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-68">[69]</dt>
       <dd>
-        Christopher A. Pattison et al., “Improved quantum error correction using soft information”. <a href="https://arxiv.org/abs/2107.13589" target="_blank" class="href">2107.13589</a>
+        J. Edmonds, “Paths, Trees, and Flowers”, Canadian Journal of Mathematics <span class="textbf">17</span>, 449 (1965). <a href="https://doi.org/10.4153/CJM-1965-045-4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-69">[70]</dt>
       <dd>
-        G. Duclos-Cianci and D. Poulin, “Fast Decoders for Topological Quantum Codes”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0911.0581" target="_blank" class="href">0911.0581</a>
+        J. Edmonds, “Maximum matching and a polyhedron with 0,1-vertices”, Journal of Research of the National Bureau of Standards Section B Mathematics and Mathematical Physics <span class="textbf">69B</span>, 125 (1965). <a href="https://doi.org/10.6028/jres.069B.013" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-70">[71]</dt>
       <dd>
-        Guillaume Duclos-Cianci and David Poulin, “Fault-Tolerant Renormalization Group Decoder for Abelian Topological Codes”. <a href="https://arxiv.org/abs/1304.6100" target="_blank" class="href">1304.6100</a>
+        Austin G. Fowler, “Optimal complexity correction of correlated errors in the surface code”. <a href="https://arxiv.org/abs/1310.0863" target="_blank" class="href">1310.0863</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-71">[72]</dt>
       <dd>
-        F. H. E. Watson, H. Anwar, and D. E. Browne, “Fast fault-tolerant decoder for qubit and qudit surface codes”, Physical Review A <span class="textbf">92</span>, (2015). <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.3028" target="_blank" class="href">1411.3028</a>
+        Alexandru Paler and Austin G. Fowler, “Pipelined correlated minimum weight perfect matching of the surface code”. <a href="https://arxiv.org/abs/2205.09828" target="_blank" class="href">2205.09828</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-72">[73]</dt>
       <dd>
-        A. Hutter, J. R. Wootton, and D. Loss, “Efficient Markov chain Monte Carlo algorithm for the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1302.2669" target="_blank" class="href">1302.2669</a>
+        Christopher A. Pattison et al., “Improved quantum error correction using soft information”. <a href="https://arxiv.org/abs/2107.13589" target="_blank" class="href">2107.13589</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-73">[74]</dt>
       <dd>
-        S. Bravyi, M. Suchara, and A. Vargo, “Efficient algorithms for maximum likelihood decoding in the surface code”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1405.4883" target="_blank" class="href">1405.4883</a>
+        G. Duclos-Cianci and D. Poulin, “Fast Decoders for Topological Quantum Codes”, Physical Review Letters <span class="textbf">104</span>, (2010). <a href="https://doi.org/10.1103/PhysRevLett.104.050504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0911.0581" target="_blank" class="href">0911.0581</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-74">[75]</dt>
       <dd>
-        M. Herold et al., “Cellular automaton decoders of topological quantum memories in the fault tolerant setting”, New Journal of Physics <span class="textbf">19</span>, 063012 (2017). <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1511.05579" target="_blank" class="href">1511.05579</a>
+        Guillaume Duclos-Cianci and David Poulin, “Fault-Tolerant Renormalization Group Decoder for Abelian Topological Codes”. <a href="https://arxiv.org/abs/1304.6100" target="_blank" class="href">1304.6100</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-75">[76]</dt>
       <dd>
-        G. Torlai and R. G. Melko, “Neural Decoder for Topological Codes”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1610.04238" target="_blank" class="href">1610.04238</a>
+        F. H. E. Watson, H. Anwar, and D. E. Browne, “Fast fault-tolerant decoder for qubit and qudit surface codes”, Physical Review A <span class="textbf">92</span>, (2015). <a href="https://doi.org/10.1103/PhysRevA.92.032309" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.3028" target="_blank" class="href">1411.3028</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-76">[77]</dt>
       <dd>
-        C. Chamberland and P. Ronagh, “Deep neural decoders for near term fault-tolerant experiments”, Quantum Science and Technology <span class="textbf">3</span>, 044002 (2018). <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1802.06441" target="_blank" class="href">1802.06441</a>
+        A. Hutter, J. R. Wootton, and D. Loss, “Efficient Markov chain Monte Carlo algorithm for the surface code”, Physical Review A <span class="textbf">89</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.89.022326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1302.2669" target="_blank" class="href">1302.2669</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-77">[78]</dt>
       <dd>
-        R. Sweke et al., “Reinforcement learning decoders for fault-tolerant quantum computation”, Machine Learning: Science and Technology <span class="textbf">2</span>, 025005 (2020). <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.07207" target="_blank" class="href">1810.07207</a>
+        S. Bravyi, M. Suchara, and A. Vargo, “Efficient algorithms for maximum likelihood decoding in the surface code”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.032326" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1405.4883" target="_blank" class="href">1405.4883</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-78">[79]</dt>
       <dd>
-        N. Delfosse and N. H. Nickerson, “Almost-linear time decoding algorithm for topological codes”, Quantum <span class="textbf">5</span>, 595 (2021). <a href="https://doi.org/10.22331/q-2021-12-02-595" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="href">1709.06218</a>
+        M. Herold et al., “Cellular automaton decoders of topological quantum memories in the fault tolerant setting”, New Journal of Physics <span class="textbf">19</span>, 063012 (2017). <a href="https://doi.org/10.1088/1367-2630/aa7099" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1511.05579" target="_blank" class="href">1511.05579</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-79">[80]</dt>
       <dd>
-        Atri Rudra and Mary Wootters, “Average-radius list-recovery of random linear codes: it really ties the room together”. <a href="https://arxiv.org/abs/1704.02420" target="_blank" class="href">1704.02420</a>
+        G. Torlai and R. G. Melko, “Neural Decoder for Topological Codes”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1610.04238" target="_blank" class="href">1610.04238</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-80">[81]</dt>
       <dd>
-        S. Lin and D. J. Costello, <span class="emph">Error Control Coding</span>, 2nd ed. Englewood Cliffs, NJ: Prentice-Hall, 2004.
+        C. Chamberland and P. Ronagh, “Deep neural decoders for near term fault-tolerant experiments”, Quantum Science and Technology <span class="textbf">3</span>, 044002 (2018). <a href="https://doi.org/10.1088/2058-9565/aad1f7" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1802.06441" target="_blank" class="href">1802.06441</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-81">[82]</dt>
       <dd>
-        J. Feldman, “LP Decoding”, Encyclopedia of Algorithms 1177 (2016). <a href="https://doi.org/10.1007/978-1-4939-2864-4_216" target="_blank" class="href">DOI</a>
+        R. Sweke et al., “Reinforcement learning decoders for fault-tolerant quantum computation”, Machine Learning: Science and Technology <span class="textbf">2</span>, 025005 (2020). <a href="https://doi.org/10.1088/2632-2153/abc609" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.07207" target="_blank" class="href">1810.07207</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-82">[83]</dt>
       <dd>
-        T. Richardson and R. Urbanke, <span class="textit">Modern Coding Theory</span> (Cambridge University Press, 2008). <a href="https://doi.org/10.1017/CBO9780511791338" target="_blank" class="href">DOI</a>
+        N. Delfosse and N. H. Nickerson, “Almost-linear time decoding algorithm for topological codes”, Quantum <span class="textbf">5</span>, 595 (2021). <a href="https://doi.org/10.22331/q-2021-12-02-595" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1709.06218" target="_blank" class="href">1709.06218</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-83">[84]</dt>
       <dd>
-        David J. C. MacKay. 2002. Information Theory, Inference &amp; Learning Algorithms. Cambridge University Press, USA
+        Atri Rudra and Mary Wootters, “Average-radius list-recovery of random linear codes: it really ties the room together”. <a href="https://arxiv.org/abs/1704.02420" target="_blank" class="href">1704.02420</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-84">[85]</dt>
       <dd>
-        J. Pearl, “Reverend Bayes on Inference Engines: A Distributed Hierarchical Approach”, Probabilistic and Causal Inference 129 (2022). <a href="https://doi.org/10.1145/3501714.3501727" target="_blank" class="href">DOI</a>
+        S. Lin and D. J. Costello, <span class="emph">Error Control Coding</span>, 2nd ed. Englewood Cliffs, NJ: Prentice-Hall, 2004.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-85">[86]</dt>
       <dd>
-        Eric Sabo, Arun B. Aloshious, and Kenneth R. Brown, “Trellis Decoding For Qudit Stabilizer Codes And Its Application To Qubit Topological Codes”. <a href="https://arxiv.org/abs/2106.08251" target="_blank" class="href">2106.08251</a>
+        J. Feldman, “LP Decoding”, Encyclopedia of Algorithms 1177 (2016). <a href="https://doi.org/10.1007/978-1-4939-2864-4_216" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-86">[87]</dt>
       <dd>
-        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
+        T. Richardson and R. Urbanke, <span class="textit">Modern Coding Theory</span> (Cambridge University Press, 2008). <a href="https://doi.org/10.1017/CBO9780511791338" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-87">[88]</dt>
       <dd>
-        C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href">1810.00047</a>
+        David J. C. MacKay. 2002. Information Theory, Inference &amp; Learning Algorithms. Cambridge University Press, USA
       </dd>
       <!-- Citation:  -->
       <dt id="cite-88">[89]</dt>
       <dd>
-        K. Noh and C. Chamberland, “Fault-tolerant bosonic quantum error correction with the surface–Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevA.101.012316" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1908.03579" target="_blank" class="href">1908.03579</a>
+        J. Pearl, “Reverend Bayes on Inference Engines: A Distributed Hierarchical Approach”, Probabilistic and Causal Inference 129 (2022). <a href="https://doi.org/10.1145/3501714.3501727" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-89">[90]</dt>
       <dd>
-        J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href">2109.14645</a>
+        Eric Sabo, Arun B. Aloshious, and Kenneth R. Brown, “Trellis Decoding For Qudit Stabilizer Codes And Its Application To Qubit Topological Codes”. <a href="https://arxiv.org/abs/2106.08251" target="_blank" class="href">2106.08251</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-90">[91]</dt>
       <dd>
-        Nithin Raveendran et al., “Finite Rate QLDPC-GKP Coding Scheme that Surpasses the CSS Hamming Bound”. <a href="https://arxiv.org/abs/2111.07029" target="_blank" class="href">2111.07029</a>
+        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-91">[92]</dt>
       <dd>
-        J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href">0710.4858</a>
+        C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href">1810.00047</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-92">[93]</dt>
       <dd>
-        C. M. Dawson, H. L. Haselgrove, and M. A. Nielsen, “Noise thresholds for optical cluster-state quantum computation”, Physical Review A <span class="textbf">73</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.73.052306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0601066" target="_blank" class="href">quant-ph/0601066</a>
+        K. Noh and C. Chamberland, “Fault-tolerant bosonic quantum error correction with the surface–Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">101</span>, (2020). <a href="https://doi.org/10.1103/PhysRevA.101.012316" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1908.03579" target="_blank" class="href">1908.03579</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-93">[94]</dt>
       <dd>
-        E. Knill, “Quantum computing with realistically noisy devices”, Nature <span class="textbf">434</span>, 39 (2005). <a href="https://doi.org/10.1038/nature03350" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410199" target="_blank" class="href">quant-ph/0410199</a>
+        J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href">2109.14645</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-94">[95]</dt>
       <dd>
-        E. Knill, “Scalable Quantum Computation in the Presence of Large Detected-Error Rates”. <a href="https://arxiv.org/abs/quant-ph/0312190" target="_blank" class="href">quant-ph/0312190</a>
+        Nithin Raveendran et al., “Finite Rate QLDPC-GKP Coding Scheme that Surpasses the CSS Hamming Bound”. <a href="https://arxiv.org/abs/2111.07029" target="_blank" class="href">2111.07029</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-95">[96]</dt>
       <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
+        J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href">0710.4858</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-96">[97]</dt>
       <dd>
-        C. W. Helstrom, “Quantum detection and estimation theory”, Journal of Statistical Physics <span class="textbf">1</span>, 231 (1969). <a href="https://doi.org/10.1007/BF01007479" target="_blank" class="href">DOI</a>
+        C. M. Dawson, H. L. Haselgrove, and M. A. Nielsen, “Noise thresholds for optical cluster-state quantum computation”, Physical Review A <span class="textbf">73</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.73.052306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0601066" target="_blank" class="href">quant-ph/0601066</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-97">[98]</dt>
       <dd>
-        A. Holevo, <span class="textit">Probabilistic and Statistical Aspects of Quantum Theory</span> (Edizioni della Normale, 2011). <a href="https://doi.org/10.1007/978-88-7642-378-9" target="_blank" class="href">DOI</a>
+        E. Knill, “Quantum computing with realistically noisy devices”, Nature <span class="textbf">434</span>, 39 (2005). <a href="https://doi.org/10.1038/nature03350" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410199" target="_blank" class="href">quant-ph/0410199</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-98">[99]</dt>
       <dd>
-        V. Tarokh, H. Jafarkhani, and A. R. Calderbank, “Space-time block coding for wireless communications: performance results”, IEEE Journal on Selected Areas in Communications <span class="textbf">17</span>, 451 (1999). <a href="https://doi.org/10.1109/49.753730" target="_blank" class="href">DOI</a>
+        E. Knill, “Scalable Quantum Computation in the Presence of Large Detected-Error Rates”. <a href="https://arxiv.org/abs/quant-ph/0312190" target="_blank" class="href">quant-ph/0312190</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-99">[100]</dt>
       <dd>
-        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
+        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-100">[101]</dt>
       <dd>
-        Y. Ouyang, “Permutation-invariant quantum coding for quantum deletion channels”, 2021 IEEE International Symposium on Information Theory (ISIT) (2021). <a href="https://doi.org/10.1109/ISIT45174.2021.9518078" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2102.02494" target="_blank" class="href">2102.02494</a>
+        C. W. Helstrom, “Quantum detection and estimation theory”, Journal of Statistical Physics <span class="textbf">1</span>, 231 (1969). <a href="https://doi.org/10.1007/BF01007479" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-101">[102]</dt>
       <dd>
-        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
+        A. Holevo, <span class="textit">Probabilistic and Statistical Aspects of Quantum Theory</span> (Edizioni della Normale, 2011). <a href="https://doi.org/10.1007/978-88-7642-378-9" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-102">[103]</dt>
       <dd>
-        I. Tal and A. Vardy, “List Decoding of Polar Codes”, IEEE Transactions on Information Theory <span class="textbf">61</span>, 2213 (2015). <a href="https://doi.org/10.1109/TIT.2015.2410251" target="_blank" class="href">DOI</a>
+        V. Tarokh, H. Jafarkhani, and A. R. Calderbank, “Space-time block coding for wireless communications: performance results”, IEEE Journal on Selected Areas in Communications <span class="textbf">17</span>, 451 (1999). <a href="https://doi.org/10.1109/49.753730" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-103">[104]</dt>
       <dd>
-        Yuqing Ren et al., “A Sequence Repetition Node-Based Successive Cancellation List Decoder for 5G Polar Codes: Algorithm and Implementation”. <a href="https://arxiv.org/abs/2205.08857" target="_blank" class="href">2205.08857</a>
+        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-104">[105]</dt>
       <dd>
-        U. U. Fayyaz and J. R. Barry, “Low-Complexity Soft-Output Decoding of Polar Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">32</span>, 958 (2014). <a href="https://doi.org/10.1109/JSAC.2014.140515" target="_blank" class="href">DOI</a>
+        Y. Ouyang, “Permutation-invariant quantum coding for quantum deletion channels”, 2021 IEEE International Symposium on Information Theory (ISIT) (2021). <a href="https://doi.org/10.1109/ISIT45174.2021.9518078" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2102.02494" target="_blank" class="href">2102.02494</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-105">[106]</dt>
       <dd>
-        U. U. Fayyaz and J. R. Barry, “Polar codes for partial response channels”, 2013 IEEE International Conference on Communications (ICC) (2013). <a href="https://doi.org/10.1109/ICC.2013.6655247" target="_blank" class="href">DOI</a>
+        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-106">[107]</dt>
       <dd>
-        E. Arkan, “A performance comparison of polar codes and Reed-Muller codes”, IEEE Communications Letters <span class="textbf">12</span>, 447 (2008). <a href="https://doi.org/10.1109/LCOMM.2008.080017" target="_blank" class="href">DOI</a>
+        I. Tal and A. Vardy, “List Decoding of Polar Codes”, IEEE Transactions on Information Theory <span class="textbf">61</span>, 2213 (2015). <a href="https://doi.org/10.1109/TIT.2015.2410251" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-107">[108]</dt>
       <dd>
-        T. Farrelly et al., “Tensor-Network Codes”, Physical Review Letters <span class="textbf">127</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.127.040507" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.10329" target="_blank" class="href">2009.10329</a>
+        Yuqing Ren et al., “A Sequence Repetition Node-Based Successive Cancellation List Decoder for 5G Polar Codes: Algorithm and Implementation”. <a href="https://arxiv.org/abs/2205.08857" target="_blank" class="href">2205.08857</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-108">[109]</dt>
       <dd>
-        A. J. Ferris and D. Poulin, “Tensor Networks and Quantum Error Correction”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.4578" target="_blank" class="href">1312.4578</a>
+        U. U. Fayyaz and J. R. Barry, “Low-Complexity Soft-Output Decoding of Polar Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">32</span>, 958 (2014). <a href="https://doi.org/10.1109/JSAC.2014.140515" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-109">[110]</dt>
       <dd>
-        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
+        U. U. Fayyaz and J. R. Barry, “Polar codes for partial response channels”, 2013 IEEE International Conference on Communications (ICC) (2013). <a href="https://doi.org/10.1109/ICC.2013.6655247" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-110">[111]</dt>
       <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
+        E. Arkan, “A performance comparison of polar codes and Reed-Muller codes”, IEEE Communications Letters <span class="textbf">12</span>, 447 (2008). <a href="https://doi.org/10.1109/LCOMM.2008.080017" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-111">[112]</dt>
       <dd>
-        Z. Babar et al., “Fifteen Years of Quantum LDPC Coding and Improved Decoding Strategies”, IEEE Access <span class="textbf">3</span>, 2492 (2015). <a href="https://doi.org/10.1109/ACCESS.2015.2503267" target="_blank" class="href">DOI</a>
+        T. Farrelly et al., “Tensor-Network Codes”, Physical Review Letters <span class="textbf">127</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.127.040507" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.10329" target="_blank" class="href">2009.10329</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-112">[113]</dt>
       <dd>
-        Nithin Raveendran et al., “Soft Syndrome Decoding of Quantum LDPC Codes for Joint Correction of Data and Syndrome Errors”. <a href="https://arxiv.org/abs/2205.02341" target="_blank" class="href">2205.02341</a>
+        A. J. Ferris and D. Poulin, “Tensor Networks and Quantum Error Correction”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.4578" target="_blank" class="href">1312.4578</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-113">[114]</dt>
       <dd>
-        Julien du Crest, Mehdi Mhalla, and Valentin Savin, “Stabilizer Inactivation for Message-Passing Decoding of Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2205.06125" target="_blank" class="href">2205.06125</a>
+        Sagarmoy Dutta and Piyush P Kurur, “Quantum Cyclic Code”. <a href="https://arxiv.org/abs/1007.1697" target="_blank" class="href">1007.1697</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-114">[115]</dt>
       <dd>
-        Sergey Bravyi et al., “Adaptive constant-depth circuits for manipulating non-abelian anyons”. <a href="https://arxiv.org/abs/2205.01933" target="_blank" class="href">2205.01933</a>
+        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-115">[116]</dt>
       <dd>
-        Pavithran Iyer and David Poulin, “Hardness of decoding quantum stabilizer codes”. <a href="https://arxiv.org/abs/1310.3235" target="_blank" class="href">1310.3235</a>
+        Z. Babar et al., “Fifteen Years of Quantum LDPC Coding and Improved Decoding Strategies”, IEEE Access <span class="textbf">3</span>, 2492 (2015). <a href="https://doi.org/10.1109/ACCESS.2015.2503267" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-116">[117]</dt>
       <dd>
-        H. Ollivier and J.-P. Tillich, “Trellises for stabilizer codes: Definition and uses”, Physical Review A <span class="textbf">74</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.74.032304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0512041" target="_blank" class="href">quant-ph/0512041</a>
+        Nithin Raveendran et al., “Soft Syndrome Decoding of Quantum LDPC Codes for Joint Correction of Data and Syndrome Errors”. <a href="https://arxiv.org/abs/2205.02341" target="_blank" class="href">2205.02341</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-117">[118]</dt>
       <dd>
-        Shai Evra, Tali Kaufman, and Gilles Zémor, “Decodable quantum LDPC codes beyond the <span class="inline-math">$\sqrt{n}$</span> distance barrier using high dimensional expanders”. <a href="https://arxiv.org/abs/2004.07935" target="_blank" class="href">2004.07935</a>
+        Julien du Crest, Mehdi Mhalla, and Valentin Savin, “Stabilizer Inactivation for Message-Passing Decoding of Quantum LDPC Codes”. <a href="https://arxiv.org/abs/2205.06125" target="_blank" class="href">2205.06125</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-118">[119]</dt>
       <dd>
-        D. J. Bernstein, T. Lange, and C. Peters, “Smaller Decoding Exponents: Ball-Collision Decoding”, Advances in Cryptology – CRYPTO 2011 743 (2011). <a href="https://doi.org/10.1007/978-3-642-22792-9_42" target="_blank" class="href">DOI</a>
+        Sergey Bravyi et al., “Adaptive constant-depth circuits for manipulating non-abelian anyons”. <a href="https://arxiv.org/abs/2205.01933" target="_blank" class="href">2205.01933</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-119">[120]</dt>
       <dd>
-        M. Finiasz and N. Sendrier, “Security Bounds for the Design of Code-Based Cryptosystems”, Advances in Cryptology – ASIACRYPT 2009 88 (2009). <a href="https://doi.org/10.1007/978-3-642-10366-7_6" target="_blank" class="href">DOI</a>
+        Pavithran Iyer and David Poulin, “Hardness of decoding quantum stabilizer codes”. <a href="https://arxiv.org/abs/1310.3235" target="_blank" class="href">1310.3235</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-120">[121]</dt>
       <dd>
-        P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href">DOI</a>
+        H. Ollivier and J.-P. Tillich, “Trellises for stabilizer codes: Definition and uses”, Physical Review A <span class="textbf">74</span>, (2006). <a href="https://doi.org/10.1103/PhysRevA.74.032304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0512041" target="_blank" class="href">quant-ph/0512041</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-121">[122]</dt>
       <dd>
-        G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href">DOI</a>
+        Shai Evra, Tali Kaufman, and Gilles Zémor, “Decodable quantum LDPC codes beyond the <span class="inline-math">$\sqrt{n}$</span> distance barrier using high dimensional expanders”. <a href="https://arxiv.org/abs/2004.07935" target="_blank" class="href">2004.07935</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-122">[123]</dt>
       <dd>
-        F. Lazaro, G. Liva, and G. Bauch, “Inactivation Decoding of LT and Raptor Codes: Analysis and Code Design”, IEEE Transactions on Communications 1 (2017). <a href="https://doi.org/10.1109/TCOMM.2017.2715805" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1706.05814" target="_blank" class="href">1706.05814</a>
+        D. J. Bernstein, T. Lange, and C. Peters, “Smaller Decoding Exponents: Ball-Collision Decoding”, Advances in Cryptology – CRYPTO 2011 743 (2011). <a href="https://doi.org/10.1007/978-3-642-22792-9_42" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-123">[124]</dt>
       <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
+        M. Finiasz and N. Sendrier, “Security Bounds for the Design of Code-Based Cryptosystems”, Advances in Cryptology – ASIACRYPT 2009 88 (2009). <a href="https://doi.org/10.1007/978-3-642-10366-7_6" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-124">[125]</dt>
       <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
+        P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-125">[126]</dt>
       <dd>
-        L. Rudolph and C. Hartmann, “Decoding by sequential code reduction”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 549 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055023" target="_blank" class="href">DOI</a>
+        G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-126">[127]</dt>
       <dd>
-        manual:E.C. Posner, <span class="emph">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.
+        F. Lazaro, G. Liva, and G. Bauch, “Inactivation Decoding of LT and Raptor Codes: Analysis and Code Design”, IEEE Transactions on Communications 1 (2017). <a href="https://doi.org/10.1109/TCOMM.2017.2715805" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1706.05814" target="_blank" class="href">1706.05814</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-127">[128]</dt>
       <dd>
-        S. Gao, “A New Algorithm for Decoding Reed-Solomon Codes”, Communications, Information and Network Security 55 (2003). <a href="https://doi.org/10.1007/978-1-4757-3789-9_5" target="_blank" class="href">DOI</a>
+        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-128">[129]</dt>
       <dd>
-        M. Sudan, “Decoding of Reed Solomon Codes beyond the Error-Correction Bound”, Journal of Complexity <span class="textbf">13</span>, 180 (1997). <a href="https://doi.org/10.1006/JCOM.1997.0439" target="_blank" class="href">DOI</a>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-129">[130]</dt>
       <dd>
-        R. M. Roth and G. Ruckenstein, “Efficient decoding of Reed-Solomon codes beyond half the minimum distance”, IEEE Transactions on Information Theory <span class="textbf">46</span>, 246 (2000). <a href="https://doi.org/10.1109/18.817522" target="_blank" class="href">DOI</a>
+        L. Rudolph and C. Hartmann, “Decoding by sequential code reduction”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 549 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055023" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-130">[131]</dt>
       <dd>
-        R. R. Green, &quot;A serial orthogonal decoder,&quot; JPL Space Programs Summary, vol. 37–39-IV, pp. 247–253, 1966.
+        manual:E.C. Posner, <span class="emph">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-131">[132]</dt>
       <dd>
-        A. Ashikhmin and S. Litsyn, “Simple MAP decoding of first order Reed-Muller and Hamming codes”, Proceedings 2003 IEEE Information Theory Workshop (Cat. No.03EX674). <a href="https://doi.org/10.1109/ITW.2003.1216684" target="_blank" class="href">DOI</a>
+        S. Gao, “A New Algorithm for Decoding Reed-Solomon Codes”, Communications, Information and Network Security 55 (2003). <a href="https://doi.org/10.1007/978-1-4757-3789-9_5" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-132">[133]</dt>
       <dd>
-        A. Barg and S. Zhou, “A quantum decoding algorithm for the simplex code”, in Proceedings of the 36th Annual Allerton Conference on Communication, Control and Computing, Monticello, IL, 23–25 September 1998 (UIUC 1998) 359–365
+        I. Reed et al., “The fast decoding of Reed-Solomon codes using Fermat theoretic transforms and continued fractions”, IEEE Transactions on Information Theory <span class="textbf">24</span>, 100 (1978). <a href="https://doi.org/10.1109/TIT.1978.1055816" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-133">[134]</dt>
       <dd>
-        N. E. Bonesteel and D. P. DiVincenzo, “Quantum circuits for measuring Levin-Wen operators”, Physical Review B <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevB.86.165113" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1206.6048" target="_blank" class="href">1206.6048</a>
+        M. Sudan, “Decoding of Reed Solomon Codes beyond the Error-Correction Bound”, Journal of Complexity <span class="textbf">13</span>, 180 (1997). <a href="https://doi.org/10.1006/JCOM.1997.0439" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-134">[135]</dt>
       <dd>
-        Y. Tomita and K. M. Svore, “Low-distance surface codes under realistic quantum noise”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.062320" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.3747" target="_blank" class="href">1404.3747</a>
+        R. M. Roth and G. Ruckenstein, “Efficient decoding of Reed-Solomon codes beyond half the minimum distance”, IEEE Transactions on Information Theory <span class="textbf">46</span>, 246 (2000). <a href="https://doi.org/10.1109/18.817522" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-135">[136]</dt>
       <dd>
-        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
+        V. Guruswami and A. Rudra, “Limits to List Decoding Reed–Solomon Codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 3642 (2006). <a href="https://doi.org/10.1109/TIT.2006.878164" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-136">[137]</dt>
       <dd>
-        G. Zemor, “On expander codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 835 (2001). <a href="https://doi.org/10.1109/18.910593" target="_blank" class="href">DOI</a>
+        R. R. Green, &quot;A serial orthogonal decoder,&quot; JPL Space Programs Summary, vol. 37–39-IV, pp. 247–253, 1966.
       </dd>
       <!-- Citation:  -->
       <dt id="cite-137">[138]</dt>
       <dd>
-        J. W. Harrington, Analysis of Quantum Error-correcting Codes: Symplectic Lattice Codes and Toric Codes, California Institute of Technology, 2004. <a href="https://doi.org/10.7907/AHMQ-EG82" target="_blank" class="href">DOI</a>
+        A. Ashikhmin and S. Litsyn, “Simple MAP decoding of first order Reed-Muller and Hamming codes”, Proceedings 2003 IEEE Information Theory Workshop (Cat. No.03EX674). <a href="https://doi.org/10.1109/ITW.2003.1216684" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-138">[139]</dt>
       <dd>
-        S. Bravyi and J. Haah, “Quantum Self-Correction in the 3D Cubic Code Model”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1112.3252" target="_blank" class="href">1112.3252</a>
+        A. Barg and S. Zhou, “A quantum decoding algorithm for the simplex code”, in Proceedings of the 36th Annual Allerton Conference on Communication, Control and Computing, Monticello, IL, 23–25 September 1998 (UIUC 1998) 359–365
       </dd>
       <!-- Citation:  -->
       <dt id="cite-139">[140]</dt>
       <dd>
-        O. Higgott and N. P. Breuckmann, “Subsystem Codes with High Thresholds by Gauge Fixing and Reduced Qubit Overhead”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09626" target="_blank" class="href">2010.09626</a>
+        N. E. Bonesteel and D. P. DiVincenzo, “Quantum circuits for measuring Levin-Wen operators”, Physical Review B <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevB.86.165113" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1206.6048" target="_blank" class="href">1206.6048</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-140">[141]</dt>
       <dd>
-        N. Didier, J. Bourassa, and A. Blais, “Fast Quantum Nondemolition Readout by Parametric Modulation of Longitudinal Qubit-Oscillator Interaction”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.203601" target="_blank" class="href">DOI</a>
+        Y. Tomita and K. M. Svore, “Low-distance surface codes under realistic quantum noise”, Physical Review A <span class="textbf">90</span>, (2014). <a href="https://doi.org/10.1103/PhysRevA.90.062320" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1404.3747" target="_blank" class="href">1404.3747</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-141">[142]</dt>
       <dd>
-        K. Hammar et al., “Error-rate-agnostic decoding of topological stabilizer codes”, Physical Review A <span class="textbf">105</span>, (2022). <a href="https://doi.org/10.1103/PhysRevA.105.042616" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2112.01977" target="_blank" class="href">2112.01977</a>
+        M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
       <dt id="cite-142">[143]</dt>
+      <dd>
+        G. Zemor, “On expander codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 835 (2001). <a href="https://doi.org/10.1109/18.910593" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-143">[144]</dt>
+      <dd>
+        J. W. Harrington, Analysis of Quantum Error-correcting Codes: Symplectic Lattice Codes and Toric Codes, California Institute of Technology, 2004. <a href="https://doi.org/10.7907/AHMQ-EG82" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-144">[145]</dt>
+      <dd>
+        S. Bravyi and J. Haah, “Quantum Self-Correction in the 3D Cubic Code Model”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.200501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1112.3252" target="_blank" class="href">1112.3252</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-145">[146]</dt>
+      <dd>
+        O. Higgott and N. P. Breuckmann, “Subsystem Codes with High Thresholds by Gauge Fixing and Reduced Qubit Overhead”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09626" target="_blank" class="href">2010.09626</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-146">[147]</dt>
+      <dd>
+        N. Didier, J. Bourassa, and A. Blais, “Fast Quantum Nondemolition Readout by Parametric Modulation of Longitudinal Qubit-Oscillator Interaction”, Physical Review Letters <span class="textbf">115</span>, (2015). <a href="https://doi.org/10.1103/PhysRevLett.115.203601" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-147">[148]</dt>
+      <dd>
+        K. Hammar et al., “Error-rate-agnostic decoding of topological stabilizer codes”, Physical Review A <span class="textbf">105</span>, (2022). <a href="https://doi.org/10.1103/PhysRevA.105.042616" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2112.01977" target="_blank" class="href">2112.01977</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-148">[149]</dt>
       <dd>
         D. K. Tuckett et al., “<span class="verbatiminput">Fault-Tolerant Thresholds for the Surface Code in Excess of 
 &lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;inline&quot;&gt;&lt;mml:mn&gt;5&lt;/mml:mn&gt;&lt;mml:mo&gt;%&lt;/mml:mo&gt;&lt;/mml:math&gt;
  Under Biased Noise</span>”, Physical Review Letters <span class="textbf">124</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.124.130501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.02554" target="_blank" class="href">1907.02554</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-143">[144]</dt>
+      <dt id="cite-149">[150]</dt>
       <dd>
         P. Kallquist, &quot;Decoding of Zetterberg codes,&quot; in Proc. Fourth Joint Swedish-Soviet Workshop on Inform. Theory, Gotland, Sweden, Aug. 27-Sept. 1, 1989, p. 305-300
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-144">[145]</dt>
+      <dt id="cite-150">[151]</dt>
       <dd>
         S. M. Dodunekov and J. E. M. Nilsson, “Algebraic decoding of the Zetterberg codes”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 1570 (1992). <a href="https://doi.org/10.1109/18.149509" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-145">[146]</dt>
+      <dt id="cite-151">[152]</dt>
       <dd>
         M.-H. Jing et al., “A Result on Zetterberg Codes”, IEEE Communications Letters <span class="textbf">14</span>, 662 (2010). <a href="https://doi.org/10.1109/LCOMM.2010.07.100784" target="_blank" class="href">DOI</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-146">[147]</dt>
+      <dt id="cite-152">[153]</dt>
       <dd>
         A. De and L. P. Pryadko, “Universal set of dynamically protected gates for bipartite qubit networks: Soft pulse implementation of the [[5,1,3]] quantum error-correcting code”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.042333" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1509.01239" target="_blank" class="href">1509.01239</a>
       </dd>
       <!-- Citation:  -->
-      <dt id="cite-147">[148]</dt>
+      <dt id="cite-153">[154]</dt>
       <dd>
         Chaobin Liu, “Exact performance of the five-qubit code with coherent errors”. <a href="https://arxiv.org/abs/2203.01706" target="_blank" class="href">2203.01706</a>
       </dd>

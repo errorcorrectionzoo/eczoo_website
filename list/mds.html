@@ -62,7 +62,10 @@ Here is a list of code families which contain <a href="/c/mds" class="ref">MDS c
 <tbody>
 <tr>
   <td class="top left"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span> multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> of a Reed-Solomon (RS) code is a string of values of a corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>. Codewords of a GRS code multiply the polynomial by a factor <span class="inline-math">\(v_i\)</span> for each <span class="inline-math">\(i\)</span>. In other words, each codeword becomes <span class="inline-math">\( ( v_1 f_{\mu}(\alpha_1), v_2 f_{\mu}(\alpha_2), \cdots, v_n f_{\mu}(\alpha_n) ) \)</span>.</td>
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
+<span class="display-math env-align">\begin{align}
+  \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
+\end{align}</span></td>
   <td class="textit">GRS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound.</td>
 </tr>
 <tr>
@@ -103,12 +106,14 @@ becomes an equality.
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero elements of <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span>, with polynomial
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero points in <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial
 <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 \end{align}</span>
-In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>.
-</td>
+In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>,
+<span class="display-math env-align">\begin{align}
+  \mu\to\left\{ f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right\} \,.
+\end{align}</span></td>
   <td class="textit">RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#cite-2" class="cite">[3]</a>.</td>
 </tr>
 </tbody>
