@@ -123,7 +123,8 @@
   <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
 <span class="display-math env-align">\begin{align}
   \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
-\end{align}</span></span>
+\end{align}</span>
+</span>
   <span class="short-code-info">Protection: The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</span>
   <span class="short-code-parents">
     Parents:
@@ -452,14 +453,15 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <div class="ecc-code" id="ecc_interleaved_reed_solomon">
   <span class="short-code-name"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></span>
-  <span class="short-code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged into a matrix whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding codewords
+  <span class="short-code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding
 <span class="display-math env-align">\begin{align}
+\mu\to\left{
 \begin{split}
   f_{\mu}^{(1)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(1)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(1)}\left(\alpha_{n}\right)\\
   f_{\mu}^{(2)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(2)}\left(\alpha_{2}\right) &amp;  &amp; f_{\mu}^{(2)}\left(\alpha_{n}\right)\\
   \vdots &amp;  &amp; \ddots &amp; \vdots\\
   f_{\mu}^{(t)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(t)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(t)}\left(\alpha_{n}\right)
-\end{split}~.
+\end{split}\right}~.
 \end{align}</span>
 </span>
   <span class="short-code-parents">
@@ -513,7 +515,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <div class="ecc-code" id="ecc_extended_reed_solomon">
   <span class="short-code-name"><a href="/c/extended_reed_solomon">Extended RS code</a></span>
-  <span class="short-code-description">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</span>
+  <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
@@ -542,7 +544,7 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
 
 <div class="ecc-code" id="ecc_parvaresh_vardy">
   <span class="short-code-name"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a></span></span>
-  <span class="short-code-description">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) imposed between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity.
+  <span class="short-code-description">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity.
 </span>
   <span class="short-code-parents">
     Parents:

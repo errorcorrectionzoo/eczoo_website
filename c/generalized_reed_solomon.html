@@ -84,11 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
+<div class="sectioncontent code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
 <span class="display-math env-align">\begin{align}
   \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
-\end{align}</span></p>
-<p>The decoding process of GRS codes reduces to the solution of a polynomial congruence equation, usually referred to as the key equation. Decoding schemes are based on applications of Euclid algorithm to solve the key equation.</p></div>
+\end{align}</span>
+</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct  errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</div>
@@ -111,7 +111,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-4" class="cite">[5]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-5" class="cite">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoding process of GRS codes reduces to the solution of a polynomial congruence equation, usually referred to as the key equation. Decoding schemes are based on applications of the Euclid algorithm to solve the key equation.</span><span class="paragraph-in-list">Berlekamp-Massey decoder with runtime of order <span class="inline-math">\(O(n^2)\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span><span class="paragraph-in-list">Guruswami-Sudan list decoder <a href="#cite-4" class="cite">[5]</a> and modification by Koetter-Vardy for soft-decision decoding <a href="#cite-5" class="cite">[6]</a>.</span></div>
 
 
 

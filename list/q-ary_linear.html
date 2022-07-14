@@ -69,7 +69,7 @@ Here is a list of <a href="/c/q-ary_linear" class="ref"><span class="inline-math
 </tr>
 <tr>
   <td class="top left"><a href="/c/extended_reed_solomon">Extended RS code</a></td>
-  <td class="textit">Stub. If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</td>
+  <td class="textit">Stub.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/folded_reed_solomon">Folded RS (FRS) code</a></td>
@@ -90,7 +90,8 @@ Here is a list of <a href="/c/q-ary_linear" class="ref"><span class="inline-math
   <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>,
 <span class="display-math env-align">\begin{align}
   \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
-\end{align}</span></td>
+\end{align}</span>
+</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/goppa">Goppa code</a></td>
@@ -106,14 +107,15 @@ Here is a list of <a href="/c/q-ary_linear" class="ref"><span class="inline-math
 </tr>
 <tr>
   <td class="top left"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
-  <td class="textit">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged into a matrix whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding codewords
+  <td class="textit">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding
 <span class="display-math env-align">\begin{align}
+\mu\to\left{
 \begin{split}
   f_{\mu}^{(1)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(1)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(1)}\left(\alpha_{n}\right)\\
   f_{\mu}^{(2)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(2)}\left(\alpha_{2}\right) &amp;  &amp; f_{\mu}^{(2)}\left(\alpha_{n}\right)\\
   \vdots &amp;  &amp; \ddots &amp; \vdots\\
   f_{\mu}^{(t)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(t)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(t)}\left(\alpha_{n}\right)
-\end{split}~.
+\end{split}\right}~.
 \end{align}</span>
 </td>
 </tr>
@@ -132,7 +134,7 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
 </tr>
 <tr>
   <td class="top left"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a></td>
-  <td class="textit">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) imposed between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity.
+  <td class="textit">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity.
 </td>
 </tr>
 <tr>
