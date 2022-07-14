@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Constant-weight code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Constant-weight code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Constant-weight code [error correction zoo]
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_constant_weight">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Constant-weight code</h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Also known as an <span class="textit"><span class="inline-math">\(m\)</span>-in-<span class="inline-math">\(n\)</span></span> or <span class="inline-math">\({n \choose m}\)</span> code. A linear binary or <span class="inline-math">\(q\)</span>-ary code whose codewords all have the same Hamming weight. Such codes provide slightly extra redundancy for storage of small-scale information such as ZIP codes or decimal digits.</p>
+<p>For example, the two-in-five code has a size of 10, thereby providing an encoding for the decimal digits 0 through 9. Such a code detects some single bit-flips as well as unidirectional errors using the fact that each codeword is weight-two. The code fails for any sequence of flips that maintains the constant weight.</p></div>
+
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Radio-network frequency hopping <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Two-in-five, also known as the two-out-of-five code, was used in the United States Postal Service&#x27;s POSTNET barcode system as well as the Postal Alpha-numeric Encoding Technique (PLANET).</span><span class="paragraph-in-list">Two-in-five code forms the numerical part of the <span class="textit">Code 39</span> barcode encoding.</span><span class="paragraph-in-list">Two-in-five code was used on early IBM computers <a href="#cite-1" class="cite">[2]</a>.</span>
+</div>
+
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Tables of binary constant-weight codes for <span class="inline-math">\(n \leq 28\)</span> <a href="#cite-2" class="cite">[3]</a> and <span class="inline-math">\(n &gt; 28\)</span> <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">See book <a href="#cite-3" class="cite">[4]</a> for (Johnson) bounds on the size of constant-weight codes.</span>
+</div>
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/divisible">Divisible code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Codes whose codewords have a constant weight of <span class="inline-math">\(m\)</span> are automatically <span class="inline-math">\(m\)</span>-divisible.</span></li>
+</ul>
+</div>
+
+<h2 id="relations_parent_of" class="code-parent-of">
+    Children
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/balanced">Balanced code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/one_hot">One-hot code</a></span></li>
+</ul>
+</div>
+
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    constant_weight
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/weight/constant_weight.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=constant_weight&amp;code_yml_filename=classical/properties/weight/constant_weight.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>constant_weight</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Constant-weight code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/constant_weight</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_constant_weight,
+title={Constant-weight code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/constant_weight}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/constant_weight</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+
+
+  <div id="endnotes" class="sectioncontent">
+    <h2>References</h2>
+    <dl id="citations">
+      <!-- Citation:  -->
+      <dt id="cite-0">[1]</dt>
+      <dd>
+        D. H. Smith, L. A. Hughes, and S. Perkins, “A New Table of Constant Weight Codes of Length Greater than 28”, The Electronic Journal of Combinatorics <span class="textbf">13</span>, (2006). <a href="https://doi.org/10.37236/1162" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-1">[2]</dt>
+      <dd>
+        J. Svigals, “IBM 7070 data processing system”, Papers presented at the the March 3-5, 1959, western joint computer conference on XX - IRE-AIEE-ACM &#x27;59 (Western) (1959). <a href="https://doi.org/10.1145/1457838.1457879" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-2">[3]</dt>
+      <dd>
+        A. E. Brouwer et al., “A new table of constant weight codes”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 1334 (1990). <a href="https://doi.org/10.1109/18.59932" target="_blank" class="href">DOI</a>
+      </dd>
+      <!-- Citation:  -->
+      <dt id="cite-3">[4]</dt>
+      <dd>
+        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
+      </dd>
+    
+    </dl>
+  </div>
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Constant-weight code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/constant_weight</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/weight/constant_weight.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/weight/constant_weight.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/balanced">Balanced</a></li><li><a href="/c/one_hot">One-hot</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
