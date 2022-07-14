@@ -455,13 +455,13 @@ In other words, each codeword <span class="inline-math">\(\mu\)</span> is a stri
   <span class="short-code-name"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></span>
   <span class="short-code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding
 <span class="display-math env-align">\begin{align}
-\mu\to\left{
+\mu\to\left\{
 \begin{split}
   f_{\mu}^{(1)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(1)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(1)}\left(\alpha_{n}\right)\\
   f_{\mu}^{(2)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(2)}\left(\alpha_{2}\right) &amp;  &amp; f_{\mu}^{(2)}\left(\alpha_{n}\right)\\
   \vdots &amp;  &amp; \ddots &amp; \vdots\\
   f_{\mu}^{(t)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(t)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(t)}\left(\alpha_{n}\right)
-\end{split}\right}~.
+\end{split}\right\}~.
 \end{align}</span>
 </span>
   <span class="short-code-parents">
