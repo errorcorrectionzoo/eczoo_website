@@ -1532,7 +1532,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity \\(\\alpha\\) (see binary cyclic code description). More precisely, the generator polynomial of a BCH code of designed \u2026",
+                    "_description": "Odd-length cyclic binary code whose zeroes are consecutive powers of a primitive root of unity \\(\\alpha\\) (see cyclic-binary-code polynomial dictionary). More precisely, the generator polynomial of a BCH code of designed distance \\(\\delta\\geq 1\\) is \u2026",
                     "_code_href": "/c/bch",
                     "_family_generation_level": 4
                 },
@@ -4168,7 +4168,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "CSS code formulated using the CSS chain-complex construction in the homological product construction. Stub. ",
+                    "_description": "CSS code formulated using the homological product of two chain complexes (see CSS chain-complex dictionary). Stub. ",
                     "_code_href": "/c/homological_product",
                     "_family_generation_level": 7
                 },
@@ -4202,7 +4202,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "Stabilizer code formulated using the CSS chain-complex construction, with chain complexes consisting of products of other chain complexes. The chain-complex construction of codes yields an interpretation of codes in \u2026",
+                    "_description": "Stabilizer code formulated in terms a chain complex consisting of some type of product of other chain complexes. The CSS chain-complex dictionary yields an interpretation of codes in terms of manifolds, thus allowing for the use \u2026",
                     "_code_href": "/c/generalized_homological_product",
                     "_family_generation_level": 4
                 },
