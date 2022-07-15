@@ -78,16 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Bosonic rotation code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Bosonic rotation code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</p>
-<p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |(kq+j)N \rangle\)</span> for some coefficients <span class="inline-math">\(c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p>
-<p>Codewords can be uniquely specified by choosing a <span class="emph">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(k_j q+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(\{|\overline{j}\rangle \mid j \in \mathbb{Z}_q\}\)</span> are constructed as
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</p><p>Encoding of a <span class="inline-math">\(q\)</span>-dimensional logical qudit admit a basis whose elements are eigenstates of the rotation operator <span class="inline-math">\(\exp\left(\mathrm{i} 2\pi \hat{n}/qN \right)\)</span>, where <span class="inline-math">\(\hat{n}\)</span> is the number operator diagonal in the Fock basis. Basis elements are of the form <span class="inline-math">\(\sum_{j=0}^\infty c_j |(kq+j)N \rangle\)</span> for some coefficients <span class="inline-math">\(c_j\)</span> and <span class="inline-math">\(k\)</span>. This is because the rotation acting on a general Fock-state superposition <span class="inline-math">\(\sum_n a_n |n\rangle\)</span> yields <span class="inline-math">\(\sum_n a_n \exp\left(\mathrm{i} 2\pi n / qN \right) |n\rangle\)</span>. In order for a codeword to be an eigenvector of this operation, <span class="inline-math">\(a_n\)</span> must be zero whenever <span class="inline-math">\(n \neq (kq+j)N\)</span> for some <span class="inline-math">\(k\)</span>.</p><p>Codewords can be uniquely specified by choosing a <span class="textit">primitive</span> state <span class="inline-math">\(|\Theta\rangle\)</span>. To ensure valid (orthogonal and nonzero) codewords, <span class="inline-math">\(|\Theta\rangle\)</span> must satisfy the following requirement: for each <span class="inline-math">\(j \in \mathbb{Z}_q\)</span>, <span class="inline-math">\(|\Theta\rangle\)</span> must have support on the Fock state <span class="inline-math">\(|(k_j q+j)N\rangle\)</span> for at least one <span class="inline-math">\(k_j \in \mathbb{N}_0\)</span>. From such a primitive, the codewords <span class="inline-math">\(\{|\overline{j}\rangle \mid j \in \mathbb{Z}_q\}\)</span> are constructed as <span class="display-math env-align">\begin{align}
 |\overline{j}\rangle \propto \sum_{m=0}^{2N-1} \mathrm{e}^{2\pi \mathrm{i} m (\hat n  / N + j) / q} |\Theta\rangle~.
 \end{align}</span></p></div>
 
@@ -107,7 +104,7 @@
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The optimal way to prepare codewords depends on the exact rotation code in question <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">The optimal way to prepare codewords depends on the exact rotation code in question <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
  
@@ -118,7 +115,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span><span class="paragraph-in-list">Autonomous quantum error correction schemes for <span class="inline-math">\(S=1\)</span> codes <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">One can distinguish (destructively) the codewords by performing a Fock-state number measurement. If a Fock state state <span class="inline-math">\(|n\rangle\)</span> is measured, then one rounds to the nearest integer of the form <span class="inline-math">\((kq+j)/N\)</span>, and deduces that the true state was <span class="inline-math">\(|\overline{j}\rangle\)</span>.</span><span class="paragraph-in-list">One can distinguish states in the dual basis by performing phase estimation on <span class="inline-math">\(\mathrm{e}^{\mathrm{i} \theta \hat n}\)</span>. One then rounds the resulting <span class="inline-math">\(\theta\)</span> to the nearest number <span class="inline-math">\(2\pi j / qN\)</span> in order to determine which dual basis state <span class="inline-math">\(j \in \mathbb Z_q\)</span> it came from.</span><span class="paragraph-in-list">Autonomous quantum error correction schemes for <span class="inline-math">\(S=1\)</span> codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -159,15 +156,15 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binomial">Binomial code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-0" class="cite">[1]</a>.</span></li>
+      &#x2014;&nbsp;One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/cat">Cat code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#cite-0" class="cite">[1]</a>.</span></li>
+      &#x2014;&nbsp;The cat code is a bosonic rotation code whose primitive state is the coherent state <span class="inline-math">\(|\alpha\rangle\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/number_phase">Number-phase code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#cite-2" class="cite">[3]</a>.</span></li>
+      &#x2014;&nbsp;Number-phase codes are bosonic rotation codes with the primitive state is a Pegg-Barnett phase state <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
@@ -216,30 +213,7 @@ url={https://errorcorrectionzoo.org/c/bosonic_rotation}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        S. Kwon, S. Watabe, and J.-S. Tsai, “Autonomous quantum error correction in a four-photon Kerr parametric oscillator”, npj Quantum Information <span class="textbf">8</span>, (2022). <a href="https://doi.org/10.1038/s41534-022-00553-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2203.09234" target="_blank" class="href">2203.09234</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href-href">1901.08071</a></dd><dt id="citation-2">[2]</dt><dd>S. Kwon, S. Watabe, and J.-S. Tsai, “Autonomous quantum error correction in a four-photon Kerr parametric oscillator”, npj Quantum Information <span class="textbf">8</span>, (2022). <a href="https://doi.org/10.1038/s41534-022-00553-z" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2203.09234" target="_blank" class="href-href">2203.09234</a></dd><dt id="citation-3">[3]</dt><dd>S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

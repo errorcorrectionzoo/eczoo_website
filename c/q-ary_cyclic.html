@@ -84,10 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="inline-math">\(q\)</span>-ary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes.</p>
-<p>Cyclic codes correspond to ideals in a particular polynomial ring. Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a <span class="inline-math">\(q\)</span>-ary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with <span class="inline-math">\(q\)</span>-ary coefficients, <span class="inline-math">\(\mathbb{F}_q[x]\)</span> with <span class="inline-math">\(\mathbb{F}_q=GF(q)\)</span>. Polynomials corresponding to codewords of a linear cyclic code form an ideal (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_q[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Multiplication of a codeword polynomial <span class="inline-math">\(c(x)\)</span> by <span class="inline-math">\(x\)</span> in such a ring corresponds to a cyclic shift of the corresponding codeword string.</p>
-<p>Codeword polynomials of a cyclic code can be generated, via multiplication, by a <span class="textit">generator polynomial</span> <span class="inline-math">\(g(x)\)</span>. A particular generator polynomial <span class="inline-math">\(e(x)\)</span> has the additional property of being <span class="textit">idempotent</span>, i.e., <span class="inline-math">\(e(x)^2=e(x)\)</span>. Given a generator polynomial, the corresponding <span class="textit">check polynomial</span> <span class="inline-math">\(h(x)=(x^n-1)/g(x)\)</span> yields zero when multiplying a codeword polynomial. Its coefficients correspond to the code&#x27;s parity check matrix.</p>
-<p>Whenever <span class="inline-math">\(q\)</span> and <span class="inline-math">\(n\)</span> are relatively prime, cyclic codes can also be defined in terms of zeroes of their generator polynomial. Roots of <span class="inline-math">\(g(x)\)</span> over its splitting field are called <span class="textit">zeroes</span> of the code, and they are all powers of a primitive <span class="inline-math">\(n\)</span>th root of unity because <span class="inline-math">\(g(x)\)</span> is a divisor of <span class="inline-math">\(x^n-1\)</span>. Since the generator polynomial generates all codeword polynomials <span class="inline-math">\(c(x)\)</span> by multiplication by <span class="inline-math">\(x\)</span>, its zeroes are also zeroes of those polynomials.</p></div>
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\(q\)</span>-ary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes.</p><p>Cyclic codes correspond to ideals in a particular polynomial ring. Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a <span class="inline-math">\(q\)</span>-ary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with <span class="inline-math">\(q\)</span>-ary coefficients, <span class="inline-math">\(\mathbb{F}_q[x]\)</span> with <span class="inline-math">\(\mathbb{F}_q=GF(q)\)</span>. Polynomials corresponding to codewords of a linear cyclic code form an ideal (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_q[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Multiplication of a codeword polynomial <span class="inline-math">\(c(x)\)</span> by <span class="inline-math">\(x\)</span> in such a ring corresponds to a cyclic shift of the corresponding codeword string.</p><p>Codeword polynomials of a cyclic code can be generated, via multiplication, by a <span class="textit">generator polynomial</span> <span class="inline-math">\(g(x)\)</span>. A particular generator polynomial <span class="inline-math">\(e(x)\)</span> has the additional property of being <span class="textit">idempotent</span>, i.e., <span class="inline-math">\(e(x)^2=e(x)\)</span>. Given a generator polynomial, the corresponding <span class="textit">check polynomial</span> <span class="inline-math">\(h(x)=(x^n-1)/g(x)\)</span> yields zero when multiplying a codeword polynomial. Its coefficients correspond to the code&#x27;s parity check matrix.</p><p>Whenever <span class="inline-math">\(q\)</span> and <span class="inline-math">\(n\)</span> are relatively prime, cyclic codes can also be defined in terms of zeroes of their generator polynomial. Roots of <span class="inline-math">\(g(x)\)</span> over its splitting field are called <span class="textit">zeroes</span> of the code, and they are all powers of a primitive <span class="inline-math">\(n\)</span>th root of unity because <span class="inline-math">\(g(x)\)</span> is a divisor of <span class="inline-math">\(x^n-1\)</span>. Since the generator polynomial generates all codeword polynomials <span class="inline-math">\(c(x)\)</span> by multiplication by <span class="inline-math">\(x\)</span>, its zeroes are also zeroes of those polynomials.</p></div>
 
 
 
@@ -108,7 +105,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
 
@@ -121,7 +118,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#cite-1" class="cite">[2]</a> for an exposition on cyclic codes.</span>
+  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for an exposition on cyclic codes.</span>
 </div>
 
 
@@ -167,7 +164,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Hamming codes are equivalent to cyclic codes when <span class="inline-math">\(q\)</span> and <span class="inline-math">\(r\)</span> are relatively prime (<a href="#cite-1" class="cite">[2]</a>, pg. 194).</span></li>
+      &#x2014;&nbsp;Hamming codes are equivalent to cyclic codes when <span class="inline-math">\(q\)</span> and <span class="inline-math">\(r\)</span> are relatively prime (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, pg. 194).</span></li>
 </ul>
 </div>
 
@@ -215,25 +212,7 @@ url={https://errorcorrectionzoo.org/c/q-ary_cyclic}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

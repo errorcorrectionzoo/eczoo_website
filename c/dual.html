@@ -78,19 +78,15 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Dual linear code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Dual linear code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>For any  <span class="inline-math">\([n,k]\)</span> binary or <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code,
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>For any <span class="inline-math">\([n,k]\)</span> binary or <span class="inline-math">\(q\)</span>-ary linear code <span class="inline-math">\(C\)</span>, the dual code, <span class="display-math env-align">\begin{align}
 C^\perp = \{ y\in GF(q)^{\times n} ~|~ x\cdot y=0 \forall x\in C\},
-\end{align}</span>
-where the Hermitian inner product is <span class="inline-math">\(x\cdot y = \sum_{i=1}^n x_i y_i\)</span> for coordinates <span class="inline-math">\(x_i,y_i\)</span>.</p>
-<p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p>
-<p>The dual code <span class="inline-math">\(C^\perp\)</span> is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p></div>
+\end{align}</span> where the Hermitian inner product is <span class="inline-math">\(x\cdot y = \sum_{i=1}^n x_i y_i\)</span> for coordinates <span class="inline-math">\(x_i,y_i\)</span>.</p><p>A code that contains its dual, <span class="inline-math">\(C^\perp \subseteq C\)</span>, is called <span class="textit">weakly self-dual</span> or <span class="textit">self-orthogonal</span>. A code that is equal to its dual, <span class="inline-math">\(C^\perp = C\)</span>, is called <span class="textit">self-dual</span>. The dual of a dual code is the original code.</p><p>The dual code <span class="inline-math">\(C^\perp\)</span> is the row space of the parity check matrix of <span class="inline-math">\(C\)</span>. The dual code is the kernel of the encoding map for <span class="inline-math">\(C\)</span>, and <span class="inline-math">\(\dim C^\perp = n-k\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">The dual of an <span class="inline-math">\([n,k,d] \)</span> code is an <span class="inline-math">\([n,n-k,d&#x27;]\)</span> code, where <span class="inline-math">\(d&#x27;\)</span> is not always related to <span class="inline-math">\(d\)</span>. The generator matrix of <span class="inline-math">\(C^\perp\)</span> is the parity check matrix of <span class="inline-math">\(C\)</span>, and visa versa.</div>
@@ -123,7 +119,7 @@ where the Hermitian inner product is <span class="inline-math">\(x\cdot y = \sum
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ref. <a href="#cite-1" class="cite">[2]</a> for constructions of binary self-dual codes of length 60.</span><span class="paragraph-in-list">See <a href="http://www.unilim.fr/pages_perso/philippe.gaborit/SD/index.html" target="_blank" class="href">Tables of Self-Dual Codes</a> for a database of self-dual codes over <span class="inline-math">\(GF(2)\)</span> <span class="textit">Type One/Type Two</span>, <span class="inline-math">\(GF(3)\)</span>, <span class="inline-math">\(GF(4)\)</span> <span class="textit">Euclidean/Hermitian</span>, <span class="inline-math">\(GF(5)\)</span>, and <span class="inline-math">\(GF(7)\)</span> (see also Ref. <a href="#cite-2" class="cite">[3]</a>).</span>
+  <span class="paragraph-in-list">See Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for constructions of binary self-dual codes of length 60.</span><span class="paragraph-in-list">See <a href="http://www.unilim.fr/pages_perso/philippe.gaborit/SD/index.html" target="_blank" class="href-href">Tables of Self-Dual Codes</a> for a database of self-dual codes over <span class="inline-math">\(GF(2)\)</span> <span class="textit">Type One/Type Two</span>, <span class="inline-math">\(GF(3)\)</span>, <span class="inline-math">\(GF(4)\)</span> <span class="textit">Euclidean/Hermitian</span>, <span class="inline-math">\(GF(5)\)</span>, and <span class="inline-math">\(GF(7)\)</span> (see also Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span>
 </div>
 
 
@@ -164,7 +160,7 @@ where the Hermitian inner product is <span class="inline-math">\(x\cdot y = \sum
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Classical weakly self-dual codes can be used to construct Majorana stabilizer codes <a href="#cite-3" class="cite">[4]</a>. The direct relationship between the two codes follows from expressing the Majorana strings as binary vectors – akin to the binary symplectic representation – and observing that the binary stabilizer matrix <span class="inline-math">\(S\)</span> for such a Majorana stabilizer code satisfies <span class="inline-math">\(S\cdot S^T=0\)</span> because it has commuting stabilizers, which is precisely the condition <span class="inline-math">\(G\cdot G^T=0\)</span> on the generator matrix <span class="inline-math">\(G\)</span> of a weakly self-dual classical code. A weakly self-dual classical code <span class="inline-math">\(C\)</span> with parameters <span class="inline-math">\([2N,k,d]\)</span> yields a Majorana stabilizer code with parameters <span class="inline-math">\([[N,N-k,d^\perp]]_f\)</span>, where <span class="inline-math">\(d^\perp\)</span> is the code distance of the dual code <span class="inline-math">\(C^\perp\)</span>.</span></li>
+      &#x2014;&nbsp;Classical weakly self-dual codes can be used to construct Majorana stabilizer codes <a href="#citation-4" class="href-endnote endnote citation">[4]</a>. The direct relationship between the two codes follows from expressing the Majorana strings as binary vectors – akin to the binary symplectic representation – and observing that the binary stabilizer matrix <span class="inline-math">\(S\)</span> for such a Majorana stabilizer code satisfies <span class="inline-math">\(S\cdot S^T=0\)</span> because it has commuting stabilizers, which is precisely the condition <span class="inline-math">\(G\cdot G^T=0\)</span> on the generator matrix <span class="inline-math">\(G\)</span> of a weakly self-dual classical code. A weakly self-dual classical code <span class="inline-math">\(C\)</span> with parameters <span class="inline-math">\([2N,k,d]\)</span> yields a Majorana stabilizer code with parameters <span class="inline-math">\([[N,N-k,d^\perp]]_f\)</span>, where <span class="inline-math">\(d^\perp\)</span> is the code distance of the dual code <span class="inline-math">\(C^\perp\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -216,35 +212,7 @@ url={https://errorcorrectionzoo.org/c/dual}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        M. Harada, “Binary extremal self-dual codes of length 60 and related codes”, Designs, Codes and Cryptography <span class="textbf">86</span>, 1085 (2017). <a href="https://doi.org/10.1007/s10623-017-0380-2" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1706.01694" target="_blank" class="href">1706.01694</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        P. Gaborit and A. Otmani, “Experimental constructions of self-dual codes”, Finite Fields and Their Applications <span class="textbf">9</span>, 372 (2003). <a href="https://doi.org/10.1016/S1071-5797(03)00011-X" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>M. Harada, “Binary extremal self-dual codes of length 60 and related codes”, Designs, Codes and Cryptography <span class="textbf">86</span>, 1085 (2017). <a href="https://doi.org/10.1007/s10623-017-0380-2" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1706.01694" target="_blank" class="href-href">1706.01694</a></dd><dt id="citation-3">[3]</dt><dd>P. Gaborit and A. Otmani, “Experimental constructions of self-dual codes”, Finite Fields and Their Applications <span class="textbf">9</span>, 372 (2003). <a href="https://doi.org/10.1016/S1071-5797(03)00011-X" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href-href">1703.00459</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

@@ -84,11 +84,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Also known as an <span class="textit">analog stabilizer code</span>. Oscillator-into-oscillator stabilizer code encoding <span class="inline-math">\(k\)</span> logical modes into <span class="inline-math">\(n\)</span> physical modes. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> Gaussian stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</p>
-<p>Gaussian stabilizer codes admit continuous stabilizer group of displacements.  This group can equivalently be defined in terms of its Lie algebra. The codespace is equivalently the common <span class="inline-math">\(0\)</span>-eigenvalue eigenspace of the Lie algebra generators, which are mutually commuting linear combinations of oscillator position and momentum operators called <span class="textit">nullifiers</span> <a href="#cite-0" class="cite">[1]</a> or <span class="textit">annihilators</span>. A Gaussian stabilizer code admitting a set a set of nullifiers such that each nullifier consists of either position or momentum operators is called a <span class="textit">Gaussian CSS code</span>.</p></div>
+<div class="sectioncontent code-description"><p>Also known as an <span class="textit">analog stabilizer code</span>. Oscillator-into-oscillator stabilizer code encoding <span class="inline-math">\(k\)</span> logical modes into <span class="inline-math">\(n\)</span> physical modes. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> Gaussian stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</p><p>Gaussian stabilizer codes admit continuous stabilizer group of displacements. This group can equivalently be defined in terms of its Lie algebra. The codespace is equivalently the common <span class="inline-math">\(0\)</span>-eigenvalue eigenspace of the Lie algebra generators, which are mutually commuting linear combinations of oscillator position and momentum operators called <span class="textit">nullifiers</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a> or <span class="textit">annihilators</span>. A Gaussian stabilizer code admitting a set a set of nullifiers such that each nullifier consists of either position or momentum operators is called a <span class="textit">Gaussian CSS code</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Protect against erasures of at most <span class="inline-math">\(d-1\)</span> modes, or arbitrarily large dispalcements on those modes. If an error operator does not commute with a nullifier, then that error is detectable. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</div>
+<div class="sectioncontent code-protection">Protect against erasures of at most <span class="inline-math">\(d-1\)</span> modes, or arbitrarily large dispalcements on those modes. If an error operator does not commute with a nullifier, then that error is detectable. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</div>
 
 
 <!-- Display features -->
@@ -166,7 +165,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gkp-stabilizer">GKP-stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Gaussian stabilizer codes protect logical modes against artbirarily large displacements on a few modes, while GKP-stabilizer codes protect a finite-dimensional logical space against sufficiently small displacements in any number of modes. Encoding in Gaussian-stabilizer (GKP-stabilizer) codes can be done by a Gaussian operation acting on a tensor product of an arbitrary state in the first mode and position states (GKP states) on the remaining modes. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>, so GKP-stabilizer codes can be thought of as Gaussian stabilizer encodings utilizing non-Gaussian GKP resource states.</span></li>
+      &#x2014;&nbsp;Gaussian stabilizer codes protect logical modes against artbirarily large displacements on a few modes, while GKP-stabilizer codes protect a finite-dimensional logical space against sufficiently small displacements in any number of modes. Encoding in Gaussian-stabilizer (GKP-stabilizer) codes can be done by a Gaussian operation acting on a tensor product of an arbitrary state in the first mode and position states (GKP states) on the remaining modes. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>, so GKP-stabilizer codes can be thought of as Gaussian stabilizer encodings utilizing non-Gaussian GKP resource states.</span></li>
 </ul>
 </div>
 
@@ -214,35 +213,7 @@ url={https://errorcorrectionzoo.org/c/analog_stabilizer}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        M. Gu et al., “Quantum computing with continuous-variable clusters”, Physical Review A <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevA.79.062318" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.3233" target="_blank" class="href">0903.3233</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href">1810.00047</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href">quant-ph/0204052</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href">0811.3128</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. Gu et al., “Quantum computing with continuous-variable clusters”, Physical Review A <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevA.79.062318" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0903.3233" target="_blank" class="href-href">0903.3233</a></dd><dt id="citation-2">[2]</dt><dd>C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href-href">1810.00047</a></dd><dt id="citation-3">[3]</dt><dd>J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href-href">quant-ph/0204052</a></dd><dt id="citation-4">[4]</dt><dd>J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href-href">0811.3128</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

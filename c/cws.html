@@ -78,17 +78,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Codeword stabilized (CWS) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Codeword stabilized (CWS) code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p>
-<p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>This family of codes strictly generalizes stabilizer codes. They are usually denoted by <span class="inline-math">\( \mathcal{Q} = (\mathcal{G},\mathcal{C}) \)</span> where <span class="inline-math">\(\mathcal{G}\)</span> is a graph and <span class="inline-math">\(\mathcal{C}\)</span> is a <span class="inline-math">\( (n,K,d) \)</span> binary classical code. From the graph we form the unique graph state (stabilizer state) <span class="inline-math">\( |G \rangle \)</span>. From the classical code we form Pauli <span class="inline-math">\(Z\)</span>-type operators <span class="inline-math">\( W_i = Z^{c_{i,1}} \otimes \cdots \otimes Z^{c_{i,n}} \)</span>, where <span class="inline-math">\(c_{i,j} \)</span> is the <span class="inline-math">\(j\)</span>-th bit of the <span class="inline-math">\(i\)</span>-th classical codeword. The CWS codewords are then <span class="inline-math">\( | i \rangle =  W_i | G \rangle \)</span>.</p><p>There is an alternative description to the one above that is locally Clifford-equivalent. In particular, we can describe CWS codes as <span class="inline-math">\( \mathcal{Q} = (S,\mathcal{W})\)</span> where <span class="inline-math">\(S\)</span> is a stabilizer group and <span class="inline-math">\( \mathcal{W} = \{ w_\ell \}_{\ell = 1}^K \)</span> is a family of <span class="inline-math">\(K\)</span> <span class="inline-math">\(n\)</span>-qubit Pauli strings. We then form CWS codeswords as <span class="inline-math">\( | i \rangle = w_i | S \rangle \)</span>, where <span class="inline-math">\( | S \rangle \)</span> is the (unique) stabilizer state of <span class="inline-math">\(S\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>. The <a href="/c/qubits_into_qubits" class="ref">diagonal distance</a> is upper bounded by <span class="inline-math">\(\delta + 1\)</span>, where <span class="inline-math">\(\delta\)</span> is the minimum degree of <span class="inline-math">\(\mathcal{G}\)</span>. Computing the distance is generally NP-complete, and is NP-hard for non-degenerate codes <a href="#cite-1" class="cite">[2]</a>.</div>
+<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(\mathcal{Q} = ( \mathcal{G},\mathcal{C}) \)</span> is upper bounded by the distance of the classical code <span class="inline-math">\(\mathcal{C} \)</span>. The <a href="/c/qubits_into_qubits" class="href-ref ref-code">diagonal distance</a> is upper bounded by <span class="inline-math">\(\delta + 1\)</span>, where <span class="inline-math">\(\delta\)</span> is the minimum degree of <span class="inline-math">\(\mathcal{G}\)</span>. Computing the distance is generally NP-complete, and is NP-hard for non-degenerate codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -166,7 +165,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/spacetime">Spacetime code (STC)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;CWS codes have been considered in the context of spacetime replication of quantum data <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>, while STCs are designed to replicate classical data.</span></li>
+      &#x2014;&nbsp;CWS codes have been considered in the context of spacetime replication of quantum data <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>, while STCs are designed to replicate classical data.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/xp_stabilizer">XP stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -218,35 +217,7 @@ url={https://errorcorrectionzoo.org/c/cws}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        A. Cross et al., “Codeword Stabilized Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 433 (2009). <a href="https://doi.org/10.1109/TIT.2008.2008136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0708.1021" target="_blank" class="href">0708.1021</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Upendra Kapshikar and Srijita Kundu, “Diagonal distance of quantum codes and hardness of the minimum distance problem”. <a href="https://arxiv.org/abs/2203.04262" target="_blank" class="href">2203.04262</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        P. Hayden and A. May, “Summoning information in spacetime, or where and when can a qubit be?”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">49</span>, 175304 (2016). <a href="https://doi.org/10.1088/1751-8113/49/17/175304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1210.0913" target="_blank" class="href">1210.0913</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href">1601.02544</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Cross et al., “Codeword Stabilized Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 433 (2009). <a href="https://doi.org/10.1109/TIT.2008.2008136" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0708.1021" target="_blank" class="href-href">0708.1021</a></dd><dt id="citation-2">[2]</dt><dd>Upendra Kapshikar and Srijita Kundu, “Diagonal distance of quantum codes and hardness of the minimum distance problem”. <a href="https://arxiv.org/abs/2203.04262" target="_blank" class="href-href">2203.04262</a></dd><dt id="citation-3">[3]</dt><dd>P. Hayden and A. May, “Summoning information in spacetime, or where and when can a qubit be?”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">49</span>, 175304 (2016). <a href="https://doi.org/10.1088/1751-8113/49/17/175304" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1210.0913" target="_blank" class="href-href">1210.0913</a></dd><dt id="citation-4">[4]</dt><dd>P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href-href">1601.02544</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

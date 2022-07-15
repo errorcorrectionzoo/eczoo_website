@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Subsystem codes
- [error correction zoo]
+    Subsystem codes  [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -49,8 +48,7 @@
 
   <main id="main">
 
-Here is a list of quantum <a href="/c/oecc" class="ref">subsystem codes</a>.
-
+Here is a list of quantum <a href="/c/oecc" class="href-ref ref-code">subsystem codes</a>. 
 <table class="codelistpage-table xtra-xtra-stretch">
 <thead>
 <tr>
@@ -61,18 +59,14 @@ Here is a list of quantum <a href="/c/oecc" class="ref">subsystem codes</a>.
 <tbody>
 <tr>
   <td class="top left"><a href="/c/bacon_shor">Bacon-Shor code</a></td>
-  <td class="textit">CSS subsystem stabilizer code defined on an <span class="inline-math">\(m_1 \times m_2\)</span> lattice of qubits. It is said to be symmetric when <span class="inline-math">\(m_1=m_2\)</span>. The <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type stabilizers defined as <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> operators acting on all qubits on adjacent columns and rows, respectively. Let <span class="inline-math">\(O_{i,j}\)</span> denote an operator acting on the qubit at a position <span class="inline-math">\((i,j)\)</span> on the lattice, with <span class="inline-math">\(i\in\{0,1,\ldots ,m_1-1\}\)</span> and <span class="inline-math">\(j\in\{0,1,\ldots,m_2-1\}\)</span>. The code&#x27;s stabilizer group is
-<span class="display-math env-align">\begin{align}
+  <td class="textit">CSS subsystem stabilizer code defined on an <span class="inline-math">\(m_1 \times m_2\)</span> lattice of qubits. It is said to be symmetric when <span class="inline-math">\(m_1=m_2\)</span>. The <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type stabilizers defined as <span class="inline-math">\(X\)</span> and <span class="inline-math">\(Z\)</span> operators acting on all qubits on adjacent columns and rows, respectively. Let <span class="inline-math">\(O_{i,j}\)</span> denote an operator acting on the qubit at a position <span class="inline-math">\((i,j)\)</span> on the lattice, with <span class="inline-math">\(i\in\{0,1,\ldots ,m_1-1\}\)</span> and <span class="inline-math">\(j\in\{0,1,\ldots,m_2-1\}\)</span>. The code&#x27;s stabilizer group is <span class="display-math env-align">\begin{align}
 \mathsf{S}=\langle X_{i,*}X_{i+1,*},Z_{*,j}Z_{*,j+1}\rangle~,
-\end{align}</span>
-with generators expressed as products of nearest-neightbour 2-qubit gauge operators,
-<span class="display-math env-align">\begin{align}
+\end{align}</span> with generators expressed as products of nearest-neightbour 2-qubit gauge operators, <span class="display-math env-align">\begin{align}
 \begin{split}
 X_{i,*}X_{i+1,*}= \bigotimes_{k=0}^{m_2-1} X_{i,k}X_{i+1,k} \\
 Z_{*,j}Z_{*,j+1}=\bigotimes_{k=0}^{m_1-1} Z_{k,j}Z_{k,j+1}~.
 \end{split}
-\end{align}</span>
-Syndrome extraction can be done by measuring these gauge operators, which are on fewer qubits and local.</td>
+\end{align}</span> Syndrome extraction can be done by measuring these gauge operators, which are on fewer qubits and local.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/bravyi_bacon_shor">Bravyi-Bacon-Shor (BBS) code</a></td>
@@ -84,17 +78,13 @@ Syndrome extraction can be done by measuring these gauge operators, which are on
 </tr>
 <tr>
   <td class="top left"><a href="/c/subsystem_color">Subsystem color code</a></td>
-  <td class="textit">Stub.
-</td>
+  <td class="textit">Stub. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/oecc">Subsystem quantum error-correcting code</a></td>
-  <td class="textit">A subsystem code, also known as an <span class="textit">operator QECC</span> or <span class="textit">gauge QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>, as
-<span class="display-math env-align">\begin{align}
+  <td class="textit">A subsystem code, also known as an <span class="textit">operator QECC</span> or <span class="textit">gauge QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>, as <span class="display-math env-align">\begin{align}
 \mathsf{H}=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}~.
-\end{align}</span>
-Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code allows for a wider variety of encoding procedures, fault-tolerant logical operations, and efficient error-correction protocols.
-</td>
+\end{align}</span> Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code allows for a wider variety of encoding procedures, fault-tolerant logical operations, and efficient error-correction protocols. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/subsystem_stabilizer">Subsystem qubit stabilizer code</a></td>
@@ -104,6 +94,9 @@ Following an error, it is sufficient to revert back to the original state modulo
 </table>
 
 
+
+<!-- endnotes -->
+<!-- no-endnotes -->
 
 
   </main><!-- #main -->

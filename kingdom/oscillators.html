@@ -56,7 +56,7 @@
 <div class="ecc-code" id="ecc_oscillators">
   <span class="short-code-name"><a href="/c/oscillators">Bosonic code</a></span>
   <span class="short-code-description">Also called an <span class="textit">oscillator</span> or a <span class="textit">continuous-variable (CV)</span> code. Encodes logical Hilbert space, finite- or infinite-dimensional, into a physical Hilbert space that contains at least one <span class="textit">oscillator</span> (a.k.a. <span class="textit">bosonic mode</span> or <span class="textit">qumode</span>). States of a single oscillator are elements of the Hilbert space of <span class="inline-math">\(\ell^2\)</span>-normalizable functions on <span class="inline-math">\(\mathbb{R}\)</span>). Ideal codewords may not be normalizable because the space is infinite-dimensional, so approximate versions have to be constructed in practice.</span>
-  <span class="short-code-info">Protection: An error set relevant to <a href="/c/fock_state" class="ref">Fock-state bosonic</a> codes is the set of loss operators associated with the <span class="textit">amplitude damping</span> (a.k.a. <span class="textit">photon loss</span> or <span class="textit">attenuation</span>) noise channel, a common form of physical noise in bosonic systems. For a single mode, loss operators are proportional to powers of the mode&#x27;s annihilation operator <span class="inline-math">\(a=(\hat{x}+i\hat{p})/\sqrt{2}\)</span>, where <span class="inline-math">\(\hat x\)</span> (<span class="inline-math">\(\hat p\)</span>) is the mode&#x27;s position (momentum) operator, and with the power signifying the number of particles lost during the error. For multiple modes, error set elements are tensor products of elements of the single-mode error set. A definition of distance associated with this error set is the minimum weight of a loss error that implements a nontrivial logical operation in the code.</span>
+  <span class="short-code-info">Protection: An error set relevant to <a href="/c/fock_state" class="href-ref ref-code">Fock-state bosonic</a> codes is the set of loss operators associated with the <span class="textit">amplitude damping</span> (a.k.a. <span class="textit">photon loss</span> or <span class="textit">attenuation</span>) noise channel, a common form of physical noise in bosonic systems. For a single mode, loss operators are proportional to powers of the mode&#x27;s annihilation operator <span class="inline-math">\(a=(\hat{x}+i\hat{p})/\sqrt{2}\)</span>, where <span class="inline-math">\(\hat x\)</span> (<span class="inline-math">\(\hat p\)</span>) is the mode&#x27;s position (momentum) operator, and with the power signifying the number of particles lost during the error. For multiple modes, error set elements are tensor products of elements of the single-mode error set. A definition of distance associated with this error set is the minimum weight of a loss error that implements a nontrivial logical operation in the code.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc">Quantum error-correcting code (QECC)</a>.
@@ -73,7 +73,7 @@
 
 
 <div class="ecc-code" id="ecc_oscillator_stabilizer">
-  <span class="short-code-name"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></span>
+  <span class="short-code-name"><a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></span>
   <span class="short-code-description">Also known as a <span class="textit">continuous-variable (CV) stabilizer code</span>. Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting displacement operators. Displacements form the stabilizers of the code, and have continuous eigenvalues, in contrast with the discrete set of eigenvalues of qubit stabilizers. As a result, exact codewords are non-normalizable, so approximate constructions have to be considered.</span>
   <span class="short-code-info">Protection: Protective properties can be delineated in terms of the nullifiers or displacements, and the most natural noise model for such codes is displacement noise. If an error operator does not commute with a stabilizer group element, then that error is detectable. Oscillator-into-oscillator stabilizer codes protect against erasures of a subset of modes, while GKP codes protect against sufficiently small displacements in any number of modes.</span>
   <span class="short-code-parents">
@@ -110,7 +110,7 @@
 
 
 <div class="ecc-code" id="ecc_oscillators_into_oscillators">
-  <span class="short-code-name"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a><span class="code-introduced"><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
   <span class="short-code-description">Also called an <span class="textit">analog quantum code</span>. Encodes <span class="inline-math">\(k\)</span> bosonic modes into <span class="inline-math">\(n\)</span> bosonic modes.</span>
   <span class="short-code-parents">
     Parents:
@@ -148,7 +148,7 @@
 <div class="ecc-code" id="ecc_analog_stabilizer">
   <span class="short-code-name"><a href="/c/analog_stabilizer">Gaussian stabilizer code</a></span>
   <span class="short-code-description">Also known as an <span class="textit">analog stabilizer code</span>. Oscillator-into-oscillator stabilizer code encoding <span class="inline-math">\(k\)</span> logical modes into <span class="inline-math">\(n\)</span> physical modes. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> Gaussian stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</span>
-  <span class="short-code-info">Protection: Protect against erasures of at most <span class="inline-math">\(d-1\)</span> modes, or arbitrarily large dispalcements on those modes. If an error operator does not commute with a nullifier, then that error is detectable. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a>.</span>
+  <span class="short-code-info">Protection: Protect against erasures of at most <span class="inline-math">\(d-1\)</span> modes, or arbitrarily large dispalcements on those modes. If an error operator does not commute with a nullifier, then that error is detectable. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a>,       <a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator code</a>.
@@ -165,9 +165,9 @@
 
 
 <div class="ecc-code" id="ecc_multimodegkp">
-  <span class="short-code-name"><a href="/c/multimodegkp">Multi-mode GKP code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a><a href="#cite-7" class="cite">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/multimodegkp">Multi-mode GKP code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a></span></span>
   <span class="short-code-description">Generalization of the GKP code to <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators.</span>
-  <span class="short-code-info">Protection: The level of protection against displacement errors is quantified by the Euclidean code distance <span class="inline-math">\(\Delta=\min_{x\in {\mathcal{L}}^{\perp}\setminus {\mathcal{L}}} \|x\|_2\)</span> <a href="#cite-8" class="cite">[9]</a>.</span>
+  <span class="short-code-info">Protection: The level of protection against displacement errors is quantified by the Euclidean code distance <span class="inline-math">\(\Delta=\min_{x\in {\mathcal{L}}^{\perp}\setminus {\mathcal{L}}} \|x\|_2\)</span> <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/oscillator_stabilizer">Bosonic stabilizer code</a>.
@@ -184,7 +184,7 @@
 
 
 <div class="ecc-code" id="ecc_gkp-cluster-state">
-  <span class="short-code-name"><a href="/c/gkp-cluster-state">GKP cluster-state concatenated code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/gkp-cluster-state">GKP cluster-state concatenated code</a><span class="code-introduced"><a href="#citation-10" class="href-endnote endnote citation">[10]</a></span></span>
   <span class="short-code-description">Multi-mode code encoding logical qubits into a cluster-state stabilizer code concatenated with a single-mode GKP code. Provides a way to perform a continuous-variable (CV) analogue of fault-tolerant measurement-based qubit computation.</span>
   <span class="short-code-parents">
     Parents:
@@ -198,7 +198,7 @@
 
 
 <div class="ecc-code" id="ecc_gkp-stabilizer">
-  <span class="short-code-name"><a href="/c/gkp-stabilizer">GKP-stabilizer code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a></span></span>
+  <span class="short-code-name"><a href="/c/gkp-stabilizer">GKP-stabilizer code</a><span class="code-introduced"><a href="#citation-11" class="href-endnote endnote citation">[11]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -212,7 +212,7 @@
 
 
 <div class="ecc-code" id="ecc_very-small-logical-qubit">
-  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/very-small-logical-qubit">Very small logical qubit (VSLQ) code</a><span class="code-introduced"><a href="#citation-12" class="href-endnote endnote citation">[12]</a></span></span>
   <span class="short-code-description">The two logical codewords are <span class="inline-math">\(|\pm\rangle \propto (|0\rangle\pm|2\rangle)(|0\rangle\pm|2\rangle)|0\rangle|0\rangle\)</span>, where the total Hilbert space is the tensor product of two qudits (whose ground states <span class="inline-math">\(|0\rangle\)</span> and second excited states <span class="inline-math">\(|2\rangle\)</span> are used in the codewords) and two oscillators. In the original proposal for implementation, the single logical qubit is given by the two lowest energy states of a circuit composed of two transmons coupled to two lossy resonators, but the resonators can also be thought of as qubits since only a few low-lying Fock states are used by the code.</span>
   <span class="short-code-info">Protection: Passively protects against single photon loss.</span>
   <span class="short-code-parents">
@@ -229,7 +229,7 @@
 <div class="ecc-code" id="ecc_fock_state">
   <span class="short-code-name"><a href="/c/fock_state">Fock-state bosonic code</a></span>
   <span class="short-code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</span>
-  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</span>
+  <span class="short-code-info">Protection: Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="href-ref ref-code">Chuang-Leung-Yamamoto codes</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qudits_into_oscillators">Qudit-into-oscillator code</a>.
@@ -264,14 +264,11 @@
 
 
 <div class="ecc-code" id="ecc_chuang-leung-yamamoto">
-  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
-  <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="ref">stabilizer code</a> notation.</span>
-  <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>,
-<span class="display-math env-align">\begin{align}
+  <span class="short-code-name"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a></span></span>
+  <span class="short-code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="href-ref ref-code">stabilizer code</a> notation.</span>
+  <span class="short-code-info">Protection: Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>, <span class="display-math env-align">\begin{align}
 \text{Spacing}(u,v) = \frac{1}{2}\sum_{i=1}^n |u_i - v_i|,
-\end{align}</span>
-the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords.
-</span>
+\end{align}</span> the code distance <span class="inline-math">\(d\)</span> can be defined as the minimial spacing between Fock states making up the codewords. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/fock_state">Fock-state bosonic code</a>,       <a href="/c/constant_excitation">Constant-excitation (CE) code</a>.
@@ -288,9 +285,8 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_braunstein">
-  <span class="short-code-name"><a href="/c/braunstein">Braunstein five-mode code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([[5,1,3]]_{\mathbb{R}}\)</span> Gaussian stabilizer analogue of the five-qubit perfect code.
-</span>
+  <span class="short-code-name"><a href="/c/braunstein">Braunstein five-mode code</a><span class="code-introduced"><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([[5,1,3]]_{\mathbb{R}}\)</span> Gaussian stabilizer analogue of the five-qubit perfect code. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/analog_stabilizer">Gaussian stabilizer code</a>.
@@ -303,8 +299,8 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_homological_cv">
-  <span class="short-code-name"><a href="/c/homological_cv">Homological bosonic code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/analog_stabilizer" class="ref">Gaussian CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex. Relevant to the study of spacetime replication of quantum information <a href="#cite-14" class="cite">[15]</a>.</span>
+  <span class="short-code-name"><a href="/c/homological_cv">Homological bosonic code</a><span class="code-introduced"><a href="#citation-14" class="href-endnote endnote citation">[14]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([[n,1]]_{\mathbb{R}}\)</span> <a href="/c/analog_stabilizer" class="href-ref ref-code">Gaussian CSS code</a> defined using homological structres associated with an <span class="inline-math">\(n-1\)</span> simplex. Relevant to the study of spacetime replication of quantum information <a href="#citation-15" class="href-endnote endnote citation">[15]</a>.</span>
   <span class="short-code-info">Protection: Protects against certain types of erasure errors (depending on the specific dimension). Certain constructions also protect arbitrary sized errors on multiple photon states.</span>
   <span class="short-code-parents">
     Parents:
@@ -318,9 +314,8 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_lloyd_slotine">
-  <span class="short-code-name"><a href="/c/lloyd_slotine">Lloyd-Slotine nine-mode code</a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([[9,1,3]]_{\mathbb{R}}\)</span> Gaussian CSS analogue of Shor&#x27;s nine-qubit code.
-</span>
+  <span class="short-code-name"><a href="/c/lloyd_slotine">Lloyd-Slotine nine-mode code</a><span class="code-introduced"><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([[9,1,3]]_{\mathbb{R}}\)</span> Gaussian CSS analogue of Shor&#x27;s nine-qubit code. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/analog_stabilizer">Gaussian stabilizer code</a>.
@@ -333,9 +328,9 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_gkp">
-  <span class="short-code-name"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
   <span class="short-code-description">Bosonic qudit-into-oscillator code whose stabilizers are oscillator displacement operators <span class="inline-math">\(\hat{S}_q(2\alpha)=e^{-2i\alpha \hat{p}}\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)=e^{2i\beta \hat{x}}\)</span>. To ensure <span class="inline-math">\(\hat{S}_q(2\alpha)\)</span> and <span class="inline-math">\(\hat{S}_p(2\beta)\)</span> generate a stabilizer group that is Abelian, there is another constraint that <span class="inline-math">\(\alpha\beta=2k\pi\)</span> where <span class="inline-math">\(k\)</span> is an integer. Codewords can be expressed as equal weight superpositions of coherent states on an infinite lattice, such as a square lattice in phase space with spatial period <span class="inline-math">\(2\sqrt{\pi}\)</span>. The exact GKP state is non-normalizable, so approximate constructs have to be considered.</span>
-  <span class="short-code-info">Protection: For stabilizer <span class="inline-math">\(\hat{S}_q(2\alpha),\hat{S}_p(2\beta)\)</span>, code can correct displacement errors up to <span class="inline-math">\(\frac{\alpha}{2}\)</span> in the <span class="inline-math">\(q\)</span>-direction and <span class="inline-math">\(\frac{\beta}{2}\)</span> at <span class="inline-math">\(p\)</span>-direction. Approximately protects against photon loss errors <a href="#cite-15" class="cite">[16]</a>, outperforming most other codes designed to explicitly protect against loss <a href="#cite-16" class="cite">[17]</a>. Very sensitive to dephasing errors <a href="#cite-17" class="cite">[18]</a>. A biased-noise GKP error correcting code can be prepared by choosing <span class="inline-math">\(\alpha\neq \beta\)</span>.</span>
+  <span class="short-code-info">Protection: For stabilizer <span class="inline-math">\(\hat{S}_q(2\alpha),\hat{S}_p(2\beta)\)</span>, code can correct displacement errors up to <span class="inline-math">\(\frac{\alpha}{2}\)</span> in the <span class="inline-math">\(q\)</span>-direction and <span class="inline-math">\(\frac{\beta}{2}\)</span> at <span class="inline-math">\(p\)</span>-direction. Approximately protects against photon loss errors <a href="#citation-16" class="href-endnote endnote citation">[16]</a>, outperforming most other codes designed to explicitly protect against loss <a href="#citation-17" class="href-endnote endnote citation">[17]</a>. Very sensitive to dephasing errors <a href="#citation-18" class="href-endnote endnote citation">[18]</a>. A biased-noise GKP error correcting code can be prepared by choosing <span class="inline-math">\(\alpha\neq \beta\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/single-mode">Single-mode bosonic code</a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>.
@@ -352,7 +347,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_bosonic_rotation">
-  <span class="short-code-name"><a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
+  <span class="short-code-name"><a href="/c/bosonic_rotation">Bosonic rotation code</a><span class="code-introduced"><a href="#citation-19" class="href-endnote endnote citation">[19]</a></span></span>
   <span class="short-code-description">A single-mode Fock-state bosonic code whose codespace is preserved by a phase-space rotation by a multiple of <span class="inline-math">\(2\pi/N\)</span> for some <span class="inline-math">\(N\)</span>. The rotation symmetry ensures that encoded states have support only on every <span class="inline-math">\(N^{\textrm{th}}\)</span> Fock state. For example, single-mode Fock-state codes for <span class="inline-math">\(N=2\)</span> encoding a qubit admit basis states that are, respectively, supported on Fock state sets <span class="inline-math">\(\{|0\rangle,|4\rangle,|8\rangle,\cdots\}\)</span> and <span class="inline-math">\(\{|2\rangle,|6\rangle,|10\rangle,\cdots\}\)</span>.</span>
   <span class="short-code-info">Protection: Losses or gains less than <span class="inline-math">\(N\)</span> are detectable. Dephasing rotations <span class="inline-math">\(\exp(\mathrm{i}\theta \hat{n})\)</span> can be detected whenever <span class="inline-math">\(\theta\)</span> is roughly less than <span class="inline-math">\(\pi/N\)</span>. To get precise bounds on <span class="inline-math">\(\theta\)</span>, one needs to analyze the particular bosonic rotation code.</span>
   <span class="short-code-parents">
@@ -367,7 +362,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_paircat">
-  <span class="short-code-name"><a href="/c/paircat">Pair-cat code</a><span class="code-introduced"><a href="#cite-19" class="cite">[20]</a></span></span>
+  <span class="short-code-name"><a href="/c/paircat">Pair-cat code</a><span class="code-introduced"><a href="#citation-20" class="href-endnote endnote citation">[20]</a></span></span>
   <span class="short-code-description">Two- or higher-mode extension of cat codes whose codewords are right eigenstates of powers of products of the modes&#x27; lowering operators.</span>
   <span class="short-code-info">Protection: The occupation-number differences form the syndromes, as opposed to the photon number parity for the single-mode cat code. Any loss even combination that changes the relative differences of photons between modes is a detectable error. The two-mode two-legged paircat code can detect arbitrary single-mode losses, but cannot detect simultaneous photon loss in both modes. An <span class="inline-math">\(n\)</span>-mode code can detect any loss errors of at most <span class="inline-math">\(n-1\)</span> weight. Higher numbers of legs correspond to more pair-coherent state present in the codewords, and allow for protection against simulataneous losses.</span>
   <span class="short-code-parents">
@@ -382,9 +377,8 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_constant_excitation_permutation_invariant">
-  <span class="short-code-name"><a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a><span class="code-introduced"><a href="#cite-20" class="cite">[21]</a></span></span>
-  <span class="short-code-description">Stub.
-</span>
+  <span class="short-code-name"><a href="/c/constant_excitation_permutation_invariant">Constant-excitation permutation-invariant code</a><span class="code-introduced"><a href="#citation-21" class="href-endnote endnote citation">[21]</a></span></span>
+  <span class="short-code-description">Stub. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/permutation_invariant">Permutation-invariant code</a>,       <a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a>.
@@ -397,7 +391,7 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_numopt">
-  <span class="short-code-name"><a href="/c/numopt">Numerically optimized code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a><a href="#cite-16" class="cite">[17]</a></span></span>
+  <span class="short-code-name"><a href="/c/numopt">Numerically optimized code</a><span class="code-introduced"><a href="#citation-22" class="href-endnote endnote citation">[22]</a><a href="#citation-17" class="href-endnote endnote citation">[17]</a></span></span>
   <span class="short-code-description">Bosonic Fock-state code obtained from a numerical minimization procedure, e.g., from enforcing error-correction criteria against some number of losses while minimizing average occupation number.</span>
   <span class="short-code-info">Protection: Number phase codes protect from a finite number of loss events. However, unlike Fock-state codes, their protection does not stem from a Fock-state spacing.</span>
   <span class="short-code-parents">
@@ -408,18 +402,13 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_binomial">
-  <span class="short-code-name"><a href="/c/binomial">Binomial code</a><span class="code-introduced"><a href="#cite-21" class="cite">[22]</a></span></span>
-  <span class="short-code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-16" class="cite">[17]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
-  <span class="display-math env-align">\begin{align}
+  <span class="short-code-name"><a href="/c/binomial">Binomial code</a><span class="code-introduced"><a href="#citation-22" class="href-endnote endnote citation">[22]</a></span></span>
+  <span class="short-code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#citation-17" class="href-endnote endnote citation">[17]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where <span class="display-math env-align">\begin{align}
     |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
-  \end{align}</span>
-  The set <span class="inline-math">\( \ket{i} \mid i \in \mathbb{N}\)</span> is the set of Fock states. Also, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
-  <span class="display-math env-align">\begin{align}
+  \end{align}</span> The set <span class="inline-math">\( \ket{i} \mid i \in \mathbb{N}\)</span> is the set of Fock states. Also, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as <span class="display-math env-align">\begin{align}
     \binom{n}{m}_1 \equiv 1,\quad \binom{n}{m}_q \equiv \sum_{k=0}^n \binom{n}{k}\binom{k}{m-k}_{q-1}.
-  \end{align}</span>
-  The extended binomial coefficients <span class="inline-math">\( \binom{n}{m}_q \)</span> are also the coefficients of <span class="inline-math">\( x^m \)</span> in the polynomial <span class="inline-math">\( (1 + x + \cdots + x^{q-1})^n \)</span>.
-</span>
-  <span class="short-code-info">Protection: An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>.  Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</span>
+  \end{align}</span> The extended binomial coefficients <span class="inline-math">\( \binom{n}{m}_q \)</span> are also the coefficients of <span class="inline-math">\( x^m \)</span> in the polynomial <span class="inline-math">\( (1 + x + \cdots + x^{q-1})^n \)</span>. </span>
+  <span class="short-code-info">Protection: An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>. Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.
@@ -436,10 +425,9 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_cat">
-  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#cite-22" class="cite">[23]</a><a href="#cite-23" class="cite">[24]</a></span></span>
-  <span class="short-code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>.
-</span>
-  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=0\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#cite-24" class="cite">[25]</a> or squeezing <a href="#cite-25" class="cite">[26]</a> that add such protection.</span>
+  <span class="short-code-name"><a href="/c/cat">Cat code</a><span class="code-introduced"><a href="#citation-23" class="href-endnote endnote citation">[23]</a><a href="#citation-24" class="href-endnote endnote citation">[24]</a></span></span>
+  <span class="short-code-description">Rotation-symmetric bosonic Fock-state code encoding a <span class="inline-math">\(q\)</span>-dimensional qudit into one oscillator. Codewords for a qubit code (<span class="inline-math">\(q=2\)</span>) consist of a coherent state <span class="inline-math">\(|\alpha\rangle\)</span> projected onto a subspace of Fock state number modulo <span class="inline-math">\(2(S+1)\)</span>. The logical state <span class="inline-math">\(|\overline{0}\rangle\)</span> is in the <span class="inline-math">\(\{|0\rangle , |2(S+1)\rangle , |4(S+1)\rangle \cdots \}\)</span> Fock-state subspace, while <span class="inline-math">\(|\overline{1}\rangle\)</span> is in the <span class="inline-math">\(\{|(S+1)\rangle, |3(S+1)\rangle , |5(S+1)\rangle , |7(S+1)\rangle \cdots \}\)</span> subspace. An alternative basis, valid for for general <span class="inline-math">\(q\)</span> and <span class="inline-math">\(\alpha\neq 0\)</span>, consists of <span class="inline-math">\(q\)</span> coherent states distributed equidistanctly around a circle in phase space of radius <span class="inline-math">\(\alpha\)</span>. </span>
+  <span class="short-code-info">Protection: Due to the spacing between sets of Fock states, the distance between two distinct logical states is <span class="inline-math">\(d=S+1\)</span>. Hence, this code is able to detect <span class="inline-math">\(S\)</span>-photon loss error. <span class="textit">Two-legged cat codes</span> (<span class="inline-math">\(S=0\)</span>) do not protect against loss events, but there exist modifications based on sign alternation <a href="#citation-25" class="href-endnote endnote citation">[25]</a> or squeezing <a href="#citation-26" class="href-endnote endnote citation">[26]</a> that add such protection.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_rotation">Bosonic rotation code</a>.
@@ -456,12 +444,10 @@ the code distance <span class="inline-math">\(d\)</span> can be defined as the m
 
 
 <div class="ecc-code" id="ecc_number_phase">
-  <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#cite-18" class="cite">[19]</a></span></span>
-  <span class="short-code-description">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#cite-26" class="cite">[27]</a>,
-<span class="display-math env-align">\begin{align}
+  <span class="short-code-name"><a href="/c/number_phase">Number-phase code</a><span class="code-introduced"><a href="#citation-19" class="href-endnote endnote citation">[19]</a></span></span>
+  <span class="short-code-description">Bosonic rotation code consisting of superpositions of Pegg-Barnett phase states <a href="#citation-27" class="href-endnote endnote citation">[27]</a>, <span class="display-math env-align">\begin{align}
 |\phi\rangle \equiv \frac{1}{\sqrt{2\pi}}\sum_{n=0}^{\infty} \mathrm{e}^{\mathrm{i} n \phi} \ket{n}.
-\end{align}</span>
-Since phase states and thus the ideal codewords are not normalizable, approximate versions need to be constructed. The codes&#x27; key feature is that, in the ideal case, phase measurement has zero uncertainty, making it a good canditate for a syndrome measurement.</span>
+\end{align}</span> Since phase states and thus the ideal codewords are not normalizable, approximate versions need to be constructed. The codes&#x27; key feature is that, in the ideal case, phase measurement has zero uncertainty, making it a good canditate for a syndrome measurement.</span>
   <span class="short-code-info">Protection: Number-phase codes of order <span class="inline-math">\(N\)</span> detect up to <span class="inline-math">\(N\)</span> photon loss or gain errors, and dephasing up to <span class="inline-math">\(\theta = \pi/N\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -479,7 +465,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
 
 
 <div class="ecc-code" id="ecc_dual_rail">
-  <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#cite-27" class="cite">[28]</a></span></span>
+  <span class="short-code-name"><a href="/c/dual_rail">Dual-rail code</a><span class="code-introduced"><a href="#citation-28" class="href-endnote endnote citation">[28]</a></span></span>
   <span class="short-code-description">Two-mode code encoding a logical qubit in Fock states with one excitation. The logical-zero state is represented by <span class="inline-math">\(|01\rangle\)</span>, while the logical-one state is represented by <span class="inline-math">\(|10\rangle\)</span>.</span>
   <span class="short-code-info">Protection: This is an error-detecting code against one photon loss event; it is often used in photonic quantum devices because of its ease of realization. A single loss event can be detected because, after the loss occurs, the output state <span class="inline-math">\(|00\rangle\)</span> is orthogonal to the codespace. Recovery is not possible, so a successful run of a quantum circuit is conditioned on not losing a photon during the circuit.</span>
   <span class="short-code-parents">
@@ -490,7 +476,7 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
 
 
 <div class="ecc-code" id="ecc_wasilewski-banaszek">
-  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#cite-28" class="cite">[29]</a></span></span>
+  <span class="short-code-name"><a href="/c/wasilewski-banaszek">Wasilewski-Banaszek code</a><span class="code-introduced"><a href="#citation-29" class="href-endnote endnote citation">[29]</a></span></span>
   <span class="short-code-description">Three-oscillator Fock-state code encoding a single logical qubit using codewords <span class="display-math env-align">\begin{align} \begin{split} |\overline{0}\rangle &amp;= \frac{1}{\sqrt{3}}(|003\rangle+|030\rangle+|300\rangle)\\ |\overline{1}\rangle &amp;= |111\rangle \end{split}. \end{align}</span></span>
   <span class="short-code-info">Protection: Protects against single photon loss in any one mode.</span>
   <span class="short-code-parents">
@@ -499,158 +485,8 @@ Since phase states and thus the ideal codewords are not normalizable, approximat
   </span>
 </div>
 
-
-  <div id="endnotes" class="">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Richard L. Barnes, “Stabilizer Codes for Continuous-variable Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0405064" target="_blank" class="href">quant-ph/0405064</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href">quant-ph/9711021</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        S. L. Braunstein, “Error Correction for Continuous Quantum Variables”, Physical Review Letters <span class="textbf">80</span>, 4084 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4084" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="href">quant-ph/9711049</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href">1810.00047</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href">quant-ph/0204052</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href">0811.3128</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href">quant-ph/0008040</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href">quant-ph/0105058</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-8">[9]</dt>
-      <dd>
-        J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href">2109.14645</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-9">[10]</dt>
-      <dd>
-        N. C. Menicucci, “Fault-Tolerant Measurement-Based Quantum Computing with Continuous-Variable Cluster States”, Physical Review Letters <span class="textbf">112</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.112.120504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1310.7596" target="_blank" class="href">1310.7596</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-10">[11]</dt>
-      <dd>
-        K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href">1903.12615</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-11">[12]</dt>
-      <dd>
-        E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-12">[13]</dt>
-      <dd>
-        I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-13">[14]</dt>
-      <dd>
-        P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href">1601.02544</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-14">[15]</dt>
-      <dd>
-        P. Hayden and A. May, “Summoning information in spacetime, or where and when can a qubit be?”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">49</span>, 175304 (2016). <a href="https://doi.org/10.1088/1751-8113/49/17/175304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1210.0913" target="_blank" class="href">1210.0913</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-15">[16]</dt>
-      <dd>
-        B. M. Terhal and D. Weigand, “Encoding a qubit into a cavity mode in circuit QED using phase estimation”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.012315" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.05033" target="_blank" class="href">1506.05033</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-16">[17]</dt>
-      <dd>
-        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-17">[18]</dt>
-      <dd>
-        A. L. Grimsmo and S. Puri, “Quantum Error Correction with the Gottesman-Kitaev-Preskill Code”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.020101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2106.12989" target="_blank" class="href">2106.12989</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-18">[19]</dt>
-      <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-19">[20]</dt>
-      <dd>
-        V. V. Albert et al., “Pair-cat codes: autonomous error-correction with low-order nonlinearity”, Quantum Science and Technology <span class="textbf">4</span>, 035007 (2019). <a href="https://doi.org/10.1088/2058-9565/ab1e69" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1801.05897" target="_blank" class="href">1801.05897</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-20">[21]</dt>
-      <dd>
-        Y. Ouyang and R. Chao, “Permutation-Invariant Constant-Excitation Quantum Codes for Amplitude Damping”, IEEE Transactions on Information Theory <span class="textbf">66</span>, 2921 (2020). <a href="https://doi.org/10.1109/TIT.2019.2956142" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1809.09801" target="_blank" class="href">1809.09801</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-21">[22]</dt>
-      <dd>
-        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-22">[23]</dt>
-      <dd>
-        P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href">quant-ph/9809037</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-23">[24]</dt>
-      <dd>
-        Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href">1207.0679</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-24">[25]</dt>
-      <dd>
-        L. Li et al., “Phase-engineered bosonic quantum codes”, Physical Review A <span class="textbf">103</span>, (2021). <a href="https://doi.org/10.1103/PhysRevA.103.062427" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.05358" target="_blank" class="href">1901.05358</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-25">[26]</dt>
-      <dd>
-        David S. Schlegel, Fabrizio Minganti, and Vincenzo Savona, “Quantum error correction using squeezed Schrödinger cat states”. <a href="https://arxiv.org/abs/2201.02570" target="_blank" class="href">2201.02570</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-26">[27]</dt>
-      <dd>
-        S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-27">[28]</dt>
-      <dd>
-        I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-28">[29]</dt>
-      <dd>
-        W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Richard L. Barnes, “Stabilizer Codes for Continuous-variable Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0405064" target="_blank" class="href-href">quant-ph/0405064</a></dd><dt id="citation-2">[2]</dt><dd>S. Lloyd and J.-J. E. Slotine, “Analog Quantum Error Correction”, Physical Review Letters <span class="textbf">80</span>, 4088 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4088" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711021" target="_blank" class="href-href">quant-ph/9711021</a></dd><dt id="citation-3">[3]</dt><dd>S. L. Braunstein, “Error Correction for Continuous Quantum Variables”, Physical Review Letters <span class="textbf">80</span>, 4084 (1998). <a href="https://doi.org/10.1103/PhysRevLett.80.4084" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9711049" target="_blank" class="href-href">quant-ph/9711049</a></dd><dt id="citation-4">[4]</dt><dd>C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href-href">1810.00047</a></dd><dt id="citation-5">[5]</dt><dd>J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href-href">quant-ph/0204052</a></dd><dt id="citation-6">[6]</dt><dd>J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href-href">0811.3128</a></dd><dt id="citation-7">[7]</dt><dd>D. Gottesman, A. Kitaev, and J. Preskill, “Encoding a qubit in an oscillator”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.012310" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0008040" target="_blank" class="href-href">quant-ph/0008040</a></dd><dt id="citation-8">[8]</dt><dd>J. Harrington and J. Preskill, “Achievable rates for the Gaussian quantum channel”, Physical Review A <span class="textbf">64</span>, (2001). <a href="https://doi.org/10.1103/PhysRevA.64.062301" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0105058" target="_blank" class="href-href">quant-ph/0105058</a></dd><dt id="citation-9">[9]</dt><dd>J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href-href">2109.14645</a></dd><dt id="citation-10">[10]</dt><dd>N. C. Menicucci, “Fault-Tolerant Measurement-Based Quantum Computing with Continuous-Variable Cluster States”, Physical Review Letters <span class="textbf">112</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.112.120504" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1310.7596" target="_blank" class="href-href">1310.7596</a></dd><dt id="citation-11">[11]</dt><dd>K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href-href">1903.12615</a></dd><dt id="citation-12">[12]</dt><dd>E. Kapit, “Hardware-Efficient and Fully Autonomous Quantum Error Correction in Superconducting Circuits”, Physical Review Letters <span class="textbf">116</span>, (2016). <a href="https://doi.org/10.1103/PhysRevLett.116.150501" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>I. L. Chuang, D. W. Leung, and Y. Yamamoto, “Bosonic quantum codes for amplitude damping”, Physical Review A <span class="textbf">56</span>, 1114 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.1114" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>P. Hayden et al., “Spacetime replication of continuous variable quantum information”, New Journal of Physics <span class="textbf">18</span>, 083043 (2016). <a href="https://doi.org/10.1088/1367-2630/18/8/083043" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1601.02544" target="_blank" class="href-href">1601.02544</a></dd><dt id="citation-15">[15]</dt><dd>P. Hayden and A. May, “Summoning information in spacetime, or where and when can a qubit be?”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">49</span>, 175304 (2016). <a href="https://doi.org/10.1088/1751-8113/49/17/175304" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1210.0913" target="_blank" class="href-href">1210.0913</a></dd><dt id="citation-16">[16]</dt><dd>B. M. Terhal and D. Weigand, “Encoding a qubit into a cavity mode in circuit QED using phase estimation”, Physical Review A <span class="textbf">93</span>, (2016). <a href="https://doi.org/10.1103/PhysRevA.93.012315" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1506.05033" target="_blank" class="href-href">1506.05033</a></dd><dt id="citation-17">[17]</dt><dd>V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href-href">1708.05010</a></dd><dt id="citation-18">[18]</dt><dd>A. L. Grimsmo and S. Puri, “Quantum Error Correction with the Gottesman-Kitaev-Preskill Code”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.020101" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2106.12989" target="_blank" class="href-href">2106.12989</a></dd><dt id="citation-19">[19]</dt><dd>A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href-href">1901.08071</a></dd><dt id="citation-20">[20]</dt><dd>V. V. Albert et al., “Pair-cat codes: autonomous error-correction with low-order nonlinearity”, Quantum Science and Technology <span class="textbf">4</span>, 035007 (2019). <a href="https://doi.org/10.1088/2058-9565/ab1e69" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1801.05897" target="_blank" class="href-href">1801.05897</a></dd><dt id="citation-21">[21]</dt><dd>Y. Ouyang and R. Chao, “Permutation-Invariant Constant-Excitation Quantum Codes for Amplitude Damping”, IEEE Transactions on Information Theory <span class="textbf">66</span>, 2921 (2020). <a href="https://doi.org/10.1109/TIT.2019.2956142" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1809.09801" target="_blank" class="href-href">1809.09801</a></dd><dt id="citation-22">[22]</dt><dd>M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href-href">1602.00008</a></dd><dt id="citation-23">[23]</dt><dd>P. T. Cochrane, G. J. Milburn, and W. J. Munro, “Macroscopically distinct quantum-superposition states as a bosonic code for amplitude damping”, Physical Review A <span class="textbf">59</span>, 2631 (1999). <a href="https://doi.org/10.1103/PhysRevA.59.2631" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9809037" target="_blank" class="href-href">quant-ph/9809037</a></dd><dt id="citation-24">[24]</dt><dd>Z. Leghtas et al., “Hardware-Efficient Autonomous Quantum Memory Protection”, Physical Review Letters <span class="textbf">111</span>, (2013). <a href="https://doi.org/10.1103/PhysRevLett.111.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1207.0679" target="_blank" class="href-href">1207.0679</a></dd><dt id="citation-25">[25]</dt><dd>L. Li et al., “Phase-engineered bosonic quantum codes”, Physical Review A <span class="textbf">103</span>, (2021). <a href="https://doi.org/10.1103/PhysRevA.103.062427" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.05358" target="_blank" class="href-href">1901.05358</a></dd><dt id="citation-26">[26]</dt><dd>David S. Schlegel, Fabrizio Minganti, and Vincenzo Savona, “Quantum error correction using squeezed Schrödinger cat states”. <a href="https://arxiv.org/abs/2201.02570" target="_blank" class="href-href">2201.02570</a></dd><dt id="citation-27">[27]</dt><dd>S. M. Barnett and D. T. Pegg, “Phase in quantum optics”, Journal of Physics A: Mathematical and General <span class="textbf">19</span>, 3849 (1986). <a href="https://doi.org/10.1088/0305-4470/19/18/030" target="_blank" class="href-href">DOI</a></dd><dt id="citation-28">[28]</dt><dd>I. L. Chuang and Y. Yamamoto, “Simple quantum computer”, Physical Review A <span class="textbf">52</span>, 3489 (1995). <a href="https://doi.org/10.1103/PhysRevA.52.3489" target="_blank" class="href-href">DOI</a></dd><dt id="citation-29">[29]</dt><dd>W. Wasilewski and K. Banaszek, “Protecting an optical qubit against photon loss”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.042316" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 

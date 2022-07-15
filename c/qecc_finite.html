@@ -87,16 +87,10 @@
 <div class="sectioncontent code-description">Encodes quantum information in a <span class="inline-math">\(K\)</span>-dimensional (<span class="textit">logical</span>) subspace of an <span class="inline-math">\(N\)</span>-dimensional (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a finite-dimensional quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>,
-<span class="display-math env-align">\begin{align}
-{\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\end{align}</span>
-for some constant <span class="inline-math">\(c\)</span> <a href="#cite-0" class="cite">[1]</a>. A code is said to <span class="textit">protect against</span> or <span class="textit">correct</span> the errors <span class="inline-math">\(\mathcal{E}\)</span>.</p>
-<p>Equivalently, correction capability is determined by the <span class="textit">quantum error-correction conditions</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>: for all <span class="inline-math">\(|\psi\rangle,|\phi\rangle\in\mathsf{H}_{N}\)</span> and all errors <span class="inline-math">\(E_a,E_b\in{\mathcal{E}}\)</span>,
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a finite-dimensional quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{K}\to\mathsf{H}_{N}\)</span> with a set of correctable errors <span class="inline-math">\({\cal{E}}:\mathsf{H}_N\to\mathsf{H}_M\)</span> with the following property: there exists a quantum operation <span class="inline-math">\({\cal{D}}:\mathsf{H}_M\to \mathsf{H}_K\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{K}\)</span>, <span class="display-math env-align">\begin{align}
+{\cal D}(EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|\end{align}</span> for some constant <span class="inline-math">\(c\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. A code is said to <span class="textit">protect against</span> or <span class="textit">correct</span> the errors <span class="inline-math">\(\mathcal{E}\)</span>.</p><p>Equivalently, correction capability is determined by the <span class="textit">quantum error-correction conditions</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>: for all <span class="inline-math">\(|\psi\rangle,|\phi\rangle\in\mathsf{H}_{N}\)</span> and all errors <span class="inline-math">\(E_a,E_b\in{\mathcal{E}}\)</span>, <span class="display-math env-align">\begin{align}
   \langle \psi | E^{\dagger}_a E_b |\phi \rangle = C_{ab} \langle \psi | \phi \rangle~,
-\end{align}</span>
-where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend on <span class="inline-math">\(|\psi\rangle\)</span> or <span class="inline-math">\(|\phi\rangle\)</span>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate error-correcting code</a>.</p>
-<p>A code is <span class="textit">degenerate</span> with respect to a noise model if different errors map code states to the same error subspace. For a linearly independent error set <span class="inline-math">\(\cal{E}\)</span>, degeneracy is equivalent to <span class="inline-math">\(\text{rank}(C_{ab}) &lt; |\cal{E}|\)</span>.</p></div>
+\end{align}</span> where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend on <span class="inline-math">\(|\psi\rangle\)</span> or <span class="inline-math">\(|\phi\rangle\)</span>. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="href-ref ref-code">approximate error-correcting code</a>.</p><p>A code is <span class="textit">degenerate</span> with respect to a noise model if different errors map code states to the same error subspace. For a linearly independent error set <span class="inline-math">\(\cal{E}\)</span>, degeneracy is equivalent to <span class="inline-math">\(\text{rank}(C_{ab}) &lt; |\cal{E}|\)</span>.</p></div>
 
 
 <!-- Display features -->
@@ -114,12 +108,12 @@ where the coefficients <span class="inline-math">\(C_{ab}\)</span> do not depend
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Universal gate set cannot be transversal for any code that detects single-qubit errors due to Eastin-Knill theorem <a href="#cite-3" class="cite">[4]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Universal gate set cannot be transversal for any code that detects single-qubit errors due to Eastin-Knill theorem <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The operation <span class="inline-math">\(\cal{D}\)</span> in the definition of this code is called the decoder. However, the term <span class="textit">decoder</span> can sometimes be used for the inverse of an encoder, which does not correct errors.</span><span class="paragraph-in-list">Quantum machine-learning based decoders such as quantum convolutional neural networks <a href="#cite-4" class="cite">[5]</a> and quantum autoencoders <a href="#cite-5" class="cite">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The operation <span class="inline-math">\(\cal{D}\)</span> in the definition of this code is called the decoder. However, the term <span class="textit">decoder</span> can sometimes be used for the inverse of an encoder, which does not correct errors.</span><span class="paragraph-in-list">Quantum machine-learning based decoders such as quantum convolutional neural networks <a href="#citation-5" class="href-endnote endnote citation">[5]</a> and quantum autoencoders <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></div>
 
 
 
@@ -217,45 +211,7 @@ url={https://errorcorrectionzoo.org/c/qecc_finite}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        D. Gottesman.  <span class="emph">Surviving as a quantum computer in a classical world</span>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href">quant-ph/9604034</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href">quant-ph/9604024</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        B. Eastin and E. Knill, “Restrictions on Transversal Encoded Quantum Gate Sets”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.110502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0811.4262" target="_blank" class="href">0811.4262</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        I. Cong, S. Choi, and M. D. Lukin, “Quantum convolutional neural networks”, Nature Physics <span class="textbf">15</span>, 1273 (2019). <a href="https://doi.org/10.1038/s41567-019-0648-8" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.03787" target="_blank" class="href">1810.03787</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        David F. Locher, Lorenzo Cardarelli, and Markus Müller, “Quantum Error Correction with Quantum Autoencoders”. <a href="https://arxiv.org/abs/2202.00555" target="_blank" class="href">2202.00555</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Gottesman. <span class="textit">Surviving as a quantum computer in a classical world</span></dd><dt id="citation-2">[2]</dt><dd>E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href-href">quant-ph/9604034</a></dd><dt id="citation-3">[3]</dt><dd>C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href-href">quant-ph/9604024</a></dd><dt id="citation-4">[4]</dt><dd>B. Eastin and E. Knill, “Restrictions on Transversal Encoded Quantum Gate Sets”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.110502" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.4262" target="_blank" class="href-href">0811.4262</a></dd><dt id="citation-5">[5]</dt><dd>I. Cong, S. Choi, and M. D. Lukin, “Quantum convolutional neural networks”, Nature Physics <span class="textbf">15</span>, 1273 (2019). <a href="https://doi.org/10.1038/s41567-019-0648-8" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.03787" target="_blank" class="href-href">1810.03787</a></dd><dt id="citation-6">[6]</dt><dd>David F. Locher, Lorenzo Cardarelli, and Markus Müller, “Quantum Error Correction with Quantum Autoencoders”. <a href="https://arxiv.org/abs/2202.00555" target="_blank" class="href-href">2202.00555</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

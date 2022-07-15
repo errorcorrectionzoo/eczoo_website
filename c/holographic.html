@@ -78,17 +78,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Holographic code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Holographic code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A code whose encoding isometry serves to model aspects of the AdS/CFT holographic duality. Encodes operators in the bulk of the Anti de Sitter (AdS) space, represented by logical qudits, into operators on the boundary of the corresponding Conformal Field Theory (CFT), represented by physical qudits. Encoding can often be represented by a tensor network associated with a tiling of hyperbolic space. See Defn 4.3 of Ref. <a href="#cite-1" class="cite">[2]</a> for a technical formulation.</p>
-<p>Typically, the encoding isometry <span class="inline-math">\(U\)</span> obeys the <span class="textit">entanglement-wedge reconstruction condition</span>, which states that for any boundary region <span class="inline-math">\(R\)</span>, any bulk operator <span class="inline-math">\(O\)</span> localized to the entanglement wedge of <span class="inline-math">\(R\)</span> must be implementable by some boundary operator <span class="inline-math">\(\tilde{O}\)</span> localized to <span class="inline-math">\(R\)</span>. Formally, <span class="inline-math">\(UO = \tilde{O}U\)</span> and <span class="inline-math">\([\tilde{O},UU^\dagger] = 0\)</span>. The entanglement wedge is the space enclosed within the Ryu–Takayanagi surface in the bulk (minimal surface) with boundary <span class="inline-math">\(R\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>A code whose encoding isometry serves to model aspects of the AdS/CFT holographic duality. Encodes operators in the bulk of the Anti de Sitter (AdS) space, represented by logical qudits, into operators on the boundary of the corresponding Conformal Field Theory (CFT), represented by physical qudits. Encoding can often be represented by a tensor network associated with a tiling of hyperbolic space. See Defn 4.3 of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for a technical formulation.</p><p>Typically, the encoding isometry <span class="inline-math">\(U\)</span> obeys the <span class="textit">entanglement-wedge reconstruction condition</span>, which states that for any boundary region <span class="inline-math">\(R\)</span>, any bulk operator <span class="inline-math">\(O\)</span> localized to the entanglement wedge of <span class="inline-math">\(R\)</span> must be implementable by some boundary operator <span class="inline-math">\(\tilde{O}\)</span> localized to <span class="inline-math">\(R\)</span>. Formally, <span class="inline-math">\(UO = \tilde{O}U\)</span> and <span class="inline-math">\([\tilde{O},UU^\dagger] = 0\)</span>. The entanglement wedge is the space enclosed within the Ryu–Takayanagi surface in the bulk (minimal surface) with boundary <span class="inline-math">\(R\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Protects against erasure errors on the boundary. Error-correction properties are often stated in the Heisenberg picture, i.e., in terms of which logical operators can be <span class="textit">reconstructed</span> after erasures. Specifically, bulk operators outside the entanglement wedges of the erased boundary operators can be reconstructed using the remaining boundary operators. However, the protection can be nontrivial, and may only apply to a subalgebra of bulk operators <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</div>
+<div class="sectioncontent code-protection">Protects against erasure errors on the boundary. Error-correction properties are often stated in the Heisenberg picture, i.e., in terms of which logical operators can be <span class="textit">reconstructed</span> after erasures. Specifically, bulk operators outside the entanglement wedges of the erased boundary operators can be reconstructed using the remaining boundary operators. However, the protection can be nontrivial, and may only apply to a subalgebra of bulk operators <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</div>
 
 
 <!-- Display features -->
@@ -105,7 +104,7 @@
 
 <h2 id="feature_transversal_gates"
       class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
-  <div class="sectioncontent code-feature code-feature-transversal_gates">There exist holographic approximate codes with arbitrary transversal gate sets for any compact Lie group <a href="#cite-1" class="cite">[2]</a>. However, for sufficiently localized logical subsystems of holographic stabilizer codes, the set of transversally implementable logical operations is contained in the Clifford group <a href="#cite-4" class="cite">[5]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">There exist holographic approximate codes with arbitrary transversal gate sets for any compact Lie group <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. However, for sufficiently localized logical subsystems of holographic stabilizer codes, the set of transversally implementable logical operations is contained in the Clifford group <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</div>
  
 
 
@@ -115,7 +114,7 @@
 
 <h2 id="feature_code_capacity_threshold"
       class="code-feature code-feature-code_capacity_threshold">Code Capacity Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">The ideal holographic code (perfect representation of AdS/CFT) should be able to protect a central bulk operator against erasures of half of the physical qubits on the boundary, in line with AdS-Rindler reconstruction <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Holographic codes are argued to have a <span class="textit">algebraic threshold</span>, for which the error rate scales polynomially (as opposed to exponentially) in the thermodynamic limit <a href="#cite-5" class="cite">[6]</a>. Such a threshold is governed by the underlying conformal field theory describing the boundary.</span></div>
+  <div class="sectioncontent code-feature code-feature-code_capacity_threshold"><span class="paragraph-in-list">The ideal holographic code (perfect representation of AdS/CFT) should be able to protect a central bulk operator against erasures of half of the physical qubits on the boundary, in line with AdS-Rindler reconstruction <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span><span class="paragraph-in-list">Holographic codes are argued to have a <span class="textit">algebraic threshold</span>, for which the error rate scales polynomially (as opposed to exponentially) in the thermodynamic limit <a href="#citation-6" class="href-endnote endnote citation">[6]</a>. Such a threshold is governed by the underlying conformal field theory describing the boundary.</span></div>
 
 
 
@@ -124,7 +123,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">All Boundary global symmetries must be dual to bulk gauge symmetries, and vice versa <a href="#cite-6" class="cite">[7]</a>.</span>
+  <span class="paragraph-in-list">All Boundary global symmetries must be dual to bulk gauge symmetries, and vice versa <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
 </div>
 
 
@@ -140,7 +139,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oaecc">Operator-algebra error-correcting code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Properties of holographic codes are often quantified in the Heisenberg picture, i.e., in terms of operator algebras <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Properties of holographic codes are often quantified in the Heisenberg picture, i.e., in terms of operator algebras <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
 </ul>
 </div>
 
@@ -156,7 +155,7 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/stab_3_1_2">Three qutrit code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Three-qutrit code is a minimal model for holography <a href="#cite-2" class="cite">[3]</a><a href="#cite-7" class="cite">[8]</a>.</span></li>
+      &#x2014;&nbsp;Three-qutrit code is a minimal model for holography <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
 </ul>
 </div>
 
@@ -222,55 +221,7 @@ url={https://errorcorrectionzoo.org/c/holographic}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href">1503.06237</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Kfir Dolev et al., “Gauging the bulk: generalized gauging maps and holographic codes”. <a href="https://arxiv.org/abs/2108.11402" target="_blank" class="href">2108.11402</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A. Almheiri, X. Dong, and D. Harlow, “Bulk locality and quantum error correction in AdS/CFT”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP04(2015)163" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.7041" target="_blank" class="href">1411.7041</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        F. Pastawski and J. Preskill, “Code Properties from Holographic Geometries”, Physical Review X <span class="textbf">7</span>, (2017). <a href="https://doi.org/10.1103/PhysRevX.7.021022" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.00017" target="_blank" class="href">1612.00017</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        S. Cree et al., “Fault-Tolerant Logical Gates in Holographic Stabilizer Codes Are Severely Restricted”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.030337" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.13404" target="_blank" class="href">2103.13404</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        Ning Bao, Charles Cao, and Guanyu Zhu, “Deconfinement and Error Thresholds in Holography”. <a href="https://arxiv.org/abs/2202.04710" target="_blank" class="href">2202.04710</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        Daniel Harlow and Hirosi Ooguri, “Symmetries in quantum field theory and quantum gravity”. <a href="https://arxiv.org/abs/1810.05338" target="_blank" class="href">1810.05338</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        D. Harlow, “The Ryu–Takayanagi Formula from Quantum Error Correction”, Communications in Mathematical Physics <span class="textbf">354</span>, 865 (2017). <a href="https://doi.org/10.1007/s00220-017-2904-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1607.03901" target="_blank" class="href">1607.03901</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href-href">1503.06237</a></dd><dt id="citation-2">[2]</dt><dd>Kfir Dolev et al., “Gauging the bulk: generalized gauging maps and holographic codes”. <a href="https://arxiv.org/abs/2108.11402" target="_blank" class="href-href">2108.11402</a></dd><dt id="citation-3">[3]</dt><dd>A. Almheiri, X. Dong, and D. Harlow, “Bulk locality and quantum error correction in AdS/CFT”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP04(2015)163" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1411.7041" target="_blank" class="href-href">1411.7041</a></dd><dt id="citation-4">[4]</dt><dd>F. Pastawski and J. Preskill, “Code Properties from Holographic Geometries”, Physical Review X <span class="textbf">7</span>, (2017). <a href="https://doi.org/10.1103/PhysRevX.7.021022" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1612.00017" target="_blank" class="href-href">1612.00017</a></dd><dt id="citation-5">[5]</dt><dd>S. Cree et al., “Fault-Tolerant Logical Gates in Holographic Stabilizer Codes Are Severely Restricted”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.030337" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2103.13404" target="_blank" class="href-href">2103.13404</a></dd><dt id="citation-6">[6]</dt><dd>Ning Bao, Charles Cao, and Guanyu Zhu, “Deconfinement and Error Thresholds in Holography”. <a href="https://arxiv.org/abs/2202.04710" target="_blank" class="href-href">2202.04710</a></dd><dt id="citation-7">[7]</dt><dd>Daniel Harlow and Hirosi Ooguri, “Symmetries in quantum field theory and quantum gravity”. <a href="https://arxiv.org/abs/1810.05338" target="_blank" class="href-href">1810.05338</a></dd><dt id="citation-8">[8]</dt><dd>D. Harlow, “The Ryu–Takayanagi Formula from Quantum Error Correction”, Communications in Mathematical Physics <span class="textbf">354</span>, 865 (2017). <a href="https://doi.org/10.1007/s00220-017-2904-z" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1607.03901" target="_blank" class="href-href">1607.03901</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

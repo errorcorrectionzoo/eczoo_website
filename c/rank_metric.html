@@ -78,14 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Rank-metric code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Rank-metric code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Also called a <span class="textit">Delsarte code</span>. Each codeword is a <span class="textit">matrix</span> over <span class="inline-math">\(GF(q)\)</span>, with codewords forming a <span class="inline-math">\(GF(q)\)</span>-linear subspace, and with the metric being the rank of the difference of matrices. The distance <span class="inline-math">\(d\)</span> is the minimum rank of all nonzero matrices in the code. Rank-metric codes on <span class="inline-math">\(n\times m\)</span> matrices are denoted as <span class="inline-math">\([n\times m,k,d]_q\)</span>.</p>
-<p>The number of codewords satisfies <span class="inline-math">\(k \leq \max(n, m) M\)</span>, where <span class="inline-math">\(M\)</span> is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called <span class="textit">Delsarte optimal anticodes</span>.</p></div>
+<div class="sectioncontent code-description"><p>Also called a <span class="textit">Delsarte code</span>. Each codeword is a <span class="textit">matrix</span> over <span class="inline-math">\(GF(q)\)</span>, with codewords forming a <span class="inline-math">\(GF(q)\)</span>-linear subspace, and with the metric being the rank of the difference of matrices. The distance <span class="inline-math">\(d\)</span> is the minimum rank of all nonzero matrices in the code. Rank-metric codes on <span class="inline-math">\(n\times m\)</span> matrices are denoted as <span class="inline-math">\([n\times m,k,d]_q\)</span>.</p><p>The number of codewords satisfies <span class="inline-math">\(k \leq \max(n, m) M\)</span>, where <span class="inline-math">\(M\)</span> is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called <span class="textit">Delsarte optimal anticodes</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</div>
@@ -108,7 +107,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -121,7 +120,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ref. <a href="#cite-3" class="cite">[4]</a> for a discussion of MacWilliams identities and the relationship between rank metric and Gabidulin codes.</span>
+  <span class="paragraph-in-list">See Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a> for a discussion of MacWilliams identities and the relationship between rank metric and Gabidulin codes.</span>
 </div>
 
 
@@ -149,7 +148,7 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/gabidulin">Gabidulin code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#cite-3" class="cite">[4]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#cite-3" class="cite">[4]</a>).</span></li>
+      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span></li>
 </ul>
@@ -200,35 +199,7 @@ url={https://errorcorrectionzoo.org/c/rank_metric}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        Alberto Ravagnani, “Rank-metric codes and their duality theory”. <a href="https://arxiv.org/abs/1410.1333" target="_blank" class="href">1410.1333</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Alberto Ravagnani, “Rank-metric codes and their duality theory”. <a href="https://arxiv.org/abs/1410.1333" target="_blank" class="href-href">1410.1333</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

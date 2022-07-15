@@ -78,15 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Polar code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Polar code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>.</p>
-<p>The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</p>
-<p>There are multiple variants of the above basic construction, in particular relying on other kernel matrices. The codes can be defined for nonbinary alphabets, and they can be adjusted to support tasks such as lossless and lossy compression, successive refinement, communication over the mulitple access channel, communication over the wiretap channel, and many others.</p></div>
+<div class="sectioncontent code-description"><p>In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>.</p><p>The choice of the frozen coordinates depends on the communication channel, and they correspond to the least reliable bits on the output of the channel under a particular decoding procedure called successive cancellation decoding. If the communication channel is input-symmetric, the values of the frozen bits can be set to zero.</p><p>There are multiple variants of the above basic construction, in particular relying on other kernel matrices. The codes can be defined for nonbinary alphabets, and they can be adjusted to support tasks such as lossless and lossy compression, successive refinement, communication over the mulitple access channel, communication over the wiretap channel, and many others.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</div>
@@ -112,7 +110,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Successive cancellation (SC) decoder <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Successive cancellation list (SCL) decoder <a href="#cite-1" class="cite">[2]</a> and a modification utilizing sequence repetition (SR-List) <a href="#cite-2" class="cite">[3]</a>.</span><span class="paragraph-in-list">Soft cancellation (SCAN) decoder <a href="#cite-3" class="cite">[4]</a><a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">Belief propagation (BP) decoder <a href="#cite-5" class="cite">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Successive cancellation (SC) decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span><span class="paragraph-in-list">Successive cancellation list (SCL) decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a> and a modification utilizing sequence repetition (SR-List) <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span><span class="paragraph-in-list">Soft cancellation (SCAN) decoder <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span><span class="paragraph-in-list">Belief propagation (BP) decoder <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></div>
 
 
 
@@ -121,18 +119,18 @@
 
 <h2 id="feature_threshold"
       class="code-feature code-feature-threshold">Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Achieves Shannon capacity of the binary-input memoryless channel under successive cancellation decoder <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Achieves Shannon capacity of the binary-input memoryless channel under successive cancellation decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Code control channels for the 5G NR (New Radio) interfaces <a href="#cite-6" class="cite">[7]</a>.</span>
+  <span class="paragraph-in-list">Code control channels for the 5G NR (New Radio) interfaces <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">For more details, see Ch. 32 of Ref. <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">See database <a href="#cite-8" class="cite">[9]</a> for explicit codes.</span><span class="paragraph-in-list">Codes have been benchmarked using AFF3CT toolbox <a href="#cite-9" class="cite">[10]</a>.</span>
+  <span class="paragraph-in-list">For more details, see Ch. 32 of Ref. <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span><span class="paragraph-in-list">See database <a href="#citation-9" class="href-endnote endnote citation">[9]</a> for explicit codes.</span><span class="paragraph-in-list">Codes have been benchmarked using AFF3CT toolbox <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span>
 </div>
 
 
@@ -215,65 +213,7 @@ url={https://errorcorrectionzoo.org/c/polar}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        I. Tal and A. Vardy, “List Decoding of Polar Codes”, IEEE Transactions on Information Theory <span class="textbf">61</span>, 2213 (2015). <a href="https://doi.org/10.1109/TIT.2015.2410251" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        Yuqing Ren et al., “A Sequence Repetition Node-Based Successive Cancellation List Decoder for 5G Polar Codes: Algorithm and Implementation”. <a href="https://arxiv.org/abs/2205.08857" target="_blank" class="href">2205.08857</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        U. U. Fayyaz and J. R. Barry, “Low-Complexity Soft-Output Decoding of Polar Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">32</span>, 958 (2014). <a href="https://doi.org/10.1109/JSAC.2014.140515" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        U. U. Fayyaz and J. R. Barry, “Polar codes for partial response channels”, 2013 IEEE International Conference on Communications (ICC) (2013). <a href="https://doi.org/10.1109/ICC.2013.6655247" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        E. Arkan, “A performance comparison of polar codes and Reed-Muller codes”, IEEE Communications Letters <span class="textbf">12</span>, 447 (2008). <a href="https://doi.org/10.1109/LCOMM.2008.080017" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        3rd Generation Partnership Project (3GPP), <span class="emph">Technical specification group radio access network</span>, 3GPP TS 38.212 V.15.0.0, 2017.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-8">[9]</dt>
-      <dd>
-        Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="emph">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href">URL</a>, 2022.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-9">[10]</dt>
-      <dd>
-        A. Cassagne et al., “AFF3CT: A Fast Forward Error Correction Toolbox!”, SoftwareX <span class="textbf">10</span>, 100345 (2019). <a href="https://doi.org/10.1016/j.softx.2019.100345" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>I. Tal and A. Vardy, “List Decoding of Polar Codes”, IEEE Transactions on Information Theory <span class="textbf">61</span>, 2213 (2015). <a href="https://doi.org/10.1109/TIT.2015.2410251" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Yuqing Ren et al., “A Sequence Repetition Node-Based Successive Cancellation List Decoder for 5G Polar Codes: Algorithm and Implementation”. <a href="https://arxiv.org/abs/2205.08857" target="_blank" class="href-href">2205.08857</a></dd><dt id="citation-4">[4]</dt><dd>U. U. Fayyaz and J. R. Barry, “Low-Complexity Soft-Output Decoding of Polar Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">32</span>, 958 (2014). <a href="https://doi.org/10.1109/JSAC.2014.140515" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>U. U. Fayyaz and J. R. Barry, “Polar codes for partial response channels”, 2013 IEEE International Conference on Communications (ICC) (2013). <a href="https://doi.org/10.1109/ICC.2013.6655247" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>E. Arkan, “A performance comparison of polar codes and Reed-Muller codes”, IEEE Communications Letters <span class="textbf">12</span>, 447 (2008). <a href="https://doi.org/10.1109/LCOMM.2008.080017" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>3rd Generation Partnership Project (3GPP), <span class="textit">Technical specification group radio access network</span>, 3GPP TS 38.212 V.15.0.0, 2017.</dd><dt id="citation-8">[8]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="textit">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href-href">URL</a>, 2022.</dd><dt id="citation-10">[10]</dt><dd>A. Cassagne et al., “AFF3CT: A Fast Forward Error Correction Toolbox!”, SoftwareX <span class="textbf">10</span>, 100345 (2019). <a href="https://doi.org/10.1016/j.softx.2019.100345" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

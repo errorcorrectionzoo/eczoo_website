@@ -78,26 +78,20 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Subsystem quantum error-correcting code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
+      Subsystem quantum error-correcting code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A subsystem code, also known as an <span class="textit">operator QECC</span> or <span class="textit">gauge QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>, as
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">A subsystem code, also known as an <span class="textit">operator QECC</span> or <span class="textit">gauge QECC</span>, encodes information in a subsystem <span class="inline-math">\(\mathsf{A}\)</span> of the code space <span class="inline-math">\(\mathsf{C}\)</span>, which is part of the system Hilbert space <span class="inline-math">\(\mathsf{H}\)</span>, as <span class="display-math env-align">\begin{align}
 \mathsf{H}=\mathsf{C} \oplus \mathsf{C}^{\perp} = \mathsf{A} \otimes \mathsf{B} \oplus \mathsf{C}^{\perp}~.
-\end{align}</span>
-Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code allows for a wider variety of encoding procedures, fault-tolerant logical operations, and efficient error-correction protocols.
-</div>
+\end{align}</span> Following an error, it is sufficient to revert back to the original state modulo a transformation on the auxiliary or <span class="textit">gauge</span> subsystem <span class="inline-math">\(\mathsf{B}\)</span>. The subsystem <span class="inline-math">\(\mathsf{B}\)</span> therefore gives additional freedom to the error correction process, and is said to encode <span class="textit">gauge qubits</span> when its dimension is a power of two. While strictly speaking all operator QECCs are also ordinary QECCs, the attachment of a subsystem to a code allows for a wider variety of encoding procedures, fault-tolerant logical operations, and efficient error-correction protocols. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Necessary and sufficient <a href="#cite-2" class="cite">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>,
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-protection">Necessary and sufficient <a href="#citation-3" class="href-endnote endnote citation">[3]</a> error-correction conditions are, for all errors <span class="inline-math">\(E_a,E_b\)</span> in an error set <span class="inline-math">\(\cal{E}\)</span>, <span class="display-math env-align">\begin{align}
 P E^{\dagger}_a E_b P = I_{\mathsf{A}} \otimes g_{ab}^{\mathsf{B}}
-\end{align}</span>
-where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem.
-</div>
+\end{align}</span> where <span class="inline-math">\(P\)</span> is a projector onto the codespace <span class="inline-math">\(\mathsf{C}\)</span>, and <span class="inline-math">\(g_{ab}^{\mathsf{B}}\)</span> is an arbitrary operator on the gauge subsystem. </div>
 
 
 <!-- Display features -->
@@ -215,30 +209,7 @@ url={https://errorcorrectionzoo.org/c/oecc}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        D. Kribs, R. Laflamme, and D. Poulin, “Unified and Generalized Approach to Quantum Error Correction”, Physical Review Letters <span class="textbf">94</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.94.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0412076" target="_blank" class="href">quant-ph/0412076</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        David W. Kribs et al., “Operator quantum error correction”. <a href="https://arxiv.org/abs/quant-ph/0504189" target="_blank" class="href">quant-ph/0504189</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        M. A. Nielsen and D. Poulin, “Algebraic and information-theoretic conditions for operator quantum error correction”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.064304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0506069" target="_blank" class="href">quant-ph/0506069</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Kribs, R. Laflamme, and D. Poulin, “Unified and Generalized Approach to Quantum Error Correction”, Physical Review Letters <span class="textbf">94</span>, (2005). <a href="https://doi.org/10.1103/PhysRevLett.94.180501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0412076" target="_blank" class="href-href">quant-ph/0412076</a></dd><dt id="citation-2">[2]</dt><dd>David W. Kribs et al., “Operator quantum error correction”. <a href="https://arxiv.org/abs/quant-ph/0504189" target="_blank" class="href-href">quant-ph/0504189</a></dd><dt id="citation-3">[3]</dt><dd>M. A. Nielsen and D. Poulin, “Algebraic and information-theoretic conditions for operator quantum error correction”, Physical Review A <span class="textbf">75</span>, (2007). <a href="https://doi.org/10.1103/PhysRevA.75.064304" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0506069" target="_blank" class="href-href">quant-ph/0506069</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

@@ -78,14 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Heavy-hexagon code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Heavy-hexagon code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Subsystem stabilizer code on the heavy-hexagonal lattice that combines Bacon-Shor and surface-code stabilizers. Encodes one logical qubit into <span class="inline-math">\(n=(5d^2-2d-1)/2\)</span> physical qubits with distance <span class="inline-math">\(d\)</span>. The heavy-hexagonal lattice allows for low degree (at most 3) connectivity between all the data and ancilla qubits, which is suitable for fixed-frequency transom qubits subject to frequency collision errors.</p>
-<p>Data qubits and ancillas of the code are placed on a heavy-hexagonal lattice (vertices and edges of a tilling of hexagons). A subset of the ancilla qubits are flag qubits used for detecting high-weight errors arising from fewer faults. The code stabilizers for detecting <span class="inline-math">\(X\)</span>-type errors are measured by measuring weight-two <span class="inline-math">\(Z\)</span>-type gauge operators whose product produces stabilizers of the surface code. <span class="inline-math">\(X\)</span>-type stabilizers are column operators corresponding to stabilizers of the Bacon-Shor code, which are measured by taking products of weight-four and weight-two <span class="inline-math">\(X\)</span>-type gauge operators.</p></div>
+<div class="sectioncontent code-description"><p>Subsystem stabilizer code on the heavy-hexagonal lattice that combines Bacon-Shor and surface-code stabilizers. Encodes one logical qubit into <span class="inline-math">\(n=(5d^2-2d-1)/2\)</span> physical qubits with distance <span class="inline-math">\(d\)</span>. The heavy-hexagonal lattice allows for low degree (at most 3) connectivity between all the data and ancilla qubits, which is suitable for fixed-frequency transom qubits subject to frequency collision errors.</p><p>Data qubits and ancillas of the code are placed on a heavy-hexagonal lattice (vertices and edges of a tilling of hexagons). A subset of the ancilla qubits are flag qubits used for detecting high-weight errors arising from fewer faults. The code stabilizers for detecting <span class="inline-math">\(X\)</span>-type errors are measured by measuring weight-two <span class="inline-math">\(Z\)</span>-type gauge operators whose product produces stabilizers of the surface code. <span class="inline-math">\(X\)</span>-type stabilizers are column operators corresponding to stabilizers of the Bacon-Shor code, which are measured by taking products of weight-four and weight-two <span class="inline-math">\(X\)</span>-type gauge operators.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against Pauli noise. The code has no threshold for <span class="inline-math">\(Z\)</span>-type Pauli errors since they are detected by Bacon-Shor-type stabilizers.</div>
@@ -138,7 +137,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Logical state preparation and flag-qubit error correction realized in superconducting-circuit devices (specifically, fixed-frequency transmon qubit architectures) by IBM for <span class="inline-math">\(d=2\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a> and <span class="inline-math">\(d=3\)</span> <a href="#cite-3" class="cite">[4]</a>.</span>
+  <span class="paragraph-in-list">Logical state preparation and flag-qubit error correction realized in superconducting-circuit devices (specifically, fixed-frequency transmon qubit architectures) by IBM for <span class="inline-math">\(d=2\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a> and <span class="inline-math">\(d=3\)</span> <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
 </div>
 
 
@@ -180,7 +179,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/rotated_surface">Rotated surface code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A rotated surface code can be mapped onto a heavy square lattice, resulting in a code similar to the heavy-hexagon code <a href="#cite-0" class="cite">[1]</a>.</span></li>
+      &#x2014;&nbsp;A rotated surface code can be mapped onto a heavy square lattice, resulting in a code similar to the heavy-hexagon code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
 </ul>
 </div>
 
@@ -228,35 +227,7 @@ url={https://errorcorrectionzoo.org/c/heavy_hex}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        C. Chamberland et al., “Topological and Subsystem Codes on Low-Degree Graphs with Flag Qubits”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011022" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1907.09528" target="_blank" class="href">1907.09528</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        M. Takita et al., “Experimental Demonstration of Fault-Tolerant State Preparation with Superconducting Qubits”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.180501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.09259" target="_blank" class="href">1705.09259</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        E. H. Chen et al., “Calibrated Decoders for Experimental Quantum Error Correction”, Physical Review Letters <span class="textbf">128</span>, (2022). <a href="https://doi.org/10.1103/PhysRevLett.128.110504" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2110.04285" target="_blank" class="href">2110.04285</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        Neereja Sundaresan et al., “Matching and maximum likelihood decoding of a multi-round subsystem quantum error correction experiment”. <a href="https://arxiv.org/abs/2203.07205" target="_blank" class="href">2203.07205</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. Chamberland et al., “Topological and Subsystem Codes on Low-Degree Graphs with Flag Qubits”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011022" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1907.09528" target="_blank" class="href-href">1907.09528</a></dd><dt id="citation-2">[2]</dt><dd>M. Takita et al., “Experimental Demonstration of Fault-Tolerant State Preparation with Superconducting Qubits”, Physical Review Letters <span class="textbf">119</span>, (2017). <a href="https://doi.org/10.1103/PhysRevLett.119.180501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1705.09259" target="_blank" class="href-href">1705.09259</a></dd><dt id="citation-3">[3]</dt><dd>E. H. Chen et al., “Calibrated Decoders for Experimental Quantum Error Correction”, Physical Review Letters <span class="textbf">128</span>, (2022). <a href="https://doi.org/10.1103/PhysRevLett.128.110504" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2110.04285" target="_blank" class="href-href">2110.04285</a></dd><dt id="citation-4">[4]</dt><dd>Neereja Sundaresan et al., “Matching and maximum likelihood decoding of a multi-round subsystem quantum error correction experiment”. <a href="https://arxiv.org/abs/2203.07205" target="_blank" class="href-href">2203.07205</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

@@ -78,19 +78,15 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quantum Lego code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Quantum Lego code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Code constructed using a tensor-network-based graphical framework from <span class="textit">quantum lego blocks</span>, which are smaller quantum codes over qubits or qudits. The class of codes constructed using the framework depends on the choice of atomic lego blocks. For instance, any stabilizer code can be built out of atomic blocks like the 2-site repetition code, single-site trivial stabilizer codes, and tensor products of the <span class="inline-math">\(|0\rangle\)</span> state. Specifically, the <a href="/c/happy" class="ref">HaPPY</a> code is a quantum Lego code whose atomic Lego block is the <a href="/c/stab_5_1_3" class="ref">five-qubit perfect</a> code.</p>
-<p>The individual lego blocks and resulting quantum lego codes can be stabilizer or non-stabilizer. However, both the logical and physical degrees of freedom must have the same local dimension.</p>
-<p>To construct a Lego code, the encoding map <span class="inline-math">\(V\)</span> for each code that is to be used in the construction is converted to a tensor by decomposing it using the formula
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>Code constructed using a tensor-network-based graphical framework from <span class="textit">quantum lego blocks</span>, which are smaller quantum codes over qubits or qudits. The class of codes constructed using the framework depends on the choice of atomic lego blocks. For instance, any stabilizer code can be built out of atomic blocks like the 2-site repetition code, single-site trivial stabilizer codes, and tensor products of the <span class="inline-math">\(|0\rangle\)</span> state. Specifically, the <a href="/c/happy" class="href-ref ref-code">HaPPY</a> code is a quantum Lego code whose atomic Lego block is the <a href="/c/stab_5_1_3" class="href-ref ref-code">five-qubit perfect</a> code.</p><p>The individual lego blocks and resulting quantum lego codes can be stabilizer or non-stabilizer. However, both the logical and physical degrees of freedom must have the same local dimension.</p><p>To construct a Lego code, the encoding map <span class="inline-math">\(V\)</span> for each code that is to be used in the construction is converted to a tensor by decomposing it using the formula <span class="display-math env-align">\begin{align}
 V = \sum_{i_j} V_{i_1 \ldots i_{n+k}} | i_{k+1} \ldots i_{k+n} \rangle \langle i_1 \ldots i_k |~.
-\end{align}</span>
-We then look at the codes graphically, treating each <span class="inline-math">\(i_j\)</span> as an edge dangling out of the tensor vertex <span class="inline-math">\(V_{i_1 \ldots i_{n+k}}\)</span>. These edges are either connected to another tensor vertex&#x27;s edges or left dangling. If the block codes are stabilizer, then each local tensor has unitary product stabilizers (UPS). The goal is to push each UPS through the tensor network until each dangling edge has only trivial support. Otherwise, a matching value is pushed through the edge and the process is repeated on the next tensor. If a UPS can be pushed through the whole network, then a UPS for the larger network has been found. The dangling legs (edges) and UPS of the whole network can then be converted to physical/logical elements and stabilizers/logical operators for a new quantum code.</p></div>
+\end{align}</span> We then look at the codes graphically, treating each <span class="inline-math">\(i_j\)</span> as an edge dangling out of the tensor vertex <span class="inline-math">\(V_{i_1 \ldots i_{n+k}}\)</span>. These edges are either connected to another tensor vertex&#x27;s edges or left dangling. If the block codes are stabilizer, then each local tensor has unitary product stabilizers (UPS). The goal is to push each UPS through the tensor network until each dangling edge has only trivial support. Otherwise, a matching value is pushed through the edge and the process is repeated on the next tensor. If a UPS can be pushed through the whole network, then a UPS for the larger network has been found. The dangling legs (edges) and UPS of the whole network can then be converted to physical/logical elements and stabilizers/logical operators for a new quantum code.</p></div>
 
 
 
@@ -106,7 +102,7 @@ We then look at the codes graphically, treating each <span class="inline-math">\
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary-circuit encoding exists for a restricted class of tensor networks contractible via isometries <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Unitary-circuit encoding exists for a restricted class of tensor networks contractible via isometries <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
  
@@ -114,7 +110,7 @@ We then look at the codes graphically, treating each <span class="inline-math">\
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoder is created by creating a decoding quantum circuit with dangling legs replaced with input/output wires, and tensors converted to unitary gates. Maximum likelihood decoding can be used when the tensors are stabilizer codes.</span><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#cite-2" class="cite">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">The decoder is created by creating a decoding quantum circuit with dangling legs replaced with input/output wires, and tensors converted to unitary gates. Maximum likelihood decoding can be used when the tensors are stabilizer codes.</span><span class="paragraph-in-list">Tensor-network decoder when the tensor network is contractible via stabilizer isometries <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Tensor-network-based decoder when the encoding unitary is known <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -223,30 +219,7 @@ url={https://errorcorrectionzoo.org/c/quantum_lego}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        C. Cao and B. Lackey, “Quantum Lego: Building Quantum Error Correction Codes from Tensor Networks”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.020332" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2109.08158" target="_blank" class="href">2109.08158</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        T. Farrelly et al., “Tensor-Network Codes”, Physical Review Letters <span class="textbf">127</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.127.040507" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2009.10329" target="_blank" class="href">2009.10329</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A. J. Ferris and D. Poulin, “Tensor Networks and Quantum Error Correction”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.030501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1312.4578" target="_blank" class="href">1312.4578</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. Cao and B. Lackey, “Quantum Lego: Building Quantum Error Correction Codes from Tensor Networks”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.020332" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2109.08158" target="_blank" class="href-href">2109.08158</a></dd><dt id="citation-2">[2]</dt><dd>T. Farrelly et al., “Tensor-Network Codes”, Physical Review Letters <span class="textbf">127</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.127.040507" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2009.10329" target="_blank" class="href-href">2009.10329</a></dd><dt id="citation-3">[3]</dt><dd>A. J. Ferris and D. Poulin, “Tensor Networks and Quantum Error Correction”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.030501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1312.4578" target="_blank" class="href-href">1312.4578</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

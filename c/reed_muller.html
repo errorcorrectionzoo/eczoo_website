@@ -78,17 +78,15 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Reed-Muller (RM) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a></span></h1>
+      Reed-Muller (RM) code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</p>
-<p>Generator matrices of RM codes are constructed by starting from the <span class="inline-math">\(2^m\)</span>-dimensional matrix <span class="inline-math">\(F^{(m)}=\left(\begin{smallmatrix}1 &amp; 0\\
+<div class="sectioncontent code-description"><p>Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</p><p>Generator matrices of RM codes are constructed by starting from the <span class="inline-math">\(2^m\)</span>-dimensional matrix <span class="inline-math">\(F^{(m)}=\left(\begin{smallmatrix}1 &amp; 0\\
 1 &amp; 1
-\end{smallmatrix}\right)^{\otimes m}\)</span>, labeling its rows top-to-bottom from <span class="inline-math">\(0\)</span> to <span class="inline-math">\(2^m-1\)</span>, converting the labels to binary strings of length <span class="inline-math">\(m\)</span>, and deleting all rows whose labels have a Hamming weight less than <span class="inline-math">\(m-r\)</span>. The recursive nature of the tensor product in the matrix <span class="inline-math">\(F^{(m)}\)</span> implies that RM<span class="inline-math">\((r,m)\)</span> is a subcode of RM<span class="inline-math">\((r+1,m)\)</span>.</p>
-<p>Another way to generate RM codewords is to list all outcomes of all polynomials of <span class="inline-math">\(m\)</span> binary variables of degree at most <span class="inline-math">\(r\)</span> <a href="#cite-3" class="cite">[4]</a> (see also Ch. 13 of Ref. <a href="#cite-4" class="cite">[5]</a>).</p></div>
+\end{smallmatrix}\right)^{\otimes m}\)</span>, labeling its rows top-to-bottom from <span class="inline-math">\(0\)</span> to <span class="inline-math">\(2^m-1\)</span>, converting the labels to binary strings of length <span class="inline-math">\(m\)</span>, and deleting all rows whose labels have a Hamming weight less than <span class="inline-math">\(m-r\)</span>. The recursive nature of the tensor product in the matrix <span class="inline-math">\(F^{(m)}\)</span> implies that RM<span class="inline-math">\((r,m)\)</span> is a subcode of RM<span class="inline-math">\((r+1,m)\)</span>.</p><p>Another way to generate RM codewords is to list all outcomes of all polynomials of <span class="inline-math">\(m\)</span> binary variables of degree at most <span class="inline-math">\(r\)</span> <a href="#citation-4" class="href-endnote endnote citation">[4]</a> (see also Ch. 13 of Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>).</p></div>
 
 
 
@@ -100,7 +98,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate">Achieves capacity of the binary erasure channel <a href="#cite-5" class="cite">[6]</a> and of the binary memoryless symmetric (BMS) channel under bitwise maximum-a-posteriori decoding <a href="#cite-6" class="cite">[7]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-rate">Achieves capacity of the binary erasure channel <a href="#citation-6" class="href-endnote endnote citation">[6]</a> and of the binary memoryless symmetric (BMS) channel under bitwise maximum-a-posteriori decoding <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</div>
 
 
 
@@ -112,7 +110,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Reed decoder with <span class="inline-math">\(r+1\)</span>-step majority decoding corrects <span class="inline-math">\(\frac{1}{2}(2^{m-r}-1)\)</span> errors <a href="#cite-0" class="cite">[1]</a> (see also Ch. 13 of Ref. <a href="#cite-4" class="cite">[5]</a>).</span><span class="paragraph-in-list">Sequential code-reduction decoding <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">First-order (<span class="inline-math">\(r=1\)</span>) RM codes admit specialized decoders <a href="#cite-8" class="cite">[9]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Reed decoder with <span class="inline-math">\(r+1\)</span>-step majority decoding corrects <span class="inline-math">\(\frac{1}{2}(2^{m-r}-1)\)</span> errors <a href="#citation-1" class="href-endnote endnote citation">[1]</a> (see also Ch. 13 of Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>).</span><span class="paragraph-in-list">Sequential code-reduction decoding <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span><span class="paragraph-in-list">First-order (<span class="inline-math">\(r=1\)</span>) RM codes admit specialized decoders <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></div>
 
 
 
@@ -124,12 +122,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Deep-space communication, including the Mariner 9 spacecraft <a href="#cite-9" class="cite">[10]</a><a href="#cite-10" class="cite">[11]</a>.</span>
+  <span class="paragraph-in-list">Deep-space communication, including the Mariner 9 spacecraft <a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Chs. 13-15 of Ref. <a href="#cite-4" class="cite">[5]</a> for details of RM codes and their variants.</span>
+  <span class="paragraph-in-list">See Chs. 13-15 of Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a> for details of RM codes and their variants.</span>
 </div>
 
 
@@ -145,19 +143,19 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bch">Binary BCH code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RM<span class="inline-math">\((r,m)\)</span> codes are subcodes of BCH codes of designed distance <span class="inline-math">\(2^{m-r}-1\)</span> (<a href="#cite-4" class="cite">[5]</a>, Ch. 13).</span></li>
+      &#x2014;&nbsp;RM<span class="inline-math">\((r,m)\)</span> codes are subcodes of BCH codes of designed distance <span class="inline-math">\(2^{m-r}-1\)</span> (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ch. 13).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RM codes are images of linear quaternary codes under the Gray map (<a href="#cite-11" class="cite">[12]</a>, Sec. 6.3).</span></li>
+      &#x2014;&nbsp;RM codes are images of linear quaternary codes under the Gray map (<a href="#citation-12" class="href-endnote endnote citation">[12]</a>, Sec. 6.3).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/divisible">Divisible code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An RM<span class="inline-math">\((r,m)\)</span> code is <span class="inline-math">\(2^{\left\lceil m/r\right\rceil-1}\)</span>-divisible, according to McEliece&#x27;s theorem <a href="#cite-12" class="cite">[13]</a><a href="#cite-13" class="cite">[14]</a>.</span></li>
+      &#x2014;&nbsp;An RM<span class="inline-math">\((r,m)\)</span> code is <span class="inline-math">\(2^{\left\lceil m/r\right\rceil-1}\)</span>-divisible, according to McEliece&#x27;s theorem <a href="#citation-13" class="href-endnote endnote citation">[13]</a><a href="#citation-14" class="href-endnote endnote citation">[14]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/binary_duadic">Binary duadic code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Certain punctured RM codes such as RM<span class="inline-math">\(^*(2,5)\)</span> are duadic; see Ref. <a href="#cite-14" class="cite">[15]</a>, Table 6.2.</span></li>
+      &#x2014;&nbsp;Certain punctured RM codes such as RM<span class="inline-math">\(^*(2,5)\)</span> are duadic; see Ref. <a href="#citation-15" class="href-endnote endnote citation">[15]</a>, Table 6.2.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/group">Group code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -193,7 +191,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_cyclic">Cyclic binary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#cite-4" class="cite">[5]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes.</span></li>
+      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hadamard">Hadamard code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -201,7 +199,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Majorana stabilizer codes can be constructed by weakly self-dual RM codes <a href="#cite-15" class="cite">[16]</a>. These codes have the additional property that the global fermion parity is fixed in the codespace. In this family of codes, logical measurements are reduced to parity measurements of some subset of Majorana fermions in the code.</span></li>
+      &#x2014;&nbsp;Majorana stabilizer codes can be constructed by weakly self-dual RM codes <a href="#citation-16" class="href-endnote endnote citation">[16]</a>. These codes have the additional property that the global fermion parity is fixed in the codespace. In this family of codes, logical measurements are reduced to parity measurements of some subset of Majorana fermions in the code.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/polar">Polar code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -263,95 +261,7 @@ url={https://errorcorrectionzoo.org/c/reed_muller}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        N. Mitani, <span class="emph">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        Emmanuel Abbe, Amir Shpilka, and Min Ye, “Reed-Muller Codes: Theory and Algorithms”. <a href="https://arxiv.org/abs/2002.03317" target="_blank" class="href">2002.03317</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        S. Kudekar et al., “Reed–Muller Codes Achieve Capacity on Erasure Channels”, IEEE Transactions on Information Theory <span class="textbf">63</span>, 4298 (2017). <a href="https://doi.org/10.1109/TIT.2017.2673829" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        Galen Reeves and Henry D. Pfister, “Reed-Muller Codes Achieve Capacity on BMS Channels”. <a href="https://arxiv.org/abs/2110.14631" target="_blank" class="href">2110.14631</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        L. Rudolph and C. Hartmann, “Decoding by sequential code reduction”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 549 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055023" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-8">[9]</dt>
-      <dd>
-        manual:E.C. Posner, <span class="emph">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-9">[10]</dt>
-      <dd>
-        J. L. Massey, “Deep-space communications and coding: A marriage made in heaven”, Advanced Methods for Satellite and Deep Space Communications 1. <a href="https://doi.org/10.1007/bfb0036046" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-10">[11]</dt>
-      <dd>
-        E.C. Posner, <span class="emph">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-11">[12]</dt>
-      <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-12">[13]</dt>
-      <dd>
-        R. J. McEliece, “On periodic sequences from GF(q)”, Journal of Combinatorial Theory, Series A <span class="textbf">10</span>, 80 (1971). <a href="https://doi.org/10.1016/0097-3165(71)90066-5" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-13">[14]</dt>
-      <dd>
-        R. J. McEliece, “Weight congruences for p-ary cyclic codes”, Discrete Mathematics <span class="textbf">3</span>, 177 (1972). <a href="https://doi.org/10.1016/0012-365X(72)90032-5" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-14">[15]</dt>
-      <dd>
-        W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-15">[16]</dt>
-      <dd>
-        Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href">1703.00459</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>N. Mitani, <span class="textit">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.</dd><dt id="citation-4">[4]</dt><dd>Emmanuel Abbe, Amir Shpilka, and Min Ye, “Reed-Muller Codes: Theory and Algorithms”. <a href="https://arxiv.org/abs/2002.03317" target="_blank" class="href-href">2002.03317</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>S. Kudekar et al., “Reed–Muller Codes Achieve Capacity on Erasure Channels”, IEEE Transactions on Information Theory <span class="textbf">63</span>, 4298 (2017). <a href="https://doi.org/10.1109/TIT.2017.2673829" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Galen Reeves and Henry D. Pfister, “Reed-Muller Codes Achieve Capacity on BMS Channels”. <a href="https://arxiv.org/abs/2110.14631" target="_blank" class="href-href">2110.14631</a></dd><dt id="citation-8">[8]</dt><dd>L. Rudolph and C. Hartmann, “Decoding by sequential code reduction”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 549 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055023" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>manual:E.C. Posner, <span class="textit">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.</dd><dt id="citation-10">[10]</dt><dd>J. L. Massey, “Deep-space communications and coding: A marriage made in heaven”, Advanced Methods for Satellite and Deep Space Communications 1. <a href="https://doi.org/10.1007/bfb0036046" target="_blank" class="href-href">DOI</a></dd><dt id="citation-11">[11]</dt><dd>E.C. Posner, <span class="textit">Combinatorial Structures in Planetary Reconnaissance</span> in Error Correcting Codes, ed. H.B. Mann, Wiley, NY 1968.</dd><dt id="citation-12">[12]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>R. J. McEliece, “On periodic sequences from GF(q)”, Journal of Combinatorial Theory, Series A <span class="textbf">10</span>, 80 (1971). <a href="https://doi.org/10.1016/0097-3165(71)90066-5" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>R. J. McEliece, “Weight congruences for p-ary cyclic codes”, Discrete Mathematics <span class="textbf">3</span>, 177 (1972). <a href="https://doi.org/10.1016/0012-365X(72)90032-5" target="_blank" class="href-href">DOI</a></dd><dt id="citation-15">[15]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-16">[16]</dt><dd>Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href-href">1703.00459</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

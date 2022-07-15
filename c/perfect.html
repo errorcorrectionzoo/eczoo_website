@@ -84,18 +84,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p>
-<p>Any perfect linear code is either a repetition code, a Hamming code, or a binary or ternary Golay code <a href="#cite-0" class="cite">[1]</a>. If <span class="inline-math">\(q\)</span> is a prime power, any distance-three code is either a Hamming code or a nonlinear code with the same parameters; see Ref. <a href="#cite-1" class="cite">[2]</a>, pg. 100, for more details.</p>
-<p>Perfect codes are those for which balls of Hamming radius <span class="inline-math">\(t\)</span> exactly fill the space of all <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary strings. <span class="textit">Quasi-perfect codes</span> are those for which balls of Hamming radius <span class="inline-math">\(t\)</span> are disjoint, while balls of radius <span class="inline-math">\(t+1\)</span> cover the space with possible overlaps.</p>
-<p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
+\end{align}</span> becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</p><p>Any perfect linear code is either a repetition code, a Hamming code, or a binary or ternary Golay code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. If <span class="inline-math">\(q\)</span> is a prime power, any distance-three code is either a Hamming code or a nonlinear code with the same parameters; see Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>, pg. 100, for more details.</p><p>Perfect codes are those for which balls of Hamming radius <span class="inline-math">\(t\)</span> exactly fill the space of all <span class="inline-math">\(n\)</span> <span class="inline-math">\(q\)</span>-ary strings. <span class="textit">Quasi-perfect codes</span> are those for which balls of Hamming radius <span class="inline-math">\(t\)</span> are disjoint, while balls of radius <span class="inline-math">\(t+1\)</span> cover the space with possible overlaps.</p><p>For binary codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit, <span class="display-math env-align">\begin{align}
 \frac{k}{n}\leq 1-h(t/n),
-\end{align}</span>
-where <span class="inline-math">\(h\)</span> is the binary entropy function.</p></div>
+\end{align}</span> where <span class="inline-math">\(h\)</span> is the binary entropy function.</p></div>
 
 
 
@@ -168,7 +161,7 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bch">Binary BCH code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Only double error-correcting BCH codes <span class="inline-math">\([2^m-1,n-2m,5]\)</span> are quasi-perfect <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> (see also Ref. <a href="#cite-4" class="cite">[5]</a>, Ch. 9).</span></li>
+      &#x2014;&nbsp;Only double error-correcting BCH codes <span class="inline-math">\([2^m-1,n-2m,5]\)</span> are quasi-perfect <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a> (see also Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ch. 9).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Binary repetition code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -176,7 +169,7 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/homological_classical">Graph homology code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A family of homology codes saturate the asymptotic Hamming bound <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;A family of homology codes saturate the asymptotic Hamming bound <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_perfect">Perfect quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -184,7 +177,7 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/zetterberg">Zetterberg code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Zetterberg codes are quasi-perfect, with each <span class="inline-math">\(n\)</span>-bit string at most three bit-flips away from a codeword <a href="#cite-6" class="cite">[7]</a>.</span></li>
+      &#x2014;&nbsp;Zetterberg codes are quasi-perfect, with each <span class="inline-math">\(n\)</span>-bit string at most three bit-flips away from a codeword <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span></li>
 </ul>
 </div>
 
@@ -232,50 +225,7 @@ url={https://errorcorrectionzoo.org/c/perfect}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        K. Lindström, “All nearly perfect codes are known”, Information and Control <span class="textbf">35</span>, 40 (1977). <a href="https://doi.org/10.1016/S0019-9958(77)90519-8" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        D. Gorenstein, W. W. Peterson, and N. Zierler, “Two-error correcting Bose-Chaudhuri codes are quasi-perfect”, Information and Control <span class="textbf">3</span>, 291 (1960). <a href="https://doi.org/10.1016/S0019-9958(60)90877-9" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        T. Helleseth, “No primitive binary&amp;amp;lt;tex&amp;amp;gt;t&amp;amp;lt;/tex&amp;amp;gt;-error-correcting BCH code with&amp;amp;lt;tex&amp;amp;gt;t &amp;amp;gt; 2&amp;amp;lt;/tex&amp;amp;gt;is quasi-perfect (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">25</span>, 361 (1979). <a href="https://doi.org/10.1109/TIT.1979.1056043" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href">quant-ph/0605094</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        S. M. Dodunekov and J. E. M. Nilsson, “Algebraic decoding of the Zetterberg codes”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 1570 (1992). <a href="https://doi.org/10.1109/18.149509" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>K. Lindström, “All nearly perfect codes are known”, Information and Control <span class="textbf">35</span>, 40 (1977). <a href="https://doi.org/10.1016/S0019-9958(77)90519-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>D. Gorenstein, W. W. Peterson, and N. Zierler, “Two-error correcting Bose-Chaudhuri codes are quasi-perfect”, Information and Control <span class="textbf">3</span>, 291 (1960). <a href="https://doi.org/10.1016/S0019-9958(60)90877-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>T. Helleseth, “No primitive binary&amp;amp;lt;tex&amp;amp;gt;t&amp;amp;lt;/tex&amp;amp;gt;-error-correcting BCH code with&amp;amp;lt;tex&amp;amp;gt;t &amp;amp;gt; 2&amp;amp;lt;/tex&amp;amp;gt;is quasi-perfect (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">25</span>, 361 (1979). <a href="https://doi.org/10.1109/TIT.1979.1056043" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href-href">quant-ph/0605094</a></dd><dt id="citation-7">[7]</dt><dd>S. M. Dodunekov and J. E. M. Nilsson, “Algebraic decoding of the Zetterberg codes”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 1570 (1992). <a href="https://doi.org/10.1109/18.149509" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

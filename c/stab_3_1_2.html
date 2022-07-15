@@ -78,27 +78,22 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Three qutrit code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Three qutrit code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">A <span class="inline-math">\([[3,1,2]]_3\)</span> prime-qudit CSS code with stabilizer generators <span class="inline-math">\(ZZZ\)</span> and <span class="inline-math">\(XXX\)</span>. The code defines a quantum secret-sharing scheme and serves as a minimal model for the AdS/CFT holographic duality. The codewords are <span class="display-math env-align">\begin{align}
   \begin{split}
     | \overline{0} \rangle &amp;= \frac{1}{\sqrt{3}} (| 000 \rangle + | 111 \rangle + | 222 \rangle) \\
     | \overline{1} \rangle &amp;= \frac{1}{\sqrt{3}} (| 012 \rangle + | 120 \rangle + | 201 \rangle) \\
     | \overline{2} \rangle &amp;= \frac{1}{\sqrt{3}} (| 021 \rangle + | 102 \rangle + | 210 \rangle)~.
   \end{split}
-\end{align}</span>
-The elements in the superposition of each logical codeword are related to each other via cyclic permutations.
-</div>
+\end{align}</span> The elements in the superposition of each logical codeword are related to each other via cyclic permutations. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p>
-<p>The code is an example of a <span class="inline-math">\( ((n = 3, k = 2)) \)</span> threshold scheme where a secret (the quantum information) is split into <span class="inline-math">\( n \)</span> shares and can be reconstructed by <span class="inline-math">\( k \)</span> pieces.</p>
-<p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></div>
+<div class="sectioncontent code-protection"><p>Detects single qutrit errors and protects against a single-qutrit erasure. There does not exist a three-qubit code with analogous properties.</p><p>The code is an example of a <span class="inline-math">\( ((n = 3, k = 2)) \)</span> threshold scheme where a secret (the quantum information) is split into <span class="inline-math">\( n \)</span> shares and can be reconstructed by <span class="inline-math">\( k \)</span> pieces.</p><p>They key property of this code is that the reduced density matrix of any single qutrit is maximally mixed, meaning no information can be extracted from that qutrit. Therefore, a single qutrit tells you nothing about the encoded message, but access to any two pairs of qutrits will reveal the secret.</p></div>
 
 
 <!-- Display features -->
@@ -113,7 +108,7 @@ The elements in the superposition of each logical codeword are related to each o
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">In addition to thinking about the encoding of states, it is also interesting to look at the trasformation of operators from the physical space into the logical space. Due to the unique structure and recovery protocol of the three qutrit code, the representation of a logical operator <span class="inline-math">\( \overline{O} \)</span> is not unique. Instead, <span class="inline-math">\( \overline{O} \)</span> can be constructed from unitary matricies with support on only two out of the three qutrits. Therefore, the logical operator has valid representations constructed from support on different sets of two qutrits. This operator construction is directly analogous to the construction of operators in the bulk (at the center) of the AdS<span class="inline-math">\(_3\)</span>-Rindler reconstruction. The three-qutrit code can then be used to describe how these local bulk operators are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">This construction is related to the cleaning lemma <a href="#cite-2" class="cite">[3]</a>, which was introduced in the context of constructing self-correcting quantum memories from stabilizer codes with geometrically-local generators. In this lemma, subspaces can be <span class="textit">cleaned out</span> by removing operators with support on a subset of qutrits.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">In addition to thinking about the encoding of states, it is also interesting to look at the trasformation of operators from the physical space into the logical space. Due to the unique structure and recovery protocol of the three qutrit code, the representation of a logical operator <span class="inline-math">\( \overline{O} \)</span> is not unique. Instead, <span class="inline-math">\( \overline{O} \)</span> can be constructed from unitary matricies with support on only two out of the three qutrits. Therefore, the logical operator has valid representations constructed from support on different sets of two qutrits. This operator construction is directly analogous to the construction of operators in the bulk (at the center) of the AdS<span class="inline-math">\(_3\)</span>-Rindler reconstruction. The three-qutrit code can then be used to describe how these local bulk operators are protected against localized boundary errors <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">This construction is related to the cleaning lemma <a href="#citation-3" class="href-endnote endnote citation">[3]</a>, which was introduced in the context of constructing self-correcting quantum memories from stabilizer codes with geometrically-local generators. In this lemma, subspaces can be <span class="textit">cleaned out</span> by removing operators with support on a subset of qutrits.</span></div>
 
 
  
@@ -134,7 +129,7 @@ The elements in the superposition of each logical codeword are related to each o
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Connections to Ads/CFT from the perspetive of how arbitrary operators are encoded into the logical space. This encoding is analagous and helps explain why operators acting on the bulk are protected against localized boundary errors <a href="#cite-1" class="cite">[2]</a>.</span>
+  <span class="paragraph-in-list">Connections to Ads/CFT from the perspetive of how arbitrary operators are encoded into the logical space. This encoding is analagous and helps explain why operators acting on the bulk are protected against localized boundary errors <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span>
 </div>
 
 
@@ -154,7 +149,7 @@ The elements in the superposition of each logical codeword are related to each o
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/holographic">Holographic code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Three-qutrit code is a minimal model for holography <a href="#cite-1" class="cite">[2]</a><a href="#cite-3" class="cite">[4]</a>.</span></li>
+      &#x2014;&nbsp;Three-qutrit code is a minimal model for holography <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
 </ul>
 </div>
 
@@ -169,7 +164,7 @@ The elements in the superposition of each logical codeword are related to each o
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Three-qutrit code defines a minimal secret-sharing scheme <a href="#cite-0" class="cite">[1]</a> that is substantially generalized by approximate secret-sharing codes.</span></li>
+      &#x2014;&nbsp;Three-qutrit code defines a minimal secret-sharing scheme <a href="#citation-1" class="href-endnote endnote citation">[1]</a> that is substantially generalized by approximate secret-sharing codes.</span></li>
 </ul>
 </div>
 
@@ -217,35 +212,7 @@ url={https://errorcorrectionzoo.org/c/stab_3_1_2}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href">quant-ph/9901025</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        A. Almheiri, X. Dong, and D. Harlow, “Bulk locality and quantum error correction in AdS/CFT”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP04(2015)163" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1411.7041" target="_blank" class="href">1411.7041</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href">0810.1983</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        D. Harlow, “The Ryu–Takayanagi Formula from Quantum Error Correction”, Communications in Mathematical Physics <span class="textbf">354</span>, 865 (2017). <a href="https://doi.org/10.1007/s00220-017-2904-z" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1607.03901" target="_blank" class="href">1607.03901</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Cleve, D. Gottesman, and H.-K. Lo, “How to Share a Quantum Secret”, Physical Review Letters <span class="textbf">83</span>, 648 (1999). <a href="https://doi.org/10.1103/PhysRevLett.83.648" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9901025" target="_blank" class="href-href">quant-ph/9901025</a></dd><dt id="citation-2">[2]</dt><dd>A. Almheiri, X. Dong, and D. Harlow, “Bulk locality and quantum error correction in AdS/CFT”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP04(2015)163" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1411.7041" target="_blank" class="href-href">1411.7041</a></dd><dt id="citation-3">[3]</dt><dd>S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href-href">0810.1983</a></dd><dt id="citation-4">[4]</dt><dd>D. Harlow, “The Ryu–Takayanagi Formula from Quantum Error Correction”, Communications in Mathematical Physics <span class="textbf">354</span>, 865 (2017). <a href="https://doi.org/10.1007/s00220-017-2904-z" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1607.03901" target="_blank" class="href-href">1607.03901</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

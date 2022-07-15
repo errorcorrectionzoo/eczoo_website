@@ -84,13 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code.
-This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center.
-The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers.
-Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check.
-A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron.
-The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron.
-</div>
+<div class="sectioncontent code-description"><span class="inline-math">\([[15,1,3]]\)</span> CSS code that is most easily thought of as a tetrahedral 3D color code. This code contains 15 qubits, represented by four vertices, four face centers, six edge centers, and one body center. The tetrahedron is cellulated into four identical polyhedron cells by connecting the body center to all four face centers, where each face center is then connected by three adjacent edge centers. Each colored cell corresponds to a weight-8 <span class="inline-math">\(X\)</span>-check, and each face corresponds to a weight-4 <span class="inline-math">\(Z\)</span>-check. A logical <span class="inline-math">\(Z\)</span> is any weight-3 <span class="inline-math">\(Z\)</span>-string along an edge of the entire tetrahedron. The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="inline-math">\(X\)</span>-face of the entire tetrahedron. </div>
 
 
 
@@ -104,25 +98,25 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 <h2 id="feature_magic_scaling_exponent"
       class="code-feature code-feature-magic_scaling_exponent">Magic</h2>
-  <div class="sectioncontent code-feature code-feature-magic_scaling_exponent">Magic-state distillation scaling exponent <span class="inline-math">\( \gamma= \log_d (n/k)\approx 2.46\)</span> <a href="#cite-0" class="cite">[1]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-magic_scaling_exponent">Magic-state distillation scaling exponent <span class="inline-math">\( \gamma= \log_d (n/k)\approx 2.46\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</div>
 
 
 
 
 <h2 id="feature_transversal_gates"
       class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
-  <div class="sectioncontent code-feature code-feature-transversal_gates">A transversal logical <span class="inline-math">\(T^\dagger\)</span> is implemented by applying a <span class="inline-math">\(T\)</span> gate on every qubit <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-transversal_gates">A transversal logical <span class="inline-math">\(T^\dagger\)</span> is implemented by applying a <span class="inline-math">\(T\)</span> gate on every qubit <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</div>
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Code is often used in magic-state distillation protocols because of its transversal <span class="inline-math">\(T\)</span> gate <a href="#cite-4" class="cite">[5]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Code is often used in magic-state distillation protocols because of its transversal <span class="inline-math">\(T\)</span> gate <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></div>
 
 
 
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Combining the Steane code and the 15-qubit Reed-Muller code through a fault-tolerant conversion can result in a universal transversal gate set that does not need magic state distillation <a href="#cite-2" class="cite">[3]</a><a href="#cite-5" class="cite">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Combining the Steane code and the 15-qubit Reed-Muller code through a fault-tolerant conversion can result in a universal transversal gate set that does not need magic state distillation <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></div>
 
 
 
@@ -133,7 +127,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The <span class="inline-math">\([[15,1,3]]\)</span> code can be converted into the smallest known stabilizer code with a fault-tolerant logical <span class="inline-math">\(T\)</span> gate (i.e., the <span class="inline-math">\([[10,1,2]]\)</span> code) through a &quot;morphing procedure&quot; <a href="#cite-6" class="cite">[7]</a>.</span>
+  <span class="paragraph-in-list">The <span class="inline-math">\([[15,1,3]]\)</span> code can be converted into the smallest known stabilizer code with a fault-tolerant logical <span class="inline-math">\(T\)</span> gate (i.e., the <span class="inline-math">\([[10,1,2]]\)</span> code) through a &quot;morphing procedure&quot; <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
 </div>
 
 
@@ -153,7 +147,7 @@ The logical <span class="inline-math">\(X\)</span> is any weight-7 <span class="
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quantum_triorthogonal">Triorthogonal code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The <span class="inline-math">\([[15, 1, 3]]\)</span> code is a triorthogonal code <a href="#cite-7" class="cite">[8]</a></span></li>
+      &#x2014;&nbsp;The <span class="inline-math">\([[15, 1, 3]]\)</span> code is a triorthogonal code <a href="#citation-8" class="href-endnote endnote citation">[8]</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/color">Color code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -207,55 +201,7 @@ url={https://errorcorrectionzoo.org/c/stab_15_1_3}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        J. Haah et al., “Magic state distillation with low space overhead and optimal asymptotic input count”, Quantum <span class="textbf">1</span>, 31 (2017). <a href="https://doi.org/10.22331/q-2017-10-03-31" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1703.07847" target="_blank" class="href">1703.07847</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        E. Knill, R. Laflamme, and W. Zurek, “Threshold Accuracy for Quantum Computation”. <a href="https://arxiv.org/abs/quant-ph/9610011" target="_blank" class="href">quant-ph/9610011</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        J. T. Anderson, G. Duclos-Cianci, and D. Poulin, “Fault-Tolerant Conversion between the Steane and Reed-Muller Quantum Codes”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.080501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1403.2734" target="_blank" class="href">1403.2734</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        E. T. Campbell, B. M. Terhal, and C. Vuillot, “Roads towards fault-tolerant universal quantum computation”, Nature <span class="textbf">549</span>, 172 (2017). <a href="https://doi.org/10.1038/nature23460" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.07330" target="_blank" class="href">1612.07330</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        S. Bravyi and A. Kitaev, “Universal quantum computation with ideal Clifford gates and noisy ancillas”, Physical Review A <span class="textbf">71</span>, (2005). <a href="https://doi.org/10.1103/PhysRevA.71.022316" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0403025" target="_blank" class="href">quant-ph/0403025</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        D.-X. Quan et al., “Fault-tolerant conversion between adjacent Reed–Muller quantum codes based on gauge fixing”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">51</span>, 115305 (2018). <a href="https://doi.org/10.1088/1751-8121/aaad13" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1703.03860" target="_blank" class="href">1703.03860</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        Michael Vasmer and Aleksander Kubica, “Morphing quantum codes”. <a href="https://arxiv.org/abs/2112.01446" target="_blank" class="href">2112.01446</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        Sepehr Nezami and Jeongwan Haah, “Classification of Small Triorthogonal Codes”. <a href="https://arxiv.org/abs/2107.09684" target="_blank" class="href">2107.09684</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Haah et al., “Magic state distillation with low space overhead and optimal asymptotic input count”, Quantum <span class="textbf">1</span>, 31 (2017). <a href="https://doi.org/10.22331/q-2017-10-03-31" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1703.07847" target="_blank" class="href-href">1703.07847</a></dd><dt id="citation-2">[2]</dt><dd>E. Knill, R. Laflamme, and W. Zurek, “Threshold Accuracy for Quantum Computation”. <a href="https://arxiv.org/abs/quant-ph/9610011" target="_blank" class="href-href">quant-ph/9610011</a></dd><dt id="citation-3">[3]</dt><dd>J. T. Anderson, G. Duclos-Cianci, and D. Poulin, “Fault-Tolerant Conversion between the Steane and Reed-Muller Quantum Codes”, Physical Review Letters <span class="textbf">113</span>, (2014). <a href="https://doi.org/10.1103/PhysRevLett.113.080501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1403.2734" target="_blank" class="href-href">1403.2734</a></dd><dt id="citation-4">[4]</dt><dd>E. T. Campbell, B. M. Terhal, and C. Vuillot, “Roads towards fault-tolerant universal quantum computation”, Nature <span class="textbf">549</span>, 172 (2017). <a href="https://doi.org/10.1038/nature23460" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1612.07330" target="_blank" class="href-href">1612.07330</a></dd><dt id="citation-5">[5]</dt><dd>S. Bravyi and A. Kitaev, “Universal quantum computation with ideal Clifford gates and noisy ancillas”, Physical Review A <span class="textbf">71</span>, (2005). <a href="https://doi.org/10.1103/PhysRevA.71.022316" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0403025" target="_blank" class="href-href">quant-ph/0403025</a></dd><dt id="citation-6">[6]</dt><dd>D.-X. Quan et al., “Fault-tolerant conversion between adjacent Reed–Muller quantum codes based on gauge fixing”, Journal of Physics A: Mathematical and Theoretical <span class="textbf">51</span>, 115305 (2018). <a href="https://doi.org/10.1088/1751-8121/aaad13" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1703.03860" target="_blank" class="href-href">1703.03860</a></dd><dt id="citation-7">[7]</dt><dd>Michael Vasmer and Aleksander Kubica, “Morphing quantum codes”. <a href="https://arxiv.org/abs/2112.01446" target="_blank" class="href-href">2112.01446</a></dd><dt id="citation-8">[8]</dt><dd>Sepehr Nezami and Jeongwan Haah, “Classification of Small Triorthogonal Codes”. <a href="https://arxiv.org/abs/2107.09684" target="_blank" class="href-href">2107.09684</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

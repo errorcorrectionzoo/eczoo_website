@@ -731,12 +731,41 @@ a.code-self-edit {
   margin-left: 1em;
 }
 
+.visual-highlight {
+  background-color: rgba(255, 230, 70, 0.8) !important;
+  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
+  transition: background-color 0.4s;
+}
+
+.visual-highlight + dd {
+  background-color: rgba(255, 230, 70, 0.8) !important;
+  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
+  transition: background-color 0.4s;
+}
+
 .emph, .textit {
   font-style: italic;
 }
 
 .textbf {
   font-weight: bold;
+}
+
+.heading-level-3 {
+  font-weight: bold;
+  margin: 1.25em 0 1em;
+  font-size: 1rem;
+}
+
+.heading-level-4 {
+  font-style: italic;
+  display: inline;
+}
+
+.heading-level-4::after {
+  display: inline-block;
+  margin: 0px .12em;
+  content: '—';
 }
 
 figure.float {
@@ -770,7 +799,7 @@ figure.float figcaption {
   text-align: center;
 }
 
-figure.float figcaption .center-if-single-line {
+figure.float figcaption > span {
   display: inline-block;
   font-style: italic;
   text-align: left;
@@ -783,7 +812,7 @@ figure.float figcaption .center-if-single-line {
   overflow-x: auto;
 }
 
-.cite {
+.citation {
   font-size: 0.8em;
   display: inline-block;
   vertical-align: 0.3em;
@@ -795,18 +824,6 @@ figure.float figcaption .center-if-single-line {
   display: inline-block;
   vertical-align: 0.3em;
   margin-top: -0.3em;
-}
-
-.visual-highlight {
-  background-color: rgba(255, 230, 70, 0.8) !important;
-  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
-  transition: background-color 0.4s;
-}
-
-.visual-highlight + dd {
-  background-color: rgba(255, 230, 70, 0.8) !important;
-  box-shadow: rgba(255, 230, 70, 0.8) 0px 0px 10px;
-  transition: background-color 0.4s;
 }
 
 #endnotes {

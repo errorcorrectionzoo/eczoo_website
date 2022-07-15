@@ -87,7 +87,7 @@
 <div class="sectioncontent code-description">Qudit-into-oscillator code whose protection against amplitude damping (i.e., photon loss) stems from the use of disjoint sets of Fock states for the construction of each code basis state. The simplest example is the dual-rail code, which has codewords consisting of single Fock states <span class="inline-math">\(|10\rangle\)</span> and <span class="inline-math">\(|01\rangle\)</span>. This code can detect a single loss error since a loss operator in either mode maps one of the codewords to a different Fock state <span class="inline-math">\(|00\rangle\)</span>. More involved codewords consist of several well-separated Fock states such that multiple loss events can be detected and corrected.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="ref">Chuang-Leung-Yamamoto codes</a>.</div>
+<div class="sectioncontent code-protection">Code distance <span class="inline-math">\(d\)</span> is the minimum distance (assuming some metric) between any two labels of Fock states corresponding to different code basis states. For a single mode, <span class="inline-math">\(d\)</span> is the minimum absolute value of the difference between any two Fock-state labels; such codes can detect up to <span class="inline-math">\(d-1\)</span> loss events. Multimode distances can be defined analogously; see, e.g., <a href="/c/chuang-leung-yamamoto" class="href-ref ref-code">Chuang-Leung-Yamamoto codes</a>.</div>
 
 
 <!-- Display features -->
@@ -165,7 +165,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qubits_into_qubits">Qubit code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#cite-0" class="cite">[1]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#cite-1" class="cite">[2]</a>.</span></li>
+      &#x2014;&nbsp;Fock-state code whose codewords are finite superpositions of Fock states with maximum occupation <span class="inline-math">\(N\)</span> can be mapped into a qubit code with <span class="inline-math">\(n\geq\log_2 N\)</span> by performing a binary expansion of the Fock-state labels <span class="inline-math">\(n\)</span> and treating each binary digit as an index for a qubit state. Pauli operators for the constituent qubits can be expressed in terms of bosonic raising and lowering operators <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. However, noise models for the two code families induce different notions of locality and thus qualitatively different physical interpretations <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/fusion">Fusion-based quantum computing (FBQC) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -217,25 +217,7 @@ url={https://errorcorrectionzoo.org/c/fock_state}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Victor V. Albert, private communication, 2016
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href">2111.08894</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Victor V. Albert, private communication, 2016</dd><dt id="citation-2">[2]</dt><dd>Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href-href">2111.08894</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

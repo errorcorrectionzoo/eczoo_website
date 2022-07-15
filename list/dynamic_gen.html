@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Dynamically generated quantum codes
- [error correction zoo]
+    Dynamically generated quantum codes  [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -49,8 +48,7 @@
 
   <main id="main">
 
-Here is a list of quantum <a href="/c/dynamic_gen" class="ref">dynamically generated codes</a>.
-
+Here is a list of quantum <a href="/c/dynamic_gen" class="href-ref ref-code">dynamically generated codes</a>. 
 <table class="codelistpage-table xtra-xtra-stretch">
 <thead>
 <tr>
@@ -69,22 +67,19 @@ Here is a list of quantum <a href="/c/dynamic_gen" class="ref">dynamically gener
 </tr>
 <tr>
   <td class="top left"><a href="/c/floquet">Floquet code</a></td>
-  <td class="textit">Dynamically-generated stabilizer-based code whose logical qubits are generated through a particular sequence of check-operator measurements such that the number of logical qubits is larger than when the code is viewed as a static subsystem stabilizer code.
-After each measurement in the sequence, the codespace is a joint <span class="inline-math">\(+1\)</span> eigenspace of an <span class="textit">instantaneous stabilizer group (ISG)</span>, i.e., a particular stabilizer group corresponding to the measurement. The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured in the next step in the sequence. As opposed to subsystem codes, only specific measurement sequences maintain the codespace.
-</td>
+  <td class="textit">Dynamically-generated stabilizer-based code whose logical qubits are generated through a particular sequence of check-operator measurements such that the number of logical qubits is larger than when the code is viewed as a static subsystem stabilizer code. After each measurement in the sequence, the codespace is a joint <span class="inline-math">\(+1\)</span> eigenspace of an <span class="textit">instantaneous stabilizer group (ISG)</span>, i.e., a particular stabilizer group corresponding to the measurement. The ISG specifies the state of the system as a Pauli stabilizer state at a particular round of measurement, and it evolves into a (potentially) different ISG depending on the check operators measured in the next step in the sequence. As opposed to subsystem codes, only specific measurement sequences maintain the codespace. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/haar_random">Haar-random code</a></td>
-  <td class="textit">Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Haar-random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#cite-0" class="cite">[1]</a>, but encoding and decoding in such <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</td>
+  <td class="textit">Haar-random codewords are generated in a process involving averaging over unitary operations distributed accoding to the Haar measure. Haar-random codes are used to prove statements about the capacity of a quantum channel to transmit quantum information <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, but encoding and decoding in such <span class="inline-math">\(n\)</span>-qubit codes quickly becomes impractical as <span class="inline-math">\(n\to\infty\)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/honeycomb">Honeycomb code</a></td>
-  <td class="textit">Floquet code inspired by the Kitaev honeycomb model <a href="#cite-1" class="cite">[2]</a> whose logical qubits are generated through a particular sequence of measurements.</td>
+  <td class="textit">Floquet code inspired by the Kitaev honeycomb model <a href="#citation-2" class="href-endnote endnote citation">[2]</a> whose logical qubits are generated through a particular sequence of measurements.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/t-designs">Local Haar-random circuit code</a></td>
-  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
-The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-2" class="cite">[3]</a>. Follow-up work <a href="#cite-3" class="cite">[4]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
+  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries. The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Follow-up work <a href="#citation-4" class="href-endnote endnote citation">[4]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/nonlocal_lowdepth">Low-depth random Clifford-circuit code</a></td>
@@ -92,7 +87,7 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
 </tr>
 <tr>
   <td class="top left"><a href="/c/monitored_random_circuits">Monitored random-circuit code</a></td>
-  <td class="textit">Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#cite-4" class="cite">[5]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#cite-5" class="cite">[6]</a><a href="#cite-6" class="cite">[7]</a>.</td>
+  <td class="textit">Error-correcting code arising from a monitored random circuit. Such a circuit is described by a series of intermittant random local projective Pauli measurements with random unitary time-evolution operators. An important sub-family consists of <span class="textit">Clifford monitored random circuits</span>, where unitaries are sampled from the Clifford group <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. When the rate of projective measurements is independently controlled by a probability parameter <span class="inline-math">\(p\)</span>, there can exist two stable phases, one described by volume-law entanglement entropy and the other by area-law entanglement entropy. The phases and their transition can be understood from the perspective of quantum error correction, information scrambling, and channel capacities <a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></td>
@@ -107,47 +102,9 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
 
 
 
-  <div id="endnotes" class="">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        M. M. Wilde, “Preface to the Second Edition”, Quantum Information Theory xi. <a href="https://doi.org/10.1017/9781316809976.001" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1106.1445" target="_blank" class="href">1106.1445</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href">cond-mat/0506438</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href">1901.08092</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href">1903.05124</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href">1905.05195</a>
-      </dd>
-    
-    </dl>
-  </div>
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. M. Wilde, “Preface to the Second Edition”, Quantum Information Theory xi. <a href="https://doi.org/10.1017/9781316809976.001" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1106.1445" target="_blank" class="href-href">1106.1445</a></dd><dt id="citation-2">[2]</dt><dd>A. Kitaev, “Anyons in an exactly solved model and beyond”, Annals of Physics <span class="textbf">321</span>, 2 (2006). <a href="https://doi.org/10.1016/j.aop.2005.10.005" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/cond-mat/0506438" target="_blank" class="href-href">cond-mat/0506438</a></dd><dt id="citation-3">[3]</dt><dd>F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href-href">2010.09775</a></dd><dt id="citation-5">[5]</dt><dd>Y. Li, X. Chen, and M. P. A. Fisher, “Measurement-driven entanglement transition in hybrid quantum circuits”, Physical Review B <span class="textbf">100</span>, (2019). <a href="https://doi.org/10.1103/PhysRevB.100.134306" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.08092" target="_blank" class="href-href">1901.08092</a></dd><dt id="citation-6">[6]</dt><dd>S. Choi et al., “Quantum Error Correction in Scrambling Dynamics and Measurement-Induced Phase Transition”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.030505" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1903.05124" target="_blank" class="href-href">1903.05124</a></dd><dt id="citation-7">[7]</dt><dd>M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href-href">1905.05195</a></dd></dl></div>
+
 
   </main><!-- #main -->
 

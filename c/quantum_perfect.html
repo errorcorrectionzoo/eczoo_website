@@ -84,19 +84,14 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
-\end{align}</span>
-becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</p>
-<p>For qubit codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit,
-<span class="display-math env-align">\begin{align}
+\end{align}</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</p><p>For qubit codes with <span class="inline-math">\(K=2^k\)</span>, one can work out an asymptotic Hamming bound in the large-<span class="inline-math">\(n,k,t\)</span> limit, <span class="display-math env-align">\begin{align}
 \frac{k}{n}\leq 1-\frac{t}{n}\log_{2}3-h(t/n),
-\end{align}</span>
-where <span class="inline-math">\(h\)</span> is the binary entropy function.</p></div>
+\end{align}</span> where <span class="inline-math">\(h\)</span> is the binary entropy function.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</div>
+<div class="sectioncontent code-protection">Perfect codes have been classified. For qubits (<span class="inline-math">\(q=2\)</span>), the only codes are the stabilizer code family <span class="inline-math">\([[(4^r-1)/3, (4^r-1)/3 - 2r, 3]]\)</span> for <span class="inline-math">\(r \geq 2\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>. For qudits, the family is parameterized by <span class="inline-math">\(K=q^{n-2r}\)</span> for <span class="inline-math">\(n=\frac{q^{2r}-1}{q^{2}-1}\)</span> and <span class="inline-math">\(r \geq 2\)</span>; all codes correct a single error (<span class="inline-math">\(t=1\)</span>) <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>. The trivial code (<span class="inline-math">\(k=n\)</span>) is also perfect.</div>
 
 
 <!-- Display features -->
@@ -128,7 +123,7 @@ where <span class="inline-math">\(h\)</span> is the binary entropy function.</p>
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">NMR: Implementation of identity, NOT, and Haddamard gates along with perfect error correcting code on single qubit errors in 5 qubit circuit <a href="#cite-4" class="cite">[5]</a>.</span><span class="paragraph-in-list">NMR: Implementation of perfect error correcting code on 5 spin subsystem of labeled crotonic acid for quantum network benchmarking <a href="#cite-5" class="cite">[6]</a>.</span>
+  <span class="paragraph-in-list">NMR: Implementation of identity, NOT, and Haddamard gates along with perfect error correcting code on single qubit errors in 5 qubit circuit <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span><span class="paragraph-in-list">NMR: Implementation of perfect error correcting code on 5 spin subsystem of labeled crotonic acid for quantum network benchmarking <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span>
 </div>
 
 
@@ -214,45 +209,7 @@ url={https://errorcorrectionzoo.org/c/quantum_perfect}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href">quant-ph/9607027</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href">0907.0049</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&lt;174::AID-JCD3&gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        J. Zhang, R. Laflamme, and D. Suter, “Experimental Implementation of Encoded Logical Qubit Operations in a Perfect Quantum Error Correcting Code”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.100503" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.4797" target="_blank" class="href">1208.4797</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        E. Knill et al., “Benchmarking Quantum Computers: The Five-Qubit Error Correcting Code”, Physical Review Letters <span class="textbf">86</span>, 5811 (2001). <a href="https://doi.org/10.1103/PhysRevLett.86.5811" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0101034" target="_blank" class="href">quant-ph/0101034</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Daniel Gottesman, “Pasting Quantum Codes”. <a href="https://arxiv.org/abs/quant-ph/9607027" target="_blank" class="href-href">quant-ph/9607027</a></dd><dt id="citation-2">[2]</dt><dd>A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href-href">quant-ph/9608006</a></dd><dt id="citation-3">[3]</dt><dd>Zhuo Li and Lijuan Xing, “No More Perfect Codes: Classification of Perfect Quantum Codes”. <a href="https://arxiv.org/abs/0907.0049" target="_blank" class="href-href">0907.0049</a></dd><dt id="citation-4">[4]</dt><dd>J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. Zhang, R. Laflamme, and D. Suter, “Experimental Implementation of Encoded Logical Qubit Operations in a Perfect Quantum Error Correcting Code”, Physical Review Letters <span class="textbf">109</span>, (2012). <a href="https://doi.org/10.1103/PhysRevLett.109.100503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1208.4797" target="_blank" class="href-href">1208.4797</a></dd><dt id="citation-6">[6]</dt><dd>E. Knill et al., “Benchmarking Quantum Computers: The Five-Qubit Error Correcting Code”, Physical Review Letters <span class="textbf">86</span>, 5811 (2001). <a href="https://doi.org/10.1103/PhysRevLett.86.5811" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0101034" target="_blank" class="href-href">quant-ph/0101034</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

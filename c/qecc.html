@@ -84,15 +84,15 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. Codewords may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed in practice.</div>
+<div class="sectioncontent code-description">Encodes quantum information in a (<span class="textit">logical</span>) subspace of a (<span class="textit">physical</span>) Hilbert space such that it is possible to recover said information from errors that act as linear maps on the physical space. The logical subspace is spanned by a basis comprised of <span class="textit">code basis states</span> or <span class="textit">codewords</span>. Codewords may not be normalizable if the physical Hilbert space in infinite, so approximate versions have to be constructed in practice. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>,
-<span class="display-math env-align">\begin{align}
-{\cal D} (EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})=c(E,|\psi\rangle)|\psi\rangle\langle\psi|
-\end{align}</span>
-for some constant <span class="inline-math">\(c\)</span>.</p>
-<p>Equivalently, correction capability is determined by of the <span class="textit">quantum error-correction conditions</span> <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>, which may admit infinite terms due to non-normalizability of ideal code states. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="ref">approximate code</a>.</p></div>
+<div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>, <span class="display-math env-align">\begin{align}
+  {\cal D} (EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})
+  = c(E,|\psi\rangle)|\psi\rangle\langle\psi|
+\end{align}</span> for some constant <span class="inline-math">\(c\)</span>.</p><h3 class="heading-level-3">Conditions for quantum error correction</h3><p>Equivalently, correction capability is determined by of the <span class="textit">quantum error-correction conditions</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>, which may admit infinite terms due to non-normalizability of ideal code states. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="href-ref ref-code">approximate code</a>.</p><div id="defterm-Knill-Laflamme_20Xconditions" class="defterm"><p><span class="heading-level-4 heading-inline">Knill-Laflamme error correction conditions</span>In a finite-dimensional Hilbert space, there are necessary and sufficient conditions for a code to successfully correct a set of errors. These are called the <span class="textit">Knill-Laflamme conditions</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>. Using the notation above, a code <span class="inline-math">\(U\)</span> with code space projector <span class="inline-math">\(\Pi = U U^\dagger\)</span> can correct a set of errors <span class="inline-math">\(\{ E_j \}\)</span> if and only if <span class="display-math env-align">\begin{align}
+    \Pi E_i E_j^\dagger \Pi = c_{ij}\, \Pi\qquad\text{for all \(i,j\),}
+  \end{align}</span> where <span class="inline-math">\(c_{ij}\)</span> can be arbitrary numbers.</p></div></div>
 
 
 <!-- Display features -->
@@ -228,25 +228,7 @@ url={https://errorcorrectionzoo.org/c/qecc}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href">quant-ph/9604034</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href">quant-ph/9604024</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href-href">quant-ph/9604034</a></dd><dt id="citation-2">[2]</dt><dd>C. H. Bennett et al., “Mixed-state entanglement and quantum error correction”, Physical Review A <span class="textbf">54</span>, 3824 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.3824" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604024" target="_blank" class="href-href">quant-ph/9604024</a></dd><dt id="citation-3">[3]</dt><dd>J. Preskill. <span class="textit">Lecture notes on Quantum Computation.</span> (1997–2020) <a href="http://theory.caltech.edu/~preskill/ph219/" target="_blank" class="href-href">URL</a></dd><dt id="citation-4">[4]</dt><dd>M. A. Nielsen and I. L. Chuang, <span class="textit">Quantum Computation and Quantum Information</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511976667" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

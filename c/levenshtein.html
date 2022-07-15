@@ -78,18 +78,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Levenshtein code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Levenshtein code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Binary codes constructed from combining two codes <span class="inline-math">\(A&#x27;\)</span> constructed out of Hadamard matrices.</p>
-<p>Let <span class="inline-math">\(H_n\)</span> be a normalized Hadamard matrix. The generator matrix for an <span class="inline-math">\((n-1,n,n/2)\)</span> code <span class="inline-math">\(A_n\)</span> is obtained by taking <span class="inline-math">\(H_n\)</span>, replacing the +1&#x27;s by 0&#x27;s and the -1&#x27;s by 1&#x27;s, and deleting the first column. Taking only the codewords of <span class="inline-math">\(A_n\)</span> which begin with 0 and deleting the leading 0 yields the generator matrix of an <span class="inline-math">\((n-2,n/2,n/2)\)</span> code <span class="inline-math">\(A_n&#x27;\)</span>.</p>
-<p>Next, apply the following way of combining codes. Suppose we have an <span class="inline-math">\((n_1,M_1,d_1)\)</span> code <span class="inline-math">\(C_1\)</span> and an <span class="inline-math">\((n_2,M_2,d_2)\)</span> code <span class="inline-math">\(C_2\)</span>. The combined <span class="inline-math">\((an_1+bn_2,\min(M_1,M_2),ad_1+bd_2)\)</span> code <span class="inline-math">\(a C_1\bigoplus b C_2\)</span> may be constructed by pasting <span class="inline-math">\(a\)</span> copies of <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(b\)</span> copies of <span class="inline-math">\(C_2\)</span> together and omitting the last <span class="inline-math">\(|M_1-M_2|\)</span> rows. Applying this to construct a Levenshtein code with length <span class="inline-math">\(n\)</span> and distance <span class="inline-math">\(d\)</span>, define <span class="inline-math">\(k=\lfloor d/(2d-n)\rfloor\)</span>, <span class="inline-math">\(a=d(2k+1)-n(k+1)\)</span>, and <span class="inline-math">\(b=kn-d(2k-1)\)</span>. If <span class="inline-math">\(n\)</span> is even, construct <span class="inline-math">\(\frac{a}{2}A_{4k}&#x27;\bigoplus\frac{b}{2}A_{4k+4}&#x27;\)</span>. If <span class="inline-math">\(n\)</span> is odd and <span class="inline-math">\(k\)</span> is even, construct <span class="inline-math">\(aA_{2k}\bigoplus\frac{b}{2}A_{4k+4}&#x27;\)</span>. If <span class="inline-math">\(n\)</span> is odd and <span class="inline-math">\(k\)</span> is odd, construct <span class="inline-math">\(\frac{a}{2}A_{4k}&#x27;\bigoplus b A_{2k+2}\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>Binary codes constructed from combining two codes <span class="inline-math">\(A&#x27;\)</span> constructed out of Hadamard matrices.</p><p>Let <span class="inline-math">\(H_n\)</span> be a normalized Hadamard matrix. The generator matrix for an <span class="inline-math">\((n-1,n,n/2)\)</span> code <span class="inline-math">\(A_n\)</span> is obtained by taking <span class="inline-math">\(H_n\)</span>, replacing the +1&#x27;s by 0&#x27;s and the -1&#x27;s by 1&#x27;s, and deleting the first column. Taking only the codewords of <span class="inline-math">\(A_n\)</span> which begin with 0 and deleting the leading 0 yields the generator matrix of an <span class="inline-math">\((n-2,n/2,n/2)\)</span> code <span class="inline-math">\(A_n&#x27;\)</span>.</p><p>Next, apply the following way of combining codes. Suppose we have an <span class="inline-math">\((n_1,M_1,d_1)\)</span> code <span class="inline-math">\(C_1\)</span> and an <span class="inline-math">\((n_2,M_2,d_2)\)</span> code <span class="inline-math">\(C_2\)</span>. The combined <span class="inline-math">\((an_1+bn_2,\min(M_1,M_2),ad_1+bd_2)\)</span> code <span class="inline-math">\(a C_1\bigoplus b C_2\)</span> may be constructed by pasting <span class="inline-math">\(a\)</span> copies of <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(b\)</span> copies of <span class="inline-math">\(C_2\)</span> together and omitting the last <span class="inline-math">\(|M_1-M_2|\)</span> rows. Applying this to construct a Levenshtein code with length <span class="inline-math">\(n\)</span> and distance <span class="inline-math">\(d\)</span>, define <span class="inline-math">\(k=\lfloor d/(2d-n)\rfloor\)</span>, <span class="inline-math">\(a=d(2k+1)-n(k+1)\)</span>, and <span class="inline-math">\(b=kn-d(2k-1)\)</span>. If <span class="inline-math">\(n\)</span> is even, construct <span class="inline-math">\(\frac{a}{2}A_{4k}&#x27;\bigoplus\frac{b}{2}A_{4k+4}&#x27;\)</span>. If <span class="inline-math">\(n\)</span> is odd and <span class="inline-math">\(k\)</span> is even, construct <span class="inline-math">\(aA_{2k}\bigoplus\frac{b}{2}A_{4k+4}&#x27;\)</span>. If <span class="inline-math">\(n\)</span> is odd and <span class="inline-math">\(k\)</span> is odd, construct <span class="inline-math">\(\frac{a}{2}A_{4k}&#x27;\bigoplus b A_{2k+2}\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Levenshtein codes meet the Plotkin bound <span class="inline-math">\(K\leq 2\left\lfloor\frac{d}{2d-n}\right\rfloor\)</span>, where <span class="inline-math">\(K\)</span> is the number of codewords, <span class="inline-math">\(d\)</span> is the distance, and <span class="inline-math">\(n\)</span> is the length, and with the assumption that the Hadamard matrices for such parameters exist. The general proof depends on the correctness of Hadamard&#x27;&#x27;s conjecture <a href="#cite-1" class="cite">[2]</a>.</div>
+<div class="sectioncontent code-protection">Levenshtein codes meet the Plotkin bound <span class="inline-math">\(K\leq 2\left\lfloor\frac{d}{2d-n}\right\rfloor\)</span>, where <span class="inline-math">\(K\)</span> is the number of codewords, <span class="inline-math">\(d\)</span> is the distance, and <span class="inline-math">\(n\)</span> is the length, and with the assumption that the Hadamard matrices for such parameters exist. The general proof depends on the correctness of Hadamard&#x27;&#x27;s conjecture <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -179,25 +177,7 @@ url={https://errorcorrectionzoo.org/c/levenshtein}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        V.I. Levenshtein, <span class="emph">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        F. J. MacWilliams and N. J. A. Sloane. <span class="emph">The theory of error correcting codes</span>. Elsevier, 1977.
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V.I. Levenshtein, <span class="textit">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.</dd><dt id="citation-2">[2]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

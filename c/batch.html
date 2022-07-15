@@ -78,16 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Batch code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Batch code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Binary code designed for minimizing the total amount of storage and the worst-case maximal load on any devices in a distributed system.</p>
-<p>An <span class="inline-math">\((n,N,k,m,t)\)</span> batch code encodes a length-<span class="inline-math">\(n\)</span> string <span class="inline-math">\(x_1,\cdots,x_n\)</span> into an <span class="inline-math">\(m\)</span>-tuple of strings of total length <span class="inline-math">\(N\)</span> (are also called buckets), such that for each <span class="inline-math">\(k\)</span>-tuple of distinct indices <span class="inline-math">\(i_1,i_2,...,i_k\)</span>, the entries <span class="inline-math">\(x_{i_1},...,x_{i_k}\)</span> can be decoded by reading at most <span class="inline-math">\(t\)</span>-symbols from each bucket. If each bucket of a batch code contains a single symbol, then the <span class="inline-math">\((n,N,k,m)\)</span> batch code is <span class="textit">primitive</span>.</p>
-<p>A multi-user generalization of batch code is named multiset batch code. If, for any multiset <span class="inline-math">\(i_1, i_2, ..., i_k \in [n]\)</span>, there is a partition of buckets into subsets <span class="inline-math">\(S_1, ..., S_k \subset [m]\)</span> such that each <span class="inline-math">\(x_{i_j}\)</span> can be recovered by reading at most one symbol from each bucket in <span class="inline-math">\(S_j\)</span>, then the <span class="inline-math">\((n, N, k, m)\)</span> code is a <span class="textit">multiset batch code</span>.</p>
-<p>Combining two batch codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>, which are <span class="inline-math">\((n_1,N_1,k_1,m_1)\)</span> and <span class="inline-math">\((n_2,N_2,k_2,m_2)\)</span> batch codes respectively, yields a composite batch code <span class="inline-math">\(C_1\otimes C_2\)</span>, which is an <span class="inline-math">\((n_1, m_1N_2, k_1 k_2, m_1 m_2)\)</span> batch code.</p></div>
+<div class="sectioncontent code-description"><p>Binary code designed for minimizing the total amount of storage and the worst-case maximal load on any devices in a distributed system.</p><p>An <span class="inline-math">\((n,N,k,m,t)\)</span> batch code encodes a length-<span class="inline-math">\(n\)</span> string <span class="inline-math">\(x_1,\cdots,x_n\)</span> into an <span class="inline-math">\(m\)</span>-tuple of strings of total length <span class="inline-math">\(N\)</span> (are also called buckets), such that for each <span class="inline-math">\(k\)</span>-tuple of distinct indices <span class="inline-math">\(i_1,i_2,...,i_k\)</span>, the entries <span class="inline-math">\(x_{i_1},...,x_{i_k}\)</span> can be decoded by reading at most <span class="inline-math">\(t\)</span>-symbols from each bucket. If each bucket of a batch code contains a single symbol, then the <span class="inline-math">\((n,N,k,m)\)</span> batch code is <span class="textit">primitive</span>.</p><p>A multi-user generalization of batch code is named multiset batch code. If, for any multiset <span class="inline-math">\(i_1, i_2, ..., i_k \in [n]\)</span>, there is a partition of buckets into subsets <span class="inline-math">\(S_1, ..., S_k \subset [m]\)</span> such that each <span class="inline-math">\(x_{i_j}\)</span> can be recovered by reading at most one symbol from each bucket in <span class="inline-math">\(S_j\)</span>, then the <span class="inline-math">\((n, N, k, m)\)</span> code is a <span class="textit">multiset batch code</span>.</p><p>Combining two batch codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>, which are <span class="inline-math">\((n_1,N_1,k_1,m_1)\)</span> and <span class="inline-math">\((n_2,N_2,k_2,m_2)\)</span> batch codes respectively, yields a composite batch code <span class="inline-math">\(C_1\otimes C_2\)</span>, which is an <span class="inline-math">\((n_1, m_1N_2, k_1 k_2, m_1 m_2)\)</span> batch code.</p></div>
 
 
 
@@ -132,7 +129,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/locally_recoverable">Locally recoverable code (LRC)</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A systematic batch code with restricted size of reconstruction sets can recover any query of <span class="inline-math">\(t\)</span> information symbols with recovery sets of size <span class="inline-math">\(r\)</span> <a href="#cite-1" class="cite">[2]</a><a href="#cite-2" class="cite">[3]</a>.</span></li>
+      &#x2014;&nbsp;A systematic batch code with restricted size of reconstruction sets can recover any query of <span class="inline-math">\(t\)</span> information symbols with recovery sets of size <span class="inline-math">\(r\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
@@ -182,30 +179,7 @@ url={https://errorcorrectionzoo.org/c/batch}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Y. Ishai et al., “Batch codes and their applications”, Proceedings of the thirty-sixth annual ACM symposium on Theory of computing  - STOC &#x27;04 (2004). <a href="https://doi.org/10.1145/1007352.1007396" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        V. Skachek, “Batch and PIR Codes and Their Connections to Locally Repairable Codes”, Network Coding and Subspace Designs 427 (2018). <a href="https://doi.org/10.1007/978-3-319-70293-3_16" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A.-E. Riet, V. Skachek, and E. K. Thomas, “Batch Codes for Asynchronous Recovery of Data”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 1545 (2022). <a href="https://doi.org/10.1109/TIT.2021.3131620" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Y. Ishai et al., “Batch codes and their applications”, Proceedings of the thirty-sixth annual ACM symposium on Theory of computing - STOC &#x27;04 (2004). <a href="https://doi.org/10.1145/1007352.1007396" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>V. Skachek, “Batch and PIR Codes and Their Connections to Locally Repairable Codes”, Network Coding and Subspace Designs 427 (2018). <a href="https://doi.org/10.1007/978-3-319-70293-3_16" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A.-E. Riet, V. Skachek, and E. K. Thomas, “Batch Codes for Asynchronous Recovery of Data”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 1545 (2022). <a href="https://doi.org/10.1109/TIT.2021.3131620" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

@@ -78,18 +78,15 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Maximum distance separable (MDS) code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Maximum distance separable (MDS) code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound <span class="display-math env-align">\begin{align}
 d \leq n-k+1
-\end{align}</span>
-becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#cite-1" class="cite">[2]</a>.
-</div>
+\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</div>
@@ -121,7 +118,7 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">The McEliece Public Key Cryptosystem <a href="#cite-2" class="cite">[3]</a> uses algebraic coding theory to secure communications against eavesdropping attack, in which private keys are generator matrices of linear codes, i.e., <span class="inline-math">\(G\)</span>. Public Keys shared to outside world are scrambled and permutated versions of <span class="inline-math">\(G\)</span>, i.e., <span class="inline-math">\(G^\prime=SGP\)</span>. Data to be encrypted, <span class="inline-math">\(u\)</span>, is multiplied by public key and added intentional errors <span class="inline-math">\(e\)</span>, i.e., <span class="inline-math">\(x=uG^\prime+e\)</span>. Upon receiving encrypted data, private key owner can apply inverse permutation <span class="inline-math">\(P^{-1}\)</span> to <span class="inline-math">\(x\)</span>, decode the scrambled message given the presence of <span class="inline-math">\(e\)</span> errors, and finally unscramble to obtain <span class="inline-math">\(u\)</span>. Security parameters of the system are <span class="inline-math">\(n\)</span> and <span class="inline-math">\(e\)</span>, hence MDS codes, such as GRS codes may provide the same security level for shorter key sizes, and the private key owner can decode arguably fast enough using known decoding algorithms.</span><span class="paragraph-in-list">Automatic repeat request (ARQ) data transmission protocols (<a href="#cite-3" class="cite">[4]</a>, Ch. 7).</span>
+  <span class="paragraph-in-list">The McEliece Public Key Cryptosystem <a href="#citation-3" class="href-endnote endnote citation">[3]</a> uses algebraic coding theory to secure communications against eavesdropping attack, in which private keys are generator matrices of linear codes, i.e., <span class="inline-math">\(G\)</span>. Public Keys shared to outside world are scrambled and permutated versions of <span class="inline-math">\(G\)</span>, i.e., <span class="inline-math">\(G^\prime=SGP\)</span>. Data to be encrypted, <span class="inline-math">\(u\)</span>, is multiplied by public key and added intentional errors <span class="inline-math">\(e\)</span>, i.e., <span class="inline-math">\(x=uG^\prime+e\)</span>. Upon receiving encrypted data, private key owner can apply inverse permutation <span class="inline-math">\(P^{-1}\)</span> to <span class="inline-math">\(x\)</span>, decode the scrambled message given the presence of <span class="inline-math">\(e\)</span> errors, and finally unscramble to obtain <span class="inline-math">\(u\)</span>. Security parameters of the system are <span class="inline-math">\(n\)</span> and <span class="inline-math">\(e\)</span>, hence MDS codes, such as GRS codes may provide the same security level for shorter key sizes, and the private key owner can decode arguably fast enough using known decoding algorithms.</span><span class="paragraph-in-list">Automatic repeat request (ARQ) data transmission protocols (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Ch. 7).</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
@@ -163,7 +160,7 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/matrix_computation">Matrix computation code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#cite-4" class="cite">[5]</a>.</span></li>
+      &#x2014;&nbsp;The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -173,7 +170,7 @@ becomes an equality. A code is called <span class="textit">almost MDS</span> (AM
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
 </ul>
 </div>
 
@@ -221,45 +218,7 @@ url={https://errorcorrectionzoo.org/c/mds}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        R. Singleton, “Maximum distance&amp;amp;lt;tex&amp;amp;gt;q&amp;amp;lt;/tex&amp;amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        McEliece, R.J.: A public-key cryptosystem based on algebraic coding theory. DSN Progress Report pp. 114–116 (1978).
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href">1512.02673</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Singleton, “Maximum distance&amp;amp;lt;tex&amp;amp;gt;q&amp;amp;lt;/tex&amp;amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>McEliece, R.J.: A public-key cryptosystem based on algebraic coding theory. DSN Progress Report pp. 114–116 (1978).</dd><dt id="citation-4">[4]</dt><dd>S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href-href">1512.02673</a></dd><dt id="citation-6">[6]</dt><dd>S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

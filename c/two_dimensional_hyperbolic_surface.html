@@ -78,14 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Two-dimensional hyperbolic surface code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Two-dimensional hyperbolic surface code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</p>
-<p>For a tessellation involving regular polygons with <span class="inline-math">\( r \)</span> sides and <span class="inline-math">\( s \)</span> polygons meeting at each edge, the number of logical qubits is given by <span class="inline-math">\( k = (1-2/r - 2/s) n + 2 \)</span>. Some possible tilings are <span class="inline-math">\( {r,s}: {7,3}, {5,4} \)</span>. The weight of the stabilizer generators are dependent on the tiling, with <span class="inline-math">\({5,4}\)</span> having lower weight than <span class="inline-math">\({7,3}\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>Hyperbolic surface codes based on a tessellation of a closed 2D manifold with a hyperbolic geometry (i.e., non-Euclidean geometry, e.g., saddle surfaces when defined on a 2D plane).</p><p>For a tessellation involving regular polygons with <span class="inline-math">\( r \)</span> sides and <span class="inline-math">\( s \)</span> polygons meeting at each edge, the number of logical qubits is given by <span class="inline-math">\( k = (1-2/r - 2/s) n + 2 \)</span>. Some possible tilings are <span class="inline-math">\( {r,s}: {7,3}, {5,4} \)</span>. The weight of the stabilizer generators are dependent on the tiling, with <span class="inline-math">\({5,4}\)</span> having lower weight than <span class="inline-math">\({7,3}\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against Pauli errors with distance <span class="inline-math">\( d \propto \log(n) \)</span>. Code parameters are <span class="inline-math">\( [[n, (1-2/r - 2/s)  n + 2, O(\log n) ]] \)</span></div>
@@ -111,7 +110,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Due to the symmetries of hyperbolic surface codes, optimal measurement schedules of the stabilizers can be found <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -120,14 +119,14 @@
 
 <h2 id="feature_threshold"
       class="code-feature code-feature-threshold">Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">1<span class="inline-math">\(\%\)</span> - 5<span class="inline-math">\(\%\)</span> for a <span class="inline-math">\({5,4}\)</span> tiling under minimum-weight decoding <a href="#cite-2" class="cite">[3]</a>. For larger tilings, the lower bound on the distance decreases, suggesting the threshold will also decrease.</span></div>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">1<span class="inline-math">\(\%\)</span> - 5<span class="inline-math">\(\%\)</span> for a <span class="inline-math">\({5,4}\)</span> tiling under minimum-weight decoding <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. For larger tilings, the lower bound on the distance decreases, suggesting the threshold will also decrease.</span></div>
 
 
 
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Sec III A of Ref. <a href="#cite-3" class="cite">[4]</a> for a description of this code.</span><span class="paragraph-in-list">Connection to percolation theory as shown in <a href="#cite-4" class="cite">[5]</a>.</span>
+  <span class="paragraph-in-list">See Sec III A of Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a> for a description of this code.</span><span class="paragraph-in-list">Connection to percolation theory as shown in <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span>
 </div>
 
 
@@ -191,40 +190,7 @@ url={https://errorcorrectionzoo.org/c/two_dimensional_hyperbolic_surface}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href">1506.04029</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        O. Higgott and N. P. Breuckmann, “Subsystem Codes with High Thresholds by Gauge Fixing and Reduced Qubit Overhead”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09626" target="_blank" class="href">2010.09626</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href">1208.2317</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href">2103.06309</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        Nicolas Delfosse and Gilles Zémor, “Upper Bounds on the Rate of Low Density Stabilizer Codes for the Quantum Erasure Channel”. <a href="https://arxiv.org/abs/1205.7036" target="_blank" class="href">1205.7036</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>N. P. Breuckmann and B. M. Terhal, “Constructions and Noise Threshold of Hyperbolic Surface Codes”, IEEE Transactions on Information Theory <span class="textbf">62</span>, 3731 (2016). <a href="https://doi.org/10.1109/TIT.2016.2555700" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1506.04029" target="_blank" class="href-href">1506.04029</a></dd><dt id="citation-2">[2]</dt><dd>O. Higgott and N. P. Breuckmann, “Subsystem Codes with High Thresholds by Gauge Fixing and Reduced Qubit Overhead”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031039" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2010.09626" target="_blank" class="href-href">2010.09626</a></dd><dt id="citation-3">[3]</dt><dd>A. A. Kovalev and L. P. Pryadko, “Fault tolerance of quantum low-density parity check codes with sublinear distance scaling”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.020304" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1208.2317" target="_blank" class="href-href">1208.2317</a></dd><dt id="citation-4">[4]</dt><dd>N. P. Breuckmann and J. N. Eberhardt, “Quantum Low-Density Parity-Check Codes”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.040101" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2103.06309" target="_blank" class="href-href">2103.06309</a></dd><dt id="citation-5">[5]</dt><dd>Nicolas Delfosse and Gilles Zémor, “Upper Bounds on the Rate of Low Density Stabilizer Codes for the Quantum Erasure Channel”. <a href="https://arxiv.org/abs/1205.7036" target="_blank" class="href-href">1205.7036</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

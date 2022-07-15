@@ -78,14 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Galois-qudit stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
+      Galois-qudit stabilizer code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint eigenspace of commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace, and the stabilizer group does not contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</p>
-<p>A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both. Galois-qudit stabilizer codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits. As a result, <span class="inline-math">\([[n,k,d]]\)</span> notation is often used with non-integer <span class="inline-math">\(k=\log_q K\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint eigenspace of commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace, and the stabilizer group does not contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</p><p>A Galois-qudit stabilizer code encoding an integer number of qudits (<span class="inline-math">\(K=q^k\)</span>) is denoted as <span class="inline-math">\([[n,k]]_{GF(q)}\)</span> or <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span>. This notation differentiates between Galois-qudit and modular-qudit stabilizer codes, although the same notation, <span class="inline-math">\([[n,k,d]]_q\)</span>, is usually used for both. Galois-qudit stabilizer codes need not encode an integer number of qudits, with <span class="inline-math">\(K=q^{n-\frac{r}{m}}\)</span>, where <span class="inline-math">\(r\)</span> is the number of generators of the stabilizer group, and <span class="inline-math">\(q=p^m\)</span> given prime <span class="inline-math">\(p\)</span> for all Galois qudits. As a result, <span class="inline-math">\([[n,k,d]]\)</span> notation is often used with non-integer <span class="inline-math">\(k=\log_q K\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. Corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qudits.</div>
@@ -106,7 +105,7 @@
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">As opposed to modular qudits for composite <span class="inline-math">\(q\)</span>, Galois qudits inherit most of the properties of the prime-qudit Clifford group due to the correspondence between a <span class="inline-math">\(q=p^m\)</span> Galois qudit and <span class="inline-math">\(m\)</span> prime qudits of dimension <span class="inline-math">\(p\)</span> <a href="#cite-0" class="cite">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">As opposed to modular qudits for composite <span class="inline-math">\(q\)</span>, Galois qudits inherit most of the properties of the prime-qudit Clifford group due to the correspondence between a <span class="inline-math">\(q=p^m\)</span> Galois qudit and <span class="inline-math">\(m\)</span> prime qudits of dimension <span class="inline-math">\(p\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
 
@@ -163,7 +162,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Recalling that <span class="inline-math">\(q=p^m\)</span>, Galois-qudit stabilizer codes can also be treated as prime-qudit stabilizer codes on <span class="inline-math">\(mn\)</span> qudits, giving <span class="inline-math">\(k=nm-r\)</span> <a href="#cite-0" class="cite">[1]</a>. The case <span class="inline-math">\(m=1\)</span> reduces to conventional prime-qudit stabilizer codes on <span class="inline-math">\(n\)</span> qudits.</span></li>
+      &#x2014;&nbsp;Recalling that <span class="inline-math">\(q=p^m\)</span>, Galois-qudit stabilizer codes can also be treated as prime-qudit stabilizer codes on <span class="inline-math">\(mn\)</span> qudits, giving <span class="inline-math">\(k=nm-r\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. The case <span class="inline-math">\(m=1\)</span> reduces to conventional prime-qudit stabilizer codes on <span class="inline-math">\(n\)</span> qudits.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -215,25 +214,7 @@ url={https://errorcorrectionzoo.org/c/galois_stabilizer}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href-href">quant-ph/0005008</a></dd><dt id="citation-2">[2]</dt><dd>Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href-href">quant-ph/0508070</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

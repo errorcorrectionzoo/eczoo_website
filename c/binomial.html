@@ -78,25 +78,20 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Binomial code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Binomial code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#cite-1" class="cite">[2]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where
-  <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">Bosonic rotation codes designed to approximately protect against errors consisting of powers of raising and lowering operators up to some maximum power. Binomial codes can be thought of as spin-coherent states embedded into an oscillator <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. The <span class="inline-math">\(q\)</span>-dimensional qudit <span class="inline-math">\((N, S)\)</span> binomial codeword states are <span class="inline-math">\(\{|\overline{i}\rangle\mid i\in \mathbb Z_q \}\)</span>, where <span class="display-math env-align">\begin{align}
     |\overline{i}\rangle = \frac{1}{\sqrt{q^N}} \sum_{\substack{p=0\\p\equiv i \pmod{q}}}^{(q-1)(N+1)} \sqrt{\binom{N+1}{p}_q} \ket{p(S+1)}.
-  \end{align}</span>
-  The set <span class="inline-math">\( \ket{i} \mid i \in \mathbb{N}\)</span> is the set of Fock states. Also, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as
-  <span class="display-math env-align">\begin{align}
+  \end{align}</span> The set <span class="inline-math">\( \ket{i} \mid i \in \mathbb{N}\)</span> is the set of Fock states. Also, <span class="inline-math">\(\binom{N+1}{p}_q\)</span> are extended binomial coefficients, or polynomial coeffiients, defined recursively as <span class="display-math env-align">\begin{align}
     \binom{n}{m}_1 \equiv 1,\quad \binom{n}{m}_q \equiv \sum_{k=0}^n \binom{n}{k}\binom{k}{m-k}_{q-1}.
-  \end{align}</span>
-  The extended binomial coefficients <span class="inline-math">\( \binom{n}{m}_q \)</span> are also the coefficients of <span class="inline-math">\( x^m \)</span> in the polynomial <span class="inline-math">\( (1 + x + \cdots + x^{q-1})^n \)</span>.
-</div>
+  \end{align}</span> The extended binomial coefficients <span class="inline-math">\( \binom{n}{m}_q \)</span> are also the coefficients of <span class="inline-math">\( x^m \)</span> in the polynomial <span class="inline-math">\( (1 + x + \cdots + x^{q-1})^n \)</span>. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>.  Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</div>
+<div class="sectioncontent code-protection">An <span class="inline-math">\((N, S)\)</span> binomial code protects against <span class="inline-math">\(L\)</span> boson losses, <span class="inline-math">\(G\)</span> boson gains, and dephasing up to <span class="inline-math">\(\hat{n}^{D}\)</span>, where <span class="inline-math">\(S=L+G\)</span> and <span class="inline-math">\(N = \mathrm{max}(L,G,2D)\)</span>. Binomial codes approximately protect against continuous-time amplitude damping, boson loss and gain, and dephasing.</div>
 
 
 <!-- Display features -->
@@ -116,7 +111,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} \hat{n} / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#cite-1" class="cite">[2]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Photon loss and dephasing errors can be detected by measuring the phase-space rotation <span class="inline-math">\(\exp\left(2\pi\mathrm{i} \hat{n} / (S+1)\right)\)</span> and the check operator <span class="inline-math">\(J_x/J\)</span> in the spin-coherent state language, where <span class="inline-math">\(J\)</span> is the total angular momentum and <span class="inline-math">\(J_x\)</span> is the angular momentum in the <span class="inline-math">\(x\)</span> direction <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. This type of error correction fails for errors that are products of photon loss/gain and dephasing errors. However, for certain <span class="inline-math">\((N,S)\)</span> instances of the binomial code, detection of these types of errors can be done.</span><span class="paragraph-in-list">Recovery can be done via projective measurements and unitary operations <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -128,7 +123,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Microwave cavities coupled to superconducting circuits: state transfer between a binomial codeword to another system <a href="#cite-2" class="cite">[3]</a>, error-correction protocol nearly reaching break-even <a href="#cite-3" class="cite">[4]</a>, and a teleported CNOT gate <a href="#cite-4" class="cite">[5]</a>.</span>
+  <span class="paragraph-in-list">Microwave cavities coupled to superconducting circuits: state transfer between a binomial codeword to another system <a href="#citation-3" class="href-endnote endnote citation">[3]</a>, error-correction protocol nearly reaching break-even <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, and a teleported CNOT gate <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
@@ -149,7 +144,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bosonic_rotation">Bosonic rotation code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;One can verify by direct calculation that the logical states are eigenstates of the discrete rotation operator. One has freedom in the exact form of the primitive state to choose; see Appendix B.2 of Ref. <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
 </ul>
 </div>
 
@@ -164,23 +159,23 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/cat">Cat code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;For a fixed <span class="inline-math">\(S\)</span>, binomial codes with <span class="inline-math">\(N \to \infty\)</span> coincide with cat codes as <span class="inline-math">\(\alpha \to \infty\)</span> <a href="#cite-0" class="cite">[1]</a>.</span></li>
+      &#x2014;&nbsp;For a fixed <span class="inline-math">\(S\)</span>, binomial codes with <span class="inline-math">\(N \to \infty\)</span> coincide with cat codes as <span class="inline-math">\(\alpha \to \infty\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/number_phase">Number-phase code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the binomial code has vanishing variance, just like in a number-phase code <a href="#cite-5" class="cite">[6]</a>.</span></li>
+      &#x2014;&nbsp;In the limit as <span class="inline-math">\(N,S \to \infty\)</span>, phase measurement in the binomial code has vanishing variance, just like in a number-phase code <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/chuang-leung-yamamoto">Chuang-Leung-Yamamoto code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Two-mode version of binomial codes correspond to two-mode CLY codes (see Sec. IV.A of Ref. <a href="#cite-0" class="cite">[1]</a>).</span></li>
+      &#x2014;&nbsp;Two-mode version of binomial codes correspond to two-mode CLY codes (see Sec. IV.A of Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a>).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binomial codes and GNU codes are both related to spin-coherent states, and a qudit generalization can be obtained from qudit binomial codes (<a href="#cite-1" class="cite">[2]</a>, Appx. C).</span></li>
+      &#x2014;&nbsp;Binomial codes and GNU codes are both related to spin-coherent states, and a qudit generalization can be obtained from qudit binomial codes (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Appx. C).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([[4,1,2]]\)</span> subcode consisting of <span class="inline-math">\(\{|\overline{00}\rangle\)</span> and any other codeword reduces to the <span class="inline-math">\(0,2,4\)</span> binomial code when the basis labels in each codeword are written as in base-ten. Such a mapping can be generalized <a href="#cite-6" class="cite">[7]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([[4,1,2]]\)</span> subcode consisting of <span class="inline-math">\(\{|\overline{00}\rangle\)</span> and any other codeword reduces to the <span class="inline-math">\(0,2,4\)</span> binomial code when the basis labels in each codeword are written as in base-ten. Such a mapping can be generalized <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span></li>
 </ul>
 </div>
 
@@ -228,50 +223,7 @@ url={https://errorcorrectionzoo.org/c/binomial}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href">1602.00008</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href">1708.05010</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        C. J. Axline et al., “On-demand quantum state transfer and entanglement between remote microwave cavity memories”, Nature Physics <span class="textbf">14</span>, 705 (2018). <a href="https://doi.org/10.1038/s41567-018-0115-y" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1712.05832" target="_blank" class="href">1712.05832</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        L. Hu et al., “Quantum error correction and universal gate set operation on a binomial bosonic logical qubit”, Nature Physics <span class="textbf">15</span>, 503 (2019). <a href="https://doi.org/10.1038/s41567-018-0414-3" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1805.09072" target="_blank" class="href">1805.09072</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        Y. Xu et al., “Demonstration of Controlled-Phase Gates between Two Error-Correctable Photonic Qubits”, Physical Review Letters <span class="textbf">124</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.124.120501" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1810.04690" target="_blank" class="href">1810.04690</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        Linshu Li, private communication, 2018
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. H. Michael et al., “New Class of Quantum Error-Correcting Codes for a Bosonic Mode”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031006" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1602.00008" target="_blank" class="href-href">1602.00008</a></dd><dt id="citation-2">[2]</dt><dd>V. V. Albert et al., “Performance and structure of single-mode bosonic codes”, Physical Review A <span class="textbf">97</span>, (2018). <a href="https://doi.org/10.1103/PhysRevA.97.032346" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1708.05010" target="_blank" class="href-href">1708.05010</a></dd><dt id="citation-3">[3]</dt><dd>C. J. Axline et al., “On-demand quantum state transfer and entanglement between remote microwave cavity memories”, Nature Physics <span class="textbf">14</span>, 705 (2018). <a href="https://doi.org/10.1038/s41567-018-0115-y" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1712.05832" target="_blank" class="href-href">1712.05832</a></dd><dt id="citation-4">[4]</dt><dd>L. Hu et al., “Quantum error correction and universal gate set operation on a binomial bosonic logical qubit”, Nature Physics <span class="textbf">15</span>, 503 (2019). <a href="https://doi.org/10.1038/s41567-018-0414-3" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1805.09072" target="_blank" class="href-href">1805.09072</a></dd><dt id="citation-5">[5]</dt><dd>Y. Xu et al., “Demonstration of Controlled-Phase Gates between Two Error-Correctable Photonic Qubits”, Physical Review Letters <span class="textbf">124</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.124.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.04690" target="_blank" class="href-href">1810.04690</a></dd><dt id="citation-6">[6]</dt><dd>A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href-href">1901.08071</a></dd><dt id="citation-7">[7]</dt><dd>Linshu Li, private communication, 2018</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

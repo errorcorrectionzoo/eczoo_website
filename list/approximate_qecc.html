@@ -5,8 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>
-    Approximate quantum codes
- [error correction zoo]
+    Approximate quantum codes  [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -49,8 +48,7 @@
 
   <main id="main">
 
-Here is a list of <a href="/c/approximate_qecc" class="ref">approximate quantum codes</a>.
-
+Here is a list of <a href="/c/approximate_qecc" class="href-ref ref-code">approximate quantum codes</a>. 
 <table class="codelistpage-table xtra-xtra-stretch">
 <thead>
 <tr>
@@ -69,15 +67,13 @@ Here is a list of <a href="/c/approximate_qecc" class="ref">approximate quantum 
 </tr>
 <tr>
   <td class="top left"><a href="/c/eth">Eigenstate thermalization hypothesis (ETH) code</a></td>
-  <td class="textit">Also called a <span class="textit">thermodynamic code</span> <a href="#cite-0" class="cite">[1]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</td>
+  <td class="textit">Also called a <span class="textit">thermodynamic code</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. An <span class="inline-math">\(n\)</span>-qubit approximate code whose codespace is formed by eigenstates of a translationally-invariant quantum many-body system which satisfies the Eigenstate Thermalization Hypothesis (ETH). ETH ensures that codewords cannot be locally distinguished in the thermodynamic limit. Relevant many-body systems include 1D non-interacting spin chains, Motzkin chains, or Heisenberg models.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/gnu_permutation_invariant">GNU permutation-invariant code</a></td>
-  <td class="textit">Can be expressed in terms of Dicke states where the logical states are
-<span class="display-math env-align">\begin{align}
+  <td class="textit">Can be expressed in terms of Dicke states where the logical states are <span class="display-math env-align">\begin{align}
 |\overline{\pm}\rangle = \sum_{\ell=0}^{n} \frac{(\pm 1)^\ell}{\sqrt{2^n}} \sqrt{n \choose \ell} |D^m_{g \ell}\rangle~.
-\end{align}</span>
-Here, <span class="inline-math">\(m\)</span> is the number of particles used for encoding <span class="inline-math">\(1\)</span> qubit, and <span class="inline-math">\(g, n \leq m\)</span> are arbitrary positive integers. The state <span class="inline-math">\(|D^m_w\rangle\)</span> is a Dicke state -- a normalized permutation-invariant state on <span class="inline-math">\(m\)</span> qubits with <span class="inline-math">\(w\)</span> excitations, i.e., a normalized sum over all basis elements with <span class="inline-math">\(w\)</span> ones and <span class="inline-math">\(m - w\)</span> zeroes.</td>
+\end{align}</span> Here, <span class="inline-math">\(m\)</span> is the number of particles used for encoding <span class="inline-math">\(1\)</span> qubit, and <span class="inline-math">\(g, n \leq m\)</span> are arbitrary positive integers. The state <span class="inline-math">\(|D^m_w\rangle\)</span> is a Dicke state -- a normalized permutation-invariant state on <span class="inline-math">\(m\)</span> qubits with <span class="inline-math">\(w\)</span> excitations, i.e., a normalized sum over all basis elements with <span class="inline-math">\(w\)</span> ones and <span class="inline-math">\(m - w\)</span> zeroes.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></td>
@@ -85,8 +81,7 @@ Here, <span class="inline-math">\(m\)</span> is the number of particles used for
 </tr>
 <tr>
   <td class="top left"><a href="/c/t-designs">Local Haar-random circuit code</a></td>
-  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries.
-The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#cite-1" class="cite">[2]</a>. Follow-up work <a href="#cite-2" class="cite">[3]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
+  <td class="textit">An <span class="inline-math">\(n\)</span>-qubit code whose codewords are a pair of approximately locally indistinguishable states produced by starting with any two orthogonal <span class="inline-math">\(n\)</span>-qubit states and acting with a random unitary circuit of depth polynomial in <span class="inline-math">\(n\)</span>. Two states are <span class="textit">locally indistinguishable</span> if they cannot be distinguished by local measurements. A single layer of the encoding circuit is composed of about <span class="inline-math">\(n/2\)</span> two-qubit nearest-neighbor gates run in parallel, with each gate drawn randomly from the Haar distribution on two-qubit unitaries. The above circuit elements act on nearest-neighbor qubits arranged in a line, i.e., a one-dimensional geometry (<span class="inline-math">\(D=1\)</span>, while codes for higher-dimensional geometries require <span class="inline-math">\(O(n^{1/D})\)</span>-depth circuits <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Follow-up work <a href="#citation-3" class="href-endnote endnote citation">[3]</a> revealed that optimal code properties require only <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for that case, and <span class="inline-math">\(O(\sqrt{n})\)</span>-depth circuits for a two-dimensional square-lattice geometry.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/multimodegkp">Multi-mode GKP code</a></td>
@@ -98,43 +93,23 @@ The above circuit elements act on nearest-neighbor qubits arranged in a line, i.
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
-  <td class="textit">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords
-<span class="display-math env-align">\begin{align}
+  <td class="textit">Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align}
   \begin{split}
     |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}~{\phantom{.}}\\
     |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}~{\phantom{.}}\\
     |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}~{\phantom{.}}\\
     |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2}~.
   \end{split}
-\end{align}</span>
-This code is the smallest single-qubit error-detecting code. It is also the smallest instance of the toric code, and its various single-qubit subcodes are small planar surface codes.</td>
+\end{align}</span> This code is the smallest single-qubit error-detecting code. It is also the smallest instance of the toric code, and its various single-qubit subcodes are small planar surface codes.</td>
 </tr>
 </tbody>
 </table>
 
 
 
-  <div id="endnotes" class="">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href">1902.07714</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href">2010.09775</a>
-      </dd>
-    
-    </dl>
-  </div>
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href-href">1902.07714</a></dd><dt id="citation-2">[2]</dt><dd>F. G. S. L. Brandão, A. W. Harrow, and M. Horodecki, “Local Random Quantum Circuits are Approximate Polynomial-Designs”, Communications in Mathematical Physics <span class="textbf">346</span>, 397 (2016). <a href="https://doi.org/10.1007/s00220-016-2706-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>M. J. Gullans et al., “Quantum Coding with Low-Depth Random Circuits”, Physical Review X <span class="textbf">11</span>, (2021). <a href="https://doi.org/10.1103/PhysRevX.11.031066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2010.09775" target="_blank" class="href-href">2010.09775</a></dd></dl></div>
+
 
   </main><!-- #main -->
 

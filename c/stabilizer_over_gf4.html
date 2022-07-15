@@ -78,17 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Stabilizer code over <span class="inline-math">\(GF(4)\)</span><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Stabilizer code over <span class="inline-math">\(GF(4)\)</span><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a weakly self-dual additive quaternary code <span class="inline-math">\((n, 2^{n-k}, d^*)_4\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>.
-The quaternary field <span class="inline-math">\(GF(4)=\mathbb{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>.
-There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>.
-The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</p>
-<p>The quaternary code needs to only be additive (its codewords are closed under addition). It need not be a linear code, which would require the set of codewords to be closed under multiplication as well.</p></div>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]\)</span> stabilizer code whose encoding is based on a weakly self-dual additive quaternary code <span class="inline-math">\((n, 2^{n-k}, d^*)_4\)</span> with respect to the trace inner product where <span class="inline-math">\(d \ge d^*\)</span>. The quaternary field <span class="inline-math">\(GF(4)=\mathbb{F}_4\)</span> consists of <span class="inline-math">\(\{0, 1, w, \bar{w}\}\)</span>, with <span class="inline-math">\(\bar{w} = w^2 = w + 1\)</span>, <span class="inline-math">\(\mathrm{Tr}(x) = x+\bar{x}\)</span>, and trace inner product <span class="inline-math">\(u * v = \mathrm{Tr}(u \cdot \bar{v})\)</span>. There is a mapping <span class="inline-math">\(L\)</span> between Pauli matrices <span class="inline-math">\(I, Y, Z, X\)</span> and <span class="inline-math">\(0, 1, \bar{w}, w\)</span>, in turn <span class="inline-math">\([A, B] \Leftrightarrow Tr\langle L(A), L(A)\rangle\)</span>. The classical self-dual code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(4)^n\)</span> corresponds to the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span> while <span class="inline-math">\(C^{\perp}\)</span> corresponds to <span class="inline-math">\(\mathsf{N(S)}\)</span>.</p><p>The quaternary code needs to only be additive (its codewords are closed under addition). It need not be a linear code, which would require the set of codewords to be closed under multiplication as well.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</div>
@@ -121,7 +117,7 @@ The classical self-dual code <span class="inline-math">\(C\)</span> over <span c
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Tables of <span class="inline-math">\([[n,0,d]]\)</span> codes, corresponding to a self-dual <span class="inline-math">\(GF(4)\)</span> representation, at <a href="http://www.ii.uib.no/~larsed/vncorbits/" target="_blank" class="href">this website</a>.</span>
+  <span class="paragraph-in-list">Tables of <span class="inline-math">\([[n,0,d]]\)</span> codes, corresponding to a self-dual <span class="inline-math">\(GF(4)\)</span> representation, at <a href="http://www.ii.uib.no/~larsed/vncorbits/" target="_blank" class="href-href">this website</a>.</span>
 </div>
 
 
@@ -215,20 +211,7 @@ url={https://errorcorrectionzoo.org/c/stabilizer_over_gf4}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href">quant-ph/9608006</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href-href">quant-ph/9608006</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

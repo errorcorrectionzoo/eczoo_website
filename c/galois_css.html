@@ -78,34 +78,21 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Galois-qudit CSS code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></h1>
+      Galois-qudit CSS code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
-are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
-The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings. The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form <span id="equation--eq-parityg" class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
 \end{pmatrix}
 \label{eq:parityg}
-\end{align}</span>
-such that the rows of the two blocks must be orthogonal
-<span class="display-math env-align">\begin{align}
+\end{align}</span> such that the rows of the two blocks must be orthogonal <span id="equation--eq-commG" class="display-math env-align">\begin{align}
 H_X H_Z^T=0~.
 \label{eq:commG}
-\end{align}</span>
-The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</p>
-<p>Encoding is based on two related <a href="/c/q-ary_linear" class="ref"><span class="inline-math">\(q\)</span>-ary linear codes</a>,
-an <span class="inline-math">\([n,k_X,d_X]_q \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_q \)</span> code <span class="inline-math">\(C_Z\)</span>,
-satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>.
-The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>.
-The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math eqref">\eqref{eq:parityg}</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>). The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees <span class="inline-math eqref">\eqref{eq:commG}</span>.
-Basis states for the code are, for <span class="inline-math">\(\gamma \in C_X\)</span>,
-<span class="display-math env-align">\begin{align}
+\end{align}</span> The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</p><p>Encoding is based on two related <a href="/c/q-ary_linear" class="href-ref ref-code"><span class="inline-math">\(q\)</span>-ary linear codes</a>, an <span class="inline-math">\([n,k_X,d_X]_q \)</span> code <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\([n,k_Z,d_Z]_q \)</span> code <span class="inline-math">\(C_Z\)</span>, satisfying <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span>. The resulting CSS code has <span class="inline-math">\(k=k_X+k_Z-n\)</span> logical qubits and distance <span class="inline-math">\(d\geq\min\{d_X,d_Z\}\)</span>. The <span class="inline-math">\(H_X\)</span> (<span class="inline-math">\(H_Z\)</span>) block of <span class="inline-math">\(H\)</span> <span class="inline-math">\(\eqref{eq:parityg}\)</span> is the parity-check matrix of the code <span class="inline-math">\(C_X\)</span> (<span class="inline-math">\(C_Z\)</span>). The requirement <span class="inline-math">\(C_X^\perp \subseteq C_Z\)</span> guarantees <span class="inline-math">\(\eqref{eq:commG}\)</span>. Basis states for the code are, for <span class="inline-math">\(\gamma \in C_X\)</span>, <span class="display-math env-align">\begin{align}
 |\gamma + C_Z^\perp \rangle = \frac{1}{\sqrt{|C_Z^\perp|}} \sum_{\eta \in C_Z^\perp} |\gamma + \eta\rangle.
 \end{align}</span></p></div>
 
@@ -168,7 +155,7 @@ Basis states for the code are, for <span class="inline-math">\(\gamma \in C_X\)<
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Goppa codes can be realized in the CSS code construction <a href="#cite-2" class="cite">[3]</a>.</span></li>
+      &#x2014;&nbsp;Goppa codes can be realized in the CSS code construction <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a></span></li>
   <li class="paragraph-in-list">
@@ -240,30 +227,7 @@ url={https://errorcorrectionzoo.org/c/galois_css}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        M. GRASSL, T. BETH, and M. RÖTTELER, “ON OPTIMAL QUANTUM CODES”, International Journal of Quantum Information <span class="textbf">02</span>, 55 (2004). <a href="https://doi.org/10.1142/S0219749904000079" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0312164" target="_blank" class="href">quant-ph/0312164</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        J.-L. Kim and J. Walker, “Nonbinary quantum error-correcting codes from algebraic curves”, Discrete Mathematics <span class="textbf">308</span>, 3115 (2008). <a href="https://doi.org/10.1016/j.disc.2007.08.038" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. GRASSL, T. BETH, and M. RÖTTELER, “ON OPTIMAL QUANTUM CODES”, International Journal of Quantum Information <span class="textbf">02</span>, 55 (2004). <a href="https://doi.org/10.1142/S0219749904000079" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0312164" target="_blank" class="href-href">quant-ph/0312164</a></dd><dt id="citation-2">[2]</dt><dd>J.-L. Kim and J. Walker, “Nonbinary quantum error-correcting codes from algebraic curves”, Discrete Mathematics <span class="textbf">308</span>, 3115 (2008). <a href="https://doi.org/10.1016/j.disc.2007.08.038" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

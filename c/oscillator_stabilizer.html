@@ -78,15 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Bosonic stabilizer code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Bosonic stabilizer code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Also known as a <span class="textit">continuous-variable (CV) stabilizer code</span>. Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting displacement operators. Displacements form the stabilizers of the code, and have continuous eigenvalues, in contrast with the discrete set of eigenvalues of qubit stabilizers. As a result, exact codewords are non-normalizable, so approximate constructions have to be considered.</p>
-<p>Stabilizer codewords encoding a finite-dimensional codespace admit a discrete infinite stabilizer group. Such <a href="/c/qudits_into_oscillators" class="ref">qudit-into-oscillator</a> stabilizer codes are <a href="/c/gkp" class="ref">GKP</a> and <a href="/c/multimodegkp" class="ref">multimode GKP</a> codes.</p>
-<p>Stabilizer codewords encoding a logical oscillator (i.e., CV quantum information) admit either a discrete or a continuous stabilizer group. The former, called GKP-stabilizer codes, are obtained from multimode GKP codes by removing stabilizer generators for some of the modes. The latter can be defined in terms of the continuous group&#x27;s Lie algebra, i.e., as the common <span class="inline-math">\(0\)</span>-eigenvalue eigenspace of mutually commuting linear combinations of oscillator position and momentum operators called <span class="textit">nullifiers</span> <a href="#cite-1" class="cite">[2]</a> or <span class="textit">annihilators</span>. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> <a href="/c/oscillators_into_oscillators" class="ref">oscillator-into-oscillator</a> stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</p></div>
+<div class="sectioncontent code-description"><p>Also known as a <span class="textit">continuous-variable (CV) stabilizer code</span>. Bosonic code whose codespace is defined as the common <span class="inline-math">\(+1\)</span> eigenspace of a group of mutually commuting displacement operators. Displacements form the stabilizers of the code, and have continuous eigenvalues, in contrast with the discrete set of eigenvalues of qubit stabilizers. As a result, exact codewords are non-normalizable, so approximate constructions have to be considered.</p><p>Stabilizer codewords encoding a finite-dimensional codespace admit a discrete infinite stabilizer group. Such <a href="/c/qudits_into_oscillators" class="href-ref ref-code">qudit-into-oscillator</a> stabilizer codes are <a href="/c/gkp" class="href-ref ref-code">GKP</a> and <a href="/c/multimodegkp" class="href-ref ref-code">multimode GKP</a> codes.</p><p>Stabilizer codewords encoding a logical oscillator (i.e., CV quantum information) admit either a discrete or a continuous stabilizer group. The former, called GKP-stabilizer codes, are obtained from multimode GKP codes by removing stabilizer generators for some of the modes. The latter can be defined in terms of the continuous group&#x27;s Lie algebra, i.e., as the common <span class="inline-math">\(0\)</span>-eigenvalue eigenspace of mutually commuting linear combinations of oscillator position and momentum operators called <span class="textit">nullifiers</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a> or <span class="textit">annihilators</span>. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> <a href="/c/oscillators_into_oscillators" class="href-ref ref-code">oscillator-into-oscillator</a> stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protective properties can be delineated in terms of the nullifiers or displacements, and the most natural noise model for such codes is displacement noise. If an error operator does not commute with a stabilizer group element, then that error is detectable. Oscillator-into-oscillator stabilizer codes protect against erasures of a subset of modes, while GKP codes protect against sufficiently small displacements in any number of modes.</div>
@@ -163,7 +161,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/number_phase">Number-phase code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Number-phase codewords span the joint right eigenspace of the <span class="inline-math">\(N\)</span>th power of the Pegg-Barnett phase operator and the bosonic rotation operator <a href="#cite-2" class="cite">[3]</a>. These operators no longer form a group since the phase operator is not unitary.</span></li>
+      &#x2014;&nbsp;Number-phase codewords span the joint right eigenspace of the <span class="inline-math">\(N\)</span>th power of the Pegg-Barnett phase operator and the bosonic rotation operator <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. These operators no longer form a group since the phase operator is not unitary.</span></li>
 </ul>
 </div>
 
@@ -211,30 +209,7 @@ url={https://errorcorrectionzoo.org/c/oscillator_stabilizer}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        Richard L. Barnes, “Stabilizer Codes for Continuous-variable Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0405064" target="_blank" class="href">quant-ph/0405064</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        M. Gu et al., “Quantum computing with continuous-variable clusters”, Physical Review A <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevA.79.062318" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.3233" target="_blank" class="href">0903.3233</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href">1901.08071</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Richard L. Barnes, “Stabilizer Codes for Continuous-variable Quantum Error Correction”. <a href="https://arxiv.org/abs/quant-ph/0405064" target="_blank" class="href-href">quant-ph/0405064</a></dd><dt id="citation-2">[2]</dt><dd>M. Gu et al., “Quantum computing with continuous-variable clusters”, Physical Review A <span class="textbf">79</span>, (2009). <a href="https://doi.org/10.1103/PhysRevA.79.062318" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0903.3233" target="_blank" class="href-href">0903.3233</a></dd><dt id="citation-3">[3]</dt><dd>A. L. Grimsmo, J. Combes, and B. Q. Baragiola, “Quantum Computing with Rotation-Symmetric Bosonic Codes”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.011058" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1901.08071" target="_blank" class="href-href">1901.08071</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

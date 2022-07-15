@@ -78,29 +78,24 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Steane <span class="inline-math">\([[7,1,3]]\)</span> code<span class="code-introduced"><a href="#cite-0" class="cite">[1]</a></span></h1>
+      Steane <span class="inline-math">\([[7,1,3]]\)</span> code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">A <span class="inline-math">\([[7,1,3]]\)</span> CSS code that uses the classical binary <span class="inline-math">\([7,4,3]\)</span> Hamming code for protecting against <span class="inline-math">\(X\)</span> errors and its dual <span class="inline-math">\([7,3,4]\)</span> for <span class="inline-math">\(Z\)</span> errors. The parity-check matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is <span class="display-math env-align">\begin{align}
   H = \left(\begin{matrix}
     1&amp;0&amp;0&amp;1&amp;0&amp;1&amp;1\\
     0&amp;1&amp;0&amp;1&amp;1&amp;0&amp;1\\
     0&amp;0&amp;1&amp;0&amp;1&amp;1&amp;1
   \end{matrix}\right),
-\end{align}</span>
-and the check matrix for the Steane code is therefore
-<span class="display-math env-align">\begin{align}
+\end{align}</span> and the check matrix for the Steane code is therefore <span class="display-math env-align">\begin{align}
   \left(\begin{matrix}
     0&amp;H\\
     H&amp;0
   \end{matrix}\right).
-\end{align}</span>
-The stabilizer group for the Steane code has six generators.
-</div>
+\end{align}</span> The stabilizer group for the Steane code has six generators. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">The Steane code is a distance 3 code. It detects errors on 2 qubits, corrects errors on 1 qubit.</div>
@@ -121,14 +116,14 @@ The stabilizer group for the Steane code has six generators.
  
 <h2 id="feature_general_gates"
       class="code-feature code-feature-general_gates">Gates</h2>
-  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Pieceable fault-tolerant CCZ gate <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-general_gates"><span class="paragraph-in-list">Pieceable fault-tolerant CCZ gate <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Pieceable fault-tolerant CCZ gate <a href="#cite-1" class="cite">[2]</a>.</span><span class="paragraph-in-list">Syndrome measurement can be done with ancillary flag qubits <a href="#cite-2" class="cite">[3]</a><a href="#cite-3" class="cite">[4]</a> or with no extra qubits <a href="#cite-4" class="cite">[5]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Pieceable fault-tolerant CCZ gate <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Syndrome measurement can be done with ancillary flag qubits <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a> or with no extra qubits <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></div>
 
 
 
@@ -138,7 +133,7 @@ The stabilizer group for the Steane code has six generators.
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Trapped-ion qubits: seven-qubit device in Blatt group <a href="#cite-5" class="cite">[6]</a>, ten-qubit QCCD device by Quantinuum <a href="#cite-6" class="cite">[7]</a>, fault-tolerant universal two-qubit gate realized by Monz group <a href="#cite-7" class="cite">[8]</a>.</span><span class="paragraph-in-list">Rydberg atom arrays: Lukin group <a href="#cite-8" class="cite">[9]</a>.</span>
+  <span class="paragraph-in-list">Trapped-ion qubits: seven-qubit device in Blatt group <a href="#citation-6" class="href-endnote endnote citation">[6]</a>, ten-qubit QCCD device by Quantinuum <a href="#citation-7" class="href-endnote endnote citation">[7]</a>, fault-tolerant universal two-qubit gate realized by Monz group <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span><span class="paragraph-in-list">Rydberg atom arrays: Lukin group <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span>
 </div>
 
 
@@ -226,60 +221,7 @@ url={https://errorcorrectionzoo.org/c/steane}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        “Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href">quant-ph/9601029</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        T. J. Yoder, R. Takagi, and I. L. Chuang, “Universal Fault-Tolerant Gates on Concatenated Stabilizer Codes”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031039" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1603.03948" target="_blank" class="href">1603.03948</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        T. J. Yoder and I. H. Kim, “The surface code with a twist”, Quantum <span class="textbf">1</span>, 2 (2017). <a href="https://doi.org/10.22331/q-2017-04-25-2" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1612.04795" target="_blank" class="href">1612.04795</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href">1705.02329</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        B. W. Reichardt, “Fault-tolerant quantum error correction for Steane’s seven-qubit color code with few or no extra qubits”, Quantum Science and Technology <span class="textbf">6</span>, 015007 (2020). <a href="https://doi.org/10.1088/2058-9565/abc6f4" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        D. Nigg et al., “Quantum computations on a topologically encoded qubit”, Science <span class="textbf">345</span>, 302 (2014). <a href="https://doi.org/10.1126/science.1253742" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1403.5426" target="_blank" class="href">1403.5426</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        C. Ryan-Anderson et al., “Realization of real-time fault-tolerant quantum error correction”. <a href="https://arxiv.org/abs/2107.07505" target="_blank" class="href">2107.07505</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        Lukas Postler et al., “Demonstration of fault-tolerant universal quantum gate operations”. <a href="https://arxiv.org/abs/2111.12654" target="_blank" class="href">2111.12654</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-8">[9]</dt>
-      <dd>
-        D. Bluvstein et al., “A quantum processor based on coherent transport of entangled atom arrays”, Nature <span class="textbf">604</span>, 451 (2022). <a href="https://doi.org/10.1038/s41586-022-04592-6" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2112.03923" target="_blank" class="href">2112.03923</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>“Multiple-particle interference and quantum error correction”, Proceedings of the Royal Society of London. Series A: Mathematical, Physical and Engineering Sciences <span class="textbf">452</span>, 2551 (1996). <a href="https://doi.org/10.1098/rspa.1996.0136" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9601029" target="_blank" class="href-href">quant-ph/9601029</a></dd><dt id="citation-2">[2]</dt><dd>T. J. Yoder, R. Takagi, and I. L. Chuang, “Universal Fault-Tolerant Gates on Concatenated Stabilizer Codes”, Physical Review X <span class="textbf">6</span>, (2016). <a href="https://doi.org/10.1103/PhysRevX.6.031039" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1603.03948" target="_blank" class="href-href">1603.03948</a></dd><dt id="citation-3">[3]</dt><dd>T. J. Yoder and I. H. Kim, “The surface code with a twist”, Quantum <span class="textbf">1</span>, 2 (2017). <a href="https://doi.org/10.22331/q-2017-04-25-2" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1612.04795" target="_blank" class="href-href">1612.04795</a></dd><dt id="citation-4">[4]</dt><dd>R. Chao and B. W. Reichardt, “Quantum Error Correction with Only Two Extra Qubits”, Physical Review Letters <span class="textbf">121</span>, (2018). <a href="https://doi.org/10.1103/PhysRevLett.121.050502" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1705.02329" target="_blank" class="href-href">1705.02329</a></dd><dt id="citation-5">[5]</dt><dd>B. W. Reichardt, “Fault-tolerant quantum error correction for Steane’s seven-qubit color code with few or no extra qubits”, Quantum Science and Technology <span class="textbf">6</span>, 015007 (2020). <a href="https://doi.org/10.1088/2058-9565/abc6f4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>D. Nigg et al., “Quantum computations on a topologically encoded qubit”, Science <span class="textbf">345</span>, 302 (2014). <a href="https://doi.org/10.1126/science.1253742" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1403.5426" target="_blank" class="href-href">1403.5426</a></dd><dt id="citation-7">[7]</dt><dd>C. Ryan-Anderson et al., “Realization of real-time fault-tolerant quantum error correction”. <a href="https://arxiv.org/abs/2107.07505" target="_blank" class="href-href">2107.07505</a></dd><dt id="citation-8">[8]</dt><dd>Lukas Postler et al., “Demonstration of fault-tolerant universal quantum gate operations”. <a href="https://arxiv.org/abs/2111.12654" target="_blank" class="href-href">2111.12654</a></dd><dt id="citation-9">[9]</dt><dd>D. Bluvstein et al., “A quantum processor based on coherent transport of entangled atom arrays”, Nature <span class="textbf">604</span>, 451 (2022). <a href="https://doi.org/10.1038/s41586-022-04592-6" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2112.03923" target="_blank" class="href-href">2112.03923</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

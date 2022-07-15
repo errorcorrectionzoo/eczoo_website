@@ -84,8 +84,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding
-<span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding <span class="display-math env-align">\begin{align}
 \mu\to\left\{
 \begin{split}
   f_{\mu}^{(1)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(1)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(1)}\left(\alpha_{n}\right)\\
@@ -93,8 +92,7 @@
   \vdots &amp;  &amp; \ddots &amp; \vdots\\
   f_{\mu}^{(t)}\left(\alpha_{1}\right) &amp; f_{\mu}^{(t)}\left(\alpha_{2}\right) &amp; \cdots &amp; f_{\mu}^{(t)}\left(\alpha_{n}\right)
 \end{split}\right\}~.
-\end{align}</span>
-</div>
+\end{align}</span> </div>
 
 
 
@@ -115,7 +113,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-\frac{2k+n}{3n}\)</span> fraction of random errors <a href="#cite-0" class="cite">[1]</a>.</span><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-(\frac{k}{n})^{2/3}\)</span> fraction of random errors <a href="#cite-1" class="cite">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-\frac{2k+n}{3n}\)</span> fraction of random errors <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span><span class="paragraph-in-list">Decoder that corrects up to <span class="inline-math">\(1-(\frac{k}{n})^{2/3}\)</span> fraction of random errors <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -127,7 +125,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">The cross-interleaved RS (CIRC), an IRS code using two shortened RS codes and two forms of interleaving, was used for compact discs (CDs) <a href="#cite-2" class="cite">[3]</a> (see Ref. <a href="#cite-3" class="cite">[4]</a>, Sec. 5.6 and Ref. <a href="#cite-4" class="cite">[5]</a>, Ch. 4).</span>
+  <span class="paragraph-in-list">The cross-interleaved RS (CIRC), an IRS code using two shortened RS codes and two forms of interleaving, was used for compact discs (CDs) <a href="#citation-3" class="href-endnote endnote citation">[3]</a> (see Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Sec. 5.6 and Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ch. 4).</span>
 </div>
 
 
@@ -209,40 +207,7 @@ url={https://errorcorrectionzoo.org/c/interleaved_reed_solomon}
 
 
 <!-- endnotes -->
-
-
-  <div id="endnotes" class="sectioncontent">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        D. Bleichenbacher, A. Kiayias, and M. Yung, “Decoding interleaved Reed–Solomon codes over noisy channels”, Theoretical Computer Science <span class="textbf">379</span>, 348 (2007). <a href="https://doi.org/10.1016/j.tcs.2007.02.043" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        D. Coppersmith and M. Sudan, “Reconstructing curves in three (and higher) dimensional space from noisy data”, Proceedings of the thirty-fifth ACM symposium on Theory of computing  - STOC &#x27;03 (2003). <a href="https://doi.org/10.1145/780542.780563" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        Odaka K., Sako Y., Iwamoto I., Doi T.; Vries L.B.; SONY: Error correctable data transmission method (Patent US4413340) filing date May 21, 1980.
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href">DOI</a>
-      </dd>
-    
-    </dl>
-  </div>
-
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Bleichenbacher, A. Kiayias, and M. Yung, “Decoding interleaved Reed–Solomon codes over noisy channels”, Theoretical Computer Science <span class="textbf">379</span>, 348 (2007). <a href="https://doi.org/10.1016/j.tcs.2007.02.043" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>D. Coppersmith and M. Sudan, “Reconstructing curves in three (and higher) dimensional space from noisy data”, Proceedings of the thirty-fifth ACM symposium on Theory of computing - STOC &#x27;03 (2003). <a href="https://doi.org/10.1145/780542.780563" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Odaka K., Sako Y., Iwamoto I., Doi T.; Vries L.B.; SONY: Error correctable data transmission method (Patent US4413340) filing date May 21, 1980.</dd><dt id="citation-4">[4]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->

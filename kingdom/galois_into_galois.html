@@ -54,17 +54,13 @@
 
 
 <div class="ecc-code" id="ecc_galois_into_galois">
-  <span class="short-code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#cite-0" class="cite">[1]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/galois_into_galois">Galois-qudit code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
   <span class="short-code-description">Also called a <span class="inline-math">\(GF(q)\)</span><span class="textit">-</span> or <span class="inline-math">\(\mathbb{F}_q\)</span><span class="textit">-qudit code</span>. Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(q^n\)</span>-dimensional (<span class="inline-math">\(n\)</span>-qudit) Hilbert space, with canonical qudit states <span class="inline-math">\(|k\rangle\)</span> labeled by elements <span class="inline-math">\(k\)</span> of the <span class="textit">Galois field</span> <span class="inline-math">\(GF(q)\)</span> and with <span class="inline-math">\(q\)</span> being a power of a prime <span class="inline-math">\(p\)</span>. A Galois field can be thought of as a vector space whose basis vectors are the <span class="inline-math">\(m\)</span> roots of some polynomial and whose coefficients (i.e., field) are <span class="inline-math">\(p\)</span>th roots of unity. Codes can be denoted as <span class="inline-math">\(((n,K))_{GF(q)}\)</span> or <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span>, whenever the code&#x27;s distance <span class="inline-math">\(d\)</span> is defined. This notation differentiates between Galois-qudit and modular-qudit codes, although the same notation, <span class="inline-math">\(((n,K,d))_q\)</span>, is usually used for both.</span>
-  <span class="short-code-info">Protection: A convenient and often considered error set is the Galois-qudit analogue of the Pauli string set for <a href="/c/qubits_into_qubits" class="ref">qubit</a> codes. For a single Galois qudit, this set consists of products of <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type operators labeled by elements <span class="inline-math">\(\beta \in GF(q)\)</span>, which act on computational basis states <span class="inline-math">\(|\gamma\rangle\)</span> for <span class="inline-math">\(\gamma\in GF(q)\)</span> as
-<span class="display-math env-align">\begin{align}
+  <span class="short-code-info">Protection: A convenient and often considered error set is the Galois-qudit analogue of the Pauli string set for <a href="/c/qubits_into_qubits" class="href-ref ref-code">qubit</a> codes. For a single Galois qudit, this set consists of products of <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type operators labeled by elements <span class="inline-math">\(\beta \in GF(q)\)</span>, which act on computational basis states <span class="inline-math">\(|\gamma\rangle\)</span> for <span class="inline-math">\(\gamma\in GF(q)\)</span> as <span class="display-math env-align">\begin{align}
   X_{\beta}\left|\gamma\right\rangle =\left|\gamma+\beta\right\rangle \,\,\text{ and }\,\,Z_{\beta}\left|\gamma\right\rangle =e^{i\frac{2\pi}{p}\text{Tr}(\beta\gamma)}\left|\gamma\right\rangle~,
-\end{align}</span>
-where the trace maps elements of the field to elements of <span class="inline-math">\(\mathbb{Z}_p\)</span> as
-<span class="display-math env-align">\begin{align}
+\end{align}</span> where the trace maps elements of the field to elements of <span class="inline-math">\(\mathbb{Z}_p\)</span> as <span class="display-math env-align">\begin{align}
   \text{tr}(\gamma)=\sum_{k=0}^{m-1}\gamma^{p^{k}}~.
-\end{align}</span>
-For multiple Galois qudits, error set elements are tensor products of elements of the single-qudit error set.</span>
+\end{align}</span> For multiple Galois qudits, error set elements are tensor products of elements of the single-qudit error set.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a>.
@@ -81,7 +77,7 @@ For multiple Galois qudits, error set elements are tensor products of elements o
 
 
 <div class="ecc-code" id="ecc_galois_stabilizer">
-  <span class="short-code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#cite-2" class="cite">[3]</a><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/galois_stabilizer">Galois-qudit stabilizer code</a><span class="code-introduced"><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\(((n,K,d))_{GF(q)}\)</span> Galois-qudit code whose logical subspace is the joint eigenspace of commuting Galois-qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace, and the stabilizer group does not contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a Galois-qudit Pauli string that implements a nontrivial logical operation in the code.</span>
   <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(d-1\)</span> qudits, and corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qudits. Corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qudits.</span>
   <span class="short-code-parents">
@@ -100,9 +96,8 @@ For multiple Galois qudits, error set elements are tensor products of elements o
 
 
 <div class="ecc-code" id="ecc_non_stabilizer">
-  <span class="short-code-name"><a href="/c/non_stabilizer">Galois-qudit non-stabilizer code</a><span class="code-introduced"><a href="#cite-3" class="cite">[4]</a></span></span>
-  <span class="short-code-description">The projection onto a stabilizer code is proportional to an equal sum over all elements of the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>.
-Non-stabilizer codes generalize stabilizer codes by modifying the code projection with elements of a subset <span class="inline-math">\(\mathsf{B}\subset\mathsf{S}\)</span> called the <span class="textit">Fourier description</span> (see proof of Thm. 2.7 in Ref. <a href="#cite-3" class="cite">[4]</a>). When <span class="inline-math">\(\mathsf{B}\)</span> is a subgroup of <span class="inline-math">\(\mathsf{S}\)</span>, then the code reduces to an ordinary stabilizer code.</span>
+  <span class="short-code-name"><a href="/c/non_stabilizer">Galois-qudit non-stabilizer code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
+  <span class="short-code-description">The projection onto a stabilizer code is proportional to an equal sum over all elements of the stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Non-stabilizer codes generalize stabilizer codes by modifying the code projection with elements of a subset <span class="inline-math">\(\mathsf{B}\subset\mathsf{S}\)</span> called the <span class="textit">Fourier description</span> (see proof of Thm. 2.7 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>). When <span class="inline-math">\(\mathsf{B}\)</span> is a subgroup of <span class="inline-math">\(\mathsf{S}\)</span>, then the code reduces to an ordinary stabilizer code.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/galois_into_galois">Galois-qudit code</a>.
@@ -115,7 +110,7 @@ Non-stabilizer codes generalize stabilizer codes by modifying the code projectio
 
 
 <div class="ecc-code" id="ecc_stabilizer_over_gfqsq">
-  <span class="short-code-name"><a href="/c/stabilizer_over_gfqsq">Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span></a><span class="code-introduced"><a href="#cite-1" class="cite">[2]</a></span></span>
+  <span class="short-code-name"><a href="/c/stabilizer_over_gfqsq">Stabilizer code over <span class="inline-math">\(GF(q^2)\)</span></a><span class="code-introduced"><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -148,22 +143,16 @@ Non-stabilizer codes generalize stabilizer codes by modifying the code projectio
 
 
 <div class="ecc-code" id="ecc_galois_css">
-  <span class="short-code-name"><a href="/c/galois_css">Galois-qudit CSS code</a><span class="code-introduced"><a href="#cite-4" class="cite">[5]</a><a href="#cite-5" class="cite">[6]</a></span></span>
-  <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that
-are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings.
-The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form
-<span class="display-math env-align">\begin{align}
+  <span class="short-code-name"><a href="/c/galois_css">Galois-qudit CSS code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
+  <span class="short-code-description">An <span class="inline-math">\([[n,k,d]]_{GF(q)} \)</span> Galois-qudit true stabilizer code admitting a set of stabilizer generators that are either <span class="inline-math">\(Z\)</span>-type or <span class="inline-math">\(X\)</span>-type Galois-qudit Pauli strings. The stabilizer generator matrix, taking values from <span class="inline-math">\(GF(q)\)</span>, is of the form <span id="equation--eq-parityg" class="display-math env-align">\begin{align}
 H=\begin{pmatrix}0 &amp; H_{Z}\\
 H_{X} &amp; 0
 \end{pmatrix}
 \label{eq:parityg}
-\end{align}</span>
-such that the rows of the two blocks must be orthogonal
-<span class="display-math env-align">\begin{align}
+\end{align}</span> such that the rows of the two blocks must be orthogonal <span id="equation--eq-commG" class="display-math env-align">\begin{align}
 H_X H_Z^T=0~.
 \label{eq:commG}
-\end{align}</span>
-The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
+\end{align}</span> The above condition guarantees that the <span class="inline-math">\(X\)</span>-stabilizer generators, defined in the symplectic representation as rows of <span class="inline-math">\(H_X\)</span>, commute with the <span class="inline-math">\(Z\)</span>-stabilizer generators associated with <span class="inline-math">\(H_Z\)</span>.</span>
   <span class="short-code-info">Protection: Detects errors on <span class="inline-math">\(d-1\)</span> qubits, corrects errors on <span class="inline-math">\(\left\lfloor (d-1)/2 \right\rfloor\)</span> qubits.</span>
   <span class="short-code-parents">
     Parents:
@@ -181,9 +170,9 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_expander_lifted_product">
-  <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#cite-6" class="cite">[7]</a></span></span>
-  <span class="short-code-description">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="ref">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#cite-6" class="cite">[7]</a>.</span>
-  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#cite-6" class="cite">[7]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#cite-7" class="cite">[8]</a>; this construction can be derandomized by being reformulated as a balanced product code <a href="#cite-8" class="cite">[9]</a>.</span>
+  <span class="short-code-name"><a href="/c/expander_lifted_product">Expander lifted-product code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
+  <span class="short-code-description">Family of <span class="inline-math">\(G\)</span>-lifted product codes constructed using two random classical <a href="/c/tanner" class="href-ref ref-code">Tanner codes</a> defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
+  <span class="short-code-info">Protection: Code performance strongly depends on <span class="inline-math">\(G\)</span>. Certain nonabelian groups yield asymptotically good QLDPC codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n)]]\)</span> <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. Abelian groups like <span class="inline-math">\(\mathbb{Z}_{\ell}\)</span> for <span class="inline-math">\(\ell=\Theta(n / \log n)\)</span> yield constant-rate codes with parameters <span class="inline-math">\([[n, k = \Theta(n), d = \Theta(n / \log n)]]\)</span> <a href="#citation-8" class="href-endnote endnote citation">[8]</a>; this construction can be derandomized by being reformulated as a balanced product code <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/lifted_product">Lifted-product (LP) code</a>,       <a href="/c/good_qldpc">Good QLDPC code</a>.
@@ -200,7 +189,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_quantum_secret_sharing">
-  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#cite-9" class="cite">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a><span class="code-introduced"><a href="#citation-10" class="href-endnote endnote citation">[10]</a></span></span>
   <span class="short-code-description">A family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes approximately correcting errors on up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> qubits, i.e., with approximate distance approaching the no-cloning bound <span class="inline-math">\(n/2\)</span>. Constructed using a non-degenerate CSS code, such as a polynomial quantum code, and a classical authentication scheme. The code can be viewed as an <span class="inline-math">\(t\)</span>-error tolerant secret sharing scheme. Since the code yields a small logical subspace using large registers that contain both classical and quantum information, it is not useful for practical error correction problems, but instead demonstrates the power of approximate quantum error correction.</span>
   <span class="short-code-info">Protection: Corrects up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> errors with fidelity exponentially lose to 1.</span>
   <span class="short-code-parents">
@@ -219,7 +208,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_binary_quantum_goppa">
-  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a><span class="code-introduced"><a href="#cite-10" class="cite">[11]</a><a href="#cite-11" class="cite">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a><span class="code-introduced"><a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-12" class="href-endnote endnote citation">[12]</a></span></span>
   <span class="short-code-description">Also known as a <span class="textit">quantum AG code</span>. Binary quantum Goppa codes are a family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes for <span class="inline-math">\( q=2^m \)</span>, generated using classical Goppa codes.</span>
   <span class="short-code-info">Protection: Protects against weight <span class="inline-math">\(t\)</span> errors where <span class="inline-math">\( 0 &lt; t \leq  \lfloor \frac{d^*-g-1}{2} \rfloor \)</span> where <span class="inline-math">\( d^* = \text{deg} G + 2 -2g \)</span> and <span class="inline-math">\(g\)</span> is the genus of the function field and <span class="inline-math">\(d \geq n - \lfloor \frac{deg G}{2} \rfloor\)</span>.</span>
   <span class="short-code-parents">
@@ -234,7 +223,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_galois_polynomial">
-  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#cite-12" class="cite">[13]</a></span></span>
+  <span class="short-code-name"><a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a></span></span>
   <span class="short-code-description">Also called <span class="textit">quantum Reed-Solomon code</span>. An <span class="inline-math">\([[n,k,n-k+1]]_{GF(q)}\)</span> (with <span class="inline-math">\(q&gt;n\)</span>) Galois-qudit CSS code constructed using two Reed-Solomon codes over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(C_1\)</span> be a <span class="inline-math">\([n,k_1,d_1]_q\)</span> Reed-Solomon code and <span class="inline-math">\(C_2^\perp\)</span> be a <span class="inline-math">\([n,k_2,d_2]_q\)</span> Reed-Solomon code, modified such that <span class="inline-math">\(C_2^\perp \subseteq C_1\)</span> and <span class="inline-math">\(0\le k_2 \le k_1 \le n\)</span>. Then, a polynomial code is a non-degenerate <span class="inline-math">\([[n,k_2,d]]_{GF(q)}\)</span> Galois-qudit CSS code with <span class="inline-math">\(d=\min(n-k_1+1,k_1-k_2+1)\)</span>. The polynomial code is the span of the basis codewords over GF(<span class="inline-math">\(q\)</span>) <span class="display-math env-align">\begin{align} |\overline{\beta_0,\cdots,\beta_{k_2-1}}\rangle = \sum_{(\beta_{k_2},\cdots,\beta_{k_1-1})\in GF(q) } \bigotimes_{i=1}^{n} \left|\sum_{j=0}^{k_1-1} \beta_j \alpha_i^j \right\rangle, \end{align}</span> where <span class="inline-math">\((\alpha_1, \cdots, \alpha_n)\)</span> are <span class="inline-math">\(n\)</span> distinct points chosen for code <span class="inline-math">\(C_1\)</span> from <span class="inline-math">\(GF(q)\setminus \{0\}\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -252,9 +241,9 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_lifted_product">
-  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product (LP) code</a><span class="code-introduced"><a href="#cite-13" class="cite">[14]</a><a href="#cite-6" class="cite">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/lifted_product">Lifted-product (LP) code</a><span class="code-introduced"><a href="#citation-14" class="href-endnote endnote citation">[14]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
   <span class="short-code-description">Also called a <span class="textit">Panteleev-Kalachev (PK)</span> code. Code that utilizes the notion of a lifted product in its construction. Lifted products of certain classical Tanner codes are the first (asymptotically) <span class="textit">good QLDPC codes</span>.</span>
-  <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#cite-7" class="cite">[8]</a>.</span>
+  <span class="short-code-info">Protection: Code performance strongly depends on the group <span class="inline-math">\(G\)</span> used in the product <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/balanced_product">Balanced product code</a>,       <a href="/c/galois_css">Galois-qudit CSS code</a>.
@@ -271,7 +260,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_skew-cyclic_galois_css">
-  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#cite-14" class="cite">[15]</a></span></span>
+  <span class="short-code-name"><a href="/c/skew-cyclic_galois_css">Skew-cyclic CSS code</a><span class="code-introduced"><a href="#citation-15" class="href-endnote endnote citation">[15]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -285,7 +274,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_hypergraph_product">
-  <span class="short-code-name"><a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#cite-15" class="cite">[16]</a><a href="#cite-16" class="cite">[17]</a></span></span>
+  <span class="short-code-name"><a href="/c/hypergraph_product">Hypergraph product code</a><span class="code-introduced"><a href="#citation-16" class="href-endnote endnote citation">[16]</a><a href="#citation-17" class="href-endnote endnote citation">[17]</a></span></span>
   <span class="short-code-description">A family of <span class="inline-math">\([[n,k,d]]\)</span> CSS codes whose construction is based on two binary linear <span class="textit">seed</span> codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
   <span class="short-code-info">Protection: The hypergraph product has distance <span class="inline-math">\(d=O(\sqrt{n})\)</span>. The number of encoded logical qubits is <span class="inline-math">\(k=O(k_1k_2)\)</span> where <span class="inline-math">\(k_1\)</span> and <span class="inline-math">\(k_2\)</span> are the dimensions of the classical seed codes <span class="inline-math">\(C_1\)</span> and <span class="inline-math">\(C_2\)</span>.</span>
   <span class="short-code-parents">
@@ -304,7 +293,7 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
 
 
 <div class="ecc-code" id="ecc_quantum_expander">
-  <span class="short-code-name"><a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#cite-17" class="cite">[18]</a></span></span>
+  <span class="short-code-name"><a href="/c/quantum_expander">Quantum expander code</a><span class="code-introduced"><a href="#citation-18" class="href-endnote endnote citation">[18]</a></span></span>
   <span class="short-code-description">CSS codes constructed from a hypergraph product of bipartite expander graphs with bounded left and right vertex degrees. For every bipartite graph there is an associated matrix (the parity check matrix) with columns indexed by the left vertices, rows indexed by the right vertices, and 1 entries whenever a left and right vertex are connected. This matrix can serve as the parity check matrix of a classical code. Two bipartite expander graphs can be used to construct a quantum CSS code (the quantum expander code) by using the parity check matrix of one as <span class="inline-math">\(X\)</span> checks, and the parity check matrix of the other as <span class="inline-math">\(Z\)</span> checks.</span>
   <span class="short-code-info">Protection: Pauli errors of weight <span class="inline-math">\(\leq t\)</span>, distance scales as <span class="inline-math">\(\Omega(n^{1/2})\)</span>.</span>
   <span class="short-code-parents">
@@ -317,103 +306,8 @@ The above condition guarantees that the <span class="inline-math">\(X\)</span>-s
   </span>
 </div>
 
-
-  <div id="endnotes" class="">
-    <h2>References</h2>
-    <dl id="citations">
-      <!-- Citation:  -->
-      <dt id="cite-0">[1]</dt>
-      <dd>
-        J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&lt;174::AID-JCD3&gt;3.0.CO;2-T" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-1">[2]</dt>
-      <dd>
-        Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href">quant-ph/0508070</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-2">[3]</dt>
-      <dd>
-        Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href">quant-ph/0005008</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-3">[4]</dt>
-      <dd>
-        V. Arvind, Piyush P Kurur, and K. R. Parthasarathy, “Nonstabilizer Quantum Codes from Abelian Subgroups of the Error Group”. <a href="https://arxiv.org/abs/quant-ph/0210097" target="_blank" class="href">quant-ph/0210097</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-4">[5]</dt>
-      <dd>
-        M. GRASSL, T. BETH, and M. RÖTTELER, “ON OPTIMAL QUANTUM CODES”, International Journal of Quantum Information <span class="textbf">02</span>, 55 (2004). <a href="https://doi.org/10.1142/S0219749904000079" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0312164" target="_blank" class="href">quant-ph/0312164</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-5">[6]</dt>
-      <dd>
-        J.-L. Kim and J. Walker, “Nonbinary quantum error-correcting codes from algebraic curves”, Discrete Mathematics <span class="textbf">308</span>, 3115 (2008). <a href="https://doi.org/10.1016/j.disc.2007.08.038" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-6">[7]</dt>
-      <dd>
-        Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href">2111.03654</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-7">[8]</dt>
-      <dd>
-        P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href">2012.04068</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-8">[9]</dt>
-      <dd>
-        N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href">2012.09271</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-9">[10]</dt>
-      <dd>
-        Claude Crepeau, Daniel Gottesman, and Adam Smith, “Approximate Quantum Error-Correcting Codes and Secret Sharing Schemes”. <a href="https://arxiv.org/abs/quant-ph/0503139" target="_blank" class="href">quant-ph/0503139</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-10">[11]</dt>
-      <dd>
-        Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href">quant-ph/0501074</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-11">[12]</dt>
-      <dd>
-        A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-12">[13]</dt>
-      <dd>
-        Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href">quant-ph/9906129</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-13">[14]</dt>
-      <dd>
-        P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href">1904.02703</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-14">[15]</dt>
-      <dd>
-        H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href">DOI</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-15">[16]</dt>
-      <dd>
-        J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href">0903.0566</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-16">[17]</dt>
-      <dd>
-        A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href">1202.0928</a>
-      </dd>
-      <!-- Citation:  -->
-      <dt id="cite-17">[18]</dt>
-      <dd>
-        A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href">1504.00822</a>
-      </dd>
-    
-    </dl>
-  </div>
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Bierbrauer and Y. Edel, “Quantum twisted codes”, Journal of Combinatorial Designs <span class="textbf">8</span>, 174 (2000). <a href="https://doi.org/10.1002/(SICI)1520-6610(2000)8:3&amp;lt;174::AID-JCD3&amp;gt;3.0.CO;2-T" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Avanti Ketkar et al., “Nonbinary stabilizer codes over finite fields”. <a href="https://arxiv.org/abs/quant-ph/0508070" target="_blank" class="href-href">quant-ph/0508070</a></dd><dt id="citation-3">[3]</dt><dd>Alexei Ashikhmin and Emanuel Knill, “Nonbinary Quantum Stabilizer Codes”. <a href="https://arxiv.org/abs/quant-ph/0005008" target="_blank" class="href-href">quant-ph/0005008</a></dd><dt id="citation-4">[4]</dt><dd>V. Arvind, Piyush P Kurur, and K. R. Parthasarathy, “Nonstabilizer Quantum Codes from Abelian Subgroups of the Error Group”. <a href="https://arxiv.org/abs/quant-ph/0210097" target="_blank" class="href-href">quant-ph/0210097</a></dd><dt id="citation-5">[5]</dt><dd>M. GRASSL, T. BETH, and M. RÖTTELER, “ON OPTIMAL QUANTUM CODES”, International Journal of Quantum Information <span class="textbf">02</span>, 55 (2004). <a href="https://doi.org/10.1142/S0219749904000079" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0312164" target="_blank" class="href-href">quant-ph/0312164</a></dd><dt id="citation-6">[6]</dt><dd>J.-L. Kim and J. Walker, “Nonbinary quantum error-correcting codes from algebraic curves”, Discrete Mathematics <span class="textbf">308</span>, 3115 (2008). <a href="https://doi.org/10.1016/j.disc.2007.08.038" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Pavel Panteleev and Gleb Kalachev, “Asymptotically Good Quantum and Locally Testable Classical LDPC Codes”. <a href="https://arxiv.org/abs/2111.03654" target="_blank" class="href-href">2111.03654</a></dd><dt id="citation-8">[8]</dt><dd>P. Panteleev and G. Kalachev, “Quantum LDPC Codes With Almost Linear Minimum Distance”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 213 (2022). <a href="https://doi.org/10.1109/TIT.2021.3119384" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2012.04068" target="_blank" class="href-href">2012.04068</a></dd><dt id="citation-9">[9]</dt><dd>N. P. Breuckmann and J. N. Eberhardt, “Balanced Product Quantum Codes”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 6653 (2021). <a href="https://doi.org/10.1109/TIT.2021.3097347" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2012.09271" target="_blank" class="href-href">2012.09271</a></dd><dt id="citation-10">[10]</dt><dd>Claude Crepeau, Daniel Gottesman, and Adam Smith, “Approximate Quantum Error-Correcting Codes and Secret Sharing Schemes”. <a href="https://arxiv.org/abs/quant-ph/0503139" target="_blank" class="href-href">quant-ph/0503139</a></dd><dt id="citation-11">[11]</dt><dd>Annika Niehage, “Quantum Goppa Codes over Hyperelliptic Curves”. <a href="https://arxiv.org/abs/quant-ph/0501074" target="_blank" class="href-href">quant-ph/0501074</a></dd><dt id="citation-12">[12]</dt><dd>A. Niehage, “Nonbinary Quantum Goppa Codes Exceeding the Quantum Gilbert-Varshamov Bound”, Quantum Information Processing <span class="textbf">6</span>, 143 (2006). <a href="https://doi.org/10.1007/s11128-006-0047-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>Dorit Aharonov and Michael Ben-Or, “Fault-Tolerant Quantum Computation With Constant Error Rate”. <a href="https://arxiv.org/abs/quant-ph/9906129" target="_blank" class="href-href">quant-ph/9906129</a></dd><dt id="citation-14">[14]</dt><dd>P. Panteleev and G. Kalachev, “Degenerate Quantum LDPC Codes With Good Finite Length Performance”, Quantum <span class="textbf">5</span>, 585 (2021). <a href="https://doi.org/10.22331/q-2021-11-22-585" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1904.02703" target="_blank" class="href-href">1904.02703</a></dd><dt id="citation-15">[15]</dt><dd>H. Q. Dinh et al., “A class of skew cyclic codes and application in quantum codes construction”, Discrete Mathematics <span class="textbf">344</span>, 112189 (2021). <a href="https://doi.org/10.1016/j.disc.2020.112189" target="_blank" class="href-href">DOI</a></dd><dt id="citation-16">[16]</dt><dd>J.-P. Tillich and G. Zemor, “Quantum LDPC Codes With Positive Rate and Minimum Distance Proportional to the Square Root of the Blocklength”, IEEE Transactions on Information Theory <span class="textbf">60</span>, 1193 (2014). <a href="https://doi.org/10.1109/TIT.2013.2292061" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0903.0566" target="_blank" class="href-href">0903.0566</a></dd><dt id="citation-17">[17]</dt><dd>A. A. Kovalev and L. P. Pryadko, “Improved quantum hypergraph-product LDPC codes”, 2012 IEEE International Symposium on Information Theory Proceedings (2012). <a href="https://doi.org/10.1109/ISIT.2012.6284206" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1202.0928" target="_blank" class="href-href">1202.0928</a></dd><dt id="citation-18">[18]</dt><dd>A. Leverrier, J.-P. Tillich, and G. Zemor, “Quantum Expander Codes”, 2015 IEEE 56th Annual Symposium on Foundations of Computer Science (2015). <a href="https://doi.org/10.1109/FOCS.2015.55" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1504.00822" target="_blank" class="href-href">1504.00822</a></dd></dl></div>
 
   </main><!-- #main -->
 
