@@ -58,8 +58,24 @@ Here is a list of <a href="/c/ldpc" class="href-ref ref-code">LDPC codes</a>.
 </thead>
 <tbody>
 <tr>
+  <td class="top left"><a href="/c/fountain">Fountain code</a></td>
+  <td class="textit">Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></td>
   <td class="textit">Also known as <span class="textit">Gallager codes</span>. Family of <span class="inline-math">\([n,k,d]\)</span> binary or <span class="inline-math">\(q\)</span>-ary linear codes for which the number of nonzero entries in each row and column of the parity check matrix are both bounded by a constant as <span class="inline-math">\(n\to\infty\)</span>. In other words, the parity-check matrix of an LDPC code is sparse.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/luby_transform">Luby transform (LT) code</a></td>
+  <td class="textit">Erasure codes based on fountain codes. They improve on random linear fountain codes by having a much more efficient encoding and decoding algorithm.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/raptor">Raptor (RAPid TORnado) code</a></td>
+  <td class="textit">Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code. The pre-code is a linear binary erasure code, which is applied first to the input to create some redundant data. The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/tornado">Tornado code</a></td>
+  <td class="textit">Stub.</td>
 </tr>
 </tbody>
 </table>

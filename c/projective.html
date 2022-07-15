@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Projective \(q\)-ary code" />
+<meta name="citation_title" content="Projective code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Projective \(q\)-ary code" />
+<meta name="DC.title" content="Projective code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Projective \(q\)-ary code [error correction zoo]
+    Projective code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,13 +78,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Projective <span class="inline-math">\(q\)</span>-ary code</h1>
+      Projective code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Linear <span class="inline-math">\([n,k,d]_q\)</span> code such that columns of its generator matrix form points in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>.</div>
+<div class="sectioncontent code-description">Linear <span class="inline-math">\([n,k,d]_q\)</span> code such that columns of its generator matrix does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>.</div>
 
 
 
@@ -129,22 +129,39 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/ecc">Error-correcting code (ECC)</a></span></li>
 </ul>
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/evaluation">Evaluation AG code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An AG-code generator matrix has columns that form a subset of points on a curve in projective space.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/simplex">Simplex code</a></span></li>
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/constant_weight">Constant-weight code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;There is a 1-1 correpondence between projective and weight-two codes <a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></li>
+</ul>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -171,10 +188,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Projective \(q\)-ary code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</dd>
+    <dd>“Projective code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_projective,
-title={Projective \(q\)-ary code},
+title={Projective code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -190,7 +207,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
 
 <!-- endnotes -->
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. E. Brouwer and M. van . Eupen, “[]”, Designs, Codes and Cryptography <span class="textbf">11</span>, 261 (1997). <a href="https://doi.org/10.1023/A:1008294128110" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -199,7 +216,7 @@ url={https://errorcorrectionzoo.org/c/projective}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Projective \(q\)-ary code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</p>
+  <p>“Projective code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/projective.yml"
                 class="ashowurl"
@@ -213,7 +230,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

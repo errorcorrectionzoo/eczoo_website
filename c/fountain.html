@@ -100,7 +100,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate">Random linear fountain codes approach the Shannon limit as the file size <span class="inline-math">\(K\)</span> increases.</div>
+  <div class="sectioncontent code-feature code-feature-rate">Random linear fountain codes approach the Shannon limit as the file size <span class="inline-math">\(K\)</span> increases. However, they do not have a fixed encoding rate.</div>
 
 
 
@@ -124,26 +124,28 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Designed for servers sending data to many recipients, such as during broadcasting or file distribution <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span>
+  <span class="paragraph-in-list">Designed for servers sending data to many recipients, such as during broadcasting or file distribution <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Review on fountain codes can be found in Refs. <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
+  <span class="paragraph-in-list">Review on fountain codes can be found in Refs. <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span>
 </div>
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/bits_into_bits">Binary code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/binary_linear">Linear binary code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span></li>
 </ul>
 </div>
 
@@ -169,9 +171,13 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/random">Random code</a></span></li>
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/distributed_storage">Distributed-storage code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;There are proposals <a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a> adapting fountain codes to distributed storage systems.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/tornado">Tornado code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Tornado codes, the precursor to fountain codes, are much slower to encode and decode in the low-rate regime applicable to scalable data transmission <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+      &#x2014;&nbsp;Tornado codes, the precursor to fountain codes, are much slower to encode and decode in the low-rate regime applicable to scalable data transmission <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
 </ul>
 </div>
 
@@ -219,7 +225,7 @@ url={https://errorcorrectionzoo.org/c/fountain}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>D. J. C. MacKay, “Fountain codes”, IEE Proceedings - Communications <span class="textbf">152</span>, 1062 (2005). <a href="https://doi.org/10.1049/ip-com:20050237" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Joshi, G., Rhim, J. B., Sun, J., &amp; Wang, D. (2010). Fountain codes. In Global telecommunications conference (GLOBECOM 2010) (pp. 7–12). IEEE.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>E. Baik, A. Pande, and P. Mohapatra, “Cross-layer coordination for efficient contents delivery in LTE eMBMS traffic”, 2012 IEEE 9th International Conference on Mobile Ad-Hoc and Sensor Systems (MASS 2012) (2012). <a href="https://doi.org/10.1109/MASS.2012.6502540" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>D. J. C. MacKay, “Fountain codes”, IEE Proceedings - Communications <span class="textbf">152</span>, 1062 (2005). <a href="https://doi.org/10.1049/ip-com:20050237" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Joshi, G., Rhim, J. B., Sun, J., &amp; Wang, D. (2010). Fountain codes. In Global telecommunications conference (GLOBECOM 2010) (pp. 7–12). IEEE.</dd><dt id="citation-6">[6]</dt><dd>Megasthenis Asteris and Alexandros G. Dimakis, “Repairable Fountain Codes”. <a href="https://arxiv.org/abs/1401.0734" target="_blank" class="href-href">1401.0734</a></dd><dt id="citation-7">[7]</dt><dd>Michael G. Luby et al., “Liquid Cloud Storage”. <a href="https://arxiv.org/abs/1705.07983" target="_blank" class="href-href">1705.07983</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -242,7 +248,7 @@ url={https://errorcorrectionzoo.org/c/fountain}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/raptor">Raptor</a></li><li><a href="/c/random">Random</a></li><li><a href="/c/tornado">Tornado</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/ldpc">LDPC</a></li><li><a href="/c/raptor">Raptor</a></li><li><a href="/c/random">Random</a></li><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/tornado">Tornado</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

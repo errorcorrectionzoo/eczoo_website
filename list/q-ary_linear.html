@@ -63,7 +63,7 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
-  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>. BCH codes are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
+  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/extended_reed_solomon">Extended RS code</a></td>
@@ -126,10 +126,6 @@ d \leq n-k+1
   <td class="textit">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity. </td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/projective">Projective <span class="inline-math">\(q\)</span>-ary code</a></td>
-  <td class="textit">Linear <span class="inline-math">\([n,k,d]_q\)</span> code such that columns of its generator matrix form points in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
   <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
 </tr>
@@ -140,10 +136,6 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 \end{align}</span> In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
   \mu\to\left\{ f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right\} \,.
 \end{align}</span></td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/simplex">Simplex code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/wozencraft">Wozencraft ensemble code</a></td>
@@ -159,7 +151,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></td>
-  <td class="textit">Member of a quadruple of cyclic <span class="inline-math">\(q\)</span>-ary codes of prime length that satisfy certain relations (<a href="#citation-3" class="href-endnote endnote citation">[3]</a> Ch. 16). Stub. </td>
+  <td class="textit">Member of a quadruple of cyclic <span class="inline-math">\(q\)</span>-ary codes of prime length <span class="inline-math">\(n\)</span> where <span class="inline-math">\(q\)</span> is prime and a quadratic residue modulo <span class="inline-math">\(n\)</span>. The codes are constructed using quadratic residues and nonresidues of <span class="inline-math">\(n\)</span>.</td>
 </tr>
 </tbody>
 </table>
@@ -167,7 +159,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
   </main><!-- #main -->

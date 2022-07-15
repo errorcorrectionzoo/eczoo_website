@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Tensor code" />
+<meta name="citation_title" content="Tensor-product code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Tensor code" />
+<meta name="DC.title" content="Tensor-product code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Tensor code [error correction zoo]
+    Tensor-product code [error correction zoo]
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -78,14 +78,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Tensor code</h1>
+      Tensor-product code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Martix-based code constructed out of two linear binary or <span class="inline-math">\(q\)</span>-ary codes <span class="inline-math">\(C_A,C_B\)</span> in an outer-product construction denoted as <span class="inline-math">\(C_A \otimes C_B\)</span>. The codewords are those matrices whose column vectors are in <span class="inline-math">\(C_A\)</span> and whose row vectors are in <span class="inline-math">\(C_B\)</span>.</div>
+<div class="sectioncontent code-description">Also called a <span class="textit">tensor code</span> or a <span class="textit">product code</span>. A matrix-based code constructed out of two linear binary or <span class="inline-math">\(q\)</span>-ary codes <span class="inline-math">\(C_A,C_B\)</span> in an outer-product construction denoted as <span class="inline-math">\(C_A \otimes C_B\)</span>. The codewords are those matrices whose column vectors are in <span class="inline-math">\(C_A\)</span> and whose row vectors are in <span class="inline-math">\(C_B\)</span>. For linear codes <span class="inline-math">\(C_A=[n_A,k_A,d_A]\)</span> and <span class="inline-math">\(C_B=[n_B,k_B,d_B]\)</span>, the resulting tensor code is <span class="inline-math">\(C_A \otimes C_B=[n_A n_B,k_A k_B,d_A d_B]\)</span>. </div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Tensor codes can be useful for protecting against burst errors <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>. Tensor codes formed by two random linear codes are robustly testable <a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a>. </div>
 
 
 <!-- Display features -->
@@ -115,14 +117,14 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Tensor codes formed by two random linear codes are robustly testable <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span>
+  <span class="paragraph-in-list">See book <a href="#citation-9" class="href-endnote endnote citation">[9]</a>, Ch. 18 for an exposition.</span>
 </div>
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -130,6 +132,8 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/matrices_into_matrices">Matrix-based code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/generalized_concatenated">Generalized concatenated code</a></span></li>
 </ul>
 </div>
 
@@ -177,10 +181,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Tensor code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/tensor</dd>
+    <dd>“Tensor-product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/tensor</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_tensor,
-title={Tensor code},
+title={Tensor-product code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -196,7 +200,7 @@ url={https://errorcorrectionzoo.org/c/tensor}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Irit Dinur et al., “Good Quantum LDPC Codes with Linear Time Decoders”. <a href="https://arxiv.org/abs/2206.07750" target="_blank" class="href-href">2206.07750</a></dd><dt id="citation-2">[2]</dt><dd>Gleb Kalachev and Pavel Panteleev, “Two-sided Robustly Testable Codes”. <a href="https://arxiv.org/abs/2206.09973" target="_blank" class="href-href">2206.09973</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Elias, “Error-free Coding”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 29 (1954). <a href="https://doi.org/10.1109/TIT.1954.1057464" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>H. Burton and E. Weldon, “Cyclic product codes”, IEEE Transactions on Information Theory <span class="textbf">11</span>, 433 (1965). <a href="https://doi.org/10.1109/TIT.1965.1053802" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>G. D. Forney, Jr (1966). <span class="textit">Concatenated Codes</span>. MIT Press, Cambridge, MA.</dd><dt id="citation-4">[4]</dt><dd>W. Gore, “Further results on product codes”, IEEE Transactions on Information Theory <span class="textbf">16</span>, 446 (1970). <a href="https://doi.org/10.1109/TIT.1970.1054477" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>L. Bahl and R. Chien, “Single- and multiple-burst-correcting properties of a class of cyclic product codes”, IEEE Transactions on Information Theory <span class="textbf">17</span>, 594 (1971). <a href="https://doi.org/10.1109/TIT.1971.1054690" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>R. Chien and S. Ng, “Dual product codes for correction of multiple low-density burst errors”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 672 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055085" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Irit Dinur et al., “Good Quantum LDPC Codes with Linear Time Decoders”. <a href="https://arxiv.org/abs/2206.07750" target="_blank" class="href-href">2206.07750</a></dd><dt id="citation-8">[8]</dt><dd>Gleb Kalachev and Pavel Panteleev, “Two-sided Robustly Testable Codes”. <a href="https://arxiv.org/abs/2206.09973" target="_blank" class="href-href">2206.09973</a></dd><dt id="citation-9">[9]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -205,7 +209,7 @@ url={https://errorcorrectionzoo.org/c/tensor}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Tensor code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/tensor</p>
+  <p>“Tensor-product code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/tensor</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/tensor.yml"
                 class="ashowurl"
@@ -219,7 +223,7 @@ url={https://errorcorrectionzoo.org/c/tensor}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/matrices_into_matrices">Matrix-based</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/dhlv">DHLV</a></li><li><a href="/c/quantum_tanner">Quantum Tanner</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/matrices_into_matrices">Matrix-based</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/generalized_concatenated">Generalized concatenated</a></li><li><a href="/c/dhlv">DHLV</a></li><li><a href="/c/quantum_tanner">Quantum Tanner</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
