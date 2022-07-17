@@ -38,6 +38,7 @@
 
 <div
   id="bodycontents"
+  class=" codelistpage codelistpage_style_table"
   >
 
   <div id="header-bg-decoration"></div>
@@ -92,14 +93,6 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
   <td class="textit">Let <span class="inline-math">\( G(z) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/group">Group code</a></td>
-  <td class="textit">An <span class="inline-math">\( [n,k] \)</span> binary or <span class="inline-math">\(q\)</span>-ary code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/hamming">Hamming code</a></td>
-  <td class="textit">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
   <td class="textit">A modification of RS codes where multiple polynomials are used to define each codeword. Each codeword <span class="inline-math">\(\mu\)</span> of a <span class="inline-math">\(t\)</span>-interleaved RS code is a string of values of the corresponding set <span class="inline-math">\(\{f_\mu^{(1)},f_\mu^{(2)},\cdots,f_\mu^{(t)}\}\)</span> of <span class="inline-math">\(t\)</span> polynomials at the points <span class="inline-math">\(\alpha_i\)</span>. The vector codewords can be arranged in an array whose rows are ordinary RS codes for each polynomial <span class="inline-math">\(f^{j}\)</span>, yielding the encoding <span class="display-math env-align">\begin{align}
 \mu\to\left\{
@@ -116,18 +109,8 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
   <td class="textit">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/mds">Maximum distance separable (MDS) code</a></td>
-  <td class="textit">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound <span class="display-math env-align">\begin{align}
-d \leq n-k+1
-\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. </td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a></td>
   <td class="textit">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity. </td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
-  <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
@@ -147,7 +130,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a></td>
-  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</td>
+  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></td>
@@ -159,14 +142,14 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
   </main><!-- #main -->
 
   <nav id="navigation">
 
-<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/terms">Terms Glossary</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

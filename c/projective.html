@@ -54,6 +54,7 @@
 
 <div
   id="bodycontents"
+  class=" "
   >
 
   <div id="header-bg-decoration"></div>
@@ -84,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Linear <span class="inline-math">\([n,k,d]_q\)</span> code such that columns of its generator matrix does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>.</div>
+<div class="sectioncontent code-description">Linear binary or <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>. </div>
 
 
 
@@ -145,6 +146,10 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;An AG-code generator matrix has columns that form a subset of points on a curve in projective space.</span></li>
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An <span class="inline-math">\(n\)</span>-arc in the projective space <span class="inline-math">\(PG_{n-k-1}(q)\)</span> defines an MDS code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/simplex">Simplex code</a></span></li>
 </ul>
 </div>
@@ -159,7 +164,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/constant_weight">Constant-weight code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;There is a 1-1 correpondence between projective and weight-two codes <a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></li>
+      &#x2014;&nbsp;There is a 1-1 correpondence between projective and weight-two codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
@@ -207,7 +212,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. E. Brouwer and M. van . Eupen, “[]”, Designs, Codes and Cryptography <span class="textbf">11</span>, 261 (1997). <a href="https://doi.org/10.1023/A:1008294128110" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. Calderbank and W. M. Kantor, “The Geometry of Two-Weight Codes”, Bulletin of the London Mathematical Society <span class="textbf">18</span>, 97 (1986). <a href="https://doi.org/10.1112/blms/18.2.97" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A. E. Brouwer and M. van . Eupen, “[]”, Designs, Codes and Cryptography <span class="textbf">11</span>, 261 (1997). <a href="https://doi.org/10.1023/A:1008294128110" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -230,7 +235,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/terms">Terms Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

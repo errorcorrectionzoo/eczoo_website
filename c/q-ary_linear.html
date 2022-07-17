@@ -54,6 +54,7 @@
 
 <div
   id="bodycontents"
+  class=" "
   >
 
   <div id="header-bg-decoration"></div>
@@ -107,7 +108,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Random linear codes over large fields are list-recoverable and list-decodable up to near-optimal rates <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Soft-decision maximum-likelihood trellis-based decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span><span class="paragraph-in-list">Random linear codes over large fields are list-recoverable and list-decodable up to near-optimal rates <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -127,7 +128,7 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -137,6 +138,8 @@
     <span class="code-parents-1-code"><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;For <span class="inline-math">\(q&gt;2\)</span>, additive codes need not be linear since linearity also requires closure under multiplication.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span></li>
 </ul>
 </div>
 
@@ -154,13 +157,9 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/group">Group code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;IRS codes are linear over <span class="inline-math">\(GF(q)\)</span> but not necessarily over <span class="inline-math">\(GF(q^t)\)</span>.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/wozencraft">Wozencraft ensemble code</a></span></li>
   <li class="paragraph-in-list">
@@ -189,10 +188,6 @@
     <span class="code-cousins-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Construction uses two related <span class="inline-math">\(q\)</span>-ary linear codes <span class="inline-math">\(C_X\)</span> and <span class="inline-math">\(C_Z\)</span>.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/ldpc">Low-density parity-check (LDPC) code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\(q\)</span>-ary LDPC codes are a subset of <span class="inline-math">\(q\)</span>-ary linear codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qudit_css">Modular-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -248,7 +243,7 @@ url={https://errorcorrectionzoo.org/c/q-ary_linear}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Atri Rudra and Mary Wootters, “Average-radius list-recovery of random linear codes: it really ties the room together”. <a href="https://arxiv.org/abs/1704.02420" target="_blank" class="href-href">1704.02420</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Wolf, “Efficient maximum likelihood decoding of linear block codes using a trellis”, IEEE Transactions on Information Theory <span class="textbf">24</span>, 76 (1978). <a href="https://doi.org/10.1109/TIT.1978.1055821" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Atri Rudra and Mary Wootters, “Average-radius list-recovery of random linear codes: it really ties the room together”. <a href="https://arxiv.org/abs/1704.02420" target="_blank" class="href-href">1704.02420</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -271,7 +266,7 @@ url={https://errorcorrectionzoo.org/c/q-ary_linear}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/folded_reed_solomon">FRS</a></li><li><a href="/c/gabidulin">Gabidulin</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/group">Group</a></li><li><a href="/c/eaqecc">EAQECC</a></li><li><a href="/c/eastab">EA stabilizer</a></li><li><a href="/c/galois_css">Galois-qudit CSS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/folded_reed_solomon">FRS</a></li><li><a href="/c/gabidulin">Gabidulin</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/interleaved_reed_solomon">IRS</a></li><li><a href="/c/eaqecc">EAQECC</a></li><li><a href="/c/eastab">EA stabilizer</a></li><li><a href="/c/galois_css">Galois-qudit CSS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/terms">Terms Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

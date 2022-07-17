@@ -857,18 +857,18 @@ figure.float figcaption > span {
   margin-top: -0.3em;
 }
 
-.codelistpage_style_cards #endnotes {
+.page_style_cards #endnotes {
   margin: 1rem 0px 1rem;
   padding: 10px;
   border: solid 1px rgba(120, 120, 140, 0.15);
   opacity: 0.8;
 }
 
-.codelistpage_style_cards #endnotes > h2 {
+.page_style_cards #endnotes > h2 {
   display: none;
 }
 
-.codelistpage_style_cards #endnotes dt {
+.page_style_cards #endnotes dt {
   min-width: 2em;
 }
 
@@ -888,6 +888,24 @@ figure.float figcaption > span {
   font-style: italic;
   display: block;
   margin-bottom: 10px;
+}
+
+.glossary-defterm-list {
+  grid-template-columns: 1fr;
+}
+
+.glossary-defterm-list .glossary-defterm-term-name {
+  font-style: normal;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+.glossary-defterm-list .glossary-defterm-body {
+  grid-column-start: 1;
+  display: block;
+  font-style: italic;
+  margin-bottom: 1em;
 }
 
 .tiles-collection {
