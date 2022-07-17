@@ -400,7 +400,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "An \\([n,k,q^{k-1}]_q\\) projective code with \\(n=\\frac{q^k-1}{q-1}\\), denoted as \\(S(q,k)\\). The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space \\(PG(k-1,q)\\), with \u2026",
                     "_code_href": "/c/simplex",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": -550,
@@ -468,7 +468,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Linear binary or \\(q\\)-ary \\([n,k,d]\\) code such that columns of its generator matrix does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the \u2026",
                     "_code_href": "/c/projective",
-                    "_family_generation_level": 2
+                    "_family_generation_level": 3
                 },
                 "position": {
                     "x": -550,
@@ -570,7 +570,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "A \\([n,k,d]_q\\) \\(q\\)-ary linear code is an MDS code if parameters \\(n\\), \\(k\\), \\(d\\), and \\(q\\) are such that the Singleton bound \\begin{align}\nd \\leq n-k+1\n\\end{align} becomes an equality. A code is called almost MDS (AMDS) when \\(d=n-k\\). A \u2026",
                     "_code_href": "/c/mds",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 0,
@@ -797,7 +797,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "For any \\([n,k]\\) binary or \\(q\\)-ary linear code \\(C\\), the dual code, \\begin{align}\nC^\\perp = \\{ y\\in GF(q)^{\\times n} ~|~ x\\cdot y=0 \\forall x\\in C\\},\n\\end{align} where the Hermitian inner product is \\(x\\cdot y = \\sum_{i=1}^n x_i y_i\\) for coordinates \\(x_i,y_i\\).\n\nA code that \u2026",
                     "_code_href": "/c/dual",
-                    "_family_generation_level": 2
+                    "_family_generation_level": 3
                 },
                 "position": {
                     "x": 0,
@@ -899,7 +899,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "Stub.",
                     "_code_href": "/c/evaluation",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 0,
@@ -1120,7 +1120,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "An even-length-\\(n\\) binary or \\(q\\)-ary code whose codewords all have a Hamming weight of \\(n/2\\). ",
                     "_code_href": "/c/balanced",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 0,
@@ -1137,7 +1137,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "A linear binary or \\(q\\)-ary code is \\(\\Delta\\)-divisible if the Hamming weight of each of its codewords is divisible by \\(\\Delta\\). A \\(2\\)-divisible (\\(4\\)-divisible) code is called even (doubly even) [Sascha Kurz, \u201cDivisible Codes\u201d. 2112.11763]. A code is \u2026",
                     "_code_href": "/c/divisible",
-                    "_family_generation_level": 2
+                    "_family_generation_level": 3
                 },
                 "position": {
                     "x": 0,
@@ -1154,7 +1154,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "Also known as an \\(1\\)-in-\\(n\\) code. A length-\\(n\\) (typically) binary code whose codewords all have a Hamming weight of one. The reverse of this code, where all codewords have Hamming weight \\(n-1\\) is called \u2026",
                     "_code_href": "/c/one_hot",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 0,
@@ -1171,7 +1171,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 1,
                     "_description": "Also known as an \\(m\\)-in-\\(n\\) or \\({n \\choose m}\\) code. A linear binary or \\(q\\)-ary code whose codewords all have the same Hamming weight. Such codes provide slightly extra redundancy for storage of small \u2026",
                     "_code_href": "/c/constant_weight",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 0,
@@ -1619,11 +1619,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Member of the RM\\((r,m)\\) family of linear binary codes derived from multivariate polynomials. The code parameters are \\([2^m,\\sum_{j=0}^{r} {m \\choose j},2^{m-r}]\\), where \\(r\\) is the order of the code satisfying \\(0\\leq r\\leq m\\).  \u2026",
                     "_code_href": "/c/reed_muller",
-                    "_family_generation_level": 3
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": -900,
-                    "y": 360
+                    "y": 480
                 }
             },
             {
@@ -4756,10 +4756,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_projective_ecc_29",
+                    "id": "parent_projective_linear_29",
                     "_rel_type": "parent",
                     "source": "c_projective",
-                    "target": "c_ecc"
+                    "target": "c_linear"
                 }
             },
             {
@@ -5084,10 +5084,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_dual_ecc_54",
+                    "id": "parent_dual_linear_54",
                     "_rel_type": "parent",
                     "source": "c_dual",
-                    "target": "c_ecc"
+                    "target": "c_linear"
                 }
             },
             {
@@ -5284,10 +5284,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_divisible_ecc_75",
+                    "id": "parent_divisible_linear_75",
                     "_rel_type": "parent",
                     "source": "c_divisible",
-                    "target": "c_ecc"
+                    "target": "c_linear"
                 }
             },
             {
@@ -10640,7 +10640,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_ecc",
+            "top": "c_linear",
             "bottom": "c_projective",
             "gap": 100
         },
@@ -10755,7 +10755,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_ecc",
+            "top": "c_linear",
             "bottom": "c_dual",
             "gap": 100
         },
@@ -10855,7 +10855,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_ecc",
+            "top": "c_linear",
             "bottom": "c_divisible",
             "gap": 100
         },
