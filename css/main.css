@@ -805,6 +805,15 @@ figure.float figcaption > span {
   text-align: left;
 }
 
+.defterm {
+  font-style: italic;
+}
+
+.defterm .defterm-term {
+  font-style: italic;
+  font-weight: bold;
+}
+
 .display-math {
   width: 100%;
   max-width: 100%;
@@ -891,18 +900,23 @@ figure.float figcaption > span {
 }
 
 .glossary-defterm-list {
-  grid-template-columns: 1fr;
+  grid-template-columns: 1fr max-content;
 }
 
 .glossary-defterm-list .glossary-defterm-term-name {
+  grid-column: 1;
   font-style: normal;
   font-weight: bold;
   display: block;
   margin-bottom: 0.5em;
 }
 
+.glossary-defterm-list .glossary-a-view-in-context {
+  grid-column: 2;
+}
+
 .glossary-defterm-list .glossary-defterm-body {
-  grid-column-start: 1;
+  grid-column: 1 / 3;
   display: block;
   font-style: italic;
   margin-bottom: 1em;

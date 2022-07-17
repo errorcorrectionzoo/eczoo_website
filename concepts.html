@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Glossary of concepts — Error Correction Zoo
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  class=" page_style_cards"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+<h1>Glossary of concepts</h1>
+
+
+<dl class="glossary-defterm-list">  <dt class="glossary-defterm-term-name"><a href="/c/q-ary_cyclic#defterm-_5cX_28Xq_5cX_29X-ary-cyclic-to-polynomial_20Xcorrespondence"><span class="inline-math">\(q\)</span>-ary-cyclic-to-polynomial correspondence</a></dt><a href="/c/q-ary_cyclic#defterm-_5cX_28Xq_5cX_29X-ary-cyclic-to-polynomial_20Xcorrespondence"
+       class="glossary-a-view-in-context"
+       >view in context&nbsp;→</a>
+  <dd class="glossary-defterm-body"><p>Cyclic codes and their properties can be naturally formulated using the theory of polynomials. Cyclic codes correspond to ideals in a particular polynomial ring. Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a <span class="inline-math">\(q\)</span>-ary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with <span class="inline-math">\(q\)</span>-ary coefficients, <span class="inline-math">\(\mathbb{F}_q[x]\)</span> with <span class="inline-math">\(\mathbb{F}_q=GF(q)\)</span>. Polynomials corresponding to codewords of a linear cyclic code form an ideal (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_q[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Multiplication of a codeword polynomial <span class="inline-math">\(c(x)\)</span> by <span class="inline-math">\(x\)</span> in such a ring corresponds to a cyclic shift of the corresponding codeword string.</p></dd>  <dt class="glossary-defterm-term-name"><a href="/c/binary_cyclic#defterm-binary-cyclic-to-polynomial_20Xcorrespondence">binary-cyclic-to-polynomial correspondence</a></dt><a href="/c/binary_cyclic#defterm-binary-cyclic-to-polynomial_20Xcorrespondence"
+       class="glossary-a-view-in-context"
+       >view in context&nbsp;→</a>
+  <dd class="glossary-defterm-body"><p>Cyclic codes and their properties can be naturally formulated using the theory of polynomials. Cyclic codes correspond to ideals in a particular polynomial ring. Codewords <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span> of a binary code can be thought of as coefficients in a polynomial <span class="inline-math">\(c(x)=c_1+c_2 x+\cdots+c_n x^{n-1}\)</span> in the set of polynomials with binary coefficients, <span class="inline-math">\(\mathbb{F}_2[x]\)</span> with <span class="inline-math">\(\mathbb{F}_2=GF(2)\)</span>. Polynomials corresponding to codewords of a linear cyclic code form an <span class="textit">ideal</span> (i.e., are closed under multiplication and addition) in the ring <span class="inline-math">\(\mathbb{F}_2[x]/(x^n-1)\)</span> (i.e., the set of equivalence classes of polynomials congruent modulo <span class="inline-math">\(x^n-1\)</span>). Multiplication of a codeword polynomial <span class="inline-math">\(c(x)\)</span> by <span class="inline-math">\(x\)</span> in such a ring corresponds to a cyclic shift of the corresponding codeword string.</p></dd>  <dt class="glossary-defterm-term-name"><a href="/c/css#defterm-CSS-to-homology_20Xcorrespondence">CSS-to-homology correspondence</a></dt><a href="/c/css#defterm-CSS-to-homology_20Xcorrespondence"
+       class="glossary-a-view-in-context"
+       >view in context&nbsp;→</a>
+  <dd class="glossary-defterm-body"><p>CSS codes and their properties can be formulated in terms of homology theory, yielding a powerful correspondence between codes and chain complexes, the primary homological structures. There exists a many-to-one mapping from size three chain complexes to CSS codes <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a> that allows one to extract code properties from topological features of the complexes. Codes constructed in this manner are sometimes called <span class="textit">homological CSS codes</span>, but they are equivalent to CSS codes. This mapping of codes to manifolds allows the application of structures from topology to error correction, yielding <a href="/c/generalized_homological_product" class="href-ref ref-code">various QLDPC codes</a> with favorable properties.</p></dd>  <dt class="glossary-defterm-term-name"><a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions">Knill-Laflamme conditions</a></dt><a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions"
+       class="glossary-a-view-in-context"
+       >view in context&nbsp;→</a>
+  <dd class="glossary-defterm-body"><p>In a finite-dimensional Hilbert space, there are necessary and sufficient conditions for a code to successfully correct a set of errors. These are called the <span class="textit">Knill-Laflamme conditions</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a>. A code defined by a partial isometry <span class="inline-math">\(U\)</span> with code space projector <span class="inline-math">\(\Pi = U U^\dagger\)</span> can correct a set of errors <span class="inline-math">\(\{ E_j \}\)</span> if and only if <span class="display-math env-align">\begin{align}
+  \Pi E_i E_j^\dagger \Pi = c_{ij}\, \Pi\qquad\text{for all \(i,j\),}
+\end{align}</span> where <span class="inline-math">\(c_{ij}\)</span> can be arbitrary numbers.</p></dd></dl>
+
+
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Y. Kitaev, “Quantum computations: algorithms and error correction”, Russian Mathematical Surveys <span class="textbf">52</span>, 1191 (1997). <a href="https://doi.org/10.1070/RM1997v052n06ABEH002155" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href-href">quant-ph/0605094</a></dd><dt id="citation-3">[3]</dt><dd>Sergey Bravyi and Matthew B. Hastings, “Homological Product Codes”. <a href="https://arxiv.org/abs/1311.0885" target="_blank" class="href-href">1311.0885</a></dd><dt id="citation-4">[4]</dt><dd>Nikolas P. Breuckmann, “PhD thesis: Homological Quantum Codes Beyond the Toric Code”. <a href="https://arxiv.org/abs/1802.01520" target="_blank" class="href-href">1802.01520</a></dd><dt id="citation-5">[5]</dt><dd>E. Knill, R. Laflamme, and L. Viola, “Theory of Quantum Error Correction for General Noise”, Physical Review Letters <span class="textbf">84</span>, 2525 (2000). <a href="https://doi.org/10.1103/PhysRevLett.84.2525" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604034" target="_blank" class="href-href">quant-ph/9604034</a></dd><dt id="citation-6">[6]</dt><dd>J. Preskill. <span class="textit">Lecture notes on Quantum Computation.</span> (1997–2020) <a href="http://theory.caltech.edu/~preskill/ph219/" target="_blank" class="href-href">URL</a></dd><dt id="citation-7">[7]</dt><dd>M. A. Nielsen and I. L. Chuang, <span class="textit">Quantum Computation and Quantum Information</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511976667" target="_blank" class="href-href">DOI</a></dd></dl></div>
+
+
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
