@@ -111,6 +111,10 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
   <td class="textit">Also known as an <span class="textit"><span class="inline-math">\(1\)</span>-in-<span class="inline-math">\(n\)</span></span> code. A length-<span class="inline-math">\(n\)</span> binary code whose codewords all have a Hamming weight of one. The reverse of this code, where all codewords have Hamming weight <span class="inline-math">\(n-1\)</span> is called a <span class="textit">one-cold</span> code. </td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/parity_check">Parity-check code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/polar">Polar code</a></td>
   <td class="textit">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>.</td>
 </tr>
@@ -125,14 +129,6 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 <tr>
   <td class="top left"><a href="/c/repetition">Repetition code</a></td>
   <td class="textit"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/single_parity_check">Single parity-check code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check. </td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/parity_check">Single-parity-check code</a></td>
-  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the sum over all coordinates of each codeword is zero.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/tanner">Tanner code</a></td>

@@ -61,13 +61,13 @@ Here is a list of code families which contain <a href="/c/mds" class="href-ref r
 <tbody>
 <tr>
   <td class="top left"><a href="/c/extended_reed_solomon">Extended GRS code</a></td>
-  <td class="textit">A GRS code with an additional parity-check coordinate. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code for <span class="inline-math">\(q&gt;n\)</span> whose polynomials are evaluated at the points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n,0\}\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</td>
+  <td class="textit">A GRS code with an additional parity-check coordinate with corresponding evaluation point of zero. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code whose polynomials are evaluated at the points <span class="inline-math">\((\alpha_1,\cdots,\alpha_n,0)\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</td>
   <td class="textit">An MDS GRS code can be extended to an MDS code (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thms. 5.3.2 and 5.3.4).</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
+  <td class="top left"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></td>
   <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
-  \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
+  \mu\to\left( v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right)~.
 \end{align}</span> </td>
   <td class="textit">GRS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound.</td>
 </tr>
@@ -91,6 +91,11 @@ k \leq \max(n, m) (\min(n, m) - d + 1)
   <td class="textit">MRD codes are matrix-code analogues of MDS codes.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/parity_check">Parity-check code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</td>
+  <td class="textit"></td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></td>
   <td class="textit">An <span class="inline-math">\(((n,q^k,d))\)</span> code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Singleton bound <span class="display-math env-align">\begin{align}
 2(d-1) \leq n-k
@@ -99,25 +104,15 @@ k \leq \max(n, m) (\min(n, m) - d + 1)
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero points in <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct points in <span class="inline-math">\(GF(q)\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
-\end{align}</span> In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
-  \mu\to\left\{ f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right\} \,.
+\end{align}</span> In other words, each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
+  \mu\to\left( f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right) \,.
 \end{align}</span></td>
   <td class="textit">RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/single_parity_check">Single parity-check code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check. </td>
-  <td class="textit"></td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/parity_check">Single-parity-check code</a></td>
-  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the sum over all coordinates of each codeword is zero.</td>
-  <td class="textit"></td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check code</a></td>
+  <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a></td>
   <td class="textit">Also known as a <span class="textit">sum-zero</span> code. An <span class="inline-math">\([n,n-1,2]_q\)</span> linear <span class="inline-math">\(q\)</span>-ary code whose codewords consist of the message string appended with a parity-check digit such that the sum over all coordinates of each codeword is zero.</td>
   <td class="textit"></td>
 </tr>

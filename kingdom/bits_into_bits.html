@@ -122,7 +122,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/parity_check">Single-parity-check code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -152,7 +152,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/golay">Binary Golay code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/fibonacci_model">Fibonacci code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/one_hot">One-hot code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/parity_check">Single-parity-check code</a>,       <a href="/c/tanner">Tanner code</a>,       <a href="/c/tornado">Tornado code</a>,       <a href="/c/weight_two">Weight-two code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
+      <a href="/c/golay">Binary Golay code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/fibonacci_model">Fibonacci code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/one_hot">One-hot code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/tanner">Tanner code</a>,       <a href="/c/tornado">Tornado code</a>,       <a href="/c/weight_two">Weight-two code</a>,       <a href="/c/zetterberg">Zetterberg code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -227,7 +227,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/perfect">Perfect code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
+      <a href="/c/quasi_perfect">Quasi-perfect code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -260,19 +260,16 @@
 
 
 <div class="ecc-code" id="ecc_parity_check">
-  <span class="short-code-name"><a href="/c/parity_check">Single-parity-check code</a></span>
-  <span class="short-code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the sum over all coordinates of each codeword is zero.</span>
+  <span class="short-code-name"><a href="/c/parity_check">Parity-check code</a></span>
+  <span class="short-code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</span>
+  <span class="short-code-info">Protection: This code cannot protect information, it can only detect 1-bit error.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/divisible">Divisible code</a>.
   </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/single_parity_check">Single parity-check code</a>.
-  </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/repetition">Repetition code</a>,       <a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check code</a>,       <a href="/c/perfect">Perfect code</a>.
+      <a href="/c/repetition">Repetition code</a>,       <a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -291,7 +288,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/perfect">Perfect code</a>.
+      <a href="/c/quasi_perfect">Quasi-perfect code</a>.
   </span>
 </div>
 
@@ -302,7 +299,7 @@
   <span class="short-code-info">Protection: The binary Golay code has distance 7 and can correct up to <span class="inline-math">\(\frac{7-1}{2}=3\)</span> errors.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/bch">Binary BCH code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/bch">Binary BCH code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
   </span>
 </div>
 
@@ -317,7 +314,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>.
+      <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -415,7 +412,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/parity_check">Single-parity-check code</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic binary code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/parity_check">Parity-check code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -434,11 +431,11 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/perfect">Perfect code</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/hamming">Hamming code</a>.
+      <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/perfect">Perfect code</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/hamming">Hamming code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/simplex">Simplex code</a>,       <a href="/c/single_parity_check">Single parity-check code</a>,       <a href="/c/parity_check">Single-parity-check code</a>.
+      <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/simplex">Simplex code</a>.
   </span>
 </div>
 
@@ -508,21 +505,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/hamming">Hamming code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_single_parity_check">
-  <span class="short-code-name"><a href="/c/single_parity_check">Single parity-check code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,n-1,2]\)</span> binary linear error-detecting code encoding an <span class="inline-math">\(n\)</span>-bit codeword into an <span class="inline-math">\((n+1)\)</span>-bit string. In this code, parity information of a codeword is sotred in an extra parity bit. If the Hamming weight of a codeword is odd, then its parity is 1. If the Hamming weight of a codeword is even, then its parity is 0. This code is inexpensive since it only requires an extra parity bit and a single parity check. </span>
-  <span class="short-code-info">Protection: This code cannot protect information, it can only detect 1-bit error.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/parity_check">Single-parity-check code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/repetition">Repetition code</a>.
   </span>
 </div>
 

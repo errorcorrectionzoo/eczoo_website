@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A GRS code with an additional parity-check coordinate. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code for <span class="inline-math">\(q&gt;n\)</span> whose polynomials are evaluated at the points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n,0\}\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</p><p>An <span class="inline-math">\([q-1,k,q-k]_q\)</span> narrow-sense RS code can be extended twice by adding two evaluation points (of which one can be zero) to yield a <span class="inline-math">\([q+1,k,q-k+2]_q\)</span> <span class="textit">doubly-extended narrow-sense RS code</span>.</p></div>
+<div class="sectioncontent code-description"><p>A GRS code with an additional parity-check coordinate with corresponding evaluation point of zero. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code whose polynomials are evaluated at the points <span class="inline-math">\((\alpha_1,\cdots,\alpha_n,0)\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</p><p>An <span class="inline-math">\([q-1,k,q-k]_q\)</span> narrow-sense RS code can be extended twice by adding two evaluation points (of which one can be zero) to yield a <span class="inline-math">\([q+1,k,q-k+2]_q\)</span> <span class="textit">doubly-extended narrow-sense RS code</span>.</p></div>
 
 
 
@@ -130,7 +130,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Extended GRS codes can be thought of as GRS codes that include an evaluation point of zero.</span></li>
 </ul>
 </div>
 

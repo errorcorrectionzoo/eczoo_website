@@ -85,11 +85,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct nonzero points in <span class="inline-math">\(GF(q)\)</span> with <span class="inline-math">\(q&gt;n\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct points in <span class="inline-math">\(GF(q)\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
-\end{align}</span> In other words, each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
-  \mu\to\left\{ f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right\} \,.
-\end{align}</span></p><p>An RS code with length <span class="inline-math">\(n=q-1\)</span> whose points <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is a <span class="textit">narrow-sense RS code</span>. In an alternative convention (not used here), the primite-root case is called an RS code, and the general-root case is a generalized RS code.</p></div>
+\end{align}</span> In other words, each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
+  \mu\to\left( f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right) \,.
+\end{align}</span></p><p>An RS code with length <span class="inline-math">\(n=q-1\)</span> whose points <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is a <span class="textit">narrow-sense RS code</span>. In an alternative convention (not used here), the primitive-root case is called an RS code, and the general-root case is a generalized RS code.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Since each polynomial <span class="inline-math">\(f_{\mu}\)</span> is of degree less than <span class="inline-math">\(k\)</span>, it can be determined from its values at <span class="inline-math">\(k\)</span> points. This means that RS codes can correct erasures on up to <span class="inline-math">\(n-k\)</span> registers. The resulting distance, <span class="inline-math">\(d=n-k+1\)</span>, saturates the Singleton bound.</div>
@@ -146,7 +146,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;A GRS code for which all multipliers <span class="inline-math">\(v_i\)</span> are unity reduces to an RS code.</span></li>
   <li class="paragraph-in-list">
@@ -168,7 +168,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check code</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;RS codes for <span class="inline-math">\(k=n-1\)</span> are parity-check codes <a href="#citation-33" class="href-endnote endnote citation">[33]</a>.</span></li>
 </ul>
@@ -208,7 +208,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/justesen">Justesen code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An RS code is the outer code of Justesen codes</span></li>
+      &#x2014;&nbsp;An RS code is the outer code of Justesen codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -295,7 +295,7 @@ url={https://errorcorrectionzoo.org/c/reed_solomon}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/interleaved_reed_solomon">IRS</a></li><li><a href="/c/folded_reed_solomon">FRS</a></li><li><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/galois_polynomial">Galois QPyC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/interleaved_reed_solomon">IRS</a></li><li><a href="/c/folded_reed_solomon">FRS</a></li><li><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/quantum_secret_sharing">Approximate secret-sharing</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/galois_polynomial">Galois QPyC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
