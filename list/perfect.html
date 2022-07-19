@@ -67,10 +67,6 @@ Here is a list of code families which contain <a href="/c/perfect" class="href-r
   <td class="textit">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. The codespace is a 12-dimensional linear subspace of <span class="inline-math">\(GF(2)^{23}\)</span>, or <span class="inline-math">\(GF(2)^{24}\)</span> in the extended case.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/repetition">Binary repetition code</a></td>
-  <td class="textit"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/homological_classical">Graph homology code</a></td>
   <td class="textit">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree. </td>
 </tr>
@@ -80,7 +76,7 @@ Here is a list of code families which contain <a href="/c/perfect" class="href-r
 </tr>
 <tr>
   <td class="top left"><a href="/c/perfect">Perfect code</a></td>
-  <td class="textit">An <span class="inline-math">\((n,K,2t+1)_q\)</span> <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound <span class="display-math env-align">\begin{align}
+  <td class="textit">An <span class="inline-math">\((n,K,2t+1)_q\)</span> binary or <span class="inline-math">\(q\)</span>-ary code is perfect if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the Hamming (a.k.a. sphere-packing) bound <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q-1)^{j}{n \choose j}\leq q^{n}/K
 \end{align}</span> becomes an equality. For example, for a binary <span class="inline-math">\(q=2\)</span> code with one logical bit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(n+1 \leq 2^{n-1}\)</span>.</td>
 </tr>
@@ -89,6 +85,14 @@ Here is a list of code families which contain <a href="/c/perfect" class="href-r
   <td class="textit">A non-degenerate code constructed out of <span class="inline-math">\(q\)</span>-dimensional qudits and having parameters <span class="inline-math">\(((n,K,2t+1))\)</span> is perfect if <span class="inline-math">\(n\)</span>, <span class="inline-math">\(K\)</span>, <span class="inline-math">\(t\)</span>, and <span class="inline-math">\(q\)</span> are such that the quantum Hamming bound <span class="display-math env-align">\begin{align}
 \sum_{j=0}^{t}(q^2-1)^{j}{n \choose j}\leq q^{n}/K
 \end{align}</span> becomes an equality. For example, for a qubit <span class="inline-math">\(q=2\)</span> code with one logical qubit (<span class="inline-math">\(K=2\)</span>) and <span class="inline-math">\(t=1\)</span>, the bound becomes <span class="inline-math">\(3n+1 \leq 2^{n-1}\)</span>. The bound can be saturated only at certain <span class="inline-math">\(n\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/repetition">Repetition code</a></td>
+  <td class="textit"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/parity_check">Single-parity-check code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the sum over all coordinates of each codeword is zero.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/zetterberg">Zetterberg code</a></td>

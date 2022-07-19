@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Extended RS code" />
+<meta name="citation_title" content="Extended GRS code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Extended RS code" />
+<meta name="DC.title" content="Extended GRS code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Extended RS code — Error Correction Zoo
+    Extended GRS code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,13 +79,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Extended RS code</h1>
+      Extended GRS code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Stub.</p><p>If <span class="inline-math">\(f\in \mathcal{P}_k\)</span> with <span class="inline-math">\(k&lt;q\)</span>, then <span class="inline-math">\(\sum_{\alpha\in\mathbb{F}_q}f(\alpha)=0\)</span> which implies RS codes are odd-like. Hence, by adding a parity check coordinate with evaluation point <span class="inline-math">\(\alpha_0=0\)</span> to an RS code on <span class="inline-math">\(q-1\)</span> registers, the distance increases to <span class="inline-math">\(\hat{d}=d+1\)</span>. This addition yields an <span class="inline-math">\([q,k,q-k+1]\)</span> extended RS code.</p><p>Also define doubly extended RS.</p></div>
+<div class="sectioncontent code-description"><p>A GRS code with an additional parity-check coordinate. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code for <span class="inline-math">\(q&gt;n\)</span> whose polynomials are evaluated at the points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n,0\}\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</p><p>An <span class="inline-math">\([q-1,k,q-k]_q\)</span> narrow-sense RS code can be extended twice by adding two evaluation points (of which one can be zero) to yield a <span class="inline-math">\([q+1,k,q-k+2]_q\)</span> <span class="textit">doubly-extended narrow-sense RS code</span>.</p></div>
 
 
 
@@ -130,22 +130,26 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></span></li>
 </ul>
 </div>
 
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An MDS GRS code can be extended to an MDS code (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thms. 5.3.2 and 5.3.4).</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/simplex">Simplex code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\(S(2,k)\)</span> is an extended RS code <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\(S(2,k)\)</span> is an extended RS code <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
@@ -174,10 +178,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Extended RS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/extended_reed_solomon</dd>
+    <dd>“Extended GRS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/extended_reed_solomon</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_extended_reed_solomon,
-title={Extended RS code},
+title={Extended GRS code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -193,7 +197,7 @@ url={https://errorcorrectionzoo.org/c/extended_reed_solomon}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Extended Reed–Solomon Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CReedSolomon-extended.html</dd><dt id="citation-2">[2]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Simplex Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CSimplex.html</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Extended Reed–Solomon Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CReedSolomon-extended.html</dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Simplex Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CSimplex.html</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -202,7 +206,7 @@ url={https://errorcorrectionzoo.org/c/extended_reed_solomon}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Extended RS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/extended_reed_solomon</p>
+  <p>“Extended GRS code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/extended_reed_solomon</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/rs/extended_reed_solomon.yml"
                 class="ashowurl"
@@ -216,7 +220,7 @@ url={https://errorcorrectionzoo.org/c/extended_reed_solomon}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/reed_solomon">RS</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

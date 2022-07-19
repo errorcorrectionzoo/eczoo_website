@@ -67,8 +67,8 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
   <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/extended_reed_solomon">Extended RS code</a></td>
-  <td class="textit">Stub.</td>
+  <td class="top left"><a href="/c/extended_reed_solomon">Extended GRS code</a></td>
+  <td class="textit">A GRS code with an additional parity-check coordinate. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code for <span class="inline-math">\(q&gt;n\)</span> whose polynomials are evaluated at the points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n,0\}\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/folded_reed_solomon">Folded RS (FRS) code</a></td>
@@ -84,13 +84,13 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/generalized_reed_solomon">Generalized Reed Solomon (GRS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
   \mu\to\left\{ v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right\}~.
 \end{align}</span> </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/goppa">Goppa code</a></td>
-  <td class="textit">Let <span class="inline-math">\( G(z) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(z) =0 \)</span> modulo <span class="inline-math">\(G(z)\)</span>, where <span class="inline-math">\( R_a(z) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</td>
+  <td class="textit">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
@@ -135,6 +135,10 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 <tr>
   <td class="top left"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></td>
   <td class="textit">Member of a quadruple of cyclic <span class="inline-math">\(q\)</span>-ary codes of prime length <span class="inline-math">\(n\)</span> where <span class="inline-math">\(q\)</span> is prime and a quadratic residue modulo <span class="inline-math">\(n\)</span>. The codes are constructed using quadratic residues and nonresidues of <span class="inline-math">\(n\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> code. An <span class="inline-math">\([n,n-1,2]_q\)</span> linear <span class="inline-math">\(q\)</span>-ary code whose codewords consist of the message string appended with a parity-check digit such that the sum over all coordinates of each codeword is zero.</td>
 </tr>
 </tbody>
 </table>

@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Parity-check code" />
+<meta name="citation_title" content="Single-parity-check code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Parity-check code" />
+<meta name="DC.title" content="Single-parity-check code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Parity-check code — Error Correction Zoo
+    Single-parity-check code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,13 +79,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Parity-check code</h1>
+      Single-parity-check code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the sum over all coordinates of each codeword is zero.</div>
 
 
 
@@ -119,7 +119,7 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -127,6 +127,16 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/binary_linear">Linear binary code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/binary_cyclic">Cyclic binary code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Since permutations preserve parity, the cyclic permutation of a parity-check codeword is another codeword.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/divisible">Divisible code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Binary parity-check codes are two-divisible.</span></li>
 </ul>
 </div>
 
@@ -142,6 +152,29 @@
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/repetition">Repetition code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Binary parity-check codes and repetition codes are dual to each other.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/perfect">Perfect code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Parity-check codes are nearly perfect.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;RM<span class="inline-math">\((m-1,m)\)</span> are parity-check codes.</span></li>
+</ul>
+</div>
 
 
 <!-- zoo-related information and how to edit -->
@@ -168,10 +201,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/parity_check</dd>
+    <dd>“Single-parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/parity_check</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_parity_check,
-title={Parity-check code},
+title={Single-parity-check code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -196,7 +229,7 @@ url={https://errorcorrectionzoo.org/c/parity_check}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/parity_check</p>
+  <p>“Single-parity-check code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/parity_check</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/parity_check.yml"
                 class="ashowurl"
@@ -210,7 +243,7 @@ url={https://errorcorrectionzoo.org/c/parity_check}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/single_parity_check">Single parity-check</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/binary_cyclic">Cyclic binary</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/single_parity_check">Single parity-check</a></li><li><a href="/c/repetition">Repetition</a></li><li><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary single-parity-check</a></li><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

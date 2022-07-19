@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\((n,2^k,d)\)</span> linear code is denoted as <span class="inline-math">\([n,k]\)</span> or <span class="inline-math">\([n,k,d]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword. A code that is not linear is called <span class="textit">nonlinear</span>.</p><p>Linear codes can be defined in terms of a <span class="textit">generator matrix</span> <span class="inline-math">\(G\)</span>, whose rows form a basis for the <span class="inline-math">\(k\)</span>-dimensional codespace. Given a codeword <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>. The generator matrix can be reduced via coordinate permutations to its <span class="textit">standard</span> or <span class="textit">systematic form</span> <span class="inline-math">\(G = [I_k~A]\)</span>, where <span class="inline-math">\(I_k\)</span> is a <span class="inline-math">\(k\times k\)</span> identity matrix and <span class="inline-math">\(A\)</span> is a <span class="inline-math">\(k \times (n-k)\)</span> binary matrix.</p></div>
+<div class="sectioncontent code-description"><p>An <span class="inline-math">\((n,2^k,d)\)</span> linear code is denoted as <span class="inline-math">\([n,k]\)</span> or <span class="inline-math">\([n,k,d]\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(x+y\)</span> is also a codeword. A code that is not linear is called <span class="textit">nonlinear</span>.</p><p>Linear codes can be defined in terms of a <span class="textit">generator matrix</span> <span class="inline-math">\(G\)</span>, whose rows form a basis for the <span class="inline-math">\(k\)</span>-dimensional codespace. Given a message <span class="inline-math">\(x\)</span>, the corresponding encoded codeword is <span class="inline-math">\(G^T x\)</span>. The generator matrix can be reduced via coordinate permutations to its <span class="textit">standard</span> or <span class="textit">systematic form</span> <span class="inline-math">\(G = [I_k~A]\)</span>, where <span class="inline-math">\(I_k\)</span> is a <span class="inline-math">\(k\times k\)</span> identity matrix and <span class="inline-math">\(A\)</span> is a <span class="inline-math">\(k \times (n-k)\)</span> binary matrix.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set for which no two elements of the set add up to a codeword.</p><p>Linear codes admit a <span class="textit">parity check matrix</span> <span class="inline-math">\(H\)</span>, whose columns make up a set of <span class="textit">parity checks</span>, i.e., a maximal linearly independent set of vectors that are in the kernel of <span class="inline-math">\(G\)</span>. It follows that <span class="display-math env-align">\begin{align}
@@ -158,8 +158,6 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_duadic">Binary duadic code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/repetition">Binary repetition code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/fibonacci_model">Fibonacci code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/fountain">Fountain code</a></span></li>
@@ -174,11 +172,13 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/one_hot">One-hot code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/parity_check">Parity-check code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/polar">Polar code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/repetition">Repetition code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/parity_check">Single-parity-check code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/tanner">Tanner code</a></span></li>
   <li class="paragraph-in-list">
@@ -287,7 +287,7 @@ url={https://errorcorrectionzoo.org/c/binary_linear}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/binary_duadic">Binary duadic</a></li><li><a href="/c/repetition">Binary repetition</a></li><li><a href="/c/fibonacci_model">Fibonacci</a></li><li><a href="/c/vt_single_deletion">Binary VT</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/eaqecc">EAQECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/binary_duadic">Binary duadic</a></li><li><a href="/c/fibonacci_model">Fibonacci</a></li><li><a href="/c/fountain">Fountain</a></li><li><a href="/c/vt_single_deletion">Binary VT</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/eaqecc">EAQECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
