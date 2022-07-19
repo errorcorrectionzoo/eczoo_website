@@ -86,12 +86,10 @@
 
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>A binary or <span class="inline-math">\(q\)</span>-ary code for which balls of some radius centered at its codewords provide a weighted covering of the Hamming space.</p><p>Let the <span class="textit">weight distribution</span> of a <span class="inline-math">\(q\)</span>-ary string <span class="inline-math">\(x\)</span> with respect to a <span class="inline-math">\(q\)</span>-ary code <span class="inline-math">\(C\)</span> be <span class="inline-math">\(A(x) = \left( A_0(x),A_1(x),\cdots,A_n(x) \right)\)</span>, where <span class="display-math env-align">\begin{align}
-  A_j(x) = |\{ c \in C~\text{such that}~ D(c,x) \}|~,
+  A_j(x) = \left|\{ c \in C~\text{such that}~ D(c,x)=j \}\right|~,
 \end{align}</span> and <span class="inline-math">\(D\)</span> is the Hamming distance. Given a tuple <span class="inline-math">\(m=(m_1,m_2,\cdots,m_n)\)</span> of rational numbers, the <span class="textit"><span class="inline-math">\(m\)</span>-density</span> of the code at <span class="inline-math">\(x\)</span> is <span class="display-math env-align">\begin{align}
   \theta(x) = \sum_{j=0}^n m_j A_j(x)~.
-\end{align}</span></p><p>A code is an <span class="textit"><span class="inline-math">\(m\)</span>-weighed covering</span> if <span class="inline-math">\(\theta(x)\geq1\)</span> for all strings <span class="inline-math">\(x\in GF(q)^n\)</span>. The <span class="inline-math">\(m\)</span>-covering radius <span class="inline-math">\(r\)</span> is <span class="display-math env-align">\begin{align}
-  r = \max\{ j ~\text{such that}~ m_j \neq 0 \}~.
-\end{align}</span></p></div>
+\end{align}</span></p><p>A code is an <span class="textit"><span class="inline-math">\(m\)</span>-weighed covering</span> if <span class="inline-math">\(\theta(x)\geq1\)</span> for all strings <span class="inline-math">\(x\in GF(q)^n\)</span>. The <span class="textit"><span class="inline-math">\(m\)</span>-covering radius</span> <span class="inline-math">\(r\)</span> is the largest <span class="inline-math">\(j\)</span> for which <span class="inline-math">\(m_j\)</span> is nonzero.</p></div>
 
 
 
@@ -150,11 +148,11 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/covering">Covering code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An <span class="inline-math">\(m\)</span>-weighed covering code for <span class="inline-math">\(m_j=1\)</span> is a covering code of covering radius at most <span class="inline-math">\(r\)</span> (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ch. 13).</span></li>
+      &#x2014;&nbsp;An <span class="inline-math">\(m\)</span>-weighed covering code for <span class="inline-math">\(m_j=1\)</span> is a covering code of covering radius at most <span class="inline-math">\(r\)</span> (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Ch. 13).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/quasi_perfect">Quasi-perfect code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A quasi-perfect code is an <span class="inline-math">\(m\)</span>-weighed covering code for <span class="inline-math">\(r=t+1\)</span>, <span class="inline-math">\(m_0=m_1=\cdots=m_{t+1}=1\)</span>, and <span class="inline-math">\(m_t=m_{t+1}=1/\left\lfloor (n+1)(t+1) \right\rfloor\)</span> (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ch. 13).</span></li>
+      &#x2014;&nbsp;A quasi-perfect code is an <span class="inline-math">\(m\)</span>-weighed covering code for <span class="inline-math">\(r=t+1\)</span>, <span class="inline-math">\(m_0=m_1=\cdots=m_{t+1}=1\)</span>, and <span class="inline-math">\(m_t=m_{t+1}=1/\left\lfloor (n+1)(t+1) \right\rfloor\)</span> (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Ch. 13).</span></li>
 </ul>
 </div>
 
@@ -175,10 +173,10 @@
        data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
        target="_blank"
        title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/perfect/weighed_covering.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/covering/weighed_covering.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
        target="_blank"
        title="edit code information on this site without using github"
-       href="/edit_code?code_id=weighed_covering&amp;code_yml_filename=classical/properties/perfect/weighed_covering.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>weighed_covering</code></div><div class="code-popup-info-frame"
+       href="/edit_code?code_id=weighed_covering&amp;code_yml_filename=classical/properties/covering/weighed_covering.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>weighed_covering</code></div><div class="code-popup-info-frame"
      data-is-code-info-popup="1"
      data-popup-button-label="cite"
      data-popup-button-class-list="code-show-citation">
@@ -203,7 +201,7 @@ url={https://errorcorrectionzoo.org/c/weighed_covering}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>CoveringBook</dd><dt id="citation-2">[2]</dt><dd>G. Cohen, I. Honkala, S. Litsyn, A. Lobstein, <span class="textit">Covering codes</span>. Elsevier, 1997.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>G. Cohen, I. Honkala, S. Litsyn, A. Lobstein, <span class="textit">Covering codes</span>. Elsevier, 1997.</dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -214,9 +212,9 @@ url={https://errorcorrectionzoo.org/c/weighed_covering}
 <div class="sectioncontent display-print-citation">
   <p>“Weighed-covering code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/weighed_covering</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/perfect/weighed_covering.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/covering/weighed_covering.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/perfect/weighed_covering.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/covering/weighed_covering.yml</a>.</p>
 </div>
 
 
