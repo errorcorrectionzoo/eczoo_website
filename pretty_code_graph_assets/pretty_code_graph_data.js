@@ -1033,7 +1033,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "A code of length \\(n\\) over an alphabet is cyclic if, for each codeword \\(c_1 c_2 \\cdots c_n\\), the cyclically shifted string \\(c_n c_1 \\cdots c_{n-1}\\) is also a codeword. ",
+                    "_description": "A code of length \\(n\\) over an alphabet is cyclic if, for each codeword \\(c_1 c_2 \\cdots c_n\\), the cyclically shifted string \\(c_n c_1 \\cdots c_{n-1}\\) is also a codeword.\n\nCyclic-to-polynomial correspondence\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n\nCyclic-to-polynomial correspondence: Binary \u2026",
                     "_code_href": "/c/cyclic",
                     "_family_generation_level": 3
                 },
@@ -1671,7 +1671,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Cyclic binary code of odd length \\(n\\) whose zeroes are consecutive powers of a primitive \\(n\\)th root of unity \\(\\alpha\\) (see binary-cyclic-to-polynomial correspondence). More precisely, the generator polynomial of a BCH code of designed distance \\(\\delta\\geq 1\\) \u2026",
+                    "_description": "Cyclic binary code of odd length \\(n\\) whose zeroes are consecutive powers of a primitive \\(n\\)th root of unity \\(\\alpha\\) (see Cyclic-to-polynomial correspondence). More precisely, the generator polynomial of a BCH code of designed distance \\(\\delta\\geq 1\\) \u2026",
                     "_code_href": "/c/bch",
                     "_family_generation_level": 5
                 },
