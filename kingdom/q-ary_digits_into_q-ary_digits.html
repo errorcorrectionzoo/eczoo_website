@@ -91,7 +91,7 @@
   <span class="short-code-description">A <span class="inline-math">\(q\)</span>-ary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>.
+      <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/group">Group code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -99,7 +99,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>.
+      <a href="/c/generalized_reed_muller">Generalized Reed-Muller (RM) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>.
   </span>
 </div>
 
@@ -184,7 +184,7 @@ C^\perp = \{ y\in GF(q)^{\times n} ~|~ x \star y=0 \forall x\in C\},
 
 <div class="ecc-code" id="ecc_generalized_reed_solomon">
   <span class="short-code-name"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></span>
-  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
+  <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
   \mu\to\left( v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right)~.
 \end{align}</span> </span>
   <span class="short-code-info">Protection: The code can detect <span class="inline-math">\(n-k\)</span> errors, and can correct errors <span class="inline-math">\( \left\lfloor (n-k)/2\right\rfloor  \)</span> errors.</span>
@@ -194,7 +194,7 @@ C^\perp = \{ y\in GF(q)^{\times n} ~|~ x \star y=0 \forall x\in C\},
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/alternant">Alternant code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/extended_reed_solomon">Extended GRS code</a>,       <a href="/c/goppa">Goppa code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+      <a href="/c/alternant">Alternant code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>,       <a href="/c/goppa">Classical Goppa code</a>,       <a href="/c/extended_reed_solomon">Extended GRS code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -253,7 +253,7 @@ C^\perp = \{ y\in GF(q)^{\times n} ~|~ x \star y=0 \forall x\in C\},
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/bch">Binary BCH code</a>.
+      <a href="/c/q-ary_cyclic">Cyclic <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/bch">Binary BCH code</a>,       <a href="/c/generalized_reed_muller">Generalized Reed-Muller (RM) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -316,14 +316,14 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/rank_modulation">Rank-modulation code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+      <a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a>,       <a href="/c/convolutional">Convolutional code</a>,       <a href="/c/galois_polynomial">Galois-qudit polynomial code (QPyC)</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/polynomial">Prime-qudit polynomial code (QPyC)</a>,       <a href="/c/rank_modulation">Rank-modulation code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_alternant">
   <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#citation-11" class="href-endnote endnote citation">[11]</a></span></span>
-  <span class="short-code-description">Stub.</span>
+  <span class="short-code-description">Given a length-<span class="inline-math">\(n\)</span> GRS code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(q^m)\)</span>, an alternant code is the <span class="inline-math">\(GF(q)\)</span>-subfield subcode of the dual of <span class="inline-math">\(C\)</span>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>.
@@ -341,11 +341,26 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/goppa">Goppa code</a>.
+      <a href="/c/goppa">Classical Goppa code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/bch">Binary BCH code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_goppa">
+  <span class="short-code-name"><a href="/c/goppa">Classical Goppa code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a><a href="#citation-14" class="href-endnote endnote citation">[14]</a><a href="#citation-15" class="href-endnote endnote citation">[15]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]_q\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(x) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/residue">Residue AG code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
   </span>
 </div>
 
@@ -364,21 +379,6 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/simplex">Simplex code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Goppa code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a><a href="#citation-14" class="href-endnote endnote citation">[14]</a><a href="#citation-15" class="href-endnote endnote citation">[15]</a></span></span>
-  <span class="short-code-description">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]_q\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
-  <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(x) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/residue">Residue AG code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/binary_quantum_goppa">Binary quantum Goppa code</a>,       <a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a>.
   </span>
 </div>
 

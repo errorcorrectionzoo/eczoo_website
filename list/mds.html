@@ -60,13 +60,18 @@ Here is a list of code families which contain <a href="/c/mds" class="href-ref r
 </thead>
 <tbody>
 <tr>
+  <td class="top left"><a href="/c/elliptic">Elliptic code</a></td>
+  <td class="textit">Evaluation AG code obtained from an elliptic curve, i.e., a curve of genus one. </td>
+  <td class="textit">Elliptic codes can be MDS (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Ex. 15.5.3).</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/extended_reed_solomon">Extended GRS code</a></td>
   <td class="textit">A GRS code with an additional parity-check coordinate with corresponding evaluation point of zero. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code whose polynomials are evaluated at the points <span class="inline-math">\((\alpha_1,\cdots,\alpha_n,0)\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</td>
-  <td class="textit">An MDS GRS code can be extended to an MDS code (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thms. 5.3.2 and 5.3.4).</td>
+  <td class="textit">An MDS GRS code can be extended to an MDS code (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thms. 5.3.2 and 5.3.4).</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></td>
-  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each codeword <span class="inline-math">\(\mu\)</span> is a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
   \mu\to\left( v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right)~.
 \end{align}</span> </td>
   <td class="textit">GRS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound.</td>
@@ -74,13 +79,13 @@ Here is a list of code families which contain <a href="/c/mds" class="href-ref r
 <tr>
   <td class="top left"><a href="/c/matrix_computation">Matrix computation code</a></td>
   <td class="textit">Encoding that provides an extra redundancy for distributed matrix computation algorithms such as matrix multiplication. Parallelized algorithms distribute a desired computation over many nodes, and a key performance bottleneck is due to some nodes completing their individual tasks much later than other nodes. Matrix computation codes provide a layer of redundancy such that the computation can be performed without having all nodes finish their piece of the computation. </td>
-  <td class="textit">The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</td>
+  <td class="textit">The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/mds">Maximum distance separable (MDS) code</a></td>
   <td class="textit">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound <span class="display-math env-align">\begin{align}
 d \leq n-k+1
-\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. </td>
+\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. </td>
   <td class="textit"></td>
 </tr>
 <tr>
@@ -122,7 +127,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href-href">1512.02673</a></dd><dt id="citation-3">[3]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href-href">1512.02673</a></dd><dt id="citation-4">[4]</dt><dd>S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
   </main><!-- #main -->
