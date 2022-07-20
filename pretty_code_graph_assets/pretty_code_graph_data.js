@@ -342,12 +342,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_generalized_reed_muller",
-                    "label": "RM",
+                    "label": "GRM",
                     "_code_name": "Generalized Reed-Muller (RM) code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Reed-Muller code RM\\(_q(r,m)\\) of length \\(n=q^m\\) over \\(GF(q)\\) with \\(0\\leq r\\leq m(q-1)\\). Its codewords are evaluations of the set of all degree-\\(\\leq r\\) polynomials in \\(m\\) variables at a set of distinct points \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) in \u2026",
+                    "_description": "Reed-Muller code GRM\\(_q(r,m)\\) of length \\(n=q^m\\) over \\(GF(q)\\) with \\(0\\leq r\\leq m(q-1)\\). Its codewords are evaluations of the set of all degree-\\(\\leq r\\) polynomials in \\(m\\) variables at a set of distinct points \\(\\{\\alpha_1,\\cdots,\\alpha_n\\}\\) in \u2026",
                     "_code_href": "/c/generalized_reed_muller",
                     "_family_generation_level": 5
                 },
@@ -1611,23 +1611,6 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "c_golay",
-                    "label": "Binary Golay",
-                    "_code_name": "Binary Golay code",
-                    "_is_code": 1,
-                    "_is_plain_concrete_code": 1,
-                    "_is_abstract_code": 0,
-                    "_description": "A \\([23, 12, 7]\\) perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the \\([24, 12, 8]\\) extended Golay code. The codespace is a 12 \u2026",
-                    "_code_href": "/c/golay",
-                    "_family_generation_level": 4
-                },
-                "position": {
-                    "x": -900,
-                    "y": 480
-                }
-            },
-            {
-                "data": {
                     "id": "c_bits_into_bits",
                     "label": "Binary",
                     "_code_name": "Binary code",
@@ -1729,6 +1712,23 @@ GENERATED_pretty_code_graph_data = {
                 "position": {
                     "x": -900,
                     "y": 360
+                }
+            },
+            {
+                "data": {
+                    "id": "c_golay",
+                    "label": "Binary Golay",
+                    "_code_name": "Binary Golay code",
+                    "_is_code": 1,
+                    "_is_plain_concrete_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "A \\([23, 12, 7]\\) perfect binary linear code with connections to the theory of sporadic simple groups. Adding a parity bit to the code results in the \\([24, 12, 8]\\) extended Golay code. The codespace is a 12 \u2026",
+                    "_code_href": "/c/golay",
+                    "_family_generation_level": 4
+                },
+                "position": {
+                    "x": -900,
+                    "y": 480
                 }
             },
             {
@@ -5962,46 +5962,6 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_golay_binary_linear_119",
-                    "_rel_type": "parent",
-                    "source": "c_golay",
-                    "target": "c_binary_linear"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_golay_perfect_120",
-                    "_rel_type": "parent",
-                    "source": "c_golay",
-                    "target": "c_perfect"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_golay_bch_121",
-                    "_rel_type": "parent",
-                    "source": "c_golay",
-                    "target": "c_bch"
-                }
-            },
-            {
-                "data": {
-                    "id": "parent_golay_binary_quad_residue_122",
-                    "_rel_type": "parent",
-                    "source": "c_golay",
-                    "target": "c_binary_quad_residue"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_golay_nearly_perfect__54",
-                    "_rel_type": "cousin",
-                    "source": "c_golay",
-                    "target": "c_nearly_perfect"
-                }
-            },
-            {
-                "data": {
                     "id": "kingdomtodomain_bits_into_bits_classical_domain_6",
                     "_rel_type": "domain",
                     "source": "c_bits_into_bits",
@@ -6010,7 +5970,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_bits_into_bits_ecc_123",
+                    "id": "parent_bits_into_bits_ecc_119",
                     "_rel_type": "parent",
                     "source": "c_bits_into_bits",
                     "target": "c_ecc"
@@ -6018,7 +5978,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_duadic_binary_linear_124",
+                    "id": "parent_binary_duadic_binary_linear_120",
                     "_rel_type": "parent",
                     "source": "c_binary_duadic",
                     "target": "c_binary_linear"
@@ -6026,7 +5986,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_duadic_binary_cyclic_125",
+                    "id": "parent_binary_duadic_binary_cyclic_121",
                     "_rel_type": "parent",
                     "source": "c_binary_duadic",
                     "target": "c_binary_cyclic"
@@ -6034,7 +5994,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_binary_duadic_q-ary_duadic__55",
+                    "id": "cousin_binary_duadic_q-ary_duadic__54",
                     "_rel_type": "cousin",
                     "source": "c_binary_duadic",
                     "target": "c_q-ary_duadic"
@@ -6042,7 +6002,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_quad_residue_binary_duadic_126",
+                    "id": "parent_binary_quad_residue_binary_duadic_122",
                     "_rel_type": "parent",
                     "source": "c_binary_quad_residue",
                     "target": "c_binary_duadic"
@@ -6050,7 +6010,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_binary_quad_residue_q-ary_quad_residue__56",
+                    "id": "cousin_binary_quad_residue_q-ary_quad_residue__55",
                     "_rel_type": "cousin",
                     "source": "c_binary_quad_residue",
                     "target": "c_q-ary_quad_residue"
@@ -6058,7 +6018,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_bch_binary_cyclic_127",
+                    "id": "parent_bch_binary_cyclic_123",
                     "_rel_type": "parent",
                     "source": "c_bch",
                     "target": "c_binary_cyclic"
@@ -6066,7 +6026,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_bch_quasi_perfect__57",
+                    "id": "cousin_bch_quasi_perfect__56",
                     "_rel_type": "cousin",
                     "source": "c_bch",
                     "target": "c_quasi_perfect"
@@ -6074,7 +6034,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_bch_q-ary_bch__58",
+                    "id": "cousin_bch_q-ary_bch__57",
                     "_rel_type": "cousin",
                     "source": "c_bch",
                     "target": "c_q-ary_bch"
@@ -6082,7 +6042,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_zetterberg_binary_cyclic_128",
+                    "id": "parent_zetterberg_binary_cyclic_124",
                     "_rel_type": "parent",
                     "source": "c_zetterberg",
                     "target": "c_binary_cyclic"
@@ -6090,7 +6050,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_zetterberg_binary_linear_129",
+                    "id": "parent_zetterberg_binary_linear_125",
                     "_rel_type": "parent",
                     "source": "c_zetterberg",
                     "target": "c_binary_linear"
@@ -6098,7 +6058,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_zetterberg_quasi_perfect_130",
+                    "id": "parent_zetterberg_quasi_perfect_126",
                     "_rel_type": "parent",
                     "source": "c_zetterberg",
                     "target": "c_quasi_perfect"
@@ -6106,7 +6066,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_cyclic_cyclic_131",
+                    "id": "parent_binary_cyclic_cyclic_127",
                     "_rel_type": "parent",
                     "source": "c_binary_cyclic",
                     "target": "c_cyclic"
@@ -6114,7 +6074,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_cyclic_bits_into_bits_132",
+                    "id": "parent_binary_cyclic_bits_into_bits_128",
                     "_rel_type": "parent",
                     "source": "c_binary_cyclic",
                     "target": "c_bits_into_bits"
@@ -6122,10 +6082,50 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_binary_cyclic_group_133",
+                    "id": "parent_binary_cyclic_group_129",
                     "_rel_type": "parent",
                     "source": "c_binary_cyclic",
                     "target": "c_group"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_golay_binary_linear_130",
+                    "_rel_type": "parent",
+                    "source": "c_golay",
+                    "target": "c_binary_linear"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_golay_perfect_131",
+                    "_rel_type": "parent",
+                    "source": "c_golay",
+                    "target": "c_perfect"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_golay_bch_132",
+                    "_rel_type": "parent",
+                    "source": "c_golay",
+                    "target": "c_bch"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_golay_binary_quad_residue_133",
+                    "_rel_type": "parent",
+                    "source": "c_golay",
+                    "target": "c_binary_quad_residue"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_golay_nearly_perfect__58",
+                    "_rel_type": "cousin",
+                    "source": "c_golay",
+                    "target": "c_nearly_perfect"
                 }
             },
             {
@@ -10127,11 +10127,6 @@ GENERATED_pretty_code_graph_data = {
         },
         {
             "top": "domain_classical_domain",
-            "bottom": "c_golay",
-            "gap": 200
-        },
-        {
-            "top": "domain_classical_domain",
             "bottom": "c_bits_into_bits",
             "gap": 100
         },
@@ -10158,6 +10153,11 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_binary_cyclic",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_golay",
             "gap": 200
         },
         {
@@ -11421,26 +11421,6 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_binary_linear",
-            "bottom": "c_golay",
-            "gap": 100
-        },
-        {
-            "top": "c_perfect",
-            "bottom": "c_golay",
-            "gap": 100
-        },
-        {
-            "top": "c_bch",
-            "bottom": "c_golay",
-            "gap": 100
-        },
-        {
-            "top": "c_binary_quad_residue",
-            "bottom": "c_golay",
-            "gap": 100
-        },
-        {
             "top": "c_ecc",
             "bottom": "c_bits_into_bits",
             "gap": 100
@@ -11493,6 +11473,26 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_group",
             "bottom": "c_binary_cyclic",
+            "gap": 100
+        },
+        {
+            "top": "c_binary_linear",
+            "bottom": "c_golay",
+            "gap": 100
+        },
+        {
+            "top": "c_perfect",
+            "bottom": "c_golay",
+            "gap": 100
+        },
+        {
+            "top": "c_bch",
+            "bottom": "c_golay",
+            "gap": 100
+        },
+        {
+            "top": "c_binary_quad_residue",
+            "bottom": "c_golay",
             "gap": 100
         },
         {
