@@ -8764,15 +8764,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_stabilizer_over_gfqsq_dual__224",
-                    "_rel_type": "cousin",
-                    "source": "c_stabilizer_over_gfqsq",
-                    "target": "c_dual"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_stabilizer_over_gfqsq_stabilizer_over_gf4__225",
+                    "id": "cousin_stabilizer_over_gfqsq_stabilizer_over_gf4__224",
                     "_rel_type": "cousin",
                     "source": "c_stabilizer_over_gfqsq",
                     "target": "c_stabilizer_over_gf4"
@@ -8788,7 +8780,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_qudit_css_css__226",
+                    "id": "cousin_qudit_css_css__225",
                     "_rel_type": "cousin",
                     "source": "c_qudit_css",
                     "target": "c_css"
@@ -8796,7 +8788,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_qudit_css_q-ary_linear__227",
+                    "id": "cousin_qudit_css_q-ary_linear__226",
                     "_rel_type": "cousin",
                     "source": "c_qudit_css",
                     "target": "c_q-ary_linear"
@@ -8812,7 +8804,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_skew-cyclic_galois_css_skew_cyclic__228",
+                    "id": "cousin_skew-cyclic_galois_css_skew_cyclic__227",
                     "_rel_type": "cousin",
                     "source": "c_skew-cyclic_galois_css",
                     "target": "c_skew_cyclic"
@@ -8836,7 +8828,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_galois_stabilizer_qudit_stabilizer__229",
+                    "id": "cousin_galois_stabilizer_qudit_stabilizer__228",
                     "_rel_type": "cousin",
                     "source": "c_galois_stabilizer",
                     "target": "c_qudit_stabilizer"
@@ -8844,7 +8836,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_galois_stabilizer_q-ary_additive__230",
+                    "id": "cousin_galois_stabilizer_q-ary_additive__229",
                     "_rel_type": "cousin",
                     "source": "c_galois_stabilizer",
                     "target": "c_q-ary_additive"
@@ -8852,7 +8844,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_galois_stabilizer_dual_additive__231",
+                    "id": "cousin_galois_stabilizer_dual_additive__230",
                     "_rel_type": "cousin",
                     "source": "c_galois_stabilizer",
                     "target": "c_dual_additive"
@@ -8868,7 +8860,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_galois_true_stabilizer_q-ary_linear__232",
+                    "id": "cousin_galois_true_stabilizer_q-ary_linear__231",
                     "_rel_type": "cousin",
                     "source": "c_galois_true_stabilizer",
                     "target": "c_q-ary_linear"
@@ -8876,10 +8868,18 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_galois_true_stabilizer_dual__233",
+                    "id": "cousin_galois_true_stabilizer_dual__232",
                     "_rel_type": "cousin",
                     "source": "c_galois_true_stabilizer",
                     "target": "c_dual"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_galois_true_stabilizer_stabilizer_over_gfqsq__233",
+                    "_rel_type": "cousin",
+                    "source": "c_galois_true_stabilizer",
+                    "target": "c_stabilizer_over_gfqsq"
                 }
             },
             {
