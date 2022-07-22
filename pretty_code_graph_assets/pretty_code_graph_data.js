@@ -3718,7 +3718,7 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_galois_true_stabilizer",
-                    "label": "True Galois-qudit stabilizer",
+                    "label": "True stabilizer",
                     "_code_name": "True Galois-qudit stabilizer code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
