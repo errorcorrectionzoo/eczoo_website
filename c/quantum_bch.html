@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Quantum BCH code" />
+<meta name="citation_title" content="Qubit BCH code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Quantum BCH code" />
+<meta name="DC.title" content="Qubit BCH code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Quantum BCH code — Error Correction Zoo
+    Qubit BCH code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,13 +79,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quantum BCH code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></h1>
+      Qubit BCH code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stabilizer code constructed from a self-orthogonal binary BCH code via the CSS construction, from a Hermitian self-orthogonal quaternary BCH code via the stabilizer-over-<span class="inline-math">\(GF(4)\)</span> construction, or by taking a Euclidean self-orthogonal BCH code over <span class="inline-math">\(GF(2^m)\)</span>, converting it to a binary code, and applying the CSS construction. Other work uses Hermitian <a href="#citation-4" class="href-endnote endnote citation">[4]</a> or Euclidean <a href="#citation-5" class="href-endnote endnote citation">[5]</a> (Galois-qudit) self-orthogonal BCH codes. </div>
+<div class="sectioncontent code-description">Qubit stabilizer code constructed from a self-orthogonal binary BCH code via the CSS construction, from a Hermitian self-orthogonal quaternary BCH code via the stabilizer-over-<span class="inline-math">\(GF(4)\)</span> construction, or by taking a Euclidean self-orthogonal BCH code over <span class="inline-math">\(GF(2^m)\)</span>, converting it to a binary code, and applying the CSS construction. </div>
 
 
 
@@ -128,7 +128,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;QBCH codes constructed via the CSS construction are CSS codes, and the rest are stabilizer codes over <span class="inline-math">\(GF(4)\)</span>.</span></li>
+      &#x2014;&nbsp;qubit BCH codes constructed via the CSS construction are CSS codes, and the rest are stabilizer codes over <span class="inline-math">\(GF(4)\)</span>.</span></li>
 </ul>
 </div>
 
@@ -143,19 +143,21 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bch">Binary BCH code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binary BCH codes are used to construct a subset of QBCH codes via the CSS construction.</span></li>
+      &#x2014;&nbsp;Binary BCH codes are used to construct a subset of qubit BCH codes via the CSS construction.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;BCH codes are used to construct QBCH codes via the CSS and stabilizer-over-<span class="inline-math">\(GF(4)\)</span> constructions.</span></li>
+      &#x2014;&nbsp;BCH codes are used to construct qubit BCH codes via the CSS and stabilizer-over-<span class="inline-math">\(GF(4)\)</span> constructions.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binary BCH codes are used to construct a subset of QBCH codes via the CSS construction.</span></li>
+      &#x2014;&nbsp;Some qubit BCH codes are CSS.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/stabilizer_over_gf4">Stabilizer code over <span class="inline-math">\(GF(4)\)</span></a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Hermitian self-orthogonal linear quaternary BCH codes are used to construct a subset of QBCH codes via the stabilizer-over-<span class="inline-math">\(GF(4)\)</span> construction.</span></li>
+      &#x2014;&nbsp;Hermitian self-orthogonal linear quaternary BCH codes are used to construct a subset of qubit BCH codes via the stabilizer-over-<span class="inline-math">\(GF(4)\)</span> construction.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/galois_bch">Galois-qudit BCH code</a></span></li>
 </ul>
 </div>
 
@@ -184,10 +186,10 @@
      data-popup-button-class-list="code-show-citation">
   <dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Quantum BCH code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/quantum_bch</dd>
+    <dd>“Qubit BCH code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/quantum_bch</dd>
     <dt>BibTeX:</dt>
     <dd class="bibtex">@incollection{eczoo_quantum_bch,
-title={Quantum BCH code},
+title={Qubit BCH code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -203,7 +205,7 @@ url={https://errorcorrectionzoo.org/c/quantum_bch}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. Grassl, T. Beth, and T. Pellizzari, “Codes for the quantum erasure channel”, Physical Review A <span class="textbf">56</span>, 33 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.33" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610042" target="_blank" class="href-href">quant-ph/9610042</a></dd><dt id="citation-2">[2]</dt><dd>A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href-href">quant-ph/9608006</a></dd><dt id="citation-3">[3]</dt><dd>Markus Grassl and Thomas Beth, “Quantum BCH Codes”. <a href="https://arxiv.org/abs/quant-ph/9910060" target="_blank" class="href-href">quant-ph/9910060</a></dd><dt id="citation-4">[4]</dt><dd>R. Li et al., “Hermitian dual containing BCH codes and Construction of new quantum codes”, Quantum Information and Computation <span class="textbf">13</span>, 21 (2013). <a href="https://doi.org/10.26421/QIC13.1-2-3" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Salah A. Aly, Andreas Klappenecker, and Pradeep Kiran Sarvepalli, “On Quantum and Classical BCH Codes”. <a href="https://arxiv.org/abs/quant-ph/0604102" target="_blank" class="href-href">quant-ph/0604102</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. Grassl, T. Beth, and T. Pellizzari, “Codes for the quantum erasure channel”, Physical Review A <span class="textbf">56</span>, 33 (1997). <a href="https://doi.org/10.1103/PhysRevA.56.33" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9610042" target="_blank" class="href-href">quant-ph/9610042</a></dd><dt id="citation-2">[2]</dt><dd>A. R. Calderbank et al., “Quantum Error Correction via Codes over GF(4)”. <a href="https://arxiv.org/abs/quant-ph/9608006" target="_blank" class="href-href">quant-ph/9608006</a></dd><dt id="citation-3">[3]</dt><dd>Andrew M. Steane, “Enlargement of Calderbank Shor Steane quantum codes”. <a href="https://arxiv.org/abs/quant-ph/9802061" target="_blank" class="href-href">quant-ph/9802061</a></dd><dt id="citation-4">[4]</dt><dd>Markus Grassl and Thomas Beth, “Quantum BCH Codes”. <a href="https://arxiv.org/abs/quant-ph/9910060" target="_blank" class="href-href">quant-ph/9910060</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -212,7 +214,7 @@ url={https://errorcorrectionzoo.org/c/quantum_bch}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Quantum BCH code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/quantum_bch</p>
+  <p>“Qubit BCH code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/quantum_bch</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_bch.yml"
                 class="ashowurl"
@@ -226,7 +228,7 @@ url={https://errorcorrectionzoo.org/c/quantum_bch}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/css">CSS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/q-ary_bch">BCH</a></li><li><a href="/c/css">CSS</a></li><li><a href="/c/galois_bch">Galois-qudit BCH</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
