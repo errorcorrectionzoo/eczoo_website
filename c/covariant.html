@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Covariant code" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Covariant code" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Covariant code — Error Correction Zoo
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  class=" "
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_covariant">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Covariant code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\(G\)</span>-covariant code is constructed in a physical space consisting of a tensor product of <span class="inline-math">\(n\)</span> subsystems (e.g., qubits, modular qudits, or Galois qudits) and admits a group <span class="inline-math">\(G\)</span> of transversal gates. <span class="inline-math">\(G\)</span>-covariant codes are equivalent to codes with a transversal gate set realizing <span class="inline-math">\(G\)</span>, and such a group has to finite for finite-dimensional codes due to the Eastin-Knill theorem. Continuous-<span class="inline-math">\(G\)</span> covariant codes are relevant to error correction of quantum reference frames <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. <span class="inline-math">\(U(1)\)</span>-covariant codes for <span class="inline-math">\(n=1\)</span> are relevant to error-corrected parameter estimation.</p><p>Denoting the code&#x27;s encoding map as <span class="inline-math">\(U\)</span>, covariance is equivalent to <span class="display-math env-align">\begin{align}
+  \left(\bigotimes_{j=1}^{n}V_{j}\left(g\right)\right)U=UV_{L}\left(g\right)\quad\quad\forall g\in G\,,
+\end{align}</span> where <span class="inline-math">\(V_j(g)\)</span> is a unitary representation of <span class="inline-math">\(g\)</span> acting on the <span class="inline-math">\(j\)</span> subsystem, and <span class="inline-math">\(V_L\)</span> is a unitary representation acting on the unencoded logical information. In this way, covariant encoding maps are equivariant (i.e., commute) with group actions on the logical and physical spaces. Almost always, the physical representation is defined to be the transversal one (with respect to some tensor-product decomposition), but reduces to any other representation when the code is a subspace of a larger space that is not expressed as a tensor product (<span class="inline-math">\(n=1\)</span>).</p></div>
+
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection"><p>Finite-dimensional codes correcting a single-subsystem erasure and admitting a continuous-parameter family of transversal gates (assuming <span class="inline-math">\(n&gt;1\)</span>) cannot exist in finite dimensions due to the Eastin-Knill theorem. As a result, there is generally a tradeoff between covariance and error correction.</p><p>Exact error-correcting <span class="inline-math">\(G\)</span>-covariant codes can exist in infinite dimensions, but their codewords are non-normalizable, meaning that approximate constructions have to be considered that are only approximately error correcting. On the other hand, there exist exact error-correcting codes in finite dimensions that are approximately covariant <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Various bounds quantify the covariance-performance tradeoff <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</p></div>
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="feature_transversal_gates"
+      class="code-feature code-feature-transversal_gates">Transversal Gates</h2>
+  <div class="sectioncontent code-feature code-feature-transversal_gates"><span class="inline-math">\(G\)</span>-covariant codes defined on a tensor product space consisting of <span class="inline-math">\(n\)</span> subsystems are equivalent to codes with a transversal gate set realizing <span class="inline-math">\(G\)</span>.</div>
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span></li>
+</ul>
+</div>
+
+<h2 id="relations_parent_of" class="code-parent-of">
+    Children
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/metopt">Metrologically optimal QECC</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Metrologically optimal codes can be thought of as being <span class="inline-math">\(U(1)\)</span>-covariant, where the group is generated by the Hamiltonian whose corresponding evolution time is the parameter to be estimated.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/g_covariant_erasure"><span class="inline-math">\(G\)</span>-covariant erasure code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Error-correcting codes that are finite-<span class="inline-math">\(G\)</span> covariant can be constructed form a base encoding <span class="inline-math">\(U_0\)</span>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/nonabelian_covariant_erasure"><span class="inline-math">\(U(d)\)</span>-covariant approximate erasure code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Error-correcting codes that are <span class="inline-math">\(G=U(d)\)</span> covariant can be constructed from a base encoding <span class="inline-math">\(U_0\)</span>.</span></li>
+</ul>
+</div>
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/approximate_qecc">Approximate quantum error-correcting code (AQECC)</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Normalizable constructions of infinite-dimensional <span class="inline-math">\(G\)</span>-covariant codes for continuous <span class="inline-math">\(G\)</span> are approximately error-correcting.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum RM codes are approximately covariant and nearly saturate certain covariance-performance bounds <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/eth">Eigenstate thermalization hypothesis (ETH) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;ETH codes consisting of Dicke states are approximately <span class="inline-math">\(U(1)\)</span>-covariant and nearly saturate certain covariance-performance bounds <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quantum_random">Random quantum code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Random <span class="inline-math">\(U(d)\)</span>-covariant almost exactly error-correcting codes exist <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/group_gkp">Group GKP code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Group-GKP codes corresponding to the <span class="inline-math">\(G^{k_1} \subseteq G^{k_2} \subset G^{n}\)</span> group construction admit <span class="inline-math">\(X\)</span>-type transversal Pauli gates that represent the group <span class="inline-math">\(G\)</span>, and are thus <span class="inline-math">\(G\)</span>-covariant <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
+</ul>
+</div>
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    covariant
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
+       target="_blank"
+       title="Edit code information directly on github.com"
+       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/covariant/covariant.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+       target="_blank"
+       title="edit code information on this site without using github"
+       href="/edit_code?code_id=covariant&amp;code_yml_filename=quantum/properties/covariant/covariant.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>covariant</code></div><div class="code-popup-info-frame"
+     data-is-code-info-popup="1"
+     data-popup-button-label="cite"
+     data-popup-button-class-list="code-show-citation">
+  <dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd>“Covariant code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/covariant</dd>
+    <dt>BibTeX:</dt>
+    <dd class="bibtex">@incollection{eczoo_covariant,
+title={Covariant code},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/covariant}
+}</dd>
+    <dt>Permanent link:</dt>
+    <dd>https://errorcorrectionzoo.org/c/covariant</dd>
+  </dl>
+</div>
+</div>
+
+
+
+
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Hayden et al., “Error Correction of Quantum Reference Frame Information”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.010326" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1709.04471" target="_blank" class="href-href">1709.04471</a></dd><dt id="citation-2">[2]</dt><dd>Zi-Wen Liu and Sisi Zhou, “Quantum error correction meets continuous symmetries: fundamental trade-offs and case studies”. <a href="https://arxiv.org/abs/2111.06360" target="_blank" class="href-href">2111.06360</a></dd><dt id="citation-3">[3]</dt><dd>Zi-Wen Liu and Sisi Zhou, “Approximate symmetries and quantum error correction”. <a href="https://arxiv.org/abs/2111.06355" target="_blank" class="href-href">2111.06355</a></dd><dt id="citation-4">[4]</dt><dd>P. Faist et al., “Continuous Symmetries and Approximate Quantum Error Correction”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041018" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1902.07714" target="_blank" class="href-href">1902.07714</a></dd><dt id="citation-5">[5]</dt><dd>S. Zhou and L. Jiang, “Optimal approximate quantum error correction for quantum metrology”, Physical Review Research <span class="textbf">2</span>, (2020). <a href="https://doi.org/10.1103/PhysRevResearch.2.013235" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1910.08472" target="_blank" class="href-href">1910.08472</a></dd><dt id="citation-6">[6]</dt><dd>S. Zhou and L. Jiang, “Asymptotic Theory of Quantum Channel Estimation”, PRX Quantum <span class="textbf">2</span>, (2021). <a href="https://doi.org/10.1103/PRXQuantum.2.010343" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.10559" target="_blank" class="href-href">2003.10559</a></dd><dt id="citation-7">[7]</dt><dd>A. Kubica and R. Demkowicz-Dobrzański, “Using Quantum Metrological Bounds in Quantum Error Correction: A Simple Proof of the Approximate Eastin-Knill Theorem”, Physical Review Letters <span class="textbf">126</span>, (2021). <a href="https://doi.org/10.1103/PhysRevLett.126.150503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2004.11893" target="_blank" class="href-href">2004.11893</a></dd><dt id="citation-8">[8]</dt><dd>L. Kong and Z.-W. Liu, “Near-Optimal Covariant Quantum Error-Correcting Codes from Random Unitaries with Symmetries”, PRX Quantum <span class="textbf">3</span>, (2022). <a href="https://doi.org/10.1103/PRXQuantum.3.020314" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2112.01498" target="_blank" class="href-href">2112.01498</a></dd></dl></div>
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Covariant code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/covariant</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/covariant/covariant.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/covariant/covariant.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/metopt">Metrologically optimal QECC</a></li><li><a href="/c/g_covariant_erasure"><span class="inline-math">\(G\)</span>-covariant erasure</a></li><li><a href="/c/nonabelian_covariant_erasure"><span class="inline-math">\(U(d)\)</span>-covariant approximate erasure</a></li><li><a href="/c/approximate_qecc">AQECC</a></li><li><a href="/c/quantum_reed_muller">Quantum Reed-Muller</a></li><li><a href="/c/eth">ETH</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
