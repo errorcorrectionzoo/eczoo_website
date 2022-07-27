@@ -85,13 +85,15 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Error-corrected bosonic sensing code that can be used to sense a signal Hamiltonian <span class="inline-math">\({\hat n}^s\)</span>, where <span class="inline-math">\({\hat n}\)</span> is the occupation number operator, and correct errors from the set <span class="inline-math">\(\{I,a,a^{\dagger},{\hat n},{\hat n}^2,\cdots,{\hat n}^{s-1}\}\)</span>.</p><p>Codewords for the <span class="inline-math">\(s\)</span>th order Chebyshev code are <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">Bosonic code that can be used for error-corrected sensing of a signal Hamiltonian <span class="inline-math">\({\hat n}^s\)</span>, where <span class="inline-math">\({\hat n}\)</span> is the occupation number operator. Codewords for the <span class="inline-math">\(s\)</span>th-order Chebyshev code are <span class="display-math env-align">\begin{align}
 \begin{split}
-\ket{0_\textsc{l}} &amp;=\sum_{k \text{~even}}^{[0,s]} \tilde{c}_k \Ket{\left\lfloor M\sin^2\left( k\pi/{2s}\right) \right\rfloor},\\
-\ket{1_\textsc{l}} &amp;= \sum_{k \text{~odd}}^{[0,s]} \tilde{c}_k \Ket{\left\lfloor M\sin^2 \left(k\pi/{2s}\right) \right\rfloor},
+\ket{\overline 0} &amp;=\sum_{k \text{~even}}^{[0,s]} \tilde{c}_k \Ket{\left\lfloor M\sin^2\left( k\pi/{2s}\right) \right\rfloor},\\
+\ket{\overline 1} &amp;= \sum_{k \text{~odd}}^{[0,s]} \tilde{c}_k \Ket{\left\lfloor M\sin^2 \left(k\pi/{2s}\right) \right\rfloor},
 \end{split}
-\end{align}</span> where <span class="inline-math">\(\lfloor x \rfloor\)</span> is the floor function.</p></div>
+\end{align}</span> where <span class="inline-math">\(\tilde{c}_k&gt;0\)</span> can be obtained by solving a system of order <span class="inline-math">\(O(s^2)\)</span> linear equations, and where <span class="inline-math">\(\lfloor x \rfloor\)</span> is the floor function. </div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The <span class="inline-math">\(s\)</span>th-order code corrects errors from the set <span class="inline-math">\(\{I,a,a^{\dagger},{\hat n},{\hat n}^2,\cdots,{\hat n}^{s-1}\}\)</span>.</div>
 
 
 <!-- Display features -->
@@ -124,7 +126,7 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -132,6 +134,8 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/fock_state">Fock-state bosonic code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/metopt">Error-corrected sensing code</a></span></li>
 </ul>
 </div>
 
@@ -217,7 +221,7 @@ url={https://errorcorrectionzoo.org/c/chebyshev}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/fock_state">Fock-state bosonic</a></li><li><a href="/c/qudits_into_oscillators">Qudit-into-oscillator</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/binomial">Binomial</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/fock_state">Fock-state bosonic</a></li><li><a href="/c/qudits_into_oscillators">Qudit-into-oscillator</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/metopt">Error-corrected sensing</a></li><li><a href="/c/binomial">Binomial</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

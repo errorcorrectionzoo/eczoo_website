@@ -85,11 +85,11 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="inline-math">\(G\)</span>-covariant code constructed in a physical space consisting of a tensor product of identical subsystems (e.g., qubits, modular qudits, or Galois qudits). The code is a proof-of-principle construction to demonstrate the existence of <a href="/c/covariant" class="href-ref ref-code"><span class="inline-math">\(G\)</span>-covariant codes</a> where <span class="inline-math">\(G\)</span> is a finite group, and the physical space is finite-dimensional.</p><p>Consider a finite group <span class="inline-math">\(G\)</span> acting on a finite set <span class="inline-math">\(A\)</span> as a subgroup of the symmetric group on <span class="inline-math">\(|A|\)</span> elements, <span class="inline-math">\(G \subset S_{|A|}\)</span>. Let <span class="inline-math">\(U_0: \mathcal{H}_{\text{logical}} \rightarrow \mathcal{H}_{\text{physical}}
-= \mathcal{H}^{\otimes n}\)</span> be any code, possibly non-covariant, capable of perfect recovery after an erasure of <span class="inline-math">\(k\)</span> of out <span class="inline-math">\(n\)</span> physical subsystems. Now define the new encoder <span class="inline-math">\(U \equiv U_0^{\otimes |A|}: \mathcal{H}_{\text{logical}}^{\otimes |A|}
-\rightarrow \mathcal{H}_{\text{physical}}^{\otimes |A|}\)</span> on <span class="inline-math">\(|A|\)</span>. The group acts on codewords by index permutation: <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\(G\)</span>-covariant code constructed in a physical space consisting of a tensor product of identical subsystems (e.g., qubits, modular qudits, or Galois qudits). The code is a proof-of-principle construction to demonstrate the existence of <a href="/c/covariant" class="href-ref ref-code"><span class="inline-math">\(G\)</span>-covariant codes</a> where <span class="inline-math">\(G\)</span> is a finite group, and the physical space is finite-dimensional.</p><p>Consider a finite group <span class="inline-math">\(G\)</span> acting on a finite set <span class="inline-math">\(A\)</span> as a subgroup of the symmetric group on <span class="inline-math">\(|A|\)</span> elements, <span class="inline-math">\(G \subset S_{|A|}\)</span>. Let <span class="inline-math">\(U_0: \mathsf{H}_{\text{logical}} \rightarrow \mathsf{H}_{\text{physical}}
+= \mathsf{H}^{\otimes n}\)</span> be any QECC, possibly non-covariant. Define the covariant encoder <span class="inline-math">\(U \equiv U_0^{\otimes |A|}: \mathsf{H}_{\text{logical}}^{\otimes |A|}
+\rightarrow \mathsf{H}_{\text{physical}}^{\otimes |A|}\)</span> on <span class="inline-math">\(|A|\)</span>. Then, the group acts on codewords by index permutation: <span class="display-math env-align">\begin{align}
 V(g) | \phi_{a_1} \rangle | \phi_{a_2} \rangle \cdots | \phi_{a_{|A|}} \rangle = | \phi_{g^{-1} a_1} \rangle | \phi_{g^{-1} a_2} \rangle \cdots | \phi_{g^{-1} a_{|A|}} \rangle~,
-\end{align}</span> where <span class="inline-math">\(V(g)\)</span> is the unitary representation of <span class="inline-math">\(g \in G\)</span> acting on the physical space.</p><p>Like all <a href="/c/covariant" class="href-ref ref-code"><span class="inline-math">\(G\)</span>-covariant codes</a>, the action of <span class="inline-math">\(V(g)\)</span> is tranvsersal with respect to the partition <span class="inline-math">\(\mathcal{H}_{\text{physical}}^{\otimes |A|}\)</span>.</p></div>
+\end{align}</span> where <span class="inline-math">\(V(g)\)</span> is the unitary representation of <span class="inline-math">\(g \in G\)</span> acting on the physical space. The action of <span class="inline-math">\(V(g)\)</span> is transversal with respect to the partition <span class="inline-math">\(\mathsf{H}_{\text{physical}}^{\otimes |A|}\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Depends on the base encoding <span class="inline-math">\(U_0\)</span>. </div>
@@ -134,7 +134,7 @@ V(g) | \phi_{a_1} \rangle | \phi_{a_2} \rangle \cdots | \phi_{a_{|A|}} \rangle =
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/covariant">Covariant code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Error-correcting codes that are finite-<span class="inline-math">\(G\)</span> covariant can be constructed form a base encoding <span class="inline-math">\(U_0\)</span>.</span></li>
+      &#x2014;&nbsp;In a proof of principle demonstration, error-correcting codes that are finite-<span class="inline-math">\(G\)</span> covariant can be constructed from a base encoding <span class="inline-math">\(U_0\)</span>.</span></li>
 </ul>
 </div>
 
