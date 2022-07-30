@@ -91,7 +91,7 @@
 <div class="sectioncontent code-protection"><p>Denoting Hilbert spaces by the letter <span class="inline-math">\(\mathsf{H}\)</span>, a quantum code <span class="inline-math">\((U,\cal{E})\)</span> is a partial isometry <span class="inline-math">\(U:\mathsf{H}_{\text{logical}}\to\mathsf{H}_{\text{physical}}\)</span> with a set of correctable errors <span class="inline-math">\(\cal{E}\)</span> with the following property: there exists a quantum operation <span class="inline-math">\(\cal{D}\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(|\psi\rangle\in\mathsf{H}_{\text{logical}}\)</span>, <span class="display-math env-align">\begin{align}
   {\cal D} (EU|\psi\rangle\langle\psi|U^{\dagger}E^{\dagger})
   = c(E,|\psi\rangle)|\psi\rangle\langle\psi|
-\end{align}</span> for some constant <span class="inline-math">\(c\)</span>.</p><p>Equivalently, correction capability is determined by the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a>, which may admit infinite terms due to non-normalizability of ideal code states in the case of codes with infinite-dimenional physical spaces. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="href-ref ref-code">approximate code</a>.</p></div>
+\end{align}</span> for some constant <span class="inline-math">\(c\)</span>.</p><p>Equivalently, correction capability is determined by the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a>, which may admit infinite terms due to non-normalizability of ideal code states in the case of codes with infinite-dimenional physical spaces. A code that satisfies these conditions approximately, i.e., up to some small quantifiable error, is called an <a href="/c/approximate_qecc" class="href-ref ref-code">approximate code</a>. These conditions can also be formulated in terms of a dual Heisenberg picture, where correctability is checked for some algebra of observables <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</p></div>
 
 
 <!-- Display features -->
@@ -124,7 +124,7 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -132,6 +132,10 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/oaecc">Operator-algebra error-correcting code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/metrological">Metrological code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Metrological codes satisfy the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a> conditions only partially, and those satisfy them fully form QECCs.</span></li>
 </ul>
 </div>
 
@@ -229,7 +233,7 @@ url={https://errorcorrectionzoo.org/c/qecc}
 
 
 <!-- endnotes -->
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. Bény, A. Kempf, and D. W. Kribs, “Quantum error correction on infinite-dimensional Hilbert spaces”, Journal of Mathematical Physics <span class="textbf">50</span>, 062108 (2009). <a href="https://doi.org/10.1063/1.3155783" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.0421" target="_blank" class="href-href">0811.0421</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -252,7 +256,7 @@ url={https://errorcorrectionzoo.org/c/qecc}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/approximate_qecc">AQECC</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/covariant">Covariant</a></li><li><a href="/c/dynamic_gen">Dynamically-generated</a></li><li><a href="/c/eaqecc">EAQECC</a></li><li><a href="/c/oecc">Subsystem QECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/metrological">Metrological</a></li><li><a href="/c/approximate_qecc">AQECC</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/covariant">Covariant</a></li><li><a href="/c/dynamic_gen">Dynamically-generated</a></li><li><a href="/c/eaqecc">EAQECC</a></li><li><a href="/c/oecc">Subsystem QECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
