@@ -6640,10 +6640,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_metrological_stabilizer__79",
+                    "id": "cousin_metrological_qubit_stabilizer__79",
                     "_rel_type": "cousin",
                     "source": "c_metrological",
-                    "target": "c_stabilizer"
+                    "target": "c_qubit_stabilizer"
                 }
             },
             {
