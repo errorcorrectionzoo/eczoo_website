@@ -547,7 +547,7 @@ GENERATED_pretty_code_graph_data = {
                 "data": {
                     "id": "c_generalized_reed_muller",
                     "label": "GRM",
-                    "_code_name": "Generalized Reed-Muller (RM) code",
+                    "_code_name": "Generalized Reed-Muller (GRM) code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
@@ -568,7 +568,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Evaluation AG code over \\(GF(r^2)\\) for points lying in a Hermitian curve, which is defined by the equation \\(U^{r+1}+V^{r+1}+1=0\\).",
+                    "_description": "Evaluation AG code over \\(GF(r^2)\\) for points lying in a Hermitian curve, which is defined by the equation \\(x^{r+1}+y^{r+1}+1=0\\).",
                     "_code_href": "/c/hermitian",
                     "_family_generation_level": 4
                 },
@@ -602,7 +602,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Evaluation AG code over \\(GF(8)\\) for projective points lying in the Klein quartic, which is defined by the equation \\(X^3 Y + Y^3 Z + Z^3 X = 0\\) ([T. H\u00f8holdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.], Ex. 2.75).\n\nConcatenation with the \\([4,3,2]\\) single parity check \u2026",
+                    "_description": "Evaluation AG code over \\(GF(8)\\) for projective points lying in the Klein quartic, which is defined by the equation \\(x^3 y + y^3 z + z^3 x = 0\\) ([T. H\u00f8holdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.], Ex. 2.75).\n\nConcatenation with the \\([4,3,2]\\) single parity check \u2026",
                     "_code_href": "/c/klein_quartic",
                     "_family_generation_level": 4
                 },
@@ -982,7 +982,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "Evaluation code on a set of points \\(\\cal P = \\left( P_1,P_2,\\cdots,P_n \\right)\\) lying on an algebraic curve \\(\\cal X\\) whose corresponding vector space \\(L\\) of functions is a Riemann-Roch space, i.e., a vector space of \u2026",
+                    "_description": "Evaluation code on a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) lying on an algebraic curve \\(\\cal X\\) whose corresponding vector space of functions \\(f\\) is a Riemann-Roch space \\(L\\), i.e., a vector \u2026",
                     "_code_href": "/c/evaluation",
                     "_family_generation_level": 3
                 },
@@ -1033,7 +1033,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "Let \\(\\cal{X}\\) be a geometric object that contains a subset \\(\\cal{P} = \\left( P_1,P_2,\\cdots,P_n \\right) \\) consisting of \\(n\\) points \\(P_j\\). Let \\(L\\) be a vector space over \\(GF(q)\\) of functions \\(f\\) that take values in \\(GF(q)\\). \u2026",
+                    "_description": "Let \\(\\cal{X}\\) be a geometric object that contains a subset \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right) \\) consisting of \\(n\\) points \\(P_j\\). Let \\(L\\) be a vector space over \\(GF(q)\\) of functions \\(f\\) that take values in \\(GF(q)\\). \u2026",
                     "_code_href": "/c/evaluation_varieties",
                     "_family_generation_level": 3
                 },
