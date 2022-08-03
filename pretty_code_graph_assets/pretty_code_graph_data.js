@@ -982,7 +982,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "Evaluation code on a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) lying on an algebraic curve \\(\\cal X\\) whose corresponding vector space of functions \\(f\\) is a Riemann-Roch space \\(L\\), i.e., a vector \u2026",
+                    "_description": "Evaluation code on a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) lying on an algebraic curve whose corresponding vector space of functions \\(f\\) is a Riemann-Roch space \\(L\\) ([W. C. Huffman, J.-L. Kim, and P. Sol\u00e9, Concise Encyclopedia of Coding Theory (Chapman and Hall/CRC, 2021). DOI], pg. 313), i.e., a vector \u2026",
                     "_code_href": "/c/evaluation",
                     "_family_generation_level": 3
                 },
@@ -1033,7 +1033,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
-                    "_description": "Let \\(\\cal{X}\\) be a geometric object that contains a subset \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right) \\) consisting of \\(n\\) points \\(P_j\\). Let \\(L\\) be a vector space over \\(GF(q)\\) of functions \\(f\\) that take values in \\(GF(q)\\). \u2026",
+                    "_description": "Code whose codewords are evaluations of functions at certain fixed points. Code properties can be inferred from the structure of the underlying geometric object containing the points, often using \u2026",
                     "_code_href": "/c/evaluation_varieties",
                     "_family_generation_level": 3
                 },
