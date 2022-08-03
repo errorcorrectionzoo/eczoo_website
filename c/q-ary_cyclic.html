@@ -87,6 +87,8 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">A <span class="inline-math">\(q\)</span>-ary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes. </div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Shift bound <a href="#citation-1" class="href-endnote endnote citation">[1]</a> gives a lower bound on the distance of cyclic <span class="inline-math">\(q\)</span>-ary codes.</div>
 
 
 <!-- Display features -->
@@ -106,7 +108,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
 
 
 
@@ -119,7 +121,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for an exposition on cyclic codes.</span>
+  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a> for an exposition on cyclic codes.</span>
 </div>
 
 
@@ -171,15 +173,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_css">Galois-qudit CSS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Galois CSS codes can be constructed using self-orthogonal <span class="inline-math">\(q\)</span>-ary cyclic codes <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
+      &#x2014;&nbsp;Galois CSS codes can be constructed using self-orthogonal <span class="inline-math">\(q\)</span>-ary cyclic codes <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/generalized_reed_muller">Generalized Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GRM codes with nonzero evaluation points are cyclic (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, pg. 52).</span></li>
+      &#x2014;&nbsp;GRM codes with nonzero evaluation points are cyclic (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, pg. 52).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum MDS codes can be constructed from <span class="inline-math">\(q\)</span>-ary cyclic codes using the Hermitian construction <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></li>
+      &#x2014;&nbsp;Quantum MDS codes can be constructed from <span class="inline-math">\(q\)</span>-ary cyclic codes using the Hermitian construction <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -187,7 +189,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Hamming codes are equivalent to cyclic codes when <span class="inline-math">\(q\)</span> and <span class="inline-math">\(r\)</span> are relatively prime (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, pg. 194).</span></li>
+      &#x2014;&nbsp;Hamming codes are equivalent to cyclic codes when <span class="inline-math">\(q\)</span> and <span class="inline-math">\(r\)</span> are relatively prime (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, pg. 194).</span></li>
 </ul>
 </div>
 
@@ -235,7 +237,7 @@ url={https://errorcorrectionzoo.org/c/q-ary_cyclic}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-3">[3]</dt><dd>Yongsheng Tang et al., “New quantum codes from dual-containing cyclic codes over finite rings”. <a href="https://arxiv.org/abs/1608.06674" target="_blank" class="href-href">1608.06674</a></dd><dt id="citation-4">[4]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>G. G. La Guardia, “New Quantum MDS Codes”, IEEE Transactions on Information Theory <span class="textbf">57</span>, 5551 (2011). <a href="https://doi.org/10.1109/TIT.2011.2159039" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-4">[4]</dt><dd>Yongsheng Tang et al., “New quantum codes from dual-containing cyclic codes over finite rings”. <a href="https://arxiv.org/abs/1608.06674" target="_blank" class="href-href">1608.06674</a></dd><dt id="citation-5">[5]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>G. G. La Guardia, “New Quantum MDS Codes”, IEEE Transactions on Information Theory <span class="textbf">57</span>, 5551 (2011). <a href="https://doi.org/10.1109/TIT.2011.2159039" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
