@@ -87,7 +87,7 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Code whose codewords are evaluations of functions at certain fixed points. Code properties can be inferred from the structure of the underlying geometric object containing the points, often using results from algebraic geometry.</p><p>Let <span class="inline-math">\(\cal{X}\)</span> be a geometric object that contains a subset <span class="inline-math">\({\cal P} = \left( P_1,P_2,\cdots,P_n \right) \)</span> consisting of <span class="inline-math">\(n\)</span> points <span class="inline-math">\(P_j\)</span>. Let <span class="inline-math">\(L\)</span> be a vector space over <span class="inline-math">\(GF(q)\)</span> of functions <span class="inline-math">\(f\)</span> that take values in <span class="inline-math">\(GF(q)\)</span>. Each <span class="inline-math">\(f\in L\)</span> yields a codeword of an evaluation code <span class="inline-math">\(C_L({\cal X},{\cal P})\)</span> of the form <span class="display-math env-align">\begin{align}
   \left( f(P_1), f(P_2), \cdots, f(P_n) \right) \quad\quad\forall f\in L~.
-\end{align}</span> This is a linear binary or <span class="inline-math">\(q\)</span>-ary code since the functions <span class="inline-math">\(f\)</span> take values in <span class="inline-math">\(GF(q)\)</span> and form a vector space.</p><p>The geometric object <span class="inline-math">\(\cal X\)</span> is typically an algebraic variety, i.e., a set of solutions of a system of polynomial equations in either affine or projective space over <span class="inline-math">\(GF(q)\)</span>. The functions <span class="inline-math">\(f\)</span> are typically polynomials or rational functions.</p><p>Evaluation codes can also be defined more abstractly in terms of morphisms of algebras over <span class="inline-math">\(GF(q)\)</span> (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Def. 4.1).</p></div>
+\end{align}</span> This is a linear binary or <span class="inline-math">\(q\)</span>-ary code since the functions <span class="inline-math">\(f\)</span> take values in <span class="inline-math">\(GF(q)\)</span> and form a vector space.</p><p>Examples of geometric objects <span class="inline-math">\(\cal X\)</span> include affine or projective spaces over <span class="inline-math">\(GF(q)\)</span> as well as subsets of those spaces determined by some constraints. Prominent subsets are <span class="textit">algebraic varieties</span>, i.e., sets of solutions of systems of polynomial equations in either affine or projective space. The functions <span class="inline-math">\(f\)</span> are typically polynomials or rational functions.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Properties of <span class="inline-math">\(\cal X\)</span> can be used to bound the code dimension <span class="inline-math">\(k\)</span> and distance <span class="inline-math">\(d\)</span>. The order or Feng-Rao bound gives a lower bound on the distance of evaluation codes <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a> (see Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ch. 4).</div>
@@ -130,12 +130,14 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/projective">Projective code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An evaluation-code generator matrix has columns that form a subset of points on a curve in projective space.</span></li>
 </ul>
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
@@ -145,6 +147,14 @@
     <span class="code-parent-of-1-code"><a href="/c/evaluation">Evaluation AG code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Evaluation AG codes are evaluation codes for which <span class="inline-math">\(\cal X\)</span> is an algebraic curve, i.e., an algebraic variety of dimension one <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GRM codes are evaluation codes of multivariate polynomials <span class="inline-math">\(f\)</span> with <span class="inline-math">\(\cal X\)</span> being the entire <span class="inline-math">\(m\)</span>-dimensional affine space over <span class="inline-math">\(GF(q)\)</span> (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, pgs. 44-46; <a href="#citation-2" class="href-endnote endnote citation">[2]</a>).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;RM codes are evaluation codes of multivariate polynomials <span class="inline-math">\(f\)</span> with <span class="inline-math">\(\cal X\)</span> being the entire <span class="inline-math">\(m\)</span>-dimensional affine binary space (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, pgs. 44-46; <a href="#citation-2" class="href-endnote endnote citation">[2]</a>).</span></li>
 </ul>
 </div>
 
@@ -193,7 +203,7 @@ url={https://errorcorrectionzoo.org/c/evaluation_varieties}
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>S. G. Vléduts and Y. I. Manin, “Linear codes and modular curves”, Journal of Soviet Mathematics <span class="textbf">30</span>, 2611 (1985). <a href="https://doi.org/10.1007/BF02249124" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-3">[3]</dt><dd>O. Geil, “Evaluation Codes from an Affine Variety Code Perspective”, Series on Coding Theory and Cryptology 153 (2008). <a href="https://doi.org/10.1142/9789812794017_0004" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Gui-Liang Feng et al., “Simplified understanding and efficient decoding of a class of algebraic-geometric codes”, IEEE Transactions on Information Theory <span class="textbf">40</span>, 981 (1994). <a href="https://doi.org/10.1109/18.335973" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>G.-L. Feng and T. R. N. Rao, “Decoding algebraic-geometric codes up to the designed minimum distance”, IEEE Transactions on Information Theory <span class="textbf">39</span>, 37 (1993). <a href="https://doi.org/10.1109/18.179340" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>J. Fitzgerald and R. F. Lax, “[]”, Designs, Codes and Cryptography <span class="textbf">13</span>, 147 (1998). <a href="https://doi.org/10.1023/A:1008274212057" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>S. G. Vléduts and Y. I. Manin, “Linear codes and modular curves”, Journal of Soviet Mathematics <span class="textbf">30</span>, 2611 (1985). <a href="https://doi.org/10.1007/BF02249124" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-3">[3]</dt><dd>O. Geil, “Evaluation Codes from an Affine Variety Code Perspective”, Series on Coding Theory and Cryptology 153 (2008). <a href="https://doi.org/10.1142/9789812794017_0004" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Gui-Liang Feng et al., “Simplified understanding and efficient decoding of a class of algebraic-geometric codes”, IEEE Transactions on Information Theory <span class="textbf">40</span>, 981 (1994). <a href="https://doi.org/10.1109/18.335973" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>G.-L. Feng and T. R. N. Rao, “Decoding algebraic-geometric codes up to the designed minimum distance”, IEEE Transactions on Information Theory <span class="textbf">39</span>, 37 (1993). <a href="https://doi.org/10.1109/18.179340" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>J. Fitzgerald and R. F. Lax, “[]”, Designs, Codes and Cryptography <span class="textbf">13</span>, 147 (1998). <a href="https://doi.org/10.1023/A:1008274212057" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -216,7 +226,7 @@ url={https://errorcorrectionzoo.org/c/evaluation_varieties}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/evaluation">Evaluation AG</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/generalized_reed_muller">GRM</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
