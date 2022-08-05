@@ -653,7 +653,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Evaluation AG code of bivariate polynomials evaluated at points on an affine plane curve. ",
+                    "_description": "Evaluation AG code of bivariate polynomials of some finite maximum degree, evaluated at points on an affine plane curve \\(\\cal X\\). ",
                     "_code_href": "/c/plane_curve",
                     "_family_generation_level": 4
                 },
