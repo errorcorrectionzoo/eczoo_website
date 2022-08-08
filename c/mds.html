@@ -124,23 +124,19 @@ d \leq n-k+1
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The dual of an MDS codes is always MDS.</span><span class="paragraph-in-list">The codes <span class="inline-math">\( [n,1,n]_q, [n,n-1,2]_q, [n,n,1]_q \)</span> for any <span class="inline-math">\(q\)</span> are MDS codes. These are called the <span class="textit">trivial</span> MDS codes.</span><span class="paragraph-in-list">The only binary MDS codes are the trivial ones.</span>
+  <span class="paragraph-in-list">The codes <span class="inline-math">\( [n,1,n]_q, [n,n-1,2]_q, [n,n,1]_q \)</span> for any <span class="inline-math">\(q\)</span> are MDS codes. These are called the <span class="textit">trivial</span> MDS codes.</span><span class="paragraph-in-list">The only binary MDS codes are the trivial ones.</span>
 </div>
 
 
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parents
+    Parent
 </h2>
 <div class="sectioncontent code-parents">
 
 
 <ul class="code-relations-list code-parents-list">
-  <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/projective">Projective code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An <span class="inline-math">\(n\)</span>-arc in the projective space <span class="inline-math">\(PG_{n-k-1}(q)\)</span> defines an MDS code <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/locally_recoverable">Locally recoverable code (LRC)</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -170,13 +166,17 @@ d \leq n-k+1
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/dual">Dual linear code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A linear binary or <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,n-k+1]\)</span> code is MDS if and only if its dual <span class="inline-math">\([n,n-k,k+1]\)</span> is MDS (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thm. 1.9.13).</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/elliptic">Elliptic code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Elliptic codes can be MDS (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ex. 15.5.3; <a href="#citation-6" class="href-endnote endnote citation">[6]</a>, pg. 310; <a href="#citation-7" class="href-endnote endnote citation">[7]</a>, Sec. 4.4.2).</span></li>
+      &#x2014;&nbsp;Elliptic codes can be MDS (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ex. 15.5.3; <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, pg. 310; <a href="#citation-6" class="href-endnote endnote citation">[6]</a>, Sec. 4.4.2).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/extended_reed_solomon">Extended GRS code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An MDS GRS code can be extended to an MDS code (<a href="#citation-8" class="href-endnote endnote citation">[8]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-8" class="href-endnote endnote citation">[8]</a>, Thms. 5.3.2 and 5.3.4).</span></li>
+      &#x2014;&nbsp;An MDS GRS code can be extended to an MDS code (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, Thm. 5.3.4). Extended and doubly-extended narrow-sense RS codes are MDS (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, Thms. 5.3.2 and 5.3.4).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -186,7 +186,7 @@ d \leq n-k+1
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/matrix_computation">Matrix computation code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
+      &#x2014;&nbsp;The first matrix multiplication code encoded each entry of the matrices to be multiplied into an MDS code <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -196,9 +196,19 @@ d \leq n-k+1
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span></li>
+      &#x2014;&nbsp;RS codes have distance <span class="inline-math">\(n-k+1\)</span>, saturating the Singleton bound. If <span class="inline-math">\(k \leq p\)</span>, then all linear MDS codes <span class="inline-math">\( [n,k,n-k+1]_{p^m} \)</span> are RS codes <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
 </ul>
 </div>
+
+
+
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Singleton, “Maximum distance&amp;amp;lt;tex&amp;amp;gt;q&amp;amp;lt;/tex&amp;amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>McEliece, R.J.: A public-key cryptosystem based on algebraic coding theory. DSN Progress Report pp. 114–116 (1978).</dd><dt id="citation-4">[4]</dt><dd>S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>M. Tsfasman, S. Vlǎduţ, and D. Nogin. <span class="textit">Algebraic geometric codes: basic notions</span>. Vol. 139. American Mathematical Society, 2022.</dd><dt id="citation-7">[7]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href-href">1512.02673</a></dd><dt id="citation-9">[9]</dt><dd>S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href-href">DOI</a></dd></dl></div>
+
+
+
+<div class="sectioncontent code-contributors">
+Contributors to this page: <a href="https://github.com/eric-kub" target="_blank">Eric Kubischta</a>, <a href="https://github.com/valbert4" target="_blank">Victor V. Albert</a></div>
+
 
 
 <!-- zoo-related information and how to edit -->
@@ -213,38 +223,39 @@ d \leq n-k+1
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
-       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
-       target="_blank"
-       title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/mds.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
-       target="_blank"
-       title="edit code information on this site without using github"
-       href="/edit_code?code_id=mds&amp;code_yml_filename=classical/q-ary_digits/mds.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>mds</code></div><div class="code-popup-info-frame"
-     data-is-code-info-popup="1"
-     data-popup-button-label="cite"
-     data-popup-button-class-list="code-show-citation">
-  <dl class="show-citation">
+       data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
+          target="_blank"
+          title="Edit code information directly on github.com"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/mds.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          target="_blank"
+          title="edit code information on this site without using github"
+          href="/edit_code?code_id=mds&amp;code_yml_filename=classical/q-ary_digits/mds.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>mds</code></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Maximum distance separable (MDS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/mds</dd>
+    <dd class="boxedcontent">“Maximum distance separable (MDS) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/mds</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_mds,
+    <dd class="boxedcontent bibtex">@incollection{eczoo_mds,
 title={Maximum distance separable (MDS) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/mds}
 }</dd>
+  </dl></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="share"
+       data-popup-button-class-list="code-show-share"><dl class="show-share-social">
+    <dt>Share via:</dt>
+    <dd><a href="https://twitter.com/intent/tweet?text=Maximum%20distance%20separable%20%28MDS%29%20code%20https%3A//errorcorrectionzoo.org/c/mds" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/mds&amp;t=Maximum%20distance%20separable%20%28MDS%29%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Maximum%20distance%20separable%20%28MDS%29%20code&amp;body=Maximum%20distance%20separable%20%28MDS%29%20code%20https%3A//errorcorrectionzoo.org/c/mds">E-mail</a>
+    </dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/mds</dd>
-  </dl>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/mds</dd>
+  </dl></div>
 </div>
-</div>
 
 
-
-
-<!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Singleton, “Maximum distance&amp;amp;lt;tex&amp;amp;gt;q&amp;amp;lt;/tex&amp;amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>McEliece, R.J.: A public-key cryptosystem based on algebraic coding theory. DSN Progress Report pp. 114–116 (1978).</dd><dt id="citation-4">[4]</dt><dd>S. B. Wicker and V. K. Bhargava, <span class="textit">Reed-solomon Codes and Their Applications</span> (IEEE, 1999). <a href="https://doi.org/10.1109/9780470546345" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>M. Tsfasman, S. Vlǎduţ, and D. Nogin. <span class="textit">Algebraic geometric codes: basic notions</span>. Vol. 139. American Mathematical Society, 2022.</dd><dt id="citation-8">[8]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>K. Lee et al., “Speeding Up Distributed Machine Learning Using Codes”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 1514 (2018). <a href="https://doi.org/10.1109/TIT.2017.2736066" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1512.02673" target="_blank" class="href-href">1512.02673</a></dd><dt id="citation-10">[10]</dt><dd>S. Ball, “On sets of vectors of a finite vector space in which every subset of basis size is a basis”, Journal of the European Mathematical Society 733 (2012). <a href="https://doi.org/10.4171/JEMS/316" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -267,7 +278,7 @@ url={https://errorcorrectionzoo.org/c/mds}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/locally_recoverable">LRC</a></li><li><a href="/c/parity_check">Parity-check</a></li><li><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check</a></li><li><a href="/c/elliptic">Elliptic</a></li><li><a href="/c/extended_reed_solomon">Extended GRS</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/locally_recoverable">LRC</a></li><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/parity_check">Parity-check</a></li><li><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check</a></li><li><a href="/c/dual">Dual linear</a></li><li><a href="/c/elliptic">Elliptic</a></li><li><a href="/c/extended_reed_solomon">Extended GRS</a></li><li><a href="/c/generalized_reed_solomon">GRS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

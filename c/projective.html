@@ -87,6 +87,8 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description"><p>Linear binary or <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>.</p><p>Recall that a linear code encodes a message <span class="inline-math">\(h\)</span> into a codeword <span class="inline-math">\(c = hG\)</span>. The <span class="inline-math">\(i\)</span>th coordinate of a codeword is given the dot product <span class="inline-math">\(h \cdot G_{i}\)</span> with <span class="inline-math">\(G_{i}\)</span> being the <span class="inline-math">\(i\)</span>th column of the generator matrix. The zero-coordinate condition <span class="inline-math">\(h \cdot x = 0\)</span> defines a hyperplane of points <span class="inline-math">\(x\)</span> with normal vector <span class="inline-math">\(h\)</span>. Therefore, the Hamming weight of the corresponding codeword is the number of points <span class="inline-math">\(G_i\)</span> <span class="textit">not</span> contained in said hyperplane.</p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">Distance <span class="inline-math">\(d\)</span> is <span class="inline-math">\(n\)</span> minus the maximum number of points that are contained in a hyperplane.</div>
 
 
 <!-- Display features -->
@@ -132,43 +134,32 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Columns of the generator matrix of a projective linear code correspond to distinct points in projective space. In general, linear codes may admit (a multiset of ) non-distinct points.</span></li>
+      &#x2014;&nbsp;Columns of the generator matrix of a projective linear <span class="inline-math">\([n,k]\)</span> binary or <span class="inline-math">\(q\)</span>-ary code correspond to distinct nonzero points in projective space. In general, linear codes admit repeating columns or columns proportional to each other. In that case, the columns correspond to a multiset of non-distinct nonzero points, and multisets are in one-to-one correspondence to arcs in projective space (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 14.2.1; <a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thm. 1.1).</span></li>
 </ul>
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Children
+    Child
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/evaluation_varieties">Evaluation code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An evaluation-code generator matrix has columns that form a subset of points on a curve in projective space.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;An <span class="inline-math">\(n\)</span>-arc in the projective space <span class="inline-math">\(PG_{n-k-1}(q)\)</span> defines an MDS code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/simplex">Simplex code</a></span></li>
 </ul>
 </div>
 
-<h2 id="relations_cousins" class="code-cousins">
-    Cousin
-</h2>
-<div class="sectioncontent code-cousins">
 
 
-<ul class="code-relations-list code-cousins-list">
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/weight_two">Weight-two code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;There is a 1-1 correpondence between projective and weight-two codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
-</ul>
-</div>
+
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd></dl></div>
+
+
+
+<div class="sectioncontent code-contributors">
+Contributors to this page: <a href="https://github.com/valbert4" target="_blank">Victor V. Albert</a></div>
+
 
 
 <!-- zoo-related information and how to edit -->
@@ -183,38 +174,39 @@
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
-       data-popup-button-class-list="code-self-edit"><h2>Your contribution is welcome!</h2><p><a class="code-link-with-icon code-show-github"
-       target="_blank"
-       title="Edit code information directly on github.com"
-       href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ag/projective.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
-       target="_blank"
-       title="edit code information on this site without using github"
-       href="/edit_code?code_id=projective&amp;code_yml_filename=classical/properties/ag/projective.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>projective</code></div><div class="code-popup-info-frame"
-     data-is-code-info-popup="1"
-     data-popup-button-label="cite"
-     data-popup-button-class-list="code-show-citation">
-  <dl class="show-citation">
+       data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
+          target="_blank"
+          title="Edit code information directly on github.com"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ag/projective.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          target="_blank"
+          title="edit code information on this site without using github"
+          href="/edit_code?code_id=projective&amp;code_yml_filename=classical/properties/ag/projective.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>projective</code></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd>“Projective code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</dd>
+    <dd class="boxedcontent">“Projective code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</dd>
     <dt>BibTeX:</dt>
-    <dd class="bibtex">@incollection{eczoo_projective,
+    <dd class="boxedcontent bibtex">@incollection{eczoo_projective,
 title={Projective code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
 url={https://errorcorrectionzoo.org/c/projective}
 }</dd>
+  </dl></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="share"
+       data-popup-button-class-list="code-show-share"><dl class="show-share-social">
+    <dt>Share via:</dt>
+    <dd><a href="https://twitter.com/intent/tweet?text=Projective%20code%20https%3A//errorcorrectionzoo.org/c/projective" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/projective&amp;t=Projective%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Projective%20code&amp;body=Projective%20code%20https%3A//errorcorrectionzoo.org/c/projective">E-mail</a>
+    </dd>
     <dt>Permanent link:</dt>
-    <dd>https://errorcorrectionzoo.org/c/projective</dd>
-  </dl>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/projective</dd>
+  </dl></div>
 </div>
-</div>
 
 
-
-
-<!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. Calderbank and W. M. Kantor, “The Geometry of Two-Weight Codes”, Bulletin of the London Mathematical Society <span class="textbf">18</span>, 97 (1986). <a href="https://doi.org/10.1112/blms/18.2.97" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A. E. Brouwer and M. van . Eupen, “[]”, Designs, Codes and Cryptography <span class="textbf">11</span>, 261 (1997). <a href="https://doi.org/10.1023/A:1008294128110" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 <!-- "Cite As" citation, for paper printouts -->
@@ -237,7 +229,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/evaluation_varieties">Evaluation</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/weight_two">Weight-two</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
