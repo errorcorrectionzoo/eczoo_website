@@ -128,7 +128,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/cartier">Cartier code</a>,       <a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>,       <a href="/c/gabidulin">Gabidulin code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a>,       <a href="/c/shimura">Tsfasman-Vladut-Zink (TVZ) code</a>,       <a href="/c/wozencraft">Wozencraft ensemble code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>.
+      <a href="/c/cartier">Cartier code</a>,       <a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>,       <a href="/c/gabidulin">Gabidulin code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a>,       <a href="/c/projective">Projective code</a>,       <a href="/c/shimura">Tsfasman-Vladut-Zink (TVZ) code</a>,       <a href="/c/wozencraft">Wozencraft ensemble code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -254,6 +254,10 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
     Parents:
       <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>,       <a href="/c/evaluation_varieties">Evaluation code</a>,       <a href="/c/matrix_product">Matrix-product code</a>.
   </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/projective_reed_muller">Projective RM (PRM) code</a>.
+  </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary code</a>.
@@ -308,6 +312,29 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
   <span class="short-code-parent-of">
     Parent of:
       <a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_projective">
+  <span class="short-code-name"><a href="/c/projective">Projective code</a></span>
+  <span class="short-code-description">Linear <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span> arising from a <span class="inline-math">\(k\)</span>-dimensional vector space over <span class="inline-math">\(GF(q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>. Columns of a code&#x27;s parity-check matrix can similarly correspond to points in projective space.</span>
+  <span class="short-code-info">Protection: Distance <span class="inline-math">\(d\)</span> is <span class="inline-math">\(n\)</span> minus the maximum number of points that are contained in a hyperplane.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/hexacode">Hexacode</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/simplex">Simplex code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/evaluation_varieties">Evaluation code</a>,       <a href="/c/extended_reed_solomon">Extended GRS code</a>,       <a href="/c/griesmer">Griesmer code</a>,       <a href="/c/anticode">Anticode</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/projective_reed_muller">Projective RM (PRM) code</a>.
   </span>
 </div>
 
@@ -370,8 +397,66 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 </div>
 
 
+<div class="ecc-code" id="ecc_projective_reed_muller">
+  <span class="short-code-name"><a href="/c/projective_reed_muller">Projective RM (PRM) code</a><span class="code-introduced"><a href="#citation-22" class="href-endnote endnote citation">[22]</a></span></span>
+  <span class="short-code-description">Reed-Muller code for points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> whose leftmost nonzero coordinate is one. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/evaluation_varieties">Evaluation code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/projective">Projective code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_mds">
+  <span class="short-code-name"><a href="/c/mds">Maximum distance separable (MDS) code</a><span class="code-introduced"><a href="#citation-23" class="href-endnote endnote citation">[23]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound <span class="display-math env-align">\begin{align}
+d \leq n-k+1
+\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. </span>
+  <span class="short-code-info">Protection: Given <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, MDS codes have the highest distance possible of all codes and so have the best possible error correction properties.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/projective">Projective code</a>,       <a href="/c/locally_recoverable">Locally recoverable code (LRC)</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/griesmer">Griesmer code</a>,       <a href="/c/hexacode">Hexacode</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/dual">Dual linear code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/elliptic">Elliptic code</a>,       <a href="/c/extended_reed_solomon">Extended GRS code</a>,       <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/matrix_computation">Matrix computation code</a>,       <a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a>,       <a href="/c/quantum_mds">Quantum maximum-distance-separable (MDS) code</a>,       <a href="/c/reed_solomon">Reed-Solomon (RS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_parity_check">
+  <span class="short-code-name"><a href="/c/parity_check">Parity-check code</a></span>
+  <span class="short-code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</span>
+  <span class="short-code-info">Protection: This code cannot protect information, it can only detect 1-bit error.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/divisible">Divisible code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/repetition">Repetition code</a>,       <a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_nonlinear_ag">
-  <span class="short-code-name"><a href="/c/nonlinear_ag">Nonlinear AG code</a><span class="code-introduced"><a href="#citation-22" class="href-endnote endnote citation">[22]</a><a href="#citation-23" class="href-endnote endnote citation">[23]</a><a href="#citation-24" class="href-endnote endnote citation">[24]</a><a href="#citation-25" class="href-endnote endnote citation">[25]</a><a href="#citation-26" class="href-endnote endnote citation">[26]</a></span></span>
+  <span class="short-code-name"><a href="/c/nonlinear_ag">Nonlinear AG code</a><span class="code-introduced"><a href="#citation-24" class="href-endnote endnote citation">[24]</a><a href="#citation-25" class="href-endnote endnote citation">[25]</a><a href="#citation-26" class="href-endnote endnote citation">[26]</a><a href="#citation-27" class="href-endnote endnote citation">[27]</a><a href="#citation-28" class="href-endnote endnote citation">[28]</a></span></span>
   <span class="short-code-description">Nonlinear <span class="inline-math">\(q\)</span>-ary code constructed by evaluating functions on an algebraic curve. </span>
   <span class="short-code-parents">
     Parents:
@@ -381,8 +466,8 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_goppa">
-  <span class="short-code-name"><a href="/c/goppa">Classical Goppa code</a><span class="code-introduced"><a href="#citation-27" class="href-endnote endnote citation">[27]</a><a href="#citation-28" class="href-endnote endnote citation">[28]</a><a href="#citation-29" class="href-endnote endnote citation">[29]</a></span></span>
-  <span class="short-code-description">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]_q\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
+  <span class="short-code-name"><a href="/c/goppa">Classical Goppa code</a><span class="code-introduced"><a href="#citation-29" class="href-endnote endnote citation">[29]</a><a href="#citation-30" class="href-endnote endnote citation">[30]</a><a href="#citation-31" class="href-endnote endnote citation">[31]</a></span></span>
+  <span class="short-code-description">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective-plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]_q\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</span>
   <span class="short-code-info">Protection: The length <span class="inline-math">\( n = |L| \)</span> , dimension <span class="inline-math">\( k \geq n-mr \)</span> where <span class="inline-math">\( r = \text{deg} G(x) \)</span>, and the minimum distance <span class="inline-math">\( d \geq r +1 \)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -396,7 +481,7 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_q-ary_bch">
-  <span class="short-code-name"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#citation-30" class="href-endnote endnote citation">[30]</a></span></span>
+  <span class="short-code-name"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a><span class="code-introduced"><a href="#citation-32" class="href-endnote endnote citation">[32]</a></span></span>
   <span class="short-code-description">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</span>
   <span class="short-code-info">Protection: By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true minimum distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that. </span>
   <span class="short-code-parents">
@@ -415,8 +500,8 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_q-ary_duadic">
-  <span class="short-code-name"><a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a><span class="code-introduced"><a href="#citation-31" class="href-endnote endnote citation">[31]</a><a href="#citation-32" class="href-endnote endnote citation">[32]</a><a href="#citation-33" class="href-endnote endnote citation">[33]</a><a href="#citation-34" class="href-endnote endnote citation">[34]</a></span></span>
-  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-32" class="href-endnote endnote citation">[32]</a>.</span>
+  <span class="short-code-name"><a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a><span class="code-introduced"><a href="#citation-33" class="href-endnote endnote citation">[33]</a><a href="#citation-34" class="href-endnote endnote citation">[34]</a><a href="#citation-35" class="href-endnote endnote citation">[35]</a><a href="#citation-36" class="href-endnote endnote citation">[36]</a></span></span>
+  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-34" class="href-endnote endnote citation">[34]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary code</a>.
@@ -461,9 +546,9 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_hermitian">
-  <span class="short-code-name"><a href="/c/hermitian">Hermitian code</a><span class="code-introduced"><a href="#citation-35" class="href-endnote endnote citation">[35]</a><a href="#citation-36" class="href-endnote endnote citation">[36]</a></span></span>
+  <span class="short-code-name"><a href="/c/hermitian">Hermitian code</a><span class="code-introduced"><a href="#citation-37" class="href-endnote endnote citation">[37]</a><a href="#citation-38" class="href-endnote endnote citation">[38]</a></span></span>
   <span class="short-code-description">Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve.</span>
-  <span class="short-code-info">Protection: Distance determined by properties of the specific Hermitian curve <a href="#citation-37" class="href-endnote endnote citation">[37]</a>; see Ref. <a href="#citation-12" class="href-endnote endnote citation">[12]</a>, Sec. 5.3, for example.</span>
+  <span class="short-code-info">Protection: Distance determined by properties of the specific Hermitian curve <a href="#citation-39" class="href-endnote endnote citation">[39]</a>; see Ref. <a href="#citation-12" class="href-endnote endnote citation">[12]</a>, Sec. 5.3, for example.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a>,       <a href="/c/evaluation">Evaluation AG code</a>.
@@ -473,22 +558,23 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 <div class="ecc-code" id="ecc_hexacode">
   <span class="short-code-name"><a href="/c/hexacode">Hexacode</a></span>
-  <span class="short-code-description">Stub.</span>
+  <span class="short-code-description"><span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with parity check matrix <span class="display-math env-align">\begin{align}
+  \begin{pmatrix}0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+  0 &amp; 1 &amp; 0 &amp; 1 &amp; \omega &amp; \bar{\omega}\\
+  1 &amp; 0 &amp; 0 &amp; 1 &amp; \bar{\omega} &amp; \omega
+  \end{pmatrix}~,
+\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/evaluation">Evaluation AG code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/mds">Maximum distance separable (MDS) code</a>.
+      <a href="/c/evaluation">Evaluation AG code</a>,       <a href="/c/projective">Projective code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_klein_quartic">
-  <span class="short-code-name"><a href="/c/klein_quartic">Klein-quartic code</a><span class="code-introduced"><a href="#citation-38" class="href-endnote endnote citation">[38]</a></span></span>
+  <span class="short-code-name"><a href="/c/klein_quartic">Klein-quartic code</a><span class="code-introduced"><a href="#citation-40" class="href-endnote endnote citation">[40]</a></span></span>
   <span class="short-code-description">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-12" class="href-endnote endnote citation">[12]</a>, Ex. 2.75). </span>
-  <span class="short-code-info">Protection: Dimension <span class="inline-math">\(k=8\)</span> and distance <span class="inline-math">\(d \geq 13\)</span>. Concatenation with the <span class="inline-math">\([4,3,2]\)</span> single parity check code, conversion to a binary code by expressing <span class="inline-math">\(GF(8)\)</span> elements as vectors over <span class="inline-math">\(GF(2)\)</span>, and puncturing yields a <span class="inline-math">\([91,24,25]\)</span> binary code that held the world record for codes of length 91 <a href="#citation-39" class="href-endnote endnote citation">[39]</a>.</span>
+  <span class="short-code-info">Protection: Dimension <span class="inline-math">\(k=8\)</span> and distance <span class="inline-math">\(d \geq 13\)</span>. Concatenation with the <span class="inline-math">\([4,3,2]\)</span> single parity check code, conversion to a binary code by expressing <span class="inline-math">\(GF(8)\)</span> elements as vectors over <span class="inline-math">\(GF(2)\)</span>, and puncturing yields a <span class="inline-math">\([91,24,25]\)</span> binary code that held the world record for codes of length 91 <a href="#citation-41" class="href-endnote endnote citation">[41]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/evaluation">Evaluation AG code</a>.
@@ -497,7 +583,7 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_plane_curve">
-  <span class="short-code-name"><a href="/c/plane_curve">Plane-curve code</a><span class="code-introduced"><a href="#citation-40" class="href-endnote endnote citation">[40]</a></span></span>
+  <span class="short-code-name"><a href="/c/plane_curve">Plane-curve code</a><span class="code-introduced"><a href="#citation-42" class="href-endnote endnote citation">[42]</a></span></span>
   <span class="short-code-description">Evaluation AG code of bivariate polynomials of some finite maximum degree, evaluated at points lying on an affine plane curve. </span>
   <span class="short-code-info">Protection: Bezout&#x27;s theorem yields parameters <span class="inline-math">\([n,k,d]\)</span>, which depend on the polynomial used to define the plane curve as well as the maximum degree of the polynomials used for evaluation (<a href="#citation-12" class="href-endnote endnote citation">[12]</a>, pg. 883). Distance bounds can be derived from how the plane curve is embedded in the ambient projective space (<a href="#citation-21" class="href-endnote endnote citation">[21]</a>, Thm. 4.1).</span>
   <span class="short-code-parents">
@@ -508,7 +594,7 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
 
 
 <div class="ecc-code" id="ecc_alternant">
-  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#citation-41" class="href-endnote endnote citation">[41]</a></span></span>
+  <span class="short-code-name"><a href="/c/alternant">Alternant code</a><span class="code-introduced"><a href="#citation-43" class="href-endnote endnote citation">[43]</a></span></span>
   <span class="short-code-description">Given a length-<span class="inline-math">\(n\)</span> GRS code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(q^m)\)</span>, an alternant code is the <span class="inline-math">\(GF(q)\)</span>-subfield subcode of the dual of <span class="inline-math">\(C\)</span>. </span>
   <span class="short-code-parents">
     Parents:
@@ -530,13 +616,13 @@ C^\perp = \{ y\in GF(q)^{n} ~|~ x \star y=0 \forall x\in C\},
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/simplex">Simplex code</a>.
+      <a href="/c/projective">Projective code</a>,       <a href="/c/simplex">Simplex code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_reed_solomon">
-  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a><span class="code-introduced"><a href="#citation-42" class="href-endnote endnote citation">[42]</a><a href="#citation-43" class="href-endnote endnote citation">[43]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a><span class="code-introduced"><a href="#citation-44" class="href-endnote endnote citation">[44]</a><a href="#citation-45" class="href-endnote endnote citation">[45]</a></span></span>
   <span class="short-code-description">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct points in <span class="inline-math">\(GF(q)\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
 f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 \end{align}</span> In other words, each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
@@ -563,7 +649,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <div class="ecc-code" id="ecc_parvaresh_vardy">
-  <span class="short-code-name"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a><span class="code-introduced"><a href="#citation-44" class="href-endnote endnote citation">[44]</a></span></span>
+  <span class="short-code-name"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a><span class="code-introduced"><a href="#citation-46" class="href-endnote endnote citation">[46]</a></span></span>
   <span class="short-code-description">Also called a <span class="textit">correlated RS code</span>. An IRS code with additional algebraic relations (a.k.a. correlations) between the codeword polynomials <span class="inline-math">\(\{f^{(j)}\}_{j=1}^{t}\)</span>. These relations yielded a list decoder that achieves list-decoding capacity. </span>
   <span class="short-code-parents">
     Parents:
@@ -572,6 +658,44 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/folded_reed_solomon">Folded RS (FRS) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_simplex">
+  <span class="short-code-name"><a href="/c/simplex">Simplex code</a></span>
+  <span class="short-code-description">Also known as a <span class="textit">maximum length feedback shift register code</span>. An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/projective">Projective code</a>,       <a href="/c/griesmer">Griesmer code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/extended_reed_solomon">Extended GRS code</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_griesmer">
+  <span class="short-code-name"><a href="/c/griesmer">Griesmer code</a><span class="code-introduced"><a href="#citation-47" class="href-endnote endnote citation">[47]</a><a href="#citation-48" class="href-endnote endnote citation">[48]</a><a href="#citation-49" class="href-endnote endnote citation">[49]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([n,k,d]\)</span> binary or <span class="inline-math">\(q\)</span>-ary linear code is a Griesmer code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Griesmer bound <span class="display-math env-align">\begin{align}
+  n\geq\sum_{j=0}^{k-1}\left\lceil \frac{d}{q^{j}}\right\rceil ~,
+\end{align}</span> where <span class="inline-math">\(\left\lceil x\right\rceil \)</span> is the ceiling function, becomes an equality.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/mds">Maximum distance separable (MDS) code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/simplex">Simplex code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/divisible">Divisible code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/anticode">Anticode</a>,       <a href="/c/bch">Binary BCH code</a>,       <a href="/c/projective">Projective code</a>.
   </span>
 </div>
 
@@ -590,7 +714,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. D. Goppa, “Codes Associated with Divisors”, Probl. Peredachi Inf., 13:1 (1977), 33–39; Problems Inform. Transmission, 13:1 (1977), 22–27</dd><dt id="citation-2">[2]</dt><dd>V. D. Goppa, “Codes on algebraic curves”, Dokl. Akad. Nauk SSSR, 259:6 (1981), 1289–1290</dd><dt id="citation-3">[3]</dt><dd>V. D. Goppa, “Algebraico-geometric codes”, Izv. Akad. Nauk SSSR Ser. Mat., 46:4 (1982), 762–781; Izv. Math., 21:1 (1983), 75–91</dd><dt id="citation-4">[4]</dt><dd>T. Blackmore and G. H. Norton, “Matrix-Product Codes over ? q”, Applicable Algebra in Engineering, Communication and Computing <span class="textbf">12</span>, 477 (2001). <a href="https://doi.org/10.1007/PL00004226" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Alain Couvreur, “Codes and the Cartier Operator”. <a href="https://arxiv.org/abs/1206.4728" target="_blank" class="href-href">1206.4728</a></dd><dt id="citation-6">[6]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>G.-L. Feng and T. R. N. Rao, “Decoding algebraic-geometric codes up to the designed minimum distance”, IEEE Transactions on Information Theory <span class="textbf">39</span>, 37 (1993). <a href="https://doi.org/10.1109/18.179340" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>R. Pellikaan, “The shift bound for cyclic, Reed-Muller and geometric Goppa codes”, Arithmetic, Geometry, and Coding Theory. <a href="https://doi.org/10.1515/9783110811056.155" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>P. Beelen, “The order bound for general algebraic geometric codes”, Finite Fields and Their Applications <span class="textbf">13</span>, 665 (2007). <a href="https://doi.org/10.1016/j.ffa.2006.09.006" target="_blank" class="href-href">DOI</a></dd><dt id="citation-11">[11]</dt><dd>T. Johnsen, S. Manshadi, and N. Monzavi, “A determination of the parameters of a large class of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">40</span>, 1678 (1994). <a href="https://doi.org/10.1109/18.333893" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-13">[13]</dt><dd>V. Y. Krachkovsky, “Reed-solomon codes for correcting phased error bursts”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2975 (2003). <a href="https://doi.org/10.1109/TIT.2003.819333" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>E. M. Gabidulin, <span class="textit">Theory of Codes with Maximum Rank Distance</span>, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="textit">3–16</span> (1985)</dd><dt id="citation-15">[15]</dt><dd>R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href-href">DOI</a></dd><dt id="citation-16">[16]</dt><dd>T. Kasami, Shu Lin, and W. Peterson, “New generalizations of the Reed-Muller codes--I: Primitive codes”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 189 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054127" target="_blank" class="href-href">DOI</a></dd><dt id="citation-17">[17]</dt><dd>E. Weldon, “New generalizations of the Reed-Muller codes--II: Nonprimitive codes”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 199 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054128" target="_blank" class="href-href">DOI</a></dd><dt id="citation-18">[18]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-19">[19]</dt><dd>M. A. Tsfasman, S. G. Vlădutx, and T. Zink, “Modular curves, Shimura curves, and Goppa codes, better than Varshamov-Gilbert bound”, Mathematische Nachrichten <span class="textbf">109</span>, 21 (1982). <a href="https://doi.org/10.1002/mana.19821090103" target="_blank" class="href-href">DOI</a></dd><dt id="citation-20">[20]</dt><dd>J. L. Massey, Threshold Decoding. Cambridge, MA: M.I.T. Press, 1963.</dd><dt id="citation-21">[21]</dt><dd>A. Couvreur, “The dual minimum distance of arbitrary-dimensional algebraic–geometric codes”, Journal of Algebra <span class="textbf">350</span>, 84 (2012). <a href="https://doi.org/10.1016/j.jalgebra.2011.09.030" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0905.2345" target="_blank" class="href-href">0905.2345</a></dd><dt id="citation-22">[22]</dt><dd>Noam D. Elkies, “Excellent nonlinear codes from modular curves”. <a href="https://arxiv.org/abs/math/0104115" target="_blank" class="href-href">math/0104115</a></dd><dt id="citation-23">[23]</dt><dd>Chaoping Xing, “Nonlinear codes from algebraic curves improving the Tsfasman-Vladut-Zink bound”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 1653 (2003). <a href="https://doi.org/10.1109/TIT.2003.813559" target="_blank" class="href-href">DOI</a></dd><dt id="citation-24">[24]</dt><dd>Noam D. Elkies, “Still better nonlinear codes from modular curves”. <a href="https://arxiv.org/abs/math/0308046" target="_blank" class="href-href">math/0308046</a></dd><dt id="citation-25">[25]</dt><dd>H. Niederreiter and F. Özbudak, “Constructive Asymptotic Codes with an Improvement on the Tsfasman-Vlăduţ-Zink and Xing Bounds”, Coding, Cryptography and Combinatorics 259 (2004). <a href="https://doi.org/10.1007/978-3-0348-7865-4_18" target="_blank" class="href-href">DOI</a></dd><dt id="citation-26">[26]</dt><dd>H. Stichtenoth and C. Xing, “Excellent Nonlinear Codes From Algebraic Function Fields”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 4044 (2005). <a href="https://doi.org/10.1109/TIT.2005.856977" target="_blank" class="href-href">DOI</a></dd><dt id="citation-27">[27]</dt><dd>V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.</dd><dt id="citation-28">[28]</dt><dd>V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.</dd><dt id="citation-29">[29]</dt><dd>E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href-href">DOI</a></dd><dt id="citation-30">[30]</dt><dd>D. Gorenstein and N. Zierler, “<span class="verbatimtext">A Class of Error-Correcting Codes in $p^m $ Symbols</span>”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">9</span>, 207 (1961). <a href="https://doi.org/10.1137/0109020" target="_blank" class="href-href">DOI</a></dd><dt id="citation-31">[31]</dt><dd>V. Pless, “Q-codes”, Journal of Combinatorial Theory, Series A <span class="textbf">43</span>, 258 (1986). <a href="https://doi.org/10.1016/0097-3165(86)90066-X" target="_blank" class="href-href">DOI</a></dd><dt id="citation-32">[32]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-33">[33]</dt><dd>J. J. Rushanan, Topics in Integral Matrices and Abelian Group Codes, California Institute of Technology, 1986. <a href="https://doi.org/10.7907/CZA5-PX53" target="_blank" class="href-href">DOI</a></dd><dt id="citation-34">[34]</dt><dd>M. Smid, “Duadic codes (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 432 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057300" target="_blank" class="href-href">DOI</a></dd><dt id="citation-35">[35]</dt><dd>H. Stichtenoth, “�ber die Automorphismengruppe eines algebraischen Funktionenk�rpers von Primzahlcharakteristik”, Archiv der Mathematik <span class="textbf">24</span>, 527 (1973). <a href="https://doi.org/10.1007/BF01228251" target="_blank" class="href-href">DOI</a></dd><dt id="citation-36">[36]</dt><dd>H. Tiersma, “Remarks on codes from Hermitian curves (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 605 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057327" target="_blank" class="href-href">DOI</a></dd><dt id="citation-37">[37]</dt><dd>K. Yang and P. V. Kumar, “On the true minimum distance of Hermitian codes”, Lecture Notes in Mathematics 99 (1992). <a href="https://doi.org/10.1007/BFb0087995" target="_blank" class="href-href">DOI</a></dd><dt id="citation-38">[38]</dt><dd>J. Hansen, “Codes on the Klein quartic, ideals, and decoding (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 923 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057365" target="_blank" class="href-href">DOI</a></dd><dt id="citation-39">[39]</dt><dd>A. M. Barg, G. L. Katsman, M. A. Tsfasman, “Algebraic-Geometric Codes from Curves of Small Genus”, Probl. Peredachi Inf., 23:1 (1987), 42–46; Problems Inform. Transmission, 23:1 (1987), 34–38</dd><dt id="citation-40">[40]</dt><dd>J. Justesen et al., “Construction and decoding of a class of algebraic geometry codes”, IEEE Transactions on Information Theory <span class="textbf">35</span>, 811 (1989). <a href="https://doi.org/10.1109/18.32157" target="_blank" class="href-href">DOI</a></dd><dt id="citation-41">[41]</dt><dd>H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-42">[42]</dt><dd>K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href-href">DOI</a></dd><dt id="citation-43">[43]</dt><dd>I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href-href">DOI</a></dd><dt id="citation-44">[44]</dt><dd>F. Parvaresh and A. Vardy, “Correcting Errors Beyond the Guruswami-Sudan Radius in Polynomial Time”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.29" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. D. Goppa, “Codes Associated with Divisors”, Probl. Peredachi Inf., 13:1 (1977), 33–39; Problems Inform. Transmission, 13:1 (1977), 22–27</dd><dt id="citation-2">[2]</dt><dd>V. D. Goppa, “Codes on algebraic curves”, Dokl. Akad. Nauk SSSR, 259:6 (1981), 1289–1290</dd><dt id="citation-3">[3]</dt><dd>V. D. Goppa, “Algebraico-geometric codes”, Izv. Akad. Nauk SSSR Ser. Mat., 46:4 (1982), 762–781; Izv. Math., 21:1 (1983), 75–91</dd><dt id="citation-4">[4]</dt><dd>T. Blackmore and G. H. Norton, “Matrix-Product Codes over ? q”, Applicable Algebra in Engineering, Communication and Computing <span class="textbf">12</span>, 477 (2001). <a href="https://doi.org/10.1007/PL00004226" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Alain Couvreur, “Codes and the Cartier Operator”. <a href="https://arxiv.org/abs/1206.4728" target="_blank" class="href-href">1206.4728</a></dd><dt id="citation-6">[6]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>G.-L. Feng and T. R. N. Rao, “Decoding algebraic-geometric codes up to the designed minimum distance”, IEEE Transactions on Information Theory <span class="textbf">39</span>, 37 (1993). <a href="https://doi.org/10.1109/18.179340" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>R. Pellikaan, “The shift bound for cyclic, Reed-Muller and geometric Goppa codes”, Arithmetic, Geometry, and Coding Theory. <a href="https://doi.org/10.1515/9783110811056.155" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>P. Beelen, “The order bound for general algebraic geometric codes”, Finite Fields and Their Applications <span class="textbf">13</span>, 665 (2007). <a href="https://doi.org/10.1016/j.ffa.2006.09.006" target="_blank" class="href-href">DOI</a></dd><dt id="citation-11">[11]</dt><dd>T. Johnsen, S. Manshadi, and N. Monzavi, “A determination of the parameters of a large class of Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">40</span>, 1678 (1994). <a href="https://doi.org/10.1109/18.333893" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-13">[13]</dt><dd>V. Y. Krachkovsky, “Reed-solomon codes for correcting phased error bursts”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 2975 (2003). <a href="https://doi.org/10.1109/TIT.2003.819333" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>E. M. Gabidulin, <span class="textit">Theory of Codes with Maximum Rank Distance</span>, Problemy Peredachi Informacii, Volume 21, Issue 1, <span class="textit">3–16</span> (1985)</dd><dt id="citation-15">[15]</dt><dd>R. M. Roth, “Maximum-rank array codes and their application to crisscross error correction”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 328 (1991). <a href="https://doi.org/10.1109/18.75248" target="_blank" class="href-href">DOI</a></dd><dt id="citation-16">[16]</dt><dd>T. Kasami, Shu Lin, and W. Peterson, “New generalizations of the Reed-Muller codes--I: Primitive codes”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 189 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054127" target="_blank" class="href-href">DOI</a></dd><dt id="citation-17">[17]</dt><dd>E. Weldon, “New generalizations of the Reed-Muller codes--II: Nonprimitive codes”, IEEE Transactions on Information Theory <span class="textbf">14</span>, 199 (1968). <a href="https://doi.org/10.1109/TIT.1968.1054128" target="_blank" class="href-href">DOI</a></dd><dt id="citation-18">[18]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-19">[19]</dt><dd>M. A. Tsfasman, S. G. Vlădutx, and T. Zink, “Modular curves, Shimura curves, and Goppa codes, better than Varshamov-Gilbert bound”, Mathematische Nachrichten <span class="textbf">109</span>, 21 (1982). <a href="https://doi.org/10.1002/mana.19821090103" target="_blank" class="href-href">DOI</a></dd><dt id="citation-20">[20]</dt><dd>J. L. Massey, Threshold Decoding. Cambridge, MA: M.I.T. Press, 1963.</dd><dt id="citation-21">[21]</dt><dd>A. Couvreur, “The dual minimum distance of arbitrary-dimensional algebraic–geometric codes”, Journal of Algebra <span class="textbf">350</span>, 84 (2012). <a href="https://doi.org/10.1016/j.jalgebra.2011.09.030" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0905.2345" target="_blank" class="href-href">0905.2345</a></dd><dt id="citation-22">[22]</dt><dd>A. B. Sorensen, “Projective Reed-Muller codes”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 1567 (1991). <a href="https://doi.org/10.1109/18.104317" target="_blank" class="href-href">DOI</a></dd><dt id="citation-23">[23]</dt><dd>R. Singleton, “Maximum distance&amp;amp;lt;tex&amp;amp;gt;q&amp;amp;lt;/tex&amp;amp;gt;-nary codes”, IEEE Transactions on Information Theory <span class="textbf">10</span>, 116 (1964). <a href="https://doi.org/10.1109/TIT.1964.1053661" target="_blank" class="href-href">DOI</a></dd><dt id="citation-24">[24]</dt><dd>Noam D. Elkies, “Excellent nonlinear codes from modular curves”. <a href="https://arxiv.org/abs/math/0104115" target="_blank" class="href-href">math/0104115</a></dd><dt id="citation-25">[25]</dt><dd>Chaoping Xing, “Nonlinear codes from algebraic curves improving the Tsfasman-Vladut-Zink bound”, IEEE Transactions on Information Theory <span class="textbf">49</span>, 1653 (2003). <a href="https://doi.org/10.1109/TIT.2003.813559" target="_blank" class="href-href">DOI</a></dd><dt id="citation-26">[26]</dt><dd>Noam D. Elkies, “Still better nonlinear codes from modular curves”. <a href="https://arxiv.org/abs/math/0308046" target="_blank" class="href-href">math/0308046</a></dd><dt id="citation-27">[27]</dt><dd>H. Niederreiter and F. Özbudak, “Constructive Asymptotic Codes with an Improvement on the Tsfasman-Vlăduţ-Zink and Xing Bounds”, Coding, Cryptography and Combinatorics 259 (2004). <a href="https://doi.org/10.1007/978-3-0348-7865-4_18" target="_blank" class="href-href">DOI</a></dd><dt id="citation-28">[28]</dt><dd>H. Stichtenoth and C. Xing, “Excellent Nonlinear Codes From Algebraic Function Fields”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 4044 (2005). <a href="https://doi.org/10.1109/TIT.2005.856977" target="_blank" class="href-href">DOI</a></dd><dt id="citation-29">[29]</dt><dd>V. D. Goppa, &quot;A new class of linear error-correcting codes&quot;, Probl. Peredach. Inform., vol. 6, no. 3, pp. 24-30, Sept. 1970.</dd><dt id="citation-30">[30]</dt><dd>V. D. Goppa, &quot;Rational representation of codes and (Lg) codes&quot;, Probl. Peredach. Inform., vol. 7, no. 3, pp. 41-49, Sept. 1971.</dd><dt id="citation-31">[31]</dt><dd>E. Berlekamp, “Goppa codes”, IEEE Transactions on Information Theory <span class="textbf">19</span>, 590 (1973). <a href="https://doi.org/10.1109/TIT.1973.1055088" target="_blank" class="href-href">DOI</a></dd><dt id="citation-32">[32]</dt><dd>D. Gorenstein and N. Zierler, “<span class="verbatimtext">A Class of Error-Correcting Codes in $p^m $ Symbols</span>”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">9</span>, 207 (1961). <a href="https://doi.org/10.1137/0109020" target="_blank" class="href-href">DOI</a></dd><dt id="citation-33">[33]</dt><dd>V. Pless, “Q-codes”, Journal of Combinatorial Theory, Series A <span class="textbf">43</span>, 258 (1986). <a href="https://doi.org/10.1016/0097-3165(86)90066-X" target="_blank" class="href-href">DOI</a></dd><dt id="citation-34">[34]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-35">[35]</dt><dd>J. J. Rushanan, Topics in Integral Matrices and Abelian Group Codes, California Institute of Technology, 1986. <a href="https://doi.org/10.7907/CZA5-PX53" target="_blank" class="href-href">DOI</a></dd><dt id="citation-36">[36]</dt><dd>M. Smid, “Duadic codes (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 432 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057300" target="_blank" class="href-href">DOI</a></dd><dt id="citation-37">[37]</dt><dd>H. Stichtenoth, “�ber die Automorphismengruppe eines algebraischen Funktionenk�rpers von Primzahlcharakteristik”, Archiv der Mathematik <span class="textbf">24</span>, 527 (1973). <a href="https://doi.org/10.1007/BF01228251" target="_blank" class="href-href">DOI</a></dd><dt id="citation-38">[38]</dt><dd>H. Tiersma, “Remarks on codes from Hermitian curves (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 605 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057327" target="_blank" class="href-href">DOI</a></dd><dt id="citation-39">[39]</dt><dd>K. Yang and P. V. Kumar, “On the true minimum distance of Hermitian codes”, Lecture Notes in Mathematics 99 (1992). <a href="https://doi.org/10.1007/BFb0087995" target="_blank" class="href-href">DOI</a></dd><dt id="citation-40">[40]</dt><dd>J. Hansen, “Codes on the Klein quartic, ideals, and decoding (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">33</span>, 923 (1987). <a href="https://doi.org/10.1109/TIT.1987.1057365" target="_blank" class="href-href">DOI</a></dd><dt id="citation-41">[41]</dt><dd>A. M. Barg, G. L. Katsman, M. A. Tsfasman, “Algebraic-Geometric Codes from Curves of Small Genus”, Probl. Peredachi Inf., 23:1 (1987), 42–46; Problems Inform. Transmission, 23:1 (1987), 34–38</dd><dt id="citation-42">[42]</dt><dd>J. Justesen et al., “Construction and decoding of a class of algebraic geometry codes”, IEEE Transactions on Information Theory <span class="textbf">35</span>, 811 (1989). <a href="https://doi.org/10.1109/18.32157" target="_blank" class="href-href">DOI</a></dd><dt id="citation-43">[43]</dt><dd>H. J. Helgert, “Alternant codes”, Information and Control <span class="textbf">26</span>, 369 (1974). <a href="https://doi.org/10.1016/S0019-9958(74)80005-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-44">[44]</dt><dd>K. A. Bush, “Orthogonal Arrays of Index Unity”, The Annals of Mathematical Statistics <span class="textbf">23</span>, 426 (1952). <a href="https://doi.org/10.1214/aoms/1177729387" target="_blank" class="href-href">DOI</a></dd><dt id="citation-45">[45]</dt><dd>I. S. Reed and G. Solomon, “Polynomial Codes Over Certain Finite Fields”, Journal of the Society for Industrial and Applied Mathematics <span class="textbf">8</span>, 300 (1960). <a href="https://doi.org/10.1137/0108018" target="_blank" class="href-href">DOI</a></dd><dt id="citation-46">[46]</dt><dd>F. Parvaresh and A. Vardy, “Correcting Errors Beyond the Guruswami-Sudan Radius in Polynomial Time”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.29" target="_blank" class="href-href">DOI</a></dd><dt id="citation-47">[47]</dt><dd>J. H. Griesmer, “A Bound for Error-Correcting Codes”, IBM Journal of Research and Development <span class="textbf">4</span>, 532 (1960). <a href="https://doi.org/10.1147/rd.45.0532" target="_blank" class="href-href">DOI</a></dd><dt id="citation-48">[48]</dt><dd>G. Solomon and J. J. Stiffler, “Algebraically punctured cyclic codes”, Information and Control <span class="textbf">8</span>, 170 (1965). <a href="https://doi.org/10.1016/S0019-9958(65)90080-X" target="_blank" class="href-href">DOI</a></dd><dt id="citation-49">[49]</dt><dd>R. R. Varshamov, <span class="textit">On the general theory of linear coding</span>, Thesis, Moscow State University, 1959.</dd></dl></div>
 
   </main><!-- #main -->
 

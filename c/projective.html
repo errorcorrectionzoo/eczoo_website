@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Linear binary or <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>.</p><p>Recall that a linear code encodes a message <span class="inline-math">\(h\)</span> into a codeword <span class="inline-math">\(c = hG\)</span>. The <span class="inline-math">\(i\)</span>th coordinate of a codeword is given the dot product <span class="inline-math">\(h \cdot G_{i}\)</span> with <span class="inline-math">\(G_{i}\)</span> being the <span class="inline-math">\(i\)</span>th column of the generator matrix. The zero-coordinate condition <span class="inline-math">\(h \cdot x = 0\)</span> defines a hyperplane of points <span class="inline-math">\(x\)</span> with normal vector <span class="inline-math">\(h\)</span>. Therefore, the Hamming weight of the corresponding codeword is the number of points <span class="inline-math">\(G_i\)</span> <span class="textit">not</span> contained in said hyperplane.</p></div>
+<div class="sectioncontent code-description"><p>Linear <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span> arising from a <span class="inline-math">\(k\)</span>-dimensional vector space over <span class="inline-math">\(GF(q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>. Columns of a code&#x27;s parity-check matrix can similarly correspond to points in projective space.</p><p>Recall that a linear code encodes a message <span class="inline-math">\(h\)</span> into a codeword <span class="inline-math">\(c = hG\)</span>. The <span class="inline-math">\(i\)</span>th coordinate of a codeword is given the dot product <span class="inline-math">\(h \cdot G_{i}\)</span> with <span class="inline-math">\(G_{i}\)</span> being the <span class="inline-math">\(i\)</span>th column of the generator matrix. The zero-coordinate condition <span class="inline-math">\(h \cdot x = 0\)</span> defines a hyperplane of points <span class="inline-math">\(x\)</span> with normal vector <span class="inline-math">\(h\)</span>. Therefore, the Hamming weight of the corresponding codeword is the number of points <span class="inline-math">\(G_i\)</span> <span class="textit">not</span> contained in said hyperplane.</p><p>In general, linear codes admit repeating columns or columns proportional to each other. In that case, the columns correspond to a multiset of non-distinct nonzero points, and multisets are in one-to-one correspondence to arcs in projective space (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 1.1). Multisets can also be used to construct parity-check matrices of linear codes.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Distance <span class="inline-math">\(d\)</span> is <span class="inline-math">\(n\)</span> minus the maximum number of points that are contained in a hyperplane.</div>
@@ -132,28 +132,65 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Columns of the generator matrix of a projective linear <span class="inline-math">\([n,k]\)</span> binary or <span class="inline-math">\(q\)</span>-ary code correspond to distinct nonzero points in projective space. In general, linear codes admit repeating columns or columns proportional to each other. In that case, the columns correspond to a multiset of non-distinct nonzero points, and multisets are in one-to-one correspondence to arcs in projective space (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 14.2.1; <a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Thm. 1.1).</span></li>
+      &#x2014;&nbsp;Columns of the generator matrix of a projective linear <span class="inline-math">\([n,k]_q\)</span> code correspond to distinct nonzero points in projective space. In general, linear codes admit repeating columns or columns proportional to each other. In that case, the columns correspond to a multiset of non-distinct nonzero points, and multisets are in one-to-one correspondence to arcs in projective space (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Thm. 1.1).</span></li>
 </ul>
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/hexacode">Hexacode</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;There exists a parity-check matrix for the hexacode whose columns are the six homogeneous coordinates of a hyperoval in the projective plane <span class="inline-math">\(PG(2,4)\)</span> (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, pg. 289).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A linear code is MDS (almost MDS) if and only if columns of its parity-check matrix form an <span class="inline-math">\(n\)</span>-arc (<span class="inline-math">\(n\)</span>-track) in projective space <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/simplex">Simplex code</a></span></li>
+</ul>
+</div>
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/evaluation_varieties">Evaluation code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Codewords of an evaluation code of polynomials up to degree one evaluated at points in projective space yields a projective code.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/extended_reed_solomon">Extended GRS code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Columns of parity-check matrices of doubly extended narrow-sense RS codes consist of points of a normal rational curve (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Def. 14.2.6).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/griesmer">Griesmer code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Acrs corresponding to Griesmer codes are called Griesmer arcs (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, pg. 248). There is a one-to-one correspondence between Griesmer codes and minihypers <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>; see Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Sec. 14.2.4 and Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a> for more details.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/anticode">Anticode</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;There is a relation between anticodes and minihypers (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, pg. 295).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/projective_reed_muller">Projective RM (PRM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Nonzero codewords of minimum weight of a <span class="inline-math">\(r\)</span>th-order <span class="inline-math">\(q\)</span>-ary projective RM code correspond to algebraic hypersurfaces of degree <span class="inline-math">\(r\)</span> having the largest number of points in the projective space <span class="inline-math">\(PG(n,q)\)</span> (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Thm. 14.3.3).</span></li>
 </ul>
 </div>
 
 
 
-
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>I. N. Landjev, “The Geometric Approach to Linear Codes”, Developments in Mathematics 247 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_14" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. W. P. Hirschfeld and L. Storme, “The Packing Problem in Statistics, Coding Theory and Finite Projective Spaces: Update 2001”, Developments in Mathematics 201 (2001). <a href="https://doi.org/10.1007/978-1-4613-0283-4_13" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>N. Hamada and M. Deza, “A characterization of νμ + 1 + ε, νμ; t, q-min.hypers and its applications to error-correcting codes and factorial designs”, Journal of Statistical Planning and Inference <span class="textbf">22</span>, 323 (1989). <a href="https://doi.org/10.1016/0378-3758(89)90098-0" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>N. Hamada, Characterization of minihypers in a finite projective geometry and its applications to error-correcting codes, Bull. Osaka Women&#x27;s Univ. 24 (1987), 1-24.</dd></dl></div>
 
 
 
@@ -177,10 +214,10 @@ Contributors to this page: <a href="https://github.com/valbert4" target="_blank"
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ag/projective.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/projective/projective.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=projective&amp;code_yml_filename=classical/properties/ag/projective.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>projective</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=projective&amp;code_yml_filename=classical/q-ary_digits/projective/projective.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>projective</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -217,9 +254,9 @@ url={https://errorcorrectionzoo.org/c/projective}
 <div class="sectioncontent display-print-citation">
   <p>“Projective code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/projective</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ag/projective.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/projective/projective.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ag/projective.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/projective/projective.yml</a>.</p>
 </div>
 
 
@@ -229,7 +266,7 @@ url={https://errorcorrectionzoo.org/c/projective}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/hexacode">Hexacode</a></li><li><a href="/c/mds">MDS</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/evaluation_varieties">Evaluation</a></li><li><a href="/c/extended_reed_solomon">Extended GRS</a></li><li><a href="/c/griesmer">Griesmer</a></li><li><a href="/c/projective_reed_muller">PRM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
