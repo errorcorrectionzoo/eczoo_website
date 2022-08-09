@@ -79,18 +79,18 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Hexacode</h1>
+      Hexacode<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with parity check matrix <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description">The <span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
   \begin{pmatrix}0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
   0 &amp; 1 &amp; 0 &amp; 1 &amp; \omega &amp; \bar{\omega}\\
   1 &amp; 0 &amp; 0 &amp; 1 &amp; \bar{\omega} &amp; \omega
   \end{pmatrix}~,
-\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. </div>
+\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. Has connections to projective geometry, lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and conformal field theory <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </div>
 
 
 
@@ -109,6 +109,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Bounded-distance decoder requiring at most 34 real operations <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -121,7 +124,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See corresponding MinT database entry <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span>
+  <span class="paragraph-in-list">See corresponding MinT database entry <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
 </div>
 
 
@@ -137,26 +140,52 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/evaluation">Evaluation AG code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The hexacode is an evaluation AG code over <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span> with <span class="inline-math">\(\cal X\)</span> defined by <span class="inline-math">\(x^2 y + \omega y^2 z + \bar{\omega} z^2 x = 0\)</span> (<a href="#citation-2" class="href-endnote endnote citation">[2]</a>, Ex. 2.77).</span></li>
+      &#x2014;&nbsp;The hexacode is an evaluation AG code over <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span> with <span class="inline-math">\(\cal X\)</span> defined by <span class="inline-math">\(x^2 y + \omega y^2 z + \bar{\omega} z^2 x = 0\)</span> (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ex. 2.77).</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/projective">Projective code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/projective">Projective geometry code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;There exists a parity-check matrix for the hexacode whose columns are the six homogeneous coordinates of a hyperoval in the projective plane <span class="inline-math">\(PG(2,4)\)</span> (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, pg. 289).</span></li>
+      &#x2014;&nbsp;Columns of hexacode&#x27;s generator matrix represent the six homogeneous coordinates of a hyperoval in the projective plane <span class="inline-math">\(PG(2,4)\)</span> (<a href="#citation-6" class="href-endnote endnote citation">[6]</a>, pg. 289).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The hexacode is the smallest example of an extended quadratic residue code of Type <span class="inline-math">\(4^H\)</span> (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, Sec. 2.4.6).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/denniston">Denniston code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A version of the hexacode is recovered for Dennison code parameters <span class="inline-math">\(i=1\)</span> and <span class="inline-math">\(a=2\)</span> <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/mds">Maximum distance separable (MDS) code</a></span></li>
 </ul>
 </div>
 
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span> perfect code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Applying the Hermitian construction to the hexacode yields a <span class="inline-math">\([[6,0,4]]\)</span> quantum code <a href="#citation-8" class="href-endnote endnote citation">[8]</a> corresponding to the six-qubit perfect state. The <span class="inline-math">\([[5,1,3]]\)</span> code can be obtained from this code by tracing out a qubit <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/dual">Dual linear code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The hexacode is Euclidean and Hermitian self-dual.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/golay">Binary Golay code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Extended Golay codewords can be obtained for hexacodewords <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. The hexacode can be used to decode the extended Golay code <a href="#citation-10" class="href-endnote endnote citation">[10]</a>. There is also a connection between automoprhisms of the even Golay code and the holomorph of the hexacode <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+</ul>
+</div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Hexacode.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CHexa.html</dd><dt id="citation-2">[2]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-3">[3]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd><dt id="citation-3">[3]</dt><dd>A. Vardy, “Even more efficient bounded-distance decoding of the hexacode, the Golay code, and the Leech lattice”, IEEE Transactions on Information Theory <span class="textbf">41</span>, 1495 (1995). <a href="https://doi.org/10.1109/18.412695" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Hexacode.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CHexa.html</dd><dt id="citation-5">[5]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-6">[6]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd><span class="textit">Self-dual Codes and Invariant Theory</span> (Springer-Verlag, 2006). <a href="https://doi.org/10.1007/3-540-30731-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Simeon Ball, Aina Centelles, and Felix Huber, “Quantum error-correcting codes and their geometries”. <a href="https://arxiv.org/abs/2007.05992" target="_blank" class="href-href">2007.05992</a></dd><dt id="citation-9">[9]</dt><dd>F. Pastawski et al., “Holographic quantum error-correcting codes: toy models for the bulk/boundary correspondence”, Journal of High Energy Physics <span class="textbf">2015</span>, (2015). <a href="https://doi.org/10.1007/JHEP06(2015)149" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1503.06237" target="_blank" class="href-href">1503.06237</a></dd><dt id="citation-10">[10]</dt><dd>V. Pless, “Decoding the Golay codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 561 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057197" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
-
-<div class="sectioncontent code-contributors">
-Contributors to this page: <a href="https://github.com/valbert4" target="_blank">Victor V. Albert</a></div>
 
 
 
@@ -175,10 +204,10 @@ Contributors to this page: <a href="https://github.com/valbert4" target="_blank"
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hexacode.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/small/hexacode.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=hexacode&amp;code_yml_filename=classical/q-ary_digits/eval/ag/evaluationAG/hexacode.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hexacode</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=hexacode&amp;code_yml_filename=classical/q-ary_digits/small/hexacode.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hexacode</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -215,9 +244,9 @@ url={https://errorcorrectionzoo.org/c/hexacode}
 <div class="sectioncontent display-print-citation">
   <p>“Hexacode”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/hexacode</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hexacode.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/small/hexacode.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hexacode.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/small/hexacode.yml</a>.</p>
 </div>
 
 
@@ -227,7 +256,7 @@ url={https://errorcorrectionzoo.org/c/hexacode}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/projective">Projective</a></li><li><a href="/c/mds">MDS</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/projective">Projective geometry</a></li><li><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary QR</a></li><li><a href="/c/denniston">Denniston</a></li><li><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span></a></li><li><a href="/c/dual">Dual linear</a></li><li><a href="/c/golay">Binary Golay</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

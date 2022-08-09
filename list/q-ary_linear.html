@@ -79,6 +79,10 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
   <td class="textit">A <span class="inline-math">\(q\)</span>-ary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes. </td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/denniston">Denniston code</a></td>
+  <td class="textit">Projective code that is part of a family of <span class="inline-math">\([2^{a+i}+2^i-2^a,3,2^{a+i}-2^a]_{GF(2^a)}\)</span> codes for <span class="inline-math">\(i &lt; a\)</span> constructed using Denniston arcs. </td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/elliptic">Elliptic code</a></td>
   <td class="textit">Evaluation AG code of rational functions evaluated on points lying on an elliptic curve, i.e., a curve of genus one. </td>
 </tr>
@@ -115,23 +119,21 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 \end{align}</span> </td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/griesmer">Griesmer code</a></td>
-  <td class="textit">A <span class="inline-math">\([n,k,d]\)</span> binary or <span class="inline-math">\(q\)</span>-ary linear code is a Griesmer code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Griesmer bound <span class="display-math env-align">\begin{align}
-  n\geq\sum_{j=0}^{k-1}\left\lceil \frac{d}{q^{j}}\right\rceil ~,
-\end{align}</span> where <span class="inline-math">\(\left\lceil x\right\rceil \)</span> is the ceiling function, becomes an equality.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/hermitian">Hermitian code</a></td>
   <td class="textit">Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/hexacode">Hexacode</a></td>
-  <td class="textit"><span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with parity check matrix <span class="display-math env-align">\begin{align}
+  <td class="textit">The <span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
   \begin{pmatrix}0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
   0 &amp; 1 &amp; 0 &amp; 1 &amp; \omega &amp; \bar{\omega}\\
   1 &amp; 0 &amp; 0 &amp; 1 &amp; \bar{\omega} &amp; \omega
   \end{pmatrix}~,
-\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. </td>
+\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. Has connections to projective geometry, lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and conformal field theory <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/incidence_matrix">Incidence-matrix projective code</a></td>
+  <td class="textit">Code whose generator matrix is the incidence matrix of points and hyperplanes of a projective spaces. Has been generalized to incidence matrices of other structures <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
@@ -147,21 +149,11 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/klein_quartic">Klein-quartic code</a></td>
-  <td class="textit">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-1" class="href-endnote endnote citation">[1]</a>, Ex. 2.75). </td>
+  <td class="textit">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Ex. 2.75). </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></td>
   <td class="textit">An <span class="inline-math">\((n,K,d)_q\)</span> linear code is denoted as <span class="inline-math">\([n,k,d]_q\)</span>, where <span class="inline-math">\(k=\log_{q}K\)</span> need not be an integer. Its codewords form a linear subspace, i.e., for any codewords <span class="inline-math">\(x,y\)</span>, <span class="inline-math">\(\alpha x+ \beta y\)</span> is also a codeword for any <span class="inline-math">\(q\)</span>-ary digits <span class="inline-math">\(\alpha,\beta\)</span>.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/mds">Maximum distance separable (MDS) code</a></td>
-  <td class="textit">A <span class="inline-math">\([n,k,d]_q\)</span> <span class="inline-math">\(q\)</span>-ary linear code is an MDS code if parameters <span class="inline-math">\(n\)</span>, <span class="inline-math">\(k\)</span>, <span class="inline-math">\(d\)</span>, and <span class="inline-math">\(q\)</span> are such that the Singleton bound <span class="display-math env-align">\begin{align}
-d \leq n-k+1
-\end{align}</span> becomes an equality. A code is called <span class="textit">almost MDS</span> (AMDS) when <span class="inline-math">\(d=n-k\)</span>. A bound for general <span class="inline-math">\(q\)</span>-ary codes can also be formulated; see Thm. 1.9.10 in Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/parity_check">Parity-check code</a></td>
-  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/parvaresh_vardy">Parvaresh-Vardy (PV) code</a></td>
@@ -173,11 +165,11 @@ d \leq n-k+1
 </tr>
 <tr>
   <td class="top left"><a href="/c/projective_reed_muller">Projective RM (PRM) code</a></td>
-  <td class="textit">Reed-Muller code for points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> whose leftmost nonzero coordinate is one. </td>
+  <td class="textit">Reed-Muller code for nonzero points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> whose leftmost nonzero coordinate is one, corresponding to an evaluation code of polynomials over projective coordinates. </td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/projective">Projective code</a></td>
-  <td class="textit">Linear <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span> arising from a <span class="inline-math">\(k\)</span>-dimensional vector space over <span class="inline-math">\(GF(q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>. Columns of a code&#x27;s parity-check matrix can similarly correspond to points in projective space.</td>
+  <td class="top left"><a href="/c/projective">Projective geometry code</a></td>
+  <td class="textit">Linear <span class="inline-math">\(q\)</span>-ary <span class="inline-math">\([n,k,d]\)</span> code such that columns of its generator matrix <span class="inline-math">\(G\)</span> does not contain any repeated columns or the zero column. That way, each column corresponds to a distinct point in the projective space <span class="inline-math">\(PG(k-1,q)\)</span> arising from a <span class="inline-math">\(k\)</span>-dimensional vector space over <span class="inline-math">\(GF(q)\)</span>. If the columns are linearly independent, then the codewords are collectively called an <span class="textit">information set</span>. Columns of a code&#x27;s parity-check matrix can similarly correspond to points in projective space. This formulation yields connections to projective geometry, which can be applied to determine code properties.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
@@ -193,7 +185,15 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/simplex">Simplex code</a></td>
-  <td class="textit">Also known as a <span class="textit">maximum length feedback shift register code</span>. An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </td>
+  <td class="textit">Also known as a <span class="textit">maximum length feedback shift register code</span>. An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/tetracode">Tetracode</a></td>
+  <td class="textit">The <span class="inline-math">\([4,2,3]_{GF(3)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
+  \begin{pmatrix}1 &amp; 0 &amp; 1 &amp; 1\\
+  0 &amp; 1 &amp; 1 &amp; 2
+  \end{pmatrix}~,
+\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/shimura">Tsfasman-Vladut-Zink (TVZ) code</a></td>
@@ -209,7 +209,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a></td>
-  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</td>
+  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a></td>
@@ -225,7 +225,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-2">[2]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd><dt id="citation-3">[3]</dt><dd>B. Bagchi and S. P. Inamdar, “Projective Geometric Codes”, Journal of Combinatorial Theory, Series A <span class="textbf">99</span>, 128 (2002). <a href="https://doi.org/10.1006/jcta.2002.3265" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-5">[5]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
   </main><!-- #main -->

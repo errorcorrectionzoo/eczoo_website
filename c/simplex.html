@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Also known as a <span class="textit">maximum length feedback shift register code</span>. An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. All of the non-zero codewords have a constant weight <span class="inline-math">\(q^{k-1}\)</span>. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </div>
+<div class="sectioncontent code-description">Also known as a <span class="textit">maximum length feedback shift register code</span>. An <span class="inline-math">\([n,k,q^{k-1}]_q\)</span> projective code with <span class="inline-math">\(n=\frac{q^k-1}{q-1}\)</span>, denoted as <span class="inline-math">\(S(q,k)\)</span>. The columns of the generator matrix are in one-to-one correspondence with the elements of the projective space <span class="inline-math">\(PG(k-1,q)\)</span>, with each column being a chosen representative of the corresponding element. Its dual code is the <span class="inline-math">\([n,n-k,3]_q\)</span> <span class="inline-math">\(q\)</span>-ary Hamming code. The name of the code comes from the property that, for <span class="inline-math">\(q=2\)</span>, the codewords form a <span class="inline-math">\((2^k-1)\)</span>-simplex of constant edge length if the codewords are interpreted as points in <span class="inline-math">\(\mathbb{R}^n\)</span>. </div>
 
 
 
@@ -133,14 +133,33 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/projective">Projective code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/projective">Projective geometry code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Columns of the simplex code&#x27;s generator matrix are in one-to-one correspondence with elements of a projective space.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/griesmer">Griesmer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Simplex codes saturate the Griesmer bound (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Exer. 5.1.11).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/constant_weight">Constant-weight code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;All non-zero simplex codewords have a constant weight of <span class="inline-math">\(q^{k-1}\)</span>.</span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/tetracode">Tetracode</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The tetracode is equivalent to <span class="inline-math">\(S(3,2)\)</span>.</span></li>
+</ul>
+</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -173,9 +192,6 @@
 <div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. R. Green, &quot;A serial orthogonal decoder,&quot; JPL Space Programs Summary, vol. 37–39-IV, pp. 247–253, 1966.</dd><dt id="citation-2">[2]</dt><dd>A. Ashikhmin and S. Litsyn, “Simple MAP decoding of first order Reed-Muller and Hamming codes”, Proceedings 2003 IEEE Information Theory Workshop (Cat. No.03EX674). <a href="https://doi.org/10.1109/ITW.2003.1216684" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A. Barg and S. Zhou, “A quantum decoding algorithm for the simplex code”, in Proceedings of the 36th Annual Allerton Conference on Communication, Control and Computing, Monticello, IL, 23–25 September 1998 (UIUC 1998) 359–365</dd><dt id="citation-4">[4]</dt><dd>Rudolf Schürer and Wolfgang Ch. Schmid. “Simplex Code.” From MinT—the database of optimal net, code, OA, and OOA parameters. Version: 2015-09-03. http://mint.sbg.ac.at/desc_CSimplex.html</dd><dt id="citation-5">[5]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
 
 
-
-<div class="sectioncontent code-contributors">
-Contributors to this page: <a href="https://github.com/ricktu288" target="_blank">Rick Tu</a>, <a href="https://github.com/valbert4" target="_blank">Victor V. Albert</a></div>
 
 
 
@@ -246,7 +262,7 @@ url={https://errorcorrectionzoo.org/c/simplex}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/griesmer">Griesmer</a></li><li><a href="/c/extended_reed_solomon">Extended GRS</a></li><li><a href="/c/repetition">Repetition</a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/projective">Projective geometry</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/griesmer">Griesmer</a></li><li><a href="/c/constant_weight">Constant-weight</a></li><li><a href="/c/tetracode">Tetracode</a></li><li><a href="/c/extended_reed_solomon">Extended GRS</a></li><li><a href="/c/repetition">Repetition</a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
