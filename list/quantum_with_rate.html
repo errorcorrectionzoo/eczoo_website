@@ -151,6 +151,10 @@ Here is a list of all quantum codes that specify what rate they have.
   <td class="small top"><span class="inline-math">\(1/n\)</span> for a distance-<span class="inline-math">\(d\)</span> heavy-hexagon code on <span class="inline-math">\(n = (5d^2-2d-1)/2\)</span> qubits.</td>
 </tr>
 <tr>
+  <td class="small left top"><a href="/c/hermitian">Hermitian code</a></td>
+  <td class="small top">For polynomial evaluations up to degree <span class="inline-math">\(D\)</span>: if <span class="inline-math">\(D &lt; q + 1 \)</span>, <span class="inline-math">\(k = \frac{(D+1)(D+2)}{2}\)</span>, and if <span class="inline-math">\(D \geq q + 1 \)</span>, <span class="inline-math">\(k = (q+1)D - \frac{q(q-1)}{2} + 1 \)</span>. </td>
+</tr>
+<tr>
   <td class="small left top"><a href="/c/justesen">Justesen code</a></td>
   <td class="small top"><p>The first asymptotically good codes. Rate is <span class="inline-math">\(R_m=k/n=K/2N\geq R\)</span> and the relative minumum distance satisfy <span class="inline-math">\(\delta_m=d_m/n\geq 0.11(1-2R)\)</span>, where <span class="inline-math">\(K=\left\lceil 2NR\right\rceil\)</span> for asymptotic rate <span class="inline-math">\(0&lt;R&lt;1/2\)</span>; see pg. 311 of Ref. <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</p><p>The code can be improved and extend the range of <span class="inline-math">\(R\)</span> from 0 to 1 by <span class="textit">puncturing</span>, i.e., by erasing <span class="inline-math">\(s\)</span> digits from each inner codeword. This yields a code of length <span class="inline-math">\(n=(2m-s)N\)</span> and rate <span class="inline-math">\(R=mk/(2m-s)N\)</span>. The lower bound of the distance of the punctured code approaches <span class="inline-math">\(d_m/n=(1-R/r)H^{-1}(1-r)\)</span> as <span class="inline-math">\(m\)</span> goes to infinity, where <span class="inline-math">\(r\)</span> is the maximum of 1/2 and the solution to <span class="inline-math">\(R=r^2/(1+\log(1-h^{-1}(1-r)))\)</span>, and <span class="inline-math">\(h\)</span> is the binary entropy function.</p></td>
 </tr>
@@ -257,6 +261,10 @@ Here is a list of all quantum codes that specify what rate they have.
 <tr>
   <td class="small left top"><a href="/c/tanner">Tanner code</a></td>
   <td class="small top">For a short code <span class="inline-math">\(C_0\)</span> with rate <span class="inline-math">\(R_0\)</span>, the Tanner code has rate <span class="inline-math">\(R \geq 2R_0-1\)</span>. If <span class="inline-math">\(C_0\)</span> satisfies the Gilbert-Varshamov bound, the rate <span class="inline-math">\(R \geq \delta = 1-2h(\delta_0)\)</span>, where <span class="inline-math">\(\delta\)</span> (<span class="inline-math">\(\delta_0\)</span>) is the relative distance of the Tanner code (<span class="inline-math">\(C_0\)</span>), and <span class="inline-math">\(h\)</span> is the binary entropy function.</td>
+</tr>
+<tr>
+  <td class="small left top"><a href="/c/tensor">Tensor-product code</a></td>
+  <td class="small top">Rate of the tensor-product code <span class="inline-math">\(C_A \otimes C_B\)</span> is a product of the rates of the codes <span class="inline-math">\(C_A\)</span> and <span class="inline-math">\(C_B\)</span>.</td>
 </tr>
 <tr>
   <td class="small left top"><a href="/c/tornado">Tornado code</a></td>
