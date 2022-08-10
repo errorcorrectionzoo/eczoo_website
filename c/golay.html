@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Binary Golay code" />
+<meta name="citation_title" content="Golay code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Binary Golay code" />
+<meta name="DC.title" content="Golay code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Binary Golay code — Error Correction Zoo
+    Golay code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,16 +79,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Binary Golay code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Golay code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices and sporadic simple groups <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>.</p><p>The <span class="inline-math">\([23, 12, 7]\)</span> code can be constructed with the polynomial <span class="inline-math">\(x^{11} + x^{10} + x^6 + x^5 + x^4 + x^2 + 1\)</span> over <span class="inline-math">\(GF(2)\)</span>. This representation of the Golay code is cyclic. Alternatively, one can use the Great Dodecahedron to generate codewords by placing message bits on the faces and calculating the parity bits that live on the 12 vertices of the inner icosahedron.</p></div>
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-2" class="href-endnote endnote citation">[2]</a> and sporadic simple groups <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</p><p>To construct the Golay code, one can use the great dodecahedron to generate codewords by placing message bits on the faces and calculating the parity bits that live on the 12 vertices of the inner icosahedron.</p></div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">The binary Golay code has distance 7 and can correct up to <span class="inline-math">\(\frac{7-1}{2}=3\)</span> errors.</div>
 
 
 <!-- Display features -->
@@ -108,7 +106,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoder for the extended Golay code using the hexacode <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span><span class="paragraph-in-list">Both Golay codes have a trellis representation and can thus be decoded using trellis decoding <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span><span class="paragraph-in-list">Bounded-distance decoder requiring at most 121 real operations <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Majority decoding for the extended Golay code <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span><span class="paragraph-in-list">Decoder for the extended Golay code using the hexacode <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span><span class="paragraph-in-list">Both Golay codes have a trellis representation and can thus be decoded using trellis decoding <a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span><span class="paragraph-in-list">Bounded-distance decoder requiring at most 121 real operations <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></div>
 
 
 
@@ -120,12 +118,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Used in the Voyager 1 and 2 spacecraft <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span><span class="paragraph-in-list">Radio communications <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span>
+  <span class="paragraph-in-list">Used in the Voyager 1 and 2 spacecraft <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span><span class="paragraph-in-list">Radio communications <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The automorphism group of the binary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{23}\)</span>, and the automorphism group of the extended binary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{24}\)</span>, two of the sporadic simple groups.</span>
+  <span class="paragraph-in-list">The automorphism group of the Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{23}\)</span>, and the automorphism group of the extended Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{24}\)</span>, two of the sporadic simple groups.</span>
 </div>
 
 
@@ -145,11 +143,11 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The collection of nonzero quadratic residues modulo 23 can be used to construct a generator polynomial of the Golay code.</span></li>
+      &#x2014;&nbsp;The Golay code is a binary quadratic residue code with generator polynomial <span class="inline-math">\(r(x)\)</span> over <span class="inline-math">\(GF(2)\)</span> with length <span class="inline-math">\(n=23\)</span> (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, Ch. 16).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bch">Binary BCH code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The Golay code is equivalent to a BCH code with Bose distance 5 (<a href="#citation-9" class="href-endnote endnote citation">[9]</a>, Ch. 20).</span></li>
+      &#x2014;&nbsp;The Golay code is equivalent to a BCH code with Bose distance 5 (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, Ch. 20).</span></li>
 </ul>
 </div>
 
@@ -172,7 +170,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hexacode">Hexacode</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Extended Golay codewords can be obtained from hexacodewords <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. The hexacode can be used to decode the extended Golay code <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. There is also a connection between automoprhisms of the even Golay code and the holomorph of the hexacode <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span></li>
+      &#x2014;&nbsp;Extended Golay codewords can be obtained from hexacodewords <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. The hexacode can be used to decode the extended Golay code <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. There is also a connection between automoprhisms of the even Golay code and the holomorph of the hexacode <a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/ternary_golay">Ternary Golay Code</a></span></li>
 </ul>
@@ -180,7 +178,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. J. E. Golay. <span class="textit">Notes on digital coding</span>. Proc. IRE 37 (1949): 657.</dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>V. Pless, “Decoding the Golay codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 561 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057197" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>A. J. VITERBI, “Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm”, The Foundations of the Digital Wireless World 41 (2009). <a href="https://doi.org/10.1142/9789814287517_0004" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>B. Honary and G. Markarian, “New simple encoder and trellis decoder for Golay codes”, Electronics Letters <span class="textbf">29</span>, 2170 (1993). <a href="https://doi.org/10.1049/el:19931456" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>A. Vardy, “Even more efficient bounded-distance decoding of the hexacode, the Golay code, and the Leech lattice”, IEEE Transactions on Information Theory <span class="textbf">41</span>, 1495 (1995). <a href="https://doi.org/10.1109/18.412695" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>E. C. Stone, “The Voyager 2 encounter with Uranus”, Journal of Geophysical Research: Space Physics <span class="textbf">92</span>, 14873 (1987). <a href="https://doi.org/10.1029/JA092iA13p14873" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>E. E. Johnson. An Efficient Golay Codec For MIL-STD-188-141A and FED-STD-1045. Department of Electrical and Computer Engineering, New Mexico State University, 1991.</dd><dt id="citation-9">[9]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-10">[10]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-4">[4]</dt><dd>J.-M. Goethals, “On the Golay perfect binary code”, Journal of Combinatorial Theory, Series A <span class="textbf">11</span>, 178 (1971). <a href="https://doi.org/10.1016/0097-3165(71)90043-4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>V. Pless, “Decoding the Golay codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 561 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057197" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>A. J. VITERBI, “Error Bounds for Convolutional Codes and an Asymptotically Optimum Decoding Algorithm”, The Foundations of the Digital Wireless World 41 (2009). <a href="https://doi.org/10.1142/9789814287517_0004" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>B. Honary and G. Markarian, “New simple encoder and trellis decoder for Golay codes”, Electronics Letters <span class="textbf">29</span>, 2170 (1993). <a href="https://doi.org/10.1049/el:19931456" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>A. Vardy, “Even more efficient bounded-distance decoding of the hexacode, the Golay code, and the Leech lattice”, IEEE Transactions on Information Theory <span class="textbf">41</span>, 1495 (1995). <a href="https://doi.org/10.1109/18.412695" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>E. C. Stone, “The Voyager 2 encounter with Uranus”, Journal of Geophysical Research: Space Physics <span class="textbf">92</span>, 14873 (1987). <a href="https://doi.org/10.1029/JA092iA13p14873" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>E. E. Johnson. An Efficient Golay Codec For MIL-STD-188-141A and FED-STD-1045. Department of Electrical and Computer Engineering, New Mexico State University, 1991.</dd><dt id="citation-11">[11]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd></dl></div>
 
 
 
@@ -209,10 +207,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Binary Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</dd>
+    <dd class="boxedcontent">“Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_golay,
-title={Binary Golay code},
+title={Golay code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -223,7 +221,7 @@ url={https://errorcorrectionzoo.org/c/golay}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Binary%20Golay%20code%20https%3A//errorcorrectionzoo.org/c/golay" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/golay&amp;t=Binary%20Golay%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Binary%20Golay%20code&amp;body=Binary%20Golay%20code%20https%3A//errorcorrectionzoo.org/c/golay">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Golay%20code%20https%3A//errorcorrectionzoo.org/c/golay" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/golay&amp;t=Golay%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Golay%20code&amp;body=Golay%20code%20https%3A//errorcorrectionzoo.org/c/golay">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/golay</dd>
@@ -239,7 +237,7 @@ url={https://errorcorrectionzoo.org/c/golay}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Binary Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</p>
+  <p>“Golay code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/golay</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/cyclic/golay.yml"
                 class="ashowurl"

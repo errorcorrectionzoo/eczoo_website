@@ -90,7 +90,7 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
   <td class="top left"><a href="/c/evaluation">Evaluation AG code</a></td>
   <td class="textit">Evaluation code over <span class="inline-math">\(GF(q)\)</span> on a set of points <span class="inline-math">\({\cal P} = \left( P_1,P_2,\cdots,P_n \right)\)</span> in <span class="inline-math">\(GF(q)\)</span> lying on an algebraic curve <span class="inline-math">\(\cal X\)</span> whose corresponding vector space <span class="inline-math">\(L\)</span> of functions <span class="inline-math">\(f\)</span> consists of certain polynomials or rational functions. Codewords are evaluations of all functions at the specified points, <span class="display-math env-align">\begin{align}
   \left( f(P_1), f(P_2), \cdots, f(P_n) \right) \quad\quad\forall f\in L~.
-\end{align}</span> The code is denoted as <span class="inline-math">\(C_L({\cal X},{\cal P},D)\)</span>, where the <span class="textit">divisor</span> <span class="inline-math">\(D\)</span> determines which rational functions are used by prescribing features associated with their zeroes and poles.</td>
+\end{align}</span> The code is denoted as <span class="inline-math">\(C_L({\cal X},{\cal P},D)\)</span>, where the <span class="textit">divisor</span> <span class="inline-math">\(D\)</span> (with degree less than <span class="inline-math">\(n\)</span>) determines which rational functions to use by prescribing features associated with their zeroes and poles.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/extended_reed_solomon">Extended GRS code</a></td>
@@ -120,7 +120,7 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/hermitian">Hermitian code</a></td>
-  <td class="textit">Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve <span class="inline-math">\(H(x,y) = x^{q+1}  + y^{q+1} - 1\)</span> on a finite field <span class="inline-math">\(F_q := GF(q)\)</span> in either affine or projective space. Hermitian codes directly improve over RS codes in the sense that RS codes have length at most <span class="inline-math">\(q\)</span> while Hermitian codes have length <span class="inline-math">\(q^3 + 1\)</span>.</td>
+  <td class="textit">Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve <span class="inline-math">\(H(x,y) = x^{q+1}  + y^{q+1} - 1\)</span> over <span class="inline-math">\(\mathbb{F}_q = GF(q)\)</span> in either affine or projective space. Hermitian codes directly improve over RS codes in the sense that RS codes have length at most <span class="inline-math">\(q\)</span> while Hermitian codes have length <span class="inline-math">\(q^3 + 1\)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/hexacode">Hexacode</a></td>
@@ -133,7 +133,7 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/incidence_matrix">Incidence-matrix projective code</a></td>
-  <td class="textit">Code whose generator matrix is the incidence matrix of points and hyperplanes of a projective spaces. Has been generalized to incidence matrices of other structures <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. </td>
+  <td class="textit">Code whose generator matrix is the incidence matrix of points and hyperplanes of a projective spaces. Has been generalized to incidence matrices of other structures (<a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>; <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Sec. 14.4). </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/interleaved_reed_solomon">Interleaved RS (IRS) code</a></td>
@@ -149,7 +149,7 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/klein_quartic">Klein-quartic code</a></td>
-  <td class="textit">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Ex. 2.75). </td>
+  <td class="textit">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-6" class="href-endnote endnote citation">[6]</a>, Ex. 2.75). </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary code</a></td>
@@ -165,7 +165,9 @@ Here is a list of <a href="/c/q-ary_linear" class="href-ref ref-code"><span clas
 </tr>
 <tr>
   <td class="top left"><a href="/c/projective_reed_muller">Projective RM (PRM) code</a></td>
-  <td class="textit">Reed-Muller code for nonzero points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> whose leftmost nonzero coordinate is one, corresponding to an evaluation code of polynomials over projective coordinates. </td>
+  <td class="textit">Reed-Muller code for nonzero points <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> whose leftmost nonzero coordinate is one, corresponding to an evaluation code of polynomials over projective coordinates. PRM codes PRM<span class="inline-math">\(_q(r,m)\)</span> for <span class="inline-math">\(r&lt;q\)</span> are injective evaluation codes with parameters <a href="#citation-7" class="href-endnote endnote citation">[7]</a> <span class="display-math env-align">\begin{align}
+  \left[ q^m+q^{m-1}\cdots +1, {m+r \choose r},(q+1-r)q^{m-1} \right]~.
+\end{align}</span> </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/projective">Projective geometry code</a></td>
@@ -189,7 +191,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/ternary_golay">Ternary Golay Code</a></td>
-  <td class="textit">A <span class="inline-math">\([11,6,5]_{GF(3)}\)</span> perfect ternary linear code with connections to various areas of mathematics, e.g., lattices and sporadic simple groups <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([12, 6, 6]\)</span> <span class="textit">extended ternary Golay code</span>.</td>
+  <td class="textit">A <span class="inline-math">\([11,6,5]_{GF(3)}\)</span> perfect ternary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and sporadic simple groups <a href="#citation-8" class="href-endnote endnote citation">[8]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([12, 6, 6]\)</span> <span class="textit">extended ternary Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/tetracode">Tetracode</a></td>
@@ -213,7 +215,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_duadic"><span class="inline-math">\(q\)</span>-ary duadic code</a></td>
-  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</td>
+  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist only when <span class="inline-math">\(q\)</span> is a square modulo <span class="inline-math">\(n\)</span> <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a></td>
@@ -229,7 +231,7 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd><dt id="citation-3">[3]</dt><dd>B. Bagchi and S. P. Inamdar, “Projective Geometric Codes”, Journal of Combinatorial Theory, Series A <span class="textbf">99</span>, 128 (2002). <a href="https://doi.org/10.1006/jcta.2002.3265" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-5">[5]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd><dt id="citation-3">[3]</dt><dd>B. Bagchi and S. P. Inamdar, “Projective Geometric Codes”, Journal of Combinatorial Theory, Series A <span class="textbf">99</span>, 128 (2002). <a href="https://doi.org/10.1006/jcta.2002.3265" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>M. Lavrauw, L. Storme, and G. Van de Voorde (2010). <span class="textit">Linear codes from projective spaces</span>. In A. Bruen &amp; D. Wehlau (Eds.), Contemporary Mathematics (Vol. 523, pp. 185–202). Providence, RI, USA: American Mathematical Society (AMS).</dd><dt id="citation-5">[5]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd><dt id="citation-7">[7]</dt><dd>G. Lachaud, “Number of points of plane sections and linear codes defined on algebraic varieties”, Arithmetic, Geometry, and Coding Theory. <a href="https://doi.org/10.1515/9783110811056.77" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-9">[9]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
   </main><!-- #main -->

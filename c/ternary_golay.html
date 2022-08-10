@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="inline-math">\([11,6,5]_{GF(3)}\)</span> perfect ternary linear code with connections to various areas of mathematics, e.g., lattices and sporadic simple groups <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([12, 6, 6]\)</span> <span class="textit">extended ternary Golay code</span>.</p><p>One generator matrix for the ternary Golay code is <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\([11,6,5]_{GF(3)}\)</span> perfect ternary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-2" class="href-endnote endnote citation">[2]</a> and sporadic simple groups <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([12, 6, 6]\)</span> <span class="textit">extended ternary Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</p><p>One generator matrix for the ternary Golay code is <span class="display-math env-align">\begin{align}
 \left[\begin{array}{ccccccccccc}
   1 &amp; 0 &amp; 0 &amp; 0 &amp; 0 &amp; | &amp; 1 &amp; 1 &amp; 1 &amp; 2 &amp; 2 &amp; 0 \\
   0 &amp; 1 &amp; 0 &amp; 0 &amp; 0 &amp; | &amp; 1 &amp; 1 &amp; 2 &amp; 1 &amp; 0 &amp; 2 \\
@@ -114,7 +114,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoder for the extended ternary Golay code using the tetracode <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoder for the extended ternary Golay code using the tetracode <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 
@@ -126,9 +126,13 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Code used in football pools with at least one good bet <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>. In fact, the code was originally constructed by Juhani Virtakallio and published in the Finnish football pool magazine Veikkaaja <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span>
+  <span class="paragraph-in-list">Code used in football pools with at least one good bet <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>. In fact, the code was originally constructed by Juhani Virtakallio and published in the Finnish football pool magazine Veikkaaja <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span>
 </div>
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">The automorphism group of the ternary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{11}\)</span>, and the automorphism group of the extended ternary Golay code is the Mathieu group <span class="inline-math">\(\mathcal{M}_{12}\)</span>, two of the sporadic simple groups.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -147,7 +151,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The ternary Golay code is a quadratic residue code over <span class="inline-math">\(GF(3)\)</span> with residue set <span class="inline-math">\(Q = \{1, 3, 4, 5, 9\} \)</span> and generator polynomial <span class="inline-math">\(x^5 + x^4 - x^3 + x^2 - 1\)</span>.</span></li>
+      &#x2014;&nbsp;The ternary Golay code is a quadratic residue code over <span class="inline-math">\(GF(3)\)</span> with residue set <span class="inline-math">\(Q = \{1, 3, 4, 5, 9\} \)</span> and generator polynomial <span class="inline-math">\(x^5 + x^4 - x^3 + x^2 - 1\)</span> (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, Ch. 16).</span></li>
 </ul>
 </div>
 
@@ -160,7 +164,7 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/golay">Binary Golay code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/golay">Golay code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/dual">Dual linear code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -168,21 +172,21 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/projective">Projective geometry code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The extended ternary Golay code admits a projective geometric construction (<a href="#citation-6" class="href-endnote endnote citation">[6]</a>, pg. 296).</span></li>
+      &#x2014;&nbsp;The extended ternary Golay code admits a projective geometric construction (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, pg. 296).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/divisible">Divisible code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Extended ternary Golay code is 3-divisible (<a href="#citation-6" class="href-endnote endnote citation">[6]</a>, pg. 296).</span></li>
+      &#x2014;&nbsp;Extended ternary Golay code is 3-divisible (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, pg. 296).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/tetracode">Tetracode</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Extended ternary Golay codewords can be obtained from tetracodewords <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. The tetracode can be used to decode the extended ternary Golay code <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
+      &#x2014;&nbsp;Extended ternary Golay codewords can be obtained from tetracodewords <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. The tetracode can be used to decode the extended ternary Golay code <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. J. E. Golay. <span class="textit">Notes on digital coding</span>. Proc. IRE 37 (1949): 657.</dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>V. Pless, “Decoding the Golay codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 561 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057197" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>H. Hämäläinen and S. Rankinen, “Upper bounds for football pool problems and mixed covering codes”, Journal of Combinatorial Theory, Series A <span class="textbf">56</span>, 84 (1991). <a href="https://doi.org/10.1016/0097-3165(91)90024-B" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/BF03025254" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-4">[4]</dt><dd>V. Pless, “Decoding the Golay codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 561 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057197" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>H. Hämäläinen and S. Rankinen, “Upper bounds for football pool problems and mixed covering codes”, Journal of Combinatorial Theory, Series A <span class="textbf">56</span>, 84 (1991). <a href="https://doi.org/10.1016/0097-3165(91)90024-B" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/BF03025254" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -255,7 +259,7 @@ url={https://errorcorrectionzoo.org/c/ternary_golay}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/covering">Covering</a></li><li><a href="/c/weighed_covering">Weighed-covering</a></li><li><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary QR</a></li><li><a href="/c/golay">Binary Golay</a></li><li><a href="/c/dual">Dual linear</a></li><li><a href="/c/projective">Projective geometry</a></li><li><a href="/c/tetracode">Tetracode</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/covering">Covering</a></li><li><a href="/c/weighed_covering">Weighed-covering</a></li><li><a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary QR</a></li><li><a href="/c/golay">Golay</a></li><li><a href="/c/dual">Dual linear</a></li><li><a href="/c/projective">Projective geometry</a></li><li><a href="/c/tetracode">Tetracode</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

@@ -85,15 +85,18 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve <span class="inline-math">\(H(x,y) = x^{q+1}  + y^{q+1} - 1\)</span> on a finite field <span class="inline-math">\(F_q := GF(q)\)</span> in either affine or projective space. Hermitian codes directly improve over RS codes in the sense that RS codes have length at most <span class="inline-math">\(q\)</span> while Hermitian codes have length <span class="inline-math">\(q^3 + 1\)</span>.</p><p>Hermitian codes of polynomials of total degree at most <span class="inline-math">\(D\)</span> can come in affine and epicyclic flavours, depending on whether the evaluations are over the affine plane or the bicyclic plane. The affine codes have length <span class="inline-math">\(q^3 - q\)</span> while epicyclic codes have length <span class="inline-math">\((q-2)(q+1)^2\)</span>. More precisely, fix <span class="inline-math">\(r, D\)</span> and let <span class="display-math env-align">\begin{align}
-M_D = \{f \in \mathbb{F}_{q}(x,y,z) = \sum_{i+j \leq D = D}a_{i,j}x^{i}y^{j}z^{D - (i+j)}\}
-\end{align}</span> be the message space of degree <span class="inline-math">\(D\)</span> polynomials and <span class="inline-math">\(S = \{[x:y:z] \in \mathbb{P}^2 \mathbb{F_q} \mid H(x:y:z) = 0 \}\)</span> where <span class="inline-math">\(H(x:y:z) = x^{q+1} + y^{q+1} -
-z^{q+1}\)</span> is the homogenized Hermitian curve over the projective plane on <span class="inline-math">\( \mathbb{F}_q \)</span>. Then the codewords <span class="inline-math">\( C \)</span> of the Hermitian code over <span class="inline-math">\(\mathbb{F}_q\)</span> are <span class="display-math env-align">\begin{align}
-C = \{(f(\alpha_i))_{\alpha_i \in S}, \: f \in M_D \}
-\end{align}</span>.</p><p>The form of the hermitian curve <span class="inline-math">\(H(u,v,w) = u^{q+1} + v^{q+1} - w^{q+1}\)</span> given above is the <span class="textit">Fermat</span> version of the Hermitian curve. If we use the substitutions <span class="inline-math">\(u = x+z, v = x+y, w = x+y+z \)</span>, then we have that <span class="inline-math">\(H(x,y,z) = x^{q+1} - y^{q}z - yz^{q} \)</span>, which is the <span class="textit">Stichtenoth</span> version of the curve. In affine coordinates, the Stichtenoth form of the curve is <span class="inline-math">\(f(x,y) = x^{q+1} - y^{q} - y = N(x) - Tr(y)\)</span>, where <span class="inline-math">\(N(x) := x^{(q^{n}-1)/(q-1)}\)</span>, and <span class="inline-math">\(Tr(x) := 1 + x^{q} + \ldots + x^{q^n}\)</span> are the field norm and trace of <span class="inline-math">\(GF(F_{q^n} \)</span> respectively. The Fermat version can be written as <span class="inline-math">\(H(u,v,w) = u\overline{u} + v\overline{v} - w\overline{w}\)</span>, where the conjugation map <span class="inline-math">\(\overline{u} = u^{q}\)</span> is an isomorphism of <span class="inline-math">\(\mathbb{F}_q \)</span>. In fact, when the field of evaluations <span class="inline-math">\(\mathbf{F}_{q^2}\)</span> is viewed as a quadratic extension of <span class="inline-math">\(\mathbf{F}_q\)</span> then the conjugation map is an <span class="inline-math">\(\mathbf{F}_q\)</span>-isomorphism that permutes the roots of the quadratic irreducible polynomial used to generate <span class="inline-math">\(\mathbf{F}_{q^2}\)</span> from <span class="inline-math">\( \mathbf{F}_q[x]\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve <span class="inline-math">\(H(x,y) = x^{q+1}  + y^{q+1} - 1\)</span> over <span class="inline-math">\(\mathbb{F}_q = GF(q)\)</span> in either affine or projective space. Hermitian codes directly improve over RS codes in the sense that RS codes have length at most <span class="inline-math">\(q\)</span> while Hermitian codes have length <span class="inline-math">\(q^3 + 1\)</span>.</p><p>Hermitian codes of polynomials of total degree at most <span class="inline-math">\(D\)</span> can come in affine and epicyclic flavours, depending on whether the evaluations are over the affine plane or the bicyclic plane. The affine codes have length <span class="inline-math">\(q^3 - q\)</span> while epicyclic codes have length <span class="inline-math">\((q-2)(q+1)^2\)</span>. More precisely, fix <span class="inline-math">\(r, D\)</span> and let <span class="display-math env-align">\begin{align}
+  M_D = \left{f(x,y,z) = \sum_{i+j \leq D = D}a_{i,j}x^{i}y^{j}z^{D - (i+j)}\right}
+\end{align}</span> be the message space of degree-<span class="inline-math">\(D\)</span> polynomials and <span class="display-math env-align">\begin{align}
+  \(S = \{(x:y:z) \in PG(2,q) \mid H(x:y:z) = 0 \}\)~,
+\end{align}</span> where <span class="inline-math">\(H(x:y:z) = x^{q+1} + y^{q+1} - z^{q+1}\)</span> is the homogenized Hermitian curve over the projective plane. The Hermitian code <span class="inline-math">\( C \)</span> over is <span class="display-math env-align">\begin{align}
+C = \{(f(\alpha_i))_{\alpha_i \in S}, \: f \in M_D \}~.
+\end{align}</span></p><p>The form <span class="inline-math">\(H(u,v,w) = u^{q+1} + v^{q+1} - w^{q+1}\)</span> is the <span class="textit">Fermat</span> version of the Hermitian curve. Substituting <span class="inline-math">\(u = x+z\)</span>, <span class="inline-math">\(v = x+y\)</span>, and <span class="inline-math">\(w = x+y+z \)</span> yields <span class="inline-math">\(H(x,y,z) = x^{q+1} - y^{q}z - yz^{q} \)</span>, the <span class="textit">Stichtenoth</span> version of the curve. In affine coordinates, the Stichtenoth form of the curve is <span class="display-math env-align">\begin{align}
+  f(x,y) = x^{q+1} - y^{q} - y = N(x) - \text{tr}(y)~,
+\end{align}</span> where <span class="inline-math">\(N(x) := x^{(q^{n}-1)/(q-1)}\)</span> and <span class="inline-math">\(\text{tr} := 1 + x^{q} + \ldots + x^{q^n}\)</span> are the field norm and trace of <span class="inline-math">\(GF(F_{q^n}\)</span>, respectively. The Fermat version can be written as <span class="inline-math">\(H(u,v,w) = u\overline{u} + v\overline{v} - w\overline{w}\)</span>, where the conjugation map <span class="inline-math">\(\overline{u} = u^{q}\)</span> is an isomorphism of <span class="inline-math">\(\mathbb{F}_q \)</span>. In fact, when the field of evaluations <span class="inline-math">\(\mathbb{F}_{q^2}\)</span> is viewed as a quadratic extension of <span class="inline-math">\(\mathbb{F}_q\)</span> then the conjugation map is an <span class="inline-math">\(\mathbb{F}_q\)</span>-isomorphism that permutes the roots of the quadratic irreducible polynomial used to generate <span class="inline-math">\(\mathbb{F}_{q^2}\)</span> from <span class="inline-math">\( \mathbb{F}_q[x]\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Distance determined by properties of the Hermitian curve, the underlying field, and the functions used <a href="#citation-3" class="href-endnote endnote citation">[3]</a>; see Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Sec. 5.3, for example. For evaluations of polynomials up to degree <span class="inline-math">\(D\)</span>, the Hermitian code protects against at least <span class="inline-math">\(n - (q+1)D\)</span> errors whenever <span class="inline-math">\(D &lt; q + 1 \)</span>. If <span class="inline-math">\(D \geq q+1 \)</span>, the Hermitian code protects against at least <span class="inline-math">\(n-k - \frac{q(q-1)}{2} + 1\)</span> errors.</div>
+<div class="sectioncontent code-protection">Distance determined by properties of the Hermitian curve, the underlying field, and the functions used <a href="#citation-3" class="href-endnote endnote citation">[3]</a>; see Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, Sec. 5.3, for an example. For evaluations of polynomials up to degree <span class="inline-math">\(D\)</span>, the Hermitian code protects against at least <span class="inline-math">\(n - (q+1)D\)</span> errors whenever <span class="inline-math">\(D &lt; q + 1 \)</span>. If <span class="inline-math">\(D \geq q+1 \)</span>, the Hermitian code protects against at least <span class="inline-math">\(n-k - \frac{q(q-1)}{2} + 1\)</span> errors.</div>
 
 
 <!-- Display features -->
@@ -116,7 +119,7 @@ C = \{(f(\alpha_i))_{\alpha_i \in S}, \: f \in M_D \}
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Unique decoding using syndromes and error locator ideals for polynomial evaluations. Note that Hermitian codes are linear codes so we can compute the syndrome of a received vector. Moreover, akin to the error-locator ideals found in decoding Reed-Solomon codes, for the multivariate case we must define an error locator ideal <span class="inline-math">\(\Lambda \)</span> such that the variety of this ideal over <span class="inline-math">\(F^{2}_{q}\)</span> is exactly the set of errors. The Sakata algorithm uses these two ingredients to get a unique decoding procedure <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Unique decoding using syndromes and error locator ideals for polynomial evaluations. Note that Hermitian codes are linear codes so we can compute the syndrome of a received vector. Moreover, akin to the error-locator ideals found in decoding Reed-Solomon codes, for the multivariate case we must define an error locator ideal <span class="inline-math">\(\Lambda \)</span> such that the variety of this ideal over <span class="inline-math">\(\mathbb{F}^{2}_{q}\)</span> is exactly the set of errors. The Sakata algorithm uses these two ingredients to get a unique decoding procedure <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></div>
 
 
 
@@ -150,6 +153,19 @@ C = \{(f(\alpha_i))_{\alpha_i \in S}, \: f \in M_D \}
 </div>
 
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hermitian_hypersurface">Hermitian-hypersurface code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Hermitian-hypersurface codes reduce to Hermitian codes of polynomials when the hypersurface is a curve.</span></li>
+</ul>
+</div>
 
 
 
@@ -174,10 +190,10 @@ C = \{(f(\alpha_i))_{\alpha_i \in S}, \: f \in M_D \}
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hermitian.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/evaluationAG/hermitian.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=hermitian&amp;code_yml_filename=classical/q-ary_digits/eval/ag/evaluationAG/hermitian.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hermitian</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=hermitian&amp;code_yml_filename=classical/q-ary_digits/eval/evaluationAG/hermitian.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>hermitian</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -214,9 +230,9 @@ url={https://errorcorrectionzoo.org/c/hermitian}
 <div class="sectioncontent display-print-citation">
   <p>“Hermitian code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/hermitian</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hermitian.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/evaluationAG/hermitian.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/ag/evaluationAG/hermitian.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/q-ary_digits/eval/evaluationAG/hermitian.yml</a>.</p>
 </div>
 
 
@@ -226,7 +242,7 @@ url={https://errorcorrectionzoo.org/c/hermitian}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/evaluation">Evaluation AG</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/generalized_reed_solomon">GRS</a></li><li><a href="/c/q-ary_linear">Linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_additive">Additive <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/evaluation">Evaluation AG</a></li><li><a href="/c/hermitian_hypersurface">Hermitian-hypersurface</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

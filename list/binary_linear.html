@@ -63,12 +63,8 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
   <td class="textit">Cyclic binary code of odd length <span class="inline-math">\(n\)</span> whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span> (see <a href="/c/cyclic#defterm-Cyclic-to-polynomial_20Xcorrespondence" class="href-term">Cyclic-to-polynomial correspondence</a>). More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/golay">Binary Golay code</a></td>
-  <td class="textit">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices and sporadic simple groups <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/binary_duadic">Binary duadic code</a></td>
-  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</td>
+  <td class="textit">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a></td>
@@ -89,6 +85,10 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 <tr>
   <td class="top left"><a href="/c/fountain">Fountain code</a></td>
   <td class="textit">Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/golay">Golay code</a></td>
+  <td class="textit">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-2" class="href-endnote endnote citation">[2]</a> and sporadic simple groups <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/homological_classical">Graph homology code</a></td>
@@ -148,7 +148,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
   \begin{pmatrix}1 &amp; 0 &amp; 1 &amp; 1\\
   0 &amp; 1 &amp; 1 &amp; 2
   \end{pmatrix}~,
-\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. </td>
+\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/tornado">Tornado code</a></td>
@@ -168,7 +168,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd></dl></div>
 
 
   </main><!-- #main -->
