@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>
+    Algebraic-geometry codes  — Error Correction Zoo
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  class=" codelistpage codelistpage_style_table"
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+Here is a list of <a href="/c/ag" class="href-ref ref-code">algebraic-geometry</a> codes constructed using algebraic curves. 
+<table class="codelistpage-table xtra-xtra-stretch">
+<thead>
+<tr>
+  <th>Code</th>
+  <th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td class="top left"><a href="/c/ag">Algebraic-geometry (AG) code</a></td>
+  <td class="textit">Binary or <span class="inline-math">\(q\)</span>-ary code constructed from an algebraic curve of some genus over a finite field via the evaluation construction, the residue construction, or more general constructions that yield nonlinear codes. Linear AG codes from the first two constructions are also called <span class="textit">geometric Goppa codes</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/alternant">Alternant code</a></td>
+  <td class="textit">Given a length-<span class="inline-math">\(n\)</span> GRS code <span class="inline-math">\(C\)</span> over <span class="inline-math">\(GF(q^m)\)</span>, an alternant code is the <span class="inline-math">\(GF(q)\)</span>-subfield subcode of the dual of <span class="inline-math">\(C\)</span>. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/q-ary_bch">Bose–Chaudhuri–Hocquenghem (BCH) code</a></td>
+  <td class="textit">Cyclic <span class="inline-math">\(q\)</span>-ary code, with <span class="inline-math">\(n\)</span> and <span class="inline-math">\(q\)</span> relatively coprime, whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span>. More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=q^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/cartier">Cartier code</a></td>
+  <td class="textit">Subcode of a certain residue AG code that is constructed using the Cartier operator.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/goppa">Classical Goppa code</a></td>
+  <td class="textit">Let <span class="inline-math">\( G(x) \)</span> be a polynomial describing a projective-plane curve with coefficients from <span class="inline-math">\( GF(q^m) \)</span> for some fixed integer <span class="inline-math">\(m\)</span>. Let <span class="inline-math">\( L \)</span> be a finite subset of the extension field <span class="inline-math">\( GF(q^m) \)</span> where <span class="inline-math">\(q\)</span> is prime, meaning <span class="inline-math">\( L  = \{\alpha_1, \cdots, \alpha_n\} \)</span> is a subset of nonzero elements of <span class="inline-math">\( GF(q^m) \)</span>. A Goppa code <span class="inline-math">\( \Gamma(L,G) \)</span> is an <span class="inline-math">\([n,k,d]_q\)</span> linear code consisting of all vectors <span class="inline-math">\(a = a_1, \cdots, a_n\)</span> such that <span class="inline-math">\( R_a(x) =0 \)</span> modulo <span class="inline-math">\(G(x)\)</span>, where <span class="inline-math">\( R_a(x) = \sum_{i=1}^n \frac{a_i}{z - \alpha_i} \)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/elliptic">Elliptic code</a></td>
+  <td class="textit">Evaluation AG code of rational functions evaluated on points lying on an elliptic curve, i.e., a curve of genus one. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/evaluation">Evaluation AG code</a></td>
+  <td class="textit">Also called a <span class="textit">function code</span>. Evaluation code over <span class="inline-math">\(GF(q)\)</span> on a set of points <span class="inline-math">\({\cal P} = \left( P_1,P_2,\cdots,P_n \right)\)</span> in <span class="inline-math">\(GF(q)\)</span> lying on an algebraic curve <span class="inline-math">\(\cal X\)</span> whose corresponding vector space <span class="inline-math">\(L\)</span> of functions <span class="inline-math">\(f\)</span> consists of certain polynomials or rational functions. Codewords are evaluations of all functions at the specified points, <span class="display-math env-align">\begin{align}
+  \left( f(P_1), f(P_2), \cdots, f(P_n) \right) \quad\quad\forall f\in L~.
+\end{align}</span> The code is denoted as <span class="inline-math">\(C_L({\cal X},{\cal P},D)\)</span>, where the <span class="textit">divisor</span> <span class="inline-math">\(D\)</span> (of degree less than <span class="inline-math">\(n\)</span>) determines which rational functions to use by prescribing features associated with their zeroes and poles. The original motivation for evaluation codes, which are generalizations of RS codes that expand both the types of functions used as well as the available evaluation points, was to increase code length while maintaining good distance and size.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/extended_reed_solomon">Extended GRS code</a></td>
+  <td class="textit">A GRS code with an additional parity-check coordinate with corresponding evaluation point of zero. In other words, an <span class="inline-math">\([n+1,k,n-k+2]_q\)</span> GRS code whose polynomials are evaluated at the points <span class="inline-math">\((\alpha_1,\cdots,\alpha_n,0)\)</span>. The case when <span class="inline-math">\(n=q-1\)</span>, multipliers <span class="inline-math">\(v_i=1\)</span>, and <span class="inline-math">\(\alpha_i\)</span> are <span class="inline-math">\(i-1\)</span>st powers of a primitive <span class="inline-math">\(n\)</span>th root of unity is an <span class="textit">extended narrow-sense RS code</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/generalized_reed_solomon">Generalized RS (GRS) code</a></td>
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code that is a modification of the RS code where codeword polynomials are multiplied by additional prefactors. Each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, multiplied by a corresponding nonzero factor <span class="inline-math">\(v_i \in GF(q)\)</span>, <span class="display-math env-align">\begin{align}
+  \mu\to\left( v_{1}f_{\mu}\left(\alpha_{1}\right),v_{2}f_{\mu}\left(\alpha_{2}\right),\cdots,v_{n}f_{\mu}\left(\alpha_{n}\right)\right)~.
+\end{align}</span> </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hermitian">Hermitian code</a></td>
+  <td class="textit">Evaluation AG code of rational functions evaluated on points lying on a Hermitian curve <span class="inline-math">\(H(x,y) = x^{q+1}  + y^{q+1} - 1\)</span> over <span class="inline-math">\(\mathbb{F}_q = GF(q)\)</span> in either affine or projective space. Hermitian codes directly improve over RS codes in the sense that RS codes have length at most <span class="inline-math">\(q\)</span> while Hermitian codes have length <span class="inline-math">\(q^3 + 1\)</span>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/hexacode">Hexacode</a></td>
+  <td class="textit">The <span class="inline-math">\([6,3,4]_{GF(4)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
+  \begin{pmatrix}0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1\\
+  0 &amp; 1 &amp; 0 &amp; 1 &amp; \omega &amp; \bar{\omega}\\
+  1 &amp; 0 &amp; 0 &amp; 1 &amp; \bar{\omega} &amp; \omega
+  \end{pmatrix}~,
+\end{align}</span> where <span class="inline-math">\(GF(4) = \{0,1,\omega, \bar{\omega}\}\)</span>. Has connections to projective geometry, lattices <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and conformal field theory <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/klein_quartic">Klein-quartic code</a></td>
+  <td class="textit">Evaluation AG code over <span class="inline-math">\(GF(8)\)</span> of rational functions evaluated on points lying in the Klein quartic, which is defined by the equation <span class="inline-math">\(x^3 y + y^3 z + z^3 x = 0\)</span> (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, Ex. 2.75). </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/nonlinear_ag">Nonlinear AG code</a></td>
+  <td class="textit">Nonlinear <span class="inline-math">\(q\)</span>-ary code constructed by evaluating functions on an algebraic curve. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/plane_curve">Plane-curve code</a></td>
+  <td class="textit">Evaluation AG code of bivariate polynomials of some finite maximum degree, evaluated at points lying on an affine plane curve. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
+  <td class="textit">An <span class="inline-math">\([n,k,n-k+1]_q\)</span> linear code based on polynomials over <span class="inline-math">\(GF(q)\)</span>. Let <span class="inline-math">\(\{\alpha_1,\cdots,\alpha_n\}\)</span> be <span class="inline-math">\(n\)</span> distinct points in <span class="inline-math">\(GF(q)\)</span>. An RS code encodes a message <span class="inline-math">\(\mu=\{\mu_0,\cdots,\mu_{k-1}\}\)</span> into <span class="inline-math">\(\{f_\mu(\alpha_1),\cdots,f_\mu(\alpha_n)\}\)</span> using a message-dependent polynomial <span class="display-math env-align">\begin{align}
+f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
+\end{align}</span> In other words, each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
+  \mu\to\left( f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right) \,.
+\end{align}</span></td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/residue">Residue AG code</a></td>
+  <td class="textit">Also called a <span class="textit">differential code</span>. Linear <span class="inline-math">\(q\)</span>-ary code defined using a set of points <span class="inline-math">\({\cal P} = \left( P_1,P_2,\cdots,P_n \right)\)</span> in <span class="inline-math">\(GF(q)\)</span> lying on an algebraic curve <span class="inline-math">\(\cal X\)</span> and a linear space <span class="inline-math">\(\Omega\)</span> of certain rational differential forms <span class="inline-math">\(\omega\)</span>. Codewords are evaluations of residues of the differential forms in the specified points, <span class="display-math env-align">\begin{align}
+  \left(\text{Res}_{P_{1}}(\omega),\text{Res}_{P_{2}}(\omega),\cdots,\text{Res}_{P_{n}}(\omega)\right)\quad\quad\forall\omega\in\Omega~.
+\end{align}</span> The code is denoted as <span class="inline-math">\(C_{\Omega}({\cal X},{\cal P},D)\)</span>, where the <span class="textit">divisor</span> <span class="inline-math">\(D\)</span> determines which rational rational differential forms to use. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/shimura">Tsfasman-Vladut-Zink (TVZ) code</a></td>
+  <td class="textit">Member of a family of residue AG codes where <span class="inline-math">\(\cal X\)</span> is either a reduction of a Shimura curve or an elliptic curve of varying genus.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> code. An <span class="inline-math">\([n,n-1,2]_q\)</span> linear <span class="inline-math">\(q\)</span>-ary code whose codewords consist of the message string appended with a parity-check digit such that the sum over all coordinates of each codeword is zero.</td>
+</tr>
+</tbody>
+</table>
+
+
+
+<!-- endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. A. Harvey and G. W. Moore, “Moonshine, superconformal symmetry, and quantum error correction”, Journal of High Energy Physics <span class="textbf">2020</span>, (2020). <a href="https://doi.org/10.1007/JHEP05(2020)146" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2003.13700" target="_blank" class="href-href">2003.13700</a></dd><dt id="citation-3">[3]</dt><dd>T. Høholdt, J.H. Van Lint, and R. Pellikaan, 1998. Algebraic geometry codes. Handbook of coding theory, 1 (Part 1), pp.871-961.</dd></dl></div>
+
+
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/points_into_lattices">Lattice Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/fermions">Fermionic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
