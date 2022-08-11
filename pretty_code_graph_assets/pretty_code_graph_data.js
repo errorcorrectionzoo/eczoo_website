@@ -806,7 +806,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Also called a differential code. Stub.",
+                    "_description": "Also called a differential code. Linear \\(q\\)-ary code defined using a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) in \\(GF(q)\\) lying on an algebraic curve \\(\\cal X\\) and a vector space \\(\\Omega\\) of certain \u2026",
                     "_code_href": "/c/residue",
                     "_family_generation_level": 4
                 },
@@ -925,7 +925,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Evaluation code over \\(GF(q)\\) on a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) in \\(GF(q)\\) lying on an algebraic curve \\(\\cal X\\) whose corresponding vector space \\(L\\) of functions \\(f\\) consists of certain \u2026",
+                    "_description": "Also called a function code. Evaluation code over \\(GF(q)\\) on a set of points \\({\\cal P} = \\left( P_1,P_2,\\cdots,P_n \\right)\\) in \\(GF(q)\\) lying on an algebraic curve \\(\\cal X\\) whose corresponding vector space \\(L\\) of \u2026",
                     "_code_href": "/c/evaluation",
                     "_family_generation_level": 4
                 },
