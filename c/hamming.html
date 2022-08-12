@@ -79,13 +79,20 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Hamming code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Hamming code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</div>
+<div class="sectioncontent code-description"><p>An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</p><p>A generator matrix for the <span class="inline-math">\([7,4,3]\)</span> Hamming code is <span class="display-math env-align">\begin{align}
+\left(\begin{array}{ccccccccccc}
+  1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0\\
+  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1\\
+  0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1
+\end{array}\right)~.
+\end{align}</span></p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</div>
@@ -120,12 +127,12 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Commonly used when error rates are very low, for example, computer RAM or integrated circuits <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Hamming-code based matrix embedding used in steganography <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
+  <span class="paragraph-in-list">Commonly used when error rates are very low, for example, computer RAM or integrated circuits <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span><span class="paragraph-in-list">Hamming-code based matrix embedding used in steganography <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span>
 </div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See database <a href="#citation-5" class="href-endnote endnote citation">[5]</a> for explicit codes.</span>
+  <span class="paragraph-in-list">See database <a href="#citation-7" class="href-endnote endnote citation">[7]</a> for explicit codes.</span>
 </div>
 
 
@@ -147,7 +154,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/bch">Binary BCH code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binary Hamming codes are binary primitive narrow-sense BCH codes (<a href="#citation-6" class="href-endnote endnote citation">[6]</a>, Corr. 5.1.5). Binary Hamming codes are cyclic (<a href="#citation-7" class="href-endnote endnote citation">[7]</a>, Thm. 12.22).</span></li>
+      &#x2014;&nbsp;Binary Hamming codes are binary primitive narrow-sense BCH codes (<a href="#citation-8" class="href-endnote endnote citation">[8]</a>, Corr. 5.1.5). Binary Hamming codes are cyclic (<a href="#citation-9" class="href-endnote endnote citation">[9]</a>, Thm. 12.22).</span></li>
 </ul>
 </div>
 
@@ -173,9 +180,13 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/projective">Projective geometry code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Columns of a Hamming parity-check matrix correspond to one-dimensional subspaces of <span class="inline-math">\(GF(2)^n\)</span>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;<span class="inline-math">\([7,4,3]\)</span> Hamming code is a quadratic-residue code <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
+      &#x2014;&nbsp;<span class="inline-math">\([7,4,3]\)</span> Hamming code is a quadratic-residue code <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a></span></li>
   <li class="paragraph-in-list">
@@ -183,7 +194,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/nearly_perfect">Nearly perfect code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Shortened Hamming codes <span class="inline-math">\([2^r-2,2^r-r-2,3]\)</span> are nearly perfect (<a href="#citation-8" class="href-endnote endnote citation">[8]</a>, pg. 533).</span></li>
+      &#x2014;&nbsp;Shortened Hamming codes <span class="inline-math">\([2^r-2,2^r-r-2,3]\)</span> are nearly perfect (<a href="#citation-10" class="href-endnote endnote citation">[10]</a>, pg. 533).</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hadamard">Hadamard code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -191,7 +202,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/octacode">Octacode</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The octacode reduces modulo-two to the <span class="inline-math">\([8,4,4]\)</span> Hamming code <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
+      &#x2014;&nbsp;The octacode reduces modulo-two to the <span class="inline-math">\([8,4,4]\)</span> Hamming code <a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/repetition">Repetition code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -209,7 +220,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. Hentschke et al., “Analyzing area and performance penalty of protecting different digital modules with Hamming code and triple modular redundancy”, Proceedings. 15th Symposium on Integrated Circuits and Systems Design. <a href="https://doi.org/10.1109/SBCCI.2002.1137643" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Crandall, Ron. &quot;Some notes on steganography.&quot; Posted on steganography mailing list 1998 (1998): 1-6.</dd><dt id="citation-4">[4]</dt><dd>A. Westfeld, “F5—A Steganographic Algorithm”, Information Hiding 289 (2001). <a href="https://doi.org/10.1007/3-540-45496-9_21" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="textit">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href-href">URL</a>, 2022.</dd><dt id="citation-6">[6]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>R. Hill. <span class="textit">A First Course In Coding Theory</span>. Oxford University Press, 1988.</dd><dt id="citation-8">[8]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-9">[9]</dt><dd><span class="textit">Self-dual Codes and Invariant Theory</span> (Springer-Verlag, 2006). <a href="https://doi.org/10.1007/3-540-30731-1" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/doi:10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-4">[4]</dt><dd>R. Hentschke et al., “Analyzing area and performance penalty of protecting different digital modules with Hamming code and triple modular redundancy”, Proceedings. 15th Symposium on Integrated Circuits and Systems Design. <a href="https://doi.org/10.1109/SBCCI.2002.1137643" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Crandall, Ron. &quot;Some notes on steganography.&quot; Posted on steganography mailing list 1998 (1998): 1-6.</dd><dt id="citation-6">[6]</dt><dd>A. Westfeld, “F5—A Steganographic Algorithm”, Information Hiding 289 (2001). <a href="https://doi.org/10.1007/3-540-45496-9_21" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Michael Helmling, Stefan Scholl, Florian Gensheimer, Tobias Dietz, Kira Kraft, Stefan Ruzika, and Norbert Wehn. <span class="textit">Database of Channel Codes and ML Simulation Results</span>. <a href="http://www.uni-kl.de/channel-codes" target="_blank" class="href-href">URL</a>, 2022.</dd><dt id="citation-8">[8]</dt><dd>W. C. Huffman and V. Pless, <span class="textit">Fundamentals of Error-correcting Codes</span> (Cambridge University Press, 2003). <a href="https://doi.org/10.1017/CBO9780511807077" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>R. Hill. <span class="textit">A First Course In Coding Theory</span>. Oxford University Press, 1988.</dd><dt id="citation-10">[10]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-11">[11]</dt><dd><span class="textit">Self-dual Codes and Invariant Theory</span> (Springer-Verlag, 2006). <a href="https://doi.org/10.1007/3-540-30731-1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -282,7 +293,7 @@ url={https://errorcorrectionzoo.org/c/hamming}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/covering">Covering</a></li><li><a href="/c/weighed_covering">Weighed-covering</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/tetracode">Tetracode</a></li><li><a href="/c/binary_quad_residue">Binary QR</a></li><li><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span></a></li><li><a href="/c/q-ary_hamming"><span class="inline-math">\(q\)</span>-ary Hamming</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/octacode">Octacode</a></li><li><a href="/c/repetition">Repetition</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/perfect">Perfect</a></li><li><a href="/c/covering">Covering</a></li><li><a href="/c/weighed_covering">Weighed-covering</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/bch">Binary BCH</a></li><li><a href="/c/tetracode">Tetracode</a></li><li><a href="/c/projective">Projective geometry</a></li><li><a href="/c/binary_quad_residue">Binary QR</a></li><li><a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span></a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/octacode">Octacode</a></li><li><a href="/c/repetition">Repetition</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
