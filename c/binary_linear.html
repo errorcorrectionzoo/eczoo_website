@@ -90,7 +90,7 @@
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Distance <span class="inline-math">\(d\)</span> of a linear code is the number of nonzero entries in the (nonzero) codeword with the smallest such number. Corrects any error set for which no two elements of the set add up to a codeword.</p><p>Linear codes admit a <span class="textit">parity check matrix</span> <span class="inline-math">\(H\)</span>, whose columns make up a set of <span class="textit">parity checks</span>, i.e., a maximal linearly independent set of vectors that are in the kernel of <span class="inline-math">\(G\)</span>. It follows that <span class="display-math env-align">\begin{align}
   G H^{\text{T}} = 0 \mod 2~.
-\end{align}</span></p></div>
+\end{align}</span></p><p>The decision problem corresponding to finding the minimum distance is also <span class="inline-math">\(NP\)</span>-complete <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, and approximating the weight enumerator is <span class="inline-math">\(#P\)</span>-complete <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</p></div>
 
 
 <!-- Display features -->
@@ -113,7 +113,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding an arbitary linear binary code is NP-hard <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span><span class="paragraph-in-list">Slepian&#x27;s standard-array decoding <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Decoding an arbitary linear binary code is <span class="inline-math">\(NP\)</span>-complete <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span><span class="paragraph-in-list">Slepian&#x27;s standard-array decoding <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 
@@ -126,7 +126,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">Tables of bounds and examples of linear codes for various <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, extending code tables by A. E. Brouwer <a href="#citation-3" class="href-endnote endnote citation">[3]</a>, are maintained by M. Grassl at this <a href="http://codetables.markus-grassl.de/" target="_blank" class="href-href">website</a>.</span>
+  <span class="paragraph-in-list">Tables of bounds and examples of linear codes for various <span class="inline-math">\(n\)</span> and <span class="inline-math">\(k\)</span>, extending code tables by A. E. Brouwer <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, are maintained by M. Grassl at this <a href="http://codetables.markus-grassl.de/" target="_blank" class="href-href">website</a>.</span>
 </div>
 
 
@@ -190,7 +190,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/vt_single_deletion">Binary Varshamov-Tenengolts (VT) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;By adapting a construction of Tenengolts <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, binary VT codes can be modified to yield slightly longer linear codes <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></li>
+      &#x2014;&nbsp;By adapting a construction of Tenengolts <a href="#citation-6" class="href-endnote endnote citation">[6]</a>, binary VT codes can be modified to yield slightly longer linear codes <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -216,7 +216,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>E. Berlekamp, R. McEliece, and H. van Tilborg, “On the inherent intractability of certain coding problems (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">24</span>, 384 (1978). <a href="https://doi.org/10.1109/TIT.1978.1055873" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>D. Slepian, “Some Further Theory of Group Codes”, Bell System Technical Journal <span class="textbf">39</span>, 1219 (1960). <a href="https://doi.org/10.1002/j.1538-7305.1960.tb03958.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Andries E. Brouwer, Bounds on linear codes, in: Vera S. Pless and W. Cary Huffman (Eds.), Handbook of Coding Theory, pp. 295-461, Elsevier, 1998.</dd><dt id="citation-4">[4]</dt><dd>G. M. Tenengolts, <span class="textit">Class of codes correcting bit loss and errors in the preceding bit</span> (translated to English), Automation and Remote Control, 37(5), 797–802 (1976).</dd><dt id="citation-5">[5]</dt><dd>N. J. A. Sloane, “On Single-Deletion-Correcting Codes”. <a href="https://arxiv.org/abs/math/0207197" target="_blank" class="href-href">math/0207197</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Vardy, “The intractability of computing the minimum distance of a code”, IEEE Transactions on Information Theory <span class="textbf">43</span>, 1757 (1997). <a href="https://doi.org/10.1109/18.641542" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>M. N. Vyalyi, “Hardness of approximating the weight enumerator of a binary linear code”. <a href="https://arxiv.org/abs/cs/0304044" target="_blank" class="href-href">cs/0304044</a></dd><dt id="citation-3">[3]</dt><dd>E. Berlekamp, R. McEliece, and H. van Tilborg, “On the inherent intractability of certain coding problems (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">24</span>, 384 (1978). <a href="https://doi.org/10.1109/TIT.1978.1055873" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>D. Slepian, “Some Further Theory of Group Codes”, Bell System Technical Journal <span class="textbf">39</span>, 1219 (1960). <a href="https://doi.org/10.1002/j.1538-7305.1960.tb03958.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Andries E. Brouwer, Bounds on linear codes, in: Vera S. Pless and W. Cary Huffman (Eds.), Handbook of Coding Theory, pp. 295-461, Elsevier, 1998.</dd><dt id="citation-6">[6]</dt><dd>G. M. Tenengolts, <span class="textit">Class of codes correcting bit loss and errors in the preceding bit</span> (translated to English), Automation and Remote Control, 37(5), 797–802 (1976).</dd><dt id="citation-7">[7]</dt><dd>N. J. A. Sloane, “On Single-Deletion-Correcting Codes”. <a href="https://arxiv.org/abs/math/0207197" target="_blank" class="href-href">math/0207197</a></dd></dl></div>
 
 
 
