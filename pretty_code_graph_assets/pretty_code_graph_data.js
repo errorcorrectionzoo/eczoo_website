@@ -4298,7 +4298,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Group code whose construction is based on nested subgroups \\(H\\subset K \\subset G\\). Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \\(H\\) in \\(K\\), and can be \u2026",
+                    "_description": "Group code whose construction is based on nested subgroups \\(H\\subset K\n\\subset G\\). Logical subspace is spanned by basis states that are equal superpositions of elements of cosets of \\(H\\) in \\(K\\), and can be \u2026",
                     "_code_href": "/c/group_gkp",
                     "_family_generation_level": 3
                 },
