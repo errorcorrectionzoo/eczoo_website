@@ -111,12 +111,12 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Calculate the Hamming weight <span class="inline-math">\(d_H\)</span> of the code. If <span class="inline-math">\(d_H\leq \frac{n-1}{2}\)</span>, decode the code as 0. If <span class="inline-math">\(d_H\geq \frac{n+1}{2}\)</span>, decode the code as 1.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Calculate the Hamming weight <span class="inline-math">\(d_H\)</span> of the code. If <span class="inline-math">\(d_H\leq \frac{n-1}{2}\)</span>, decode the code as 0. If <span class="inline-math">\(d_H\geq \frac{n+1}{2}\)</span>, decode the code as 1.</span><span class="paragraph-in-list">Automaton-like decoders for the repetition code on a 2D lattice, otherwise known as the classical 2D Ising model, were developed by Toom <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>. An automaton by Gacs yields a decoder for a 1D lattice <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Triple modular redundancy (TMR) error-correction protocol <a href="#citation-1" class="href-endnote endnote citation">[1]</a>; see Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for a pedagogical explanation.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Triple modular redundancy (TMR) error-correction protocol <a href="#citation-4" class="href-endnote endnote citation">[4]</a>; see Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a> for a pedagogical explanation.</span></div>
 
 
 
@@ -129,7 +129,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Repetition codes, in conjunction with other codes, were used in magnetic disks <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span>
+  <span class="paragraph-in-list">Repetition codes, in conjunction with other codes, were used in magnetic disks <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span>
 </div>
 
 
@@ -175,7 +175,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/self_correct">Self-correcting quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The repetition code associated with the 2D classical Ising model is a self-correcting classical memory <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>. An automaton by Gacs yields similar protection for a 1D lattice <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
+      &#x2014;&nbsp;The repetition code associated with the 2D classical Ising model is a self-correcting classical memory <a href="#citation-7" class="href-endnote endnote citation">[7; Sec. V.A]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/simplex">Simplex code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -185,7 +185,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. E. Lyons and W. Vanderkulk, “The Use of Triple-Modular Redundancy to Improve Computer Reliability”, IBM Journal of Research and Development <span class="textbf">6</span>, 200 (1962). <a href="https://doi.org/10.1147/rd.62.0200" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href-href">2111.08894</a></dd><dt id="citation-3">[3]</dt><dd>T. Klove and M. Miller, “The Detection of Errors After Error-Correction Decoding”, IEEE Transactions on Communications <span class="textbf">32</span>, 511 (1984). <a href="https://doi.org/10.1109/TCOM.1984.1096094" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>A. L. Toom, “Nonergodic Multidimensional System of Automata”, Probl. Peredachi Inf., 10:3 (1974), 70–79; Problems Inform. Transmission, 10:3 (1974), 239–246</dd><dt id="citation-5">[5]</dt><dd>L. F. Gray, “Toom’s Stability Theorem in Continuous Time”, Perplexing Problems in Probability 331 (1999). <a href="https://doi.org/10.1007/978-1-4612-2168-5_18" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>P. Gács, “[]”, Journal of Statistical Physics <span class="textbf">103</span>, 45 (2001). <a href="https://doi.org/10.1023/A:1004823720305" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. L. Toom, “Nonergodic Multidimensional System of Automata”, Probl. Peredachi Inf., 10:3 (1974), 70–79; Problems Inform. Transmission, 10:3 (1974), 239–246</dd><dt id="citation-2">[2]</dt><dd>L. F. Gray, “Toom’s Stability Theorem in Continuous Time”, Perplexing Problems in Probability 331 (1999). <a href="https://doi.org/10.1007/978-1-4612-2168-5_18" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>P. Gács, “[]”, Journal of Statistical Physics <span class="textbf">103</span>, 45 (2001). <a href="https://doi.org/10.1023/A:1004823720305" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>R. E. Lyons and W. Vanderkulk, “The Use of Triple-Modular Redundancy to Improve Computer Reliability”, IBM Journal of Research and Development <span class="textbf">6</span>, 200 (1962). <a href="https://doi.org/10.1147/rd.62.0200" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Steven M. Girvin, “Introduction to Quantum Error Correction and Fault Tolerance”. <a href="https://arxiv.org/abs/2111.08894" target="_blank" class="href-href">2111.08894</a></dd><dt id="citation-6">[6]</dt><dd>T. Klove and M. Miller, “The Detection of Errors After Error-Correction Decoding”, IEEE Transactions on Communications <span class="textbf">32</span>, 511 (1984). <a href="https://doi.org/10.1109/TCOM.1984.1096094" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>B. J. Brown et al., “Quantum memories at finite temperature”, Reviews of Modern Physics <span class="textbf">88</span>, (2016). <a href="https://doi.org/10.1103/RevModPhys.88.045005" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1411.6643" target="_blank" class="href-href">1411.6643</a></dd></dl></div>
 
 
 
