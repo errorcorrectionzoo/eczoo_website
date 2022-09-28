@@ -781,8 +781,63 @@ a.code-self-edit {
   content: '—';
 }
 
+table.cells {
+  margin: 1em auto 1em auto;
+  border-collapse: collapse;
+  border-top: solid 1pt;
+  border-bottom: solid 1pt;
+  box-sizing: border-box;
+  max-width: 100%;
+  max-width: calc(100% - 3em);
+}
+
+table.cells td {
+  padding: 0.3em 0.5em;
+}
+
+table.cells th {
+  padding: 0.3em 0.5em;
+}
+
+table.cells th.cellstyle-H {
+  border-bottom: solid .5pt;
+}
+
+table.cells .cellstyle-l {
+  text-align: left;
+}
+
+table.cells .cellstyle-c {
+  text-align: center;
+}
+
+table.cells .cellstyle-r {
+  text-align: right;
+}
+
+table.cells .cellstyle-green {
+  background-color: #c8ffd7;
+}
+
+table.cells .cellstyle-yellow {
+  background-color: #ffffc8;
+}
+
+table.cells .cellstyle-red {
+  background-color: #ffc8c8;
+}
+
+table.cells .cellstyle-lvert {
+  border-left: solid .5pt;
+}
+
+table.cells .cellstyle-rvert {
+  border-right: solid .5pt;
+}
+
 figure.float {
   /*min-width: 200pt;*/
+  box-sizing: border-box;
   width: 100%;
   border-width: 1px 0px 1px 0px;
   border-style: solid none solid none;
@@ -791,7 +846,13 @@ figure.float {
   padding: 0.5rem 0px;
 }
 
+figure.float.float-table {
+  border-style: none none none none;
+  margin: 1rem 0px 1rem;
+}
+
 figure.float .float-contents {
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
   overflow-x: auto;
@@ -803,6 +864,11 @@ figure.float .float-contents img {
   padding: 0pt;
   border: 0pt;
   margin: 0px auto;
+}
+
+figure.float .float-contents table.cells {
+  margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 figure.float figcaption {
@@ -828,6 +894,7 @@ figure.float figcaption > span {
 }
 
 .display-math {
+  box-sizing: border-box;
   width: 100%;
   max-width: 100%;
   display: block;

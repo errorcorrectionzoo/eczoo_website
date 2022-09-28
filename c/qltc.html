@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Quantum locally testable code (qLTC)" />
+<meta name="citation_title" content="Quantum locally testable code (QLTC)" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Quantum locally testable code (qLTC)" />
+<meta name="DC.title" content="Quantum locally testable code (QLTC)" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Quantum locally testable code (qLTC) — Error Correction Zoo
+    Quantum locally testable code (QLTC) — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,15 +79,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quantum locally testable code (qLTC)<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Quantum locally testable code (QLTC)<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A commuting-projector Hamiltonian-based quantum error-correcting code on a finite-tensor-product space of <span class="inline-math">\(n\)</span> identical factors (e.g., qubits, modular qudits, or Galois qudits) which has a nonzero average-energy penalty for creating large errors. The average-energy penalty is quantified by the code&#x27;s <span class="textit">soundness</span> <span class="inline-math">\(R\)</span>. Typically, one looks at how <span class="inline-math">\(R\)</span> scales with increasing code size for infinite families of codes.</p><p>More technically, a qLTC code is a code <span class="inline-math">\(\mathsf{C}\)</span> defined as the ground-state space of a commuting-projector Hamiltonian <span class="inline-math">\(H\)</span> consisting of a sum of <span class="inline-math">\(m\)</span> <span class="inline-math">\(k\)</span>-local projectors for some constant <span class="inline-math">\(k\)</span>. Such a code is qLTC with soundness function <span class="inline-math">\(R(\delta)\in[0,1]\)</span> if <span class="display-math env-align">\begin{align}
-  \forall \delta &gt; 0,|\psi\rangle~|~\text{dist}(|\psi\rangle,C) \geq \delta n \rightarrow \frac{1}{m}\langle\psi|H|\psi\rangle\geq R(\delta)~,
-\end{align}</span> where <span class="inline-math">\(\text{dist}(|\psi\rangle,C)\)</span> is some distance function between the state <span class="inline-math">\(\psi\)</span> and the codespace <span class="inline-math">\(\mathsf{C}\)</span>. The locality parameter <span class="inline-math">\(k\)</span> is called the <span class="textit">query complexity</span> of the code.</p></div>
+<div class="sectioncontent code-description"><p>A local commuting-projector Hamiltonian-based quantum error-correcting code on a finite-tensor-product space of <span class="inline-math">\(n\)</span> identical factors (e.g., qubits, modular qudits, or Galois qudits) which has a nonzero average-energy penalty for creating large errors. Informally, for a QLTC, if an error state is far away from the codespace, then the state is an excited state of a lot of local projectors. The average-energy penalty is quantified by the code&#x27;s <span class="textit">soundness</span> <span class="inline-math">\(R\)</span>. Typically, one looks at how <span class="inline-math">\(R\)</span> scales with increasing code size for infinite families of codes, defining QLTC families as those for which the soundness is asymptotically constant.</p><p>More technically, a QLTC is a code <span class="inline-math">\(\mathsf{C}\)</span> defined as the ground-state space of a commuting-projector Hamiltonian <span class="inline-math">\(H\)</span> consisting of a sum of <span class="inline-math">\(m\)</span> local projectors, each of which acts on exactly <span class="inline-math">\(k\)</span> qubits (for some constant <span class="inline-math">\(k\)</span>). Such a code is QLTC with soundness function <span class="inline-math">\(R(\delta)\in[0,1]\)</span> if <span id="equation--eq-qltc" class="display-math env-align">\begin{align}
+\label{eq:qltc}
+  \forall \delta &gt; 0,|\psi\rangle~:~\text{dist}(|\psi\rangle,C) \geq \delta n \Rightarrow \frac{1}{m}\langle\psi|H|\psi\rangle\geq R(\delta)~,
+\end{align}</span> where <span class="inline-math">\(\text{dist}(|\psi\rangle,\mathsf{C})\)</span> is a particular distance function between the state <span class="inline-math">\(|\psi\rangle\)</span> and the codespace <span class="inline-math">\(\mathsf{C}\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Def. 13]</a>. The locality parameter <span class="inline-math">\(k\)</span> is called the <span class="textit">query complexity</span> of the code.</p><p>A qubit, modular-qudit, or Galois-qudit stabilizer code that is locally testable is called a <span class="textit">stabilizer locally testable code (SLTC)</span>. In other words, the code admits a set of <span class="inline-math">\(m\)</span> <span class="inline-math">\(k\)</span>-local stabilizer generators <span class="inline-math">\(S_i\)</span> whose corresponding code Hamiltonian <span class="inline-math">\(H=\frac{1}{2}\sum_{i=1}^m I-S_i\)</span> satisfies the requirement of being QLTC.</p><p>For example, the <span class="inline-math">\([[2L^2,2,L]]\)</span> toric code on an <span class="inline-math">\(L\times L\)</span> lattice is <span class="textit">not</span> a QLTC because of the following argument. Let <span class="inline-math">\(|\psi\rangle\)</span> be a ground state that is excited by <span class="inline-math">\(L/3\)</span> Pauli strings, each of length <span class="inline-math">\(L/2\)</span>. In order to fit on the lattice, such strings can, e.g., be horizontal and aligned next to each other in the vertical direction. The distance function <span class="inline-math">\(\text{dist}(|\psi\rangle,\mathsf{C})\)</span> is the weight of the smallest Pauli string that multiplies <span class="inline-math">\(|\psi\rangle\)</span> to yield a state in the codespace. In this case, that weight is the same as the weight of the perturbing string, i.e., <span class="inline-math">\(L^2/6\)</span>, requiring <span class="inline-math">\(\delta = 1/12\)</span> to satisfy <span class="inline-math">\(\eqref{eq:qltc}\)</span>. There are <span class="inline-math">\(2L/3\)</span> violated Hamiltonian terms because each of the <span class="inline-math">\(L/3\)</span> strings violates only two stabilizer generators. However, there are <span class="inline-math">\(m = 2(L^2-1)\)</span> stabilizer generators, so the implication of <span class="inline-math">\(\eqref{eq:qltc}\)</span> is not satisfied for nonzero soundness as <span class="inline-math">\(L\to\infty\)</span> because <span class="inline-math">\(\frac{1}{m}\langle\psi|H|\psi = \frac{2L/3}{2(L^2-1)}\to 0\)</span>.</p></div>
 
 
 
@@ -118,7 +119,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">It was shown in Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> that existence of a qLTC with constant parameters would implies resolution of the <span class="textit">No low-energy trivial states</span> (NLTS) conjecture <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span>
+  <span class="paragraph-in-list">It was shown in Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> that existence of a QLTC with constant parameters would implies resolution of the <span class="textit">No low-energy trivial states</span> (NLTS) conjecture <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span>
 </div>
 
 
@@ -146,10 +147,35 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/sltc">Stabilizer locally testable code (sLTC)</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/check_product">Quantum check-product code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum check-product constructions yield a sLTC code with constant soundness <span class="inline-math">\(2\rho\)</span> from a classical LTC code with soundness <span class="inline-math">\(\rho\)</span>. While these are the first bona-fide QLTC code family because they admit asymptotically constant soundess, they are not practical because their distance is two.</span></li>
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qldpc">Quantum low-density parity-check (QLDPC) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Stabilizer LTCs are QLDPC. More general QLTCs are not defined using Pauli strings, but the codespace is the ground-state subspace of a local Hamiltonain. In this sense, QLTCs are QLDPC codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hemicubic">Hemicubic code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A hemicubic code family has asymptotically diminishing soundness that scales as order <span class="inline-math">\(O(1/\log n)\)</span>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hypersphere_product">Hypersphere product code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The hypersphere product code family has asymptotically diminishing soundness that scales as order <span class="inline-math">\(O(1/(\log n)^2)\)</span>, locality of stabilizer generators scaling as order <span class="inline-math">\(O(\log n)\)</span>, and distance <span class="inline-math">\(\Theta(\sqrt{n})\)</span>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/ltc">Locally testable code (LTC)</a></span></li>
+</ul>
+</div>
 
 
 
@@ -174,18 +200,18 @@
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qltc/qltc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian/qltc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=qltc&amp;code_yml_filename=quantum/properties/qltc/qltc.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qltc</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=qltc&amp;code_yml_filename=quantum/properties/hamiltonian/qltc.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qltc</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Quantum locally testable code (qLTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qltc</dd>
+    <dd class="boxedcontent">“Quantum locally testable code (QLTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qltc</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_qltc,
-title={Quantum locally testable code (qLTC)},
+title={Quantum locally testable code (QLTC)},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -196,7 +222,7 @@ url={https://errorcorrectionzoo.org/c/qltc}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Quantum%20locally%20testable%20code%20%28qLTC%29%20https%3A//errorcorrectionzoo.org/c/qltc" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qltc&amp;t=Quantum%20locally%20testable%20code%20%28qLTC%29" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Quantum%20locally%20testable%20code%20%28qLTC%29&amp;body=Quantum%20locally%20testable%20code%20%28qLTC%29%20https%3A//errorcorrectionzoo.org/c/qltc">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Quantum%20locally%20testable%20code%20%28QLTC%29%20https%3A//errorcorrectionzoo.org/c/qltc" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qltc&amp;t=Quantum%20locally%20testable%20code%20%28QLTC%29" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Quantum%20locally%20testable%20code%20%28QLTC%29&amp;body=Quantum%20locally%20testable%20code%20%28QLTC%29%20https%3A//errorcorrectionzoo.org/c/qltc">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/qltc</dd>
@@ -212,11 +238,11 @@ url={https://errorcorrectionzoo.org/c/qltc}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Quantum locally testable code (qLTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qltc</p>
+  <p>“Quantum locally testable code (QLTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qltc</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qltc/qltc.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian/qltc.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/qltc/qltc.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/hamiltonian/qltc.yml</a>.</p>
 </div>
 
 
@@ -226,7 +252,7 @@ url={https://errorcorrectionzoo.org/c/qltc}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/sltc">sLTC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/hamiltonian">Hamiltonian-based</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/check_product">Quantum check-product</a></li><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/hemicubic">Hemicubic</a></li><li><a href="/c/hypersphere_product">Hypersphere product</a></li><li><a href="/c/ltc">LTC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

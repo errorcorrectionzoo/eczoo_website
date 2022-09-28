@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="citation_language" content="en" />
+<meta name="citation_book_title" content="The Error Correction Zoo" />
+<meta name="citation_inbook_title" content="The Error Correction Zoo" />
+<meta name="citation_title" content="Locally testable code (LTC)" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+<meta name="citation_editor" content="Albert, Victor V." />
+<meta name="citation_editor" content="Faist, Philippe" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="Locally testable code (LTC)" />
+<meta name="DC.issued" content="2022" />
+<meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
+
+
+  <title>
+    Locally testable code (LTC) — Error Correction Zoo
+  </title>
+
+  <!-- favicon generated with https://realfavicongenerator.net/ -->
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <!--<link rel="manifest" href="/site.webmanifest">-->
+  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#00007f">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+  <!-- end favicon code -->
+
+  <link type="text/css" rel="stylesheet" href="/css/main.css" />
+
+  <script type="text/javascript">
+    window.ecz_baseurl = '/';
+  </script>
+
+  <script type="text/javascript" async
+	  src="/js/misc.js">
+  </script>
+  <script type="text/javascript" src="/js/mathjaxinit.js" async>
+  </script>
+
+  <script type="text/javascript" async src="/js/eczcodepagestuff.js"></script>
+
+
+</head>
+<body>
+
+
+<div
+  id="bodycontents"
+  class=" "
+  >
+
+  <div id="header-bg-decoration"></div>
+
+  <a id="logo" href="/"></a>
+
+  <header id="header"></header>
+
+  <main id="main">
+
+
+<!-- renamed elements:
+     dl -> section
+     dt -> h2
+     dd -> div class="sectioncontent"
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_ltc">
+
+<!--<h2></h2>-->
+<div class="sectioncontent info-popup-button-container"></div>
+
+<!-- <h2 id="code_name" class="code-name">Name</h2> -->
+<div class="sectioncontent code-name">
+  <span class="code-name-cell">
+    <h1 class="code-name">
+      Locally testable code (LTC)<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></h1>
+  </span>
+</div>
+
+
+<h2 id="description" class="code-description">Description</h2>
+<div class="sectioncontent code-description"><p>Code for which one can efficiently check whether a given string is a codeword.</p><p>More technically, we recount what it means for a binary code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> to be <span class="inline-math">\((k,R)\)</span>-locally testable with <span class="textit">query complexity</span> <span class="inline-math">\(k\)</span> and <span class="textit">soundness</span> <span class="inline-math">\(R\)</span> <a href="#citation-6" class="href-endnote endnote citation">[6; Thm. 1.1]</a>. Similar definitions can be done for more general alphabets <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. The idea is to reliably test whether a given bit-string <span class="inline-math">\(x\)</span> is in the code by only sampling subsets of <span class="inline-math">\(k\)</span> bits. To have something to check against, we define a collection of length-<span class="inline-math">\(w\)</span> subsets <span class="inline-math">\(S\)</span> of bit locations that are called <span class="textit">allowed local views</span>.</p><p>A code is LTC if the following two conditions are satisfied. First, if <span class="inline-math">\(x\)</span> is a codeword, then all of its restrictions to the subsets, <span class="inline-math">\(x|_S\)</span>, are allowed local views, <span class="display-math env-align">\begin{align}
+  x\in C \Rightarrow x|_S \in \{allowed local views\}~.
+\end{align}</span> This guarantees that codewords can indeed be determined from this limited sampling procedure.</p><p>Second, the probability that a given restriction is not an allowed local view is lower-bounded by the relative distance to the code, <span class="display-math env-align">\begin{align}
+  \text{Pr}_S (x|_S\text{ not an allowed local view}) \geq R \frac{D(x,C)}{n}~,
+\end{align}</span> where <span class="inline-math">\(D(x,C)\)</span> is the Hamming distance between <span class="inline-math">\(x\)</span> and the closest codeword to <span class="inline-math">\(x\)</span>. This condition ensures that strings <span class="inline-math">\(x\)</span> can be deemed to be not in the codespace with high probability, i.e., with probability increasing as <span class="inline-math">\(x\)</span> gets farther from the code.</p></div>
+
+
+
+<!-- Display features -->
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">LTCs first appeared implicitly in works on probabilistically checkable proofs <a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-12" class="href-endnote endnote citation">[12]</a>; see Ref. <a href="#citation-7" class="href-endnote endnote citation">[7]</a> for a detailed review.</span>
+</div>
+
+
+<!-- Relationships to other codes -->
+
+<h2 id="relations_parents" class="code-parents">
+    Parent
+</h2>
+<div class="sectioncontent code-parents">
+
+
+<ul class="code-relations-list code-parents-list">
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/ecc">Error-correcting code (ECC)</a></span></li>
+</ul>
+</div>
+
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qltc">Quantum locally testable code (QLTC)</a></span></li>
+</ul>
+</div>
+
+
+
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>L. Babai et al., “Checking computations in polylogarithmic time”, Proceedings of the twenty-third annual ACM symposium on Theory of computing - STOC &#x27;91 (1991). <a href="https://doi.org/10.1145/103418.103428" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Sanjeev Arora. <span class="textit">Probabilistic checking of proofs and hardness of approximation problems</span>. UC Berkeley, 1994.</dd><dt id="citation-3">[3]</dt><dd>R. Rubinfeld and M. Sudan, “Robust Characterizations of Polynomials with Applications to Program Testing”, SIAM Journal on Computing <span class="textbf">25</span>, 252 (1996). <a href="https://doi.org/10.1137/S0097539793255151" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>O. Goldreich and M. Sudan, “Locally testable codes and PCPs of almost-linear length”, Journal of the ACM <span class="textbf">53</span>, 558 (2006). <a href="https://doi.org/10.1145/1162349.1162351" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Katalin Friedl and Madhu Sudan, “Some Improvements to Total Degree Tests”. <a href="https://arxiv.org/abs/1307.3975" target="_blank" class="href-href">1307.3975</a></dd><dt id="citation-6">[6]</dt><dd>Irit Dinur et al., “Locally Testable Codes with constant rate, distance, and locality”. <a href="https://arxiv.org/abs/2111.04808" target="_blank" class="href-href">2111.04808</a></dd><dt id="citation-7">[7]</dt><dd>O. Goldreich, “Short Locally Testable Codes and Proofs: A Survey in Two Parts”, Property Testing 65 (2010). <a href="https://doi.org/10.1007/978-3-642-16367-8_6" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>M. Blum, M. Luby, and R. Rubinfeld, “Self-testing/correcting with applications to numerical problems”, Journal of Computer and System Sciences <span class="textbf">47</span>, 549 (1993). <a href="https://doi.org/10.1016/0022-0000(93)90044-W" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>L. Babai, L. Fortnow, and C. Lund, “Non-deterministic exponential time has two-prover interactive protocols”, Computational Complexity <span class="textbf">1</span>, 3 (1991). <a href="https://doi.org/10.1007/BF01200056" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>C. Lund et al., “Algebraic methods for interactive proof systems”, Journal of the ACM <span class="textbf">39</span>, 859 (1992). <a href="https://doi.org/10.1145/146585.146605" target="_blank" class="href-href">DOI</a></dd><dt id="citation-11">[11]</dt><dd>S. Arora and S. Safra, “Probabilistic checking of proofs”, Journal of the ACM <span class="textbf">45</span>, 70 (1998). <a href="https://doi.org/10.1145/273865.273901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>S. Arora et al., “Proof verification and the hardness of approximation problems”, Journal of the ACM <span class="textbf">45</span>, 501 (1998). <a href="https://doi.org/10.1145/278298.278306" target="_blank" class="href-href">DOI</a></dd></dl></div>
+
+
+
+
+
+<!-- zoo-related information and how to edit -->
+
+<h2 class="display-code-id h2-wrap-label redundant-if-info-popup-button-installed">
+  Zoo code information
+</h2>
+<div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
+  <div>
+    <span class="display-code-id-label">Internal code ID:</span>
+    ltc
+  </div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="edit"
+       data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
+          target="_blank"
+          title="Edit code information directly on github.com"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ltc.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          target="_blank"
+          title="edit code information on this site without using github"
+          href="/edit_code?code_id=ltc&amp;code_yml_filename=classical/properties/ltc.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>ltc</code></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="cite"
+       data-popup-button-class-list="code-show-citation"><dl class="show-citation">
+    <dt>Cite as:</dt>
+    <dd class="boxedcontent">“Locally testable code (LTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ltc</dd>
+    <dt>BibTeX:</dt>
+    <dd class="boxedcontent bibtex">@incollection{eczoo_ltc,
+title={Locally testable code (LTC)},
+booktitle={The Error Correction Zoo},
+year={2022},
+editor={Albert, Victor V. and Faist, Philippe},
+url={https://errorcorrectionzoo.org/c/ltc}
+}</dd>
+  </dl></div><div class="code-popup-info-frame"
+       data-is-code-info-popup="1"
+       data-popup-button-label="share"
+       data-popup-button-class-list="code-show-share"><dl class="show-share-social">
+    <dt>Share via:</dt>
+    <dd><a href="https://twitter.com/intent/tweet?text=Locally%20testable%20code%20%28LTC%29%20https%3A//errorcorrectionzoo.org/c/ltc" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/ltc&amp;t=Locally%20testable%20code%20%28LTC%29" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Locally%20testable%20code%20%28LTC%29&amp;body=Locally%20testable%20code%20%28LTC%29%20https%3A//errorcorrectionzoo.org/c/ltc">E-mail</a>
+    </dd>
+    <dt>Permanent link:</dt>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/ltc</dd>
+  </dl></div>
+</div>
+
+
+
+
+<!-- "Cite As" citation, for paper printouts -->
+
+<h2 class="display-print-citation">
+  Cite as:
+</h2>
+<div class="sectioncontent display-print-citation">
+  <p>“Locally testable code (LTC)”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/ltc</p>
+
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ltc.yml"
+                class="ashowurl"
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/ltc.yml</a>.</p>
+</div>
+
+
+
+</article>
+  </main><!-- #main -->
+
+  <nav id="navigation">
+
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/qltc">QLTC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+  </nav><!-- #navigation -->
+
+  <nav id="navigation-shortcuts">
+    <a href="#navigation" id="nav-shortcut-to-navigation-links">&#8801;</a>
+  </nav>
+  <footer id="footer">
+    <div class="footer-stuff">
+<a href="/about">Error correction zoo</a>
+by Victor V. Albert, Philippe Faist, and
+<a href="/team">many contributors</a>.    </div>
+  </footer>
+
+</div>
+</body>
+</html>
