@@ -85,7 +85,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">An even-length-<span class="inline-math">\(n\)</span> binary or <span class="inline-math">\(q\)</span>-ary code whose codewords all have a Hamming weight of <span class="inline-math">\(n/2\)</span>. A code is <span class="inline-math">\(\epsilon\)</span>-balanced if the relative weight (i.e., weight divided by <span class="inline-math">\(n\)</span>) of all codewords lies in the interval <span class="inline-math">\([\frac{1-\epsilon}{2},\frac{1+\epsilon}{2}]\)</span>. </div>
+<div class="sectioncontent code-description">An even-length-<span class="inline-math">\(n\)</span> binary or <span class="inline-math">\(q\)</span>-ary code whose nonzero codewords all have a Hamming weight of <span class="inline-math">\(n/2\)</span>. A code is <span class="inline-math">\(\epsilon\)</span><span class="textit">-balanced</span> if the relative weight (i.e., weight divided by <span class="inline-math">\(n\)</span>) of all nonzero codewords lies in the interval <span class="inline-math">\([\frac{1-\epsilon}{2},\frac{1+\epsilon}{2}]\)</span>. A code is <span class="inline-math">\(\gamma\)</span><span class="textit">-unbiased</span> if the relative weight lies in the interval <span class="inline-math">\((\frac{1}{2}-\frac{1}{n^{\gamma}},\frac{1}{2}+\frac{1}{n^{\gamma}})\)</span>. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Can detect unidirectional errors, such as a zero going to a one.</div>
@@ -157,12 +157,16 @@
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/ltc">Locally testable code (LTC)</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Random low-rate unbiased linear codes are LTCs <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/ta-shma">Ta-Shma code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -172,7 +176,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Knuth, “Efficient balanced codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 51 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057136" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>S. Al-Bassam and B. Bose, “On balanced codes”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 406 (1990). <a href="https://doi.org/10.1109/18.52490" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>K. A. Schouhamer Immink and J. H. Weber, “Very Efficient Balanced Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">28</span>, 188 (2010). <a href="https://doi.org/10.1109/jsac.2010.100207" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>K. A. S. Immink. <span class="textit">Codes for mass data storage systems</span>. Shannon Foundation Publisher, 2004.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Knuth, “Efficient balanced codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 51 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057136" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>S. Al-Bassam and B. Bose, “On balanced codes”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 406 (1990). <a href="https://doi.org/10.1109/18.52490" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>K. A. Schouhamer Immink and J. H. Weber, “Very Efficient Balanced Codes”, IEEE Journal on Selected Areas in Communications <span class="textbf">28</span>, 188 (2010). <a href="https://doi.org/10.1109/jsac.2010.100207" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>K. A. S. Immink. <span class="textit">Codes for mass data storage systems</span>. Shannon Foundation Publisher, 2004.</dd><dt id="citation-5">[5]</dt><dd>S. Kopparty and S. Saraf, “Local list-decoding and testing of random linear codes from high error”, Proceedings of the 42nd ACM symposium on Theory of computing - STOC &#x27;10 (2010). <a href="https://doi.org/10.1145/1806689.1806748" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -253,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/balanced}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/constant_weight">Constant-weight</a></li><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/ta-shma">Ta-Shma</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/constant_weight">Constant-weight</a></li><li><a href="/c/divisible">Divisible</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/ltc">LTC</a></li><li><a href="/c/ta-shma">Ta-Shma</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
