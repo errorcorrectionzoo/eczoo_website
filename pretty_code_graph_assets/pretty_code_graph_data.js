@@ -4712,7 +4712,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Family of \\(G\\)-lifted product codes constructed using two random classical Tanner codes defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes [Pavel Panteleev and Gleb Kalachev, \u201cAsymptotically Good Quantum and Locally Testable Classical LDPC Codes\u201d. 2111.03654].\n\nAn \u2026",
+                    "_description": "Family of \\(G\\)-lifted product codes constructed using two random classical Tanner codes defined on expander graphs. For certain parameters, this construction yields the first asymptotically good QLDPC codes. \u2026",
                     "_code_href": "/c/expander_lifted_product",
                     "_family_generation_level": 7
                 },

@@ -85,10 +85,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Code for which one can efficiently check whether a given string is a codeword. Efficiency of the verification is quantified by the code&#x27;s <span class="textit">query complexity</span> <span class="inline-math">\(k\)</span>, while effectiveness is quantified by the code&#x27;s <span class="textit">soundness</span> <span class="inline-math">\(R\)</span>.</p><p>Typically, one looks at how <span class="inline-math">\(R\)</span> scales with increasing code size for infinite families of codes, defining LTC families as those for which the soundness is asymptotically constant. LTC families that also have asymptotically constant distance, rate, and query complexity are called <span class="inline-math">\(c^3\)</span><span class="textit">-LTCs</span>. The first two such families are the expander lifted-product codes and left-right Cayley complex codes.</p><p>More technically, we recount what it means for a binary code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> to be <span class="inline-math">\((k,R)\)</span>-locally testable <a href="#citation-6" class="href-endnote endnote citation">[6; Thm. 1.1]</a>. Similar definitions can be done for codes on more general alphabets <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. The idea is to reliably test whether a given bit-string <span class="inline-math">\(x\)</span> is in the code by only sampling subsets of <span class="inline-math">\(k\)</span> bits. To have something to check against, we define a collection of length-<span class="inline-math">\(w\)</span> subsets <span class="inline-math">\(S\)</span> of bit locations that are called <span class="textit">allowed local views</span>.</p><p>A code is LTC if the following two conditions are satisfied. First, if <span class="inline-math">\(x\)</span> is a codeword, then all of its restrictions to the subsets, <span class="inline-math">\(x|_S\)</span>, are allowed local views, <span class="display-math env-align">\begin{align}
-  x\in C \Rightarrow x|_S \in \{allowed local views\}~.
+<div class="sectioncontent code-description"><p>Code for which one can efficiently check whether a given string is a codeword. Efficiency of the verification is quantified by the code&#x27;s <span class="textit">query complexity</span> <span class="inline-math">\(k\)</span>, while effectiveness is quantified by the code&#x27;s <span class="textit">soundness</span> <span class="inline-math">\(R\)</span>.</p><p>Typically, one looks at how <span class="inline-math">\(R\)</span> scales with increasing code size for infinite families of codes, defining LTC families as those for which the soundness is asymptotically constant. LTC families that also have asymptotically constant distance, rate, and query complexity are called <span class="inline-math">\(c^3\)</span><span class="textit">-LTCs</span>. The first two such families are the expander lifted-product codes and left-right Cayley complex codes.</p><p>More technically, we recount what it means for a binary code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> to be <span class="inline-math">\((k,R)\)</span>-locally testable <a href="#citation-6" class="href-endnote endnote citation">[6; Thm. 1.1]</a>. Similar definitions can be done for codes on more general alphabets <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. The idea is to reliably test whether a given bit-string <span class="inline-math">\(x\)</span> is in the code by only sampling subsets of <span class="inline-math">\(k\)</span> bits. To have something to check against, we define a collection of length-<span class="inline-math">\(w\)</span> subsets <span class="inline-math">\(S\)</span> of bit locations that are called <span class="textit">allowed local views</span>.</p><p>A code is LTC if the following two conditions are satisfied. First, if <span class="inline-math">\(x\)</span> is a codeword, then all of its restrictions <span class="inline-math">\(x|_S\)</span> to the subsets <span class="inline-math">\(S\)</span> are allowed local views, <span class="display-math env-align">\begin{align}
+  x\in C \Rightarrow x|_S \in \{\text{allowed local views}\}~.
 \end{align}</span> This guarantees that codewords can indeed be determined from this limited sampling procedure.</p><p>Second, the probability that a given restriction is not an allowed local view is lower-bounded by the relative distance to the code, <span class="display-math env-align">\begin{align}
-  \text{Pr}_S (x|_S\text{ not an allowed local view}) \geq R \frac{D(x,C)}{n}~,
+  \text{Pr}_S (x|_S\text{ not allowed local view}) \geq R \frac{D(x,C)}{n}~,
 \end{align}</span> where <span class="inline-math">\(D(x,C)\)</span> is the Hamming distance between <span class="inline-math">\(x\)</span> and the closest codeword to <span class="inline-math">\(x\)</span>. This condition ensures that strings <span class="inline-math">\(x\)</span> can be deemed to be not in the codespace with high probability, i.e., with probability increasing as <span class="inline-math">\(x\)</span> gets farther from the code.</p></div>
 
 
@@ -120,7 +120,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">LTCs first appeared implicitly in works on probabilistically checkable proofs <a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-12" class="href-endnote endnote citation">[12]</a>; see Ref. <a href="#citation-7" class="href-endnote endnote citation">[7]</a> for a detailed review.</span>
+  <span class="paragraph-in-list">LTCs first appeared implicitly in works on probabilistically checkable proofs (PCPs) <a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-12" class="href-endnote endnote citation">[12]</a>; see Ref. <a href="#citation-7" class="href-endnote endnote citation">[7]</a> for a detailed review.</span>
 </div>
 
 
@@ -163,7 +163,7 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/lr-cayley-complex">Left-right Cayley complex code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Left-right Cayley complex code are one of the first two families of <span class="inline-math">\(c^3\)</span>-LTCs.</span></li>
+      &#x2014;&nbsp;Left-right Cayley complex codes yield one of the first two families of <span class="inline-math">\(c^3\)</span>-LTCs.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -178,6 +178,11 @@
 
 
 
+<details class="sectioncontent code-contributors">
+<summary><span>Page edit log</span></summary>
+<ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-09-27)      — most recent</li></ul>
+</details>
 
 
 
