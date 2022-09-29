@@ -183,6 +183,10 @@ dd {
   margin-left: 1rem;
 }
 
+details > summary > span {
+  cursor: pointer;
+}
+
 #header-bg-decoration {
   background-color: #00007f;
   color: rgba(255, 255, 255, 0.9);
@@ -1063,6 +1067,10 @@ figure.float figcaption > span {
 
 .tile-person .tile-person-links-line > span:not(:first-child)::before {
   content: ' • ';
+}
+
+.tile-person.tile-person-highlight {
+  box-shadow: rgba(0, 50, 180, 0.4) 2px 2px 15px;
 }
 
 #EczooSearchWidget .search-result {
