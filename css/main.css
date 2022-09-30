@@ -823,6 +823,10 @@ table.cells .cellstyle-green {
   background-color: #c8ffd7;
 }
 
+table.cells .cellstyle-blue {
+  background-color: #c8dcff;
+}
+
 table.cells .cellstyle-yellow {
   background-color: #ffffc8;
 }

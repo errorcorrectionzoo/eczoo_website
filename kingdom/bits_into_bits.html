@@ -152,7 +152,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/fibonacci_model">Fibonacci code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/gs-ltc">Goldreich-Sudan code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/lr-cayley-complex">Left-right Cayley complex code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/ta-shma">Ta-Shma code</a>,       <a href="/c/tanner">Tanner code</a>,       <a href="/c/tornado">Tornado code</a>,       <a href="/c/weight_two">Weight-two code</a>.
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/fibonacci_model">Fibonacci code</a>,       <a href="/c/fountain">Fountain code</a>,       <a href="/c/homological_classical">Graph homology code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/justesen">Justesen code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/ta-shma">Ta-Shma zigzag code</a>,       <a href="/c/tanner">Tanner code</a>,       <a href="/c/tornado">Tornado code</a>,       <a href="/c/weight_two">Weight-two code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -161,12 +161,20 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_gs-ltc">
-  <span class="short-code-name"><a href="/c/gs-ltc">Goldreich-Sudan code</a><span class="code-introduced"><a href="#citation-11" class="href-endnote endnote citation">[11]</a></span></span>
-  <span class="short-code-description">Locally testable linear binary <span class="inline-math">\([[n,k,d]]\)</span> code with length <span class="inline-math">\(k \exp(\tilde{O}\sqrt{\log k}) \)</span> and distance <span class="inline-math">\(\Omega(n)\)</span>. </span>
+<div class="ecc-code" id="ecc_binary_ltc">
+  <span class="short-code-name"><a href="/c/binary_ltc">Binary linear locally testable code</a></span>
+  <span class="short-code-description">A binary linear code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> that is <span class="inline-math">\((u,R)\)</span>-locally testable for some query complexity <span class="inline-math">\(u\)</span> and soundness <span class="inline-math">\(R\)</span>. The idea behind LTCs is to be able to reliably test whether a given bit-string <span class="inline-math">\(x\)</span> is in the code by only sampling subsets of <span class="inline-math">\(u\)</span> bits. To have something to check against, we first have to define a collection of length-<span class="inline-math">\(w\)</span> subsets <span class="inline-math">\(S\)</span> of bit locations that are called <span class="textit">allowed local views</span>. Note that linearity is not required for binary LTCs, but all child entries happen to be binary linear.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/ltc">Locally testable code (LTC)</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/bsghsv-ltc">Ben-Sasson Goldreich Harsha Sudan Vadhan (BGHSV) code</a>,       <a href="/c/bssvw-ltc">Ben-Sasson Sudan Vadhan Wigderson (BSVM) code</a>,       <a href="/c/dinur">Dinur code</a>,       <a href="/c/gs-ltc">Goldreich-Sudan code</a>,       <a href="/c/kmrs-ltc">Kopparty Meir Ron-Zewi Saraf (KMRS) code</a>,       <a href="/c/lr-cayley-complex">Left-right Cayley complex code</a>,       <a href="/c/long">Long code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
   </span>
 </div>
 
@@ -176,7 +184,7 @@
   <span class="short-code-description">Also known as <span class="textit">Walsh code</span> or <span class="textit">Walsh-Hadamard code</span>. An <span class="inline-math">\([2^k,k,2^{k-1}]\)</span> balanced binary code dual to an extended Hamming Code.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/balanced">Balanced code</a>,       <a href="/c/ltc">Locally testable code (LTC)</a>.
+      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/balanced">Balanced code</a>,       <a href="/c/ltc">Locally testable code (LTC)</a>,       <a href="/c/long">Long code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -186,7 +194,7 @@
 
 
 <div class="ecc-code" id="ecc_justesen">
-  <span class="short-code-name"><a href="/c/justesen">Justesen code</a><span class="code-introduced"><a href="#citation-12" class="href-endnote endnote citation">[12]</a></span></span>
+  <span class="short-code-name"><a href="/c/justesen">Justesen code</a><span class="code-introduced"><a href="#citation-11" class="href-endnote endnote citation">[11]</a></span></span>
   <span class="short-code-description">Binary linear code resulting from generalized concatenation of a Reed-Solomon (RS) outer code with multiple inner codes sampled from the Wozencraft ensemble, i.e., <span class="inline-math">\(N\)</span> distinct binary inner codes of dimension <span class="inline-math">\(m\)</span> and length <span class="inline-math">\(2m\)</span>. Justesen codes are parameterized by <span class="inline-math">\(m\)</span>, with length <span class="inline-math">\(n=2mN\)</span> and dimension <span class="inline-math">\(k=mK\)</span>, where <span class="inline-math">\((N=2^m-1,K)\)</span> is the RS outer code over <span class="inline-math">\(GF(2^m)\)</span>.</span>
   <span class="short-code-parents">
     Parents:
@@ -199,22 +207,8 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_lr-cayley-complex">
-  <span class="short-code-name"><a href="/c/lr-cayley-complex">Left-right Cayley complex code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a></span></span>
-  <span class="short-code-description">Binary code constructed on a left-right Cayley complex using a pair of base codes <span class="inline-math">\(C_A,C_B\)</span> and an expander graph such that codewords for a fixed graph vertex are codewords of the tensor code <span class="inline-math">\(C_A \otimes C_B\)</span>. A family of such codes is one of the first <span class="inline-math">\(c^3\)</span>-LTCs. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/ltc">Locally testable code (LTC)</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/tensor">Tensor-product code</a>,       <a href="/c/expander">Expander code</a>,       <a href="/c/balanced_product">Balanced product code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_polar">
-  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#citation-14" class="href-endnote endnote citation">[14]</a></span></span>
+  <span class="short-code-name"><a href="/c/polar">Polar code</a><span class="code-introduced"><a href="#citation-12" class="href-endnote endnote citation">[12]</a></span></span>
   <span class="short-code-description">In its basic version, a binary linear polar code encodes <span class="inline-math">\(K\)</span> message bits into <span class="inline-math">\(N=2^n\)</span> bits. The linear transformation that defines the code is given by the matrix <span class="inline-math">\(G^{(n)}=B_N G^{\otimes n}\)</span>, where <span class="inline-math">\(B_N\)</span> is a certain <span class="inline-math">\(N\times N\)</span> permutation matrix, and <span class="inline-math">\(G^{\otimes n}\)</span> is the <span class="inline-math">\(n\)</span>th Kronecker power of the <span class="inline-math">\(2\times 2\)</span> <span class="textit">kernel</span> matrix <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 0\\ 1 &amp; 1 \end{smallmatrix}\right]\)</span>. To encode <span class="inline-math">\(K\)</span> message bits, one forms an <span class="inline-math">\(N\)</span>-vector <span class="inline-math">\(u\)</span> in which <span class="inline-math">\(K\)</span> coordinates represent the message bits. The remaining <span class="inline-math">\(N-K\)</span> coordinates are set to some fixed values and are said to be <span class="textit">frozen</span>. The codeword <span class="inline-math">\(x \in \{0,1\}^N\)</span> is obtained as <span class="inline-math">\(x=u G^{\otimes n}\)</span>.</span>
   <span class="short-code-info">Protection: Protects against various types of noise in the communication channel, for instance, errors, erasures, or other types of noise. Distance plays no role in the analysis of its properties, and is much lower than the largest possible value given <span class="inline-math">\(K,N\)</span>.</span>
   <span class="short-code-parents">
@@ -233,7 +227,7 @@
 
 
 <div class="ecc-code" id="ecc_tanner">
-  <span class="short-code-name"><a href="/c/tanner">Tanner code</a><span class="code-introduced"><a href="#citation-15" class="href-endnote endnote citation">[15]</a></span></span>
+  <span class="short-code-name"><a href="/c/tanner">Tanner code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a></span></span>
   <span class="short-code-description">Binary linear code defined on edges on a regular graph <span class="inline-math">\(G\)</span> such that each subsequence of bits corresponding to edges in the neighborhood any vertex belong to some <span class="textit">short</span> binary linear code <span class="inline-math">\(C_0\)</span>. Expansion properties of the underlying graph can yield efficient decoding algorithms.</span>
   <span class="short-code-info">Protection: Tanner Codes protect against noise on classical bit strings. If <span class="inline-math">\(C_0\)</span> is an <span class="inline-math">\([d, d-t,d&#x27;&gt; d(\gamma_0 +\frac{\lambda}{d})]_2\)</span> code and G is an <span class="inline-math">\((N, M, 2, d, \rho,\alpha)\)</span>- expander where <span class="inline-math">\(\rho = \gamma_0 (\gamma_0 +\frac{\lambda}{d})\)</span>, then the Tanner Code <span class="inline-math">\(T(G, C_0)\)</span> has rate <span class="inline-math">\(1-\frac{M}{N}t\)</span> and relative distance <span class="inline-math">\(\geq \gamma_0(\gamma_0+\frac{\lambda}{d})\)</span>.</span>
   <span class="short-code-parents">
@@ -254,7 +248,7 @@
 <div class="ecc-code" id="ecc_binary_cyclic">
   <span class="short-code-name"><a href="/c/binary_cyclic">Cyclic linear binary code</a></span>
   <span class="short-code-description">A binary code of length <span class="inline-math">\(n\)</span> is cyclic if, for each codeword <span class="inline-math">\(c_1 c_2 \cdots c_n\)</span>, the cyclically shifted string <span class="inline-math">\(c_n c_1 \cdots c_{n-1}\)</span> is also a codeword. A cyclic code is called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>. A <span class="textit">shortened cyclic code</span> is obtained from a cyclic code by taking only codewords with the first <span class="inline-math">\(j\)</span> zero entries, and deleting those zeroes. </span>
-  <span class="short-code-info">Protection: Shift bound <a href="#citation-16" class="href-endnote endnote citation">[16]</a> gives a lower bound on the distance of cyclic binary codes.</span>
+  <span class="short-code-info">Protection: Shift bound <a href="#citation-14" class="href-endnote endnote citation">[14]</a> gives a lower bound on the distance of cyclic binary codes.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/cyclic">Cyclic code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/group">Group code</a>.
@@ -271,7 +265,7 @@
 
 
 <div class="ecc-code" id="ecc_fibonacci_model">
-  <span class="short-code-name"><a href="/c/fibonacci_model">Fibonacci code</a><span class="code-introduced"><a href="#citation-17" class="href-endnote endnote citation">[17]</a></span></span>
+  <span class="short-code-name"><a href="/c/fibonacci_model">Fibonacci code</a><span class="code-introduced"><a href="#citation-15" class="href-endnote endnote citation">[15]</a></span></span>
   <span class="short-code-description">The code is defined on an <span class="inline-math">\(L\times L/2\)</span> lattice with one bit on each site, where <span class="inline-math">\(L=2^N\)</span> for an integer <span class="inline-math">\(N\geq 2\)</span>. The codewords are defined to satisfy the condition that, for each lattice site <span class="inline-math">\((x,y)\)</span>, the bits on <span class="inline-math">\((x,y)\)</span>, <span class="inline-math">\((x+1,y)\)</span>, <span class="inline-math">\((x-1,y)\)</span> and <span class="inline-math">\((x,y+1)\)</span> (where the lattice is taken to be periodic in both directions) contain an even numbers of <span class="inline-math">\(1\)</span>&#x27;s. The codewords can be generated using a one-dimensional cellular automaton of length <span class="inline-math">\(L\)</span> (periodic). The <span class="inline-math">\(2^L\)</span> possible initial states correspond to the <span class="inline-math">\(2^L\)</span> codewords. For each generation, the state of each cell is the xor sum of that cell and its two neighbors in the previous generation. After <span class="inline-math">\(L/2-1\)</span> generations, the entire history generated by the automaton corresponds to a codeword, where the initial state is the first row of the lattice, the first generation is the second row, etc. </span>
   <span class="short-code-info">Protection: Protects against small weight errors and string-like errors. The code distance is more than <span class="inline-math">\(L\)</span>, but the exact value is unknown. </span>
   <span class="short-code-parents">
@@ -286,7 +280,7 @@
 
 
 <div class="ecc-code" id="ecc_fountain">
-  <span class="short-code-name"><a href="/c/fountain">Fountain code</a><span class="code-introduced"><a href="#citation-18" class="href-endnote endnote citation">[18]</a></span></span>
+  <span class="short-code-name"><a href="/c/fountain">Fountain code</a><span class="code-introduced"><a href="#citation-16" class="href-endnote endnote citation">[16]</a></span></span>
   <span class="short-code-description">Code based on the idea of generating an endless stream of custom encoded packets for the receiver. The code is designed so that the receiver can recover the original transmission of size <span class="inline-math">\(Kl\)</span> bits after receiving at least <span class="inline-math">\(K\)</span> packets each of <span class="inline-math">\(l\)</span> bits.</span>
   <span class="short-code-info">Protection: Designed to protect against erasures during broadcasting of information by a sender to multiple receivers.</span>
   <span class="short-code-parents">
@@ -309,7 +303,7 @@
 
 
 <div class="ecc-code" id="ecc_homological_classical">
-  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#citation-19" class="href-endnote endnote citation">[19]</a></span></span>
+  <span class="short-code-name"><a href="/c/homological_classical">Graph homology code</a><span class="code-introduced"><a href="#citation-17" class="href-endnote endnote citation">[17]</a></span></span>
   <span class="short-code-description">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree. </span>
   <span class="short-code-parents">
     Parents:
@@ -323,7 +317,7 @@
 
 
 <div class="ecc-code" id="ecc_reed_muller">
-  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#citation-20" class="href-endnote endnote citation">[20]</a><a href="#citation-21" class="href-endnote endnote citation">[21]</a><a href="#citation-22" class="href-endnote endnote citation">[22]</a></span></span>
+  <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#citation-18" class="href-endnote endnote citation">[18]</a><a href="#citation-19" class="href-endnote endnote citation">[19]</a><a href="#citation-20" class="href-endnote endnote citation">[20]</a></span></span>
   <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
@@ -335,7 +329,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/ltc">Locally testable code (LTC)</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/parity_check">Parity-check code</a>,       <a href="/c/binary_ltc">Binary linear locally testable code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -345,8 +339,8 @@
 
 
 <div class="ecc-code" id="ecc_ta-shma">
-  <span class="short-code-name"><a href="/c/ta-shma">Ta-Shma code</a><span class="code-introduced"><a href="#citation-23" class="href-endnote endnote citation">[23]</a></span></span>
-  <span class="short-code-description">Member of a family of <span class="inline-math">\(\epsilon\)</span>-balanced codes that nearly achieves the asymptotic Gilbert-Varshamov bound. The codes have relative distance <span class="inline-math">\(\frac{1}{2}-\frac{\epsilon}{2}\)</span> and rate of order <span class="inline-math">\(\Omega (\epsilon^{2+\beta})\)</span> for <span class="inline-math">\(\beta\to 0\)</span> as <span class="inline-math">\(n\to\infty\)</span> <a href="#citation-24" class="href-endnote endnote citation">[24]</a>. </span>
+  <span class="short-code-name"><a href="/c/ta-shma">Ta-Shma zigzag code</a><span class="code-introduced"><a href="#citation-21" class="href-endnote endnote citation">[21]</a></span></span>
+  <span class="short-code-description">Member of a family of <span class="inline-math">\(\epsilon\)</span>-balanced codes that nearly achieves the asymptotic Gilbert-Varshamov bound. The codes have relative distance <span class="inline-math">\(\frac{1}{2}-\frac{\epsilon}{2}\)</span> and rate of order <span class="inline-math">\(\Omega (\epsilon^{2+\beta})\)</span> for <span class="inline-math">\(\beta\to 0\)</span> as <span class="inline-math">\(n\to\infty\)</span> <a href="#citation-22" class="href-endnote endnote citation">[22]</a>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_linear">Linear binary code</a>.
@@ -359,7 +353,7 @@
 
 
 <div class="ecc-code" id="ecc_tornado">
-  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#citation-18" class="href-endnote endnote citation">[18]</a><a href="#citation-25" class="href-endnote endnote citation">[25]</a><a href="#citation-26" class="href-endnote endnote citation">[26]</a></span></span>
+  <span class="short-code-name"><a href="/c/tornado">Tornado code</a><span class="code-introduced"><a href="#citation-16" class="href-endnote endnote citation">[16]</a><a href="#citation-23" class="href-endnote endnote citation">[23]</a><a href="#citation-24" class="href-endnote endnote citation">[24]</a></span></span>
   <span class="short-code-description">Stub.</span>
   <span class="short-code-parents">
     Parents:
@@ -377,11 +371,93 @@
 
 
 <div class="ecc-code" id="ecc_weight_two">
-  <span class="short-code-name"><a href="/c/weight_two">Weight-two code</a><span class="code-introduced"><a href="#citation-27" class="href-endnote endnote citation">[27]</a></span></span>
+  <span class="short-code-name"><a href="/c/weight_two">Weight-two code</a><span class="code-introduced"><a href="#citation-25" class="href-endnote endnote citation">[25]</a></span></span>
   <span class="short-code-description">A length-<span class="inline-math">\(n\)</span> binary code whose codewords all have Hamming weight two. Such codes provide slightly extra redundancy for storage of small-scale information such as ZIP codes or decimal digits.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/constant_weight">Constant-weight code</a>,       <a href="/c/binary_linear">Linear binary code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_bsghsv-ltc">
+  <span class="short-code-name"><a href="/c/bsghsv-ltc">Ben-Sasson Goldreich Harsha Sudan Vadhan (BGHSV) code</a><span class="code-introduced"><a href="#citation-26" class="href-endnote endnote citation">[26]</a></span></span>
+  <span class="short-code-description">Locally testable <span class="inline-math">\([[n,k,d]]\)</span> code with <span class="inline-math">\(n = k^{1+\epsilon}\)</span> for any <span class="inline-math">\(\epsilon &gt; 0\)</span> with query complexity of order <span class="inline-math">\(O(1/\epsilon)\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_bssvw-ltc">
+  <span class="short-code-name"><a href="/c/bssvw-ltc">Ben-Sasson Sudan Vadhan Wigderson (BSVM) code</a><span class="code-introduced"><a href="#citation-27" class="href-endnote endnote citation">[27]</a></span></span>
+  <span class="short-code-description">Locally testable <span class="inline-math">\([[n,k,d]]\)</span> code with <span class="inline-math">\(n = k \cdot 2^{\tilde{O}(\sqrt{\log k})}\)</span> for asymptotically constant query complexity. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dinur">
+  <span class="short-code-name"><a href="/c/dinur">Dinur code</a><span class="code-introduced"><a href="#citation-28" class="href-endnote endnote citation">[28]</a></span></span>
+  <span class="short-code-description">Member of infinite family of locally testable <span class="inline-math">\([[n,n/\text{polylog}n,d]]\)</span> codes with vanishing rate. Code construction relies on a construction utilizing tensor-product codes <a href="#citation-29" class="href-endnote endnote citation">[29]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_gs-ltc">
+  <span class="short-code-name"><a href="/c/gs-ltc">Goldreich-Sudan code</a><span class="code-introduced"><a href="#citation-30" class="href-endnote endnote citation">[30]</a></span></span>
+  <span class="short-code-description">Locally testable <span class="inline-math">\([[n,k,d]]\)</span> code with <span class="inline-math">\(n = k^{1+O(1/u)}\)</span> and distance <span class="inline-math">\(\Omega(n)\)</span> for query complexity <span class="inline-math">\(u\)</span>. The same work also presented a probabilistic construction of codes of size <span class="inline-math">\(k^{1+o(1)}\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/random">Random code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_kmrs-ltc">
+  <span class="short-code-name"><a href="/c/kmrs-ltc">Kopparty Meir Ron-Zewi Saraf (KMRS) code</a><span class="code-introduced"><a href="#citation-31" class="href-endnote endnote citation">[31]</a><a href="#citation-32" class="href-endnote endnote citation">[32]</a></span></span>
+  <span class="short-code-description">Member of a family of locally testable binary linear codes with constant rate, constant relative distance, and subpolynomial query complexity <span class="inline-math">\(u = (\log n)^{O(\log \log n)}\)</span>). Later work by Gopi, Kopparty, Oliveira, Ron-Zewi, and Saraf <a href="#citation-32" class="href-endnote endnote citation">[32]</a> showed that related concatenated codes achieve the Gilbert-Varshamov bound. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_lr-cayley-complex">
+  <span class="short-code-name"><a href="/c/lr-cayley-complex">Left-right Cayley complex code</a><span class="code-introduced"><a href="#citation-33" class="href-endnote endnote citation">[33]</a></span></span>
+  <span class="short-code-description">Binary code constructed on a left-right Cayley complex using a pair of base codes <span class="inline-math">\(C_A,C_B\)</span> and an expander graph such that codewords for a fixed graph vertex are codewords of the tensor code <span class="inline-math">\(C_A \otimes C_B\)</span>. A family of such codes is one of the first <span class="inline-math">\(c^3\)</span>-LTCs. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/tensor">Tensor-product code</a>,       <a href="/c/expander">Expander code</a>,       <a href="/c/balanced_product">Balanced product code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_long">
+  <span class="short-code-name"><a href="/c/long">Long code</a><span class="code-introduced"><a href="#citation-34" class="href-endnote endnote citation">[34]</a><a href="#citation-35" class="href-endnote endnote citation">[35]</a></span></span>
+  <span class="short-code-description">Locally testable <span class="inline-math">\([[2^{2^k},k,d]]\)</span> code. The encoder maps a <span class="inline-math">\(k\)</span>-bit string into a codeword that consists of the values of all Boolean functions on the <span class="inline-math">\(k\)</span>-bit string. The code is not practical, but is useful for certain probabilistically checkable proof (PCP) constructions <a href="#citation-36" class="href-endnote endnote citation">[36]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_ltc">Binary linear locally testable code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/hadamard">Hadamard code</a>.
   </span>
 </div>
 
@@ -406,7 +482,7 @@
 
 
 <div class="ecc-code" id="ecc_zetterberg">
-  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#citation-28" class="href-endnote endnote citation">[28]</a></span></span>
+  <span class="short-code-name"><a href="/c/zetterberg">Zetterberg code</a><span class="code-introduced"><a href="#citation-37" class="href-endnote endnote citation">[37]</a></span></span>
   <span class="short-code-description">Family of binary cyclic <span class="inline-math">\([2^{2s}+1,2^{2s}-4s+1]\)</span> codes with distance <span class="inline-math">\(d&gt;5\)</span> generated by the minimal polynomial <span class="inline-math">\(g_s(x)\)</span> of <span class="inline-math">\(\alpha\)</span> over <span class="inline-math">\(GF(2)\)</span>, where <span class="inline-math">\(\alpha\)</span> is a primitive <span class="inline-math">\(n\)</span>th root of unity in the field <span class="inline-math">\(GF(2^{4s})\)</span>. They are quasi-perfect codes and are one of the best known families of double-error correcting binary linear codes</span>
   <span class="short-code-info">Protection: Correct at least all weight-2 errors.</span>
   <span class="short-code-parents">
@@ -417,7 +493,7 @@
 
 
 <div class="ecc-code" id="ecc_expander">
-  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#citation-29" class="href-endnote endnote citation">[29]</a></span></span>
+  <span class="short-code-name"><a href="/c/expander">Expander code</a><span class="code-introduced"><a href="#citation-38" class="href-endnote endnote citation">[38]</a></span></span>
   <span class="short-code-description">Expander codes are binary linear codes whose parity check matrices are derived from the adjacency matrix of bipartite expander graphs. In particular, the rows of the parity check matrix correspond to the right nodes of the bipartite graph and the columns correspond to the left nodes. The codespace is equivalent to all subsets of the left nodes in the graph that have an even number of edges going into every right node of the graph. Since the expander graph is only left regular, these codes do not qualify as LDPC codes.</span>
   <span class="short-code-info">Protection: Bit flip errors of weight at most <span class="inline-math">\((d-1)/2\)</span> where <span class="inline-math">\(d\)</span> is the distance of the code and is linear in <span class="inline-math">\(n\)</span>, the number of physical bits.</span>
   <span class="short-code-parents">
@@ -432,7 +508,7 @@
 
 
 <div class="ecc-code" id="ecc_bch">
-  <span class="short-code-name"><a href="/c/bch">Binary BCH code</a><span class="code-introduced"><a href="#citation-30" class="href-endnote endnote citation">[30]</a><a href="#citation-31" class="href-endnote endnote citation">[31]</a><a href="#citation-32" class="href-endnote endnote citation">[32]</a></span></span>
+  <span class="short-code-name"><a href="/c/bch">Binary BCH code</a><span class="code-introduced"><a href="#citation-39" class="href-endnote endnote citation">[39]</a><a href="#citation-40" class="href-endnote endnote citation">[40]</a><a href="#citation-41" class="href-endnote endnote citation">[41]</a></span></span>
   <span class="short-code-description">Cyclic binary code of odd length <span class="inline-math">\(n\)</span> whose zeroes are consecutive powers of a primitive <span class="inline-math">\(n\)</span>th root of unity <span class="inline-math">\(\alpha\)</span> (see <a href="/c/cyclic#defterm-Cyclic-to-polynomial_20Xcorrespondence" class="href-ref ref-topic">Cyclic-to-polynomial correspondence</a>). More precisely, the generator polynomial of a BCH code of <span class="textit">designed distance</span> <span class="inline-math">\(\delta\geq 1\)</span> is the lowest-degree monic polynomial with zeroes <span class="inline-math">\(\{\alpha^b,\alpha^{b+1},\cdots,\alpha^{b+\delta-2}\}\)</span> for some <span class="inline-math">\(b\geq 0\)</span>. BCH codes are called <span class="textit">narrow-sense</span> when <span class="inline-math">\(b=1\)</span>, and are called <span class="textit">primitive</span> when <span class="inline-math">\(n=2^r-1\)</span> for some <span class="inline-math">\(r\geq 2\)</span>.</span>
   <span class="short-code-info">Protection: By the BCH bound, BCH code with designed distance <span class="inline-math">\(\delta\)</span> has true distance <span class="inline-math">\(d\geq\delta\)</span>. BCH codes with different designed distances may coincide, and the largest possible designed distance for a given code is the <span class="textit">Bose distance</span>; the true distance may still be larger than that. </span>
   <span class="short-code-parents">
@@ -455,8 +531,8 @@
 
 
 <div class="ecc-code" id="ecc_binary_duadic">
-  <span class="short-code-name"><a href="/c/binary_duadic">Binary duadic code</a><span class="code-introduced"><a href="#citation-33" class="href-endnote endnote citation">[33]</a></span></span>
-  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#citation-34" class="href-endnote endnote citation">[34]</a>.</span>
+  <span class="short-code-name"><a href="/c/binary_duadic">Binary duadic code</a><span class="code-introduced"><a href="#citation-42" class="href-endnote endnote citation">[42]</a></span></span>
+  <span class="short-code-description">Member of a pair of cyclic linear binary codes that satisfy certain relations, depending on whether the pair is <span class="textit">even-like</span> or <span class="textit">odd-like</span> duadic. Duadic codes exist for lengths <span class="inline-math">\(n\)</span> that are products of powers of primes, with each prime being <span class="inline-math">\(\pm 1\)</span> modulo <span class="inline-math">\(8\)</span> <a href="#citation-43" class="href-endnote endnote citation">[43]</a>.</span>
   <span class="short-code-info">Protection: Since duadic codes are cyclic, the BCH bound can be used to determine their minimum distance.</span>
   <span class="short-code-parents">
     Parents:
@@ -507,8 +583,8 @@
 
 
 <div class="ecc-code" id="ecc_golay">
-  <span class="short-code-name"><a href="/c/golay">Golay code</a><span class="code-introduced"><a href="#citation-35" class="href-endnote endnote citation">[35]</a></span></span>
-  <span class="short-code-description">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-36" class="href-endnote endnote citation">[36]</a> and sporadic simple groups <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</span>
+  <span class="short-code-name"><a href="/c/golay">Golay code</a><span class="code-introduced"><a href="#citation-44" class="href-endnote endnote citation">[44]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-45" class="href-endnote endnote citation">[45]</a> and sporadic simple groups <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/perfect">Perfect code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>,       <a href="/c/bch">Binary BCH code</a>.
@@ -525,7 +601,7 @@
 
 
 <div class="ecc-code" id="ecc_hamming">
-  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#citation-37" class="href-endnote endnote citation">[37]</a><a href="#citation-38" class="href-endnote endnote citation">[38]</a><a href="#citation-35" class="href-endnote endnote citation">[35]</a></span></span>
+  <span class="short-code-name"><a href="/c/hamming">Hamming code</a><span class="code-introduced"><a href="#citation-46" class="href-endnote endnote citation">[46]</a><a href="#citation-47" class="href-endnote endnote citation">[47]</a><a href="#citation-44" class="href-endnote endnote citation">[44]</a></span></span>
   <span class="short-code-description">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</span>
   <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
   <span class="short-code-parents">
@@ -548,12 +624,12 @@
 
 
 <div class="ecc-code" id="ecc_tetracode">
-  <span class="short-code-name"><a href="/c/tetracode">Tetracode</a><span class="code-introduced"><a href="#citation-36" class="href-endnote endnote citation">[36]</a></span></span>
+  <span class="short-code-name"><a href="/c/tetracode">Tetracode</a><span class="code-introduced"><a href="#citation-45" class="href-endnote endnote citation">[45]</a></span></span>
   <span class="short-code-description">The <span class="inline-math">\([4,2,3]_{GF(3)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
   \begin{pmatrix}1 &amp; 0 &amp; 1 &amp; 1\\
   0 &amp; 1 &amp; 1 &amp; 2
   \end{pmatrix}~,
-\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-36" class="href-endnote endnote citation">[36]</a>. </span>
+\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-45" class="href-endnote endnote citation">[45]</a>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/simplex">Simplex code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
@@ -566,7 +642,7 @@
 
 
 <div class="ecc-code" id="ecc_raptor">
-  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#citation-39" class="href-endnote endnote citation">[39]</a><a href="#citation-40" class="href-endnote endnote citation">[40]</a></span></span>
+  <span class="short-code-name"><a href="/c/raptor">Raptor (RAPid TORnado) code</a><span class="code-introduced"><a href="#citation-48" class="href-endnote endnote citation">[48]</a><a href="#citation-49" class="href-endnote endnote citation">[49]</a></span></span>
   <span class="short-code-description">Raptor codes are concatenated erasure codes with two layers: an outer <span class="textit">pre-code</span> and a Luby-Transform (LT) inner code. The pre-code is a linear binary erasure code, which is applied first to the input to create some redundant data. The LT code is then applied to the intermediate symbols from the pre-code to generate final output symbols to be transmitted.</span>
   <span class="short-code-info">Protection: As a type of fountain code, a Raptor code is designed to correct erasures. The error probability of Raptor codes is measured in terms of its overhead, which is how many additional symbols are received above the dimension of the input <span class="inline-math">\(k\)</span>. This relationship can vary widely depending on the input pre-code and degree distribution. For a well-designed degree distribution, the error probability of a Raptor code is directly related to the error probability of the pre-code&#x27;s decoder. In other words, if there is a linear time decoder for the pre-code that has subexponentially small error probability, then the Raptor code&#x27;s error probability will decrease exponentially with increasing overhead (past the <span class="inline-math">\(n-k\)</span> overhead symbols necessary for the pre-code).</span>
   <span class="short-code-parents">
@@ -607,7 +683,7 @@
 
 
 <div class="ecc-code" id="ecc_luby_transform">
-  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#citation-41" class="href-endnote endnote citation">[41]</a></span></span>
+  <span class="short-code-name"><a href="/c/luby_transform">Luby transform (LT) code</a><span class="code-introduced"><a href="#citation-50" class="href-endnote endnote citation">[50]</a></span></span>
   <span class="short-code-description">Erasure codes based on fountain codes. They improve on random linear fountain codes by having a much more efficient encoding and decoding algorithm.</span>
   <span class="short-code-parents">
     Parents:
@@ -616,7 +692,7 @@
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. G. Farrell, “Linear binary anticodes”, Electronics Letters <span class="textbf">6</span>, 419 (1970). <a href="https://doi.org/10.1049/el:19700293" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>P. G. Farrell and A. Farrag, “Further properties of linear binary anticodes”, Electronics Letters <span class="textbf">10</span>, 340 (1974). <a href="https://doi.org/10.1049/el:19740269" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>I. N. Landjev, “Linear codes over finite fields and finite projective geometries”, Discrete Mathematics <span class="textbf">213</span>, 211 (2000). <a href="https://doi.org/10.1016/S0012-365X(99)00183-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>Y. Ishai et al., “Batch codes and their applications”, Proceedings of the thirty-sixth annual ACM symposium on Theory of computing - STOC &#x27;04 (2004). <a href="https://doi.org/10.1145/1007352.1007396" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>R. R. Varshamov and G. M. Tenengolts, <span class="textit">Codes which correct single asymmetric errors</span> (translated to English), Autom. Remote Control, 26(2), 286-290 (1965)</dd><dt id="citation-8">[8]</dt><dd>V. I. Levenshtein, <span class="textit">Binary codes capable of correcting deletions, insertions and reversals</span> (translated to English), Soviet Physics Dokl., 10(8), 707-710 (1966).</dd><dt id="citation-9">[9]</dt><dd>Peter Elias. Coding for noisy channels. IRE Convention Records, 3(4):37–46, 1955.</dd><dt id="citation-10">[10]</dt><dd>V.I. Levenshtein, <span class="textit">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.</dd><dt id="citation-11">[11]</dt><dd>O. Goldreich and M. Sudan, “Locally testable codes and PCPs of almost-linear length”, Journal of the ACM <span class="textbf">53</span>, 558 (2006). <a href="https://doi.org/10.1145/1162349.1162351" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>Irit Dinur et al., “Locally Testable Codes with constant rate, distance, and locality”. <a href="https://arxiv.org/abs/2111.04808" target="_blank" class="href-href">2111.04808</a></dd><dt id="citation-14">[14]</dt><dd>E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href-href">DOI</a></dd><dt id="citation-15">[15]</dt><dd>R. Tanner, “A recursive approach to low complexity codes”, IEEE Transactions on Information Theory <span class="textbf">27</span>, 533 (1981). <a href="https://doi.org/10.1109/TIT.1981.1056404" target="_blank" class="href-href">DOI</a></dd><dt id="citation-16">[16]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-17">[17]</dt><dd>G. M. Nixon and B. J. Brown, “Correcting Spanning Errors With a Fractal Code”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 4504 (2021). <a href="https://doi.org/10.1109/TIT.2021.3068359" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2002.11738" target="_blank" class="href-href">2002.11738</a></dd><dt id="citation-18">[18]</dt><dd>J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href-href">DOI</a></dd><dt id="citation-19">[19]</dt><dd>H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href-href">quant-ph/0605094</a></dd><dt id="citation-20">[20]</dt><dd>D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href-href">DOI</a></dd><dt id="citation-21">[21]</dt><dd>I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-22">[22]</dt><dd>N. Mitani, <span class="textit">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.</dd><dt id="citation-23">[23]</dt><dd>A. Ta-Shma, “Explicit, almost optimal, epsilon-balanced codes”, Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing (2017). <a href="https://doi.org/10.1145/3055399.3055408" target="_blank" class="href-href">DOI</a></dd><dt id="citation-24">[24]</dt><dd>Fernando Granha Jeronimo et al., “<span class="verbatimtext">Unique Decoding of Explicit $ε$-balanced Codes Near the Gilbert-Varshamov Bound</span>”. <a href="https://arxiv.org/abs/2011.05500" target="_blank" class="href-href">2011.05500</a></dd><dt id="citation-25">[25]</dt><dd>M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href-href">DOI</a></dd><dt id="citation-26">[26]</dt><dd>M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href-href">DOI</a></dd><dt id="citation-27">[27]</dt><dd>R. W. Hamming, Letter, April 5, 1978.</dd><dt id="citation-28">[28]</dt><dd>L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href-href">DOI</a></dd><dt id="citation-29">[29]</dt><dd>M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href-href">DOI</a></dd><dt id="citation-30">[30]</dt><dd>R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-31">[31]</dt><dd>R. C. Bose and D. K. Ray-Chaudhuri, “Further results on error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 279 (1960). <a href="https://doi.org/10.1016/S0019-9958(60)90870-6" target="_blank" class="href-href">DOI</a></dd><dt id="citation-32">[32]</dt><dd>A. Hocquenghem, Codes correcteurs d&#x27;Erreurs, Chiffres (Paris), vol.2, pp.147-156, 1959.</dd><dt id="citation-33">[33]</dt><dd>J. Leon, J. Masley, and V. Pless, “Duadic Codes”, IEEE Transactions on Information Theory <span class="textbf">30</span>, 709 (1984). <a href="https://doi.org/10.1109/TIT.1984.1056944" target="_blank" class="href-href">DOI</a></dd><dt id="citation-34">[34]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-35">[35]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-36">[36]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-37">[37]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/doi:10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-38">[38]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-39">[39]</dt><dd>A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href-href">DOI</a></dd><dt id="citation-40">[40]</dt><dd>Petar Maymounkov, <span class="textit">Online codes</span>, Technical report, New York University, 2002.</dd><dt id="citation-41">[41]</dt><dd>M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. G. Farrell, “Linear binary anticodes”, Electronics Letters <span class="textbf">6</span>, 419 (1970). <a href="https://doi.org/10.1049/el:19700293" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>P. G. Farrell and A. Farrag, “Further properties of linear binary anticodes”, Electronics Letters <span class="textbf">10</span>, 340 (1974). <a href="https://doi.org/10.1049/el:19740269" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. Bierbrauer, <span class="textit">Introduction to Coding Theory</span> (Chapman and Hall/CRC, 2016). <a href="https://doi.org/10.1201/9781315371993" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>I. N. Landjev, “Linear codes over finite fields and finite projective geometries”, Discrete Mathematics <span class="textbf">213</span>, 211 (2000). <a href="https://doi.org/10.1016/S0012-365X(99)00183-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>Y. Ishai et al., “Batch codes and their applications”, Proceedings of the thirty-sixth annual ACM symposium on Theory of computing - STOC &#x27;04 (2004). <a href="https://doi.org/10.1145/1007352.1007396" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>R. R. Varshamov and G. M. Tenengolts, <span class="textit">Codes which correct single asymmetric errors</span> (translated to English), Autom. Remote Control, 26(2), 286-290 (1965)</dd><dt id="citation-8">[8]</dt><dd>V. I. Levenshtein, <span class="textit">Binary codes capable of correcting deletions, insertions and reversals</span> (translated to English), Soviet Physics Dokl., 10(8), 707-710 (1966).</dd><dt id="citation-9">[9]</dt><dd>Peter Elias. Coding for noisy channels. IRE Convention Records, 3(4):37–46, 1955.</dd><dt id="citation-10">[10]</dt><dd>V.I. Levenshtein, <span class="textit">Application of Hadamard matrices to a problem in coding theory</span>, Problems of Cybernetics, vol. 5, GIFML, Moscow, 1961, 125–136.</dd><dt id="citation-11">[11]</dt><dd>J. Justesen, “Class of constructive asymptotically good algebraic codes”, IEEE Transactions on Information Theory <span class="textbf">18</span>, 652 (1972). <a href="https://doi.org/10.1109/TIT.1972.1054893" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>E. Arikan, “Channel Polarization: A Method for Constructing Capacity-Achieving Codes for Symmetric Binary-Input Memoryless Channels”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 3051 (2009). <a href="https://doi.org/10.1109/TIT.2009.2021379" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>R. Tanner, “A recursive approach to low complexity codes”, IEEE Transactions on Information Theory <span class="textbf">27</span>, 533 (1981). <a href="https://doi.org/10.1109/TIT.1981.1056404" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-15">[15]</dt><dd>G. M. Nixon and B. J. Brown, “Correcting Spanning Errors With a Fractal Code”, IEEE Transactions on Information Theory <span class="textbf">67</span>, 4504 (2021). <a href="https://doi.org/10.1109/TIT.2021.3068359" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2002.11738" target="_blank" class="href-href">2002.11738</a></dd><dt id="citation-16">[16]</dt><dd>J. W. Byers et al., “A digital fountain approach to reliable distribution of bulk data”, ACM SIGCOMM Computer Communication Review <span class="textbf">28</span>, 56 (1998). <a href="https://doi.org/10.1145/285243.285258" target="_blank" class="href-href">DOI</a></dd><dt id="citation-17">[17]</dt><dd>H. Bombin and M. A. Martin-Delgado, “Homological error correction: Classical and quantum codes”, Journal of Mathematical Physics <span class="textbf">48</span>, 052105 (2007). <a href="https://doi.org/10.1063/1.2731356" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0605094" target="_blank" class="href-href">quant-ph/0605094</a></dd><dt id="citation-18">[18]</dt><dd>D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href-href">DOI</a></dd><dt id="citation-19">[19]</dt><dd>I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-20">[20]</dt><dd>N. Mitani, <span class="textit">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.</dd><dt id="citation-21">[21]</dt><dd>A. Ta-Shma, “Explicit, almost optimal, epsilon-balanced codes”, Proceedings of the 49th Annual ACM SIGACT Symposium on Theory of Computing (2017). <a href="https://doi.org/10.1145/3055399.3055408" target="_blank" class="href-href">DOI</a></dd><dt id="citation-22">[22]</dt><dd>Fernando Granha Jeronimo et al., “<span class="verbatimtext">Unique Decoding of Explicit $ε$-balanced Codes Near the Gilbert-Varshamov Bound</span>”. <a href="https://arxiv.org/abs/2011.05500" target="_blank" class="href-href">2011.05500</a></dd><dt id="citation-23">[23]</dt><dd>M. G. Luby et al., “Practical loss-resilient codes”, Proceedings of the twenty-ninth annual ACM symposium on Theory of computing - STOC &#x27;97 (1997). <a href="https://doi.org/10.1145/258533.258573" target="_blank" class="href-href">DOI</a></dd><dt id="citation-24">[24]</dt><dd>M. G. Luby et al., “Efficient erasure correcting codes”, IEEE Transactions on Information Theory <span class="textbf">47</span>, 569 (2001). <a href="https://doi.org/10.1109/18.910575" target="_blank" class="href-href">DOI</a></dd><dt id="citation-25">[25]</dt><dd>R. W. Hamming, Letter, April 5, 1978.</dd><dt id="citation-26">[26]</dt><dd>E. Ben-Sasson et al., “Robust pcps of proximity, shorter pcps and applications to coding”, Proceedings of the thirty-sixth annual ACM symposium on Theory of computing - STOC &#x27;04 (2004). <a href="https://doi.org/10.1145/1007352.1007361" target="_blank" class="href-href">DOI</a></dd><dt id="citation-27">[27]</dt><dd>E. Ben-Sasson et al., “Randomness-efficient low degree tests and short PCPs via epsilon-biased sets”, Proceedings of the thirty-fifth ACM symposium on Theory of computing - STOC &#x27;03 (2003). <a href="https://doi.org/10.1145/780542.780631" target="_blank" class="href-href">DOI</a></dd><dt id="citation-28">[28]</dt><dd>I. Dinur, “The PCP theorem by gap amplification”, Journal of the ACM <span class="textbf">54</span>, 12 (2007). <a href="https://doi.org/10.1145/1236457.1236459" target="_blank" class="href-href">DOI</a></dd><dt id="citation-29">[29]</dt><dd>Eli Ben-Sasson and Madhu Sudan, “Robust Locally Testable Codes and Products of Codes”. <a href="https://arxiv.org/abs/cs/0408066" target="_blank" class="href-href">cs/0408066</a></dd><dt id="citation-30">[30]</dt><dd>O. Goldreich and M. Sudan, “Locally testable codes and PCPs of almost-linear length”, Journal of the ACM <span class="textbf">53</span>, 558 (2006). <a href="https://doi.org/10.1145/1162349.1162351" target="_blank" class="href-href">DOI</a></dd><dt id="citation-31">[31]</dt><dd>S. Kopparty et al., “High-Rate Locally Correctable and Locally Testable Codes with Sub-Polynomial Query Complexity”, Journal of the ACM <span class="textbf">64</span>, 1 (2017). <a href="https://doi.org/10.1145/3051093" target="_blank" class="href-href">DOI</a></dd><dt id="citation-32">[32]</dt><dd>S. Gopi et al., “Locally Testable and Locally Correctable Codes approaching the Gilbert-Varshamov Bound”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 5813 (2018). <a href="https://doi.org/10.1109/TIT.2018.2809788" target="_blank" class="href-href">DOI</a></dd><dt id="citation-33">[33]</dt><dd>Irit Dinur et al., “Locally Testable Codes with constant rate, distance, and locality”. <a href="https://arxiv.org/abs/2111.04808" target="_blank" class="href-href">2111.04808</a></dd><dt id="citation-34">[34]</dt><dd>J. Håstad, “Some optimal inapproximability results”, Journal of the ACM <span class="textbf">48</span>, 798 (2001). <a href="https://doi.org/10.1145/502090.502098" target="_blank" class="href-href">DOI</a></dd><dt id="citation-35">[35]</dt><dd>M. Bellare, O. Goldreich, and M. Sudan, “Free Bits, PCPs, and Nonapproximability---Towards Tight Results”, SIAM Journal on Computing <span class="textbf">27</span>, 804 (1998). <a href="https://doi.org/10.1137/S0097539796302531" target="_blank" class="href-href">DOI</a></dd><dt id="citation-36">[36]</dt><dd>Prahladh Harsha et al., “Limits of Approximation Algorithms: PCPs and Unique Games (DIMACS Tutorial Lecture Notes)”. <a href="https://arxiv.org/abs/1002.3864" target="_blank" class="href-href">1002.3864</a></dd><dt id="citation-37">[37]</dt><dd>L.-H. Zetterberg, “Cyclic codes from irreducible polynomials for correction of multiple errors”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 13 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057682" target="_blank" class="href-href">DOI</a></dd><dt id="citation-38">[38]</dt><dd>M. Sipser and D. A. Spielman, “Expander codes”, IEEE Transactions on Information Theory <span class="textbf">42</span>, 1710 (1996). <a href="https://doi.org/10.1109/18.556667" target="_blank" class="href-href">DOI</a></dd><dt id="citation-39">[39]</dt><dd>R. C. Bose and D. K. Ray-Chaudhuri, “On a class of error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 68 (1960). <a href="https://doi.org/10.1016/s0019-9958(60)90287-4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-40">[40]</dt><dd>R. C. Bose and D. K. Ray-Chaudhuri, “Further results on error correcting binary group codes”, Information and Control <span class="textbf">3</span>, 279 (1960). <a href="https://doi.org/10.1016/S0019-9958(60)90870-6" target="_blank" class="href-href">DOI</a></dd><dt id="citation-41">[41]</dt><dd>A. Hocquenghem, Codes correcteurs d&#x27;Erreurs, Chiffres (Paris), vol.2, pp.147-156, 1959.</dd><dt id="citation-42">[42]</dt><dd>J. Leon, J. Masley, and V. Pless, “Duadic Codes”, IEEE Transactions on Information Theory <span class="textbf">30</span>, 709 (1984). <a href="https://doi.org/10.1109/TIT.1984.1056944" target="_blank" class="href-href">DOI</a></dd><dt id="citation-43">[43]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-44">[44]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-45">[45]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-46">[46]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/doi:10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-47">[47]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-48">[48]</dt><dd>A. Shokrollahi, “Raptor codes”, IEEE Transactions on Information Theory <span class="textbf">52</span>, 2551 (2006). <a href="https://doi.org/10.1109/TIT.2006.874390" target="_blank" class="href-href">DOI</a></dd><dt id="citation-49">[49]</dt><dd>Petar Maymounkov, <span class="textit">Online codes</span>, Technical report, New York University, 2002.</dd><dt id="citation-50">[50]</dt><dd>M. Luby, “LT codes”, The 43rd Annual IEEE Symposium on Foundations of Computer Science, 2002. Proceedings.. <a href="https://doi.org/10.1109/SFCS.2002.1181950" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 
