@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Binary linear locally testable code" />
+<meta name="citation_title" content="Binary linear LTC" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Binary linear locally testable code" />
+<meta name="DC.title" content="Binary linear LTC" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Binary linear locally testable code — Error Correction Zoo
+    Binary linear LTC — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,17 +79,15 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Binary linear locally testable code</h1>
+      Binary linear LTC</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A binary linear code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> that is <span class="inline-math">\((u,R)\)</span>-locally testable for some query complexity <span class="inline-math">\(u\)</span> and soundness <span class="inline-math">\(R\)</span>. The idea behind LTCs is to be able to reliably test whether a given bit-string <span class="inline-math">\(x\)</span> is in the code by only sampling subsets of <span class="inline-math">\(u\)</span> bits. To have something to check against, we first have to define a collection of length-<span class="inline-math">\(w\)</span> subsets <span class="inline-math">\(S\)</span> of bit locations that are called <span class="textit">allowed local views</span>. Note that linearity is not required for binary LTCs, but all child entries happen to be binary linear.</p><p>A code is LTC if the following two conditions are satisfied <a href="#citation-1" class="href-endnote endnote citation">[1; Thm. 1.1]</a>. First, if <span class="inline-math">\(x\)</span> is a codeword, then all of its restrictions <span class="inline-math">\(x|_S\)</span> to the subsets <span class="inline-math">\(S\)</span> are allowed local views, <span class="display-math env-align">\begin{align}
-  x\in C \Rightarrow x|_S \in \{\text{allowed local views}\}~.
-\end{align}</span> This guarantees that codewords can indeed be determined from this limited sampling procedure.</p><p>Second, the probability that a given restriction is not an allowed local view is lower-bounded by the relative distance to the code, <span class="display-math env-align">\begin{align}
-  \text{Pr}_S (x|_S\text{ not allowed local view}) \geq R \frac{D(x,C)}{n}~,
-\end{align}</span> where <span class="inline-math">\(D(x,C)\)</span> is the Hamming distance between <span class="inline-math">\(x\)</span> and the closest codeword to <span class="inline-math">\(x\)</span>. This condition ensures that strings <span class="inline-math">\(x\)</span> can be deemed to be not in the codespace with high probability, i.e., with probability increasing as <span class="inline-math">\(x\)</span> gets farther from the code.</p></div>
+<div class="sectioncontent code-description">A binary linear code <span class="inline-math">\(C\)</span> of length <span class="inline-math">\(n\)</span> that is a <span class="inline-math">\((u,R)\)</span>-LTC with query complexity <span class="inline-math">\(u\)</span> and soundness <span class="inline-math">\(R&gt;0\)</span>. More technically, the code is a <span class="inline-math">\((u,R)\)</span>-LTC if the rows of its parity-check matrix <span class="inline-math">\(H\in GF(2)^{r\times n}\)</span> have weight at most <span class="inline-math">\(u\)</span> and if <span class="display-math env-align">\begin{align}
+  \frac{1}{r}|H x| \geq \frac{R}{n} D(x,C)
+\end{align}</span> holds for any bitstring <span class="inline-math">\(x\)</span>, where <span class="inline-math">\(D(x,C)\)</span> is the Hamming distance between <span class="inline-math">\(x\)</span> and the closest codeword to <span class="inline-math">\(x\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Def. 11]</a>. </div>
 
 
 
@@ -144,9 +142,9 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bsghsv-ltc">Ben-Sasson Goldreich Harsha Sudan Vadhan (BGHSV) code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/bsghsv-ltc">Ben-Sasson-Goldreich-Harsha-Sudan-Vadhan (BGHSV) code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bssvw-ltc">Ben-Sasson Sudan Vadhan Wigderson (BSVM) code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/bssvw-ltc">Ben-Sasson-Sudan-Vadhan-Wigderson (BSVW) code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/dinur">Dinur code</a></span></li>
   <li class="paragraph-in-list">
@@ -154,7 +152,11 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Goldreich-Sudan codes resulted from what is often referred to as the first systematic study of LTCs.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/kmrs-ltc">Kopparty Meir Ron-Zewi Saraf (KMRS) code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/hadamard">Hadamard code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The Hadamard code is the first code to be identified as locally testable <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/kmrs-ltc">Kopparty-Meir-Ron-Zewi-Saraf (KMRS) code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/lr-cayley-complex">Left-right Cayley complex code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -165,22 +167,30 @@
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binary_cyclic">Cyclic linear binary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Cyclic linear codes cannot be <span class="inline-math">\(c^3\)</span>-LTCs <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Codeword symmetries are in general an obstruction to achieving such LTCs <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binary_linear">Linear binary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Linear binary codes with distances <span class="inline-math">\(\frac{1}{2}n-\sqrt{t n}\)</span> for some <span class="inline-math">\(t\)</span> are called almost-orthogonal and are locally testable with query complexity of order <span class="inline-math">\(O(t)\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. This was later improved to codes with distance <span class="inline-math">\(\frac{1}{2}n-O(n^{1-\gamma})\)</span> for any positive <span class="inline-math">\(\gamma\)</span> <a href="#citation-6" class="href-endnote endnote citation">[6]</a>, provided that the number of codewords is polynomial in <span class="inline-math">\(n\)</span>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;RM codes can be LTCs in the low- <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a> and high-error <a href="#citation-4" class="href-endnote endnote citation">[4]</a> regimes.</span></li>
+      &#x2014;&nbsp;RM codes can be LTCs in the low- <a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a> and high-error <a href="#citation-9" class="href-endnote endnote citation">[9]</a> regimes.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Irit Dinur et al., “Locally Testable Codes with constant rate, distance, and locality”. <a href="https://arxiv.org/abs/2111.04808" target="_blank" class="href-href">2111.04808</a></dd><dt id="citation-2">[2]</dt><dd>N. Alon et al., “Testing Reed–Muller Codes”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 4032 (2005). <a href="https://doi.org/10.1109/TIT.2005.856958" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>T. Kaufman and D. Ron, “Testing Polynomials over General Fields”, SIAM Journal on Computing <span class="textbf">36</span>, 779 (2006). <a href="https://doi.org/10.1137/S0097539704445615" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Alex Samorodnitsky, “Low-degree tests at large distances”. <a href="https://arxiv.org/abs/math/0604353" target="_blank" class="href-href">math/0604353</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Leverrier, V. Londe, and G. Zémor, “Towards local testability for quantum coding”, Quantum <span class="textbf">6</span>, 661 (2022). <a href="https://doi.org/10.22331/q-2022-02-24-661" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1911.03069" target="_blank" class="href-href">1911.03069</a></dd><dt id="citation-2">[2]</dt><dd>M. Blum, M. Luby, and R. Rubinfeld, “Self-testing/correcting with applications to numerical problems”, Journal of Computer and System Sciences <span class="textbf">47</span>, 549 (1993). <a href="https://doi.org/10.1016/0022-0000(93)90044-W" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>L. Babai, A. Shpilka, and D. Stefankovic, “Locally Testable Cyclic Codes”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 2849 (2005). <a href="https://doi.org/10.1109/TIT.2005.851735" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>M. Sudan, “Invariance in Property Testing”, Property Testing 211 (2010). <a href="https://doi.org/10.1007/978-3-642-16367-8_12" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>T. Kaufman and S. Litsyn, “Almost Orthogonal Linear Codes are Locally Testable”, 46th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;05). <a href="https://doi.org/10.1109/SFCS.2005.16" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>T. Kaufman and M. Sudan, “Sparse Random Linear Codes are Locally Decodable and Testable”, 48th Annual IEEE Symposium on Foundations of Computer Science (FOCS&#x27;07) (2007). <a href="https://doi.org/10.1109/FOCS.2007.8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>N. Alon et al., “Testing Reed–Muller Codes”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 4032 (2005). <a href="https://doi.org/10.1109/TIT.2005.856958" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>T. Kaufman and D. Ron, “Testing Polynomials over General Fields”, SIAM Journal on Computing <span class="textbf">36</span>, 779 (2006). <a href="https://doi.org/10.1137/S0097539704445615" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>Alex Samorodnitsky, “Low-degree tests at large distances”. <a href="https://arxiv.org/abs/math/0604353" target="_blank" class="href-href">math/0604353</a></dd></dl></div>
 
 
 
@@ -217,10 +227,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Binary linear locally testable code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_ltc</dd>
+    <dd class="boxedcontent">“Binary linear LTC”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_ltc</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_binary_ltc,
-title={Binary linear locally testable code},
+title={Binary linear LTC},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -231,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/binary_ltc}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Binary%20linear%20locally%20testable%20code%20https%3A//errorcorrectionzoo.org/c/binary_ltc" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/binary_ltc&amp;t=Binary%20linear%20locally%20testable%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Binary%20linear%20locally%20testable%20code&amp;body=Binary%20linear%20locally%20testable%20code%20https%3A//errorcorrectionzoo.org/c/binary_ltc">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Binary%20linear%20LTC%20https%3A//errorcorrectionzoo.org/c/binary_ltc" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/binary_ltc&amp;t=Binary%20linear%20LTC" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Binary%20linear%20LTC&amp;body=Binary%20linear%20LTC%20https%3A//errorcorrectionzoo.org/c/binary_ltc">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/binary_ltc</dd>
@@ -247,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/binary_ltc}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Binary linear locally testable code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_ltc</p>
+  <p>“Binary linear LTC”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_ltc</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/bits/ltc/binary_ltc.yml"
                 class="ashowurl"
@@ -261,7 +271,7 @@ url={https://errorcorrectionzoo.org/c/binary_ltc}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/ltc">LTC</a></li><li><a href="/c/bsghsv-ltc">BGHSV</a></li><li><a href="/c/bssvw-ltc">BSVM</a></li><li><a href="/c/dinur">Dinur</a></li><li><a href="/c/gs-ltc">Goldreich-Sudan</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/ltc">LTC</a></li><li><a href="/c/bsghsv-ltc">BGHSV</a></li><li><a href="/c/bssvw-ltc">BSVW</a></li><li><a href="/c/dinur">Dinur</a></li><li><a href="/c/gs-ltc">Goldreich-Sudan</a></li><li><a href="/c/binary_cyclic">Cyclic linear binary</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
