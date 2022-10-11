@@ -67,6 +67,10 @@ Here is a list of quantum <a href="/c/stabilizer" class="href-ref ref-code">stab
   <td class="textit">Also known as an <span class="textit">Gaussian stabilizer code</span>. Oscillator-into-oscillator stabilizer code encoding <span class="inline-math">\(k\)</span> logical modes into <span class="inline-math">\(n\)</span> physical modes. An <span class="inline-math">\(((n,k,d))_{\mathbb{R}}\)</span> analog stabilizer code is denoted as <span class="inline-math">\([[n,k,d]]_{\mathbb{R}}\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/analog_surface">Analog surface code</a></td>
+  <td class="textit">Also called a <span class="textit">continuous-variable (CV) surface code</span>. An analog CSS version of the Kitaev surface code. </td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></td>
   <td class="textit">A family of <span class="inline-math">\( [[n,k,d]]_{GF(q)} \)</span> CSS codes approximately correcting errors on up to <span class="inline-math">\(\lfloor (n-1)/2 \rfloor\)</span> qubits, i.e., with approximate distance approaching the no-cloning bound <span class="inline-math">\(n/2\)</span>. Constructed using a non-degenerate CSS code, such as a polynomial quantum code, and a classical authentication scheme. The code can be viewed as an <span class="inline-math">\(t\)</span>-error tolerant secret sharing scheme. Since the code yields a small logical subspace using large registers that contain both classical and quantum information, it is not useful for practical error correction problems, but instead demonstrates the power of approximate quantum error correction.</td>
 </tr>
@@ -84,7 +88,7 @@ Here is a list of quantum <a href="/c/stabilizer" class="href-ref ref-code">stab
 </tr>
 <tr>
   <td class="top left"><a href="/c/braunstein">Braunstein five-mode code</a></td>
-  <td class="textit">A <span class="inline-math">\([[5,1,3]]_{\mathbb{R}}\)</span> Gaussian stabilizer analogue of the five-qubit perfect code. </td>
+  <td class="textit">A <span class="inline-math">\([[5,1,3]]_{\mathbb{R}}\)</span> analog stabilizer version of the five-qubit perfect code. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/css">Calderbank-Shor-Steane (CSS) stabilizer code</a></td>
@@ -268,7 +272,7 @@ H_X H_Z^T=0~.
 </tr>
 <tr>
   <td class="top left"><a href="/c/lloyd_slotine">Lloyd-Slotine nine-mode code</a></td>
-  <td class="textit">A <span class="inline-math">\([[9,1,3]]_{\mathbb{R}}\)</span> Gaussian CSS analogue of Shor&#x27;s nine-qubit code. </td>
+  <td class="textit">A <span class="inline-math">\([[9,1,3]]_{\mathbb{R}}\)</span> analogue CSS version of Shor&#x27;s nine-qubit code. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/majorana_stab">Majorana stabilizer code</a></td>
@@ -295,16 +299,16 @@ H_X H_Z^T=0~.
   <td class="textit">An <span class="inline-math">\(((n,K,d))_q\)</span> modular-qudit code whose logical subspace is the joint eigenspace of commuting qudit Pauli operators forming the code&#x27;s stabilizer group <span class="inline-math">\(\mathsf{S}\)</span>. Traditionally, the logical subspace is the joint <span class="inline-math">\(+1\)</span> eigenspace, and the stabilizer group does not contain <span class="inline-math">\(e^{i \phi} I\)</span> for any <span class="inline-math">\(\phi \neq 0\)</span>. The distance <span class="inline-math">\(d\)</span> is the minimum weight of a qudit Pauli string that implements a nontrivial logical operation in the code.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/qudit_surface">Modular-qudit surface code</a></td>
-  <td class="textit">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/multimodegkp">Multi-mode GKP code</a></td>
   <td class="textit">Generalization of the GKP code to <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/happy">Pastawski-Yoshida-Harlow-Preskill (HaPPY) code</a></td>
   <td class="textit">Also known as a <span class="textit">hyperbolic pentagon code (HyPeC)</span>. Holographic code constructed out of a network of perfect tensors that tesselates hyperbolic space. Physical qubits are associated with uncontracted tensor legs at the boundary of the tesselation, while logical qubits are associated with uncontracted legs in the bulk. The code serves as a minimal model for several aspects of the AdS/CFT holographic duality. The construction below is described for qubits, but straightforward generalizations exist to modular qudits, oscillators, and rotors <a href="#citation-19" class="href-endnote endnote citation">[19]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/qudit_surface">Prime-qudit surface code</a></td>
+  <td class="textit">A family of stabilizer codes whose generators are few-body <span class="inline-math">\(X\)</span>-type and <span class="inline-math">\(Z\)</span>-type Pauli strings associated to the stars and plaquettes, respectively, of a tessellation of a two-dimensional surface (with a qudit located at each edge of the tesselation). The code has <span class="inline-math">\( n=E \)</span> many physical qudits, where <span class="inline-math">\( E \)</span> is the number of edges of the tesselation, and <span class="inline-math">\( k=2g \)</span> many logical qudits, where <span class="inline-math">\( g \)</span> is the genus of the surface.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/real_projective_plane">Projective-plane surface code</a></td>
@@ -429,7 +433,7 @@ H_X H_Z^T=0~.
 </tr>
 <tr>
   <td class="top left"><a href="/c/iterated_ramanujan">Tensored-Ramanujan-complex product code</a></td>
-  <td class="textit">Code constructed in a similar way as the Ramanujan-complex product code, but whose construction utilizes tensor products of Ramanujan complexes in order to improve code distance from <span class="inline-math">\(\sqrt{n}\log n\)</span> to <span class="inline-math">\(\sqrt{n}\text{polylog}(n)\)</span>. The utility of such tensor products comes from the fact that one of the Ramanujan complexes is a <span class="textit">collective cosystolic expander</span> as opposed to just a cosystolic expander.</td>
+  <td class="textit">Code constructed in a similar way as the Ramanujan-complex product code, but utilizing tensor products of Ramanujan complexes in order to improve code distance from <span class="inline-math">\(\sqrt{n}\log n\)</span> to <span class="inline-math">\(\sqrt{n}~\text{polylog}(n)\)</span>. The utility of such tensor products comes from the fact that one of the Ramanujan complexes is a <span class="textit">collective cosystolic expander</span> as opposed to just a cosystolic expander.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_3_1_2">Three qutrit code</a></td>
