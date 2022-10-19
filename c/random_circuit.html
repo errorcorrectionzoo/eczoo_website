@@ -87,6 +87,8 @@
 <h2 id="description" class="code-description">Description</h2>
 <div class="sectioncontent code-description">Code whose encoding is naturally constructed by randomly sampling from a large set of quantum circuits.</div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">A useful proxy and upper bound to the code distance <span class="inline-math">\(d\)</span> is the <span class="textit">contiguous code distance</span>: the contiguous length (with periodic boundary conditions) of the shortest logical operator <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -126,7 +128,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/dynamic_gen">Dynamically-generated quantum error-correcting code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/dynamic_gen">Dynamically-generated QECC</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quantum_random">Random quantum code</a></span></li>
 </ul>
@@ -152,10 +154,23 @@
 </ul>
 </div>
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousin
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/crystalline_dynamic_gen">Crystalline-circuit code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Crystalline-circuit codes can be thought of as random-circuit codes with symmetries.</span></li>
+</ul>
+</div>
 
 
 
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>S. Bravyi and B. Terhal, “A no-go theorem for a two-dimensional self-correcting quantum memory based on stabilizer codes”, New Journal of Physics <span class="textbf">11</span>, 043029 (2009). <a href="https://doi.org/10.1088/1367-2630/11/4/043029" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0810.1983" target="_blank" class="href-href">0810.1983</a></dd><dt id="citation-2">[2]</dt><dd>M. J. Gullans and D. A. Huse, “Dynamical Purification Phase Transition Induced by Quantum Measurements”, Physical Review X <span class="textbf">10</span>, (2020). <a href="https://doi.org/10.1103/PhysRevX.10.041020" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1905.05195" target="_blank" class="href-href">1905.05195</a></dd></dl></div>
 
 
 
@@ -184,10 +199,10 @@
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/random_circuit.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/dynamic_gen/random_circuit.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=random_circuit&amp;code_yml_filename=quantum/properties/random_circuit.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>random_circuit</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=random_circuit&amp;code_yml_filename=quantum/properties/dynamic_gen/random_circuit.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>random_circuit</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -224,9 +239,9 @@ url={https://errorcorrectionzoo.org/c/random_circuit}
 <div class="sectioncontent display-print-citation">
   <p>“Random-circuit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/random_circuit</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/random_circuit.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/dynamic_gen/random_circuit.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/random_circuit.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/properties/dynamic_gen/random_circuit.yml</a>.</p>
 </div>
 
 
@@ -236,7 +251,7 @@ url={https://errorcorrectionzoo.org/c/random_circuit}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/dynamic_gen">Dynamically-generated</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/quantum_random">Random quantum</a></li><li><a href="/c/haar_random">Haar-random</a></li><li><a href="/c/t-designs">Local Haar-random circuit</a></li><li><a href="/c/nonlocal_lowdepth">Low-depth random Clifford-circuit</a></li><li><a href="/c/monitored_random_circuits">Monitored random-circuit</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/dynamic_gen">Dynamically-generated</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/quantum_random">Random quantum</a></li><li><a href="/c/haar_random">Haar-random</a></li><li><a href="/c/t-designs">Local Haar-random circuit</a></li><li><a href="/c/nonlocal_lowdepth">Low-depth random Clifford-circuit</a></li><li><a href="/c/monitored_random_circuits">Monitored random-circuit</a></li><li><a href="/c/crystalline_dynamic_gen">Crystalline-circuit</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

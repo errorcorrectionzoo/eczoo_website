@@ -79,7 +79,7 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Error-correcting code (ECC)</h1>
+      Error-correcting code (ECC)<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
@@ -88,7 +88,7 @@
 <div class="sectioncontent code-description">A <span class="textit">code</span> is a subset of a set or <span class="textit">alphabet</span>, with each element called a <span class="textit">codeword</span>. An <span class="textit">error-correcting code</span> consists of <span class="inline-math">\(K\)</span> codewords over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</div>
+<div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -108,7 +108,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Capacity-achieving Guessing Random Additive Noise Decoding (GRAND) <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Capacity-achieving Guessing Random Additive Noise Decoding (GRAND) <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -121,7 +121,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The modern theory of error-correcting codes is rooted in the foundational work of C. Shannon <a href="#citation-3" class="href-endnote endnote citation">[3]</a>, but error-correcting codes have been used prior to that work <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
+  <span class="paragraph-in-list">The modern theory of error-correcting codes is rooted in the foundational work of C. Shannon <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, but error-correcting codes have been used prior to that work <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
 </div>
 
 
@@ -186,7 +186,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Gottesman. <span class="textit">Surviving as a quantum computer in a classical world</span></dd><dt id="citation-2">[2]</dt><dd>K. R. Duffy, J. Li, and M. Medard, “Capacity-Achieving Guessing Random Additive Noise Decoding”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 4023 (2019). <a href="https://doi.org/10.1109/TIT.2019.2896110" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.07010" target="_blank" class="href-href">1802.07010</a></dd><dt id="citation-3">[3]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/bf03025254" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>D. Gottesman. <span class="textit">Surviving as a quantum computer in a classical world</span></dd><dt id="citation-3">[3]</dt><dd>K. R. Duffy, J. Li, and M. Medard, “Capacity-Achieving Guessing Random Additive Noise Decoding”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 4023 (2019). <a href="https://doi.org/10.1109/TIT.2019.2896110" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.07010" target="_blank" class="href-href">1802.07010</a></dd><dt id="citation-4">[4]</dt><dd>A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/bf03025254" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
