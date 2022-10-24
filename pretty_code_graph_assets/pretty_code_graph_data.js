@@ -4125,7 +4125,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Also known as an Gaussian stabilizer code. Oscillator-into-oscillator stabilizer code encoding \\(k\\) logical modes into \\(n\\) physical modes. An \\(((n,k,d))_{\\mathbb{R}}\\) analog stabilizer code is denoted as \\([[n,k,d]]_{\\mathbb{R}}\\), \u2026",
+                    "_description": "Also known as a linear or Gaussian stabilizer code. Oscillator-into-oscillator stabilizer code encoding \\(k\\) logical modes into \\(n\\) physical modes. An \\(((n,k,d))_{\\mathbb{R}}\\) analog stabilizer code is denoted \u2026",
                     "_code_href": "/c/analog_stabilizer",
                     "_family_generation_level": 4
                 },
