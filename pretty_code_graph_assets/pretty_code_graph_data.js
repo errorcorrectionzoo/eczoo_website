@@ -4307,8 +4307,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_chuang-leung-yamamoto",
-                    "label": "Chuang-Leung-Yamamoto",
-                    "_code_name": "Chuang-Leung-Yamamoto code",
+                    "label": "Chuang-Leung-Yamamoto (CLY)",
+                    "_code_name": "Chuang-Leung-Yamamoto (CLY) code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,

@@ -6,7 +6,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Chuang-Leung-Yamamoto code" />
+<meta name="citation_title" content="Chuang-Leung-Yamamoto (CLY) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -14,13 +14,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Chuang-Leung-Yamamoto code" />
+<meta name="DC.title" content="Chuang-Leung-Yamamoto (CLY) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Chuang-Leung-Yamamoto code — Error Correction Zoo
+    Chuang-Leung-Yamamoto (CLY) code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -79,13 +79,18 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Chuang-Leung-Yamamoto code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Chuang-Leung-Yamamoto (CLY) code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="href-ref ref-code">stabilizer code</a> notation.</div>
+<div class="sectioncontent code-description"><p>Bosonic Fock-state code that encodes <span class="inline-math">\(k\)</span> qubits into <span class="inline-math">\(n\)</span> oscillators, with each oscillator restricted to having at most <span class="inline-math">\(N\)</span> excitations. Codewords are superpositions of oscillator Fock states which have exactly <span class="inline-math">\(N\)</span> total excitations, and are either uniform (i.e., balanced) superpositions or unbalanced superpositions. Codes can be denoted as <span class="inline-math">\([[N,n,2^k,d]]\)</span>, which conflicts with <a href="/c/stabilizer" class="href-ref ref-code">stabilizer code</a> notation.</p><p>A simple example of a CLY code is a two-mode &quot;0-2-4&quot; qubit code with codewords <span class="display-math env-align">\begin{align}
+\begin{split}
+  |\overline{0}\rangle&amp;=\frac{1}{\sqrt{2}}\left(|00\rangle+|44\rangle\right)\\
+  |\overline{1}\rangle&amp;=|22\rangle~.
+\end{split}
+\end{align}</span></p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against amplitude damping for up to <span class="inline-math">\(t = d-1\)</span> excitation losses. Defining the <span class="textit">spacing</span> between two Fock states <span class="inline-math">\(|u_1\cdots u_n\rangle\)</span> and <span class="inline-math">\(|v_1\cdots v_n\rangle\)</span>, <span class="display-math env-align">\begin{align}
@@ -171,11 +176,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/2t_qutrit">2T-qutrit code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The <span class="inline-math">\(2T\)</span>-qutrit code reduces to a two-mode CLY code as <span class="inline-math">\(\alpha\to 0\)</span>.</span></li>
+      &#x2014;&nbsp;The <span class="inline-math">\(2T\)</span>-qutrit code reduces to the two-mode &quot;0-2-4&quot; CLY code as <span class="inline-math">\(\alpha\to 0\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binomial">Binomial code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Two-mode version of binomial codes correspond to two-mode CLY codes (see Sec. IV.A of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>).</span></li>
+      &#x2014;&nbsp;Two-mode version of binomial codes correspond to two-mode &quot;0-2-4&quot; CLY codes (see Sec. IV.A of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a>).</span></li>
 </ul>
 </div>
 
@@ -220,10 +225,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Chuang-Leung-Yamamoto code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</dd>
+    <dd class="boxedcontent">“Chuang-Leung-Yamamoto (CLY) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_chuang-leung-yamamoto,
-title={Chuang-Leung-Yamamoto code},
+title={Chuang-Leung-Yamamoto (CLY) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -234,7 +239,7 @@ url={https://errorcorrectionzoo.org/c/chuang-leung-yamamoto}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Chuang-Leung-Yamamoto%20code%20https%3A//errorcorrectionzoo.org/c/chuang-leung-yamamoto" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/chuang-leung-yamamoto&amp;t=Chuang-Leung-Yamamoto%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Chuang-Leung-Yamamoto%20code&amp;body=Chuang-Leung-Yamamoto%20code%20https%3A//errorcorrectionzoo.org/c/chuang-leung-yamamoto">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Chuang-Leung-Yamamoto%20%28CLY%29%20code%20https%3A//errorcorrectionzoo.org/c/chuang-leung-yamamoto" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/chuang-leung-yamamoto&amp;t=Chuang-Leung-Yamamoto%20%28CLY%29%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Chuang-Leung-Yamamoto%20%28CLY%29%20code&amp;body=Chuang-Leung-Yamamoto%20%28CLY%29%20code%20https%3A//errorcorrectionzoo.org/c/chuang-leung-yamamoto">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</dd>
@@ -250,7 +255,7 @@ url={https://errorcorrectionzoo.org/c/chuang-leung-yamamoto}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Chuang-Leung-Yamamoto code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</p>
+  <p>“Chuang-Leung-Yamamoto (CLY) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/chuang-leung-yamamoto</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/fock_state/chuang-leung-yamamoto.yml"
                 class="ashowurl"
