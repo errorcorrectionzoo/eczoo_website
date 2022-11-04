@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
@@ -85,7 +86,9 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes states (codewords) into points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>.</div>
+<div class="sectioncontent code-description"><p>Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(n\)</span> is the dimension, <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
+  \rho=\min\left\{ \left\Vert x-y\right\Vert ^{2}\,\text{s.t.}\,x,y\in C,\,\,x\neq y\right\}~.
+\end{align}</span> The radius of the sphere squared is called the <span class="textit">energy</span>, and it is taken to be unity for spherical codes. Points on a sphere with non-unity radius make up <span class="textit">constant-energy codes</span>.</p><p>A spherical code can be defined using the Gram matrix <span class="inline-math">\(G = XX^T\)</span>, where the rows of <span class="inline-math">\(X\)</span> are the codeword vectors. The Gram matrix is symmetric, positive-definite, and has all diagonal elements equal to one.</p></div>
 
 
 
@@ -114,6 +117,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See the book <a href="#citation-1" class="href-endnote endnote citation">[1]</a> for more details.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -131,10 +138,27 @@
 </div>
 
 
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/bits_into_bits">Binary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Any binary <span class="inline-math">\((n,K,d)\)</span> code can be converted into an <span class="inline-math">\((n,K,4d/n)\)</span> spherical code via a component-wise antipodal mapping <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/constant_weight">Constant-weight code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Any <span class="inline-math">\((n,K,d)\)</span> code of constant weight <span class="inline-math">\(w\)</span> can be converted into an <span class="inline-math">\((n-1,K,\frac{nd}{nw-w^2})\)</span> spherical code <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.2]</a>.</span></li>
+</ul>
+</div>
 
 
 
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd></dl></div>
 
 
 
@@ -142,7 +166,8 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-02-16)      — most recent</li></ul>
+    (2022-11-03)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-02-16)</li></ul>
 </details>
 
 
@@ -215,7 +240,7 @@ url={https://errorcorrectionzoo.org/c/points_into_spheres}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
@@ -225,7 +250,10 @@ url={https://errorcorrectionzoo.org/c/points_into_spheres}
     <div class="footer-stuff">
 <a href="/about">Error correction zoo</a>
 by Victor V. Albert, Philippe Faist, and
-<a href="/team">many contributors</a>.    </div>
+<a href="/team">many contributors</a>.
+<!--<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />-->
+This work is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA License</a>.
+See <a target="_blank" href="https://github.com/errorcorrectionzoo/eczoo_data/blob/main/CONTRIBUTING.md">how to contribute</a>.    </div>
   </footer>
 
 </div>

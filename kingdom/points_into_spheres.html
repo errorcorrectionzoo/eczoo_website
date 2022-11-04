@@ -4,6 +4,21 @@
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+<meta name="citation_language" content="en" />
+<meta name="citation_author" content="Victor V. Albert" />
+<meta name="citation_author" content="Philippe Faist" />
+<meta name="citation_title" content="The Error Correction Zoo" />
+<meta name="citation_publication_date" content="2022" />
+<meta name="citation_date" content="2022" />
+
+<!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
+
+<meta name="DC.title" content="The Error Correction Zoo" />
+<meta name="DC.author" content="Victor V. Albert"/>
+<meta name="DC.author" content="Philippe Faist"/>
+<meta name="DC.issued" content="2022" />
+
+
   <title>
     Spherical Kingdom — Error Correction Zoo
   </title>
@@ -55,10 +70,16 @@
 
 <div class="ecc-code" id="ecc_points_into_spheres">
   <span class="short-code-name"><a href="/c/points_into_spheres">Spherical code</a></span>
-  <span class="short-code-description">Encodes states (codewords) into points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>.</span>
+  <span class="short-code-description">Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(n\)</span> is the dimension, <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
+  \rho=\min\left\{ \left\Vert x-y\right\Vert ^{2}\,\text{s.t.}\,x,y\in C,\,\,x\neq y\right\}~.
+\end{align}</span> The radius of the sphere squared is called the <span class="textit">energy</span>, and it is taken to be unity for spherical codes. Points on a sphere with non-unity radius make up <span class="textit">constant-energy codes</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/ecc">Error-correcting code (ECC)</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/bits_into_bits">Binary code</a>,       <a href="/c/constant_weight">Constant-weight code</a>.
   </span>
 </div>
 
@@ -79,7 +100,10 @@
     <div class="footer-stuff">
 <a href="/about">Error correction zoo</a>
 by Victor V. Albert, Philippe Faist, and
-<a href="/team">many contributors</a>.    </div>
+<a href="/team">many contributors</a>.
+<!--<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />-->
+This work is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA License</a>.
+See <a target="_blank" href="https://github.com/errorcorrectionzoo/eczoo_data/blob/main/CONTRIBUTING.md">how to contribute</a>.    </div>
   </footer>
 
 </div>

@@ -3,6 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
@@ -85,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="textit">code</span> is a subset of a set or <span class="textit">alphabet</span>, with each element called a <span class="textit">codeword</span>. An <span class="textit">error-correcting code</span> consists of <span class="inline-math">\(K\)</span> codewords over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>.</div>
+<div class="sectioncontent code-description"><p>A <span class="textit">code</span> is a subset of a set or <span class="textit">alphabet</span>, with each element called a <span class="textit">codeword</span>. An <span class="textit">error-correcting code</span> consists of <span class="inline-math">\(K\)</span> codewords over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>.</p><p>A common family of codes are the <span class="textit">block codes</span>, intended to encode a piece, or block, of a data stream. A block code encodes strings of length <span class="inline-math">\(k\)</span>, where each character in the string an element of some fixed alphabet <span class="inline-math">\(\Sigma\)</span>, into strings of length <span class="inline-math">\(n\)</span>. In other words, a block code encoding is a map from <span class="inline-math">\(\Sigma^k\)</span> to <span class="inline-math">\(\Sigma^n\)</span>, where <span class="inline-math">\(N = |\Sigma|^n\)</span>, <span class="inline-math">\(K=|\Sigma|^k\)</span>, and <span class="inline-math">\(|\Sigma|\)</span> is the nunber of elements in the alphabet.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
@@ -278,7 +279,10 @@ url={https://errorcorrectionzoo.org/c/ecc}
     <div class="footer-stuff">
 <a href="/about">Error correction zoo</a>
 by Victor V. Albert, Philippe Faist, and
-<a href="/team">many contributors</a>.    </div>
+<a href="/team">many contributors</a>.
+<!--<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a><br />-->
+This work is licensed under a <a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-sa/4.0/">CC-BY-SA License</a>.
+See <a target="_blank" href="https://github.com/errorcorrectionzoo/eczoo_data/blob/main/CONTRIBUTING.md">how to contribute</a>.    </div>
   </footer>
 
 </div>
