@@ -86,8 +86,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Encodes states (codewords) into coordinates in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice.</p><p>Analog codes are useful for communication over the additive white-noise Gaussian channel due to Kotelnikov&#x27;s <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and Shannon&#x27;s <a href="#citation-2" class="href-endnote endnote citation">[2]</a> observation that a discretized signal of finite-bandwidth can be represented as a point in <span class="inline-math">\(\mathbb{R}^n\)</span>, which is called <span class="textit">signal space</span> in this context.</p></div>
+<div class="sectioncontent code-description"><p>Encodes states (codewords) into coordinates in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice.</p><p>Analog codes provide ways of encoding digital or analog information into the frequency, amplitude, and phase of one or more analog waveforms for transmission through, e.g., an optical fiber or free space. This is due to Kotelnikov&#x27;s <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and Shannon&#x27;s <a href="#citation-2" class="href-endnote endnote citation">[2]</a> fundamental observation that a discretized electromagnetic signal of finite-bandwidth can be represented as a point in <span class="inline-math">\(\mathbb{R}^n\)</span>. In the electromagnetic context, the information stored in the code is called the <span class="textit">bitstream</span> and coordinates used for encoding are often called <span class="textit">constellations</span>, <span class="inline-math">\(\mathbb{R}^n\)</span> is called the <span class="textit">signal space</span>. An analog code is mapped into a time-dependent electromagnetic signal using a <span class="textit">modulation scheme</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>. Questions of capacity of electromagnetic communication channels then translate to packing problems in <span class="inline-math">\(\mathbb{R}^n\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</p><p>There are various ways to encode a set of points in <span class="inline-math">\(\mathbb{R}^n\)</span> into an electromagnetic signal. Amplitude encodings include <span class="textit">pulse-amplitude modulation (PAM)</span>, which associates each point with a real-valued amplitude of a general signal <a href="#citation-4" class="href-endnote endnote citation">[4; Sec. 10.5]</a>, and <span class="textit">quadrature amplitude modulation (QAM)</span>, which assocites each pair of points with a complex-valued amplitude of band-limited signal <a href="#citation-4" class="href-endnote endnote citation">[4; Ch. 16]</a>.</p></div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The primary application of analog codes is to transmist information using electromagnetic signals. The primary noise channel for such signals is called the <span class="textit">additive Gaussian white-noise channel (AGWN)</span>. </div>
 
 
 <!-- Display features -->
@@ -98,7 +100,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate">Random analog codes can achieve the capacity of the additive Gaussian white-noise channel <a href="#citation-3" class="href-endnote endnote citation">[3]</a>; see the book <a href="#citation-4" class="href-endnote endnote citation">[4]</a> for more details.</div>
+  <div class="sectioncontent code-feature code-feature-rate">Random analog codes can achieve the capacity of the additive Gaussian white-noise channel <a href="#citation-6" class="href-endnote endnote citation">[6]</a>; see the book <a href="#citation-5" class="href-endnote endnote citation">[5]</a> for more details. Deterministic sets of constellations from quadrature rules can also achieve capacity <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</div>
 
 
 
@@ -149,12 +151,20 @@
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/oscillators">Bosonic code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Bosonic codes are quantum analogues to analog codes or coded modulation schemes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/coherent_constellation">Coherent-state constellation quantum code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Analog codes that are constructed using quadrature rules and that achieve AGWN capacity <a href="#citation-7" class="href-endnote endnote citation">[7]</a> can be used to develop capacity-achieving quantum codes <a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_classical">Group-based code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -164,7 +174,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. A. Kotelnikov, “The theory of optimum noise immunity,” PhD Thesis, Molotov Energy Institute, Moscow, Jan. 1947</dd><dt id="citation-2">[2]</dt><dd>C. E. Shannon, “Communication in the Presence of Noise”, Proceedings of the IRE <span class="textbf">37</span>, 10 (1949). <a href="https://doi.org/10.1109/JRPROC.1949.232969" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>C. E. Shannon, “Probability of Error for Optimal Codes in a Gaussian Channel”, Bell System Technical Journal <span class="textbf">38</span>, 611 (1959). <a href="https://doi.org/10.1002/j.1538-7305.1959.tb03905.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. A. Kotelnikov, “The theory of optimum noise immunity,” PhD Thesis, Molotov Energy Institute, Moscow, Jan. 1947</dd><dt id="citation-2">[2]</dt><dd>C. E. Shannon, “Communication in the Presence of Noise”, Proceedings of the IRE <span class="textbf">37</span>, 10 (1949). <a href="https://doi.org/10.1109/JRPROC.1949.232969" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>C. E. Shannon, “Probability of Error for Optimal Codes in a Gaussian Channel”, Bell System Technical Journal <span class="textbf">38</span>, 611 (1959). <a href="https://doi.org/10.1002/j.1538-7305.1959.tb03905.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Y. Wu and S. Verdu, “The impact of constellation cardinality on Gaussian channel capacity”, 2010 48th Annual Allerton Conference on Communication, Control, and Computing (Allerton) (2010). <a href="https://doi.org/10.1109/ALLERTON.2010.5706965" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent-state constellations and polar codes for thermal Gaussian channels”, Physical Review A <span class="textbf">95</span>, (2017). <a href="https://doi.org/10.1103/PhysRevA.95.062343" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1603.05970" target="_blank" class="href-href">1603.05970</a></dd><dt id="citation-9">[9]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent state constellations for Bosonic Gaussian channels”, 2016 IEEE International Symposium on Information Theory (ISIT) (2016). <a href="https://doi.org/10.1109/ISIT.2016.7541749" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -246,7 +256,7 @@ url={https://errorcorrectionzoo.org/c/analog}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/points_into_spheres">Spherical</a></li><li><a href="/c/group_classical">Group-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/points_into_spheres">Spherical</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/coherent_constellation">Coherent-state constellation quantum</a></li><li><a href="/c/group_classical">Group-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
