@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Lattice-based QAM" />
+<meta name="citation_title" content="Lattice-based QAM code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Lattice-based QAM" />
+<meta name="DC.title" content="Lattice-based QAM code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Lattice-based QAM — Error Correction Zoo
+    Lattice-based QAM code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Lattice-based QAM</h1>
+      Lattice-based QAM code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes into points into a subset of points lying on a lattice in <span class="inline-math">\(\mathbb{R}^{2n}\)</span>, which is usually treated as <span class="inline-math">\(\mathbb{C}^n\)</span>. Each pair of points is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal using quandrature amplitude modulation <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>. </div>
+<div class="sectioncontent code-description">Encodes into points into a subset of points lying on a lattice in <span class="inline-math">\(\mathbb{R}^{2n}\)</span>, which is usually treated as <span class="inline-math">\(\mathbb{C}^n\)</span>. Each pair of points is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal using QAM <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>. QAM schemes with <span class="inline-math">\(q\)</span> points are often called <span class="inline-math">\(q\)</span>-QAM, and <span class="inline-math">\(q\)</span> is often a power of two in order to further concatenate with a binary code. </div>
 
 
 
@@ -137,21 +137,25 @@
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Child
+    Children
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bpsk">Binary phase-shift keyring (BPSK)</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/bpsk">Binary PSK (BPSK)</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Binary PSK is the simplest non-trivial lattice QAM encoding.</span></li>
+      &#x2014;&nbsp;BPSK is the simplest non-trivial lattice QAM encoding.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/qpsk">Quadrature PSK (QPSK)</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;QPSK can be thought of as a lattice-based QAM encoding known as 4-QAM.</span></li>
 </ul>
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
@@ -161,12 +165,16 @@
     <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;The GKP code is a quantum analogue of lattice-based QAM.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/gray">Gray code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;2D Gray codes are often concatenated with <span class="inline-math">\(n=1\)</span> lattice-based QAM codes so that the Hamming distance between the bitstrings encoded into the points is almost a discretized version of the Euclidean distance between the points <a href="#citation-3" class="href-endnote endnote citation">[3; Fig. 2.18]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -203,10 +211,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Lattice-based QAM”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</dd>
+    <dd class="boxedcontent">“Lattice-based QAM code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_qam,
-title={Lattice-based QAM},
+title={Lattice-based QAM code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -217,7 +225,7 @@ url={https://errorcorrectionzoo.org/c/qam}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Lattice-based%20QAM%20https%3A//errorcorrectionzoo.org/c/qam" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qam&amp;t=Lattice-based%20QAM" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Lattice-based%20QAM&amp;body=Lattice-based%20QAM%20https%3A//errorcorrectionzoo.org/c/qam">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Lattice-based%20QAM%20code%20https%3A//errorcorrectionzoo.org/c/qam" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qam&amp;t=Lattice-based%20QAM%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Lattice-based%20QAM%20code&amp;body=Lattice-based%20QAM%20code%20https%3A//errorcorrectionzoo.org/c/qam">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/qam</dd>
@@ -233,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/qam}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Lattice-based QAM”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</p>
+  <p>“Lattice-based QAM code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/modulation/qam.yml"
                 class="ashowurl"
@@ -247,7 +255,7 @@ url={https://errorcorrectionzoo.org/c/qam}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/gkp">GKP</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/gkp">GKP</a></li><li><a href="/c/gray">Gray</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
