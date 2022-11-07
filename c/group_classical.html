@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> coordinates labeled by elements of a finite group <span class="inline-math">\(G\)</span>.</div>
+<div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span> states (codewords) in <span class="inline-math">\(n\)</span> coordinates labeled by elements of a group <span class="inline-math">\(G\)</span>. The number of codewords may be infinite for infinite groups, so various restricted versions have to be constructed in practice.</div>
 
 
 
@@ -141,6 +141,8 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_permutation">Binary permutation-based code</a></span></li>
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/rank_modulation">Rank-modulation code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Group-based codes whose alphabet is based on the permutation group <span class="inline-math">\(S_n\)</span> are rank-modulation codes.</span></li>
@@ -157,11 +159,19 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/bits_into_bits">Binary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Group-based codes whose alphabet is based on the group <span class="inline-math">\(\mathbb{Z}_2\)</span> are binary codes.</span></li>
+      &#x2014;&nbsp;Group-based codes whose alphabet is based on the field <span class="inline-math">\(GF(2)\)</span>, taken to be an abelian under addition, are binary codes.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Group-based codes whose alphabet is based on the group <span class="inline-math">\(\mathbb{R}\)</span> are lattice-based codes.</span></li>
+      &#x2014;&nbsp;Group-based codes whose alphabet is based on the field <span class="inline-math">\(GF(q)\)</span>, taken to be an abelian under addition, are <span class="inline-math">\(q\)</span>-ary codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/analog">Analog code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Group-based codes whose alphabet is based on the reals <span class="inline-math">\(\mathbb{R}\)</span>, taken to be an abelian group under addition, are analog codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/rings_into_rings">Ring code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Group-based codes whose alphabet is based on the ring <span class="inline-math">\(R\)</span>, taken to be an abelian group under addition, are codes over <span class="inline-math">\(R\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_quantum">Group-based quantum code</a></span></li>
 </ul>
@@ -250,7 +260,7 @@ url={https://errorcorrectionzoo.org/c/group_classical}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/binary_permutation">Binary permutation-based</a></li><li><a href="/c/rank_modulation">Rank-modulation</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/group_quantum">Group-based quantum</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/binary_permutation">Binary permutation-based</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/rank_modulation">Rank-modulation</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/analog">Analog</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

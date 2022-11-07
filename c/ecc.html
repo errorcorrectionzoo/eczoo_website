@@ -80,16 +80,14 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Error-correcting code (ECC)<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Error-correcting code (ECC)</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>A <span class="textit">code</span> is a subset of a set or <span class="textit">alphabet</span>, with each element called a <span class="textit">codeword</span>. An <span class="textit">error-correcting code</span> consists of <span class="inline-math">\(K\)</span> codewords over an alphabet with <span class="inline-math">\(N\)</span> elements such that it is possible to recover the codewords from errors <span class="inline-math">\(E\)</span> from some error set <span class="inline-math">\(\mathcal{E}\)</span>.</p><p>A common family of codes are the <span class="textit">block codes</span>, intended to encode a piece, or block, of a data stream. A block code encodes strings of length <span class="inline-math">\(k\)</span>, where each character in the string an element of some fixed alphabet <span class="inline-math">\(\Sigma\)</span>, into strings of length <span class="inline-math">\(n\)</span>. In other words, a block code encoding is a map from <span class="inline-math">\(\Sigma^k\)</span> to <span class="inline-math">\(\Sigma^n\)</span>, where <span class="inline-math">\(N = |\Sigma|^n\)</span>, <span class="inline-math">\(K=|\Sigma|^k\)</span>, and <span class="inline-math">\(|\Sigma|\)</span> is the number of elements in the alphabet.</p></div>
+<div class="sectioncontent code-description">Stub. </div>
 
-<h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">A code corrects errors associated with a noise channel if it is possible to recover any codeword after its coordinates have been changed after going through the channel. More technically, an error-correcting code <span class="inline-math">\((u,\mathcal{E})\)</span> is an <span class="textit">encoder</span> function <span class="inline-math">\(u:[1\cdots K]\to[1\cdots N]\)</span> with a set of correctable errors <span class="inline-math">\(E:[1\cdots N]\to [1\cdots M]\)</span> with the following property: there exists a <span class="textit">decoder</span> function <span class="inline-math">\(d:[1\cdots M]\to [1\cdots K]\)</span> such that for all <span class="inline-math">\(E\in\cal{E}\)</span> and states <span class="inline-math">\(x\in[1\cdots K]\)</span>, <span class="inline-math">\(d(E(e(x)))=x\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 
 <!-- Display features -->
@@ -107,9 +105,6 @@
  
 
 
-<h2 id="feature_decoders"
-      class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Capacity-achieving Guessing Random Additive Noise Decoding (GRAND) <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -120,10 +115,6 @@
 
 
 
-<h2 id="notes" class="code-notes">Notes</h2>
-<div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">The modern theory of error-correcting codes is rooted in the foundational work of C. Shannon <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, but error-correcting codes have been used prior to that work <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
-</div>
 
 
 <!-- Relationships to other codes -->
@@ -148,46 +139,26 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bits_into_bits">Binary code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/analog">Analog code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/distributed_storage">Distributed-storage code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/q-ary_digits_into_q-ary_digits">Galois-field <span class="inline-math">\(q\)</span>-ary code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/ecc_finite">Finite-dimensional error-correcting code (ECC)</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/generalized_concatenated">Generalized concatenated code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/group_classical">Group-based code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/ipp">Identifiable parent property (IPP) code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Error-correcting codes are defined for a finite alphabet, so only finite lattice-based codes are children.</span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/linear">Linear code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/ltc">Locally testable code (LTC)</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/matrices_into_matrices">Matrix-based code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/parallel_concatenated">Parallel concatenated code</a></span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/quasi_cyclic">Quasi-cyclic code</a></span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/random">Random code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/rings_into_rings">Ring code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/points_into_spheres">Spherical code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/weighed_covering">Weighed-covering code</a></span></li>
 </ul>
 </div>
 
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>D. Gottesman. <span class="textit">Surviving as a quantum computer in a classical world</span></dd><dt id="citation-3">[3]</dt><dd>K. R. Duffy, J. Li, and M. Medard, “Capacity-Achieving Guessing Random Additive Noise Decoding”, IEEE Transactions on Information Theory <span class="textbf">65</span>, 4023 (2019). <a href="https://doi.org/10.1109/TIT.2019.2896110" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.07010" target="_blank" class="href-href">1802.07010</a></dd><dt id="citation-4">[4]</dt><dd>A. Barg, “At the Dawn of the Theory of Codes”, The Mathematical Intelligencer <span class="textbf">15</span>, 20 (1993). <a href="https://doi.org/10.1007/bf03025254" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<!-- no-endnotes -->
 
 
 
@@ -195,8 +166,7 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-03-22)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2021-11-24)</li></ul>
+    (2022-11-06)      — most recent</li></ul>
 </details>
 
 
@@ -269,7 +239,7 @@ url={https://errorcorrectionzoo.org/c/ecc}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/distributed_storage">Distributed-storage</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/generalized_concatenated">Generalized concatenated</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc_finite">Finite ECC</a></li><li><a href="/c/generalized_concatenated">Generalized concatenated</a></li><li><a href="/c/group_classical">Group-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
