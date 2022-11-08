@@ -86,10 +86,10 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes states (codewords) in coordinates of a lattice in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</div>
+<div class="sectioncontent code-description">Encodes states (codewords) in coordinates of an <span class="inline-math">\(n\)</span>-dimensional lattice. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the number of nearest neighbors at each lattice point known as the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span>, and the <span class="textit">volume</span> <span class="inline-math">\(V=\text{det}G\)</span>, which is equal to the determinant of the lattice generator matrix.</p><p>The <span class="textit">nominal coding gain</span> <span class="inline-math">\(\gamma_{c}\)</span> (a.k.a. <span class="textit">Hermite parameter</span>) of an <span class="inline-math">\(n\)</span>-dimensional lattice is <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-protection"><p>Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span> of nearest neighbors at each lattice point, and the <span class="textit">volume</span> <span class="inline-math">\(V=\det G\)</span>, which is equal to the determinant of the lattice generator matrix <span class="inline-math">\(G\)</span>.</p><p>The <span class="textit">nominal coding gain</span> <span class="inline-math">\(\gamma_{c}\)</span> (a.k.a. <span class="textit">Hermite parameter</span>) of an <span class="inline-math">\(n\)</span>-dimensional lattice is <span class="display-math env-align">\begin{align}
   \gamma_{c}=\left(d_{\text{min}}/\sqrt[n]{V}\right)^{2}~,
 \end{align}</span> characterizing the ratio of the level of protection to the required spatial resources.</p></div>
 
@@ -119,6 +119,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See book <a href="#citation-1" class="href-endnote endnote citation">[1]</a> for an introduction and overview of lattices.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -148,10 +152,6 @@
     <span class="code-parent-of-1-code"><a href="/c/leech">Leech lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/construction_a">Mod-2 lattice code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The Niset-Andersen-Cerf code encodes two coherent states at a time with arbitrary complex values, making it analogous to a lattice-based (classical) code encoding two points in <span class="inline-math">\(\mathbb{R}^2\)</span>. The code does not encode any quantum information since superpositions of the coherent states are not stored.</span></li>
 </ul>
 </div>
 
@@ -183,7 +183,7 @@
 
 
 
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -265,7 +265,7 @@ url={https://errorcorrectionzoo.org/c/points_into_lattices}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/barnes_wall">Barnes-Wall (BW) lattice</a></li><li><a href="/c/leech">Leech lattice</a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/qam">QAM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/barnes_wall">Barnes-Wall (BW) lattice</a></li><li><a href="/c/leech">Leech lattice</a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/qam">QAM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
