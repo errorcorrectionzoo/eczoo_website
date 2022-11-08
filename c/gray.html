@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>The first Gray code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, now called the <span class="textit">binary reflected Gray code</span>, is a trivial code that orders length-<span class="inline-math">\(n\)</span> binary strings such that nearest-neighbor strings differ by only one digit.</p><p>A simple example is the case <span class="inline-math">\(n=2\)</span>, also known as the <span class="textit">Gray map</span>, which produces the ordering <span class="inline-math">\(0\to 00\)</span>, <span class="inline-math">\(1\to 01\)</span>, <span class="inline-math">\(2\to 11\)</span>, and <span class="inline-math">\(3\to 10\)</span>. The Gray map differs in the last two numbers from the usual binary expansion of the natural numbers, which maps <span class="inline-math">\(0\to 00\)</span>, <span class="inline-math">\(1\to 01\)</span>, <span class="inline-math">\(2\to 10\)</span>, and <span class="inline-math">\(3\to 11\)</span>.</p><p>Layout out the Gray-map output strings counterclockwise on the corners of a 1D square, gray codes have been generalized such that nearest-neighbor strings differ by only one digit when the strings are arranged in higher-dimensional hypercubes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Further generalizations called <span class="textit">combinatorial Gray codes</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a> refer to methods to generate organize combinatorial objects such that successive objects differ in some particular way.</p></div>
+<div class="sectioncontent code-description"><p>The first Gray code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, now called the <span class="textit">binary reflected Gray code</span>, is a trivial code that orders length-<span class="inline-math">\(n\)</span> binary strings such that nearest-neighbor strings differ by only one digit.</p><p>A simple example is the case <span class="inline-math">\(n=2\)</span>, also known as the <span class="textit">Gray map</span>, which produces the ordering <span class="inline-math">\(0\to 00\)</span>, <span class="inline-math">\(1\to 01\)</span>, <span class="inline-math">\(2\to 11\)</span>, and <span class="inline-math">\(3\to 10\)</span>. The Gray map differs in the last two numbers from the usual binary expansion of the natural numbers, which maps <span class="inline-math">\(0\to 00\)</span>, <span class="inline-math">\(1\to 01\)</span>, <span class="inline-math">\(2\to 10\)</span>, and <span class="inline-math">\(3\to 11\)</span>.</p><p>Layout out the Gray-map output strings counterclockwise on the corners of a 1D square, gray codes have been generalized such that nearest-neighbor strings differ by only one digit when the strings are arranged in higher-dimensional hypercubes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Further generalizations called <span class="textit">combinatorial Gray codes</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a> refer to methods to generate organize combinatorial objects such that successive objects differ in some particular way. Particular <span class="inline-math">\(q\)</span>-ary extensions <a href="#citation-4" class="href-endnote endnote citation">[4]</a> of Gray codes may be useful in digital imaging and signal processing.</p></div>
 
 
 
@@ -100,6 +100,9 @@
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Efficient encoder for binary reflected Gray code <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span></div>
 
 
  
@@ -114,10 +117,14 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Three-dimensional imaging <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span><span class="paragraph-in-list">Broadcasting and communication <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
+</div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Refs. <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a> reviews of combinatorial Gray codes.</span>
+  <span class="paragraph-in-list">See Refs. <a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a> reviews of various Gray codes.</span>
 </div>
 
 
@@ -146,17 +153,21 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/qam">Lattice-based QAM code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;2D Gray codes are often concatenated with <span class="inline-math">\(n=1\)</span> lattice-based QAM codes so that the Hamming distance between the bitstrings encoded into the points is almost a discretized version of the Euclidean distance between the points <a href="#citation-6" class="href-endnote endnote citation">[6; Fig. 2.18]</a>.</span></li>
+      &#x2014;&nbsp;2D Gray codes are often concatenated with <span class="inline-math">\(n=1\)</span> lattice-based QAM codes so that the Hamming distance between the bitstrings encoded into the points is a discretized version of the Euclidean distance between the points.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/psk">Phase-shift keyring (PSK)</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;1D Gray codes are often concatenated with PSKs so that the Hamming distance between the bitstrings encoded into the points is a discretized version of the Euclidean distance between the points.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/rank_modulation">Rank-modulation Gray code (RMGC)</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The rank-modulation Gray code is an extension of the original binary Gray code to a code on the permutation group <a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Gray, Frank. &quot;Pulse code communication.&quot; United States Patent Number 2632058 (1953).</dd><dt id="citation-2">[2]</dt><dd>E. N. Gilbert, “Gray Codes and Paths on the n-Cube”, Bell System Technical Journal <span class="textbf">37</span>, 815 (1958). <a href="https://doi.org/10.1002/j.1538-7305.1958.tb03887.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. T. Joichi, D. E. White, and S. G. Williamson, “Combinatorial Gray Codes”, SIAM Journal on Computing <span class="textbf">9</span>, 130 (1980). <a href="https://doi.org/10.1137/0209013" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>C. Savage, “A Survey of Combinatorial Gray Codes”, SIAM Review <span class="textbf">39</span>, 605 (1997). <a href="https://doi.org/10.1137/S0036144595295272" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Torsten Mütze, “Combinatorial Gray codes-an updated survey”. <a href="https://arxiv.org/abs/2202.01280" target="_blank" class="href-href">2202.01280</a></dd><dt id="citation-6">[6]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Gray, Frank. &quot;Pulse code communication.&quot; United States Patent Number 2632058 (1953).</dd><dt id="citation-2">[2]</dt><dd>E. N. Gilbert, “Gray Codes and Paths on the n-Cube”, Bell System Technical Journal <span class="textbf">37</span>, 815 (1958). <a href="https://doi.org/10.1002/j.1538-7305.1958.tb03887.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. T. Joichi, D. E. White, and S. G. Williamson, “Combinatorial Gray Codes”, SIAM Journal on Computing <span class="textbf">9</span>, 130 (1980). <a href="https://doi.org/10.1137/0209013" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Yicong Zhou et al., “(n, k, p)-Gray code for image systems”, IEEE Transactions on Cybernetics <span class="textbf">43</span>, 515 (2013). <a href="https://doi.org/10.1109/TSMCB.2012.2210706" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. R. Bitner, G. Ehrlich, and E. M. Reingold, “Efficient generation of the binary reflected gray code and its applications”, Communications of the ACM <span class="textbf">19</span>, 517 (1976). <a href="https://doi.org/10.1145/360336.360343" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>G. Sansoni et al., “Three-dimensional imaging based on Gray-code light projection: characterization of the measuring algorithm and development of a measuring system for industrial applications”, Applied Optics <span class="textbf">36</span>, 4463 (1997). <a href="https://doi.org/10.1364/AO.36.004463" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>S. L. Johnsson and C.-T. Ho, “Optimum broadcasting and personalized communication in hypercubes”, IEEE Transactions on Computers <span class="textbf">38</span>, 1249 (1989). <a href="https://doi.org/10.1109/12.29465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>C. Savage, “A Survey of Combinatorial Gray Codes”, SIAM Review <span class="textbf">39</span>, 605 (1997). <a href="https://doi.org/10.1137/S0036144595295272" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>L. S. Barasch, S. Lakshmivarahan, and S. K. Dhall, “Generalized Gray Codes and Their Properties”, Mathematics for Large Scale Computing 203 (2020). <a href="https://doi.org/10.1201/9780429332760-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>Torsten Mütze, “Combinatorial Gray codes-an updated survey”. <a href="https://arxiv.org/abs/2202.01280" target="_blank" class="href-href">2202.01280</a></dd><dt id="citation-11">[11]</dt><dd>Anxiao Jiang et al., “Rank Modulation for Flash Memories”, IEEE Transactions on Information Theory <span class="textbf">55</span>, 2659 (2009). <a href="https://doi.org/10.1109/TIT.2009.2018336" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -237,7 +248,7 @@ url={https://errorcorrectionzoo.org/c/gray}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc_finite">Finite ECC</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/qam">Latice QAM</a></li><li><a href="/c/psk">PSK</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/ecc_finite">Finite ECC</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/qam">Latice QAM</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/rank_modulation">RMGC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

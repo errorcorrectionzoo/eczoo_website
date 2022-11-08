@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes into points into a subset of points lying on a lattice in <span class="inline-math">\(\mathbb{R}^{2n}\)</span>, which is usually treated as <span class="inline-math">\(\mathbb{C}^n\)</span>. Each pair of points is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal using QAM <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>. QAM schemes with <span class="inline-math">\(q\)</span> points are often called <span class="inline-math">\(q\)</span>-QAM, and <span class="inline-math">\(q\)</span> is often a power of two in order to further concatenate with a binary code. </div>
+<div class="sectioncontent code-description">Encodes into points into a subset of points lying on a lattice in <span class="inline-math">\(\mathbb{R}^{2n}\)</span>, which is usually treated as <span class="inline-math">\(\mathbb{C}^n\)</span>. Each pair of points is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal using QAM <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>. QAM schemes with <span class="inline-math">\(q\)</span> complex coordinates are often called <span class="inline-math">\(q\)</span>-QAM, and <span class="inline-math">\(q\)</span> is often a power of two in order to further concatenate with a binary code. </div>
 
 
 
@@ -117,6 +117,10 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Optical communication (e.g., Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span>
+</div>
 
 
 
@@ -162,19 +166,19 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/multimodegkp">Multi-mode GKP code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;The GKP code is a quantum analogue of lattice-based QAM.</span></li>
+      &#x2014;&nbsp;Multimode GKP codes are quantum analogues of lattice-based QAM codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gray">Gray code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;2D Gray codes are often concatenated with <span class="inline-math">\(n=1\)</span> lattice-based QAM codes so that the Hamming distance between the bitstrings encoded into the points is almost a discretized version of the Euclidean distance between the points <a href="#citation-3" class="href-endnote endnote citation">[3; Fig. 2.18]</a>.</span></li>
+      &#x2014;&nbsp;2D Gray codes are often concatenated with <span class="inline-math">\(n=1\)</span> lattice-based QAM codes so that the Hamming distance between the bitstrings encoded into the points is a discretized version of the Euclidean distance between the points.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. Buchali et al., “Rate Adaptation and Reach Increase by Probabilistically Shaped 64-QAM: An Experimental Demonstration”, Journal of Lightwave Technology <span class="textbf">34</span>, 1599 (2016). <a href="https://doi.org/10.1109/JLT.2015.2510034" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -255,7 +259,7 @@ url={https://errorcorrectionzoo.org/c/qam}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/gkp">GKP</a></li><li><a href="/c/gray">Gray</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/gray">Gray</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
