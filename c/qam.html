@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Lattice-based QAM code" />
+<meta name="citation_title" content="Quadrature-amplitude modulation (QAM) code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Lattice-based QAM code" />
+<meta name="DC.title" content="Quadrature-amplitude modulation (QAM) code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Lattice-based QAM code — Error Correction Zoo
+    Quadrature-amplitude modulation (QAM) code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Lattice-based QAM code</h1>
+      Quadrature-amplitude modulation (QAM) code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Encodes into points into a subset of points lying on a lattice in <span class="inline-math">\(\mathbb{R}^{2n}\)</span>, which is usually treated as <span class="inline-math">\(\mathbb{C}^n\)</span>. Each pair of points is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal using QAM <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>. QAM schemes with <span class="inline-math">\(q\)</span> complex coordinates are often called <span class="inline-math">\(q\)</span>-QAM, and <span class="inline-math">\(q\)</span> is often a power of two in order to further concatenate with a binary code. </div>
+<div class="sectioncontent code-description"><p>Encodes into points into a subset of points lying on in <span class="inline-math">\(\mathbb{R}^{2}\)</span>, here treated as <span class="inline-math">\(\mathbb{C}\)</span>. Each pair of points is associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>.</p><p>QAM schemes with <span class="inline-math">\(q\)</span> complex coordinates are often called <span class="inline-math">\(q\)</span>-QAM, and <span class="inline-math">\(q\)</span> is often a power of two in order to further concatenate with a binary code.</p></div>
 
 
 
@@ -119,7 +119,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Optical communication (e.g., Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span>
+  <span class="paragraph-in-list">Optical communication (e.g., Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span><span class="paragraph-in-list">Telephone-line modems: 1971 Codex 9600C and international standard V.29 used 16-QAM .</span>
 </div>
 
 
@@ -134,9 +134,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A finite lattice QAM encoding consits of points scooped out of an infinite lattice.</span></li>
+    <span class="code-parents-1-code"><a href="/c/analog">Analog code</a></span></li>
 </ul>
 </div>
 
@@ -148,13 +146,13 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/bpsk">Binary PSK (BPSK)</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;BPSK is the simplest non-trivial lattice QAM encoding.</span></li>
+      &#x2014;&nbsp;PSK is a version of QAM where the constellation consists of points arranged equidistantly on a circle.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qpsk">Quadrature PSK (QPSK)</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/pam">Pulse-amplitude modulation (PAM) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;QPSK can be thought of as a lattice-based QAM encoding known as 4-QAM.</span></li>
+      &#x2014;&nbsp;PAM codes can be thought of as QAM codes restricted to the real line. A <span class="inline-math">\(q\times q\)</span>-QAM code is informationally equivalent to two <span class="inline-math">\(q\)</span>-PAM codes.</span></li>
 </ul>
 </div>
 
@@ -166,9 +164,13 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/multimodegkp">Multi-mode GKP code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Multimode GKP codes are quantum analogues of lattice-based QAM codes.</span></li>
+      &#x2014;&nbsp;QAM encodings often consist of lattice constellations, i.e., finite sets of points scooped out of an infinite 2D lattice.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GKP codes are quantum analogues of lattice-based QAM codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/gray">Gray code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -215,10 +217,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Lattice-based QAM code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</dd>
+    <dd class="boxedcontent">“Quadrature-amplitude modulation (QAM) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_qam,
-title={Lattice-based QAM code},
+title={Quadrature-amplitude modulation (QAM) code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -229,7 +231,7 @@ url={https://errorcorrectionzoo.org/c/qam}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Lattice-based%20QAM%20code%20https%3A//errorcorrectionzoo.org/c/qam" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qam&amp;t=Lattice-based%20QAM%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Lattice-based%20QAM%20code&amp;body=Lattice-based%20QAM%20code%20https%3A//errorcorrectionzoo.org/c/qam">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Quadrature-amplitude%20modulation%20%28QAM%29%20code%20https%3A//errorcorrectionzoo.org/c/qam" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qam&amp;t=Quadrature-amplitude%20modulation%20%28QAM%29%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Quadrature-amplitude%20modulation%20%28QAM%29%20code&amp;body=Quadrature-amplitude%20modulation%20%28QAM%29%20code%20https%3A//errorcorrectionzoo.org/c/qam">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/qam</dd>
@@ -245,7 +247,7 @@ url={https://errorcorrectionzoo.org/c/qam}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Lattice-based QAM code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</p>
+  <p>“Quadrature-amplitude modulation (QAM) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qam</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/modulation/qam.yml"
                 class="ashowurl"
@@ -259,7 +261,7 @@ url={https://errorcorrectionzoo.org/c/qam}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/gray">Gray</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/pam">PAM</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/gkp">GKP</a></li><li><a href="/c/gray">Gray</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

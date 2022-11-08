@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Quadrature PSK (QPSK) code" />
+<meta name="citation_title" content="Leech lattice code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Quadrature PSK (QPSK) code" />
+<meta name="DC.title" content="Leech lattice code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Quadrature PSK (QPSK) code — Error Correction Zoo
+    Leech lattice code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -71,7 +71,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_qpsk">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_leech">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -80,14 +80,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quadrature PSK (QPSK) code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Leech lattice code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Also known as <span class="textit">quadriphase PSK</span>, <span class="textit">4-PSK</span>, <span class="textit">4-QAM</span>, A quaternary phase-shift keyring encoding into a constellation of four points distributed equidistantly on a circle. For the case of <span class="inline-math">\(\pi/4\)</span>-QPSK, the constellation is <span class="inline-math">\(\{e^{\pm i\frac{\pi}{4}},e^{\pm i\frac{3\pi}{4}}\}\)</span>. </div>
+<div class="sectioncontent code-description">Lattice in 24 dimensions that exhibits optimal packing. </div>
 
+<h2 id="protection" class="code-protection">Protection</h2>
+<div class="sectioncontent code-protection">The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(4\)</span>. </div>
 
 
 <!-- Display features -->
@@ -114,10 +116,6 @@
 
 
 
-<h2 id="realizations" class="code-realizations">Realizations</h2>
-<div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Japanese and North American digital cellular and personal systems <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Telephone-line modems: 1962 Bell 201 and international standard V.24 .</span>
-</div>
 
 
 
@@ -131,9 +129,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span><span class="code-parents-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;QPSK is also known as 4-PSK.</span></li>
+    <span class="code-parents-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span></li>
 </ul>
 </div>
 
@@ -141,7 +137,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>K. Feher, “Modems for emerging digital cellular-mobile radio system”, IEEE Transactions on Vehicular Technology <span class="textbf">40</span>, 355 (1991). <a href="https://doi.org/10.1109/25.289416" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<!-- no-endnotes -->
 
 
 
@@ -149,7 +145,7 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-11-07)      — most recent</li></ul>
+    (2022-11-08)      — most recent</li></ul>
 </details>
 
 
@@ -163,39 +159,39 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    qpsk
+    leech
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/modulation/qpsk.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/leech.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=qpsk&amp;code_yml_filename=classical/analog/modulation/qpsk.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>qpsk</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=leech&amp;code_yml_filename=classical/analog/lattice/leech.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>leech</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Quadrature PSK (QPSK) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qpsk</dd>
+    <dd class="boxedcontent">“Leech lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/leech</dd>
     <dt>BibTeX:</dt>
-    <dd class="boxedcontent bibtex">@incollection{eczoo_qpsk,
-title={Quadrature PSK (QPSK) code},
+    <dd class="boxedcontent bibtex">@incollection{eczoo_leech,
+title={Leech lattice code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/qpsk}
+url={https://errorcorrectionzoo.org/c/leech}
 }</dd>
   </dl></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Quadrature%20PSK%20%28QPSK%29%20code%20https%3A//errorcorrectionzoo.org/c/qpsk" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qpsk&amp;t=Quadrature%20PSK%20%28QPSK%29%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Quadrature%20PSK%20%28QPSK%29%20code&amp;body=Quadrature%20PSK%20%28QPSK%29%20code%20https%3A//errorcorrectionzoo.org/c/qpsk">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Leech%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/leech" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/leech&amp;t=Leech%20lattice%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Leech%20lattice%20code&amp;body=Leech%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/leech">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
-    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/qpsk</dd>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/leech</dd>
   </dl></div>
 </div>
 
@@ -208,11 +204,11 @@ url={https://errorcorrectionzoo.org/c/qpsk}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Quadrature PSK (QPSK) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/qpsk</p>
+  <p>“Leech lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/leech</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/modulation/qpsk.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/leech.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/modulation/qpsk.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/leech.yml</a>.</p>
 </div>
 
 
@@ -222,7 +218,7 @@ url={https://errorcorrectionzoo.org/c/qpsk}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/psk">PSK</a></li><li><a href="/c/points_into_spheres">Spherical</a></li><li><a href="/c/analog">Analog</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
