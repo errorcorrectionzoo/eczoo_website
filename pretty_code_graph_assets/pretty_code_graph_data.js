@@ -4355,8 +4355,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_two-legged-cat",
-                    "label": "Two-legged cat",
-                    "_code_name": "Two-legged cat code",
+                    "label": "Two-component cat",
+                    "_code_name": "Two-component cat code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
