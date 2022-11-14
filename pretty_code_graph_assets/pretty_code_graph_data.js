@@ -5967,7 +5967,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "'Encodes \\(K\\)-dimensional Hilbert space into a \\(2\\ell+1\\)-dimensional Hilbert space, where the latter is thought of as a spin-\\(\\ell\\) quantum system. This spin system can in turn be thought of as the \u2026",
+                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a \\(2\\ell+1\\)-dimensional Hilbert space, where the latter is thought of as a spin-\\(\\ell\\) quantum system. This spin system can in turn be thought of as the \u2026",
                     "_code_href": "/c/single_spin",
                     "_family_generation_level": 4
                 },
