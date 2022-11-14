@@ -5952,11 +5952,45 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "A spin code designed to realize Clifford gates using \\(SU(2)\\) rotations. Codewords are subspaces of a spin's Hilbert space that house irreducible representations (irreps) of the single-qubit Clifford \u2026",
                     "_code_href": "/c/j_gross",
+                    "_family_generation_level": 5
+                },
+                "position": {
+                    "x": 650,
+                    "y": 600
+                }
+            },
+            {
+                "data": {
+                    "id": "c_single_spin",
+                    "label": "Single-spin",
+                    "_code_name": "Single-spin code",
+                    "_is_code": 1,
+                    "_is_plain_concrete_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "'Encodes \\(K\\)-dimensional Hilbert space into a \\(2\\ell+1\\)-dimensional Hilbert space, where the latter is thought of as a spin-\\(\\ell\\) quantum system. This spin system can in turn be thought of as the \u2026",
+                    "_code_href": "/c/single_spin",
                     "_family_generation_level": 4
                 },
                 "position": {
                     "x": 650,
                     "y": 480
+                }
+            },
+            {
+                "data": {
+                    "id": "c_spin_gkp",
+                    "label": "Spin GKP",
+                    "_code_name": "Spin GKP code",
+                    "_is_code": 1,
+                    "_is_plain_concrete_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "An analogue of the single-mode GKP code designed for atomic ensembles. Was designed by using the Holstein-Primakoff mapping [T. Holstein and H. Primakoff, \u201cField Dependence of the Intrinsic Domain Magnetization of a Ferromagnet\u201d, Physical Review 58, 1098 (1940). DOI] to pull back the phase-space structure of a bosonic system to the compact \u2026",
+                    "_code_href": "/c/spin_gkp",
+                    "_family_generation_level": 5
+                },
+                "position": {
+                    "x": 650,
+                    "y": 600
                 }
             },
             {
@@ -13418,10 +13452,34 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_j_gross_spins_into_spins_475",
+                    "id": "parent_j_gross_single_spin_475",
                     "_rel_type": "parent",
                     "source": "c_j_gross",
+                    "target": "c_single_spin"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_single_spin_spins_into_spins_476",
+                    "_rel_type": "parent",
+                    "source": "c_single_spin",
                     "target": "c_spins_into_spins"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_spin_gkp_single_spin_477",
+                    "_rel_type": "parent",
+                    "source": "c_spin_gkp",
+                    "target": "c_single_spin"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_spin_gkp_gkp__432",
+                    "_rel_type": "cousin",
+                    "source": "c_spin_gkp",
+                    "target": "c_gkp"
                 }
             },
             {
@@ -13434,7 +13492,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_spins_into_spins_qecc_finite_476",
+                    "id": "parent_spins_into_spins_qecc_finite_478",
                     "_rel_type": "parent",
                     "source": "c_spins_into_spins",
                     "target": "c_qecc_finite"
@@ -13442,7 +13500,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_spins_into_spins_qubits_into_qubits__432",
+                    "id": "cousin_spins_into_spins_qubits_into_qubits__433",
                     "_rel_type": "cousin",
                     "source": "c_spins_into_spins",
                     "target": "c_qubits_into_qubits"
@@ -13458,7 +13516,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fermions_qecc_finite_477",
+                    "id": "parent_fermions_qecc_finite_479",
                     "_rel_type": "parent",
                     "source": "c_fermions",
                     "target": "c_qecc_finite"
@@ -13466,7 +13524,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fermions_qubits_into_qubits__433",
+                    "id": "cousin_fermions_qubits_into_qubits__434",
                     "_rel_type": "cousin",
                     "source": "c_fermions",
                     "target": "c_qubits_into_qubits"
@@ -13474,7 +13532,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_fermions_oscillators__434",
+                    "id": "cousin_fermions_oscillators__435",
                     "_rel_type": "cousin",
                     "source": "c_fermions",
                     "target": "c_oscillators"
@@ -13482,7 +13540,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_fermions_478",
+                    "id": "parent_majorana_stab_fermions_480",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_fermions"
@@ -13490,7 +13548,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_majorana_stab_qubit_stabilizer_479",
+                    "id": "parent_majorana_stab_qubit_stabilizer_481",
                     "_rel_type": "parent",
                     "source": "c_majorana_stab",
                     "target": "c_qubit_stabilizer"
@@ -13498,7 +13556,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_majorana_stab_dual__435",
+                    "id": "cousin_majorana_stab_dual__436",
                     "_rel_type": "cousin",
                     "source": "c_majorana_stab",
                     "target": "c_dual"
@@ -13506,7 +13564,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_majorana_stab_css__436",
+                    "id": "cousin_majorana_stab_css__437",
                     "_rel_type": "cousin",
                     "source": "c_majorana_stab",
                     "target": "c_css"
@@ -13514,7 +13572,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_majorana_stab_binary_cyclic__437",
+                    "id": "cousin_majorana_stab_binary_cyclic__438",
                     "_rel_type": "cousin",
                     "source": "c_majorana_stab",
                     "target": "c_binary_cyclic"
@@ -13522,7 +13580,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_majorana_stab_reed_muller__438",
+                    "id": "cousin_majorana_stab_reed_muller__439",
                     "_rel_type": "cousin",
                     "source": "c_majorana_stab",
                     "target": "c_reed_muller"
@@ -13530,7 +13588,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "cousin_majorana_stab_stabilizer__439",
+                    "id": "cousin_majorana_stab_stabilizer__440",
                     "_rel_type": "cousin",
                     "source": "c_majorana_stab",
                     "target": "c_stabilizer"
@@ -13538,7 +13596,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_string_net_category_quantum_480",
+                    "id": "parent_string_net_category_quantum_482",
                     "_rel_type": "parent",
                     "source": "c_string_net",
                     "target": "c_category_quantum"
@@ -13546,7 +13604,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_string_net_topological_481",
+                    "id": "parent_string_net_topological_483",
                     "_rel_type": "parent",
                     "source": "c_string_net",
                     "target": "c_topological"
@@ -13554,7 +13612,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_fibonacci_string_net_482",
+                    "id": "parent_fibonacci_string_net_484",
                     "_rel_type": "parent",
                     "source": "c_fibonacci",
                     "target": "c_string_net"
@@ -13570,7 +13628,7 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_category_quantum_qecc_finite_483",
+                    "id": "parent_category_quantum_qecc_finite_485",
                     "_rel_type": "parent",
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
@@ -14953,6 +15011,16 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "domain_classical_domain",
             "bottom": "c_j_gross",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_single_spin",
+            "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_spin_gkp",
             "gap": 200
         },
         {
@@ -17301,8 +17369,18 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_spins_into_spins",
+            "top": "c_single_spin",
             "bottom": "c_j_gross",
+            "gap": 100
+        },
+        {
+            "top": "c_spins_into_spins",
+            "bottom": "c_single_spin",
+            "gap": 100
+        },
+        {
+            "top": "c_single_spin",
+            "bottom": "c_spin_gkp",
             "gap": 100
         },
         {
