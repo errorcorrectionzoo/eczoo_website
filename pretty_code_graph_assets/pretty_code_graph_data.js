@@ -3643,7 +3643,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Non-CSS derivative of the surface code whose generators are \\(XXXX\\) and \\(YYYY\\), obtained by mapping \\(Z \\to Y\\) in the surface code.",
+                    "_description": "Also called the tailored surface code (TSC). Non-CSS derivative of the surface code whose generators are \\(XXXX\\) and \\(YYYY\\), obtained by mapping \\(Z \\to Y\\) in the surface code.",
                     "_code_href": "/c/xysurface",
                     "_family_generation_level": 5
                 },
@@ -4379,11 +4379,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Code whose codespace is spanned by two coherent states \\(\\left|\\pm\\alpha\\right\\rangle\\) for nonzero complex \\(\\alpha\\). An orthonormal basis for the codespace consists of the bosonic cat states \\begin{align}\n  |\\overline{\\pm}\\rangle=\\frac{\\left|\\alpha\\right\\rangle \\pm\\left|-\\alpha\\right\\rangle }{\\sqrt{2\\left(1\\pm e^{-2|\\alpha|^{2}}\\right)}}\n\\end{align}",
                     "_code_href": "/c/two-legged-cat",
-                    "_family_generation_level": 6
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 450,
-                    "y": 720
+                    "y": 600
                 }
             },
             {
@@ -4396,11 +4396,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Rotation-symmetric bosonic Fock-state code encoding a \\(q\\)-dimensional qudit into one oscillator. Codewords for a qubit code (\\(q=2\\)) consist of a coherent state \\(|\\alpha\\rangle\\) projected onto a subspace of \u2026",
                     "_code_href": "/c/cat",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 450,
-                    "y": 600
+                    "y": 480
                 }
             },
             {
@@ -4413,11 +4413,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Qudit-into-oscillator code whose codewords can succinctly be expressed as superpositions of a countable set of coherent states that is called a constellation. Some useful constellations form a group \u2026",
                     "_code_href": "/c/coherent_constellation",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 3
                 },
                 "position": {
                     "x": 450,
-                    "y": 480
+                    "y": 360
                 }
             },
             {
@@ -4430,11 +4430,11 @@ GENERATED_pretty_code_graph_data = {
                     "_is_abstract_code": 0,
                     "_description": "Two-mode qutrit code constructed out of superpositions of coherent states whose amplitudes make up the binary tetrahedral group \\(2T\\). The codespace is a particular three-dimensional subspace of the 24 \u2026",
                     "_code_href": "/c/2t_qutrit",
-                    "_family_generation_level": 5
+                    "_family_generation_level": 4
                 },
                 "position": {
                     "x": 450,
-                    "y": 600
+                    "y": 480
                 }
             },
             {
@@ -5984,7 +5984,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "An analogue of the single-mode GKP code designed for atomic ensembles. Was designed by using the Holstein-Primakoff mapping [T. Holstein and H. Primakoff, \u201cField Dependence of the Intrinsic Domain Magnetization of a Ferromagnet\u201d, Physical Review 58, 1098 (1940). DOI] to pull back the phase-space structure of a bosonic system to the compact \u2026",
+                    "_description": "An analogue of the single-mode GKP code designed for atomic ensembles. Was designed by using the Holstein-Primakoff mapping [T. Holstein and H. Primakoff, \u201cField Dependence of the Intrinsic Domain Magnetization of a Ferromagnet\u201d, Physical Review 58, 1098 (1940). DOI] (see also [C. D. Cushen and R. L. Hudson, \u201cA quantum-mechanical central limit theorem\u201d, Journal of Applied Probability 8, 454 (1971). DOI]) to pull back the phase-space structure of a bosonic system to \u2026",
                     "_code_href": "/c/spin_gkp",
                     "_family_generation_level": 5
                 },
@@ -11404,10 +11404,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_coherent_constellation_qudits_into_oscillators_351",
+                    "id": "parent_coherent_constellation_oscillators_351",
                     "_rel_type": "parent",
                     "source": "c_coherent_constellation",
-                    "target": "c_qudits_into_oscillators"
+                    "target": "c_oscillators"
                 }
             },
             {
@@ -16789,7 +16789,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_qudits_into_oscillators",
+            "top": "c_oscillators",
             "bottom": "c_coherent_constellation",
             "gap": 100
         },
