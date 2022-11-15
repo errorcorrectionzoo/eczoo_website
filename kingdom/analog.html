@@ -186,7 +186,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
+      <a href="/c/binary_antipodal">Binary signal constellation</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -283,29 +283,18 @@
 
 <div class="ecc-code" id="ecc_binary_antipodal">
   <span class="short-code-name"><a href="/c/binary_antipodal">Binary signal constellation</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,K,4d/n)\)</span> spherical code obtained from a binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise antipodal mapping (also known as a <span class="textit">Euclidean-space image</span>) <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5; Example 1.2.1]</a>. </span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,4d/n)\)</span> spherical code obtained from a binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise <span class="textit">antipodal mapping</span> (also known as a <span class="textit">Euclidean-space image</span>) <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5; Example 1.2.1]</a>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/spherical">Spherical code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>.
+      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/bits_into_bits">Binary code</a>,       <a href="/c/concatenated">Concatenated code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_simplex_spherical">
-  <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. </span>
-  <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/spherical">Spherical code</a>.
   </span>
 </div>
 
@@ -351,6 +340,21 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_simplex_spherical">
+  <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-(n-1)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. </span>
+  <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_antipodal">Binary signal constellation</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/hadamard">Hadamard code</a>.
   </span>
 </div>
 
