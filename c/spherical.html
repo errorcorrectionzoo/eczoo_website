@@ -86,9 +86,9 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span> with radius one. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(n\)</span> is the dimension, <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>Code whose codewords are points on an <span class="inline-math">\(n-1\)</span>-dimensional sphere <span class="inline-math">\(S^{n-1}\)</span> with radius one. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
   \rho=\min\left\{ \left\Vert x-y\right\Vert ^{2}\,\text{s.t.}\,x,y\in C,\,\,x\neq y\right\}~.
-\end{align}</span></p><p>A spherical code can be defined using the Gram matrix <span class="inline-math">\(G = XX^T\)</span>, where the rows of <span class="inline-math">\(X\)</span> are the <span class="inline-math">\(n+1\)</span>-dimensional codeword vectors. The Gram matrix is symmetric, positive-definite, and has all diagonal elements equal to one.</p><p>Spherical codeword components are often taken from a discrete set of real values called an <span class="textit">alphabet</span>. For example, codewords of any length-<span class="inline-math">\(n\)</span> binary code can be mapped into spherical codewords with alphabet <span class="inline-math">\(\{\pm 1/\sqrt{n} \}\)</span> via the antipodal mapping <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>.</p></div>
+\end{align}</span></p><p>A spherical code can be defined using the Gram matrix <span class="inline-math">\(G = XX^T\)</span>, where the rows of <span class="inline-math">\(X\)</span> are the <span class="inline-math">\(n\)</span>-dimensional codeword vectors. The Gram matrix is symmetric, positive-definite, and has all diagonal elements equal to one.</p><p>Spherical codeword components are often taken from a discrete set of real values called an <span class="textit">alphabet</span>. For example, codewords of any length-<span class="inline-math">\(n\)</span> binary code can be mapped into spherical codewords with alphabet <span class="inline-math">\(\{\pm 1/\sqrt{n} \}\)</span> via the antipodal mapping <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>The Euclidean distance between two points is related to the dot product as <span class="display-math env-align">\begin{align}
@@ -157,23 +157,19 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/biorthogonal">Biorthogonal code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/binary_antipodal">Binary signal constellation</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/simplex_spherical">Simplex spherical code</a></span></li>
 </ul>
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousins
+    Cousin
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/bits_into_bits">Binary code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Any binary <span class="inline-math">\((n,K,d)\)</span> code can be converted into an <span class="inline-math">\((n,K,4d/n)\)</span> spherical code via a component-wise antipodal mapping <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/constant_weight">Constant-weight code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -265,7 +261,7 @@ url={https://errorcorrectionzoo.org/c/spherical}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/biorthogonal">Biorthogonal</a></li><li><a href="/c/simplex_spherical">Simplex spherical</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/binary_antipodal">Binary signal constellation</a></li><li><a href="/c/simplex_spherical">Simplex spherical</a></li><li><a href="/c/constant_weight">Constant-weight</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

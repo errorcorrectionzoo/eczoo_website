@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Constant-energy code" />
+<meta name="citation_title" content="Binary signal constellation" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Constant-energy code" />
+<meta name="DC.title" content="Binary signal constellation" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Constant-energy code — Error Correction Zoo
+    Binary signal constellation — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -71,7 +71,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_points_into_spheres">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_binary_antipodal">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Constant-energy code</h1>
+      Binary signal constellation</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Code whose codewords are points on a hypersphere whose radius squared is called the <span class="textit">energy</span>. Typically, only angular distances between points are relevant for code performance, so one can normalize codewords of a constant-energy code to obtain up a spherical code, i.e., a constant energy code with energy one. </div>
+<div class="sectioncontent code-description">An <span class="inline-math">\((n,K,4d/n)\)</span> spherical code obtained from a binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise antipodal mapping (also known as a <span class="textit">Euclidean-space image</span>) <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>. </div>
 
 
 
@@ -127,7 +127,7 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/analog">Analog code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/spherical">Spherical code</a></span></li>
 </ul>
 </div>
 
@@ -139,29 +139,37 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span><span class="code-parent-of-1-detail">
+    <span class="code-parent-of-1-code"><a href="/c/bpsk">Binary PSK (BPSK) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;PSK is a constant-energy code on the 1D sphere.</span></li>
+      &#x2014;&nbsp;A single-bit binary code yields the BPSK code under the antipodal mapping.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/spherical">Spherical code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/biorthogonal">Biorthogonal spherical code</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;An RM<span class="inline-math">\((1,m)\)</span> code maps to a <span class="inline-math">\((2^m,2^{m+1})\)</span> biorthogonal signal set under the antipodal mapping <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. This set is equivalent to the biorthogonal code since all such codes are unique up to equivalence <a href="#citation-1" class="href-endnote endnote citation">[1; pg. 19]</a>.</span></li>
 </ul>
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/constant_excitation">Constant-excitation (CE) code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/bits_into_bits">Binary code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Binary signal constellations are spherical codes obtained from binary codes.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/concatenated">Concatenated code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A binary signal constellation can be thought of as a concatenation of a binary outer code with a BPSK inner code.</span></li>
 </ul>
 </div>
 
 
 
-<!-- no-endnotes -->
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-2">[2]</dt><dd>G. D. Forney and G. Ungerboeck, “Modulation and coding for linear Gaussian channels”, IEEE Transactions on Information Theory <span class="textbf">44</span>, 2384 (1998). <a href="https://doi.org/10.1109/18.720542" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -183,39 +191,39 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    points_into_spheres
+    binary_antipodal
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/points_into_spheres.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/binary_antipodal.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=points_into_spheres&amp;code_yml_filename=classical/analog/spherical/points_into_spheres.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>points_into_spheres</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=binary_antipodal&amp;code_yml_filename=classical/analog/spherical/binary_antipodal.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>binary_antipodal</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Constant-energy code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/points_into_spheres</dd>
+    <dd class="boxedcontent">“Binary signal constellation”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_antipodal</dd>
     <dt>BibTeX:</dt>
-    <dd class="boxedcontent bibtex">@incollection{eczoo_points_into_spheres,
-title={Constant-energy code},
+    <dd class="boxedcontent bibtex">@incollection{eczoo_binary_antipodal,
+title={Binary signal constellation},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/points_into_spheres}
+url={https://errorcorrectionzoo.org/c/binary_antipodal}
 }</dd>
   </dl></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Constant-energy%20code%20https%3A//errorcorrectionzoo.org/c/points_into_spheres" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/points_into_spheres&amp;t=Constant-energy%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Constant-energy%20code&amp;body=Constant-energy%20code%20https%3A//errorcorrectionzoo.org/c/points_into_spheres">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Binary%20signal%20constellation%20https%3A//errorcorrectionzoo.org/c/binary_antipodal" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/binary_antipodal&amp;t=Binary%20signal%20constellation" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Binary%20signal%20constellation&amp;body=Binary%20signal%20constellation%20https%3A//errorcorrectionzoo.org/c/binary_antipodal">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
-    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/points_into_spheres</dd>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/binary_antipodal</dd>
   </dl></div>
 </div>
 
@@ -228,11 +236,11 @@ url={https://errorcorrectionzoo.org/c/points_into_spheres}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Constant-energy code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/points_into_spheres</p>
+  <p>“Binary signal constellation”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/binary_antipodal</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/points_into_spheres.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/binary_antipodal.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/points_into_spheres.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/spherical/binary_antipodal.yml</a>.</p>
 </div>
 
 
@@ -242,7 +250,7 @@ url={https://errorcorrectionzoo.org/c/points_into_spheres}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/constant_excitation">Constant-excitation (CE)</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/biorthogonal">Biorthogonal spherical</a></li><li><a href="/c/bits_into_bits">Binary</a></li><li><a href="/c/concatenated">Concatenated</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

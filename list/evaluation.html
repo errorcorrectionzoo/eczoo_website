@@ -185,7 +185,7 @@ Here is a list of <a href="/c/evaluation_varieties" class="href-ref ref-code">ev
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_muller">Reed-Muller (RM) code</a></td>
-  <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
+  <td class="textit">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. First-order RM codes are also called <span class="textit">biorthogonal</span> codes, while <span class="inline-math">\(m\)</span>th order RM codes are also called <span class="textit">universe</span> codes. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/reed_solomon">Reed-Solomon (RS) code</a></td>
@@ -194,6 +194,10 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 \end{align}</span> In other words, each message <span class="inline-math">\(\mu\)</span> is encoded into a string of values of the corresponding polynomial <span class="inline-math">\(f_\mu\)</span> at the points <span class="inline-math">\(\alpha_i\)</span>, <span class="display-math env-align">\begin{align}
   \mu\to\left( f_{\mu}\left(\alpha_{1}\right),f_{\mu}\left(\alpha_{2}\right),\cdots,f_{\mu}\left(\alpha_{n}\right)\right) \,.
 \end{align}</span></td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/repetition">Repetition code</a></td>
+  <td class="textit"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/residue">Residue AG code</a></td>
@@ -212,6 +216,10 @@ f_\mu(x)=\mu_0+\mu_1 x + \cdots + \mu_{k-1}x^{k-1}.
 <tr>
   <td class="top left"><a href="/c/serge">Serge-variety RM-type code</a></td>
   <td class="textit">Evaluation code of polynomials evaluated on points lying on a Serge variety. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/parity_check">Single parity-check (SPC) code</a></td>
+  <td class="textit">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/tetracode">Tetracode</a></td>

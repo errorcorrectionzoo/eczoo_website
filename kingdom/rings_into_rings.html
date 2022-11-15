@@ -124,22 +124,41 @@
 
 <div class="ecc-code" id="ecc_reed_muller">
   <span class="short-code-name"><a href="/c/reed_muller">Reed-Muller (RM) code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
-  <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
+  <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. First-order RM codes are also called <span class="textit">biorthogonal</span> codes, while <span class="inline-math">\(m\)</span>th order RM codes are also called <span class="textit">universe</span> codes. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/evaluation_polynomial">Polynomial evaluation code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/group">Group code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/hamming">Hamming code</a>.
+      <a href="/c/hamming">Hamming code</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>,       <a href="/c/binary_ltc">Binary linear LTC</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/binary_ltc">Binary linear LTC</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>.
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_parity_check">
+  <span class="short-code-name"><a href="/c/parity_check">Single parity-check (SPC) code</a></span>
+  <span class="short-code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</span>
+  <span class="short-code-info">Protection: This code cannot protect information, it can only detect 1-bit error.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>,       <a href="/c/divisible">Divisible code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/repetition">Repetition code</a>,       <a href="/c/q-ary_parity_check"><span class="inline-math">\(q\)</span>-ary parity-check code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/ldgm">Low-density generator-matrix (LDGM) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/classical_product">CSS classical product code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
   </span>
 </div>
 
@@ -177,6 +196,25 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/octacode">Octacode</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>,       <a href="/c/steane"><span class="inline-math">\([[7,1,3]]\)</span> Steane code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_repetition">
+  <span class="short-code-name"><a href="/c/repetition">Repetition code</a></span>
+  <span class="short-code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/perfect">Perfect code</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/hamming">Hamming code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/self_correct">Self-correcting quantum code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
   </span>
 </div>
 
