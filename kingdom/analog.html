@@ -78,11 +78,29 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/points_into_lattices">Lattice-based code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>,       <a href="/c/points_into_spheres">Spherical code</a>.
+      <a href="/c/points_into_spheres">Constant-energy code</a>,       <a href="/c/points_into_lattices">Lattice-based code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/coherent_constellation">Coherent-state constellation quantum code</a>,       <a href="/c/group_classical">Group-based code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_points_into_spheres">
+  <span class="short-code-name"><a href="/c/points_into_spheres">Constant-energy code</a></span>
+  <span class="short-code-description">Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span> whose radius squared is called the <span class="textit">energy</span>. Typically, only angular distances are important to code performance, and normalized codewords of a constant-energy code make up a spherical code, i.e., a constant energy code with energy one. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/analog">Analog code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/psk">Phase-shift keyring (PSK) code</a>,       <a href="/c/spherical">Spherical code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/constant_excitation">Constant-excitation (CE) code</a>.
   </span>
 </div>
 
@@ -132,18 +150,41 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_points_into_spheres">
-  <span class="short-code-name"><a href="/c/points_into_spheres">Spherical code</a></span>
-  <span class="short-code-description">Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span>. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(n\)</span> is the dimension, <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
-  \rho=\min\left\{ \left\Vert x-y\right\Vert ^{2}\,\text{s.t.}\,x,y\in C,\,\,x\neq y\right\}~.
-\end{align}</span> The radius of the sphere squared is called the <span class="textit">energy</span>, and it is taken to be unity for spherical codes. Points on a sphere with non-unity radius make up <span class="textit">constant-energy codes</span>.</span>
+<div class="ecc-code" id="ecc_psk">
+  <span class="short-code-name"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span>
+  <span class="short-code-description">A <span class="inline-math">\(q\)</span>-ary phase-shift keyring (<span class="inline-math">\(q\)</span>-PSK) encodes one <span class="inline-math">\(q\)</span>-ary digit of information into a constellation of <span class="inline-math">\(q\)</span> points distributed equidistantly on a circle in <span class="inline-math">\(\mathbb{C}\)</span> or, equivalently, <span class="inline-math">\(\mathbb{R}^2\)</span>. For example, such a constellation could be <span class="display-math env-align">\begin{align}
+  \{1,e^{i\frac{2\pi}{q}},\cdots,e^{i\frac{2\pi}{q}(q-1)}\}~.
+\end{align}</span> Each point is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into the phase of that signal. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/analog">Analog code</a>.
+      <a href="/c/points_into_spheres">Constant-energy code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/psk">Phase-shift keyring (PSK) code</a>.
+      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/qpsk">Quadrature PSK (QPSK) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/gray">Gray code</a>,       <a href="/c/cat">Cat code</a>,       <a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_spherical">
+  <span class="short-code-name"><a href="/c/spherical">Spherical code</a></span>
+  <span class="short-code-description">Code whose codewords are points on an <span class="inline-math">\(n\)</span>-dimensional sphere <span class="inline-math">\(S^n\)</span> with radius one. It is denoted as <span class="inline-math">\((n,M,\rho)\)</span>, where <span class="inline-math">\(n\)</span> is the dimension, <span class="inline-math">\(M\)</span> is the size or number of codewords, and <span class="inline-math">\(\rho\)</span> is the <span class="textit">squared minimum distance</span>, i.e., the smallest Euclidean distance between pairs of distinct codewords, <span class="display-math env-align">\begin{align}
+  \rho=\min\left\{ \left\Vert x-y\right\Vert ^{2}\,\text{s.t.}\,x,y\in C,\,\,x\neq y\right\}~.
+\end{align}</span></span>
+  <span class="short-code-info">Protection: The Euclidean distance between two points is related to the dot product as <span class="inline-math">\(\left\Vert x-y\right\Vert^{2} = 2-2x \cdot y\)</span>, where <span class="inline-math">\(x\cdot y\)</span> is the Euclidean inner product. As a result, the <span class="textit">angular distance</span>, <span class="display-math env-align">\begin{align}
+  \theta=\arccos(x\cdot y) \in[0,\pi]~,
+\end{align}</span> can be equivalently used to quantify code performance.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/points_into_spheres">Constant-energy code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/biorthogonal">Biorthogonal code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -162,7 +203,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/eeight">Gosset <span class="inline-math">\(E_8\)</span> lattice code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
+      <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -191,31 +232,11 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/eeight">Gosset <span class="inline-math">\(E_8\)</span> lattice code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
+      <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/binary_linear">Linear binary code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_psk">
-  <span class="short-code-name"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span>
-  <span class="short-code-description">A <span class="inline-math">\(q\)</span>-ary phase-shift keyring (<span class="inline-math">\(q\)</span>-PSK) encodes one <span class="inline-math">\(q\)</span>-ary digit of information into a constellation of <span class="inline-math">\(q\)</span> points distributed equidistantly on a circle in <span class="inline-math">\(\mathbb{C}\)</span> or, equivalently, <span class="inline-math">\(\mathbb{R}^2\)</span>. For example, such a constellation could be <span class="display-math env-align">\begin{align}
-  \{1,e^{i\frac{2\pi}{q}},\cdots,e^{i\frac{2\pi}{q}(q-1)}\}~.
-\end{align}</span> Each point is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into the phase of that signal. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/points_into_spheres">Spherical code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/qpsk">Quadrature PSK (QPSK) code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/gray">Gray code</a>,       <a href="/c/cat">Cat code</a>,       <a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a>.
   </span>
 </div>
 
@@ -230,36 +251,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/bpsk">Binary PSK (BPSK) code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_eeight">
-  <span class="short-code-name"><a href="/c/eeight">Gosset <span class="inline-math">\(E_8\)</span> lattice code</a></span>
-  <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(8\)</span>, which is the lattice corresponding to the <span class="inline-math">\([8,4,4]\)</span> Hamming code via the mod-two lattice construction. </span>
-  <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(2\)</span>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/hamming">Hamming code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_dfour">
-  <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span>
-  <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
-  <span class="short-code-info">Protection: The <span class="inline-math">\(D_4\)</span> lattice has a nominal coding gain of <span class="inline-math">\(\sqrt{2}\)</span>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/repetition">Repetition code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>.
   </span>
 </div>
 
@@ -287,8 +278,60 @@
   </span>
 </div>
 
+
+<div class="ecc-code" id="ecc_biorthogonal">
+  <span class="short-code-name"><a href="/c/biorthogonal">Biorthogonal code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,2n,2)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vectors <span class="inline-math">\((0,0,\cdots,0,\pm1)\)</span>, up to normalization. </span>
+  <span class="short-code-info">Protection: Biorthogonal spherical codes saturate the third Rankin bound. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_simplex_spherical">
+  <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. </span>
+  <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dfour">
+  <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span>
+  <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(D_4\)</span> lattice has a nominal coding gain of <span class="inline-math">\(\sqrt{2}\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/repetition">Repetition code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_eeight">
+  <span class="short-code-name"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
+  <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(8\)</span>, which is the lattice corresponding to the <span class="inline-math">\([8,4,4]\)</span> Hamming code via the mod-two lattice construction. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(2\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/hamming">Hamming code</a>.
+  </span>
+</div>
+
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd></dl></div>
 
   </main><!-- #main -->
 
