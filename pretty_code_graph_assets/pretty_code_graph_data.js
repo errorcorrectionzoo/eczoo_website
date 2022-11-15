@@ -174,7 +174,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Code whose codewords are points on an \\(n\\)-dimensional sphere \\(S^n\\) whose radius squared is called the energy. Typically, only angular distances are important to code performance, and normalized \u2026",
+                    "_description": "Code whose codewords are points on an \\(n\\)-dimensional sphere \\(S^n\\) whose radius squared is called the energy. Typically, only angular distances between points are relevant for code performance, so one \u2026",
                     "_code_href": "/c/points_into_spheres",
                     "_family_generation_level": 3
                 },

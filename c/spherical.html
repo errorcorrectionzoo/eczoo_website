@@ -91,9 +91,11 @@
 \end{align}</span></p><p>A spherical code can be defined using the Gram matrix <span class="inline-math">\(G = XX^T\)</span>, where the rows of <span class="inline-math">\(X\)</span> are the <span class="inline-math">\(n+1\)</span>-dimensional codeword vectors. The Gram matrix is symmetric, positive-definite, and has all diagonal elements equal to one.</p><p>Spherical codeword components are often taken from a discrete set of real values called an <span class="textit">alphabet</span>. For example, codewords of any length-<span class="inline-math">\(n\)</span> binary code can be mapped into spherical codewords with alphabet <span class="inline-math">\(\{\pm 1/\sqrt{n} \}\)</span> via the antipodal mapping <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1; Example 1.2.1]</a>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>The Euclidean distance between two points is related to the dot product as <span class="inline-math">\(\left\Vert x-y\right\Vert^{2} = 2-2x \cdot y\)</span>, where <span class="inline-math">\(x\cdot y\)</span> is the Euclidean inner product. As a result, the <span class="textit">angular distance</span>, <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-protection"><p>The Euclidean distance between two points is related to the dot product as <span class="display-math env-align">\begin{align}
+  \left\Vert x-y\right\Vert^{2} = 2-2x \cdot y~,
+\end{align}</span> where <span class="inline-math">\(x\cdot y\)</span> is the Euclidean inner product. As a result, the <span class="textit">angular distance</span>, <span class="display-math env-align">\begin{align}
   \theta=\arccos(x\cdot y) \in[0,\pi]~,
-\end{align}</span> can be equivalently used to quantify code performance.</p><p>Denote <span class="inline-math">\(A_n(\rho)\)</span> to be the largest possible size for a spherical code to have distance <span class="inline-math">\(\rho\)</span>. Spherical code parameters <span class="inline-math">\((n,M,\rho)\)</span> as well as <span class="inline-math">\((A_n(\rho)\)</span> satisfy the following three <span class="textit">Rankin bounds</span>  <span class="display-math env-align">\begin{align}
+\end{align}</span> can be equivalently used to quantify code performance.</p><p>Denote <span class="inline-math">\(A_n(\rho)\)</span> to be the largest possible size of a spherical code with distance <span class="inline-math">\(\rho\)</span>. Spherical code parameters <span class="inline-math">\((n,M,\rho)\)</span> as well as <span class="inline-math">\(A_n(\rho)\)</span> satisfy the following three <span class="textit">Rankin bounds</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a> <span class="display-math env-align">\begin{align}
   \begin{split}
   \rho &amp; \leq\frac{2M}{M-1}\\
   A_{n}\left(\rho\right) &amp; \leq n+1\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,\,2&lt;\rho\leq4\\
@@ -181,7 +183,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-2">[2]</dt><dd>R. A. Rankin, “On the Closest Packing of Spheres in n Dimensions”, The Annals of Mathematics <span class="textbf">48</span>, 1062 (1947). <a href="https://doi.org/10.2307/1969393" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>Davenport, H., &amp; Hajos, G. (1951). Aufgabe 35. Math. Lapok, 58.</dd><dt id="citation-4">[4]</dt><dd>R. A. Rankin, “The Closest Packing of Spherical Caps in &lt;i&gt;n&lt;/i&gt; Dimensions”, Proceedings of the Glasgow Mathematical Association <span class="textbf">2</span>, 139 (1955). <a href="https://doi.org/10.1017/S2040618500033219" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
