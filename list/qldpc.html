@@ -175,15 +175,6 @@ Here is a list of <a href="/c/qldpc" class="href-ref ref-code">QLDPC codes</a>.
   <td class="textit">Also called a <span class="textit">checkerboard code</span>. CSS variant of the surface code defined on a square lattice that has been rotated 45 degrees such that qubits are on vertices, and both <span class="inline-math">\(X\)</span>- and <span class="inline-math">\(Z\)</span>-type check operators occupy plaquettes in an alternating checkerboard pattern.</td>
 </tr>
 <tr>
-  <td class="top left"><a href="/c/shor_nine">Shor <span class="inline-math">\([[9,1,3]]\)</span> code</a></td>
-  <td class="textit">Nine-qubit <a href="/c/css" class="href-ref ref-code">CSS code</a> that is the smallest such code to correct a single-qubit error. The logical state is encoded using <span class="display-math env-align">\begin{align}
-\begin{split}
-|\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\
-|\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3}~.
-\end{split}
-\end{align}</span> The code works by <a href="/c/quantum_concatenated" class="href-ref ref-code">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="href-ref ref-code">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
-</tr>
-<tr>
   <td class="top left"><a href="/c/surface-17">Surface-17 code</a></td>
   <td class="textit">A <span class="inline-math">\([[9,1,3]]\)</span> rotated surface code named for the sum of its 9 data qubits and 8 syndrome qubits. It uses the smallest number of qubits to perform error correction on a surface code with parallel syndrome extraction.</td>
 </tr>
@@ -202,6 +193,15 @@ Here is a list of <a href="/c/qldpc" class="href-ref ref-code">QLDPC codes</a>.
 <tr>
   <td class="top left"><a href="/c/xyz_product">XYZ product code</a></td>
   <td class="textit">A non-CSS QLDPC code constructed from three classical codes. The construction of an XYZ product code is similar to that of a hypergraph product code and related codes. The idea is that rather than taking a product of only two classical codes to produce a CSS code, a third classical code is considered, acting with Pauli-<span class="inline-math">\(Y\)</span> operators. </td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/shor_nine"><span class="inline-math">\([[9,1,3]]\)</span> Shor code</a></td>
+  <td class="textit">Nine-qubit <a href="/c/css" class="href-ref ref-code">CSS code</a> that is the smallest such code to correct a single-qubit error. Logical codewords are <span class="display-math env-align">\begin{align}
+\begin{split}
+|\overline{0}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle+|111\rangle\right)^{\otimes3}\\
+|\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3}~.
+\end{split}
+\end{align}</span> The code works by <a href="/c/quantum_concatenated" class="href-ref ref-code">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="href-ref ref-code">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
 </tr>
 </tbody>
 </table>
