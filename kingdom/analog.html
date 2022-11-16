@@ -115,7 +115,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/leech">Leech lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/leech">Leech lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -186,11 +186,21 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_antipodal">Binary signal constellation</a>.
+      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/polytope">Polytope code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/constant_weight">Constant-weight code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_lattice_shell">
+  <span class="short-code-name"><a href="/c/lattice_shell">Lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are points on a lattice that is constructed by taking a set of lattice points that lie on a sphere. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>,       <a href="/c/points_into_lattices">Lattice-based code</a>.
   </span>
 </div>
 
@@ -299,6 +309,20 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_polytope">
+  <span class="short-code-name"><a href="/c/polytope">Polytope code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are the vertices of a polytope. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/hessian_polyhedron">Hessian polyhedron code</a>,       <a href="/c/icosahedron">Icosahedron code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_dfour">
   <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
@@ -346,7 +370,7 @@
 
 <div class="ecc-code" id="ecc_simplex_spherical">
   <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-(n-1))\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. </span>
   <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
   <span class="short-code-parents">
     Parents:
@@ -355,6 +379,26 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/simplex">Simplex code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_hessian_polyhedron">
+  <span class="short-code-name"><a href="/c/hessian_polyhedron">Hessian polyhedron code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((6,27,3/2)\)</span> code whose codewords are the vertices of the Hessian polyhedron. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/polytope">Polytope code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_icosahedron">
+  <span class="short-code-name"><a href="/c/icosahedron">Icosahedron code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/polytope">Polytope code</a>.
   </span>
 </div>
 
