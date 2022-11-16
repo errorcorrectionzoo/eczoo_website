@@ -186,11 +186,51 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/permutation_spherical">Permutation spherical code</a>,       <a href="/c/polytope">Polytope code</a>.
+      <a href="/c/binary_balanced">Binary balanced spherical code</a>,       <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/permutation_spherical">Permutation spherical code</a>,       <a href="/c/polytope">Polytope code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/constant_weight">Constant-weight code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_binary_balanced">
+  <span class="short-code-name"><a href="/c/binary_balanced">Binary balanced spherical code</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n-1,K,\frac{nd}{nw-w^2})\)</span> spherical code obtained from a constant-weight-<span class="inline-math">\(w\)</span> binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise <span class="textit">binary balanced mapping</span> (also known as <span class="textit">the CW<span class="inline-math">\(_2\)</span> construction</span>), <span class="display-math env-align">\begin{align}
+  \begin{split}
+    0&amp;\to\sqrt{\frac{w}{n\left(n-w\right)}}\\1&amp;\to\sqrt{\frac{n-w}{nw}}~.
+  \end{split}
+\end{align}</span> This construction can be extended to the general balanced binary construction CW<span class="inline-math">\(_q\)</span> for spherical code alphabets of size <span class="inline-math">\(q\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.6]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>,       <a href="/c/concatenated">Concatenated code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/constant_weight">Constant-weight code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_binary_antipodal">
+  <span class="short-code-name"><a href="/c/binary_antipodal">Binary signal constellation</a></span>
+  <span class="short-code-description">An <span class="inline-math">\((n,K,4d/n)\)</span> spherical code obtained from a binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise <span class="textit">antipodal mapping</span> (also known as a <span class="textit">Euclidean-space image</span>) <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2; Example 1.2.1]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>,       <a href="/c/concatenated">Concatenated code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/bpsk">Binary PSK (BPSK) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/bits_into_bits">Binary code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
   </span>
 </div>
 
@@ -204,7 +244,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>.
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
   </span>
 </div>
 
@@ -241,7 +281,7 @@
 
 <div class="ecc-code" id="ecc_construction_a">
   <span class="short-code-name"><a href="/c/construction_a">Mod-2 lattice code</a></span>
-  <span class="short-code-description">Lattice constructed from a binary linear <span class="inline-math">\([n,k,d]\)</span> code using Construction A <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. Each binary codeword <span class="inline-math">\(c\)</span> of the code is mapped to an infinite set of points <span class="inline-math">\(x\)</span> such that <span class="inline-math">\(x = c\)</span> modulo two. Linearity of the code ensures that the resulting set of points forms a lattice. </span>
+  <span class="short-code-description">Lattice constructed from a binary linear <span class="inline-math">\([n,k,d]\)</span> code using Construction A <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Each binary codeword <span class="inline-math">\(c\)</span> of the code is mapped to an infinite set of points <span class="inline-math">\(x\)</span> such that <span class="inline-math">\(x = c\)</span> modulo two. Linearity of the code ensures that the resulting set of points forms a lattice. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/points_into_lattices">Lattice-based code</a>.
@@ -272,7 +312,7 @@
 
 
 <div class="ecc-code" id="ecc_bpsk">
-  <span class="short-code-name"><a href="/c/bpsk">Binary PSK (BPSK) code</a><span class="code-introduced"><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
+  <span class="short-code-name"><a href="/c/bpsk">Binary PSK (BPSK) code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
   <span class="short-code-description">Also called a <span class="textit">binary antipodal modulation</span>, <span class="textit">phase-reversal keyring (PRK)</span>, or <span class="textit">antipodal signaling</span>. Encodes one bit of information into a constellation of antipodal points <span class="inline-math">\(\pm\alpha\)</span> for complex <span class="inline-math">\(\alpha\)</span>. These points are typically associated with two phases of an electromagnetic signal in a PAM, PSK, or QAM scheme. </span>
   <span class="short-code-parents">
     Parents:
@@ -286,7 +326,7 @@
 
 
 <div class="ecc-code" id="ecc_qpsk">
-  <span class="short-code-name"><a href="/c/qpsk">Quadrature PSK (QPSK) code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
+  <span class="short-code-name"><a href="/c/qpsk">Quadrature PSK (QPSK) code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
   <span class="short-code-description">Also known as <span class="textit">quadriphase PSK</span>, <span class="textit">4-PSK</span>, or <span class="textit">4-QAM</span>. Quaternary encoding into a constellation of four points distributed equidistantly on a circle. For the case of <span class="inline-math">\(\pi/4\)</span>-QPSK, the constellation is <span class="inline-math">\(\{e^{\pm i\frac{\pi}{4}},e^{\pm i\frac{3\pi}{4}}\}\)</span>. </span>
   <span class="short-code-parents">
     Parents:
@@ -295,26 +335,8 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_binary_antipodal">
-  <span class="short-code-name"><a href="/c/binary_antipodal">Binary signal constellation</a></span>
-  <span class="short-code-description">An <span class="inline-math">\((n,K,4d/n)\)</span> spherical code obtained from a binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise <span class="textit">antipodal mapping</span> (also known as a <span class="textit">Euclidean-space image</span>) <span class="inline-math">\(0\to +1\)</span> and <span class="inline-math">\(1 \to -1\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5; Example 1.2.1]</a>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/spherical">Spherical code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/bits_into_bits">Binary code</a>,       <a href="/c/concatenated">Concatenated code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_permutation_spherical">
-  <span class="short-code-name"><a href="/c/permutation_spherical">Permutation spherical code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
+  <span class="short-code-name"><a href="/c/permutation_spherical">Permutation spherical code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
   <span class="short-code-description">Spherical code whose codewords are constructed from an arbitrary unit vector in two possible variants. Variant 1 consists of codewords that are permutations of the vector&#x27;s coordinates, while Variant 2 consits of such permutations and all possible sign changes of the vector&#x27;s components. </span>
   <span class="short-code-parents">
     Parents:
@@ -351,6 +373,16 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_eeight_spherical">
+  <span class="short-code-name"><a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((8,240,1)\)</span> code whose codewords are points on the <span class="inline-math">\(E_8\)</span> lattice.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_dfour">
   <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
@@ -361,7 +393,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>.
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -371,7 +403,7 @@
 
 
 <div class="ecc-code" id="ecc_eeight">
-  <span class="short-code-name"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a><span class="code-introduced"><a href="#citation-8" class="href-endnote endnote citation">[8]</a></span></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(8\)</span>, which is the lattice corresponding to the <span class="inline-math">\([8,4,4]\)</span> Hamming code via the mod-two lattice construction. </span>
   <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(2\)</span>. </span>
   <span class="short-code-parents">
@@ -388,14 +420,14 @@
 <div class="ecc-code" id="ecc_biorthogonal">
   <span class="short-code-name"><a href="/c/biorthogonal">Biorthogonal spherical code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((n,2n,2)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n\)</span>-dimensional vectors <span class="inline-math">\((0,0,\cdots,0,\pm1)\)</span>, up to normalization. For example, the biorthogonal code in <span class="inline-math">\(n=3\)</span> makes up the corners of an octahedron.</span>
-  <span class="short-code-info">Protection: Biorthogonal spherical codes saturate the third Rankin bound <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
+  <span class="short-code-info">Protection: Biorthogonal spherical codes saturate the third Rankin bound <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/permutation_spherical">Permutation spherical code</a>.
+      <a href="/c/permutation_spherical">Permutation spherical code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
   </span>
 </div>
 
@@ -403,14 +435,14 @@
 <div class="ecc-code" id="ecc_simplex_spherical">
   <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the corners of a tetrahedron. </span>
-  <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
+  <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/permutation_spherical">Permutation spherical code</a>.
+      <a href="/c/permutation_spherical">Permutation spherical code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/simplex">Simplex code</a>.
+      <a href="/c/binary_antipodal">Binary signal constellation</a>,       <a href="/c/simplex">Simplex code</a>.
   </span>
 </div>
 
@@ -438,7 +470,7 @@
 <div class="ecc-code" id="ecc_icosahedron">
   <span class="short-code-name"><a href="/c/icosahedron">Icosahedron code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron, or like in the centers the faces of a dodecahedron. </span>
-  <span class="short-code-info">Protection: Optimal configuration of 12 points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 76]</a>.</span>
+  <span class="short-code-info">Protection: Optimal configuration of 12 points in 3D space <a href="#citation-2" class="href-endnote endnote citation">[2; pg. 76]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/polytope">Polytope code</a>.
@@ -449,7 +481,7 @@
 <div class="ecc-code" id="ecc_snub_cube">
   <span class="short-code-name"><a href="/c/snub_cube">Snub-cube code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((3,24,0.55384)\)</span> code whose codewords are the vertices of the snub cube. </span>
-  <span class="short-code-info">Protection: Optimal configuration of 24 points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 78]</a>.</span>
+  <span class="short-code-info">Protection: Optimal configuration of 24 points in 3D space <a href="#citation-2" class="href-endnote endnote citation">[2; pg. 78]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/polytope">Polytope code</a>.
@@ -460,7 +492,7 @@
 <div class="ecc-code" id="ecc_square_antiprism">
   <span class="short-code-name"><a href="/c/square_antiprism">Square-antiprism code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((3,8,4(4-\sqrt{2})/7)\)</span> code whose codewords are the vertices of the square antiprism. </span>
-  <span class="short-code-info">Protection: Optimal configuration of nine points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 73]</a>.</span>
+  <span class="short-code-info">Protection: Optimal configuration of nine points in 3D space <a href="#citation-2" class="href-endnote endnote citation">[2; pg. 73]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/polytope">Polytope code</a>.
@@ -468,7 +500,7 @@
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-6">[6]</dt><dd>D. Slepian, “Permutation modulation”, Proceedings of the IEEE <span class="textbf">53</span>, 228 (1965). <a href="https://doi.org/10.1109/PROC.1965.3680" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>D. Slepian, “Permutation modulation”, Proceedings of the IEEE <span class="textbf">53</span>, 228 (1965). <a href="https://doi.org/10.1109/PROC.1965.3680" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>I. Ingemarsson, “Optimized permutation modulation”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 1098 (1990). <a href="https://doi.org/10.1109/18.57208" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd></dl></div>
 
   </main><!-- #main -->
 
