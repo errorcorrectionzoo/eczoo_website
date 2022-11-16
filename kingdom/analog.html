@@ -115,7 +115,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/leech">Leech lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/leech">Leech lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -123,7 +123,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
+      <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
   </span>
 </div>
 
@@ -199,7 +199,7 @@
   <span class="short-code-name"><a href="/c/binary_balanced">Binary balanced spherical code</a></span>
   <span class="short-code-description">An <span class="inline-math">\((n-1,K,\frac{nd}{nw-w^2})\)</span> spherical code obtained from a constant-weight-<span class="inline-math">\(w\)</span> binary <span class="inline-math">\((n,K,d)\)</span> code via a component-wise <span class="textit">binary balanced mapping</span> (also known as <span class="textit">the CW<span class="inline-math">\(_2\)</span> construction</span>), <span class="display-math env-align">\begin{align}
   \begin{split}
-    0&amp;\to\sqrt{\frac{w}{n\left(n-w\right)}}\\1&amp;\to\sqrt{\frac{n-w}{nw}}~.
+    0&amp;\to\sqrt{\frac{w}{n\left(n-w\right)}}\\1&amp;\to -\sqrt{\frac{n-w}{nw}}~.
   \end{split}
 \end{align}</span> This construction can be extended to the general balanced binary construction CW<span class="inline-math">\(_q\)</span> for spherical code alphabets of size <span class="inline-math">\(q\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.6]</a>. </span>
   <span class="short-code-parents">
@@ -208,7 +208,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/constant_weight">Constant-weight code</a>.
+      <a href="/c/constant_weight">Constant-weight code</a>,       <a href="/c/bpsk">Binary PSK (BPSK) code</a>.
   </span>
 </div>
 
@@ -231,20 +231,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_lattice_shell">
-  <span class="short-code-name"><a href="/c/lattice_shell">Lattice-shell code</a></span>
-  <span class="short-code-description">Spherical code whose codewords are scaled versions of points on a lattice. Each code is constructed by normalizing a set of lattice vectors in one or more <span class="textit">shells</span>, i.e., sets of lattice points lying on a hypersphere. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/spherical">Spherical code</a>,       <a href="/c/points_into_lattices">Lattice-based code</a>.
-  </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
   </span>
 </div>
 
@@ -322,6 +308,10 @@
     Cousins:
       <a href="/c/pam">Pulse-amplitude modulation (PAM) code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/two-legged-cat">Two-component cat code</a>,       <a href="/c/polar_for_quantum">Quantum-classical polar code</a>.
   </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/binary_balanced">Binary balanced spherical code</a>.
+  </span>
 </div>
 
 
@@ -331,6 +321,24 @@
   <span class="short-code-parents">
     Parents:
       <a href="/c/psk">Phase-shift keyring (PSK) code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_lattice_shell">
+  <span class="short-code-name"><a href="/c/lattice_shell">Lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are scaled versions of points on a lattice. Each code is constructed by normalizing a set of lattice vectors in one or more <span class="textit">shells</span>, i.e., sets of lattice points lying on a hypersphere. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/spherical">Spherical code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/points_into_lattices">Lattice-based code</a>.
   </span>
 </div>
 
@@ -363,26 +371,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_dfour_spherical">
-  <span class="short-code-name"><a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a></span>
-  <span class="short-code-description">Spherical code whose codewords are points on the <span class="inline-math">\(D_4\)</span> lattice. The smallest shell of the lattice consists of the 24 permutations of the four vectors <span class="inline-math">\((0,0,\pm 1,\pm 1)\)</span>, yielding a <span class="inline-math">\((4,24,1)\)</span> code. The next highest shell consists of the 16 vectors <span class="inline-math">\((\pm 1,\pm 1,\pm 1,\pm 1)\)</span> and the 8 permutations of the vectors <span class="inline-math">\((0,0,0,\pm 2)\)</span>, yielding a equivalent instance of the <span class="inline-math">\((4,24,1)\)</span> code. The union of the two codes yields the <span class="inline-math">\((4,48,2(1-1/\sqrt{2}))\)</span> code. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_eeight_spherical">
-  <span class="short-code-name"><a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((8,240,1)\)</span> code whose codewords are points on the <span class="inline-math">\(E_8\)</span> lattice.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_dfour">
   <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
@@ -391,13 +379,13 @@
     Parents:
       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
   </span>
-  <span class="short-code-parent-of">
-    Parent of:
-      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
-  </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/repetition">Repetition code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>.
   </span>
 </div>
 
@@ -413,6 +401,38 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/hamming">Hamming code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dfour_spherical">
+  <span class="short-code-name"><a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are points on the <span class="inline-math">\(D_4\)</span> lattice.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lattice_shell">Lattice-shell code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_eeight_spherical">
+  <span class="short-code-name"><a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are points on the <span class="inline-math">\(E_8\)</span> Gosset lattice.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lattice_shell">Lattice-shell code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>.
   </span>
 </div>
 
