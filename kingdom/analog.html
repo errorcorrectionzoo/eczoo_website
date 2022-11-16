@@ -197,10 +197,14 @@
 
 <div class="ecc-code" id="ecc_lattice_shell">
   <span class="short-code-name"><a href="/c/lattice_shell">Lattice-shell code</a></span>
-  <span class="short-code-description">Spherical code whose codewords are points on a lattice that is constructed by taking a set of lattice points that lie on a sphere. </span>
+  <span class="short-code-description">Spherical code whose codewords are scaled versions of points on a lattice. Each code is constructed by normalizing a set of lattice vectors in one or more <span class="textit">shells</span>, i.e., sets of lattice points lying on a hypersphere. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/spherical">Spherical code</a>,       <a href="/c/points_into_lattices">Lattice-based code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>.
   </span>
 </div>
 
@@ -318,7 +322,17 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/hessian_polyhedron">Hessian polyhedron code</a>,       <a href="/c/icosahedron">Icosahedron code</a>.
+      <a href="/c/600cell">600-cell code</a>,       <a href="/c/hessian_polyhedron">Hessian polyhedron code</a>,       <a href="/c/icosahedron">Icosahedron code</a>,       <a href="/c/snub_cube">Snub-cube code</a>,       <a href="/c/square_antiprism">Square-antiprism code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dfour_spherical">
+  <span class="short-code-name"><a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are points on the <span class="inline-math">\(D_4\)</span> lattice. The smallest shell of the lattice consists of the 24 permutations of the four vectors <span class="inline-math">\((0,0,\pm 1,\pm 1)\)</span>, yielding a <span class="inline-math">\((4,24,1)\)</span> code. The next highest shell consists of the 16 vectors <span class="inline-math">\((\pm 1,\pm 1,\pm 1,\pm 1)\)</span> and the 8 permutations of the vectors <span class="inline-math">\((0,0,0,\pm 2)\)</span>, yielding a equivalent instance of the <span class="inline-math">\((4,24,1)\)</span> code. The union of the two codes yields the <span class="inline-math">\((4,48,2(1-1/\sqrt{2}))\)</span> code. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
   </span>
 </div>
 
@@ -330,6 +344,10 @@
   <span class="short-code-parents">
     Parents:
       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -370,7 +388,7 @@
 
 <div class="ecc-code" id="ecc_simplex_spherical">
   <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the corners of a tetrahedron. </span>
   <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
   <span class="short-code-parents">
     Parents:
@@ -379,6 +397,16 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/simplex">Simplex code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_600cell">
+  <span class="short-code-name"><a href="/c/600cell">600-cell code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((4,120,(3-\sqrt{5})/2)\)</span> code whose codewords are the vertices of the 600-cell. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/polytope">Polytope code</a>.
   </span>
 </div>
 
@@ -395,7 +423,30 @@
 
 <div class="ecc-code" id="ecc_icosahedron">
   <span class="short-code-name"><a href="/c/icosahedron">Icosahedron code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron, or like in the centers the faces of a dodecahedron. </span>
+  <span class="short-code-info">Protection: Optimal configuration of 12 points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 76]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/polytope">Polytope code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_snub_cube">
+  <span class="short-code-name"><a href="/c/snub_cube">Snub-cube code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((3,24,0.55384)\)</span> code whose codewords are the vertices of the snub cube. </span>
+  <span class="short-code-info">Protection: Optimal configuration of 24 points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 78]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/polytope">Polytope code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_square_antiprism">
+  <span class="short-code-name"><a href="/c/square_antiprism">Square-antiprism code</a></span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((3,8,4(4-\sqrt{2})/7)\)</span> code whose codewords are the vertices of the square antiprism. </span>
+  <span class="short-code-info">Protection: Optimal configuration of nine points in 3D space <a href="#citation-5" class="href-endnote endnote citation">[5; pg. 73]</a>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/polytope">Polytope code</a>.
