@@ -86,9 +86,9 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A <span class="inline-math">\(q\)</span>-ary phase-shift keyring (<span class="inline-math">\(q\)</span>-PSK) encodes one <span class="inline-math">\(q\)</span>-ary digit of information into a constellation of <span class="inline-math">\(q\)</span> points distributed equidistantly on a circle in <span class="inline-math">\(\mathbb{C}\)</span> or, equivalently, <span class="inline-math">\(\mathbb{R}^2\)</span>. For example, such a constellation could be <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>A <span class="inline-math">\(q\)</span>-ary phase-shift keyring (<span class="inline-math">\(q\)</span>-PSK) encodes one <span class="inline-math">\(q\)</span>-ary digit of information into a constellation of <span class="inline-math">\(q\)</span> points distributed equidistantly on a circle in <span class="inline-math">\(\mathbb{C}\)</span> or, equivalently, <span class="inline-math">\(\mathbb{R}^2\)</span>. For example, such a constellation could be <span class="display-math env-align">\begin{align}
   \{1,e^{i\frac{2\pi}{q}},\cdots,e^{i\frac{2\pi}{q}(q-1)}\}~.
-\end{align}</span> Each point is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into the phase of that signal. </div>
+\end{align}</span> Each point is typically associated with a complex amplitude of an electromagnetic signal, and information is encoded into the phase of that signal.</p><p>Concatenating PSK with <span class="inline-math">\(q\)</span>-ary codes yields a natural non-binary way of digitizing the analog AGWN channel <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</p></div>
 
 
 
@@ -100,7 +100,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate">Nearly achieves Shannon AWGN capacity for one-dimensional constellations in the limit of infinite signal to noise <a href="#citation-1" class="href-endnote endnote citation">[1; Fig. 11.7]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-rate">Nearly achieves Shannon AWGN capacity for one-dimensional constellations in the limit of infinite signal to noise <a href="#citation-3" class="href-endnote endnote citation">[3; Fig. 11.7]</a>.</div>
 
 
 
@@ -121,7 +121,7 @@
 
 <h2 id="realizations" class="code-realizations">Realizations</h2>
 <div class="sectioncontent code-realizations">
-  <span class="paragraph-in-list">Telephone-line modems: 1967 Milgo 4400/48 and international standard V.27 used 8-PSK <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span>
+  <span class="paragraph-in-list">Telephone-line modems: 1967 Milgo 4400/48 and international standard V.27 used 8-PSK <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span>
 </div>
 
 
@@ -136,9 +136,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/points_into_spheres">Constant-energy code</a></span><span class="code-parents-1-detail">
+    <span class="code-parents-1-code"><a href="/c/polyphase">Polyphase code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;PSK is a constant-energy code on the 1D sphere.</span></li>
+      &#x2014;&nbsp;A polyphase code can be thought of as a concatenation of a <span class="inline-math">\(q\)</span>-ary outer code with a PSK inner code. When the outer code is trivial, the construction reduces to a PSK code.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -179,16 +179,12 @@
     <span class="code-cousins-1-code"><a href="/c/cat">Cat code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;The cat code is a quantum analogue of PSK for <span class="inline-math">\(q=2S\)</span>.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Concatenating linear codes over <span class="inline-math">\(\mathbb{Z}_q\)</span> with <span class="inline-math">\(q\)</span>-ary PSK yields a natural non-binary way of digitizing the analog AGWN channel <a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>International Telecommunication Union-T, Recommendation V.27ter: 4800/2400 Bits Per Second Modem Standardized For Use in the General Switched Telephone Network, 1984</dd><dt id="citation-3">[3]</dt><dd>Massey, J. L. &quot;Convolutional codes over rings.&quot; Fourth Joint Swedish-Soviet International Workshop on Information Theory. 1989.</dd><dt id="citation-4">[4]</dt><dd>Massey, J. L. &quot;Ring convolutional codes for phase modulation.&quot; presented at the IEEE Int. Symp. on Information Theory, San Diego, CA, Jan. 14-19. 1990.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>Massey, J. L. &quot;Convolutional codes over rings.&quot; Fourth Joint Swedish-Soviet International Workshop on Information Theory. 1989.</dd><dt id="citation-2">[2]</dt><dd>Massey, J. L. &quot;Ring convolutional codes for phase modulation.&quot; presented at the IEEE Int. Symp. on Information Theory, San Diego, CA, Jan. 14-19. 1990.</dd><dt id="citation-3">[3]</dt><dd>R. E. Blahut, <span class="textit">Modem Theory</span> (Cambridge University Press, 2009). <a href="https://doi.org/10.1017/CBO9780511811401" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>International Telecommunication Union-T, Recommendation V.27ter: 4800/2400 Bits Per Second Modem Standardized For Use in the General Switched Telephone Network, 1984</dd></dl></div>
 
 
 
@@ -269,7 +265,7 @@ url={https://errorcorrectionzoo.org/c/psk}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/qam">QAM</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/gray">Gray</a></li><li><a href="/c/cat">Cat</a></li><li><a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/polyphase">Polyphase</a></li><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/qam">QAM</a></li><li><a href="/c/bpsk">BPSK</a></li><li><a href="/c/qpsk">QPSK</a></li><li><a href="/c/gray">Gray</a></li><li><a href="/c/cat">Cat</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
