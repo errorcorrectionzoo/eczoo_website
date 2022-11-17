@@ -293,7 +293,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical code whose codewords are points on the \\(D_4\\) lattice.\n\nThe smallest shell of the lattice consists of the 24 permutations of the four vectors \\((0,0,\\pm 1,\\pm 1)\\), yielding a \\((4,24,1)\\) code. The next \u2026",
+                    "_description": "Spherical code whose codewords are points on the \\(D_4\\) lattice normalized to lie on the unit sphere.\n\nThe smallest shell of the lattice consists of the 24 permutations of the four vectors \\((0,0,\\pm 1,\\pm 1)\\), yielding a \u2026",
                     "_code_href": "/c/dfour_spherical",
                     "_family_generation_level": 6
                 },
@@ -310,7 +310,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical code whose codewords are points on the \\(E_8\\) Gosset lattice.\n\nThe smallest shell of the lattice yields the \\((8,240,1)\\) code, consisting of the 112 permutations of the four vectors \\((0,0,0,0,0,0,\\pm 2,\\pm 2)\\) along with the \u2026",
+                    "_description": "Spherical code whose codewords are points on the \\(E_8\\) Gosset lattice normalized to lie on the unit sphere.\n\nThe smallest shell of the lattice yields the \\((8,240,1)\\) code, consisting of the 112 \u2026",
                     "_code_href": "/c/eeight_spherical",
                     "_family_generation_level": 6
                 },
