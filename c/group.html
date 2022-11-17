@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Group code" />
+<meta name="citation_title" content="Group-algebra code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Group code" />
+<meta name="DC.title" content="Group-algebra code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Group code — Error Correction Zoo
+    Group-algebra code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Group code</h1>
+      Group-algebra code</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>An <span class="inline-math">\( [n,k] \)</span> binary or <span class="inline-math">\(q\)</span>-ary code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group code for an abelian group is called an <span class="textit">abelian group code</span>.</p><p>The code is a <span class="inline-math">\( k \)</span>-dimensional linear subspace of the group algebra of <span class="inline-math">\( G\)</span> with coefficients in the field <span class="inline-math">\(GF(q) = \mathbb{F}_q\)</span> with <span class="inline-math">\(q\)</span> elements. To be precise, the code must be closed under permutations corresponding to the elements of the group <span class="inline-math">\( G \)</span>; therefore, <span class="inline-math">\( G \)</span> must be a subgroup of the permutation automorphism group of the code, which is defined as the group of permutations of the physical bits that preserve the code space. This leads us to the formal definition of a group code: a group code is an ideal in the group algebra <span class="inline-math">\( \mathbb{F}_q G \)</span>.</p></div>
+<div class="sectioncontent code-description"><p>Also known as a <span class="textit">group code</span>. An <span class="inline-math">\( [n,k] \)</span> binary or <span class="inline-math">\(q\)</span>-ary code based on a finite group <span class="inline-math">\( G \)</span> of size <span class="inline-math">\(n \)</span>. A group-algebra code for an abelian group is called an <span class="textit">abelian group-algebra code</span>.</p><p>The code is a <span class="inline-math">\( k \)</span>-dimensional linear subspace of the group algebra of <span class="inline-math">\( G\)</span> with coefficients in the field <span class="inline-math">\(GF(q) = \mathbb{F}_q\)</span> with <span class="inline-math">\(q\)</span> elements. To be precise, the code must be closed under permutations corresponding to the elements of the group <span class="inline-math">\( G \)</span>; therefore, <span class="inline-math">\( G \)</span> must be a subgroup of the permutation automorphism group of the code, which is defined as the group of permutations of the physical bits that preserve the code space. This leads us to the formal definition of a group-algebra code: a group-algebra code is an ideal in the group algebra <span class="inline-math">\( \mathbb{F}_q G \)</span>.</p></div>
 
 
 
@@ -117,7 +117,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ch. 16 of Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and pg. 58 of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for introductions to group codes.</span><span class="paragraph-in-list">Not all abelian group codes are for cyclic groups (cyclic codes) or for elementary abelian <span class="inline-math">\( p \)</span> groups (e.g. Reed Muller codes <a href="#citation-3" class="href-endnote endnote citation">[3]</a>). For example, there is a binary code with parameters <span class="inline-math">\( [45,13,16] \)</span> which is an abelian group code for the group <span class="inline-math">\( G = \mathbb{Z}_3 \times \mathbb{Z}_{15} \)</span>. </span>
+  <span class="paragraph-in-list">See Ch. 16 of Ref. <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and pg. 58 of Ref. <a href="#citation-2" class="href-endnote endnote citation">[2]</a> for introductions to group-algebra codes.</span><span class="paragraph-in-list">Not all abelian group-algebra codes are for cyclic groups (cyclic codes) or for elementary abelian <span class="inline-math">\( p \)</span> groups (e.g. Reed Muller codes <a href="#citation-3" class="href-endnote endnote citation">[3]</a>). For example, there is a binary code with parameters <span class="inline-math">\( [45,13,16] \)</span> which is an abelian group-algebra code for the group <span class="inline-math">\( G = \mathbb{Z}_3 \times \mathbb{Z}_{15} \)</span>. </span>
 </div>
 
 
@@ -131,7 +131,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/linear">Linear code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;A linear code is a group-algebra code for a group <span class="inline-math">\(G\)</span> if and only if <span class="inline-math">\(G\)</span> is isomorphic to a regular subgroup of the code&#x27;s permutation automorphism group <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Thm. 16.4.7]</a>.</span></li>
 </ul>
 </div>
 
@@ -145,22 +147,55 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A length-<span class="inline-math">\(n\)</span> cyclic <span class="inline-math">\(q\)</span>-ary linear code is an abelian group code for the cyclic group with <span class="inline-math">\(n\)</span> elements <span class="inline-math">\( \mathbb{Z}_n \)</span>.</span></li>
+      &#x2014;&nbsp;A length-<span class="inline-math">\(n\)</span> cyclic <span class="inline-math">\(q\)</span>-ary linear code is an abelian group-algebra code for the cyclic group with <span class="inline-math">\(n\)</span> elements <span class="inline-math">\( \mathbb{Z}_n \)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/binary_cyclic">Cyclic linear binary code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A length-<span class="inline-math">\(n\)</span> cyclic binary linear code is an abelian group code for the cyclic group with <span class="inline-math">\(n\)</span> elements <span class="inline-math">\( \mathbb{Z}_n \)</span>.</span></li>
+      &#x2014;&nbsp;A length-<span class="inline-math">\(n\)</span> cyclic binary linear code is an abelian group-algebra code for the cyclic group with <span class="inline-math">\(n\)</span> elements <span class="inline-math">\( \mathbb{Z}_n \)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Consider a binary vector space of dimension <span class="inline-math">\( m \)</span>. Under addition, this forms a finite group with <span class="inline-math">\( 2^m \)</span> elements known as an elementary abelian 2-group -- the direct product of <span class="inline-math">\( m \)</span> two-element cyclic groups <span class="inline-math">\( \mathbb{Z}_2 \times \dots \times \mathbb{Z}_2 \)</span>. Denote this group by <span class="inline-math">\( G_m \)</span>. Let <span class="inline-math">\( J \)</span> be the Jacobson radical of the group algebra <span class="inline-math">\( \mathbb{F}_2 G_m \)</span>, where <span class="inline-math">\(\mathbb{F}_2=GF(2)\)</span>. RM<span class="inline-math">\((r,m)\)</span> codes correspond to the ideal <span class="inline-math">\( J^{m-r} \)</span>. The length of the code is <span class="inline-math">\( |G_m| = 2^m \)</span>, the distance is <span class="inline-math">\( 2^{m-r} \)</span>, and the dimension is <span class="inline-math">\( \sum_{i=0}^r {m \choose i} \)</span>. A similar construction exists for choices of a prime <span class="inline-math">\( p\neq 2 \)</span>.</span></li>
+      &#x2014;&nbsp;RM codes are group-algebra codes <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Ex. 16.4.11]</a>. Consider a binary vector space of dimension <span class="inline-math">\( m \)</span>. Under addition, this forms a finite group with <span class="inline-math">\( 2^m \)</span> elements known as an elementary abelian 2-group -- the direct product of <span class="inline-math">\( m \)</span> two-element cyclic groups <span class="inline-math">\( \mathbb{Z}_2 \times \dots \times \mathbb{Z}_2 \)</span>. Denote this group by <span class="inline-math">\( G_m \)</span>. Let <span class="inline-math">\( J \)</span> be the Jacobson radical of the group algebra <span class="inline-math">\( \mathbb{F}_2 G_m \)</span>, where <span class="inline-math">\(\mathbb{F}_2=GF(2)\)</span>. RM<span class="inline-math">\((r,m)\)</span> codes correspond to the ideal <span class="inline-math">\( J^{m-r} \)</span>. The length of the code is <span class="inline-math">\( |G_m| = 2^m \)</span>, the distance is <span class="inline-math">\( 2^{m-r} \)</span>, and the dimension is <span class="inline-math">\( \sum_{i=0}^r {m \choose i} \)</span>. A similar construction exists for choices of a prime <span class="inline-math">\( p\neq 2 \)</span>.</span></li>
+</ul>
+</div>
+
+<h2 id="relations_cousins" class="code-cousins">
+    Cousins
+</h2>
+<div class="sectioncontent code-cousins">
+
+
+<ul class="code-relations-list code-cousins-list">
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The self-dual <span class="inline-math">\([48,24,12]\)</span> extended quadratic residue code is a group-algebra code <a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Ex. 16.5.1]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;GRM codes over prime-power fields are group-algebra codes <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Ex. 16.4.11]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/golay">Golay code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The extended Golay code is a group-algebra code for various groups <a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Ex. 16.5.1]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hermitian">Hermitian code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Some Hermitian codes are group-algebra codes <a href="#citation-12" class="href-endnote endnote citation">[12]</a><a href="#citation-1" class="href-endnote endnote citation">[1; Remark 16.4.14]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/klein_quartic">Klein-quartic code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Some Klein-quartic codes are group-algebra codes <a href="#citation-1" class="href-endnote endnote citation">[1; Remark 16.4.14]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/suzuki">Suzuki-curve code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Some Suzuki-curve codes are group-algebra codes <a href="#citation-1" class="href-endnote endnote citation">[1; Remark 16.4.14]</a>.</span></li>
 </ul>
 </div>
 
 
 
-
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>S. D. Berman, “Semisimple cyclic and Abelian codes. II”, Cybernetics <span class="textbf">3</span>, 17 (1970). <a href="https://doi.org/10.1007/BF01119999" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>W. C. Huffman, J.-L. Kim, and P. Solé, <span class="textit">Concise Encyclopedia of Coding Theory</span> (Chapman and Hall/CRC, 2021). <a href="https://doi.org/10.1201/9781315147901" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>S. D. Berman, “Semisimple cyclic and Abelian codes. II”, Cybernetics <span class="textbf">3</span>, 17 (1970). <a href="https://doi.org/10.1007/BF01119999" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. J. Bernal, Á. del Río, and J. J. Simón, “An intrinsical description of group codes”, Designs, Codes and Cryptography <span class="textbf">51</span>, 289 (2009). <a href="https://doi.org/10.1007/s10623-008-9261-z" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>S. D. Berman, “On the theory of group codes”, Cybernetics <span class="textbf">3</span>, 25 (1969). <a href="https://doi.org/10.1007/BF01072842" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>Charpin, Pascale. Codes idéaux de certaines algèbres modulaires. Diss. 1982.</dd><dt id="citation-7">[7]</dt><dd>I. McLoughlin, “A group ring construction of the [48,24,12] type II linear block code”, Designs, Codes and Cryptography <span class="textbf">63</span>, 29 (2011). <a href="https://doi.org/10.1007/s10623-011-9530-0" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>P. Landrock and O. Manz, “Classical codes as ideals in group algebras”, Designs, Codes and Cryptography <span class="textbf">2</span>, 273 (1992). <a href="https://doi.org/10.1007/BF00141972" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>I. McLoughlin and T. Hurley, “A Group Ring Construction of the Extended Binary Golay Code”, IEEE Transactions on Information Theory <span class="textbf">54</span>, 4381 (2008). <a href="https://doi.org/10.1109/TIT.2008.928260" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>S. T. Dougherty et al., “Group rings, G-codes and constructions of self-dual and formally self-dual codes”, Designs, Codes and Cryptography <span class="textbf">86</span>, 2115 (2017). <a href="https://doi.org/10.1007/s10623-017-0440-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-11">[11]</dt><dd>F. Bernhardt, P. Landrock, and O. Manz, “The extended golay codes considered as ideals”, Journal of Combinatorial Theory, Series A <span class="textbf">55</span>, 235 (1990). <a href="https://doi.org/10.1016/0097-3165(90)90069-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-12">[12]</dt><dd>Hansen, Johan P. Group codes on algebraic curves. Universität zu Göttingen. SFB Geometrie und Analysis, 1987.</dd></dl></div>
 
 
 
@@ -168,7 +203,8 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-01-03)      — most recent</li><li><a href="/team#user-IanTeixeira">Ian Teixeira</a>
+    (2022-01-03)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-11-18)</li><li><a href="/team#user-IanTeixeira">Ian Teixeira</a>
     (2021-12-19)</li></ul>
 </details>
 
@@ -198,10 +234,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Group code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/group</dd>
+    <dd class="boxedcontent">“Group-algebra code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/group</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_group,
-title={Group code},
+title={Group-algebra code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -212,7 +248,7 @@ url={https://errorcorrectionzoo.org/c/group}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Group%20code%20https%3A//errorcorrectionzoo.org/c/group" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/group&amp;t=Group%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Group%20code&amp;body=Group%20code%20https%3A//errorcorrectionzoo.org/c/group">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Group-algebra%20code%20https%3A//errorcorrectionzoo.org/c/group" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/group&amp;t=Group-algebra%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Group-algebra%20code&amp;body=Group-algebra%20code%20https%3A//errorcorrectionzoo.org/c/group">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/group</dd>
@@ -228,7 +264,7 @@ url={https://errorcorrectionzoo.org/c/group}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Group code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/group</p>
+  <p>“Group-algebra code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/group</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/properties/group.yml"
                 class="ashowurl"
@@ -242,7 +278,7 @@ url={https://errorcorrectionzoo.org/c/group}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/binary_cyclic">Cyclic linear binary</a></li><li><a href="/c/reed_muller">RM</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/linear">Linear</a></li><li><a href="/c/group_orbit">Group-orbit</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/q-ary_cyclic">Cyclic linear <span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/binary_cyclic">Cyclic linear binary</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/binary_quad_residue">Binary QR</a></li><li><a href="/c/generalized_reed_muller">GRM</a></li><li><a href="/c/golay">Golay</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

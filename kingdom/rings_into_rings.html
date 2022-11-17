@@ -127,7 +127,7 @@
   <span class="short-code-description">Member of the RM<span class="inline-math">\((r,m)\)</span> family of linear binary codes derived from multivariate polynomials. The code parameters are <span class="inline-math">\([2^m,\sum_{j=0}^{r} {m \choose j},2^{m-r}]\)</span>, where <span class="inline-math">\(r\)</span> is the <span class="textit">order</span> of the code satisfying <span class="inline-math">\(0\leq r\leq m\)</span>. First-order RM codes are also called <span class="textit">biorthogonal</span> codes, while <span class="inline-math">\(m\)</span>th order RM codes are also called <span class="textit">universe</span> codes. <span class="textit">Punctured RM codes</span> RM<span class="inline-math">\(^*(r,m)\)</span> are obtained from RM codes by deleting one or more coordinates from each codeword.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/evaluation_polynomial">Polynomial evaluation code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/group">Group code</a>.
+      <a href="/c/evaluation_polynomial">Polynomial evaluation code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a>,       <a href="/c/divisible">Divisible code</a>,       <a href="/c/group">Group-algebra code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -219,8 +219,26 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_tetracode">
+  <span class="short-code-name"><a href="/c/tetracode">Tetracode</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
+  <span class="short-code-description">The <span class="inline-math">\([4,2,3]_{GF(3)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
+  \begin{pmatrix}1 &amp; 0 &amp; 1 &amp; 1\\
+  0 &amp; 1 &amp; 1 &amp; 2
+  \end{pmatrix}~,
+\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/simplex">Simplex code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/dual">Dual linear code</a>,       <a href="/c/ternary_golay">Ternary Golay Code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_octacode">
-  <span class="short-code-name"><a href="/c/octacode">Octacode</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/octacode">Octacode</a><span class="code-introduced"><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a></span></span>
   <span class="short-code-description">The unique self-dual linear code of length 8 over <span class="inline-math">\(\mathbb{Z}_4\)</span> with generator matrix <span class="display-math env-align">\begin{align}
   \begin{pmatrix}
   3 &amp; 3 &amp; 2 &amp; 3 &amp; 1 &amp; 0 &amp; 0 &amp; 0\\
@@ -239,26 +257,8 @@
   </span>
 </div>
 
-
-<div class="ecc-code" id="ecc_tetracode">
-  <span class="short-code-name"><a href="/c/tetracode">Tetracode</a><span class="code-introduced"><a href="#citation-8" class="href-endnote endnote citation">[8]</a></span></span>
-  <span class="short-code-description">The <span class="inline-math">\([4,2,3]_{GF(3)}\)</span> self-dual MDS code with generator matrix <span class="display-math env-align">\begin{align}
-  \begin{pmatrix}1 &amp; 0 &amp; 1 &amp; 1\\
-  0 &amp; 1 &amp; 1 &amp; 2
-  \end{pmatrix}~,
-\end{align}</span> where <span class="inline-math">\(GF(3) = \{0,1,2\}\)</span>. Has connections to lattices <a href="#citation-8" class="href-endnote endnote citation">[8]</a>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/simplex">Simplex code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/mds">Maximum distance separable (MDS) code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/dual">Dual linear code</a>,       <a href="/c/ternary_golay">Ternary Golay Code</a>.
-  </span>
-</div>
-
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>N. Mitani, <span class="textit">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.</dd><dt id="citation-4">[4]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-7">[7]</dt><dd>J. H. Conway and N. J. A. Sloane, “Self-dual codes over the integers modulo 4”, Journal of Combinatorial Theory, Series A <span class="textbf">62</span>, 30 (1993). <a href="https://doi.org/10.1016/0097-3165(93)90070-O" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>E. M. Rains and N. J. A. Sloane, “Self-Dual Codes”. <a href="https://arxiv.org/abs/math/0208001" target="_blank" class="href-href">math/0208001</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. E. Muller, “Application of Boolean algebra to switching circuit design and to error detection”, Transactions of the I.R.E. Professional Group on Electronic Computers <span class="textbf">EC-3</span>, 6 (1954). <a href="https://doi.org/10.1109/irepgelc.1954.6499441" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>I. Reed, “A class of multiple-error-correcting codes and the decoding scheme”, Transactions of the IRE Professional Group on Information Theory <span class="textbf">4</span>, 38 (1954). <a href="https://doi.org/10.1109/tit.1954.1057465" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>N. Mitani, <span class="textit">On the transmission of numbers in a sequential computer</span>, delivered at the National Convention of the Inst. of Elect. Engineers of Japan, November 1951.</dd><dt id="citation-4">[4]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 379 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb01338.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>R. W. Hamming, “Error Detecting and Error Correcting Codes”, Bell System Technical Journal <span class="textbf">29</span>, 147 (1950). <a href="https://doi.org/10.1002/j.1538-7305.1950.tb00463.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>M. J. E. Golay, <span class="textit">Notes on digital coding</span>, Proc. IEEE, 37 (1949) 657.</dd><dt id="citation-7">[7]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>J. H. Conway and N. J. A. Sloane, “Self-dual codes over the integers modulo 4”, Journal of Combinatorial Theory, Series A <span class="textbf">62</span>, 30 (1993). <a href="https://doi.org/10.1016/0097-3165(93)90070-O" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>E. M. Rains and N. J. A. Sloane, “Self-Dual Codes”. <a href="https://arxiv.org/abs/math/0208001" target="_blank" class="href-href">math/0208001</a></dd></dl></div>
 
   </main><!-- #main -->
 
