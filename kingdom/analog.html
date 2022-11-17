@@ -115,7 +115,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/leech">Leech lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>,       <a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -254,17 +254,6 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_leech">
-  <span class="short-code-name"><a href="/c/leech">Leech lattice code</a></span>
-  <span class="short-code-description">Lattice in 24 dimensions that exhibits optimal packing. </span>
-  <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(4\)</span>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/points_into_lattices">Lattice-based code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_construction_a">
   <span class="short-code-name"><a href="/c/construction_a">Mod-2 lattice code</a></span>
   <span class="short-code-description">Lattice constructed from a binary linear <span class="inline-math">\([n,k,d]\)</span> code using Construction A <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. Each binary codeword <span class="inline-math">\(c\)</span> of the code is mapped to an infinite set of points <span class="inline-math">\(x\)</span> such that <span class="inline-math">\(x = c\)</span> modulo two. Linearity of the code ensures that the resulting set of points forms a lattice. </span>
@@ -279,6 +268,21 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/binary_linear">Linear binary code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_leech">
+  <span class="short-code-name"><a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a></span>
+  <span class="short-code-description">Lattice in 24 dimensions that exhibits optimal packing. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(\Lambda_{24}\)</span> lattice has a nominal coding gain of <span class="inline-math">\(4\)</span>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/points_into_lattices">Lattice-based code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/leech_spherical"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice-shell code</a>.
   </span>
 </div>
 
@@ -334,7 +338,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>.
+      <a href="/c/dfour_spherical"><span class="inline-math">\(D_4\)</span> lattice-shell code</a>,       <a href="/c/eeight_spherical"><span class="inline-math">\(E_8\)</span> Gosset lattice-shell code</a>,       <a href="/c/leech_spherical"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice-shell code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -437,6 +441,20 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_leech_spherical">
+  <span class="short-code-name"><a href="/c/leech_spherical"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice-shell code</a></span>
+  <span class="short-code-description">Spherical code whose codewords are points on the <span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice normalized to lie on the unit sphere.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/lattice_shell">Lattice-shell code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_biorthogonal">
   <span class="short-code-name"><a href="/c/biorthogonal">Biorthogonal spherical code</a></span>
   <span class="short-code-description">Spherical <span class="inline-math">\((n,2n,2)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n\)</span>-dimensional vectors <span class="inline-math">\((0,0,\cdots,0,\pm1)\)</span>, up to normalization. For example, the biorthogonal code in <span class="inline-math">\(n=3\)</span> makes up the corners of an octahedron.</span>
@@ -454,7 +472,7 @@
 
 <div class="ecc-code" id="ecc_simplex_spherical">
   <span class="short-code-name"><a href="/c/simplex_spherical">Simplex spherical code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the corners of a tetrahedron. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the corners of a tetrahedron.</span>
   <span class="short-code-info">Protection: Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-2" class="href-endnote endnote citation">[2]</a>. </span>
   <span class="short-code-parents">
     Parents:
@@ -469,7 +487,7 @@
 
 <div class="ecc-code" id="ecc_600cell">
   <span class="short-code-name"><a href="/c/600cell">600-cell code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((4,120,(3-\sqrt{5})/2)\)</span> code whose codewords are the vertices of the 600-cell. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((4,120,(3-\sqrt{5})/2)\)</span> code whose codewords are the vertices of the 600-cell. The code forms a spherical 11-design that is unique up to equivalence <a href="#citation-9" class="href-endnote endnote citation">[9]</a>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/polytope">Polytope code</a>.
@@ -489,7 +507,7 @@
 
 <div class="ecc-code" id="ecc_icosahedron">
   <span class="short-code-name"><a href="/c/icosahedron">Icosahedron code</a></span>
-  <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron, or like in the centers the faces of a dodecahedron. </span>
+  <span class="short-code-description">Spherical <span class="inline-math">\((3,12,2-2/\sqrt{5})\)</span> code whose codewords are the vertices of the icosahedron, or like in the centers the faces of a dodecahedron. The code forms a spherical 5-design <a href="#citation-2" class="href-endnote endnote citation">[2; Ex. 9.6.1]</a>. </span>
   <span class="short-code-info">Protection: Optimal configuration of 12 points in 3D space <a href="#citation-2" class="href-endnote endnote citation">[2; pg. 76]</a>.</span>
   <span class="short-code-parents">
     Parents:
@@ -520,7 +538,7 @@
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>D. Slepian, “Permutation modulation”, Proceedings of the IEEE <span class="textbf">53</span>, 228 (1965). <a href="https://doi.org/10.1109/PROC.1965.3680" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>I. Ingemarsson, “Optimized permutation modulation”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 1098 (1990). <a href="https://doi.org/10.1109/18.57208" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>D. Slepian, “Permutation modulation”, Proceedings of the IEEE <span class="textbf">53</span>, 228 (1965). <a href="https://doi.org/10.1109/PROC.1965.3680" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>I. Ingemarsson, “Optimized permutation modulation”, IEEE Transactions on Information Theory <span class="textbf">36</span>, 1098 (1990). <a href="https://doi.org/10.1109/18.57208" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd><dt id="citation-9">[9]</dt><dd>P. Boyvalenkov and D. Danev, “Uniqueness of the 120-point spherical 11-design in four dimensions”, Archiv der Mathematik <span class="textbf">77</span>, 360 (2001). <a href="https://doi.org/10.1007/PL00000504" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 
