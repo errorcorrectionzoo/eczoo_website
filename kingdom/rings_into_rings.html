@@ -144,6 +144,25 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_repetition">
+  <span class="short-code-name"><a href="/c/repetition">Repetition code</a></span>
+  <span class="short-code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</span>
+  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/perfect">Perfect code</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/hamming">Hamming code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/self_correct">Self-correcting quantum code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_parity_check">
   <span class="short-code-name"><a href="/c/parity_check">Single parity-check (SPC) code</a></span>
   <span class="short-code-description">Also known as a <span class="textit">sum-zero</span> or <span class="textit">even-weight</span> code. An <span class="inline-math">\([n,n-1,2]\)</span> linear binary code whose codewords consist of the message string appended with a parity-check bit such that the parity (i.e., sum over all coordinates of each codeword) is zero. If the Hamming weight of a message is odd (even), then the parity bit is one (zero). This code requires only one extra bit of overhead and is therefore inexpensive.</span>
@@ -196,25 +215,6 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/octacode">Octacode</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>,       <a href="/c/steane"><span class="inline-math">\([[7,1,3]]\)</span> Steane code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_repetition">
-  <span class="short-code-name"><a href="/c/repetition">Repetition code</a></span>
-  <span class="short-code-description"><span class="inline-math">\([n,1,n]\)</span> binary linear code encoding one bit of information into an <span class="inline-math">\(n\)</span>-bit string. The length <span class="inline-math">\(n\)</span> needs to be an odd number, since the receiver will pick the majority to recover the information. The idea is to increase the code distance by repeating the logical information several times. It is a <span class="inline-math">\((n,1)\)</span>-Hamming code.</span>
-  <span class="short-code-info">Protection: Detects errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates, corrects erasure errors on up to <span class="inline-math">\(\frac{n-1}{2}\)</span> coordinates. The generator matrix is <span class="inline-math">\(G=\left[\begin{smallmatrix}1 &amp; 1&amp;\cdots&amp; 1 &amp; 1 \end{smallmatrix}\right]\)</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/nearly_perfect">Nearly perfect code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/perfect">Perfect code</a>,       <a href="/c/quantum_repetition">Quantum repetition code</a>,       <a href="/c/hamming">Hamming code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/self_correct">Self-correcting quantum code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/parity_check">Single parity-check (SPC) code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a>.
   </span>
 </div>
 
