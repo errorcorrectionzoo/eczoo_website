@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A spherical code obtained from a binary code, <span class="inline-math">\(q\)</span>-ary code, or <span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span> via a component-wise mapping of each <span class="inline-math">\(q\)</span>-ary digit to a <span class="inline-math">\(q\)</span>th root of unity. </div>
+<div class="sectioncontent code-description"><p>A spherical code obtained from a binary code, <span class="inline-math">\(q\)</span>-ary code, or <span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span> via a component-wise mapping of each <span class="inline-math">\(q\)</span>-ary digit to a <span class="inline-math">\(q\)</span>th root of unity.</p><p>For example, for the case <span class="inline-math">\(q=4\)</span>, one can map either the ring-based alphabet <span class="inline-math">\(\mathbb{Z}_4 = \{0,1,2,3\}\)</span> or the field-based alphabet <span class="inline-math">\(GF(2)^2 = \{00,01,10,11\}\)</span> to the set <span class="inline-math">\(\{1,\theta,\theta^2,\theta^3\}\)</span> for some fourth root of unity <span class="inline-math">\(\theta\)</span>.</p></div>
 
 
 
@@ -115,6 +115,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See <a href="#citation-12" class="href-endnote endnote citation">[12; Ch. 7]</a> for more details.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -127,7 +131,9 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/spherical">Spherical code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/slepian_group">Slepian group-orbit code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Polyphase codewords can be implemented by acting on the all-ones vector by diagonal orthogonal matrices whose entries are the codewords <a href="#citation-12" class="href-endnote endnote citation">[12; Ch. 8]</a>. Polyphase codes correspond to abelian Slepian-group codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/concatenated">Concatenated code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -143,7 +149,7 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/binary_antipodal">Binary signal constellation</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/binary_antipodal">Binary antipodal code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -174,10 +180,6 @@
     <span class="code-cousins-1-code"><a href="/c/biorthogonal">Biorthogonal spherical code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Biorthogonal spherical codes for dimension <span class="inline-math">\(n=p\)</span> with <span class="inline-math">\(p\)</span> an odd prime admit a polyphase realization <a href="#citation-12" class="href-endnote endnote citation">[12; Sec. 7.7]</a>.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/slepian_group">Slepian group-orbit code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Slepian group-orbit codes for abelian groups are naturally interpreted as polyphase codes <a href="#citation-12" class="href-endnote endnote citation">[12; Ch. 8]</a>.</span></li>
 </ul>
 </div>
 
@@ -264,7 +266,7 @@ url={https://errorcorrectionzoo.org/c/polyphase}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/concatenated">Concatenated</a></li><li><a href="/c/binary_antipodal">Binary signal constellation</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a></li><li><a href="/c/simplex_spherical">Simplex spherical</a></li><li><a href="/c/slepian_group">Slepian group-orbit</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/slepian_group">Slepian group-orbit</a></li><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/concatenated">Concatenated</a></li><li><a href="/c/binary_antipodal">Binary antipodal</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/q-ary_digits_into_q-ary_digits"><span class="inline-math">\(q\)</span>-ary</a></li><li><a href="/c/q-ary_over_zq"><span class="inline-math">\(q\)</span>-ary code over <span class="inline-math">\(\mathbb{Z}_q\)</span></a></li><li><a href="/c/simplex_spherical">Simplex spherical</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
