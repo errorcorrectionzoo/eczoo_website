@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Mod-2 lattice code" />
+<meta name="citation_title" content="Niemeier lattice code" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Mod-2 lattice code" />
+<meta name="DC.title" content="Niemeier lattice code" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Mod-2 lattice code — Error Correction Zoo
+    Niemeier lattice code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -71,7 +71,7 @@
      dl -> section
      dt -> h2
      dd -> div class="sectioncontent"
-  --><article class="ecc-code-page info-popup-button-zone" id="ecc_construction_a">
+  --><article class="ecc-code-page info-popup-button-zone" id="ecc_niemeier">
 
 <!--<h2></h2>-->
 <div class="sectioncontent info-popup-button-container"></div>
@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Mod-2 lattice code</h1>
+      Niemeier lattice code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Lattice constructed from a binary linear <span class="inline-math">\([n,k,d]\)</span> code using Construction <span class="inline-math">\(A_2\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. Each binary codeword <span class="inline-math">\(c\)</span> of the code is mapped to an infinite set of points <span class="inline-math">\(x\)</span> such that <span class="inline-math">\(x = c\)</span> modulo two. Linearity of the code ensures that the resulting set of points forms a lattice. </div>
+<div class="sectioncontent code-description">A positive-definite even unimodular lattice of rank 24. </div>
 
 
 
@@ -127,43 +127,47 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/unimodular">Unimodular lattice code</a></span></li>
 </ul>
 </div>
 
 <h2 id="relations_parent_of" class="code-parent-of">
-    Children
+    Child
 </h2>
 <div class="sectioncontent code-parent-of">
 
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/dthree"><span class="inline-math">\(D_3\)</span> face-centered cubic (fcc) lattice code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> lattice code</a></span></li>
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a></span></li>
+    <span class="code-parent-of-1-code"><a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a></span></li>
 </ul>
 </div>
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/binary_linear">Linear binary code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/dual">Dual linear code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Each binary linear code yields a mod-two lattice code.</span></li>
+      &#x2014;&nbsp;Niemeier lattice codes can be constructed from ternary self-dual codes of length 24 <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Niemeier lattice codes can be constructed from quaternary codes over <span class="inline-math">\(\mathbb{Z}_4\)</span> via Construction <span class="inline-math">\(A_4\)</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/octacode">Octacode</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The octacode can be used to construct a Niemeier lattice code via Construction <span class="inline-math">\(A_4\)</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>H.-V. Niemeier, “Definite quadratische formen der dimension 24 und diskriminante 1”, Journal of Number Theory <span class="textbf">5</span>, 142 (1973). <a href="https://doi.org/10.1016/0022-314X(73)90068-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>P. S. Montague, “A new construction of lattices from codes over GF(3)”, Discrete Mathematics <span class="textbf">135</span>, 193 (1994). <a href="https://doi.org/10.1016/0012-365X(93)E0088-L" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>A. Bonnecaze et al., “Niemeier lattices and Type II codes over Z4”, Discrete Mathematics <span class="textbf">205</span>, 1 (1999). <a href="https://doi.org/10.1016/S0012-365X(99)00032-1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -185,39 +189,39 @@
 <div class="sectioncontent display-code-id redundant-if-info-popup-button-installed">
   <div>
     <span class="display-code-id-label">Internal code ID:</span>
-    construction_a
+    niemeier
   </div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="edit"
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/construction_a.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/niemeier.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=construction_a&amp;code_yml_filename=classical/analog/lattice/construction_a.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>construction_a</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=niemeier&amp;code_yml_filename=classical/analog/lattice/niemeier.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>niemeier</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Mod-2 lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/construction_a</dd>
+    <dd class="boxedcontent">“Niemeier lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/niemeier</dd>
     <dt>BibTeX:</dt>
-    <dd class="boxedcontent bibtex">@incollection{eczoo_construction_a,
-title={Mod-2 lattice code},
+    <dd class="boxedcontent bibtex">@incollection{eczoo_niemeier,
+title={Niemeier lattice code},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
-url={https://errorcorrectionzoo.org/c/construction_a}
+url={https://errorcorrectionzoo.org/c/niemeier}
 }</dd>
   </dl></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Mod-2%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/construction_a" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/construction_a&amp;t=Mod-2%20lattice%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Mod-2%20lattice%20code&amp;body=Mod-2%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/construction_a">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Niemeier%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/niemeier" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/niemeier&amp;t=Niemeier%20lattice%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Niemeier%20lattice%20code&amp;body=Niemeier%20lattice%20code%20https%3A//errorcorrectionzoo.org/c/niemeier">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
-    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/construction_a</dd>
+    <dd class="boxedcontent">https://errorcorrectionzoo.org/c/niemeier</dd>
   </dl></div>
 </div>
 
@@ -230,11 +234,11 @@ url={https://errorcorrectionzoo.org/c/construction_a}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Mod-2 lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/construction_a</p>
+  <p>“Niemeier lattice code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/niemeier</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/construction_a.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/niemeier.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/construction_a.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/lattice/niemeier.yml</a>.</p>
 </div>
 
 
@@ -244,7 +248,7 @@ url={https://errorcorrectionzoo.org/c/construction_a}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/dthree"><span class="inline-math">\(D_3 fcc\)</span></a></li><li><a href="/c/dfour"><span class="inline-math">\(D_4\)</span></a></li><li><a href="/c/eeight"><span class="inline-math">\(E_8\)</span></a></li><li><a href="/c/binary_linear">Linear binary</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/unimodular">Unimodular lattice</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/leech">Leech</a></li><li><a href="/c/dual">Dual linear</a></li><li><a href="/c/quaternary_over_z4">Quaternary code over <span class="inline-math">\(\mathbb{Z}_4\)</span></a></li><li><a href="/c/octacode">Octacode</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

@@ -91,7 +91,7 @@
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span> of nearest neighbors at each lattice point, and the <span class="textit">volume</span> <span class="inline-math">\(V=\det G\)</span>, which is equal to the determinant of the lattice generator matrix <span class="inline-math">\(G\)</span>.</p><p>The <span class="textit">nominal coding gain</span> <span class="inline-math">\(\gamma_{c}\)</span> (a.k.a. <span class="textit">Hermite parameter</span>) of an <span class="inline-math">\(n\)</span>-dimensional lattice is <span class="display-math env-align">\begin{align}
   \gamma_{c}=\left(d_{\text{min}}/\sqrt[n]{V}\right)^{2}~,
-\end{align}</span> characterizing the ratio of the level of protection to the required spatial resources.</p></div>
+\end{align}</span> characterizing the ratio of the level of protection to the required spatial resources.</p><p>Lattices are also characterized by the <span class="textit">minimal norm</span> <span class="inline-math">\(\mu\)</span>, which is the minimal norm of a non-zero vector in the lattice. This is an analogue of the minimum distance of binary codes.</p></div>
 
 
 <!-- Display features -->
@@ -150,11 +150,15 @@
 
 <ul class="code-relations-list code-parent-of-list">
   <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/antipode">Antipode lattice code</a></span></li>
+  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/hexagonal">Hexagonal lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/construction_a">Mod-2 lattice code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/unimodular">Unimodular lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a></span></li>
 </ul>
@@ -171,6 +175,10 @@
     <span class="code-cousins-1-code"><a href="/c/linear">Linear code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/best">Best code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The Best code yields a dense sphere packing in 10 dimensions via Construction <span class="inline-math">\(A\)</span> <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/lattice_shell">Lattice-shell code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -192,7 +200,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Urbanke and B. Rimoldi, “Lattice codes can achieve capacity on the AWGN channel”, IEEE Transactions on Information Theory <span class="textbf">44</span>, 273 (1998). <a href="https://doi.org/10.1109/18.651040" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>G. Nebe and N. J. A. Sloane. &quot;Catalogue of Lattices.&quot; http://www.math.rwth-aachen.de/ Gabriele.Nebe/LATTICES/index.html</dd><dt id="citation-4">[4]</dt><dd>H. Cohn. &quot;Kissing numbers.&quot; https://cohn.mit.edu/kissing-numbers</dd><dt id="citation-5">[5]</dt><dd>Cannon, J., Bosma, W., Fieker, C., &amp; Steel, A. (2008). HANDBOOK OF MAGMA FUNCTIONS.</dd><dt id="citation-6">[6]</dt><dd>W. Bosma, J. Cannon, and G. Matthews, “Programming with algebraic structures”, Proceedings of the international symposium on Symbolic and algebraic computation - ISSAC &#x27;94 (1994). <a href="https://doi.org/10.1145/190347.190362" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>W. BOSMA, J. CANNON, and C. PLAYOUST, “The Magma Algebra System I: The User Language”, Journal of Symbolic Computation <span class="textbf">24</span>, 235 (1997). <a href="https://doi.org/10.1006/jsco.1996.0125" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>R. Urbanke and B. Rimoldi, “Lattice codes can achieve capacity on the AWGN channel”, IEEE Transactions on Information Theory <span class="textbf">44</span>, 273 (1998). <a href="https://doi.org/10.1109/18.651040" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>G. Nebe and N. J. A. Sloane. &quot;Catalogue of Lattices.&quot; http://www.math.rwth-aachen.de/ Gabriele.Nebe/LATTICES/index.html</dd><dt id="citation-4">[4]</dt><dd>H. Cohn. &quot;Kissing numbers.&quot; https://cohn.mit.edu/kissing-numbers</dd><dt id="citation-5">[5]</dt><dd>Cannon, J., Bosma, W., Fieker, C., &amp; Steel, A. (2008). HANDBOOK OF MAGMA FUNCTIONS.</dd><dt id="citation-6">[6]</dt><dd>W. Bosma, J. Cannon, and G. Matthews, “Programming with algebraic structures”, Proceedings of the international symposium on Symbolic and algebraic computation - ISSAC &#x27;94 (1994). <a href="https://doi.org/10.1145/190347.190362" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>W. BOSMA, J. CANNON, and C. PLAYOUST, “The Magma Algebra System I: The User Language”, Journal of Symbolic Computation <span class="textbf">24</span>, 235 (1997). <a href="https://doi.org/10.1006/jsco.1996.0125" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>10.1007/978-1-4757-6568-7</dd></dl></div>
 
 
 
@@ -274,7 +282,7 @@ url={https://errorcorrectionzoo.org/c/points_into_lattices}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/barnes_wall">BW</a></li><li><a href="/c/hexagonal">Hexagonal lattice</a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/leech"><span class="inline-math">\(Leech\)</span></a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/lattice_shell">Lattice-shell</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Analog</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/antipode">Antipode lattice</a></li><li><a href="/c/barnes_wall">BW</a></li><li><a href="/c/hexagonal">Hexagonal lattice</a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/best">Best</a></li><li><a href="/c/lattice_shell">Lattice-shell</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
