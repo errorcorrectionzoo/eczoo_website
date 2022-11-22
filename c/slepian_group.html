@@ -89,7 +89,7 @@
 <div class="sectioncontent code-description">Spherical code in <span class="inline-math">\(n\)</span> dimensions whose codewords correspond to points in an orbit of some <span class="textit">initial vector</span> under a <span class="textit">generating group</span> <span class="inline-math">\(G\)</span>, which is a subgroup of the group <span class="inline-math">\(O(n)\)</span> of rotations in <span class="inline-math">\(n\)</span> dimensions. Neither the vector nor the group are unique for a given code. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Code properties depend on the relationship between the group and the initial vector, and the number of codewords is the number of cosets of an initial vector&#x27;s symmetry subgroup in <span class="inline-math">\(G\)</span> per the orbit-stabilizer theorem. See Refs. <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a> for allowed code parameters. </div>
+<div class="sectioncontent code-protection">Code properties depend on the relationship between the group and the initial vector, and the number of codewords is the number of cosets of an initial vector&#x27;s symmetry subgroup in <span class="inline-math">\(G\)</span> per the orbit-stabilizer theorem. See Refs. <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a> for allowed code parameters. </div>
 
 
 <!-- Display features -->
@@ -119,7 +119,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See <a href="#citation-5" class="href-endnote endnote citation">[5; Ch. 8]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a> for more details and code tables.</span>
+  <span class="paragraph-in-list">See <a href="#citation-6" class="href-endnote endnote citation">[6; Ch. 8]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a> for more details and code tables.</span>
 </div>
 
 
@@ -137,7 +137,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/group_orbit">Group-orbit code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Slepian group-orbit codes are group-orbit codes on spheres. Binary group-orbit codes can be mapped into Slepian group-orbit codes via various mappings <a href="#citation-5" class="href-endnote endnote citation">[5; Ch. 8]</a>.</span></li>
+      &#x2014;&nbsp;Slepian group-orbit codes are group-orbit codes on spheres. Binary group-orbit codes can be mapped into Slepian group-orbit codes via various mappings <a href="#citation-6" class="href-endnote endnote citation">[6; Ch. 8]</a>.</span></li>
 </ul>
 </div>
 
@@ -153,11 +153,11 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Permutations and sign changes can be implemented on vectors by orthogonal matrices, so permutation spherical codes are Slepian group-orbit codes.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/polyphase">Polyphase code</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Polyphase codewords can be implemented by acting on the all-ones vector by diagonal orthogonal matrices whose entries are the codeword components <a href="#citation-5" class="href-endnote endnote citation">[5; Ch. 8]</a>. Polyphase codes correspond to abelian Slepian-group codes.</span></li>
-  <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/sidelnikov">Sidelnikov group-orbit code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/tlsc">Torus-layer spherical code (TLSC)</a></span><span class="code-parent-of-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Polyphase codewords can be implemented by acting on the all-ones initial vector by diagonal orthogonal matrices whose entries are the codeword components <a href="#citation-6" class="href-endnote endnote citation">[6; Ch. 8]</a>. TLSC codes are generalizations of polyphase codes to other initial vectors and are examples of abelian Slepian-group codes.</span></li>
 </ul>
 </div>
 
@@ -171,15 +171,15 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_linear">Linear binary code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Any length-<span class="inline-math">\(n\)</span> binary linear code can be used to define a diagonal subgroup of <span class="inline-math">\(n\)</span>-dimensional rotation matrices with <span class="inline-math">\(\pm 1\)</span> on the diagonals via the antipodal mapping <span class="inline-math">\(0\to+1\)</span> and <span class="inline-math">\(1\to-1\)</span>. The orbit of this subgroup yields the corresponding Slepian group-orbit code; see <a href="#citation-5" class="href-endnote endnote citation">[5; Thm. 8.5.2]</a>.</span></li>
+      &#x2014;&nbsp;Any length-<span class="inline-math">\(n\)</span> binary linear code can be used to define a diagonal subgroup of <span class="inline-math">\(n\)</span>-dimensional rotation matrices with <span class="inline-math">\(\pm 1\)</span> on the diagonals via the antipodal mapping <span class="inline-math">\(0\to+1\)</span> and <span class="inline-math">\(1\to-1\)</span>. The orbit of this subgroup yields the corresponding Slepian group-orbit code; see <a href="#citation-6" class="href-endnote endnote citation">[6; Thm. 8.5.2]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_antipodal">Binary antipodal code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Any length-<span class="inline-math">\(n\)</span> binary linear code can be used to define a diagonal subgroup of <span class="inline-math">\(n\)</span>-dimensional rotation matrices with <span class="inline-math">\(\pm 1\)</span> on the diagonals via the antipodal mapping <span class="inline-math">\(0\to+1\)</span> and <span class="inline-math">\(1\to-1\)</span>. The orbit of this subgroup yields the corresponding Slepian group-orbit code; see <a href="#citation-5" class="href-endnote endnote citation">[5; Thm. 8.5.2]</a>.</span></li>
+      &#x2014;&nbsp;Any length-<span class="inline-math">\(n\)</span> binary linear code can be used to define a diagonal subgroup of <span class="inline-math">\(n\)</span>-dimensional rotation matrices with <span class="inline-math">\(\pm 1\)</span> on the diagonals via the antipodal mapping <span class="inline-math">\(0\to+1\)</span> and <span class="inline-math">\(1\to-1\)</span>. The orbit of this subgroup yields the corresponding Slepian group-orbit code; see <a href="#citation-6" class="href-endnote endnote citation">[6; Thm. 8.5.2]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Any finite-group code can be mapped to a Slepian group-orbit code by representing the group using orthogonal matrices <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span></li>
+      &#x2014;&nbsp;Any finite-group code can be mapped to a Slepian group-orbit code by representing the group using orthogonal matrices <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/polytope">Polytope code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -189,7 +189,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Slepian, “Group Codes for the Gaussian Channel”, Bell System Technical Journal <span class="textbf">47</span>, 575 (1968). <a href="https://doi.org/10.1002/j.1538-7305.1968.tb02486.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Biggs, Norman. Finite groups of automorphisms: course given at the University of Southampton, October-December 1969. Vol. 6. CUP Archive, 1971.</dd><dt id="citation-3">[3]</dt><dd>C. Downey and J. Karlof, “On the existence of&amp;amp;lt;tex&amp;amp;gt;[M, n]&amp;amp;lt;/tex&amp;amp;gt;group codes for the Gaussian channel with&amp;amp;lt;tex&amp;amp;gt;[M, n]&amp;amp;lt;/tex&amp;amp;gt;odd”, IEEE Transactions on Information Theory <span class="textbf">23</span>, 500 (1977). <a href="https://doi.org/10.1109/TIT.1977.1055744" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. Karlof and C. Downey, “Odd Group Codes for The Gaussian Channel”, SIAM Journal on Applied Mathematics <span class="textbf">34</span>, 715 (1978). <a href="https://doi.org/10.1137/0134060" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-6">[6]</dt><dd>I. Ingemarsson, “Group Codes for the Gaussian Channel”, Lecture Notes in Control and Information Sciences 73. <a href="https://doi.org/10.1007/BFb0042068" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>H.-A. Loeliger, “Signal sets matched to groups”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 1675 (1991). <a href="https://doi.org/10.1109/18.104333" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Slepian, “Group Codes for the Gaussian Channel”, Bell System Technical Journal <span class="textbf">47</span>, 575 (1968). <a href="https://doi.org/10.1002/j.1538-7305.1968.tb02486.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Biggs, Norman. Finite groups of automorphisms: course given at the University of Southampton, October-December 1969. Vol. 6. CUP Archive, 1971.</dd><dt id="citation-3">[3]</dt><dd>C. Downey and J. Karlof, “On the existence of&amp;amp;lt;tex&amp;amp;gt;[M, n]&amp;amp;lt;/tex&amp;amp;gt;group codes for the Gaussian channel with&amp;amp;lt;tex&amp;amp;gt;[M, n]&amp;amp;lt;/tex&amp;amp;gt;odd”, IEEE Transactions on Information Theory <span class="textbf">23</span>, 500 (1977). <a href="https://doi.org/10.1109/TIT.1977.1055744" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. Karlof and C. Downey, “Odd Group Codes for The Gaussian Channel”, SIAM Journal on Applied Mathematics <span class="textbf">34</span>, 715 (1978). <a href="https://doi.org/10.1137/0134060" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>R. M. Siqueira and S. I. R. Costa, “Flat tori, lattices and bounds for commutative group codes”, Designs, Codes and Cryptography <span class="textbf">49</span>, 307 (2008). <a href="https://doi.org/10.1007/s10623-008-9183-9" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-7">[7]</dt><dd>I. Ingemarsson, “Group Codes for the Gaussian Channel”, Lecture Notes in Control and Information Sciences 73. <a href="https://doi.org/10.1007/BFb0042068" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>H.-A. Loeliger, “Signal sets matched to groups”, IEEE Transactions on Information Theory <span class="textbf">37</span>, 1675 (1991). <a href="https://doi.org/10.1109/18.104333" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -270,7 +270,7 @@ url={https://errorcorrectionzoo.org/c/slepian_group}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/group_orbit">Group-orbit</a></li><li><a href="/c/permutation_spherical">Permutation spherical</a></li><li><a href="/c/polyphase">Polyphase</a></li><li><a href="/c/sidelnikov">Sidelnikov group-orbit</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/binary_antipodal">Binary antipodal</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/polytope">Polytope</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li><li><a href="/c/analog">Analog</a></li><li><a href="/c/group_orbit">Group-orbit</a></li><li><a href="/c/permutation_spherical">Permutation spherical</a></li><li><a href="/c/sidelnikov">Sidelnikov group-orbit</a></li><li><a href="/c/tlsc">TLSC</a></li><li><a href="/c/binary_linear">Linear binary</a></li><li><a href="/c/binary_antipodal">Binary antipodal</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li><li><a href="/c/polytope">Polytope</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
