@@ -565,7 +565,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((6,27,3/2)\\) code whose codewords are the vertices of the Hessian complex polyhedron and the \\(2_{21}\\) real polytope. The code forms a spherical 4-design. ",
+                    "_description": "Spherical \\((6,27,3/2)\\) code whose codewords are the vertices of the Hessian complex polyhedron and the \\(2_{21}\\) real polytope. The code forms a spherical 4-design. See [T. Ericson, and V. Zinoviev, eds. Codes on Euclidean spheres. Elsevier, 2001.; Exam. 1.2.5] ([H. S. M. Coxeter. Regular Complex Polytopes. Cambridge University Press, 1991.; pg. 127]) for a real (complex) realization \u2026",
                     "_code_href": "/c/hessian_polyhedron",
                     "_family_generation_level": 6
                 },
@@ -616,7 +616,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical code whose codewords are the vertices of a polytope, i.e., a geometrical figure bounded by lines, planes, and hyperplanes [H. S. M. Coxeter. Regular polytopes. Courier Corporation, 1973.]. ",
+                    "_description": "Spherical code whose codewords are the vertices of a polytope, i.e., a geometrical figure bounded by lines, planes, and hyperplanes [H. S. M. Coxeter. Regular polytopes. Courier Corporation, 1973.]. Polytopes in two (three) real or complex dimensions are called \u2026",
                     "_code_href": "/c/polytope",
                     "_family_generation_level": 5
                 },
@@ -633,7 +633,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((4,600,0.0121407\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design. See [M. Waegell and P. K. Aravind, \u201cParity Proofs of the Kochen\u2013Specker Theorem Based on the 120-Cell\u201d, Foundations of Physics 44, 1085 (2014). DOI; 1309.7530; Table 1][H. S. M. Coxeter. Regular polytopes. Courier Corporation, 1973.] for a realization of the 600 codewords. ",
+                    "_description": "Spherical \\((4,600,0.0121407)\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design. See [M. Waegell and P. K. Aravind, \u201cParity Proofs of the Kochen\u2013Specker Theorem Based on the 120-Cell\u201d, Foundations of Physics 44, 1085 (2014). DOI; 1309.7530; Table 1][H. S. M. Coxeter. Regular polytopes. Courier Corporation, 1973.] for a realization of the 600 codewords. ",
                     "_code_href": "/c/120cell",
                     "_family_generation_level": 6
                 },
