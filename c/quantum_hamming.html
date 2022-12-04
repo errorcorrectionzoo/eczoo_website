@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound.</div>
+<div class="sectioncontent code-description">A family of stabilizer codes of distance <span class="inline-math">\(3\)</span> that asymptotically saturate quantum Hamming bound. Can be obtained from the CSS construction using a first-order <span class="inline-math">\([2^r,r+1,2^{r-1}]\)</span> RM code and a <span class="inline-math">\([2^r,2^r-1,2]\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Protects against any single qubit error.</div>
@@ -111,7 +111,7 @@
 
 <h2 id="feature_fault_tolerance"
       class="code-feature code-feature-fault_tolerance">Fault Tolerance</h2>
-  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Concatenations of Hamming codes yield fault-tolerant quantum computation with constant space and quasi-polylogarithmic time overheads <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-fault_tolerance"><span class="paragraph-in-list">Concatenations of Hamming codes yield fault-tolerant quantum computation with constant space and quasi-polylogarithmic time overheads <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -153,13 +153,17 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;<span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming codes are analogues of Hamming codes in that they saturate the asymptotic Hamming bound.</span></li>
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;<span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code can be obtained from the CSS construction using a first-order <span class="inline-math">\([2^r,r+1,2^{r-1}]\)</span> RM code and a <span class="inline-math">\([2^r,2^r-1,2]\)</span> <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/hamming">Hamming code</a></span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href-href">quant-ph/9604038</a></dd><dt id="citation-2">[2]</dt><dd>Hayata Yamasaki and Masato Koashi, “Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation”. <a href="https://arxiv.org/abs/2207.08826" target="_blank" class="href-href">2207.08826</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>D. Gottesman, “Class of quantum error-correcting codes saturating the quantum Hamming bound”, Physical Review A <span class="textbf">54</span>, 1862 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.1862" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9604038" target="_blank" class="href-href">quant-ph/9604038</a></dd><dt id="citation-2">[2]</dt><dd>A. M. Steane, “Simple quantum error-correcting codes”, Physical Review A <span class="textbf">54</span>, 4741 (1996). <a href="https://doi.org/10.1103/PhysRevA.54.4741" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/9605021" target="_blank" class="href-href">quant-ph/9605021</a></dd><dt id="citation-3">[3]</dt><dd>Hayata Yamasaki and Masato Koashi, “Time-Efficient Constant-Space-Overhead Fault-Tolerant Quantum Computation”. <a href="https://arxiv.org/abs/2207.08826" target="_blank" class="href-href">2207.08826</a></dd></dl></div>
 
 
 
@@ -167,7 +171,8 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-07-20)      — most recent</li><li><a href="/team#user-MariannaPodzorova">Marianna Podzorova</a>
+    (2022-12-04)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-07-20)</li><li><a href="/team#user-MariannaPodzorova">Marianna Podzorova</a>
     (2021-12-13)</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
     (2021-11-24)</li></ul>
 </details>
@@ -242,7 +247,7 @@ url={https://errorcorrectionzoo.org/c/quantum_hamming}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/quantum_perfect">Perfect quantum</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/hamming">Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/quantum_perfect">Perfect quantum</a></li><li><a href="/c/hamming">Hamming</a></li><li><a href="/c/reed_muller">RM</a></li><li><a href="/c/hamming">Hamming</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
