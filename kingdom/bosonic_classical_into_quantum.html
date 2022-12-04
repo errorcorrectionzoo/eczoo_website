@@ -69,15 +69,15 @@
 
 
 <div class="ecc-code" id="ecc_bosonic_classical_into_quantum">
-  <span class="short-code-name"><a href="/c/bosonic_classical_into_quantum">Bosonic classical-into-quantum code</a></span>
+  <span class="short-code-name"><a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a></span>
   <span class="short-code-description">Bosonic code designed for transmission of classical information through non-classical channels. Typically, such codes encode real numbers into coherent states for transmission over a quantum channel and decoding with a quantum receiver. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/classical_into_quantum">Classical-into-quantum code</a>.
+      <a href="/c/classical_into_quantum">Classical-over-quantum code</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>,       <a href="/c/quantum_fsk">Quantum FSK code</a>,       <a href="/c/quantum_ppm">Quantum PPM code</a>,       <a href="/c/quantum_psk">Quantum PSK code</a>.
+      <a href="/c/quantum_fsk">FSK classical-over-quantum code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>,       <a href="/c/quantum_ppm">PPM classical-over-quantum code</a>,       <a href="/c/quantum_psk">PSK classical-over-quantum code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -86,13 +86,27 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_quantum_fsk">
+  <span class="short-code-name"><a href="/c/quantum_fsk">FSK classical-over-quantum code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
+  <span class="short-code-description">Bosonic classical-over-quantum code encoding into coherent states that are phase-shifted relative to each other by a constant.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/fsk">Frequency-shift keyring (FSK) code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_niset_andersen_cerf">
-  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></span>
-  <span class="short-code-description">Bosonic classical-into-quantum code encoding two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> into four modes such that the complex values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</span>
+  <span class="short-code-name"><a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a><span class="code-introduced"><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
+  <span class="short-code-description">Bosonic classical-over-quantum code encoding two-mode coherent states <span class="inline-math">\(\{|\alpha\rangle, |\beta\rangle\}\)</span> into four modes such that the complex values <span class="inline-math">\((\alpha,\beta)\)</span> are recoverable after a single-mode erasure. There are two variations of the storage procedure: a deterministic protocol that offers recovery against a single mode erasure, and a probabalistic that can protect against multiple errors with post selection. This code is effectively protecting classical information stored in <span class="inline-math">\((\alpha,\beta)\)</span> using quantum operations.</span>
   <span class="short-code-info">Protection: The deterministic protocol protects against a single erasure error on a known mode. This recovers one state perfectly and the other state with fidelity <span class="inline-math">\(F = \frac{1}{1 + e^{-2 r}}\)</span> for an initial EPR pair squeezed with variance <span class="inline-math">\(e^{-2r}\)</span>. The probabalistic protocol utilizes post-selection to protect against multiple erasures with state-dependent fidelity.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-into-quantum code</a>.
+      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -105,26 +119,12 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_quantum_fsk">
-  <span class="short-code-name"><a href="/c/quantum_fsk">Quantum FSK code</a><span class="code-introduced"><a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a></span></span>
-  <span class="short-code-description">Bosonic classical-into-quantum code encoding into coherent states that are phase-shifted relative to each other by a constant.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-into-quantum code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/fsk">Frequency-shift keyring (FSK) code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_quantum_ppm">
-  <span class="short-code-name"><a href="/c/quantum_ppm">Quantum PPM code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
-  <span class="short-code-description">Bosonic classical-into-quantum code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode <span class="inline-math">\(j\)</span>.</span>
+  <span class="short-code-name"><a href="/c/quantum_ppm">PPM classical-over-quantum code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
+  <span class="short-code-description">Bosonic classical-over-quantum code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode <span class="inline-math">\(j\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-into-quantum code</a>.
+      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -134,11 +134,11 @@
 
 
 <div class="ecc-code" id="ecc_quantum_psk">
-  <span class="short-code-name"><a href="/c/quantum_psk">Quantum PSK code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
-  <span class="short-code-description">Bosonic classical-into-quantum <span class="inline-math">\(q\)</span>-ary qudit code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</span>
+  <span class="short-code-name"><a href="/c/quantum_psk">PSK classical-over-quantum code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
+  <span class="short-code-description">Bosonic classical-over-quantum <span class="inline-math">\(q\)</span>-ary qudit code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-into-quantum code</a>.
+      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -147,7 +147,7 @@
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href-href">0710.4858</a></dd><dt id="citation-2">[2]</dt><dd>I. A. Burenkov, O. V. Tikhonova, and S. V. Polyakov, “Quantum receiver for large alphabet communication”, Optica <span class="textbf">5</span>, 227 (2018). <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.08287" target="_blank" class="href-href">1802.08287</a></dd><dt id="citation-3">[3]</dt><dd>I. A. Burenkov et al., “Time-Resolving Quantum Measurement Enables Energy-Efficient, Large-Alphabet Communication”, PRX Quantum <span class="textbf">1</span>, (2020). <a href="https://doi.org/10.1103/PRXQuantum.1.010308" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. Chen et al., “Optical codeword demodulation with error rates below the standard quantum limit using a conditional nulling receiver”, Nature Photonics <span class="textbf">6</span>, 374 (2012). <a href="https://doi.org/10.1038/nphoton.2012.113" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1111.4017" target="_blank" class="href-href">1111.4017</a></dd><dt id="citation-5">[5]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>I. A. Burenkov, O. V. Tikhonova, and S. V. Polyakov, “Quantum receiver for large alphabet communication”, Optica <span class="textbf">5</span>, 227 (2018). <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.08287" target="_blank" class="href-href">1802.08287</a></dd><dt id="citation-2">[2]</dt><dd>I. A. Burenkov et al., “Time-Resolving Quantum Measurement Enables Energy-Efficient, Large-Alphabet Communication”, PRX Quantum <span class="textbf">1</span>, (2020). <a href="https://doi.org/10.1103/PRXQuantum.1.010308" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href-href">0710.4858</a></dd><dt id="citation-4">[4]</dt><dd>J. Chen et al., “Optical codeword demodulation with error rates below the standard quantum limit using a conditional nulling receiver”, Nature Photonics <span class="textbf">6</span>, 374 (2012). <a href="https://doi.org/10.1038/nphoton.2012.113" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1111.4017" target="_blank" class="href-href">1111.4017</a></dd><dt id="citation-5">[5]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 

@@ -77,8 +77,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_classical_into_quantum",
-                    "label": "Classical-into-quantum",
-                    "_code_name": "Classical-into-quantum code",
+                    "label": "Classical-over-quantum",
+                    "_code_name": "Classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
@@ -111,8 +111,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qubit_classical_into_quantum",
-                    "label": "Qubit classical-into-quantum",
-                    "_code_name": "Qubit classical-into-quantum code",
+                    "label": "Qubit classical-over-quantum",
+                    "_code_name": "Qubit classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 0,
@@ -131,12 +131,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_ppm",
-                    "label": "Quantum PPM",
-                    "_code_name": "Quantum PPM code",
+                    "label": "PPM classical-over-quantum",
+                    "_code_name": "PPM classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic classical-into-quantum code whose \\(j\\)th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode \\(j\\).",
+                    "_description": "Bosonic classical-over-quantum code whose \\(j\\)th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode \\(j\\).",
                     "_code_href": "/c/quantum_ppm",
                     "_family_generation_level": 3
                 },
@@ -148,12 +148,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_psk",
-                    "label": "Quantum PSK",
-                    "_code_name": "Quantum PSK code",
+                    "label": "PSK classical-over-quantum",
+                    "_code_name": "PSK classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic classical-into-quantum \\(q\\)-ary qudit code whose \\(j\\)th codeword corresponds to a coherent state whose phase is the \\(j\\)th multiple of \\(2\\pi/q\\).",
+                    "_description": "Bosonic classical-over-quantum \\(q\\)-ary qudit code whose \\(j\\)th codeword corresponds to a coherent state whose phase is the \\(j\\)th multiple of \\(2\\pi/q\\).",
                     "_code_href": "/c/quantum_psk",
                     "_family_generation_level": 3
                 },
@@ -170,7 +170,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic classical-into-quantum code encoding two-mode coherent states \\(\\{|\\alpha\\rangle, |\\beta\\rangle\\}\\) into four modes such that the complex values \\((\\alpha,\\beta)\\) are recoverable after a single-mode erasure. \u2026",
+                    "_description": "Bosonic classical-over-quantum code encoding two-mode coherent states \\(\\{|\\alpha\\rangle, |\\beta\\rangle\\}\\) into four modes such that the complex values \\((\\alpha,\\beta)\\) are recoverable after a single-mode erasure. \u2026",
                     "_code_href": "/c/niset_andersen_cerf",
                     "_family_generation_level": 3
                 },
@@ -182,8 +182,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_bosonic_classical_into_quantum",
-                    "label": "Bosonic classical-into-quantum",
-                    "_code_name": "Bosonic classical-into-quantum code",
+                    "label": "Bosonic classical-over-quantum",
+                    "_code_name": "Bosonic classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
@@ -202,12 +202,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_fsk",
-                    "label": "Quantum FSK",
-                    "_code_name": "Quantum FSK code",
+                    "label": "FSK classical-over-quantum",
+                    "_code_name": "FSK classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic classical-into-quantum code encoding into coherent states that are phase-shifted relative to each other by a constant.",
+                    "_description": "Bosonic classical-over-quantum code encoding into coherent states that are phase-shifted relative to each other by a constant.",
                     "_code_href": "/c/quantum_fsk",
                     "_family_generation_level": 3
                 },
@@ -7056,6 +7056,23 @@ GENERATED_pretty_code_graph_data = {
                 "position": {
                     "x": 250,
                     "y": 100
+                }
+            },
+            {
+                "data": {
+                    "id": "c_groupoid_surface",
+                    "label": "Groupoid toric",
+                    "_code_name": "Groupoid toric code",
+                    "_is_code": 1,
+                    "_is_plain_concrete_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "Extension of the Kitaev surface code from abelian groups to groupoids, i.e., categories in which every morphism is an isomorphism [R. Brown, \u201cFrom Groups to Groupoids: a Brief Survey\u201d, Bulletin of the London Mathematical Society 19, 113 (1987). DOI]. Some models admit fracton-like features such as extensive ground \u2026",
+                    "_code_href": "/c/groupoid_surface",
+                    "_family_generation_level": 4
+                },
+                "position": {
+                    "x": 250,
+                    "y": 480
                 }
             }
         ],
@@ -15675,6 +15692,30 @@ GENERATED_pretty_code_graph_data = {
                     "source": "c_category_quantum",
                     "target": "c_qecc_finite"
                 }
+            },
+            {
+                "data": {
+                    "id": "parent_groupoid_surface_category_quantum_560",
+                    "_rel_type": "parent",
+                    "source": "c_groupoid_surface",
+                    "target": "c_category_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_groupoid_surface_fracton__501",
+                    "_rel_type": "cousin",
+                    "source": "c_groupoid_surface",
+                    "target": "c_fracton"
+                }
+            },
+            {
+                "data": {
+                    "id": "cousin_groupoid_surface_string_net__502",
+                    "_rel_type": "cousin",
+                    "source": "c_groupoid_surface",
+                    "target": "c_string_net"
+                }
             }
         ]
     },
@@ -17363,6 +17404,11 @@ GENERATED_pretty_code_graph_data = {
             "top": "domain_classical_domain",
             "bottom": "c_category_quantum",
             "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_groupoid_surface",
+            "gap": 200
         },
         {
             "top": "c_oaecc",
@@ -20107,6 +20153,11 @@ GENERATED_pretty_code_graph_data = {
         {
             "top": "c_qecc_finite",
             "bottom": "c_category_quantum",
+            "gap": 100
+        },
+        {
+            "top": "c_category_quantum",
+            "bottom": "c_groupoid_surface",
             "gap": 100
         }
     ]
