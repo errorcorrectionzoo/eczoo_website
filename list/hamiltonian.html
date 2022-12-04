@@ -138,7 +138,7 @@ H_X H_Z^T=0~.
 </tr>
 <tr>
   <td class="top left"><a href="/c/distance_balanced">Distance-balanced code</a></td>
-  <td class="textit">CSS stabilizer code constructed from a CSS code and a classical code using a distance-balancing procedure based on a generalized homological product. The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors, and the procedure can result in a code that is treats both types of errors on a more equal footing. The original distance-balancing procedure <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, later generalized in Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, can yield QLDPC codes; see Thm. 1 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</td>
+  <td class="textit">CSS code constructed from a CSS code and a classical code using a distance-balancing procedure based on a generalized homological product. The initial code is said to be <span class="textit">unbalanced</span>, i.e., tailored to noise biased toward either bit- or phase-flip errors, and the procedure can result in a code that is treats both types of errors on a more equal footing. The original distance-balancing procedure <a href="#citation-4" class="href-endnote endnote citation">[4]</a>, later generalized in Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a>, can yield QLDPC codes; see Thm. 1 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/double_semion">Double-semion code</a></td>
@@ -203,6 +203,10 @@ H_X H_Z^T=0~.
   <td class="textit">Abelian topological code, such as a surface <a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a> or color <a href="#citation-11" class="href-endnote endnote citation">[11]</a> code, constructed on lattices of Galois qudits. </td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/generalized_homological_product_css">Generalized homological product CSS code</a></td>
+  <td class="textit">Generalized homological product code of CSS type. </td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/generalized_homological_product">Generalized homological product code</a></td>
   <td class="textit">Stabilizer code formulated in terms a chain complex consisting of some type of product of other chain complexes. The <a href="/c/css#defterm-CSS-to-homology_20Xcorrespondence" class="href-ref ref-topic">CSS-to-homology correspondence</a> yields an interpretation of codes in terms of manifolds, thus allowing for the use of various products from topology in constructing codes. The codes participating in the product can be quantum, classical, or mixed. Products can be of more than two codes, in which case the output code need not be of CSS type (e.g., for <a href="/c/xyz_product" class="href-ref ref-code">XYZ-product codes</a>). The simplest product is a tensor product, with more general products imposing equivalence or symmetry relations on the outputs of the tensor product. A product of two codes can be interpreted as a fiber bundle, with one element of the product being the base and the other being the fiber. </td>
 </tr>
@@ -217,10 +221,6 @@ H_X H_Z^T=0~.
 <tr>
   <td class="top left"><a href="/c/four_dimensional_hyperbolic">Guth-Lubotzky code</a></td>
   <td class="textit">Hyperbolic surface code based on cellulations of certain four-dimensional manifolds. The manifolds are shown to have good homology and systolic properties for the purposes of code construction, with corresponding codes exhibiting linear rate.</td>
-</tr>
-<tr>
-  <td class="top left"><a href="/c/quantum_h">H code</a></td>
-  <td class="textit">Family of <span class="inline-math">\([[k+4,k,2]]\)</span> CSS codes with transversal Hadamard gates; relevant to magic state distillation. Four stablizer generators are <span class="inline-math">\(X_1X_2X_3X_4\)</span>, <span class="inline-math">\(Z_1Z_2Z_3Z_4\)</span>, <span class="inline-math">\(X_1X_2X_5X_6...X_{k+4}\)</span>, and <span class="inline-math">\(Z_1Z_2Z_5Z_6...Z_{k+4}\)</span>.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/haah_cubic">Haah cubic code</a></td>
@@ -427,7 +427,7 @@ H_X H_Z^T=0~.
 </tr>
 <tr>
   <td class="top left"><a href="/c/iceberg"><span class="inline-math">\([[2m,2m-2,2]]\)</span> error-detecting code</a></td>
-  <td class="textit">Also known as the <span class="textit">Iceberg</span> code. CSS stabilizer code for <span class="inline-math">\(m\geq 2\)</span> with generators <span class="inline-math">\(\{XX\cdots X, ZZ\cdots Z\} \)</span> acting on all <span class="inline-math">\(2m\)</span> physical qubits. Admits a basis such that each codeword is a superposition of a computational basis state labeled by a bitstring <span class="inline-math">\(b\)</span> and a state labeled by the negation of <span class="inline-math">\(b\)</span>. Such states generalize the two-qubit Bell states and three-qubit GHz states and are often called cat states. </td>
+  <td class="textit">Also known as the <span class="textit">iceberg</span> code. CSS stabilizer code for <span class="inline-math">\(m\geq 2\)</span> with generators <span class="inline-math">\(\{XX\cdots X, ZZ\cdots Z\} \)</span> acting on all <span class="inline-math">\(2m\)</span> physical qubits. Admits a basis such that each codeword is a superposition of a computational basis state labeled by a bitstring <span class="inline-math">\(b\)</span> and a state labeled by the negation of <span class="inline-math">\(b\)</span>. Such states generalize the two-qubit Bell states and three-qubit GHz states and are often called cat states. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
@@ -471,6 +471,10 @@ H_X H_Z^T=0~.
 |\overline{1}\rangle&amp;=\frac{1}{2\sqrt{2}}\left(|000\rangle-|111\rangle\right)^{\otimes3}~.
 \end{split}
 \end{align}</span> The code works by <a href="/c/quantum_concatenated" class="href-ref ref-code">concatenating</a> each qubit of a phase-flip with a bit-flip <a href="/c/quantum_repetition" class="href-ref ref-code">repetition code</a>. Therefore, the code can correct both type of errors simultaneously.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/quantum_h"><span class="inline-math">\([[k+4,k,2]]\)</span> H code</a></td>
+  <td class="textit">Family of <span class="inline-math">\([[k+4,k,2]]\)</span> CSS codes with transversal Hadamard gates; relevant to magic state distillation. Four stablizer generators are <span class="inline-math">\(X_1X_2X_3X_4\)</span>, <span class="inline-math">\(Z_1Z_2Z_3Z_4\)</span>, <span class="inline-math">\(X_1X_2X_5X_6...X_{k+4}\)</span>, and <span class="inline-math">\(Z_1Z_2Z_5Z_6...Z_{k+4}\)</span>.</td>
 </tr>
 </tbody>
 </table>
