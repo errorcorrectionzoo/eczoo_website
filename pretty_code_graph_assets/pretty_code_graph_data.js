@@ -186,7 +186,7 @@ GENERATED_pretty_code_graph_data = {
                     "_code_name": "Bosonic classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
-                    "_is_abstract_code": 1,
+                    "_is_abstract_code": 0,
                     "_description": "Bosonic code designed for transmission of classical information through non-classical channels. Typically, such codes encode real numbers into coherent states for transmission over a quantum channel \u2026",
                     "_code_href": "/c/bosonic_classical_into_quantum",
                     "_family_generation_level": 2,
@@ -202,12 +202,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_fsk",
-                    "label": "FSK classical-over-quantum",
-                    "_code_name": "FSK classical-over-quantum code",
+                    "label": "Coherent FSK (CFSK) classical-over-quantum",
+                    "_code_name": "Coherent FSK (CFSK) classical-over-quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic classical-over-quantum code encoding into coherent states that are phase-shifted relative to each other by a constant.",
+                    "_description": "Bosonic classical-over-quantum code encoding into coherent states that are frequency-shifted with certain initial relative phase.",
                     "_code_href": "/c/quantum_fsk",
                     "_family_generation_level": 3
                 },
@@ -4141,7 +4141,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "A Hamming-based CSS code is a CCS code constructed with a classical Hamming code \\([2^r-1,2^r-1-r,3]=C_X=C_Z\\) a.k.a. a first-order punctured Reed-Muller code RM\\((r-2,r)\\).",
+                    "_description": "CCS code constructed with a classical Hamming code \\([2^r-1,2^r-1-r,3]=C_X=C_Z\\) a.k.a. a first-order punctured Reed-Muller code RM\\((r-2,r)\\).",
                     "_code_href": "/c/quantum_hamming_css",
                     "_family_generation_level": 6
                 },
@@ -15880,6 +15880,11 @@ GENERATED_pretty_code_graph_data = {
             "top": "domain_classical_domain",
             "bottom": "c_niset_andersen_cerf",
             "gap": 200
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_bosonic_classical_into_quantum",
+            "gap": 100
         },
         {
             "top": "domain_classical_domain",
