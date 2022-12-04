@@ -295,7 +295,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "A \\(q\\)-ary code encoding into \\(q\\) different signals such that each codeword corresponds to a signal. ",
+                    "_description": "A \\(q\\)-ary analog code encoding into \\(q\\) different signals such that each codeword corresponds to a signal. ",
                     "_code_href": "/c/ppm",
                     "_family_generation_level": 3
                 },
