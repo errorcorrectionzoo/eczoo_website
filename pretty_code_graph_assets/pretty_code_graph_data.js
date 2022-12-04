@@ -7012,7 +7012,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Also called a Turaev-Viro or Levin-Wen model code. A family of topological codes, defined by a finite unitary spherical category \\( \\mathcal{C} \\), whose generators are few-body operators acting on a cell \u2026",
+                    "_description": "Also called a Turaev-Viro or Levin-Wen model code. A family of topological codes, defined by a finite unitary fusion category \\( \\mathcal{C} \\), whose generators are few-body operators acting on a cell \u2026",
                     "_code_href": "/c/string_net",
                     "_family_generation_level": 4
                 },
@@ -7060,19 +7060,36 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
+                    "id": "c_enriched_string_net",
+                    "label": "Multi-fusion string-net",
+                    "_code_name": "Multi-fusion string-net code",
+                    "_is_code": 1,
+                    "_is_plain_concrete_code": 1,
+                    "_is_abstract_code": 0,
+                    "_description": "Family of codes resulting from the string-net construction but whose input is a unitary multi-fusion category (as opposed to a unitary fusion category). ",
+                    "_code_href": "/c/enriched_string_net",
+                    "_family_generation_level": 4
+                },
+                "position": {
+                    "x": 250,
+                    "y": 480
+                }
+            },
+            {
+                "data": {
                     "id": "c_groupoid_surface",
                     "label": "Groupoid toric",
                     "_code_name": "Groupoid toric code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Extension of the Kitaev surface code from abelian groups to groupoids, i.e., categories in which every morphism is an isomorphism [R. Brown, \u201cFrom Groups to Groupoids: a Brief Survey\u201d, Bulletin of the London Mathematical Society 19, 113 (1987). DOI]. Some models admit fracton-like features such as extensive ground \u2026",
+                    "_description": "Extension of the Kitaev surface code from abelian groups to groupoids, i.e., multi-fusion categories in which every morphism is an isomorphism [R. Brown, \u201cFrom Groups to Groupoids: a Brief Survey\u201d, Bulletin of the London Mathematical Society 19, 113 (1987). DOI]. Some models admit fracton-like features such as \u2026",
                     "_code_href": "/c/groupoid_surface",
-                    "_family_generation_level": 4
+                    "_family_generation_level": 5
                 },
                 "position": {
                     "x": 250,
-                    "y": 480
+                    "y": 600
                 }
             }
         ],
@@ -15655,10 +15672,10 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_string_net_category_quantum_556",
+                    "id": "parent_string_net_enriched_string_net_556",
                     "_rel_type": "parent",
                     "source": "c_string_net",
-                    "target": "c_category_quantum"
+                    "target": "c_enriched_string_net"
                 }
             },
             {
@@ -15695,10 +15712,18 @@ GENERATED_pretty_code_graph_data = {
             },
             {
                 "data": {
-                    "id": "parent_groupoid_surface_category_quantum_560",
+                    "id": "parent_enriched_string_net_category_quantum_560",
+                    "_rel_type": "parent",
+                    "source": "c_enriched_string_net",
+                    "target": "c_category_quantum"
+                }
+            },
+            {
+                "data": {
+                    "id": "parent_groupoid_surface_enriched_string_net_561",
                     "_rel_type": "parent",
                     "source": "c_groupoid_surface",
-                    "target": "c_category_quantum"
+                    "target": "c_enriched_string_net"
                 }
             },
             {
@@ -15707,14 +15732,6 @@ GENERATED_pretty_code_graph_data = {
                     "_rel_type": "cousin",
                     "source": "c_groupoid_surface",
                     "target": "c_fracton"
-                }
-            },
-            {
-                "data": {
-                    "id": "cousin_groupoid_surface_string_net__502",
-                    "_rel_type": "cousin",
-                    "source": "c_groupoid_surface",
-                    "target": "c_string_net"
                 }
             }
         ]
@@ -17404,6 +17421,11 @@ GENERATED_pretty_code_graph_data = {
             "top": "domain_classical_domain",
             "bottom": "c_category_quantum",
             "gap": 100
+        },
+        {
+            "top": "domain_classical_domain",
+            "bottom": "c_enriched_string_net",
+            "gap": 200
         },
         {
             "top": "domain_classical_domain",
@@ -20136,7 +20158,7 @@ GENERATED_pretty_code_graph_data = {
             "gap": 100
         },
         {
-            "top": "c_category_quantum",
+            "top": "c_enriched_string_net",
             "bottom": "c_string_net",
             "gap": 100
         },
@@ -20157,6 +20179,11 @@ GENERATED_pretty_code_graph_data = {
         },
         {
             "top": "c_category_quantum",
+            "bottom": "c_enriched_string_net",
+            "gap": 100
+        },
+        {
+            "top": "c_enriched_string_net",
             "bottom": "c_groupoid_surface",
             "gap": 100
         }
