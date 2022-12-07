@@ -2381,7 +2381,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((4,600,0.0121407)\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design. See [M. Waegell and P. K. Aravind, \u201cParity Proofs of the Kochen\u2013Specker Theorem Based on the 120-Cell\u201d, Foundations of Physics 44, 1085 (2014). DOI; 1309.7530; Table 1][H. S. M. Coxeter. Regular polytopes. Courier Corporation, 1973.] for a realization of the 600 codewords. ",
+                    "_description": "Spherical \\((4,600,0.0121407)\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design because its vertices can be divided into five 600-cells, each of which forms said \u2026",
                     "_code_href": "/c/120cell",
                     "_family_generation_level": 5
                 },

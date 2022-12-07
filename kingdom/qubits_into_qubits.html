@@ -104,13 +104,7 @@
 <div class="ecc-code" id="ecc_qubits_into_qubits">
   <span class="short-code-name"><a href="/c/qubits_into_qubits">Qubit code</a></span>
   <span class="short-code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. </span>
-  <span class="short-code-info">Protection: A convenient and often considered error set is the <span class="textit">Pauli error</span> or <span class="textit">Pauli string</span> basis. For a single qubit, this set consists of products of powers of the Pauli matrices <span class="display-math env-align">\begin{align}
-  X=\begin{pmatrix}0 &amp; 1\\
-  1 &amp; 0
-  \end{pmatrix}\,\,\text{ and }\,\,Z=\begin{pmatrix}1 &amp; 0\\
-  0 &amp; -1
-  \end{pmatrix}~.
-\end{align}</span> For multiple qubits, error set elements are tensor products of elements of the single-qubit error set.</span>
+  <span class="short-code-info">Protection: Corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits. The number of correctable errors is often called the <span class="textit">decoding radius</span>, and it is upper bounded by half of the code distance.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/qecc_finite">Finite-dimensional quantum error-correcting code</a>.
