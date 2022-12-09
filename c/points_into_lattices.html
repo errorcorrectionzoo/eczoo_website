@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Encodes states (codewords) in coordinates of an <span class="inline-math">\(n\)</span>-dimensional lattice, i.e., a discrete set of points in Euclidean space <span class="inline-math">\(\mathbb{R}^n\)</span> that forms a group under vector addition when the set is translated such that one point is at the origin. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</p><p>A <span class="inline-math">\(n\)</span>-dimensional lattice-based code can be defined using a generator matrix <span class="inline-math">\(G\)</span> of rank <span class="inline-math">\(n\)</span>, where the rows of <span class="inline-math">\(G\)</span> are the lattice translation vectors <span class="inline-math">\(g_i\)</span>. Any lattice point <span class="inline-math">\(x\)</span> is a linear combination of translation vectors with integer coefficients <span class="inline-math">\(c_i\)</span>, <span class="inline-math">\(x = c_1 g_1 + c_2 g_2 \cdots + c_n g_n\)</span>. A lattice-based code can also be defined using the Gram matrix <span class="inline-math">\(GG^T\)</span>.</p></div>
+<div class="sectioncontent code-description"><p>Encodes states (codewords) in coordinates of an <span class="inline-math">\(n\)</span>-dimensional lattice, i.e., a discrete set of points in Euclidean space <span class="inline-math">\(\mathbb{R}^n\)</span> that forms a group under vector addition when the set is translated such that one point is at the origin. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</p><p>A <span class="inline-math">\(n\)</span>-dimensional lattice-based code can be defined using a generator matrix <span class="inline-math">\(G\)</span> of rank <span class="inline-math">\(n\)</span>, where the rows of <span class="inline-math">\(G\)</span> are the lattice translation vectors <span class="inline-math">\(g_i\)</span>. Any lattice point <span class="inline-math">\(x\)</span> is a linear combination of translation vectors with integer coefficients <span class="inline-math">\(c_i\)</span>, <span class="inline-math">\(x = c_1 g_1 + c_2 g_2 + \cdots + c_n g_n\)</span>. A lattice-based code can also be defined using the Gram matrix <span class="inline-math">\(GG^T\)</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection"><p>Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span> of nearest neighbors at each lattice point, and the <span class="textit">volume</span> <span class="inline-math">\(V=\det G\)</span>, which is the volume of the lattice&#x27;s <span class="textit">fundamental region</span> that can be used to tile all of <span class="inline-math">\(\mathbb{R}^n\)</span>.</p><p>The <span class="textit">nominal coding gain</span> <span class="inline-math">\(\gamma_{c}\)</span> (a.k.a. <span class="textit">Hermite parameter</span>) of an <span class="inline-math">\(n\)</span>-dimensional lattice is <span class="display-math env-align">\begin{align}
@@ -131,7 +131,7 @@
 <!-- Relationships to other codes -->
 
 <h2 id="relations_parents" class="code-parents">
-    Parent
+    Parents
 </h2>
 <div class="sectioncontent code-parents">
 
@@ -139,6 +139,10 @@
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/analog">Sphere packing</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parents-1-code"><a href="/c/group_orbit">Group-orbit code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Lattice-base codes are group-orbit codes on <span class="inline-math">\(\mathbb{R}^n\)</span>. The group used to generate all codewords of lattice-based codes is an additive group in <span class="inline-math">\(\mathbb{R}^n\)</span>.</span></li>
 </ul>
 </div>
 
@@ -153,6 +157,8 @@
     <span class="code-parent-of-1-code"><a href="/c/antipode">Antipode lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/coxeter_todd">Coxeter-Todd <span class="inline-math">\(K_{12}\)</span> lattice code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/construction_a">Mod-2 lattice code</a></span></li>
   <li class="paragraph-in-list">
@@ -175,10 +181,6 @@
     <span class="code-cousins-1-code"><a href="/c/linear">Linear code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span></li>
-  <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/group_orbit">Group-orbit code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Lattice-base codes are group-orbit codes on <span class="inline-math">\(\mathbb{R}^n\)</span>. The group used to generate all codewords of lattice-based codes is an additive group in <span class="inline-math">\(\mathbb{R}^n\)</span>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/best">Best code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
@@ -290,7 +292,7 @@ url={https://errorcorrectionzoo.org/c/points_into_lattices}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Sphere packing</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/antipode">Antipode lattice</a></li><li><a href="/c/barnes_wall">BW</a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/root">Root</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/group_orbit">Group-orbit</a></li><li><a href="/c/best">Best</a></li><li><a href="/c/lattice_shell">Lattice-shell</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/analog">Sphere packing</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/group_orbit">Group-orbit</a></li><li><a href="/c/antipode">Antipode lattice</a></li><li><a href="/c/barnes_wall">BW</a></li><li><a href="/c/coxeter_todd"><span class="inline-math">\(K_{12}\)</span></a></li><li><a href="/c/construction_a">Mod-2 lattice</a></li><li><a href="/c/linear">Linear</a></li><li><a href="/c/best">Best</a></li><li><a href="/c/lattice_shell">Lattice-shell</a></li><li><a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
