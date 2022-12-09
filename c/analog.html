@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Analog code" />
+<meta name="citation_title" content="Sphere packing" />
 <meta name="citation_publication_date" content="2022" />
 <meta name="citation_date" content="2022" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Analog code" />
+<meta name="DC.title" content="Sphere packing" />
 <meta name="DC.issued" content="2022" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Analog code — Error Correction Zoo
+    Sphere packing — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -80,16 +80,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Analog code</h1>
+      Sphere packing</h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Encodes states (codewords) into coordinates in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice.</p><p>Analog codes provide ways of encoding digital or analog information into the frequency, amplitude, and phase of one or more analog waveforms for transmission through, e.g., an optical fiber or free space. This is due to Kotelnikov&#x27;s <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and Shannon&#x27;s <a href="#citation-2" class="href-endnote endnote citation">[2]</a> fundamental observation that a discretized electromagnetic signal of finite-bandwidth can be represented as a point in <span class="inline-math">\(\mathbb{R}^n\)</span>. Questions of capacity of electromagnetic communication channels then translate to packing problems in <span class="inline-math">\(\mathbb{R}^n\)</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</p><p>In the electromagnetic context, the information stored in the code is called the <span class="textit">bitstream</span>, coordinates used for encoding are often called <span class="textit">signal points</span> and form a <span class="textit">constellation</span>, and <span class="inline-math">\(\mathbb{R}^n\)</span> is called the <span class="textit">signal space</span>.</p><p>An analog code is mapped into a time-dependent electromagnetic signal using a <span class="textit">modulation scheme</span> <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>. There is a close relation between abstract real-space encodings and modulation schemes, so analog codes are often named after modulation schemes.</p><p>Linear modulation schemes encode points into amplitudes of electromagnetic waveforms. <span class="textit">Pulse-amplitude modulation (PAM)</span> associates each point with a real-valued amplitude of one quadrature of an electromagnetic waveform <a href="#citation-5" class="href-endnote endnote citation">[5; Sec. 10.5]</a>. <span class="textit">Quadrature amplitude modulation (QAM)</span> associates each pair of points with a complex-valued two-quadrature amplitude of band-limited signal <a href="#citation-5" class="href-endnote endnote citation">[5; Ch. 16]</a>.</p></div>
+<div class="sectioncontent code-description"><p>Encodes states (codewords) into coordinates in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice.</p><p>Sphere packings provide ways of encoding digital or analog information into the frequency, amplitude, and phase of one or more analog waveforms for transmission through, e.g., an optical fiber or free space. This is due to Kotelnikov&#x27;s <a href="#citation-1" class="href-endnote endnote citation">[1]</a> and Shannon&#x27;s <a href="#citation-2" class="href-endnote endnote citation">[2]</a> fundamental observation that a discretized electromagnetic signal of finite-bandwidth can be represented as a point in <span class="inline-math">\(\mathbb{R}^n\)</span>. Questions of capacity of electromagnetic communication channels then translate to packing problems in <span class="inline-math">\(\mathbb{R}^n\)</span> <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</p><p>In the electromagnetic context, the information stored in the code is called the <span class="textit">bitstream</span>, coordinates used for encoding are often called <span class="textit">signal points</span> and form a <span class="textit">constellation</span>, and <span class="inline-math">\(\mathbb{R}^n\)</span> is called the <span class="textit">signal space</span>.</p><p>An sphere packing is mapped into a time-dependent electromagnetic signal using a <span class="textit">modulation scheme</span> <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a>. There is a close relation between abstract real-space encodings and modulation schemes, and certain simple sphere packings are often synonymous with their corresponding modulation schemes.</p><p>Linear modulation schemes encode points into amplitudes of electromagnetic waveforms. <span class="textit">Pulse-amplitude modulation (PAM)</span> associates each point with a real-valued amplitude of one quadrature of an electromagnetic waveform <a href="#citation-5" class="href-endnote endnote citation">[5; Sec. 10.5]</a>. <span class="textit">Quadrature amplitude modulation (QAM)</span> associates each pair of points with a complex-valued two-quadrature amplitude of band-limited signal <a href="#citation-5" class="href-endnote endnote citation">[5; Ch. 16]</a>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">The primary application of analog codes is to transmist information using electromagnetic signals. The primary noise channel for such signals is the <span class="textit">additive Gaussian white-noise channel (AGWN)</span>, which adds a random Gaussian-distributed displacement to each signal point. Protection of a constellation thus depends on how far apart its points are in terms of the Euclidean distance. As usual, there is a tradeoff between packing of space and level of protection. </div>
+<div class="sectioncontent code-protection">Sphere packings can be used to transmist information using electromagnetic signals. The primary noise channel for such signals is the <span class="textit">additive Gaussian white-noise channel (AGWN)</span>, which adds a random Gaussian-distributed displacement to each signal point. Protection of a constellation thus depends on how far apart its points are in terms of the Euclidean distance. As usual, there is a tradeoff between packing of space and level of protection. </div>
 
 
 <!-- Display features -->
@@ -100,7 +100,7 @@
 
 <h2 id="feature_rate"
       class="code-feature code-feature-rate">Rate</h2>
-  <div class="sectioncontent code-feature code-feature-rate">Random analog codes can achieve the capacity of the additive Gaussian white-noise (AGWN) channel <a href="#citation-6" class="href-endnote endnote citation">[6]</a>; see the book <a href="#citation-3" class="href-endnote endnote citation">[3]</a> for more details. Tradeoffs between various parameters have been analyzed <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. Deterministic sets of constellations from quadrature rules can also achieve capacity <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</div>
+  <div class="sectioncontent code-feature code-feature-rate">Random sphere packings can achieve the capacity of the additive Gaussian white-noise (AGWN) channel <a href="#citation-6" class="href-endnote endnote citation">[6]</a>; see the book <a href="#citation-3" class="href-endnote endnote citation">[3]</a> for more details. Tradeoffs between various parameters have been analyzed <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. Deterministic sets of constellations from quadrature rules can also achieve capacity <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</div>
 
 
 
@@ -123,6 +123,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Database of sphere packings <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -165,27 +169,27 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a></span><span class="code-cousins-1-detail">
+    <span class="code-cousins-1-code"><a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Bosonic classical-over-quantum codes are extensions of analog codes to transmission of classical information over quantum analog channels.</span></li>
+      &#x2014;&nbsp;Bosonic c-q codes are extensions of sphere packings to transmission of classical information over quantum analog channels.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/coherent_constellation">Coherent-state constellation quantum code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Coherent-state constellation codes are quantum versions of analog codes in that their codewords are superpositions of points in a constellation. Additionally, analog codes that achieve AGWN capacity <a href="#citation-8" class="href-endnote endnote citation">[8]</a> can be used to develop capacity-achieving concatenations of coherent-state constellation codes with quantum polar codes <a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span></li>
+      &#x2014;&nbsp;Coherent-state constellation codes are quantum versions of sphere packings in that their codewords are superpositions of points in a constellation. Additionally, analog codes that achieve AGWN capacity <a href="#citation-8" class="href-endnote endnote citation">[8]</a> can be used to develop capacity-achieving concatenations of coherent-state constellation codes with quantum polar codes <a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/points_into_spheres">Constant-energy code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Constant-energy codes are analog codes constrained to lie on a hypersphere.</span></li>
+      &#x2014;&nbsp;Constant-energy codes are sphere packings constrained to lie on a hypersphere.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/group_classical">Group-alphabet code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Group-alphabet codes whose alphabet is based on the reals <span class="inline-math">\(\mathbb{R}\)</span>, taken to be an abelian group under addition, are analog codes.</span></li>
+      &#x2014;&nbsp;Group-alphabet codes whose alphabet is based on the reals <span class="inline-math">\(\mathbb{R}\)</span>, taken to be an abelian group under addition, are sphere packings.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. A. Kotelnikov, “The theory of optimum noise immunity,” PhD Thesis, Molotov Energy Institute, Moscow, Jan. 1947</dd><dt id="citation-2">[2]</dt><dd>C. E. Shannon, “Communication in the Presence of Noise”, Proceedings of the IRE <span class="textbf">37</span>, 10 (1949). <a href="https://doi.org/10.1109/JRPROC.1949.232969" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>C. E. Shannon, “Probability of Error for Optimal Codes in a Gaussian Channel”, Bell System Technical Journal <span class="textbf">38</span>, 611 (1959). <a href="https://doi.org/10.1002/j.1538-7305.1959.tb03905.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>D. Slepian, “Bounds on Communication”, Bell System Technical Journal <span class="textbf">42</span>, 681 (1963). <a href="https://doi.org/10.1002/j.1538-7305.1963.tb04013.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Y. Wu and S. Verdu, “The impact of constellation cardinality on Gaussian channel capacity”, 2010 48th Annual Allerton Conference on Communication, Control, and Computing (Allerton) (2010). <a href="https://doi.org/10.1109/ALLERTON.2010.5706965" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent-state constellations and polar codes for thermal Gaussian channels”, Physical Review A <span class="textbf">95</span>, (2017). <a href="https://doi.org/10.1103/PhysRevA.95.062343" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1603.05970" target="_blank" class="href-href">1603.05970</a></dd><dt id="citation-10">[10]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent state constellations for Bosonic Gaussian channels”, 2016 IEEE International Symposium on Information Theory (ISIT) (2016). <a href="https://doi.org/10.1109/ISIT.2016.7541749" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. A. Kotelnikov, “The theory of optimum noise immunity,” PhD Thesis, Molotov Energy Institute, Moscow, Jan. 1947</dd><dt id="citation-2">[2]</dt><dd>C. E. Shannon, “Communication in the Presence of Noise”, Proceedings of the IRE <span class="textbf">37</span>, 10 (1949). <a href="https://doi.org/10.1109/JRPROC.1949.232969" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. K. Wolf et al., editors , <span class="textit">Coded Modulation Systems</span> (Kluwer Academic Publishers, 2002). <a href="https://doi.org/10.1007/b100498" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>C. E. Shannon, “Probability of Error for Optimal Codes in a Gaussian Channel”, Bell System Technical Journal <span class="textbf">38</span>, 611 (1959). <a href="https://doi.org/10.1002/j.1538-7305.1959.tb03905.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>D. Slepian, “Bounds on Communication”, Bell System Technical Journal <span class="textbf">42</span>, 681 (1963). <a href="https://doi.org/10.1002/j.1538-7305.1963.tb04013.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Y. Wu and S. Verdu, “The impact of constellation cardinality on Gaussian channel capacity”, 2010 48th Annual Allerton Conference on Communication, Control, and Computing (Allerton) (2010). <a href="https://doi.org/10.1109/ALLERTON.2010.5706965" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>Agrell, E. &quot;Database of sphere packings, 2019.&quot; Online: http://codes. se/packings. Accessed (2015).</dd><dt id="citation-10">[10]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent-state constellations and polar codes for thermal Gaussian channels”, Physical Review A <span class="textbf">95</span>, (2017). <a href="https://doi.org/10.1103/PhysRevA.95.062343" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1603.05970" target="_blank" class="href-href">1603.05970</a></dd><dt id="citation-11">[11]</dt><dd>F. Lacerda, J. M. Renes, and V. B. Scholz, “Coherent state constellations for Bosonic Gaussian channels”, 2016 IEEE International Symposium on Information Theory (ISIT) (2016). <a href="https://doi.org/10.1109/ISIT.2016.7541749" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -223,10 +227,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Analog code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/analog</dd>
+    <dd class="boxedcontent">“Sphere packing”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/analog</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_analog,
-title={Analog code},
+title={Sphere packing},
 booktitle={The Error Correction Zoo},
 year={2022},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -237,7 +241,7 @@ url={https://errorcorrectionzoo.org/c/analog}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Analog%20code%20https%3A//errorcorrectionzoo.org/c/analog" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/analog&amp;t=Analog%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Analog%20code&amp;body=Analog%20code%20https%3A//errorcorrectionzoo.org/c/analog">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Sphere%20packing%20https%3A//errorcorrectionzoo.org/c/analog" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/analog&amp;t=Sphere%20packing" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Sphere%20packing&amp;body=Sphere%20packing%20https%3A//errorcorrectionzoo.org/c/analog">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/analog</dd>
@@ -253,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/analog}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Analog code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/analog</p>
+  <p>“Sphere packing”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/analog</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/analog/analog.yml"
                 class="ashowurl"
@@ -267,7 +271,7 @@ url={https://errorcorrectionzoo.org/c/analog}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/fsk">FSK</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/ppm">PPM</a></li><li><a href="/c/qam">QAM</a></li><li><a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum</a></li><li><a href="/c/coherent_constellation">Coherent-state constellation quantum</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-over-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/ecc">ECC</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/fsk">FSK</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li><li><a href="/c/ppm">PPM</a></li><li><a href="/c/qam">QAM</a></li><li><a href="/c/bosonic_classical_into_quantum">Bosonic c-q</a></li><li><a href="/c/coherent_constellation">Coherent-state constellation quantum</a></li><li><a href="/c/points_into_spheres">Constant-energy</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

@@ -69,9 +69,9 @@
 
 
 <div class="ecc-code" id="ecc_analog">
-  <span class="short-code-name"><a href="/c/analog">Analog code</a></span>
+  <span class="short-code-name"><a href="/c/analog">Sphere packing</a></span>
   <span class="short-code-description">Encodes states (codewords) into coordinates in the <span class="inline-math">\(n\)</span>-dimensional real coordinate space <span class="inline-math">\(\mathbb{R}^n\)</span>. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice.</span>
-  <span class="short-code-info">Protection: The primary application of analog codes is to transmist information using electromagnetic signals. The primary noise channel for such signals is the <span class="textit">additive Gaussian white-noise channel (AGWN)</span>, which adds a random Gaussian-distributed displacement to each signal point. Protection of a constellation thus depends on how far apart its points are in terms of the Euclidean distance. As usual, there is a tradeoff between packing of space and level of protection. </span>
+  <span class="short-code-info">Protection: Sphere packings can be used to transmist information using electromagnetic signals. The primary noise channel for such signals is the <span class="textit">additive Gaussian white-noise channel (AGWN)</span>, which adds a random Gaussian-distributed displacement to each signal point. Protection of a constellation thus depends on how far apart its points are in terms of the Euclidean distance. As usual, there is a tradeoff between packing of space and level of protection. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/ecc">Error-correcting code (ECC)</a>.
@@ -82,7 +82,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic classical-over-quantum code</a>,       <a href="/c/coherent_constellation">Coherent-state constellation quantum code</a>,       <a href="/c/points_into_spheres">Constant-energy code</a>,       <a href="/c/group_classical">Group-alphabet code</a>.
+      <a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a>,       <a href="/c/coherent_constellation">Coherent-state constellation quantum code</a>,       <a href="/c/points_into_spheres">Constant-energy code</a>,       <a href="/c/group_classical">Group-alphabet code</a>.
   </span>
 </div>
 
@@ -92,34 +92,34 @@
   <span class="short-code-description">Stub. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/analog">Analog code</a>.
+      <a href="/c/analog">Sphere packing</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_fsk">Coherent FSK (CFSK) classical-over-quantum code</a>.
+      <a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a>.
   </span>
 </div>
 
 
 <div class="ecc-code" id="ecc_points_into_lattices">
   <span class="short-code-name"><a href="/c/points_into_lattices">Lattice-based code</a></span>
-  <span class="short-code-description">Encodes states (codewords) in coordinates of an <span class="inline-math">\(n\)</span>-dimensional lattice. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span>
-  <span class="short-code-info">Protection: Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span> of nearest neighbors at each lattice point, and the <span class="textit">volume</span> <span class="inline-math">\(V=\det G\)</span>, which is equal to the determinant of the lattice generator matrix <span class="inline-math">\(G\)</span>.</span>
+  <span class="short-code-description">Encodes states (codewords) in coordinates of an <span class="inline-math">\(n\)</span>-dimensional lattice, i.e., a discrete set of points in Euclidean space <span class="inline-math">\(\mathbb{R}^n\)</span> that forms a group under vector addition when the set is translated such that one point is at the origin. The number of codewords may be infinite because the coordinate space is infinite-dimensional, so various restricted versions have to be constructed in practice. Since lattices are closed under addition, lattice-based codes can be thought of as linear codes over the reals.</span>
+  <span class="short-code-info">Protection: Lattices are characterized by the <span class="textit">minimum (Euclidean) distance</span> <span class="inline-math">\(d_{\text{min}}\)</span> between two lattice points, the <span class="textit">kissing number</span> <span class="inline-math">\(K_{\text{min}}\)</span> of nearest neighbors at each lattice point, and the <span class="textit">volume</span> <span class="inline-math">\(V=\det G\)</span>, which is the volume of the lattice&#x27;s <span class="textit">fundamental region</span> that can be used to tile all of <span class="inline-math">\(\mathbb{R}^n\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/analog">Analog code</a>.
+      <a href="/c/analog">Sphere packing</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/antipode">Antipode lattice code</a>,       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/hexagonal">Hexagonal lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>,       <a href="/c/unimodular">Unimodular lattice code</a>,       <a href="/c/dthree"><span class="inline-math">\(D_3\)</span> face-centered cubic (fcc) lattice code</a>,       <a href="/c/esix"><span class="inline-math">\(E_6\)</span> lattice code</a>,       <a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a>.
+      <a href="/c/antipode">Antipode lattice code</a>,       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>,       <a href="/c/root">Root lattice code</a>,       <a href="/c/unimodular">Unimodular lattice code</a>,       <a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/linear">Linear code</a>.
+      <a href="/c/linear">Linear code</a>,       <a href="/c/group_orbit">Group-orbit code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/best">Best code</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>.
+      <a href="/c/best">Best code</a>,       <a href="/c/lattice_shell">Lattice-shell code</a>,       <a href="/c/group_linear">Linear code over <span class="inline-math">\(G\)</span></a>,       <a href="/c/multimodegkp">Multi-mode GKP code</a>,       <a href="/c/qam">Quadrature-amplitude modulation (QAM) code</a>,       <a href="/c/hypercubic"><span class="inline-math">\(\mathbb{Z}^n\)</span> hypercubic lattice code</a>.
   </span>
 </div>
 
@@ -129,7 +129,7 @@
   <span class="short-code-description">A <span class="inline-math">\(q\)</span>-ary analog code encoding into <span class="inline-math">\(q\)</span> different signals such that each codeword corresponds to a signal. </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/analog">Analog code</a>.
+      <a href="/c/analog">Sphere packing</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -137,7 +137,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_ppm">PPM classical-over-quantum code</a>.
+      <a href="/c/quantum_ppm">PPM c-q code</a>.
   </span>
 </div>
 
@@ -147,7 +147,7 @@
   <span class="short-code-description">Encodes into points into a subset of points lying on in <span class="inline-math">\(\mathbb{R}^{2}\)</span>, here treated as <span class="inline-math">\(\mathbb{C}\)</span>. Each pair of points is associated with a complex amplitude of an electromagnetic signal, and information is encoded into both the norm and phase of that signal <a href="#citation-1" class="href-endnote endnote citation">[1; Ch. 16]</a>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/analog">Analog code</a>.
+      <a href="/c/analog">Sphere packing</a>.
   </span>
   <span class="short-code-parent-of">
     Parent of:
@@ -194,19 +194,9 @@
     Cousins:
       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
   </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_hexagonal">
-  <span class="short-code-name"><a href="/c/hexagonal">Hexagonal lattice code</a></span>
-  <span class="short-code-description">Two-dimensional lattice that exhibits optimal packing, solving the packing, kissing, covering and quantization problems. Its dual is the <span class="textit">honeycomb lattice</span>.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/points_into_lattices">Lattice-based code</a>.
-  </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/color">Color code</a>.
+      <a href="/c/hypercubic"><span class="inline-math">\(\mathbb{Z}^n\)</span> hypercubic lattice code</a>.
   </span>
 </div>
 
@@ -229,12 +219,27 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_root">
+  <span class="short-code-name"><a href="/c/root">Root lattice code</a></span>
+  <span class="short-code-description">Member of the root-lattice family: <span class="inline-math">\(A_n\)</span>, <span class="inline-math">\(\mathbb{Z}^n\)</span>, <span class="inline-math">\(D_n\)</span>, or <span class="inline-math">\(E_{i}\)</span> with <span class="inline-math">\(i\in\{6,7,8\}\)</span>. A lattice that is symmetric under a specific crystallographic reflection group; see <a href="#citation-3" class="href-endnote endnote citation">[3; Table 4.1]</a> for the list of crystallographic reflection groups and their corresponding root lattices. Their generator matrices can be taken to be the root matrices of the corresponding reflection groups. </span>
+  <span class="short-code-info">Protection: The root lattices contain the densest packings in dimensions <span class="inline-math">\(3-8\)</span> <a href="#citation-4" class="href-endnote endnote citation">[4; Ch. 10]</a>. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/points_into_lattices">Lattice-based code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/hexagonal"><span class="inline-math">\(A_2\)</span> hexagonal lattice code</a>,       <a href="/c/dthree"><span class="inline-math">\(D_3\)</span> face-centered cubic (fcc) lattice code</a>,       <a href="/c/dfour"><span class="inline-math">\(D_4\)</span> hyper-diamond lattice code</a>,       <a href="/c/esix"><span class="inline-math">\(E_6\)</span> lattice code</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>,       <a href="/c/hypercubic"><span class="inline-math">\(\mathbb{Z}^n\)</span> hypercubic lattice code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_unimodular">
   <span class="short-code-name"><a href="/c/unimodular">Unimodular lattice code</a></span>
   <span class="short-code-description">Integral lattice of determinant <span class="inline-math">\(\pm 1\)</span>. </span>
   <span class="short-code-info">Protection: The minimum norm of a unimodular lattice satisfies <span class="display-math env-align">\begin{align}
   \mu\leq2\left[\frac{n}{24}\right]+2
-\end{align}</span> unless <span class="inline-math">\(n = 23\)</span> <a href="#citation-4" class="href-endnote endnote citation">[4]</a>. </span>
+\end{align}</span> unless <span class="inline-math">\(n = 23\)</span> <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. </span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/points_into_lattices">Lattice-based code</a>.
@@ -250,36 +255,8 @@
 </div>
 
 
-<div class="ecc-code" id="ecc_dthree">
-  <span class="short-code-name"><a href="/c/dthree"><span class="inline-math">\(D_3\)</span> face-centered cubic (fcc) lattice code</a></span>
-  <span class="short-code-description">Stub.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/points_into_lattices">Lattice-based code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/cubeoctahedron">Cubeoctahedron code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_esix">
-  <span class="short-code-name"><a href="/c/esix"><span class="inline-math">\(E_6\)</span> lattice code</a></span>
-  <span class="short-code-description">Lattice in dimension <span class="inline-math">\(6\)</span>. </span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/points_into_lattices">Lattice-based code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/hessian_polyhedron">Hessian polyhedron code</a>,       <a href="/c/esix_shell"><span class="inline-math">\(E_6\)</span> lattice-shell code</a>.
-  </span>
-</div>
-
-
 <div class="ecc-code" id="ecc_leech">
-  <span class="short-code-name"><a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
+  <span class="short-code-name"><a href="/c/leech"><span class="inline-math">\(\Lambda_{24}\)</span> Leech lattice code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
   <span class="short-code-description">Lattice in 24 dimensions that exhibits optimal packing. </span>
   <span class="short-code-info">Protection: The <span class="inline-math">\(\Lambda_{24}\)</span> lattice has a nominal coding gain of <span class="inline-math">\(4\)</span>. </span>
   <span class="short-code-parents">
@@ -316,7 +293,7 @@
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/quantum_psk">PSK classical-over-quantum code</a>.
+      <a href="/c/quantum_psk">PSK c-q code</a>.
   </span>
 </div>
 
@@ -336,7 +313,7 @@
 
 
 <div class="ecc-code" id="ecc_bw32">
-  <span class="short-code-name"><a href="/c/bw32"><span class="inline-math">\(BW_{32}\)</span> Barnes-Wall lattice code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
+  <span class="short-code-name"><a href="/c/bw32"><span class="inline-math">\(BW_{32}\)</span> Barnes-Wall lattice code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(32\)</span>. </span>
   <span class="short-code-parents">
     Parents:
@@ -352,10 +329,10 @@
 <div class="ecc-code" id="ecc_dfour">
   <span class="short-code-name"><a href="/c/dfour"><span class="inline-math">\(D_4\)</span> hyper-diamond lattice code</a></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(4\)</span>, which is the lattice corresponding to the <span class="inline-math">\([4,1,4]\)</span> repetition and <span class="inline-math">\([4,3,2]\)</span> SPC codes via the mod-two lattice construction. </span>
-  <span class="short-code-info">Protection: The <span class="inline-math">\(D_4\)</span> lattice has a nominal coding gain of <span class="inline-math">\(\sqrt{2}\)</span>. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(D_4\)</span> lattice has a nominal coding gain of <span class="inline-math">\(\sqrt{2}\)</span>. It exhibits the densest packing in four dimensions <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.&#x27; </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
+      <a href="/c/root">Root lattice code</a>,       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -369,12 +346,12 @@
 
 
 <div class="ecc-code" id="ecc_eeight">
-  <span class="short-code-name"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
+  <span class="short-code-name"><a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a><span class="code-introduced"><a href="#citation-9" class="href-endnote endnote citation">[9]</a></span></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(8\)</span>, which is the lattice corresponding to the <span class="inline-math">\([8,4,4]\)</span> Hamming code via the mod-two lattice construction. </span>
-  <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(2\)</span>. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(E_8\)</span> lattice has a nominal coding gain of <span class="inline-math">\(2\)</span>. It exhibits the densest packing in eight dimensions <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.&#x27; </span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>,       <a href="/c/unimodular">Unimodular lattice code</a>.
+      <a href="/c/root">Root lattice code</a>,       <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/construction_a">Mod-2 lattice code</a>,       <a href="/c/unimodular">Unimodular lattice code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -388,7 +365,7 @@
 
 
 <div class="ecc-code" id="ecc_lambda16">
-  <span class="short-code-name"><a href="/c/lambda16"><span class="inline-math">\(\Lambda_{16}\)</span> Barnes-Wall lattice code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
+  <span class="short-code-name"><a href="/c/lambda16"><span class="inline-math">\(\Lambda_{16}\)</span> Barnes-Wall lattice code</a><span class="code-introduced"><a href="#citation-7" class="href-endnote endnote citation">[7]</a></span></span>
   <span class="short-code-description">BW lattice in dimension <span class="inline-math">\(16\)</span>. </span>
   <span class="short-code-parents">
     Parents:
@@ -401,8 +378,70 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_hexagonal">
+  <span class="short-code-name"><a href="/c/hexagonal"><span class="inline-math">\(A_2\)</span> hexagonal lattice code</a></span>
+  <span class="short-code-description">Two-dimensional lattice that exhibits optimal packing, solving the packing, kissing, covering and quantization problems. Its dual is the <span class="textit">honeycomb lattice</span>. It&#x27;s generator matrix is <span class="display-math env-align">\begin{align}
+  V=\begin{pmatrix}1 &amp; 0\\
+    -1/2 &amp; \sqrt{3}/2
+      \end{pmatrix}~.
+\end{align}</span></span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/root">Root lattice code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/color">Color code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_dthree">
+  <span class="short-code-name"><a href="/c/dthree"><span class="inline-math">\(D_3\)</span> face-centered cubic (fcc) lattice code</a></span>
+  <span class="short-code-description">Stub.</span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(D_3\)</span> fcc lattice exhibits the densest packing in three dimensions <a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/root">Root lattice code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/cubeoctahedron">Cubeoctahedron code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_esix">
+  <span class="short-code-name"><a href="/c/esix"><span class="inline-math">\(E_6\)</span> lattice code</a></span>
+  <span class="short-code-description">Lattice in dimension <span class="inline-math">\(6\)</span>. </span>
+  <span class="short-code-info">Protection: The <span class="inline-math">\(E_6\)</span> lattice exhibits the densest packing in six dimensions <a href="#citation-10" class="href-endnote endnote citation">[10]</a>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/root">Root lattice code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/hessian_polyhedron">Hessian polyhedron code</a>,       <a href="/c/esix_shell"><span class="inline-math">\(E_6\)</span> lattice-shell code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_hypercubic">
+  <span class="short-code-name"><a href="/c/hypercubic"><span class="inline-math">\(\mathbb{Z}^n\)</span> hypercubic lattice code</a></span>
+  <span class="short-code-description">Lattice-based code consisting of all integer vectors in <span class="inline-math">\(n\)</span> dimensions. It&#x27;s generator matrix is the <span class="inline-math">\(n\)</span>-dimensional identity matrix. </span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/root">Root lattice code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/points_into_lattices">Lattice-based code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_niemeier">
-  <span class="short-code-name"><a href="/c/niemeier">Niemeier lattice code</a><span class="code-introduced"><a href="#citation-8" class="href-endnote endnote citation">[8]</a></span></span>
+  <span class="short-code-name"><a href="/c/niemeier">Niemeier lattice code</a><span class="code-introduced"><a href="#citation-12" class="href-endnote endnote citation">[12]</a></span></span>
   <span class="short-code-description">A positive-definite even unimodular lattice of rank 24. </span>
   <span class="short-code-parents">
     Parents:
@@ -420,7 +459,7 @@
 
 
 <div class="ecc-code" id="ecc_bpsk">
-  <span class="short-code-name"><a href="/c/bpsk">Binary PSK (BPSK) code</a><span class="code-introduced"><a href="#citation-9" class="href-endnote endnote citation">[9]</a></span></span>
+  <span class="short-code-name"><a href="/c/bpsk">Binary PSK (BPSK) code</a><span class="code-introduced"><a href="#citation-13" class="href-endnote endnote citation">[13]</a></span></span>
   <span class="short-code-description">Also called a <span class="textit">binary antipodal modulation</span>, <span class="textit">phase-reversal keyring (PRK)</span>, or <span class="textit">antipodal signaling</span>. Encodes one bit of information into a constellation of antipodal points <span class="inline-math">\(\pm\alpha\)</span> for complex <span class="inline-math">\(\alpha\)</span>. These points are typically associated with two phases of an electromagnetic signal in a PAM, PSK, or QAM scheme. </span>
   <span class="short-code-parents">
     Parents:
@@ -428,7 +467,7 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/pam">Pulse-amplitude modulation (PAM) code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/two-legged-cat">Two-component cat code</a>,       <a href="/c/polar_for_quantum">Quantum-classical polar code</a>.
+      <a href="/c/pam">Pulse-amplitude modulation (PAM) code</a>,       <a href="/c/binary_linear">Linear binary code</a>,       <a href="/c/two-legged-cat">Two-component cat code</a>,       <a href="/c/polar_for_quantum">Polar c-q code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -438,7 +477,7 @@
 
 
 <div class="ecc-code" id="ecc_qpsk">
-  <span class="short-code-name"><a href="/c/qpsk">Quadrature PSK (QPSK) code</a><span class="code-introduced"><a href="#citation-10" class="href-endnote endnote citation">[10]</a></span></span>
+  <span class="short-code-name"><a href="/c/qpsk">Quadrature PSK (QPSK) code</a><span class="code-introduced"><a href="#citation-14" class="href-endnote endnote citation">[14]</a></span></span>
   <span class="short-code-description">Also known as <span class="textit">quadriphase PSK</span>, <span class="textit">4-PSK</span>, or <span class="textit">4-QAM</span>. Quaternary encoding into a constellation of four points distributed equidistantly on a circle. For the case of <span class="inline-math">\(\pi/4\)</span>-QPSK, the constellation is <span class="inline-math">\(\{e^{\pm i\frac{\pi}{4}},e^{\pm i\frac{3\pi}{4}}\}\)</span>. </span>
   <span class="short-code-parents">
     Parents:
@@ -447,13 +486,13 @@
 </div>
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, “The antipode construction for sphere packings”, Inventiones Mathematicae <span class="textbf">123</span>, 309 (1996). <a href="https://doi.org/10.1007/BF01232378" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>E. M. Rains and N. J. A. Sloane, “The Shadow Theory of Modular and Unimodular Lattices”, Journal of Number Theory <span class="textbf">73</span>, 359 (1998). <a href="https://doi.org/10.1006/jnth.1998.2306" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. Leech, “Notes on Sphere Packings”, Canadian Journal of Mathematics <span class="textbf">19</span>, 251 (1967). <a href="https://doi.org/10.4153/CJM-1967-017-0" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>E. S. Barnes and G. E. Wall, “Some extreme forms defined in terms of Abelian groups”, Journal of the Australian Mathematical Society <span class="textbf">1</span>, 47 (1959). <a href="https://doi.org/10.1017/S1446788700025064" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd><dt id="citation-8">[8]</dt><dd>H.-V. Niemeier, “Definite quadratische formen der dimension 24 und diskriminante 1”, Journal of Number Theory <span class="textbf">5</span>, 142 (1973). <a href="https://doi.org/10.1016/0022-314X(73)90068-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>A. Lapidoth, <span class="textit">A Foundation in Digital Communication</span> (Cambridge University Press, 2017). <a href="https://doi.org/10.1017/9781316822708" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. H. Conway and N. J. A. Sloane, “The antipode construction for sphere packings”, Inventiones Mathematicae <span class="textbf">123</span>, 309 (1996). <a href="https://doi.org/10.1007/BF01232378" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>T. Ericson, and V. Zinoviev, eds. <span class="textit">Codes on Euclidean spheres</span>. Elsevier, 2001.</dd><dt id="citation-5">[5]</dt><dd>E. M. Rains and N. J. A. Sloane, “The Shadow Theory of Modular and Unimodular Lattices”, Journal of Number Theory <span class="textbf">73</span>, 359 (1998). <a href="https://doi.org/10.1006/jnth.1998.2306" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>J. Leech, “Notes on Sphere Packings”, Canadian Journal of Mathematics <span class="textbf">19</span>, 251 (1967). <a href="https://doi.org/10.4153/CJM-1967-017-0" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>E. S. Barnes and G. E. Wall, “Some extreme forms defined in terms of Abelian groups”, Journal of the Australian Mathematical Society <span class="textbf">1</span>, 47 (1959). <a href="https://doi.org/10.1017/S1446788700025064" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>A. Korkine and G. Zolotareff, Sur les formes quadratique positive quaternaires, Math. Ann., Vol. 5, pp. 581-583, 1872.</dd><dt id="citation-9">[9]</dt><dd>Gosset, Thorold. &quot;On the regular and semi-regular figures in space of n dimensions.&quot; Messenger of Mathematics 29 (1900): 43-48.</dd><dt id="citation-10">[10]</dt><dd>H.F. Blichfeldt, The minimum values of positive quadratic forms in six, seven and eight variables, Math.Zeit, Vol.39, pp. 1-15, 1935.</dd><dt id="citation-11">[11]</dt><dd>C.F. Gauss, Besprechung des Buchs von L.A. Seeber, Untersuchungen uber die Eigenschaften der positiven terndren quadratischen Formen usw. Gottingsche Gelehrte Anzeigen, July 9, 1831 = Werke, II, pp. 188-196, 1876.</dd><dt id="citation-12">[12]</dt><dd>H.-V. Niemeier, “Definite quadratische formen der dimension 24 und diskriminante 1”, Journal of Number Theory <span class="textbf">5</span>, 142 (1973). <a href="https://doi.org/10.1016/0022-314X(73)90068-1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-13">[13]</dt><dd>C. E. Shannon, “A Mathematical Theory of Communication”, Bell System Technical Journal <span class="textbf">27</span>, 623 (1948). <a href="https://doi.org/10.1002/j.1538-7305.1948.tb00917.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-14">[14]</dt><dd>P. A. Baker, “Phase-modulation data sets for serial transmission at 2,000 and 2,400 bits per second”, Transactions of the American Institute of Electrical Engineers, Part I: Communication and Electronics <span class="textbf">81</span>, 166 (1962). <a href="https://doi.org/10.1109/TCE.1962.6373228" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 
   <nav id="navigation">
 
-<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/analog">Analog Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1><a href="/domain/quantum_into_classical_domain">Classical-over-quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubit_classical_into_quantum">Binary Classical-over-quantum Kingdom</a></li><li><a href="/kingdom/bosonic_classical_into_quantum">Analog Classical-over-quantum Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
+<ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/search">Search</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/bits_into_bits">Binary Kingdom</a></li><li><a href="/kingdom/q-ary_digits_into_q-ary_digits">Galois-field Kingdom</a></li><li><a href="/kingdom/matrices_into_matrices">Matrix Kingdom</a></li><li><a href="/kingdom/analog">Analog Kingdom</a></li><li><a href="/kingdom/points_into_spheres">Spherical Kingdom</a></li><li><a href="/kingdom/rings_into_rings">Ring Kingdom</a></li><li><a href="/kingdom/group_classical">Group Kingdom</a></li></ul><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubits_into_qubits">Qubit Kingdom</a></li><li><a href="/kingdom/qudits_into_qudits">Modular-qudit Kingdom</a></li><li><a href="/kingdom/galois_into_galois">Galois-qudit Kingdom</a></li><li><a href="/kingdom/oscillators">Bosonic Kingdom</a></li><li><a href="/kingdom/spins_into_spins">Spin Kingdom</a></li><li><a href="/kingdom/group_quantum">Group Kingdom</a></li><li><a href="/kingdom/category_quantum">Category Kingdom</a></li></ul><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><ul class="navlinks"><li><a href="/kingdom/qubit_classical_into_quantum">Binary Classical-quantum Kingdom</a></li><li><a href="/kingdom/bosonic_classical_into_quantum">Analog Classical-quantum Kingdom</a></li></ul><h1></h1><ul class="navlinks"><li><a href="/edit_code">Add new code</a></li><!--<li><a href="/additional_resources">Additional resources</a></li>--><li><a href="/team">Team</a></li><li><a href="/about">About</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
