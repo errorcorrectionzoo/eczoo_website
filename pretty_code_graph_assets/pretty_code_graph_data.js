@@ -614,7 +614,7 @@ GENERATED_pretty_code_graph_data = {
                 "data": {
                     "id": "c_dn",
                     "label": "\\(D_n\\)",
-                    "_code_name": "\\(D_n\\) root lattice code",
+                    "_code_name": "\\(D_n\\) checkerboard lattice code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
