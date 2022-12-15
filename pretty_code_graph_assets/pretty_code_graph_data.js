@@ -120,7 +120,7 @@ GENERATED_pretty_code_graph_data = {
                     "_code_href": "/c/qubit_classical_into_quantum",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
-                    "_kingdom_name": "Binary Classical-quantum Kingdom",
+                    "_kingdom_name": "Binary c-q Kingdom",
                     "_kingdom_href": "/kingdom/qubit_classical_into_quantum"
                 },
                 "position": {
@@ -191,7 +191,7 @@ GENERATED_pretty_code_graph_data = {
                     "_code_href": "/c/bosonic_classical_into_quantum",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
-                    "_kingdom_name": "Analog Classical-quantum Kingdom",
+                    "_kingdom_name": "Analog c-q Kingdom",
                     "_kingdom_href": "/kingdom/bosonic_classical_into_quantum"
                 },
                 "position": {
@@ -2449,7 +2449,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((4,120,(3-\\sqrt{5})/2)\\) code whose codewords are the vertices of the 600-cell. The code forms a spherical 11-design that is unique up to equivalence [P. Boyvalenkov and D. Danev, \u201cUniqueness of the 120-point spherical 11-design in four dimensions\u201d, Archiv der Mathematik 77, 360 (2001). DOI]. See [M. Waegell and P. K. Aravind, \u201cCritical noncolorings of the 600-cell proving the Bell\u2013Kochen\u2013Specker theorem\u201d, Journal of Physics A: Mathematical and Theoretical 43, 105304 (2010). DOI; 0911.2289; Table 1] for a realization of the 120 codewords. \u2026",
+                    "_description": "Spherical \\((4,120,(3-\\sqrt{5})/2)\\) code whose codewords are the vertices of the 600-cell. The code forms a spherical 11-design that is unique up to equivalence [P. Boyvalenkov and D. Danev, \u201cUniqueness of the 120-point spherical 11-design in four dimensions\u201d, Archiv der Mathematik 77, 360 (2001). DOI]. See [M. Waegell and P. K. Aravind, \u201cCritical noncolorings of the 600-cell proving the Bell\u2013Kochen\u2013Specker theorem\u201d, Journal of Physics A: Mathematical and Theoretical 43, 105304 (2010). DOI; 0911.2289; Table 1][S. Mamone, G. Pileio, and M. H. Levitt, \u201cOrientational Sampling Schemes Based on Four Dimensional Polytopes\u201d, Symmetry 2, 1423 (2010). DOI; Table 3] for realizations of the 120 codewords. ",
                     "_code_href": "/c/600cell",
                     "_family_generation_level": 6
                 },
@@ -4544,12 +4544,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_3d_surface",
-                    "label": "Solid",
-                    "_code_name": "Solid code",
+                    "label": "3D surface",
+                    "_code_name": "3D surface code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "A variant of Kitaev's surface code on a 3D lattice.",
+                    "_description": "A variant of the Kitaev surface code on a 3D lattice. The closely related solid code [K. P. Michnicki, \u201c3D Topological Quantum Memory with a Power-Law Energy Barrier\u201d, Physical Review Letters 113, (2014). DOI; 1406.4227] consists of several 3D surface codes stitched together in a way that the distance scales faster than the linear \u2026",
                     "_code_href": "/c/3d_surface",
                     "_family_generation_level": 6
                 },
