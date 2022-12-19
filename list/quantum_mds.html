@@ -82,7 +82,7 @@ Here is a list of code families which contain <a href="/c/quantum_mds" class="hr
 <tr>
   <td class="top left"><a href="/c/stab_5_1_3">Five-qubit perfect code</a></td>
   <td class="textit">Five-qubit stabilizer code with generators that are symmetric under cyclic permutation of qubits, <span class="display-math env-align">\begin{align} \begin{split} S_1 &amp;= IXZZX \\ S_2 &amp;= XZZXI \\ S_3 &amp;= ZZXIX \\ S_4 &amp;= ZXIXZ~. \end{split} \end{align}</span></td>
-  <td class="textit">The five-qubit codes is the smallest qubit quantum MDS code.</td>
+  <td class="textit">The five-qubit codes is one of the two qubit quantum MDS codes.</td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/galois_grs">Galois-qudit GRS code</a></td>
@@ -128,6 +128,23 @@ d \leq n-k+1
   <td class="top left"><a href="/c/galois_true_stabilizer">True Galois-qudit stabilizer code</a></td>
   <td class="textit">Also called a <span class="textit">linear stabilizer code</span>. A <span class="inline-math">\([[n,k,d]]_{GF(q)}\)</span> stabilizer code whose stabilizer&#x27;s symplectic representation forms a linear subspace. In other words, the set of <span class="inline-math">\(q\)</span>-ary vectors representing the stabilizer group is closed under both addition and multiplication by elements of <span class="inline-math">\(GF(q)\)</span>. In contrast, Galois-qudit stabilizer codes admit sets of vectors that are closed under addition only.</td>
   <td class="textit">Many MDS codes are constructed from Hermitian self-orthogonal codes over <span class="inline-math">\(GF(q^2)\)</span> using the Hermitian construction <a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a>, in particular from cyclic <a href="#citation-1" class="href-endnote endnote citation">[1]</a>, constacyclic <a href="#citation-11" class="href-endnote endnote citation">[11]</a><a href="#citation-12" class="href-endnote endnote citation">[12]</a> and negacyclic <a href="#citation-13" class="href-endnote endnote citation">[13]</a> codes.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/iceberg"><span class="inline-math">\([[2m,2m-2,2]]\)</span> error-detecting code</a></td>
+  <td class="textit">Also known as the <span class="textit">iceberg</span> code. CSS stabilizer code for <span class="inline-math">\(m\geq 2\)</span> with generators <span class="inline-math">\(\{XX\cdots X, ZZ\cdots Z\} \)</span> acting on all <span class="inline-math">\(2m\)</span> physical qubits. Admits a basis such that each codeword is a superposition of a computational basis state labeled by a bitstring <span class="inline-math">\(b\)</span> and a state labeled by the negation of <span class="inline-math">\(b\)</span>. Such states generalize the two-qubit Bell states and three-qubit GHz states and are often called cat states. </td>
+  <td class="textit">The <span class="inline-math">\([[2m,2m-2,2]]\)</span> error-detecting code is one of the two qubit quantum MDS <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</td>
+</tr>
+<tr>
+  <td class="top left"><a href="/c/stab_4_2_2"><span class="inline-math">\([[4,2,2]]\)</span> CSS code</a></td>
+  <td class="textit">Also known as the <span class="inline-math">\(C_4\)</span> code. Four-qubit CSS stabilizer code with generators <span class="inline-math">\(\{XXXX, ZZZZ\} \)</span> and codewords <span class="display-math env-align">\begin{align}
+  \begin{split}
+    |\overline{00}\rangle = (|0000\rangle + |1111\rangle)/\sqrt{2}~{\phantom{.}}\\
+    |\overline{01}\rangle = (|0011\rangle + |1100\rangle)/\sqrt{2}~{\phantom{.}}\\
+    |\overline{10}\rangle = (|0101\rangle + |1010\rangle)/\sqrt{2}~{\phantom{.}}\\
+    |\overline{11}\rangle = (|0110\rangle + |1001\rangle)/\sqrt{2}~.
+  \end{split}
+\end{align}</span> This code is the smallest single-qubit error-detecting code. It is also the smallest instance of the toric code, and its various single-qubit subcodes are small planar surface codes.</td>
+  <td class="textit"></td>
 </tr>
 </tbody>
 </table>
