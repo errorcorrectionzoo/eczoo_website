@@ -2398,7 +2398,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((4,48,2-\\sqrt{2})\\) code whose codewords are the vertices of the disphenoidal \\(288\\)-cell. Codewords are the union of two 24-point lattice shells of the \\(D_4\\) lattice. A realization of the codewords \u2026",
+                    "_description": "Spherical \\((4,48,2-\\sqrt{2})\\) code [T. Ericson, and V. Zinoviev, eds. Codes on Euclidean spheres. Elsevier, 2001.; Ex. 1.2.6] whose codewords are the vertices of the disphenoidal \\(288\\)-cell. Codewords are the union of two 24-point lattice shells of the \\(D_4\\) lattice. The first shell consists of \u2026",
                     "_code_href": "/c/disphenoidal288cell",
                     "_family_generation_level": 6
                 },
