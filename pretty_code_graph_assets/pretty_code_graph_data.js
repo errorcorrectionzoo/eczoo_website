@@ -2500,7 +2500,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Spherical \\((4,600,0.0121407)\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design because its vertices can be divided into five 600-cells, each of which forms said \u2026",
+                    "_description": "Spherical \\((4,600,(7-3\\sqrt{5})/4)\\) code whose codewords are the vertices of the 120-cell. The code forms a spherical 11-design because its vertices can be divided into five 600-cells, each of which forms \u2026",
                     "_code_href": "/c/120cell",
                     "_family_generation_level": 5
                 },
