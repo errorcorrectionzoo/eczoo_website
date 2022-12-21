@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the vertices of a tetrahedron. In general, the code makes up the vertices of an <span class="inline-math">\(n\)</span>-simplex. See <a href="#citation-1" class="href-endnote endnote citation">[1; Sec. 7.7]</a> for a parameterization.</p><p>Simplex spherical codes are the only tight spherical 2-designs <a href="#citation-1" class="href-endnote endnote citation">[1; Tab. 9.3]</a>.</p></div>
+<div class="sectioncontent code-description"><p>Spherical <span class="inline-math">\((n,n+1,2+2/n)\)</span> code whose codewords are all permutations of the <span class="inline-math">\(n+1\)</span>-dimensional vector <span class="inline-math">\((1,1,\cdots,1,-n)\)</span>, up to normalization, forming an <span class="inline-math">\(n\)</span>-simplex. Codewords are all equidistant and their components add up to zero. For example, the spherical simplex code in <span class="inline-math">\(n=3\)</span> makes up the vertices of a tetrahedron. In general, the code makes up the vertices of an <span class="inline-math">\(n\)</span>-simplex. See <a href="#citation-1" class="href-endnote endnote citation">[1; Sec. 7.7]</a> for a parameterization.</p><p>Simplex spherical codes are the only tight spherical 2-designs <a href="#citation-1" class="href-endnote endnote citation">[1; Tab. 9.3]</a>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
 <div class="sectioncontent code-protection">Simplex spherical codes for <span class="inline-math">\(2 &lt; \rho \leq 4\)</span> saturate the first two Rankin bounds <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. </div>
@@ -150,17 +150,21 @@
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;A binary simplex code (also known as a shortened Hadamard code) to a <span class="inline-math">\((2^m,2^m+1)\)</span> simplex signal set under the antipodal mapping <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.5.2]</a>. This set is equivalent to the simplex code since all such codes are unique up to equivalence <a href="#citation-1" class="href-endnote endnote citation">[1; pg. 18]</a>. Simplex (simplex spherical) codes form simplices in Hamming (Euclidean) space.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/simplex">Simplex code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;A binary simplex code (also known as a shortened Hadamard code) maps to a <span class="inline-math">\((2^m,2^m+1)\)</span> simplex signal set under the antipodal mapping <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.5.2]</a>. This set is equivalent to the simplex code since all such codes are unique up to equivalence <a href="#citation-1" class="href-endnote endnote citation">[1; pg. 18]</a>. Simplex (simplex spherical) codes form simplices in Hamming (Euclidean) space.</span></li>
-  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/icosahedron">Icosahedron code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Vertices of a dodecahedron can be split up into vertices of five tetrahedra <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hadamard">Hadamard code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The shortened Hadamard code maps to a <span class="inline-math">\((2^m,2^m+1)\)</span> simplex spherical code under the antipodal mapping <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.5.2]</a><a href="#citation-1" class="href-endnote endnote citation">[1; pg. 18]</a>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/polyphase">Polyphase code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;Simplex spherical codes for dimension <span class="inline-math">\(n=(p-1)/2\)</span> with <span class="inline-math">\(p\)</span> an odd prime admit a polyphase realization <a href="#citation-1" class="href-endnote endnote citation">[1; Sec. 7.7]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/simplex">Simplex code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Binary simplex codes map to simplex spherical codes under the antipodal mapping <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 6.5.2]</a><a href="#citation-1" class="href-endnote endnote citation">[1; pg. 18]</a>. In other words, simplex (simplex spherical) codes form simplices in Hamming (Euclidean) space.</span></li>
 </ul>
 </div>
 
@@ -247,7 +251,7 @@ url={https://errorcorrectionzoo.org/c/simplex_spherical}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/permutation_spherical">Permutation spherical</a></li><li><a href="/c/slepian_group">Slepian group-orbit</a></li><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/polytope">Polytope</a></li><li><a href="/c/binary_antipodal">Binary antipodal</a></li><li><a href="/c/simplex">Simplex</a></li><li><a href="/c/icosahedron">Icosahedron</a></li><li><a href="/c/polyphase">Polyphase</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/permutation_spherical">Permutation spherical</a></li><li><a href="/c/slepian_group">Slepian group-orbit</a></li><li><a href="/c/spherical">Spherical</a></li><li><a href="/c/polytope">Polytope</a></li><li><a href="/c/binary_antipodal">Binary antipodal</a></li><li><a href="/c/icosahedron">Icosahedron</a></li><li><a href="/c/hadamard">Hadamard</a></li><li><a href="/c/polyphase">Polyphase</a></li><li><a href="/c/simplex">Simplex</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

@@ -364,11 +364,11 @@
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/binary_ltc">Binary linear LTC</a>.
+      <a href="/c/bch">Binary BCH code</a>,       <a href="/c/dual">Dual linear code</a>,       <a href="/c/binary_duadic">Binary duadic code</a>,       <a href="/c/binary_cyclic">Cyclic linear binary code</a>,       <a href="/c/binary_ltc">Binary linear LTC</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
-      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>.
+      <a href="/c/barnes_wall">Barnes-Wall (BW) lattice code</a>,       <a href="/c/generalized_reed_muller">Generalized RM (GRM) code</a>,       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/majorana_stab">Majorana stabilizer code</a>,       <a href="/c/polar">Polar code</a>,       <a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a>,       <a href="/c/quantum_divisible">Quantum divisible code</a>,       <a href="/c/simplex">Simplex code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>.
   </span>
 </div>
 
@@ -461,14 +461,14 @@
 
 <div class="ecc-code" id="ecc_hadamard">
   <span class="short-code-name"><a href="/c/hadamard">Hadamard code</a></span>
-  <span class="short-code-description">Also known as a <span class="textit">Walsh code</span> or <span class="textit">Walsh-Hadamard code</span>. An <span class="inline-math">\([2^k,k,2^{k-1}]\)</span> balanced binary code dual to an extended Hamming Code.</span>
+  <span class="short-code-description">Also known as a <span class="textit">Walsh code</span> or <span class="textit">Walsh-Hadamard code</span>. An <span class="inline-math">\([2^m,m,2^{m-1}]\)</span> balanced binary code dual to an extended Hamming Code.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/binary_ltc">Binary linear LTC</a>,       <a href="/c/long">Long code</a>,       <a href="/c/balanced">Balanced code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
-      <a href="/c/dual">Dual linear code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>.
+      <a href="/c/dual">Dual linear code</a>,       <a href="/c/hamming">Hamming code</a>,       <a href="/c/reed_muller">Reed-Muller (RM) code</a>,       <a href="/c/simplex_spherical">Simplex spherical code</a>,       <a href="/c/biorthogonal">Biorthogonal spherical code</a>.
   </span>
   <span class="short-code-cousin-of">
     Cousin of:
@@ -652,7 +652,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/hamming743">Hamming <span class="inline-math">\([7,4,3]\)</span> code</a>.
+      <a href="/c/hamming743"><span class="inline-math">\([7,4,3]\)</span> Hamming code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -661,6 +661,32 @@
   <span class="short-code-cousin-of">
     Cousin of:
       <a href="/c/hadamard">Hadamard code</a>,       <a href="/c/repetition">Repetition code</a>,       <a href="/c/quantum_hamming"><span class="inline-math">\([[2^r, 2^r-r-2, 3]]\)</span> quantum Hamming code</a>,       <a href="/c/quantum_hamming_css"><span class="inline-math">\([[2^r-1, 2^r-2r-1, 3]]\)</span> Hamming-based CSS code</a>.
+  </span>
+</div>
+
+
+<div class="ecc-code" id="ecc_hamming743">
+  <span class="short-code-name"><a href="/c/hamming743"><span class="inline-math">\([7,4,3]\)</span> Hamming code</a><span class="code-introduced"><a href="#citation-52" class="href-endnote endnote citation">[52]</a><a href="#citation-53" class="href-endnote endnote citation">[53]</a><a href="#citation-50" class="href-endnote endnote citation">[50]</a></span></span>
+  <span class="short-code-description">Second-smallest member of the Hamming code family with generator matrix <span class="display-math env-align">\begin{align}
+\left(\begin{array}{ccccccccccc}
+  1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0\\
+  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1\\
+  0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1
+\end{array}\right)~.
+\end{align}</span> Can be extended to yield the <span class="inline-math">\([8,4,4]\)</span> extended Hamming code. </span>
+  <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/hamming">Hamming code</a>,       <a href="/c/projective">Projective geometry code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/steane"><span class="inline-math">\([[7,1,3]]\)</span> Steane code</a>.
+  </span>
+  <span class="short-code-cousin-of">
+    Cousin of:
+      <a href="/c/octacode">Octacode</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>.
   </span>
 </div>
 
@@ -674,15 +700,11 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/golay">Golay code</a>.
+      <a href="/c/golay">Golay code</a>,       <a href="/c/hamming743"><span class="inline-math">\([7,4,3]\)</span> Hamming code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/q-ary_quad_residue"><span class="inline-math">\(q\)</span>-ary quadratic-residue (QR) code</a>,       <a href="/c/group">Group-algebra code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/hamming743">Hamming <span class="inline-math">\([7,4,3]\)</span> code</a>.
   </span>
 </div>
 
@@ -702,32 +724,6 @@
   <span class="short-code-cousins">
     Cousins:
       <a href="/c/tornado">Tornado code</a>.
-  </span>
-</div>
-
-
-<div class="ecc-code" id="ecc_hamming743">
-  <span class="short-code-name"><a href="/c/hamming743">Hamming <span class="inline-math">\([7,4,3]\)</span> code</a><span class="code-introduced"><a href="#citation-52" class="href-endnote endnote citation">[52]</a><a href="#citation-53" class="href-endnote endnote citation">[53]</a><a href="#citation-50" class="href-endnote endnote citation">[50]</a></span></span>
-  <span class="short-code-description">Second-smallest member of the Hamming code family with generator matrix <span class="display-math env-align">\begin{align}
-\left(\begin{array}{ccccccccccc}
-  1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0\\
-  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1\\
-  0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
-  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1
-\end{array}\right)~.
-\end{align}</span> Can be extended to yield the <span class="inline-math">\([8,4,4]\)</span> extended Hamming code. </span>
-  <span class="short-code-info">Protection: Can detect 1-bit and 2-bit errors, and can correct 1-bit errors.</span>
-  <span class="short-code-parents">
-    Parents:
-      <a href="/c/hamming">Hamming code</a>.
-  </span>
-  <span class="short-code-cousins">
-    Cousins:
-      <a href="/c/projective">Projective geometry code</a>,       <a href="/c/binary_quad_residue">Binary quadratic-residue (QR) code</a>,       <a href="/c/steane"><span class="inline-math">\([[7,1,3]]\)</span> Steane code</a>.
-  </span>
-  <span class="short-code-cousin-of">
-    Cousin of:
-      <a href="/c/octacode">Octacode</a>,       <a href="/c/eeight"><span class="inline-math">\(E_8\)</span> Gosset lattice code</a>.
   </span>
 </div>
 
