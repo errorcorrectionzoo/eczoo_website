@@ -2104,12 +2104,12 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_sidelnikov",
-                    "label": "Sidelnikov group-orbit",
-                    "_code_name": "Sidelnikov group-orbit code",
+                    "label": "Clifford group-orbit",
+                    "_code_name": "Clifford group-orbit code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Slepian group-orbit code of dimension \\(2^r\\), approximate asympotic size \\(2.38 \\cdot 2^{r(r+1)/2+1}\\), and distance \\(1\\). Code is constructed by applying elements of a particular family of orthogonal groups onto \u2026",
+                    "_description": "Slepian group-orbit code of dimension \\(2^r\\), approximate asympotic size \\(2.38 \\cdot 2^{r(r+1)/2+1}\\), and distance \\(1\\). Code is constructed by applying elements of the Clifford group, when taken as a subgroup of \u2026",
                     "_code_href": "/c/sidelnikov",
                     "_family_generation_level": 4
                 },
