@@ -82,8 +82,19 @@ Here is a list of code families which contain <a href="/c/perfect" class="href-r
   <td class="textit">This code&#x27;s properties are derived from the size two chain complex associated with a particular graph. Given a connected simplicial (no self loops or muliedges) graph <span class="inline-math">\(G = (V, E)\)</span>, which is not a tree, with incidence matrix <span class="inline-math">\(\Gamma\)</span> we can construct a code by choosing a parity check matrix which consists of all the linearly independent rows of <span class="inline-math">\(\Gamma\)</span>. This is a <span class="inline-math">\([n,k,d]\)</span> code with <span class="inline-math">\(n = |E|\)</span>, <span class="inline-math">\(k = 1 - \mathcal{X}(G) = 1-|V|+|E|\)</span>, where <span class="inline-math">\( \mathcal{X}(G)\)</span> is the euler characteristic of the graph. The code distance is equal to the shortest size of a cycle, guaranteed to exist since <span class="inline-math">\(G\)</span> is not a tree. </td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/hamming743">Hamming <span class="inline-math">\([7,4,3]\)</span> code</a></td>
+  <td class="textit">Second-smallest member of the Hamming code family with generator matrix <span class="display-math env-align">\begin{align}
+\left(\begin{array}{ccccccccccc}
+  1 &amp; 0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 0\\
+  0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 0 &amp; 1\\
+  0 &amp; 0 &amp; 1 &amp; 0 &amp; 0 &amp; 1 &amp; 1\\
+  0 &amp; 0 &amp; 0 &amp; 1 &amp; 1 &amp; 1 &amp; 1
+\end{array}\right)~.
+\end{align}</span> Can be extended to yield the <span class="inline-math">\([8,4,4]\)</span> extended Hamming code. </td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/hamming">Hamming code</a></td>
-  <td class="textit">An infinite family of perfect linear codes with parameters <span class="inline-math">\((2^r-1,2^r-r-1, 3)\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns.</td>
+  <td class="textit">An infinite family of perfect linear codes with parameters <span class="inline-math">\([2^r-1,2^r-r-1, 3]\)</span> for <span class="inline-math">\(r \geq 2\)</span>. Their <span class="inline-math">\(r \times (2^r-1) \)</span> parity check matrix <span class="inline-math">\(H\)</span> has all possible non-zero <span class="inline-math">\(r\)</span>-bit strings as its columns. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/perfect">Perfect code</a></td>
