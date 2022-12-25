@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Generalization of the GKP code to <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators.</p><p>Displacement operators on <span class="inline-math">\(n\)</span> modes can be written as <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>Bosonic stabilizre code on <span class="inline-math">\(n\)</span> bosonic modes whose stabilizer group is an infinite countable group of oscillator displacement operators which implement lattice translations in phase space.</p><p>Displacement operators on <span class="inline-math">\(n\)</span> modes can be written as <span class="display-math env-align">\begin{align}
 D(\xi) = \exp \left\{-i \sqrt{2\pi} {\xi}^\mathrm{T} J \hat{q} \right\} , \quad \xi \in \mathbb{R}^{2n}~,
 \end{align}</span> where <span class="inline-math">\(\hat{q}\)</span> is a <span class="inline-math">\(2n\)</span>-dimensional vector position and momentum operators of the modes, the symplectic form <span class="display-math env-align">\begin{align}
 J = \begin{pmatrix} 0 &amp; 1 \\ -1 &amp; 0 \end{pmatrix} \otimes I_n = \begin{pmatrix}
@@ -183,6 +183,10 @@ A_{ij}={\xi}^T_i J \xi_j \in \mathbb{Z}~.
       &#x2014;&nbsp;GKP-stabilizer codes are <span class="inline-math">\(n\)</span>-mode GKP codes with less than <span class="inline-math">\(2n\)</span> stabilizers. Equivalently, they correspond to multimode GKP codes constructed using a degenerate lattice (see Appx. A of Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/gkp">Gottesman-Kitaev-Preskill (GKP) code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/hexagonal_gkp">Hexagonal GKP code</a></span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/dfour_gkp"><span class="inline-math">\(D_4\)</span> GKP code</a></span></li>
 </ul>
 </div>
 
@@ -200,7 +204,7 @@ A_{ij}={\xi}^T_i J \xi_j \in \mathbb{Z}~.
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/points_into_lattices">Lattice-based code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Multimode GKP codes are quantum analogues of lattice-based codes.</span></li>
+      &#x2014;&nbsp;Multimode GKP codes can be thought of as quantum lattice codes because they store information in quantum superpositions of points on a lattice in quantum phase space.</span></li>
 </ul>
 </div>
 
@@ -237,10 +241,10 @@ A_{ij}={\xi}^T_i J \xi_j \in \mathbb{Z}~.
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/multimodegkp.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/multimodegkp.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=multimodegkp&amp;code_yml_filename=quantum/oscillators/stabilizer/multimodegkp.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>multimodegkp</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=multimodegkp&amp;code_yml_filename=quantum/oscillators/stabilizer/gkp/multimodegkp.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>multimodegkp</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -277,9 +281,9 @@ url={https://errorcorrectionzoo.org/c/multimodegkp}
 <div class="sectioncontent display-print-citation">
   <p>“Multi-mode GKP code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/multimodegkp</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/multimodegkp.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/multimodegkp.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/multimodegkp.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/multimodegkp.yml</a>.</p>
 </div>
 
 
@@ -289,7 +293,7 @@ url={https://errorcorrectionzoo.org/c/multimodegkp}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oscillator_stabilizer">Bosonic stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/coherent_constellation">Coherent-state constellation quantum</a></li><li><a href="/c/gkp-cluster-state">GKP cluster-state concatenated</a></li><li><a href="/c/gkp-stabilizer">GKP-stabilizer</a></li><li><a href="/c/gkp">GKP</a></li><li><a href="/c/approximate_qecc">AQECC</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oscillator_stabilizer">Bosonic stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/coherent_constellation">Coherent-state constellation quantum</a></li><li><a href="/c/gkp-cluster-state">GKP cluster-state concatenated</a></li><li><a href="/c/gkp-stabilizer">GKP-stabilizer</a></li><li><a href="/c/gkp">GKP</a></li><li><a href="/c/hexagonal_gkp">Hexagonal GKP</a></li><li><a href="/c/approximate_qecc">AQECC</a></li><li><a href="/c/points_into_lattices">Lattice-based</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">

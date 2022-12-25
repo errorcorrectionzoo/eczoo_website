@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>Multimode GKP code with an infinite-dimensional logical space. Can be obtained by considering an <span class="inline-math">\(n\)</span>-mode GKP code with a finite-dimensional logical space, removing stabilizers such that the logical space becomes infinite dimensional, and applying a Gaussian circuit.</p><p>Simple GKP-stabilizer codes include GKP-repetition codes and GKP two-mode-squeezing (TMS) codes <a href="#citation-1" class="href-endnote endnote citation">[1]</a>. Arbitrary GKP-stabilizer codes can be reduced to generalized GKP TMS codes, and the optimal code design problem can be efficiently solved <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</p></div>
 
 
 
@@ -105,6 +105,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Syndromes can be read off using ancilla modes, yielding partial information about noise in the logical modes that can then be used in an efficient ML decoding procedure <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
 
 
 
@@ -113,11 +116,15 @@
 
 <h2 id="feature_threshold"
       class="code-feature code-feature-threshold">Threshold</h2>
-  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Thresholds against displacement noise cannot be obtained without ideal (i.e., non-normalizable) codewords <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-threshold"><span class="paragraph-in-list">Thresholds against displacement noise cannot be obtained without ideal (i.e., non-normalizable) codewords <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">Introduction to and examples of GKP-stabilizer codes <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -134,32 +141,40 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/multimodegkp">Multi-mode GKP code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GKP-stabilizer codes are <span class="inline-math">\(n\)</span>-mode GKP codes with less than <span class="inline-math">\(2n\)</span> stabilizers. Equivalently, they correspond to multimode GKP codes constructed using a degenerate lattice (see Appx. A of Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a>).</span></li>
+      &#x2014;&nbsp;GKP-stabilizer codes are <span class="inline-math">\(n\)</span>-mode GKP codes with less than <span class="inline-math">\(2n\)</span> stabilizers. Equivalently, they correspond to multimode GKP codes constructed using a degenerate lattice (see Appx. A of Ref. <a href="#citation-6" class="href-endnote endnote citation">[6]</a>).</span></li>
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/quantum_concatenated">Concatenated quantum code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;GKP-stabilizer oscillator-into-oscillator codes concantenated with GKP qubit-into-mode codes can outperform the more conventional concatenations of GKP codes with qubit stabilizer codes <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></li>
+      &#x2014;&nbsp;GKP-stabilizer oscillator-into-oscillator codes concantenated with GKP qubit-into-mode codes can outperform the more conventional concatenations of GKP codes with qubit stabilizer codes <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></li>
 </ul>
 </div>
 
 
 <h2 id="relations_cousins" class="code-cousins">
-    Cousin
+    Cousins
 </h2>
 <div class="sectioncontent code-cousins">
 
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/dfour_gkp"><span class="inline-math">\(D_4\)</span> GKP code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;<span class="inline-math">\(D_4\)</span> GKP codes may be optimal for GKP stabilizer codes utilizing two ancilla modes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/hexagonal_gkp">Hexagonal GKP code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Hexagonal GKP codes may be optimal for GKP stabilizer codes utilizing one ancilla mode <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+  <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/analog_stabilizer">Analog stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Analog stabilizer codes protect logical modes against artbirarily large displacements on a few modes, while GKP-stabilizer codes protect a finite-dimensional logical space against sufficiently small displacements in any number of modes. Encoding in analog-stabilizer (GKP-stabilizer) codes can be done by a Gaussian operation acting on a tensor product of an arbitrary state in the first mode and position states (GKP states) on the remaining modes. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a>, so GKP-stabilizer codes can be thought of as analog stabilizer encodings utilizing non-Gaussian GKP resource states.</span></li>
+      &#x2014;&nbsp;Analog stabilizer codes protect logical modes against artbirarily large displacements on a few modes, while GKP-stabilizer codes protect a finite-dimensional logical space against sufficiently small displacements in any number of modes. Encoding in analog-stabilizer (GKP-stabilizer) codes can be done by a Gaussian operation acting on a tensor product of an arbitrary state in the first mode and position states (GKP states) on the remaining modes. Protection of logical modes against small displacements cannot be done using only Gaussian resources <a href="#citation-7" class="href-endnote endnote citation">[7]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a>, so GKP-stabilizer codes can be thought of as analog stabilizer encodings utilizing non-Gaussian GKP resource states.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href-href">1903.12615</a></dd><dt id="citation-2">[2]</dt><dd>L. Hanggli and R. Konig, “Oscillator-to-Oscillator Codes Do Not Have a Threshold”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 1068 (2022). <a href="https://doi.org/10.1109/TIT.2021.3126881" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2102.05545" target="_blank" class="href-href">2102.05545</a></dd><dt id="citation-3">[3]</dt><dd>J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href-href">2109.14645</a></dd><dt id="citation-4">[4]</dt><dd>Yijia Xu et al., “Qubit-oscillator concatenated codes: decoding formalism &amp; code comparison”. <a href="https://arxiv.org/abs/2209.04573" target="_blank" class="href-href">2209.04573</a></dd><dt id="citation-5">[5]</dt><dd>C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href-href">1810.00047</a></dd><dt id="citation-6">[6]</dt><dd>J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href-href">quant-ph/0204052</a></dd><dt id="citation-7">[7]</dt><dd>J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href-href">0811.3128</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>K. Noh, S. M. Girvin, and L. Jiang, “Encoding an Oscillator into Many Oscillators”, Physical Review Letters <span class="textbf">125</span>, (2020). <a href="https://doi.org/10.1103/PhysRevLett.125.080503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1903.12615" target="_blank" class="href-href">1903.12615</a></dd><dt id="citation-2">[2]</dt><dd>Jing Wu, Anthony J. Brady, and Quntao Zhuang, “Optimal encoding of oscillators into more oscillators”. <a href="https://arxiv.org/abs/2212.11970" target="_blank" class="href-href">2212.11970</a></dd><dt id="citation-3">[3]</dt><dd>Yijia Xu et al., “Qubit-oscillator concatenated codes: decoding formalism &amp; code comparison”. <a href="https://arxiv.org/abs/2209.04573" target="_blank" class="href-href">2209.04573</a></dd><dt id="citation-4">[4]</dt><dd>L. Hanggli and R. Konig, “Oscillator-to-Oscillator Codes Do Not Have a Threshold”, IEEE Transactions on Information Theory <span class="textbf">68</span>, 1068 (2022). <a href="https://doi.org/10.1109/TIT.2021.3126881" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2102.05545" target="_blank" class="href-href">2102.05545</a></dd><dt id="citation-5">[5]</dt><dd>Victor V. Albert, “Bosonic coding: introduction and use cases”. <a href="https://arxiv.org/abs/2211.05714" target="_blank" class="href-href">2211.05714</a></dd><dt id="citation-6">[6]</dt><dd>J. Conrad, J. Eisert, and F. Arzani, “Gottesman-Kitaev-Preskill codes: A lattice perspective”, Quantum <span class="textbf">6</span>, 648 (2022). <a href="https://doi.org/10.22331/q-2022-02-10-648" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2109.14645" target="_blank" class="href-href">2109.14645</a></dd><dt id="citation-7">[7]</dt><dd>C. Vuillot et al., “Quantum error correction with the toric Gottesman-Kitaev-Preskill code”, Physical Review A <span class="textbf">99</span>, (2019). <a href="https://doi.org/10.1103/PhysRevA.99.032344" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1810.00047" target="_blank" class="href-href">1810.00047</a></dd><dt id="citation-8">[8]</dt><dd>J. Eisert, S. Scheel, and M. B. Plenio, “Distilling Gaussian States with Gaussian Operations is Impossible”, Physical Review Letters <span class="textbf">89</span>, (2002). <a href="https://doi.org/10.1103/PhysRevLett.89.137903" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0204052" target="_blank" class="href-href">quant-ph/0204052</a></dd><dt id="citation-9">[9]</dt><dd>J. Niset, J. Fiurášek, and N. J. Cerf, “No-Go Theorem for Gaussian Quantum Error Correction”, Physical Review Letters <span class="textbf">102</span>, (2009). <a href="https://doi.org/10.1103/PhysRevLett.102.120501" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0811.3128" target="_blank" class="href-href">0811.3128</a></dd></dl></div>
 
 
 
@@ -167,7 +182,8 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-09-15)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-12-15)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-09-15)</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
     (2022-03-24)</li></ul>
 </details>
 
@@ -189,10 +205,10 @@
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp-stabilizer.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/gkp-stabilizer.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=gkp-stabilizer&amp;code_yml_filename=quantum/oscillators/stabilizer/gkp-stabilizer.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>gkp-stabilizer</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=gkp-stabilizer&amp;code_yml_filename=quantum/oscillators/stabilizer/gkp/gkp-stabilizer.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>gkp-stabilizer</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -229,9 +245,9 @@ url={https://errorcorrectionzoo.org/c/gkp-stabilizer}
 <div class="sectioncontent display-print-citation">
   <p>“GKP-stabilizer code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2022. https://errorcorrectionzoo.org/c/gkp-stabilizer</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp-stabilizer.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/gkp-stabilizer.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp-stabilizer.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/oscillators/stabilizer/gkp/gkp-stabilizer.yml</a>.</p>
 </div>
 
 
@@ -241,7 +257,7 @@ url={https://errorcorrectionzoo.org/c/gkp-stabilizer}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/quantum_concatenated">Concatenated quantum</a></li><li><a href="/c/analog_stabilizer">Analog stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/oscillators_into_oscillators">Oscillator-into-oscillator</a></li><li><a href="/c/oscillators">Bosonic</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/multimodegkp">Multi-mode GKP</a></li><li><a href="/c/quantum_concatenated">Concatenated quantum</a></li><li><a href="/c/dfour_gkp"><span class="inline-math">\(D_4\)</span> GKP</a></li><li><a href="/c/hexagonal_gkp">Hexagonal GKP</a></li><li><a href="/c/analog_stabilizer">Analog stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
