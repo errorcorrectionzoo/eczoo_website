@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>Linear subspace of a Hilbert space whose basis states satisfy only a part of the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a>. The satisfied part of the conditions ensures that the code can be used for local parameter estimation.</p><p>Letting <span class="inline-math">\(\Pi = U U^\dagger\)</span> be the codespace projector for encoding isometry <span class="inline-math">\(U\)</span> and projecting a pair of errors <span class="inline-math">\(E_i,E_j\)</span> from an error set <span class="inline-math">\(\cal E\)</span> into the two-dimensional codespace yields <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-description"><p>Two-dimensional subspace of a Hilbert space whose basis states satisfy only a part of the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a>. The satisfied part of the conditions ensures that the code can be used for local parameter estimation.</p><p>Letting <span class="inline-math">\(\Pi = U U^\dagger\)</span> be the codespace projector for encoding isometry <span class="inline-math">\(U\)</span> and projecting a pair of errors <span class="inline-math">\(E_i,E_j\)</span> from an error set <span class="inline-math">\(\cal E\)</span> into the two-dimensional codespace yields <span class="display-math env-align">\begin{align}
   \Pi E_{i}^{^{\dagger}}E_{j}\Pi=c_{ij}\,\Pi+x_{ij}\overline{X}+y_{ij}\overline{Y}+z_{ij}\overline{Z}
 \end{align}</span> with error-matrix element <span class="inline-math">\(c_{ij}\)</span> and logical-error coefficients <span class="display-math env-align">\begin{align}
   \left\{ x,y,z\right\} _{ij}={\textstyle \frac{1}{2}}\text{Tr}\left(\left\{ \overline{X},\overline{Y},\overline{Z}\right\} E_{i}^{^{\dagger}}E_{j}\right)~.
@@ -137,19 +137,6 @@
 </ul>
 </div>
 
-<h2 id="relations_parent_of" class="code-parent-of">
-    Child
-</h2>
-<div class="sectioncontent code-parent-of">
-
-
-<ul class="code-relations-list code-parent-of-list">
-  <li class="paragraph-in-list">
-    <span class="code-parent-of-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span><span class="code-parent-of-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Metrological codes satisfy the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a> conditions only partially, and codes that satisfy them fully are QECCs.</span></li>
-</ul>
-</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -170,6 +157,10 @@
     <span class="code-cousins-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;A joint <span class="inline-math">\(+1\)</span> and <span class="inline-math">\(-1\)</span> eigenstate of a set of stabilizer can form a metrological stabilizer code <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qecc">Quantum error-correcting code (QECC)</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Metrological codes satisfy the <a href="/c/qecc_finite#defterm-Knill-Laflamme_20Xconditions" class="href-term">Knill-Laflamme conditions</a> conditions only partially, and codes that satisfy them fully are QECCs.</span></li>
 </ul>
 </div>
 
@@ -256,7 +247,7 @@ url={https://errorcorrectionzoo.org/c/metrological}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/quantum_into_quantum">Quantum</a></li><li><a href="/c/eacq">EACQ</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/metopt">Error-corrected sensing</a></li><li><a href="/c/covariant">Covariant</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/quantum_into_quantum">Quantum</a></li><li><a href="/c/eacq">EACQ</a></li><li><a href="/c/metopt">Error-corrected sensing</a></li><li><a href="/c/covariant">Covariant</a></li><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/qecc">QECC</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
