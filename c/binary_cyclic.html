@@ -109,7 +109,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Meggitt decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Information set decoding (ISD) <a href="#citation-3" class="href-endnote endnote citation">[3]</a>, a probabilistic decoding strategy that essentially tries to guess <span class="inline-math">\(k\)</span> correct positions in the received word, where <span class="inline-math">\(k\)</span> is the size of the code. Then, an error vector is constructed to map the received word onto the nearest codeword, assuming the <span class="inline-math">\(k\)</span> positions are error free. When the Hamming weight of the error vector is low enough, that codeword is assumed to be the intended transmission.</span><span class="paragraph-in-list">Permutation decoding <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 
@@ -122,7 +122,7 @@
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#citation-3" class="href-endnote endnote citation">[3]</a> for an exposition on cyclic codes.</span><span class="paragraph-in-list">See Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a> for tables of the best binary cyclic codes of odd lengths 101 to 127.</span>
+  <span class="paragraph-in-list">See Ch. 7 of Ref. <a href="#citation-5" class="href-endnote endnote citation">[5]</a> for an exposition on cyclic codes.</span><span class="paragraph-in-list">See Ref. <a href="#citation-6" class="href-endnote endnote citation">[6]</a> for tables of the best binary cyclic codes of odd lengths 101 to 127.</span>
 </div>
 
 
@@ -180,29 +180,30 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/binary_ltc">Binary linear LTC</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Cyclic linear codes cannot be <span class="inline-math">\(c^3\)</span>-LTCs <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. Codeword symmetries are in general an obstruction to achieving such LTCs <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span></li>
+      &#x2014;&nbsp;Cyclic linear codes cannot be <span class="inline-math">\(c^3\)</span>-LTCs <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. Codeword symmetries are in general an obstruction to achieving such LTCs <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/majorana_stab">Majorana stabilizer code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Cyclic binary linear codes can be used to construct translation-invariant Majorana stabilizer codes, provided that they are also self-orthogonal <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span></li>
+      &#x2014;&nbsp;Cyclic binary linear codes can be used to construct translation-invariant Majorana stabilizer codes, provided that they are also self-orthogonal <a href="#citation-9" class="href-endnote endnote citation">[9]</a>.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/reed_muller">Reed-Muller (RM) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#citation-3" class="href-endnote endnote citation">[3]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes. RM codes with nonzero evaluation points are cyclic (<a href="#citation-8" class="href-endnote endnote citation">[8]</a>, pg. 52).</span></li>
+      &#x2014;&nbsp;Punctured RM codes are cyclic (<a href="#citation-5" class="href-endnote endnote citation">[5]</a>, Ch. 13, Thm. 11), making RM codes extended cyclic codes. RM codes with nonzero evaluation points are cyclic (<a href="#citation-10" class="href-endnote endnote citation">[10]</a>, pg. 52).</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-4">[4]</dt><dd>D. Schomaker and M. Wirtz, “On binary cyclic codes of odd lengths from 101 to 127”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 516 (1992). <a href="https://doi.org/10.1109/18.119714" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>L. Babai, A. Shpilka, and D. Stefankovic, “Locally Testable Cyclic Codes”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 2849 (2005). <a href="https://doi.org/10.1109/TIT.2005.851735" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>M. Sudan, “Invariance in Property Testing”, Property Testing 211 (2010). <a href="https://doi.org/10.1007/978-3-642-16367-8_12" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href-href">1703.00459</a></dd><dt id="citation-8">[8]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>J. van Lint and R. Wilson, “On the minimum distance of cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">32</span>, 23 (1986). <a href="https://doi.org/10.1109/TIT.1986.1057134" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>J. Meggitt, “Error correcting codes and their implementation for data transmission systems”, IEEE Transactions on Information Theory <span class="textbf">7</span>, 234 (1961). <a href="https://doi.org/10.1109/TIT.1961.1057659" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>E. Prange, “The use of information sets in decoding cyclic codes”, IEEE Transactions on Information Theory <span class="textbf">8</span>, 5 (1962). <a href="https://doi.org/10.1109/TIT.1962.1057777" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>J. Macwilliams, “Permutation Decoding of Systematic Codes”, Bell System Technical Journal <span class="textbf">43</span>, 485 (1964). <a href="https://doi.org/10.1002/j.1538-7305.1964.tb04075.x" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>D. Schomaker and M. Wirtz, “On binary cyclic codes of odd lengths from 101 to 127”, IEEE Transactions on Information Theory <span class="textbf">38</span>, 516 (1992). <a href="https://doi.org/10.1109/18.119714" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>L. Babai, A. Shpilka, and D. Stefankovic, “Locally Testable Cyclic Codes”, IEEE Transactions on Information Theory <span class="textbf">51</span>, 2849 (2005). <a href="https://doi.org/10.1109/TIT.2005.851735" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>M. Sudan, “Invariance in Property Testing”, Property Testing 211 (2010). <a href="https://doi.org/10.1007/978-3-642-16367-8_12" target="_blank" class="href-href">DOI</a></dd><dt id="citation-9">[9]</dt><dd>Sagar Vijay and Liang Fu, “Quantum Error Correction for Complex and Majorana Fermion Qubits”. <a href="https://arxiv.org/abs/1703.00459" target="_blank" class="href-href">1703.00459</a></dd><dt id="citation-10">[10]</dt><dd>M. A. Tsfasman and S. G. Vlăduţ, <span class="textit">Algebraic-geometric Codes</span> (Springer Netherlands, 1991). <a href="https://doi.org/10.1007/978-94-011-3810-9" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
 
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
-<ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-07-13)      — most recent</li></ul>
+<ul><li><a href="/team#user-MazinKarjikar">Mazin Karjikar</a>
+    (2022-12-30)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-07-13)</li></ul>
 </details>
 
 

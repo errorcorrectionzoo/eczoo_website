@@ -191,7 +191,7 @@ GENERATED_pretty_code_graph_data = {
                     "_code_href": "/c/bosonic_classical_into_quantum",
                     "_family_generation_level": 2,
                     "_is_kingdom": 1,
-                    "_kingdom_name": "Analog c-q Kingdom",
+                    "_kingdom_name": "Bosonic/analog c-q Kingdom",
                     "_kingdom_href": "/kingdom/bosonic_classical_into_quantum"
                 },
                 "position": {
