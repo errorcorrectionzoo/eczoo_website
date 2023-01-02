@@ -8,15 +8,15 @@
 <meta name="citation_author" content="Victor V. Albert" />
 <meta name="citation_author" content="Philippe Faist" />
 <meta name="citation_title" content="The Error Correction Zoo" />
-<meta name="citation_publication_date" content="2022" />
-<meta name="citation_date" content="2022" />
+<meta name="citation_publication_date" content="2023" />
+<meta name="citation_date" content="2023" />
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
 <meta name="DC.title" content="The Error Correction Zoo" />
 <meta name="DC.author" content="Victor V. Albert"/>
 <meta name="DC.author" content="Philippe Faist"/>
-<meta name="DC.issued" content="2022" />
+<meta name="DC.issued" content="2023" />
 
 
   <title>
@@ -124,6 +124,10 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
   <td class="textit">A <span class="inline-math">\([23, 12, 7]\)</span> perfect binary linear code with connections to various areas of mathematics, e.g., lattices <a href="#citation-4" class="href-endnote endnote citation">[4]</a> and sporadic simple groups <a href="#citation-5" class="href-endnote endnote citation">[5]</a>. Adding a parity bit to the code results in the <span class="inline-math">\([24, 12, 8]\)</span> <span class="textit">extended Golay code</span>. Up to equivalence, both codes are unique for their respective parameters.</td>
 </tr>
 <tr>
+  <td class="top left"><a href="/c/gold">Gold code</a></td>
+  <td class="textit">A <span class="inline-math">\([2^r-1, 2r ]\)</span> is a cyclic linear code characterized by the generator polynomial of degree <span class="inline-math">\(r\)</span> of two maximum-period sequences of period <span class="inline-math">\(2^r-1\)</span> with absolute cross-correlation <span class="inline-math">\( \leq 2^((r+2)/2)\)</span>. Gold codewords are generated using <span class="inline-math">\(m\)</span>-sequences <span class="inline-math">\(x\)</span> and <span class="inline-math">\(y\)</span>, which are codewords of simplex codes with check polynomials of degree <span class="inline-math">\(r\)</span> <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</td>
+</tr>
+<tr>
   <td class="top left"><a href="/c/gs-ltc">Goldreich-Sudan code</a></td>
   <td class="textit">Locally testable <span class="inline-math">\([[n,k,d]]\)</span> code with <span class="inline-math">\(n = k^{1+O(1/u)}\)</span> and distance <span class="inline-math">\(\Omega(n)\)</span> for query complexity <span class="inline-math">\(u\)</span>. The same work also presented a probabilistic construction of codes of size <span class="inline-math">\(k^{1+o(1)}\)</span>. </td>
 </tr>
@@ -145,7 +149,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 </tr>
 <tr>
   <td class="top left"><a href="/c/kmrs-ltc">Kopparty-Meir-Ron-Zewi-Saraf (KMRS) code</a></td>
-  <td class="textit">Member of a family of locally testable binary linear codes with constant rate, constant relative distance, and subpolynomial query complexity <span class="inline-math">\(u = (\log n)^{O(\log \log n)}\)</span>). Later work by Gopi, Kopparty, Oliveira, Ron-Zewi, and Saraf <a href="#citation-6" class="href-endnote endnote citation">[6]</a> showed that related concatenated codes achieve the Gilbert-Varshamov bound. </td>
+  <td class="textit">Member of a family of locally testable binary linear codes with constant rate, constant relative distance, and subpolynomial query complexity <span class="inline-math">\(u = (\log n)^{O(\log \log n)}\)</span>). Later work by Gopi, Kopparty, Oliveira, Ron-Zewi, and Saraf <a href="#citation-7" class="href-endnote endnote citation">[7]</a> showed that related concatenated codes achieve the Gilbert-Varshamov bound. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/lr-cayley-complex">Left-right Cayley complex code</a></td>
@@ -157,7 +161,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 </tr>
 <tr>
   <td class="top left"><a href="/c/long">Long code</a></td>
-  <td class="textit">Locally testable <span class="inline-math">\([[2^{2^k},k,d]]\)</span> code. The encoder maps a <span class="inline-math">\(k\)</span>-bit string into a codeword that consists of the values of all Boolean functions on the <span class="inline-math">\(k\)</span>-bit string. The code is not practical, but is useful for certain probabilistically checkable proof (PCP) constructions <a href="#citation-7" class="href-endnote endnote citation">[7]</a>. </td>
+  <td class="textit">Locally testable <span class="inline-math">\([[2^{2^k},k,d]]\)</span> code. The encoder maps a <span class="inline-math">\(k\)</span>-bit string into a codeword that consists of the values of all Boolean functions on the <span class="inline-math">\(k\)</span>-bit string. The code is not practical, but is useful for certain probabilistically checkable proof (PCP) constructions <a href="#citation-8" class="href-endnote endnote citation">[8]</a>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/luby_transform">Luby transform (LT) code</a></td>
@@ -185,7 +189,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 </tr>
 <tr>
   <td class="top left"><a href="/c/ta-shma">Ta-Shma zigzag code</a></td>
-  <td class="textit">Member of a family of <span class="inline-math">\(\epsilon\)</span>-balanced codes that nearly achieves the asymptotic Gilbert-Varshamov bound. The codes have relative distance <span class="inline-math">\(\frac{1}{2}-\frac{\epsilon}{2}\)</span> and rate of order <span class="inline-math">\(\Omega (\epsilon^{2+\beta})\)</span> for <span class="inline-math">\(\beta\to 0\)</span> as <span class="inline-math">\(n\to\infty\)</span> <a href="#citation-8" class="href-endnote endnote citation">[8]</a>. </td>
+  <td class="textit">Member of a family of <span class="inline-math">\(\epsilon\)</span>-balanced codes that nearly achieves the asymptotic Gilbert-Varshamov bound. The codes have relative distance <span class="inline-math">\(\frac{1}{2}-\frac{\epsilon}{2}\)</span> and rate of order <span class="inline-math">\(\Omega (\epsilon^{2+\beta})\)</span> for <span class="inline-math">\(\beta\to 0\)</span> as <span class="inline-math">\(n\to\infty\)</span> <a href="#citation-9" class="href-endnote endnote citation">[9]</a>. </td>
 </tr>
 <tr>
   <td class="top left"><a href="/c/tanner">Tanner code</a></td>
@@ -220,7 +224,7 @@ Here is a list of <a href="/c/binary_linear" class="href-ref ref-code">binary li
 
 
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>A. Leverrier, V. Londe, and G. Zémor, “Towards local testability for quantum coding”, Quantum <span class="textbf">6</span>, 661 (2022). <a href="https://doi.org/10.22331/q-2022-02-24-661" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1911.03069" target="_blank" class="href-href">1911.03069</a></dd><dt id="citation-3">[3]</dt><dd>Eli Ben-Sasson and Madhu Sudan, “Robust Locally Testable Codes and Products of Codes”. <a href="https://arxiv.org/abs/cs/0408066" target="_blank" class="href-href">cs/0408066</a></dd><dt id="citation-4">[4]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>S. Gopi et al., “Locally Testable and Locally Correctable Codes approaching the Gilbert-Varshamov Bound”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 5813 (2018). <a href="https://doi.org/10.1109/TIT.2018.2809788" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>Prahladh Harsha et al., “Limits of Approximation Algorithms: PCPs and Unique Games (DIMACS Tutorial Lecture Notes)”. <a href="https://arxiv.org/abs/1002.3864" target="_blank" class="href-href">1002.3864</a></dd><dt id="citation-8">[8]</dt><dd>Fernando Granha Jeronimo et al., “<span class="verbatimtext">Unique Decoding of Explicit $ε$-balanced Codes Near the Gilbert-Varshamov Bound</span>”. <a href="https://arxiv.org/abs/2011.05500" target="_blank" class="href-href">2011.05500</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>V. Pless, “Duadic Codes and Generalizations”, Eurocode ’92 3 (1993). <a href="https://doi.org/10.1007/978-3-7091-2786-5_1" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>A. Leverrier, V. Londe, and G. Zémor, “Towards local testability for quantum coding”, Quantum <span class="textbf">6</span>, 661 (2022). <a href="https://doi.org/10.22331/q-2022-02-24-661" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1911.03069" target="_blank" class="href-href">1911.03069</a></dd><dt id="citation-3">[3]</dt><dd>Eli Ben-Sasson and Madhu Sudan, “Robust Locally Testable Codes and Products of Codes”. <a href="https://arxiv.org/abs/cs/0408066" target="_blank" class="href-href">cs/0408066</a></dd><dt id="citation-4">[4]</dt><dd>J. H. Conway and N. J. A. Sloane, <span class="textit">Sphere Packings, Lattices and Groups</span> (Springer New York, 1999). <a href="https://doi.org/10.1007/978-1-4757-6568-7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>F. J. MacWilliams and N. J. A. Sloane. <span class="textit">The theory of error correcting codes</span>. Elsevier, 1977.</dd><dt id="citation-6">[6]</dt><dd>R. Gold, “Optimal binary sequences for spread spectrum multiplexing (Corresp.)”, IEEE Transactions on Information Theory <span class="textbf">13</span>, 619 (1967). <a href="https://doi.org/10.1109/TIT.1967.1054048" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>S. Gopi et al., “Locally Testable and Locally Correctable Codes approaching the Gilbert-Varshamov Bound”, IEEE Transactions on Information Theory <span class="textbf">64</span>, 5813 (2018). <a href="https://doi.org/10.1109/TIT.2018.2809788" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Prahladh Harsha et al., “Limits of Approximation Algorithms: PCPs and Unique Games (DIMACS Tutorial Lecture Notes)”. <a href="https://arxiv.org/abs/1002.3864" target="_blank" class="href-href">1002.3864</a></dd><dt id="citation-9">[9]</dt><dd>Fernando Granha Jeronimo et al., “<span class="verbatimtext">Unique Decoding of Explicit $ε$-balanced Codes Near the Gilbert-Varshamov Bound</span>”. <a href="https://arxiv.org/abs/2011.05500" target="_blank" class="href-href">2011.05500</a></dd></dl></div>
 
 
   </main><!-- #main -->
