@@ -3526,7 +3526,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "A \\([2^r-1, 2r ]\\) is a cyclic linear code characterized by the generator polynomial of degree \\(r\\) of two maximum-period sequences of period \\(2^r-1\\) with absolute cross-correlation \\( \\leq 2^((r+2)/2)\\). Gold \u2026",
+                    "_description": "Member of the family of \\([2^r-1, 2r ]\\) cyclic binary linear code characterized by the generator polynomial of degree \\(r\\) of two maximum-period sequences of period \\(2^r-1\\) with absolute cross-correlation \\( \\leq 2^{(r+2)/2}\\). \u2026",
                     "_code_href": "/c/gold",
                     "_family_generation_level": 5
                 },
@@ -3589,8 +3589,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_reversible",
-                    "label": "Reversible binary",
-                    "_code_name": "Reversible binary code",
+                    "label": "Reversible",
+                    "_code_name": "Reversible code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
@@ -3611,7 +3611,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Cyclic \\([2^m -1, 2^m - 1 - 2m, 5]\\) linear code with generator polynomial is \\(g(x) = p(x)p(x)*\\), where \\(p(x)\\) is a primitive polynomial of degree \\(m\\) that is the minimal polynomial over \\(GF(2)\\) of an element \\(\\alpha\\) of \u2026",
+                    "_description": "Cyclic \\([2^m -1, 2^m - 1 - 2m, 5]\\) linear code with generator polynomial is \\(g(x) = p(x)p(x)^{\\star}\\), where \\(p(x)\\) is a primitive polynomial of degree \\(m\\) that is the minimal polynomial over \\(GF(2)\\) of an element \\(\\alpha\\) of \u2026",
                     "_code_href": "/c/melas",
                     "_family_generation_level": 3
                 },
