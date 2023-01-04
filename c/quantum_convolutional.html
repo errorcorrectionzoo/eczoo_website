@@ -80,13 +80,13 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Quantum convolutional code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a></span></h1>
+      Quantum convolutional code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Stub.</div>
+<div class="sectioncontent code-description"><p>One-dimensional translationally invariant qubit stabilizer code whose whose stabilizer group can be partitioned into constant-size subsets of constant support and of constant overlap between neighboring sets. Initially formulated as a quantum analogue of convolutional codes, which were designed to protect a continuous and never-ending stream of information. Precise formulations sometimes begin with a finite-dimensional lattice, with the intent to take the thermodynamic limit.</p><p>Quantum convolutional codes, like their classical counterparts, can also be understood in terms of frames. Let each encoding frame take in <span class="inline-math">\(n\)</span> qubits, carry <span class="inline-math">\(m\)</span> qubits of information between frames, and act on them with <span class="inline-math">\(n-k\)</span> Pauli generators. Each generator, countably infinite in length, must commute with each <span class="inline-math">\(n\)</span> register shift of itself, but need not commute with the other generators <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. The <span class="inline-math">\(m\)</span> qubits of information carried between each frame are also stabilized by additional memory Pauli operators. It is known that the minimal value for <span class="inline-math">\(m\)</span> is given by <span class="inline-math">\(\text{dim}(M)-\frac{1}{2}\text{rank}(M)\)</span>, with <span class="inline-math">\(M\)</span> being the matrix containing the required commutation relations of the memory qubits <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>. These operators can be efficiently determined <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</p><p>See Refs. <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a> for explicit and simple examples.</p></div>
 
 
 
@@ -100,11 +100,17 @@
 
 
 
+<h2 id="feature_encoders"
+      class="code-feature code-feature-encoders">Encoding</h2>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding is efficient and uses only Clifford gates. Some encoders yield <span class="textit">catastrophic</span> errors, i.e., errors that require a circuit of depth that is non-constant depth to correct <a href="#citation-2" class="href-endnote endnote citation">[2; Def. 4.1]</a>.</span></div>
 
 
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">ML decoder <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
 
@@ -127,10 +133,23 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/qubit_stabilizer">Qubit stabilizer code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/translationally_invariant_stabilizer">Translationally invariant stabilizer code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;Quantum convolutional codes are translationally-invariant stabilizer codes on an semi-infinite or infinite lattice in one dimension <a href="#citation-11" class="href-endnote endnote citation">[11]</a>. However, some notions may be extendable to non-stabilizer codes <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 4]</a>.</span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/stab_5_1_2_convolutional"><span class="inline-math">\((5,1,2)\)</span>-convolutional code</a></span></li>
+</ul>
+</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -140,19 +159,17 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span><span class="code-cousins-1-detail">
-      <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum analogue of convolutional codes</span></li>
+    <span class="code-cousins-1-code"><a href="/c/convolutional">Convolutional code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_reed_muller">Quantum Reed-Muller code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum convolutional codes can be derived from Quantum Reed-Muller codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span></li>
+      &#x2014;&nbsp;Quantum convolutional codes can be derived from Quantum Reed-Muller codes <a href="#citation-12" class="href-endnote endnote citation">[12]</a>.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href-href">quant-ph/0511016</a></dd><dt id="citation-2">[2]</dt><dd>Salah A. Aly, Andreas Klappenecker, and Pradeep Kiran Sarvepalli, “Quantum Convolutional Codes Derived From Reed-Solomon and Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/0701037" target="_blank" class="href-href">quant-ph/0701037</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>H. Ollivier and J.-P. Tillich, “Description of a Quantum Convolutional Code”, Physical Review Letters <span class="textbf">91</span>, (2003). <a href="https://doi.org/10.1103/PhysRevLett.91.177902" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0304189" target="_blank" class="href-href">quant-ph/0304189</a></dd><dt id="citation-2">[2]</dt><dd>H. Ollivier and J. -P. Tillich, “Quantum convolutional codes: fundamentals”. <a href="https://arxiv.org/abs/quant-ph/0401134" target="_blank" class="href-href">quant-ph/0401134</a></dd><dt id="citation-3">[3]</dt><dd>M. Grassl and M. Rotteler, “Constructions of Quantum Convolutional Codes”, 2007 IEEE International Symposium on Information Theory (2007). <a href="https://doi.org/10.1109/ISIT.2007.4557325" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703182" target="_blank" class="href-href">quant-ph/0703182</a></dd><dt id="citation-4">[4]</dt><dd>M. Houshmand, S. Hosseini-Khayat, and M. M. Wilde, “Minimal-Memory, Noncatastrophic, Polynomial-Depth Quantum Convolutional Encoders”, IEEE Transactions on Information Theory <span class="textbf">59</span>, 1198 (2013). <a href="https://doi.org/10.1109/TIT.2012.2220520" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1105.0649" target="_blank" class="href-href">1105.0649</a></dd><dt id="citation-5">[5]</dt><dd>M. M. Wilde, M. Houshmand, and S. Hosseini-Khayat, “Examples of minimal-memory, non-catastrophic quantum convolutional encoders”, 2011 IEEE International Symposium on Information Theory Proceedings (2011). <a href="https://doi.org/10.1109/ISIT.2011.6034166" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1011.5535" target="_blank" class="href-href">1011.5535</a></dd><dt id="citation-6">[6]</dt><dd>M. M. Wilde and T. A. Brun, “Optimal entanglement formulas for entanglement-assisted quantum coding”, Physical Review A <span class="textbf">77</span>, (2008). <a href="https://doi.org/10.1103/PhysRevA.77.064302" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0804.1404" target="_blank" class="href-href">0804.1404</a></dd><dt id="citation-7">[7]</dt><dd>Lane G. Gunderman, “Transforming Collections of Pauli Operators into Equivalent Collections of Pauli Operators over Minimal Registers”. <a href="https://arxiv.org/abs/2206.13040" target="_blank" class="href-href">2206.13040</a></dd><dt id="citation-8">[8]</dt><dd>G. D. Forney, M. Grassl, and S. Guha, “Convolutional and Tail-Biting Quantum Error-Correcting Codes”, IEEE Transactions on Information Theory <span class="textbf">53</span>, 865 (2007). <a href="https://doi.org/10.1109/TIT.2006.890698" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0511016" target="_blank" class="href-href">quant-ph/0511016</a></dd><dt id="citation-9">[9]</dt><dd>M. Grassl and M. Rotteler, “Non-catastrophic Encoders and Encoder Inverses for Quantum Convolutional Codes”, 2006 IEEE International Symposium on Information Theory (2006). <a href="https://doi.org/10.1109/ISIT.2006.261956" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0602129" target="_blank" class="href-href">quant-ph/0602129</a></dd><dt id="citation-10">[10]</dt><dd>M. Grassl and M. Rotteler, “Quantum block and convolutional codes from self-orthogonal product codes”, Proceedings. International Symposium on Information Theory, 2005. ISIT 2005. (2005). <a href="https://doi.org/10.1109/ISIT.2005.1523493" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0703181" target="_blank" class="href-href">quant-ph/0703181</a></dd><dt id="citation-11">[11]</dt><dd>Jeongwan Haah, “Lattice quantum codes and exotic topological phases of matter”. <a href="https://arxiv.org/abs/1305.6973" target="_blank" class="href-href">1305.6973</a></dd><dt id="citation-12">[12]</dt><dd>Salah A. Aly, Andreas Klappenecker, and Pradeep Kiran Sarvepalli, “Quantum Convolutional Codes Derived From Reed-Solomon and Reed-Muller Codes”. <a href="https://arxiv.org/abs/quant-ph/0701037" target="_blank" class="href-href">quant-ph/0701037</a></dd></dl></div>
 
 
 
@@ -160,7 +177,8 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2021-12-14)      — most recent</li></ul>
+    (2023-01-04)      — most recent</li><li><a href="/team#user-LaneGGunderman">Lane G. Gunderman</a>
+    (2023-01-04)</li></ul>
 </details>
 
 
@@ -181,10 +199,10 @@
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_convolutional.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/quantum_convolutional.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=quantum_convolutional&amp;code_yml_filename=quantum/qubits/quantum_convolutional.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_convolutional</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=quantum_convolutional&amp;code_yml_filename=quantum/qubits/qldpc/quantum_convolutional.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>quantum_convolutional</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -221,9 +239,9 @@ url={https://errorcorrectionzoo.org/c/quantum_convolutional}
 <div class="sectioncontent display-print-citation">
   <p>“Quantum convolutional code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/quantum_convolutional</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_convolutional.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/quantum_convolutional.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/quantum_convolutional.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qubits/qldpc/quantum_convolutional.yml</a>.</p>
 </div>
 
 
@@ -233,7 +251,7 @@ url={https://errorcorrectionzoo.org/c/quantum_convolutional}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qubit_stabilizer">Qubit stabilizer</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/quantum_reed_muller">Quantum Reed-Muller</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/translationally_invariant_stabilizer">Translationally invariant stabilizer</a></li><li><a href="/c/qldpc">QLDPC</a></li><li><a href="/c/stabilizer">Stabilizer</a></li><li><a href="/c/stab_5_1_2_convolutional"><span class="inline-math">\((5,1,2)\)</span>-convolutional</a></li><li><a href="/c/convolutional">Convolutional</a></li><li><a href="/c/quantum_reed_muller">Quantum Reed-Muller</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
