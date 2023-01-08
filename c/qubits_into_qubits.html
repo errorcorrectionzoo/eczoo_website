@@ -89,7 +89,7 @@
 <div class="sectioncontent code-description">Encodes <span class="inline-math">\(K\)</span>-dimensional Hilbert space into a <span class="inline-math">\(2^n\)</span>-dimensional (i.e., <span class="inline-math">\(n\)</span>-qubit) Hilbert space. Usually denoted as <span class="inline-math">\(((n,K))\)</span> or <span class="inline-math">\(((n,K,d))\)</span>, where <span class="inline-math">\(d\)</span> is the code&#x27;s distance. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection"><p>Corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits. The number of correctable errors is often called the <span class="textit">decoding radius</span>, and it is upper bounded by half of the code distance.</p><p>A convenient and often considered error set is the <span class="textit">Pauli error</span> or <span class="textit">Pauli string</span> basis. For a single qubit, this set consists of products of powers of the Pauli matrices <span class="display-math env-align">\begin{align}
+<div class="sectioncontent code-protection"><p>Corrects erasure errors on up to <span class="inline-math">\(d-1\)</span> qubits. The number of correctable errors is often called the <span class="textit">decoding radius</span>, and it is upper bounded by half of the code distance. As a result, qubit codes cannot tolerate adversarial errors on more than <span class="inline-math">\((1-R)/4\)</span> registers.</p><p>A convenient and often considered error set is the <span class="textit">Pauli error</span> or <span class="textit">Pauli string</span> basis. For a single qubit, this set consists of products of powers of the Pauli matrices <span class="display-math env-align">\begin{align}
   X=\begin{pmatrix}0 &amp; 1\\
   1 &amp; 0
   \end{pmatrix}\,\,\text{ and }\,\,Z=\begin{pmatrix}1 &amp; 0\\
@@ -202,7 +202,9 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
-    (2022-05-07)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2023-01-08)      — most recent</li><li><a href="/team#user-SamGunn">Sam Gunn</a>
+    (2022-01-08)</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2022-05-07)</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
     (2021-10-29)</li></ul>
 </details>
 

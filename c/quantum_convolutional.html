@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description"><p>One-dimensional translationally invariant qubit stabilizer code whose whose stabilizer group can be partitioned into constant-size subsets of constant support and of constant overlap between neighboring sets. Initially formulated as a quantum analogue of convolutional codes, which were designed to protect a continuous and never-ending stream of information. Precise formulations sometimes begin with a finite-dimensional lattice, with the intent to take the thermodynamic limit.</p><p>Quantum convolutional codes, like their classical counterparts, can also be understood in terms of frames. Let each encoding frame take in <span class="inline-math">\(n\)</span> qubits, carry <span class="inline-math">\(m\)</span> qubits of information between frames, and act on them with <span class="inline-math">\(n-k\)</span> Pauli generators. Each generator, countably infinite in length, must commute with each <span class="inline-math">\(n\)</span> register shift of itself, but need not commute with the other generators <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. The <span class="inline-math">\(m\)</span> qubits of information carried between each frame are also stabilized by additional memory Pauli operators. It is known that the minimal value for <span class="inline-math">\(m\)</span> is given by <span class="inline-math">\(\text{dim}(M)-\frac{1}{2}\text{rank}(M)\)</span>, with <span class="inline-math">\(M\)</span> being the matrix containing the required commutation relations of the memory qubits <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>. These operators can be efficiently determined <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</p><p>See Refs. <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a> for explicit and simple examples.</p></div>
+<div class="sectioncontent code-description"><p>One-dimensional translationally invariant qubit stabilizer code whose whose stabilizer group can be partitioned into constant-size subsets of constant support and of constant overlap between neighboring sets. Initially formulated as a quantum analogue of convolutional codes, which were designed to protect a continuous and never-ending stream of information. Precise formulations sometimes begin with a finite-dimensional lattice, with the intent to take the thermodynamic limit.</p><p>Quantum convolutional codes, like their classical counterparts, can also be understood in terms of frames. Let each encoding frame take in <span class="inline-math">\(n\)</span> qubits, carry <span class="inline-math">\(m\)</span> qubits of information between frames, and act on them with <span class="inline-math">\(n-k\)</span> Pauli generators. Each generator, countably infinite in length, must commute with each <span class="inline-math">\(n\)</span> register shift of itself, but need not commute with the other generators <a href="#citation-3" class="href-endnote endnote citation">[3]</a>. The <span class="inline-math">\(m\)</span> qubits of information carried between each frame are also stabilized by additional memory Pauli operators. It is known that the minimal value for <span class="inline-math">\(m\)</span> is given by <span class="inline-math">\(\text{dim}(M)-\frac{1}{2}\text{rank}(M)\)</span>, with <span class="inline-math">\(M\)</span> being the matrix containing the required commutation relations of the memory qubits <a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a>. These operators can be efficiently determined <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</p></div>
 
 
 
@@ -102,7 +102,7 @@
 
 <h2 id="feature_encoders"
       class="code-feature code-feature-encoders">Encoding</h2>
-  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding is efficient and uses only Clifford gates. Some encoders yield <span class="textit">catastrophic</span> errors, i.e., errors that require a circuit of depth that is non-constant depth to correct <a href="#citation-2" class="href-endnote endnote citation">[2; Def. 4.1]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-encoders"><span class="paragraph-in-list">Encoding is efficient and uses only Clifford gates. Some encoders yield <span class="textit">catastrophic</span> errors, i.e., errors that require a circuit of infinite depth to correct <a href="#citation-2" class="href-endnote endnote citation">[2; Def. 4.1]</a>.</span></div>
 
 
  
@@ -121,6 +121,10 @@
 
 
 
+<h2 id="notes" class="code-notes">Notes</h2>
+<div class="sectioncontent code-notes">
+  <span class="paragraph-in-list">See Refs. <a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-8" class="href-endnote endnote citation">[8]</a><a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a> for explicit and simple examples.</span>
+</div>
 
 
 <!-- Relationships to other codes -->
@@ -135,7 +139,7 @@
   <li class="paragraph-in-list">
     <span class="code-parents-1-code"><a href="/c/translationally_invariant_stabilizer">Translationally invariant stabilizer code</a></span><span class="code-parents-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum convolutional codes are translationally-invariant stabilizer codes on an semi-infinite or infinite lattice in one dimension <a href="#citation-11" class="href-endnote endnote citation">[11]</a>. However, some notions may be extendable to non-stabilizer codes <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 4]</a>.</span></li>
+      &#x2014;&nbsp;Quantum convolutional codes are translationally-invariant stabilizer codes on an semi-infinite or infinite lattice in one dimension <a href="#citation-11" class="href-endnote endnote citation">[11]</a>. Some notions may be extendable to non-stabilizer codes <a href="#citation-2" class="href-endnote endnote citation">[2; Sec. 4]</a>.</span></li>
 </ul>
 </div>
 
