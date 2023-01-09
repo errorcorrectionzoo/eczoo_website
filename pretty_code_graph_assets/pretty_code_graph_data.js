@@ -6635,7 +6635,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "True \\(q\\)-Galois-qudit stabilizer code constructed from generalized Reed-Solomon (GRS) codes via either the Hermitian construction [Lingfei Jin and Chaoping Xing, \u201cA Construction of New Quantum MDS Codes\u201d. 1311.3009][X. Liu, L. Yu, and H. Liu, \u201cNew quantum codes from Hermitian dual-containing codes\u201d, International Journal of Quantum Information 17, 1950006 (2019). DOI][L. Jin et al., \u201cApplication of Classical Hermitian Self-Orthogonal MDS Codes to Quantum MDS Codes\u201d, IEEE Transactions on Information Theory 56, 4735 (2010). DOI] or the Galois-qudit CSS construction [Dorit Aharonov and Michael Ben-Or, \u201cFault-Tolerant Quantum Computation With Constant Error Rate\u201d. quant-ph/9906129]. ",
+                    "_description": "True \\(q\\)-Galois-qudit stabilizer code constructed from generalized Reed-Solomon (GRS) codes via either the Hermitian construction [Lingfei Jin and Chaoping Xing, \u201cA Construction of New Quantum MDS Codes\u201d. 1311.3009][X. Liu, L. Yu, and H. Liu, \u201cNew quantum codes from Hermitian dual-containing codes\u201d, International Journal of Quantum Information 17, 1950006 (2019). DOI][L. Jin et al., \u201cApplication of Classical Hermitian Self-Orthogonal MDS Codes to Quantum MDS Codes\u201d, IEEE Transactions on Information Theory 56, 4735 (2010). DOI] or the Galois-qudit CSS construction [Dorit Aharonov and Michael Ben-Or, \u201cFault-Tolerant Quantum Computation With Constant Error Rate\u201d. quant-ph/9906129][Z. Li, L.-J. Xing, and X.-M. Wang, \u201cQuantum generalized Reed-Solomon codes: Unified framework for quantum maximum-distance-separable codes\u201d, Physical Review A 77, (2008). DOI; 0812.4514]. ",
                     "_code_href": "/c/galois_grs",
                     "_family_generation_level": 5
                 },
@@ -6652,7 +6652,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Stub. ",
+                    "_description": "CSS code on \\(q^m\\)-dimensional Galois-qudits that is constructed from folded Reed-Solomon (FRS) codes via the Galois-qudit CSS construction. This code is used to construct Singleton-bound approaching \u2026",
                     "_code_href": "/c/galois_fqrs",
                     "_family_generation_level": 6
                 },
@@ -6669,7 +6669,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Also called polynomial code (QPyC). An \\([[n,k,n-k+1]]_{GF(q)}\\) (with \\(q>n\\)) Galois-qudit CSS code constructed using two Reed-Solomon codes over \\(GF(q)\\).\n\nLet \\(C_1\\) be a \\([n,k_1,d_1]_q\\) Reed-Solomon code and \\(C_2^\\perp\\) be a \\([n,k_2,d_2]_q\\) \u2026",
+                    "_description": "Also called a polynomial code (QPyC). An \\([[n,k,n-k+1]]_{GF(q)}\\) (with \\(q>n\\)) Galois-qudit CSS code constructed using two Reed-Solomon codes over \\(GF(q)\\).\n\nLet \\(C_1\\) be a \\([n,k_1,d_1]_q\\) Reed-Solomon code and \\(C_2^\\perp\\) be a \u2026",
                     "_code_href": "/c/galois_polynomial",
                     "_family_generation_level": 6
                 },

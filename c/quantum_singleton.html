@@ -89,7 +89,7 @@
 <div class="sectioncontent code-description">Approximate quantum code of rate <span class="inline-math">\(R\)</span> that can tolerate adversarial errors nearly saturating the quantum Singleton bound of <span class="inline-math">\((1-R)/2\)</span>. The formulation of such codes relies on a notion of <span class="textit">quantum list decoding</span>. Sampling a description of this code can be done with an efficient randomized algorithm with <span class="inline-math">\(2^{-\Omega(n)}\)</span> failure probability. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">For any <span class="inline-math">\(\gamma&gt;0\)</span> and rate <span class="inline-math">\(0&lt;R&lt;1\)</span>, these approximate quantum <span class="inline-math">\([[n,R \cdot n]]_{GF(q)}\)</span> codes have constant alphabet size <span class="inline-math">\(q=q(\gamma)\)</span> and correct errors acting on <span class="inline-math">\((1-R-\gamma) \cdot n/2\)</span> registers, up to a recovery error of <span class="inline-math">\(2^{-\Omega(n)}\)</span>.</div>
+<div class="sectioncontent code-protection">For any <span class="inline-math">\(\gamma&gt;0\)</span> and rate <span class="inline-math">\(0&lt;R&lt;1\)</span>, these approximate quantum <span class="inline-math">\([[n,R \cdot n]]_{GF(q)}\)</span> codes have constant Galois-qudit dimension <span class="inline-math">\(q=q(\gamma)\)</span> and correct errors acting on <span class="inline-math">\((1-R-\gamma) \cdot n/2\)</span> registers, up to a recovery error of <span class="inline-math">\(2^{-\Omega(n)}\)</span>.</div>
 
 
 <!-- Display features -->
@@ -115,7 +115,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Quantum list decodable.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Quantum list decodable <a href="#citation-1" class="href-endnote endnote citation">[1]</a>.</span></div>
 
 
 
@@ -155,11 +155,11 @@
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/galois_fqrs">Folded quantum Reed-Solomon (FQRS) code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Singleton-bound approaching AQECCs utilize QFRS codes.</span></li>
+      &#x2014;&nbsp;Singleton-bound approaching AQECCs utilize FQRS codes.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/quantum_secret_sharing">Approximate secret-sharing code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum secret-sharing codes have asymptotically decaying rate and require qudit dimension to increase exponentially with <span class="inline-math">\(n\)</span>, while singleton-bound approaching AQECCs have constant rate and qudit dimension.</span></li>
+      &#x2014;&nbsp;Quantum secret-sharing codes have asymptotically decaying rate and require qudit dimension to increase exponentially with <span class="inline-math">\(n\)</span>, while Singleton-bound approaching AQECCs have constant rate and qudit dimension.</span></li>
 </ul>
 </div>
 
