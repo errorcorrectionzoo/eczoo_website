@@ -7,7 +7,7 @@
 <meta name="citation_language" content="en" />
 <meta name="citation_book_title" content="The Error Correction Zoo" />
 <meta name="citation_inbook_title" content="The Error Correction Zoo" />
-<meta name="citation_title" content="Five-qudit \(((5,q,3))_{q}\) code" />
+<meta name="citation_title" content="Five-qudit code" />
 <meta name="citation_publication_date" content="2023" />
 <meta name="citation_date" content="2023" />
 <meta name="citation_editor" content="Albert, Victor V." />
@@ -15,13 +15,13 @@
 
 <!--<meta name="citation_doi" content="10.zzzz/wwwwww"/>-->
 
-<meta name="DC.title" content="Five-qudit \(((5,q,3))_{q}\) code" />
+<meta name="DC.title" content="Five-qudit code" />
 <meta name="DC.issued" content="2023" />
 <meta name="DC.relation.ispartof" content="The Error Correction Zoo (V. V. Albert, Ph. Faist, eds.)"/>
 
 
   <title>
-    Five-qudit \(((5,q,3))_{q}\) code — Error Correction Zoo
+    Five-qudit code — Error Correction Zoo
   </title>
 
   <!-- favicon generated with https://realfavicongenerator.net/ -->
@@ -80,16 +80,16 @@
 <div class="sectioncontent code-name">
   <span class="code-name-cell">
     <h1 class="code-name">
-      Five-qudit <span class="inline-math">\(((5,q,3))_{q}\)</span> code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
+      Five-qudit code<span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></h1>
   </span>
 </div>
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Modular-qudit code that generalizes the five-qubit perfect code using properties of the multiplicative group <span class="inline-math">\(\mathbb{Z}_q\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>; see also <a href="#citation-2" class="href-endnote endnote citation">[2; Thm. 13]</a>. For prime <span class="inline-math">\(q=p\)</span>, the code is a <span class="inline-math">\([[5,1,3]]_p\)</span> prime-qudit stabilizer code with four stabilizer generators consisting of <span class="inline-math">\(X Z Z^\dagger X^\dagger I\)</span> and its cyclic permutations. </div>
+<div class="sectioncontent code-description">Modular-qudit <span class="inline-math">\(((5,q,3))_{q}\)</span> code that generalizes the five-qubit perfect code using properties of the multiplicative group <span class="inline-math">\(\mathbb{Z}_q\)</span> <a href="#citation-1" class="href-endnote endnote citation">[1]</a>; see also <a href="#citation-2" class="href-endnote endnote citation">[2; Thm. 13]</a>. For prime <span class="inline-math">\(q=p\)</span>, the code is a <span class="inline-math">\([[5,1,3]]_p\)</span> prime-qudit stabilizer code with four stabilizer generators consisting of <span class="inline-math">\(X Z Z^\dagger X^\dagger I\)</span> and its cyclic permutations. </div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Smallest stabilizer code that protects against a single error on any one qudit. Detects two-qudit errors.</div>
+<div class="sectioncontent code-protection">Protects against a single error on any one qudit. Detects two-qudit errors.</div>
 
 
 <!-- Display features -->
@@ -144,13 +144,21 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3">Five-qubit perfect code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/stab_5_1_3">Five-qubit perfect code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The five-qudit code reduces to the five-qubit perfect code for <span class="inline-math">\(q=2\)</span>.</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-cousins-1-code"><a href="/c/qudit_stabilizer">Modular-qudit stabilizer code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;For prime <span class="inline-math">\(q=p\)</span>, the five-qudit code is a <span class="inline-math">\([[5,1,3]]_p\)</span> prime-qudit stabilizer code</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/braunstein">Braunstein five-mode code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
       &#x2014;&nbsp;The Braunstein five-mode code is a bosonic analogue of the five-qudit code.</span></li>
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/rotor_5_1_3"><span class="inline-math">\([[5,1,3]]_{\mathbb Z}\)</span> rotor code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/rotor_5_1_3">Five-rotor code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The five-rotor code is a bosonic analogue of the five-qudit code.</span></li>
 </ul>
 </div>
 
@@ -193,10 +201,10 @@
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
     <dt>Cite as:</dt>
-    <dd class="boxedcontent">“Five-qudit \(((5,q,3))_{q}\) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/qudit_5_1_3</dd>
+    <dd class="boxedcontent">“Five-qudit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/qudit_5_1_3</dd>
     <dt>BibTeX:</dt>
     <dd class="boxedcontent bibtex">@incollection{eczoo_qudit_5_1_3,
-title={Five-qudit \(((5,q,3))_{q}\) code},
+title={Five-qudit code},
 booktitle={The Error Correction Zoo},
 year={2023},
 editor={Albert, Victor V. and Faist, Philippe},
@@ -207,7 +215,7 @@ url={https://errorcorrectionzoo.org/c/qudit_5_1_3}
        data-popup-button-label="share"
        data-popup-button-class-list="code-show-share"><dl class="show-share-social">
     <dt>Share via:</dt>
-    <dd><a href="https://twitter.com/intent/tweet?text=Five-qudit%20%5C%28%28%285%2Cq%2C3%29%29_%7Bq%7D%5C%29%20code%20https%3A//errorcorrectionzoo.org/c/qudit_5_1_3" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qudit_5_1_3&amp;t=Five-qudit%20%5C%28%28%285%2Cq%2C3%29%29_%7Bq%7D%5C%29%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Five-qudit%20%5C%28%28%285%2Cq%2C3%29%29_%7Bq%7D%5C%29%20code&amp;body=Five-qudit%20%5C%28%28%285%2Cq%2C3%29%29_%7Bq%7D%5C%29%20code%20https%3A//errorcorrectionzoo.org/c/qudit_5_1_3">E-mail</a>
+    <dd><a href="https://twitter.com/intent/tweet?text=Five-qudit%20code%20https%3A//errorcorrectionzoo.org/c/qudit_5_1_3" target="_blank">Twitter</a>&nbsp;|&nbsp;<a href="http://www.facebook.com/sharer/sharer.php?u=https://errorcorrectionzoo.org/c/qudit_5_1_3&amp;t=Five-qudit%20code" target="_blank" class="share-popup">Facebook</a>&nbsp;|&nbsp;<a href="mailto:?subject=Five-qudit%20code&amp;body=Five-qudit%20code%20https%3A//errorcorrectionzoo.org/c/qudit_5_1_3">E-mail</a>
     </dd>
     <dt>Permanent link:</dt>
     <dd class="boxedcontent">https://errorcorrectionzoo.org/c/qudit_5_1_3</dd>
@@ -223,7 +231,7 @@ url={https://errorcorrectionzoo.org/c/qudit_5_1_3}
   Cite as:
 </h2>
 <div class="sectioncontent display-print-citation">
-  <p>“Five-qudit \(((5,q,3))_{q}\) code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/qudit_5_1_3</p>
+  <p>“Five-qudit code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/qudit_5_1_3</p>
 
   <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/quantum/qudits/qudit_5_1_3.yml"
                 class="ashowurl"
@@ -237,7 +245,7 @@ url={https://errorcorrectionzoo.org/c/qudit_5_1_3}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qudits_into_qudits">Modular-qudit</a></li><li><a href="/c/qecc_finite">Finite QECC</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/quantum_cyclic">Quantum cyclic</a></li><li><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span></a></li><li><a href="/c/braunstein">Braunstein five-mode</a></li><li><a href="/c/rotor_5_1_3"><span class="inline-math">\([[5,1,3]]_{\mathbb Z}\)</span> rotor</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/qudits_into_qudits">Modular-qudit</a></li><li><a href="/c/qecc_finite">Finite QECC</a></li><li><a href="/c/qecc">QECC</a></li><li><a href="/c/quantum_cyclic">Quantum cyclic</a></li><li><a href="/c/stab_5_1_3"><span class="inline-math">\([[5,1,3]]\)</span></a></li><li><a href="/c/qudit_stabilizer">Modular-qudit stabilizer</a></li><li><a href="/c/braunstein">Braunstein five-mode</a></li><li><a href="/c/rotor_5_1_3">Five-rotor</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
