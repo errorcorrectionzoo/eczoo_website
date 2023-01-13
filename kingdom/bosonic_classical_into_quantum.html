@@ -77,7 +77,7 @@
   </span>
   <span class="short-code-parent-of">
     Parent of:
-      <a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>,       <a href="/c/quantum_ppm">PPM c-q code</a>,       <a href="/c/quantum_psk">PSK c-q code</a>.
+      <a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a>,       <a href="/c/niset_andersen_cerf">Niset-Andersen-Cerf code</a>,       <a href="/c/quantum_ook">On-off keyed (OOK) c-q code</a>,       <a href="/c/quantum_ppm">PPM c-q code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -88,10 +88,14 @@
 
 <div class="ecc-code" id="ecc_quantum_fsk">
   <span class="short-code-name"><a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a><span class="code-introduced"><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-2" class="href-endnote endnote citation">[2]</a></span></span>
-  <span class="short-code-description">Bosonic c-q code encoding into coherent states that are frequency-shifted with certain initial relative phase.</span>
+  <span class="short-code-description">Bosonic c-q code encoding into coherent states that are frequency-shifted with certain initial relative phase. Codewords are coherent states <span class="inline-math">\(|\alpha_m\rangle\)</span>, where <span class="inline-math">\(\alpha_m = \alpha e^{i(\omega_0+[m-1]\Delta\omega)t+(m-1)\Delta\theta}\)</span> for initial frequency <span class="inline-math">\(\omega_0\)</span>, frequency shift <span class="inline-math">\(\Delta\omega\)</span>, and phase shift <span class="inline-math">\(\Delta\theta\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/quantum_psk">PSK c-q code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -119,9 +123,19 @@
 </div>
 
 
+<div class="ecc-code" id="ecc_quantum_ook">
+  <span class="short-code-name"><a href="/c/quantum_ook">On-off keyed (OOK) c-q code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
+  <span class="short-code-description">Bosonic c-q binary code whose encoding is either in the vacuum <span class="inline-math">\(|0\rangle\)</span> or in a nonzero coherent state <span class="inline-math">\(|\alpha\rangle\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a>.
+  </span>
+</div>
+
+
 <div class="ecc-code" id="ecc_quantum_ppm">
-  <span class="short-code-name"><a href="/c/quantum_ppm">PPM c-q code</a><span class="code-introduced"><a href="#citation-4" class="href-endnote endnote citation">[4]</a></span></span>
-  <span class="short-code-description">Bosonic c-q code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode <span class="inline-math">\(j\)</span>.</span>
+  <span class="short-code-name"><a href="/c/quantum_ppm">PPM c-q code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
+  <span class="short-code-description">A <span class="inline-math">\(q\)</span>-PPM c-q code is a bosonic c-q code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a tensor-product state of zero-amplitude coherent states at all modes except mode <span class="inline-math">\(j\)</span>. For example, a 3-PPM encoding corresponds to the three-mode states <span class="inline-math">\(|\alpha\rangle|0\rangle|0\rangle\)</span>, <span class="inline-math">\(|0\rangle|\alpha\rangle|0\rangle\)</span>, and <span class="inline-math">\(|0\rangle|0\rangle|\alpha\rangle\)</span> for some complex <span class="inline-math">\(\alpha\)</span>.</span>
   <span class="short-code-parents">
     Parents:
       <a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a>.
@@ -134,11 +148,15 @@
 
 
 <div class="ecc-code" id="ecc_quantum_psk">
-  <span class="short-code-name"><a href="/c/quantum_psk">PSK c-q code</a><span class="code-introduced"><a href="#citation-5" class="href-endnote endnote citation">[5]</a></span></span>
-  <span class="short-code-description">Bosonic c-q <span class="inline-math">\(q\)</span>-ary qudit code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</span>
+  <span class="short-code-name"><a href="/c/quantum_psk">PSK c-q code</a><span class="code-introduced"><a href="#citation-6" class="href-endnote endnote citation">[6]</a></span></span>
+  <span class="short-code-description">Bosonic c-q <span class="inline-math">\(q\)</span>-ary code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</span>
   <span class="short-code-parents">
     Parents:
-      <a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a>.
+      <a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a>.
+  </span>
+  <span class="short-code-parent-of">
+    Parent of:
+      <a href="/c/quantum_bpsk">BPSK c-q code</a>.
   </span>
   <span class="short-code-cousins">
     Cousins:
@@ -146,8 +164,22 @@
   </span>
 </div>
 
+
+<div class="ecc-code" id="ecc_quantum_bpsk">
+  <span class="short-code-name"><a href="/c/quantum_bpsk">BPSK c-q code</a></span>
+  <span class="short-code-description">Bosonic c-q binary code encoding one bit of information into coherent states <span class="inline-math">\(\pm\alpha\)</span> for complex <span class="inline-math">\(\alpha\)</span>.</span>
+  <span class="short-code-parents">
+    Parents:
+      <a href="/c/quantum_psk">PSK c-q code</a>.
+  </span>
+  <span class="short-code-cousins">
+    Cousins:
+      <a href="/c/bpsk">Binary PSK (BPSK) code</a>,       <a href="/c/two-legged-cat">Two-component cat code</a>.
+  </span>
+</div>
+
 <!-- endnotes -->
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>I. A. Burenkov, O. V. Tikhonova, and S. V. Polyakov, “Quantum receiver for large alphabet communication”, Optica <span class="textbf">5</span>, 227 (2018). <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.08287" target="_blank" class="href-href">1802.08287</a></dd><dt id="citation-2">[2]</dt><dd>I. A. Burenkov et al., “Time-Resolving Quantum Measurement Enables Energy-Efficient, Large-Alphabet Communication”, PRX Quantum <span class="textbf">1</span>, (2020). <a href="https://doi.org/10.1103/PRXQuantum.1.010308" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href-href">0710.4858</a></dd><dt id="citation-4">[4]</dt><dd>J. Chen et al., “Optical codeword demodulation with error rates below the standard quantum limit using a conditional nulling receiver”, Nature Photonics <span class="textbf">6</span>, 374 (2012). <a href="https://doi.org/10.1038/nphoton.2012.113" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1111.4017" target="_blank" class="href-href">1111.4017</a></dd><dt id="citation-5">[5]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>I. A. Burenkov, O. V. Tikhonova, and S. V. Polyakov, “Quantum receiver for large alphabet communication”, Optica <span class="textbf">5</span>, 227 (2018). <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.08287" target="_blank" class="href-href">1802.08287</a></dd><dt id="citation-2">[2]</dt><dd>I. A. Burenkov et al., “Time-Resolving Quantum Measurement Enables Energy-Efficient, Large-Alphabet Communication”, PRX Quantum <span class="textbf">1</span>, (2020). <a href="https://doi.org/10.1103/PRXQuantum.1.010308" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>J. Niset, U. L. Andersen, and N. J. Cerf, “Experimentally Feasible Quantum Erasure-Correcting Code for Continuous Variables”, Physical Review Letters <span class="textbf">101</span>, (2008). <a href="https://doi.org/10.1103/PhysRevLett.101.130503" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0710.4858" target="_blank" class="href-href">0710.4858</a></dd><dt id="citation-4">[4]</dt><dd>R. L. Cook, P. J. Martin, and J. M. Geremia, “Optical coherent state discrimination using a closed-loop quantum measurement”, Nature <span class="textbf">446</span>, 774 (2007). <a href="https://doi.org/10.1038/nature05655" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>J. Chen et al., “Optical codeword demodulation with error rates below the standard quantum limit using a conditional nulling receiver”, Nature Photonics <span class="textbf">6</span>, 374 (2012). <a href="https://doi.org/10.1038/nphoton.2012.113" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1111.4017" target="_blank" class="href-href">1111.4017</a></dd><dt id="citation-6">[6]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
   </main><!-- #main -->
 

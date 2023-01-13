@@ -86,7 +86,7 @@
 
 
 <h2 id="description" class="code-description">Description</h2>
-<div class="sectioncontent code-description">Bosonic c-q <span class="inline-math">\(q\)</span>-ary qudit code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</div>
+<div class="sectioncontent code-description">Bosonic c-q <span class="inline-math">\(q\)</span>-ary code whose <span class="inline-math">\(j\)</span>th codeword corresponds to a coherent state whose phase is the <span class="inline-math">\(j\)</span>th multiple of <span class="inline-math">\(2\pi/q\)</span>.</div>
 
 
 
@@ -105,6 +105,9 @@
  
 
 
+<h2 id="feature_decoders"
+      class="code-feature code-feature-decoders">Decoding</h2>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Multi-stage quantum receivers <a href="#citation-2" class="href-endnote endnote citation">[2]</a><a href="#citation-3" class="href-endnote endnote citation">[3]</a><a href="#citation-4" class="href-endnote endnote citation">[4]</a><a href="#citation-5" class="href-endnote endnote citation">[5]</a><a href="#citation-6" class="href-endnote endnote citation">[6]</a><a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span><span class="paragraph-in-list">Bayesian inference <a href="#citation-8" class="href-endnote endnote citation">[8]</a>.</span></div>
 
 
 
@@ -114,6 +117,10 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Multi-stage quantum receivers <a href="#citation-9" class="href-endnote endnote citation">[9]</a><a href="#citation-10" class="href-endnote endnote citation">[10]</a><a href="#citation-1" class="href-endnote endnote citation">[1]</a><a href="#citation-11" class="href-endnote endnote citation">[11]</a>.</span><span class="paragraph-in-list">Bayesian inference <a href="#citation-12" class="href-endnote endnote citation">[12]</a>.</span>
+</div>
 
 
 
@@ -127,10 +134,23 @@
 
 <ul class="code-relations-list code-parents-list">
   <li class="paragraph-in-list">
-    <span class="code-parents-1-code"><a href="/c/bosonic_classical_into_quantum">Bosonic c-q code</a></span></li>
+    <span class="code-parents-1-code"><a href="/c/quantum_fsk">Coherent FSK (CFSK) c-q code</a></span><span class="code-parents-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;The CFSK c-q code reduces to the <span class="inline-math">\(q\)</span>-ary PSK c-q code when <span class="inline-math">\(\Delta\omega = 0\)</span> and <span class="inline-math">\(\Delta\theta = 2\pi/q\)</span>.</span></li>
 </ul>
 </div>
 
+<h2 id="relations_parent_of" class="code-parent-of">
+    Child
+</h2>
+<div class="sectioncontent code-parent-of">
+
+
+<ul class="code-relations-list code-parent-of-list">
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/quantum_bpsk">BPSK c-q code</a></span></li>
+</ul>
+</div>
 
 <h2 id="relations_cousins" class="code-cousins">
     Cousins
@@ -140,17 +160,19 @@
 
 <ul class="code-relations-list code-cousins-list">
   <li class="paragraph-in-list">
-    <span class="code-cousins-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span></li>
+    <span class="code-cousins-1-code"><a href="/c/psk">Phase-shift keyring (PSK) code</a></span><span class="code-cousins-1-detail">
+      <!-- whitespace, em dash, no-break space -->
+      &#x2014;&nbsp;PSK (PSK c-q) codes are used to transmit classical information using single-mode coherent states distributed on a circle over classical (quantum) channels.</span></li>
   <li class="paragraph-in-list">
     <span class="code-cousins-1-code"><a href="/c/cat">Cat code</a></span><span class="code-cousins-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Quantum PSK (cat) codes are used to transmit classical (quantum) information using (superpositions of) single-mode coherent states distributed on a circle over classical (quantum) channels.</span></li>
+      &#x2014;&nbsp;PSK c-q (cat) codes are used to transmit classical (quantum) information using (superpositions of) single-mode coherent states distributed on a circle over quantum channels.</span></li>
 </ul>
 </div>
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>F. E. Becerra, J. Fan, and A. Migdall, “Photon number resolution enables quantum receiver for realistic coherent optical communications”, Nature Photonics <span class="textbf">9</span>, 48 (2014). <a href="https://doi.org/10.1038/nphoton.2014.280" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>M. Takeoka et al., “Implementation of projective measurements with linear optics and continuous photon counting”, Physical Review A <span class="textbf">71</span>, (2005). <a href="https://doi.org/10.1103/PhysRevA.71.022318" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/quant-ph/0410133" target="_blank" class="href-href">quant-ph/0410133</a></dd><dt id="citation-3">[3]</dt><dd>F. E. Becerra et al., “&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;inline&quot;&gt;&lt;mml:mi&gt;M&lt;/mml:mi&gt;&lt;/mml:math&gt;-ary-state phase-shift-keying discrimination below the homodyne limit”, Physical Review A <span class="textbf">84</span>, (2011). <a href="https://doi.org/10.1103/PhysRevA.84.062324" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>C. Wittmann, U. L. Andersen, and G. Leuchs, “Discrimination of optical coherent states using a photon number resolving detector”, Journal of Modern Optics <span class="textbf">57</span>, 213 (2010). <a href="https://doi.org/10.1080/09500340903145031" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/0905.2496" target="_blank" class="href-href">0905.2496</a></dd><dt id="citation-5">[5]</dt><dd>S. Izumi et al., “Displacement receiver for phase-shift-keyed coherent states”, Physical Review A <span class="textbf">86</span>, (2012). <a href="https://doi.org/10.1103/PhysRevA.86.042328" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1208.1815" target="_blank" class="href-href">1208.1815</a></dd><dt id="citation-6">[6]</dt><dd>S. Izumi et al., “Quantum receivers with squeezing and photon-number-resolving detectors for&lt;mml:math xmlns:mml=&quot;http://www.w3.org/1998/Math/MathML&quot; display=&quot;inline&quot;&gt;&lt;mml:mi&gt;M&lt;/mml:mi&gt;&lt;/mml:math&gt;-ary coherent state discrimination”, Physical Review A <span class="textbf">87</span>, (2013). <a href="https://doi.org/10.1103/PhysRevA.87.042328" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1302.2691" target="_blank" class="href-href">1302.2691</a></dd><dt id="citation-7">[7]</dt><dd>K. Li, Y. Zuo, and B. Zhu, “<span class="verbatimtext">Suppressing the Errors Due to Mode Mismatch for $M$-Ary PSK Quantum Receivers Using Photon-Number-Resolving Detector</span>”, IEEE Photonics Technology Letters <span class="textbf">25</span>, 2182 (2013). <a href="https://doi.org/10.1109/LPT.2013.2282155" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1304.7316" target="_blank" class="href-href">1304.7316</a></dd><dt id="citation-8">[8]</dt><dd>I. A. Burenkov, O. V. Tikhonova, and S. V. Polyakov, “Quantum receiver for large alphabet communication”, Optica <span class="textbf">5</span>, 227 (2018). <a href="https://doi.org/10.1364/OPTICA.5.000227" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1802.08287" target="_blank" class="href-href">1802.08287</a></dd><dt id="citation-9">[9]</dt><dd>F. E. Becerra et al., “Experimental demonstration of a receiver beating the standard quantum limit for multiple nonorthogonal state discrimination”, Nature Photonics <span class="textbf">7</span>, 147 (2013). <a href="https://doi.org/10.1038/nphoton.2012.316" target="_blank" class="href-href">DOI</a></dd><dt id="citation-10">[10]</dt><dd>S. Izumi et al., “Experimental Demonstration of a Quantum Receiver Beating the Standard Quantum Limit at Telecom Wavelength”, Physical Review Applied <span class="textbf">13</span>, (2020). <a href="https://doi.org/10.1103/PhysRevApplied.13.054015" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/2001.05902" target="_blank" class="href-href">2001.05902</a></dd><dt id="citation-11">[11]</dt><dd>A. R. Ferdinand, M. T. DiMario, and F. E. Becerra, “Multi-state discrimination below the quantum noise limit at the single-photon level”, npj Quantum Information <span class="textbf">3</span>, (2017). <a href="https://doi.org/10.1038/s41534-017-0042-2" target="_blank" class="href-href">DOI</a>; <a href="https://arxiv.org/abs/1711.00074" target="_blank" class="href-href">1711.00074</a></dd><dt id="citation-12">[12]</dt><dd>I. A. Burenkov et al., “Experimental demonstration of time resolving quantum receiver for bandwidth and power efficient communications”, Conference on Lasers and Electro-Optics (2020). <a href="https://doi.org/10.1364/CLEO_QELS.2020.FF1D.1" target="_blank" class="href-href">DOI</a></dd></dl></div>
 
 
 
@@ -231,7 +253,7 @@ url={https://errorcorrectionzoo.org/c/quantum_psk}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/bosonic_classical_into_quantum">Bosonic c-q</a></li><li><a href="/c/classical_into_quantum">Classical-quantum (c-q)</a></li><li><a href="/c/oaecc">Operator-algebra QECC</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/cat">Cat</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/quantum_fsk">CFSK c-q</a></li><li><a href="/c/bosonic_classical_into_quantum">Bosonic c-q</a></li><li><a href="/c/classical_into_quantum">Classical-quantum (c-q)</a></li><li><a href="/c/quantum_bpsk">BPSK c-q</a></li><li><a href="/c/psk">PSK</a></li><li><a href="/c/cat">Cat</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
