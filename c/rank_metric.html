@@ -89,7 +89,7 @@
 <div class="sectioncontent code-description"><p>Also called a <span class="textit">Delsarte code</span>. Each codeword is a <span class="textit">matrix</span> over <span class="inline-math">\(GF(q)\)</span>, with codewords forming a <span class="inline-math">\(GF(q)\)</span>-linear subspace, and with the metric being the rank of the difference of matrices. The distance <span class="inline-math">\(d\)</span> is the minimum rank of all nonzero matrices in the code. Rank-metric codes on <span class="inline-math">\(n\times m\)</span> matrices are denoted as <span class="inline-math">\([n\times m,k,d]_q\)</span>.</p><p>The number of codewords satisfies <span class="inline-math">\(k \leq \max(n, m) M\)</span>, where <span class="inline-math">\(M\)</span> is the maximum rank of all matrices in the code. Codes that achieve this bound with equality are called <span class="textit">Delsarte optimal anticodes</span>.</p></div>
 
 <h2 id="protection" class="code-protection">Protection</h2>
-<div class="sectioncontent code-protection">Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</div>
+<div class="sectioncontent code-protection"><p>Protects against errors with rank <span class="inline-math">\(\leq \lfloor \frac{d-1}2 \rfloor\)</span>.</p><p>The complexity of decoding rank-metric codes is unknown but expected to be harder than that of binary linear codes <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</p></div>
 
 
 <!-- Display features -->
@@ -109,7 +109,7 @@
 
 <h2 id="feature_decoders"
       class="code-feature code-feature-decoders">Decoding</h2>
-  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#citation-2" class="href-endnote endnote citation">[2]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span></div>
+  <div class="sectioncontent code-feature code-feature-decoders"><span class="paragraph-in-list">Polynomial-reconstruction Berlekamp-Welch based decoder <a href="#citation-3" class="href-endnote endnote citation">[3]</a>.</span><span class="paragraph-in-list">Berlekamp-Massey based decoder <a href="#citation-4" class="href-endnote endnote citation">[4]</a>.</span></div>
 
 
 
@@ -119,10 +119,14 @@
 
 
 
+<h2 id="realizations" class="code-realizations">Realizations</h2>
+<div class="sectioncontent code-realizations">
+  <span class="paragraph-in-list">Identity-Based Encryption <a href="#citation-5" class="href-endnote endnote citation">[5]</a>.</span><span class="paragraph-in-list">Digital watermarking <a href="#citation-6" class="href-endnote endnote citation">[6]</a>.</span><span class="paragraph-in-list">Network coding and streaming media broadcasting <a href="#citation-7" class="href-endnote endnote citation">[7]</a>.</span>
+</div>
 
 <h2 id="notes" class="code-notes">Notes</h2>
 <div class="sectioncontent code-notes">
-  <span class="paragraph-in-list">See Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a> for a discussion of MacWilliams identities and the relationship between rank metric and Gabidulin codes.</span>
+  <span class="paragraph-in-list">See Ref. <a href="#citation-8" class="href-endnote endnote citation">[8]</a> for a discussion of MacWilliams identities and the relationship between rank metric and Gabidulin codes.</span>
 </div>
 
 
@@ -150,7 +154,9 @@
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/gabidulin">Gabidulin code</a></span><span class="code-parent-of-1-detail">
       <!-- whitespace, em dash, no-break space -->
-      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#citation-4" class="href-endnote endnote citation">[4]</a>).</span></li>
+      &#x2014;&nbsp;Gabidulin codes over <span class="inline-math">\(GF(q^N)\)</span>, when expressed as matrices over <span class="inline-math">\(GF(q)\)</span>, are rank-metric codes (see Def. 14 in Ref. <a href="#citation-8" class="href-endnote endnote citation">[8]</a>). The reverse is not always true since Gabidulin codes are not always <span class="inline-math">\(GF(q^N)\)</span>-linear (see Rm. 16 in Ref. <a href="#citation-8" class="href-endnote endnote citation">[8]</a>).</span></li>
+  <li class="paragraph-in-list">
+    <span class="code-parent-of-1-code"><a href="/c/lrpc">Low-rank parity-check (LRPC) code</a></span></li>
   <li class="paragraph-in-list">
     <span class="code-parent-of-1-code"><a href="/c/maximum_rank_distance">Maximum-rank distance (MRD) code</a></span></li>
 </ul>
@@ -159,7 +165,7 @@
 
 
 
-<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-3">[3]</dt><dd>G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>Alberto Ravagnani, “Rank-metric codes and their duality theory”. <a href="https://arxiv.org/abs/1410.1333" target="_blank" class="href-href">1410.1333</a></dd></dl></div>
+<div id="endnotes" class="endnotes sectioncontent"><h2 class="heading-level-2">References</h2><dl class="enumeration citation-list"><dt id="citation-1">[1]</dt><dd>P. Delsarte, “Bilinear forms over a finite field, with applications to coding theory”, Journal of Combinatorial Theory, Series A <span class="textbf">25</span>, 226 (1978). <a href="https://doi.org/10.1016/0097-3165(78)90015-8" target="_blank" class="href-href">DOI</a></dd><dt id="citation-2">[2]</dt><dd>Gaborit Philippe and Zemor Gilles, “On the hardness of the decoding and the minimum distance problems for rank codes”. <a href="https://arxiv.org/abs/1404.3482" target="_blank" class="href-href">1404.3482</a></dd><dt id="citation-3">[3]</dt><dd>P. Loidreau, “A Welch–Berlekamp Like Algorithm for Decoding Gabidulin Codes”, Coding and Cryptography 36 (2006). <a href="https://doi.org/10.1007/11779360_4" target="_blank" class="href-href">DOI</a></dd><dt id="citation-4">[4]</dt><dd>G. Richter and S. Plass, “Fast decoding of rank-codes with rank errors and column erasures”, International Symposium onInformation Theory, 2004. ISIT 2004. Proceedings.. <a href="https://doi.org/10.1109/ISIT.2004.1365435" target="_blank" class="href-href">DOI</a></dd><dt id="citation-5">[5]</dt><dd>P. Gaborit et al., “Identity-Based Encryption from Codes with Rank Metric”, Advances in Cryptology – CRYPTO 2017 194 (2017). <a href="https://doi.org/10.1007/978-3-319-63697-9_7" target="_blank" class="href-href">DOI</a></dd><dt id="citation-6">[6]</dt><dd>P. Lefèvre, P. Carré, and P. Gaborit, “Application of rank metric codes in digital image watermarking”, Signal Processing: Image Communication <span class="textbf">74</span>, 119 (2019). <a href="https://doi.org/10.1016/j.image.2018.12.015" target="_blank" class="href-href">DOI</a></dd><dt id="citation-7">[7]</dt><dd>D. Silva and F. R. Kschischang, “Rank-Metric Codes for Priority Encoding Transmission with Network Coding”, 2007 10th Canadian Workshop on Information Theory (CWIT) (2007). <a href="https://doi.org/10.1109/CWIT.2007.375706" target="_blank" class="href-href">DOI</a></dd><dt id="citation-8">[8]</dt><dd>Alberto Ravagnani, “Rank-metric codes and their duality theory”. <a href="https://arxiv.org/abs/1410.1333" target="_blank" class="href-href">1410.1333</a></dd></dl></div>
 
 
 
@@ -167,7 +173,9 @@
 <details class="sectioncontent code-contributors">
 <summary><span>Page edit log</span></summary>
 <ul><li><a href="/team#user-MazinKarjikar">Mazin Karjikar</a>
-    (2022-12-30)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2023-01-16)      — most recent</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
+    (2023-01-16)</li><li><a href="/team#user-MazinKarjikar">Mazin Karjikar</a>
+    (2022-12-30)</li><li><a href="/team#user-VictorVAlbert">Victor V. Albert</a>
     (2022-05-25)</li><li><a href="/team#user-ThomasWrona">Thomas Wrona</a>
     (2022-05-18)</li></ul>
 </details>
@@ -190,10 +198,10 @@
        data-popup-button-class-list="code-self-edit"><h3>Your contribution is welcome!</h3><p><a class="code-link-with-icon code-show-github"
           target="_blank"
           title="Edit code information directly on github.com"
-          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank_metric.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
+          href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank-metric/rank_metric.yml">on github.com (edit &amp; pull request)</a></p><p><a class="code-link-with-icon code-self-edit"
           target="_blank"
           title="edit code information on this site without using github"
-          href="/edit_code?code_id=rank_metric&amp;code_yml_filename=classical/matrices/rank_metric.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>rank_metric</code></div><div class="code-popup-info-frame"
+          href="/edit_code?code_id=rank_metric&amp;code_yml_filename=classical/matrices/rank-metric/rank_metric.yml">edit on this site</a></p><p class="zoo-code-id">Zoo Code ID: <code>rank_metric</code></div><div class="code-popup-info-frame"
        data-is-code-info-popup="1"
        data-popup-button-label="cite"
        data-popup-button-class-list="code-show-citation"><dl class="show-citation">
@@ -230,9 +238,9 @@ url={https://errorcorrectionzoo.org/c/rank_metric}
 <div class="sectioncontent display-print-citation">
   <p>“Rank-metric code”, The Error Correction Zoo (V. V. Albert & P. Faist, eds.), 2023. https://errorcorrectionzoo.org/c/rank_metric</p>
 
-  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank_metric.yml"
+  <p>Github: <a href="https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank-metric/rank_metric.yml"
                 class="ashowurl"
-                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank_metric.yml</a>.</p>
+                target="_blank">https://github.com/errorcorrectionzoo/eczoo_data/tree/main/codes/classical/matrices/rank-metric/rank_metric.yml</a>.</p>
 </div>
 
 
@@ -242,7 +250,7 @@ url={https://errorcorrectionzoo.org/c/rank_metric}
 
   <nav id="navigation">
 
-<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/matrices_into_matrices">Matrix-based</a></li><li><a href="/c/ecc_finite">Finite ECC</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/gabidulin">Gabidulin</a></li><li><a href="/c/maximum_rank_distance">MRD</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
+<!-- <h1>Related codes</h1> --><ul class="navlinks"><li><a href="/c/matrices_into_matrices">Matrix-based</a></li><li><a href="/c/ecc_finite">Finite ECC</a></li><li><a href="/c/ecc">ECC</a></li><li><a href="/c/gabidulin">Gabidulin</a></li><li><a href="/c/lrpc">LRPC</a></li><li><a href="/c/maximum_rank_distance">MRD</a></li></ul><h1><a href="/domain/classical_domain">Classical Domain</a></h1><h1><a href="/domain/quantum_domain">Quantum Domain</a></h1><h1><a href="/domain/quantum_into_classical_domain">Classical-quantum Domain</a></h1><h1></h1><ul class="navlinks"><li><a href="/">Home</a></li><li><a href="/team">Team</a></li><li><a href="/about">About</a></li><li><a href="/code_graph">Code graph</a></li><li><a href="/lists">Code lists</a></li><li><a href="/concepts">Concepts Glossary</a></li><li><a href="/edit_code">Add new code</a></li><li><a href="/search">Search</a></li></ul>
   </nav><!-- #navigation -->
 
   <nav id="navigation-shortcuts">
