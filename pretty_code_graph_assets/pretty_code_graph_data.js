@@ -224,7 +224,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic c-q binary code encoding one bit of information into coherent states \\(\\pm\\alpha\\) for complex \\(\\alpha\\).",
+                    "_description": "Bosonic c-q binary code encoding one bit of information into coherent states \\(|\\pm\\alpha\\rangle\\) for complex \\(\\alpha\\).",
                     "_code_href": "/c/quantum_bpsk",
                     "_family_generation_level": 5
                 },
@@ -241,7 +241,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Bosonic c-q code encoding into coherent states that are frequency-shifted with certain initial relative phase. Codewords are coherent states \\(|\\alpha_m\\rangle\\), where \\begin{align} \\alpha_m = \\alpha e^{i(\\omega_0+[m-1]\\Delta\\omega)t+i(m-1)\\Delta\\theta} \\end{align} for \u2026",
+                    "_description": "Bosonic c-q code encoding into coherent states that are frequency-shifted with certain initial relative phase. Codewords are coherent states \\(|\\alpha_m\\rangle\\), where \\begin{align} \\alpha_m = \\alpha e^{i(\\omega_0+[m-1]\\Delta\\omega)t+i(m-1)\\Delta\\theta} \\end{align} for common \u2026",
                     "_code_href": "/c/quantum_fsk",
                     "_family_generation_level": 3
                 },
@@ -808,7 +808,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "An LRPC code of rank \\(d\\) is a rank-metric code that, when interpreted as a \\(q\\)-ary linear code over \\(GF(q^m)\\), admits an \\((n-k)\\times n\\) parity-check matrix whose entries span a subspace of \\(GF(q^m)\\) that is \u2026",
+                    "_description": "An LRPC code of rank \\(d\\) is a rank-metric code that, when interpreted as a linear code over \\(GF(q^m)\\), admits an \\((n-k)\\times n\\) parity-check matrix whose entries span a subspace of \\(GF(q^m)\\) that is at most \u2026",
                     "_code_href": "/c/lrpc",
                     "_family_generation_level": 5
                 },
