@@ -5518,7 +5518,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Encodes a \\(K\\)-dimensional logical Hilbert space into \\(n_1\\) qudits of dimension \\(q\\) and \\(n_2 \\neq 0\\) oscillators, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}_q^{n_1} \\times \\mathbb{R}^{n_2}\\) \u2026",
+                    "_description": "Encodes a \\(K\\)-dimensional logical Hilbert space into \\(n_1\\) modular qudits of dimension \\(q\\) and \\(n_2 \\neq 0\\) oscillators, i.e., the Hilbert space of \\(\\ell^2\\)-normalizable functions on \\(\\mathbb{Z}_q^{n_1} \\times \\mathbb{R}^{n_2}\\).\n\nCodewords of a simple \u2026",
                     "_code_href": "/c/hybrid_qudit_oscillator",
                     "_family_generation_level": 3
                 },
@@ -5535,7 +5535,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a single bosonic mode. A trivial single-mode code encoding a qubit into the first two Fock states \\(\\{|0\\rangle,|1\\rangle\\}\\) is called the single-rail encoding.",
+                    "_description": "Encodes \\(K\\)-dimensional Hilbert space into a single bosonic mode. A trivial single-mode code encoding a qubit into the first two Fock states \\(\\{|0\\rangle,|1\\rangle\\}\\) is called the single-rail encoding [H.-W. Lee and J. Kim, \u201cQuantum teleportation and Bell\u2019s inequality using single-particle entanglement\u201d, Physical Review A 63, (2000). DOI; quant-ph/0007106][A. P. Lund and T. C. Ralph, \u201cNondeterministic gates for photonic single-rail quantum logic\u201d, Physical Review A 66, (2002). DOI; quant-ph/0205044].",
                     "_code_href": "/c/single-mode",
                     "_family_generation_level": 4
                 },
