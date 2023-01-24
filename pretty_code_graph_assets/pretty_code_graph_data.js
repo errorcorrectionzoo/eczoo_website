@@ -5484,7 +5484,7 @@ GENERATED_pretty_code_graph_data = {
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
-                    "_description": "Family of \\([[2t^3+8t^2+6t-1,1,2t+1]]\\) for \\(t\\geq 1\\) subsystem color codes, constructed using a generalization of the doubling transformation [K. Betsumiya and A. Munemasa, \u201cOn triply even binary codes\u201d, Journal of the London Mathematical Society 86, 1 (2012). DOI; 1012.4134], that admit a Clifford + \\(T\\) transversal gate set using gauge fixing. \u2026",
+                    "_description": "Family of \\([[2t^3+8t^2+6t-1,1,2t+1]]\\) subsystem color codes (with \\(t\\geq 1\\)), constructed using a generalization of the doubling transformation [K. Betsumiya and A. Munemasa, \u201cOn triply even binary codes\u201d, Journal of the London Mathematical Society 86, 1 (2012). DOI; 1012.4134], that admit a Clifford + \\(T\\) transversal gate set using gauge \u2026",
                     "_code_href": "/c/doubled_color",
                     "_family_generation_level": 4
                 },
