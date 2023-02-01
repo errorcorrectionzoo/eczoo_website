@@ -6817,8 +6817,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_small_distance",
-                    "label": "Single-error",
-                    "_code_name": "Single-error stabilizer code",
+                    "label": "Small distance",
+                    "_code_name": "Small-distance stabilizer code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
