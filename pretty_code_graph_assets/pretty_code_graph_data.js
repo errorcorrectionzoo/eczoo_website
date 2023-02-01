@@ -7038,8 +7038,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_quantum_cyclic",
-                    "label": "Quantum cyclic",
-                    "_code_name": "Quantum cyclic code",
+                    "label": "Cyclic quantum",
+                    "_code_name": "Cyclic quantum code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 0,
                     "_is_abstract_code": 1,
