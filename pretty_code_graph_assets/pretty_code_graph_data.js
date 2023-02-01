@@ -5054,8 +5054,8 @@ GENERATED_pretty_code_graph_data = {
             {
                 "data": {
                     "id": "c_qubit_5_6_2",
-                    "label": "\\(((5,6,2))\\)",
-                    "_code_name": "Six-qubit CWS code",
+                    "label": "\\(((5,6,2))\\) qubit",
+                    "_code_name": "\\(((5,6,2))\\) qubit code",
                     "_is_code": 1,
                     "_is_plain_concrete_code": 1,
                     "_is_abstract_code": 0,
